@@ -1,0 +1,75 @@
+/* Reset some default styles */
+body, h1, h2, p, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset some default styles */
+table, th, td {
+    border: none;
+}
+
+/* Basic styling */
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    /*background-color: #f0f0f0;*/
+    line-height: 1.6;
+}
+
+/* Apply these styles to the block-level elements within the body */
+body > * {
+    margin: 0 auto; /* Center-align block-level elements with equal margins */
+    max-width: 70%; /* Limit the maximum width of block-level elements */
+}
+
+header {
+    display: block;
+    font-size: 10; /* this doesn't seem to be doing anything; ideally make dynamic? */
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 10px;
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+/* Set different widths for specific columns */
+th:nth-child(1), td:nth-child(1) {
+    width: 20%; /* Adjust as needed */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 30%; /* Adjust as needed */
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 30%; /* Adjust as needed */
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 20%; /* Adjust as needed */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #F5F5F5;
+    color: black;
+}
