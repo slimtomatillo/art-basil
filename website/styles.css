@@ -50,6 +50,15 @@ thead {
     background-color: white;
 }
 
+/* Define CSS styles for alternating rows */
+.event-table tbody tr:nth-child(odd) {
+    background-color: white; /* Background color for odd rows */
+}
+
+.event-table tbody tr:nth-child(even) {
+    background-color: #ECECEC; /* Background color for even rows */
+}
+
 /* Set different widths for specific columns */
 th:nth-child(1), td:nth-child(1) {
     width: 20%; /* Adjust as needed */

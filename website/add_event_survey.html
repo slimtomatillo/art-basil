@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Add Art Event</title>
+</head>
+<body>
+    <header>
+        <h2>Add Art Event</h2>
+        <h3>
+            <strong>Please fill in the sections below if you would like your event to be added to the calendar. You MUST include a link to some kind of an event page/flyer to be added.</strong>
+        </h3>
+    </header>
+    <p>
+        If for some reason you cannot submit your event, please send details to
+        <a href="mailto:info.artbasil@gmail.com">info.artbasil@gmail.com</a>
+        <br><br>
+        <span style="color: red; font-size: 12px;">* required field</span>
+    </p>
+    <br>
+    <!-- Start of the form -->
+    <form action="process.php" method="post">
+        <!-- Event Title, Venue, Location -->
+        <label for="event_title">Event Title
+            <span style="color: red; font-size: 12px;">*</span>
+        </label>
+        <input type="text" id="event_title" name="event_title" required>
+        <br><br>
+        <label for="venue">Venue Name
+            <span style="color: red; font-size: 12px;">*</span>
+        </label>
+        <input type="text" id="venue" name="venue" required>
+        <br><br>
+        <label for="location">Location (City, State)
+            <span style="color: red; font-size: 12px;">*</span>
+        </label>
+        <input type="text" id="location" name="location" required>
+        <br><br>
+        <!-- Date Input for Event Date -->
+        <label for="event_date">Event Date
+            <span style="color: red; font-size: 12px;">*</span>
+        </label>
+        <input type="date" id="event_date" name="event_date" required>
+        <br><br>
+        <!-- Time Input for Start Time -->
+        <label for="start_time">Start Time
+            <span style="color: red; font-size: 12px;">*</span>
+        </label>
+        <input type="time" id="start_time" name="start_time" required>
+        <br><br>
+        <!-- Time Input for End Time -->
+        <label for="end_time">End Time (if exists)</label>
+        <input type="time" id="end_time" name="end_time">
+        <br><br>
+        <!-- Collect tags or other metadata -->
+        <label for="tags">Tags (options <a href="tags.html">here</a>)</label>
+        <input type="text" id="tags" name="tags">
+        <br><br>
+        <!-- Price -->
+        <label for="price">Price
+            <span style="color: red; font-size: 12px;">*</span>
+        </label>
+        <input type="text" id="price" name="price" required>
+        <br><br>
+        <!-- Links -->
+        <label for="link_event_page">Link to Event Page
+            <span style="color: red; font-size: 12px;">*</span>
+        </label>
+        <input type="text" id="link_event_page" name="link_event_page" required>
+        <br><br>
+        <label for="link_other">Link to Facebook Event Page or Second Link</label>
+        <input type="text" id="link_other" name="link_other">
+        <br><br>
+        <!-- Textarea -->
+        <label for="comments">Comments</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+    <!-- End of the form -->
+    <br>
+    <p>Thank you!</p>
+</body>
+</html>
