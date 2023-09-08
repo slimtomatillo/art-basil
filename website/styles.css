@@ -65,11 +65,11 @@ th:nth-child(1), td:nth-child(1) {
 }
 
 th:nth-child(2), td:nth-child(2) {
-    width: 30%; /* Adjust as needed */
+    width: 35%; /* Adjust as needed */
 }
 
 th:nth-child(3), td:nth-child(3) {
-    width: 30%; /* Adjust as needed */
+    width: 25%; /* Adjust as needed */
 }
 
 th:nth-child(4), td:nth-child(4) {

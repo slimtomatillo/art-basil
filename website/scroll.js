@@ -21,12 +21,29 @@ window.addEventListener('DOMContentLoaded', () => {
             // Populate the table rows with event data
             data.forEach((event) => {
                 const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td>${event.Date}</td>
-                    <td>${event.Title} @ ${event.Venue}</td>
-                    <td>${event.Tags}</td>
-                    <td><a href="${event.Link}">${"Link"}</a></td>
-                `;
+
+                // Check if event.Links is defined
+                if (event.Links && Array.isArray(event.Links)) {
+                    // Create an array of anchor elements from the list of links
+                    const linksHTML = event.Links.map(linkObj => `<a href="${linkObj.Link}">${linkObj.Text}</a>`).join('<br>');
+
+                    // Use linksHTML to display all the links in the table cell
+                    row.innerHTML = `
+                        <td>${event.Date}</td>
+                        <td>${event.Title} @ ${event.Venue}</td>
+                        <td>${event.Tags.join(', ')}</td>
+                        <td>${linksHTML}</td>
+                    `;
+                } else {
+                    // If event.Link is undefined or not an array, display an empty cell
+                    row.innerHTML = `
+                        <td>${event.Date}</td>
+                        <td>${event.Title} @ ${event.Venue}</td>
+                        <td>${event.Tags.join(', ')}</td>
+                        <td></td>
+                    `;
+                }
+
                 eventList.appendChild(row);
             });
         })

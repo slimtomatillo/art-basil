@@ -279,30 +279,6 @@
         ]
     },
     {
-        "Title": "Meet the Muses behind Kehinde Wiley\u2019s Art",
-        "Links": [
-            {
-                "Link": "https://www.famsf.org/events/meet-the-muses-kehinde-wiley",
-                "Text": "Event Page"
-            }
-        ],
-        "Date": "Wed, Sep 6 \\ Noon PDT",
-        "Venue": "Virtual",
-        "Tags": []
-    },
-    {
-        "Title": "Leadership Circle Kramlich Collection Visit",
-        "Links": [
-            {
-                "Link": "https://www.famsf.org/events/leadership-circle-kramlich-collection-visit",
-                "Text": "Event Page"
-            }
-        ],
-        "Date": "Wed, Sep 6 \\ 10:30 am \u2013 3 pm",
-        "Venue": "unknown",
-        "Tags": []
-    },
-    {
         "Title": "Voices of Contemporary Artists Lecture: Hangama Amiri",
         "Links": [
             {
@@ -518,7 +494,7 @@
                 "Text": "Event Page"
             }
         ],
-        "Date": "Sat, Oct 14 \\ 9 am \u2013 5 pm",
+        "Date": "Sat, Oct 14 \\ 9 am \u2013 6 pm",
         "Venue": "unknown",
         "Tags": [
             "audio"
@@ -723,6 +699,12 @@
             }
         ],
         "Date": "Friday, september 8, 6\u20138PM",
+        "Time": [
+            [
+                null,
+                null
+            ]
+        ],
         "Venue": "Berkeley Art Center",
         "Tags": [
             "performance"
@@ -737,6 +719,12 @@
             }
         ],
         "Date": "Tuesday, August 29 from 7\u20138PM",
+        "Time": [
+            [
+                null,
+                null
+            ]
+        ],
         "Venue": "Virtual",
         "Tags": [
             "virtual"

@@ -29,6 +29,22 @@ def save_json_file(data, file_path):
         # Write the data to the destination file
         json.dump(data, json_file, indent=4)  # You can use indent for pretty formatting if desired
 
+def standardize_text(string):
+    """
+    Initially designed for handling strings containing times.
+    Removes periods, lowercases it, and removes spaces.
+    """
+    # Remove punctuation
+    string = string.replace('.', '')
+
+    # Lowercase
+    string = string.lower()
+
+    # Remove spaces
+    string = string.replace(' ', '')
+    
+    return string
+
 def get_de_young_events():
     """
     Uses BeautifulSoup to scrape event info from the de Young
@@ -134,6 +150,41 @@ def get_berkeley_art_center_events():
     """
     print("Collecting events from Berkeley Art Center...")
 
+    def parse_time_to_timestamp(time_str):
+        # Regular expression pattern to match time formats
+        time_pattern = r'(\d{1,2}(?::\d{2})?)\s?(am|pm)?'
+    
+        # Match the time components
+        match = re.match(time_pattern, time_str, re.IGNORECASE)
+        if match:
+            # Extract hours and minutes
+            hours_minutes = match.group(1)
+            am_pm = match.group(2)
+    
+            if am_pm:
+                am_pm = am_pm.lower()
+    
+            # Convert hours to 24-hour format if needed
+            if am_pm == 'pm' and ':' in hours_minutes:
+                hours, minutes = hours_minutes.split(':')
+                hours = str(int(hours) + 12)
+                time_str = f'{hours}:{minutes}'
+            elif am_pm == 'am' and ':' not in hours_minutes and len(hours_minutes) <= 2:
+                hours = hours_minutes.zfill(2)
+                time_str = f'{hours}:00'
+            elif am_pm == 'pm' and ':' not in hours_minutes and len(hours_minutes) <= 2:
+                hours = str(int(hours_minutes) + 12)
+                time_str = f'{hours}:00'
+    
+            # Convert the time string to a datetime timestamp
+            try:
+                timestamp = datetime.strptime(time_str, '%H:%M').time()
+                return timestamp
+            except ValueError:
+                return None
+
+        return None
+    
     # Collect event info
     events_list = []
     
@@ -230,19 +281,79 @@ def get_berkeley_art_center_events():
                                 "Link": link_url,
                                 "Text": "unknown"
                             })
+                # // Extract time //
+                # Get the last item after the last space and standardize it
+                time = standardize_text(date.split(' ')[-1])
+                # If there is a hyphen, that indicates there is a start and end time
+                if '–' in date:
+                    # Get the start date from the left side of the hyphen
+                    start_time = time.split('–')[0]
+                    # Get the start date from the right side of the hyphen
+                    try:
+                        end_time = time.split('–')[1]
+                    except IndexError:
+                        end_time = None
+                    # If the end time is AM, then the start time must be AM
+                    if 'am' in end_time:
+                        start_time += 'am'
+                    # If the end time is PM
+                    else:
+                        # If the hour of the start time is before the hour of the end time, it must be PM
+                        if int(start_time) < int(end_time.replace('am', '').replace('pm', '')):
+                            start_time += 'pm'
+                        # If the hour is after, it must be AM
+                        else:
+                            start_time += 'am'
+                # If there is no end time / just a start time
+                else:
+                    start_time = time
+                    end_time = None
+                # // Identify sorting index //
+                # If we have the start time, use that to sort
+                if start_time:
+                    time_sort = parse_time_to_timestamp(start_time)
+                    # Convert the datetime object to a string in a specific format
+                    time_sort = time_sort.strftime("%H:%M:%S")
+                # Otherwise use the end time if we have it
+                elif end_time:
+                    time_sort = parse_time_to_timestamp(end_time)
+                    # Convert the datetime object to a string in a specific format
+                    time_sort = time_sort.strftime("%H:%M:%S")
                 # Collect event data
                 events_list.append(
                     {
                         "Title": title,
                         "Links": links,
                         "Date": date,
+                        "StartTime": start_time,
+                        "EndTime": end_time,
+                        "TimeSort": time_sort,
                         "Venue": venue,
                         "Tags": list(set(tags)) # get unique list of tags
                     }
                 )
     print("Completed. Collected {:,} events.".format(len(events_list)))
     return events_list
-    
+
+def is_event_recurring(event_str):
+    """
+    Function that takes in a string containing date and time information
+    about an event and identifies whether it is a recurring event or not.
+    """
+    # Check if the string contains "through" (case insensitive)
+    if re.search(r'through', event_str, re.IGNORECASE):
+        return True
+
+    # Check if the string contains a "–" or "," between two days of the week or abbreviations
+    if re.search(r'(\w{3} – \w{3}|\w{3}, \w{3})', event_str):
+        return True
+
+    # Check if the string contains a "+" and has more than one day of the week or abbreviations
+    if re.search(r'\+\s*(\w{3}|\w{3},)+', event_str):
+        return True
+
+    return False
+
 def main():
     """
     Function that:
