@@ -5,6 +5,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
+import datetime as dt
 
 def copy_json_file(source_file_path, destination_file_path):
     """
@@ -42,8 +43,66 @@ def standardize_text(string):
 
     # Remove spaces
     string = string.replace(' ', '')
+
+    # Replace noon with 12
+    string = string.replace('noon', '12pm')
     
     return string
+
+def parse_time_to_timestamp(time_str):
+    """
+    Given a string containing time(s), extract the time
+    in the string and convert it to HH:MM form (with :MM
+    optional), and specifying am or pm.
+    """
+
+    # Regular expression pattern to match time formats
+    time_pattern = r'(\d{1,2}(?::\d{2})?)\s?(am|pm)?'
+
+    # Match the time components
+    match = re.match(time_pattern, time_str, re.IGNORECASE)
+    if match:
+        # Extract hours and minutes
+        hours_minutes = match.group(1)
+        am_pm = match.group(2)
+
+        if am_pm:
+            am_pm = am_pm.lower()
+
+        # Convert hours to 24-hour format if needed
+        if ':' in hours_minutes:
+            hours, minutes = hours_minutes.split(':')
+            if am_pm == 'am':
+                hours = str(int(hours))
+                time_str = f'{hours}:{minutes}'
+            elif am_pm == 'pm':
+                hours = str(int(hours) + 12)
+                time_str = f'{hours}:{minutes}'
+        elif ':' not in hours_minutes:
+            hours = hours_minutes
+            if am_pm == 'am':
+                if int(hours) == 12:
+                    time_str = '00:00'
+                elif len(hours) == 1:
+                    hours = hours.zfill(2)
+                    time_str = f'{hours}:00'
+                else:
+                    time_str = f'{hours}:00'
+            elif am_pm == 'pm':
+                if int(hours) == 12:
+                    time_str = f'{hours}:00'
+                else:
+                    hours = str(int(hours) + 12)
+                    time_str = f'{hours}:00'
+
+        # Convert the time string to a datetime timestamp
+        try:
+            timestamp = datetime.strptime(time_str, '%H:%M').time()
+            return timestamp
+        except ValueError:
+            return None
+
+    return None
 
 def get_de_young_events():
     """
@@ -75,20 +134,59 @@ def get_de_young_events():
             break
         
         for e in group_elements:
-            # Instantiate list to collect tags
-            tags = []
+            
             # Extract title
             title = e.find("a").find("h3").get_text().strip()
+            
             # Extract link
             link = e.find("a").get("href")
+            
             # Extract date info
             date = e.find(class_="mt-12 text-secondary f-subheading-1").get_text()
+
+            def extract_time(string):
+
+                # Standardize string
+                string = standardize_text(string)
+                
+                # If there is \\ in it, there's a time
+                if '\\' in string:
+                
+                    # Split by \\ and choose [-1], then by , and choose [0], and remove spaces
+                    string = string.split('\\')[-1].split(',')[0].replace(' ', '')
+                    
+                    # If a hyphen ("–") is in it, there is a start and end time, split by dash
+                    if '–' in string:
+                        start_time = string.split('–')[0]
+                        end_time = string.split('–')[1]
+                
+                    # Elif a + is in it, there are two start times, split by +
+                    elif '+' in string:
+                        start_time = string.split('+')[0]
+                        end_time = None
+                    
+                    # Otherwise
+                    else:
+                        start_time = string
+                        end_time = None
+
+                else:
+                    start_time = None
+                    end_time = None
+
+                return start_time, end_time
+
+            # Extract time
+            start_time, end_time = extract_time(date)
+
             # Extract venue
             try:
                 venue = e.find(class_="text-inherit pt-2 ml-8").get_text()
             except AttributeError:
                 venue = "unknown"
+            
             # Add tags
+            tags = []
             event_type = e.find(class_="text-inherit pt-2").get_text().lower() # this is Exhibition or Event
             if event_type == "exhibition":
                 tags.append("exhibition")
@@ -126,6 +224,7 @@ def get_de_young_events():
                 tags.append("queer")
             if "virtual" in title.lower():
                 tags.append("virtual")
+            
             # Collect data
             events_list.append(
                 {
@@ -135,6 +234,8 @@ def get_de_young_events():
                         "Text": "Event Page",
                     }],
                     "Date": date,
+                    "StartTime": start_time,
+                    "EndTime": end_time,
                     "Venue": venue,
                     "Tags": list(set(tags)) # get unique list of tags
                 }
@@ -149,41 +250,6 @@ def get_berkeley_art_center_events():
     Center's calendar.
     """
     print("Collecting events from Berkeley Art Center...")
-
-    def parse_time_to_timestamp(time_str):
-        # Regular expression pattern to match time formats
-        time_pattern = r'(\d{1,2}(?::\d{2})?)\s?(am|pm)?'
-    
-        # Match the time components
-        match = re.match(time_pattern, time_str, re.IGNORECASE)
-        if match:
-            # Extract hours and minutes
-            hours_minutes = match.group(1)
-            am_pm = match.group(2)
-    
-            if am_pm:
-                am_pm = am_pm.lower()
-    
-            # Convert hours to 24-hour format if needed
-            if am_pm == 'pm' and ':' in hours_minutes:
-                hours, minutes = hours_minutes.split(':')
-                hours = str(int(hours) + 12)
-                time_str = f'{hours}:{minutes}'
-            elif am_pm == 'am' and ':' not in hours_minutes and len(hours_minutes) <= 2:
-                hours = hours_minutes.zfill(2)
-                time_str = f'{hours}:00'
-            elif am_pm == 'pm' and ':' not in hours_minutes and len(hours_minutes) <= 2:
-                hours = str(int(hours_minutes) + 12)
-                time_str = f'{hours}:00'
-    
-            # Convert the time string to a datetime timestamp
-            try:
-                timestamp = datetime.strptime(time_str, '%H:%M').time()
-                return timestamp
-            except ValueError:
-                return None
-
-        return None
     
     # Collect event info
     events_list = []
@@ -206,27 +272,28 @@ def get_berkeley_art_center_events():
 
     # Iterate through elements
     for e in elements:
+        
         # If looking at past events, stop the loop
         if "past events" in e.find_previous("h1").text.lower():
             break
+        
         # Otherwise, we're looking at current events --> collect events
         else:
             h3s = e.find_all("h3")
+            
             # If there are any h3 elements
             if len(h3s) > 0:
-                # Collect date(s)
-                dates = []
+                
                 # Identify title
                 title = h3s[0].get_text().strip()
-                # Collect tags
+
+                # Tag events and collect dates
+                dates = []
                 tags = []
-                # Collect links
-                links = []
                 # Iterate through h3 elements
                 for h in h3s:
                     if any(x in h.get_text().lower() for x in days_of_week):
                         dates.append(h.get_text().strip())
-                    # Tag events
                     if "opening" in h.get_text().lower():
                         tags.append("opening")
                     if "conversation" in h.get_text().lower():
@@ -247,10 +314,12 @@ def get_berkeley_art_center_events():
                         tags.append("virtual")
                     if "zoom" in h.get_text().lower():
                         tags.append("virtual")
-                # Combined dates
+                
+                # Combine dates
                 date = " | ".join(dates)
                 date_text = date # copy date text to use for other purpose
                 date = date.replace(" on zoom.", "")
+                
                 # Identify location
                 try:
                     "berkeley art center" in h3s[2].get_text().lower()
@@ -261,7 +330,9 @@ def get_berkeley_art_center_events():
                     venue = "Berkeley Art Center"
                 if "on zoom" in date_text.lower():
                     venue = "Virtual"
-                # Get link
+                
+                # Get links
+                links = []
                 link_elements = e.find_all("a")
                 if len(link_elements) > 0:
                     for l in link_elements:
@@ -281,44 +352,43 @@ def get_berkeley_art_center_events():
                                 "Link": link_url,
                                 "Text": "unknown"
                             })
-                # // Extract time //
-                # Get the last item after the last space and standardize it
-                time = standardize_text(date.split(' ')[-1])
-                # If there is a hyphen, that indicates there is a start and end time
-                if '–' in date:
-                    # Get the start date from the left side of the hyphen
-                    start_time = time.split('–')[0]
-                    # Get the start date from the right side of the hyphen
-                    try:
-                        end_time = time.split('–')[1]
-                    except IndexError:
-                        end_time = None
-                    # If the end time is AM, then the start time must be AM
-                    if 'am' in end_time:
-                        start_time += 'am'
-                    # If the end time is PM
-                    else:
-                        # If the hour of the start time is before the hour of the end time, it must be PM
-                        if int(start_time) < int(end_time.replace('am', '').replace('pm', '')):
-                            start_time += 'pm'
-                        # If the hour is after, it must be AM
-                        else:
+                
+                def extract_time(string):
+        
+                    # Standardize string
+                    string = standardize_text(string)
+                    
+                    # If there is a hyphen, that indicates there is a start and end time
+                    if '–' in date:
+                        # Get the start date from the left side of the hyphen
+                        start_time = string.split('–')[0]
+                        # Get the start date from the right side of the hyphen
+                        try:
+                            end_time = string.split('–')[1]
+                        except IndexError:
+                            end_time = None
+                        # If the end time is AM, then the start time must be AM
+                        if 'am' in end_time:
                             start_time += 'am'
-                # If there is no end time / just a start time
-                else:
-                    start_time = time
-                    end_time = None
-                # // Identify sorting index //
-                # If we have the start time, use that to sort
-                if start_time:
-                    time_sort = parse_time_to_timestamp(start_time)
-                    # Convert the datetime object to a string in a specific format
-                    time_sort = time_sort.strftime("%H:%M:%S")
-                # Otherwise use the end time if we have it
-                elif end_time:
-                    time_sort = parse_time_to_timestamp(end_time)
-                    # Convert the datetime object to a string in a specific format
-                    time_sort = time_sort.strftime("%H:%M:%S")
+                        # If the end time is PM
+                        else:
+                            # If the hour of the start time is before the hour of the end time, it must be PM
+                            if int(start_time) < int(end_time.replace('am', '').replace('pm', '')):
+                                start_time += 'pm'
+                            # If the hour is after, it must be AM
+                            else:
+                                start_time += 'am'
+                    
+                    # If there is no end time / just a start time
+                    else:
+                        start_time = string
+                        end_time = None
+
+                    return start_time, end_time
+                
+                # Extract time
+                start_time, end_time = extract_time(date.split(' ')[-1])
+
                 # Collect event data
                 events_list.append(
                     {
@@ -327,7 +397,6 @@ def get_berkeley_art_center_events():
                         "Date": date,
                         "StartTime": start_time,
                         "EndTime": end_time,
-                        "TimeSort": time_sort,
                         "Venue": venue,
                         "Tags": list(set(tags)) # get unique list of tags
                     }
