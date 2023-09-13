@@ -314,11 +314,36 @@ def get_berkeley_art_center_events():
                         tags.append("virtual")
                     if "zoom" in h.get_text().lower():
                         tags.append("virtual")
+
+                def extract_date_to_timestamp(s):
+                    """
+                    Extracts a date from a given string and converts it to a timestamp.
+                    
+                    The function searches for a date in the format "day of the week, month day, year"
+                    within the provided string. The ", year" portion is optional. If the year is not
+                    specified, the current year is assumed.
+                    """
+                    
+                    pattern = r'\b(?P<weekday>Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s(?P<month>January|February|March|April|May|June|July|August|September|October|November|December)\s(?P<day>\d{1,2})(,\s(?P<year>\d{4}))?\b'
+                    
+                    match = re.search(pattern, s, re.IGNORECASE)
+                    if match:
+                        # Extract components
+                        month = match.group("month")
+                        day = int(match.group("day"))
+                        year = int(match.group("year")) if match.group("year") else datetime.now().year
+                        
+                        # Convert to datetime object (and then back to string so it's json-serializable)
+                        dt = datetime.strptime(f"{month} {day} {year}", "%B %d %Y")
+                        return dt.strftime('%Y-%m-%d %H:%M:%S')
+                    
+                    return None
                 
-                # Combine dates
-                date = " | ".join(dates)
-                date_text = date # copy date text to use for other purpose
-                date = date.replace(" on zoom.", "")
+                # Combine dates and extract date
+                date_str = " | ".join(dates)
+                date_text = date_str # copy date text to use for other purpose
+                date_str = date_str.replace(" on zoom.", "")
+                date = extract_date_to_timestamp(date_str)
                 
                 # Identify location
                 try:
@@ -357,14 +382,16 @@ def get_berkeley_art_center_events():
         
                     # Standardize string
                     string = standardize_text(string)
+                    string = string.replace('–', '-').replace('-', '-')
                     
                     # If there is a hyphen, that indicates there is a start and end time
-                    if '–' in date:
-                        # Get the start date from the left side of the hyphen
-                        start_time = string.split('–')[0]
+                    if '-' in string:
+                        # Get start and end times
+                        times = string.split('-')
+                        start_time = times[0]
                         # Get the start date from the right side of the hyphen
                         try:
-                            end_time = string.split('–')[1]
+                            end_time = times[1]
                         except IndexError:
                             end_time = None
                         # If the end time is AM, then the start time must be AM
@@ -387,7 +414,7 @@ def get_berkeley_art_center_events():
                     return start_time, end_time
                 
                 # Extract time
-                start_time, end_time = extract_time(date.split(' ')[-1])
+                start_time, end_time = extract_time(date_str.split(' ')[-1])
 
                 # Collect event data
                 events_list.append(

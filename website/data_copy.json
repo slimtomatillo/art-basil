@@ -10,7 +10,6 @@
         "Date": "Through Sep 15, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -27,7 +26,6 @@
         "Date": "Through May 5, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -44,7 +42,6 @@
         "Date": "Sat \\ 4 pm",
         "StartTime": "4pm",
         "EndTime": null,
-        "TimeSort": "16:00:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "audio"
@@ -61,7 +58,6 @@
         "Date": "Sat \\ 9:30 am \u2013 5:15 pm",
         "StartTime": "9:30am",
         "EndTime": "5:15pm",
-        "TimeSort": "09:30:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "free"
@@ -76,9 +72,8 @@
             }
         ],
         "Date": "Tues \u2013 Fri, Sun \\ Noon \u2013 1 pm, 2 \u2013 3 pm",
-        "StartTime": "Noon",
+        "StartTime": "12pm",
         "EndTime": "1pm",
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "tour"
@@ -95,7 +90,6 @@
         "Date": "Through Oct 15, 2023",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -112,7 +106,6 @@
         "Date": "Through Oct 1, 2023",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -129,7 +122,6 @@
         "Date": "Sat \\ 9:30 am \u2013 5:15 pm",
         "StartTime": "9:30am",
         "EndTime": "5:15pm",
-        "TimeSort": "09:30:00",
         "Venue": "de Young",
         "Tags": [
             "free"
@@ -146,7 +138,6 @@
         "Date": "Through Sep 24, 2023",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "exhibition"
@@ -163,7 +154,6 @@
         "Date": "Tues \u2013 Sun \\ 11:30 am + 1:30 pm",
         "StartTime": "11:30am",
         "EndTime": null,
-        "TimeSort": "11:30:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "tour"
@@ -178,9 +168,8 @@
             }
         ],
         "Date": "Sat \\ noon \u2013 12:40 pm, 3 \u2013 3:40 pm",
-        "StartTime": "noon",
+        "StartTime": "12pm",
         "EndTime": "12:40pm",
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "talk"
@@ -197,7 +186,6 @@
         "Date": "Through Mar 24, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "exhibition"
@@ -214,7 +202,6 @@
         "Date": "Through Dec 31, 2023",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -231,7 +218,6 @@
         "Date": "Sat, Sun, Tues \\ 11:30 am \u2013 1:30 pm",
         "StartTime": "11:30am",
         "EndTime": "1:30pm",
-        "TimeSort": "11:30:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "tour"
@@ -248,7 +234,6 @@
         "Date": "Select Saturdays \\ 10:30 am",
         "StartTime": "10:30am",
         "EndTime": null,
-        "TimeSort": "10:30:00",
         "Venue": "de Young",
         "Tags": [
             "tour",
@@ -266,7 +251,6 @@
         "Date": "Through Feb 25, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "exhibition"
@@ -283,7 +267,6 @@
         "Date": "Select Saturdays \\ 11 am \u2013 3 pm",
         "StartTime": "11am",
         "EndTime": "3pm",
-        "TimeSort": "11:00:00",
         "Venue": "de Young",
         "Tags": [
             "family"
@@ -300,7 +283,6 @@
         "Date": "Through Mar 10, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": "2023-09-09 00:00:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "exhibition"
@@ -317,7 +299,6 @@
         "Date": "Select Saturdays \\ 11 am \u2013 3 pm",
         "StartTime": "11am",
         "EndTime": "3pm",
-        "TimeSort": "11:00:00",
         "Venue": "de Young",
         "Tags": []
     },
@@ -332,7 +313,6 @@
         "Date": "Sat, Sun, Free Tues \\ 11:30 am + 1 pm",
         "StartTime": "11:30am",
         "EndTime": null,
-        "TimeSort": "11:30:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "tour"
@@ -349,7 +329,6 @@
         "Date": "Sat, Sep 9 \\ 2 \u2013 3:30 pm",
         "StartTime": "2",
         "EndTime": "3:30pm",
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": []
     },
@@ -364,7 +343,6 @@
         "Date": "Mon, Sep 11",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "Virtual",
         "Tags": [
             "virtual"
@@ -381,7 +359,6 @@
         "Date": "Sat, Sep 16 \\ 1 pm",
         "StartTime": "1pm",
         "EndTime": null,
-        "TimeSort": "13:00:00",
         "Venue": "de Young",
         "Tags": []
     },
@@ -396,7 +373,6 @@
         "Date": "Sat, Sep 16 \\ 3 \u2013 5 pm",
         "StartTime": "3",
         "EndTime": "5pm",
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "workshop"
@@ -412,8 +388,7 @@
         ],
         "Date": "Sat, Sep 23 \\ 10 am \u2013 noon + 1 \u2013 3 pm",
         "StartTime": "10am",
-        "EndTime": "noon+1",
-        "TimeSort": "10:00:00",
+        "EndTime": "12pm+1",
         "Venue": "Legion of Honor",
         "Tags": []
     },
@@ -428,7 +403,6 @@
         "Date": "Sat, Sep 23 \\ 10 \u2013 11 am + 1 \u2013 2 pm",
         "StartTime": "10",
         "EndTime": "11am+1",
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": []
     },
@@ -443,7 +417,6 @@
         "Date": "Thu, Sep 28 + Fri, Sep 29 \\ 9:30 am \u2013 5:15 pm",
         "StartTime": "9:30am",
         "EndTime": "5:15pm",
-        "TimeSort": "09:30:00",
         "Venue": "de Young",
         "Tags": [
             "members only"
@@ -460,7 +433,6 @@
         "Date": "Sep 30, 2023 \u2013 Jan 7, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -477,7 +449,6 @@
         "Date": "Sat, Sep 30 \\ 11 am \u2013 4 pm",
         "StartTime": "11am",
         "EndTime": "4pm",
-        "TimeSort": "11:00:00",
         "Venue": "de Young",
         "Tags": [
             "opening"
@@ -492,9 +463,8 @@
             }
         ],
         "Date": "Sat, Sep 30 \\ Noon \u2013 4 pm",
-        "StartTime": "Noon",
+        "StartTime": "12pm",
         "EndTime": "4pm",
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": []
     },
@@ -509,7 +479,6 @@
         "Date": "Thu, Oct 5 \\ 11 am \u2013 1 pm",
         "StartTime": "11am",
         "EndTime": "1pm",
-        "TimeSort": "11:00:00",
         "Venue": "unknown",
         "Tags": []
     },
@@ -524,7 +493,6 @@
         "Date": "Oct 7, 2023 \u2013 Jan 7, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -541,7 +509,6 @@
         "Date": "Sat, Oct 7 \\ 2 \u2013 3:30 pm",
         "StartTime": "2",
         "EndTime": "3:30pm",
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": []
     },
@@ -556,7 +523,6 @@
         "Date": "Sat, Oct 7 \\ 11 am \u2013 2:15 pm",
         "StartTime": "11am",
         "EndTime": "2:15pm",
-        "TimeSort": "11:00:00",
         "Venue": "de Young",
         "Tags": [
             "opening"
@@ -573,7 +539,6 @@
         "Date": "Wed, Oct 11 \u2013 Sun, Oct 15",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "unknown",
         "Tags": []
     },
@@ -588,7 +553,6 @@
         "Date": "Sat, Oct 14 \\ 9 am \u2013 6 pm",
         "StartTime": "9am",
         "EndTime": "6pm",
-        "TimeSort": "09:00:00",
         "Venue": "unknown",
         "Tags": [
             "audio"
@@ -605,7 +569,6 @@
         "Date": "Mon, Oct 16 \\ 11 am",
         "StartTime": "11am",
         "EndTime": null,
-        "TimeSort": "11:00:00",
         "Venue": "de Young",
         "Tags": []
     },
@@ -620,7 +583,6 @@
         "Date": "Mon, Oct 23 \\ 9:30 am \u2013 2:30 pm",
         "StartTime": "9:30am",
         "EndTime": "2:30pm",
-        "TimeSort": "09:30:00",
         "Venue": "de Young",
         "Tags": []
     },
@@ -635,7 +597,6 @@
         "Date": "Fri, Nov 17 \\ 1 \u2013 5:15 pm",
         "StartTime": "1",
         "EndTime": "5:15pm",
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": [
             "members only"
@@ -652,7 +613,6 @@
         "Date": "Sat, Nov 18 \\ 9:30 am \u2013 5:15 pm",
         "StartTime": "9:30am",
         "EndTime": "5:15pm",
-        "TimeSort": "09:30:00",
         "Venue": "Legion of Honor",
         "Tags": [
             "members only"
@@ -669,7 +629,6 @@
         "Date": "Sat, Nov 18 \\ 1 \u2013 5 pm",
         "StartTime": "1",
         "EndTime": "5pm",
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": [
             "symposium"
@@ -686,7 +645,6 @@
         "Date": "Nov 19, 2023 \u2013 Feb 11, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": [
             "exhibition"
@@ -702,8 +660,7 @@
         ],
         "Date": "Wed, Nov 29 \\ 5 \u2013 6 pm PST / 8 \u2013 9 pm EST",
         "StartTime": "5",
-        "EndTime": "6pmPST/8",
-        "TimeSort": null,
+        "EndTime": "6pmpst/8",
         "Venue": "Virtual",
         "Tags": [
             "talk"
@@ -720,7 +677,6 @@
         "Date": "Sat, Dec 2 \\ 2 \u2013 3:30 pm",
         "StartTime": "2",
         "EndTime": "3:30pm",
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": [
             "reading"
@@ -737,7 +693,6 @@
         "Date": "Tue, Dec 12 \\ 7 \u2013 11:30 pm",
         "StartTime": "7",
         "EndTime": "11:30pm",
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": []
     },
@@ -752,7 +707,6 @@
         "Date": "Jan 20 \u2013 Aug 11, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -769,7 +723,6 @@
         "Date": "Feb 17 \u2013 Jul 7, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -786,7 +739,6 @@
         "Date": "Mar 16 \u2013 Jul 21, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "exhibition"
@@ -803,7 +755,6 @@
         "Date": "Mar 30 \u2013 Aug 25, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": [
             "exhibition"
@@ -820,7 +771,6 @@
         "Date": "Apr 6 \u2013 Aug 18, 2024",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "Legion of Honor",
         "Tags": [
             "exhibition"
@@ -837,7 +787,6 @@
         "Date": "Sat, May 4",
         "StartTime": null,
         "EndTime": null,
-        "TimeSort": null,
         "Venue": "de Young",
         "Tags": [
             "family"
@@ -854,7 +803,6 @@
         "Date": "Friday, september 8, 6\u20138PM",
         "StartTime": "6pm",
         "EndTime": "8pm",
-        "TimeSort": "18:00:00",
         "Venue": "Berkeley Art Center",
         "Tags": [
             "performance"
@@ -871,7 +819,6 @@
         "Date": "Tuesday, August 29 from 7\u20138PM",
         "StartTime": "7pm",
         "EndTime": "8pm",
-        "TimeSort": "19:00:00",
         "Venue": "Virtual",
         "Tags": [
             "virtual"

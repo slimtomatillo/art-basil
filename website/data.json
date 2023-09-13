@@ -319,36 +319,6 @@
         ]
     },
     {
-        "Title": "Babylonian Astrology and the History of Science",
-        "Links": [
-            {
-                "Link": "https://www.famsf.org/events/babylonian-astrology-history-science",
-                "Text": "Event Page"
-            }
-        ],
-        "Date": "Sat, Sep 9 \\ 2 \u2013 3:30 pm",
-        "StartTime": "2",
-        "EndTime": "3:30pm",
-        "Venue": "Legion of Honor",
-        "Tags": []
-    },
-    {
-        "Title": "The Tudors Virtual Access Day",
-        "Links": [
-            {
-                "Link": "https://www.famsf.org/events/the-tudors-virtual-access-day",
-                "Text": "Event Page"
-            }
-        ],
-        "Date": "Mon, Sep 11",
-        "StartTime": null,
-        "EndTime": null,
-        "Venue": "Virtual",
-        "Tags": [
-            "virtual"
-        ]
-    },
-    {
         "Title": "Our Shared Struggle: The International Imperative for Repair",
         "Links": [
             {
@@ -543,6 +513,20 @@
         "Tags": []
     },
     {
+        "Title": "Call For Singers: Lee Mingwei\u2019s Sonic Blossom",
+        "Links": [
+            {
+                "Link": "https://www.famsf.org/events/call-singers-lee-mingwei-sonic-blossom",
+                "Text": "Event Page"
+            }
+        ],
+        "Date": "Thu, Oct 12 \\ 10 am \u2013 5 pm",
+        "StartTime": "10am",
+        "EndTime": "5pm",
+        "Venue": "Legion of Honor",
+        "Tags": []
+    },
+    {
         "Title": "Kehinde Wiley Grand Finale Concert",
         "Links": [
             {
@@ -550,8 +534,8 @@
                 "Text": "Event Page"
             }
         ],
-        "Date": "Sat, Oct 14 \\ 9 am \u2013 6 pm",
-        "StartTime": "9am",
+        "Date": "Sat, Oct 14 \\ 2 \u2013 6 pm",
+        "StartTime": "2",
         "EndTime": "6pm",
         "Venue": "unknown",
         "Tags": [
@@ -800,7 +784,7 @@
                 "Text": "Eventbrite"
             }
         ],
-        "Date": "Friday, september 8, 6\u20138PM",
+        "Date": "2023-09-08 00:00:00",
         "StartTime": "6pm",
         "EndTime": "8pm",
         "Venue": "Berkeley Art Center",
@@ -816,12 +800,10 @@
                 "Text": "Eventbrite"
             }
         ],
-        "Date": "Tuesday, August 29 from 7\u20138PM",
-        "StartTime": "7pm",
-        "EndTime": "8pm",
-        "Venue": "Virtual",
-        "Tags": [
-            "virtual"
-        ]
+        "Date": "2023-09-14 00:00:00",
+        "StartTime": "6pm",
+        "EndTime": "9pm",
+        "Venue": "Berkeley Art Center",
+        "Tags": []
     }
 ]
