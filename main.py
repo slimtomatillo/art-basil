@@ -104,6 +104,47 @@ def parse_time_to_timestamp(time_str):
 
     return None
 
+def get_sorting_index(date, start_time, end_time):
+    """
+    Use the date to sort if we have that. Use the time also
+    (start time if available otherwise end time) if we have that.
+
+    Expects date in the form YYYY-MM-DD 00:00:00.
+    Expects dater_time in the the form HHam/pm or Ham/pm.
+    """
+    time_sort = None
+    
+    # If we have the date, use it as the sorting index
+    if date:
+        time_sort = date
+
+        # These are potential formats the times could be in
+        formats = ['%I%p', '%I:%M%p', '%I%P', '%I:%M%P']
+            
+        # If we have the start time, use that to sort also
+        if start_time:
+            for fmt in formats:
+                try:
+                    # Try to parse time with current format
+                    parsed_time = datetime.strptime(start_time, fmt).time()
+                    time_sort = datetime.combine(time_sort, parsed_time)
+                except ValueError:
+                    # If parsing fails, continue to next format
+                    continue
+        
+        # Otherwise use the end time if we have it
+        elif end_time:
+            for fmt in formats:
+                try:
+                    # Try to parse time with current format
+                    parsed_time = datetime.strptime(end_time, fmt).time()
+                    time_sort = datetime.combine(time_sort, parsed_time)
+                except ValueError:
+                    # If parsing fails, continue to next format
+                    continue
+
+    return time_sort
+
 def get_de_young_events():
     """
     Uses BeautifulSoup to scrape event info from the de Young
@@ -335,7 +376,7 @@ def get_berkeley_art_center_events():
                         
                         # Convert to datetime object (and then back to string so it's json-serializable)
                         dt = datetime.strptime(f"{month} {day} {year}", "%B %d %Y")
-                        return dt.strftime('%Y-%m-%d %H:%M:%S')
+                        return dt
                     
                     return None
                 
@@ -416,14 +457,18 @@ def get_berkeley_art_center_events():
                 # Extract time
                 start_time, end_time = extract_time(date_str.split(' ')[-1])
 
+                # Get sorting index
+                time_sort = get_sorting_index(date, start_time, end_time)
+
                 # Collect event data
                 events_list.append(
                     {
                         "Title": title,
                         "Links": links,
-                        "Date": date,
+                        "Date": date.strftime('%Y-%m-%d %H:%M:%S'),
                         "StartTime": start_time,
                         "EndTime": end_time,
+                        "TimeSort": time_sort.strftime('%Y-%m-%d %H:%M:%S'),
                         "Venue": venue,
                         "Tags": list(set(tags)) # get unique list of tags
                     }
