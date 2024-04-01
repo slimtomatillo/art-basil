@@ -18,6 +18,23 @@ window.addEventListener('DOMContentLoaded', () => {
     fetch("data.json")  // Replace with the path to your JSON data file
         .then((response) => response.json())
         .then((data) => {
+            // Function to sort events by TimeSort
+            function sortEventsByTime(events) {
+                events.sort((a, b) => {
+                    if (!a.TimeSort && !b.TimeSort) return 0;
+                    if (!a.TimeSort) return 1;
+                    if (!b.TimeSort) return -1;
+
+                    const timeA = new Date(a.TimeSort);
+                    const timeB = new Date(b.TimeSort);
+
+                    return timeA - timeB;
+                });
+            }
+
+            // Sort the events by TimeSort
+            sortEventsByTime(data);
+
             // Populate the table rows with event data
             data.forEach((event) => {
                 const row = document.createElement("tr");
@@ -29,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                     // Use linksHTML to display all the links in the table cell
                     row.innerHTML = `
-                        <td>${event.Date}</td>
+                        <td>${event.DateText}</td>
                         <td>${event.Title} @ ${event.Venue}</td>
                         <td>${event.Tags.join(', ')}</td>
                         <td>${linksHTML}</td>
@@ -37,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 } else {
                     // If event.Link is undefined or not an array, display an empty cell
                     row.innerHTML = `
-                        <td>${event.Date}</td>
+                        <td>${event.DateText}</td>
                         <td>${event.Title} @ ${event.Venue}</td>
                         <td>${event.Tags.join(', ')}</td>
                         <td></td>

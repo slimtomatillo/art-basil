@@ -236,8 +236,8 @@
         "EndTime": null,
         "Venue": "de Young",
         "Tags": [
-            "tour",
-            "family"
+            "family",
+            "tour"
         ]
     },
     {
@@ -785,8 +785,10 @@
             }
         ],
         "Date": "2023-09-08 00:00:00",
+        "DateText": "Friday, September 8, 6-8pm",
         "StartTime": "6pm",
         "EndTime": "8pm",
+        "TimeSort": null,
         "Venue": "Berkeley Art Center",
         "Tags": [
             "performance"
@@ -801,8 +803,10 @@
             }
         ],
         "Date": "2023-09-14 00:00:00",
+        "DateText": "Thursday, September 14 from 6-9pm",
         "StartTime": "6pm",
         "EndTime": "9pm",
+        "TimeSort": null,
         "Venue": "Berkeley Art Center",
         "Tags": []
     }

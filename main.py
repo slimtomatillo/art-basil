@@ -381,9 +381,10 @@ def get_berkeley_art_center_events():
                     return None
                 
                 # Combine dates and extract date
-                date_str = " | ".join(dates)
-                date_text = date_str # copy date text to use for other purpose
+                date_str = " | ".join([d.replace('.', '').replace('–', '-').replace('-', '-').replace(' from', ',') for d in dates])
+                date_text = date_str # copy date text to use for tags
                 date_str = date_str.replace(" on zoom.", "")
+                date_display_text = ' '.join([word if word in [None] else word.capitalize() for word in date_str.split()]) # include words in list if we don't want to capitalize them
                 date = extract_date_to_timestamp(date_str)
                 
                 # Identify location
@@ -466,9 +467,10 @@ def get_berkeley_art_center_events():
                         "Title": title,
                         "Links": links,
                         "Date": date.strftime('%Y-%m-%d %H:%M:%S'),
+                        "DateText": date_display_text,
                         "StartTime": start_time,
                         "EndTime": end_time,
-                        "TimeSort": time_sort.strftime('%Y-%m-%d %H:%M:%S'),
+                        "TimeSort": None,
                         "Venue": venue,
                         "Tags": list(set(tags)) # get unique list of tags
                     }
