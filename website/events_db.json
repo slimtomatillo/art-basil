@@ -1,0 +1,386 @@
+{
+    "de Young": {
+        "Lhola Amira: Facing the Future-de Young": {
+            "name": "Lhola Amira: Facing the Future",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Current",
+            "dates": {
+                "start": "null",
+                "end": "2024-05-05"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/lhola-amira",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b161a2016295581bcb525e3c7e7d2722"
+        },
+        "Bouquets to Art 2024-de Young": {
+            "name": "Bouquets to Art 2024",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-06-04",
+                "end": "2024-06-09"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/bouquets-to-art-2024",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "4f1d02d9928eca1dfc11ae60de6b98df"
+        },
+        "Lee Mingwei: Rituals of Care-de Young": {
+            "name": "Lee Mingwei: Rituals of Care",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Current",
+            "dates": {
+                "start": "null",
+                "end": "2024-07-07"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/lee-mingwei",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "8a8924fda9433c3a33219d5da32c6ef6"
+        },
+        "Irving Penn-de Young": {
+            "name": "Irving Penn",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Current",
+            "dates": {
+                "start": "null",
+                "end": "2024-07-21"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/irving-penn",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a8c85957e85d037ac03f94e17db44a2f"
+        },
+        "Fashioning San Francisco: A Century of Style-de Young": {
+            "name": "Fashioning San Francisco: A Century of Style",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Current",
+            "dates": {
+                "start": "null",
+                "end": "2024-08-11"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/fashioning-san-francisco",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "2899eb322c0bbe0bbf246c167a600074"
+        },
+        "Nampeyo and the Siky\u00e1tki Revival-de Young": {
+            "name": "Nampeyo and the Siky\u00e1tki Revival",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Current",
+            "dates": {
+                "start": "null",
+                "end": "2024-09-15"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/nampeyo-and-sikyatki-revival",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "0a4d8501143d760a703b3db27bc1bd30"
+        },
+        "American Beauty: The Osher Collection of American Art-de Young": {
+            "name": "American Beauty: The Osher Collection of American Art",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-05-18",
+                "end": "2024-10-20"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/osher-american-art",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "7e10144467659a78b1b093065fdb2365"
+        },
+        "Art and War in the Renaissance: The Battle of Pavia Tapestries-de Young": {
+            "name": "Art and War in the Renaissance: The Battle of Pavia Tapestries",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-10-19",
+                "end": "2025-01-12"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/battle-pavia-tapestries",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "34dd0f94e9c7508424897d2806ea7bad"
+        },
+        "Tamara de Lempicka-de Young": {
+            "name": "Tamara de Lempicka",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-10-12",
+                "end": "2025-02-09"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/tamara-de-lempicka",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "6124f1ada2e370e921c7ae226d4c90ee"
+        },
+        "Leilah Babirye: We Have a History-de Young": {
+            "name": "Leilah Babirye: We Have a History",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-06-22",
+                "end": "2025-06-22"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/leilah-babirye",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "88fbc9e3b0401745bf7853b85c0e95d9"
+        },
+        "Rose B. Simpson: LEXICON-de Young": {
+            "name": "Rose B. Simpson: LEXICON",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-11-16",
+                "end": "2025-06-29"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/rose-b-simpson",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "3582b45f3cb961a3fb5d6e47779c6735"
+        },
+        "About Place: Bay Area Artists from the Svane Gift-de Young": {
+            "name": "About Place: Bay Area Artists from the Svane Gift",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-08-10",
+                "end": "2025-09-28"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/bay-area-artists-svane",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f3aad740943291f36b3773382b5084fb"
+        },
+        "Embroidered Histories-de Young": {
+            "name": "Embroidered Histories",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-12-14",
+                "end": "2025-12-07"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/embroidered-histories",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a05cbc583d49aa68823895634d69549b"
+        },
+        "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family-de Young": {
+            "name": "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family",
+            "venue": "de Young",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Current",
+            "dates": {
+                "start": "null",
+                "end": "2026-03-15"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/papua-new-guinea-mathias-kauage",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "30161545aeeb8aefd1d436da55829641"
+        }
+    },
+    "Legion of Honor": {
+        "Drawing the Line: Michelangelo to Asawa-Legion of Honor": {
+            "name": "Drawing the Line: Michelangelo to Asawa",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Current",
+            "dates": {
+                "start": "null",
+                "end": "2024-04-07"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/drawing-the-line",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "32aaad27c80b5ef2884f141e4a21557e"
+        },
+        "Japanese Prints in Transition: From the Floating World to the Modern World-Legion of Honor": {
+            "name": "Japanese Prints in Transition: From the Floating World to the Modern World",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-04-06",
+                "end": "2024-08-18"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/japanese-prints",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "90e9e9a4e16f91483ccecd89a7b7f11f"
+        },
+        "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)-Legion of Honor": {
+            "name": "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-04-06",
+                "end": "2024-08-25"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/zuan-cho-kimono-design",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "89c469ede3d8598ad3bc658181616edc"
+        },
+        "Woodcut: Primary Printmaking-Legion of Honor": {
+            "name": "Woodcut: Primary Printmaking",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-04-13",
+                "end": "2024-10-20"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/woodcut-primary-printmaking",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "587333c671d19ee847780ce721ed7f81"
+        },
+        "Mary Cassatt at Work-Legion of Honor": {
+            "name": "Mary Cassatt at Work",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-10-05",
+                "end": "2025-01-26"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/mary-cassatt",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "4336339d055b1b1cabf77c735b9e3214"
+        },
+        "Dress Rehearsal: The Art of Theatrical Design-Legion of Honor": {
+            "name": "Dress Rehearsal: The Art of Theatrical Design",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": "Future",
+            "dates": {
+                "start": "2024-11-09",
+                "end": "2025-04-27"
+            },
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/dress-rehearsal-theatrical-design",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "6ddeddbd06d4267b2775e97dfd65a6da"
+        }
+    }
+}

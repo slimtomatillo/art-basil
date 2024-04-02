@@ -12,57 +12,46 @@ window.addEventListener('scroll', () => {
 
 // Load data
 window.addEventListener('DOMContentLoaded', () => {
-    const eventList = document.getElementById('event-list');
+    fetch("events_db.json")
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.getElementById('event-list');
 
-    // Fetch the JSON data
-    fetch("data.json")  // Replace with the path to your JSON data file
-        .then((response) => response.json())
-        .then((data) => {
-            // Function to sort events by TimeSort
-            function sortEventsByTime(events) {
-                events.sort((a, b) => {
-                    if (!a.TimeSort && !b.TimeSort) return 0;
-                    if (!a.TimeSort) return 1;
-                    if (!b.TimeSort) return -1;
+            // Iterate over the data to create table rows for each event
+            Object.entries(data).forEach(([venue, events]) => {
+                Object.values(events).forEach(event => {
+                    const row = tableBody.insertRow();
 
-                    const timeA = new Date(a.TimeSort);
-                    const timeB = new Date(b.TimeSort);
+                    // Date column
+                    const dateCell = row.insertCell();
+                    dateCell.textContent = event.dates.start ? `${event.dates.start} to ${event.dates.end}` : 'Dates TBA';
 
-                    return timeA - timeB;
+                    // Event Title @ Venue column
+                    const titleVenueCell = row.insertCell();
+                    titleVenueCell.textContent = `${event.name} @ ${venue}`;
+
+                    // Tags column
+                    const tagsCell = row.insertCell();
+                    tagsCell.textContent = event.tags.join(', ');
+
+                    // Links column
+                    const linksCell = row.insertCell();
+                    event.links.forEach((link, index) => {
+                        const linkElement = document.createElement('a');
+                        linkElement.href = link.link;
+                        linkElement.textContent = link.description || 'Link';
+                        linkElement.target = '_blank'; // Open in new tab/window
+                        linksCell.appendChild(linkElement);
+
+                        // Add a line break if there are multiple links, but not after the last one
+                        if (index < event.links.length - 1) {
+                            linksCell.appendChild(document.createElement('br'));
+                        }
+                    });
                 });
-            }
-
-            // Sort the events by TimeSort
-            sortEventsByTime(data);
-
-            // Populate the table rows with event data
-            data.forEach((event) => {
-                const row = document.createElement("tr");
-
-                // Check if event.Links is defined
-                if (event.Links && Array.isArray(event.Links)) {
-                    // Create an array of anchor elements from the list of links
-                    const linksHTML = event.Links.map(linkObj => `<a href="${linkObj.Link}">${linkObj.Text}</a>`).join('<br>');
-
-                    // Use linksHTML to display all the links in the table cell
-                    row.innerHTML = `
-                        <td>${event.DateText}</td>
-                        <td>${event.Title} @ ${event.Venue}</td>
-                        <td>${event.Tags.join(', ')}</td>
-                        <td>${linksHTML}</td>
-                    `;
-                } else {
-                    // If event.Link is undefined or not an array, display an empty cell
-                    row.innerHTML = `
-                        <td>${event.DateText}</td>
-                        <td>${event.Title} @ ${event.Venue}</td>
-                        <td>${event.Tags.join(', ')}</td>
-                        <td></td>
-                    `;
-                }
-
-                eventList.appendChild(row);
             });
         })
-        .catch((error) => console.error("Error fetching data:", error));
+        .catch(error => {
+            console.error('Error loading events:', error);
+        });
 });
