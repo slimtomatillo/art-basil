@@ -152,7 +152,7 @@ def scrape_de_young_and_legion_of_honor():
                     # Identify phase and date fields
                     if date.lower().split()[0] == 'through':
                         # Get phase
-                        phase = 'Current'
+                        phase = 'current'
                         # Get dt versions of start and end dates
                         start_date = 'null'
                         dates = [date.lower().replace(',', '').replace('through ', '')]
@@ -160,7 +160,7 @@ def scrape_de_young_and_legion_of_honor():
 
                     else:
                         # Get phase
-                        phase = 'Future'
+                        phase = 'future'
                         # Get dt versions of start and end dates
                         dates = date.lower().replace(',', '').split(' – ')
                         # If no year in the date, add the year (use year of end date)
@@ -172,7 +172,7 @@ def scrape_de_young_and_legion_of_honor():
                     event_details = {
                         'name': name,
                         'venue': u['venue'],
-                        'tags': ['exhibition'],
+                        'tags': ['exhibition'] + [phase], # Add phase to list of tags
                         'phase': phase, # Possible phases are past, current, future
                         'dates': {'start': start_date, 'end': end_date},
                         'links': [
