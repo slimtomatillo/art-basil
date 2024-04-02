@@ -189,8 +189,7 @@ def main():
     Function that:
         1. Saves a copy of existing data
         2. Scrapes data from the de Young Museum & Legion of Honor
-        3. Scrapes data from the Berkeley Art Center
-        4. Saves data as json
+        3. Saves data as json
     """
     # Save a copy of existing json data
     try:
