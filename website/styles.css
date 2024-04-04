@@ -11,7 +11,7 @@ table, th, td {
 
 /* Basic styling */
 body {
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     /*background-color: #f0f0f0;*/
     line-height: 1.6;
 }
@@ -55,8 +55,28 @@ thead {
     background-color: white; /* Background color for odd rows */
 }
 
-.event-table tbody tr:nth-child(even) {
-    background-color: #ECECEC; /* Background color for even rows */
+.event-table tr:nth-child(12n+2) {
+    background-color: #dcf2df; /* pastel green */
+}
+
+.event-table tr:nth-child(12n+4) {
+    background-color: #ceecf8; /* pastel blue */
+}
+
+.event-table tr:nth-child(12n+6) {
+    background-color: #f0e1f4; /* pastel purple */
+}
+
+.event-table tr:nth-child(12n+8) {
+    background-color: #f8d6e1; /* pastel pink */
+}
+
+.event-table tr:nth-child(12n+10) {
+    background-color: #fde4cf; /* pastel orange */
+}
+
+.event-table tr:nth-child(12n+12) {
+    background-color: #f9f9da; /* pastel yellow */
 }
 
 /* Set different widths for specific columns */
