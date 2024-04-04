@@ -52,7 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(unsortedData => {
             // Assuming `sortEvents` expects and returns the whole dataset
             const sortedEvents = sortEvents(unsortedData); // Sort the data
-            console.log(sortedEvents)
 
             const tableBody = document.getElementById('event-list');
 
