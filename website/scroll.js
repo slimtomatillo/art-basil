@@ -12,8 +12,23 @@ window.addEventListener('scroll', () => {
 
 function sortEvents(events) {
     let eventsArray = [];
+    // Get today's date, reset hours to ensure we're only comparing dates
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
     Object.entries(events).forEach(([venue, venueEvents]) => {
         Object.values(venueEvents).forEach(event => {
+            // Convert event.start date to Date object for comparison
+            // Check if start date is provided and valid
+            if (event.dates.start && event.dates.start !== 'null') {
+                const startDate = new Date(event.dates.start);
+                // Compare start date with today's date
+                if (startDate <= today) {
+                    // If the event's start date is today or earlier, set it to 'null'
+                    event.dates.start = 'null';
+                }
+            }
+
             // Handle 'null' or missing end dates
             event.sortDate = event.dates.end && event.dates.end !== 'null' ? event.dates.end : '9999-12-31';
             // Assign a default high sort priority (will sort last)
@@ -61,28 +76,39 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 // Date column
                 const dateCell = row.insertCell();
-                const options = { year: 'numeric', month: 'short', day: 'numeric' };
-                let dateText = 'Dates TBA'; // Default text if both dates are 'null' or not provided
-                
-                if (event.dates.start !== 'null' && event.dates.end !== 'null') {
-                    // Both start and end dates are provided
-                    const startDate = new Date(event.dates.start);
-                    const formattedStartDate = new Intl.DateTimeFormat('en-US', options).format(startDate);
-                    const endDate = new Date(event.dates.end);
-                    const formattedEndDate = new Intl.DateTimeFormat('en-US', options).format(endDate);
-                    dateText = `${formattedStartDate} to ${formattedEndDate}`;
-                } else if (event.dates.start !== 'null') {
-                    // Only start date is provided
-                    const startDate = new Date(event.dates.start);
-                    const formattedStartDate = new Intl.DateTimeFormat('en-US', options).format(startDate);
-                    dateText = `Starts on ${formattedStartDate}`;
-                } else if (event.dates.end !== 'null') {
-                    // Only end date is provided
-                    const endDate = new Date(event.dates.end);
-                    const formattedEndDate = new Intl.DateTimeFormat('en-US', options).format(endDate);
-                    dateText = `Through ${formattedEndDate}`;
+                const options = { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'};
+                let dateText = 'Dates TBA'; // Default text for events without specific dates
+            
+                const startDate = event.dates.start !== 'null' ? new Date(event.dates.start) : null;
+                const endDate = event.dates.end !== 'null' ? new Date(event.dates.end) : null;
+                const today = new Date();
+                today.setHours(0, 0, 0, 0); // Normalize today's date for comparison
+
+                console.log(event)
+                console.log(endDate)
+            
+                const isPastEvent = event.tags.includes('past');
+                const isOngoingEvent = (startDate === null || startDate <= today) && (endDate === null || endDate >= today);
+            
+                if (isPastEvent && endDate) {
+                    // For past events with a known end date
+                    dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+                } else if (isOngoingEvent) {
+                    // For ongoing events
+                    if (startDate && endDate) {
+                        // If both start and end dates are known
+                        dateText = `${new Intl.DateTimeFormat('en-US', options).format(startDate)} to ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+                    } else if (startDate) {
+                        // If only the start date is known
+                        dateText = `Started on ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+                    } else if (endDate) {
+                        // If only the end date is known
+                        dateText = `Through ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+                    } else {
+                        // If neither date is known, it remains "Dates TBA"
+                    }
                 }
-                    
+            
                 dateCell.textContent = dateText;
 
                 // Event Title @ Venue column
