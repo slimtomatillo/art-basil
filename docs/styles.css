@@ -60,31 +60,31 @@ thead {
 }
 
 /* Define CSS styles for alternating rows */
-.event-table tbody tr:nth-child(odd) {
-    background-color: white; /* Background color for odd rows */
+.event-table tbody tr:nth-child(even) {
+    background-color: white; /* Background color for even rows */
 }
 
-.event-table tr:nth-child(12n+2) {
+.event-table tbody tr:nth-child(12n+1) {
     background-color: #dcf2df; /* pastel green */
 }
 
-.event-table tr:nth-child(12n+4) {
+.event-table tbody tr:nth-child(12n+3) {
     background-color: #ceecf8; /* pastel blue */
 }
 
-.event-table tr:nth-child(12n+6) {
+.event-table tbody tr:nth-child(12n+5) {
     background-color: #f0e1f4; /* pastel purple */
 }
 
-.event-table tr:nth-child(12n+8) {
+.event-table tbody tr:nth-child(12n+7) {
     background-color: #f8d6e1; /* pastel pink */
 }
 
-.event-table tr:nth-child(12n+10) {
+.event-table tbody tr:nth-child(12n+9) {
     background-color: #fde4cf; /* pastel orange */
 }
 
-.event-table tr:nth-child(12n+12) {
+.event-table tbody tr:nth-child(12n+11) {
     background-color: #f9f9da; /* pastel yellow */
 }
 
