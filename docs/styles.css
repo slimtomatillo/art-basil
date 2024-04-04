@@ -40,7 +40,6 @@ main {
     width: 25%; /* Full width */
     display: block; /* Ensure it's a block-level element */
     box-sizing: border-box; /* Include padding and border in the element's total width */
-    margin-left: 0;
 }
 
 .event-table {
