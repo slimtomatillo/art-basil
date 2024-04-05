@@ -83,9 +83,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 const endDate = event.dates.end !== 'null' ? new Date(event.dates.end) : null;
                 const today = new Date();
                 today.setHours(0, 0, 0, 0); // Normalize today's date for comparison
-
-                console.log(event)
-                console.log(endDate)
             
                 const isPastEvent = event.tags.includes('past');
                 const isOngoingEvent = (startDate === null || startDate <= today) && (endDate === null || endDate >= today);
