@@ -7,7 +7,7 @@ import datetime as dt
 import numpy as np
 from unicodedata import normalize
 
-DB_FILE = 'website/events_db.json'
+DB_FILE = 'docs/events_db.json'
 EVENT_TAGS = ['exhibition',]
 
 # Create month to month number dict
@@ -327,7 +327,6 @@ def scrape_sfmoma():
 
                 event_image_url = event.find("img", class_="exhibitionsgrid-wrapper-grid-item-image")['src']
 
-                # Append extracted details to the list
                 event_details = {
                     'name': event_title,
                     'venue': 'SFMOMA',
@@ -363,7 +362,7 @@ def main():
     """
     # Save a copy of existing json data
     try:
-        copy_json_file('website/events_db.json', 'website/events_db_copy.json')
+        copy_json_file('docs/events_db.json', 'docs/events_db_copy.json')
     except FileNotFoundError:
         pass
 
