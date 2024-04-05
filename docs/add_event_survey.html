@@ -10,7 +10,7 @@
     <header>
         <h2>Add Art Event</h2>
         <h3>
-            <strong>Please fill in the sections below if you would like your event to be added to the calendar. You MUST include a link to some kind of an event page/flyer to be added.</strong>
+            <strong>Please fill in the sections below if you would like to add an event to the calendar. You MUST include a link to some kind of an event page/flyer to be added.</strong>
         </h3>
     </header>
     <p>
@@ -38,17 +38,16 @@
         </label>
         <input type="text" id="location" name="location" required>
         <br><br>
-        <!-- Date Input for Event Date -->
-        <label for="event_date">Event Date
-            <span style="color: red; font-size: 12px;">*</span>
-        </label>
-        <input type="date" id="event_date" name="event_date" required>
+        <!-- Date Input for dates -->
+        <label for="start_date">Start Date</label>
+        <input type="date" id="start_date" name="start_date">
+        <br><br>
+        <label for="end_date">End Date</label>
+        <input type="date" id="end_date" name="end_date">
         <br><br>
         <!-- Time Input for Start Time -->
-        <label for="start_time">Start Time
-            <span style="color: red; font-size: 12px;">*</span>
-        </label>
-        <input type="time" id="start_time" name="start_time" required>
+        <label for="start_time">Start Time</label>
+        <input type="time" id="start_time" name="start_time">
         <br><br>
         <!-- Time Input for End Time -->
         <label for="end_time">End Time (if exists)</label>
@@ -59,10 +58,8 @@
         <input type="text" id="tags" name="tags">
         <br><br>
         <!-- Price -->
-        <label for="price">Price
-            <span style="color: red; font-size: 12px;">*</span>
-        </label>
-        <input type="text" id="price" name="price" required>
+        <label for="price">Price</label>
+        <input type="text" id="price" name="price">
         <br><br>
         <!-- Links -->
         <label for="link_event_page">Link to Event Page
