@@ -6,6 +6,8 @@ from hashlib import md5
 import datetime as dt
 import numpy as np
 from unicodedata import normalize
+import pandas as pd
+import os
 
 DB_FILE = 'docs/events_db.json'
 EVENT_TAGS = ['exhibition', 'free']
@@ -346,7 +348,6 @@ def scrape_sfmoma():
                     ],
 
                 }
-
                 process_event(event_details)
 
         else:
@@ -375,6 +376,32 @@ def main():
     print(f"Starting scrape for {venue}")
     scrape_sfmoma()
     print(f"Finished scrape for {venue}")
+
+    # Load db and count the venues and events
+    db = load_db()
+    # Flatten the db into a list of event dictionaries
+    events_list = []
+    for category in db.values():
+        for event in category.values():
+            events_list.append(event)
+    print('The db contains {:,} venues, with {:,} events'.format(len(db), len(events_list)))
+
+    # Record the number of venues and events in the db
+    file_path = 'docs/db_size.csv'
+    df = pd.DataFrame([{
+        "timestamp": pd.Timestamp.now(),
+        "num_venues": len(db),
+        "num_events": len(events_list)
+    }])
+    # Check if the file exists
+    if os.path.exists(file_path):
+        # File exists, append without writing the header
+        df.to_csv(file_path, mode='a', header=False, index=False)
+    else:
+        # File does not exist, write with the header
+        df.to_csv(file_path, mode='w', header=True, index=False)
+    
+    print('Finished')
 
 if __name__ == "__main__":
     main()

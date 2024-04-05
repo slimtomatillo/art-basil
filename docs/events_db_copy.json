@@ -1404,5 +1404,29 @@
             ],
             "hash": "50586beaef85b67d9531c0861cfc1de1"
         }
+    },
+    "San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
+        "Intimate Nature: Plants and Landscapes of Central California Paintings by Jeanne Rosen Sofen-San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
+            "name": "Intimate Nature: Plants and Landscapes of Central California Paintings by Jeanne Rosen Sofen",
+            "venue": "San Francisco Botanical Gardens (Helen Crocker Russell Library)",
+            "description": "Using a variety of painting techniques, Jeanne Rosen Sofen has created a loving tribute to the beauty and diversity of Central California, from Sierra Nevada mountains to oak woodlands, to coastal hills and redwoods. A lifetime of enjoying and observing the natural world combined with years of exploring painting techniques has brought us this exciting exhibit of paintings of plants and landscapes.",
+            "tags": [
+                "exhibition",
+                "current",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-02-01",
+                "end": "2024-05-31"
+            },
+            "links": [
+                {
+                    "link": "https://gggp.org/art-exhibit-jeanne-rosen-sofen/",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "777845f242364d865d96db1c9239a9fa"
+        }
     }
 }
