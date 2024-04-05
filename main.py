@@ -8,7 +8,7 @@ import numpy as np
 from unicodedata import normalize
 
 DB_FILE = 'docs/events_db.json'
-EVENT_TAGS = ['exhibition',]
+EVENT_TAGS = ['exhibition', 'free']
 
 # Create month to month number dict
 month_to_num_dict = {
