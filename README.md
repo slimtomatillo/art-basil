@@ -6,9 +6,9 @@ This project aims to create and populate (with fresh data!) a website that lists
 
 **Scope**  
 - *Location:* I will start with **San Francisco Bay Area** as that is my area.
-- *Events:* Art shows + art-related events (e.g. workshops, talks, tours) at museums, gallieries, and colleges/universities.
+- *Events:* Art shows + art-related events (e.g. workshops, talks, tours) at museums, galleries, and colleges/universities.
 
 **Inspiration**  
-This project was inspired by and is largely based on [19hz.info](https://19hz.info/eventlisting_BayArea.php) that has local listings for electronic music events.
+This project was inspired by [19hz.info](https://19hz.info/eventlisting_BayArea.php) which has local listings for electronic music events.
 
 © A. Smith
