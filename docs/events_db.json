@@ -307,11 +307,11 @@
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future"
+                "current"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-04-06",
+                "start": "null",
                 "end": "2024-08-18"
             },
             "links": [
@@ -320,18 +320,18 @@
                     "description": "Event Page"
                 }
             ],
-            "hash": "270b94f360113293f03825a7d068452d"
+            "hash": "b5b8e7045fb10c6fe8d103be7f0e22fe"
         },
         "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)-Legion of Honor": {
             "name": "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future"
+                "current"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-04-06",
+                "start": "null",
                 "end": "2024-08-25"
             },
             "links": [
@@ -340,7 +340,7 @@
                     "description": "Event Page"
                 }
             ],
-            "hash": "80c56656f11e3fef11b456e1450d20a8"
+            "hash": "0fe554cea9cb1b832a266e7ef7d6a4ed"
         },
         "Woodcut: Primary Printmaking-Legion of Honor": {
             "name": "Woodcut: Primary Printmaking",
@@ -1427,6 +1427,2717 @@
                 }
             ],
             "hash": "777845f242364d865d96db1c9239a9fa"
+        }
+    },
+    "Contemporary Jewish Museum": {
+        "First Light: Rituals of Glass and Neon Art-Contemporary Jewish Museum": {
+            "name": "First Light: Rituals of Glass and Neon Art",
+            "venue": "Contemporary Jewish Museum",
+            "description": "An exhibition curated by She Bends First Light: Rituals of Glass and Neon Art explores mastery in craft as a devotional pursuit, presenting breathtaking artworks that connect both artists and viewers to spirituality, wonder, and universal questions of human existence. The exhibiting artists utilize both science and art as equally noble methods to explore the mysteries of the universe and its reflection in their consciousness. The exhibition features artworks in neon, glass, and plasma, large-scale sculptures, and installations that invite you to learn about fascinating scientific processes, and inspire deeper contemplation of the role of light in our quest to understand our place in the universe. Through these works, the artists gain an intimate understanding of light as a profound and transformative force. Experience awe, make spiritual connections, and discover the science and craft of neon and glass artwork. First Light: Rituals of Glass and Neon Art is an exhibition by She Bends, an organization dedicated to building a more equitable future for neon art through public education, curatorial projects, and artist programs that foster diversity and sustainability.",
+            "tags": [
+                "exhibition",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2023-12-07",
+                "end": "2024-04-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/200",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "967d9af382fda553734b88d44ab71721"
+        },
+        "RetroBlakesberg: The Music Never Stopped-Contemporary Jewish Museum": {
+            "name": "RetroBlakesberg: The Music Never Stopped",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Travel through some of the most electrifying moments in music history through the lens of Bay Area\u2013based photographer Jay Blakesberg. RetroBlakesberg: The Music Never Stopped presents photographs of legendary musicians that reveal the evolution of San Francisco\u2019s unique music culture and its wide-reaching influence. Featuring images of the Grateful Dead, Joni Mitchell, Tracy Chapman, Neil Young, Soundgarden, and many more alongside original tickets stubs, press passes, and other ephemera, this exhibition invites visitors to experience an electrifying visual history of the sounds and stories that have shaped the Bay Area and beyond.",
+            "tags": [
+                "exhibition",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2023-08-31",
+                "end": "2024-07-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/199",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b865ee62b50f2c8c02a07d2b8b86c36e"
+        },
+        "Radiant Practices: Illuminating Jewish Traditions-Contemporary Jewish Museum": {
+            "name": "Radiant Practices: Illuminating Jewish Traditions",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Radiant Practices: Illuminating Jewish Traditions traces the foundational role of light in Jewish life and ritual, both historically and today. Journey through a collection of Jewish ritual objects, from menorahs to memorial candles, that offer insights into practices that draw on light to uplift Jewish holidays, lifecycle moments, and spiritual spaces. Presented in The CJM\u2019s Stephen and Maribelle Leavitt Yud gallery, the exhibition brings new meaning to the presence of natural light within this symbolically rich gallery while offering new reflections on the forms of light that illuminate Jewish ritual.",
+            "tags": [
+                "exhibition",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2023-12-07",
+                "end": "2024-04-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/201",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "98aa97b3109887c8e5b3629dbaac6234"
+        },
+        "L'Chaim: Celebrating Our Building at 15-Contemporary Jewish Museum": {
+            "name": "L'Chaim: Celebrating Our Building at 15",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum\u2019s celebrated building, designed by world-renowned architect Daniel Libeskind, has served as an artistic, community, and cultural generator since its opening fifteen years ago. This exhibition delves into the deep symbolism imbued in The CJM\u2019s iconic building. Inspired by the Hebrew phrase l\u2019chaim (\u201cto life\u201d), used most often as a toast to mark moments of togetherness and celebration, the architecture of The CJM\u2019s building embodies the values, traditions, and ideas The Museum explores within its walls. L'Chaim: Celebrating Our Building at 15 explores the multitude of symbols layered in the space we inhabit, unlocking the meaning behind its dynamic energy and allowing all who visit to experience the space anew.",
+            "tags": [
+                "exhibition",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2023-02-16",
+                "end": "2024-06-09"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/197",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "52839d982e2702967ceb19dbe214585c"
+        },
+        "Annie Albagli: We Become [Vessels]-Contemporary Jewish Museum": {
+            "name": "Annie Albagli: We Become [Vessels]",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Bay Area artist Annie Albagli\u2019s expansive video-based installation draws on Jewish tradition, local geography, and ritual to respond to a time of widespread isolation and a desire for human connection. Situated in The CJM\u2019s intimate Black Box Gallery, the installation combines overlaid imagery and field recordings of the Marin headlands with crashing waves and Jewish ritual objects to offer visitors new ways to move through space, time, and familiar and unfamiliar places. Displayed for the first time in a solo museum exhibition, Albagli\u2019s work both draws on and decontextualizes Jewish stories and local histories to break boundaries, explore our interdependence with each other and our world, and offer ways in which viewers can reimagine notions of space and self.",
+            "tags": [
+                "exhibition",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2023-03-23",
+                "end": "2024-07-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/196",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "54d24812a69fcacc3d155521b37fcabc"
+        },
+        "Lamp of the Covenant: Dave Lane-Contemporary Jewish Museum": {
+            "name": "Lamp of the Covenant: Dave Lane",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum commissioned artwork by Sacramento-based artist Dave Lane to be placed in its soaring lobby space. The massive sculpture, entitled Lamp of the Covenant , is a 90-foot-long, six ton work suspended high over the heads of visitors. Attached to an enormous oval of steel are antique objects: world globes, light bulbs, tools such as nineteenth century apple peelers and blow torches, and various other objects that suggest the unfolding marvels of the cosmos.",
+            "tags": [
+                "exhibition",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/4",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f9eb6462b43f79a19f38f41d4a00d232"
+        },
+        "California Jewish Open-Contemporary Jewish Museum": {
+            "name": "California Jewish Open",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Museum\u2019s first major open call exhibition invited Jewish-identifying artists in California to submit artworks in response to a central question: How are artists looking to the many aspects of Jewish culture, identity, and community to foster, reimagine, hold, or discover connection? The resulting exhibition brings together the work of forty-seven artists reflecting on their connection to Judaism, the world, and their own history. Through a wide range of media, including paintings, sculptures, interactive video games, video works, photographs, and more, the California Jewish Open illustrates some of the myriad ways in which these artists\u2019 Jewish identity informs their connection to the world at large\u2014and offers a window into the universal human need for connection in all its complexity.",
+            "tags": [
+                "exhibition",
+                "future"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-06-06",
+                "end": "2024-10-20"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/234",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "dd29a18a14f550f959a7c30589af5aa1"
+        },
+        "Virtual Exhibition\u2014What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
+            "name": "Virtual Exhibition\u2014What We Hold: A Youth Audio Project",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The teen years are instrumental in the development of a sense of self. They are also a critical time in the creation of what psychologists from the Family Narrative Lab at Emory University call the \u201cintergenerational self\u201d\u2014a self embedded in a larger family history. What shapes us? Which family histories become our core stories? How do we make them our own? Over fifty teens, ranging in age from twelve to nineteen years old, created audio works reflecting on these questions and exploring themes including migration, language, rebellion, persistence, and passion.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-04-19",
+                "end": "2021-04-01"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/149",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "175787d484edfa0a44539ba0ba127eb7"
+        },
+        "Mika Rottenberg: Spaghetti Blockchain-Contemporary Jewish Museum": {
+            "name": "Mika Rottenberg: Spaghetti Blockchain",
+            "venue": "Contemporary Jewish Museum",
+            "description": "One of the most innovative and internationally acclaimed artists working today, New York\u2013based Mika Rottenberg (b. 1976, Buenos Aires) employs a disarmingly absurd sense of humor to confront the paradoxes of global capitalism and uncover the surprising ways in which we are all connected. This exhibition presents Rottenberg\u2019s most prominent videos, installations, and sculptures of the past decade in the first museum survey of her work ever to be presented on the West Coast. Explore a collection of vividly colorful video installations and kinetic sculptures that uncover the surreal qualities of mass production and consumption.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-05-18",
+                "end": "2023-10-22"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/195",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "7c95100fd93f29c258951c6a4bbf2379"
+        },
+        "Cara Levine: To Survive I Need You to Survive-Contemporary Jewish Museum": {
+            "name": "Cara Levine: To Survive I Need You to Survive",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Cara Levine: To Survive I Need You to Survive grapples with some of the most pressing issues of our time, including police brutality, climate change, and the COVID-19 pandemic. Through video, sculpture, and installation, the California-based artist uses her artistic practice as a means to explore and process grief around personal and collective traumas, highlighting how creative endeavors can facilitate healing and help mourners find meaning in community with one another. Visitors will have the opportunity to reflect on the works on view as well as participate in creating works in real time with the artist, both in the gallery and through public programs. Drawing on Jewish traditions, community practice, and interconnectedness, the exhibition invites visitors to explore installations and sculptural works that plumb the depths of the intimate and universal experiences of grief and regeneration.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-02-16",
+                "end": "2023-07-30"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/194",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c573f203ab2577c2f4328f315135eae5"
+        },
+        "Gillian Laub: Family Matters-Contemporary Jewish Museum": {
+            "name": "Gillian Laub: Family Matters",
+            "venue": "Contemporary Jewish Museum",
+            "description": "For the last two decades, American photographer Gillian Laub has used the camera to investigate how society\u2019s most complex questions are often writ large in our most intimate relationships. Throughout her career she has been simultaneously, and privately, documenting the emotional, psychological, and political landscape of her own family\u2014exploring her growing discomfort with the many extravagances that marked their lives. Intense intergenerational bonds have shaped and nurtured Laub, but have also been fraught. Balancing empathy with critical perspective, humor with horror, the closeness of family with the distance of the artist, Laub offers a picture of an American family saga that feels both anguished and hopeful.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-13",
+                "end": "2023-04-09"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/161",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a6975db0267918b44ae689c1baa02915"
+        },
+        "Oz is for Oznowicz: A Puppet Family's History-Contemporary Jewish Museum": {
+            "name": "Oz is for Oznowicz: A Puppet Family's History",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Frank Oz is a legendary actor, film director, and performer known widely for being the closest collaborator of Muppet creator Jim Henson. Oz originated and performed many iconic Muppet characters, including Miss Piggy, Fozzie Bear, and Cookie Monster, as well as Yoda in the Star Wars films. Oz\u2019s path to performing, puppetry, and use of humor as a tool for both social critique and social good, was paved by his parents, Isidore (Mike) and Frances Oznowicz.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-07-21",
+                "end": "2023-03-05"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/160",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "75d87746839d9459ecb4a4ed33a99070"
+        },
+        "Tikkun: For the Cosmos, the Community, and Ourselves-Contemporary Jewish Museum": {
+            "name": "Tikkun: For the Cosmos, the Community, and Ourselves",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Tikkun: For the Cosmos, the Community, and Ourselves presents works by thirty Bay Area\u2013based contemporary artists reflecting on the Jewish concept of tikkun (Hebrew for \u201cto repair\u201d). In a moment of collective challenges and uncertainty, this exhibition re-examines the term tikkun as a phenomenon of care and interconnectedness that is grounded in personal action, environmental responsibility, and community, unfixed from its evolving meanings throughout history. Taken together, the works in this exhibition consider how the concept of tikkun can help us look critically both inward and outward, guide us through change, and build resilience for the ongoing work of repair.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-02-17",
+                "end": "2023-01-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/158",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "2ad4ed6b5e0154d07498e9e4d985bbbb"
+        },
+        "The Jim Henson Exhibition: Imagination Unlimited-Contemporary Jewish Museum": {
+            "name": "The Jim Henson Exhibition: Imagination Unlimited",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Jim Henson Exhibition: Imagination Unlimited celebrates the legacy of Jim Henson (1936\u20131990), trailblazing puppeteer, animator, cartoonist, actor, inventor, and filmmaker. Featuring more than 150 objects drawn from the beloved worlds of Sesame Street, Fraggle Rock, The Dark Crystal, Labyrinth , and more, the exhibition highlights Henson\u2019s groundbreaking work for film and television, his indelible mark on popular culture, and the profound social impact of his work. It also includes material from Henson\u2019s experimental film projects and his early work, presenting him as a restlessly creative performer and technical innovator. Discover how Henson and his team of builders, performers, and writers created an unparalleled body of work, sharing characters and stories that represent diverse backgrounds and abilities. These stories continue to delight audiences and inspire people of all ages to look beyond differences and cultivate a more compassionate, inclusive world.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-03-31",
+                "end": "2022-08-14"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/157",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a0f0022a3d96a43d536083cd6a284dff"
+        },
+        "GOLEM: A Call to Action-Contemporary Jewish Museum": {
+            "name": "GOLEM: A Call to Action",
+            "venue": "Contemporary Jewish Museum",
+            "description": "GOLEM: A Call to Action is an exhibition in three parts by Los Angeles\u2013based artist Julie Weitz, comprising three video artworks\u2014 Golem v. Golem, My Golem as a Wildland Firefighter, and Prayer for Burnt Forests \u2014that draw on Jewish allegory, folklore, and spiritual practice to confront societal and ecological disasters. The legend of the golem originates as far back as the Middle Ages, when Jewish mystics imagined the creation of a clay humanoid as a meditative technique for becoming closer to God. By the nineteenth century, popular Yiddish folktales characterized the golem as a helper, companion, or rescuer of an imperiled Jewish community. In this exhibition, Weitz revitalizes golem mythology to frame a moral imperative for action on the social and ecological issues we face today.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-06-21",
+                "end": "2022-06-19"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/151",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "9edaecb1e5b55083191a3f77d17ca5d2"
+        },
+        "Experience Leonard Cohen-Contemporary Jewish Museum": {
+            "name": "Experience Leonard Cohen",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Leonard Cohen\u2019s words gave voice to the human condition, in all of its grace and imperfection\u2014and to this day, they continue to inspire generations of artists, musicians, and writers. Experience Leonard Cohen is a series of four solo exhibitions of contemporary art inspired by the life and work of Leonard Cohen (1934\u20132016), the influential musician, man of letters, and global icon from Montr\u00e9al, Canada.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-08-05",
+                "end": "2022-02-13"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/116",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "8ac4b6cfc250bfdfc2020107500cecec"
+        },
+        "Candice Breitz: I'm Your Man-Contemporary Jewish Museum": {
+            "name": "Candice Breitz: I'm Your Man",
+            "venue": "Contemporary Jewish Museum",
+            "description": "This solo exhibition by artist Candice Breitz features the work I\u2019m Your Man (A Portrait of Leonard Cohen) , a nineteen-channel video installation presented across two spaces. The work brings together a community of eighteen ardent Leonard Cohen fans\u2014each of whom has cherished Cohen\u2019s music for over half a century\u2014to pay posthumous tribute to the late legend.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-09-18",
+                "end": "2022-02-13"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/155",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "9da189f740c65a12dcc2bfd669676283"
+        },
+        "Marshall Trammell in Residence-Contemporary Jewish Museum": {
+            "name": "Marshall Trammell in Residence",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Marshall Trammell in Residence offers reflections on Leonard Cohen\u2019s life, spirituality, and musical practice in real time. An Oakland-based experimental archivist, percussionist, conductor, and composer who has built a practice centered on collaboration, Marshall Trammell will periodically inhabit The Museum's Maribelle and Stephen Leavitt Yud gallery in a dynamic residency that may include improvisation, performance, and collaborative re-contextualization of diverse facets of Cohen\u2019s legacy.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-09-18",
+                "end": "2022-02-13"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/156",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "04015c43e9f4440b1d5f32d76485fa5e"
+        },
+        "George Fok: Passing Through-Contemporary Jewish Museum": {
+            "name": "George Fok: Passing Through",
+            "venue": "Contemporary Jewish Museum",
+            "description": "George Fok\u2019s Passing Through is an immersive video work celebrating Leonard Cohen\u2019s singular voice, influential music, charismatic persona, and inimitable stage presence. Drawing on a vast archive of audiovisual material, Fok pays tribute to Cohen\u2019s monumental five-decade career through a collage of collective memories, concert footage, and emotions that have enchanted generations of fans around the world. Presented as a seamless, hour-long video presentation, Passing Through invites visitors to explore Cohen\u2019s life and legacy as a mash-up concert, a composite portrait of the artist, and an evocative reflection on his relationship with God, his fans, and himself.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-08-05",
+                "end": "2022-01-02"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/153",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "8da9e905968b9f2cf35aa6e8d66a8ea6"
+        },
+        "Judy Chicago: Cohanim-Contemporary Jewish Museum": {
+            "name": "Judy Chicago: Cohanim",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Judy Chicago: Cohanim , a solo exhibition by inimitable artist Judy Chicago, features twelve vibrant paintings on porcelain that explore and reflect on the lyrics of Leonard Cohen. Chicago, who has led the contemporary art field in feminist practice for decades, created this body of work as a personal tribute to Cohen's lyrics and what they have meant to her throughout her life. In their colorful, spare, and painterly interpretations of Cohen\u2019s songs, these works express a sense of intimacy and heartfelt spiritual connection.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-08-05",
+                "end": "2022-01-02"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/154",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "0f4b70024f1b79cba3a031035cac5eac"
+        },
+        "Levi Strauss: A History of American Style-Contemporary Jewish Museum": {
+            "name": "Levi Strauss: A History of American Style",
+            "venue": "Contemporary Jewish Museum",
+            "description": "In 1873, at the end of the California Gold Rush, Levi Strauss & Co., named for a Bavarian Jewish dry goods merchant in San Francisco, obtained a U.S. patent with tailor Jacob Davis on the process of putting metal rivets in men\u2019s denim work pants to increase their durability. It was the birth of the blue jean.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-02-13",
+                "end": "2021-08-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/114",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "3dc6bd3bc6f148809242a5f324f8ef56"
+        },
+        "Threads of Jewish Life: Ritual and Other Textiles from the San Francisco Bay Area-Contemporary Jewish Museum": {
+            "name": "Threads of Jewish Life: Ritual and Other Textiles from the San Francisco Bay Area",
+            "venue": "Contemporary Jewish Museum",
+            "description": "This exhibition draws extensively from the holdings of The Magnes Collection of Jewish Art and Life (University of California, Berkeley) and showcases a variety of textiles in use by San Francisco Jewish community members during the late nineteenth and early twentieth centuries.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-02-13",
+                "end": "2021-06-27"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/115",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "eaeef8bdb37065f30133286d909ac60c"
+        },
+        "Predicting the Past: Zohar Studios, The Lost Years-Contemporary Jewish Museum": {
+            "name": "Predicting the Past: Zohar Studios, The Lost Years",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Los Angeles-based artist Stephen Berkman\u2019s immersive photography installation is a tribute to Shimmel Zohar, a mythical nineteenth-century Jewish immigrant photographer, founder of Zohar Studios. The exhibition includes over thirty photographs, several large installations, a cabinet of curiosities, and a large format artist book about the Zohar project.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-10-17",
+                "end": "2021-06-27"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/106",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "4d0e3ee837bdac30eed1c2a25f57dd73"
+        },
+        "What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
+            "name": "What We Hold: A Youth Audio Project",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Featuring over fifty individual audio works created by teens, reflecting on stories of migration, language, passion, persistence, tradition, bridging distance, and love.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-04-14",
+                "end": "2020-03-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/111",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "4a9387e4bb59df7a36563d98ee7d859d"
+        },
+        "Daria Martin: Tonight the World-Contemporary Jewish Museum": {
+            "name": "Daria Martin: Tonight the World",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Tonight the World , Daria Martin\u2019s new installation, co-commissioned with Barbican, London, combines computer gaming technology and film to explore the unconscious memories of her grandmother, Bay Area-based artist Susi Stiassni. As a teenager, Stiassni and her family fled then Czechoslovakia from the imminent Nazi occupation, eventually settling in Marin County, where Martin was born and raised.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-06-27",
+                "end": "2020-02-23"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/110",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "bacbf21e6e98c59685909902c5a4041e"
+        },
+        "Annabeth Rosen: Fired, Broken, Gathered, Heaped-Contemporary Jewish Museum": {
+            "name": "Annabeth Rosen: Fired, Broken, Gathered, Heaped",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Annabeth Rosen: Fired, Broken, Gathered, Heaped is the artist\u2019s first major museum survey and chronicles over twenty years of her work in ceramics. The exhibition features more than 120 of Rosen\u2019s most influential and dynamic works, never before exhibited in her home base of Northern California. Included are both early and recent ceramic sculptures that range from the diminutive to the monumental, as well as largescale works on paper that mirror the trajectory of her sculptural practice.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-07-25",
+                "end": "2020-01-19"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/109",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "6a174aa70b6ab0d8ef047d17f68ea87d"
+        },
+        "Izidora Leber LETHE: Peristyle-Contemporary Jewish Museum": {
+            "name": "Izidora Leber LETHE: Peristyle",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Izidora Leber LETHE: Peristyle is the first solo museum exhibition of Croatian-Swiss, Oakland-based artist Izidora Leber LETHE. Drawing from the visual languages of Brutalist architecture and minimalist performance scores, this site-specific installation and performance mines the layered memories of the double \u00e9migr\u00e9 artist.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-07-25",
+                "end": "2020-01-19"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/112",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "6bc3dbfea3947d9333d3d051e1ea0d33"
+        },
+        "In That Case: Havruta in Contemporary Art\u2014Oxossi Ayofemi and Risa Wechsler-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art\u2014Oxossi Ayofemi and Risa Wechsler",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Visual artist Oxossi Ayofemi and her chosen havruta partner, groundbreaking Stanford physicist Risa Wechsler, infuse the concept of dark matter and dark energy with notions of power, blackness, diaspora, economy, and utopian imagination. What if our city and economy were built from a metaphor of abundance instead of scarcity?",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-07-26",
+                "end": "2020-01-14"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/105",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b1e5d7b994b807b68bef3c7213badb94"
+        },
+        "Show Me as I Want to Be Seen-Contemporary Jewish Museum": {
+            "name": "Show Me as I Want to Be Seen",
+            "venue": "Contemporary Jewish Museum",
+            "description": "How do we depict \u201cthe self\u201d if it is unknowable, inherently constructed, and ever changing? How does the concept of portraiture shift when categories are in crisis, and visibility itself is problematic?",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-02-07",
+                "end": "2019-07-07"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/108",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b74605021606dcb5306d3e3ed0552cc0"
+        },
+        "Lew the Jew and His Circle: Origins of American Tattoo-Contemporary Jewish Museum": {
+            "name": "Lew the Jew and His Circle: Origins of American Tattoo",
+            "venue": "Contemporary Jewish Museum",
+            "description": "\u201cLew the Jew\u201d Alberts (1880\u20131954) was one of the most influential artists tattooing in NYC\u2019s Bowery at the beginning of the twenti\u00adeth century. The exhibition includes previously unpublished and rare original tattoo artwork, photos, and correspondence between Lew and San Francisco tattooers \u201cBrooklyn Joe\u201d Lieber and C. J. \u201dPop\u201d Eddy.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-07-26",
+                "end": "2019-06-09"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/103",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b17f8e9ee85d52ad26bfa0ebf2eeaca1"
+        },
+        "What We Hold: Youth Voices on Roots and What Matters Most-Contemporary Jewish Museum": {
+            "name": "What We Hold: Youth Voices on Roots and What Matters Most",
+            "venue": "Contemporary Jewish Museum",
+            "description": "What shapes us? What family stories become our core stories? What pieces of ourselves are formed and reformed from our heritage? What We Hold features individual audio segments from over seventy teens, each reflecting on the people, moments, and voices that have imprinted on their identities. These compelling recordings offer a rare window into personal reflections of youth today.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-03-25",
+                "end": "2019-03-25"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/104",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "0cda08422a0e39ad3703ef43928e399b"
+        },
+        "Textile Lab-Contemporary Jewish Museum": {
+            "name": "Textile Lab",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Textile Lab is a hands-on educational annex to the exhibition Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem . Located in The Museum\u2019s Stephen and Maribelle Leavitt Yud Gallery, the Textile Lab delves into the craftsmanship and embellishment of fabrics from the exhibition and explore contemporary local connections to the clothing traditions. The space offers opportunities to weave on large looms, to play with draping and dressing, and to embroider. It also features a listening station with interviews of community members from the regions represented in the exhibition, a community-driven photo montage, and pop-up programs with textile artists, musicians, and community members from Middle Eastern and North African heritage.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-08-30",
+                "end": "2019-01-06"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/107",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f391d9291e6ce1e8206b07fd2851f3ee"
+        },
+        "Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem-Contemporary Jewish Museum": {
+            "name": "Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Clothing is intended to cover our bodies, but it also uncovers. To what extent is our choice of dress freely made, and how do our surroundings affect our decisions? This exhibition will focus on how clothes balance the personal with the social, how dress traditions distinguish different Jewish communities, and how they portray Jewish and secular affiliations within a larger societal context. These exquisite objects from the nineteenth and twentieth centuries demonstrate how diverse global cultures have thrived, interacted and inspired each other for centuries.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-08-30",
+                "end": "2019-01-06"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/102",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a810d6c2fa9c31a2a5335c216f4f0527"
+        },
+        "Contraption: Rediscovering California Jewish Artists-Contemporary Jewish Museum": {
+            "name": "Contraption: Rediscovering California Jewish Artists",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Contraption : Rediscovering California Jewish Artists is a group show that presents the work of sixteen California-identified artists of Jewish descent\u2014both historical and living\u2014whose work refers to the machine either literally or metaphorically. Some of the artists are rarely seen now. Among the living artists, there will be large-scale mechanical installations by Bernie Lubell and Sheri Simons, as well as ceramics, drawings, sculpture and paintings by Ned Kahn, Bella Feldman, Howard Fried, and Annabeth Rosen. This original exhibition was co-curated by Chief Curator Renny Pritikin and Mark Dean Johnson, Professor of Art at SFSU.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-02-22",
+                "end": "2018-07-29"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/100",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b482c78c556a36dc8cce6971ea2e4c77"
+        },
+        "The Art of Rube Goldberg-Contemporary Jewish Museum": {
+            "name": "The Art of Rube Goldberg",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Art of Rube Goldberg was organized by Jennifer George, the granddaughter of Rube Goldberg, who lives in New York, and this exhibition makes its only California appearance at The Contemporary Jewish Museum. Accompanied by a delightful coffee-table style catalog including interactive cover, the exhibition includes original drawings of his beloved machines, photographs, toys, films, newspaper clippings, and more.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-03-15",
+                "end": "2018-07-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/99",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "fdbec67b1804086ca5d76062decde4d8"
+        },
+        "Kutiman: offgrid offline-Contemporary Jewish Museum": {
+            "name": "Kutiman: offgrid offline",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Kutiman, a young Israeli musician and composer, utilizes found audio and video from the Internet as the source of his own work. In 2016 the Tel Aviv Museum of Art worked with the artist as he developed the piece titled offgrid, comprised of twelve monitors that play a 38 minute-long video and music composition by Kutiman on a loop. These minutely edited snippets of music played by soloists found on the Internet are displayed on twelve monitors that periodically join in or go silent.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-07-20",
+                "end": "2018-07-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/69",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "fbec8f258021e3cddb1e9b16ebcc3ba7"
+        },
+        "In That Case: Havruta in Contemporary Art\u2014Allison Smith and Christina Zetterlund-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art\u2014Allison Smith and Christina Zetterlund",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Allison Smith's collaboration with Christina Zetterlund looks at craft and design history to explore issues of inclusion, exclusion, and hierarchies of power.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-07-20",
+                "end": "2018-07-03"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/76",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "4a4104cc6231c8b1fc58bfd070847083"
+        },
+        "Sabbath: The 2017 Dorothy Saxe Invitational-Contemporary Jewish Museum": {
+            "name": "Sabbath: The 2017 Dorothy Saxe Invitational",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Dorothy Saxe Invitational , now in its eleventh iteration, gives contemporary artists from a variety of backgrounds the opportunity to delve into a Jewish tradition. While previous Invitationals have primarily focused around Jewish ceremonial and ritual objects, The 2017 Dorothy Saxe Invitational explores a Jewish idea \u2014that of The Sabbath. All the works of art are for sale.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-11-12",
+                "end": "2018-02-25"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/98",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "718ee4986a5f4fa9a694d5672005a753"
+        },
+        "Jewish Folktales Retold: Artist as Maggid-Contemporary Jewish Museum": {
+            "name": "Jewish Folktales Retold: Artist as Maggid",
+            "venue": "Contemporary Jewish Museum",
+            "description": "This exhibition presents newly commissioned works by sixteen contemporary artists in response to a selection of tales from Jewish folklore. Acting as modern maggids\u2014 storytellers, transmitters of knowledge, secrets revealers\u2014they explore the many facets of these stories\u2019 characters, themes, and metaphors. Artists include: Michael Arcega, Julia Goodman, Dina Goldstein, Andy Diaz Hope and Laurel Roth Hope, Vera Iliatova, David Kasprzak, Mads Lynnerup, Elisabeth Higgins O\u2019Connor, Mike Rothfeld, Tracey Snelling, Chris Sollars, M. Louise Stanley, Inez Storer, and Young Suh and Katie Peterson.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-09-28",
+                "end": "2018-01-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/68",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "5d1ff9f4f5c0210c6020ac323a3eba75"
+        },
+        "The 613 by Archie Rand-Contemporary Jewish Museum": {
+            "name": "The 613 by Archie Rand",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The 613 is a major painting project by Archie Rand presented at The CJM in its museum debut and first appearance outside New York City. In traditional Jewish texts 613 rules for ethical and religious behavior are asked of all Jews. Rand\u2019s exhibition includes one painting for each one of the 613; they are acrylic on canvas paintings (20 x 16 in.) arranged in a huge grid comprising 1700 square feet.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-07-20",
+                "end": "2017-10-22"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/67",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "046d4e389205ca93d1483aaf5afc8e4f"
+        },
+        "Sukkah Studio-Contemporary Jewish Museum": {
+            "name": "Sukkah Studio",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Inspired by the Jewish festival of Sukkot, The CJM has built its own sukkah for gathering and community building by inviting six local artists to inhabit the sukkah as an open studio. The Sukkah Studio provides an inviting space for the artists to share their practice with visitors and even work with interested folks to make something together. Each artist will inhabit the Sukkah Studio for one day.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-10-05",
+                "end": "2017-10-11"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/101",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b7bea5cec8e80399d141a8f7086fab65"
+        },
+        "Roz Chast: Cartoon Memoirs-Contemporary Jewish Museum": {
+            "name": "Roz Chast: Cartoon Memoirs",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The CJM is pleased to present the only appearance of Roz Chast\u2019s Cartoon Memoirs retrospective exhibition outside of New York and Massachusetts. Chast is one of the most celebrated and beloved cartoonists working in the United States today; she has been publishing with The New Yorker since 1978. Her 2014 graphic memoir Can\u2019t We Talk About Something More Pleasant? deals with the difficult subject of caring for aging parents.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-04-27",
+                "end": "2017-09-04"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/66",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "ed800edb7487d4227e61fb93e8995d08"
+        },
+        "What We Hold-Contemporary Jewish Museum": {
+            "name": "What We Hold",
+            "venue": "Contemporary Jewish Museum",
+            "description": "In a series of audio stories, The Museum\u2019s Teen Art Connect interns share a layered quilt of myth and memory from the perspective of Bay Area teens in 2016. Exploring their own family narratives allowed these students to claim and understand how moments of the past transform, beyond memories, into relationships and outlooks in the present.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-11-25",
+                "end": "2017-06-29"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/75",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "cd977a9ca50c14e01844bc5ad44d6185"
+        },
+        "The Yud Video Project-Contemporary Jewish Museum": {
+            "name": "The Yud Video Project",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Yud Video Project features twenty-five short videos that were selected among more than 700 submissions, and that altogether present a wide range of interpretation of what memory means today. Artists of all backgrounds were encouraged to submit their videos of five minutes or less to be shown in the stunning Stephen & Maribelle Leavitt Yud Gallery.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-11-25",
+                "end": "2017-06-29"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/11",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a3b49a21a99742b6657e2c5867b9e5be"
+        },
+        "Cary Leibowitz: Museum Show-Contemporary Jewish Museum": {
+            "name": "Cary Leibowitz: Museum Show",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Cary Leibowitz: Museum Show is the first comprehensive career survey and solo museum exhibition devoted to the New York-based contemporary artist, Cary Leibowitz (b. 1963). Since the early 1990s Leibowitz has carried on with an interdisciplinary practice that turns a critical eye on subjects of identity, modernism, the art market, queer politics, and kitsch. The exhibition features nearly 350 original artworks and multiples from 1987 to the present: paintings, commercially manufactured multiples, works on paper, archival material, and fabric works and will be accompanied by a hardcover catalog with newly commissioned contributions.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-01-26",
+                "end": "2017-06-25"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/12",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "1185fe969935ad618abfefad3eaab402"
+        },
+        "In That Case: Havruta in Contemporary Art\u2014Kota Ezawa and James Kirby Rogers-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art\u2014Kota Ezawa and James Kirby Rogers",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Bay Area visual artist Kota Ezawa partners with San Francisco native James Kirby Rogers, a contemporary dancer at The Houston Ballet II. The pair create a video animation based on Rogers\u2019 choreography and movements, which he performs in front of Ezawa\u2019s camera. Their collaboration, Much Ado About Nothing , as a synthesis of two art forms, blurs the line between tangible human movements and the imaginative powers enabled by digital animation.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-07-28",
+                "end": "2017-06-20"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/5",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "3b95a561245bc7e76ff78a07d8040eef"
+        },
+        "From Generation to Generation: Inherited Memory and Contemporary Art-Contemporary Jewish Museum": {
+            "name": "From Generation to Generation: Inherited Memory and Contemporary Art",
+            "venue": "Contemporary Jewish Museum",
+            "description": "From Generation to Generation: Inherited Memory and Contemporary Art presents work by twenty-four artists who grapple with memories that are not their own. There are many forms of memory: memories we have experienced, memories we have heard as family stories and from popular culture, even memories from an imagined future. Through their work, the artists in this exhibition search, question, and reflect on the representation of truths related to ancestral and collective memory\u2014ultimately attempting to deal with their own past.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-11-25",
+                "end": "2017-04-02"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/2",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "5eeea3e1646f709d9d21662141956b67"
+        },
+        "Ned Kahn: Negev Wheel-Contemporary Jewish Museum": {
+            "name": "Ned Kahn: Negev Wheel",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Ned Kahn was commissioned to create a singular large sculpture with a smaller complementary untitled piece for The Contemporary Jewish Museum. Spanning twenty feet in diameter, Negev Wheel is an immense, slowly spinning disc filled with sand from the Negev desert in Israel; the piece presents an ever-changing, mesmerizing image of tumbling change. The sand from that region is made of a mixture of sands from a great many geographic sources, representing complexity within unity and constant evolution within permanence.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-07-28",
+                "end": "2017-01-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/1",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "2ce68105497076dfeada9a322bcedc3e"
+        },
+        "Stanley Kubrick: The Exhibition-Contemporary Jewish Museum": {
+            "name": "Stanley Kubrick: The Exhibition",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Stanley Kubrick exerted complete artistic control over his projects; in doing so, he reconceived the genres in which he worked. The exhibition covers the breadth of Kubrick\u2019s achievements, beginning with his photographs for LOOK magazine taken in the 1940s, and continuing with his directorial achievements of the 1950s through the 1990s, and explores Napoleon and Aryan Papers , two projects that Kubrick never completed, and the technological advances developed by Kubrick and his team. This exhibition is organized by the Deutsches Filmmuseum, Frankfurt am Main, Christiane Kubrick and The Stanley Kubrick Archive at University of the Arts London.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-06-30",
+                "end": "2016-10-30"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/3",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "5ab3f3aae727a08061d31a1fa34a541e"
+        },
+        "Pour Crever by Trimpin-Contemporary Jewish Museum": {
+            "name": "Pour Crever by Trimpin",
+            "venue": "Contemporary Jewish Museum",
+            "description": "In 1940, all Jewish residents of Efringen-Kirchen in Southern Germany were deported to France and then sent on to Auschwitz. German-American artist Trimpin\u2019s Pour Crever commemorates the seventy-fifth anniversary of these tragic events. In this installation of suspended water tanks, a computer-controlled mechanism developed by the artist releases sheets of water which spell out the names of the murdered residents of his town; they fall through space and disappear forever into the pool below.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-09-24",
+                "end": "2016-09-01"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/7",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "acb45866d0126521c821518d4b233499"
+        },
+        "In That Case: Havruta in Contemporary Art\u2014Jenny Odell and Philip Buscemi-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art\u2014Jenny Odell and Philip Buscemi",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Based on the Talmudic study principle of havruta \u2014the study of religious texts by people in pairs\u2014 In That Case at The CJM encourages learning through fellowship for Bay Area artists, established professionals, museum staff, and the entire CJM community. Capitalizing on the unique Jewish perspective inherent to The Museum, this program takes the practice of havruta and repurposes it for the contemporary art community. Each local artist invited to participate in In That Case is given the opportunity to work with an established writer, scientist, thinker, or academic in a field of their choosing. The resulting collaboration is presented in the Sala Webb Education Center.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-01-28",
+                "end": "2016-07-05"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/9",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "44490565c004ca8d13dc6ac06574f275"
+        },
+        "Bill Graham and the Rock & Roll Revolution-Contemporary Jewish Museum": {
+            "name": "Bill Graham and the Rock & Roll Revolution",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Explore the life of Bill Graham (1931\u20131991) from his childhood as a German Jewish refugee to his pivotal role in making rock music a multi-billion dollar global industry. The exhibition looks at his immense success as a rock promoter and his pioneering work behind the scenes to use rock music to raise consciousness and deliver aid to those in need. Organized by the Skirball Cultural Center, Los Angeles.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-03-17",
+                "end": "2016-07-05"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/6",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "2795452bfe5d99b33babbbc9f473f49a"
+        },
+        "Hardly Strictly Warren Hellman-Contemporary Jewish Museum": {
+            "name": "Hardly Strictly Warren Hellman",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum celebrates the legacy of one of San Francisco\u2019s greatest and most beloved benefactors, Warren Hellman (1934\u20132011), an investment banker, philanthropist, musician, and music enthusiast who founded the Hardly Strictly Bluegrass Festival (HSB).",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-09-18",
+                "end": "2016-06-16"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/10",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "e9a2e9a67f431eadfef8f106c735932f"
+        },
+        "Roman Vishniac Rediscovered-Contemporary Jewish Museum": {
+            "name": "Roman Vishniac Rediscovered",
+            "venue": "Contemporary Jewish Museum",
+            "description": "This exhibition repositions the work of Roman Vishniac (1897\u20131990), an extraordinarily versatile and innovative photographer who created the most widely recognized photographic record of Jewish life in Eastern Europe between the two World Wars, within the broader tradition of social documentary photography.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-02-11",
+                "end": "2016-05-30"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/8",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c9a3e8e5c138a955af3fc3b79ccfd958"
+        },
+        "Chasing Justice-Contemporary Jewish Museum": {
+            "name": "Chasing Justice",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The exhibition is inspired by the biblical exhortation of Deuteronomy 16:20 to \u201cpursue justice.\u201d Three artists have produced bodies of work exploring different approaches to this Jewish commitment that have resulted in engagement with the government.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-11-19",
+                "end": "2016-02-25"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/14",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "ebdf66929274e6ef5726741e9d4c8b44"
+        },
+        "NEAT: New Experiments in Art and Technology-Contemporary Jewish Museum": {
+            "name": "NEAT: New Experiments in Art and Technology",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Inspired by the 1960s program Experiments in Art and Technology (E.A.T.) , NEAT celebrates the Bay Area\u2019s leading role in bringing digital innovation into the fine arts, featuring nine Bay Area artists, representing three generations of practitioners.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-10-15",
+                "end": "2016-01-17"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/20",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "463d72dbd8f9080ac7d6b10c3d29d038"
+        },
+        "In That Case: Havruta in Contemporary Art\u2014David Wilson and Francesco Spagnolo-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art\u2014David Wilson and Francesco Spagnolo",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Inspired by the ambiguity of the Hebrew word found in Psalm 130, mima\u2018amaqim , David Wilson and Francesco Spagnolo have been collaborating on a deep study of the Magnes Collection of Jewish Art and Life at UC Berkeley. Mima\u2018amaqim , translated alternatively as \u201cfrom [or out of] the depths\u201d or de profundis , is a concept that evokes deep valleys, dark places, and mysteries. For several months, David worked in the deep storage of the Magnes, finding, researching, looking at, and drawing objects from the four corners of the world. Each drawing session culminated in a conversation with Francesco, who expanded on and played with the origins and meanings of the objects he portrayed. This installation is the result of their collaboration. Artifacts, drawings, and annotations open a window into the process of bringing out the life of an object, unleashing its performative powers. The conversation is by all means not over.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-07-30",
+                "end": "2016-01-03"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/55",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "146fc5b64284cec0a619798dc6c4cde3"
+        },
+        "Amy Winehouse: A Family Portait-Contemporary Jewish Museum": {
+            "name": "Amy Winehouse: A Family Portait",
+            "venue": "Contemporary Jewish Museum",
+            "description": "This personal and intimate exhibition about Amy Winehouse (1983\u20132011) celebrates her passion for music and fashion, as well as her love for London and her family. The Winehouse family gave The Museum access to the late singer\u2019s belongings, including her guitar, record collection, and iconic outfits.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-07-23",
+                "end": "2015-11-01"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/16",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "5319310aa6869396743f5c58bbe4309a"
+        },
+        "You Know I\u2019m No Good-Contemporary Jewish Museum": {
+            "name": "You Know I\u2019m No Good",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Taking its title from a song on Winehouse\u2019s award-winning album Back to Black (2006), this companion exhibition featuring contemporary artists Jason J\u00e4gel, Rachel Harrison, and Jennie Ottinger, displays each individual artist's response to the phenomenon surrounding Winehouse\u2019s legacy.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-07-23",
+                "end": "2015-11-01"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/17",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a5d0df8f3042fc4b71cad3b0756350c7"
+        },
+        "X Is For-Contemporary Jewish Museum": {
+            "name": "X Is For",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum\u2019s Teen Art Connect (TAC) interns contribute a young, local, and current perspective to the walls of The Museum by adding their voices to the exhibition, Chasing Justice .",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-09-02",
+                "end": "2015-10-02"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/72",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "bd4a86d5a3ab3654ea5277f0f11f6bc9"
+        },
+        "Night Begins the Day: Rethinking Space, Time, and Beauty-Contemporary Jewish Museum": {
+            "name": "Night Begins the Day: Rethinking Space, Time, and Beauty",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Night Begins the Day is an international group exhibition that includes work in many mediums by twenty-five artists. In Jewish tradition, day begins at sundown, rather than dawn. This notion inspired the exhibition, which looks at alternative or contemporary ways of thinking about space, time, and beauty.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-06-18",
+                "end": "2015-09-20"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/18",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "30a09624748a2ab7a6b740baedba5570"
+        },
+        "In That Case: Havruta in Contemporary Art\u2014Anthony Discenza and Peter Straub-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art\u2014Anthony Discenza and Peter Straub",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Bay Area visual artist Anthony Discenza in collaboration with nationally renowned New York-based author of horror novels Peter Straub collaborate in a series based on the Talmudic study principle of havruta\u2014the study of religious texts by people in pairs. In That Case at The CJM encourages learning through fellowship for Bay Area artists, established professionals, museum staff, and the entire CJM community. Capitalizing on the unique Jewish perspective inherent to The Museum, this program takes the practice of havruta and repurposes it for the contemporary art community. Each local artist invited to participate in In That Case is given the opportunity of working with an established writer, scientist, thinker, or academic in a field of their choosing. The resulting collaborations is presented in the Sala Webb Education Center.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-04-30",
+                "end": "2015-07-14"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/54",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "249009745f0b04c5752a1f6757fa08b3"
+        },
+        "Bound to Be Held: A Book Show-Contemporary Jewish Museum": {
+            "name": "Bound to Be Held: A Book Show",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum presents a solo exhibition of the work of San Francisco-based conceptual artist Josh Greene. Bound to be Held: A Book Show celebrates the relationship between a reader and a book and extends Greene\u2019s career-long interest in instigating social interaction among people.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-03-26",
+                "end": "2015-06-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/45",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "099f0db776513b89a132f51169c521ed"
+        },
+        "Poland and Palestine: Two Lands and Two Skies-Contemporary Jewish Museum": {
+            "name": "Poland and Palestine: Two Lands and Two Skies",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Poland and Palestine: Two Lands and Two Skies is an exhibition of approximately fifty images made in the 1930s by photographer Ze\u2019ev (Wilhelm) Aleksandrowicz. The images selected for this exhibition depict everyday life for Jews in Poland and the British Mandate before the Founding of the State of Israel in 1948.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-02-26",
+                "end": "2015-05-25"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/48",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "216fa19d6308eb8e5678fde9194de281"
+        },
+        "Letters to Afar-Contemporary Jewish Museum": {
+            "name": "Letters to Afar",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Commissioned as the first temporary exhibition at the new POLIN Museum of the History of Polish Jews in Warsaw, the immersive audiovisual art installation Letters to Afar , created by internationally acclaimed Budapest-based filmmaker and video-artist P\u00e9ter Forg\u00e1cs in collaboration with the New York City-based band The Klezmatics, revisits, rearranges, and recontextualizes rare amateur movies made by Jewish immigrants from the United States who visited their hometowns in Poland during the 1920\u201330s alongside official newsreels and Polish cinema of that time.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-02-26",
+                "end": "2015-05-25"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/46",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "3c83af150370f6752c081532a18f3271"
+        },
+        "Our Roots-Contemporary Jewish Museum": {
+            "name": "Our Roots",
+            "venue": "Contemporary Jewish Museum",
+            "description": "In partnership with the Galicia Museum-Poland, The CJM showcases Our Roots , an international youth new-media project connecting teens in the Bay Area and Europe to their ancestors and their peers\u2014both locally and abroad. The exhibition consists of a selection of the final videos, on view at The CJM.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-02-26",
+                "end": "2015-05-24"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/70",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "553f56de7eb83d1483b13d30c83c9def"
+        },
+        "The 2015 Dorothy Saxe Invitational: Tzedakah Box-Contemporary Jewish Museum": {
+            "name": "The 2015 Dorothy Saxe Invitational: Tzedakah Box",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Started in 1984 and now in its tenth iteration, The 2015 Dorothy Saxe Invitational is an important component of The Contemporary Jewish Museum\u2019s long-standing tradition of inviting artists from a variety of backgrounds to explore a Jewish ceremonial object within the context of their own medium and artistic philosophy.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-04-09",
+                "end": "2015-05-17"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/49",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a49e3ec73b62a756eb3c1736b4202b6b"
+        },
+        "In That Case: Havruta in Contemporary Art\u2014Helena Keeffe and Jessica Prentice-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art\u2014Helena Keeffe and Jessica Prentice",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Keeffe and Prentice\u2019s havruta installation\u2014 A Menu for Recognizing Invisible Forces \u2014utilizes the case in a dynamic way, showing evidence of their experiments and explorations around all the unseen but powerful processes that weave through our food system and our community life\u2014from traditional practices that \"cultivate\" the wild food sources, to microorganisms in our guts and in the soil, to world views that draw connections between seemingly disparate \"facts.\" Objects included range from ceramics and textiles to recipes both actual and conceptual.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-01-22",
+                "end": "2015-04-14"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/52",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "6bc7c33e683d02d9283b4950521106e2"
+        },
+        "J. Otto Seibold and Mr. Lunch-Contemporary Jewish Museum": {
+            "name": "J. Otto Seibold and Mr. Lunch",
+            "venue": "Contemporary Jewish Museum",
+            "description": "J. Otto Seibold is one of America\u2019s most beloved and influential authors of children\u2019s books, yet remains somewhat of a hidden treasure here in the Bay Area. Born and raised in the East Bay, where he still resides, his Mr. Lunch books (written with Vivian Walsh) are the first children\u2019s books designed using computer software. His Olive the Other Reindeer is a holiday classic. In conjunction with the twentieth anniversary of the Mr. Lunch books, the exhibition explores Mr. Lunch\u2019s history and Seibold\u2019s artistic process. Along with original artwork, the exhibition includes interactive areas for children designed by Seibold with new content relating to Mr. Lunch.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-11-20",
+                "end": "2015-03-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/21",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "93dacb969787aead9d36db97bd57a3d8"
+        },
+        "Arnold Newman: Masterclass-Contemporary Jewish Museum": {
+            "name": "Arnold Newman: Masterclass",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Arnold Newman (1918\u20132006) was one of the most productive, creative, influential, and successful portrait photographers of the twentieth century. With great sensitivity and care, he incorporated the personal environment, the work, and the intellectual background of the subject in his photographs.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-10-23",
+                "end": "2015-02-01"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/51",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "13897dbb2e2d5361ed6f52c6889bb320"
+        },
+        "In That Case: Havruta in Contemporary Art: Lindsey White and Ron Lynch-Contemporary Jewish Museum": {
+            "name": "In That Case: Havruta in Contemporary Art: Lindsey White and Ron Lynch",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Based on the Talmudic study principle of havruta \u2014the study of religious texts by people in pairs\u2014 In That Case at The CJM encourages learning through fellowship for Bay Area artists, established professionals, museum staff, and the entire CJM community. Capitalizing on the unique Jewish perspective, inherent to The Museum, this program takes the practice of havruta and repurpose it for the contemporary art community. Each local artist invited to participate in In That Case is given the opportunity of working with an established writer, scientist, thinker, or academic in a field of their choosing. The resulting collaborations is presented in the Sala Webb Education Center.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-10-23",
+                "end": "2015-01-06"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/53",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "361c4738cd89d9e6c3604a2e3069bec1"
+        },
+        "Project Mah Jongg-Contemporary Jewish Museum": {
+            "name": "Project Mah Jongg",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Since the 1920s, the game of mah jongg has ignited the popular imagination with its beautiful tiles, mythical origins, and communal spirit. It is a game more widely known than played or understood, and it is a true cultural hybrid. With roots in China, it made a lasting impression on American audiences and became closely linked with Jewish women beginning in the 1930s. The exhibition explores the fascinating history of the game and its impact on cultural identity, fashion and style.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-07-13",
+                "end": "2014-10-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/44",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f1c4a9f6672816fb7016adebec03575e"
+        },
+        "Designing Home: Jews and Midcentury Modernism-Contemporary Jewish Museum": {
+            "name": "Designing Home: Jews and Midcentury Modernism",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Designing Home: Jews and Midcentury Modernism is the first exhibition to look at the contribution of Jewish designers, architects, patrons, and merchants in the creation of a distinctly modern American domestic landscape.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-04-24",
+                "end": "2014-10-06"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/19",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "97d983f25a4c00279c8927e44d6dbef1"
+        },
+        "Forever Now!-Contemporary Jewish Museum": {
+            "name": "Forever Now!",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Employing a large range of media and visual strategies, artist, educator, and curator Julio C\u00e9sar Morales explores issues of migration, underground economies, and labor on personal and global scales.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-08-05",
+                "end": "2014-08-12"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/50",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "ec4fdeed3d04ee0fae86c5ec34018beb"
+        },
+        "To Build & To Be Built: Kibbutz History-Contemporary Jewish Museum": {
+            "name": "To Build & To Be Built: Kibbutz History",
+            "venue": "Contemporary Jewish Museum",
+            "description": "In conjunction with Work in Progress: Considering Utopia , this exhibition explores and celebrates the kibbutz as it starts its second century. To Build & be Built: Kibbutz History focuses on the growth and development of these unique communities which helped create the infrastructure and culture of the State of Israel, and which are now transforming themselves as Israel becomes increasingly urban and capitalistic. The influence of the kibbutz on national and Bay Area culture\u2014including many summer camps, youth movements, and \u201cintentional communities\u201d\u2014is also addressed.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-10-03",
+                "end": "2014-07-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/43",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "fc5ee6f0918236a8c10c58bfb833fab5"
+        },
+        "Arthur Szyk and the Art of the Haggadah-Contemporary Jewish Museum": {
+            "name": "Arthur Szyk and the Art of the Haggadah",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The haggadah, the ritual text for the Passover seder, evokes the story of the exodus of the ancient Hebrews from slavery in Egypt. While myriad haggadot have been created from the tenth century to the present, the exhibition highlights the unique and powerful story of The Szyk Haggadah (1940).",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-02-13",
+                "end": "2014-06-29"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/23",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "ba02770efab2cd7511667e6801de6096"
+        },
+        "Frog and Toad and the World of Arnold Lobel-Contemporary Jewish Museum": {
+            "name": "Frog and Toad and the World of Arnold Lobel",
+            "venue": "Contemporary Jewish Museum",
+            "description": "This exhibition celebrates the art of Arnold Lobel (1933\u20131987), author and illustrator of some of the most beloved children\u2019s books produced since the late 1960s. Included among these are his Frog and Toad series (1971\u201379), Mouse Soup (1977), and Fables (1980), which was awarded the prestigious Caldecott Medal.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-11-21",
+                "end": "2014-03-23"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/42",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "7aa7e4303dcd5a383a496df53ba9e59f"
+        },
+        "Jason Lazarus: Live Archive-Contemporary Jewish Museum": {
+            "name": "Jason Lazarus: Live Archive",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Rising star and Jewish artist Jason Lazarus has his first West Coast museum exhibition. Live Archive explores collective public archives, personal memory, and the role of photography and collecting in contemporary art and identity. Chicago-based Lazarus is known for using both traditionally developed photography and found and solicited images and texts in collaborative installations and innovative crowd-sourced, online community projects. Lazarus\u2019 work simultaneously directs attention inward toward the personal and outward toward the historical. The three main aspects of the exhibition map onto three key elements of the Jewish experience: memory, prophecy, and learning. The exhibition is organized by the Museum of Contemporary Art Chicago.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-11-21",
+                "end": "2014-01-20"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/40",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "8ec72cb3003ef4435894821b910c8ff2"
+        },
+        "Work in Progress: Considering Utopia-Contemporary Jewish Museum": {
+            "name": "Work in Progress: Considering Utopia",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Presenting new work by three artists, Work in Progress: Considering Utopia encourages visitors to consider the concept of utopia both in a Jewish context and from a contemporary perspective that emphasizes community and participation.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-10-03",
+                "end": "2014-01-20"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/41",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "dd3cb29d7aee3f5d4fb5a3a22150d9a1"
+        },
+        "StoryCorps StoryBooth-Contemporary Jewish Museum": {
+            "name": "StoryCorps StoryBooth",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum is the first museum in the country to host a StoryCorps StoryBooth. StoryCorps is a New York-based oral history project founded and directed by award-winning documentary artist and MacArthur Fellow Dave Isay.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2008-10-12",
+                "end": "2013-12-15"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/96",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c9deaf9e856eed0b9a33b7c98c5647b9"
+        },
+        "Beyond Belief: 100 Years of the Spiritual in Modern Art: Highlights from SFMOMA\u2019s Collection-Contemporary Jewish Museum": {
+            "name": "Beyond Belief: 100 Years of the Spiritual in Modern Art: Highlights from SFMOMA\u2019s Collection",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Beyond Belief is an expansive exhibition exploring the spiritual dimensions of modern art, especially as seen through the lens of Jewish theological concepts. The exhibition features forty-eight internationally-known artists whose work\u2014painting, sculpture, photography, video, and installation art\u2014are all drawn from the San Francisco Museum of Modern Art\u2019s outstanding collection. Ranging from a 1914 abstraction by Dutch artist Piet Mondrian to a luminous 1960 abstraction by Mark Rothko and oversized prayer beads by contemporary artist Zarina, Beyond Belief provides an engaging alternative that prioritizes spirituality in the reading of art.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-06-28",
+                "end": "2013-10-27"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/39",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "35bc8ca3d49e6fc01423a32b805425d2"
+        },
+        "Stanley Saitowitz: Judaica-Contemporary Jewish Museum": {
+            "name": "Stanley Saitowitz: Judaica",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Stanley Saitowitz: Judaica combines The Contemporary Jewish Museum\u2019s ongoing commitment to presenting new perspectives on Jewish tradition with its dedication to working with contemporary artists, like Saitowitz, whose vision enables us to find fresh ways to examine and appreciate Jewish culture and ritual. The San Francisco-based architect has designed private residences, institutions, and public and commercial spaces. The objects on view range from those associated with daily ritual, such as the mezuzah , to more festival-specific objects, such as the etrog box used during the harvest festival of Sukkoth. Rendered in metal and inspired by the architect\u2019s commitment to a modernist aesthetic, this collection is characterized by the clean lines, rational proportions, and smooth, unembellished surfaces that also define Saitowitz\u2019s architecture.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-11-03",
+                "end": "2013-09-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/37",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "fa8da887aa0a3d2a3a424a83d03d0385"
+        },
+        "Beat Memories: The Photographs of Allen Ginsberg-Contemporary Jewish Museum": {
+            "name": "Beat Memories: The Photographs of Allen Ginsberg",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Through over seventy photographs by renowned poet, Allen Ginsberg (1926\u20131997), Beat Memories tenderly captures the young writers and rebels that would define the Beat Generation.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-05-23",
+                "end": "2013-09-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/25",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c64f5d80663a688eb775d38057f05f36"
+        },
+        "Kehinde Wiley | The World Stage: Israel-Contemporary Jewish Museum": {
+            "name": "Kehinde Wiley | The World Stage: Israel",
+            "venue": "Contemporary Jewish Museum",
+            "description": "African American artist Kehinde Wiley is known for vibrant, large-scale paintings of hip men of color rendered in the self-confident poses typical of classical European portraiture. The first major exhibition of Wiley\u2019s work in San Francisco, The World Stage: Israel is part of the artist\u2019s bold series exploring the black diaspora. The portraits are complemented by a selection of historical Jewish textiles and works on paper from which the artist drew inspiration.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-02-14",
+                "end": "2013-05-27"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/38",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "3defdee7e00fa305c37a7d5bb0e89bdc"
+        },
+        "California Dreaming: Jewish Life in the Bay Area from the Gold Rush to the Present-Contemporary Jewish Museum": {
+            "name": "California Dreaming: Jewish Life in the Bay Area from the Gold Rush to the Present",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Just as the founders of San Francisco Jewish life questioned the rules of community and tradition as they created their own robust community life, California Dreaming is structured around five questions that investigate key aspects of the community\u2019s character, and that are designed to draw visitors into the discussion of what constitutes a Jewish community in the twenty-first century.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-11-17",
+                "end": "2013-04-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/33",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "57a3fb54c3887440bb01236a59be60e5"
+        },
+        "The Snowy Day and the Art of Ezra Jack Keats-Contemporary Jewish Museum": {
+            "name": "The Snowy Day and the Art of Ezra Jack Keats",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Snowy Day and the Art of Ezra Jack Keats is the first major exhibition in the United States to pay tribute to award-winning author and illustrator Ezra Jack Keats (1916\u20131983), whose beloved children\u2019s books include Whistle for Willie (1964), Peter\u2019s Chair (1967), and The Snowy Day (1962)\u2014the first modern full-color picture book to feature an African American protagonist.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-11-15",
+                "end": "2013-02-24"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/32",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f0a7d2b5d71ff2459be5e10d5fb31290"
+        },
+        "Our Lens-Contemporary Jewish Museum": {
+            "name": "Our Lens",
+            "venue": "Contemporary Jewish Museum",
+            "description": "A photo project of Teen Art Connect in connection with the exhibition, The Radical Camera: New York\u2019s Photo League, 1936\u20131951. The result of a workshop with Emilio Ba\u00f1uelos, an editorial photographer and educator based in California and Jalisco, Mexico, the photographers were encouraged to find their unique voice and capture their own vision.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-10-11",
+                "end": "2013-01-21"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/71",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "b2a59c9a43b5d488bf5134ef4a42e852"
+        },
+        "The Radical Camera: New York\u2019s Photo League, 1936\u20131951-Contemporary Jewish Museum": {
+            "name": "The Radical Camera: New York\u2019s Photo League, 1936\u20131951",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Radical Camera: New York's Photo League, 1936\u20131951 is the first comprehensive museum survey in three decades of the famed photography group\u2019s work, history, artistic significance, and cultural, social, and political milieu. Drawing from two extensive Photo League museum collections housed at The Jewish Museum in New York City and the Columbus Museum of Art in Ohio, the exhibition includes 150 vintage photographs by more than sixty Photo League members.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-10-11",
+                "end": "2013-01-21"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/34",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "071c40fc2c6f7fc259a73ebab2ef4077"
+        },
+        "Do Not Destroy: Trees, Art, and Jewish Thought: An Exhibition and The Dorothy Saxe Invitational-Contemporary Jewish Museum": {
+            "name": "Do Not Destroy: Trees, Art, and Jewish Thought: An Exhibition and The Dorothy Saxe Invitational",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Do Not Destroy: Trees, Art, and Jewish Thought explores the subject of the tree in Jewish tradition through the lens of contemporary artists who enable us to see the world in new ways and to encourage us to find fresh meaning in tradition.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-02-16",
+                "end": "2012-09-09"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/29",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "de30eb82d294d630ab3f8da23572c602"
+        },
+        "Six-Word Memoirs on Jewish Life: Live from The CJM!-Contemporary Jewish Museum": {
+            "name": "Six-Word Memoirs on Jewish Life: Live from The CJM!",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Co-presented with Reboot, this interactive installation allows visitors to contribute their own Six-Word Memoir to a live stock ticker on view in the lobby of The CJM. Take a seat on our Arne Jacobsen swan sofa and use Twitter on your smartphone to instantly add your Six-Word Memoir to the live feed. The Reboot installation on Jewish life is based on SMITH Magazine \u2019s Six-Word Memoirs , a project inspired by Ernest Hemingway\u2019s legendary shortest of short stories, \u201cFor sale: baby shoes, never worn.\u201d This succinct form has become a powerful tool to catalyze conversation, spark imagination, or simply break the ice.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-01-01",
+                "end": "2012-01-31"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/74",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c27582f7de4c109e18480cddbbba5040"
+        },
+        "Houdini: Art and Magic-Contemporary Jewish Museum": {
+            "name": "Houdini: Art and Magic",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The first art exhibition in an American art museum on this master magician, Houdini: Art and Magic explores how Houdini's role as an American icon was transformed across three centuries: first in the late nineteenth century by the artist\u2019s own interpretation of himself; by popular culture in the twentieth century; and today by contemporary artists who conjure Houdini as an audacious performer and showman of raw physicality.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-10-02",
+                "end": "2012-01-16"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/28",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "79e863a1de5483676ed6bc71b47f02d1"
+        },
+        "\"Being Jewish\": A Bay Area Portrait-Contemporary Jewish Museum": {
+            "name": "\"Being Jewish\": A Bay Area Portrait",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Discover the many different ways of \u201cbeing Jewish\u201d in the Bay Area through this mural of community photos, and objects which reflect the flavor of Jewish life in the Bay Area, both past and present.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2008-06-08",
+                "end": "2011-10-18"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/79",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "d2f8ceeb65ed396ff53e7f7c0c381da2"
+        },
+        "Charlotte Salomon: Life? Or Theatre?-Contemporary Jewish Museum": {
+            "name": "Charlotte Salomon: Life? Or Theatre?",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Charlotte Salomon, a young Jewish artist from Berlin, worked feverishly between 1940 and 1942 to produce approximately 1300 paintings before she was arrested by the Nazis in 1943, transported to Auschwitz, and murdered at the age of 26. The gouaches make up Life? or Theatre? \u2014which through imagery and text tell the slightly fictionalized and theatrically imagined story of Salomon\u2019s family.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-03-31",
+                "end": "2011-10-16"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/35",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "ab091c6825433a1cfca85f830c053c17"
+        },
+        "Seeing Gertrude Stein: Five Stories-Contemporary Jewish Museum": {
+            "name": "Seeing Gertrude Stein: Five Stories",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Drawing upon a wealth of rarely seen artistic and archival materials, Seeing Gertrude Stein: Five Stories illuminates Stein's life and pivotal role in art during the twentieth century. Focusing on Stein's life from the end of World War I through World War II, the exhibition explores her evolving public personae, lifestyle, relationships, landmark 1934\u201335 tour of the United States, and life in France during WWII.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-05-12",
+                "end": "2011-09-06"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/15",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "1e24e75dc42cd316aa3cec34c85cb5d8"
+        },
+        "Jacques Lipchitz: Hagar in the Desert-Contemporary Jewish Museum": {
+            "name": "Jacques Lipchitz: Hagar in the Desert",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Hagar in the Desert (1969), the last monumental bronze cubist sculptor Jacques Lipchitz created before his death, is on view on The Museum\u2019s second floor in a small exhibition examining the many ways Western religions and artists interpret the meaning of this fascinating story from the Torah.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-04-07",
+                "end": "2011-08-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/59",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "d74decff60889002a9e32c1060ac12ee"
+        },
+        "The Ping Pong Project-Contemporary Jewish Museum": {
+            "name": "The Ping Pong Project",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Ping pong\u2014it saved the life of Polish Jewish champion Alojzy Ehrlich, when a Nazi guard at Auschwitz recognized his lanky frame and pulled him to safety. In fact, what began as an upper-crust amusement in 1880s England became a game dominated by Jewish champions after World War I when its competitive focus shifted to Central and Eastern Europe. For the next few decades, it was players like Ehrlich, Austrian Richard Bergmann (who played in double-breasted suits), and Hungarian hardbats Viktor Barna and Lazlo Bellak that ruled the game.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-04-07",
+                "end": "2011-08-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/31",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "11158243a11df51100e7d122d610e074"
+        },
+        "Are We There Yet?: 5000 Years of Answering Questions with Questions-Contemporary Jewish Museum": {
+            "name": "Are We There Yet?: 5000 Years of Answering Questions with Questions",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Are We There Yet? is a new media art installation in the Museum's Yud Gallery by Bay Area artists Ken Goldberg and Gil Gershoni that celebrates inquisitive impulse. An immersive sound environment, the installation poses questions from a variety of sources including the Talmud, literature, and popular culture. Questions vary based on visitors\u2019 movement through the space.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-03-31",
+                "end": "2011-07-31"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/30",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c3a2c3a063dbaacf84234bd782cad836"
+        },
+        "As It Is Written: Project 304,805-Contemporary Jewish Museum": {
+            "name": "As It Is Written: Project 304,805",
+            "venue": "Contemporary Jewish Museum",
+            "description": "As It Is Written: Project 304,805 is centered around a soferet (professionally trained female scribe) who, while on public view, will write out the entire text of the Torah over the course of a full year.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2009-10-08",
+                "end": "2011-03-29"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/60",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "1d615200b2507fb1f5baa05c342c2067"
+        },
+        "Reclaimed: Paintings from the Collection of Jacques Goudstikker-Contemporary Jewish Museum": {
+            "name": "Reclaimed: Paintings from the Collection of Jacques Goudstikker",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Reclaimed commemorates a remarkable story of post-Holocaust restitution and the extraordinary life and legacy of Jacques Goudstikker (1897\u20131940), a preeminent art dealer in Amsterdam. Goudstikker\u2019s vast collection of Old Master paintings was almost lost forever to the Nazi practice of looting cultural properties. Explore the richness of this collection while learning about the plundering of the works and the efforts by Goudstikker\u2019s family that led to the successful recovery of over 200 of the looted works.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2010-10-29",
+                "end": "2011-03-29"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/36",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "da68b13342666c52a030365c8fdc1b6b"
+        },
+        "Black Sabbath: The Secret Musical History of Black\u2013Jewish Relations-Contemporary Jewish Museum": {
+            "name": "Black Sabbath: The Secret Musical History of Black\u2013Jewish Relations",
+            "venue": "Contemporary Jewish Museum",
+            "description": "A musical journey through a unique slice of recording history\u2014the Black-Jewish musical encounter from the 1930s to the 1960s.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2010-08-26",
+                "end": "2011-03-22"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/22",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "44fe05432f2f183ad9fe6b71920c4260"
+        },
+        "Curious George Saves the Day: The Art of Margret and H. A. Rey-Contemporary Jewish Museum": {
+            "name": "Curious George Saves the Day: The Art of Margret and H. A. Rey",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Curious George, the impish monkey protagonist of many adventures, may never have seen the light of day if it were not for the determination and courage of his creators, the illustrator H. A. Rey and his wife, author and artist Margret Rey. The exhibition features nearly 80 original drawings of the beloved monkey and other characters, a look at the Reys\u2019 escape from Nazi Europe, and more.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2010-11-14",
+                "end": "2011-03-13"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/27",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "8c108d2aea6225c06f13068cfe44ff2b"
+        },
+        "There's a Mystery There: Sendak on Sendak-Contemporary Jewish Museum": {
+            "name": "There's a Mystery There: Sendak on Sendak",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Maurice Sendak has written or illustrated more than 100 picture books over his 60-year career. A number of those books, including Where the Wild Things Are , In the Night Kitchen , and Chicken Soup with Rice , inspired generations of children and changed the landscape of picture books. This major retrospective sheds light on the many mysteries of his life and art by exploring the intensely personal undercurrents in his work; and it does so using Sendak's own words, insights, and remarkable stories.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2010-09-09",
+                "end": "2011-01-19"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/73",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "58c7159b62b594b605471940fa57740e"
+        },
+        "Maira Kalman: Various Illuminations (of a Crazy World)-Contemporary Jewish Museum": {
+            "name": "Maira Kalman: Various Illuminations (of a Crazy World)",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Maira Kalman: Various Illuminations (of a Crazy World) is the first museum survey of award-winning illustrator, author and designer Maira Kalman\u2019s narrative art. Well-known for her covers and drawings for The New Yorker , over a dozen books for children and adults, two celebrated illustrated blogs for The New York Times , and collaborations with leading designers and innovators, Kalman illuminates contemporary life with a profound sense of joy and a unique sense of humor.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2010-07-01",
+                "end": "2010-10-26"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/24",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "5987550340e10f7418387e8f945581de"
+        },
+        "Reinventing Ritual: Contemporary Art and Design for Jewish Life-Contemporary Jewish Museum": {
+            "name": "Reinventing Ritual: Contemporary Art and Design for Jewish Life",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The first major international exhibition to examine the reinvention of Jewish ritual in art and design. The exhibition surveys works by more than fifty-eight artists, including Oreet Ashery, Jonathan Adler, Helene Aylon, Galya Rosenfeld, and Allan Wexler, who are exploring Judaism as a vital, multicultural, and contradictory force.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2010-04-22",
+                "end": "2010-10-03"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/97",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "301e4718a0a7febe8f38149fa02e1cc9"
+        },
+        "Jews on Vinyl-Contemporary Jewish Museum": {
+            "name": "Jews on Vinyl",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Jews on Vinyl is a unique exhibition based on Josh Kun and Roger Bennett's book And You Shall Know Us by the Trail of Our Vinyl: The Jewish Past as Told by the Records We Have Loved and Lost , which spans the history of Jewish recorded music from the 1940s to the 1980s, weaving an account that begins with sacred songs and ends with the holy trinity of Neil, Barbra, and Barry.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2009-02-06",
+                "end": "2010-08-22"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/63",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c75a5b456ef670296c99c309fba51252"
+        },
+        "Our Struggle: Responding to Mein Kampf-Contemporary Jewish Museum": {
+            "name": "Our Struggle: Responding to Mein Kampf",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Artist Linda Ellia confronted Adolph Hitler\u2019s Mein Kampf by inviting both artists and the general public to respond to the text by altering one of the books 600 pages.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2010-01-11",
+                "end": "2010-06-15"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/56",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "5e558702709ab6ae02d43173411bd8cb"
+        },
+        "Chagall and the Artists of the Russian Jewish Theater, 1919\u20131949-Contemporary Jewish Museum": {
+            "name": "Chagall and the Artists of the Russian Jewish Theater, 1919\u20131949",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Through paintings, costume and set designs, posters, photographs, film clips and theater ephemera this exhibition will bring to light an exhilarating but fleeting moment in the cultural history of the Soviet Union when innovative visual artists joined forces with avant-garde playwrights, actors, and theatrical producers. Organized by the Jewish Museum, New York.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2009-04-23",
+                "end": "2009-09-07"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/57",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "159f6d9d4f60e1e40ca6c62320e97296"
+        },
+        "From The New Yorker to Shrek: The Art of WIlliam Steig-Contemporary Jewish Museum": {
+            "name": "From The New Yorker to Shrek: The Art of WIlliam Steig",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Organized by The Jewish Museum in New York City, From The New Yorker to Shrek: The Art of William Steig , features a wide selection of original drawings for both his New Yorker cartoons and his children\u2019s books such as Sylvester and the Magic Pebble, Doctor De Soto, Amos & Boris, Gorky Rises, Dominic, When Everybody Wore a Hat, and Shrek ! (\u201cfear\u201d in Yiddish). Additionally, the exhibition will showcase his lesser known mid-life symbolic drawings, correspondence, and other documentary materials that will shed light on Steig, the man and the artist.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2009-06-08",
+                "end": "2009-09-07"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/65",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "62421351334923045b74f608feafa9c9"
+        },
+        "Susan Hiller: The J.Street Project-Contemporary Jewish Museum": {
+            "name": "Susan Hiller: The J.Street Project",
+            "venue": "Contemporary Jewish Museum",
+            "description": "There are 303 roads, streets, and paths in Germany, whose names refer to a Jewish presence. Artist Susan Hiller has visited all of them over a three-year period, filming and taking photographs of these historically evocative places.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2009-06-18",
+                "end": "2009-08-18"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/58",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c9be31e5d60334221306ca2e824268fc"
+        },
+        "New Works/Old Story: 80 Artists at the Passover Table\u2014The Dorothy Saxe Invitational-Contemporary Jewish Museum": {
+            "name": "New Works/Old Story: 80 Artists at the Passover Table\u2014The Dorothy Saxe Invitational",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Continuing its long-standing tradition of engaging artists from myriad backgrounds to rethink, reshape and redefine traditional Jewish ritual objects, The Contemporary Jewish Museum has invited eighty leading local and national artists to creatively explore the meaning and form of the Passover seder plate.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2009-02-27",
+                "end": "2009-06-02"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/64",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "43b2d5d9d89a8085c649df215809ad99"
+        },
+        "Dateline 09\u2014Adi Nes: Biblical Stories and Yael Bartana: Short Memory-Contemporary Jewish Museum": {
+            "name": "Dateline 09\u2014Adi Nes: Biblical Stories and Yael Bartana: Short Memory",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Dateline 09 inaugurates a new series of exhibitions that provide a forum for The Museum to respond to the latest developments in today's rapidly changing world, featuring presentations of work by two of today's leading artists\u2014photographer Adi Nes and video artist Yael Bartana.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2009-01-30",
+                "end": "2009-03-17"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/78",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "2c1f1758899740885ff748dd036b15d4"
+        },
+        "Warhol's Jews: Ten Portraits Reconsidered-Contemporary Jewish Museum": {
+            "name": "Warhol's Jews: Ten Portraits Reconsidered",
+            "venue": "Contemporary Jewish Museum",
+            "description": "On view for the first time on the West Coast, Andy Warhol\u2019s original paintings from his extraordinary series, Ten Portraits of Jews of the Twentieth Century , which portrays a pantheon of great Jewish thinkers, politicians, performers, musicians, and writers.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2008-10-12",
+                "end": "2009-02-03"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/61",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "1bc0d4ab186a5ad784730ba72566b901"
+        },
+        "John Zorn Presents the Aleph-Bet Sound Project-Contemporary Jewish Museum": {
+            "name": "John Zorn Presents the Aleph-Bet Sound Project",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Acclaimed musician John Zorn curates a series of original sound pieces based on a letter of the Hebrew alphabet by such leading musicians and composers as Lou Reed, Laurie Anderson, Erik Frielander, Chris Brown, and Terry Riley.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2008-06-08",
+                "end": "2009-02-01"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/83",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "cb97dbeddd31c2e11f7288331a782e6e"
+        },
+        "In the Beginning: Artists Respond to Genesis-Contemporary Jewish Museum": {
+            "name": "In the Beginning: Artists Respond to Genesis",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The exhibition pairs seven new artist commissions, including works by Matthew Ritchie, Ben Rubin, and Shirley Shor, with a range of historically important works by Marc Chagall, William Blake, Giovanni Battista Tiepolo, and others in order to explore our changing understanding of the story of creation as depicted in Genesis Chapter 1.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2008-06-08",
+                "end": "2009-01-06"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/81",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "57c785d5064e03e34559b1890c74f5ba"
+        },
+        "Exposing Identities\u2014Young Photographers Explore Culture, Community, and Self-Contemporary Jewish Museum": {
+            "name": "Exposing Identities\u2014Young Photographers Explore Culture, Community, and Self",
+            "venue": "Contemporary Jewish Museum",
+            "description": "See how teens inspired by The Jewish Identity Project created their own photographic exploration of personal identity. Projects on view include interview-based portraits of friends and family, symbolic self-portraits, and photographic series depicting significant rituals. The youth involved in this project acted as both artists and curators.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2007-05-10",
+                "end": "2007-05-20"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/84",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "1c2417d18036873bc0de9379e7070c78"
+        },
+        "The Jewish Identity Project: New American Photography-Contemporary Jewish Museum": {
+            "name": "The Jewish Identity Project: New American Photography",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum presents The Jewish Identity Project: New American Photography , featuring newly commissioned photography, video, and multimedia projects by thirteen emerging and mid-career artists. The exhibition explores the hybrid and complex racial, national, and cultural identity of contemporary Americans through a Jewish lens.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2006-10-22",
+                "end": "2007-04-29"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/80",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "46035381daaaf5110870b8af14163d6f"
+        },
+        "Art of Living: Contemporary Photography and Video from the Israel Museum-Contemporary Jewish Museum": {
+            "name": "Art of Living: Contemporary Photography and Video from the Israel Museum",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum is proud to present Art of Living: Contemporary Photography and Video from the Israel Museum , an exhibition of dynamic and engaging photographs and video works produced by 20 contemporary Israeli artists from the permanent collections of the Israel Museum in Jerusalem.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2006-04-04",
+                "end": "2006-07-30"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/82",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "a12271da8fe6affd42817ecbf8a0ef62"
+        },
+        "Intersections: Reading the Space-Contemporary Jewish Museum": {
+            "name": "Intersections: Reading the Space",
+            "venue": "Contemporary Jewish Museum",
+            "description": "The Contemporary Jewish Museum (The CJM) is honored to be the only U.S. venue for Intersections , an interfaith, intercontinental, and interactive exploration of the changing issues of women and faith. Three women\u2014reflecting three different religions, using different media, working on different continents\u2014use text to explore the possibility of change and exchange in this exhibition.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2005-10-23",
+                "end": "2006-02-26"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/77",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c65822f6697ea8014bd622628fb04910"
+        },
+        "Scents of Purpose: Artists Interpret the Spice Box-Contemporary Jewish Museum": {
+            "name": "Scents of Purpose: Artists Interpret the Spice Box",
+            "venue": "Contemporary Jewish Museum",
+            "description": "In the longstanding tradition of The Museum, the Invitational encourages artists of all backgrounds from around the country to make us think afresh by creating original interpretations of traditional Jewish ritual objects using a variety of media.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2005-05-04",
+                "end": "2005-09-05"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/85",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "7cb28af7c25f4ff66cd2e324e0f001ae"
+        },
+        "The Jewish Journey: Frederic Brenner's Photographic Odyssey-Contemporary Jewish Museum": {
+            "name": "The Jewish Journey: Frederic Brenner's Photographic Odyssey",
+            "venue": "Contemporary Jewish Museum",
+            "description": "From Rome to New York, India to Yemen, Buenos Aires to Bukhara, since 1978, Fr\u00e9d\u00e9ric Brenner has recorded the Jewish Diaspora in over forty countries on five continents. The French photographer, trained as a social anthropologist, has comprised the most extensive record of Jewish life ever created by a single individual as well as chronicled one of the oldest and most diverse peoples.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2004-10-14",
+                "end": "2005-02-27"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/87",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "6bfb87d2aa356a96c3e0436d251deb85"
+        },
+        "100 Artists See God-Contemporary Jewish Museum": {
+            "name": "100 Artists See God",
+            "venue": "Contemporary Jewish Museum",
+            "description": "100 Artists See God is a traveling exhibition organized by Independent Curators International. The guest co-curators, artists John Baldessari and Meg Cranston, are tackling the ever-challenging question of God in this exhibition. Baldessari and Cranston have invited 100 artists to respond to one of art's most enduring challenges: picturing the divine.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2004-03-07",
+                "end": "2004-06-27"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/86",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "19c1521c1633617990d85c492f9494eb"
+        },
+        "Hidden in the Walls-Contemporary Jewish Museum": {
+            "name": "Hidden in the Walls",
+            "venue": "Contemporary Jewish Museum",
+            "description": "On Bush Street, an 1895 San Francisco synagogue was about to be renovated as part of a Japanese American assisted living facility. The cornerstone of Congregation Ohabai Shalome, and the time capsule it contained, were opened for the first time in more than a century. The mysteries that lay hidden are on view in this exhibition, which today is the oldest standing synagogue building in San Francisco.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2002-09-21",
+                "end": "2003-02-16"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/91",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f40c784bf4497f6396546a47a40a6bdc"
+        },
+        "Stephanie Snyder: Hamakom/The Place-Contemporary Jewish Museum": {
+            "name": "Stephanie Snyder: Hamakom/The Place",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Stephanie Snyder's site-specific installation, Hamakom ( The Place ), is at its heart a personal response to the essences and contradictions of Jerusalem's Western Wall. Created through a process deeply influenced by Jewish ritual, it is a poetic re-imagining of sacred space.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2002-10-27",
+                "end": "2003-02-16"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/88",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "c4d32e7d1a9cf8de2d0e6e2e7f33e623"
+        },
+        "Sharing the Screen-Contemporary Jewish Museum": {
+            "name": "Sharing the Screen",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Sharing the Screen was a compilation of film and video excerpts selected by outgoing Jewish Film Festival director, Janis Plotkin, because together they formed a kaleidoscope of cinematic responses to Israeli-Arab relationships over the festival's lifespan. Beginning with Hamsin (1983), the first Israeli feature to focus on Palestinian-Israeli conflict over land, the films spanned the first Intifada (uprising) of the late 1980s, the hopeful period of the Oslo accords (post-1993), their breakdown, and then a second Intifada.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2002-10-27",
+                "end": "2003-02-16"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/89",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "e395c57d928a8948266b396dabec34ce"
+        },
+        "Ben Katchor: Picture Stories-Contemporary Jewish Museum": {
+            "name": "Ben Katchor: Picture Stories",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Enter the irreverent world of comic strip artist Ben Katchor, and meet the hilarious characters who live there at The Contemporary Jewish Museum (The CJM)'s West Coast premiere exhibition of Katchor's illustrations, graphic novels, set designs and drawings. Explore his quirky, Yiddish-inflected cartoon metropolis, home to implausible heroes and oddly nostalgic places, all created by an artist pushing the boundaries of the comic strip into new, soulful terrain.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2002-03-21",
+                "end": "2002-06-30"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/90",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "0366afacf138c4efb1343465875e2c21"
+        },
+        "Face(t)s of Memory: Found Photographs and Family Albums-Contemporary Jewish Museum": {
+            "name": "Face(t)s of Memory: Found Photographs and Family Albums",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Face(t)s of Memory explores and challenges the power of the photograph to preserve fragments of personal memory, featuring works by contemporary artists Christian Boltanski and Marcelo Brodsky, juxtaposed with a selection of family albums, archival photographs, and personal memorabilia from the Judah L. Magnes Museum (now The Magnes Collection of Jewish Art and Life) collection.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2001-11-14",
+                "end": "2002-01-31"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/93",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "ea974e046aca238c0d3e28e91908ebcc"
+        },
+        "Sophie Calle: Public Places\u2014Private Spaces-Contemporary Jewish Museum": {
+            "name": "Sophie Calle: Public Places\u2014Private Spaces",
+            "venue": "Contemporary Jewish Museum",
+            "description": "French conceptual artist Sophie Calle presents work inspired by eruv \u2014the Orthodox Jewish tradition of erecting symbolic borders around public spaces to extend the boundaries of the home. For this work, the artist interviewed Palestinian and Israeli residents of Jerusalem about public places they consider private. The installation is accompanied by a selection of Calle's photographs from Bay Area collections.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2001-05-07",
+                "end": "2001-06-28"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/92",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "04e7fa16ae46c7faac996a4dc9e599cb"
+        },
+        "To the Rescue: Eight Artists in an Archive-Contemporary Jewish Museum": {
+            "name": "To the Rescue: Eight Artists in an Archive",
+            "venue": "Contemporary Jewish Museum",
+            "description": "To the Rescue: Eight Artists in an Archive presents eight international artists' responses to the historical photographic archive of the American Jewish Joint Distribution Committee (JDC), a humanitarian relief organization founded in 1914 to help Palestinian Jews during WWI.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2000-03-26",
+                "end": "2000-06-08"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/95",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f1e6471fc35b2608251f375415c30508"
+        },
+        "Making Change: 100 Artists Interpret the Tzedakah Box-Contemporary Jewish Museum": {
+            "name": "Making Change: 100 Artists Interpret the Tzedakah Box",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Making Change: 100 Artists Interpret the Tzedakah Box continues the fifteen year tradition of inviting contemporary artists to re-examine Jewish ritual objects. The subject of this invitational, the tzedakah box (or pushke in Yiddish), is a traditionally humble container found in synagogues, Jewish homes and institutions in which charitable donations are deposited. This ritual object was chosen because it represents a tradition which embodies community outreach, service and empowerment to others. Hebrew for \"righteousness,\" tzedakah is the act of charity in Jewish culture and faith.",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "1999-11-14",
+                "end": "2000-01-23"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/94",
+                    "description": "Event Page"
+                }
+            ],
+            "hash": "f13de3a0d254df7036fd143f1ff1fb13"
         }
     }
 }

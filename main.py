@@ -241,8 +241,7 @@ def scrape_sfmoma():
     # Go through and collect events in each phase (current, future, and past)
     for phase_dict in divs:
 
-        # Assuming the structure is consistent with your provided HTML example
-        # and the container 'events' has direct children that are event elements
+        # Assuming the events container has direct children that are event elements
         events_container = soup.find('div', id=phase_dict['id'])
 
         # Check if events_container is found
@@ -353,19 +352,112 @@ def scrape_sfmoma():
         else:
             print(f"Events container not found for phase: {phase_dict['phase']}")
 
-def main():
+def scrape_cjm():
+    """Scrape and process events from Contemporary Jewish Museum."""
+    
+    def convert_date_to_dt(date_string):
+        """Takes a date in string form and converts it to a dt object"""
+        global month_to_num_dict
+
+        date_parts = date_string.split()
+        month_num = int(month_to_num_dict[date_parts[0]])
+        day = int(date_parts[1])
+        year = int(date_parts[2])
+        if month_num and day and year:
+            date_dt = dt.date(year, month_num, day)
+        return date_dt
+    
+    # Declare list of urls
+    urls = [
+        {
+            'url': 'https://www.thecjm.org/current_exhibitions',
+            'phase': 'current'
+        },
+        {
+            'url': 'https://www.thecjm.org/upcoming_exhibitions',
+            'phase': 'future'
+        },
+        {
+            'url': 'https://www.thecjm.org/past_exhibitions',
+            'phase': 'past'
+        }
+    ]
+    
+    # Go through and collect events in each phase (current, future, and past)
+    for url_dict in urls:
+    
+        # Scrape info
+        soup = fetch_and_parse(url_dict['url'])
+                
+        # Find all events
+        events_list = soup.find_all(class_='exhibitions__section')
+
+        # Check if events is found
+        if events_list:
+            
+            for event in events_list:
+                # Extract title and title-link
+                title_tag = event.find('h3', class_='exhibition__title').find('a', class_='title-link')
+                if title_tag:
+                    event_title = title_tag.text.strip()
+                    event_link = 'https://thecjm.org' + title_tag['href']
+                else:
+                    event_title, event_link = None, None
+
+                # Extract date-label
+                event_dates = event.find('p', class_='exhibition__date-label').find_all('span')
+                event_dates = '–'.join([span.text.strip() for span in event_dates]) if event_dates else None
+                dates = event_dates.lower().replace(',', '').split('––')
+                if event_dates == 'Ongoing exhibit':
+                    start_date = 'null'
+                    end_date = 'null'
+                else:
+                    start_date = convert_date_to_dt(dates[0])
+                    end_date = convert_date_to_dt(dates[1])
+                
+                # Extract rich-text (description)
+                description_tag = event.find('div', class_='rich-text')
+                event_description = description_tag.get_text(separator='\n').strip() if description_tag else None
+                if event_description:
+                    clean_description = event_description.replace('\n', ' ').replace('\xa0', ' ')
+                    normalized_description = ' '.join(clean_description.split())
+                    event_description = normalized_description
+
+                event_details = {
+                    'name': event_title,
+                    'venue': 'Contemporary Jewish Museum',
+                    'description': event_description,
+                    'tags': ['exhibition'] + [url_dict['phase']],
+                    'phase': url_dict['phase'],
+                    'dates': {'start': start_date, 'end': end_date},
+                    'links': [
+                        {
+                            'link': event_link,
+                            'description': 'Event Page'
+                        },
+                    ]
+                }
+                process_event(event_details)
+
+        else:
+            print(f"Events not found for phase: {url_dict['phase']}")
+
+def main(copy_db=True, record_db_size=True):
     """
     Function that:
-        1. Saves a copy of existing data
+        1. Saves a copy of existing data if copy_db=True
         2. Scrapes data from the de Young Museum & Legion of Honor
         3. Scrapes data from SFMOMA
-        4. Saves data as json
+        4. Scrapes data from Contemporary Jewish Museum (CJM)
+        5. Saves data as json
+        6. Records the size of the db (num venues and events) if record_db_size=True
     """
-    # Save a copy of existing json data
-    try:
-        copy_json_file('docs/events_db.json', 'docs/events_db_copy.json')
-    except FileNotFoundError:
-        pass
+    if copy_db:
+        # Save a copy of existing json data
+        try:
+            copy_json_file('docs/events_db.json', 'docs/events_db_copy.json')
+        except FileNotFoundError:
+            pass
 
     venue = "de Young & Legion of Honor"
     print(f"Starting scrape for {venue}")
@@ -377,6 +469,11 @@ def main():
     scrape_sfmoma()
     print(f"Finished scrape for {venue}")
 
+    venue = 'Contemporary Jewish Museum // CJM'
+    print(f"Starting scrape for {venue}")
+    scrape_cjm()
+    print(f"Finished scrape for {venue}")
+
     # Load db and count the venues and events
     db = load_db()
     # Flatten the db into a list of event dictionaries
@@ -386,20 +483,21 @@ def main():
             events_list.append(event)
     print('The db contains {:,} venues, with {:,} events'.format(len(db), len(events_list)))
 
-    # Record the number of venues and events in the db
-    file_path = 'docs/db_size.csv'
-    df = pd.DataFrame([{
-        "timestamp": pd.Timestamp.now(),
-        "num_venues": len(db),
-        "num_events": len(events_list)
-    }])
-    # Check if the file exists
-    if os.path.exists(file_path):
-        # File exists, append without writing the header
-        df.to_csv(file_path, mode='a', header=False, index=False)
-    else:
-        # File does not exist, write with the header
-        df.to_csv(file_path, mode='w', header=True, index=False)
+    if record_db_size:
+        # Record the number of venues and events in the db
+        file_path = 'docs/db_size.csv'
+        df = pd.DataFrame([{
+            "timestamp": pd.Timestamp.now(),
+            "num_venues": len(db),
+            "num_events": len(events_list)
+        }])
+        # Check if the file exists
+        if os.path.exists(file_path):
+            # File exists, append without writing the header
+            df.to_csv(file_path, mode='a', header=False, index=False)
+        else:
+            # File does not exist, write with the header
+            df.to_csv(file_path, mode='w', header=True, index=False)
     
     print('Finished')
 
