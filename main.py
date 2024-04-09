@@ -189,7 +189,7 @@ def scrape_de_young_and_legion_of_honor():
                     event_details = {
                         'name': name,
                         'venue': u['venue'],
-                        'tags': ['exhibition'] + [phase], # Add phase to list of tags
+                        'tags': ['exhibition'] + [phase] + ['museum'],
                         'phase': phase, # Possible phases are past, current, future
                         'dates': {'start': start_date, 'end': end_date},
                         'links': [
@@ -235,7 +235,7 @@ def scrape_sfmoma():
         }
     ]
     
-    # Scrap info
+    # Scrape info
     soup = fetch_and_parse(url)
     
     # Go through and collect events in each phase (current, future, and past)
@@ -332,7 +332,7 @@ def scrape_sfmoma():
                     'name': event_title,
                     'venue': 'SFMOMA',
                     'description': event_description,
-                    'tags': ['exhibition'] + [phase_dict['phase']],
+                    'tags': ['exhibition'] + [phase_dict['phase']] + ['museum'],
                     'phase': phase_dict['phase'],
                     'dates': {'start': start_date, 'end': end_date},
                     'links': [
@@ -427,7 +427,7 @@ def scrape_cjm():
                     'name': event_title,
                     'venue': 'Contemporary Jewish Museum',
                     'description': event_description,
-                    'tags': ['exhibition'] + [url_dict['phase']],
+                    'tags': ['exhibition'] + [url_dict['phase']] + ['museum'],
                     'phase': url_dict['phase'],
                     'dates': {'start': start_date, 'end': end_date},
                     'links': [
@@ -442,6 +442,157 @@ def scrape_cjm():
         else:
             print(f"Events not found for phase: {url_dict['phase']}")
 
+def scrape_sfwomenartists(verbose=True):
+    """Scrape and process events from San Francisco Women Artists Gallery."""
+    
+    def scrape_event_specific_page(event_url):
+        """Given the url for a specific event, scrape info"""
+
+        # Scrape info and collect events
+        soup = fetch_and_parse(event_url)
+
+        # Find all <p> elements within <header class="article-header">
+        p_elements = soup.find('header', class_='article-header').find_all('p')
+
+        # Get date info
+        try:
+            event_dates = p_elements[1].text.strip().lower().replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
+        except IndexError:
+            event_dates = None
+
+        # Get event description
+        try:
+            event_description = p_elements[0].text.strip().replace('\n', ' ')
+        except IndexError:
+            event_description = None
+
+        # Get image link
+        first_link_tag = soup.find('div', class_='ngg-gallery-thumbnail').find('a')
+        # Extract the 'href' attribute from the <a> element
+        if first_link_tag:
+            image_link = first_link_tag.get('href')
+        else:
+            image_link = None
+
+        return event_dates, event_description, image_link
+    
+    def convert_date_to_nums(date_string):
+        """Takes a date in string form and converts it to ints"""
+        global month_to_num_dict
+
+        date_parts = date_string.split()
+        month_num = int(month_to_num_dict[date_parts[0]])
+        day = int(date_parts[1])
+        return month_num, day
+    
+    # Declare url
+    url = 'https://www.sfwomenartists.org/exhibitions/'
+    
+    # Scrape info and collect events
+    soup = fetch_and_parse(url)
+    
+    # Get google maps link for venue
+    gmaps_link = soup.find('p').find('a')['href'].strip()
+                
+    # Find all events
+    events_list = soup.find_all(class_='exhibition-item')
+
+    # Check if events is found
+    if events_list:
+
+        for event in events_list:
+            # Extract title and title-link
+            event_title = event.find('h4', class_='gallery-title').text.strip()
+            event_link = event.find('a')['href'].strip()
+            
+            # Scrape additional info from event url
+            event_dates, event_description, image_link = scrape_event_specific_page(event_link)
+            # Skip to the next event if end date does not exist
+            if not event_dates:
+                continue
+            
+            # Handle edge case
+            if event_dates == 'august 10 2020':
+                event_dates = 'august 10 – august 31 2020'
+            elif event_dates == 'september 1 – 25 2020':
+                event_dates = 'september 1 – september 25 2020'
+
+            # Extract date information
+            dates = [d.strip() for d in event_dates.split('–')]
+            try:
+                start_date_month, start_date_day = convert_date_to_nums(dates[0])
+            except KeyError:
+                if verbose:
+                    print("Error processing start date:", event_dates, event_link)
+                continue  # Skip to the next event if start date conversion fails
+            
+            # If no end month, use the start month
+            if len(dates[1].split(' ')) == 1:
+                end_date_month = start_date_month
+                end_date_day = int(dates[1])
+            else:
+                if event_dates == 'august 3 – 27 2021':
+                    end_date_month = 8
+                    end_date_day = 27
+                elif event_dates == 'june 1 – 25 2021':
+                    end_date_month = 6
+                    end_date_day = 25
+                else:
+                    try:
+                        end_date_month, end_date_day = convert_date_to_nums(dates[1])
+                    except KeyError:
+                        if verbose:
+                            print("Error processing end date:", event_dates, event_link)
+                        continue  # Skip to the next event if end date conversion fails
+            year = int(event.find('p').text.split(' ')[-1])
+            
+            if start_date_month and start_date_day and year:
+                start_date = dt.date(year, start_date_month, start_date_day)
+            else:
+                start_date = 'null'
+            
+            if end_date_month and end_date_day and year:
+                end_date = dt.date(year, end_date_month, end_date_day)
+            else:
+                end_date = 'null'
+                
+            # Identify phase
+            today = dt.datetime.today().date()
+            if (start_date != 'null') and (end_date != 'null'):
+                if (start_date <= today) and (end_date >= today):
+                    phase = 'current'
+                elif (start_date > today) and (end_date > today):
+                    phase = 'future'
+                elif (start_date < today) and (end_date < today):
+                    phase = 'past'
+            else:
+                phase = None
+
+            event_details = {
+                'name': event_title,
+                'venue': 'San Francisco Women Artists Gallery',
+                'description': event_description,
+                'tags': ['exhibition'] + [phase] + ['gallery'],
+                'phase': phase,
+                'dates': {'start': start_date, 'end': end_date},
+                'links': [
+                    {
+                        'link': event_link,
+                        'description': 'Event Page'
+                    },
+                ]
+            }
+            # Add image link if it exists
+            if image_link:
+                event_details['links'].append({
+                    'link': image_link,
+                    'description': 'Image Link'
+                })
+            process_event(event_details)
+
+    else:
+        print(f"Events not found for San Francisco Women Artists Gallery")
+
 def main(copy_db=True, record_db_size=True):
     """
     Function that:
@@ -449,8 +600,9 @@ def main(copy_db=True, record_db_size=True):
         2. Scrapes data from the de Young Museum & Legion of Honor
         3. Scrapes data from SFMOMA
         4. Scrapes data from Contemporary Jewish Museum (CJM)
-        5. Saves data as json
-        6. Records the size of the db (num venues and events) if record_db_size=True
+        5. Scrapes data from SF Women Artists Gallery
+        6. Saves data as json
+        7. Records the size of the db (num venues and events) if record_db_size=True
     """
     if copy_db:
         # Save a copy of existing json data
@@ -472,6 +624,11 @@ def main(copy_db=True, record_db_size=True):
     venue = 'Contemporary Jewish Museum // CJM'
     print(f"Starting scrape for {venue}")
     scrape_cjm()
+    print(f"Finished scrape for {venue}")
+
+    venue = 'San Francisco Women Artists Gallery'
+    print(f"Starting scrape for {venue}")
+    scrape_sfwomenartists(verbose=False)
     print(f"Finished scrape for {venue}")
 
     # Load db and count the venues and events
