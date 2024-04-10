@@ -301,11 +301,12 @@
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "current"
+                "past",
+                "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-08-05",
                 "end": "2024-04-07"
             },
             "links": [
@@ -4335,10 +4336,10 @@
             "description": "A Bay Area Artists Juried Exhibition",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "gallery"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-04-09",
                 "end": "2024-05-03"
@@ -4353,7 +4354,7 @@
                     "description": "Image Link"
                 }
             ],
-            "hash": "a6fdc5ea3893409f0ee5b300c1cf25d5"
+            "hash": "1a76ca35180d016b74d6f3c94cffe27f"
         },
         "Spring! Lush!-San Francisco Women Artists Gallery": {
             "name": "Spring! Lush!",

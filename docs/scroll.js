@@ -74,6 +74,32 @@ window.addEventListener('DOMContentLoaded', () => {
             sortedEvents.forEach(event => {
                 const row = tableBody.insertRow();
 
+                // Image column
+                const imageCell = row.insertCell();
+
+                // Find the image link with the description "Image"
+                const imageLinkObj = event.links.find(link => link.description === 'Image');
+
+                if (imageLinkObj && imageLinkObj.link) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = imageLinkObj.link;
+                    imgElement.alt = `${event.name} @ ${event.venue}`; // Make the alt attribute Event Name @ Venue
+                    imgElement.className = 'event-image'; // Initial class for hover effect
+                    imgElement.style.maxWidth = '150px'; // Set a max width to ensure the image fits nicely in the table cell
+                    imgElement.style.maxHeight = '130px'; // Set a max width to ensure the image fits nicely in the table cell
+                    imgElement.style.height = 'auto'; // Maintain aspect ratio
+                    imgElement.style.justifySelf = 'center';
+                    imageCell.appendChild(imgElement);
+
+                    // Add click event listener to toggle enlarged class
+                    imgElement.addEventListener('click', () => {
+                        imgElement.classList.toggle('event-image-enlarged');
+                    });
+                } else {
+                    // Handle the case where there is no image link
+                    imageCell.textContent = '';
+                }
+
                 // Date column
                 const dateCell = row.insertCell();
                 const options = { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'};

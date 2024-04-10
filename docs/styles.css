@@ -89,19 +89,47 @@ thead {
 
 /* Set different widths for specific columns */
 th:nth-child(1), td:nth-child(1) {
-    width: 20%; /* Adjust as needed */
+    width: 16%; /* Adjust as needed */
 }
 
 th:nth-child(2), td:nth-child(2) {
-    width: 35%; /* Adjust as needed */
+    width: 20%; /* Adjust as needed */
 }
 
 th:nth-child(3), td:nth-child(3) {
-    width: 25%; /* Adjust as needed */
+    width: 31%; /* Adjust as needed */
 }
 
 th:nth-child(4), td:nth-child(4) {
-    width: 20%; /* Adjust as needed */
+    width: 21%; /* Adjust as needed */
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 12%; /* Adjust as needed */
+}
+
+/* Apply this style to the image */
+.event-image {
+    display: block;
+    margin: 0 auto; /* Horizontally center the image */
+    max-width: 100%; /* Ensure the image doesn't overflow the cell */
+}
+
+/* Apply hover effect only if the image does not have the 'event-image-enlarged' class */
+img.event-image:not(.event-image-enlarged) {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+  
+img.event-image:not(.event-image-enlarged):hover {
+    transform: scale(2.3); /* Adjust scale value as needed */
+}
+  
+/* CSS for the clicked/enlarged state */
+img.event-image-enlarged {
+    transform: scale(2.3); /* Adjust scale value as needed */
+    transition: transform 0.3s ease;
+    z-index: 100; /* Ensure the image is above other content */
+    position: relative; /* May need adjustment based on your layout */
 }
 
 footer {

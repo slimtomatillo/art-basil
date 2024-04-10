@@ -586,7 +586,7 @@ def scrape_sfwomenartists(verbose=True):
             if image_link:
                 event_details['links'].append({
                     'link': image_link,
-                    'description': 'Image Link'
+                    'description': 'Image'
                 })
             process_event(event_details)
 
