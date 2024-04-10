@@ -10,8 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const title = row.getElementsByTagName('td')[0].textContent;
             const date = row.getElementsByTagName('td')[1].textContent;
             const location = row.getElementsByTagName('td')[2].textContent;
+            const tags = row.getElementsByTagName('td')[3].textContent;
 
-            if (title.toLowerCase().indexOf(term) !== -1 || date.toLowerCase().indexOf(term) !== -1 || location.toLowerCase().indexOf(term) !== -1) {
+            if (title.toLowerCase().indexOf(term) !== -1 || date.toLowerCase().indexOf(term) !== -1 || location.toLowerCase().indexOf(term) !== -1 || tags.toLowerCase().indexOf(term) !== -1) {
                 row.style.display = '';
             } else {
                 row.style.display = 'none';
