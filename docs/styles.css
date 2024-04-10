@@ -34,12 +34,31 @@ main {
     padding: 10px;
 }
 
+/* Sticky styles */
+.sticky {
+    position: sticky;
+    top: 0; /* Default to the top */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: white; /* For visibility */
+}
+
+thead.sticky {
+    z-index: 999; /* Slightly lower than the search bar to appear beneath */
+    /* Don't set top here if you're adjusting it dynamically in JavaScript */
+}
+
+/* Other styling */
+#searchBarContainer {
+    display: flex; /* Flexbox layout to manage children */
+    justify-content: flex-start; /* Align children (the search bar) to the left */
+    padding: 10px 0; /* Example padding; adjust as needed */
+}
+
 #searchBar {
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 25%; /* Full width */
-    display: block; /* Ensure it's a block-level element */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin-bottom: 20px; /* Adjust as needed for spacing below the search bar */
+    padding: 10px; /* Adjust padding inside the search bar as needed */
+    width: 100%; /* Make the search bar fill its container */
+    box-sizing: border-box; /* Keep this to include padding in the width calculation */
 }
 
 .event-table {
@@ -143,16 +162,23 @@ footer {
 
 /* Media query for tablets */
 @media (min-width: 601px) {
+    #searchBarContainer {
+        /* If your searchBarContainer should still be centered with the rest */
+        margin: 0 auto;
+        max-width: 70%; /* Match the max-width of the main content */
+        box-sizing: border-box; /* Include padding in the width if necessary */
+    }
+    
     #searchBar {
-        width: 25%; /* Tablet and larger devices */
-        /* Recalculate the left margin to align with centered content, if necessary */
-        margin-left: calc((100% - 70%) / 2);
+        /* Adjust the searchBar width as needed, potentially 100% to fill its container */
+        width: 27%;
+        /* Remove the margin-left calculation that was causing alignment issues */
     }
 }
 
 /* Optional: Media query for desktops if different styling is needed */
 @media (min-width: 1025px) {
-    #searchBar {
+    #searchBarContainer {
         /* Adjustments for desktop, if different from tablets */
     }
 }

@@ -1,12 +1,42 @@
-// JavaScript to handle the scrolling behavior
+// Search bar
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBar = document.getElementById('searchBar');
+
+    searchBar.addEventListener('keyup', function(e) {
+        const term = e.target.value.toLowerCase();
+        const rows = document.getElementById('eventTable').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+        Array.from(rows).forEach(function(row) {
+            const title = row.getElementsByTagName('td')[0].textContent;
+            const date = row.getElementsByTagName('td')[1].textContent;
+            const location = row.getElementsByTagName('td')[2].textContent;
+
+            if (title.toLowerCase().indexOf(term) !== -1 || date.toLowerCase().indexOf(term) !== -1 || location.toLowerCase().indexOf(term) !== -1) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+});
+
+// Show search bar and table header when user scrolls down the page
 window.addEventListener('scroll', () => {
+    const searchBarContainer = document.getElementById('searchBarContainer');
     const tableHeader = document.querySelector('thead');
     const offset = window.scrollY;
 
     if (offset > 0) {
+        searchBarContainer.classList.add('sticky');
         tableHeader.classList.add('sticky');
+
+        // Dynamically adjust the top value for the table header
+        const searchBarHeight = searchBarContainer.offsetHeight; // Height of the search bar container
+        tableHeader.style.top = `${searchBarHeight - 1}px`; // Apply this height as the top value for the table header
     } else {
+        searchBarContainer.classList.remove('sticky');
         tableHeader.classList.remove('sticky');
+        tableHeader.style.top = '0px'; // Reset the top value when not sticky
     }
 });
 
