@@ -149,13 +149,28 @@ def scrape_de_young_and_legion_of_honor():
             soup = fetch_and_parse(url)
             if soup:
                 # Find elements a class
-                group_elements = soup.find_all(class_="mt-24 xl:mt-32")
+                group_elements = soup.find_all(class_="flex flex-col-reverse")
                 
                 # If no pages left, exit loop
                 if len(group_elements) == 0: # this will be 0 when we've gone through all the pages
                     break
 
-                for e in group_elements:
+                for element in group_elements:
+                    
+                    # Get image link if possible
+                    pics = element.find_all("picture")
+                    source_tag = pics[1].find('source')
+                    # Assuming srcset is found
+                    if source_tag and source_tag.has_attr('srcset'):
+                        srcset_value = source_tag['srcset']
+                        srcset_list = srcset_value.split(', ')
+                        urls = [item.split(' ')[0] for item in srcset_list]
+                        # Get biggest image
+                        image_link = urls[-1]
+                    else:
+                        image_link = None
+                                            
+                    e = element.find(class_="mt-24 xl:mt-32")
 
                     # Extract name
                     name = e.find("a").find("h3").get_text().strip()
@@ -199,6 +214,13 @@ def scrape_de_young_and_legion_of_honor():
                             },
                         ],
                     }
+                    # Add image link if it exists
+                    if image_link:
+                        event_details['links'].append({
+                            'link': image_link,
+                            'description': 'Image'
+                        })
+
                     process_event(event_details)
 
 def scrape_sfmoma():
@@ -347,6 +369,7 @@ def scrape_sfmoma():
                     ],
 
                 }
+
                 process_event(event_details)
 
         else:
@@ -404,6 +427,12 @@ def scrape_cjm():
                 else:
                     event_title, event_link = None, None
 
+                # Extract image link if possible
+                try:
+                    image_link = event.find('a')['style'].split('(')[1].split(')')[0]
+                except IndexError:
+                    image_link = None
+
                 # Extract date-label
                 event_dates = event.find('p', class_='exhibition__date-label').find_all('span')
                 event_dates = '–'.join([span.text.strip() for span in event_dates]) if event_dates else None
@@ -437,6 +466,13 @@ def scrape_cjm():
                         },
                     ]
                 }
+                # Add image link if it exists
+                if image_link:
+                    event_details['links'].append({
+                        'link': image_link,
+                        'description': 'Image'
+                    })
+
                 process_event(event_details)
 
         else:
@@ -588,6 +624,7 @@ def scrape_sfwomenartists(verbose=True):
                     'link': image_link,
                     'description': 'Image'
                 })
+            
             process_event(event_details)
 
     else:
