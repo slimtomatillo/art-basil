@@ -84,7 +84,12 @@ function sortEvents(events) {
         const priorityComparison = a.sortPriority - b.sortPriority;
         if (priorityComparison !== 0) return priorityComparison;
 
-        // For dates, ensure comparison handles string dates correctly
+        // For 'past' events (sortPriority === 3), sort by 'sortDate' descending
+        if(a.sortPriority === 3 && b.sortPriority === 3) {
+            return b.sortDate.localeCompare(a.sortDate); // Descending for 'past' events
+        }
+
+        // For other events, sort by 'sortDate' ascending
         return a.sortDate.localeCompare(b.sortDate);
     });
 
