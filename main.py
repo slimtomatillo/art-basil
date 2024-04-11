@@ -8,6 +8,7 @@ import numpy as np
 from unicodedata import normalize
 import pandas as pd
 import os
+import time
 
 DB_FILE = 'docs/events_db.json'
 EVENT_TAGS = ['exhibition', 'free']
@@ -648,6 +649,9 @@ def main(copy_db=True, record_db_size=True):
         except FileNotFoundError:
             pass
 
+    # Set start time to measure execution time
+    start_time = time.time()
+
     venue = "de Young & Legion of Honor"
     print(f"Starting scrape for {venue}")
     scrape_de_young_and_legion_of_honor()
@@ -677,13 +681,18 @@ def main(copy_db=True, record_db_size=True):
             events_list.append(event)
     print('The db contains {:,} venues, with {:,} events'.format(len(db), len(events_list)))
 
+    # Measure execution time of scraping
+    execution_time_s = round(time.time() - start_time, 1)
+    print(f'Scraping took {execution_time_s} seconds')
+
     if record_db_size:
         # Record the number of venues and events in the db
         file_path = 'docs/db_size.csv'
         df = pd.DataFrame([{
             "timestamp": pd.Timestamp.now(),
             "num_venues": len(db),
-            "num_events": len(events_list)
+            "num_events": len(events_list),
+            "scrape_time_s": execution_time_s
         }])
         # Check if the file exists
         if os.path.exists(file_path):
