@@ -428,12 +428,12 @@
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-04-13",
+                "start": "null",
                 "end": "2024-10-20"
             },
             "links": [
@@ -446,7 +446,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "00e5364cb8ddb679228800005c8545ec"
+            "hash": "cc0dcf64947d36d8cec4d680b0d8abc0"
         },
         "Mary Cassatt at Work-Legion of Honor": {
             "name": "Mary Cassatt at Work",
@@ -781,11 +781,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2021/07/21161407/Twin-Walls-1024x576.jpg",
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/04/15133224/William_Scott_x2024.4605.001_01_P02-install-1024x630.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "816b633c447492d91865edd6931a7ee0"
+            "hash": "afd440b3e8e0f46ba3046beb15f19ce0"
         },
         "Open Ended: SFMOMA's Collection, 1900 to Now-SFMOMA": {
             "name": "Open Ended: SFMOMA's Collection, 1900 to Now",
@@ -1577,10 +1577,10 @@
             "description": "An exhibition curated by She Bends First Light: Rituals of Glass and Neon Art explores mastery in craft as a devotional pursuit, presenting breathtaking artworks that connect both artists and viewers to spirituality, wonder, and universal questions of human existence. The exhibiting artists utilize both science and art as equally noble methods to explore the mysteries of the universe and its reflection in their consciousness. The exhibition features artworks in neon, glass, and plasma, large-scale sculptures, and installations that invite you to learn about fascinating scientific processes, and inspire deeper contemplation of the role of light in our quest to understand our place in the universe. Through these works, the artists gain an intimate understanding of light as a profound and transformative force. Experience awe, make spiritual connections, and discover the science and craft of neon and glass artwork. First Light: Rituals of Glass and Neon Art is an exhibition by She Bends, an organization dedicated to building a more equitable future for neon art through public education, curatorial projects, and artist programs that foster diversity and sustainability.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2023-12-07",
                 "end": "2024-04-28"
@@ -1595,7 +1595,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a839117ef59c65640c1e08077e8a61bc"
+            "hash": "98646bc926340bd779e16ebd4aab1741"
         },
         "RetroBlakesberg: The Music Never Stopped-Contemporary Jewish Museum": {
             "name": "RetroBlakesberg: The Music Never Stopped",
@@ -1629,10 +1629,10 @@
             "description": "Radiant Practices: Illuminating Jewish Traditions traces the foundational role of light in Jewish life and ritual, both historically and today. Journey through a collection of Jewish ritual objects, from menorahs to memorial candles, that offer insights into practices that draw on light to uplift Jewish holidays, lifecycle moments, and spiritual spaces. Presented in The CJM\u2019s Stephen and Maribelle Leavitt Yud gallery, the exhibition brings new meaning to the presence of natural light within this symbolically rich gallery while offering new reflections on the forms of light that illuminate Jewish ritual.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2023-12-07",
                 "end": "2024-04-28"
@@ -1647,7 +1647,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "518d129031e974e459d3977bf781e736"
+            "hash": "6ee0632629aa062b4976e90ef609a8cb"
         },
         "L'Chaim: Celebrating Our Building at 15-Contemporary Jewish Museum": {
             "name": "L'Chaim: Celebrating Our Building at 15",
@@ -4924,6 +4924,32 @@
                 }
             ],
             "hash": "1e66728be29f96f5b7712f0cbc7baaca"
+        },
+        "Leah Rosenberg: When One Sees a Rainbow-Contemporary Jewish Museum": {
+            "name": "Leah Rosenberg: When One Sees a Rainbow",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Marking the first time the space will be activated in this way since the building\u2019s opening, Bay Area artist Leah Rosenberg transforms The CJM\u2019s Yud Gallery through light and color, creating a welcoming environment for visitors to reflect, rest, and wonder. In When One Sees a Rainbow , Rosenberg fills the gallery\u2014a space itself created to celebrate light and its connection to Judaism\u2014with new hues, exploring how the wondrous natural phenomenon of rainbows connects to our lives, light, and meditative practice. Inspired by the Jewish tradition of reciting a blessing upon seeing a rainbow, visitors will also be invited to create their own responses to the colors on view in the gallery. Enter a kaleidoscopic world of color and rediscover a familiar symbol of hope and awe.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-06-06",
+                "end": "2027-04-27"
+            },
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/235",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://res.cloudinary.com/the-contemporary-jewish-museum/image/upload/c_fill,cs_srgb,dpr_2.0,f_jpg,q_70,w_1290/v1/exhibition/2024_LEAHROS-title-lockup_v01-02.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "e0891a68b0e2fccf3c7d26377db0d2ea"
         }
     },
     "San Francisco Women Artists Gallery": {
@@ -6122,6 +6148,342 @@
                 }
             ],
             "hash": "7c6fe16c9a51c9f2e707ad936d2755c4"
+        },
+        "Hue And Me-San Francisco Women Artists Gallery": {
+            "name": "Hue And Me",
+            "venue": "San Francisco Women Artists Gallery",
+            "description": "A SFWA Member Juried Exhibition",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-05-07",
+                "end": "2024-05-31"
+            },
+            "links": [
+                {
+                    "link": "https://www.sfwomenartists.org/exhibition/hue-and-me/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.sfwomenartists.org/wp-content/gallery/2024-may_hue-me/Alexander-PerryJa-Blue-Place-240318114342_1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "13395a797c89eba33fdccd72f0d02e10"
+        }
+    },
+    "Asian Art Museum": {
+        "Phoenix Kingdoms: The Last Splendor of China\u2019s Bronze Age-Asian Art Museum": {
+            "name": "Phoenix Kingdoms: The Last Splendor of China\u2019s Bronze Age",
+            "venue": "Asian Art Museum",
+            "description": "Rising from the ashes of conquest, two brilliant but forgotten cultures claim their rightful places in China\u2019s history.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-07-22"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/phoenix-kingdoms/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/12/7936_23_PK-Web-Page_1600x900-1600x900.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4c2e209b4b753fd07d4cec64f136be2d"
+        },
+        "Into View: New Voices, New Stories-Asian Art Museum": {
+            "name": "Into View: New Voices, New Stories",
+            "venue": "Asian Art Museum",
+            "description": "Recently acquired work by fourteen contemporary artists whose alternative narratives of mythology, history, and identity speak to a radically reimagined future.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-10-17"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/into-view-new-voices-new-stories/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/into-view-new-voices-new-stories/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ceeff69443681928693fcb70ec6050c0"
+        },
+        "Takashi Murakami-Asian Art Museum": {
+            "name": "Takashi Murakami",
+            "venue": "Asian Art Museum",
+            "description": "Final\n chance to \nvisit\n the weirdly lovable, lovably weird world of Takashi Murakami.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-07-22"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/takashi-murakami/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/takashi-murakami/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ba2ab2b9cc7d6878fdc6df706666bfa1"
+        },
+        "Japanese Tastes in Chinese Ceramics-Asian Art Museum": {
+            "name": "Japanese Tastes in Chinese Ceramics",
+            "venue": "Asian Art Museum",
+            "description": "Exquisite Chinese and Chinese-influenced ceramics from the Kyoto National Museum \ndemonstrate\n the \nimportance of\n Chinese art \nto\n Japanese tea culture.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-05-06"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/japanese-tastes-in-chinese-ceramics/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/japanese-tastes-in-chinese-ceramics/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "01612e933d6a15b7e9ec4fb642bacd0a"
+        },
+        "Japanese Ink Paintings-Asian Art Museum": {
+            "name": "Japanese Ink Paintings",
+            "venue": "Asian Art Museum",
+            "description": "Highlights from the collection illustrate how Japanese artists from the 15th to the early 17th century engaged with Chinese ink painting styles.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-06-10"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/japanese-ink-paintings/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/japanese-ink-paintings/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f4a46eca936ef982c8c3b465a1116c45"
+        },
+        "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts-Asian Art Museum": {
+            "name": "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts",
+            "venue": "Asian Art Museum",
+            "description": "D\nepictions of intriguing\n tales\n that \nhave i\nnform\ned\n, entertain\ned\n, and engage\nd audiences for centuries.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-07-08"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/deities-paragons-and-legends/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/deities-paragons-and-legends/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4faebaf96e929e4eb7e78b585e49ee23"
+        },
+        "RAD (Research And Development)-Asian Art Museum": {
+            "name": "RAD (Research And Development)",
+            "venue": "Asian Art Museum",
+            "description": "A\nn experimental, \na\ntelier-style\n \nspace\n at the intersection of art and technology.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-10-31"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/rad-research-and-development/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/rad-research-and-development/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "89b1baf6d593903f97d729b4241fd850"
+        },
+        "Ruth Asawa: Untitled (S.272)-Asian Art Museum": {
+            "name": "Ruth Asawa: Untitled (S.272)",
+            "venue": "Asian Art Museum",
+            "description": "A chance to intimately encounter one of Ruth Asawa\u2019s most celebrated works.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/ruth-asawa-untitled/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/ruth-asawa-untitled/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "63b58ab39e02832fb92dc994f3493e4d"
+        },
+        "East West Bank Art Terrace-Asian Art Museum": {
+            "name": "East West Bank Art Terrace",
+            "venue": "Asian Art Museum",
+            "description": "The East West Bank Art Terrace is an outdoor platform for contemporary art featuring thought-provoking works by both emerging and world-renowned artists.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/east-west-bank-art-terrace/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/east-west-bank-art-terrace/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "29489b2ad3cf9261b61b1d7bb68b6c5b"
+        },
+        "Jakhodo Today-Asian Art Museum": {
+            "name": "Jakhodo Today",
+            "venue": "Asian Art Museum",
+            "description": "A beloved and meaningful motif from Korean folk art, reimagined for the 21st century.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/jakhodo-today/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/jakhodo-today/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "0f460cab0d6ca07c1776a81be30f77da"
+        },
+        "Taihu Rock\u2014East Wind II-Asian Art Museum": {
+            "name": "Taihu Rock\u2014East Wind II",
+            "venue": "Asian Art Museum",
+            "description": "What happens when a calligrapher exchanges ink for metal? Find out with artist Tianjin Ren's \nTaihu Rock\u2014East Wind II\n, now anchoring Osher Plaza in front of the museum\u2019s main entrance on Larkin Street.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/taihu-rock-east-wind-ii/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/taihu-rock-east-wind-ii/",
+                    "description": "Image"
+                }
+            ],
+            "hash": "136de47fffea52d9f6aae451ea924f21"
         }
     }
 }

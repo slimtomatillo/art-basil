@@ -631,6 +631,147 @@ def scrape_sfwomenartists(verbose=True):
     else:
         print(f"Events not found for San Francisco Women Artists Gallery")
 
+def scrape_asian_art_museum_current_events():
+    
+    def convert_date_to_dt(date_string):
+        """Takes a date in string form and converts it to a dt object"""
+        global month_to_num_dict
+
+        date_parts = date_string.split()
+        month_num = int(month_to_num_dict[date_parts[0]])
+        day = int(date_parts[1])
+        if len(date_parts) == 3:
+            year = int(date_parts[2])
+        else:
+            year = dt.datetime.now().year
+        if month_num and day and year:
+            date_dt = dt.date(year, month_num, day)
+        return date_dt
+
+    # Scrape info
+    url = 'https://exhibitions.asianart.org/'
+    soup = fetch_and_parse(url)
+    
+    # Get featured event (formatted differently than other events)
+    featured_event = soup.find(class_='hero-card -wrap')
+
+    # Check if featured event was found
+    if featured_event:
+
+        # Extract title and title-link
+        title_tag = featured_event.find(class_='hero-card__title')
+        if title_tag:
+            event_title = title_tag.text.strip()
+            event_link = title_tag.get('href')
+        else:
+            event_title, event_link = None, None
+
+        # Extract image link if possible
+        try:
+            image_link = featured_event.find(class_='hero-card__image-src')['src']
+        except TypeError:
+            image_link = None
+
+        # Extract date label
+        event_date = featured_event.find(class_='hero-card__aside').find('span').text.lower()
+        start_date = 'null'
+        if event_date:
+            end_date = convert_date_to_dt(event_date)
+        else:
+            end_date = 'null'
+
+        # Extract description
+        description_tag = featured_event.find('div', class_='hero-card__desc')
+        # Extracting all text within the div
+        if description_tag:
+            extracted_text = description_tag.get_text(separator=' ', strip=True)
+            # Additional string manipulation to correct spacing issues before 's'
+            corrected_text = extracted_text.replace(' s ', 's ')
+            event_description = corrected_text
+        else:
+            event_description = None
+
+        event_details = {
+            'name': event_title,
+            'venue': 'Asian Art Museum',
+            'description': event_description,
+            'tags': ['exhibition'] + ['current'] + ['museum'],
+            'phase': ['current'],
+            'dates': {'start': start_date, 'end': end_date},
+            'links': [
+                {
+                    'link': event_link,
+                    'description': 'Event Page'
+                },
+            ]
+        }
+        # Add image link if it exists
+        if image_link:
+            event_details['links'].append({
+                'link': image_link,
+                'description': 'Image'
+            })
+
+        process_event(event_details)
+
+    # Find rest of events
+    events_list = soup.find_all(class_='card split-grid__card split-grid__card--dark')
+
+    # Check if events were found
+    if events_list:
+
+        for event in events_list:
+            # Extract title and title link
+            title_tag = event.find(class_='card__title')
+            if title_tag:
+                event_title = title_tag.text.strip()
+                event_link = title_tag['href']
+            else:
+                event_title, event_link = None, None
+
+            # Extract image link if possible
+            try:
+                image_link = event.find(class_='card__img').find('a')['href']
+            except AttributeError:
+                image_link = None
+
+            # Extract date label
+            event_date = event.find('div', class_='card__subtitle').text.strip().lower().replace('through ', '')
+            start_date = 'null'
+            if event_date == 'ongoing':
+                end_date = 'null'
+            elif event_date:
+                end_date = convert_date_to_dt(event_date)
+            else:
+                end_date = 'null'
+
+            # Extract description
+            description_tag = event.find('div', class_='card__body')
+            event_description = description_tag.get_text(separator='\n').strip() if description_tag else None
+
+            event_details = {
+                'name': event_title,
+                'venue': 'Asian Art Museum',
+                'description': event_description,
+                'tags': ['exhibition'] + ['current'] + ['museum'],
+                'phase': ['current'],
+                'dates': {'start': start_date, 'end': end_date},
+                'links': [
+                    {
+                        'link': event_link,
+                        'description': 'Event Page'
+                    },
+                ]
+            }
+            # Add image link if it exists
+            if image_link:
+                event_details['links'].append({
+                    'link': image_link,
+                    'description': 'Image'
+                })
+
+            process_event(event_details)
+
 def main(copy_db=True, record_db_size=True):
     """
     Function that:
@@ -639,8 +780,9 @@ def main(copy_db=True, record_db_size=True):
         3. Scrapes data from SFMOMA
         4. Scrapes data from Contemporary Jewish Museum (CJM)
         5. Scrapes data from SF Women Artists Gallery
-        6. Saves data as json
-        7. Records the size of the db (num venues and events) if record_db_size=True
+        6. Scrapes data from Asian Art Museum
+        7. Saves data as json
+        8. Records the size of the db (num venues and events) if record_db_size=True
     """
     if copy_db:
         # Save a copy of existing json data
@@ -670,6 +812,11 @@ def main(copy_db=True, record_db_size=True):
     venue = 'San Francisco Women Artists Gallery'
     print(f"Starting scrape for {venue}")
     scrape_sfwomenartists(verbose=False)
+    print(f"Finished scrape for {venue}")
+
+    venue = 'Asian Art Museum'
+    print(f"Starting scrape for {venue}")
+    scrape_asian_art_museum_current_events()
     print(f"Finished scrape for {venue}")
 
     # Load db and count the venues and events
