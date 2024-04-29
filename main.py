@@ -731,7 +731,7 @@ def scrape_asian_art_museum_current_events():
 
             # Extract image link if possible
             try:
-                image_link = event.find(class_='card__img').find('a')['href']
+                image_link = event.find(class_='card__img').find('a').find('img')['src']
             except AttributeError:
                 image_link = None
 
