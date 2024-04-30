@@ -632,6 +632,7 @@ def scrape_sfwomenartists(verbose=True):
         print(f"Events not found for San Francisco Women Artists Gallery")
 
 def scrape_asian_art_museum_current_events():
+    """Scrape and process current events from Asian Art Museum."""
     
     def convert_date_to_dt(date_string):
         """Takes a date in string form and converts it to a dt object"""
@@ -749,12 +750,15 @@ def scrape_asian_art_museum_current_events():
             description_tag = event.find('div', class_='card__body')
             event_description = description_tag.get_text(separator='\n').strip() if description_tag else None
 
+            # Identify phase
+            phase = 'current'
+
             event_details = {
                 'name': event_title,
                 'venue': 'Asian Art Museum',
                 'description': event_description,
-                'tags': ['exhibition'] + ['current'] + ['museum'],
-                'phase': ['current'],
+                'tags': ['exhibition'] + [phase] + ['museum'],
+                'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
                 'links': [
                     {
@@ -772,6 +776,96 @@ def scrape_asian_art_museum_current_events():
 
             process_event(event_details)
 
+def scrape_asian_art_museum_past_events():
+    """Scrape and process past events from Asian Art Museum."""
+    
+    def convert_date_to_dt(date_string):
+        """Takes a date in string form and converts it to a dt object"""
+        global month_to_num_dict
+
+        date_parts = date_string.split()
+        month_num = int(month_to_num_dict[date_parts[0]])
+        day = int(date_parts[1])
+        if len(date_parts) == 3:
+            year = int(date_parts[2])
+        else:
+            year = dt.datetime.now().year
+        if month_num and day and year:
+            date_dt = dt.date(year, month_num, day)
+        return date_dt
+
+    # Scrape info
+    url = 'https://exhibitions.asianart.org/past/'
+    soup = fetch_and_parse(url)
+    
+    # Find rest of events
+    wrap_elements = soup.find(class_='exhibit-archive').find(class_='exhibit__content').find_all(class_='-wrap')
+    articles = []
+    for e in wrap_elements:
+        a = e.find_all('article')
+        if len(a) > 0:
+            articles += a
+
+    # Check if events were found
+    if articles:
+
+        for article in articles:
+
+            # Ignore the year cards
+            if 'card-slash' not in article['class']:
+
+                # Extract title and title link
+                title_tag = article.find('a', class_='card__title')
+                if title_tag:
+                    event_title = title_tag.text.strip()
+                    event_link = title_tag['href']
+                else:
+                    event_title, event_link = None, None
+
+                # Extract image link if possible
+                img_tag = article.find('img', class_='card__img-src')
+                if img_tag:
+                    image_link = img_tag['src']
+                else:
+                    image_link = None
+
+                # Extract date information
+                date_tag = article.find('div', class_='card__subtitle')
+                event_dates = date_tag.text.strip() if date_tag else None
+                dates = event_dates.lower().replace(',', '').split('–')
+                if event_dates:
+                    start_date = convert_date_to_dt(dates[0])
+                    end_date = convert_date_to_dt(dates[1])
+                else:
+                    start_date = 'null'
+                    end_date = 'null'
+
+                # Identify phase
+                phase = 'past'
+
+                event_details = {
+                    'name': event_title,
+                    'venue': 'Asian Art Museum',
+                    'description': None,
+                    'tags': ['exhibition'] + [phase] + ['museum'],
+                    'phase': phase,
+                    'dates': {'start': start_date, 'end': end_date},
+                    'links': [
+                        {
+                            'link': event_link,
+                            'description': 'Event Page'
+                        },
+                    ]
+                }
+                # Add image link if it exists
+                if image_link:
+                    event_details['links'].append({
+                        'link': image_link,
+                        'description': 'Image'
+                    })
+
+                process_event(event_details)
+
 def main(copy_db=True, record_db_size=True):
     """
     Function that:
@@ -780,7 +874,7 @@ def main(copy_db=True, record_db_size=True):
         3. Scrapes data from SFMOMA
         4. Scrapes data from Contemporary Jewish Museum (CJM)
         5. Scrapes data from SF Women Artists Gallery
-        6. Scrapes data from Asian Art Museum
+        6. Scrapes data from Asian Art Museum (current events and then past events)
         7. Saves data as json
         8. Records the size of the db (num venues and events) if record_db_size=True
     """
@@ -817,6 +911,7 @@ def main(copy_db=True, record_db_size=True):
     venue = 'Asian Art Museum'
     print(f"Starting scrape for {venue}")
     scrape_asian_art_museum_current_events()
+    scrape_asian_art_museum_past_events()
     print(f"Finished scrape for {venue}")
 
     # Load db and count the venues and events

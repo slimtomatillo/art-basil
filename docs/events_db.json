@@ -6214,9 +6214,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-10-17"
@@ -6231,7 +6229,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e09e043ff52a070592dc17cd3aac6f9b"
+            "hash": "4b9997f7f9bc43ce9ff45e883fe0cc1b"
         },
         "Takashi Murakami-Asian Art Museum": {
             "name": "Takashi Murakami",
@@ -6242,9 +6240,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-07-22"
@@ -6259,7 +6255,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3aee97c5cc0f5307ee4b45d40f76865a"
+            "hash": "0332c5d6ac9e186ecee9fa67edf604ad"
         },
         "Japanese Tastes in Chinese Ceramics-Asian Art Museum": {
             "name": "Japanese Tastes in Chinese Ceramics",
@@ -6270,9 +6266,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-05-06"
@@ -6287,7 +6281,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ab6ff4abdc68eca47f67586e2b8f9ee4"
+            "hash": "146de78a2e5e1523ca0f5964aa469e41"
         },
         "Japanese Ink Paintings-Asian Art Museum": {
             "name": "Japanese Ink Paintings",
@@ -6298,9 +6292,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-06-10"
@@ -6315,7 +6307,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "041c8526e044814df5bf0245de042137"
+            "hash": "bb9d9fe4c0c5a435c538ff6c8cf567a6"
         },
         "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts-Asian Art Museum": {
             "name": "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts",
@@ -6326,9 +6318,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-07-08"
@@ -6343,7 +6333,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "65d33ae3d3f3ecd4f0d36a0895943e2d"
+            "hash": "878054410cab2786d88fb75e8f24d7e1"
         },
         "RAD (Research And Development)-Asian Art Museum": {
             "name": "RAD (Research And Development)",
@@ -6354,9 +6344,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-10-31"
@@ -6371,7 +6359,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "cda5beefbf8aff5c46f9df73ed967b49"
+            "hash": "fde22723d988949a660ae723e788bb3b"
         },
         "Ruth Asawa: Untitled (S.272)-Asian Art Museum": {
             "name": "Ruth Asawa: Untitled (S.272)",
@@ -6382,9 +6370,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
@@ -6399,7 +6385,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "829b12eefae3db8a5ab4051f624f71fc"
+            "hash": "90e2dde71ecbf9e9463ddac9337a2363"
         },
         "East West Bank Art Terrace-Asian Art Museum": {
             "name": "East West Bank Art Terrace",
@@ -6410,9 +6396,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
@@ -6427,7 +6411,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3a4774527a6c8b58207f73f787c8a9b1"
+            "hash": "76a46a8964f1bb2b1962a8593b5beb16"
         },
         "Jakhodo Today-Asian Art Museum": {
             "name": "Jakhodo Today",
@@ -6438,9 +6422,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
@@ -6455,7 +6437,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "efae332eac7b27db7de1d8b80f089e37"
+            "hash": "27ebce7554ec7151af3fd4a937e48adb"
         },
         "Taihu Rock\u2014East Wind II-Asian Art Museum": {
             "name": "Taihu Rock\u2014East Wind II",
@@ -6466,9 +6448,7 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
@@ -6483,7 +6463,657 @@
                     "description": "Image"
                 }
             ],
-            "hash": "96f202e615e7d98f39f1fd932abf3796"
+            "hash": "7b3ee444cf56b10287305ad1728ab8ef"
+        },
+        "Resilient Traditions: Korean American Stories Told Through Paper-Asian Art Museum": {
+            "name": "Resilient Traditions: Korean American Stories Told Through Paper",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-04-13",
+                "end": "2024-02-05"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/resilient-traditions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/Hero_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "de468f60426ec2c1db0be8f1ad35764f"
+        },
+        "Murakami: Monsterized-Asian Art Museum": {
+            "name": "Murakami: Monsterized",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-09-15",
+                "end": "2024-02-12"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/takashi-murakami-monsterized/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/07/7769_23_Murakami-Exhibition-Page-Web-Images_v42-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4744b8f75082faaa353c6a4ea9f8b9c1"
+        },
+        "Jenifer K Wofford: Pattern Recognition-Asian Art Museum": {
+            "name": "Jenifer K Wofford: Pattern Recognition",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-10-14",
+                "end": "2023-08-20"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/jenifer-k-wofford-pattern-recognition/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/07/Wofford_1600x900_3-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "c952e57d50c913ca5392bfdadb786aea"
+        },
+        "Afruz Amighi: My House, My Tomb-Asian Art Museum": {
+            "name": "Afruz Amighi: My House, My Tomb",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-05-31",
+                "end": "2023-10-30"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/afruz-amighi-my-house-my-tomb/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/07/Afruz-Amighi_Website-Assets_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "47aec6a7575cff487c7bbaa1f3b50f4f"
+        },
+        "Zheng Chongbin: I Look for the Sky-Asian Art Museum": {
+            "name": "Zheng Chongbin: I Look for the Sky",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-11-20",
+                "end": "2023-01-30"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/zheng-chongbin-i-look-for-the-sky-2/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/10/Chongbin_Exhibition_Website_1600x900_v3-600x450.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f6ddac08d4ca02c63bc2a42bfe8ca1b7"
+        },
+        "Into View: Bernice Bing-Asian Art Museum": {
+            "name": "Into View: Bernice Bing",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-07",
+                "end": "2023-12-04"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/into-view-bernice-bing/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/Bing_mural-w-viewer_b_1200x900-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "d932e939d6d45907d8ff5c0e34ecd0ea"
+        },
+        "Bearing Witness: Selected Works by Chiura Obata-Asian Art Museum": {
+            "name": "Bearing Witness: Selected Works by Chiura Obata",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-20",
+                "end": "2023-02-27"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/bearing-witness-selected-works-by-chiura-obata/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/09/7496_22_ChiruraObata_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "9da2ac084bd8437dfa1189c62cfb5526"
+        },
+        "Beyond Bollywood: 2000 Years of Dance in Art-Asian Art Museum": {
+            "name": "Beyond Bollywood: 2000 Years of Dance in Art",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-03-31",
+                "end": "2023-07-10"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/beyond-bollywood-2000-years-of-dance-in-art/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/07/7474_22_BB_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f4f1f456a8a8e49f778be1ed9f88cfb4"
+        },
+        "Color Trip: Yoshida Hodaka\u2019s Modern Prints-Asian Art Museum": {
+            "name": "Color Trip: Yoshida Hodaka\u2019s Modern Prints",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-12-16",
+                "end": "2023-05-01"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/color-trip-yoshida-hodakas-modern-prints/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/08/7494_22_Hodaka_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "2ad0e25d43f00f2346a382065de6e419"
+        },
+        "Past Continuous Tense-Asian Art Museum": {
+            "name": "Past Continuous Tense",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-12-16",
+                "end": "2023-12-11"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/past-continuous-tense/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/PCT_installation_1600w-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4311cde07b21141f99a23d0fa5d7b72f"
+        },
+        "Kongkee: Warring States Cyberpunk-Asian Art Museum": {
+            "name": "Kongkee: Warring States Cyberpunk",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-11-18",
+                "end": "2023-01-23"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/kongkee-warring-states-cyberpunk/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/12/7621_22_KongkeeWebsite_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ffe5c46fb4e1acd78a20a3a543e46f47"
+        },
+        "Delightful Luxury: The Art of Chinese Lacquer-Asian Art Museum": {
+            "name": "Delightful Luxury: The Art of Chinese Lacquer",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-11-17",
+                "end": "2023-11-19"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/delightful-luxury-the-art-of-chinese-lacquer/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/10/7499_22_ChineseLacquer_fan_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ea4f061e403fe7b55056e2ce20316771"
+        },
+        "The Heart of Zen-Asian Art Museum": {
+            "name": "The Heart of Zen",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-11-17",
+                "end": "2023-12-31"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/the-heart-of-zen/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/Persimmons_1600x900b-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "170f00c938f514270a12aaf2184ba71d"
+        },
+        "Bernice Bing: Open Call-Asian Art Museum": {
+            "name": "Bernice Bing: Open Call",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-06-16",
+                "end": "2023-12-11"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/bernice-bing-open-call/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/05/Bing-OpenCall_rice_600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4376a773555c0c47e6c6cfd39fe7e1db"
+        },
+        "Hell: Arts of Asian Underworlds-Asian Art Museum": {
+            "name": "Hell: Arts of Asian Underworlds",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-06-16",
+                "end": "2023-09-18"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/hell-arts-of-asian-underworlds/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/07/hell_quanyin_600x500-600x450.png",
+                    "description": "Image"
+                }
+            ],
+            "hash": "8123eb3d6315223270dc7df29964aecd"
+        },
+        "Chinese Ink Paintings: A Selection of Modern Masters-Asian Art Museum": {
+            "name": "Chinese Ink Paintings: A Selection of Modern Masters",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-12-15",
+                "end": "2023-10-09"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/chinese-ink-paintings-a-selection-of-modern-masters/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/06/7790_23_Chinese-Ink-Paintings-Exhibition-_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f5b68c4e784dabbae7ea584b4f0cfb2b"
+        },
+        "teamLab: Sketch Ocean-Asian Art Museum": {
+            "name": "teamLab: Sketch Ocean",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-07-23",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/teamlab-sketch-ocean/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/02/Sketch-Aquarium__high-1-scaled-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "27efdefceb673e37046d19f6f50ea94a"
+        },
+        "teamLab: Continuity-Asian Art Museum": {
+            "name": "teamLab: Continuity",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-07-23",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/teamlab-continuity/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/02/7066_21_teamLab_Website_Update_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "245291bcb20a79496bab5a7af9d9e72f"
+        },
+        "After Hope: Videos of Resistance-Asian Art Museum": {
+            "name": "After Hope: Videos of Resistance",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-02-19",
+                "end": "2022-05-02"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/after-hope/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/08/AfterHope_1600x900_1-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "6f10b87ff040ee12c68218916a7f8647"
+        },
+        "Memento: Jayashree Chakravarty and Lam Tung Pang-Asian Art Museum": {
+            "name": "Memento: Jayashree Chakravarty and Lam Tung Pang",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-02-12",
+                "end": "2022-07-04"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/memento-jayashree-chakravarty-and-lam-tung-pang/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/05/Memento_updated_600x450-600x450.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "0fb6a8b19d29b4653e1d5388f89b2885"
+        },
+        "Chanel Miller: I was, I am, I will be-Asian Art Museum": {
+            "name": "Chanel Miller: I was, I am, I will be",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-08-05",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/chanel-miller-i-was-i-am-i-will-be/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/10/Chanel-Miller_Hero_1600x900-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "932e7ab39fcd1e9a0812d31b47f54ff5"
+        },
+        "Carlos Villa: Worlds in Collision-Asian Art Museum": {
+            "name": "Carlos Villa: Worlds in Collision",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-06-17",
+                "end": "2022-10-24"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/carlos-villa-worlds-in-collision/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/03/6389_CarlosVilla_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "e2d765a9d2832dc9a979fbae498bbc6e"
+        },
+        "Seeing Gender-Asian Art Museum": {
+            "name": "Seeing Gender",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-01-21",
+                "end": "2022-09-05"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/seeing-gender/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/06/Gender_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "8af424839fe8efc237a62c3d4ada0879"
+        },
+        "Weaving Stories-Asian Art Museum": {
+            "name": "Weaving Stories",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-12-17",
+                "end": "2022-05-02"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/weaving-stories/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/07/6867_21_Weaving-Stories_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "51bc975fa8813eeda2889afcceb81197"
+        },
+        "When Rabbit Left the Moon-Asian Art Museum": {
+            "name": "When Rabbit Left the Moon",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-02-18",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/when-rabbit-left-the-moon/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/01/7256_22_Omori_Website_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "eb93643a5aa754a01b2dbeb1aeb31ce6"
         }
     }
 }
