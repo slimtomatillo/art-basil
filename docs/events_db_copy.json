@@ -13,6 +13,7 @@
                 "start": "null",
                 "end": "2024-05-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/lhola-amira",
@@ -23,7 +24,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9f015d7c0f3a5f5cdf33d76e6aa79b96"
+            "hash": "64269dcf8c7d85c7a82a75f3f16e312a"
         },
         "Bouquets to Art 2024-de Young": {
             "name": "Bouquets to Art 2024",
@@ -38,6 +39,7 @@
                 "start": "2024-06-04",
                 "end": "2024-06-09"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/bouquets-to-art-2024",
@@ -48,7 +50,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "15d5461787cb0e7fbb6c026be717b0b6"
+            "hash": "7e2bc43b6596fd156fabaf0fa3ac2690"
         },
         "Lee Mingwei: Rituals of Care-de Young": {
             "name": "Lee Mingwei: Rituals of Care",
@@ -63,6 +65,7 @@
                 "start": "null",
                 "end": "2024-07-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/lee-mingwei",
@@ -73,7 +76,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "fb501d361b18f5b8a22a380c94aed9f2"
+            "hash": "31a3e84c1140fc21365670f8266b258b"
         },
         "Irving Penn-de Young": {
             "name": "Irving Penn",
@@ -88,6 +91,7 @@
                 "start": "null",
                 "end": "2024-07-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/irving-penn",
@@ -98,7 +102,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "17f0924595facbeff1b6d5a9076d50c4"
+            "hash": "beac0433abe24567cf9492b59899bec7"
         },
         "Fashioning San Francisco: A Century of Style-de Young": {
             "name": "Fashioning San Francisco: A Century of Style",
@@ -113,6 +117,7 @@
                 "start": "null",
                 "end": "2024-08-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/fashioning-san-francisco",
@@ -123,7 +128,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c6621c5686a0fae751a5f53baa4ea7ac"
+            "hash": "f26c49b703af7b22552fae0ee006c497"
         },
         "Nampeyo and the Siky\u00e1tki Revival-de Young": {
             "name": "Nampeyo and the Siky\u00e1tki Revival",
@@ -138,6 +143,7 @@
                 "start": "null",
                 "end": "2024-09-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/nampeyo-and-sikyatki-revival",
@@ -148,7 +154,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "eb0c709f6177d8de0bbe4e42da0201a1"
+            "hash": "463607bc12bf57bb788c7a16d90bddd9"
         },
         "American Beauty: The Osher Collection of American Art-de Young": {
             "name": "American Beauty: The Osher Collection of American Art",
@@ -163,6 +169,7 @@
                 "start": "2024-05-18",
                 "end": "2024-10-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/osher-american-art",
@@ -173,7 +180,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "35968e0a311dbfdbc99b7c72beb19a6e"
+            "hash": "401fee7d028ba139116aca99f1e15c60"
         },
         "Art and War in the Renaissance: The Battle of Pavia Tapestries-de Young": {
             "name": "Art and War in the Renaissance: The Battle of Pavia Tapestries",
@@ -188,6 +195,7 @@
                 "start": "2024-10-19",
                 "end": "2025-01-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/battle-pavia-tapestries",
@@ -198,7 +206,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d534283c7142f98d81f4ea9481f21558"
+            "hash": "c27411557367d6a474d06a4c23f0095b"
         },
         "Tamara de Lempicka-de Young": {
             "name": "Tamara de Lempicka",
@@ -213,6 +221,7 @@
                 "start": "2024-10-12",
                 "end": "2025-02-09"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/tamara-de-lempicka",
@@ -223,7 +232,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "fd9e6512a4727c57219570afbd970f69"
+            "hash": "6d984b52196399d522d64a6916880215"
         },
         "Leilah Babirye: We Have a History-de Young": {
             "name": "Leilah Babirye: We Have a History",
@@ -238,6 +247,7 @@
                 "start": "2024-06-22",
                 "end": "2025-06-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/leilah-babirye",
@@ -248,7 +258,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "177cf60bb70b138195448071abb46157"
+            "hash": "367c1176233a9b00bd683acc74fec4f8"
         },
         "Rose B. Simpson: LEXICON-de Young": {
             "name": "Rose B. Simpson: LEXICON",
@@ -263,6 +273,7 @@
                 "start": "2024-11-16",
                 "end": "2025-06-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/rose-b-simpson",
@@ -273,7 +284,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4a3bfd6f77456d33fd75ea502cfd5365"
+            "hash": "be7a5c5e17616cae34d4db706d8d596f"
         },
         "About Place: Bay Area Artists from the Svane Gift-de Young": {
             "name": "About Place: Bay Area Artists from the Svane Gift",
@@ -288,6 +299,7 @@
                 "start": "2024-08-10",
                 "end": "2025-09-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/bay-area-artists-svane",
@@ -298,7 +310,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "34d0109f7d63540977a372f37e203da7"
+            "hash": "b261b169af1bba981ed54b42fb3410ff"
         },
         "Embroidered Histories-de Young": {
             "name": "Embroidered Histories",
@@ -313,6 +325,7 @@
                 "start": "2024-12-14",
                 "end": "2025-12-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/embroidered-histories",
@@ -323,7 +336,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "90bed2031bcbf53463c052e106597db7"
+            "hash": "b03c7deb85b904bd547da91516c9f81a"
         },
         "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family-de Young": {
             "name": "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family",
@@ -338,6 +351,7 @@
                 "start": "null",
                 "end": "2026-03-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/papua-new-guinea-mathias-kauage",
@@ -348,7 +362,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6bcbac9f7172b659696bee73d89ea769"
+            "hash": "a609ca1a561baff9492ed7bdb123c3f4"
         }
     },
     "Legion of Honor": {
@@ -386,6 +400,7 @@
                 "start": "null",
                 "end": "2024-08-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/japanese-prints",
@@ -396,7 +411,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "04ea2c68e933efdc0bb3f3b77c84f4f4"
+            "hash": "6dab92659df1817f34cbb89b9227fbf5"
         },
         "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)-Legion of Honor": {
             "name": "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)",
@@ -411,6 +426,7 @@
                 "start": "null",
                 "end": "2024-08-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/zuan-cho-kimono-design",
@@ -421,7 +437,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "21ed5594c5408db099e851d496215cad"
+            "hash": "47d63b20b51b064bf18c7caed2b44f87"
         },
         "Woodcut: Primary Printmaking-Legion of Honor": {
             "name": "Woodcut: Primary Printmaking",
@@ -436,6 +452,7 @@
                 "start": "null",
                 "end": "2024-10-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/woodcut-primary-printmaking",
@@ -446,7 +463,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "cc0dcf64947d36d8cec4d680b0d8abc0"
+            "hash": "b95be81ce0b0eed8aaf5dd3ecfde4aa0"
         },
         "Mary Cassatt at Work-Legion of Honor": {
             "name": "Mary Cassatt at Work",
@@ -461,6 +478,7 @@
                 "start": "2024-10-05",
                 "end": "2025-01-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/mary-cassatt",
@@ -471,7 +489,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d056fae9401eb4603f7043d2227bab23"
+            "hash": "2f6190901b32fe8e08cc5277a21e57e8"
         },
         "Dress Rehearsal: The Art of Theatrical Design-Legion of Honor": {
             "name": "Dress Rehearsal: The Art of Theatrical Design",
@@ -486,6 +504,7 @@
                 "start": "2024-11-09",
                 "end": "2025-04-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/dress-rehearsal-theatrical-design",
@@ -496,7 +515,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "2fdfdb90d44d55350344b98f61497401"
+            "hash": "b84aa80296c86d3f40269ab675502b54"
         }
     },
     "SFMOMA": {
@@ -514,6 +533,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/creative-growth-the-house-that-art-built/",
@@ -524,7 +544,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "24232b591dc66eb850ed22b8e02e4d2a"
+            "hash": "117e5117d02d5e39d74ead2307e76619"
         },
         "Yayoi Kusama: Infinite Love-SFMOMA": {
             "name": "Yayoi Kusama: Infinite Love",
@@ -540,6 +560,7 @@
                 "start": "null",
                 "end": "2024-05-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/yayoi-kusama-infinite-love/",
@@ -550,7 +571,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a1ada1ebfd5b985e287d99381a7587b5"
+            "hash": "8c2b865c3286db474f584307592f34bd"
         },
         "Zanele Muholi: Eye Me-SFMOMA": {
             "name": "Zanele Muholi: Eye Me",
@@ -559,14 +580,14 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum",
-                "queer"
+                "museum"
             ],
             "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-08-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/zanele-muholi-eye-me/",
@@ -577,7 +598,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f983f59eeebd5f5b6add8af01ceb4bd0"
+            "hash": "26d32fc2fe15eaadae22291fe547f260"
         },
         "New Work: Mary Lovelace O\u2019Neal-SFMOMA": {
             "name": "New Work: Mary Lovelace O\u2019Neal",
@@ -593,6 +614,7 @@
                 "start": "null",
                 "end": "2024-10-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/new-work-mary-lovelace-oneal/",
@@ -603,7 +625,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b714668db80530a685c51a889a7aa6d9"
+            "hash": "671df96a439d9696b6bde6aa23b0417a"
         },
         "Chiura Obata-SFMOMA": {
             "name": "Chiura Obata",
@@ -619,6 +641,7 @@
                 "start": "null",
                 "end": "2024-07-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/chiura-obata/",
@@ -629,7 +652,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c08dbceebedca2615f6d147b0ad45d9b"
+            "hash": "d157b5fd93aa673b950424ed34b066aa"
         },
         "Marshall Brown Projects: Dequindre Civic Academy-SFMOMA": {
             "name": "Marshall Brown Projects: Dequindre Civic Academy",
@@ -645,6 +668,7 @@
                 "start": "2023-08-12",
                 "end": "2024-05-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/marshall-brown-projects-dequindre-civic-academy/",
@@ -655,7 +679,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a6825bedf44cf8694bf310725a8f0f2b"
+            "hash": "9edc7a7d24822615ebc91220f08841cd"
         },
         "What Matters: A Proposition in Eight Rooms-SFMOMA": {
             "name": "What Matters: A Proposition in Eight Rooms",
@@ -671,6 +695,7 @@
                 "start": "2023-07-22",
                 "end": "2024-08-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/what-matters-a-proposition-in-eight-rooms/",
@@ -681,7 +706,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "501991f0b23b20c9666316aafebbf21b"
+            "hash": "863fec127f990a2a543e9919930b9050"
         },
         "Ragnar Kjartansson: The Visitors-SFMOMA": {
             "name": "Ragnar Kjartansson: The Visitors",
@@ -697,6 +722,7 @@
                 "start": "2022-11-05",
                 "end": "2024-10-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/ragnar-kjartansson-the-visitors/",
@@ -707,7 +733,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6df7a1bc968136aaf6c476fc9c70cf59"
+            "hash": "72cd769880385f2f656b4955451c73fe"
         },
         "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections-SFMOMA": {
             "name": "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections",
@@ -723,6 +749,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/afterimages-echoes-of-the-1960s-from-the-fisher-and-sfmoma-collections/",
@@ -733,7 +760,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "020c1d85b896b51af6eb5dcc9ea2d23a"
+            "hash": "9eb19aa685b5998200e8fd4a5d34580c"
         },
         "Alexander Calder: Dissonant Harmony-SFMOMA": {
             "name": "Alexander Calder: Dissonant Harmony",
@@ -749,6 +776,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/alexander-calder-dissonant-harmony/",
@@ -759,7 +787,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6afd0fde09d5da43d2d1ffe653bd07b7"
+            "hash": "7ff3df3b1455b46cc50ed2096661fa05"
         },
         "Bay Area Walls-SFMOMA": {
             "name": "Bay Area Walls",
@@ -775,6 +803,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/bay-area-walls/",
@@ -785,7 +814,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "afd440b3e8e0f46ba3046beb15f19ce0"
+            "hash": "abda58cf630277aca09e12175a3d3261"
         },
         "Open Ended: SFMOMA's Collection, 1900 to Now-SFMOMA": {
             "name": "Open Ended: SFMOMA's Collection, 1900 to Now",
@@ -801,6 +830,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/open-ended/",
@@ -811,7 +841,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6f5d96c54d6ab9a20f1edd3b5cb4c0cb"
+            "hash": "55f4579fbcb312c010198fa3b60e5a58"
         },
         "Freeform: Experiencing Abstraction-SFMOMA": {
             "name": "Freeform: Experiencing Abstraction",
@@ -827,6 +857,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/freeform-experiencing-abstraction/",
@@ -837,7 +868,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "46c2ab0cb9fc97ea2b34a6bbe1a9d35d"
+            "hash": "c84f4b3a31214b2d4964b11df12e99f9"
         },
         "German Art After 1960-SFMOMA": {
             "name": "German Art After 1960",
@@ -853,6 +884,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/german-art-after-1960/",
@@ -863,7 +895,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "edf646174b614f9a0f1ef0841c785445"
+            "hash": "3ca6a1c265064a6b2c1e255a500cc7e5"
         },
         "Wondering About Museums-SFMOMA": {
             "name": "Wondering About Museums",
@@ -879,6 +911,7 @@
                 "start": "2023-12-07",
                 "end": "2024-09-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/wondering-about-museums/",
@@ -889,7 +922,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "97ada2d822cff88cb6457fb9d59577e4"
+            "hash": "4af932c8c42d4b64d6c1e52a483b5e5d"
         },
         "Barbara Stauffacher Solomon: Strips of Stripes-SFMOMA": {
             "name": "Barbara Stauffacher Solomon: Strips of Stripes",
@@ -905,6 +938,7 @@
                 "start": "2023-09-16",
                 "end": "null"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/barbara-stauffacher-solomon-strips-of-stripes/",
@@ -915,7 +949,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "30d2dfb1bed079f83ea13b4989e70fba"
+            "hash": "5d2e9c26e1bb2920c2efda5d1b446f9a"
         },
         "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart-SFMOMA": {
             "name": "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart",
@@ -931,6 +965,7 @@
                 "start": "2023-09-16",
                 "end": "2025-10-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/yayoi-kusama-aspiring-to-pumpkins-love-the-love-in-my-heart/",
@@ -941,7 +976,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "af5854d70c5292ac89672b64b87203c9"
+            "hash": "cdc9cb053e707d5ff8881741da31b9a9"
         },
         "Wu Tsang: Of Whales-SFMOMA": {
             "name": "Wu Tsang: Of Whales",
@@ -957,6 +992,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/wu-tsang-of-whales/",
@@ -967,7 +1003,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ffa24fccf9af561a2c0e9539344990e1"
+            "hash": "a3c4f566339c9ff10996ed22e6649ee8"
         },
         "Olafur Eliasson: One-way colour tunnel-SFMOMA": {
             "name": "Olafur Eliasson: One-way colour tunnel",
@@ -983,6 +1019,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/olafur-eliasson-one-way-colour-tunnel/",
@@ -993,7 +1030,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b3134b8c90a78e66490f458b32e0450d"
+            "hash": "c9667a16f1ae6b61ee7d21a3e26849de"
         },
         "Julie Mehretu: HOWL, eon (I, II)-SFMOMA": {
             "name": "Julie Mehretu: HOWL, eon (I, II)",
@@ -1009,6 +1046,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/julie-mehretu-howl-eon-i-ii/",
@@ -1019,7 +1057,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "538d534be648f67dafc7eb8cf83f779f"
+            "hash": "1c56d682ff23d41a5139d06044523eeb"
         },
         "Art of Noise-SFMOMA": {
             "name": "Art of Noise",
@@ -1035,6 +1073,7 @@
                 "start": "2024-05-04",
                 "end": "2024-08-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/art-of-noise/",
@@ -1045,7 +1084,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "bc72607c1deacd65b7d061bd39efb7e5"
+            "hash": "ce56ee49d0e56264335fc284355181ed"
         },
         "Sea Change: Photographs from the Collection-SFMOMA": {
             "name": "Sea Change: Photographs from the Collection",
@@ -1061,6 +1100,7 @@
                 "start": "2023-08-02",
                 "end": "2024-03-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/sea-change-photographs-from-the-collection/",
@@ -1071,7 +1111,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ffe72103fcfe9a2c269aa66f497c901e"
+            "hash": "ed1486ae0bcc11488abfa1d498f9a624"
         },
         "Susan Philipsz: Songs Sung in the First Person on Themes of Longing, Sympathy and Release-SFMOMA": {
             "name": "Susan Philipsz: Songs Sung in the First Person on Themes of Longing, Sympathy and Release",
@@ -1087,6 +1127,7 @@
                 "start": "null",
                 "end": "2024-03-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/susan-philipsz/",
@@ -1097,7 +1138,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0449d284b162cb592dd6806ab6fb4b2c"
+            "hash": "9e7468b821df6403bddd6e6ff7d511b5"
         },
         "Wolfgang Tillmans: To look without fear-SFMOMA": {
             "name": "Wolfgang Tillmans: To look without fear",
@@ -1113,6 +1154,7 @@
                 "start": "2023-11-11",
                 "end": "2024-03-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/wolfgang-tillmans-to-look-without-fear/",
@@ -1123,7 +1165,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a76f287dce8b94d24277db9227ba60f4"
+            "hash": "933678e4042d0ee0746410b14c9c82e7"
         },
         "Sitting on Chrome: Mario Ayala, rafa esparza, and Guadalupe Rosales-SFMOMA": {
             "name": "Sitting on Chrome: Mario Ayala, rafa esparza, and Guadalupe Rosales",
@@ -1139,6 +1181,7 @@
                 "start": "2023-08-05",
                 "end": "2024-02-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/sitting-on-chrome-mario-ayala-rafa-esparza-and-guadalupe-rosales/",
@@ -1149,7 +1192,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1488a9677d11e0a335fa5649347b7615"
+            "hash": "0d0e89e5cef275b8e3eb25e285b6bf39"
         },
         "New Work: Fernando Palma Rodr\u00edguez-SFMOMA": {
             "name": "New Work: Fernando Palma Rodr\u00edguez",
@@ -1165,6 +1208,7 @@
                 "start": "2023-08-23",
                 "end": "2024-01-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/new-work-fernando-palma-rodriguez/",
@@ -1175,7 +1219,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "26e04c36f9e264957f0dfe813484c61c"
+            "hash": "4b4f4aef9eff417869c22533317348ac"
         },
         "Pacita Abad-SFMOMA": {
             "name": "Pacita Abad",
@@ -1191,6 +1235,7 @@
                 "start": "2023-10-21",
                 "end": "2024-01-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/pacita-abad/",
@@ -1201,7 +1246,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8a0b81a2718ceb0dcd8832ff607cca5e"
+            "hash": "36e030e019e211b6e0ff5b05acf940b7"
         },
         "KLEE + BSS  Paul Klee and Barbara Stauffacher Solomon-SFMOMA": {
             "name": "KLEE + BSS  Paul Klee and Barbara Stauffacher Solomon",
@@ -1217,6 +1262,7 @@
                 "start": "2023-04-07",
                 "end": "2024-01-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/klee-bss-paul-klee-and-barbara-stauffacher-solomon/",
@@ -1227,7 +1273,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f6b97cd3197cb3872ba5b38995f67209"
+            "hash": "fdee9479a31a7627830df4e67e393f19"
         },
         "Hung Liu: Witness-SFMOMA": {
             "name": "Hung Liu: Witness",
@@ -1243,6 +1289,7 @@
                 "start": "2023-06-30",
                 "end": "2023-12-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/hung-liu-witness/",
@@ -1253,7 +1300,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b12a86bbb6bc7f8ce9fec2a1eb6906ac"
+            "hash": "045af8434d23bf7208ed5aa95dd79a8e"
         },
         "Kinship: Photography and Connection-SFMOMA": {
             "name": "Kinship: Photography and Connection",
@@ -1269,6 +1316,7 @@
                 "start": "2023-05-20",
                 "end": "2023-11-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/kinship-photography-and-connection/",
@@ -1279,7 +1327,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "40c58dc66bcf1f6bfd617d5d7869d084"
+            "hash": "ec1c5ac4508ada629a41774c23c7172f"
         },
         "Frank Bowling: The New York Years 1966\u20131975-SFMOMA": {
             "name": "Frank Bowling: The New York Years 1966\u20131975",
@@ -1295,6 +1343,7 @@
                 "start": "2023-05-20",
                 "end": "2023-08-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/frank-bowling-the-new-york-years-1966-1975/",
@@ -1305,7 +1354,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0af19516b8934df45539323724d84249"
+            "hash": "5260423c4fa29527e3f16383a88b1282"
         },
         "Corporeal-SFMOMA": {
             "name": "Corporeal",
@@ -1321,6 +1370,7 @@
                 "start": "2023-02-18",
                 "end": "2023-07-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/corporeal/",
@@ -1331,7 +1381,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "31f39855cd638817462fb2a382716e19"
+            "hash": "60dfb3abaf99115777b46d5da42c2800"
         },
         "Janet Cardiff: The Telephone Call-SFMOMA": {
             "name": "Janet Cardiff: The Telephone Call",
@@ -1347,6 +1397,7 @@
                 "start": "2023-03-25",
                 "end": "2023-07-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/janet-cardiff-the-telephone-call/",
@@ -1357,7 +1408,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f3749506ff6bd0a854aa12ff0a2929a5"
+            "hash": "ece0dddeeb0fff6dcc96a01001d15c41"
         },
         "New Work: Anna Sew Hoy-SFMOMA": {
             "name": "New Work: Anna Sew Hoy",
@@ -1373,6 +1424,7 @@
                 "start": "2023-03-25",
                 "end": "2023-07-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/new-work-anna-sew-hoy/",
@@ -1383,7 +1435,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "29a98e44f6be68ed8a37f70300e2c63c"
+            "hash": "8e5a4be907c3496907d8fbfcb6a5b994"
         },
         "Acci\u00f3n Latina: The \u201980s Matter in the Mission-SFMOMA": {
             "name": "Acci\u00f3n Latina: The \u201980s Matter in the Mission",
@@ -1399,6 +1451,7 @@
                 "start": "2022-10-06",
                 "end": "2023-06-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/accion-latina-the-80s-matter-in-the-mission/",
@@ -1409,7 +1462,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7878d6b5a24eee51dc5a3bd8c8c5ec89"
+            "hash": "09a789acc38c2ffc857c4fc8324b41df"
         },
         "Conversation Pieces-SFMOMA": {
             "name": "Conversation Pieces",
@@ -1425,6 +1478,7 @@
                 "start": "2022-08-20",
                 "end": "2023-06-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/conversation-pieces/",
@@ -1435,7 +1489,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "03f01f550c403f99539f002f8eceb6a5"
+            "hash": "9e5b1c5281331883b1f935c41c1f1815"
         },
         "Scrappy Chair Challenge-SFMOMA": {
             "name": "Scrappy Chair Challenge",
@@ -1451,6 +1505,7 @@
                 "start": "2023-06-15",
                 "end": "2023-06-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/scrappy-chair-challenge/",
@@ -1461,7 +1516,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e48bc72feff6d7ac5112b003ad90b686"
+            "hash": "a0635530c3bc1d5bbb7786c16eb5319b"
         },
         "(a)way station-SFMOMA": {
             "name": "(a)way station",
@@ -1477,6 +1532,7 @@
                 "start": "2022-07-16",
                 "end": "2023-06-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/away-station/",
@@ -1487,7 +1543,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c564ac556b72e4d9ae925841951d614b"
+            "hash": "0acfabf169a365061c61249bf6325546"
         },
         "2022 SECA Art Award Exhibition-SFMOMA": {
             "name": "2022 SECA Art Award Exhibition",
@@ -1503,6 +1559,7 @@
                 "start": "2022-12-17",
                 "end": "2023-05-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/2022-seca-art-award-exhibition/",
@@ -1513,7 +1570,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "694456b9d0fa2946aa7bb9ee87f24166"
+            "hash": "3efd110709455eb36453952325e1a488"
         },
         "Julian Charri\u00e8re: Erratic-SFMOMA": {
             "name": "Julian Charri\u00e8re: Erratic",
@@ -1529,6 +1586,7 @@
                 "start": "2022-08-06",
                 "end": "2023-05-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/julian-charriere-erratic/",
@@ -1539,7 +1597,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f9eaf89fc3e12d4538a38234424c3a10"
+            "hash": "ab73fa616d00b2b0d7c612e9bf38dd11"
         }
     },
     "San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
@@ -1557,6 +1615,7 @@
                 "start": "2024-02-01",
                 "end": "2024-05-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://gggp.org/art-exhibit-jeanne-rosen-sofen/",
@@ -1585,6 +1644,7 @@
                 "start": "2023-12-07",
                 "end": "2024-04-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/200",
@@ -1595,7 +1655,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "98646bc926340bd779e16ebd4aab1741"
+            "hash": "186c0972f061be574599d261325db92b"
         },
         "RetroBlakesberg: The Music Never Stopped-Contemporary Jewish Museum": {
             "name": "RetroBlakesberg: The Music Never Stopped",
@@ -1611,6 +1671,7 @@
                 "start": "2023-08-31",
                 "end": "2024-07-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/199",
@@ -1621,7 +1682,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "58eb22e79fd1d0669e54b56ce82422f6"
+            "hash": "882543c9da4c8012700ce4f88a555c52"
         },
         "Radiant Practices: Illuminating Jewish Traditions-Contemporary Jewish Museum": {
             "name": "Radiant Practices: Illuminating Jewish Traditions",
@@ -1637,6 +1698,7 @@
                 "start": "2023-12-07",
                 "end": "2024-04-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/201",
@@ -1647,7 +1709,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6ee0632629aa062b4976e90ef609a8cb"
+            "hash": "30e8f64ddcaa170bfe2d52fa0c04608a"
         },
         "L'Chaim: Celebrating Our Building at 15-Contemporary Jewish Museum": {
             "name": "L'Chaim: Celebrating Our Building at 15",
@@ -1663,6 +1725,7 @@
                 "start": "2023-02-16",
                 "end": "2024-06-09"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/197",
@@ -1673,7 +1736,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b6697f78ad69bd0c6fbbe2482c77ee06"
+            "hash": "62b17d840f17eaf5915147d68306bd87"
         },
         "Annie Albagli: We Become [Vessels]-Contemporary Jewish Museum": {
             "name": "Annie Albagli: We Become [Vessels]",
@@ -1689,6 +1752,7 @@
                 "start": "2023-03-23",
                 "end": "2024-07-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/196",
@@ -1699,7 +1763,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "889bc20c2155e3067ed39b739ef28c1c"
+            "hash": "84ebd48b60232dcc356921b81de91fda"
         },
         "Lamp of the Covenant: Dave Lane-Contemporary Jewish Museum": {
             "name": "Lamp of the Covenant: Dave Lane",
@@ -1715,6 +1779,7 @@
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/4",
@@ -1725,7 +1790,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "22e6f331809b2709ebfe4f0e8a354d77"
+            "hash": "53bdb41a87ba5e3163f039c8014e79a8"
         },
         "California Jewish Open-Contemporary Jewish Museum": {
             "name": "California Jewish Open",
@@ -1741,6 +1806,7 @@
                 "start": "2024-06-06",
                 "end": "2024-10-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/234",
@@ -1751,7 +1817,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7742ab142420abf1d16bbeca8fa19146"
+            "hash": "20ac40d2926de4fc6cf7f627a389882a"
         },
         "Virtual Exhibition\u2014What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
             "name": "Virtual Exhibition\u2014What We Hold: A Youth Audio Project",
@@ -1767,6 +1833,7 @@
                 "start": "2020-04-19",
                 "end": "2021-04-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/149",
@@ -1777,7 +1844,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3220554eebb49618495f614a96696985"
+            "hash": "6a6eb190170289683adf74f85a4082f7"
         },
         "Mika Rottenberg: Spaghetti Blockchain-Contemporary Jewish Museum": {
             "name": "Mika Rottenberg: Spaghetti Blockchain",
@@ -1793,6 +1860,7 @@
                 "start": "2023-05-18",
                 "end": "2023-10-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/195",
@@ -1803,7 +1871,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9288e919193693c5b687b21cd76ad902"
+            "hash": "04200e36c59f50dd920b6734862431a6"
         },
         "Cara Levine: To Survive I Need You to Survive-Contemporary Jewish Museum": {
             "name": "Cara Levine: To Survive I Need You to Survive",
@@ -1819,6 +1887,7 @@
                 "start": "2023-02-16",
                 "end": "2023-07-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/194",
@@ -1829,7 +1898,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "dc6d2fec1bd93a5af7762b8293127ffc"
+            "hash": "3cdccb433a8767937212c2220accf864"
         },
         "Gillian Laub: Family Matters-Contemporary Jewish Museum": {
             "name": "Gillian Laub: Family Matters",
@@ -1845,6 +1914,7 @@
                 "start": "2022-10-13",
                 "end": "2023-04-09"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/161",
@@ -1855,7 +1925,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f8c47fb02ef53cf2042de1171daf7165"
+            "hash": "3ef2a2ceee68c7add983e3562c99ffc2"
         },
         "Oz is for Oznowicz: A Puppet Family's History-Contemporary Jewish Museum": {
             "name": "Oz is for Oznowicz: A Puppet Family's History",
@@ -1871,6 +1941,7 @@
                 "start": "2022-07-21",
                 "end": "2023-03-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/160",
@@ -1881,7 +1952,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4407de55658fb169660f938b5403a430"
+            "hash": "7cf6789d6acc43ceba0bdc5f34773347"
         },
         "Tikkun: For the Cosmos, the Community, and Ourselves-Contemporary Jewish Museum": {
             "name": "Tikkun: For the Cosmos, the Community, and Ourselves",
@@ -1897,6 +1968,7 @@
                 "start": "2022-02-17",
                 "end": "2023-01-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/158",
@@ -1907,7 +1979,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "dbf142b98e3b5a43d3d7e89f8e429ab4"
+            "hash": "d71826673ada4ad6ff5ef7f0e370ee4a"
         },
         "The Jim Henson Exhibition: Imagination Unlimited-Contemporary Jewish Museum": {
             "name": "The Jim Henson Exhibition: Imagination Unlimited",
@@ -1923,6 +1995,7 @@
                 "start": "2022-03-31",
                 "end": "2022-08-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/157",
@@ -1933,7 +2006,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "06da757667dd5a60d94a01606bd8823f"
+            "hash": "b268db05b608a299742d5276d321e9ab"
         },
         "GOLEM: A Call to Action-Contemporary Jewish Museum": {
             "name": "GOLEM: A Call to Action",
@@ -1949,6 +2022,7 @@
                 "start": "2021-06-21",
                 "end": "2022-06-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/151",
@@ -1959,7 +2033,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4c7c34a90d12a6b89753a5384bfa9f1d"
+            "hash": "08d632ce59892dafc549781ab06e2eb4"
         },
         "Experience Leonard Cohen-Contemporary Jewish Museum": {
             "name": "Experience Leonard Cohen",
@@ -1975,6 +2049,7 @@
                 "start": "2021-08-05",
                 "end": "2022-02-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/116",
@@ -1985,7 +2060,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b2c15721846dc7dce0186d1b37a068da"
+            "hash": "72d317dc048a6f67979b2acca9eaa044"
         },
         "Candice Breitz: I'm Your Man-Contemporary Jewish Museum": {
             "name": "Candice Breitz: I'm Your Man",
@@ -2001,6 +2076,7 @@
                 "start": "2021-09-18",
                 "end": "2022-02-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/155",
@@ -2011,7 +2087,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "14ce1cac8d50cf8b6e11f0048c037d56"
+            "hash": "19945a9d8aa799b241a6d8af080fa05d"
         },
         "Marshall Trammell in Residence-Contemporary Jewish Museum": {
             "name": "Marshall Trammell in Residence",
@@ -2027,6 +2103,7 @@
                 "start": "2021-09-18",
                 "end": "2022-02-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/156",
@@ -2037,7 +2114,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a228ca5f3955e615ad51b1dd9420f35e"
+            "hash": "b3e7cff3f90552fcbd583d2254c5fed1"
         },
         "George Fok: Passing Through-Contemporary Jewish Museum": {
             "name": "George Fok: Passing Through",
@@ -2053,6 +2130,7 @@
                 "start": "2021-08-05",
                 "end": "2022-01-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/153",
@@ -2063,7 +2141,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "14fb34235bea643e359ceedddcafed78"
+            "hash": "dc7f2da64d2bf7ab15857b41f48e5481"
         },
         "Judy Chicago: Cohanim-Contemporary Jewish Museum": {
             "name": "Judy Chicago: Cohanim",
@@ -2079,6 +2157,7 @@
                 "start": "2021-08-05",
                 "end": "2022-01-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/154",
@@ -2089,7 +2168,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "df52e9cc2f0946f5bc434d1222d2c2ca"
+            "hash": "8d8d6d5081605067b98edbdd96d3ef16"
         },
         "Levi Strauss: A History of American Style-Contemporary Jewish Museum": {
             "name": "Levi Strauss: A History of American Style",
@@ -2105,6 +2184,7 @@
                 "start": "2020-02-13",
                 "end": "2021-08-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/114",
@@ -2115,7 +2195,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a046fbe4c979dd42b7088843239186cb"
+            "hash": "8e81a78cf715e52663107503dfef14bc"
         },
         "Threads of Jewish Life: Ritual and Other Textiles from the San Francisco Bay Area-Contemporary Jewish Museum": {
             "name": "Threads of Jewish Life: Ritual and Other Textiles from the San Francisco Bay Area",
@@ -2131,6 +2211,7 @@
                 "start": "2020-02-13",
                 "end": "2021-06-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/115",
@@ -2141,7 +2222,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "07ee262e43e3befeeb0eb9756bca220c"
+            "hash": "a2057ed3497b2fe18de19e84b18438fb"
         },
         "Predicting the Past: Zohar Studios, The Lost Years-Contemporary Jewish Museum": {
             "name": "Predicting the Past: Zohar Studios, The Lost Years",
@@ -2157,6 +2238,7 @@
                 "start": "2020-10-17",
                 "end": "2021-06-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/106",
@@ -2167,7 +2249,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "be4466c7e2ea8b004b6983d7419ad31e"
+            "hash": "6906c303fd8e76e671b3e3f65cddf308"
         },
         "What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
             "name": "What We Hold: A Youth Audio Project",
@@ -2183,6 +2265,7 @@
                 "start": "2019-04-14",
                 "end": "2020-03-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/111",
@@ -2193,7 +2276,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7b5632f6e77258dbbc182d8169e1a58c"
+            "hash": "31f591160cc822e478354ccb0409344b"
         },
         "Daria Martin: Tonight the World-Contemporary Jewish Museum": {
             "name": "Daria Martin: Tonight the World",
@@ -2209,6 +2292,7 @@
                 "start": "2019-06-27",
                 "end": "2020-02-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/110",
@@ -2219,7 +2303,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "59fc08ac2b24a31daabbcd0ef3b3a8e8"
+            "hash": "029a5c62ac5f40fcc0541de9467dde45"
         },
         "Annabeth Rosen: Fired, Broken, Gathered, Heaped-Contemporary Jewish Museum": {
             "name": "Annabeth Rosen: Fired, Broken, Gathered, Heaped",
@@ -2235,6 +2319,7 @@
                 "start": "2019-07-25",
                 "end": "2020-01-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/109",
@@ -2245,7 +2330,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ed0ec3038ab7be2339be77a32e28a008"
+            "hash": "094f59ae80334ed18c72acf21978b40e"
         },
         "Izidora Leber LETHE: Peristyle-Contemporary Jewish Museum": {
             "name": "Izidora Leber LETHE: Peristyle",
@@ -2261,6 +2346,7 @@
                 "start": "2019-07-25",
                 "end": "2020-01-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/112",
@@ -2271,7 +2357,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "47420a7b55af458405cbe6ccc9c310c3"
+            "hash": "1afae339fdd696bc04202024dd33e349"
         },
         "In That Case: Havruta in Contemporary Art\u2014Oxossi Ayofemi and Risa Wechsler-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Oxossi Ayofemi and Risa Wechsler",
@@ -2287,6 +2373,7 @@
                 "start": "2018-07-26",
                 "end": "2020-01-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/105",
@@ -2297,7 +2384,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "000957b37623905694461703b4d725f2"
+            "hash": "8e49f1827fa69eade531298aace76bfd"
         },
         "Show Me as I Want to Be Seen-Contemporary Jewish Museum": {
             "name": "Show Me as I Want to Be Seen",
@@ -2313,6 +2400,7 @@
                 "start": "2019-02-07",
                 "end": "2019-07-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/108",
@@ -2323,7 +2411,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c45ff7884a5c73c5f391a2043cadc545"
+            "hash": "39345a96e4bdaa7ea4580cddf83ce1b7"
         },
         "Lew the Jew and His Circle: Origins of American Tattoo-Contemporary Jewish Museum": {
             "name": "Lew the Jew and His Circle: Origins of American Tattoo",
@@ -2339,6 +2427,7 @@
                 "start": "2018-07-26",
                 "end": "2019-06-09"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/103",
@@ -2349,7 +2438,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9728b217eba6b91478a426d0c5620498"
+            "hash": "fcf081882c974d227169576c4acf7bd4"
         },
         "What We Hold: Youth Voices on Roots and What Matters Most-Contemporary Jewish Museum": {
             "name": "What We Hold: Youth Voices on Roots and What Matters Most",
@@ -2365,6 +2454,7 @@
                 "start": "2018-03-25",
                 "end": "2019-03-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/104",
@@ -2375,7 +2465,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e4ad3f960f25f32ee4d75685eff0f1a7"
+            "hash": "c015a0ac5b03952fe2733bfd322b00b5"
         },
         "Textile Lab-Contemporary Jewish Museum": {
             "name": "Textile Lab",
@@ -2391,6 +2481,7 @@
                 "start": "2018-08-30",
                 "end": "2019-01-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/107",
@@ -2401,7 +2492,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d6f341bca947d35a6c24e515dd291bb0"
+            "hash": "edf9c9d7fc7917f93dc832703404bd98"
         },
         "Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem-Contemporary Jewish Museum": {
             "name": "Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem",
@@ -2417,6 +2508,7 @@
                 "start": "2018-08-30",
                 "end": "2019-01-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/102",
@@ -2427,7 +2519,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "86da82c52ad89017f37096d612b020ac"
+            "hash": "7e4f47af99cbf886ab5bd667e3d195c0"
         },
         "Contraption: Rediscovering California Jewish Artists-Contemporary Jewish Museum": {
             "name": "Contraption: Rediscovering California Jewish Artists",
@@ -2443,6 +2535,7 @@
                 "start": "2018-02-22",
                 "end": "2018-07-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/100",
@@ -2453,7 +2546,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a8a6574ceb65e64794291204cbd6c86b"
+            "hash": "ec1af0802c42a699e4cbf6cdd204df63"
         },
         "The Art of Rube Goldberg-Contemporary Jewish Museum": {
             "name": "The Art of Rube Goldberg",
@@ -2469,6 +2562,7 @@
                 "start": "2018-03-15",
                 "end": "2018-07-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/99",
@@ -2479,7 +2573,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "58268f5bfc2bc457611ca078255df7d2"
+            "hash": "b64cb180a05239532206af7a0b287633"
         },
         "Kutiman: offgrid offline-Contemporary Jewish Museum": {
             "name": "Kutiman: offgrid offline",
@@ -2495,6 +2589,7 @@
                 "start": "2017-07-20",
                 "end": "2018-07-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/69",
@@ -2505,7 +2600,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d0f6962b8b8a48bc75ac01b6e175628a"
+            "hash": "eb0d89eea4c575ffca8408e529168614"
         },
         "In That Case: Havruta in Contemporary Art\u2014Allison Smith and Christina Zetterlund-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Allison Smith and Christina Zetterlund",
@@ -2521,6 +2616,7 @@
                 "start": "2017-07-20",
                 "end": "2018-07-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/76",
@@ -2531,7 +2627,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "53513884055abd65af54d560b376c246"
+            "hash": "b35c598145f7ba1813bd922392bb4eb7"
         },
         "Sabbath: The 2017 Dorothy Saxe Invitational-Contemporary Jewish Museum": {
             "name": "Sabbath: The 2017 Dorothy Saxe Invitational",
@@ -2547,6 +2643,7 @@
                 "start": "2017-11-12",
                 "end": "2018-02-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/98",
@@ -2557,7 +2654,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f06e826b8ff65980a171aac6ed202946"
+            "hash": "398ca2f567548faa2d8aadd81f80c65b"
         },
         "Jewish Folktales Retold: Artist as Maggid-Contemporary Jewish Museum": {
             "name": "Jewish Folktales Retold: Artist as Maggid",
@@ -2573,6 +2670,7 @@
                 "start": "2017-09-28",
                 "end": "2018-01-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/68",
@@ -2583,7 +2681,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b7ce4512fd6da77635b9e5d46be05dcc"
+            "hash": "6e02638c2c936f5d73ed0b92f5376f00"
         },
         "The 613 by Archie Rand-Contemporary Jewish Museum": {
             "name": "The 613 by Archie Rand",
@@ -2599,6 +2697,7 @@
                 "start": "2017-07-20",
                 "end": "2017-10-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/67",
@@ -2609,7 +2708,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "85b19447f2547cc5cd6787b4c4b6aa3c"
+            "hash": "19237f691184eaa6eebcf7f63920932f"
         },
         "Sukkah Studio-Contemporary Jewish Museum": {
             "name": "Sukkah Studio",
@@ -2625,6 +2724,7 @@
                 "start": "2017-10-05",
                 "end": "2017-10-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/101",
@@ -2635,7 +2735,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "36623a369f4f32496729c4f915293ae3"
+            "hash": "546943f537a140b065c06adce6753e86"
         },
         "Roz Chast: Cartoon Memoirs-Contemporary Jewish Museum": {
             "name": "Roz Chast: Cartoon Memoirs",
@@ -2651,6 +2751,7 @@
                 "start": "2017-04-27",
                 "end": "2017-09-04"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/66",
@@ -2661,7 +2762,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "142d42d038ea3b881a8cf8c8c86b83d7"
+            "hash": "245ed53d3a854ae677defe55107d6703"
         },
         "What We Hold-Contemporary Jewish Museum": {
             "name": "What We Hold",
@@ -2677,6 +2778,7 @@
                 "start": "2016-11-25",
                 "end": "2017-06-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/75",
@@ -2687,7 +2789,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "322fa9cdf227829796e50004a90d3ce2"
+            "hash": "4964b44ce6ded22bd9326a77e55043f6"
         },
         "The Yud Video Project-Contemporary Jewish Museum": {
             "name": "The Yud Video Project",
@@ -2703,6 +2805,7 @@
                 "start": "2016-11-25",
                 "end": "2017-06-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/11",
@@ -2713,7 +2816,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "64dd5c5ba0e94f846e3f28e0b6d2dceb"
+            "hash": "2e87d2cc2ddb38e3c188416f88c2bfcd"
         },
         "Cary Leibowitz: Museum Show-Contemporary Jewish Museum": {
             "name": "Cary Leibowitz: Museum Show",
@@ -2729,6 +2832,7 @@
                 "start": "2017-01-26",
                 "end": "2017-06-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/12",
@@ -2739,7 +2843,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d6c4d7d632a932c327e88bd685f7ded5"
+            "hash": "0f79c1712766e4211af56b938e6dd914"
         },
         "In That Case: Havruta in Contemporary Art\u2014Kota Ezawa and James Kirby Rogers-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Kota Ezawa and James Kirby Rogers",
@@ -2755,6 +2859,7 @@
                 "start": "2016-07-28",
                 "end": "2017-06-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/5",
@@ -2765,7 +2870,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "12e2a089318519c38b7152c180dad4fa"
+            "hash": "433ac01d4162f017fdf052dc89adfb0a"
         },
         "From Generation to Generation: Inherited Memory and Contemporary Art-Contemporary Jewish Museum": {
             "name": "From Generation to Generation: Inherited Memory and Contemporary Art",
@@ -2781,6 +2886,7 @@
                 "start": "2016-11-25",
                 "end": "2017-04-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/2",
@@ -2791,7 +2897,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a08fb81385e45d2bb5d94378d35cf9df"
+            "hash": "0aab0e5fd549fe8a4231a93f09191f60"
         },
         "Ned Kahn: Negev Wheel-Contemporary Jewish Museum": {
             "name": "Ned Kahn: Negev Wheel",
@@ -2807,6 +2913,7 @@
                 "start": "2016-07-28",
                 "end": "2017-01-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/1",
@@ -2817,7 +2924,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "81ece40b6fb09fdc1f48ec3737db65ad"
+            "hash": "4d2eff412e108de8b25a2ea7f7f52a7f"
         },
         "Stanley Kubrick: The Exhibition-Contemporary Jewish Museum": {
             "name": "Stanley Kubrick: The Exhibition",
@@ -2833,6 +2940,7 @@
                 "start": "2016-06-30",
                 "end": "2016-10-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/3",
@@ -2843,7 +2951,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4e320ef702880ebc3654a2c9c887d64f"
+            "hash": "1c15ba85884934d8fd4fc08dfccea345"
         },
         "Pour Crever by Trimpin-Contemporary Jewish Museum": {
             "name": "Pour Crever by Trimpin",
@@ -2859,6 +2967,7 @@
                 "start": "2015-09-24",
                 "end": "2016-09-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/7",
@@ -2869,7 +2978,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4285966092e8109085fa37ec9ba79bf9"
+            "hash": "2430da2ff2697793e8d2b36d72b0e0a9"
         },
         "In That Case: Havruta in Contemporary Art\u2014Jenny Odell and Philip Buscemi-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Jenny Odell and Philip Buscemi",
@@ -2885,6 +2994,7 @@
                 "start": "2016-01-28",
                 "end": "2016-07-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/9",
@@ -2895,7 +3005,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1357d0e6d78fcf1fadb42c45b3817265"
+            "hash": "289f2d05c56d1e7b7b4ade8ac4c06d1b"
         },
         "Bill Graham and the Rock & Roll Revolution-Contemporary Jewish Museum": {
             "name": "Bill Graham and the Rock & Roll Revolution",
@@ -2911,6 +3021,7 @@
                 "start": "2016-03-17",
                 "end": "2016-07-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/6",
@@ -2921,7 +3032,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "10f46d543dde7d9e90438fe8bcf191d9"
+            "hash": "4df3d4e53f843bb77a48b75bca584597"
         },
         "Hardly Strictly Warren Hellman-Contemporary Jewish Museum": {
             "name": "Hardly Strictly Warren Hellman",
@@ -2937,6 +3048,7 @@
                 "start": "2014-09-18",
                 "end": "2016-06-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/10",
@@ -2947,7 +3059,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d3773af4b181ed99e7ee92bc2faf05ac"
+            "hash": "a2f2fd20cc1579e7cee9496597deaaed"
         },
         "Roman Vishniac Rediscovered-Contemporary Jewish Museum": {
             "name": "Roman Vishniac Rediscovered",
@@ -2963,6 +3075,7 @@
                 "start": "2016-02-11",
                 "end": "2016-05-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/8",
@@ -2973,7 +3086,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9052eac963d47d5038e46cd1aea36825"
+            "hash": "17de66e660cef4bb5e488f167e0db95c"
         },
         "Chasing Justice-Contemporary Jewish Museum": {
             "name": "Chasing Justice",
@@ -2989,6 +3102,7 @@
                 "start": "2015-11-19",
                 "end": "2016-02-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/14",
@@ -2999,7 +3113,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a7deaec96eda64363664ad1aaf760a49"
+            "hash": "341bf11ef1cfc32e3fab6f89ca2cbd6c"
         },
         "NEAT: New Experiments in Art and Technology-Contemporary Jewish Museum": {
             "name": "NEAT: New Experiments in Art and Technology",
@@ -3015,6 +3129,7 @@
                 "start": "2015-10-15",
                 "end": "2016-01-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/20",
@@ -3025,7 +3140,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "10ffc104913ee2d4f4399e148e36bfeb"
+            "hash": "cda19a587a72ea5c57eac609a991331b"
         },
         "In That Case: Havruta in Contemporary Art\u2014David Wilson and Francesco Spagnolo-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014David Wilson and Francesco Spagnolo",
@@ -3041,6 +3156,7 @@
                 "start": "2015-07-30",
                 "end": "2016-01-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/55",
@@ -3051,7 +3167,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "adfbcb14e1d61dc4cd33b8c4913168bf"
+            "hash": "2a6842b162f325c4d033169952f6dbbe"
         },
         "Amy Winehouse: A Family Portait-Contemporary Jewish Museum": {
             "name": "Amy Winehouse: A Family Portait",
@@ -3067,6 +3183,7 @@
                 "start": "2015-07-23",
                 "end": "2015-11-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/16",
@@ -3077,7 +3194,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "98eb3c9c7a98bc5a59260b8e8e4746f4"
+            "hash": "31eddb3f7fe5e482f3933c56e15feba0"
         },
         "You Know I\u2019m No Good-Contemporary Jewish Museum": {
             "name": "You Know I\u2019m No Good",
@@ -3093,6 +3210,7 @@
                 "start": "2015-07-23",
                 "end": "2015-11-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/17",
@@ -3103,7 +3221,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a153475e045300621034f8b9e007896e"
+            "hash": "d4a0afbf994fd887a570d9ea19745395"
         },
         "X Is For-Contemporary Jewish Museum": {
             "name": "X Is For",
@@ -3119,6 +3237,7 @@
                 "start": "2015-09-02",
                 "end": "2015-10-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/72",
@@ -3129,7 +3248,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "147e705e21c77510907fe56ae7c88f53"
+            "hash": "31a6072b18050e413fe9b7c172e48948"
         },
         "Night Begins the Day: Rethinking Space, Time, and Beauty-Contemporary Jewish Museum": {
             "name": "Night Begins the Day: Rethinking Space, Time, and Beauty",
@@ -3145,6 +3264,7 @@
                 "start": "2015-06-18",
                 "end": "2015-09-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/18",
@@ -3155,7 +3275,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f77cd19d639fc27cd3935018f0350fa9"
+            "hash": "4558eb8ac946a2278b04fa19d74cff91"
         },
         "In That Case: Havruta in Contemporary Art\u2014Anthony Discenza and Peter Straub-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Anthony Discenza and Peter Straub",
@@ -3171,6 +3291,7 @@
                 "start": "2015-04-30",
                 "end": "2015-07-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/54",
@@ -3181,7 +3302,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0ced09a29e8a61459b5d187ff7f90af7"
+            "hash": "d23ebc21eb287379bbc1aa9a52ae9cde"
         },
         "Bound to Be Held: A Book Show-Contemporary Jewish Museum": {
             "name": "Bound to Be Held: A Book Show",
@@ -3197,6 +3318,7 @@
                 "start": "2015-03-26",
                 "end": "2015-06-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/45",
@@ -3207,7 +3329,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9f35f04622a68304cd6177f3a75aab37"
+            "hash": "c4849c09e90a13b75e003414a4e50424"
         },
         "Poland and Palestine: Two Lands and Two Skies-Contemporary Jewish Museum": {
             "name": "Poland and Palestine: Two Lands and Two Skies",
@@ -3223,6 +3345,7 @@
                 "start": "2015-02-26",
                 "end": "2015-05-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/48",
@@ -3233,7 +3356,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e13547e9115f945050eb47207debf8e5"
+            "hash": "273d01a0fb4d10d3554b68fa2f3629db"
         },
         "Letters to Afar-Contemporary Jewish Museum": {
             "name": "Letters to Afar",
@@ -3249,6 +3372,7 @@
                 "start": "2015-02-26",
                 "end": "2015-05-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/46",
@@ -3259,7 +3383,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "5f3cf3d1ca9cd2b79fca6d73f08554b8"
+            "hash": "d5c466aa9492f60ed1e5400221326605"
         },
         "Our Roots-Contemporary Jewish Museum": {
             "name": "Our Roots",
@@ -3275,6 +3399,7 @@
                 "start": "2015-02-26",
                 "end": "2015-05-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/70",
@@ -3285,7 +3410,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4c774ce5e89fe6463c54d54f9eb587e0"
+            "hash": "d701384532bf54781433f2ea3c9ed327"
         },
         "The 2015 Dorothy Saxe Invitational: Tzedakah Box-Contemporary Jewish Museum": {
             "name": "The 2015 Dorothy Saxe Invitational: Tzedakah Box",
@@ -3301,6 +3426,7 @@
                 "start": "2015-04-09",
                 "end": "2015-05-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/49",
@@ -3311,7 +3437,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "dbd467813465c113b64de60178d9de16"
+            "hash": "069fbf5cd762c745385312d0826b0411"
         },
         "In That Case: Havruta in Contemporary Art\u2014Helena Keeffe and Jessica Prentice-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Helena Keeffe and Jessica Prentice",
@@ -3327,6 +3453,7 @@
                 "start": "2015-01-22",
                 "end": "2015-04-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/52",
@@ -3337,7 +3464,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8297dcd32117ad11b6103a73bed65d0d"
+            "hash": "9a187ad175bf0c64a481f1c049c630b3"
         },
         "J. Otto Seibold and Mr. Lunch-Contemporary Jewish Museum": {
             "name": "J. Otto Seibold and Mr. Lunch",
@@ -3353,6 +3480,7 @@
                 "start": "2014-11-20",
                 "end": "2015-03-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/21",
@@ -3363,7 +3491,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "15ba408d7abff56db932f4cc5959e344"
+            "hash": "c686e0ead864034988e8eb61dc4f92c0"
         },
         "Arnold Newman: Masterclass-Contemporary Jewish Museum": {
             "name": "Arnold Newman: Masterclass",
@@ -3379,6 +3507,7 @@
                 "start": "2014-10-23",
                 "end": "2015-02-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/51",
@@ -3389,7 +3518,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "572e3d7181ed2b219ca5e935868f42c4"
+            "hash": "207be91417beea8150c0591139a3886b"
         },
         "In That Case: Havruta in Contemporary Art: Lindsey White and Ron Lynch-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art: Lindsey White and Ron Lynch",
@@ -3405,6 +3534,7 @@
                 "start": "2014-10-23",
                 "end": "2015-01-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/53",
@@ -3415,7 +3545,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "773128400a8a337bf70ccdd9e9927312"
+            "hash": "04aabd5ddcdf52b3b7c914d06bae29c6"
         },
         "Project Mah Jongg-Contemporary Jewish Museum": {
             "name": "Project Mah Jongg",
@@ -3431,6 +3561,7 @@
                 "start": "2014-07-13",
                 "end": "2014-10-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/44",
@@ -3441,7 +3572,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f9b78b15e0c8e8972f6f6f455187d456"
+            "hash": "424f3814a2c08ba18e4e96c5f3bed836"
         },
         "Designing Home: Jews and Midcentury Modernism-Contemporary Jewish Museum": {
             "name": "Designing Home: Jews and Midcentury Modernism",
@@ -3457,6 +3588,7 @@
                 "start": "2014-04-24",
                 "end": "2014-10-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/19",
@@ -3467,7 +3599,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "dfb260ed2bb9ffa3628a75d51da3be6a"
+            "hash": "08728937e8756f147342feb962800c55"
         },
         "Forever Now!-Contemporary Jewish Museum": {
             "name": "Forever Now!",
@@ -3483,6 +3615,7 @@
                 "start": "2014-08-05",
                 "end": "2014-08-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/50",
@@ -3493,7 +3626,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "805772535b835f83aa6af62dffd665a3"
+            "hash": "4f898d3b169a3c11354f0cad55f7d53c"
         },
         "To Build & To Be Built: Kibbutz History-Contemporary Jewish Museum": {
             "name": "To Build & To Be Built: Kibbutz History",
@@ -3509,6 +3642,7 @@
                 "start": "2013-10-03",
                 "end": "2014-07-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/43",
@@ -3519,7 +3653,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e0873a676cda36fd0dba6f4fa460ba72"
+            "hash": "2ea9297415bca423a1fb0a73cc024ba7"
         },
         "Arthur Szyk and the Art of the Haggadah-Contemporary Jewish Museum": {
             "name": "Arthur Szyk and the Art of the Haggadah",
@@ -3535,6 +3669,7 @@
                 "start": "2014-02-13",
                 "end": "2014-06-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/23",
@@ -3545,7 +3680,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3947f46ad3a62be7b98c0ca6dd8a0351"
+            "hash": "154c17f9f59cb5fcccf041e44ed841d5"
         },
         "Frog and Toad and the World of Arnold Lobel-Contemporary Jewish Museum": {
             "name": "Frog and Toad and the World of Arnold Lobel",
@@ -3561,6 +3696,7 @@
                 "start": "2013-11-21",
                 "end": "2014-03-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/42",
@@ -3571,7 +3707,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "2c8168a3107a5a46e3a432c99fc377d2"
+            "hash": "d477c7c2026c91370c364162f6a7ae4a"
         },
         "Jason Lazarus: Live Archive-Contemporary Jewish Museum": {
             "name": "Jason Lazarus: Live Archive",
@@ -3587,6 +3723,7 @@
                 "start": "2013-11-21",
                 "end": "2014-01-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/40",
@@ -3597,7 +3734,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "bc47315fa85e49cd3e4143add3a1b37e"
+            "hash": "32adb6b0e562b1675aa749609f3606de"
         },
         "Work in Progress: Considering Utopia-Contemporary Jewish Museum": {
             "name": "Work in Progress: Considering Utopia",
@@ -3613,6 +3750,7 @@
                 "start": "2013-10-03",
                 "end": "2014-01-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/41",
@@ -3623,7 +3761,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "5ab0178ab51770fd928fcc55c6a0776f"
+            "hash": "e1695d1a680e6efb72d649cf4e96156d"
         },
         "StoryCorps StoryBooth-Contemporary Jewish Museum": {
             "name": "StoryCorps StoryBooth",
@@ -3639,6 +3777,7 @@
                 "start": "2008-10-12",
                 "end": "2013-12-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/96",
@@ -3649,7 +3788,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d8e6f7951cec6acf7e0b62752e63ac0c"
+            "hash": "2421c05c9b938332c93bdea69d6f0055"
         },
         "Beyond Belief: 100 Years of the Spiritual in Modern Art: Highlights from SFMOMA\u2019s Collection-Contemporary Jewish Museum": {
             "name": "Beyond Belief: 100 Years of the Spiritual in Modern Art: Highlights from SFMOMA\u2019s Collection",
@@ -3665,6 +3804,7 @@
                 "start": "2013-06-28",
                 "end": "2013-10-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/39",
@@ -3675,7 +3815,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "01830511ed88682211d401db4f37d0fc"
+            "hash": "61c59b10c94abf4940852a1dab1e401a"
         },
         "Stanley Saitowitz: Judaica-Contemporary Jewish Museum": {
             "name": "Stanley Saitowitz: Judaica",
@@ -3691,6 +3831,7 @@
                 "start": "2011-11-03",
                 "end": "2013-09-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/37",
@@ -3701,7 +3842,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8392b82ab216d5a88efa66f2bf1d04c3"
+            "hash": "2a30502d36ac9105318fb01a4c067151"
         },
         "Beat Memories: The Photographs of Allen Ginsberg-Contemporary Jewish Museum": {
             "name": "Beat Memories: The Photographs of Allen Ginsberg",
@@ -3717,6 +3858,7 @@
                 "start": "2013-05-23",
                 "end": "2013-09-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/25",
@@ -3727,7 +3869,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f2469d2323c6fb89b04b367950b48aea"
+            "hash": "a496658afdfaecc6e4c1e72c4ff6b68e"
         },
         "Kehinde Wiley | The World Stage: Israel-Contemporary Jewish Museum": {
             "name": "Kehinde Wiley | The World Stage: Israel",
@@ -3743,6 +3885,7 @@
                 "start": "2013-02-14",
                 "end": "2013-05-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/38",
@@ -3753,7 +3896,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f22017eccda49648a1584953211f1010"
+            "hash": "cc87ce3a475462ae29b4dd157935ead5"
         },
         "California Dreaming: Jewish Life in the Bay Area from the Gold Rush to the Present-Contemporary Jewish Museum": {
             "name": "California Dreaming: Jewish Life in the Bay Area from the Gold Rush to the Present",
@@ -3769,6 +3912,7 @@
                 "start": "2011-11-17",
                 "end": "2013-04-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/33",
@@ -3779,7 +3923,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "10abb89586de50815bdf186c5a3e2383"
+            "hash": "ef8bd7d5b982c57f6aad87bb55e0a076"
         },
         "The Snowy Day and the Art of Ezra Jack Keats-Contemporary Jewish Museum": {
             "name": "The Snowy Day and the Art of Ezra Jack Keats",
@@ -3795,6 +3939,7 @@
                 "start": "2012-11-15",
                 "end": "2013-02-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/32",
@@ -3805,7 +3950,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9fdcca39542691386dc197c60edeeee6"
+            "hash": "9ff6b1b4dd74ab8d99382686d3068d99"
         },
         "Our Lens-Contemporary Jewish Museum": {
             "name": "Our Lens",
@@ -3821,6 +3966,7 @@
                 "start": "2012-10-11",
                 "end": "2013-01-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/71",
@@ -3831,7 +3977,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d58848e1e642c627e5b4fa13812777a5"
+            "hash": "6ba30082eea64919780d65c36c428c85"
         },
         "The Radical Camera: New York\u2019s Photo League, 1936\u20131951-Contemporary Jewish Museum": {
             "name": "The Radical Camera: New York\u2019s Photo League, 1936\u20131951",
@@ -3847,6 +3993,7 @@
                 "start": "2012-10-11",
                 "end": "2013-01-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/34",
@@ -3857,7 +4004,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "00db12aae76ccd1f7a2252c975ad403f"
+            "hash": "d79275cc9c4c1e18e938ad4b0d959ed0"
         },
         "Do Not Destroy: Trees, Art, and Jewish Thought: An Exhibition and The Dorothy Saxe Invitational-Contemporary Jewish Museum": {
             "name": "Do Not Destroy: Trees, Art, and Jewish Thought: An Exhibition and The Dorothy Saxe Invitational",
@@ -3873,6 +4020,7 @@
                 "start": "2012-02-16",
                 "end": "2012-09-09"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/29",
@@ -3883,7 +4031,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7bde16ffc51b3f9809055e683f8e1a1a"
+            "hash": "4926611f18f8bb216002188fffe47f57"
         },
         "Six-Word Memoirs on Jewish Life: Live from The CJM!-Contemporary Jewish Museum": {
             "name": "Six-Word Memoirs on Jewish Life: Live from The CJM!",
@@ -3899,6 +4047,7 @@
                 "start": "2012-01-01",
                 "end": "2012-01-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/74",
@@ -3909,7 +4058,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "27988595972c713b4e96c5ce3895956f"
+            "hash": "e9c913ff3bb11dc963a953371ae8530c"
         },
         "Houdini: Art and Magic-Contemporary Jewish Museum": {
             "name": "Houdini: Art and Magic",
@@ -3925,6 +4074,7 @@
                 "start": "2011-10-02",
                 "end": "2012-01-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/28",
@@ -3935,7 +4085,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "43d4416369c6d43207ab9ef0828bcb76"
+            "hash": "196dc11fd3b6291797aa28323afbd0f2"
         },
         "\"Being Jewish\": A Bay Area Portrait-Contemporary Jewish Museum": {
             "name": "\"Being Jewish\": A Bay Area Portrait",
@@ -3951,6 +4101,7 @@
                 "start": "2008-06-08",
                 "end": "2011-10-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/79",
@@ -3961,7 +4112,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a1e85e978b11869af8cd4b0d660ee9ea"
+            "hash": "32596377a3c28d024d83f3536df3f104"
         },
         "Charlotte Salomon: Life? Or Theatre?-Contemporary Jewish Museum": {
             "name": "Charlotte Salomon: Life? Or Theatre?",
@@ -3977,6 +4128,7 @@
                 "start": "2011-03-31",
                 "end": "2011-10-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/35",
@@ -3987,7 +4139,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8a2488d8891d8b62eec66eabc4bede5a"
+            "hash": "8ff874647421b609ca67db3e7ba562c8"
         },
         "Seeing Gertrude Stein: Five Stories-Contemporary Jewish Museum": {
             "name": "Seeing Gertrude Stein: Five Stories",
@@ -4003,6 +4155,7 @@
                 "start": "2011-05-12",
                 "end": "2011-09-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/15",
@@ -4013,7 +4166,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "77f8e1bb7a5ee6dcb78d6bcf6ad2706e"
+            "hash": "060e0f75bbe9fddff58523dd5b71bd09"
         },
         "Jacques Lipchitz: Hagar in the Desert-Contemporary Jewish Museum": {
             "name": "Jacques Lipchitz: Hagar in the Desert",
@@ -4029,6 +4182,7 @@
                 "start": "2011-04-07",
                 "end": "2011-08-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/59",
@@ -4039,7 +4193,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3559fbc32da9627ba1d3131a5f342a17"
+            "hash": "42f42864a108feaa8de0303c35f8185d"
         },
         "The Ping Pong Project-Contemporary Jewish Museum": {
             "name": "The Ping Pong Project",
@@ -4055,6 +4209,7 @@
                 "start": "2011-04-07",
                 "end": "2011-08-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/31",
@@ -4065,7 +4220,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a3479cd0216a63e89fd2f4e1e15b6cd6"
+            "hash": "886b8cf4f9d63d737ae7a4dc2c5c34d7"
         },
         "Are We There Yet?: 5000 Years of Answering Questions with Questions-Contemporary Jewish Museum": {
             "name": "Are We There Yet?: 5000 Years of Answering Questions with Questions",
@@ -4081,6 +4236,7 @@
                 "start": "2011-03-31",
                 "end": "2011-07-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/30",
@@ -4091,7 +4247,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a23689192218e6f7891557685c00c26b"
+            "hash": "c20e8bee8cae2b7059db3d61cc614b52"
         },
         "As It Is Written: Project 304,805-Contemporary Jewish Museum": {
             "name": "As It Is Written: Project 304,805",
@@ -4107,6 +4263,7 @@
                 "start": "2009-10-08",
                 "end": "2011-03-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/60",
@@ -4117,7 +4274,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b845c971ace09225627efa0a47a9e6eb"
+            "hash": "c04d98599ee82f1f15c5ff199797fccf"
         },
         "Reclaimed: Paintings from the Collection of Jacques Goudstikker-Contemporary Jewish Museum": {
             "name": "Reclaimed: Paintings from the Collection of Jacques Goudstikker",
@@ -4133,6 +4290,7 @@
                 "start": "2010-10-29",
                 "end": "2011-03-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/36",
@@ -4143,7 +4301,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6cb5d5e149a1c6c065ed97e7943354fd"
+            "hash": "29bc7e58dfd143e4c99bdb1583c5ab60"
         },
         "Black Sabbath: The Secret Musical History of Black\u2013Jewish Relations-Contemporary Jewish Museum": {
             "name": "Black Sabbath: The Secret Musical History of Black\u2013Jewish Relations",
@@ -4159,6 +4317,7 @@
                 "start": "2010-08-26",
                 "end": "2011-03-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/22",
@@ -4169,7 +4328,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "326a6766e7d630d3e20c2d5451cd0098"
+            "hash": "282e08f20e94242a886aee5246a0e57f"
         },
         "Curious George Saves the Day: The Art of Margret and H. A. Rey-Contemporary Jewish Museum": {
             "name": "Curious George Saves the Day: The Art of Margret and H. A. Rey",
@@ -4185,6 +4344,7 @@
                 "start": "2010-11-14",
                 "end": "2011-03-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/27",
@@ -4195,7 +4355,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a278d3264854e1b624e0c9a5c46caec2"
+            "hash": "9ab5c77e47f608c5ec1343075861eb51"
         },
         "There's a Mystery There: Sendak on Sendak-Contemporary Jewish Museum": {
             "name": "There's a Mystery There: Sendak on Sendak",
@@ -4211,6 +4371,7 @@
                 "start": "2010-09-09",
                 "end": "2011-01-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/73",
@@ -4221,7 +4382,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f0650a13b2b2fa8ea9ba440edaa95dd9"
+            "hash": "be1dee9cef1dcd5a990a8776852c1e3b"
         },
         "Maira Kalman: Various Illuminations (of a Crazy World)-Contemporary Jewish Museum": {
             "name": "Maira Kalman: Various Illuminations (of a Crazy World)",
@@ -4237,6 +4398,7 @@
                 "start": "2010-07-01",
                 "end": "2010-10-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/24",
@@ -4247,7 +4409,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "779d9fb4636f62d251ae3ecf6a02e211"
+            "hash": "5f2b24af9325214afc50a651e4558a59"
         },
         "Reinventing Ritual: Contemporary Art and Design for Jewish Life-Contemporary Jewish Museum": {
             "name": "Reinventing Ritual: Contemporary Art and Design for Jewish Life",
@@ -4263,6 +4425,7 @@
                 "start": "2010-04-22",
                 "end": "2010-10-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/97",
@@ -4273,7 +4436,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8069dc4437a66aa2bb6681a143a6daae"
+            "hash": "8d6c937f89ed67c832c012b30bef2783"
         },
         "Jews on Vinyl-Contemporary Jewish Museum": {
             "name": "Jews on Vinyl",
@@ -4289,6 +4452,7 @@
                 "start": "2009-02-06",
                 "end": "2010-08-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/63",
@@ -4299,7 +4463,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a8246e5b64a0ba95efa5a1a0139225f3"
+            "hash": "5afdfc47b2b64c5d9f398424bc8a2754"
         },
         "Our Struggle: Responding to Mein Kampf-Contemporary Jewish Museum": {
             "name": "Our Struggle: Responding to Mein Kampf",
@@ -4315,6 +4479,7 @@
                 "start": "2010-01-11",
                 "end": "2010-06-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/56",
@@ -4325,7 +4490,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8992b21d344ec7e9587859a889562bff"
+            "hash": "61e2cefafb349c01aeac129edcce6d12"
         },
         "Chagall and the Artists of the Russian Jewish Theater, 1919\u20131949-Contemporary Jewish Museum": {
             "name": "Chagall and the Artists of the Russian Jewish Theater, 1919\u20131949",
@@ -4341,6 +4506,7 @@
                 "start": "2009-04-23",
                 "end": "2009-09-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/57",
@@ -4351,7 +4517,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8836f3ef46c87bef9f3f8cddb63122a4"
+            "hash": "86b40aca6bf3c30cbf5b9ef3b7c05541"
         },
         "From The New Yorker to Shrek: The Art of WIlliam Steig-Contemporary Jewish Museum": {
             "name": "From The New Yorker to Shrek: The Art of WIlliam Steig",
@@ -4367,6 +4533,7 @@
                 "start": "2009-06-08",
                 "end": "2009-09-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/65",
@@ -4377,7 +4544,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f203946173b20c1e42b7b4b5f7360c36"
+            "hash": "3ff5afdb3ef679703f12cc54e5b88e34"
         },
         "Susan Hiller: The J.Street Project-Contemporary Jewish Museum": {
             "name": "Susan Hiller: The J.Street Project",
@@ -4393,6 +4560,7 @@
                 "start": "2009-06-18",
                 "end": "2009-08-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/58",
@@ -4403,7 +4571,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1925d383f817f815af588564a02e7e53"
+            "hash": "027a32452c5f7b192de1c4d410343542"
         },
         "New Works/Old Story: 80 Artists at the Passover Table\u2014The Dorothy Saxe Invitational-Contemporary Jewish Museum": {
             "name": "New Works/Old Story: 80 Artists at the Passover Table\u2014The Dorothy Saxe Invitational",
@@ -4419,6 +4587,7 @@
                 "start": "2009-02-27",
                 "end": "2009-06-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/64",
@@ -4429,7 +4598,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b3d715e91e8ec78e646b384da6f452da"
+            "hash": "f6e956972b37caadc16cffa45cd8b7d2"
         },
         "Dateline 09\u2014Adi Nes: Biblical Stories and Yael Bartana: Short Memory-Contemporary Jewish Museum": {
             "name": "Dateline 09\u2014Adi Nes: Biblical Stories and Yael Bartana: Short Memory",
@@ -4445,6 +4614,7 @@
                 "start": "2009-01-30",
                 "end": "2009-03-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/78",
@@ -4455,7 +4625,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "94c43a33204dce39538f0eadfaa9e027"
+            "hash": "626c927c58cce2a5bbbe8e182ea9ec93"
         },
         "Warhol's Jews: Ten Portraits Reconsidered-Contemporary Jewish Museum": {
             "name": "Warhol's Jews: Ten Portraits Reconsidered",
@@ -4471,6 +4641,7 @@
                 "start": "2008-10-12",
                 "end": "2009-02-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/61",
@@ -4481,7 +4652,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "186e5c9100d4c578f685cbcfe13565de"
+            "hash": "ccd0c790411ff73d5d1de71452294331"
         },
         "John Zorn Presents the Aleph-Bet Sound Project-Contemporary Jewish Museum": {
             "name": "John Zorn Presents the Aleph-Bet Sound Project",
@@ -4497,6 +4668,7 @@
                 "start": "2008-06-08",
                 "end": "2009-02-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/83",
@@ -4507,7 +4679,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8acde654869b11db8441252448a80d6e"
+            "hash": "c5a71d55768ccf4fc3d8c8684e7b5509"
         },
         "In the Beginning: Artists Respond to Genesis-Contemporary Jewish Museum": {
             "name": "In the Beginning: Artists Respond to Genesis",
@@ -4523,6 +4695,7 @@
                 "start": "2008-06-08",
                 "end": "2009-01-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/81",
@@ -4533,7 +4706,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "296e808ac545a558695c2c810332b039"
+            "hash": "b1b2fb1dfb947cd3aa001e4cab80db35"
         },
         "Exposing Identities\u2014Young Photographers Explore Culture, Community, and Self-Contemporary Jewish Museum": {
             "name": "Exposing Identities\u2014Young Photographers Explore Culture, Community, and Self",
@@ -4549,6 +4722,7 @@
                 "start": "2007-05-10",
                 "end": "2007-05-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/84",
@@ -4559,7 +4733,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d1e008a7c8fd4180682a3917210c8c2d"
+            "hash": "83e691896aaf84895272536cb4ed727d"
         },
         "The Jewish Identity Project: New American Photography-Contemporary Jewish Museum": {
             "name": "The Jewish Identity Project: New American Photography",
@@ -4575,6 +4749,7 @@
                 "start": "2006-10-22",
                 "end": "2007-04-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/80",
@@ -4585,7 +4760,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6bee22149f9f6a5265abb7cc291c614c"
+            "hash": "3ba7a0955d0187ee86fec613b0ef82f9"
         },
         "Art of Living: Contemporary Photography and Video from the Israel Museum-Contemporary Jewish Museum": {
             "name": "Art of Living: Contemporary Photography and Video from the Israel Museum",
@@ -4601,6 +4776,7 @@
                 "start": "2006-04-04",
                 "end": "2006-07-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/82",
@@ -4611,7 +4787,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1dcbe363f98fb3d66196a7760a40673d"
+            "hash": "62b39687531e80568d63f3057c4ac3e8"
         },
         "Intersections: Reading the Space-Contemporary Jewish Museum": {
             "name": "Intersections: Reading the Space",
@@ -4627,6 +4803,7 @@
                 "start": "2005-10-23",
                 "end": "2006-02-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/77",
@@ -4637,7 +4814,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "af16a2e1c03cb406adc91edc8bfa0fc9"
+            "hash": "6f00e2f5b0911e327a150b4d7a358122"
         },
         "Scents of Purpose: Artists Interpret the Spice Box-Contemporary Jewish Museum": {
             "name": "Scents of Purpose: Artists Interpret the Spice Box",
@@ -4653,6 +4830,7 @@
                 "start": "2005-05-04",
                 "end": "2005-09-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/85",
@@ -4663,7 +4841,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e5a87bb008402d37640619d3d2283497"
+            "hash": "3e47c8e3824f375cca7156b23668fb8a"
         },
         "The Jewish Journey: Frederic Brenner's Photographic Odyssey-Contemporary Jewish Museum": {
             "name": "The Jewish Journey: Frederic Brenner's Photographic Odyssey",
@@ -4679,6 +4857,7 @@
                 "start": "2004-10-14",
                 "end": "2005-02-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/87",
@@ -4689,7 +4868,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6f5317b452dbd8a82b4e55f25b96df28"
+            "hash": "9eb99203a57d592ef433c0d3de1f0a75"
         },
         "100 Artists See God-Contemporary Jewish Museum": {
             "name": "100 Artists See God",
@@ -4705,6 +4884,7 @@
                 "start": "2004-03-07",
                 "end": "2004-06-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/86",
@@ -4715,7 +4895,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "20f327b20e380663aca2e3cc715dcfca"
+            "hash": "c191f524cf321d3f8dda7c68446eaaf2"
         },
         "Hidden in the Walls-Contemporary Jewish Museum": {
             "name": "Hidden in the Walls",
@@ -4731,6 +4911,7 @@
                 "start": "2002-09-21",
                 "end": "2003-02-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/91",
@@ -4741,7 +4922,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "13bdf674d15216871d093debc6c36d43"
+            "hash": "dc42af1f80c073d122e42ccccea2c494"
         },
         "Stephanie Snyder: Hamakom/The Place-Contemporary Jewish Museum": {
             "name": "Stephanie Snyder: Hamakom/The Place",
@@ -4757,6 +4938,7 @@
                 "start": "2002-10-27",
                 "end": "2003-02-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/88",
@@ -4767,7 +4949,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "2558dfdaa9d97b2ba87caa8e179bbbc1"
+            "hash": "669c5b2a9152dd372d279298858cbb7a"
         },
         "Sharing the Screen-Contemporary Jewish Museum": {
             "name": "Sharing the Screen",
@@ -4783,6 +4965,7 @@
                 "start": "2002-10-27",
                 "end": "2003-02-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/89",
@@ -4793,7 +4976,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b53f7496addb10402a0f435691a97ec0"
+            "hash": "ad7ddf86b04ebf022db5d0d64af846ee"
         },
         "Ben Katchor: Picture Stories-Contemporary Jewish Museum": {
             "name": "Ben Katchor: Picture Stories",
@@ -4809,6 +4992,7 @@
                 "start": "2002-03-21",
                 "end": "2002-06-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/90",
@@ -4819,7 +5003,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d4653f2cc39c1d59e79d9284692233f8"
+            "hash": "11c04bea3b0b14fc8d1b3421aa442f10"
         },
         "Face(t)s of Memory: Found Photographs and Family Albums-Contemporary Jewish Museum": {
             "name": "Face(t)s of Memory: Found Photographs and Family Albums",
@@ -4835,6 +5019,7 @@
                 "start": "2001-11-14",
                 "end": "2002-01-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/93",
@@ -4845,7 +5030,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "748962df272f5ec79b4f12136176f7da"
+            "hash": "8a11ef98ef18da79da819ffa4f5f5bad"
         },
         "Sophie Calle: Public Places\u2014Private Spaces-Contemporary Jewish Museum": {
             "name": "Sophie Calle: Public Places\u2014Private Spaces",
@@ -4861,6 +5046,7 @@
                 "start": "2001-05-07",
                 "end": "2001-06-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/92",
@@ -4871,7 +5057,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "276fb4bfc89aab301d2e94b9475dcff9"
+            "hash": "db860190cc27525a2cdfaa2a46bdc8ed"
         },
         "To the Rescue: Eight Artists in an Archive-Contemporary Jewish Museum": {
             "name": "To the Rescue: Eight Artists in an Archive",
@@ -4887,6 +5073,7 @@
                 "start": "2000-03-26",
                 "end": "2000-06-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/95",
@@ -4897,7 +5084,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1f461401f4419567752220de905f3942"
+            "hash": "0901f3dcc6ca3376b398957e37b35379"
         },
         "Making Change: 100 Artists Interpret the Tzedakah Box-Contemporary Jewish Museum": {
             "name": "Making Change: 100 Artists Interpret the Tzedakah Box",
@@ -4913,6 +5100,7 @@
                 "start": "1999-11-14",
                 "end": "2000-01-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/94",
@@ -4923,7 +5111,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1e66728be29f96f5b7712f0cbc7baaca"
+            "hash": "639de43f03c064a8a76acd327efd9cfe"
         },
         "Leah Rosenberg: When One Sees a Rainbow-Contemporary Jewish Museum": {
             "name": "Leah Rosenberg: When One Sees a Rainbow",
@@ -4939,6 +5127,7 @@
                 "start": "2024-06-06",
                 "end": "2027-04-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://thecjm.org/exhibitions/235",
@@ -4949,7 +5138,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e0891a68b0e2fccf3c7d26377db0d2ea"
+            "hash": "9ca68e51c2fbb5a83605a7a114f4a538"
         }
     },
     "San Francisco Women Artists Gallery": {
@@ -4967,6 +5156,7 @@
                 "start": "2024-04-09",
                 "end": "2024-05-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/i-am/",
@@ -4977,7 +5167,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "75830bfdfc303064d4921499254ed723"
+            "hash": "5d52477f2c714a887ab52c1cd96cba16"
         },
         "Spring! Lush!-San Francisco Women Artists Gallery": {
             "name": "Spring! Lush!",
@@ -4993,6 +5183,7 @@
                 "start": "2024-03-05",
                 "end": "2024-04-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/spring-lush/",
@@ -5003,7 +5194,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b97313551bf00daa02346786b47494b4"
+            "hash": "f83281d1b35b945cb0e95b3b2213bed7"
         },
         "Street Life-San Francisco Women Artists Gallery": {
             "name": "Street Life",
@@ -5019,6 +5210,7 @@
                 "start": "2024-02-06",
                 "end": "2024-03-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/street-life/",
@@ -5029,7 +5221,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6147e5e3d98214d0731d6d90e6463b41"
+            "hash": "241ed392ca68421a8c6a1f69a0bda05c"
         },
         "Textures, Patterns & Shapes-San Francisco Women Artists Gallery": {
             "name": "Textures, Patterns & Shapes",
@@ -5045,6 +5237,7 @@
                 "start": "2024-01-09",
                 "end": "2024-02-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/textures-patterns-shapes/",
@@ -5055,7 +5248,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "19dea569ef6d5a90c826e502a30c150e"
+            "hash": "47f231a44b9d1bb503cc0e0e1788e718"
         },
         "Being Human-San Francisco Women Artists Gallery": {
             "name": "Being Human",
@@ -5071,6 +5264,7 @@
                 "start": "2023-12-12",
                 "end": "2023-01-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/being-human/",
@@ -5081,7 +5275,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "fb540dafc7480efaca5d2d1716373d33"
+            "hash": "5fbed4061ee1eb231f73011f8b1af385"
         },
         "Artistic Vision-San Francisco Women Artists Gallery": {
             "name": "Artistic Vision",
@@ -5097,6 +5291,7 @@
                 "start": "2023-11-14",
                 "end": "2023-12-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/artistic-vision/",
@@ -5107,7 +5302,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "55cdf39cec406bdb080d0f357f961e7a"
+            "hash": "ee5be0f297d3a002c73c77c29bbde9bb"
         },
         "Annual Bay Area Artists\u2019 Choice-San Francisco Women Artists Gallery": {
             "name": "Annual Bay Area Artists\u2019 Choice",
@@ -5123,6 +5318,7 @@
                 "start": "2023-10-03",
                 "end": "2023-11-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/annual-bay-area-artists-choice/",
@@ -5133,7 +5329,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d52b3f0b9d0e8c315d5b1b21003c5713"
+            "hash": "98ef01f5763664c9eeff1684d7dfe766"
         },
         "New Work-San Francisco Women Artists Gallery": {
             "name": "New Work",
@@ -5149,6 +5345,7 @@
                 "start": "2023-08-29",
                 "end": "2023-09-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/new-works-2/",
@@ -5159,7 +5356,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "730eadd82101f76106e8806cc2220628"
+            "hash": "bd2a850144ef0a4eb1402a35197390dc"
         },
         "Close-up-San Francisco Women Artists Gallery": {
             "name": "Close-up",
@@ -5175,6 +5372,7 @@
                 "start": "2023-08-01",
                 "end": "2023-08-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/close-up/",
@@ -5185,7 +5383,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "092fb3377cff2a27d843efb7e2e53990"
+            "hash": "f36575fcacab444080c6e50efa04c180"
         },
         "Reflection-San Francisco Women Artists Gallery": {
             "name": "Reflection",
@@ -5201,6 +5399,7 @@
                 "start": "2023-06-27",
                 "end": "2023-07-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/reflections-2/",
@@ -5211,7 +5410,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f6d0fde018cc38c436e86233584ff091"
+            "hash": "926a8867c2afed07d6543c22fb1dd338"
         },
         "Art Of Pride- Moving Forward-San Francisco Women Artists Gallery": {
             "name": "Art Of Pride- Moving Forward",
@@ -5227,6 +5426,7 @@
                 "start": "2023-05-30",
                 "end": "2023-06-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/art-of-pride-moving-forward/",
@@ -5237,7 +5437,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b7b91b69dd7cb239035cbe5c7d69f24a"
+            "hash": "1204f07fb13669c1f3b8726a0f0a5578"
         },
         "Black White And Shades Between-San Francisco Women Artists Gallery": {
             "name": "Black White And Shades Between",
@@ -5253,6 +5453,7 @@
                 "start": "2023-05-30",
                 "end": "2023-06-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/black-white-and-shades-between/",
@@ -5263,7 +5464,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7e72219927922ece6538526151312e65"
+            "hash": "3c191fc54bddf912cfc1042090dbd671"
         },
         "Embracing Nature-San Francisco Women Artists Gallery": {
             "name": "Embracing Nature",
@@ -5279,6 +5480,7 @@
                 "start": "2023-05-02",
                 "end": "2023-05-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/embracing-nature/",
@@ -5289,7 +5491,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "168cb1e708c631a89d176ecba85dcbc5"
+            "hash": "4788c55285860a973db63be15e44637e"
         },
         "Color Pop!-San Francisco Women Artists Gallery": {
             "name": "Color Pop!",
@@ -5305,6 +5507,7 @@
                 "start": "2023-04-04",
                 "end": "2023-04-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/color-pop/",
@@ -5315,7 +5518,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "26d55a318ec5d47806323f43bb6af77f"
+            "hash": "4dcb46a4ac4df594e2345aca1444bc13"
         },
         "Patterns & Shapes-San Francisco Women Artists Gallery": {
             "name": "Patterns & Shapes",
@@ -5331,6 +5534,7 @@
                 "start": "2023-03-07",
                 "end": "2023-03-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/patterns-shapes/",
@@ -5341,7 +5545,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f3200816d859d732c36d8a5070401d81"
+            "hash": "ff0a14695853e4fa25e4ba36967c1028"
         },
         "Climate Change: Protecting Mother Earth-San Francisco Women Artists Gallery": {
             "name": "Climate Change: Protecting Mother Earth",
@@ -5357,6 +5561,7 @@
                 "start": "2023-02-07",
                 "end": "2023-03-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/climate-change-protecting-mother-earth/",
@@ -5367,7 +5572,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "97566ffefbc49fdd4127163dd3f85ab0"
+            "hash": "e62ae9e500574c0cb68c7a37d73ade81"
         },
         "Photographer\u2019s Eye-San Francisco Women Artists Gallery": {
             "name": "Photographer\u2019s Eye",
@@ -5383,6 +5588,7 @@
                 "start": "2023-01-10",
                 "end": "2023-02-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/photo-graphers-eye/",
@@ -5393,7 +5599,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f604e8ac110e0ac82b80e2f74619f8c2"
+            "hash": "d4d7902c45ce87c0d4a230fe424a1d13"
         },
         "Holiday Spirit-San Francisco Women Artists Gallery": {
             "name": "Holiday Spirit",
@@ -5409,6 +5615,7 @@
                 "start": "2022-12-06",
                 "end": "2022-01-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/holiday-spirit/",
@@ -5419,7 +5626,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c0315164c618156fc16a47cd31e67ef6"
+            "hash": "fa30b2b41272437aebd55d91571fe8c5"
         },
         "Edge Of Abstraction-San Francisco Women Artists Gallery": {
             "name": "Edge Of Abstraction",
@@ -5435,6 +5642,7 @@
                 "start": "2022-11-08",
                 "end": "2022-12-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/edge-of-abstraction/",
@@ -5445,7 +5653,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6af6cd5605f94946ff0975490719fbe4"
+            "hash": "b14eca9b8be4144366cceabe11ee390a"
         },
         "Artists\u2019 Choice 2022-San Francisco Women Artists Gallery": {
             "name": "Artists\u2019 Choice 2022",
@@ -5461,6 +5669,7 @@
                 "start": "2022-09-27",
                 "end": "2022-11-04"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/artists-choice-2022/",
@@ -5471,7 +5680,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "07fd3b7145e0f46f88b05534806a55fe"
+            "hash": "56e5070cc32a5b684e14ba2c69a7e58c"
         },
         "Botanicals-San Francisco Women Artists Gallery": {
             "name": "Botanicals",
@@ -5487,6 +5696,7 @@
                 "start": "2022-08-30",
                 "end": "2022-09-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/botanicals/",
@@ -5497,7 +5707,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "dc1007e28a579f806c1fe8864d829edc"
+            "hash": "65d8761b643ebaf98020486554589b4d"
         },
         "Being Human \u2013 The Figuratve Show-San Francisco Women Artists Gallery": {
             "name": "Being Human \u2013 The Figuratve Show",
@@ -5513,6 +5723,7 @@
                 "start": "2022-08-02",
                 "end": "2022-08-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/being-human-the-figuratve-show/",
@@ -5523,7 +5734,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "78760a9675dd3c3262fdf3a38663b33e"
+            "hash": "7fc4a3406a0eaca6a2a5ff3d6f94325c"
         },
         "Patterns, Textures And Materials-San Francisco Women Artists Gallery": {
             "name": "Patterns, Textures And Materials",
@@ -5539,6 +5750,7 @@
                 "start": "2022-06-28",
                 "end": "2022-07-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/patterns-textures-and-materials/",
@@ -5549,7 +5761,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f6d76b68acee65a02cd80193bf1b7f88"
+            "hash": "8d00ccd54d90ca7b9c9a64cd579c3396"
         },
         "Melting: Climate Crisis \u2013 Water Is Life-San Francisco Women Artists Gallery": {
             "name": "Melting: Climate Crisis \u2013 Water Is Life",
@@ -5565,6 +5777,7 @@
                 "start": "2022-05-31",
                 "end": "2022-06-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/melting-climate-crisis-water-is-life/",
@@ -5575,7 +5788,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "881de7412b15693c16fffec4d39a6ff0"
+            "hash": "f425a2c01f5109cbb5c1e0fc33876cc1"
         },
         "Intense Palette-San Francisco Women Artists Gallery": {
             "name": "Intense Palette",
@@ -5591,6 +5804,7 @@
                 "start": "2022-05-03",
                 "end": "2022-05-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/intense-palette/",
@@ -5601,7 +5815,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "40b1635de4c1139c8ecd152d02d26dba"
+            "hash": "7ceda1cf6ea0f0c88238927e11e1e221"
         },
         "Capture The Moment-San Francisco Women Artists Gallery": {
             "name": "Capture The Moment",
@@ -5617,6 +5831,7 @@
                 "start": "2022-04-04",
                 "end": "2022-04-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/capture-the-moment/",
@@ -5627,7 +5842,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0d9ffb3e43f8fd9fe9ff2b9c181070e4"
+            "hash": "11aa36b7bfe72f5fc06e7f06f0933303"
         },
         "Celebrating Women\u2019s History Month-San Francisco Women Artists Gallery": {
             "name": "Celebrating Women\u2019s History Month",
@@ -5643,6 +5858,7 @@
                 "start": "2022-03-08",
                 "end": "2022-04-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/celebrating-womens-history-month/",
@@ -5653,7 +5869,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9935ac1ca78ccce3e07bd9d4d3a0ae0a"
+            "hash": "487464c2c9a07a4f17f4cbcbb72b434e"
         },
         "1st Annual Photography & Digital Art Exhibition-San Francisco Women Artists Gallery": {
             "name": "1st Annual Photography & Digital Art Exhibition",
@@ -5669,6 +5885,7 @@
                 "start": "2022-02-08",
                 "end": "2022-03-04"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/1st-annual-photography-digital-art-exhibition/",
@@ -5679,7 +5896,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "956035bc9bda1abfbbe4c8224d6fe852"
+            "hash": "6e96374ad2da4fc98180c17cce33f2ac"
         },
         "Fresh Perspective-San Francisco Women Artists Gallery": {
             "name": "Fresh Perspective",
@@ -5695,6 +5912,7 @@
                 "start": "2022-01-11",
                 "end": "2022-02-04"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/fresh-perspectives/",
@@ -5705,7 +5923,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0ee34fe430475c775a8409c4170ff5b3"
+            "hash": "e28bdaff85dab0726bd26acb5b76170a"
         },
         "Artful Giving-San Francisco Women Artists Gallery": {
             "name": "Artful Giving",
@@ -5721,6 +5939,7 @@
                 "start": "2021-12-07",
                 "end": "2021-01-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/artful-giving/",
@@ -5731,7 +5950,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3a14ff045d7b9f7509b94991b5e20461"
+            "hash": "93922d2f15163a2fa62ad0f8cb1d5c5c"
         },
         "Light And Shadow-San Francisco Women Artists Gallery": {
             "name": "Light And Shadow",
@@ -5747,6 +5966,7 @@
                 "start": "2021-11-02",
                 "end": "2021-12-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/light-and-shadow/",
@@ -5757,7 +5977,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b0192cc0943e222cc9a0c13b62102ab1"
+            "hash": "9e537f765e57b1189431d60f1a292e77"
         },
         "Artists Choice 2021-San Francisco Women Artists Gallery": {
             "name": "Artists Choice 2021",
@@ -5773,6 +5993,7 @@
                 "start": "2021-09-28",
                 "end": "2021-10-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/artists-choice-2021/",
@@ -5783,7 +6004,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d2a2fa1f8041c9579d08479d95f1bf8e"
+            "hash": "3d3f8af2b0288e8e672611eb60b39cad"
         },
         "Abstract World-San Francisco Women Artists Gallery": {
             "name": "Abstract World",
@@ -5799,6 +6020,7 @@
                 "start": "2021-08-31",
                 "end": "2021-09-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/abstract-world/",
@@ -5809,7 +6031,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1c37a2ba2a3e2e02bfe4a8ccef0bb36c"
+            "hash": "1ba147d87b3d0439105ae7c2c2e54214"
         },
         "Bold. Colors!-San Francisco Women Artists Gallery": {
             "name": "Bold. Colors!",
@@ -5825,6 +6047,7 @@
                 "start": "2021-08-03",
                 "end": "2021-08-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/bold-colors/",
@@ -5835,7 +6058,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d102c883e251db852819a7be052ba6cb"
+            "hash": "0c813d4941b8826e4451a9159de7740e"
         },
         "Verdant-San Francisco Women Artists Gallery": {
             "name": "Verdant",
@@ -5851,6 +6074,7 @@
                 "start": "2021-06-29",
                 "end": "2021-07-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/verdant/",
@@ -5861,7 +6085,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a98c12acc1ad61f9cd6e15eedc2a280a"
+            "hash": "797fc4b5c9dc6d61a1886523a7fb4588"
         },
         "Art Matters-San Francisco Women Artists Gallery": {
             "name": "Art Matters",
@@ -5877,6 +6101,7 @@
                 "start": "2021-06-01",
                 "end": "2021-06-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/art-matters/",
@@ -5887,7 +6112,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6854bcd832369f4c27a428f40b99eec9"
+            "hash": "8d811ad3efdc10f5fb3d1d5ff64d9872"
         },
         "Collage & Mixed Media-San Francisco Women Artists Gallery": {
             "name": "Collage & Mixed Media",
@@ -5903,6 +6128,7 @@
                 "start": "2021-05-04",
                 "end": "2021-05-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/collage-mixed-media/",
@@ -5913,7 +6139,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "205e3656604db6bda24f007bd71f342e"
+            "hash": "4f87ec758e0d68dade33dfacf01941da"
         },
         "Scapes \u2013 City, Land And Sea-San Francisco Women Artists Gallery": {
             "name": "Scapes \u2013 City, Land And Sea",
@@ -5929,6 +6155,7 @@
                 "start": "2021-04-06",
                 "end": "2021-04-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/scapes-city-land-and-sea/",
@@ -5939,7 +6166,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e79af79f294e597d036a542869a144f9"
+            "hash": "307cd48951f36b3f2f54de73ec728472"
         },
         "Patterns & Symmetry-San Francisco Women Artists Gallery": {
             "name": "Patterns & Symmetry",
@@ -5955,6 +6182,7 @@
                 "start": "2021-03-09",
                 "end": "2021-04-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/patterns-symmetry/",
@@ -5965,7 +6193,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7d5aa6ef8767ed1e32902b9f594e6826"
+            "hash": "45eeda6c9936c25b1c445222d1d5366d"
         },
         "Slice Of Life-San Francisco Women Artists Gallery": {
             "name": "Slice Of Life",
@@ -5981,6 +6209,7 @@
                 "start": "2021-02-09",
                 "end": "2021-03-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/slice-of-life/",
@@ -5991,7 +6220,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "eb6fdad536f4c7cd622d7beb578eabe4"
+            "hash": "c092b39762b3b99a38f9a08fed138034"
         },
         "Gift Of Art-San Francisco Women Artists Gallery": {
             "name": "Gift Of Art",
@@ -6007,6 +6236,7 @@
                 "start": "2020-12-08",
                 "end": "2020-02-05"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/gift-of-art/",
@@ -6017,7 +6247,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "17bceb8af7202252e6ae1287ecc4e842"
+            "hash": "4509a197080c8c2b02a53802de03358b"
         },
         "Reflective-San Francisco Women Artists Gallery": {
             "name": "Reflective",
@@ -6033,6 +6263,7 @@
                 "start": "2020-11-03",
                 "end": "2020-12-04"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/reflective/",
@@ -6043,7 +6274,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3c1df381a5269395f538873442007cc8"
+            "hash": "fdec482af9ddf30461765ca1d4f5dd23"
         },
         "Artists Choice 2020-San Francisco Women Artists Gallery": {
             "name": "Artists Choice 2020",
@@ -6059,6 +6290,7 @@
                 "start": "2020-09-29",
                 "end": "2020-10-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/artists-choice-2020/",
@@ -6069,7 +6301,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "622942f99d3ccb1536d5dc8f6e5a6c19"
+            "hash": "9f50acb5bd74420841a750a48b3d58f9"
         },
         "Members\u2019 Online Summer Exhibition-San Francisco Women Artists Gallery": {
             "name": "Members\u2019 Online Summer Exhibition",
@@ -6085,6 +6317,7 @@
                 "start": "2020-08-10",
                 "end": "2020-08-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/members-online-summer-exhibition/",
@@ -6095,7 +6328,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "42c6a9df3f8b1a9b4c9ce962bc15ac81"
+            "hash": "06360046e197fed9aea0fa8e0686656f"
         },
         "Free To Be-San Francisco Women Artists Gallery": {
             "name": "Free To Be",
@@ -6111,6 +6344,7 @@
                 "start": "2020-09-01",
                 "end": "2020-09-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/free-to-be/",
@@ -6121,7 +6355,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6cb30541477ac727e5f0ab4f126813ec"
+            "hash": "3deb6d07e966db9ee1b2a82c3662c99b"
         },
         "Abstract Thinking-San Francisco Women Artists Gallery": {
             "name": "Abstract Thinking",
@@ -6137,6 +6371,7 @@
                 "start": "2020-08-06",
                 "end": "2020-09-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/abstract-thinking/",
@@ -6147,7 +6382,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7c6fe16c9a51c9f2e707ad936d2755c4"
+            "hash": "8cdcc70fd1df77af050d45db35444fab"
         },
         "Hue And Me-San Francisco Women Artists Gallery": {
             "name": "Hue And Me",
@@ -6163,6 +6398,7 @@
                 "start": "2024-05-07",
                 "end": "2024-05-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfwomenartists.org/exhibition/hue-and-me/",
@@ -6173,7 +6409,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "13395a797c89eba33fdccd72f0d02e10"
+            "hash": "eff4a04287bb738095df6f91e2d2efaf"
         }
     },
     "Asian Art Museum": {
@@ -6193,17 +6429,18 @@
                 "start": "null",
                 "end": "2024-07-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/phoenix-kingdoms/",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/12/7936_23_PK-Web-Page_1600x900-1600x900.jpg",
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/04/Phoenix_Kingdoms_65det_1600w-1600x900.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "4c2e209b4b753fd07d4cec64f136be2d"
+            "hash": "69bc0764ab1b1a49336782a2c06d47b3"
         },
         "Into View: New Voices, New Stories-Asian Art Museum": {
             "name": "Into View: New Voices, New Stories",
@@ -6214,13 +6451,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-10-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/into-view-new-voices-new-stories/",
@@ -6231,7 +6467,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e09e043ff52a070592dc17cd3aac6f9b"
+            "hash": "3f35b4208f5a85510e0f78ac9a802e06"
         },
         "Takashi Murakami-Asian Art Museum": {
             "name": "Takashi Murakami",
@@ -6242,13 +6478,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-07-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/takashi-murakami/",
@@ -6259,7 +6494,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3aee97c5cc0f5307ee4b45d40f76865a"
+            "hash": "74f7576712c2c0c95586da1257e541b1"
         },
         "Japanese Tastes in Chinese Ceramics-Asian Art Museum": {
             "name": "Japanese Tastes in Chinese Ceramics",
@@ -6270,13 +6505,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-05-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/japanese-tastes-in-chinese-ceramics/",
@@ -6287,7 +6521,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ab6ff4abdc68eca47f67586e2b8f9ee4"
+            "hash": "4d4148cf5c918e3c05e3d8dbf3c833dd"
         },
         "Japanese Ink Paintings-Asian Art Museum": {
             "name": "Japanese Ink Paintings",
@@ -6298,13 +6532,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-06-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/japanese-ink-paintings/",
@@ -6315,7 +6548,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "041c8526e044814df5bf0245de042137"
+            "hash": "bf29c008878dbd2465c8a7bab2b7a0d1"
         },
         "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts-Asian Art Museum": {
             "name": "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts",
@@ -6326,13 +6559,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-07-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/deities-paragons-and-legends/",
@@ -6343,7 +6575,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "65d33ae3d3f3ecd4f0d36a0895943e2d"
+            "hash": "b87399f14eeef6e2bda110d6935a12b7"
         },
         "RAD (Research And Development)-Asian Art Museum": {
             "name": "RAD (Research And Development)",
@@ -6354,13 +6586,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "2024-10-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/rad-research-and-development/",
@@ -6371,7 +6602,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "cda5beefbf8aff5c46f9df73ed967b49"
+            "hash": "92f5ed466c19a056c703cf59c5b4480b"
         },
         "Ruth Asawa: Untitled (S.272)-Asian Art Museum": {
             "name": "Ruth Asawa: Untitled (S.272)",
@@ -6382,13 +6613,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/ruth-asawa-untitled/",
@@ -6399,7 +6629,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "829b12eefae3db8a5ab4051f624f71fc"
+            "hash": "62c28475ecfe7ddf2e4f2ea5ec3f05f1"
         },
         "East West Bank Art Terrace-Asian Art Museum": {
             "name": "East West Bank Art Terrace",
@@ -6410,13 +6640,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/east-west-bank-art-terrace/",
@@ -6427,7 +6656,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3a4774527a6c8b58207f73f787c8a9b1"
+            "hash": "4282ea1fc7099e8878cd35a27af3dba6"
         },
         "Jakhodo Today-Asian Art Museum": {
             "name": "Jakhodo Today",
@@ -6438,13 +6667,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/jakhodo-today/",
@@ -6455,7 +6683,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "efae332eac7b27db7de1d8b80f089e37"
+            "hash": "507fbd1f09c3f7aef78b5cf4326c45b5"
         },
         "Taihu Rock\u2014East Wind II-Asian Art Museum": {
             "name": "Taihu Rock\u2014East Wind II",
@@ -6466,13 +6694,12 @@
                 "current",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "current",
             "dates": {
                 "start": "null",
                 "end": "null"
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/taihu-rock-east-wind-ii/",
@@ -6483,7 +6710,657 @@
                     "description": "Image"
                 }
             ],
-            "hash": "96f202e615e7d98f39f1fd932abf3796"
+            "hash": "e5065a673468ec0448efcf1ea74cb001"
+        },
+        "Resilient Traditions: Korean American Stories Told Through Paper-Asian Art Museum": {
+            "name": "Resilient Traditions: Korean American Stories Told Through Paper",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-04-13",
+                "end": "2024-02-05"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/resilient-traditions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/Hero_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "de468f60426ec2c1db0be8f1ad35764f"
+        },
+        "Murakami: Monsterized-Asian Art Museum": {
+            "name": "Murakami: Monsterized",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-09-15",
+                "end": "2024-02-12"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/takashi-murakami-monsterized/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/07/7769_23_Murakami-Exhibition-Page-Web-Images_v42-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4744b8f75082faaa353c6a4ea9f8b9c1"
+        },
+        "Jenifer K Wofford: Pattern Recognition-Asian Art Museum": {
+            "name": "Jenifer K Wofford: Pattern Recognition",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-10-14",
+                "end": "2023-08-20"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/jenifer-k-wofford-pattern-recognition/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/07/Wofford_1600x900_3-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "c952e57d50c913ca5392bfdadb786aea"
+        },
+        "Afruz Amighi: My House, My Tomb-Asian Art Museum": {
+            "name": "Afruz Amighi: My House, My Tomb",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-05-31",
+                "end": "2023-10-30"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/afruz-amighi-my-house-my-tomb/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/07/Afruz-Amighi_Website-Assets_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "47aec6a7575cff487c7bbaa1f3b50f4f"
+        },
+        "Zheng Chongbin: I Look for the Sky-Asian Art Museum": {
+            "name": "Zheng Chongbin: I Look for the Sky",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-11-20",
+                "end": "2023-01-30"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/zheng-chongbin-i-look-for-the-sky-2/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/10/Chongbin_Exhibition_Website_1600x900_v3-600x450.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f6ddac08d4ca02c63bc2a42bfe8ca1b7"
+        },
+        "Into View: Bernice Bing-Asian Art Museum": {
+            "name": "Into View: Bernice Bing",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-07",
+                "end": "2023-12-04"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/into-view-bernice-bing/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/Bing_mural-w-viewer_b_1200x900-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "d932e939d6d45907d8ff5c0e34ecd0ea"
+        },
+        "Bearing Witness: Selected Works by Chiura Obata-Asian Art Museum": {
+            "name": "Bearing Witness: Selected Works by Chiura Obata",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-20",
+                "end": "2023-02-27"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/bearing-witness-selected-works-by-chiura-obata/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/09/7496_22_ChiruraObata_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "9da2ac084bd8437dfa1189c62cfb5526"
+        },
+        "Beyond Bollywood: 2000 Years of Dance in Art-Asian Art Museum": {
+            "name": "Beyond Bollywood: 2000 Years of Dance in Art",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-03-31",
+                "end": "2023-07-10"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/beyond-bollywood-2000-years-of-dance-in-art/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/07/7474_22_BB_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f4f1f456a8a8e49f778be1ed9f88cfb4"
+        },
+        "Color Trip: Yoshida Hodaka\u2019s Modern Prints-Asian Art Museum": {
+            "name": "Color Trip: Yoshida Hodaka\u2019s Modern Prints",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-12-16",
+                "end": "2023-05-01"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/color-trip-yoshida-hodakas-modern-prints/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/08/7494_22_Hodaka_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "2ad0e25d43f00f2346a382065de6e419"
+        },
+        "Past Continuous Tense-Asian Art Museum": {
+            "name": "Past Continuous Tense",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-12-16",
+                "end": "2023-12-11"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/past-continuous-tense/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/PCT_installation_1600w-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4311cde07b21141f99a23d0fa5d7b72f"
+        },
+        "Kongkee: Warring States Cyberpunk-Asian Art Museum": {
+            "name": "Kongkee: Warring States Cyberpunk",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-11-18",
+                "end": "2023-01-23"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/kongkee-warring-states-cyberpunk/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/12/7621_22_KongkeeWebsite_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ffe5c46fb4e1acd78a20a3a543e46f47"
+        },
+        "Delightful Luxury: The Art of Chinese Lacquer-Asian Art Museum": {
+            "name": "Delightful Luxury: The Art of Chinese Lacquer",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-11-17",
+                "end": "2023-11-19"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/delightful-luxury-the-art-of-chinese-lacquer/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/10/7499_22_ChineseLacquer_fan_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ea4f061e403fe7b55056e2ce20316771"
+        },
+        "The Heart of Zen-Asian Art Museum": {
+            "name": "The Heart of Zen",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-11-17",
+                "end": "2023-12-31"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/the-heart-of-zen/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/04/Persimmons_1600x900b-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "170f00c938f514270a12aaf2184ba71d"
+        },
+        "Bernice Bing: Open Call-Asian Art Museum": {
+            "name": "Bernice Bing: Open Call",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-06-16",
+                "end": "2023-12-11"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/bernice-bing-open-call/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/05/Bing-OpenCall_rice_600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4376a773555c0c47e6c6cfd39fe7e1db"
+        },
+        "Hell: Arts of Asian Underworlds-Asian Art Museum": {
+            "name": "Hell: Arts of Asian Underworlds",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-06-16",
+                "end": "2023-09-18"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/hell-arts-of-asian-underworlds/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/07/hell_quanyin_600x500-600x450.png",
+                    "description": "Image"
+                }
+            ],
+            "hash": "8123eb3d6315223270dc7df29964aecd"
+        },
+        "Chinese Ink Paintings: A Selection of Modern Masters-Asian Art Museum": {
+            "name": "Chinese Ink Paintings: A Selection of Modern Masters",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-12-15",
+                "end": "2023-10-09"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/chinese-ink-paintings-a-selection-of-modern-masters/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2023/06/7790_23_Chinese-Ink-Paintings-Exhibition-_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f5b68c4e784dabbae7ea584b4f0cfb2b"
+        },
+        "teamLab: Sketch Ocean-Asian Art Museum": {
+            "name": "teamLab: Sketch Ocean",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-07-23",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/teamlab-sketch-ocean/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/02/Sketch-Aquarium__high-1-scaled-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "27efdefceb673e37046d19f6f50ea94a"
+        },
+        "teamLab: Continuity-Asian Art Museum": {
+            "name": "teamLab: Continuity",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-07-23",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/teamlab-continuity/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/02/7066_21_teamLab_Website_Update_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "245291bcb20a79496bab5a7af9d9e72f"
+        },
+        "After Hope: Videos of Resistance-Asian Art Museum": {
+            "name": "After Hope: Videos of Resistance",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-02-19",
+                "end": "2022-05-02"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/after-hope/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/08/AfterHope_1600x900_1-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "6f10b87ff040ee12c68218916a7f8647"
+        },
+        "Memento: Jayashree Chakravarty and Lam Tung Pang-Asian Art Museum": {
+            "name": "Memento: Jayashree Chakravarty and Lam Tung Pang",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-02-12",
+                "end": "2022-07-04"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/memento-jayashree-chakravarty-and-lam-tung-pang/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/05/Memento_updated_600x450-600x450.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "0fb6a8b19d29b4653e1d5388f89b2885"
+        },
+        "Chanel Miller: I was, I am, I will be-Asian Art Museum": {
+            "name": "Chanel Miller: I was, I am, I will be",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-08-05",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/chanel-miller-i-was-i-am-i-will-be/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2020/10/Chanel-Miller_Hero_1600x900-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "932e7ab39fcd1e9a0812d31b47f54ff5"
+        },
+        "Carlos Villa: Worlds in Collision-Asian Art Museum": {
+            "name": "Carlos Villa: Worlds in Collision",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-06-17",
+                "end": "2022-10-24"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/carlos-villa-worlds-in-collision/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/03/6389_CarlosVilla_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "e2d765a9d2832dc9a979fbae498bbc6e"
+        },
+        "Seeing Gender-Asian Art Museum": {
+            "name": "Seeing Gender",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-01-21",
+                "end": "2022-09-05"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/seeing-gender/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/06/Gender_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "8af424839fe8efc237a62c3d4ada0879"
+        },
+        "Weaving Stories-Asian Art Museum": {
+            "name": "Weaving Stories",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-12-17",
+                "end": "2022-05-02"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/weaving-stories/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2021/07/6867_21_Weaving-Stories_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "51bc975fa8813eeda2889afcceb81197"
+        },
+        "When Rabbit Left the Moon-Asian Art Museum": {
+            "name": "When Rabbit Left the Moon",
+            "venue": "Asian Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-02-18",
+                "end": "2022-02-28"
+            },
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/when-rabbit-left-the-moon/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2022/01/7256_22_Omori_Website_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "eb93643a5aa754a01b2dbeb1aeb31ce6"
         }
     }
 }

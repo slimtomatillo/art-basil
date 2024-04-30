@@ -181,6 +181,7 @@ def scrape_de_young_and_legion_of_honor():
 
                     # Extract date info
                     date = e.find(class_="mt-12 text-secondary f-subheading-1").get_text()
+                    ongoing = True if date.lower() == 'ongoing' else False
                     
                     # Identify phase and date fields
                     if date.lower().split()[0] == 'through':
@@ -208,6 +209,7 @@ def scrape_de_young_and_legion_of_honor():
                         'tags': ['exhibition'] + [phase] + ['museum'],
                         'phase': phase, # Possible phases are past, current, future
                         'dates': {'start': start_date, 'end': end_date},
+                        'ongoing': ongoing,
                         'links': [
                             {
                                 'link': link,
@@ -301,6 +303,8 @@ def scrape_sfmoma():
                     event_date = event_date.replace('spring', 'mar 20,')
                 if 'summer' in event_date:
                     event_date = event_date.replace('summer', 'jun 20,')
+                # Mark 'ongoing' flag
+                ongoing = True if event_date in ('new exhibition! now on view', 'ongoing') else False
                 # Get start date and end date
                 if event_date in ('new exhibition! now on view', 'ongoing'):
                     start_date = 'null'
@@ -358,6 +362,7 @@ def scrape_sfmoma():
                     'tags': ['exhibition'] + [phase_dict['phase']] + ['museum'],
                     'phase': phase_dict['phase'],
                     'dates': {'start': start_date, 'end': end_date},
+                    'ongoing': ongoing,
                     'links': [
                         {
                             'link': event_link,
@@ -438,12 +443,14 @@ def scrape_contemporary_jewish_museum():
                 event_dates = event.find('p', class_='exhibition__date-label').find_all('span')
                 event_dates = '–'.join([span.text.strip() for span in event_dates]) if event_dates else None
                 dates = event_dates.lower().replace(',', '').split('––')
-                if event_dates == 'Ongoing exhibit':
+                if event_dates.lower() == 'ongoing exhibit':
                     start_date = 'null'
                     end_date = 'null'
+                    ongoing = True
                 else:
                     start_date = convert_date_to_dt(dates[0])
                     end_date = convert_date_to_dt(dates[1])
+                    ongoing = False
                 
                 # Extract rich-text (description)
                 description_tag = event.find('div', class_='rich-text')
@@ -460,6 +467,7 @@ def scrape_contemporary_jewish_museum():
                     'tags': ['exhibition'] + [url_dict['phase']] + ['museum'],
                     'phase': url_dict['phase'],
                     'dates': {'start': start_date, 'end': end_date},
+                    'ongoing': ongoing,
                     'links': [
                         {
                             'link': event_link,
@@ -612,6 +620,7 @@ def scrape_sfwomenartists(verbose=True):
                 'tags': ['exhibition'] + [phase] + ['gallery'],
                 'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
+                'ongoing': False,
                 'links': [
                     {
                         'link': event_link,
@@ -673,8 +682,9 @@ def scrape_asian_art_museum_current_events():
         except TypeError:
             image_link = None
 
-        # Extract date label
+        # Extract date info
         event_date = featured_event.find(class_='hero-card__aside').find('span').text.lower()
+        ongoing = True if event_date == 'ongoing' else False
         start_date = 'null'
         if event_date:
             end_date = convert_date_to_dt(event_date)
@@ -699,6 +709,7 @@ def scrape_asian_art_museum_current_events():
             'tags': ['exhibition'] + ['current'] + ['museum'],
             'phase': ['current'],
             'dates': {'start': start_date, 'end': end_date},
+            'ongoing': ongoing,
             'links': [
                 {
                     'link': event_link,
@@ -738,6 +749,7 @@ def scrape_asian_art_museum_current_events():
 
             # Extract date label
             event_date = event.find('div', class_='card__subtitle').text.strip().lower().replace('through ', '')
+            ongoing = True if event_date == 'ongoing' else False
             start_date = 'null'
             if event_date == 'ongoing':
                 end_date = 'null'
@@ -760,6 +772,7 @@ def scrape_asian_art_museum_current_events():
                 'tags': ['exhibition'] + [phase] + ['museum'],
                 'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
+                'ongoing': ongoing,
                 'links': [
                     {
                         'link': event_link,

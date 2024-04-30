@@ -149,7 +149,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 const isPastEvent = event.tags.includes('past');
                 const isOngoingEvent = (startDate === null || startDate <= today) && (endDate === null || endDate >= today);
             
-                if (isPastEvent && endDate) {
+                if (event.ongoing === true) {
+                    // If the event is marked as ongoing
+                    dateText = "Ongoing";
+                } else if (isPastEvent && endDate) {
                     // For past events with a known end date
                     dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
                 } else if (isOngoingEvent) {
