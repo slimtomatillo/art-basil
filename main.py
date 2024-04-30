@@ -304,7 +304,7 @@ def scrape_sfmoma():
                 if 'summer' in event_date:
                     event_date = event_date.replace('summer', 'jun 20,')
                 # Mark 'ongoing' flag
-                ongoing = True if event_date in ('new exhibition! now on view', 'ongoing') else False
+                ongoing = True if 'ongoing' in event_date else False
                 # Get start date and end date
                 if event_date in ('new exhibition! now on view', 'ongoing'):
                     start_date = 'null'
@@ -960,4 +960,4 @@ def main(copy_db=True, record_db_size=True):
     print('Finished')
 
 if __name__ == "__main__":
-    main()
+    main(copy_db=True, record_db_size=True)

@@ -533,7 +533,7 @@
                 "start": "null",
                 "end": "null"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/creative-growth-the-house-that-art-built/",
@@ -544,7 +544,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "117e5117d02d5e39d74ead2307e76619"
+            "hash": "f5280a36633cca31674038a8b8377013"
         },
         "Yayoi Kusama: Infinite Love-SFMOMA": {
             "name": "Yayoi Kusama: Infinite Love",
@@ -938,7 +938,7 @@
                 "start": "2023-09-16",
                 "end": "null"
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/barbara-stauffacher-solomon-strips-of-stripes/",
@@ -949,7 +949,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "5d2e9c26e1bb2920c2efda5d1b446f9a"
+            "hash": "57e6b982e63d509fb35fc85fa6bf8afc"
         },
         "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart-SFMOMA": {
             "name": "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart",
