@@ -376,7 +376,7 @@ def scrape_sfmoma():
         else:
             print(f"Events container not found for phase: {phase_dict['phase']}")
 
-def scrape_cjm():
+def scrape_contemporary_jewish_museum():
     """Scrape and process events from Contemporary Jewish Museum."""
     
     def convert_date_to_dt(date_string):
@@ -900,7 +900,7 @@ def main(copy_db=True, record_db_size=True):
 
     venue = 'Contemporary Jewish Museum // CJM'
     print(f"Starting scrape for {venue}")
-    scrape_cjm()
+    scrape_contemporary_jewish_museum()
     print(f"Finished scrape for {venue}")
 
     venue = 'San Francisco Women Artists Gallery'
