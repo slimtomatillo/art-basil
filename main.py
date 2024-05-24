@@ -110,7 +110,7 @@ def process_event(event_details):
     else:
         print(f"No changes detected for event: {event_details['name']}")
 
-def scrape_de_young_and_legion_of_honor():
+def scrape_de_young_and_legion_of_honor(env='prod'):
     """Scrape and process events from the de Young and Legion of Honor."""
     
     def convert_date_to_dt(date_string):
@@ -224,9 +224,10 @@ def scrape_de_young_and_legion_of_honor():
                             'description': 'Image'
                         })
 
-                    process_event(event_details)
+                    if env == 'prod':
+                        process_event(event_details)
 
-def scrape_sfmoma():
+def scrape_sfmoma(env='prod'):
     """Scrape and process events from SFMOMA."""
     
     def convert_date_to_dt(date_string):
@@ -376,12 +377,13 @@ def scrape_sfmoma():
 
                 }
 
-                process_event(event_details)
+                if env == 'prod':
+                    process_event(event_details)
 
         else:
             print(f"Events container not found for phase: {phase_dict['phase']}")
 
-def scrape_contemporary_jewish_museum():
+def scrape_contemporary_jewish_museum(env='prod'):
     """Scrape and process events from Contemporary Jewish Museum."""
     
     def convert_date_to_dt(date_string):
@@ -482,12 +484,13 @@ def scrape_contemporary_jewish_museum():
                         'description': 'Image'
                     })
 
-                process_event(event_details)
+                if env == 'prod':
+                    process_event(event_details)
 
         else:
             print(f"Events not found for phase: {url_dict['phase']}")
 
-def scrape_sfwomenartists(verbose=True):
+def scrape_sfwomenartists(env='prod', verbose=False):
     """Scrape and process events from San Francisco Women Artists Gallery."""
     
     def scrape_event_specific_page(event_url):
@@ -635,12 +638,13 @@ def scrape_sfwomenartists(verbose=True):
                     'description': 'Image'
                 })
             
-            process_event(event_details)
+            if env == 'prod':
+                process_event(event_details)
 
     else:
         print(f"Events not found for San Francisco Women Artists Gallery")
 
-def scrape_asian_art_museum_current_events():
+def scrape_asian_art_museum_current_events(env='prod'):
     """Scrape and process current events from Asian Art Museum."""
     
     def convert_date_to_dt(date_string):
@@ -724,7 +728,8 @@ def scrape_asian_art_museum_current_events():
                 'description': 'Image'
             })
 
-        process_event(event_details)
+        if env == 'prod':
+            process_event(event_details)
 
     # Find rest of events
     events_list = soup.find_all(class_='card split-grid__card split-grid__card--dark')
@@ -789,7 +794,7 @@ def scrape_asian_art_museum_current_events():
 
             process_event(event_details)
 
-def scrape_asian_art_museum_past_events():
+def scrape_asian_art_museum_past_events(env='prod'):
     """Scrape and process past events from Asian Art Museum."""
     
     def convert_date_to_dt(date_string):
@@ -877,21 +882,18 @@ def scrape_asian_art_museum_past_events():
                         'description': 'Image'
                     })
 
-                process_event(event_details)
+                if env == 'prod':
+                    process_event(event_details)
 
-def main(copy_db=True, record_db_size=True):
+def main(env='prod'):
     """
     Function that:
-        1. Saves a copy of existing data if copy_db=True
-        2. Scrapes data from the de Young Museum & Legion of Honor
-        3. Scrapes data from SFMOMA
-        4. Scrapes data from Contemporary Jewish Museum (CJM)
-        5. Scrapes data from SF Women Artists Gallery
-        6. Scrapes data from Asian Art Museum (current events and then past events)
-        7. Saves data as json
-        8. Records the size of the db (num venues and events) if record_db_size=True
+        1. Saves a copy of existing data if env='prod'
+        2. Scrapes data from various museums
+        3. Saves data as json if env='prod'
+        4. Records the size of the db (num venues and events) if env='prod'
     """
-    if copy_db:
+    if env == 'prod':
         # Save a copy of existing json data
         try:
             copy_json_file('docs/events_db.json', 'docs/events_db_copy.json')
@@ -901,46 +903,37 @@ def main(copy_db=True, record_db_size=True):
     # Set start time to measure execution time
     start_time = time.time()
 
-    venue = "de Young & Legion of Honor"
-    print(f"Starting scrape for {venue}")
-    scrape_de_young_and_legion_of_honor()
-    print(f"Finished scrape for {venue}")
+    venues = {
+        "de Young & Legion of Honor": scrape_de_young_and_legion_of_honor,
+        "SFMOMA": scrape_sfmoma,
+        "Contemporary Jewish Museum // CJM": scrape_contemporary_jewish_museum,
+        "San Francisco Women Artists Gallery": scrape_sfwomenartists,
+        "Asian Art Museum": [scrape_asian_art_museum_current_events, scrape_asian_art_museum_past_events]
+    }
 
-    venue = 'SFMOMA'
-    print(f"Starting scrape for {venue}")
-    scrape_sfmoma()
-    print(f"Finished scrape for {venue}")
+    for venue, scraper in venues.items():
+        print(f"Starting scrape for {venue}")
+        if isinstance(scraper, list):
+            for s in scraper:
+                s(env=env)
+        else:
+            scraper(env=env)
+        print(f"Finished scrape for {venue}")
 
-    venue = 'Contemporary Jewish Museum // CJM'
-    print(f"Starting scrape for {venue}")
-    scrape_contemporary_jewish_museum()
-    print(f"Finished scrape for {venue}")
+    if env == 'prod':
+        # Load db and count the venues and events
+        db = load_db()
+        # Flatten the db into a list of event dictionaries
+        events_list = []
+        for category in db.values():
+            for event in category.values():
+                events_list.append(event)
+        print('The db contains {:,} venues, with {:,} events'.format(len(db), len(events_list)))
 
-    venue = 'San Francisco Women Artists Gallery'
-    print(f"Starting scrape for {venue}")
-    scrape_sfwomenartists(verbose=False)
-    print(f"Finished scrape for {venue}")
+        # Measure execution time of scraping
+        execution_time_s = round(time.time() - start_time, 1)
+        print(f'Scraping took {execution_time_s} seconds')
 
-    venue = 'Asian Art Museum'
-    print(f"Starting scrape for {venue}")
-    scrape_asian_art_museum_current_events()
-    scrape_asian_art_museum_past_events()
-    print(f"Finished scrape for {venue}")
-
-    # Load db and count the venues and events
-    db = load_db()
-    # Flatten the db into a list of event dictionaries
-    events_list = []
-    for category in db.values():
-        for event in category.values():
-            events_list.append(event)
-    print('The db contains {:,} venues, with {:,} events'.format(len(db), len(events_list)))
-
-    # Measure execution time of scraping
-    execution_time_s = round(time.time() - start_time, 1)
-    print(f'Scraping took {execution_time_s} seconds')
-
-    if record_db_size:
         # Record the number of venues and events in the db
         file_path = 'docs/db_size.csv'
         df = pd.DataFrame([{
@@ -960,4 +953,4 @@ def main(copy_db=True, record_db_size=True):
     print('Finished')
 
 if __name__ == "__main__":
-    main(copy_db=True, record_db_size=True)
+    main()
