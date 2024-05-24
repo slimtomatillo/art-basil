@@ -161,12 +161,12 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-05-18",
+                "start": "null",
                 "end": "2024-10-20"
             },
             "ongoing": false,
@@ -180,7 +180,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "401fee7d028ba139116aca99f1e15c60"
+            "hash": "25d0ff3553594665f4b3c595c9d08abe"
         },
         "Art and War in the Renaissance: The Battle of Pavia Tapestries-de Young": {
             "name": "Art and War in the Renaissance: The Battle of Pavia Tapestries",
@@ -363,6 +363,32 @@
                 }
             ],
             "hash": "a609ca1a561baff9492ed7bdb123c3f4"
+        },
+        "Robert Bechtle: Prints and Drawings-de Young": {
+            "name": "Robert Bechtle: Prints and Drawings",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-08-10",
+                "end": "2025-01-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/robert-bechtle-prints-drawings",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/2b866279-01dc-44a5-ac0f-09edbb9a3329/robert-bechtle-bopdqswipcvf3-5rggntbxxramlmic27hfw5ttwszu8.png?crop=526,351,x61,y30&format=webp&quality=80&width=1250",
+                    "description": "Image"
+                }
+            ],
+            "hash": "98c3d14052c49d4c4d610935247f911b"
         }
     },
     "Legion of Honor": {
@@ -531,7 +557,7 @@
             "phase": "current",
             "dates": {
                 "start": "null",
-                "end": "null"
+                "end": "2024-10-06"
             },
             "ongoing": false,
             "links": [
@@ -544,7 +570,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f5280a36633cca31674038a8b8377013"
+            "hash": "2a5943c0ec386aaf64c1af2253756be1"
         },
         "Yayoi Kusama: Infinite Love-SFMOMA": {
             "name": "Yayoi Kusama: Infinite Love",
@@ -603,7 +629,7 @@
         "New Work: Mary Lovelace O\u2019Neal-SFMOMA": {
             "name": "New Work: Mary Lovelace O\u2019Neal",
             "venue": "SFMOMA",
-            "description": "New paintings by influential Bay Area artist Mary Lovelace O\u2019Neal explore a vast mythology of personal and shared narratives.",
+            "description": "",
             "tags": [
                 "exhibition",
                 "current",
@@ -611,7 +637,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": "2024-03-16",
                 "end": "2024-10-20"
             },
             "ongoing": false,
@@ -625,7 +651,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "671df96a439d9696b6bde6aa23b0417a"
+            "hash": "2b09cee7a9a479a8608c9653aa41112d"
         },
         "Chiura Obata-SFMOMA": {
             "name": "Chiura Obata",
@@ -720,7 +746,7 @@
             "phase": "current",
             "dates": {
                 "start": "2022-11-05",
-                "end": "2024-10-14"
+                "end": "2025-01-26"
             },
             "ongoing": false,
             "links": [
@@ -733,7 +759,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "72cd769880385f2f656b4955451c73fe"
+            "hash": "bd2372adb75dc4107b35f51355fa0931"
         },
         "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections-SFMOMA": {
             "name": "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections",
@@ -1065,10 +1091,10 @@
             "description": "A multi-sensory exploration of how design has changed the way we\u2019ve experienced music over the past 100 years.",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-05-04",
                 "end": "2024-08-18"
@@ -1080,11 +1106,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/01/22110015/AON_poster_composite3.1-1024x512.jpg",
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/01/22152727/SFMOMA-Art_of_Noise-0164_Millman_header-1024x582.png",
                     "description": "Image"
                 }
             ],
-            "hash": "ce56ee49d0e56264335fc284355181ed"
+            "hash": "7a271f6219cc1430635ec0303ce343c4"
         },
         "Sea Change: Photographs from the Collection-SFMOMA": {
             "name": "Sea Change: Photographs from the Collection",
@@ -1598,6 +1624,60 @@
                 }
             ],
             "hash": "ab73fa616d00b2b0d7c612e9bf38dd11"
+        },
+        "Alexandra Pirici: Re-collection-SFMOMA": {
+            "name": "Alexandra Pirici: Re-collection",
+            "venue": "SFMOMA",
+            "description": "Live performative action that brings together elements of dance, sculpture, spoken word, and music.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/alexandra-pirici-re-collection/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/05/20103443/3.-Alexandra-Pirici-Re-Collection-2018-exhibition-view-Chicago-Architectural-Biennial-2019.-photo-by-Daris-Jasper1-1024x577.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "66c010c04867aa2c891c90be8444a2f5"
+        },
+        "Fortuna and the Immortality Garden (Machine)-SFMOMA": {
+            "name": "Fortuna and the Immortality Garden (Machine)",
+            "venue": "SFMOMA",
+            "description": "Explore the wonder of Kara Walker\u2019s garden of automatons set amidst an energy field of gleaming black obsidian.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-07-01",
+                "end": "2026-05-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/fortuna-and-the-immortality-garden-machine/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/05/07104231/13.-Walker_Kara_8966_06_06_photo-Ari-Marcopoulos_cropped-for-header-1024x523.png",
+                    "description": "Image"
+                }
+            ],
+            "hash": "12ef28c3d9cb8e4b092e55aff65a8fc5"
         }
     },
     "San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
@@ -5148,10 +5228,10 @@
             "description": "A Bay Area Artists Juried Exhibition",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "gallery"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-04-09",
                 "end": "2024-05-03"
@@ -5167,7 +5247,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "5d52477f2c714a887ab52c1cd96cba16"
+            "hash": "f24885f9564cad4b5a1b05aa7dcf7fc4"
         },
         "Spring! Lush!-San Francisco Women Artists Gallery": {
             "name": "Spring! Lush!",
@@ -6390,10 +6470,10 @@
             "description": "A SFWA Member Juried Exhibition",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "gallery"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-05-07",
                 "end": "2024-05-31"
@@ -6409,7 +6489,61 @@
                     "description": "Image"
                 }
             ],
-            "hash": "eff4a04287bb738095df6f91e2d2efaf"
+            "hash": "af5f101eed25b94fa100aa8f01b9250b"
+        },
+        "Radiating Pride- Free To Be Me-San Francisco Women Artists Gallery": {
+            "name": "Radiating Pride- Free To Be Me",
+            "venue": "San Francisco Women Artists Gallery",
+            "description": "June Artist Salon Exhibition",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-06-04",
+                "end": "2024-07-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfwomenartists.org/exhibition/radiating-pride/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.sfwomenartists.org/wp-content/gallery/2024-radiating-pride/AllenRo-Love-Is-Love-240503145110_1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "8edb31e9edfb279ce28279628fb0cf70"
+        },
+        "The Delicious World-San Francisco Women Artists Gallery": {
+            "name": "The Delicious World",
+            "venue": "San Francisco Women Artists Gallery",
+            "description": "A SFWA Member Juried Exhibition",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-06-04",
+                "end": "2024-07-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfwomenartists.org/exhibition/the-delicious-world/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.sfwomenartists.org/wp-content/gallery/the-delicious-world/AliotoMi-Chopping-Carrots-240501165255_1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "46a894db86139c7ca0a970d584c98fac"
         }
     },
     "Asian Art Museum": {
@@ -6454,7 +6588,7 @@
             "phase": "current",
             "dates": {
                 "start": "null",
-                "end": "2024-10-17"
+                "end": "2024-08-05"
             },
             "ongoing": false,
             "links": [
@@ -6467,7 +6601,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3f35b4208f5a85510e0f78ac9a802e06"
+            "hash": "2e66647fa752a6f914d29c11158a2cf5"
         },
         "Takashi Murakami-Asian Art Museum": {
             "name": "Takashi Murakami",
@@ -6499,18 +6633,17 @@
         "Japanese Tastes in Chinese Ceramics-Asian Art Museum": {
             "name": "Japanese Tastes in Chinese Ceramics",
             "venue": "Asian Art Museum",
-            "description": "Exquisite Chinese and Chinese-influenced ceramics from the Kyoto National Museum \ndemonstrate\n the \nimportance of\n Chinese art \nto\n Japanese tea culture.",
+            "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-12-21",
                 "end": "2024-05-06"
             },
-            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/japanese-tastes-in-chinese-ceramics/",
@@ -6521,7 +6654,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4d4148cf5c918e3c05e3d8dbf3c833dd"
+            "hash": "588dccd72ff59b0be11ca193348e1580"
         },
         "Japanese Ink Paintings-Asian Art Museum": {
             "name": "Japanese Ink Paintings",
