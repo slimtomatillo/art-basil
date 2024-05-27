@@ -7495,5 +7495,330 @@
             ],
             "hash": "eb93643a5aa754a01b2dbeb1aeb31ce6"
         }
+    },
+    "Oakland Museum of California": {
+        "Por el Pueblo: The Legacy & Influence of Malaqu\u00edas Montoya-Oakland Museum of California": {
+            "name": "Por el Pueblo: The Legacy & Influence of Malaqu\u00edas Montoya",
+            "venue": "Oakland Museum of California",
+            "description": "Explore the living impact of Chicano artist, Malaqu\u00edas Montoya, whose legacy as a public-serving artist, activist, and community elder serves as inspiration for younger generations within the Chicano community and beyond. Montoya\u2019s posters, graphic prints, and murals highlighting political and social justice issues have helped define the Chicano identity for nearly five decades.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/por-el-pueblo/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2023/01/Screenshot-2023-09-21-at-1.46.54-PM-1024x729.png",
+                    "description": "Image"
+                }
+            ],
+            "hash": "7e4d71a7b5cbdcf703e017415e6b99d3"
+        },
+        "Calli: The Art of Xicanx Peoples-Oakland Museum of California": {
+            "name": "Calli: The Art of Xicanx Peoples",
+            "venue": "Oakland Museum of California",
+            "description": "Opens June 14\u2014Experience intergenerational, feminist, queer, and Xicanx-Indigenous artworks offering ancestral forms of liberation, healing, and being at Calli: The Art of Xicanx Peoples, only at OMCA. Calli layers multiple artistic perspectives, featuring posters from late queer Chicana activist and professor Margaret \u201cMargie\u201d Terrazas Santos\u2019 collection in conversation with contemporary works by Xicanx artists who expand the horizons of possibility, inspiring reflection and fostering dialogue about a world in which we can all belong.",
+            "tags": [
+                "exhibition",
+                "museum"
+            ],
+            "phase": null,
+            "dates": {
+                "start": "2024-06-14 00:00:00",
+                "end": "null"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/calli-the-art-of-xicanx-peoples/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2024/05/CALLI-ManuelPaul-sm-1-1024x772.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "7a35bf9e3311455590cb18c7bddccd78"
+        },
+        "You Are Here: California Stories on the Map-Oakland Museum of California": {
+            "name": "You Are Here: California Stories on the Map",
+            "venue": "Oakland Museum of California",
+            "description": "We all use maps in our everyday lives\u2014to navigate public transportation, find places to eat, and visualize big data like weather patterns or political opinions. But have you ever considered the deeper stories maps tell us?",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/you-are-here-california-stories-on-the-map/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2022/08/You-are-Here-mobile-header-image-maps-9-1-683x1024.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "3422f8b8649cc49c6076c23320a1b172"
+        },
+        "Black Power-Oakland Museum of California": {
+            "name": "Black Power",
+            "venue": "Oakland Museum of California",
+            "description": "Uncover the history of the Black Power movements in California with a compelling addition to the Gallery of California History. In response to the widely-popular 2016 exhibition All Power to the People: Black Panthers at 50, this installation illustrates the creative ways Black anti-racist activists in California supported their communities and challenged the U.S. government.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/black-power/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2024/02/2021_OMCA_History-Gallery_Black-Power_Visitors_Photo-credit-Christine-Cueto__DSF4861-1-2-1024x417.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ca27909c8b4516686d62dd4e149e8806"
+        },
+        "OMCA Kids: Nature Playspace-Oakland Museum of California": {
+            "name": "OMCA Kids: Nature Playspace",
+            "venue": "Oakland Museum of California",
+            "description": "Little learners can unleash their curiosity and imagination in the newly created OMCA Kids: Nature Playspace. Located inside the Gallery of California Natural Sciences, the playspace is focused on the unique needs of children ages 2 to 5, along with their families and caregivers",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/omca-kids-nature-playspace/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2022/08/2023_OMCA_ScienceGallery_NPS_Family_Visitor_PhotoCredit_LeopoldoMacaya5N2A8199-Enhanced-NR-header-and-featured-image-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "e95a60fb70f5ce96628c3c5e4600bc48"
+        },
+        "Remembering Artist Hung Liu-Oakland Museum of California": {
+            "name": "Remembering Artist Hung Liu",
+            "venue": "Oakland Museum of California",
+            "description": "Drawing from our collection, this installation features four of Liu\u2019s works in our Gallery of California Art, offering a quiet setting for visitors to enjoy and appreciate her work, as well as space for remembrance and reflection, including opportunities to contribute memories of Liu.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/remembering-artist-hung-liu/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2022/08/HL-HERO-1024x356.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "e2d2aa6f74f158bea3bb25bd26cf4e0f"
+        },
+        "Into the Brightness: Artists from Creativity Explored, Creative Growth & NIAD-Oakland Museum of California": {
+            "name": "Into the Brightness: Artists from Creativity Explored, Creative Growth & NIAD",
+            "venue": "Oakland Museum of California",
+            "description": "In collaboration with three profound Bay Area institutions, Into the Brightness: Artists from Creativity Explored, Creative Growth, & NIAD celebrates myriad works from contemporary artists with developmental disabilities.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-05-19 00:00:00",
+                "end": "2024-01-28 00:00:00"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/into-the-brightness/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2023/01/Marilyn-Wong_-Creativity-Explored_Header-new_DSC09548-3-1024x356.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "cd6bae89da372150fa86239b1b90c156"
+        },
+        "Angela Davis\u2013Seize the Time-Oakland Museum of California": {
+            "name": "Angela Davis\u2013Seize the Time",
+            "venue": "Oakland Museum of California",
+            "description": "Angela Davis \u2014 Seize the Time, examines the image, influence, and activism of the Oakland-based icon. With a focus on her arrest, incarceration, trial, and the national and international campaigns to free her, Seize the Time will highlight Davis\u2019s legacy as well as her ongoing role as an important contemporary figure for artists and activists.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-07 00:00:00",
+                "end": "2023-06-18 00:00:00"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/angela-davis-seize-the-time/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2022/08/24_Shames_1969_Oakland-Ca_Angela-Davis-speaks-in-DeFremery-Park-at-Free-Huey-rally-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "abce153ac11a39a8f116e5714cb8ce0f"
+        },
+        "Hella Feminist-Oakland Museum of California": {
+            "name": "Hella Feminist",
+            "venue": "Oakland Museum of California",
+            "description": "Feminism. It\u2019s a loaded word; as empowering to some as it is challenging for others. OMCA takes on this complex and timely topic with Hella Feminist, celebrating the lesser-known stories of feminism here in Oakland and the Bay Area.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-07-29 00:00:00",
+                "end": "2023-01-08 00:00:00"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/hella-feminist/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2022/09/Olympia-Hella-Feminist-exhibition-1024x887.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "91c24200620d1194be830a4be01950ed"
+        },
+        "Edith Heath: A Life in Clay-Oakland Museum of California": {
+            "name": "Edith Heath: A Life in Clay",
+            "venue": "Oakland Museum of California",
+            "description": "Trailblazer. Rebel. Revolutionary. Discover the story of Edith Heath, founder and designer of Heath Ceramics. Heath transformed the ceramics industry, creating dinnerware from California clay for \u201cSunday best\u201d and everyday use.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2025-01-23 00:00:00",
+                "end": "2024-10-30 00:00:00"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/edith-heath-a-life-in-clay/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2022/08/2022_MKT_NativeImage_1200x1200_HEATH-FINAL-V1-1-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "8be2f29e7b8daa3a0a0305fcd08ac4df"
+        },
+        "Mothership: Voyage Into Afrofuturism-Oakland Museum of California": {
+            "name": "Mothership: Voyage Into Afrofuturism",
+            "venue": "Oakland Museum of California",
+            "description": "Afrofuturism is a lot of things. It\u2019s the past, present, and future reimagined through a Black cultural lens. Visionary, spiritual, and generative, it is art, music, literature, and cinema that expresses a just future where Black people and Black ideas thrive. It is fantasy and science fiction that envisions the African Diaspora and Black culture as central in a technically advanced and culturally rich civilization. It is also the ordinary\u2014now\u2014 in this very moment and the everyday pleasures that may often be seen as mundane. Afrofuturism is a strategy for Black community building.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-08-07 00:00:00",
+                "end": "2022-02-27 00:00:00"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/mothership-voyage-afrofuturism/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2021/08/field_gallery_21_OMCA_8.6.21_LRG-5714-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "02faa916f2dc84f66c3512e146a794ad"
+        },
+        "No Spectators: The Art of Burning Man-Oakland Museum of California": {
+            "name": "No Spectators: The Art of Burning Man",
+            "venue": "Oakland Museum of California",
+            "description": "Marvel at the spectacular artwork and large-scale installations from one of the most widely-celebrated cultural events in the world when No Spectators: The Art of Burning Man takes over OMCA in Fall of 2019.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-10-12 00:00:00",
+                "end": "2020-02-23 00:00:00"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/no-spectators-art-burning-man/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/uploads/2019/10/no-spectators-39.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "1aad7b806c3651c5a857d37feffd347d"
+        }
     }
 }
