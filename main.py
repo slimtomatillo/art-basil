@@ -102,13 +102,12 @@ def process_event(event_details):
     event_id = generate_unique_identifier(event_details)
     event_hash = generate_event_hash(event_details)
 
+    # If event needs to be updated / changes were detected
     if event_id not in site_events or site_events[event_id]['hash'] != event_hash:
         print(f"Updating event: {event_details['name']}")
         site_events[event_id] = {**event_details, 'hash': event_hash}
         db[event_details['venue']] = site_events
         save_db(db)
-    else:
-        print(f"No changes detected for event: {event_details['name']}")
 
 def scrape_de_young_and_legion_of_honor(env='prod'):
     """Scrape and process events from the de Young and Legion of Honor."""
