@@ -9,6 +9,7 @@ from unicodedata import normalize
 import pandas as pd
 import os
 import time
+import logging
 
 DB_FILE = 'docs/events_db.json'
 EVENT_TAGS = ['exhibition', 'free']
@@ -43,6 +44,16 @@ month_to_num_dict = {
     'sept': 8,
 }
 
+def configure_logging(env):
+    """Configure logging based on the environment."""
+    handlers = [logging.StreamHandler()]
+    if env == 'prod':
+        handlers.append(logging.FileHandler("scraping.log", mode='a'))
+    
+    logging.basicConfig(level=logging.INFO,
+                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                        handlers=handlers)
+
 def copy_json_file(source_file_path, destination_file_path):
     """
     Function to take the source path of a json file and make
@@ -57,6 +68,8 @@ def copy_json_file(source_file_path, destination_file_path):
     with open(destination_file_path, 'w') as destination_json_file:
         # Write the data to the destination file
         json.dump(data, destination_json_file, indent=4)  # Index makes for pretty formatting
+
+    logging.info(f"Copied {source_file_path} to {destination_file_path}")
     
     return
 
@@ -66,6 +79,7 @@ def load_db():
         with open(DB_FILE, 'r') as file:
             return json.load(file)
     except FileNotFoundError:
+        logging.warning(f"Database file {DB_FILE} not found.")
         return {}
 
 def save_db(db):
@@ -82,7 +96,7 @@ def fetch_and_parse(url):
         # Parse the HTML content using BeautifulSoup
         return BeautifulSoup(response.content, 'html.parser')
     except requests.RequestException as e:
-        print(f"Error fetching {url}: {e}")
+        logging.error(f"Error fetching {url}: {e}")
         return None
 
 def generate_event_hash(event_details):
@@ -104,7 +118,7 @@ def process_event(event_details):
 
     # If event needs to be updated / changes were detected
     if event_id not in site_events or site_events[event_id]['hash'] != event_hash:
-        print(f"Updating event: {event_details['name']}")
+        logging.info(f"Updating event: {event_details['name']}")
         site_events[event_id] = {**event_details, 'hash': event_hash}
         db[event_details['venue']] = site_events
         save_db(db)
@@ -156,75 +170,78 @@ def scrape_de_young_and_legion_of_honor(env='prod'):
                     break
 
                 for element in group_elements:
-                    
-                    # Get image link if possible
-                    pics = element.find_all("picture")
-                    source_tag = pics[1].find('source')
-                    # Assuming srcset is found
-                    if source_tag and source_tag.has_attr('srcset'):
-                        srcset_value = source_tag['srcset']
-                        srcset_list = srcset_value.split(', ')
-                        urls = [item.split(' ')[0] for item in srcset_list]
-                        # Get biggest image
-                        image_link = urls[-1]
-                    else:
-                        image_link = None
-                                            
-                    e = element.find(class_="mt-24 xl:mt-32")
+                    try:
+                        # Get image link if possible
+                        pics = element.find_all("picture")
+                        source_tag = pics[1].find('source')
+                        # Assuming srcset is found
+                        if source_tag and source_tag.has_attr('srcset'):
+                            srcset_value = source_tag['srcset']
+                            srcset_list = srcset_value.split(', ')
+                            urls = [item.split(' ')[0] for item in srcset_list]
+                            # Get biggest image
+                            image_link = urls[-1]
+                        else:
+                            image_link = None
+                                                
+                        e = element.find(class_="mt-24 xl:mt-32")
 
-                    # Extract name
-                    name = e.find("a").find("h3").get_text().strip()
+                        # Extract name
+                        name = e.find("a").find("h3").get_text().strip()
 
-                    # Extract link
-                    link = e.find("a").get("href")
+                        # Extract link
+                        link = e.find("a").get("href")
 
-                    # Extract date info
-                    date = e.find(class_="mt-12 text-secondary f-subheading-1").get_text()
-                    ongoing = True if date.lower() == 'ongoing' else False
-                    
-                    # Identify phase and date fields
-                    if date.lower().split()[0] == 'through':
-                        # Get phase
-                        phase = 'current'
-                        # Get dt versions of start and end dates
-                        start_date = 'null'
-                        dates = [date.lower().replace(',', '').replace('through ', '')]
-                        end_date = convert_date_to_dt(dates[0])
+                        # Extract date info
+                        date = e.find(class_="mt-12 text-secondary f-subheading-1").get_text()
+                        ongoing = True if date.lower() == 'ongoing' else False
+                        
+                        # Identify phase and date fields
+                        if date.lower().split()[0] == 'through':
+                            # Get phase
+                            phase = 'current'
+                            # Get dt versions of start and end dates
+                            start_date = 'null'
+                            dates = [date.lower().replace(',', '').replace('through ', '')]
+                            end_date = convert_date_to_dt(dates[0])
 
-                    else:
-                        # Get phase
-                        phase = 'future'
-                        # Get dt versions of start and end dates
-                        dates = date.lower().replace(',', '').split(' – ')
-                        # If no year in the date, add the year (use year of end date)
-                        if len(dates[0].split()) == 2:
-                            dates[0] = dates[0] + ' ' + dates[1].split()[-1]
-                        start_date = convert_date_to_dt(dates[0])
-                        end_date = convert_date_to_dt(dates[1])
-                                            
-                    event_details = {
-                        'name': name,
-                        'venue': u['venue'],
-                        'tags': ['exhibition'] + [phase] + ['museum'],
-                        'phase': phase, # Possible phases are past, current, future
-                        'dates': {'start': start_date, 'end': end_date},
-                        'ongoing': ongoing,
-                        'links': [
-                            {
-                                'link': link,
-                                'description': 'Event Page'
-                            },
-                        ],
-                    }
-                    # Add image link if it exists
-                    if image_link:
-                        event_details['links'].append({
-                            'link': image_link,
-                            'description': 'Image'
-                        })
+                        else:
+                            # Get phase
+                            phase = 'future'
+                            # Get dt versions of start and end dates
+                            dates = date.lower().replace(',', '').split(' – ')
+                            # If no year in the date, add the year (use year of end date)
+                            if len(dates[0].split()) == 2:
+                                dates[0] = dates[0] + ' ' + dates[1].split()[-1]
+                            start_date = convert_date_to_dt(dates[0])
+                            end_date = convert_date_to_dt(dates[1])
+                                                
+                        event_details = {
+                            'name': name,
+                            'venue': u['venue'],
+                            'tags': ['exhibition'] + [phase] + ['museum'],
+                            'phase': phase, # Possible phases are past, current, future
+                            'dates': {'start': start_date, 'end': end_date},
+                            'ongoing': ongoing,
+                            'links': [
+                                {
+                                    'link': link,
+                                    'description': 'Event Page'
+                                },
+                            ],
+                        }
+                        # Add image link if it exists
+                        if image_link:
+                            event_details['links'].append({
+                                'link': image_link,
+                                'description': 'Image'
+                            })
 
-                    if env == 'prod':
-                        process_event(event_details)
+                        if env == 'prod':
+                            process_event(event_details)
+
+                    except Exception as e:
+                        logging.error(f"Error processing element for {u['venue']}: {e}", exc_info=True)
 
 def scrape_sfmoma(env='prod'):
     """Scrape and process events from SFMOMA."""
@@ -262,20 +279,26 @@ def scrape_sfmoma(env='prod'):
     
     # Scrape info
     soup = fetch_and_parse(url)
+    if not soup:
+        logging.error("Failed to fetch SFMOMA exhibitions page")
+        return
     
     # Go through and collect events in each phase (current, future, and past)
     for phase_dict in divs:
 
         # Assuming the events container has direct children that are event elements
         events_container = soup.find('div', id=phase_dict['id'])
+        
+        if not events_container:
+            logging.warning(f"Events container not found for phase: {phase_dict['phase']}")
+            continue
 
-        # Check if events_container is found
-        if events_container:
-            # Find all direct child divs that are assumed to represent individual events
-            individual_events = events_container.find_all('a', class_='exhibitionsgrid-wrapper-grid-item')
+        # Find all direct child divs that are assumed to represent individual events
+        individual_events = events_container.find_all('a', class_='exhibitionsgrid-wrapper-grid-item')
 
-            # Iterate through events and extract details
-            for event in individual_events:
+        # Iterate through events and extract details
+        for event in individual_events:
+            try:
                 # Event link
                 event_link = event['href']
 
@@ -348,7 +371,9 @@ def scrape_sfmoma(env='prod'):
                                     end_date = convert_date_to_dt(date_1_rev.replace(',', ''))
                                 start_date = convert_date_to_dt(dates[0].replace(',', ''))
                     else:
-                        print(f'No commas found in: {event_date}')
+                        logging.warning(f"No commas found in: {event_date}")
+                        start_date = 'null'
+                        end_date = 'null'
                 else:
                     start_date = 'null'
                     end_date = 'null'
@@ -379,8 +404,8 @@ def scrape_sfmoma(env='prod'):
                 if env == 'prod':
                     process_event(event_details)
 
-        else:
-            print(f"Events container not found for phase: {phase_dict['phase']}")
+            except Exception as e:
+                logging.error(f"Error processing event: {e}", exc_info=True)
 
 def scrape_contemporary_jewish_museum(env='prod'):
     """Scrape and process events from Contemporary Jewish Museum."""
@@ -487,7 +512,7 @@ def scrape_contemporary_jewish_museum(env='prod'):
                     process_event(event_details)
 
         else:
-            print(f"Events not found for phase: {url_dict['phase']}")
+            logging.warning(f"Events not found for phase: {url_dict['phase']}")
 
 def scrape_sfwomenartists(env='prod', verbose=False):
     """Scrape and process events from San Francisco Women Artists Gallery."""
@@ -570,7 +595,7 @@ def scrape_sfwomenartists(env='prod', verbose=False):
                 start_date_month, start_date_day = convert_date_to_nums(dates[0])
             except KeyError:
                 if verbose:
-                    print("Error processing start date:", event_dates, event_link)
+                    logging.info("Error processing start date:", event_dates, event_link)
                 continue  # Skip to the next event if start date conversion fails
             
             # If no end month, use the start month
@@ -589,7 +614,7 @@ def scrape_sfwomenartists(env='prod', verbose=False):
                         end_date_month, end_date_day = convert_date_to_nums(dates[1])
                     except KeyError:
                         if verbose:
-                            print("Error processing end date:", event_dates, event_link)
+                            logging.info("Error processing end date:", event_dates, event_link)
                         continue  # Skip to the next event if end date conversion fails
             year = int(event.find('p').text.split(' ')[-1])
             
@@ -641,7 +666,7 @@ def scrape_sfwomenartists(env='prod', verbose=False):
                 process_event(event_details)
 
     else:
-        print(f"Events not found for San Francisco Women Artists Gallery")
+        logging.warning(f"Events not found for San Francisco Women Artists Gallery")
 
 def scrape_asian_art_museum_current_events(env='prod'):
     """Scrape and process current events from Asian Art Museum."""
@@ -967,7 +992,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
     url = 'https://museumca.org/on-view/#exhibitions'
     soup = fetch_and_parse(url)
     if soup is None:
-        print('Error scraping OMCA exhibitions')
+        logging.info('Error scraping OMCA exhibitions')
         return
 
     exhibition_elements = soup.find_all('div', class_='post-tile post-tile_type-on-view')
@@ -1028,10 +1053,8 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
                 process_event(event_details)
 
         except AttributeError as e:
-            print(f"Error parsing element: {e}")
+            logging.warning(f"Error parsing element: {e}")
             continue
-
-    return
 
 def scrape_kala_exhibitions(env='prod'):
     """Scrape and process exhibitions from the Kala Art Institute."""
@@ -1068,7 +1091,7 @@ def scrape_kala_exhibitions(env='prod'):
     url = 'https://www.kala.org/gallery/exhibitions/'
     soup = fetch_and_parse(url)
     if soup is None:
-        print('Error scraping Kala exhibitions')
+        logging.ingo('Error scraping Kala exhibitions')
         return
 
     # Find current exhibitions
@@ -1110,9 +1133,7 @@ def scrape_kala_exhibitions(env='prod'):
                 process_event(event_details)
 
         except AttributeError as e:
-            print(f"Error parsing element: {e}")
-
-    return
+            logging.info(f"Error parsing element: {e}")
 
 def main(env='prod'):
     """
@@ -1122,34 +1143,47 @@ def main(env='prod'):
         3. Saves data as json if env='prod'
         4. Records the size of the db (num venues and events) if env='prod'
     """
+    
+    # Configure logging based on the environment parameter
+    configure_logging(env)
+    
     if env == 'prod':
         # Save a copy of existing json data
         try:
             copy_json_file('docs/events_db.json', 'docs/events_db_copy.json')
         except FileNotFoundError:
-            pass
+            logging.warning('Original events_db.json file not found. No copy created.')
 
     # Set start time to measure execution time
     start_time = time.time()
+    logging.info('Starting the scraping process')
 
+    # Mapping venue names to their respective scraper functions
     venues = {
         "de Young & Legion of Honor": scrape_de_young_and_legion_of_honor,
         "SFMOMA": scrape_sfmoma,
-        "Contemporary Jewish Museum // CJM": scrape_contemporary_jewish_museum,
+        "Contemporary Jewish Museum (CJM)": scrape_contemporary_jewish_museum,
         "San Francisco Women Artists Gallery": scrape_sfwomenartists,
+        # Asian Art Museum requires both current and past events scrapers
         "Asian Art Museum": [scrape_asian_art_museum_current_events, scrape_asian_art_museum_past_events],
-        "Oakland Museum of Art": scrape_oak_museum_of_ca_exhibitions,
+        "Oakland Museum of Art (OMCA)": scrape_oak_museum_of_ca_exhibitions,
         "Kala Art Institute": scrape_kala_exhibitions
     }
 
     for venue, scraper in venues.items():
-        print(f"Starting scrape for {venue}")
+        # Log the start of scraping for each venue
+        logging.info(f"Starting scrape for {venue}")
+
         if isinstance(scraper, list):
+            # If scraper is a list (e.g., multiple functions for a venue), iterate through the list
             for s in scraper:
                 s(env=env)
         else:
+            # Otherwise, call the single scraper function
             scraper(env=env)
-        print(f"Finished scrape for {venue}")
+        
+        # Log the completion of scraping for each venue
+        logging.info(f"Finished scrape for {venue}")
 
     if env == 'prod':
         # Load db and count the venues and events
@@ -1159,11 +1193,11 @@ def main(env='prod'):
         for category in db.values():
             for event in category.values():
                 events_list.append(event)
-        print('The db contains {:,} venues, with {:,} events'.format(len(db), len(events_list)))
+        logging.info("The db contains {:,} venues, with {:,} events".format(len(db), len(events_list)))
 
         # Measure execution time of scraping
         execution_time_s = round(time.time() - start_time, 1)
-        print(f'Scraping took {execution_time_s} seconds')
+        logging.info(f"Scraping took {execution_time_s} seconds")
 
         # Record the number of venues and events in the db
         file_path = 'docs/db_size.csv'
@@ -1180,8 +1214,9 @@ def main(env='prod'):
         else:
             # File does not exist, write with the header
             df.to_csv(file_path, mode='w', header=True, index=False)
+        logging.info("Database size recorded")
     
-    print('Finished')
+    logging.info("Finished")
 
 if __name__ == "__main__":
     main()
