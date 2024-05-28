@@ -884,7 +884,7 @@ def scrape_asian_art_museum_past_events(env='prod'):
                 if env == 'prod':
                     process_event(event_details)
                     
-def scrape_oak_museum_of_ca_exhibitions(env='prod', verbose=False):
+def scrape_oak_museum_of_ca_exhibitions(env='prod'):
     """Scrape and process events from the Oakland Museum of California (OMCA)."""
     
     def fetch_event_details(event_url):
@@ -1028,8 +1028,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', verbose=False):
                 process_event(event_details)
 
         except AttributeError as e:
-            if verbose:
-                print(f"Error parsing element: {e}")
+            print(f"Error parsing element: {e}")
             continue
 
     return
