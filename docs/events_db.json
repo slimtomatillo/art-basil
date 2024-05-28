@@ -7820,5 +7820,34 @@
             ],
             "hash": "1aad7b806c3651c5a857d37feffd347d"
         }
+    },
+    "Kala Art Institute": {
+        "Under the Sky-Kala Art Institute": {
+            "name": "Under the Sky",
+            "venue": "Kala Art Institute",
+            "description": "Demetri Broxton, Kota Ezawa, Cathy Lu, Adia Millett, Emmanuel Montoya, Gregory Rick, Rupy C. Tut, Minoosh Zomorodinia Curated by Mayumi Hamanaka",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-05-18 00:00:00",
+                "end": "2024-07-05 00:00:00"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.kala.org/exhibition/under-the-sky/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.kala.org/creativeplace/wp-content/uploads/2024/04/Cosmic-Code-1024x759.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "cb9d430ebcd10b8e67746a45e9c10107"
+        }
     }
 }

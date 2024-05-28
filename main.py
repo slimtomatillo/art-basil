@@ -1033,6 +1033,87 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
 
     return
 
+def scrape_kala_exhibitions(env='prod'):
+    """Scrape and process exhibitions from the Kala Art Institute."""
+    
+    def convert_date_to_dt(date_text):
+        """Convert date text to a datetime object, determining the year based on the next occurrence."""
+        global month_to_num_dict
+
+        # Get current date
+        today = dt.date.today()
+        current_year = today.year
+
+        # Split the date text
+        date_parts = date_text.lower().strip().split()
+        month_str = date_parts[0]
+        day = int(date_parts[1])
+
+        # Convert month to number
+        month = month_to_num_dict[month_str]
+
+        # Determine if the year is provided
+        if len(date_parts) == 3:
+            year = int(date_parts[2])
+        else:
+            # Determine the year based on the next occurrence of the date
+            if month < today.month or (month == today.month and day < today.day):
+                year = current_year + 1
+            else:
+                year = current_year
+
+        # Create the datetime object
+        return dt.datetime(year, month, day)
+    
+    url = 'https://www.kala.org/gallery/exhibitions/'
+    soup = fetch_and_parse(url)
+    if soup is None:
+        print('Error scraping Kala exhibitions')
+        return
+
+    # Find current exhibitions
+    current_exhibition_section = soup.find('section', id='kala-gallery', class_='section-current-exhibition')
+    if current_exhibition_section:
+        try:
+            title = current_exhibition_section.find('h3').text.strip()
+            date_range = current_exhibition_section.find('div', class_='exhibition-copy').find_next('p').text.strip()
+            dates = date_range.lower().replace('             ', '').replace(',', '').split(' — ')
+            start_date = convert_date_to_dt(dates[0])
+            end_date = convert_date_to_dt(dates[1]) if len(dates) > 1 else None
+
+            description = current_exhibition_section.find('div', class_='exhibition-copy').find_next('p').find_next('p').text.strip()
+            description = description.replace('\n', ' ').replace('\xa0', ' ')
+            
+            phase = 'current'
+            
+            event_link_tag = current_exhibition_section.find('a', text='View Exhibition')
+            event_link = event_link_tag['href'] if event_link_tag else None
+
+            image_tag = current_exhibition_section.find('img', src=True)
+            image_link = image_tag['src'] if image_tag else None
+
+            event_details = {
+                'name': title,
+                'venue': 'Kala Art Institute',
+                'description': description,
+                'tags': ['exhibition', phase, 'gallery'],
+                'phase': phase,
+                'dates': {'start': start_date, 'end': end_date},
+                'ongoing': True,
+                'links': [{'link': event_link, 'description': 'Event Page'}],
+            }
+
+            if image_link:
+                event_details['links'].append({'link': image_link, 'description': 'Image'})
+
+            if env == 'prod':
+                process_event(event_details)
+
+        except AttributeError as e:
+            print(f"Error parsing element: {e}")
+
+    return
+
 def main(env='prod'):
     """
     Function that:
@@ -1057,7 +1138,8 @@ def main(env='prod'):
         "Contemporary Jewish Museum // CJM": scrape_contemporary_jewish_museum,
         "San Francisco Women Artists Gallery": scrape_sfwomenartists,
         "Asian Art Museum": [scrape_asian_art_museum_current_events, scrape_asian_art_museum_past_events],
-        "Oakland Museum of Art": scrape_oak_museum_of_ca_exhibitions
+        "Oakland Museum of Art": scrape_oak_museum_of_ca_exhibitions,
+        "Kala Art Institute": scrape_kala_exhibitions
     }
 
     for venue, scraper in venues.items():
