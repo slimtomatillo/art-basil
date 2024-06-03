@@ -1218,7 +1218,6 @@ def main(env='prod'):
         logging.info("Database size recorded")
     
     logging.info("Finished")
-    logging.info("---------------------------")
 
 if __name__ == "__main__":
     main()
