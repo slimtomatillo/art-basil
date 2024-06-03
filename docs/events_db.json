@@ -1687,26 +1687,21 @@
             "description": "Using a variety of painting techniques, Jeanne Rosen Sofen has created a loving tribute to the beauty and diversity of Central California, from Sierra Nevada mountains to oak woodlands, to coastal hills and redwoods. A lifetime of enjoying and observing the natural world combined with years of exploring painting techniques has brought us this exciting exhibit of paintings of plants and landscapes.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "free"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-02-01",
                 "end": "2024-05-31"
             },
-            "ongoing": false,
             "links": [
                 {
                     "link": "https://gggp.org/art-exhibit-jeanne-rosen-sofen/",
                     "description": "Event Page"
-                },
-                {
-                    "link": "https://gggp.org/wp-content/uploads/2024/01/Oaks-in-the-Mist-1-scaled-e1706733840253.jpg",
-                    "description": "Image"
                 }
             ],
-            "hash": "777845f242364d865d96db1c9239a9fa"
+            "hash": "7d93f0200288cf05d8fbeccd021c59e8"
         }
     },
     "Contemporary Jewish Museum": {
@@ -7848,6 +7843,64 @@
                 }
             ],
             "hash": "cb9d430ebcd10b8e67746a45e9c10107"
+        }
+    },
+    "Oakland Asian Cultural Center": {
+        "Dalit Dreamlands: Toward An Anti-Caste Future-Oakland Asian Cultural Center": {
+            "name": "Dalit Dreamlands: Toward An Anti-Caste Future",
+            "venue": "Oakland Asian Cultural Center",
+            "description": "\nAsian American Women Artists Association (AAWAA), ARTogether, Discostan, and Oakland Asian Cultural Center co-presents \u201cDalit Dreamlands: Toward an Anti-Caste Future\u201d \u2013 a landmark multimedia Dalit art exhibition and dance party that will bring together over 30 multiply marginalized artists from Dalit*, Adivasi*, Bahujan*, Afro-Indian, Indo-Caribbean, and Muslim communities to showcase the depths of creativity and community.\nDalit Dreamlands, curated by Manu Kaur (they/them) and supported through AAWAA\u2019s Emerging Curator\u2019s Program, will center queer and trans caste abolitionist futurisms through art across various mediums, including fashion design, music, performances, films, paintings and visuals. One of the headlining artists, Malvika Raj, is a Dalit artist who challenges the casteist restrictions present in the Madhubani style of painting, by incorporating pro-Dalit assertions into her intricate and hypnotizing designs. Nazrina Rodjan is a queer Indo-Surinamese artist who integrates the history of indentured labor and femme resilience within her large paintings of indentured Indian women.\nLondon-based trans Dalit artist Mya Mehmi from Pxssy Palace will be one of four guest DJs and performers at the opening reception dance party in collaboration with Discostan\u2019s Arshia Fatima Haq. Dalit Dreamlands is a historic event that marks one of the first queer Dalit-centered spaces to exist in California.\n*Dalit is a caste marker for caste-oppressed communities formerly known as Untouchables, Adivasi refers to tribes who are indigenous to South Asia, and Bahujan is an umbrella term that includes all caste-oppressed communities.\n \nCURATOR\nManu Kaur\nEXHIBITING ARTISTS\nRinku Kumari, Jessie Sohpaul, Shivam Kamble, Nazrina Rodjan, Manpreet Singh, Malvika Raj, Seema Mattu, Mya Mehmi, Seema Hari, Shyama Kuver, Akhil Kang, Kaushik Tadvi, Rahee Punyashloka, Aravind Chedayan, Ajay Madhukar Dhoke, Shweta Ashokraj, Kamna Singh, Anika Nawar Ullah, Aindriya Barua, Ramnath Siddi, Siddi Tribe of Karnataka, Nrithya Pillai, Dalit Queer Project, Parth Pawar, Imaan Abbasi, Sri Vamsi Matta, R V Purusothaman (Purushu Arie), Shradha Raj, Jay Sagathia, Dee Chawla, Mia Kaur, Riri Kumbhar, Rohini bhadarge, John Spencer, Kulpreet Rana, & Simrah Farrukh\nEvent graphic by Parth Pawar.\n",
+            "tags": [
+                "exhibition",
+                "current",
+                "free",
+                "queer",
+                "south-asian"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-03-29",
+                "end": "2024-06-08"
+            },
+            "links": [
+                {
+                    "link": "https://oacc.cc/event/dalitdreamlands/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://oacc.cc/wp-content/uploads/2024/02/Square-with-text.png",
+                    "description": "Image"
+                }
+            ],
+            "hash": "a26f484a4bae3c26e7e2646be6c1391b"
+        },
+        "Longing for Attachment-Oakland Asian Cultural Center": {
+            "name": "Longing for Attachment",
+            "venue": "Oakland Asian Cultural Center",
+            "description": "\nARTogether and Oakland Asian Cultural Center co-present \u201cLonging for Attachment,\u201d an exhibition curated by Bushra Gill featuring 30+ Bay Area 1st/2nd generation immigrant and refugee artists reflecting on the notion of attachments. \n\nAs immigrants, refugees, and their descendants, we make choices on what to hold onto and what to let go of when moving to another country or culture. Being too attached to a place or way of being can make it hard to form connections to anything new. But our connection to a place is also related to our quality of life and well-being\u2013 it links us to neighborhoods and communities where we have lived.  Anyone who has migrated from another country or grown up in an immigrant family knows these attachments run deep and true, not needing to be present to have a prominent place in our hearts.   \n\nWe invite you to join us in reflection of our relationships to attachment, and to celebrate these Bay Area refugee, immigrant, and children of immigrant artists.\n",
+            "tags": [
+                "exhibition",
+                "future",
+                "free",
+                "immigrant",
+                "refugee"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-06-14",
+                "end": "2024-07-27"
+            },
+            "links": [
+                {
+                    "link": "https://oacc.cc/event/longingforattachment/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://oacc.cc/wp-content/uploads/2024/05/thumbnail.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4e0ca7a50cf234f3bbc6defc1a713450"
         }
     }
 }
