@@ -575,15 +575,15 @@
         "Yayoi Kusama: Infinite Love-SFMOMA": {
             "name": "Yayoi Kusama: Infinite Love",
             "venue": "SFMOMA",
-            "description": "Enter an unforgettable universe of luminous color and endless reflections.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-10-14",
                 "end": "2024-05-28"
             },
             "ongoing": false,
@@ -597,7 +597,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8c2b865c3286db474f584307592f34bd"
+            "hash": "cd70717a57559a3077beff7f0899a28d"
         },
         "Zanele Muholi: Eye Me-SFMOMA": {
             "name": "Zanele Muholi: Eye Me",
@@ -692,7 +692,7 @@
             "phase": "current",
             "dates": {
                 "start": "2023-08-12",
-                "end": "2024-05-27"
+                "end": "2024-07-07"
             },
             "ongoing": false,
             "links": [
@@ -705,7 +705,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9edc7a7d24822615ebc91220f08841cd"
+            "hash": "3ea2242104eda4772d8caed12b057475"
         },
         "What Matters: A Proposition in Eight Rooms-SFMOMA": {
             "name": "What Matters: A Proposition in Eight Rooms",
@@ -737,7 +737,7 @@
         "Ragnar Kjartansson: The Visitors-SFMOMA": {
             "name": "Ragnar Kjartansson: The Visitors",
             "venue": "SFMOMA",
-            "description": "",
+            "description": "An atmospheric video installation of artist Ragnar Kjartansson and his musician friends performing in a historic mansion.",
             "tags": [
                 "exhibition",
                 "current",
@@ -745,7 +745,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2022-11-05",
+                "start": "null",
                 "end": "2025-01-26"
             },
             "ongoing": false,
@@ -759,7 +759,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "bd2372adb75dc4107b35f51355fa0931"
+            "hash": "00dfaf036e0147d25f8f839112dfc5d6"
         },
         "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections-SFMOMA": {
             "name": "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections",
@@ -1663,7 +1663,7 @@
             ],
             "phase": "future",
             "dates": {
-                "start": "2024-07-01",
+                "start": "2024-07-02",
                 "end": "2026-05-01"
             },
             "ongoing": false,
@@ -1677,7 +1677,88 @@
                     "description": "Image"
                 }
             ],
-            "hash": "12ef28c3d9cb8e4b092e55aff65a8fc5"
+            "hash": "d4a23e232392ba5727d898a9a24c7011"
+        },
+        "Arborhythm-SFMOMA": {
+            "name": "Arborhythm",
+            "venue": "SFMOMA",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-05-04",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/arborhythm/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/05/31112813/Yuri_suzuki_installation_thumbnail.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "b615028727b6244cc96baf021b5b241d"
+        },
+        "Get in the Game-SFMOMA": {
+            "name": "Get in the Game",
+            "venue": "SFMOMA",
+            "description": "Get in the Game explores how athleticism, competition, and play have shaped our world and influenced contemporary art and design.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-10-19",
+                "end": "2025-02-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/get-in-the-game/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/02/01093524/4.-Hank-Willis-Thomas-1-1024x445.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "6e2713245ec06a6234e70aafd437439c"
+        },
+        "Pan American Unity: A Mural by Diego Rivera-SFMOMA": {
+            "name": "Pan American Unity: A Mural by Diego Rivera",
+            "venue": "SFMOMA",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-06-28",
+                "end": "2024-01-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/pan-american-unity/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2021/03/25133454/PAU_EXB-Header-1024x576.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "032a7da41ded093c050c3f16ed832950"
         }
     },
     "San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
@@ -6465,10 +6546,10 @@
             "description": "A SFWA Member Juried Exhibition",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "gallery"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-05-07",
                 "end": "2024-05-31"
@@ -6484,7 +6565,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "af5f101eed25b94fa100aa8f01b9250b"
+            "hash": "eeb3e69b6d6b61dd57b18af44eb84f3b"
         },
         "Radiating Pride- Free To Be Me-San Francisco Women Artists Gallery": {
             "name": "Radiating Pride- Free To Be Me",
@@ -7820,7 +7901,7 @@
         "Under the Sky-Kala Art Institute": {
             "name": "Under the Sky",
             "venue": "Kala Art Institute",
-            "description": "Demetri Broxton, Kota Ezawa, Cathy Lu, Adia Millett, Emmanuel Montoya, Gregory Rick, Rupy C. Tut, Minoosh Zomorodinia Curated by Mayumi Hamanaka",
+            "description": "Demetri Broxton, Kota Ezawa, Cathy Lu, Adia Millett, Emmanuel Montoya, Gregory Rick, Rupy C. Tut, Minoosh Zomorodinia Curated by Mayumi Hamanaka Read a review Kala\u2019s Half-Century Under the Sky on East Bay Express written by Janis Hashe.",
             "tags": [
                 "exhibition",
                 "current",
@@ -7842,7 +7923,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "cb9d430ebcd10b8e67746a45e9c10107"
+            "hash": "fab96b22f78f033822c3e1835aae7c05"
         }
     },
     "Oakland Asian Cultural Center": {
