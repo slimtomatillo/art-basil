@@ -1146,6 +1146,7 @@ def main(env='prod'):
     
     # Configure logging based on the environment parameter
     configure_logging(env)
+    logging.info("----------NEW LOG----------")
     
     if env == 'prod':
         # Save a copy of existing json data
@@ -1217,6 +1218,7 @@ def main(env='prod'):
         logging.info("Database size recorded")
     
     logging.info("Finished")
+    logging.info("---------------------------")
 
 if __name__ == "__main__":
     main()
