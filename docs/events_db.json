@@ -7933,12 +7933,12 @@
             "description": "\nAsian American Women Artists Association (AAWAA), ARTogether, Discostan, and Oakland Asian Cultural Center co-presents \u201cDalit Dreamlands: Toward an Anti-Caste Future\u201d \u2013 a landmark multimedia Dalit art exhibition and dance party that will bring together over 30 multiply marginalized artists from Dalit*, Adivasi*, Bahujan*, Afro-Indian, Indo-Caribbean, and Muslim communities to showcase the depths of creativity and community.\nDalit Dreamlands, curated by Manu Kaur (they/them) and supported through AAWAA\u2019s Emerging Curator\u2019s Program, will center queer and trans caste abolitionist futurisms through art across various mediums, including fashion design, music, performances, films, paintings and visuals. One of the headlining artists, Malvika Raj, is a Dalit artist who challenges the casteist restrictions present in the Madhubani style of painting, by incorporating pro-Dalit assertions into her intricate and hypnotizing designs. Nazrina Rodjan is a queer Indo-Surinamese artist who integrates the history of indentured labor and femme resilience within her large paintings of indentured Indian women.\nLondon-based trans Dalit artist Mya Mehmi from Pxssy Palace will be one of four guest DJs and performers at the opening reception dance party in collaboration with Discostan\u2019s Arshia Fatima Haq. Dalit Dreamlands is a historic event that marks one of the first queer Dalit-centered spaces to exist in California.\n*Dalit is a caste marker for caste-oppressed communities formerly known as Untouchables, Adivasi refers to tribes who are indigenous to South Asia, and Bahujan is an umbrella term that includes all caste-oppressed communities.\n \nCURATOR\nManu Kaur\nEXHIBITING ARTISTS\nRinku Kumari, Jessie Sohpaul, Shivam Kamble, Nazrina Rodjan, Manpreet Singh, Malvika Raj, Seema Mattu, Mya Mehmi, Seema Hari, Shyama Kuver, Akhil Kang, Kaushik Tadvi, Rahee Punyashloka, Aravind Chedayan, Ajay Madhukar Dhoke, Shweta Ashokraj, Kamna Singh, Anika Nawar Ullah, Aindriya Barua, Ramnath Siddi, Siddi Tribe of Karnataka, Nrithya Pillai, Dalit Queer Project, Parth Pawar, Imaan Abbasi, Sri Vamsi Matta, R V Purusothaman (Purushu Arie), Shradha Raj, Jay Sagathia, Dee Chawla, Mia Kaur, Riri Kumbhar, Rohini bhadarge, John Spencer, Kulpreet Rana, & Simrah Farrukh\nEvent graphic by Parth Pawar.\n",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "free",
                 "queer",
                 "south-asian"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-03-29",
                 "end": "2024-06-08"
@@ -7953,7 +7953,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a26f484a4bae3c26e7e2646be6c1391b"
+            "hash": "401c082c0d48305526e78d9df5599072"
         },
         "Longing for Attachment-Oakland Asian Cultural Center": {
             "name": "Longing for Attachment",
