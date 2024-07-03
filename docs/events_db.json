@@ -239,12 +239,12 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-06-22",
+                "start": "null",
                 "end": "2025-06-22"
             },
             "ongoing": false,
@@ -258,7 +258,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "367c1176233a9b00bd683acc74fec4f8"
+            "hash": "bc5d76652f2b56171ea43a8590bb70f4"
         },
         "Rose B. Simpson: LEXICON-de Young": {
             "name": "Rose B. Simpson: LEXICON",
@@ -375,7 +375,7 @@
             "phase": "future",
             "dates": {
                 "start": "2024-08-10",
-                "end": "2025-01-12"
+                "end": "2025-01-05"
             },
             "ongoing": false,
             "links": [
@@ -388,7 +388,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "98c3d14052c49d4c4d610935247f911b"
+            "hash": "c0786ecdb104e960ba18ee8253e8eaba"
         }
     },
     "Legion of Honor": {
@@ -566,11 +566,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/02/29131748/PS24.046_01_G02-Artsy-JPEG_4000-pixels-long-1024x747.jpg",
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/02/13160538/Creative_Growth_Whats_On_Thumbnail.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "2a5943c0ec386aaf64c1af2253756be1"
+            "hash": "e7120d211ee2d7d0d4721e4b016301a4"
         },
         "Yayoi Kusama: Infinite Love-SFMOMA": {
             "name": "Yayoi Kusama: Infinite Love",
@@ -961,7 +961,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2023-09-16",
+                "start": "null",
                 "end": "null"
             },
             "ongoing": true,
@@ -975,7 +975,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "57e6b982e63d509fb35fc85fa6bf8afc"
+            "hash": "4b4c6ae047058c410fde342e08760ef4"
         },
         "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart-SFMOMA": {
             "name": "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart",
@@ -1016,9 +1016,9 @@
             "phase": "current",
             "dates": {
                 "start": "null",
-                "end": "null"
+                "end": "2025-01-20"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.sfmoma.org/exhibition/wu-tsang-of-whales/",
@@ -1029,7 +1029,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "a3c4f566339c9ff10996ed22e6649ee8"
+            "hash": "a2d48ec384d628741234af9b3d63d73c"
         },
         "Olafur Eliasson: One-way colour tunnel-SFMOMA": {
             "name": "Olafur Eliasson: One-way colour tunnel",
@@ -1628,13 +1628,13 @@
         "Alexandra Pirici: Re-collection-SFMOMA": {
             "name": "Alexandra Pirici: Re-collection",
             "venue": "SFMOMA",
-            "description": "Live performative action that brings together elements of dance, sculpture, spoken word, and music.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "future",
+                "past",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "null"
@@ -1650,21 +1650,21 @@
                     "description": "Image"
                 }
             ],
-            "hash": "66c010c04867aa2c891c90be8444a2f5"
+            "hash": "7abcfccc5d5d15ae649e275f5e47db28"
         },
         "Fortuna and the Immortality Garden (Machine)-SFMOMA": {
             "name": "Fortuna and the Immortality Garden (Machine)",
             "venue": "SFMOMA",
-            "description": "Explore the wonder of Kara Walker\u2019s garden of automatons set amidst an energy field of gleaming black obsidian.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-07-02",
-                "end": "2026-05-01"
+                "start": "2024-07-01",
+                "end": "2026-03-20"
             },
             "ongoing": false,
             "links": [
@@ -1677,7 +1677,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d4a23e232392ba5727d898a9a24c7011"
+            "hash": "e63dad7262becf24b96134e963791968"
         },
         "Arborhythm-SFMOMA": {
             "name": "Arborhythm",
@@ -1690,7 +1690,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2024-05-04",
+                "start": "null",
                 "end": "null"
             },
             "ongoing": true,
@@ -1704,7 +1704,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b615028727b6244cc96baf021b5b241d"
+            "hash": "63bc15cce2761e52f5be160b31b020ab"
         },
         "Get in the Game-SFMOMA": {
             "name": "Get in the Game",
@@ -1759,6 +1759,60 @@
                 }
             ],
             "hash": "032a7da41ded093c050c3f16ed832950"
+        },
+        "Yayoi Kusama: Dreaming of Earth\u2019s Sphericity, I Would Offer My Love-SFMOMA": {
+            "name": "Yayoi Kusama: Dreaming of Earth\u2019s Sphericity, I Would Offer My Love",
+            "venue": "SFMOMA",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-06-22",
+                "end": "2025-05-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/yayoi-kusama-dreaming-of-earths-sphericity-i-would-offer-my-love/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/05/20155635/x2023.7054_SFMOMA-Kusama-S5774-Artsy-JPEG_4000-pixels-long1-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "644fa0bfaec18cb5c5593a8d4268e205"
+        },
+        "Amy Sherald: American Sublime-SFMOMA": {
+            "name": "Amy Sherald: American Sublime",
+            "venue": "SFMOMA",
+            "description": "The largest presentation of Amy Sherald\u2019s work to date, bringing together more than 45 paintings from her poetic early portraits to the incisive, moving figure paintings for which she is best known.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-11-16",
+                "end": "2025-03-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/amy-sherald-american-sublime/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/05/06140629/Amy-Sherald_For-Love-and-for-Country-1024x656.png",
+                    "description": "Image"
+                }
+            ],
+            "hash": "d74fb1d0323e35389e9701c98000ea5f"
         }
     },
     "San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
@@ -1883,7 +1937,7 @@
             "phase": "current",
             "dates": {
                 "start": "2023-02-16",
-                "end": "2024-06-09"
+                "end": "2024-10-20"
             },
             "ongoing": false,
             "links": [
@@ -1896,7 +1950,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "62b17d840f17eaf5915147d68306bd87"
+            "hash": "1d1bed9fe2df3c3748859f7f30e9258e"
         },
         "Annie Albagli: We Become [Vessels]-Contemporary Jewish Museum": {
             "name": "Annie Albagli: We Become [Vessels]",
@@ -1958,10 +2012,10 @@
             "description": "The Museum\u2019s first major open call exhibition invited Jewish-identifying artists in California to submit artworks in response to a central question: How are artists looking to the many aspects of Jewish culture, identity, and community to foster, reimagine, hold, or discover connection? The resulting exhibition brings together the work of forty-seven artists reflecting on their connection to Judaism, the world, and their own history. Through a wide range of media, including paintings, sculptures, interactive video games, video works, photographs, and more, the California Jewish Open illustrates some of the myriad ways in which these artists\u2019 Jewish identity informs their connection to the world at large\u2014and offers a window into the universal human need for connection in all its complexity.",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-06-06",
                 "end": "2024-10-20"
@@ -1977,7 +2031,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "20ac40d2926de4fc6cf7f627a389882a"
+            "hash": "ec41742496034ee6857932d529e64364"
         },
         "Virtual Exhibition\u2014What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
             "name": "Virtual Exhibition\u2014What We Hold: A Youth Audio Project",
@@ -5276,13 +5330,13 @@
         "Leah Rosenberg: When One Sees a Rainbow-Contemporary Jewish Museum": {
             "name": "Leah Rosenberg: When One Sees a Rainbow",
             "venue": "Contemporary Jewish Museum",
-            "description": "Marking the first time the space will be activated in this way since the building\u2019s opening, Bay Area artist Leah Rosenberg transforms The CJM\u2019s Yud Gallery through light and color, creating a welcoming environment for visitors to reflect, rest, and wonder. In When One Sees a Rainbow , Rosenberg fills the gallery\u2014a space itself created to celebrate light and its connection to Judaism\u2014with new hues, exploring how the wondrous natural phenomenon of rainbows connects to our lives, light, and meditative practice. Inspired by the Jewish tradition of reciting a blessing upon seeing a rainbow, visitors will also be invited to create their own responses to the colors on view in the gallery. Enter a kaleidoscopic world of color and rediscover a familiar symbol of hope and awe.",
+            "description": "Marking the first time the space has been activated in this way since the building\u2019s opening, Bay Area artist Leah Rosenberg transforms The CJM\u2019s Yud Gallery through light and color, creating a welcoming environment for visitors to reflect, rest, and wonder. In When One Sees a Rainbow , Rosenberg fills the gallery\u2014a space itself created to celebrate light and its connection to Judaism\u2014with new hues, exploring how the wondrous natural phenomenon of rainbows connects to our lives, light, and meditative practice. Inspired by the Jewish tradition of reciting a blessing upon seeing a rainbow, visitors will also be invited to create their own responses to the colors on view in the gallery. Enter a kaleidoscopic world of color and rediscover a familiar symbol of hope and awe.",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-06-06",
                 "end": "2027-04-27"
@@ -5298,7 +5352,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9ca68e51c2fbb5a83605a7a114f4a538"
+            "hash": "a6813b374545bcee440b46b22a2f0a43"
         }
     },
     "San Francisco Women Artists Gallery": {
@@ -6577,10 +6631,10 @@
             "description": "June Artist Salon Exhibition",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "gallery"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-06-04",
                 "end": "2024-07-05"
@@ -6596,7 +6650,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8edb31e9edfb279ce28279628fb0cf70"
+            "hash": "1abd306ac18f743e4dff8eac9b104611"
         },
         "The Delicious World-San Francisco Women Artists Gallery": {
             "name": "The Delicious World",
@@ -6604,10 +6658,10 @@
             "description": "A SFWA Member Juried Exhibition",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "gallery"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-06-04",
                 "end": "2024-07-05"
@@ -6623,7 +6677,34 @@
                     "description": "Image"
                 }
             ],
-            "hash": "46a894db86139c7ca0a970d584c98fac"
+            "hash": "0d15f94a47ce1611110451d83079849e"
+        },
+        "Illuminations-San Francisco Women Artists Gallery": {
+            "name": "Illuminations",
+            "venue": "San Francisco Women Artists Gallery",
+            "description": "A SFWA Member Juried Exhibition",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-07-09",
+                "end": "2024-08-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfwomenartists.org/exhibition/illuminations/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.sfwomenartists.org/wp-content/gallery/2024-illuminations/BarnhartDe-HeavenMustHaveSentYou-240527162026_1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4a431fa7dd932502023891462217dd79"
         }
     },
     "Asian Art Museum": {
@@ -6739,18 +6820,17 @@
         "Japanese Ink Paintings-Asian Art Museum": {
             "name": "Japanese Ink Paintings",
             "venue": "Asian Art Museum",
-            "description": "Highlights from the collection illustrate how Japanese artists from the 15th to the early 17th century engaged with Chinese ink painting styles.",
+            "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-12-21",
                 "end": "2024-06-10"
             },
-            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/japanese-ink-paintings/",
@@ -6761,7 +6841,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "bf29c008878dbd2465c8a7bab2b7a0d1"
+            "hash": "8b36880a6508859b669120a8259a3ef6"
         },
         "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts-Asian Art Museum": {
             "name": "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts",
@@ -7905,7 +7985,7 @@
         "Under the Sky-Kala Art Institute": {
             "name": "Under the Sky",
             "venue": "Kala Art Institute",
-            "description": "Demetri Broxton, Kota Ezawa, Cathy Lu, Adia Millett, Emmanuel Montoya, Gregory Rick, Rupy C. Tut, Minoosh Zomorodinia Curated by Mayumi Hamanaka Read a review Kala\u2019s Half-Century Under the Sky on East Bay Express written by Janis Hashe.",
+            "description": "Demetri Broxton, Kota Ezawa, Cathy Lu, Adia Millett, Emmanuel Montoya, Gregory Rick, Rupy C. Tut, Minoosh Zomorodinia Curated by Mayumi Hamanaka  Closing Reception & Artist Talk: Saturday, June 29, 2-4pm Read a review Kala\u2019s Half-Century Under the Sky on East Bay Express written by Janis Hashe.",
             "tags": [
                 "exhibition",
                 "current",
@@ -7927,7 +8007,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "fab96b22f78f033822c3e1835aae7c05"
+            "hash": "e95e980744ff502f8c65166a3d99947d"
         }
     },
     "Oakland Asian Cultural Center": {

@@ -1052,8 +1052,8 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
             if env == 'prod':
                 process_event(event_details)
 
-        except AttributeError as e:
-            logging.warning(f"Error parsing element: {e}")
+        except Exception as e:
+            logging.warning(f"Error parsing element of url {event_link}: {e}")
             continue
 
 def scrape_kala_exhibitions(env='prod'):
