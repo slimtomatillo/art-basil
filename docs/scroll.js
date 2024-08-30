@@ -74,6 +74,11 @@ function sortEvents(events) {
             } else if (event.tags.includes('past')) {
                 event.sortPriority = 3;
             }
+
+            // If the start date is null and the end date is in the past, update accordingly
+            if (event.dates.start === 'null' && event.dates.end < today) {
+                event.sortPriority = 3;
+            }
             
             eventsArray.push(event);
         });

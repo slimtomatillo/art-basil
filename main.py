@@ -941,8 +941,8 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
                 else:
                     year = current_year
 
-            # Create the datetime object
-            return dt.datetime(year, month, day)
+            # Create the date object
+            return dt.date(year, month, day)
 
         event_soup = fetch_and_parse(event_url)
         if not event_soup:
@@ -1085,8 +1085,8 @@ def scrape_kala_exhibitions(env='prod'):
             else:
                 year = current_year
 
-        # Create the datetime object
-        return dt.datetime(year, month, day)
+        # Create the date object
+        return dt.date(year, month, day)
     
     url = 'https://www.kala.org/gallery/exhibitions/'
     soup = fetch_and_parse(url)
@@ -1134,6 +1134,51 @@ def scrape_kala_exhibitions(env='prod'):
 
         except AttributeError as e:
             logging.info(f"Error parsing element: {e}")
+            
+def update_event_phases():
+    """
+    Load the event database, update the phase and tags of art events based on their end date,
+    and save the updated database.
+
+    This function loads the events from the database, checks whether the end date of each event 
+    is in the past, and updates the event's "phase", "tags", and "ongoing" status accordingly.
+    The updated database is then saved back to the JSON file. This is meant to correct situations
+    where the phase indicates the event is current but the end date is in the past.
+
+    Returns:
+    None
+    """
+    
+    # Load the event database
+    db = load_db()
+    
+    today = dt.datetime.now().date()
+
+    for venue, events in db.items():
+        for event_key, event in events.items():
+            try:
+                end_date_str = event['dates'].get('end')
+                end_date = dt.datetime.strptime(end_date_str, '%Y-%m-%d').date() if end_date_str and end_date_str != 'null' else None
+                
+                if end_date and end_date < today:
+                    event['phase'] = 'past'
+                    event['ongoing'] = False
+                    # Ensure "past" is in tags and "current" is not
+                    event['tags'] = [tag for tag in event['tags'] if tag != 'current']
+                    if 'past' not in event['tags']:
+                        event['tags'].append('past')
+                else:
+                    # Optional: Reset to current or future based on your needs
+                    if 'past' in event['tags']:
+                        event['tags'].remove('past')
+
+            except ValueError as e:
+                print(f"Error processing event '{event_key}' in venue '{venue}': {e}")
+                # Optionally handle or log the error further as needed
+    
+    # Save the updated database
+    save_db(db)
+
 
 def main(env='prod'):
     """
@@ -1187,6 +1232,9 @@ def main(env='prod'):
         logging.info(f"Finished scrape for {venue}")
 
     if env == 'prod':
+        # Correct instances of misalignment between phase and end date
+        updated_db = update_event_phases()
+        
         # Load db and count the venues and events
         db = load_db()
         # Flatten the db into a list of event dictionaries

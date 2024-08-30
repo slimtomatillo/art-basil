@@ -5,12 +5,12 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2022-12-17",
                 "end": "2024-05-05"
             },
             "ongoing": false,
@@ -32,9 +32,10 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "future",
+            "phase": "past",
             "dates": {
                 "start": "2024-06-04",
                 "end": "2024-06-09"
@@ -57,10 +58,10 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-07-07"
@@ -83,10 +84,10 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-07-21"
@@ -109,10 +110,10 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-08-11"
@@ -141,7 +142,7 @@
             "phase": "current",
             "dates": {
                 "start": "null",
-                "end": "2024-09-15"
+                "end": "2024-12-29"
             },
             "ongoing": false,
             "links": [
@@ -154,7 +155,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "463607bc12bf57bb788c7a16d90bddd9"
+            "hash": "c6606f0169ae99b1f574f7ba10bcb178"
         },
         "American Beauty: The Osher Collection of American Art-de Young": {
             "name": "American Beauty: The Osher Collection of American Art",
@@ -245,7 +246,7 @@
             "phase": "current",
             "dates": {
                 "start": "null",
-                "end": "2025-06-22"
+                "end": "2025-10-26"
             },
             "ongoing": false,
             "links": [
@@ -254,11 +255,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/dfec5e7d-9028-405b-850c-2d7eb68c454a/babirye-ebika-bya-ba-2021.jpg?crop=2318,1544,x1027,y297&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/de980aae-7325-483e-8033-4548f551dd36/156-leilah-babirye-gary-sexton.jpg?crop=9052,6038,x0,y0&format=webp&quality=80&width=2500",
                     "description": "Image"
                 }
             ],
-            "hash": "bc5d76652f2b56171ea43a8590bb70f4"
+            "hash": "4ece3140ac875cc3b41bfa5568b825cf"
         },
         "Rose B. Simpson: LEXICON-de Young": {
             "name": "Rose B. Simpson: LEXICON",
@@ -291,13 +292,13 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-08-10",
-                "end": "2025-09-28"
+                "start": "null",
+                "end": "2025-11-30"
             },
             "ongoing": false,
             "links": [
@@ -306,11 +307,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/d8ec0f17-acd7-458e-ba4a-88c33bf08840/arzabe-quiero-inti-2021.jpg?crop=3000,1998,x0,y119&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/621bf856-421a-4f46-8798-d0fd3fb00b42/259-about-place-sexton.jpg?crop=6668,4447,x711,y635&format=webp&quality=80&width=2500",
                     "description": "Image"
                 }
             ],
-            "hash": "b261b169af1bba981ed54b42fb3410ff"
+            "hash": "43cfac53b84d912d2b049233ed02c54e"
         },
         "Embroidered Histories-de Young": {
             "name": "Embroidered Histories",
@@ -369,12 +370,12 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
-                "start": "2024-08-10",
+                "start": "null",
                 "end": "2025-01-05"
             },
             "ongoing": false,
@@ -388,7 +389,33 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c0786ecdb104e960ba18ee8253e8eaba"
+            "hash": "68386e765dd2e7e9c5244d155371b1e6"
+        },
+        "Paul McCartney Photographs 1963\u201364: Eyes of the Storm-de Young": {
+            "name": "Paul McCartney Photographs 1963\u201364: Eyes of the Storm",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2025-03-01",
+                "end": "2025-07-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/paul-mccartney-photographs",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/eda8491d-9b76-447e-88c7-3adf7410a9e4/mccartney-self-portrait-1963.jpg?crop=2398,1599,x764,y32&format=webp&quality=80&width=2500",
+                    "description": "Image"
+                }
+            ],
+            "hash": "e2fea60e93f890f40e29c7b09f17c986"
         }
     },
     "Legion of Honor": {
@@ -411,17 +438,18 @@
                     "description": "Event Page"
                 }
             ],
-            "hash": "9355f87c3cce5a275f11b075bb1df903"
+            "hash": "9355f87c3cce5a275f11b075bb1df903",
+            "ongoing": false
         },
         "Japanese Prints in Transition: From the Floating World to the Modern World-Legion of Honor": {
             "name": "Japanese Prints in Transition: From the Floating World to the Modern World",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-08-18"
@@ -450,7 +478,7 @@
             "phase": "current",
             "dates": {
                 "start": "null",
-                "end": "2024-08-25"
+                "end": "2024-10-27"
             },
             "ongoing": false,
             "links": [
@@ -463,7 +491,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "47d63b20b51b064bf18c7caed2b44f87"
+            "hash": "8108a8325d191439dcab592d39fe1ed3"
         },
         "Woodcut: Primary Printmaking-Legion of Honor": {
             "name": "Woodcut: Primary Printmaking",
@@ -542,6 +570,84 @@
                 }
             ],
             "hash": "b84aa80296c86d3f40269ab675502b54"
+        },
+        "Wayne Thiebaud: Art Comes from Art-Legion of Honor": {
+            "name": "Wayne Thiebaud: Art Comes from Art",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2025-03-22",
+                "end": "2025-08-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/wayne-thiebaud",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/42ded8e8-8e24-4f23-900d-3e31a7772134/thiebaud-masterworks-1970.jpg?crop=2322,1549,x0,y412&format=webp&quality=80&width=2500",
+                    "description": "Image"
+                }
+            ],
+            "hash": "34d6fdd98ad1bdcf7245241a1e7a5e8b"
+        },
+        "Celebrating 100 Years at the Legion of Honor-Legion of Honor": {
+            "name": "Celebrating 100 Years at the Legion of Honor",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-11-09",
+                "end": "2025-11-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/legion-100",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/87d298f3-6fdd-486f-9d4a-51f809aeb66b/legion-honor-1920s-rotated.png?crop=1475,983,x75,y48&format=webp&quality=80&width=2500",
+                    "description": "Image"
+                }
+            ],
+            "hash": "2d6796c8918286ec8a438e9c30301704"
+        },
+        "Yinka Shonibare-Legion of Honor": {
+            "name": "Yinka Shonibare",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2025-11-15",
+                "end": "2026-07-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/yinka-shonibare",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/581d5aa0-8770-4caf-ad90-a7f6646d8159/shonibare-free-bird-2023.jpg?crop=3000,1999,x0,y78&format=webp&quality=80&width=2500",
+                    "description": "Image"
+                }
+            ],
+            "hash": "1c686a2cdf731966be94f8d21dc8577d"
         }
     },
     "SFMOMA": {
@@ -602,15 +708,15 @@
         "Zanele Muholi: Eye Me-SFMOMA": {
             "name": "Zanele Muholi: Eye Me",
             "venue": "SFMOMA",
-            "description": "Zanele Muholi is a South African visual activist who uses photography, painting, video, and sculpture to increase Black queer visibility.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2024-01-18",
                 "end": "2024-08-11"
             },
             "ongoing": false,
@@ -624,7 +730,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "26d32fc2fe15eaadae22291fe547f260"
+            "hash": "01f3373763b2e2f3cf0f2cc70da0c799"
         },
         "New Work: Mary Lovelace O\u2019Neal-SFMOMA": {
             "name": "New Work: Mary Lovelace O\u2019Neal",
@@ -656,15 +762,15 @@
         "Chiura Obata-SFMOMA": {
             "name": "Chiura Obata",
             "venue": "SFMOMA",
-            "description": "Delve into the jewel-like watercolors, woodblock prints, and Japanese ink paintings of one of California\u2019s most important 20th-century artists.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-12-21",
                 "end": "2024-07-14"
             },
             "ongoing": false,
@@ -678,7 +784,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d157b5fd93aa673b950424ed34b066aa"
+            "hash": "584522577efd6570d5fde4d2799056de"
         },
         "Marshall Brown Projects: Dequindre Civic Academy-SFMOMA": {
             "name": "Marshall Brown Projects: Dequindre Civic Academy",
@@ -686,10 +792,10 @@
             "description": "",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2023-08-12",
                 "end": "2024-07-07"
@@ -705,21 +811,21 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3ea2242104eda4772d8caed12b057475"
+            "hash": "14c03df3e2c85251d6a58793e7f274de"
         },
         "What Matters: A Proposition in Eight Rooms-SFMOMA": {
             "name": "What Matters: A Proposition in Eight Rooms",
             "venue": "SFMOMA",
-            "description": "",
+            "description": "Contemporary collection works that contemplate how to live with intention.",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "2023-07-22",
-                "end": "2024-08-22"
+                "start": "null",
+                "end": "2024-08-02"
             },
             "ongoing": false,
             "links": [
@@ -732,7 +838,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "863fec127f990a2a543e9919930b9050"
+            "hash": "3d448d9595e2dd297041a07fec6a902f"
         },
         "Ragnar Kjartansson: The Visitors-SFMOMA": {
             "name": "Ragnar Kjartansson: The Visitors",
@@ -1088,13 +1194,13 @@
         "Art of Noise-SFMOMA": {
             "name": "Art of Noise",
             "venue": "SFMOMA",
-            "description": "A multi-sensory exploration of how design has changed the way we\u2019ve experienced music over the past 100 years.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-05-04",
                 "end": "2024-08-18"
@@ -1110,7 +1216,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7a271f6219cc1430635ec0303ce343c4"
+            "hash": "ac416dd44f620c5e362835b05e11bb93"
         },
         "Sea Change: Photographs from the Collection-SFMOMA": {
             "name": "Sea Change: Photographs from the Collection",
@@ -1631,7 +1737,6 @@
             "description": "",
             "tags": [
                 "exhibition",
-                "past",
                 "museum"
             ],
             "phase": "past",
@@ -1655,7 +1760,7 @@
         "Fortuna and the Immortality Garden (Machine)-SFMOMA": {
             "name": "Fortuna and the Immortality Garden (Machine)",
             "venue": "SFMOMA",
-            "description": "",
+            "description": "Explore the wonder of Kara Walker\u2019s garden of automatons set amidst an energy field of gleaming black obsidian.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1677,7 +1782,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e63dad7262becf24b96134e963791968"
+            "hash": "c1066a581d4f3679c2a9f2efccb89f13"
         },
         "Arborhythm-SFMOMA": {
             "name": "Arborhythm",
@@ -1781,11 +1886,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/05/20155635/x2023.7054_SFMOMA-Kusama-S5774-Artsy-JPEG_4000-pixels-long1-1024x683.jpg",
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/06/05115209/2023.146_45_P02-Large-JPEG_5x7-1024x768.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "644fa0bfaec18cb5c5593a8d4268e205"
+            "hash": "77bf7897341049912b38dc407facff97"
         },
         "Amy Sherald: American Sublime-SFMOMA": {
             "name": "Amy Sherald: American Sublime",
@@ -1808,11 +1913,200 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/05/06140629/Amy-Sherald_For-Love-and-for-Country-1024x656.png",
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/06/28131405/Amy_Sherald_for_Love_and_for_Country_updated_thumbnail-1024x649.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "d74fb1d0323e35389e9701c98000ea5f"
+            "hash": "e5dd0f0278aeb6f12b3bd66494c24f2c"
+        },
+        "When the World Is Watching-SFMOMA": {
+            "name": "When the World Is Watching",
+            "venue": "SFMOMA",
+            "description": "Designs for athletes and nations when competing on the world stage.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "2025-05-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/when-the-world-is-watching/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/08/23104802/x2024.824_31_P02-Artsy-JPEG_4000-pixels-long_homepage-1024x659.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "5e7c24f08d91eff3ed7f43dadd3a78f4"
+        },
+        "Unity through Skateboarding-SFMOMA": {
+            "name": "Unity through Skateboarding",
+            "venue": "SFMOMA",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-08-17",
+                "end": "2025-04-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/unity-through-skateboarding/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/07/12142507/Unity_Skate_2003.105.A-E_01_b02-1024x504.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "413ede9797ba19cc406940f7b5b7671f"
+        },
+        "Count Me In-SFMOMA": {
+            "name": "Count Me In",
+            "venue": "SFMOMA",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-08-17",
+                "end": "2025-05-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/count-me-in/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/07/12143926/x2024.8042.047_Ezawa_thumbnail_49ers_G02-Artsy-JPEG_4000-pixels-long-1024x602.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f1542a815ea69865ca6e29d952fc865d"
+        },
+        "(Super)Natural: Paul Klee and Masako Miki-SFMOMA": {
+            "name": "(Super)Natural: Paul Klee and Masako Miki",
+            "venue": "SFMOMA",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-08-16",
+                "end": "2025-02-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/supernatural-paul-klee-and-masako-miki/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2022/11/02102112/PS22.014_01_P02-Artsy-JPEG_4000-pixels-long.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "d0f0187d02f9579e27b829e00e9f6d56"
+        },
+        "Table Manners-SFMOMA": {
+            "name": "Table Manners",
+            "venue": "SFMOMA",
+            "description": "Table Manners celebrates the ways design shapes our relationship to food, and how dining can be a profound communal and cultural experience.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-09-14",
+                "end": "2025-05-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/table-manners/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/07/11120602/AD23.041.1-3_01_P02-PowerPoint-or-email-JPEG_1024-pixels-long.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "b0966a6129c87131c65e58c5a55b6340"
+        },
+        "Consuelo Kanaga: Catch the Spirit-SFMOMA": {
+            "name": "Consuelo Kanaga: Catch the Spirit",
+            "venue": "SFMOMA",
+            "description": "A retrospective exhibition that charts the artist\u2019s vision, which spans pathbreaking photojournalism, modernist still lifes, and celebrated portraits of Black Americans.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/consuelo-kanaga-catch-the-spirit/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/06/26141005/Kanaga_82.65.2248_PS20-1024x689.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "97d81a6742c13e43fc8529ea63a03977"
+        },
+        "Get in the Game: Sports, Art, Culture-SFMOMA": {
+            "name": "Get in the Game: Sports, Art, Culture",
+            "venue": "SFMOMA",
+            "description": "Get in the Game: Sports, Art, Culture explores how athleticism, competition, and play have shaped our world and influenced contemporary art and design.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-10-19",
+                "end": "2025-02-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfmoma.org/exhibition/get-in-the-game/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/02/01093524/4.-Hank-Willis-Thomas-1-1024x445.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "a1567473c1c68d6b790ac3e6f173215a"
         }
     },
     "San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
@@ -1840,7 +2134,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7d93f0200288cf05d8fbeccd021c59e8"
+            "hash": "7d93f0200288cf05d8fbeccd021c59e8",
+            "ongoing": false
         }
     },
     "Contemporary Jewish Museum": {
@@ -1877,10 +2172,10 @@
             "description": "Travel through some of the most electrifying moments in music history through the lens of Bay Area\u2013based photographer Jay Blakesberg. RetroBlakesberg: The Music Never Stopped presents photographs of legendary musicians that reveal the evolution of San Francisco\u2019s unique music culture and its wide-reaching influence. Featuring images of the Grateful Dead, Joni Mitchell, Tracy Chapman, Neil Young, Soundgarden, and many more alongside original tickets stubs, press passes, and other ephemera, this exhibition invites visitors to experience an electrifying visual history of the sounds and stories that have shaped the Bay Area and beyond.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2023-08-31",
                 "end": "2024-07-28"
@@ -1896,7 +2191,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "882543c9da4c8012700ce4f88a555c52"
+            "hash": "765127c93103e725a1c93323502b7a54"
         },
         "Radiant Practices: Illuminating Jewish Traditions-Contemporary Jewish Museum": {
             "name": "Radiant Practices: Illuminating Jewish Traditions",
@@ -1958,10 +2253,10 @@
             "description": "Bay Area artist Annie Albagli\u2019s expansive video-based installation draws on Jewish tradition, local geography, and ritual to respond to a time of widespread isolation and a desire for human connection. Situated in The CJM\u2019s intimate Black Box Gallery, the installation combines overlaid imagery and field recordings of the Marin headlands with crashing waves and Jewish ritual objects to offer visitors new ways to move through space, time, and familiar and unfamiliar places. Displayed for the first time in a solo museum exhibition, Albagli\u2019s work both draws on and decontextualizes Jewish stories and local histories to break boundaries, explore our interdependence with each other and our world, and offer ways in which viewers can reimagine notions of space and self.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2023-03-23",
                 "end": "2024-07-28"
@@ -1977,7 +2272,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "84ebd48b60232dcc356921b81de91fda"
+            "hash": "16f89c3930da08dc39c2e9c76ab32b30"
         },
         "Lamp of the Covenant: Dave Lane-Contemporary Jewish Museum": {
             "name": "Lamp of the Covenant: Dave Lane",
@@ -2018,7 +2313,7 @@
             "phase": "current",
             "dates": {
                 "start": "2024-06-06",
-                "end": "2024-10-20"
+                "end": "2025-04-20"
             },
             "ongoing": false,
             "links": [
@@ -2027,11 +2322,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://res.cloudinary.com/the-contemporary-jewish-museum/image/upload/c_fill,cs_srgb,dpr_2.0,f_jpg,q_70,w_1290/v1/exhibition/2024_CJO-web-lockup_v02-01.jpg",
+                    "link": "https://res.cloudinary.com/the-contemporary-jewish-museum/image/upload/c_fill,cs_srgb,dpr_2.0,f_jpg,q_70,w_1290/v1/exhibition/2024_CJO-web-lockup_v02-01_1.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "ec41742496034ee6857932d529e64364"
+            "hash": "77fba2c4070d97886e4877689d790b5e"
         },
         "Virtual Exhibition\u2014What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
             "name": "Virtual Exhibition\u2014What We Hold: A Youth Audio Project",
@@ -5348,11 +5643,65 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://res.cloudinary.com/the-contemporary-jewish-museum/image/upload/c_fill,cs_srgb,dpr_2.0,f_jpg,q_70,w_1290/v1/exhibition/2024_LEAHROS-title-lockup_v01-02.jpg",
+                    "link": "https://res.cloudinary.com/the-contemporary-jewish-museum/image/upload/c_fill,cs_srgb,dpr_2.0,f_jpg,q_70,w_1290/v1/exhibition/CJM-Openings-011-Web.adj.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "a6813b374545bcee440b46b22a2f0a43"
+            "hash": "32340284c438402b52d4be82bc52fe95"
+        },
+        "Nicki Green: Firmament-Contemporary Jewish Museum": {
+            "name": "Nicki Green: Firmament",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Transdisciplinary artist Nicki Green\u2019s first museum solo exhibition delves into questions of identity, transformation, and reinvention of Jewish traditions through new and existing artworks in ceramic, installation, fiber, and more. Inspired by the concept of the firmament\u2014a dividing form referenced in the Torah that separated the earth from the heavens\u2014Green reimagines the gallery space as an environment of welcome and liberation centering trans and nonbinary bodies. Artworks rendered primarily in clay feature motifs that invoke fermentation, mycelium, and reinvented ritual as metaphors for regeneration, transformation, and resilience\u2014concepts that have informed Jewish thinking and practice for thousands of years. By reclaiming parts of her Jewish upbringing, reinventing functional forms of ceramic objects, and reimagining ways of embracing different genders and sexualities, Green challenges and expands the binary limits of our society.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-09-05",
+                "end": "2025-02-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/236",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://res.cloudinary.com/the-contemporary-jewish-museum/image/upload/c_fill,cs_srgb,dpr_2.0,f_jpg,q_70,w_1290/v1/exhibition/NG_5_Crop_1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "07d04319174c02f0a4bfa16c26e343c3"
+        },
+        "Looted-Contemporary Jewish Museum": {
+            "name": "Looted",
+            "venue": "Contemporary Jewish Museum",
+            "description": "Uncovering powerful insights into the relationships between art, memory, politics, and loss, this multimedia installation reflects on the history of Polish-owned paintings stolen by the Nazis during World War II. Created by artists Dorota Mytych (Poland), Jessica Houston (Canada), Marcia Teusink (UK), and Tracy Grubbs (USA), the installation presents videos of each artist painting reproductions of fifty-nine of the looted artworks documented in Poland\u2019s National database. Watching this mesmerizing process comes with an unexpected conclusion: before each canvas can dry, the artists wipe away their own painstaking work in a stunning erasure that challenges the meaning of authorship, ownership, and recovery. Paintings by Raphael, Rembrandt van Rijn, Peter Paul Rubens, and others are infinitely recreated and erased, offering new ways to process the impact of these stolen works and experience art as a means for resilience.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-09-05",
+                "end": "2025-07-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thecjm.org/exhibitions/237",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://res.cloudinary.com/the-contemporary-jewish-museum/image/upload/c_fill,cs_srgb,dpr_2.0,f_jpg,q_70,w_1290/v1/exhibition/_DSC4474_1.png",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f24656db1270491c1d9e5b4ac854201f"
         }
     },
     "San Francisco Women Artists Gallery": {
@@ -6631,10 +6980,10 @@
             "description": "June Artist Salon Exhibition",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "gallery"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-06-04",
                 "end": "2024-07-05"
@@ -6650,7 +6999,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1abd306ac18f743e4dff8eac9b104611"
+            "hash": "153d01ffd1ddba75dca2756bc9a4ce2c"
         },
         "The Delicious World-San Francisco Women Artists Gallery": {
             "name": "The Delicious World",
@@ -6658,10 +7007,10 @@
             "description": "A SFWA Member Juried Exhibition",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "gallery"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-06-04",
                 "end": "2024-07-05"
@@ -6677,7 +7026,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0d15f94a47ce1611110451d83079849e"
+            "hash": "4b39f665209fce58c9d7b60efa90103e"
         },
         "Illuminations-San Francisco Women Artists Gallery": {
             "name": "Illuminations",
@@ -6685,10 +7034,10 @@
             "description": "A SFWA Member Juried Exhibition",
             "tags": [
                 "exhibition",
-                "future",
+                "past",
                 "gallery"
             ],
-            "phase": "future",
+            "phase": "past",
             "dates": {
                 "start": "2024-07-09",
                 "end": "2024-08-02"
@@ -6704,54 +7053,105 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4a431fa7dd932502023891462217dd79"
+            "hash": "424500272d368fafbebd664ea02ee612"
+        },
+        "Motion-San Francisco Women Artists Gallery": {
+            "name": "Motion",
+            "venue": "San Francisco Women Artists Gallery",
+            "description": "A SFWA Member Juried Exhibition",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-09-10",
+                "end": "2024-10-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfwomenartists.org/exhibition/motion/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.sfwomenartists.org/wp-content/gallery/2024-sept-motion/AllenRo-Bungeeeeee-240803090416_1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "80ac91e13bf509658b03d3e19a8f1e07"
+        },
+        "August Abstractions-San Francisco Women Artists Gallery": {
+            "name": "August Abstractions",
+            "venue": "San Francisco Women Artists Gallery",
+            "description": "A Bay Area Artist Juried Exhibition",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-08-06",
+                "end": "2024-09-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sfwomenartists.org/exhibition/august-abstractions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.sfwomenartists.org/wp-content/gallery/2024-august-augustabstractions/AdidaDe-Water-Music-240705124600_1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "4876e949e2d7385b1a52201fd6f32e4c"
         }
     },
     "Asian Art Museum": {
         "Phoenix Kingdoms: The Last Splendor of China\u2019s Bronze Age-Asian Art Museum": {
             "name": "Phoenix Kingdoms: The Last Splendor of China\u2019s Bronze Age",
             "venue": "Asian Art Museum",
-            "description": "Rising from the ashes of conquest, two brilliant but forgotten cultures claim their rightful places in China\u2019s history.",
+            "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": [
-                "current"
-            ],
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2024-04-19",
                 "end": "2024-07-22"
             },
-            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/phoenix-kingdoms/",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/04/Phoenix_Kingdoms_65det_1600w-1600x900.jpg",
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/04/Phoenix_Kingdoms_65det_600w-600x450.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "69bc0764ab1b1a49336782a2c06d47b3"
+            "hash": "c35f91ebc7d08b6045f159301fcdef8f",
+            "ongoing": false
         },
         "Into View: New Voices, New Stories-Asian Art Museum": {
             "name": "Into View: New Voices, New Stories",
             "venue": "Asian Art Museum",
-            "description": "Recently acquired work by fourteen contemporary artists whose alternative narratives of mythology, history, and identity speak to a radically reimagined future.",
+            "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2024-01-19",
                 "end": "2024-08-05"
             },
-            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/into-view-new-voices-new-stories/",
@@ -6762,23 +7162,23 @@
                     "description": "Image"
                 }
             ],
-            "hash": "2e66647fa752a6f914d29c11158a2cf5"
+            "hash": "42af8c53b183664dee197227c2de4954",
+            "ongoing": false
         },
         "Takashi Murakami-Asian Art Museum": {
             "name": "Takashi Murakami",
             "venue": "Asian Art Museum",
-            "description": "Final\n chance to \nvisit\n the weirdly lovable, lovably weird world of Takashi Murakami.",
+            "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-09-15",
                 "end": "2024-07-22"
             },
-            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/takashi-murakami/",
@@ -6789,7 +7189,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "74f7576712c2c0c95586da1257e541b1"
+            "hash": "1734249fc5a734233dce36a529d70a88",
+            "ongoing": false
         },
         "Japanese Tastes in Chinese Ceramics-Asian Art Museum": {
             "name": "Japanese Tastes in Chinese Ceramics",
@@ -6815,7 +7216,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "588dccd72ff59b0be11ca193348e1580"
+            "hash": "588dccd72ff59b0be11ca193348e1580",
+            "ongoing": false
         },
         "Japanese Ink Paintings-Asian Art Museum": {
             "name": "Japanese Ink Paintings",
@@ -6841,23 +7243,23 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8b36880a6508859b669120a8259a3ef6"
+            "hash": "8b36880a6508859b669120a8259a3ef6",
+            "ongoing": false
         },
         "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts-Asian Art Museum": {
             "name": "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts",
             "venue": "Asian Art Museum",
-            "description": "D\nepictions of intriguing\n tales\n that \nhave i\nnform\ned\n, entertain\ned\n, and engage\nd audiences for centuries.",
+            "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-10-13",
                 "end": "2024-07-08"
             },
-            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/deities-paragons-and-legends/",
@@ -6868,7 +7270,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "b87399f14eeef6e2bda110d6935a12b7"
+            "hash": "1bd386a04ca901df2dda9bd53cdeab6b",
+            "ongoing": false
         },
         "RAD (Research And Development)-Asian Art Museum": {
             "name": "RAD (Research And Development)",
@@ -6954,18 +7357,17 @@
         "Jakhodo Today-Asian Art Museum": {
             "name": "Jakhodo Today",
             "venue": "Asian Art Museum",
-            "description": "A beloved and meaningful motif from Korean folk art, reimagined for the 21st century.",
+            "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": "2023-08-24",
+                "end": "2024-08-18"
             },
-            "ongoing": true,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/jakhodo-today/",
@@ -6976,7 +7378,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "507fbd1f09c3f7aef78b5cf4326c45b5"
+            "hash": "4faa00b848d574d5fcfa19a03aec9d16",
+            "ongoing": false
         },
         "Taihu Rock\u2014East Wind II-Asian Art Museum": {
             "name": "Taihu Rock\u2014East Wind II",
@@ -7029,7 +7432,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "de468f60426ec2c1db0be8f1ad35764f"
+            "hash": "de468f60426ec2c1db0be8f1ad35764f",
+            "ongoing": false
         },
         "Murakami: Monsterized-Asian Art Museum": {
             "name": "Murakami: Monsterized",
@@ -7055,7 +7459,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4744b8f75082faaa353c6a4ea9f8b9c1"
+            "hash": "4744b8f75082faaa353c6a4ea9f8b9c1",
+            "ongoing": false
         },
         "Jenifer K Wofford: Pattern Recognition-Asian Art Museum": {
             "name": "Jenifer K Wofford: Pattern Recognition",
@@ -7081,7 +7486,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c952e57d50c913ca5392bfdadb786aea"
+            "hash": "c952e57d50c913ca5392bfdadb786aea",
+            "ongoing": false
         },
         "Afruz Amighi: My House, My Tomb-Asian Art Museum": {
             "name": "Afruz Amighi: My House, My Tomb",
@@ -7107,7 +7513,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "47aec6a7575cff487c7bbaa1f3b50f4f"
+            "hash": "47aec6a7575cff487c7bbaa1f3b50f4f",
+            "ongoing": false
         },
         "Zheng Chongbin: I Look for the Sky-Asian Art Museum": {
             "name": "Zheng Chongbin: I Look for the Sky",
@@ -7133,7 +7540,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f6ddac08d4ca02c63bc2a42bfe8ca1b7"
+            "hash": "f6ddac08d4ca02c63bc2a42bfe8ca1b7",
+            "ongoing": false
         },
         "Into View: Bernice Bing-Asian Art Museum": {
             "name": "Into View: Bernice Bing",
@@ -7159,7 +7567,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d932e939d6d45907d8ff5c0e34ecd0ea"
+            "hash": "d932e939d6d45907d8ff5c0e34ecd0ea",
+            "ongoing": false
         },
         "Bearing Witness: Selected Works by Chiura Obata-Asian Art Museum": {
             "name": "Bearing Witness: Selected Works by Chiura Obata",
@@ -7185,7 +7594,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9da2ac084bd8437dfa1189c62cfb5526"
+            "hash": "9da2ac084bd8437dfa1189c62cfb5526",
+            "ongoing": false
         },
         "Beyond Bollywood: 2000 Years of Dance in Art-Asian Art Museum": {
             "name": "Beyond Bollywood: 2000 Years of Dance in Art",
@@ -7211,7 +7621,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f4f1f456a8a8e49f778be1ed9f88cfb4"
+            "hash": "f4f1f456a8a8e49f778be1ed9f88cfb4",
+            "ongoing": false
         },
         "Color Trip: Yoshida Hodaka\u2019s Modern Prints-Asian Art Museum": {
             "name": "Color Trip: Yoshida Hodaka\u2019s Modern Prints",
@@ -7237,7 +7648,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "2ad0e25d43f00f2346a382065de6e419"
+            "hash": "2ad0e25d43f00f2346a382065de6e419",
+            "ongoing": false
         },
         "Past Continuous Tense-Asian Art Museum": {
             "name": "Past Continuous Tense",
@@ -7263,7 +7675,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4311cde07b21141f99a23d0fa5d7b72f"
+            "hash": "4311cde07b21141f99a23d0fa5d7b72f",
+            "ongoing": false
         },
         "Kongkee: Warring States Cyberpunk-Asian Art Museum": {
             "name": "Kongkee: Warring States Cyberpunk",
@@ -7289,7 +7702,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ffe5c46fb4e1acd78a20a3a543e46f47"
+            "hash": "ffe5c46fb4e1acd78a20a3a543e46f47",
+            "ongoing": false
         },
         "Delightful Luxury: The Art of Chinese Lacquer-Asian Art Museum": {
             "name": "Delightful Luxury: The Art of Chinese Lacquer",
@@ -7315,7 +7729,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ea4f061e403fe7b55056e2ce20316771"
+            "hash": "ea4f061e403fe7b55056e2ce20316771",
+            "ongoing": false
         },
         "The Heart of Zen-Asian Art Museum": {
             "name": "The Heart of Zen",
@@ -7341,7 +7756,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "170f00c938f514270a12aaf2184ba71d"
+            "hash": "170f00c938f514270a12aaf2184ba71d",
+            "ongoing": false
         },
         "Bernice Bing: Open Call-Asian Art Museum": {
             "name": "Bernice Bing: Open Call",
@@ -7367,7 +7783,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4376a773555c0c47e6c6cfd39fe7e1db"
+            "hash": "4376a773555c0c47e6c6cfd39fe7e1db",
+            "ongoing": false
         },
         "Hell: Arts of Asian Underworlds-Asian Art Museum": {
             "name": "Hell: Arts of Asian Underworlds",
@@ -7393,7 +7810,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8123eb3d6315223270dc7df29964aecd"
+            "hash": "8123eb3d6315223270dc7df29964aecd",
+            "ongoing": false
         },
         "Chinese Ink Paintings: A Selection of Modern Masters-Asian Art Museum": {
             "name": "Chinese Ink Paintings: A Selection of Modern Masters",
@@ -7419,7 +7837,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f5b68c4e784dabbae7ea584b4f0cfb2b"
+            "hash": "f5b68c4e784dabbae7ea584b4f0cfb2b",
+            "ongoing": false
         },
         "teamLab: Sketch Ocean-Asian Art Museum": {
             "name": "teamLab: Sketch Ocean",
@@ -7445,7 +7864,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "27efdefceb673e37046d19f6f50ea94a"
+            "hash": "27efdefceb673e37046d19f6f50ea94a",
+            "ongoing": false
         },
         "teamLab: Continuity-Asian Art Museum": {
             "name": "teamLab: Continuity",
@@ -7471,7 +7891,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "245291bcb20a79496bab5a7af9d9e72f"
+            "hash": "245291bcb20a79496bab5a7af9d9e72f",
+            "ongoing": false
         },
         "After Hope: Videos of Resistance-Asian Art Museum": {
             "name": "After Hope: Videos of Resistance",
@@ -7497,7 +7918,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6f10b87ff040ee12c68218916a7f8647"
+            "hash": "6f10b87ff040ee12c68218916a7f8647",
+            "ongoing": false
         },
         "Memento: Jayashree Chakravarty and Lam Tung Pang-Asian Art Museum": {
             "name": "Memento: Jayashree Chakravarty and Lam Tung Pang",
@@ -7523,7 +7945,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0fb6a8b19d29b4653e1d5388f89b2885"
+            "hash": "0fb6a8b19d29b4653e1d5388f89b2885",
+            "ongoing": false
         },
         "Chanel Miller: I was, I am, I will be-Asian Art Museum": {
             "name": "Chanel Miller: I was, I am, I will be",
@@ -7549,7 +7972,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "932e7ab39fcd1e9a0812d31b47f54ff5"
+            "hash": "932e7ab39fcd1e9a0812d31b47f54ff5",
+            "ongoing": false
         },
         "Carlos Villa: Worlds in Collision-Asian Art Museum": {
             "name": "Carlos Villa: Worlds in Collision",
@@ -7575,7 +7999,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e2d765a9d2832dc9a979fbae498bbc6e"
+            "hash": "e2d765a9d2832dc9a979fbae498bbc6e",
+            "ongoing": false
         },
         "Seeing Gender-Asian Art Museum": {
             "name": "Seeing Gender",
@@ -7601,7 +8026,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8af424839fe8efc237a62c3d4ada0879"
+            "hash": "8af424839fe8efc237a62c3d4ada0879",
+            "ongoing": false
         },
         "Weaving Stories-Asian Art Museum": {
             "name": "Weaving Stories",
@@ -7627,7 +8053,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "51bc975fa8813eeda2889afcceb81197"
+            "hash": "51bc975fa8813eeda2889afcceb81197",
+            "ongoing": false
         },
         "When Rabbit Left the Moon-Asian Art Museum": {
             "name": "When Rabbit Left the Moon",
@@ -7653,7 +8080,64 @@
                     "description": "Image"
                 }
             ],
-            "hash": "eb93643a5aa754a01b2dbeb1aeb31ce6"
+            "hash": "eb93643a5aa754a01b2dbeb1aeb31ce6",
+            "ongoing": false
+        },
+        "Coming Soon: Hallyu! The Korean Wave-Asian Art Museum": {
+            "name": "Coming Soon: Hallyu! The Korean Wave",
+            "venue": "Asian Art Museum",
+            "description": "Discover why the world can\u2019t get enough K-pop, Korean dramas, and kimbap . Tickets now on sale",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": [
+                "current"
+            ],
+            "dates": {
+                "start": "null",
+                "end": "2024-09-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/hallyu-the-korean-wave/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/07/Hallyu-exh2_1600x900-1600x900.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "ced9e0cc1f146f8c8038140c3044ab97"
+        },
+        "Community Feast-Asian Art Museum": {
+            "name": "Community Feast",
+            "venue": "Asian Art Museum",
+            "description": "A local artist honors the Asian American experience while celebrating the ways that food unites us all.",
+            "tags": [
+                "exhibition",
+                "museum",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "null",
+                "end": "2024-08-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/community-feast/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/08/chelsea-wong_commfeast_det2_1600x900-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "f97f2736fd35d9477533858bfdb68761"
         }
     },
     "Oakland Museum of California": {
@@ -7758,11 +8242,11 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://museumca.org/wp-content/uploads/2024/02/2021_OMCA_History-Gallery_Black-Power_Visitors_Photo-credit-Christine-Cueto__DSF4861-1-2-1024x417.jpg",
+                    "link": "https://museumca.org/wp-content/uploads/2024/02/2021_OMCA_History-Gallery_Black-Power_Visitors_Photo-credit-Christine-Cueto__DSF4861-1-2-e1724267562417-1024x356.jpg",
                     "description": "Image"
                 }
             ],
-            "hash": "ca27909c8b4516686d62dd4e149e8806"
+            "hash": "9eb24fab74bad899d6a267beba76adef"
         },
         "OMCA Kids: Nature Playspace-Oakland Museum of California": {
             "name": "OMCA Kids: Nature Playspace",
@@ -8008,6 +8492,33 @@
                 }
             ],
             "hash": "e95e980744ff502f8c65166a3d99947d"
+        },
+        "Where the Tree Grows-Kala Art Institute": {
+            "name": "Where the Tree Grows",
+            "venue": "Kala Art Institute",
+            "description": "September 5th 6-8pm Gallery Talk & Exhibition Walkthrough at Kala Gallery \r September 14th at 2:00pm ONLINE Artist Talk  \r Chia Amisola, Alison Chen, Philip Crawford, Amy Elkins, John Yoyogi Fortes, Charles Lee, Shantr\u00e9 Pinkney, Helia Pouyanfar, Georgina Reskala and rhiannon skye tafoya",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-07-19 00:00:00",
+                "end": "2024-09-20 00:00:00"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.kala.org/exhibition/where-the-tree-grows/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.kala.org/creativeplace/wp-content/uploads/2024/07/Elkins_kala_cropped-1-1024x461.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "d4450c3b8b739ad6e305e1aec4be7f24"
         }
     },
     "Oakland Asian Cultural Center": {
@@ -8037,7 +8548,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "401c082c0d48305526e78d9df5599072"
+            "hash": "401c082c0d48305526e78d9df5599072",
+            "ongoing": false
         },
         "Longing for Attachment-Oakland Asian Cultural Center": {
             "name": "Longing for Attachment",
@@ -8065,7 +8577,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d9022bec0ee67c39410867dd63921833"
+            "hash": "d9022bec0ee67c39410867dd63921833",
+            "ongoing": false
         }
     }
 }

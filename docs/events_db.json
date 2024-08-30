@@ -32,9 +32,10 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "future",
+            "phase": "past",
             "dates": {
                 "start": "2024-06-04",
                 "end": "2024-06-09"
@@ -57,10 +58,10 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-07-07"
@@ -83,10 +84,10 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-07-21"
@@ -109,10 +110,10 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-08-11"
@@ -437,17 +438,18 @@
                     "description": "Event Page"
                 }
             ],
-            "hash": "9355f87c3cce5a275f11b075bb1df903"
+            "hash": "9355f87c3cce5a275f11b075bb1df903",
+            "ongoing": false
         },
         "Japanese Prints in Transition: From the Floating World to the Modern World-Legion of Honor": {
             "name": "Japanese Prints in Transition: From the Floating World to the Modern World",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-08-18"
@@ -814,15 +816,15 @@
         "What Matters: A Proposition in Eight Rooms-SFMOMA": {
             "name": "What Matters: A Proposition in Eight Rooms",
             "venue": "SFMOMA",
-            "description": "Contemporary collection works that contemplate how to live with intention.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-07-22",
                 "end": "2024-08-02"
             },
             "ongoing": false,
@@ -836,7 +838,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3d448d9595e2dd297041a07fec6a902f"
+            "hash": "307ab17de5437441b0b6d1cb556421c2"
         },
         "Ragnar Kjartansson: The Visitors-SFMOMA": {
             "name": "Ragnar Kjartansson: The Visitors",
@@ -1735,7 +1737,6 @@
             "description": "",
             "tags": [
                 "exhibition",
-                "past",
                 "museum"
             ],
             "phase": "past",
@@ -1948,7 +1949,7 @@
         "Unity through Skateboarding-SFMOMA": {
             "name": "Unity through Skateboarding",
             "venue": "SFMOMA",
-            "description": "",
+            "description": "Celebrate the dreams and realities of queer, trans, BIPOC, and women skaters as well as the diverse communities that have shaped the sport.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1956,7 +1957,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2024-08-17",
+                "start": "null",
                 "end": "2025-04-27"
             },
             "ongoing": false,
@@ -1970,7 +1971,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "413ede9797ba19cc406940f7b5b7671f"
+            "hash": "dabce58b0ea17e3c55e5c0d7f78e8acb"
         },
         "Count Me In-SFMOMA": {
             "name": "Count Me In",
@@ -2133,7 +2134,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "7d93f0200288cf05d8fbeccd021c59e8"
+            "hash": "7d93f0200288cf05d8fbeccd021c59e8",
+            "ongoing": false
         }
     },
     "Contemporary Jewish Museum": {
@@ -7133,7 +7135,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c35f91ebc7d08b6045f159301fcdef8f"
+            "hash": "c35f91ebc7d08b6045f159301fcdef8f",
+            "ongoing": false
         },
         "Into View: New Voices, New Stories-Asian Art Museum": {
             "name": "Into View: New Voices, New Stories",
@@ -7159,7 +7162,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "42af8c53b183664dee197227c2de4954"
+            "hash": "42af8c53b183664dee197227c2de4954",
+            "ongoing": false
         },
         "Takashi Murakami-Asian Art Museum": {
             "name": "Takashi Murakami",
@@ -7185,7 +7189,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1734249fc5a734233dce36a529d70a88"
+            "hash": "1734249fc5a734233dce36a529d70a88",
+            "ongoing": false
         },
         "Japanese Tastes in Chinese Ceramics-Asian Art Museum": {
             "name": "Japanese Tastes in Chinese Ceramics",
@@ -7211,7 +7216,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "588dccd72ff59b0be11ca193348e1580"
+            "hash": "588dccd72ff59b0be11ca193348e1580",
+            "ongoing": false
         },
         "Japanese Ink Paintings-Asian Art Museum": {
             "name": "Japanese Ink Paintings",
@@ -7237,7 +7243,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8b36880a6508859b669120a8259a3ef6"
+            "hash": "8b36880a6508859b669120a8259a3ef6",
+            "ongoing": false
         },
         "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts-Asian Art Museum": {
             "name": "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts",
@@ -7263,7 +7270,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "1bd386a04ca901df2dda9bd53cdeab6b"
+            "hash": "1bd386a04ca901df2dda9bd53cdeab6b",
+            "ongoing": false
         },
         "RAD (Research And Development)-Asian Art Museum": {
             "name": "RAD (Research And Development)",
@@ -7370,7 +7378,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4faa00b848d574d5fcfa19a03aec9d16"
+            "hash": "4faa00b848d574d5fcfa19a03aec9d16",
+            "ongoing": false
         },
         "Taihu Rock\u2014East Wind II-Asian Art Museum": {
             "name": "Taihu Rock\u2014East Wind II",
@@ -7423,7 +7432,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "de468f60426ec2c1db0be8f1ad35764f"
+            "hash": "de468f60426ec2c1db0be8f1ad35764f",
+            "ongoing": false
         },
         "Murakami: Monsterized-Asian Art Museum": {
             "name": "Murakami: Monsterized",
@@ -7449,7 +7459,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4744b8f75082faaa353c6a4ea9f8b9c1"
+            "hash": "4744b8f75082faaa353c6a4ea9f8b9c1",
+            "ongoing": false
         },
         "Jenifer K Wofford: Pattern Recognition-Asian Art Museum": {
             "name": "Jenifer K Wofford: Pattern Recognition",
@@ -7475,7 +7486,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "c952e57d50c913ca5392bfdadb786aea"
+            "hash": "c952e57d50c913ca5392bfdadb786aea",
+            "ongoing": false
         },
         "Afruz Amighi: My House, My Tomb-Asian Art Museum": {
             "name": "Afruz Amighi: My House, My Tomb",
@@ -7501,7 +7513,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "47aec6a7575cff487c7bbaa1f3b50f4f"
+            "hash": "47aec6a7575cff487c7bbaa1f3b50f4f",
+            "ongoing": false
         },
         "Zheng Chongbin: I Look for the Sky-Asian Art Museum": {
             "name": "Zheng Chongbin: I Look for the Sky",
@@ -7527,7 +7540,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f6ddac08d4ca02c63bc2a42bfe8ca1b7"
+            "hash": "f6ddac08d4ca02c63bc2a42bfe8ca1b7",
+            "ongoing": false
         },
         "Into View: Bernice Bing-Asian Art Museum": {
             "name": "Into View: Bernice Bing",
@@ -7553,7 +7567,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d932e939d6d45907d8ff5c0e34ecd0ea"
+            "hash": "d932e939d6d45907d8ff5c0e34ecd0ea",
+            "ongoing": false
         },
         "Bearing Witness: Selected Works by Chiura Obata-Asian Art Museum": {
             "name": "Bearing Witness: Selected Works by Chiura Obata",
@@ -7579,7 +7594,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "9da2ac084bd8437dfa1189c62cfb5526"
+            "hash": "9da2ac084bd8437dfa1189c62cfb5526",
+            "ongoing": false
         },
         "Beyond Bollywood: 2000 Years of Dance in Art-Asian Art Museum": {
             "name": "Beyond Bollywood: 2000 Years of Dance in Art",
@@ -7605,7 +7621,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f4f1f456a8a8e49f778be1ed9f88cfb4"
+            "hash": "f4f1f456a8a8e49f778be1ed9f88cfb4",
+            "ongoing": false
         },
         "Color Trip: Yoshida Hodaka\u2019s Modern Prints-Asian Art Museum": {
             "name": "Color Trip: Yoshida Hodaka\u2019s Modern Prints",
@@ -7631,7 +7648,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "2ad0e25d43f00f2346a382065de6e419"
+            "hash": "2ad0e25d43f00f2346a382065de6e419",
+            "ongoing": false
         },
         "Past Continuous Tense-Asian Art Museum": {
             "name": "Past Continuous Tense",
@@ -7657,7 +7675,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4311cde07b21141f99a23d0fa5d7b72f"
+            "hash": "4311cde07b21141f99a23d0fa5d7b72f",
+            "ongoing": false
         },
         "Kongkee: Warring States Cyberpunk-Asian Art Museum": {
             "name": "Kongkee: Warring States Cyberpunk",
@@ -7683,7 +7702,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ffe5c46fb4e1acd78a20a3a543e46f47"
+            "hash": "ffe5c46fb4e1acd78a20a3a543e46f47",
+            "ongoing": false
         },
         "Delightful Luxury: The Art of Chinese Lacquer-Asian Art Museum": {
             "name": "Delightful Luxury: The Art of Chinese Lacquer",
@@ -7709,7 +7729,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "ea4f061e403fe7b55056e2ce20316771"
+            "hash": "ea4f061e403fe7b55056e2ce20316771",
+            "ongoing": false
         },
         "The Heart of Zen-Asian Art Museum": {
             "name": "The Heart of Zen",
@@ -7735,7 +7756,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "170f00c938f514270a12aaf2184ba71d"
+            "hash": "170f00c938f514270a12aaf2184ba71d",
+            "ongoing": false
         },
         "Bernice Bing: Open Call-Asian Art Museum": {
             "name": "Bernice Bing: Open Call",
@@ -7761,7 +7783,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4376a773555c0c47e6c6cfd39fe7e1db"
+            "hash": "4376a773555c0c47e6c6cfd39fe7e1db",
+            "ongoing": false
         },
         "Hell: Arts of Asian Underworlds-Asian Art Museum": {
             "name": "Hell: Arts of Asian Underworlds",
@@ -7787,7 +7810,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8123eb3d6315223270dc7df29964aecd"
+            "hash": "8123eb3d6315223270dc7df29964aecd",
+            "ongoing": false
         },
         "Chinese Ink Paintings: A Selection of Modern Masters-Asian Art Museum": {
             "name": "Chinese Ink Paintings: A Selection of Modern Masters",
@@ -7813,7 +7837,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "f5b68c4e784dabbae7ea584b4f0cfb2b"
+            "hash": "f5b68c4e784dabbae7ea584b4f0cfb2b",
+            "ongoing": false
         },
         "teamLab: Sketch Ocean-Asian Art Museum": {
             "name": "teamLab: Sketch Ocean",
@@ -7839,7 +7864,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "27efdefceb673e37046d19f6f50ea94a"
+            "hash": "27efdefceb673e37046d19f6f50ea94a",
+            "ongoing": false
         },
         "teamLab: Continuity-Asian Art Museum": {
             "name": "teamLab: Continuity",
@@ -7865,7 +7891,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "245291bcb20a79496bab5a7af9d9e72f"
+            "hash": "245291bcb20a79496bab5a7af9d9e72f",
+            "ongoing": false
         },
         "After Hope: Videos of Resistance-Asian Art Museum": {
             "name": "After Hope: Videos of Resistance",
@@ -7891,7 +7918,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "6f10b87ff040ee12c68218916a7f8647"
+            "hash": "6f10b87ff040ee12c68218916a7f8647",
+            "ongoing": false
         },
         "Memento: Jayashree Chakravarty and Lam Tung Pang-Asian Art Museum": {
             "name": "Memento: Jayashree Chakravarty and Lam Tung Pang",
@@ -7917,7 +7945,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "0fb6a8b19d29b4653e1d5388f89b2885"
+            "hash": "0fb6a8b19d29b4653e1d5388f89b2885",
+            "ongoing": false
         },
         "Chanel Miller: I was, I am, I will be-Asian Art Museum": {
             "name": "Chanel Miller: I was, I am, I will be",
@@ -7943,7 +7972,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "932e7ab39fcd1e9a0812d31b47f54ff5"
+            "hash": "932e7ab39fcd1e9a0812d31b47f54ff5",
+            "ongoing": false
         },
         "Carlos Villa: Worlds in Collision-Asian Art Museum": {
             "name": "Carlos Villa: Worlds in Collision",
@@ -7969,7 +7999,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "e2d765a9d2832dc9a979fbae498bbc6e"
+            "hash": "e2d765a9d2832dc9a979fbae498bbc6e",
+            "ongoing": false
         },
         "Seeing Gender-Asian Art Museum": {
             "name": "Seeing Gender",
@@ -7995,7 +8026,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "8af424839fe8efc237a62c3d4ada0879"
+            "hash": "8af424839fe8efc237a62c3d4ada0879",
+            "ongoing": false
         },
         "Weaving Stories-Asian Art Museum": {
             "name": "Weaving Stories",
@@ -8021,7 +8053,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "51bc975fa8813eeda2889afcceb81197"
+            "hash": "51bc975fa8813eeda2889afcceb81197",
+            "ongoing": false
         },
         "When Rabbit Left the Moon-Asian Art Museum": {
             "name": "When Rabbit Left the Moon",
@@ -8047,7 +8080,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "eb93643a5aa754a01b2dbeb1aeb31ce6"
+            "hash": "eb93643a5aa754a01b2dbeb1aeb31ce6",
+            "ongoing": false
         },
         "Coming Soon: Hallyu! The Korean Wave-Asian Art Museum": {
             "name": "Coming Soon: Hallyu! The Korean Wave",
@@ -8084,10 +8118,10 @@
             "description": "A local artist honors the Asian American experience while celebrating the ways that food unites us all.",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "null",
                 "end": "2024-08-23"
@@ -8438,15 +8472,15 @@
             "description": "Demetri Broxton, Kota Ezawa, Cathy Lu, Adia Millett, Emmanuel Montoya, Gregory Rick, Rupy C. Tut, Minoosh Zomorodinia Curated by Mayumi Hamanaka  Closing Reception & Artist Talk: Saturday, June 29, 2-4pm Read a review Kala\u2019s Half-Century Under the Sky on East Bay Express written by Janis Hashe.",
             "tags": [
                 "exhibition",
-                "current",
-                "gallery"
+                "gallery",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "2024-05-18 00:00:00",
-                "end": "2024-07-05 00:00:00"
+                "start": "2024-05-18",
+                "end": "2024-07-05"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.kala.org/exhibition/under-the-sky/",
@@ -8470,8 +8504,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2024-07-19 00:00:00",
-                "end": "2024-09-20 00:00:00"
+                "start": "2024-07-19",
+                "end": "2024-09-20"
             },
             "ongoing": true,
             "links": [
@@ -8514,7 +8548,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "401c082c0d48305526e78d9df5599072"
+            "hash": "401c082c0d48305526e78d9df5599072",
+            "ongoing": false
         },
         "Longing for Attachment-Oakland Asian Cultural Center": {
             "name": "Longing for Attachment",
@@ -8542,7 +8577,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d9022bec0ee67c39410867dd63921833"
+            "hash": "d9022bec0ee67c39410867dd63921833",
+            "ongoing": false
         }
     }
 }
