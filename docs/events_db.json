@@ -5,12 +5,12 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2022-12-17",
                 "end": "2024-05-05"
             },
             "ongoing": false,
