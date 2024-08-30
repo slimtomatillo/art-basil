@@ -8045,12 +8045,12 @@
             "description": "\nARTogether and Oakland Asian Cultural Center co-present \u201cLonging for Attachment,\u201d an exhibition curated by Bushra Gill featuring 30+ Bay Area 1st/2nd generation immigrant and refugee artists reflecting on the notion of attachments. \n\nAs immigrants, refugees, and their descendants, we make choices on what to hold onto and what to let go of when moving to another country or culture. Being too attached to a place or way of being can make it hard to form connections to anything new. But our connection to a place is also related to our quality of life and well-being\u2013 it links us to neighborhoods and communities where we have lived.  Anyone who has migrated from another country or grown up in an immigrant family knows these attachments run deep and true, not needing to be present to have a prominent place in our hearts.   \n\nWe invite you to join us in reflection of our relationships to attachment, and to celebrate these Bay Area refugee, immigrant, and children of immigrant artists.\n",
             "tags": [
                 "exhibition",
-                "future",
+                "past",
                 "free",
                 "immigrant",
                 "refugee"
             ],
-            "phase": "future",
+            "phase": "past",
             "dates": {
                 "start": "2024-06-14",
                 "end": "2024-07-27"
@@ -8065,7 +8065,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "4e0ca7a50cf234f3bbc6defc1a713450"
+            "hash": "d9022bec0ee67c39410867dd63921833"
         }
     }
 }
