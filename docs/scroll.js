@@ -63,16 +63,21 @@ function sortEvents(events) {
             // Handle 'null' or missing end dates
             event.sortDate = event.dates.end && event.dates.end !== 'null' ? event.dates.end : '9999-12-31';
             // Assign a default high sort priority (will sort last)
-            event.sortPriority = 4; 
+            event.sortPriority = 5; 
             event.venue = venue;
 
             // Determine sortPriority based on specific tags ('current', 'future', 'past')
             if (event.tags.includes('current')) {
-                event.sortPriority = 1;
+                // Check if the event is ongoing
+                if (event.ongoing === false) {
+                    event.sortPriority = 1;  // Non-ongoing current events
+                } else {
+                    event.sortPriority = 2;  // Ongoing current events
+                }
             } else if (event.tags.includes('future')) {
-                event.sortPriority = 2;
-            } else if (event.tags.includes('past')) {
                 event.sortPriority = 3;
+            } else if (event.tags.includes('past')) {
+                event.sortPriority = 4;
             }
             
             eventsArray.push(event);
@@ -147,7 +152,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 today.setHours(0, 0, 0, 0); // Normalize today's date for comparison
             
                 const isPastEvent = event.tags.includes('past');
-                const isOngoingEvent = (startDate === null || startDate <= today) && (endDate === null || endDate >= today);
+                const isCurrentEvent = event.tags.includes('current');
             
                 if (event.ongoing === true) {
                     // If the event is marked as ongoing
@@ -155,8 +160,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 } else if (isPastEvent && endDate) {
                     // For past events with a known end date
                     dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
-                } else if (isOngoingEvent) {
-                    // For ongoing events
+                } else if (isCurrentEvent) {
+                    // For current events
                     if (startDate && endDate) {
                         // If both start and end dates are known
                         dateText = `${new Intl.DateTimeFormat('en-US', options).format(startDate)} to ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
