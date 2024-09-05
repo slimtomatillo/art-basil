@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from hashlib import md5
 import datetime as dt
+from datetime import timezone
 import numpy as np
 from unicodedata import normalize
 import pandas as pd
@@ -228,6 +229,7 @@ def scrape_de_young_and_legion_of_honor(env='prod'):
                                     'description': 'Event Page'
                                 },
                             ],
+                            'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
                         }
                         # Add image link if it exists
                         if image_link:
@@ -397,7 +399,7 @@ def scrape_sfmoma(env='prod'):
                             'description': 'Image'
                         },
                     ],
-
+                    'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
                 }
 
                 if env == 'prod':
@@ -498,7 +500,8 @@ def scrape_contemporary_jewish_museum(env='prod'):
                             'link': event_link,
                             'description': 'Event Page'
                         },
-                    ]
+                    ],
+                    'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
                 }
                 # Add image link if it exists
                 if image_link:
@@ -652,7 +655,8 @@ def scrape_sfwomenartists(env='prod', verbose=False):
                         'link': event_link,
                         'description': 'Event Page'
                     },
-                ]
+                ],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }
             # Add image link if it exists
             if image_link:
@@ -742,7 +746,8 @@ def scrape_asian_art_museum_current_events(env='prod'):
                     'link': event_link,
                     'description': 'Event Page'
                 },
-            ]
+            ],
+            'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
         }
         # Add image link if it exists
         if image_link:
@@ -806,7 +811,8 @@ def scrape_asian_art_museum_current_events(env='prod'):
                         'link': event_link,
                         'description': 'Event Page'
                     },
-                ]
+                ],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }
             # Add image link if it exists
             if image_link:
@@ -896,7 +902,8 @@ def scrape_asian_art_museum_past_events(env='prod'):
                             'link': event_link,
                             'description': 'Event Page'
                         },
-                    ]
+                    ],
+                    'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
                 }
                 # Add image link if it exists
                 if image_link:
@@ -1042,6 +1049,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
                 'dates': {'start': start_date, 'end': end_date},
                 'ongoing': ongoing,
                 'links': [{'link': event_link, 'description': 'Event Page'}],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }
 
             # Add image link if it exists
@@ -1123,6 +1131,7 @@ def scrape_kala_exhibitions(env='prod'):
                 'dates': {'start': start_date, 'end': end_date},
                 'ongoing': False, # Kala does not have any ongoing exhibitions
                 'links': [{'link': event_link, 'description': 'Event Page'}],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }
 
             if image_link:
@@ -1221,6 +1230,7 @@ def scrape_cantor_exhibitions(env='prod'):
             'dates': {'start': start_date, 'end': end_date},
             'ongoing': ongoing,
             'links': [{'link': event_link, 'description': 'Event Page'}],
+            'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
         }
 
         if image_link:
