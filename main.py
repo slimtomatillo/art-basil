@@ -714,13 +714,21 @@ def scrape_asian_art_museum_current_events(env='prod'):
             image_link = None
 
         # Extract date info
-        event_date = featured_event.find(class_='hero-card__aside').find('span').text.lower()
+        date_element = featured_event.find(class_='hero-card__aside')
+        event_date = date_element.find('span').text.lower().strip()
         ongoing = True if event_date == 'ongoing' else False
-        start_date = 'null'
-        if event_date:
-            end_date = convert_date_to_dt(event_date)
-        else:
-            end_date = 'null'
+        phase = 'current'
+        if 'open' in date_element.text.lower(): # This implies the date corresponds to the opening date
+            start_date = convert_date_to_dt(event_date)
+            end_date = 'null' # Ideally scrape the exhibition page to get the end date
+            if start_date > dt.datetime.now().date():
+                phase = 'future'
+        else: # This implies the date correspond to the closing date
+            start_date = 'null'
+            if event_date:
+                end_date = convert_date_to_dt(event_date)
+            else:
+                end_date = 'null'
 
         # Extract description
         description_tag = featured_event.find('div', class_='hero-card__desc')
@@ -737,8 +745,8 @@ def scrape_asian_art_museum_current_events(env='prod'):
             'name': event_title,
             'venue': 'Asian Art Museum',
             'description': event_description,
-            'tags': ['exhibition'] + ['current'] + ['museum'],
-            'phase': ['current'],
+            'tags': ['exhibition'] + [phase] + ['museum'],
+            'phase': phase,
             'dates': {'start': start_date, 'end': end_date},
             'ongoing': ongoing,
             'links': [
@@ -821,7 +829,8 @@ def scrape_asian_art_museum_current_events(env='prod'):
                     'description': 'Image'
                 })
 
-            process_event(event_details)
+            if env == 'prod':
+                process_event(event_details)
 
 def scrape_asian_art_museum_past_events(env='prod'):
     """Scrape and process past events from Asian Art Museum."""
@@ -1283,16 +1292,15 @@ def update_event_phases():
     # Save the updated database
     save_db(db)
 
-
-def main(env='prod'):
+def main(env='prod', selected_venues=None, write_summary=True):
     """
     Function that:
         1. Saves a copy of existing data if env='prod'
-        2. Scrapes data from various museums
+        2. Scrapes data from selected (list expected) or all venues
         3. Saves data as json if env='prod'
-        4. Records the size of the db (num venues and events) if env='prod'
+        4. Records the size of the db (num venues and events) if env='prod' and write_summary=True
     """
-    
+
     # Configure logging based on the environment parameter
     configure_logging(env)
     logging.info("----------NEW LOG----------")
@@ -1321,6 +1329,10 @@ def main(env='prod'):
         "Cantor Arts Center": scrape_cantor_exhibitions,
     }
 
+    # Filter the venues based on selected_venues (if provided)
+    if selected_venues:
+        venues = {k: v for k, v in venues.items() if k in selected_venues}
+
     for venue, scraper in venues.items():
         # Log the start of scraping for each venue
         logging.info(f"Starting scrape for {venue}")
@@ -1336,7 +1348,8 @@ def main(env='prod'):
         # Log the completion of scraping for each venue
         logging.info(f"Finished scrape for {venue}")
 
-    if env == 'prod':
+    if env == 'prod' and write_summary:
+        # This block runs only when write_summary is True
         # Correct instances of misalignment between phase and end date
         updated_db = update_event_phases()
         
@@ -1373,4 +1386,4 @@ def main(env='prod'):
     logging.info("Finished")
 
 if __name__ == "__main__":
-    main()
+    main(env='prod', selected_venues=['Asian Art Museum'], write_summary=False)
