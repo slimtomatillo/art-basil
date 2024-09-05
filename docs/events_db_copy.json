@@ -816,15 +816,15 @@
         "What Matters: A Proposition in Eight Rooms-SFMOMA": {
             "name": "What Matters: A Proposition in Eight Rooms",
             "venue": "SFMOMA",
-            "description": "Contemporary collection works that contemplate how to live with intention.",
+            "description": "",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": "null",
+                "start": "2023-07-22",
                 "end": "2024-08-02"
             },
             "ongoing": false,
@@ -838,7 +838,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "3d448d9595e2dd297041a07fec6a902f"
+            "hash": "ab4b11bb9fb3242c5f14bd9c5f2196e3"
         },
         "Ragnar Kjartansson: The Visitors-SFMOMA": {
             "name": "Ragnar Kjartansson: The Visitors",
@@ -1949,7 +1949,7 @@
         "Unity through Skateboarding-SFMOMA": {
             "name": "Unity through Skateboarding",
             "venue": "SFMOMA",
-            "description": "",
+            "description": "Celebrate the dreams and realities of queer, trans, BIPOC, and women skaters as well as the diverse communities that have shaped the sport.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1957,7 +1957,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2024-08-17",
+                "start": "null",
                 "end": "2025-04-27"
             },
             "ongoing": false,
@@ -1971,7 +1971,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "413ede9797ba19cc406940f7b5b7671f"
+            "hash": "dabce58b0ea17e3c55e5c0d7f78e8acb"
         },
         "Count Me In-SFMOMA": {
             "name": "Count Me In",
@@ -8472,15 +8472,15 @@
             "description": "Demetri Broxton, Kota Ezawa, Cathy Lu, Adia Millett, Emmanuel Montoya, Gregory Rick, Rupy C. Tut, Minoosh Zomorodinia Curated by Mayumi Hamanaka  Closing Reception & Artist Talk: Saturday, June 29, 2-4pm Read a review Kala\u2019s Half-Century Under the Sky on East Bay Express written by Janis Hashe.",
             "tags": [
                 "exhibition",
-                "current",
-                "gallery"
+                "gallery",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "2024-05-18 00:00:00",
-                "end": "2024-07-05 00:00:00"
+                "start": "2024-05-18",
+                "end": "2024-07-05"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.kala.org/exhibition/under-the-sky/",
@@ -8504,8 +8504,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2024-07-19 00:00:00",
-                "end": "2024-09-20 00:00:00"
+                "start": "2024-07-19",
+                "end": "2024-09-20"
             },
             "ongoing": true,
             "links": [

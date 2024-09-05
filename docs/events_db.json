@@ -819,8 +819,8 @@
             "description": "",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -838,7 +838,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "307ab17de5437441b0b6d1cb556421c2"
+            "hash": "ab4b11bb9fb3242c5f14bd9c5f2196e3"
         },
         "Ragnar Kjartansson: The Visitors-SFMOMA": {
             "name": "Ragnar Kjartansson: The Visitors",
@@ -8138,6 +8138,33 @@
                 }
             ],
             "hash": "f97f2736fd35d9477533858bfdb68761"
+        },
+        "Ashwini Bhat: What Will It Take / For Us To Awake?-Asian Art Museum": {
+            "name": "Ashwini Bhat: What Will It Take / For Us To Awake?",
+            "venue": "Asian Art Museum",
+            "description": "\u201cJust as the act of ringing the bell in a temple is believed to induce mindfulness, this calla lily bell metaphorically suggests a wake-up call, focusing attention on our climate and ecological emergency.\u201d \u2013Ashwini Bhat",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "null",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/ashwini-bhat/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/08/bhat_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "hash": "a2b72b8a8636e1822f76401b06fab0de"
         }
     },
     "Oakland Museum of California": {
@@ -8496,7 +8523,7 @@
         "Where the Tree Grows-Kala Art Institute": {
             "name": "Where the Tree Grows",
             "venue": "Kala Art Institute",
-            "description": "September 5th 6-8pm Gallery Talk & Exhibition Walkthrough at Kala Gallery \r September 14th at 2:00pm ONLINE Artist Talk  \r Chia Amisola, Alison Chen, Philip Crawford, Amy Elkins, John Yoyogi Fortes, Charles Lee, Shantr\u00e9 Pinkney, Helia Pouyanfar, Georgina Reskala and rhiannon skye tafoya",
+            "description": "September 5th 6-8pm Gallery Talk & Exhibition Walkthrough at Kala Gallery \r September 14th at 2:00pm ONLINE Artist Talk \r September 20th 5-8pm Closing Reception \r Chia Amisola, Alison Chen, Philip Crawford, Amy Elkins, John Yoyogi Fortes, Charles Lee, Shantr\u00e9 Pinkney, Helia Pouyanfar, Georgina Reskala and rhiannon skye tafoya",
             "tags": [
                 "exhibition",
                 "current",
@@ -8507,7 +8534,7 @@
                 "start": "2024-07-19",
                 "end": "2024-09-20"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.kala.org/exhibition/where-the-tree-grows/",
@@ -8518,7 +8545,7 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d4450c3b8b739ad6e305e1aec4be7f24"
+            "hash": "abdb326b27f3e7227d17d9aba97edf9b"
         }
     },
     "Oakland Asian Cultural Center": {
@@ -8579,6 +8606,143 @@
             ],
             "hash": "d9022bec0ee67c39410867dd63921833",
             "ongoing": false
+        }
+    },
+    "Cantor Arts Center": {
+        "Spirit House-Cantor Arts Center": {
+            "name": "Spirit House",
+            "venue": "Cantor Arts Center",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-09-04",
+                "end": "2025-01-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museum.stanford.edu/exhibitions/spirit-house",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museum.stanford.edu/sites/default/files/styles/width_constrained_md/public/images/2024-02/spirithouse.jpg?itok=N7dH9T3w",
+                    "description": "Image"
+                }
+            ],
+            "hash": "37e150a44d553d47551fdd6186a01145"
+        },
+        "Livien Yin: Thirsty-Cantor Arts Center": {
+            "name": "Livien Yin: Thirsty",
+            "venue": "Cantor Arts Center",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-08-21",
+                "end": "2025-02-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museum.stanford.edu/exhibitions/livien-yin-thirsty",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museum.stanford.edu/sites/default/files/styles/width_constrained_md/public/images/2024-04/thirsty-no-1-livien-yin.jpg?itok=fOsKp7TS",
+                    "description": "Image"
+                }
+            ],
+            "hash": "40b72640ae24872a82a07c87e8f5e3f7"
+        },
+        "TT Takemoto: Remembering in the Absence of Memory-Cantor Arts Center": {
+            "name": "TT Takemoto: Remembering in the Absence of Memory",
+            "venue": "Cantor Arts Center",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-06-19",
+                "end": "2024-12-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museum.stanford.edu/exhibitions/tt-takemoto-remembering-absence-memory",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museum.stanford.edu/sites/default/files/styles/width_constrained_md/public/images/2024-01/hero-image-lookingforjirophotobymaxwellleung3.jpg?itok=HhJh_73V",
+                    "description": "Image"
+                }
+            ],
+            "hash": "022733c08965e1c4a3080fcefec96d82"
+        },
+        "Archive Rooms-Cantor Arts Center": {
+            "name": "Archive Rooms",
+            "venue": "Cantor Arts Center",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-07-17",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://museum.stanford.edu/exhibitions/archive-rooms",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museum.stanford.edu/sites/default/files/styles/width_constrained_md/public/images/2024-04/hero.jpg?itok=kB7BtcjM",
+                    "description": "Image"
+                }
+            ],
+            "hash": "3655e532a57ccf7141c0d4099ceebd10"
+        },
+        "The Faces of Ruth Asawa-Cantor Arts Center": {
+            "name": "The Faces of Ruth Asawa",
+            "venue": "Cantor Arts Center",
+            "description": "",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2022-07-06",
+                "end": "null"
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://museum.stanford.edu/exhibitions/faces-ruth-asawa",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museum.stanford.edu/sites/default/files/styles/width_constrained_md/public/images/2021-09/ruth-asawa-face-mask-wall-1200w.jpg?itok=YBfM4hrH",
+                    "description": "Image"
+                }
+            ],
+            "hash": "7e37dcfa1e7445d2943841b823f50719"
         }
     }
 }

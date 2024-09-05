@@ -12,7 +12,6 @@ import time
 import logging
 
 DB_FILE = 'docs/events_db.json'
-EVENT_TAGS = ['exhibition', 'free']
 
 # Create month to month number dict
 month_to_num_dict = {
@@ -778,9 +777,9 @@ def scrape_asian_art_museum_current_events(env='prod'):
 
             # Extract date label
             event_date = event.find('div', class_='card__subtitle').text.strip().lower().replace('through ', '')
-            ongoing = True if event_date == 'ongoing' else False
+            ongoing = True if event_date.strip() in ['ongoing', 'now on view'] else False
             start_date = 'null'
-            if event_date == 'ongoing':
+            if event_date in ['ongoing', 'now on view']:
                 end_date = 'null'
             elif event_date:
                 end_date = convert_date_to_dt(event_date)
@@ -1122,7 +1121,7 @@ def scrape_kala_exhibitions(env='prod'):
                 'tags': ['exhibition', phase, 'gallery'],
                 'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
-                'ongoing': True,
+                'ongoing': False, # Kala does not have any ongoing exhibitions
                 'links': [{'link': event_link, 'description': 'Event Page'}],
             }
 
@@ -1134,6 +1133,101 @@ def scrape_kala_exhibitions(env='prod'):
 
         except AttributeError as e:
             logging.info(f"Error parsing element: {e}")
+
+def scrape_cantor_exhibitions(env='prod'):
+    """Scrape and process exhibitions from the Cantor Arts Center at Stanford University."""
+
+    def convert_date_to_dt(date_string):
+        """Takes a date in string form and converts it to a dt object"""
+        global month_to_num_dict
+        
+        # Handle 'ongoing'
+        if date_string == 'ongoing':
+            return 'null'
+
+        date_parts = date_string.split()
+        month_num = int(month_to_num_dict[date_parts[0]])
+        day = int(date_parts[1])
+        year = int(date_parts[2])
+        if month_num and day and year:
+            date_dt = dt.date(year, month_num, day)
+        return date_dt
+    
+    def fetch_and_parse(url):
+        """Fetch the content from the given URL and parse it with BeautifulSoup."""
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            return BeautifulSoup(response.text, 'html.parser')
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Error fetching URL: {e}")
+            return None
+
+    url = 'https://museum.stanford.edu/exhibitions'
+    soup = fetch_and_parse(url)
+    if soup is None:
+        logging.warning('Error scraping Cantor Arts Center exhibitions --> no soup found')
+        return
+
+    try:
+        exhibition_section = soup.find_all('div', class_='view--exhibitions--block-exhibitions-current')[0]
+        
+    except Exception as e:
+        logging.info(f"Error scraping Cantor Arts Center exhibitions: {e}")
+        
+    events = exhibition_section.find_all('div', class_='container')
+    
+    for event_element in events:
+        title = event_element.find('a').text.strip()
+        
+        # Dates
+        date_range = event_element.find('div', class_='exhibition__dynamic-token-fieldnode-start-date-to-end-date').text.strip()
+        # Mark 'ongoing' flag
+        ongoing = True if 'ongoing' in date_range.lower() else False
+        dates = date_range.lower().replace(',', '').split('–')
+        # Get dt versions of start and end dates
+        # If no year in the date, add the year (use year of end date)
+        if len(dates[0].split()) == 2:
+            dates[0] = dates[0] + ' ' + dates[1].split()[-1]
+        start_date = convert_date_to_dt(dates[0])
+        end_date = convert_date_to_dt(dates[1])
+
+        # Identify phase
+        if isinstance(start_date, dt.date) and isinstance(end_date, dt.date):
+            if end_date < dt.date.today():
+                phase = 'past'
+            elif start_date <= dt.date.today() <= end_date:
+                    phase = 'current'
+            else:
+                phase = 'future'
+        else:
+            if ongoing:
+                phase = 'current'
+            else:
+                phase = 'unknown'
+
+        event_link_tag = event_element.find('a')
+        event_link = 'https://museum.stanford.edu' + event_link_tag['href'] if event_link_tag else None
+        
+        image_tag = event_element.find('img', src=True)
+        image_link = 'https://museum.stanford.edu' + image_tag['src'] if image_tag else None
+        
+        event_details = {
+            'name': title,
+            'venue': 'Cantor Arts Center',
+            'description': '',
+            'tags': ['exhibition', phase, 'museum'],
+            'phase': phase,
+            'dates': {'start': start_date, 'end': end_date},
+            'ongoing': ongoing,
+            'links': [{'link': event_link, 'description': 'Event Page'}],
+        }
+
+        if image_link:
+            event_details['links'].append({'link': image_link, 'description': 'Image'})
+
+        if env == 'prod':
+            process_event(event_details)
             
 def update_event_phases():
     """
@@ -1213,7 +1307,8 @@ def main(env='prod'):
         # Asian Art Museum requires both current and past events scrapers
         "Asian Art Museum": [scrape_asian_art_museum_current_events, scrape_asian_art_museum_past_events],
         "Oakland Museum of Art (OMCA)": scrape_oak_museum_of_ca_exhibitions,
-        "Kala Art Institute": scrape_kala_exhibitions
+        "Kala Art Institute": scrape_kala_exhibitions,
+        "Cantor Arts Center": scrape_cantor_exhibitions,
     }
 
     for venue, scraper in venues.items():
