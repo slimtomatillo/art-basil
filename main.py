@@ -590,6 +590,8 @@ def scrape_sfwomenartists(env='prod', verbose=False):
                 event_dates = 'august 10 – august 31 2020'
             elif event_dates == 'september 1 – 25 2020':
                 event_dates = 'september 1 – september 25 2020'
+            elif event_dates == 'october 2024 exhibition':
+                event_dates = 'october 8 – november 1'
 
             # Extract date information
             dates = [d.strip() for d in event_dates.split('–')]
@@ -1154,6 +1156,13 @@ def scrape_kala_exhibitions(env='prod'):
 
 def scrape_cantor_exhibitions(env='prod'):
     """Scrape and process exhibitions from the Cantor Arts Center at Stanford University."""
+    
+    # Create dict to map our phases to the ones used by the venue
+    phase_dict = {
+        'current': 'current',
+        'future': 'upcoming',
+        'past': 'past',
+    }
 
     def convert_date_to_dt(date_string):
         """Takes a date in string form and converts it to a dt object"""
@@ -1170,83 +1179,74 @@ def scrape_cantor_exhibitions(env='prod'):
         if month_num and day and year:
             date_dt = dt.date(year, month_num, day)
         return date_dt
-    
-    def fetch_and_parse(url):
-        """Fetch the content from the given URL and parse it with BeautifulSoup."""
+
+    def process_exhibitions(url, phase):
+        """Process exhibitions for a given URL and phase (current, future, past)."""
+        soup = fetch_and_parse(url)
+        if soup is None:
+            logging.warning(f"Error scraping Cantor Arts Center {phase} exhibitions --> no soup found")
+            return
+        
+        # Define class based on phase
+        phase_class = f'view--exhibitions--block-exhibitions-{phase_dict[phase]}'
+        
         try:
-            response = requests.get(url)
-            response.raise_for_status()
-            return BeautifulSoup(response.text, 'html.parser')
-        except requests.exceptions.RequestException as e:
-            logging.error(f"Error fetching URL: {e}")
-            return None
+            exhibition_section = soup.find_all('div', class_=phase_class)[0]
 
-    url = 'https://museum.stanford.edu/exhibitions'
-    soup = fetch_and_parse(url)
-    if soup is None:
-        logging.warning('Error scraping Cantor Arts Center exhibitions --> no soup found')
-        return
+        except Exception as e:
+            logging.warning(f"Error scraping Cantor Arts Center {phase} exhibitions: {e}")
+            
+        events = exhibition_section.find_all('div', class_='container')
+                        
+        for event_element in events:
+            title = event_element.find('a').text.strip()
+            
+            # Dates
+            date_range = event_element.find('div', class_='exhibition__dynamic-token-fieldnode-start-date-to-end-date').text.strip()
+            # Mark 'ongoing' flag
+            ongoing = True if 'ongoing' in date_range.lower() else False
+            dates = date_range.lower().replace(',', '').split('–')
+            # Get dt versions of start and end dates
+            if len(dates[0].split()) == 2:
+                dates[0] = dates[0] + ' ' + dates[1].split()[-1]
+            start_date = convert_date_to_dt(dates[0])
+            end_date = convert_date_to_dt(dates[1])
 
-    try:
-        exhibition_section = soup.find_all('div', class_='view--exhibitions--block-exhibitions-current')[0]
-        
-    except Exception as e:
-        logging.info(f"Error scraping Cantor Arts Center exhibitions: {e}")
-        
-    events = exhibition_section.find_all('div', class_='container')
-    
-    for event_element in events:
-        title = event_element.find('a').text.strip()
-        
-        # Dates
-        date_range = event_element.find('div', class_='exhibition__dynamic-token-fieldnode-start-date-to-end-date').text.strip()
-        # Mark 'ongoing' flag
-        ongoing = True if 'ongoing' in date_range.lower() else False
-        dates = date_range.lower().replace(',', '').split('–')
-        # Get dt versions of start and end dates
-        # If no year in the date, add the year (use year of end date)
-        if len(dates[0].split()) == 2:
-            dates[0] = dates[0] + ' ' + dates[1].split()[-1]
-        start_date = convert_date_to_dt(dates[0])
-        end_date = convert_date_to_dt(dates[1])
+            event_link_tag = event_element.find('a')
+            event_link = 'https://museum.stanford.edu' + event_link_tag['href'] if event_link_tag else None
+            
+            image_tag = event_element.find('img', src=True)
+            image_link = 'https://museum.stanford.edu' + image_tag['src'] if image_tag else None
+            
+            event_details = {
+                'name': title,
+                'venue': 'Cantor Arts Center',
+                'description': '',
+                'tags': ['exhibition', phase, 'museum'],
+                'phase': phase,
+                'dates': {'start': start_date, 'end': end_date},
+                'ongoing': ongoing,
+                'links': [{'link': event_link, 'description': 'Event Page'}],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+            }
 
-        # Identify phase
-        if isinstance(start_date, dt.date) and isinstance(end_date, dt.date):
-            if end_date < dt.date.today():
-                phase = 'past'
-            elif start_date <= dt.date.today() <= end_date:
-                    phase = 'current'
-            else:
-                phase = 'future'
-        else:
-            if ongoing:
-                phase = 'current'
-            else:
-                phase = 'unknown'
+            if image_link:
+                event_details['links'].append({'link': image_link, 'description': 'Image'})
 
-        event_link_tag = event_element.find('a')
-        event_link = 'https://museum.stanford.edu' + event_link_tag['href'] if event_link_tag else None
-        
-        image_tag = event_element.find('img', src=True)
-        image_link = 'https://museum.stanford.edu' + image_tag['src'] if image_tag else None
-        
-        event_details = {
-            'name': title,
-            'venue': 'Cantor Arts Center',
-            'description': '',
-            'tags': ['exhibition', phase, 'museum'],
-            'phase': phase,
-            'dates': {'start': start_date, 'end': end_date},
-            'ongoing': ongoing,
-            'links': [{'link': event_link, 'description': 'Event Page'}],
-            'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
-        }
+            if env == 'prod':
+                process_event(event_details)
 
-        if image_link:
-            event_details['links'].append({'link': image_link, 'description': 'Image'})
+    # Scrape current exhibitions
+    current_url = 'https://museum.stanford.edu/exhibitions'
+    process_exhibitions(current_url, 'current')
 
-        if env == 'prod':
-            process_event(event_details)
+    # Scrape future exhibitions
+    upcoming_url = 'https://museum.stanford.edu/exhibitions/upcoming-exhibitions'
+    process_exhibitions(upcoming_url, 'future')
+
+    # Scrape past exhibitions
+    past_url = 'https://museum.stanford.edu/exhibitions/past-exhibitions'
+    process_exhibitions(past_url, 'past')
             
 def update_event_phases():
     """
@@ -1292,11 +1292,11 @@ def update_event_phases():
     # Save the updated database
     save_db(db)
 
-def main(env='prod', selected_venues=None, write_summary=True):
+def main(env='prod', selected_venues=None, skip_venues=None,write_summary=True):
     """
     Function that:
         1. Saves a copy of existing data if env='prod'
-        2. Scrapes data from selected (list expected) or all venues
+        2. Scrapes data from selected (list expected) or all venues, skipping those in skip_venues (list expected)
         3. Saves data as json if env='prod'
         4. Records the size of the db (num venues and events) if env='prod' and write_summary=True
     """
@@ -1331,7 +1331,13 @@ def main(env='prod', selected_venues=None, write_summary=True):
 
     # Filter the venues based on selected_venues (if provided)
     if selected_venues:
+        logging.info(f"Only scraping {selected_venues}")
         venues = {k: v for k, v in venues.items() if k in selected_venues}
+
+    # Filter the venues based on skip_venues (if provided)
+    if skip_venues:
+        logging.info(f"Skipping {skip_venues}")
+        venues = {k: v for k, v in venues.items() if k not in skip_venues}
 
     for venue, scraper in venues.items():
         # Log the start of scraping for each venue
@@ -1386,4 +1392,4 @@ def main(env='prod', selected_venues=None, write_summary=True):
     logging.info("Finished")
 
 if __name__ == "__main__":
-    main()
+    main(env='prod', skip_venues=['de Young & Legion of Honor'], write_summary=True)
