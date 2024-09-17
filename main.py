@@ -1386,4 +1386,4 @@ def main(env='prod', selected_venues=None, write_summary=True):
     logging.info("Finished")
 
 if __name__ == "__main__":
-    main(env='prod', selected_venues=['Asian Art Museum'], write_summary=False)
+    main()
