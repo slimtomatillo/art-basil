@@ -8519,7 +8519,7 @@
                 "start": "2024-06-14",
                 "end": "2025-01-26"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://museumca.org/on-view/calli-the-art-of-xicanx-peoples/",
@@ -8530,8 +8530,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:28",
-            "hash": "9f37e9a7f9e213d2aad97231f22ee8f9"
+            "last_updated": "2024-09-17 19:18:00",
+            "hash": "5a3b1af5c6a7629066fb317af561b468"
         },
         "You Are Here: California Stories on the Map-Oakland Museum of California": {
             "name": "You Are Here: California Stories on the Map",
@@ -8558,8 +8558,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:28",
-            "hash": "7bf1c7b80c36a4e9405fdfc5c94a4393"
+            "last_updated": "2024-09-17 19:18:00",
+            "hash": "beec5a4587327018a1cdfe52c871991b"
         },
         "Black Power-Oakland Museum of California": {
             "name": "Black Power",
@@ -8586,8 +8586,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:28",
-            "hash": "3ae534e4af856d63b18031f20989ad4a"
+            "last_updated": "2024-09-17 19:18:00",
+            "hash": "45fb3004b250e7bad48a9f28dabd5250"
         },
         "OMCA Kids: Nature Playspace-Oakland Museum of California": {
             "name": "OMCA Kids: Nature Playspace",
@@ -8614,8 +8614,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:28",
-            "hash": "22d7b1bbaf33022069cd7219ef9d26cc"
+            "last_updated": "2024-09-17 19:18:01",
+            "hash": "c3d81855a9246d507d0de113cb2a911a"
         },
         "Remembering Artist Hung Liu-Oakland Museum of California": {
             "name": "Remembering Artist Hung Liu",
@@ -8670,8 +8670,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:29",
-            "hash": "37676e564a1baefb87aabe3e890e11a5"
+            "last_updated": "2024-09-17 19:18:01",
+            "hash": "39fc2873efc514cdcf7c8f0ef83bf523"
         },
         "Angela Davis\u2013Seize the Time-Oakland Museum of California": {
             "name": "Angela Davis\u2013Seize the Time",
@@ -8698,8 +8698,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:29",
-            "hash": "7219bd2502f9b7fc8ba90de449ac8c2f"
+            "last_updated": "2024-09-17 19:18:02",
+            "hash": "4ced36a95ff1d60eece0ff5a2a994325"
         },
         "Hella Feminist-Oakland Museum of California": {
             "name": "Hella Feminist",
@@ -8726,8 +8726,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:29",
-            "hash": "fcb8b80773a46b2b66ef70e37934cbcc"
+            "last_updated": "2024-09-17 19:18:02",
+            "hash": "0dc9036bc38a3a370e6a781be8b3eff8"
         },
         "Edith Heath: A Life in Clay-Oakland Museum of California": {
             "name": "Edith Heath: A Life in Clay",
@@ -8754,8 +8754,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:30",
-            "hash": "b4fad981dac40baae6f63a66918752cc"
+            "last_updated": "2024-09-17 19:18:02",
+            "hash": "7edfeb305c2ce6ccc3e496699107d893"
         },
         "Mothership: Voyage Into Afrofuturism-Oakland Museum of California": {
             "name": "Mothership: Voyage Into Afrofuturism",
@@ -8782,8 +8782,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-17 19:13:30",
-            "hash": "f145bc1ee240fe78cbb664df90019635"
+            "last_updated": "2024-09-17 19:18:02",
+            "hash": "dcbb1dcbf86aab4ad114e67b297b8978"
         },
         "No Spectators: The Art of Burning Man-Oakland Museum of California": {
             "name": "No Spectators: The Art of Burning Man",

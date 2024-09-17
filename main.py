@@ -984,7 +984,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
                 elif 'on view now' in date_text:
                     # Handle 'Calli: The Art of Xicanx Peoples'
                     if event_url == 'https://museumca.org/on-view/calli-the-art-of-xicanx-peoples/':
-                        return convert_date_to_dt('june 14 2024'), convert_date_to_dt('january 26 2025'), True
+                        return convert_date_to_dt('june 14 2024'), convert_date_to_dt('january 26 2025'), False
                     else:
                         return 'null', 'null', True
                 # Ongoing exhibition
