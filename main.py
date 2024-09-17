@@ -969,13 +969,24 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
         header_tags = event_soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
         for header in header_tags:
             date_text = header.get_text(strip=True).lower().replace('-', '–') # make dashes the same
-            if any(keyword in date_text for keyword in ['now on view', 'opens', 'on view through', 'ongoing', '–']):
+            # Handle edge cases
+            if '“' in date_text:
+                continue
+
+            if any(keyword in date_text for keyword in ['now on view', 'on view now', 'opens', 'on view through', 'ongoing', '–']):
                 # Check for certain header tags to skip
                 if date_text.strip() == 'angela davis–seize the time':
                     continue
                 # Exhibition is on view
                 elif 'now on view' in date_text:
                     return 'null', 'null', True
+                # On view now
+                elif 'on view now' in date_text:
+                    # Handle 'Calli: The Art of Xicanx Peoples'
+                    if event_url == 'https://museumca.org/on-view/calli-the-art-of-xicanx-peoples/':
+                        return convert_date_to_dt('june 14 2024'), convert_date_to_dt('january 26 2025'), True
+                    else:
+                        return 'null', 'null', True
                 # Ongoing exhibition
                 elif 'on view through' in date_text:
                     return 'null', 'null', True
@@ -1040,9 +1051,9 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
             # Identify phase
             today = dt.datetime.today().date()
             if start_date != 'null' and end_date != 'null':
-                if start_date.date() <= today <= end_date.date():
+                if start_date <= today <= end_date:
                     phase = 'current'
-                elif today < start_date.date():
+                elif today < start_date:
                     phase = 'future'
                 else:
                     phase = 'past'
@@ -1392,4 +1403,4 @@ def main(env='prod', selected_venues=None, skip_venues=None,write_summary=True):
     logging.info("Finished")
 
 if __name__ == "__main__":
-    main(env='prod', skip_venues=['de Young & Legion of Honor'], write_summary=True)
+    main()
