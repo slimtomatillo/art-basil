@@ -336,6 +336,9 @@ def scrape_sfmoma(env='prod'):
                 elif event_date.split()[0] == 'closing':
                     start_date = 'null'
                     end_date = convert_date_to_dt(event_date.replace('closing ', '').replace(',', ''))
+                elif event_date.split()[0] == 'opening':
+                    start_date = convert_date_to_dt(event_date.replace('opening ', '').replace(',', ''))
+                    end_date = 'null'
                 elif '–' in event_date:
                     dates = event_date.split('–')
                     # If there are two commas, this implies that both dates have a month, day, and year

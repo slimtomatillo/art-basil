@@ -1862,33 +1862,6 @@
             "last_updated": "2024-09-17 19:24:28",
             "hash": "07d1483e8ba08dedfcc8d0744dd17734"
         },
-        "Get in the Game-SFMOMA": {
-            "name": "Get in the Game",
-            "venue": "SFMOMA",
-            "description": "Get in the Game explores how athleticism, competition, and play have shaped our world and influenced contemporary art and design.",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2024-10-19",
-                "end": "2025-02-18"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.sfmoma.org/exhibition/get-in-the-game/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/02/01093524/4.-Hank-Willis-Thomas-1-1024x445.jpg",
-                    "description": "Image"
-                }
-            ],
-            "hash": "6e2713245ec06a6234e70aafd437439c"
-        },
         "Pan American Unity: A Mural by Diego Rivera-SFMOMA": {
             "name": "Pan American Unity: A Mural by Diego Rivera",
             "venue": "SFMOMA",

@@ -153,6 +153,7 @@ window.addEventListener('DOMContentLoaded', () => {
             
                 const isPastEvent = event.tags.includes('past');
                 const isCurrentEvent = event.tags.includes('current');
+                const isFutureEvent = event.tags.includes('future');
             
                 if (event.ongoing === true) {
                     // If the event is marked as ongoing
@@ -174,6 +175,9 @@ window.addEventListener('DOMContentLoaded', () => {
                     } else {
                         // If neither date is known, it remains "Dates TBA"
                     }
+                } else if (isFutureEvent) {
+                    // For future events
+                    dateText = `Opens on ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
                 }
             
                 dateCell.textContent = dateText;
