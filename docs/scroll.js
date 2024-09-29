@@ -158,7 +158,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 const isCurrentEvent = event.tags.includes('current');
                 const isFutureEvent = event.tags.includes('future');
             
-                if (event.ongoing === true) {
+                if (event.ongoing === true && isCurrentEvent === true) {
                     // If the event is marked as ongoing
                     dateText = "Ongoing";
                 } else if (isPastEvent && endDate) {
