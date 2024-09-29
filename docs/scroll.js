@@ -115,6 +115,9 @@ window.addEventListener('DOMContentLoaded', () => {
             sortedEvents.forEach(event => {
                 const row = tableBody.insertRow();
 
+                // Add data attribute to row for filtering
+                row.setAttribute('data-phase', event.phase);
+
                 // Image column
                 const imageCell = row.insertCell();
 

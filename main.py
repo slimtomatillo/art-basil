@@ -46,13 +46,32 @@ month_to_num_dict = {
 
 def configure_logging(env):
     """Configure logging based on the environment."""
-    handlers = [logging.StreamHandler()]
-    if env == 'prod':
-        handlers.append(logging.FileHandler("scraping.log", mode='a'))
+    # Clear existing handlers
+    root_logger = logging.getLogger()
+    if root_logger.handlers:
+        for handler in root_logger.handlers:
+            root_logger.removeHandler(handler)
     
-    logging.basicConfig(level=logging.INFO,
-                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                        handlers=handlers)
+    # Create handlers
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.WARNING)  # Set level to WARNING for console
+
+    handlers = [console_handler]
+
+    if env == 'prod':
+        file_handler = logging.FileHandler("scraping.log", mode='a')
+        file_handler.setLevel(logging.DEBUG)  # Set level to DEBUG for file
+        handlers.append(file_handler)
+    
+    # Set format
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+    for handler in handlers:
+        handler.setFormatter(formatter)
+        root_logger.addHandler(handler)
+
+    # Set the root logger level to DEBUG
+    root_logger.setLevel(logging.DEBUG)
 
 def copy_json_file(source_file_path, destination_file_path):
     """

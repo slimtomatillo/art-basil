@@ -51,14 +51,43 @@ thead.sticky {
 #searchBarContainer {
     display: flex; /* Flexbox layout to manage children */
     justify-content: flex-start; /* Align children (the search bar) to the left */
-    padding: 10px 0; /* Example padding; adjust as needed */
+    padding: 10px 0;
 }
 
 #searchBar {
-    margin-bottom: 20px; /* Adjust as needed for spacing below the search bar */
+    margin-bottom: 10px; /* Adjust as needed for spacing below the search bar */
     padding: 10px; /* Adjust padding inside the search bar as needed */
     width: 100%; /* Make the search bar fill its container */
     box-sizing: border-box; /* Keep this to include padding in the width calculation */
+}
+
+/* Styles for the filter buttons */
+#filterButtonsContainer {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: flex-start; /* Align buttons to the left */
+    align-items: center; /* Vertically center the buttons */
+    padding: 10px 0;
+    margin-bottom: 30px; /* Adjust as needed for spacing below the filter buttons */
+}
+
+.filter-button {
+    margin: 0 5px; /* Horizontal spacing between buttons */
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Remove default button borders */
+    background-color: #f0f0f0; /* Light background for buttons */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.filter-button:hover {
+    background-color: #e0e0e0; /* Darken on hover */
+}
+
+.filter-button.active {
+    background-color: #007BFF; /* Active button background */
+    color: white; /* Active button text color */
 }
 
 .event-table {

@@ -8377,7 +8377,7 @@
             "phase": "future",
             "dates": {
                 "start": "2024-09-27",
-                "end": "null"
+                "end": "2025-01-06"
             },
             "ongoing": false,
             "links": [
@@ -8448,34 +8448,6 @@
             ],
             "last_updated": "2024-09-28 15:50:59",
             "hash": "a6241fb97334df5f063187393f2f7837"
-        },
-        "Hallyu! The Korean Wave-Asian Art Museum": {
-            "name": "Hallyu! The Korean Wave",
-            "venue": "Asian Art Museum",
-            "description": "Discover why the world \ncan\u2019t\n get enough K-pop, Korean dramas, and \nkimbap\n.",
-            "tags": [
-                "exhibition",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "null",
-                "end": "2024-01-06"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://exhibitions.asianart.org/exhibitions/hallyu-the-korean-wave/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/07/Hallyu-exh2_600x450-600x450.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "7ccb9a93afe9932eaea284dc72c3cbd7"
         },
         "Mayumi Oda-Asian Art Museum": {
             "name": "Mayumi Oda",
