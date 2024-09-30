@@ -60,7 +60,7 @@ def configure_logging(env):
 
     if env == 'prod':
         file_handler = logging.FileHandler("scraping.log", mode='a')
-        file_handler.setLevel(logging.DEBUG)  # Set level to DEBUG for file
+        file_handler.setLevel(logging.INFO)  # Set level to INFO for file
         handlers.append(file_handler)
     
     # Set format
@@ -70,8 +70,8 @@ def configure_logging(env):
         handler.setFormatter(formatter)
         root_logger.addHandler(handler)
 
-    # Set the root logger level to DEBUG
-    root_logger.setLevel(logging.DEBUG)
+    # Set the root logger level to INFO
+    root_logger.setLevel(logging.INFO)
 
 def copy_json_file(source_file_path, destination_file_path):
     """
@@ -92,11 +92,23 @@ def copy_json_file(source_file_path, destination_file_path):
     
     return
 
+def convert_nan_to_none(data):
+    """Recursively convert NaN values to None in a dictionary or list."""
+    if isinstance(data, dict):
+        return {k: convert_nan_to_none(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [convert_nan_to_none(i) for i in data]
+    elif isinstance(data, float) and np.isnan(data):
+        return None
+    else:
+        return data
+
 def load_db():
     """Load the event database from a JSON file."""
     try:
         with open(DB_FILE, 'r') as file:
-            return json.load(file)
+            db = json.load(file)
+            return convert_nan_to_none(db)  # Convert NaNs to None
     except FileNotFoundError:
         logging.warning(f"Database file {DB_FILE} not found.")
         return {}
@@ -220,7 +232,7 @@ def scrape_de_young_and_legion_of_honor(env='prod'):
                             # Get phase
                             phase = 'current'
                             # Get dt versions of start and end dates
-                            start_date = 'null'
+                            start_date = None
                             dates = [date.lower().replace(',', '').replace('through ', '')]
                             end_date = convert_date_to_dt(dates[0])
 
@@ -350,14 +362,14 @@ def scrape_sfmoma(env='prod'):
                 ongoing = True if 'ongoing' in event_date else False
                 # Get start date and end date
                 if event_date in ('new exhibition! now on view', 'ongoing'):
-                    start_date = 'null'
-                    end_date = 'null'
+                    start_date = None
+                    end_date = None
                 elif event_date.split()[0] == 'closing':
-                    start_date = 'null'
+                    start_date = None
                     end_date = convert_date_to_dt(event_date.replace('closing ', '').replace(',', ''))
                 elif event_date.split()[0] == 'opening':
                     start_date = convert_date_to_dt(event_date.replace('opening ', '').replace(',', ''))
-                    end_date = 'null'
+                    end_date = None
                 elif '–' in event_date:
                     dates = event_date.split('–')
                     # If there are two commas, this implies that both dates have a month, day, and year
@@ -368,7 +380,7 @@ def scrape_sfmoma(env='prod'):
                     elif event_date.count(',') == 1:
                         if dates[1] == 'ongoing':
                             start_date = convert_date_to_dt(dates[0].replace(',', ''))
-                            end_date = 'null'
+                            end_date = None
                         # The day or year is missing in one of the dates
                         else:
                             # The start date is missing something
@@ -395,11 +407,11 @@ def scrape_sfmoma(env='prod'):
                                 start_date = convert_date_to_dt(dates[0].replace(',', ''))
                     else:
                         logging.warning(f"No commas found in: {event_date}")
-                        start_date = 'null'
-                        end_date = 'null'
+                        start_date = None
+                        end_date = None
                 else:
-                    start_date = 'null'
-                    end_date = 'null'
+                    start_date = None
+                    end_date = None
 
                 event_image_url = event.find("img", class_="exhibitionsgrid-wrapper-grid-item-image")['src']
 
@@ -493,8 +505,8 @@ def scrape_contemporary_jewish_museum(env='prod'):
                 event_dates = '–'.join([span.text.strip() for span in event_dates]) if event_dates else None
                 dates = event_dates.lower().replace(',', '').split('––')
                 if event_dates.lower() == 'ongoing exhibit':
-                    start_date = 'null'
-                    end_date = 'null'
+                    start_date = None
+                    end_date = None
                     ongoing = True
                 else:
                     start_date = convert_date_to_dt(dates[0])
@@ -647,16 +659,16 @@ def scrape_sfwomenartists(env='prod', verbose=False):
             if start_date_month and start_date_day and year:
                 start_date = dt.date(year, start_date_month, start_date_day)
             else:
-                start_date = 'null'
+                start_date = None
             
             if end_date_month and end_date_day and year:
                 end_date = dt.date(year, end_date_month, end_date_day)
             else:
-                end_date = 'null'
+                end_date = None
                 
             # Identify phase
             today = dt.datetime.today().date()
-            if (start_date != 'null') and (end_date != 'null'):
+            if (start_date != None) and (end_date != None):
                 if (start_date <= today) and (end_date >= today):
                     phase = 'current'
                 elif (start_date > today) and (end_date > today):
@@ -744,15 +756,15 @@ def scrape_asian_art_museum_current_events(env='prod'):
         phase = 'current'
         if 'open' in date_element.text.lower(): # This implies the date corresponds to the opening date
             start_date = convert_date_to_dt(event_date)
-            end_date = 'null' # Ideally scrape the exhibition page to get the end date
+            end_date = None # Ideally scrape the exhibition page to get the end date
             if start_date > dt.datetime.now().date():
                 phase = 'future'
         else: # This implies the date correspond to the closing date
-            start_date = 'null'
+            start_date = None
             if event_date:
                 end_date = convert_date_to_dt(event_date)
             else:
-                end_date = 'null'
+                end_date = None
 
         # Extract description
         description_tag = featured_event.find('div', class_='hero-card__desc')
@@ -815,13 +827,13 @@ def scrape_asian_art_museum_current_events(env='prod'):
             # Extract date label
             event_date = event.find('div', class_='card__subtitle').text.strip().lower().replace('through ', '')
             ongoing = True if event_date.strip() in ['ongoing', 'now on view'] else False
-            start_date = 'null'
+            start_date = None
             if event_date in ['ongoing', 'now on view']:
-                end_date = 'null'
+                end_date = None
             elif event_date:
                 end_date = convert_date_to_dt(event_date)
             else:
-                end_date = 'null'
+                end_date = None
 
             # Extract description
             description_tag = event.find('div', class_='card__body')
@@ -917,8 +929,8 @@ def scrape_asian_art_museum_past_events(env='prod'):
                     start_date = convert_date_to_dt(dates[0])
                     end_date = convert_date_to_dt(dates[1])
                 else:
-                    start_date = 'null'
-                    end_date = 'null'
+                    start_date = None
+                    end_date = None
 
                 # Identify phase
                 phase = 'past'
@@ -1001,30 +1013,30 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
                     continue
                 # Exhibition is on view
                 elif 'now on view' in date_text:
-                    return 'null', 'null', True
+                    return None, None, True
                 # On view now
                 elif 'on view now' in date_text:
                     # Handle 'Calli: The Art of Xicanx Peoples'
                     if event_url == 'https://museumca.org/on-view/calli-the-art-of-xicanx-peoples/':
                         return convert_date_to_dt('june 14 2024'), convert_date_to_dt('january 26 2025'), False
                     else:
-                        return 'null', 'null', True
+                        return None, None, True
                 # Ongoing exhibition
                 elif 'on view through' in date_text:
-                    return 'null', 'null', True
+                    return None, None, True
                 # Ongoing exhibition
                 elif 'ongoing' in date_text:
-                    return 'null', 'null', True
+                    return None, None, True
                 # Opening in the future
                 elif 'opens' in date_text:
                     date_text = date_text.replace('opens ', '').split(' | ')
                     start_date = convert_date_to_dt(date_text[0])
-                    return start_date, 'null', False
+                    return start_date, None, False
                 # Past exhibition
                 elif '–' in date_text:
                     date_text = date_text.replace(',', '').replace('.', '').split(' | ')[0].split(' i ')[0].split('–')
                     start_date = convert_date_to_dt(date_text[0])
-                    end_date = convert_date_to_dt(date_text[1]) if len(date_text) > 1 else 'null'
+                    end_date = convert_date_to_dt(date_text[1]) if len(date_text) > 1 else None
                     ongoing = False
                     return start_date, end_date, ongoing
 
@@ -1033,11 +1045,11 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
         if date_text:
             date_text = date_text.get_text(strip=True).lower().replace(',', '').split('–')
             start_date = convert_date_to_dt(date_text[0])
-            end_date = convert_date_to_dt(date_text[1]) if len(date_text) > 1 else 'null'
+            end_date = convert_date_to_dt(date_text[1]) if len(date_text) > 1 else None
             ongoing = False
             return start_date, end_date, ongoing
 
-        return 'null', 'null', False
+        return None, None, False
 
     url = 'https://museumca.org/on-view/#exhibitions'
     soup = fetch_and_parse(url)
@@ -1072,7 +1084,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
 
             # Identify phase
             today = dt.datetime.today().date()
-            if start_date != 'null' and end_date != 'null':
+            if start_date != None and end_date != None:
                 if start_date <= today <= end_date:
                     phase = 'current'
                 elif today < start_date:
@@ -1203,7 +1215,7 @@ def scrape_cantor_exhibitions(env='prod'):
         
         # Handle 'ongoing'
         if date_string == 'ongoing':
-            return 'null'
+            return None
 
         date_parts = date_string.split()
         month_num = int(month_to_num_dict[date_parts[0]])
@@ -1304,7 +1316,7 @@ def update_event_phases():
         for event_key, event in events.items():
             try:
                 end_date_str = event['dates'].get('end')
-                end_date = dt.datetime.strptime(end_date_str, '%Y-%m-%d').date() if end_date_str and end_date_str != 'null' else None
+                end_date = dt.datetime.strptime(end_date_str, '%Y-%m-%d').date() if end_date_str and end_date_str != None else None
                 
                 if end_date and end_date < today:
                     event['phase'] = 'past'

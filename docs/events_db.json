@@ -62,7 +62,7 @@
             ],
             "phase": "past",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-07-07"
             },
             "ongoing": false,
@@ -88,7 +88,7 @@
             ],
             "phase": "past",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-07-21"
             },
             "ongoing": false,
@@ -114,7 +114,7 @@
             ],
             "phase": "past",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-08-11"
             },
             "ongoing": false,
@@ -140,7 +140,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-01-12"
             },
             "ongoing": false,
@@ -154,8 +154,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "75e95c842b6fdc09ce62be398fe476f6"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "3d8fb346422d9ac6dd72332300a348f1"
         },
         "American Beauty: The Osher Collection of American Art-de Young": {
             "name": "American Beauty: The Osher Collection of American Art",
@@ -167,7 +167,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-10-20"
             },
             "ongoing": false,
@@ -181,8 +181,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "2a7a291937a6cea8d2c305045de48356"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "611ac1056b555c10a2af05a4b4d6b6d8"
         },
         "Art and War in the Renaissance: The Battle of Pavia Tapestries-de Young": {
             "name": "Art and War in the Renaissance: The Battle of Pavia Tapestries",
@@ -208,8 +208,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "d0ccd4abfeb297bec528d36a2e3d5754"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "d63b19ccaa4640736de62302df8f19ab"
         },
         "Tamara de Lempicka-de Young": {
             "name": "Tamara de Lempicka",
@@ -235,8 +235,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "f576778aa4f4c4660404b5f15035f89f"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "c53f7e6a63f5e627c8177b7027578a6e"
         },
         "Leilah Babirye: We Have a History-de Young": {
             "name": "Leilah Babirye: We Have a History",
@@ -248,7 +248,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-10-26"
             },
             "ongoing": false,
@@ -262,8 +262,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "6d0346830199e62ef6c9e955ae63adb3"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "8e4efc9779b091ba8a8f44b4736aad7f"
         },
         "Rose B. Simpson: LEXICON-de Young": {
             "name": "Rose B. Simpson: LEXICON",
@@ -301,7 +301,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-11-30"
             },
             "ongoing": false,
@@ -315,8 +315,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "3aa33c8c48b97df53a46e6779bde4ea8"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "a3474098c14c30673b48a41815d49c30"
         },
         "Embroidered Histories-de Young": {
             "name": "Embroidered Histories",
@@ -342,8 +342,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "9507b32640f10b9e4d28d1972231c2e8"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "7da1db165138d3637618ff37c3edec4d"
         },
         "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family-de Young": {
             "name": "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family",
@@ -355,7 +355,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2026-03-15"
             },
             "ongoing": false,
@@ -369,8 +369,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "1a28122da26533e226284b09128cdaf3"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "584c7b0f906d845201dc841a71a04cf2"
         },
         "Robert Bechtle: Prints and Drawings-de Young": {
             "name": "Robert Bechtle: Prints and Drawings",
@@ -382,7 +382,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-01-05"
             },
             "ongoing": false,
@@ -396,8 +396,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "36d8869e1e142bea1c4715d6d961a46a"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "75d86e2392a302ce0102a6c763117800"
         },
         "Paul McCartney Photographs 1963\u201364: Eyes of the Storm-de Young": {
             "name": "Paul McCartney Photographs 1963\u201364: Eyes of the Storm",
@@ -423,8 +423,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:42",
-            "hash": "69f1b656515e13359a99af04079e6ef3"
+            "last_updated": "2024-09-30 11:32:05",
+            "hash": "2f2c2c71e30d2e36182d3209609c5dcc"
         }
     },
     "Legion of Honor": {
@@ -460,7 +460,7 @@
             ],
             "phase": "past",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-08-18"
             },
             "ongoing": false,
@@ -486,7 +486,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-10-27"
             },
             "ongoing": false,
@@ -500,8 +500,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:45",
-            "hash": "f1386ba29d05afe915f8858ebb8290e1"
+            "last_updated": "2024-09-30 11:32:11",
+            "hash": "c49f4547ee53059ab59f265e3b030225"
         },
         "Woodcut: Primary Printmaking-Legion of Honor": {
             "name": "Woodcut: Primary Printmaking",
@@ -513,7 +513,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-10-20"
             },
             "ongoing": false,
@@ -527,8 +527,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:45",
-            "hash": "3d88e5c540b4692b5a5758b9cea65a8f"
+            "last_updated": "2024-09-30 11:32:11",
+            "hash": "20b011be4ca9901b5f8ac98d30725585"
         },
         "Mary Cassatt at Work-Legion of Honor": {
             "name": "Mary Cassatt at Work",
@@ -554,8 +554,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:45",
-            "hash": "3acec06bd176066df1f978740dac6d68"
+            "last_updated": "2024-09-30 11:32:11",
+            "hash": "969bb0eb0900122bf86e6376358d6e93"
         },
         "Dress Rehearsal: The Art of Theatrical Design-Legion of Honor": {
             "name": "Dress Rehearsal: The Art of Theatrical Design",
@@ -581,8 +581,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:45",
-            "hash": "9d6c97af3282202e75e0a9b18d1af76e"
+            "last_updated": "2024-09-30 11:32:11",
+            "hash": "e13275daa749178e5f5b84b2e2169ad1"
         },
         "Wayne Thiebaud: Art Comes from Art-Legion of Honor": {
             "name": "Wayne Thiebaud: Art Comes from Art",
@@ -608,8 +608,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:45",
-            "hash": "c2f66b57aa40b711b2d00e81db719fc9"
+            "last_updated": "2024-09-30 11:32:11",
+            "hash": "7bcc529f8079b2bbccce2e1b0e6b0d0c"
         },
         "Celebrating 100 Years at the Legion of Honor-Legion of Honor": {
             "name": "Celebrating 100 Years at the Legion of Honor",
@@ -635,8 +635,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:45",
-            "hash": "0df5a5698b70bd70e1c8cd2b4126e28d"
+            "last_updated": "2024-09-30 11:32:11",
+            "hash": "d2fe990c206359b8ea008850d9e3ce3e"
         },
         "Yinka Shonibare-Legion of Honor": {
             "name": "Yinka Shonibare",
@@ -662,8 +662,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:45",
-            "hash": "4842152fb4c41cc2a8bd766c76e805a2"
+            "last_updated": "2024-09-30 11:32:11",
+            "hash": "cc87f05630e333792f771fd048e07c33"
         }
     },
     "SFMOMA": {
@@ -678,7 +678,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-10-06"
             },
             "ongoing": false,
@@ -692,8 +692,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "a832ee66e17f7eb82a848ef25ab15213"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "86cf20cccf21f2db6c3a9c4d06565db4"
         },
         "Yayoi Kusama: Infinite Love-SFMOMA": {
             "name": "Yayoi Kusama: Infinite Love",
@@ -720,7 +720,8 @@
                     "description": "Image"
                 }
             ],
-            "hash": "cd70717a57559a3077beff7f0899a28d"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "988bb0d17ab80a333d571f186c245383"
         },
         "Zanele Muholi: Eye Me-SFMOMA": {
             "name": "Zanele Muholi: Eye Me",
@@ -747,8 +748,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "327cf11226fe197bb007d22f79804e38"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "06f452dc7bb3a7b24f1c71c4ddd12c2d"
         },
         "New Work: Mary Lovelace O\u2019Neal-SFMOMA": {
             "name": "New Work: Mary Lovelace O\u2019Neal",
@@ -775,8 +776,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "d4fd23c6b6f019c909f66326c5496d7c"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "7ebac77a3816a88c45c5195fea29c680"
         },
         "Chiura Obata-SFMOMA": {
             "name": "Chiura Obata",
@@ -803,8 +804,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "82fc74af624072e8cb07ee44f337d6ef"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "e730fe0f882df2fbc2055b0c62a2ead9"
         },
         "Marshall Brown Projects: Dequindre Civic Academy-SFMOMA": {
             "name": "Marshall Brown Projects: Dequindre Civic Academy",
@@ -831,8 +832,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "f61d67e0c2ba5c3291c36557da94614d"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "343c22a214ed91c468d15f64bf04f584"
         },
         "What Matters: A Proposition in Eight Rooms-SFMOMA": {
             "name": "What Matters: A Proposition in Eight Rooms",
@@ -859,8 +860,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "6790d327d9bbdc40ec65be8e15f1fbd8"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "e18fd0db4064f3040b2eba4abaf1fa41"
         },
         "Ragnar Kjartansson: The Visitors-SFMOMA": {
             "name": "Ragnar Kjartansson: The Visitors",
@@ -873,7 +874,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-01-26"
             },
             "ongoing": false,
@@ -887,8 +888,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "cb081d816eede29f96dafbcd85452962"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "47f3e7dd9bd0aeeb0adf873b06664d10"
         },
         "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections-SFMOMA": {
             "name": "Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections",
@@ -901,8 +902,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -915,8 +916,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "e98a3f88d3e79e4b7c91b065ad387857"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "1552c7eec4aaafea2eea051121d83aa5"
         },
         "Alexander Calder: Dissonant Harmony-SFMOMA": {
             "name": "Alexander Calder: Dissonant Harmony",
@@ -929,8 +930,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -943,8 +944,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "824538befcb415479a1eae1dbcdb6131"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "e9611f7973b850b8a83ea8f4cac53936"
         },
         "Bay Area Walls-SFMOMA": {
             "name": "Bay Area Walls",
@@ -957,8 +958,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -971,8 +972,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "29ded51b4e0d27c21d805fc7dfbd626b"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "a7ad1ed5940be6fafd0d8e33552e7a62"
         },
         "Open Ended: SFMOMA's Collection, 1900 to Now-SFMOMA": {
             "name": "Open Ended: SFMOMA's Collection, 1900 to Now",
@@ -985,8 +986,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -999,8 +1000,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "caf453c0568bfba225621cdfdbfb9051"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "18bd4f29528af6004cd4a63203fa1251"
         },
         "Freeform: Experiencing Abstraction-SFMOMA": {
             "name": "Freeform: Experiencing Abstraction",
@@ -1013,8 +1014,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -1027,8 +1028,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "1cafad8054ef48fe4aa21546e5eef4a9"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "4cd146d82a3d27987578d37db2b616ab"
         },
         "German Art After 1960-SFMOMA": {
             "name": "German Art After 1960",
@@ -1041,8 +1042,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -1055,8 +1056,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "5376a3ff1a9aa02407cf0df56cf943da"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "418c862279991242c2864fc9579234cd"
         },
         "Wondering About Museums-SFMOMA": {
             "name": "Wondering About Museums",
@@ -1064,8 +1065,8 @@
             "description": "",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -1083,8 +1084,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "5082a221aa8c2e34dc2c82b715354c00"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "a6decc1bb71a2fc43355b76e4fcc79ca"
         },
         "Barbara Stauffacher Solomon: Strips of Stripes-SFMOMA": {
             "name": "Barbara Stauffacher Solomon: Strips of Stripes",
@@ -1097,8 +1098,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -1111,8 +1112,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "e0687d97a68bce0281559b1098bf9216"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "2105cdd61069294bd3c467ad5c054642"
         },
         "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart-SFMOMA": {
             "name": "Yayoi Kusama: Aspiring to Pumpkin\u2019s Love, the Love in My Heart",
@@ -1139,8 +1140,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "64e525e9b4b2f8d861362b212516eb48"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "4eb1b398139712169d7b0ee060fe55a9"
         },
         "Wu Tsang: Of Whales-SFMOMA": {
             "name": "Wu Tsang: Of Whales",
@@ -1153,7 +1154,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-01-20"
             },
             "ongoing": false,
@@ -1167,8 +1168,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "b82553327aadc279e5335320de742e1a"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "160e834bd504f5b8b438dbbdd3a6bed9"
         },
         "Olafur Eliasson: One-way colour tunnel-SFMOMA": {
             "name": "Olafur Eliasson: One-way colour tunnel",
@@ -1181,8 +1182,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -1195,8 +1196,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "a5f251fa3a20ef4a02801ca3ae5c3220"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "dc3ef75f3ce03003af21b0bb825b7e7e"
         },
         "Julie Mehretu: HOWL, eon (I, II)-SFMOMA": {
             "name": "Julie Mehretu: HOWL, eon (I, II)",
@@ -1209,8 +1210,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -1223,8 +1224,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "43060445a06b52421d48568635cefed9"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "b0fa7ca8d0ab65d91fe037328f84849a"
         },
         "Art of Noise-SFMOMA": {
             "name": "Art of Noise",
@@ -1251,8 +1252,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "88f9047877503dd2de37caecac2ce6c5"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "72cb1235ee70e0a53c80e5825d3fb93b"
         },
         "Sea Change: Photographs from the Collection-SFMOMA": {
             "name": "Sea Change: Photographs from the Collection",
@@ -1279,8 +1280,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "82bb04b51b3abfbda9d47bea141e7169"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "5a86670f64839c5c9beb76da31383553"
         },
         "Susan Philipsz: Songs Sung in the First Person on Themes of Longing, Sympathy and Release-SFMOMA": {
             "name": "Susan Philipsz: Songs Sung in the First Person on Themes of Longing, Sympathy and Release",
@@ -1293,7 +1294,7 @@
             ],
             "phase": "past",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-03-03"
             },
             "ongoing": false,
@@ -1307,8 +1308,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "3cb7012fdb4e2b478fc0915271139a1f"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "de038dd3c9eef2d26b0f93fb9edac8cd"
         },
         "Wolfgang Tillmans: To look without fear-SFMOMA": {
             "name": "Wolfgang Tillmans: To look without fear",
@@ -1335,8 +1336,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "61afe77ac68bbaa30577a409498ad6c9"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "fef341469cc357b1c0e72f1d6e358006"
         },
         "Sitting on Chrome: Mario Ayala, rafa esparza, and Guadalupe Rosales-SFMOMA": {
             "name": "Sitting on Chrome: Mario Ayala, rafa esparza, and Guadalupe Rosales",
@@ -1363,8 +1364,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "79010cedabedf3726ade752453fdfcc2"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "fded871ec49e2ffab3d809025d6f7155"
         },
         "New Work: Fernando Palma Rodr\u00edguez-SFMOMA": {
             "name": "New Work: Fernando Palma Rodr\u00edguez",
@@ -1391,8 +1392,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "6113535cd0b6347897d71a23a01a18b6"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "a4c62247054c71670a938238d660bcf5"
         },
         "Pacita Abad-SFMOMA": {
             "name": "Pacita Abad",
@@ -1419,8 +1420,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "5aa5bd1d05504957e59116d48f43cd51"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "35d31548d073d4ef7e79cbbaa8373af9"
         },
         "KLEE + BSS  Paul Klee and Barbara Stauffacher Solomon-SFMOMA": {
             "name": "KLEE + BSS  Paul Klee and Barbara Stauffacher Solomon",
@@ -1447,8 +1448,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "d062166d76b1cc8bd95c21c70b37f400"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "a150e516e4add74eee86a6f99e05e13b"
         },
         "Hung Liu: Witness-SFMOMA": {
             "name": "Hung Liu: Witness",
@@ -1475,8 +1476,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "728669c9289e9e1daf8193cee95d49e5"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "26c81ea2c5c7ae0be76ae9ecd61f2a2e"
         },
         "Kinship: Photography and Connection-SFMOMA": {
             "name": "Kinship: Photography and Connection",
@@ -1503,8 +1504,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "19bfdda2088b5d5ab2a549cb40de5dee"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "488a908d7217c4f2e51cc7d9c7ec2ea1"
         },
         "Frank Bowling: The New York Years 1966\u20131975-SFMOMA": {
             "name": "Frank Bowling: The New York Years 1966\u20131975",
@@ -1531,8 +1532,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "ba81263c0757de2df2c0ca62b8dfedac"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "b4f34ef0cf9506b8ebfcbae8fd5cda13"
         },
         "Corporeal-SFMOMA": {
             "name": "Corporeal",
@@ -1559,8 +1560,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "7515ed523bcc29adeafe2924ba58f271"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "8e94a9d7a1df691dccd5f1b19e5cb043"
         },
         "Janet Cardiff: The Telephone Call-SFMOMA": {
             "name": "Janet Cardiff: The Telephone Call",
@@ -1789,8 +1790,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": false,
             "links": [
@@ -1831,8 +1832,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "75103d3865494694ef567e4329ffbd53"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "1f0649aef2c8fa0f00ab0ec7ce981af1"
         },
         "Arborhythm-SFMOMA": {
             "name": "Arborhythm",
@@ -1845,8 +1846,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -1859,8 +1860,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "691033c015264ca6ecfef5b8a9ea0aad"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "1d8f13e19bc34043f9372928ee27d534"
         },
         "Pan American Unity: A Mural by Diego Rivera-SFMOMA": {
             "name": "Pan American Unity: A Mural by Diego Rivera",
@@ -1887,8 +1888,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "fb8482519a0558c51e06546077f0eeb5"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "374b9e8bfff3775b5fc213f0bf1d35d6"
         },
         "Yayoi Kusama: Dreaming of Earth\u2019s Sphericity, I Would Offer My Love-SFMOMA": {
             "name": "Yayoi Kusama: Dreaming of Earth\u2019s Sphericity, I Would Offer My Love",
@@ -1915,8 +1916,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "f4e65e2c48b0fdbe7c1385e1566c6c7f"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "027ca6fc495b048511a1ef85341f060c"
         },
         "Amy Sherald: American Sublime-SFMOMA": {
             "name": "Amy Sherald: American Sublime",
@@ -1943,8 +1944,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "bd5e2005e8bdd27ff2fd71fb2ea3a986"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "02d204ffbe9e91bd990970f72013e3ec"
         },
         "When the World Is Watching-SFMOMA": {
             "name": "When the World Is Watching",
@@ -1957,7 +1958,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-05-04"
             },
             "ongoing": false,
@@ -1971,8 +1972,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "57a23f5033a03560797d3d8e980a5b08"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "63f03ca295fdeccc60ced56f94d45b8b"
         },
         "Unity through Skateboarding-SFMOMA": {
             "name": "Unity through Skateboarding",
@@ -1985,7 +1986,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2025-04-27"
             },
             "ongoing": false,
@@ -1999,8 +2000,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "a7163d269bf77d4a9b5499e5ce690f64"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "2bb5451f633cb7fa8f1a49d06fc26608"
         },
         "Count Me In-SFMOMA": {
             "name": "Count Me In",
@@ -2027,8 +2028,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "2d37b1ad22b9b185b557a7d2a8b58c88"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "74f7e8bf128b3de39b4d5da25d8357d9"
         },
         "(Super)Natural: Paul Klee and Masako Miki-SFMOMA": {
             "name": "(Super)Natural: Paul Klee and Masako Miki",
@@ -2055,8 +2056,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "6c141ea48b60b9e82dc68fa59026fd9d"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "253ac9eda7e694ce5bc228de16b1cb4e"
         },
         "Table Manners-SFMOMA": {
             "name": "Table Manners",
@@ -2083,8 +2084,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "7a97e85d231945fabff40428236108e5"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "d265ec1b230502056500481544e0c4e0"
         },
         "Consuelo Kanaga: Catch the Spirit-SFMOMA": {
             "name": "Consuelo Kanaga: Catch the Spirit",
@@ -2111,8 +2112,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "d9a14068b4874a680f175679fda42d78"
+            "last_updated": "2024-09-30 11:32:19",
+            "hash": "e22ddb9e29ab9aefe9b7e71a346e1762"
         },
         "Get in the Game: Sports, Art, Culture-SFMOMA": {
             "name": "Get in the Game: Sports, Art, Culture",
@@ -2139,8 +2140,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:49",
-            "hash": "4789fe5700b41efcf9d375bd050af33f"
+            "last_updated": "2024-09-30 11:32:20",
+            "hash": "5ccd1ffa5c5f284a3cc07077a58c3430"
         }
     },
     "San Francisco Botanical Gardens (Helen Crocker Russell Library)": {
@@ -2198,8 +2199,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "b421c1b6339eab2fe883111ac8619703"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "bdbd948ed8ca73a0ea54ce90a81310b8"
         },
         "RetroBlakesberg: The Music Never Stopped-Contemporary Jewish Museum": {
             "name": "RetroBlakesberg: The Music Never Stopped",
@@ -2226,8 +2227,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "f775929a4d7f7b5b0692ac4efddee816"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f4689e41940c75779ffae6f2c9e80df9"
         },
         "Radiant Practices: Illuminating Jewish Traditions-Contemporary Jewish Museum": {
             "name": "Radiant Practices: Illuminating Jewish Traditions",
@@ -2254,8 +2255,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "532be8f48bdea6e4809d97d44afdc033"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "1b2f8fb03e023ea64dcdd25e6d690779"
         },
         "L'Chaim: Celebrating Our Building at 15-Contemporary Jewish Museum": {
             "name": "L'Chaim: Celebrating Our Building at 15",
@@ -2282,8 +2283,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:50",
-            "hash": "c62e2ea2218fdded258876a7ac3863b0"
+            "last_updated": "2024-09-30 11:32:23",
+            "hash": "7f8c07e67c673edc1c1ab49be0dfb5fb"
         },
         "Annie Albagli: We Become [Vessels]-Contemporary Jewish Museum": {
             "name": "Annie Albagli: We Become [Vessels]",
@@ -2310,8 +2311,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "0d3fd840fbf0fa580da2be61b280d2f3"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "ebed2653d6e3ef479a349eb503bf940e"
         },
         "Lamp of the Covenant: Dave Lane-Contemporary Jewish Museum": {
             "name": "Lamp of the Covenant: Dave Lane",
@@ -2324,8 +2325,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -2338,8 +2339,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:50",
-            "hash": "508f2b9ae8d1c8b344d64ca18731d14f"
+            "last_updated": "2024-09-30 11:32:23",
+            "hash": "3c11044c8de784aad02e157df14e3b51"
         },
         "California Jewish Open-Contemporary Jewish Museum": {
             "name": "California Jewish Open",
@@ -2366,8 +2367,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:50",
-            "hash": "06bb671c0607e86cbbe85039f2f8b665"
+            "last_updated": "2024-09-30 11:32:23",
+            "hash": "eeebbf81c75ce2ac261f358bb60381e1"
         },
         "Virtual Exhibition\u2014What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
             "name": "Virtual Exhibition\u2014What We Hold: A Youth Audio Project",
@@ -2394,8 +2395,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "a6986cda3cb9e2af34912383b0e8f726"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "6a3de4a9b814b8b352ba2cfc11eb91ae"
         },
         "Mika Rottenberg: Spaghetti Blockchain-Contemporary Jewish Museum": {
             "name": "Mika Rottenberg: Spaghetti Blockchain",
@@ -2422,8 +2423,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "cada49f6428ccbc3a2f79e9211924eb2"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "aec08b9902f54bd781eef95555673d89"
         },
         "Cara Levine: To Survive I Need You to Survive-Contemporary Jewish Museum": {
             "name": "Cara Levine: To Survive I Need You to Survive",
@@ -2450,8 +2451,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "c13c754f4ad274a078a94c891566d298"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "0f5b6353dcdfb7177f0e527a6b2ccee3"
         },
         "Gillian Laub: Family Matters-Contemporary Jewish Museum": {
             "name": "Gillian Laub: Family Matters",
@@ -2478,8 +2479,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "20d11824dd1f39defc1215bc5dd04bf5"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "5a5bcf12cdb3ce934ec8986ba7c05e29"
         },
         "Oz is for Oznowicz: A Puppet Family's History-Contemporary Jewish Museum": {
             "name": "Oz is for Oznowicz: A Puppet Family's History",
@@ -2506,8 +2507,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "22df23a346cdc3dfa1f0fc74b16bfdea"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "b794853c3340a79fe9f0c54c34d7629a"
         },
         "Tikkun: For the Cosmos, the Community, and Ourselves-Contemporary Jewish Museum": {
             "name": "Tikkun: For the Cosmos, the Community, and Ourselves",
@@ -2534,8 +2535,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "e06f66564ed1d96398995f58dc815f36"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "e382792c1199f30dfc067d2f5333336c"
         },
         "The Jim Henson Exhibition: Imagination Unlimited-Contemporary Jewish Museum": {
             "name": "The Jim Henson Exhibition: Imagination Unlimited",
@@ -2562,8 +2563,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "4c9daed7cb1146970abb159915425f86"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "3a5f07e12d65b4dd8d2d202dc5a364ee"
         },
         "GOLEM: A Call to Action-Contemporary Jewish Museum": {
             "name": "GOLEM: A Call to Action",
@@ -2590,8 +2591,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "a43c3d475a7f8fed59d941cf5f2f9c29"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "3653fc22bd56a8d4d0484b4a3095e54f"
         },
         "Experience Leonard Cohen-Contemporary Jewish Museum": {
             "name": "Experience Leonard Cohen",
@@ -2618,8 +2619,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "37822bcd532a731ff6f19ab520b4531c"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "958bc8daf33efebc90cb2191a68958d5"
         },
         "Candice Breitz: I'm Your Man-Contemporary Jewish Museum": {
             "name": "Candice Breitz: I'm Your Man",
@@ -2646,8 +2647,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:51",
-            "hash": "7f4a5db8347741484a49839cea0c9050"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "ba28ab0f1f93c9cc3cd0ed2ef7e13abf"
         },
         "Marshall Trammell in Residence-Contemporary Jewish Museum": {
             "name": "Marshall Trammell in Residence",
@@ -2674,8 +2675,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "a5578c726d5968c9998875c6202ac1ef"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "8416d5879adc9aeb58904bf6aa05129c"
         },
         "George Fok: Passing Through-Contemporary Jewish Museum": {
             "name": "George Fok: Passing Through",
@@ -2702,8 +2703,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "678547069073293216e5f1fe4842b261"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "3ce8dc12c5252c9005ce26816f2607e0"
         },
         "Judy Chicago: Cohanim-Contemporary Jewish Museum": {
             "name": "Judy Chicago: Cohanim",
@@ -2730,8 +2731,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "44b24e4f70386f2210d76e30b53b4d76"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "43b7d41b2be23c77963ecfca0b07f6c2"
         },
         "Levi Strauss: A History of American Style-Contemporary Jewish Museum": {
             "name": "Levi Strauss: A History of American Style",
@@ -2758,8 +2759,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "da791492339df047451d28eeba010e18"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f1976e9935915ff7aaf1c40c808e53aa"
         },
         "Threads of Jewish Life: Ritual and Other Textiles from the San Francisco Bay Area-Contemporary Jewish Museum": {
             "name": "Threads of Jewish Life: Ritual and Other Textiles from the San Francisco Bay Area",
@@ -2786,8 +2787,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "07e352e6fd7f36502e44a3a096d701f3"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f286e3b0986612ff7d5d6899bda6013e"
         },
         "Predicting the Past: Zohar Studios, The Lost Years-Contemporary Jewish Museum": {
             "name": "Predicting the Past: Zohar Studios, The Lost Years",
@@ -2814,8 +2815,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "126a419c4cbb5a3ffcd8e3d9ae6e5ad8"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "6d6500aba863c3b6eb667a30778dc7f1"
         },
         "What We Hold: A Youth Audio Project-Contemporary Jewish Museum": {
             "name": "What We Hold: A Youth Audio Project",
@@ -2842,8 +2843,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "7436db5a0f6856ff07780e060082ba0b"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "e44402873f67c3de6ce16cd1ab1531c7"
         },
         "Daria Martin: Tonight the World-Contemporary Jewish Museum": {
             "name": "Daria Martin: Tonight the World",
@@ -2870,8 +2871,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "5b4c7ca9c2dc4b6cc831de8cbb5df5fe"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f709e8192c685078ebe99e2a5dea2aae"
         },
         "Annabeth Rosen: Fired, Broken, Gathered, Heaped-Contemporary Jewish Museum": {
             "name": "Annabeth Rosen: Fired, Broken, Gathered, Heaped",
@@ -2898,8 +2899,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "18f2f496fbafc549fa8d9585aab4a83c"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "57b7dd6374bbbcd2b5f5efb82da88aa2"
         },
         "Izidora Leber LETHE: Peristyle-Contemporary Jewish Museum": {
             "name": "Izidora Leber LETHE: Peristyle",
@@ -2926,8 +2927,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "2ba4257dccd241e2dc4c0d25bc003cff"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "7cf50a4bbc87d3a943dc9aa79e112e9e"
         },
         "In That Case: Havruta in Contemporary Art\u2014Oxossi Ayofemi and Risa Wechsler-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Oxossi Ayofemi and Risa Wechsler",
@@ -2954,8 +2955,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "3fd82ce45adfd9ec4ba4f92c206c2db4"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "30b3083f4e2bb372a096a2b98294f349"
         },
         "Show Me as I Want to Be Seen-Contemporary Jewish Museum": {
             "name": "Show Me as I Want to Be Seen",
@@ -2982,8 +2983,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "b3317a33196e0960be0c04c46f508f34"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f3991e1cef6b01f3877fe7d0dfc7d184"
         },
         "Lew the Jew and His Circle: Origins of American Tattoo-Contemporary Jewish Museum": {
             "name": "Lew the Jew and His Circle: Origins of American Tattoo",
@@ -3010,8 +3011,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "11b0661a4a3c8b51cb2966ef89a28e4e"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "13eef4b5f4caaaa8f8743d19ec83d8b1"
         },
         "What We Hold: Youth Voices on Roots and What Matters Most-Contemporary Jewish Museum": {
             "name": "What We Hold: Youth Voices on Roots and What Matters Most",
@@ -3038,8 +3039,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "79a19f4f2c885be8c6162af8bfff5381"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f017134f19245e06d6dff9dc1cf773d4"
         },
         "Textile Lab-Contemporary Jewish Museum": {
             "name": "Textile Lab",
@@ -3066,8 +3067,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "274a0e4f9c94480bd9d2aae1817ee38a"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f9ef246e910e3ee774613ab73658f629"
         },
         "Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem-Contemporary Jewish Museum": {
             "name": "Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem",
@@ -3094,8 +3095,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "93dd9e860444997d28a5bec144e97e20"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "41294060b2a7f6427ccb79de94e3ee3d"
         },
         "Contraption: Rediscovering California Jewish Artists-Contemporary Jewish Museum": {
             "name": "Contraption: Rediscovering California Jewish Artists",
@@ -3122,8 +3123,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "6b18c12af781621bbd38ae81f5f11792"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "8c28af2bc0216823ec4d02fad1b43251"
         },
         "The Art of Rube Goldberg-Contemporary Jewish Museum": {
             "name": "The Art of Rube Goldberg",
@@ -3150,8 +3151,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "5952b4517f13d9d29e342d4fdeceb28d"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "9b65b7e7162b42df209708a20a5312a5"
         },
         "Kutiman: offgrid offline-Contemporary Jewish Museum": {
             "name": "Kutiman: offgrid offline",
@@ -3178,8 +3179,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "be066b290d5ad6cb84ed95edd8a51213"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "e70bf6ceb02b88adc35e46ee3411272a"
         },
         "In That Case: Havruta in Contemporary Art\u2014Allison Smith and Christina Zetterlund-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Allison Smith and Christina Zetterlund",
@@ -3206,8 +3207,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "c03eb732e96cf1c5e47a8fda692bf1ef"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "da553a5137b09264a1f882fba8a23418"
         },
         "Sabbath: The 2017 Dorothy Saxe Invitational-Contemporary Jewish Museum": {
             "name": "Sabbath: The 2017 Dorothy Saxe Invitational",
@@ -3234,8 +3235,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "081965cdf60f66f751d9c3f2966972b5"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "bf5b45521612b31f9338f315676a2f6c"
         },
         "Jewish Folktales Retold: Artist as Maggid-Contemporary Jewish Museum": {
             "name": "Jewish Folktales Retold: Artist as Maggid",
@@ -3262,8 +3263,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "f7969c90cbd992782cb24fc4dd619391"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "0c0871fe577e1e83fd1e9d9bbbb44871"
         },
         "The 613 by Archie Rand-Contemporary Jewish Museum": {
             "name": "The 613 by Archie Rand",
@@ -3290,8 +3291,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "f7db8a1c3129e7f09dd511da81228f86"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "e50aed6b32fb0a1a17505f42aa6de2f2"
         },
         "Sukkah Studio-Contemporary Jewish Museum": {
             "name": "Sukkah Studio",
@@ -3318,8 +3319,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "c30f335c56e8940e20683d38034847e8"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "c96bad8eb53db58812b7e62f7e248d70"
         },
         "Roz Chast: Cartoon Memoirs-Contemporary Jewish Museum": {
             "name": "Roz Chast: Cartoon Memoirs",
@@ -3346,8 +3347,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "8e92a25a8537bd5602431ad78f86e614"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "d47a7ea9165bd485e0f3acb2c193850f"
         },
         "What We Hold-Contemporary Jewish Museum": {
             "name": "What We Hold",
@@ -3374,8 +3375,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "e6b983983ad6ff2ab8b1c585bbe5a723"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "5e376170fd2d3c641cd351ec243ae537"
         },
         "The Yud Video Project-Contemporary Jewish Museum": {
             "name": "The Yud Video Project",
@@ -3402,8 +3403,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "a3cb9e8b4c22bdd73762e03de3b23e7b"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "1595de87965e49e6386788626fd3e320"
         },
         "Cary Leibowitz: Museum Show-Contemporary Jewish Museum": {
             "name": "Cary Leibowitz: Museum Show",
@@ -3430,8 +3431,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "c2f310df727e6e7262f35e78d1d6206d"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "b22ec1310570d48402dceb0cb46b903b"
         },
         "In That Case: Havruta in Contemporary Art\u2014Kota Ezawa and James Kirby Rogers-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Kota Ezawa and James Kirby Rogers",
@@ -3458,8 +3459,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "760f555df4407c87f9300ae93fab4059"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "ebb8e2f233130232da55bbda958b9ce9"
         },
         "From Generation to Generation: Inherited Memory and Contemporary Art-Contemporary Jewish Museum": {
             "name": "From Generation to Generation: Inherited Memory and Contemporary Art",
@@ -3486,8 +3487,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "c8e5bffa4e970f86588941e1a917d893"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "10e33b0253e1cdfab90c1fcdd5c35818"
         },
         "Ned Kahn: Negev Wheel-Contemporary Jewish Museum": {
             "name": "Ned Kahn: Negev Wheel",
@@ -3514,8 +3515,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "3ce4fd08101df8b14b54f67ab47171f3"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "b3ab00f0fdbaaaed9e41c02f2e093977"
         },
         "Stanley Kubrick: The Exhibition-Contemporary Jewish Museum": {
             "name": "Stanley Kubrick: The Exhibition",
@@ -3542,8 +3543,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "cc4dd20a16f17c6f2a601e0ceb282e52"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "f824c4c3f4c32df24808b4374895f11d"
         },
         "Pour Crever by Trimpin-Contemporary Jewish Museum": {
             "name": "Pour Crever by Trimpin",
@@ -3570,8 +3571,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "343c0ce469a57c8416786d68db0b4757"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "837273017a4a1bb3c756186b6c26f8cf"
         },
         "In That Case: Havruta in Contemporary Art\u2014Jenny Odell and Philip Buscemi-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Jenny Odell and Philip Buscemi",
@@ -3598,8 +3599,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "42571ff2b94e1d06fe5446647a189c12"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "2197eada477b47b4b94a707a23f32b59"
         },
         "Bill Graham and the Rock & Roll Revolution-Contemporary Jewish Museum": {
             "name": "Bill Graham and the Rock & Roll Revolution",
@@ -3626,8 +3627,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "7f3804399aaf02e095b6524f4a7e1a1b"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "7b12c2d6d51b39aa7cd5930cda83ca01"
         },
         "Hardly Strictly Warren Hellman-Contemporary Jewish Museum": {
             "name": "Hardly Strictly Warren Hellman",
@@ -3654,8 +3655,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "fe4c4d32ab91ce4d2790ec868ab528be"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "3628cf6bd755db06a9094ab82d61baa7"
         },
         "Roman Vishniac Rediscovered-Contemporary Jewish Museum": {
             "name": "Roman Vishniac Rediscovered",
@@ -3682,8 +3683,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "115466681d5b30a74e64f5c2227328b9"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "92bf5e740bf761c8f28411fbeb950d65"
         },
         "Chasing Justice-Contemporary Jewish Museum": {
             "name": "Chasing Justice",
@@ -3710,8 +3711,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "7b3b61889d9c2a63a953f4bc7f67afc6"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "5f5cf1a87506e2f21973424a7394960c"
         },
         "NEAT: New Experiments in Art and Technology-Contemporary Jewish Museum": {
             "name": "NEAT: New Experiments in Art and Technology",
@@ -3738,8 +3739,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "8f9326086aeb642b82628ba5421b6655"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "3ab9142c8e23abf723a5643d0438be35"
         },
         "In That Case: Havruta in Contemporary Art\u2014David Wilson and Francesco Spagnolo-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014David Wilson and Francesco Spagnolo",
@@ -3766,8 +3767,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "0dfde0051dd754805806624652306b7a"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "fdf4cd0ce5d8b84dd7086c2be099c527"
         },
         "Amy Winehouse: A Family Portait-Contemporary Jewish Museum": {
             "name": "Amy Winehouse: A Family Portait",
@@ -3794,8 +3795,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "b21726b24aa3ecebfbb8a91c98018df3"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "55316a49c04d1535cd7e836a27583368"
         },
         "You Know I\u2019m No Good-Contemporary Jewish Museum": {
             "name": "You Know I\u2019m No Good",
@@ -3822,8 +3823,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "5e22fe88402f1a18c85b264aaab400e2"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "55da208afeceb71ce0d14b37fc5e0005"
         },
         "X Is For-Contemporary Jewish Museum": {
             "name": "X Is For",
@@ -3850,8 +3851,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "ca2bab77d5008d264c64b050a105cb0e"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "2c1298862a4ddc894db69ec9ea6e1452"
         },
         "Night Begins the Day: Rethinking Space, Time, and Beauty-Contemporary Jewish Museum": {
             "name": "Night Begins the Day: Rethinking Space, Time, and Beauty",
@@ -3878,8 +3879,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "34a779c894b8556347ad8c7ea1d45397"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "83911f7da482609dc6c83b47abadacdc"
         },
         "In That Case: Havruta in Contemporary Art\u2014Anthony Discenza and Peter Straub-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Anthony Discenza and Peter Straub",
@@ -3906,8 +3907,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "118348c68e7987af172ed0ab3eb48677"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "a2977d1ab41ebe88233c4112e44d9e0e"
         },
         "Bound to Be Held: A Book Show-Contemporary Jewish Museum": {
             "name": "Bound to Be Held: A Book Show",
@@ -3934,8 +3935,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "515e6c5199587158eaffa8a6a20efcc5"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "fa4d6340bbf847161d473c40a8f0ed0a"
         },
         "Poland and Palestine: Two Lands and Two Skies-Contemporary Jewish Museum": {
             "name": "Poland and Palestine: Two Lands and Two Skies",
@@ -3962,8 +3963,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "d5e8f396499fd6ad6b42e98dfd0adb97"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "eb199fb85f1a27edf0c3cf5c4d394092"
         },
         "Letters to Afar-Contemporary Jewish Museum": {
             "name": "Letters to Afar",
@@ -3990,8 +3991,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "477e379ed1b7ebf71a28597ed0b8fdff"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "99e50c3b8060ddf9b22c22eb96e95ce2"
         },
         "Our Roots-Contemporary Jewish Museum": {
             "name": "Our Roots",
@@ -4018,8 +4019,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "cd267fcfc7a614c1fd41e054886ddfc4"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "4ea2ce80e83043ee64fa598bd59af0e3"
         },
         "The 2015 Dorothy Saxe Invitational: Tzedakah Box-Contemporary Jewish Museum": {
             "name": "The 2015 Dorothy Saxe Invitational: Tzedakah Box",
@@ -4046,8 +4047,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "0cd8e0af5a6d7777a14487e15e2b079f"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "25dbc8e83aab77c85c4fe447a1912192"
         },
         "In That Case: Havruta in Contemporary Art\u2014Helena Keeffe and Jessica Prentice-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art\u2014Helena Keeffe and Jessica Prentice",
@@ -4074,8 +4075,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "d182bc9d6d067e61bfcaac2784b4b29b"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "91ecaf07bb0aa4e0015fa31dd33c20c1"
         },
         "J. Otto Seibold and Mr. Lunch-Contemporary Jewish Museum": {
             "name": "J. Otto Seibold and Mr. Lunch",
@@ -4102,8 +4103,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "aff43732c022b2d209f0150f98699f0e"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "27057b7973e6be6bbb714621f829b4ef"
         },
         "Arnold Newman: Masterclass-Contemporary Jewish Museum": {
             "name": "Arnold Newman: Masterclass",
@@ -4130,8 +4131,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "74ab46db74eb7be2f6bae0bc0d904d0f"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "eef97709dcc128637165728dca67b9d5"
         },
         "In That Case: Havruta in Contemporary Art: Lindsey White and Ron Lynch-Contemporary Jewish Museum": {
             "name": "In That Case: Havruta in Contemporary Art: Lindsey White and Ron Lynch",
@@ -4158,8 +4159,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "de84d21e98532cd9fd6e3f53c33771d5"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "4084ac8c08b02ad14d19d71a27975e33"
         },
         "Project Mah Jongg-Contemporary Jewish Museum": {
             "name": "Project Mah Jongg",
@@ -4186,8 +4187,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "bc17502df1502c4595060cb8c7577808"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "359fbd95c86d4c9819cecb52a302c0a5"
         },
         "Designing Home: Jews and Midcentury Modernism-Contemporary Jewish Museum": {
             "name": "Designing Home: Jews and Midcentury Modernism",
@@ -4214,8 +4215,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "67667aadd19a15e11cbbbd9d1838fa33"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "282d730ed81281b0870738d848a3f1d6"
         },
         "Forever Now!-Contemporary Jewish Museum": {
             "name": "Forever Now!",
@@ -4242,8 +4243,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "a19cd5e604def23a28619cbfcdf4c261"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "227e45d2f64dca8dcf610808fa9d578d"
         },
         "To Build & To Be Built: Kibbutz History-Contemporary Jewish Museum": {
             "name": "To Build & To Be Built: Kibbutz History",
@@ -4270,8 +4271,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "d1e0c6a692f14d8ac74f0d7ef9835039"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "b0d2929aa95b7a3ea7edd90632bae34a"
         },
         "Arthur Szyk and the Art of the Haggadah-Contemporary Jewish Museum": {
             "name": "Arthur Szyk and the Art of the Haggadah",
@@ -4298,8 +4299,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "b91343b59124ba26a5781c589bb38b94"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "ebd50bf0ee17357c6fad22bf2f49bfd9"
         },
         "Frog and Toad and the World of Arnold Lobel-Contemporary Jewish Museum": {
             "name": "Frog and Toad and the World of Arnold Lobel",
@@ -4326,8 +4327,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "f42a9e8ed368e0e3a46099ddf77a9a9b"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "9c3f84bc3025afde56a876e14c530b70"
         },
         "Jason Lazarus: Live Archive-Contemporary Jewish Museum": {
             "name": "Jason Lazarus: Live Archive",
@@ -4354,8 +4355,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "e126fbf91960f8f4cc14242f5bb62728"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "0407ae1f9e68576375f980ecf5f445f2"
         },
         "Work in Progress: Considering Utopia-Contemporary Jewish Museum": {
             "name": "Work in Progress: Considering Utopia",
@@ -4382,8 +4383,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "8f4c82a47aacfaf41e6904c6064d8cf9"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "31f0ed22d2603b67c21f0b1aae59436b"
         },
         "StoryCorps StoryBooth-Contemporary Jewish Museum": {
             "name": "StoryCorps StoryBooth",
@@ -4410,8 +4411,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "a88d70f3f69c171b49894b45862ee2de"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "8e9f5b491a56e1a0da08247ad85516f8"
         },
         "Beyond Belief: 100 Years of the Spiritual in Modern Art: Highlights from SFMOMA\u2019s Collection-Contemporary Jewish Museum": {
             "name": "Beyond Belief: 100 Years of the Spiritual in Modern Art: Highlights from SFMOMA\u2019s Collection",
@@ -4438,8 +4439,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "5b4066aa80c5ad14aaff094612ac24e9"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "09726c9f6309cc3ad22135ff8bdacc5d"
         },
         "Stanley Saitowitz: Judaica-Contemporary Jewish Museum": {
             "name": "Stanley Saitowitz: Judaica",
@@ -4466,8 +4467,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "6bced9d940d229c1b9d763bd280752e3"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "e44f8a2c711c6a4874349be60c6d57f7"
         },
         "Beat Memories: The Photographs of Allen Ginsberg-Contemporary Jewish Museum": {
             "name": "Beat Memories: The Photographs of Allen Ginsberg",
@@ -4494,8 +4495,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "4305cf5519d60daa49f833d42974f32b"
+            "last_updated": "2024-09-30 11:32:27",
+            "hash": "fc70c1f9e33aa91d94d67841f75d3b35"
         },
         "Kehinde Wiley | The World Stage: Israel-Contemporary Jewish Museum": {
             "name": "Kehinde Wiley | The World Stage: Israel",
@@ -4522,8 +4523,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "de8767581c39d8200abf04a81211733a"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "87db684e82d3d3444cb577aee9dcc280"
         },
         "California Dreaming: Jewish Life in the Bay Area from the Gold Rush to the Present-Contemporary Jewish Museum": {
             "name": "California Dreaming: Jewish Life in the Bay Area from the Gold Rush to the Present",
@@ -4550,8 +4551,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "e06e86e6f4ffefd8fc91623d876964fb"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "b308ae534b93c3ccfad4bef0b0661c5d"
         },
         "The Snowy Day and the Art of Ezra Jack Keats-Contemporary Jewish Museum": {
             "name": "The Snowy Day and the Art of Ezra Jack Keats",
@@ -4578,8 +4579,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "fc62dda9342da8e11c407b9499d26e5d"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "024e0e1ad576336bb25b96dfd7525747"
         },
         "Our Lens-Contemporary Jewish Museum": {
             "name": "Our Lens",
@@ -4606,8 +4607,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "26e2e07ca187ad4fc93a3eb1e5afd178"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "55ee9df005f490e74f19945b0e3d4052"
         },
         "The Radical Camera: New York\u2019s Photo League, 1936\u20131951-Contemporary Jewish Museum": {
             "name": "The Radical Camera: New York\u2019s Photo League, 1936\u20131951",
@@ -4634,8 +4635,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "d669394a65c75720579c8482e708f4ea"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "579d65cbbe1835accc205a4a65773782"
         },
         "Do Not Destroy: Trees, Art, and Jewish Thought: An Exhibition and The Dorothy Saxe Invitational-Contemporary Jewish Museum": {
             "name": "Do Not Destroy: Trees, Art, and Jewish Thought: An Exhibition and The Dorothy Saxe Invitational",
@@ -4662,8 +4663,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "2aab7b51d368f341431c298c901e538f"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "56c46721340b2e379772e6f30550d701"
         },
         "Six-Word Memoirs on Jewish Life: Live from The CJM!-Contemporary Jewish Museum": {
             "name": "Six-Word Memoirs on Jewish Life: Live from The CJM!",
@@ -4690,8 +4691,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "bedfeca1cb185b26a0512c392549330f"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "72fe9474ff6b14228d3ff9c784d3748d"
         },
         "Houdini: Art and Magic-Contemporary Jewish Museum": {
             "name": "Houdini: Art and Magic",
@@ -4718,8 +4719,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "74dfcf9d772179ee593f89c5cd535034"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "46ce577bb816e8afb5b92bae35daee5d"
         },
         "\"Being Jewish\": A Bay Area Portrait-Contemporary Jewish Museum": {
             "name": "\"Being Jewish\": A Bay Area Portrait",
@@ -4746,8 +4747,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "e063b293f5b85ea20fe55abbea9f39f8"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "1388ff5eaa1c4abba8b5b9eb8198db1a"
         },
         "Charlotte Salomon: Life? Or Theatre?-Contemporary Jewish Museum": {
             "name": "Charlotte Salomon: Life? Or Theatre?",
@@ -4774,8 +4775,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "5ef4102fc927b21e01c9af57f26f4a43"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "c672e1c9833344db5e83bb98508a1458"
         },
         "Seeing Gertrude Stein: Five Stories-Contemporary Jewish Museum": {
             "name": "Seeing Gertrude Stein: Five Stories",
@@ -4802,8 +4803,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "dfef4c7aa51bb9de253f5c699c28866c"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "e8e4b64df2f4f7cc7b08bcfb6ab4eceb"
         },
         "Jacques Lipchitz: Hagar in the Desert-Contemporary Jewish Museum": {
             "name": "Jacques Lipchitz: Hagar in the Desert",
@@ -4830,8 +4831,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "cb4b949b3262d1d7865ffb093883ed61"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "9296a19eba4336dd62d0273fd26c2c87"
         },
         "The Ping Pong Project-Contemporary Jewish Museum": {
             "name": "The Ping Pong Project",
@@ -4858,8 +4859,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "615665f9f5a947486f421f0f403beef6"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "2eef614c22937ae8d4c4345d770f9f83"
         },
         "Are We There Yet?: 5000 Years of Answering Questions with Questions-Contemporary Jewish Museum": {
             "name": "Are We There Yet?: 5000 Years of Answering Questions with Questions",
@@ -4886,8 +4887,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "6597b1a899473b1a9bf599252a147409"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "008aa5a99051aab97ddee2274aab0aff"
         },
         "As It Is Written: Project 304,805-Contemporary Jewish Museum": {
             "name": "As It Is Written: Project 304,805",
@@ -4914,8 +4915,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "1f08b03377d07bf60cc77c9db53fcce1"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "4a60808930db0ca3bcf46ecf13c292de"
         },
         "Reclaimed: Paintings from the Collection of Jacques Goudstikker-Contemporary Jewish Museum": {
             "name": "Reclaimed: Paintings from the Collection of Jacques Goudstikker",
@@ -4942,8 +4943,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "46332745cddcf336984fb4abe2f48a1a"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "329c072fa485d2e2cf98939e5428e8fe"
         },
         "Black Sabbath: The Secret Musical History of Black\u2013Jewish Relations-Contemporary Jewish Museum": {
             "name": "Black Sabbath: The Secret Musical History of Black\u2013Jewish Relations",
@@ -4970,8 +4971,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "ab01569fa483a6a8013639613b3387aa"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "dc0104e3f7a9379344df27c5a3c0efa9"
         },
         "Curious George Saves the Day: The Art of Margret and H. A. Rey-Contemporary Jewish Museum": {
             "name": "Curious George Saves the Day: The Art of Margret and H. A. Rey",
@@ -4998,8 +4999,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "d874c918b815552b5a48a9962e950d27"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "26b5aca65d376b51d532f1f729e17fd0"
         },
         "There's a Mystery There: Sendak on Sendak-Contemporary Jewish Museum": {
             "name": "There's a Mystery There: Sendak on Sendak",
@@ -5026,8 +5027,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "e7493512c3c5214c91018e2458f37272"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "e4828ed9381bf29f8fb6d6e607095b8a"
         },
         "Maira Kalman: Various Illuminations (of a Crazy World)-Contemporary Jewish Museum": {
             "name": "Maira Kalman: Various Illuminations (of a Crazy World)",
@@ -5054,8 +5055,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "7f1fe43a1de26df1b2de4be41f8fbda9"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "1a6bda13b5ec1cb04d9fc6dda7d158d5"
         },
         "Reinventing Ritual: Contemporary Art and Design for Jewish Life-Contemporary Jewish Museum": {
             "name": "Reinventing Ritual: Contemporary Art and Design for Jewish Life",
@@ -5082,8 +5083,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "7c969ba0a10e3eeb670f773648e3696e"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "889cd2a7658812cda757d3a2a01695e8"
         },
         "Jews on Vinyl-Contemporary Jewish Museum": {
             "name": "Jews on Vinyl",
@@ -5110,8 +5111,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "401b60db51c347a9a91282e8bccaa950"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "41c85c8f0ee5cc9e7c0f5adcd09b5a94"
         },
         "Our Struggle: Responding to Mein Kampf-Contemporary Jewish Museum": {
             "name": "Our Struggle: Responding to Mein Kampf",
@@ -5138,8 +5139,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "6c9fd3cc8d8d992f1c7c147926a5eda6"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "446b2486b1591dc9f26dec4beca1736b"
         },
         "Chagall and the Artists of the Russian Jewish Theater, 1919\u20131949-Contemporary Jewish Museum": {
             "name": "Chagall and the Artists of the Russian Jewish Theater, 1919\u20131949",
@@ -5166,8 +5167,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "f7993719d3205cdaae7ee1419be5bd8a"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "94a58904b7aab76e31938b6af5203eb8"
         },
         "From The New Yorker to Shrek: The Art of WIlliam Steig-Contemporary Jewish Museum": {
             "name": "From The New Yorker to Shrek: The Art of WIlliam Steig",
@@ -5194,8 +5195,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "3c1043d1a7006018ffb789db3d69a7c4"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "481b73a4211b2bd41c3232bfa3d7858d"
         },
         "Susan Hiller: The J.Street Project-Contemporary Jewish Museum": {
             "name": "Susan Hiller: The J.Street Project",
@@ -5222,8 +5223,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "0b033a05e8836398f00f19ef5cf5382a"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "33ec03854602ca005bbca0becd016100"
         },
         "New Works/Old Story: 80 Artists at the Passover Table\u2014The Dorothy Saxe Invitational-Contemporary Jewish Museum": {
             "name": "New Works/Old Story: 80 Artists at the Passover Table\u2014The Dorothy Saxe Invitational",
@@ -5250,8 +5251,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "6bc23ac70d90bc27859d89d440c3e152"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "b6d5e958f3ccc7e62f3d779259b0655b"
         },
         "Dateline 09\u2014Adi Nes: Biblical Stories and Yael Bartana: Short Memory-Contemporary Jewish Museum": {
             "name": "Dateline 09\u2014Adi Nes: Biblical Stories and Yael Bartana: Short Memory",
@@ -5278,8 +5279,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "1cc10fe54cdf7964dad93aef1341090f"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "1cdd03e28f547d8ad92d20277679f9ae"
         },
         "Warhol's Jews: Ten Portraits Reconsidered-Contemporary Jewish Museum": {
             "name": "Warhol's Jews: Ten Portraits Reconsidered",
@@ -5306,8 +5307,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "b9bc8bf1e1008bf021ac2a68fa8ae53f"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "75c10e71a8e90d6c9d37a949e5a80df1"
         },
         "John Zorn Presents the Aleph-Bet Sound Project-Contemporary Jewish Museum": {
             "name": "John Zorn Presents the Aleph-Bet Sound Project",
@@ -5334,8 +5335,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "5b90e868966b94928a9b02fd5a5adb80"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "01f1ad498d4b1341d035012d5e03acc3"
         },
         "In the Beginning: Artists Respond to Genesis-Contemporary Jewish Museum": {
             "name": "In the Beginning: Artists Respond to Genesis",
@@ -5362,8 +5363,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "66dd494e2a1c00f60295ff2d4823002c"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "be27972a5ef09472f1ba3bbee12af2d4"
         },
         "Exposing Identities\u2014Young Photographers Explore Culture, Community, and Self-Contemporary Jewish Museum": {
             "name": "Exposing Identities\u2014Young Photographers Explore Culture, Community, and Self",
@@ -5390,8 +5391,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "6fd42e014b76601349181568aff8f173"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "aa39ab4ccc5172d9ce3fd38e2e7a0133"
         },
         "The Jewish Identity Project: New American Photography-Contemporary Jewish Museum": {
             "name": "The Jewish Identity Project: New American Photography",
@@ -5418,8 +5419,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "49e5312df5bc8cf7ac17a64068bff082"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "5e7002c1e4c2e0f843420e2876fe158d"
         },
         "Art of Living: Contemporary Photography and Video from the Israel Museum-Contemporary Jewish Museum": {
             "name": "Art of Living: Contemporary Photography and Video from the Israel Museum",
@@ -5446,8 +5447,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "334cf7b7e64ccd5b525879df21c78bb8"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "3f8f6cac99c00ff431aee217a04e29e8"
         },
         "Intersections: Reading the Space-Contemporary Jewish Museum": {
             "name": "Intersections: Reading the Space",
@@ -5474,8 +5475,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "2b6147690ad94c1b6ca5de1572c6994b"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "b658132bd2bdbe4fd3569fce749a7f6a"
         },
         "Scents of Purpose: Artists Interpret the Spice Box-Contemporary Jewish Museum": {
             "name": "Scents of Purpose: Artists Interpret the Spice Box",
@@ -5502,8 +5503,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "3002ee548b0b0726b7a3ba9fb5fee347"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "265ee64437bb1afe16bcec3eb6d387f3"
         },
         "The Jewish Journey: Frederic Brenner's Photographic Odyssey-Contemporary Jewish Museum": {
             "name": "The Jewish Journey: Frederic Brenner's Photographic Odyssey",
@@ -5530,8 +5531,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "08d123d12c97c8944d5771aab9b81a70"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "bbcfeb4cab8bc2754794b21107360c2a"
         },
         "100 Artists See God-Contemporary Jewish Museum": {
             "name": "100 Artists See God",
@@ -5558,8 +5559,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "e11f89af22a1c9061a75adf2b13b43b1"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "40f95ed100a55c67f5bc44e79b9346eb"
         },
         "Hidden in the Walls-Contemporary Jewish Museum": {
             "name": "Hidden in the Walls",
@@ -5586,8 +5587,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "fc7d5ca5f7bbcc61a18eefa3d24a15a6"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "b7187a28bc8c6018423022c6e603ca3d"
         },
         "Stephanie Snyder: Hamakom/The Place-Contemporary Jewish Museum": {
             "name": "Stephanie Snyder: Hamakom/The Place",
@@ -5614,8 +5615,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "24b152aa9b948ae5e96c90ccfed7b99c"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "2074bd0e64b8fb6171827547541e9fb9"
         },
         "Sharing the Screen-Contemporary Jewish Museum": {
             "name": "Sharing the Screen",
@@ -5642,8 +5643,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "6e0beb24841cd998a753cfe176e7335f"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "e7ff18283664da7fb8da4d5e919fb0ea"
         },
         "Ben Katchor: Picture Stories-Contemporary Jewish Museum": {
             "name": "Ben Katchor: Picture Stories",
@@ -5670,8 +5671,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "143086cdfa564bd9b2c63b7ebce499b1"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "b62b9c3c331bf66148ef54a0b006bb85"
         },
         "Face(t)s of Memory: Found Photographs and Family Albums-Contemporary Jewish Museum": {
             "name": "Face(t)s of Memory: Found Photographs and Family Albums",
@@ -5698,8 +5699,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "ef318226578d26eee83da88320e6ff8a"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "8cba5029ba39bb2fab1dc3f797a82a08"
         },
         "Sophie Calle: Public Places\u2014Private Spaces-Contemporary Jewish Museum": {
             "name": "Sophie Calle: Public Places\u2014Private Spaces",
@@ -5726,8 +5727,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "3bc399d400b4ea2ad8463d645ee50b8e"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "01a4d8a60e8507d55a7e6d71f1772a6f"
         },
         "To the Rescue: Eight Artists in an Archive-Contemporary Jewish Museum": {
             "name": "To the Rescue: Eight Artists in an Archive",
@@ -5754,8 +5755,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "05f7418a02258e00da80e6d6f76342e6"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "563418cf444962246405b625f4703513"
         },
         "Making Change: 100 Artists Interpret the Tzedakah Box-Contemporary Jewish Museum": {
             "name": "Making Change: 100 Artists Interpret the Tzedakah Box",
@@ -5782,8 +5783,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:52",
-            "hash": "eb06e33f59d80d4d9aa52c0edbfbd9b8"
+            "last_updated": "2024-09-30 11:32:28",
+            "hash": "b916dffdf2a97fd3cd21dc53ebf9228d"
         },
         "Leah Rosenberg: When One Sees a Rainbow-Contemporary Jewish Museum": {
             "name": "Leah Rosenberg: When One Sees a Rainbow",
@@ -5810,8 +5811,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:50",
-            "hash": "2e45ec06b2d75bca75849bdb01f6b370"
+            "last_updated": "2024-09-30 11:32:23",
+            "hash": "04a2030f7bf1e7c3e9fc48d2fa08ad20"
         },
         "Nicki Green: Firmament-Contemporary Jewish Museum": {
             "name": "Nicki Green: Firmament",
@@ -5838,8 +5839,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:50",
-            "hash": "25e245182153df7dd6361350179c16db"
+            "last_updated": "2024-09-30 11:32:23",
+            "hash": "d8c6c734d7b6ca1f61745086a1dd02b1"
         },
         "Looted-Contemporary Jewish Museum": {
             "name": "Looted",
@@ -5866,8 +5867,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:50",
-            "hash": "86fd29865e1321cf21c5ceded0f05dbf"
+            "last_updated": "2024-09-30 11:32:23",
+            "hash": "71526a3eb81d2bc5f00c265e76d94052"
         }
     },
     "San Francisco Women Artists Gallery": {
@@ -5896,8 +5897,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:06",
-            "hash": "10c8c7a389448a0c4b9107213f090cc3"
+            "last_updated": "2024-09-30 11:32:54",
+            "hash": "e824930987f6d4ba0cf890f7411936b7"
         },
         "Spring! Lush!-San Francisco Women Artists Gallery": {
             "name": "Spring! Lush!",
@@ -5924,8 +5925,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:07",
-            "hash": "8db17b8289a67fd5ce78136505d721ed"
+            "last_updated": "2024-09-30 11:32:56",
+            "hash": "0684ecb24245cc3487fae34594fd31d9"
         },
         "Street Life-San Francisco Women Artists Gallery": {
             "name": "Street Life",
@@ -5952,8 +5953,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:08",
-            "hash": "faa720cbcac2f8fcd4e9c364d76766d4"
+            "last_updated": "2024-09-30 11:32:58",
+            "hash": "fcd017d72a20ae05b37e90e83c4f58b9"
         },
         "Textures, Patterns & Shapes-San Francisco Women Artists Gallery": {
             "name": "Textures, Patterns & Shapes",
@@ -5980,8 +5981,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:09",
-            "hash": "932af117a5a99f02f7dd5e1ddea8c86b"
+            "last_updated": "2024-09-30 11:33:00",
+            "hash": "6f3a7ac568c81bacbe5a55926ecbf147"
         },
         "Being Human-San Francisco Women Artists Gallery": {
             "name": "Being Human",
@@ -6008,8 +6009,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:10",
-            "hash": "84c01a8440b72212a37e160bf5d93d98"
+            "last_updated": "2024-09-30 11:33:02",
+            "hash": "042e84de080d091435642d4674321d48"
         },
         "Artistic Vision-San Francisco Women Artists Gallery": {
             "name": "Artistic Vision",
@@ -6036,8 +6037,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:12",
-            "hash": "3a60d2261f8ba1ee9db9df31e5b479ff"
+            "last_updated": "2024-09-30 11:33:04",
+            "hash": "d1b31afedc029f13f71e27a5c763a0d5"
         },
         "Annual Bay Area Artists\u2019 Choice-San Francisco Women Artists Gallery": {
             "name": "Annual Bay Area Artists\u2019 Choice",
@@ -6064,8 +6065,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:13",
-            "hash": "d93631464a8360e546a8296b1d41d513"
+            "last_updated": "2024-09-30 11:33:06",
+            "hash": "6531452f225ba967a02fb0ea5237c5e7"
         },
         "New Work-San Francisco Women Artists Gallery": {
             "name": "New Work",
@@ -6092,8 +6093,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:14",
-            "hash": "fe6481a26140a9452c182b9838d2eef4"
+            "last_updated": "2024-09-30 11:33:08",
+            "hash": "0ff45a4867be904c4782d72d1cf9039e"
         },
         "Close-up-San Francisco Women Artists Gallery": {
             "name": "Close-up",
@@ -6120,8 +6121,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:15",
-            "hash": "94b8984cfc260203243c5f136ae6efa5"
+            "last_updated": "2024-09-30 11:33:09",
+            "hash": "c329ea78861beeaed8ab0a361053ef03"
         },
         "Reflection-San Francisco Women Artists Gallery": {
             "name": "Reflection",
@@ -6148,8 +6149,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:16",
-            "hash": "abe121df0ff93db66edf425d4626e2f7"
+            "last_updated": "2024-09-30 11:33:11",
+            "hash": "44b25e970fb1f15c2c30aeda23cf1c91"
         },
         "Art Of Pride- Moving Forward-San Francisco Women Artists Gallery": {
             "name": "Art Of Pride- Moving Forward",
@@ -6176,8 +6177,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:18",
-            "hash": "1a500f5a4082860ac1a91a456a6aa035"
+            "last_updated": "2024-09-30 11:33:13",
+            "hash": "3bfeec0f3fffb9a12383799b865cf3cc"
         },
         "Black White And Shades Between-San Francisco Women Artists Gallery": {
             "name": "Black White And Shades Between",
@@ -6204,8 +6205,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:19",
-            "hash": "9c11cc44ea245680af5f6add296a1424"
+            "last_updated": "2024-09-30 11:33:15",
+            "hash": "70ae4f6c133268598264e7d4e43c7d59"
         },
         "Embracing Nature-San Francisco Women Artists Gallery": {
             "name": "Embracing Nature",
@@ -6232,8 +6233,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:20",
-            "hash": "b29e116180c0df57d3b729d605034ce3"
+            "last_updated": "2024-09-30 11:33:16",
+            "hash": "8a1b7e22e34e49e9b937a01b6bb9f1d9"
         },
         "Color Pop!-San Francisco Women Artists Gallery": {
             "name": "Color Pop!",
@@ -6260,8 +6261,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:21",
-            "hash": "8372aa95bbe7ad638a9912becdb17dd1"
+            "last_updated": "2024-09-30 11:33:18",
+            "hash": "22e12a706157e89e45b61988ab8405e5"
         },
         "Patterns & Shapes-San Francisco Women Artists Gallery": {
             "name": "Patterns & Shapes",
@@ -6288,8 +6289,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:22",
-            "hash": "d02b02dff47271f8008a4b690cbab628"
+            "last_updated": "2024-09-30 11:33:20",
+            "hash": "200463dd8ebfffcf77f1ee615c8e6e29"
         },
         "Climate Change: Protecting Mother Earth-San Francisco Women Artists Gallery": {
             "name": "Climate Change: Protecting Mother Earth",
@@ -6316,8 +6317,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:23",
-            "hash": "88bd5c703bde0a0216582474dd9653a9"
+            "last_updated": "2024-09-30 11:33:21",
+            "hash": "e2799f276368be26c77b64ff34e41063"
         },
         "Photographer\u2019s Eye-San Francisco Women Artists Gallery": {
             "name": "Photographer\u2019s Eye",
@@ -6344,8 +6345,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:25",
-            "hash": "aa96e9843f6c08138b966ed6552ae4ba"
+            "last_updated": "2024-09-30 11:33:23",
+            "hash": "5db6ee021573b7e0e86c921d2343b339"
         },
         "Holiday Spirit-San Francisco Women Artists Gallery": {
             "name": "Holiday Spirit",
@@ -6372,8 +6373,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:26",
-            "hash": "c21862a98fafbe7e07ec4fd832334b88"
+            "last_updated": "2024-09-30 11:33:25",
+            "hash": "697ff314799dc8b9fdfc485cd9fba404"
         },
         "Edge Of Abstraction-San Francisco Women Artists Gallery": {
             "name": "Edge Of Abstraction",
@@ -6400,8 +6401,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:27",
-            "hash": "d025f5ace655eef60dc827c96e6bef34"
+            "last_updated": "2024-09-30 11:33:26",
+            "hash": "d2629c1f6e13785b24e32a8b33f91747"
         },
         "Artists\u2019 Choice 2022-San Francisco Women Artists Gallery": {
             "name": "Artists\u2019 Choice 2022",
@@ -6428,8 +6429,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:28",
-            "hash": "f076f012c4914248dffc7cbc62ff66d2"
+            "last_updated": "2024-09-30 11:33:28",
+            "hash": "86c42cdf1df013b74e2e8c48d07ea142"
         },
         "Botanicals-San Francisco Women Artists Gallery": {
             "name": "Botanicals",
@@ -6456,8 +6457,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:29",
-            "hash": "5f55d4637c40cf48d923997433591cac"
+            "last_updated": "2024-09-30 11:33:30",
+            "hash": "b7842918e65ca5a5b54db253060f1c27"
         },
         "Being Human \u2013 The Figuratve Show-San Francisco Women Artists Gallery": {
             "name": "Being Human \u2013 The Figuratve Show",
@@ -6484,8 +6485,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:30",
-            "hash": "95f19e01515541916861366ae6bdd531"
+            "last_updated": "2024-09-30 11:33:32",
+            "hash": "084e2757bb0405d439bf90f058cf82cc"
         },
         "Patterns, Textures And Materials-San Francisco Women Artists Gallery": {
             "name": "Patterns, Textures And Materials",
@@ -6512,8 +6513,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:31",
-            "hash": "e5a115c570b20d114ee7df85bf1b1ecd"
+            "last_updated": "2024-09-30 11:33:34",
+            "hash": "05c20f3f55d527b4280afe63e5eb4374"
         },
         "Melting: Climate Crisis \u2013 Water Is Life-San Francisco Women Artists Gallery": {
             "name": "Melting: Climate Crisis \u2013 Water Is Life",
@@ -6540,8 +6541,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:33",
-            "hash": "e4fb390a2f297b3f9a99f260151752d5"
+            "last_updated": "2024-09-30 11:33:35",
+            "hash": "0d6dd5e74a80dc63d2f0ba3ce096a5a5"
         },
         "Intense Palette-San Francisco Women Artists Gallery": {
             "name": "Intense Palette",
@@ -6568,8 +6569,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:34",
-            "hash": "0ebecd4006b89e157830d4caba00816b"
+            "last_updated": "2024-09-30 11:33:38",
+            "hash": "c6a26aa988a9040102ccd69511d814b2"
         },
         "Capture The Moment-San Francisco Women Artists Gallery": {
             "name": "Capture The Moment",
@@ -6596,8 +6597,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:35",
-            "hash": "640d370df554c0e2f6bf2a2a0480d9f8"
+            "last_updated": "2024-09-30 11:33:41",
+            "hash": "2a8cc0c3cff6f1197f167a7ea6c7daa8"
         },
         "Celebrating Women\u2019s History Month-San Francisco Women Artists Gallery": {
             "name": "Celebrating Women\u2019s History Month",
@@ -6624,8 +6625,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:36",
-            "hash": "1b190dca80e221cf96fa1deaf505950f"
+            "last_updated": "2024-09-30 11:33:43",
+            "hash": "ce615867ce2bac085613136e89ac31f8"
         },
         "1st Annual Photography & Digital Art Exhibition-San Francisco Women Artists Gallery": {
             "name": "1st Annual Photography & Digital Art Exhibition",
@@ -6652,8 +6653,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:38",
-            "hash": "029663df2ae0638bac5dd7553fd69ca6"
+            "last_updated": "2024-09-30 11:33:45",
+            "hash": "864121a5952b4653d548c26dd6587fae"
         },
         "Fresh Perspective-San Francisco Women Artists Gallery": {
             "name": "Fresh Perspective",
@@ -6680,8 +6681,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:39",
-            "hash": "d005f3ef7def0fbb77cddbda9208bc33"
+            "last_updated": "2024-09-30 11:33:47",
+            "hash": "512f700c7bc223a68641445965d5e957"
         },
         "Artful Giving-San Francisco Women Artists Gallery": {
             "name": "Artful Giving",
@@ -6708,8 +6709,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:40",
-            "hash": "20c1ee30587eb5c0170313f96339f2c2"
+            "last_updated": "2024-09-30 11:33:49",
+            "hash": "4251948ca477ab3f871d05c974f255ca"
         },
         "Light And Shadow-San Francisco Women Artists Gallery": {
             "name": "Light And Shadow",
@@ -6736,8 +6737,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:41",
-            "hash": "21f0d886585e54362a37d705986d11bd"
+            "last_updated": "2024-09-30 11:33:51",
+            "hash": "3cd2d7f099a69082c7986be2ae2122b2"
         },
         "Artists Choice 2021-San Francisco Women Artists Gallery": {
             "name": "Artists Choice 2021",
@@ -6764,8 +6765,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:42",
-            "hash": "8da1024c06034fdb04ad74c040228b43"
+            "last_updated": "2024-09-30 11:33:53",
+            "hash": "836ec1c3277afdb24f9c9531ca6db17b"
         },
         "Abstract World-San Francisco Women Artists Gallery": {
             "name": "Abstract World",
@@ -6792,8 +6793,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:43",
-            "hash": "e18d7dd1eaa82895ff421c7f2048b061"
+            "last_updated": "2024-09-30 11:33:55",
+            "hash": "7ea22e54e6b0f0bfde31c1d5a3dc174e"
         },
         "Bold. Colors!-San Francisco Women Artists Gallery": {
             "name": "Bold. Colors!",
@@ -6820,8 +6821,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:45",
-            "hash": "958073984e37aa790809bd1ee35963c5"
+            "last_updated": "2024-09-30 11:33:57",
+            "hash": "b1f580699326e58358842c40264e01d1"
         },
         "Verdant-San Francisco Women Artists Gallery": {
             "name": "Verdant",
@@ -6848,8 +6849,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:46",
-            "hash": "27b087bc68391f674646fd48bed6ce62"
+            "last_updated": "2024-09-30 11:33:59",
+            "hash": "8e68a5da220e5eb34fb0d9a03821a85d"
         },
         "Art Matters-San Francisco Women Artists Gallery": {
             "name": "Art Matters",
@@ -6876,8 +6877,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:47",
-            "hash": "1bf014d14e05064261ba93034bffe655"
+            "last_updated": "2024-09-30 11:34:00",
+            "hash": "f20c7c38807b7312ef4f53341b9b8486"
         },
         "Collage & Mixed Media-San Francisco Women Artists Gallery": {
             "name": "Collage & Mixed Media",
@@ -6904,8 +6905,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:48",
-            "hash": "eb27756472a3211956201467e9d1943d"
+            "last_updated": "2024-09-30 11:34:02",
+            "hash": "6b62137cd312e8f4a3d3924334098c85"
         },
         "Scapes \u2013 City, Land And Sea-San Francisco Women Artists Gallery": {
             "name": "Scapes \u2013 City, Land And Sea",
@@ -6932,8 +6933,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:49",
-            "hash": "3c74b3f268044d2971df957c3414dc53"
+            "last_updated": "2024-09-30 11:34:04",
+            "hash": "24de0b43d9be6f731b6922da031d7623"
         },
         "Patterns & Symmetry-San Francisco Women Artists Gallery": {
             "name": "Patterns & Symmetry",
@@ -6960,8 +6961,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:50",
-            "hash": "cfd25278e3980b7acb7da559a8cb4460"
+            "last_updated": "2024-09-30 11:34:06",
+            "hash": "4b183bdc8f77484046aaf2ec4c001a35"
         },
         "Slice Of Life-San Francisco Women Artists Gallery": {
             "name": "Slice Of Life",
@@ -6988,8 +6989,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:51",
-            "hash": "e5e55714d85bcbbcf5f4d995059a4a4a"
+            "last_updated": "2024-09-30 11:34:08",
+            "hash": "e0a87ee8d023091458dbd7f6b61f141a"
         },
         "Gift Of Art-San Francisco Women Artists Gallery": {
             "name": "Gift Of Art",
@@ -7016,8 +7017,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:53",
-            "hash": "7a2553a3b09b4d1bea6dc55e21673ad0"
+            "last_updated": "2024-09-30 11:34:10",
+            "hash": "a4fc2968b2549db01ca80ab866e51e70"
         },
         "Reflective-San Francisco Women Artists Gallery": {
             "name": "Reflective",
@@ -7044,8 +7045,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:54",
-            "hash": "138ec76d17ce7b0c4b8e1ec4d09db9df"
+            "last_updated": "2024-09-30 11:34:12",
+            "hash": "c1edf001b9ac7fe1c73af00545b4912b"
         },
         "Artists Choice 2020-San Francisco Women Artists Gallery": {
             "name": "Artists Choice 2020",
@@ -7072,8 +7073,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:55",
-            "hash": "8c3ced3394e9bcfbe9c71378056d050c"
+            "last_updated": "2024-09-30 11:34:14",
+            "hash": "6415424f73830d290a306e0187461188"
         },
         "Members\u2019 Online Summer Exhibition-San Francisco Women Artists Gallery": {
             "name": "Members\u2019 Online Summer Exhibition",
@@ -7100,8 +7101,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:56",
-            "hash": "2a1f1b8b3a3d045661095e9565db16ab"
+            "last_updated": "2024-09-30 11:34:16",
+            "hash": "9b4c7732d5099525f2b4bd8206e976e3"
         },
         "Free To Be-San Francisco Women Artists Gallery": {
             "name": "Free To Be",
@@ -7128,8 +7129,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:57",
-            "hash": "c2e8dd7729af37f885decfbd483631b3"
+            "last_updated": "2024-09-30 11:34:18",
+            "hash": "b2cec279de5cd49613cab9049311d3f3"
         },
         "Abstract Thinking-San Francisco Women Artists Gallery": {
             "name": "Abstract Thinking",
@@ -7156,8 +7157,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:59",
-            "hash": "106881920cd2283a437c99c07085c539"
+            "last_updated": "2024-09-30 11:34:20",
+            "hash": "8f2fe672cb4fa3548f16f63c6aea7aa9"
         },
         "Hue And Me-San Francisco Women Artists Gallery": {
             "name": "Hue And Me",
@@ -7184,8 +7185,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:04",
-            "hash": "fa114cb2e0cbe008bbe349fee6583aec"
+            "last_updated": "2024-09-30 11:32:53",
+            "hash": "50ea843e7f223b6748ff81c26f21f5d6"
         },
         "Radiating Pride- Free To Be Me-San Francisco Women Artists Gallery": {
             "name": "Radiating Pride- Free To Be Me",
@@ -7212,8 +7213,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:01",
-            "hash": "2d9afbba4b1645c203537d81f0f56440"
+            "last_updated": "2024-09-30 11:32:49",
+            "hash": "1d739adf7ea1ca27a4ef6b330ac64ac1"
         },
         "The Delicious World-San Francisco Women Artists Gallery": {
             "name": "The Delicious World",
@@ -7240,8 +7241,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:03",
-            "hash": "647861356b8a5c2dd39301b940586e3d"
+            "last_updated": "2024-09-30 11:32:51",
+            "hash": "cb470ed787403d4eb0d4a6040fe5b799"
         },
         "Illuminations-San Francisco Women Artists Gallery": {
             "name": "Illuminations",
@@ -7268,8 +7269,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:49:00",
-            "hash": "aa6b5b450a7960fdce05cf75b1b9edcb"
+            "last_updated": "2024-09-30 11:32:47",
+            "hash": "a89aee8f59661fef0620d09275589df9"
         },
         "Motion-San Francisco Women Artists Gallery": {
             "name": "Motion",
@@ -7296,8 +7297,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:58",
-            "hash": "26dac0758926ee12c34ad43b9895d13a"
+            "last_updated": "2024-09-30 11:32:43",
+            "hash": "4fa4a77ba8ebb771dc220214f706cda7"
         },
         "August Abstractions-San Francisco Women Artists Gallery": {
             "name": "August Abstractions",
@@ -7324,8 +7325,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:59",
-            "hash": "0aefe6b4bbd563759410fafc71bc0b69"
+            "last_updated": "2024-09-30 11:32:45",
+            "hash": "7823e70d7cc0644c65507d5efcba2a46"
         },
         "Artists Choice 2024-San Francisco Women Artists Gallery": {
             "name": "Artists Choice 2024",
@@ -7352,8 +7353,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:48:57",
-            "hash": "d10b3cf7e2bb5fa5acd70d1c4c975719"
+            "last_updated": "2024-09-30 11:32:34",
+            "hash": "11bcbd049561288c12ef4d97723b01bb"
         }
     },
     "Asian Art Museum": {
@@ -7381,8 +7382,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "6422b72c2b3d6a123c6a6b34819f33b5",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "c7ca1ae8696d42bd9eb2bee006668f4b",
             "ongoing": false
         },
         "Into View: New Voices, New Stories-Asian Art Museum": {
@@ -7409,8 +7410,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "ff330fb5b375b1bb052bcaeb7111582a",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "96852aa9d56203a60ce86704e283ab2a",
             "ongoing": false
         },
         "Takashi Murakami-Asian Art Museum": {
@@ -7437,8 +7438,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "bdbb984a03a7c9497ce4f6a4e8d078cf",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "98e88ad85880d956664c1632de5fc495",
             "ongoing": false
         },
         "Japanese Tastes in Chinese Ceramics-Asian Art Museum": {
@@ -7465,8 +7466,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "3bed925e7d64b1b2bfc17874a459594e",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "0874c001c3e5c40dbc8d6fcd49dbfe0e",
             "ongoing": false
         },
         "Japanese Ink Paintings-Asian Art Museum": {
@@ -7493,8 +7494,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "8cb61b863c98bc5957b5499bc9a59747",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "ab3bbafcdb0d39ab310e91cb75ce68e1",
             "ongoing": false
         },
         "Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts-Asian Art Museum": {
@@ -7521,8 +7522,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "795a4965763e63194d33e23f8788fce5",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "2df9a6a78754a32bfff2bf659ed5feb3",
             "ongoing": false
         },
         "RAD (Research And Development)-Asian Art Museum": {
@@ -7536,7 +7537,7 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
+                "start": null,
                 "end": "2024-10-31"
             },
             "ongoing": false,
@@ -7550,8 +7551,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "52f9ca05d742efaaee96770e9ca2fe26"
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "728f7a4e7bc9d1bb77e78627f155253e"
         },
         "Ruth Asawa: Untitled (S.272)-Asian Art Museum": {
             "name": "Ruth Asawa: Untitled (S.272)",
@@ -7564,8 +7565,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -7578,8 +7579,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "b07bf0c18a0bb06e8ca30fc520eecc3c"
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "e0f549d8225b841bde117d2706091596"
         },
         "East West Bank Art Terrace-Asian Art Museum": {
             "name": "East West Bank Art Terrace",
@@ -7592,8 +7593,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -7633,8 +7634,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "15d08c6199c6fb592b85802d72cf7a7a",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "55ce2b53256c3ba7756736278fe771f7",
             "ongoing": false
         },
         "Taihu Rock\u2014East Wind II-Asian Art Museum": {
@@ -7648,8 +7649,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -7689,8 +7690,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "0bdaade0292433955d2e35d1ed14d6e1",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "694fe7a86e2954f8dbd5574e2e84eda5",
             "ongoing": false
         },
         "Murakami: Monsterized-Asian Art Museum": {
@@ -7717,8 +7718,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "6616bb21b149cfbe5b805704583c59ce",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "8e8123f92bd1afb89c5516b07481f4be",
             "ongoing": false
         },
         "Jenifer K Wofford: Pattern Recognition-Asian Art Museum": {
@@ -7745,8 +7746,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "6724e64e8ebd175cdb7fc3a19964ec7f",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "3b78c2361c65fd031dbef115f7279748",
             "ongoing": false
         },
         "Afruz Amighi: My House, My Tomb-Asian Art Museum": {
@@ -7773,8 +7774,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "24f189795508ab9b96167a405b8310a8",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "c6fbd4794ab142341beeede3d4689b7b",
             "ongoing": false
         },
         "Zheng Chongbin: I Look for the Sky-Asian Art Museum": {
@@ -7801,8 +7802,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "eb7069046bdb7b5149a667133fb26a05",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "6686e0784d4822b9759707ee9d916e81",
             "ongoing": false
         },
         "Into View: Bernice Bing-Asian Art Museum": {
@@ -7829,8 +7830,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "f72d54421c3d8619afff7db7ca04af24",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "4661227a9fcae740fb0e71e9c7f6c0bc",
             "ongoing": false
         },
         "Bearing Witness: Selected Works by Chiura Obata-Asian Art Museum": {
@@ -7857,8 +7858,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "a5667e1d0c17027511e0e060dfb3738a",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "91c4b49c1136ceaff6e1a19efaa82528",
             "ongoing": false
         },
         "Beyond Bollywood: 2000 Years of Dance in Art-Asian Art Museum": {
@@ -7885,8 +7886,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "ecf289ef7b2eb162cf896fa2b419eb30",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "78b3437d9e5eeb4a6024c010334acc46",
             "ongoing": false
         },
         "Color Trip: Yoshida Hodaka\u2019s Modern Prints-Asian Art Museum": {
@@ -7913,8 +7914,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "a8ef7b759cb2ccc9f9bc1d6454eb0252",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "59d145bb27a19da512114be5283bfc47",
             "ongoing": false
         },
         "Past Continuous Tense-Asian Art Museum": {
@@ -7941,8 +7942,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "aaf8f351cfa3a748f24b775787ff22cd",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "676125f84933d6c1b872975a567c8b6d",
             "ongoing": false
         },
         "Kongkee: Warring States Cyberpunk-Asian Art Museum": {
@@ -7969,8 +7970,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "66b7833c2c7af9b65d06facda50425a9",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "0a1040c169b5d97c95e8020c994238a5",
             "ongoing": false
         },
         "Delightful Luxury: The Art of Chinese Lacquer-Asian Art Museum": {
@@ -7997,8 +7998,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "b293d45ce33142a0b5982e6f1f21e09b",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "e86e80fadf0aa195e891d4eef2fe7a65",
             "ongoing": false
         },
         "The Heart of Zen-Asian Art Museum": {
@@ -8025,8 +8026,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "59c98b3108bd0425ab4ddf3a7080475d",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "81e819182d280f180635958fc2f2038a",
             "ongoing": false
         },
         "Bernice Bing: Open Call-Asian Art Museum": {
@@ -8053,8 +8054,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "b45857def36d326acd647aa7f4a65cca",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "0cf72f98e2b4f271a107510449c82da0",
             "ongoing": false
         },
         "Hell: Arts of Asian Underworlds-Asian Art Museum": {
@@ -8081,8 +8082,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "a93966bb0079284c504fc67d9d9a4dba",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "015434bc3f7aac5b90a9cd741670167c",
             "ongoing": false
         },
         "Chinese Ink Paintings: A Selection of Modern Masters-Asian Art Museum": {
@@ -8109,8 +8110,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "3d991a465fe1a12db7972c0b4d2da00a",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "aed45ecbfd0bf89f3cbaef491464b60e",
             "ongoing": false
         },
         "teamLab: Sketch Ocean-Asian Art Museum": {
@@ -8137,8 +8138,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "716db3eb7722cb2a3eeca3fe5454e88c",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "ee5a937875daf2228c24177ec914785d",
             "ongoing": false
         },
         "teamLab: Continuity-Asian Art Museum": {
@@ -8165,8 +8166,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "08ebc5d1970a2faa6f4ac44a650cc924",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "4c15f3b0bbe46ec6909cd0701def031c",
             "ongoing": false
         },
         "After Hope: Videos of Resistance-Asian Art Museum": {
@@ -8193,8 +8194,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "3891a4f1505a3fbc96a1707325851158",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "168f159b945b9e0bd37caaceedf5f045",
             "ongoing": false
         },
         "Memento: Jayashree Chakravarty and Lam Tung Pang-Asian Art Museum": {
@@ -8221,8 +8222,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "cb42fbc04c72fcc8db04a5aff924ad86",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "d7fb36b0c9f22af4b68c16b720150841",
             "ongoing": false
         },
         "Chanel Miller: I was, I am, I will be-Asian Art Museum": {
@@ -8249,8 +8250,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "24e100bc1fb1e10b42556a05cbcd154c",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "b7d9d814a637a673f92b89d5718d1701",
             "ongoing": false
         },
         "Carlos Villa: Worlds in Collision-Asian Art Museum": {
@@ -8277,8 +8278,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "ed93f1da6351a801376d5430a303f622",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "420ab7d6798d2802724880caa38c8a5f",
             "ongoing": false
         },
         "Seeing Gender-Asian Art Museum": {
@@ -8305,8 +8306,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "67195975fd227afe3292bbda15a71b11",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "4d09f14a0aac4ce0b5319307552a4dd5",
             "ongoing": false
         },
         "Weaving Stories-Asian Art Museum": {
@@ -8333,8 +8334,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "f2cb73eba14b03cf5fa0dbbda25cd3dc",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "7a7b8246e52526bb918a5ffee7b249e8",
             "ongoing": false
         },
         "When Rabbit Left the Moon-Asian Art Museum": {
@@ -8361,8 +8362,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:04",
-            "hash": "8636d95bd19511919d987c1c9c01f084",
+            "last_updated": "2024-09-30 11:35:46",
+            "hash": "08d074952fca06b5062b7b3111b8b0ab",
             "ongoing": false
         },
         "Coming Soon: Hallyu! The Korean Wave-Asian Art Museum": {
@@ -8404,8 +8405,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8418,8 +8419,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "c50ab7d075da06839776205b749d8e60"
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "075fd1452b7d0f79e5f92932074d1f69"
         },
         "Ashwini Bhat: What Will It Take / For Us To Awake?-Asian Art Museum": {
             "name": "Ashwini Bhat: What Will It Take / For Us To Awake?",
@@ -8432,8 +8433,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8446,8 +8447,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "a6241fb97334df5f063187393f2f7837"
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "225ba73ad10e242a98401f56ec08eda5"
         },
         "Mayumi Oda-Asian Art Museum": {
             "name": "Mayumi Oda",
@@ -8460,8 +8461,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8474,8 +8475,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "269ce9de6cdcc84627cd20448be8ed76"
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "70f6e193709a89bf816434ec16afa773"
         },
         "Selections from the Guru Nanak Janamsakhi-Asian Art Museum": {
             "name": "Selections from the Guru Nanak Janamsakhi",
@@ -8488,8 +8489,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8502,8 +8503,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "3d304f9f9df1bbab8dc5337db938dec8"
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "cab91e7182f9537bee1f9c96d0a61f76"
         },
         "Southeast Asian Galleries-Asian Art Museum": {
             "name": "Southeast Asian Galleries",
@@ -8516,8 +8517,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8530,8 +8531,36 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:50:59",
-            "hash": "58f8c5cdd4c2af5c46cb1e04c8ed06cd"
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "3b86061640e8226a5c1488ea8d688564"
+        },
+        "Hallyu! The Korean Wave-Asian Art Museum": {
+            "name": "Hallyu! The Korean Wave",
+            "venue": "Asian Art Museum",
+            "description": "Discover why the world \ncan\u2019t\n get enough K-pop, Korean dramas, and \nkimbap\n.",
+            "tags": [
+                "exhibition",
+                "museum",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": null,
+                "end": "2024-01-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://exhibitions.asianart.org/exhibitions/hallyu-the-korean-wave/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/07/Hallyu-exh2_600x450-600x450.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-09-30 11:35:45",
+            "hash": "6f5386677cdd389a7062f9a67f4b751e"
         }
     },
     "Oakland Museum of California": {
@@ -8546,8 +8575,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8587,8 +8616,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:06",
-            "hash": "47e4d261273a3cb6e7e98ed1af1eae0d"
+            "last_updated": "2024-09-30 11:35:49",
+            "hash": "b4b2089744ecbdaa88c633a41501c0fd"
         },
         "You Are Here: California Stories on the Map-Oakland Museum of California": {
             "name": "You Are Here: California Stories on the Map",
@@ -8601,8 +8630,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8615,8 +8644,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:07",
-            "hash": "09710558074725bf73c2330577348b79"
+            "last_updated": "2024-09-30 11:35:50",
+            "hash": "3677ea0e6132e3eda433a53fb6dddc84"
         },
         "Black Power-Oakland Museum of California": {
             "name": "Black Power",
@@ -8629,8 +8658,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8643,8 +8672,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:08",
-            "hash": "d10e55dc15b9fdba1550616eb096bea4"
+            "last_updated": "2024-09-30 11:35:51",
+            "hash": "ebdc697daea57d28f84ce84bf5ab9cdf"
         },
         "OMCA Kids: Nature Playspace-Oakland Museum of California": {
             "name": "OMCA Kids: Nature Playspace",
@@ -8657,8 +8686,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8671,8 +8700,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:08",
-            "hash": "e9697f2a5e46f0d7ff5d2c69a02c2415"
+            "last_updated": "2024-09-30 11:35:53",
+            "hash": "e922cba3ceaf9f92605054941ebfbd5f"
         },
         "Remembering Artist Hung Liu-Oakland Museum of California": {
             "name": "Remembering Artist Hung Liu",
@@ -8685,8 +8714,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8727,8 +8756,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:11",
-            "hash": "ff7c5b9cb83720482a36f1ac629400ef"
+            "last_updated": "2024-09-30 11:35:58",
+            "hash": "16e3afc06292f19d6e8d6ba81a9a51d0"
         },
         "Angela Davis\u2013Seize the Time-Oakland Museum of California": {
             "name": "Angela Davis\u2013Seize the Time",
@@ -8755,8 +8784,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:12",
-            "hash": "599232cc5eef156e2c4cd4df651f3fab"
+            "last_updated": "2024-09-30 11:36:01",
+            "hash": "7353b7d93584e4c3b6af713b048f99e3"
         },
         "Hella Feminist-Oakland Museum of California": {
             "name": "Hella Feminist",
@@ -8783,8 +8812,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:13",
-            "hash": "78e134068ca9a1f9b226e1dc62c64bb3"
+            "last_updated": "2024-09-30 11:36:02",
+            "hash": "5e5ba50841c8af091fba1f87f62cfe87"
         },
         "Edith Heath: A Life in Clay-Oakland Museum of California": {
             "name": "Edith Heath: A Life in Clay",
@@ -8811,8 +8840,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:14",
-            "hash": "66093eb950f0d98d2e89279c4b7a9be7"
+            "last_updated": "2024-09-30 11:36:03",
+            "hash": "3e6f8f53a91c5dc77d958841000e224b"
         },
         "Mothership: Voyage Into Afrofuturism-Oakland Museum of California": {
             "name": "Mothership: Voyage Into Afrofuturism",
@@ -8839,8 +8868,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:14",
-            "hash": "56e37e894caef6a26240216f171812dd"
+            "last_updated": "2024-09-30 11:36:04",
+            "hash": "a8586a1b79d9da6623cc1b35f56a5067"
         },
         "No Spectators: The Art of Burning Man-Oakland Museum of California": {
             "name": "No Spectators: The Art of Burning Man",
@@ -8880,8 +8909,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "null",
-                "end": "null"
+                "start": null,
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -8894,8 +8923,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:09",
-            "hash": "e53ddb5e48dcd1d91d2369ed33c8cf0d"
+            "last_updated": "2024-09-30 11:35:54",
+            "hash": "c145d7a0cde6b666bfc596ea2e331eb8"
         }
     },
     "Kala Art Institute": {
@@ -9041,8 +9070,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "978b5ef0eba84565297c5ff2c7eea5e7"
+            "last_updated": "2024-09-30 11:36:07",
+            "hash": "98295c5d53d84361cdbc1de26cf5dcc5"
         },
         "Livien Yin: Thirsty-Cantor Arts Center": {
             "name": "Livien Yin: Thirsty",
@@ -9069,8 +9098,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "5e9a596e58261488af65fe6dae7c44f0"
+            "last_updated": "2024-09-30 11:36:07",
+            "hash": "2c438ddaecdbe9a9a6ef28c73bb3fce7"
         },
         "TT Takemoto: Remembering in the Absence of Memory-Cantor Arts Center": {
             "name": "TT Takemoto: Remembering in the Absence of Memory",
@@ -9097,8 +9126,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "f8dd5776e79fd4f4903654506101371c"
+            "last_updated": "2024-09-30 11:36:07",
+            "hash": "fc1e7d19f4b6e8a603ee2aa5494bf2e5"
         },
         "Archive Rooms-Cantor Arts Center": {
             "name": "Archive Rooms",
@@ -9112,7 +9141,7 @@
             "phase": "current",
             "dates": {
                 "start": "2024-07-17",
-                "end": "null"
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -9125,8 +9154,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "9c08df976899e8e0ada916f0e099fb98"
+            "last_updated": "2024-09-30 11:36:07",
+            "hash": "3d2c17fe0e609bdd646f1dd0a07e8bc1"
         },
         "The Faces of Ruth Asawa-Cantor Arts Center": {
             "name": "The Faces of Ruth Asawa",
@@ -9140,7 +9169,7 @@
             "phase": "current",
             "dates": {
                 "start": "2022-07-06",
-                "end": "null"
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -9153,8 +9182,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "db16acf18e40e02d8964f4b7ef1415c8"
+            "last_updated": "2024-09-30 11:36:07",
+            "hash": "be8805c78eea7026604dbd124faaad42"
         },
         "Dwelling: New Acquisitions-Cantor Arts Center": {
             "name": "Dwelling: New Acquisitions",
@@ -9168,7 +9197,7 @@
             "phase": "future",
             "dates": {
                 "start": "2024-10-04",
-                "end": "null"
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -9181,8 +9210,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "f44196707bd8678b85b77319e3214645"
+            "last_updated": "2024-09-30 11:36:08",
+            "hash": "a88c548acfe1a10931c950cdda8307a6"
         },
         "Day Jobs-Cantor Arts Center": {
             "name": "Day Jobs",
@@ -9209,8 +9238,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "65872bcd42f1c6cd5e7d08a698d97a3e"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "cc6c7b03a220ba772430957e705f307e"
         },
         "Sof\u00eda Gallis\u00e1 Muriente: Celaje (Cloudscape)-Cantor Arts Center": {
             "name": "Sof\u00eda Gallis\u00e1 Muriente: Celaje (Cloudscape)",
@@ -9237,8 +9266,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "e48353b4234276c3c946b7bed542b7a8"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "0316348f8aca793324a92f81919cb819"
         },
         "Beyond Here: The Judy and Sidney Zuber Collection of Latin American Photography-Cantor Arts Center": {
             "name": "Beyond Here: The Judy and Sidney Zuber Collection of Latin American Photography",
@@ -9265,8 +9294,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "40b980d241a40bc13326821f226014e3"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "ef790d1a24bd6c49f927b01e6a519778"
         },
         "Imvuselelo: The revival-Cantor Arts Center": {
             "name": "Imvuselelo: The revival",
@@ -9293,8 +9322,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "dc717926c94a054a8a8aae57b9ba1cb4"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "bf88326584d35a2068edf4035764cfff"
         },
         "Morris Hirshfield Rediscovered-Cantor Arts Center": {
             "name": "Morris Hirshfield Rediscovered",
@@ -9321,8 +9350,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "b44ccba4d517b50201356853bed2f1ca"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "0011175cf38356bff2e810a92fea5a9d"
         },
         "Full Figure-Cantor Arts Center": {
             "name": "Full Figure",
@@ -9349,8 +9378,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "dd5940a56db828748006f6234812486a"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "0a7bcd5df9b1409d2fffb0eb79971f77"
         },
         "Kenneth Tam: All of M-Cantor Arts Center": {
             "name": "Kenneth Tam: All of M",
@@ -9377,8 +9406,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "536951b22a9fbb5a46dfe7004b9a8032"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "c8b485dfaa52fcb77038378b0acb3613"
         },
         "Printing Protest-Cantor Arts Center": {
             "name": "Printing Protest",
@@ -9405,8 +9434,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "15dfb9c720d37136f368103df2af2e01"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "866d9a38a156735d5512c0c482064f5e"
         },
         "Reality Makes Them Dream: American Photography, 1929\u20131941-Cantor Arts Center": {
             "name": "Reality Makes Them Dream: American Photography, 1929\u20131941",
@@ -9433,8 +9462,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "88eccfe272f72a57e0a5479aa1384d4a"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "56b86801fab0d7cd2895c8f7c5ee4016"
         },
         "A Change of Scenery: Photographs of Leisure in the Landscape-Cantor Arts Center": {
             "name": "A Change of Scenery: Photographs of Leisure in the Landscape",
@@ -9461,8 +9490,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "f76389875bcd85f52970002b14f55aae"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "98db8b2948d9d9eefb120dc144b7db1b"
         },
         "Yinka Shonibare CBE, RA: The American Library-Cantor Arts Center": {
             "name": "Yinka Shonibare CBE, RA: The American Library",
@@ -9489,8 +9518,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "5f86560b6fb912f7710370b79887b6aa"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "a28035780aa7caee7b6b15ae63fe8c02"
         },
         "A young Yu: Mourning Rituals-Cantor Arts Center": {
             "name": "A young Yu: Mourning Rituals",
@@ -9517,8 +9546,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "ac44683d6b3e87dbf6ca92017146dadc"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "591545a7dcf137a74cdb458b5e919778"
         },
         "East of the Pacific: Making Histories of Asian American Art-Cantor Arts Center": {
             "name": "East of the Pacific: Making Histories of Asian American Art",
@@ -9545,8 +9574,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "f2c3bbc97f406e75f625322728142535"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "720b32699ce162e53d06b981f0f4f570"
         },
         "At Home/On Stage: Asian American Representation in Photography and Film-Cantor Arts Center": {
             "name": "At Home/On Stage: Asian American Representation in Photography and Film",
@@ -9573,8 +9602,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "3c80f13e2de65eb33071f6170d9014d4"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "ec87c09c8162bd5abd2d51e76199eb4b"
         },
         "Aura: Art and Authenticity-Cantor Arts Center": {
             "name": "Aura: Art and Authenticity",
@@ -9601,8 +9630,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "522e930385403a9e14c1db5f42f39106"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "a565ab96855dc5087b07bb381bafd5e4"
         },
         "LJ Roberts: Carry You With Me-Cantor Arts Center": {
             "name": "LJ Roberts: Carry You With Me",
@@ -9629,8 +9658,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "f64ab01e7e6934c8296a0fcbb4f67f4d"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "98ac16f994f950cdd22497a4e4b080a6"
         },
         "The Marmor Collection: Color as Form in Prints, 1953\u20131971-Cantor Arts Center": {
             "name": "The Marmor Collection: Color as Form in Prints, 1953\u20131971",
@@ -9657,8 +9686,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "783b7d5201dc9578bf2b13cd2e28e888"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "5f04e50991f9d58077b6772bb09215bb"
         },
         "Ian Cheng: Emissary Sunsets The Self-Cantor Arts Center": {
             "name": "Ian Cheng: Emissary Sunsets The Self",
@@ -9685,8 +9714,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "48428ae2b9a5a49679e89acce340ab88"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "d6a37bc9222ddf16ca26c99558704fb3"
         },
         "Art/Object: Contemporary Works between Mediums-Cantor Arts Center": {
             "name": "Art/Object: Contemporary Works between Mediums",
@@ -9713,8 +9742,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "22744959a7dab7376ab1821194526210"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "9550f4800178b40dc3f90c2b5f65964d"
         },
         "The Marmor Collection: Black and White Prints from the 1970s-Cantor Arts Center": {
             "name": "The Marmor Collection: Black and White Prints from the 1970s",
@@ -9741,8 +9770,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-09-28 15:51:15",
-            "hash": "0133b12556ce64d780f88958c16b69b5"
+            "last_updated": "2024-09-30 11:36:10",
+            "hash": "1c8d156426580af89a0ae2c795817c5b"
         }
     }
 }
