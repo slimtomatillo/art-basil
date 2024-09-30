@@ -101,8 +101,27 @@ function sortEvents(events) {
     return eventsArray;
 }
 
+// Load venue data
+let venuesCache = null; // Cache for storing the venue data
+async function fetchVenues() {
+    try {
+        const response = await fetch('venues.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const venues = await response.json();
+        return venues;
+    } catch (error) {
+        console.error('Failed to fetch venues:', error);
+        return [];
+    }
+}
+
 // Load data
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
+    // Fetch venue data once and store it in a constant
+    const venues = await fetchVenues();
+    // Load event data
     fetch("events_db.json")
         .then(response => response.json())
         .then(unsortedData => {
@@ -195,18 +214,31 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 // Links column
                 const linksCell = row.insertCell();
-                event.links.forEach((link, index) => {
+
+                // Find the link with the description 'Event Page'
+                const eventPageLink = event.links.find(link => link.description === 'Event Page');
+
+                if (eventPageLink) {
                     const linkElement = document.createElement('a');
-                    linkElement.href = link.link;
-                    linkElement.textContent = link.description || 'Link';
+                    linkElement.href = eventPageLink.link;
+                    linkElement.textContent = eventPageLink.description || 'Link';
                     linkElement.target = '_blank'; // Open in new tab/window
                     linksCell.appendChild(linkElement);
+                }
+               
+                // Add maps link
+                const venueName = event.venue;
 
-                    // Add a line break if there are multiple links, but not after the last one
-                    if (index < event.links.length - 1) {
-                        linksCell.appendChild(document.createElement('br'));
-                    }
-                });
+                if (venueName && venues[venueName]) {
+                    linksCell.appendChild(document.createElement('br'));
+                    const address = venues[venueName];
+                    const venueLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+                    const mapLinkElement = document.createElement('a');
+                    mapLinkElement.href = venueLink;
+                    mapLinkElement.textContent = 'Map';
+                    mapLinkElement.target = '_blank'; // Open in new tab/window
+                    linksCell.appendChild(mapLinkElement);
+                }
             });
         })
         .catch(error => {
