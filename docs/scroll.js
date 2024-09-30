@@ -199,7 +199,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                     }
                 } else if (isFutureEvent) {
                     // For future events
-                    dateText = `Opens on ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+                    dateText = `Opens ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
                 }
             
                 dateCell.textContent = dateText;
