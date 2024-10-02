@@ -9068,8 +9068,37 @@
                     "description": "Image"
                 }
             ],
-            "hash": "d9022bec0ee67c39410867dd63921833",
-            "ongoing": false
+            "last_updated": "2024-10-02 16:23:02",
+            "hash": "711f987893b46604580111b719418e69"
+        },
+        "We Plant Our Feet in the Sky-Oakland Asian Cultural Center": {
+            "name": "We Plant Our Feet in the Sky",
+            "venue": "Oakland Asian Cultural Center",
+            "description": "\nWhat is ours to call home? \u201cWe Plant Our Feet in the Sky\u201d is a group exhibition showcasing mixed medium art, performance, and poetry exploring uncharted imagination extending beyond borders, and celebrating the complexities of our authentic lives. We imagine a world full of hopeful possibilities, one that is welcoming of our diasporic and queer identities in all of their fullness.\n",
+            "tags": [
+                "exhibition",
+                "past",
+                "free",
+                "immigrant",
+                "refugee"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-02-02",
+                "end": "2024-02-23"
+            },
+            "links": [
+                {
+                    "link": "https://www.artogether.org/we-plant-our-feet-in-the-sky/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.artogether.org/wp-content/uploads/2024/01/Screenshot-2024-01-23-at-2.56.02%E2%80%AFPM.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-10-02 16:26:05",
+            "hash": "a216902446d0dcc861956bde7494199c"
         }
     },
     "Cantor Arts Center": {
@@ -14203,6 +14232,69 @@
             "last_updated": "2024-10-02 15:47:02",
             "hash": "0aac824784bbf4c894457e2168ec9b18",
             "ongoing": false
+        }
+    },
+    "ARTogether": {
+        "Y(our) Legacy: Liberation for All of Us-ARTogether": {
+            "name": "Y(our) Legacy: Liberation for All of Us",
+            "venue": "ARTogether",
+            "description": "\nThis exhibition of 'Y(our) Legacy' centers previous participants and a specific cohort of LGBTQ+ immigrants and refugees as we are currently witnessing the attack on LGBT communities made by Florida Gov. Ron DeSantis and Virginia Gov. Glenn Youngkin. Their description of artwork would consist of their self-reflection of what they feel about the current news impacting them and/or their community.",
+            "tags": [
+                "exhibition",
+                "past",
+                "free",
+                "immigrant",
+                "refugee",
+                "queer"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-03-01",
+                "end": "2024-03-22"
+            },
+            "links": [
+                {
+                    "link": "https://www.artogether.org/liberation-for-all-of-us/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.artogether.org/wp-content/uploads/2024/02/Screenshot-2024-02-21-at-2.13.28%E2%80%AFPM-2.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-10-02 16:37:57",
+            "hash": "8df00792b79f4e65b419e517b49eb1d4"
+        }
+    },
+    "ARTogether & Oakland Asian Cultural Center": {
+        "Dalit Dreamlands: Toward An Anti-Caste Future-ARTogether & Oakland Asian Cultural Center": {
+            "name": "Dalit Dreamlands: Toward An Anti-Caste Future",
+            "venue": "ARTogether & Oakland Asian Cultural Center",
+            "description": "\nAsian American Women Artists Association (AAWAA), ARTogether, Discostan, and Oakland Asian Cultural Center co-presents \u201cDalit Dreamlands: Toward an Anti-Caste Future\u201d \u2013 a landmark multimedia Dalit art exhibition and dance party that will bring together over 30 multiply marginalized artists from Dalit*, Adivasi*, Bahujan*, Afro-Indian, Indo-Caribbean, and Muslim communities to showcase the depths of creativity and community.\nDalit Dreamlands, curated by Manu Kaur (they/them) and supported through AAWAA\u2019s Emerging Curator\u2019s Program, will center queer and trans caste abolitionist futurisms through art across various mediums, including fashion design, music, performances, films, paintings and visuals. One of the headlining artists, Malvika Raj, is a Dalit artist who challenges the casteist restrictions present in the Madhubani style of painting, by incorporating pro-Dalit assertions into her intricate and hypnotizing designs. Nazrina Rodjan is a queer Indo-Surinamese artist who integrates the history of indentured labor and femme resilience within her large paintings of indentured Indian women.\nLondon-based trans Dalit artist Mya Mehmi from Pxssy Palace will be one of four guest DJs and performers at the opening reception dance party in collaboration with Discostan\u2019s Arshia Fatima Haq. Dalit Dreamlands is a historic event that marks one of the first queer Dalit-centered spaces to exist in California.\n*Dalit is a caste marker for caste-oppressed communities formerly known as Untouchables, Adivasi refers to tribes who are indigenous to South Asia, and Bahujan is an umbrella term that includes all caste-oppressed communities.\n \nCURATOR\nManu Kaur\nEXHIBITING ARTISTS\nRinku Kumari, Jessie Sohpaul, Shivam Kamble, Nazrina Rodjan, Manpreet Singh, Malvika Raj, Seema Mattu, Mya Mehmi, Seema Hari, Shyama Kuver, Akhil Kang, Kaushik Tadvi, Rahee Punyashloka, Aravind Chedayan, Ajay Madhukar Dhoke, Shweta Ashokraj, Kamna Singh, Anika Nawar Ullah, Aindriya Barua, Ramnath Siddi, Siddi Tribe of Karnataka, Nrithya Pillai, Dalit Queer Project, Parth Pawar, Imaan Abbasi, Sri Vamsi Matta, R V Purusothaman (Purushu Arie), Shradha Raj, Jay Sagathia, Dee Chawla, Mia Kaur, Riri Kumbhar, Rohini bhadarge, John Spencer, Kulpreet Rana, & Simrah Farrukh\nEvent graphic by Parth Pawar.\n",
+            "tags": [
+                "exhibition",
+                "past",
+                "free",
+                "queer",
+                "south-asian"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-03-29",
+                "end": "2024-06-08"
+            },
+            "links": [
+                {
+                    "link": "https://oacc.cc/event/dalitdreamlands/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://oacc.cc/wp-content/uploads/2024/02/Square-with-text.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-10-02 16:34:50",
+            "hash": "e321f9f701e4d250a3a001784f762dbf"
         }
     }
 }
