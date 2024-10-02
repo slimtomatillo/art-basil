@@ -185,17 +185,15 @@ window.addEventListener('DOMContentLoaded', async () => {
                     dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
                 } else if (isCurrentEvent) {
                     // For current events
-                    if (startDate && endDate) {
-                        // If both start and end dates are known
-                        dateText = `${new Intl.DateTimeFormat('en-US', options).format(startDate)} to ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
-                    } else if (startDate) {
-                        // If only the start date is known
-                        dateText = `Started on ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
-                    } else if (endDate) {
-                        // If only the end date is known
+                    if (endDate) {
+                        // If end date is known
                         dateText = `Through ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+                    } else if (startDate) {
+                        // If start date is known
+                        dateText = `Started on ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
                     } else {
                         // If neither date is known, it remains "Dates TBA"
+                        dateText = "Dates TBA";
                     }
                 } else if (isFutureEvent) {
                     // For future events
