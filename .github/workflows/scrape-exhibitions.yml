@@ -16,7 +16,12 @@ jobs:
     - name: Set up Python environment
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'  # Use the Python version required
+        python-version: '3.12'  # Using Python 3.12
+
+    - name: Install system dependencies (distutils)
+      run: |
+        sudo apt-get update
+        sudo apt-get install python3-distutils
 
     - name: Install dependencies
       run: |
@@ -26,13 +31,13 @@ jobs:
     - name: Run exhibition scraper
       run: |
         python docs/main.py
-    
+
     - name: Commit and push updated data
       run: |
         git config user.name 'GitHub Actions Bot'
-        git config user.email 'github-actions[bot]@users.noreply.github.com'
-        git add .
-        git commit -m "Update events data [skip ci]" # The [skip ci] tag prevents triggering additional workflows
+        git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git add docs/events_db.json
+        git commit -m "Update events data [skip ci]"  # [skip ci] prevents triggering additional workflows
         git push origin HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
