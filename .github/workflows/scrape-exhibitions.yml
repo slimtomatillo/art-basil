@@ -26,7 +26,7 @@ jobs:
 
     - name: Run exhibition scraper
       run: |
-        python docs/main.py
+        python main.py
 
     - name: Commit and push updated data
       run: |
