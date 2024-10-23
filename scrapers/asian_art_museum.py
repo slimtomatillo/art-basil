@@ -48,7 +48,7 @@ def scrape_asian_art_museum_current_events(env='prod'):
 
         # Extract date info
         date_element = featured_event.find(class_='hero-card__aside')
-        event_date = date_element.find('span').text.lower().strip()
+        event_date = date_element.find('span').text.lower().replace(',', '').strip()
         ongoing = True if event_date == 'ongoing' else False
         phase = 'current'
         if 'open' in date_element.text.lower(): # This implies the date corresponds to the opening date
@@ -59,6 +59,7 @@ def scrape_asian_art_museum_current_events(env='prod'):
         else: # This implies the date correspond to the closing date
             start_date = None
             if event_date:
+                event_date = event_date.replace('through ', '')
                 end_date = convert_date_to_dt(event_date)
             else:
                 end_date = None
@@ -122,7 +123,7 @@ def scrape_asian_art_museum_current_events(env='prod'):
                 image_link = None
 
             # Extract date label
-            event_date = event.find('div', class_='card__subtitle').text.strip().lower().replace('through ', '')
+            event_date = event.find('div', class_='card__subtitle').text.strip().lower().replace(',', '').replace('through ', '')
             ongoing = True if event_date.strip() in ['ongoing', 'now on view'] else False
             start_date = None
             if event_date in ['ongoing', 'now on view']:
