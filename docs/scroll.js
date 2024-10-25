@@ -69,8 +69,8 @@ function sortEvents(events) {
             // Determine sortPriority based on specific tags ('current', 'future', 'past')
             if (event.tags.includes('current')) {
                 // Check if the event is ongoing
-                if (event.ongoing === false) {
-                    event.sortPriority = 1;  // Non-ongoing current events
+                if (event.ongoing !== false) {
+                    event.sortPriority = 1;  // Non-ongoing current events (including exhibitions missing 'ongoing' field)
                 } else {
                     event.sortPriority = 2;  // Ongoing current events
                 }
