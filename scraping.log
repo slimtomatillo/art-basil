@@ -5535,3 +5535,339 @@ NameError: name 'timezone' is not defined
 2024-10-20 20:17:27,123 - root - INFO - Database contains 14 venues and 518 events
 2024-10-20 20:17:27,124 - root - INFO - Scraping took 137.8 seconds
 2024-10-20 20:17:27,124 - root - INFO - Finished
+2024-10-24 18:54:15,374 - root - INFO - ----------NEW LOG----------
+2024-10-24 18:54:15,387 - root - INFO - Copied docs/events_db.json to docs/events_db_copy.json
+2024-10-24 18:54:15,387 - root - INFO - Starting the scraping process
+2024-10-24 18:54:15,387 - root - INFO - Only scraping ['BAMPFA']
+2024-10-24 18:54:15,387 - root - INFO - Starting scrape for BAMPFA
+2024-10-24 18:54:20,196 - root - INFO - Updating event: Art Wall / Rose D’Amato: Mission Chevrolet
+2024-10-24 18:54:20,215 - root - INFO - Updating event: MATRIX 285 / Young Joon Kwak: Resistance Pleasure
+2024-10-24 18:54:20,236 - root - INFO - Updating event: To Exalt the Ephemeral: The (Im)permanent Collection
+2024-10-24 18:54:20,250 - root - INFO - Updating event: Teaching Wall / Water, Art, and California
+2024-10-24 18:54:20,264 - root - INFO - Updating event: On the Outdoor Screen / Kathryn Andrews: Victoria Woodhull, Belva Ann Lockwood, Abigail Scott Duniway [ . . . ]
+2024-10-24 18:54:20,278 - root - INFO - Updating event: On the Outdoor Screen / Lena Wolff and Hope Meng: Art for Democracy
+2024-10-24 18:54:20,291 - root - INFO - Updating event: On the Outdoor Screen / Michele Pred: United for Freedom
+2024-10-24 18:54:20,305 - root - INFO - Updating event: Abounaddara: The Ruins We Carry
+2024-10-24 18:54:20,318 - root - INFO - Updating event: Making Their Mark: Works from the Shah Garg Collection
+2024-10-24 18:54:20,332 - root - INFO - Updating event: Routed West: Twentieth-Century African American Quilts in California
+2024-10-24 18:54:20,707 - root - INFO - Updating event: BODY FREEDOM FOR EVERY(BODY)
+2024-10-24 18:54:20,720 - root - INFO - Updating event: MITH & CO.: Fifty-Fourth Annual UC Berkeley Master of Fine Arts Exhibition
+2024-10-24 18:54:20,733 - root - INFO - Updating event: A Movement in Every Direction: Legacies of the Great Migration
+2024-10-24 18:54:20,745 - root - INFO - Updating event: On the Outdoor Screen: Navigating the Pilot School
+2024-10-24 18:54:20,758 - root - INFO - Updating event: Art Wall / Yee I-Lann: TIKAR/MEJA/PLASTIK
+2024-10-24 18:54:20,771 - root - INFO - Updating event: On the Outdoor Screen: Lessons in Semaphore
+2024-10-24 18:54:20,785 - root - INFO - Updating event: MATRIX 284 / Sin Wai Kin: The Story Changing
+2024-10-24 18:54:20,799 - root - INFO - Updating event: MATRIX 283 / Gabriel Chaile: No hay nada que destruya el corazón como la pobreza
+2024-10-24 18:54:20,813 - root - INFO - Updating event: Duane Linklater: mymothersside
+2024-10-24 18:54:20,827 - root - INFO - Updating event: MATRIX 282 / Griselda Rosas: Yo te cuido
+2024-10-24 18:54:20,840 - root - INFO - Updating event: MATRIX 281 / Kenneth Tam: The Founding of the World
+2024-10-24 18:54:20,852 - root - INFO - Updating event: Art Wall: Xylor Jane
+2024-10-24 18:54:20,866 - root - INFO - Updating event: What Has Been and What Could Be: The BAMPFA Collection
+2024-10-24 18:54:20,879 - root - INFO - Updating event: Fifty-Third Annual UC Berkeley Master of Fine Arts Exhibition
+2024-10-24 18:54:20,892 - root - INFO - Updating event: Alexandre Dumas’s Afro: Blackness Caricatured, Erased, and Back Again
+2024-10-24 18:54:20,906 - root - INFO - Updating event: On the Hour: Three short films by William Kentridge
+2024-10-24 18:54:20,925 - root - INFO - Updating event: Out of Africa: Selections from the Kramlich Collection
+2024-10-24 18:54:20,938 - root - INFO - Updating event: Apichatpong Weerasethakul "Morakot (Emerald)"
+2024-10-24 18:54:20,952 - root - INFO - Updating event: Amalia Mesa-Bains: Archaeology of Memory
+2024-10-24 18:54:20,965 - root - INFO - Updating event: Frank Moore / MATRIX 280: Theater of Human Melting
+2024-10-24 18:54:20,978 - root - INFO - Updating event: Rina Kimche
+2024-10-24 18:54:20,992 - root - INFO - Updating event: Endless Knot: Struggle and Healing in the Buddhist World
+2024-10-24 18:54:21,005 - root - INFO - Updating event: Art Wall: Luis Camnitzer
+2024-10-24 18:54:21,019 - root - INFO - Updating event: Lena Wolff and Hope Meng: VOTE
+2024-10-24 18:54:21,032 - root - INFO - Updating event: Undoing Time: Art and Histories of Incarceration
+2024-10-24 18:54:21,046 - root - INFO - Updating event: Hannah Levy / MATRIX 279
+2024-10-24 18:54:21,059 - root - INFO - Updating event: Fluxus Reverb: Events, Scores, Boxes & More
+2024-10-24 18:54:21,073 - root - INFO - Updating event: by Alison Knowles: A Retrospective (1960–2022)
+2024-10-24 18:54:21,086 - root - INFO - Updating event: Whitney Bradshaw: OUTCRY
+2024-10-24 18:54:21,100 - root - INFO - Updating event: The 52nd Annual UC Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:21,113 - root - INFO - Updating event: Candice Lin: Seeping, Rotting, Resting, Weeping
+2024-10-24 18:54:21,127 - root - INFO - Updating event: Art Wall: Caroline Kent
+2024-10-24 18:54:21,140 - root - INFO - Updating event: On the Hour: A Cool Million
+2024-10-24 18:54:21,159 - root - INFO - Updating event: The Artist’s Eye: Tammy Rae Carland, David Huffman, Lava Thomas, John Zurier
+2024-10-24 18:54:21,173 - root - INFO - Updating event: Recent Acquisitions from the BAMPFA Collection
+2024-10-24 18:54:21,186 - root - INFO - Updating event: Spiritual Mountains: The Art of Wesley Tongson
+2024-10-24 18:54:21,199 - root - INFO - Updating event: Lines of Thought
+2024-10-24 18:54:21,212 - root - INFO - Updating event: Jumana Manna / MATRIX 278
+2024-10-24 18:54:21,225 - root - INFO - Updating event: On the Hour: Night Watch
+2024-10-24 18:54:21,238 - root - INFO - Updating event: New Time: Art and Feminisms in the 21st Century
+2024-10-24 18:54:21,251 - root - INFO - Updating event: Shirin Neshat: Fervor
+2024-10-24 18:54:21,264 - root - INFO - Updating event: The Enduring Mark
+2024-10-24 18:54:21,277 - root - INFO - Updating event: Art Wall: Luchita Hurtado
+2024-10-24 18:54:21,290 - root - INFO - Updating event: The 51st Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:21,304 - root - INFO - Updating event: Kay Sekimachi: Geometries
+2024-10-24 18:54:21,318 - root - INFO - Updating event: The 50th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:21,332 - root - INFO - Updating event: Ulrike Ottinger / MATRIX 276
+2024-10-24 18:54:21,347 - root - INFO - Updating event: Present Tense: Five Centuries of Colonialism in Latin American and Caribbean Art
+2024-10-24 18:54:21,365 - root - INFO - Updating event: Beyond Boundaries: Buddhist Art of Gandhara
+2024-10-24 18:54:21,381 - root - INFO - Updating event: Orbits of Known and Unknown Objects: SFAI Histories / MATRIX 277
+2024-10-24 18:54:21,398 - root - INFO - Updating event: Catherine Opie: Political Landscapes
+2024-10-24 18:54:21,414 - root - INFO - Updating event: When All That Is Solid Melts into Air
+2024-10-24 18:54:21,429 - root - INFO - Updating event: Art for Human Rights: Peace Now!
+2024-10-24 18:54:21,443 - root - INFO - Updating event: Rosie Lee Tompkins: A Retrospective
+2024-10-24 18:54:21,458 - root - INFO - Updating event: Ron Nagle: Handsome Drifter
+2024-10-24 18:54:21,472 - root - INFO - Updating event: Brave Warriors and Fantastic Tales: The World According to Yoshitoshi
+2024-10-24 18:54:21,486 - root - INFO - Updating event: Lands of Promise and Peril: Geographies of California
+2024-10-24 18:54:21,499 - root - INFO - Updating event: Art Wall: Edie Fake
+2024-10-24 18:54:21,512 - root - INFO - Updating event: Sylvia Fein / MATRIX 275
+2024-10-24 18:54:21,526 - root - INFO - Updating event: BAMPFA AR—Augmented Time
+2024-10-24 18:54:21,549 - root - INFO - Updating event: Dennis Feldman: Photographs
+2024-10-24 18:54:21,564 - root - INFO - Updating event: Terry Fox: Resonance
+2024-10-24 18:54:21,578 - root - INFO - Updating event: Hinges: Sakaki Hyakusen and the Birth of Nanga Painting
+2024-10-24 18:54:21,591 - root - INFO - Updating event: Kader Attia / MATRIX 274
+2024-10-24 18:54:21,604 - root - INFO - Updating event: The San Quentin Project: Nigel Poor and the Men of San Quentin State Prison
+2024-10-24 18:54:21,617 - root - INFO - Updating event: Strange
+2024-10-24 18:54:21,630 - root - INFO - Updating event: Dennis Feldman: Photographs
+2024-10-24 18:54:21,643 - root - INFO - Updating event: Meditation in Motion: Zen Calligraphy from the Stuart Katz Collection
+2024-10-24 18:54:21,656 - root - INFO - Updating event: No Horizon: Helen Mirra and Sean Thackrey
+2024-10-24 18:54:21,669 - root - INFO - Updating event: Divine Women, Divine Wisdom
+2024-10-24 18:54:21,682 - root - INFO - Updating event: The 49th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:21,695 - root - INFO - Updating event: About Things Loved: Blackness and Belonging
+2024-10-24 18:54:21,708 - root - INFO - Updating event: Permanent Accusation: Art for Human Rights
+2024-10-24 18:54:21,721 - root - INFO - Updating event: Looking: The Art of Frederick Hammersley
+2024-10-24 18:54:21,734 - root - INFO - Updating event: Unlimited: Recent Gifts from the William Goodman and Victoria Belco Photography Collection
+2024-10-24 18:54:21,747 - root - INFO - Updating event: Art Wall: Carlos Amorales
+2024-10-24 18:54:21,760 - root - INFO - Updating event: Hans Hofmann: The Nature of Abstraction
+2024-10-24 18:54:21,773 - root - INFO - Updating event: Aaron Marcus: Early Works
+2024-10-24 18:54:21,786 - root - INFO - Updating event: Masako Miki / MATRIX 273
+2024-10-24 18:54:21,799 - root - INFO - Updating event: Get Dancin’: Selections from the Collection
+2024-10-24 18:54:21,812 - root - INFO - Updating event: Ink, Paper, Silk: One Hundred Years of Collecting Japanese Art
+2024-10-24 18:54:21,831 - root - INFO - Updating event: Arthur Jafa / MATRIX 272
+2024-10-24 18:54:21,844 - root - INFO - Updating event: Dimensionism: Modern Art in the Age of Einstein
+2024-10-24 18:54:21,856 - root - INFO - Updating event: Harvey Quaytman: Against the Static
+2024-10-24 18:54:21,870 - root - INFO - Updating event: Boundless: Contemporary Tibetan Artists at Home and Abroad
+2024-10-24 18:54:21,883 - root - INFO - Updating event: Redacted: Art for Human Rights
+2024-10-24 18:54:21,897 - root - INFO - Updating event: Old Masters in a New Light: Rediscovering the European Collection
+2024-10-24 18:54:21,910 - root - INFO - Updating event: Christina Quarles / MATRIX 271
+2024-10-24 18:54:21,924 - root - INFO - Updating event: Art Wall: Barbara Stauffacher Solomon
+2024-10-24 18:54:21,937 - root - INFO - Updating event: Cecilia Vicuña: About to Happen
+2024-10-24 18:54:21,950 - root - INFO - Updating event: Joanne Leonard: Intimate Documentary
+2024-10-24 18:54:21,968 - root - INFO - Updating event: Peter Hujar: Speed of Life
+2024-10-24 18:54:21,981 - root - INFO - Updating event: Way Bay 2
+2024-10-24 18:54:21,994 - root - INFO - Updating event: Color, Form, Unicorn: Recent Acquisitions
+2024-10-24 18:54:22,007 - root - INFO - Updating event: Alicia McCarthy and Ruby Neri / MATRIX 270
+2024-10-24 18:54:22,020 - root - INFO - Updating event: Master Traces, Transcultural Visions
+2024-10-24 18:54:22,033 - root - INFO - Updating event: The 48th Annual UC Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:22,046 - root - INFO - Updating event: Al Wong: Lost Sister
+2024-10-24 18:54:22,065 - root - INFO - Updating event: Cal Conversations: Dreaming the Lost Ming 夢回金陵
+2024-10-24 18:54:22,078 - root - INFO - Updating event: Agony in Effigy: Art, Truth, Pain, and the Body
+2024-10-24 18:54:22,091 - root - INFO - Updating event: Jay Heikes / MATRIX 269
+2024-10-24 18:54:22,104 - root - INFO - Updating event: Theresa Hak Kyung Cha: Avant Dictee
+2024-10-24 18:54:22,117 - root - INFO - Updating event: Breaking ICE
+2024-10-24 18:54:22,130 - root - INFO - Updating event: Way Bay
+2024-10-24 18:54:22,143 - root - INFO - Updating event: Art Wall: Karabo Poppy Moletsane
+2024-10-24 18:54:22,156 - root - INFO - Updating event: On the Hour / Hayoun Kwon
+2024-10-24 18:54:22,169 - root - INFO - Updating event: Veronica De Jesus / MATRIX 268
+2024-10-24 18:54:22,183 - root - INFO - Updating event: Repentant Monk: Illusion and Disillusion in the Art of Chen Hongshou
+2024-10-24 18:54:22,196 - root - INFO - Updating event: Global Lives Project
+2024-10-24 18:54:22,209 - root - INFO - Updating event: Buddhist Realms
+2024-10-24 18:54:22,222 - root - INFO - Updating event: Miyoko Ito / MATRIX 267
+2024-10-24 18:54:22,236 - root - INFO - Updating event: Gordon Parks: The Making of an Argument
+2024-10-24 18:54:22,249 - root - INFO - Updating event: Martin Wong: Human Instamatic
+2024-10-24 18:54:22,262 - root - INFO - Updating event: To the Letter:  Regarding the Written Word
+2024-10-24 18:54:22,275 - root - INFO - Updating event: On the Hour / JJ PEET
+2024-10-24 18:54:22,294 - root - INFO - Updating event: Information in the Flesh: Art for Human Rights
+2024-10-24 18:54:22,307 - root - INFO - Updating event: Ugo Rondinone: the world just makes me laugh
+2024-10-24 18:54:22,320 - root - INFO - Updating event: Divine Visions, Earthly Pleasures: Five Hundred Years of Indian Painting
+2024-10-24 18:54:22,332 - root - INFO - Updating event: Charles Howard: A Margin of Chaos
+2024-10-24 18:54:22,346 - root - INFO - Updating event: Buddhist Realms
+2024-10-24 18:54:22,359 - root - INFO - Updating event: The 47th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:22,372 - root - INFO - Updating event: Sam Contis / MATRIX 266
+2024-10-24 18:54:22,385 - root - INFO - Updating event: Irwin Kremen / MATRIX 265
+2024-10-24 18:54:22,398 - root - INFO - Updating event: Asher Hartman and Cliff Hengst / MATRIX 264
+2024-10-24 18:54:22,411 - root - INFO - Updating event: AMERICA AMERICA: Art for Human Rights
+2024-10-24 18:54:22,425 - root - INFO - Updating event: Erica Deeman: Silhouettes
+2024-10-24 18:54:22,438 - root - INFO - Updating event: Art Wall: Lawrence Weiner
+2024-10-24 18:54:22,451 - root - INFO - Updating event: Hippie Modernism: The Struggle for Utopia
+2024-10-24 18:54:22,464 - root - INFO - Updating event: Slow Reading / Slow Seeing
+2024-10-24 18:54:22,477 - root - INFO - Updating event: Michael Armitage / MATRIX 263
+2024-10-24 18:54:22,491 - root - INFO - Updating event: Buddhist Art from the Roof of the World
+2024-10-24 18:54:22,504 - root - INFO - Updating event: Andy Warhol: Still Lifes and Portraits
+2024-10-24 18:54:22,517 - root - INFO - Updating event: Covered in Time and History: The Films of Ana Mendieta
+2024-10-24 18:54:22,531 - root - INFO - Updating event: Fernando Botero: Art for Human Rights
+2024-10-24 18:54:22,544 - root - INFO - Updating event: GIF Collider 1.0
+2024-10-24 18:54:22,562 - root - INFO - Updating event: Mind Over Matter: Conceptual Art from the Collection
+2024-10-24 18:54:22,575 - root - INFO - Updating event: Pat O'Neill / MATRIX 262
+2024-10-24 18:54:22,588 - root - INFO - Updating event: Push and Pull: Hans Hofmann
+2024-10-24 18:54:22,601 - root - INFO - Updating event: Art Wall: Terri Friedman
+2024-10-24 18:54:22,613 - root - INFO - Updating event: Sojourner Truth, Photography, and the Fight Against Slavery
+2024-10-24 18:54:22,631 - root - INFO - Updating event: Buddhist Art from the Roof of the World
+2024-10-24 18:54:22,644 - root - INFO - Updating event: Berkeley Eye
+2024-10-24 18:54:22,657 - root - INFO - Updating event: This Just In: Recent Acquisitions
+2024-10-24 18:54:22,670 - root - INFO - Updating event: Summer Trees Casting Shade: Chinese Painting at Berkeley
+2024-10-24 18:54:22,683 - root - INFO - Updating event: The 46th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:22,695 - root - INFO - Updating event: Cecilia Edefalk / MATRIX 261
+2024-10-24 18:54:22,708 - root - INFO - Updating event: Otobong Nkanga / MATRIX 260
+2024-10-24 18:54:22,721 - root - INFO - Updating event: Architecture of Life
+2024-10-24 18:54:22,734 - root - INFO - Updating event: Will Brown / MATRIX 259
+2024-10-24 18:54:22,746 - root - INFO - Updating event: The 45th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:54:22,759 - root - INFO - Updating event: Tarek Atoui / MATRIX 258
+2024-10-24 18:54:22,768 - root - INFO - Finished scrape for BAMPFA
+2024-10-24 18:54:22,768 - root - INFO - Finished
+2024-10-24 18:55:42,376 - root - INFO - ----------NEW LOG----------
+2024-10-24 18:55:42,388 - root - INFO - Copied docs/events_db.json to docs/events_db_copy.json
+2024-10-24 18:55:42,388 - root - INFO - Starting the scraping process
+2024-10-24 18:55:42,389 - root - INFO - Only scraping ['BAMPFA']
+2024-10-24 18:55:42,389 - root - INFO - Starting scrape for BAMPFA
+2024-10-24 18:55:42,502 - root - INFO - Updating event: Art Wall / Rose D’Amato: Mission Chevrolet
+2024-10-24 18:55:42,520 - root - INFO - Updating event: MATRIX 285 / Young Joon Kwak: Resistance Pleasure
+2024-10-24 18:55:42,541 - root - INFO - Updating event: To Exalt the Ephemeral: The (Im)permanent Collection
+2024-10-24 18:55:42,558 - root - INFO - Updating event: Teaching Wall / Water, Art, and California
+2024-10-24 18:55:42,574 - root - INFO - Updating event: On the Outdoor Screen / Kathryn Andrews: Victoria Woodhull, Belva Ann Lockwood, Abigail Scott Duniway [ . . . ]
+2024-10-24 18:55:42,592 - root - INFO - Updating event: On the Outdoor Screen / Lena Wolff and Hope Meng: Art for Democracy
+2024-10-24 18:55:42,608 - root - INFO - Updating event: On the Outdoor Screen / Michele Pred: United for Freedom
+2024-10-24 18:55:42,620 - root - INFO - Updating event: Abounaddara: The Ruins We Carry
+2024-10-24 18:55:42,633 - root - INFO - Updating event: Making Their Mark: Works from the Shah Garg Collection
+2024-10-24 18:55:42,646 - root - INFO - Updating event: Routed West: Twentieth-Century African American Quilts in California
+2024-10-24 18:55:42,901 - root - INFO - Updating event: BODY FREEDOM FOR EVERY(BODY)
+2024-10-24 18:55:42,914 - root - INFO - Updating event: MITH & CO.: Fifty-Fourth Annual UC Berkeley Master of Fine Arts Exhibition
+2024-10-24 18:55:42,927 - root - INFO - Updating event: A Movement in Every Direction: Legacies of the Great Migration
+2024-10-24 18:55:42,940 - root - INFO - Updating event: On the Outdoor Screen: Navigating the Pilot School
+2024-10-24 18:55:42,953 - root - INFO - Updating event: Art Wall / Yee I-Lann: TIKAR/MEJA/PLASTIK
+2024-10-24 18:55:42,966 - root - INFO - Updating event: On the Outdoor Screen: Lessons in Semaphore
+2024-10-24 18:55:42,979 - root - INFO - Updating event: MATRIX 284 / Sin Wai Kin: The Story Changing
+2024-10-24 18:55:42,993 - root - INFO - Updating event: MATRIX 283 / Gabriel Chaile: No hay nada que destruya el corazón como la pobreza
+2024-10-24 18:55:43,006 - root - INFO - Updating event: Duane Linklater: mymothersside
+2024-10-24 18:55:43,019 - root - INFO - Updating event: MATRIX 282 / Griselda Rosas: Yo te cuido
+2024-10-24 18:55:43,033 - root - INFO - Updating event: MATRIX 281 / Kenneth Tam: The Founding of the World
+2024-10-24 18:55:43,046 - root - INFO - Updating event: Art Wall: Xylor Jane
+2024-10-24 18:55:43,060 - root - INFO - Updating event: What Has Been and What Could Be: The BAMPFA Collection
+2024-10-24 18:55:43,073 - root - INFO - Updating event: Fifty-Third Annual UC Berkeley Master of Fine Arts Exhibition
+2024-10-24 18:55:43,086 - root - INFO - Updating event: Alexandre Dumas’s Afro: Blackness Caricatured, Erased, and Back Again
+2024-10-24 18:55:43,100 - root - INFO - Updating event: On the Hour: Three short films by William Kentridge
+2024-10-24 18:55:43,121 - root - INFO - Updating event: Out of Africa: Selections from the Kramlich Collection
+2024-10-24 18:55:43,134 - root - INFO - Updating event: Apichatpong Weerasethakul "Morakot (Emerald)"
+2024-10-24 18:55:43,147 - root - INFO - Updating event: Amalia Mesa-Bains: Archaeology of Memory
+2024-10-24 18:55:43,161 - root - INFO - Updating event: Frank Moore / MATRIX 280: Theater of Human Melting
+2024-10-24 18:55:43,174 - root - INFO - Updating event: Rina Kimche
+2024-10-24 18:55:43,188 - root - INFO - Updating event: Endless Knot: Struggle and Healing in the Buddhist World
+2024-10-24 18:55:43,201 - root - INFO - Updating event: Art Wall: Luis Camnitzer
+2024-10-24 18:55:43,215 - root - INFO - Updating event: Lena Wolff and Hope Meng: VOTE
+2024-10-24 18:55:43,228 - root - INFO - Updating event: Undoing Time: Art and Histories of Incarceration
+2024-10-24 18:55:43,242 - root - INFO - Updating event: Hannah Levy / MATRIX 279
+2024-10-24 18:55:43,256 - root - INFO - Updating event: Fluxus Reverb: Events, Scores, Boxes & More
+2024-10-24 18:55:43,269 - root - INFO - Updating event: by Alison Knowles: A Retrospective (1960–2022)
+2024-10-24 18:55:43,287 - root - INFO - Updating event: Whitney Bradshaw: OUTCRY
+2024-10-24 18:55:43,301 - root - INFO - Updating event: The 52nd Annual UC Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:43,315 - root - INFO - Updating event: Candice Lin: Seeping, Rotting, Resting, Weeping
+2024-10-24 18:55:43,328 - root - INFO - Updating event: Art Wall: Caroline Kent
+2024-10-24 18:55:43,342 - root - INFO - Updating event: On the Hour: A Cool Million
+2024-10-24 18:55:43,363 - root - INFO - Updating event: The Artist’s Eye: Tammy Rae Carland, David Huffman, Lava Thomas, John Zurier
+2024-10-24 18:55:43,377 - root - INFO - Updating event: Recent Acquisitions from the BAMPFA Collection
+2024-10-24 18:55:43,390 - root - INFO - Updating event: Spiritual Mountains: The Art of Wesley Tongson
+2024-10-24 18:55:43,409 - root - INFO - Updating event: Lines of Thought
+2024-10-24 18:55:43,422 - root - INFO - Updating event: Jumana Manna / MATRIX 278
+2024-10-24 18:55:43,435 - root - INFO - Updating event: On the Hour: Night Watch
+2024-10-24 18:55:43,450 - root - INFO - Updating event: New Time: Art and Feminisms in the 21st Century
+2024-10-24 18:55:43,463 - root - INFO - Updating event: Shirin Neshat: Fervor
+2024-10-24 18:55:43,477 - root - INFO - Updating event: The Enduring Mark
+2024-10-24 18:55:43,490 - root - INFO - Updating event: Art Wall: Luchita Hurtado
+2024-10-24 18:55:43,503 - root - INFO - Updating event: The 51st Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:43,516 - root - INFO - Updating event: Kay Sekimachi: Geometries
+2024-10-24 18:55:43,529 - root - INFO - Updating event: The 50th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:43,542 - root - INFO - Updating event: Ulrike Ottinger / MATRIX 276
+2024-10-24 18:55:43,555 - root - INFO - Updating event: Present Tense: Five Centuries of Colonialism in Latin American and Caribbean Art
+2024-10-24 18:55:43,568 - root - INFO - Updating event: Beyond Boundaries: Buddhist Art of Gandhara
+2024-10-24 18:55:43,581 - root - INFO - Updating event: Orbits of Known and Unknown Objects: SFAI Histories / MATRIX 277
+2024-10-24 18:55:43,594 - root - INFO - Updating event: Catherine Opie: Political Landscapes
+2024-10-24 18:55:43,606 - root - INFO - Updating event: When All That Is Solid Melts into Air
+2024-10-24 18:55:43,619 - root - INFO - Updating event: Art for Human Rights: Peace Now!
+2024-10-24 18:55:43,632 - root - INFO - Updating event: Rosie Lee Tompkins: A Retrospective
+2024-10-24 18:55:43,646 - root - INFO - Updating event: Ron Nagle: Handsome Drifter
+2024-10-24 18:55:43,659 - root - INFO - Updating event: Brave Warriors and Fantastic Tales: The World According to Yoshitoshi
+2024-10-24 18:55:43,672 - root - INFO - Updating event: Lands of Promise and Peril: Geographies of California
+2024-10-24 18:55:43,685 - root - INFO - Updating event: Art Wall: Edie Fake
+2024-10-24 18:55:43,698 - root - INFO - Updating event: Sylvia Fein / MATRIX 275
+2024-10-24 18:55:43,711 - root - INFO - Updating event: BAMPFA AR—Augmented Time
+2024-10-24 18:55:43,730 - root - INFO - Updating event: Dennis Feldman: Photographs
+2024-10-24 18:55:43,743 - root - INFO - Updating event: Terry Fox: Resonance
+2024-10-24 18:55:43,757 - root - INFO - Updating event: Hinges: Sakaki Hyakusen and the Birth of Nanga Painting
+2024-10-24 18:55:43,770 - root - INFO - Updating event: Kader Attia / MATRIX 274
+2024-10-24 18:55:43,782 - root - INFO - Updating event: The San Quentin Project: Nigel Poor and the Men of San Quentin State Prison
+2024-10-24 18:55:43,795 - root - INFO - Updating event: Strange
+2024-10-24 18:55:43,809 - root - INFO - Updating event: Dennis Feldman: Photographs
+2024-10-24 18:55:43,822 - root - INFO - Updating event: Meditation in Motion: Zen Calligraphy from the Stuart Katz Collection
+2024-10-24 18:55:43,835 - root - INFO - Updating event: No Horizon: Helen Mirra and Sean Thackrey
+2024-10-24 18:55:43,848 - root - INFO - Updating event: Divine Women, Divine Wisdom
+2024-10-24 18:55:43,861 - root - INFO - Updating event: The 49th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:43,874 - root - INFO - Updating event: About Things Loved: Blackness and Belonging
+2024-10-24 18:55:43,887 - root - INFO - Updating event: Permanent Accusation: Art for Human Rights
+2024-10-24 18:55:43,899 - root - INFO - Updating event: Looking: The Art of Frederick Hammersley
+2024-10-24 18:55:43,913 - root - INFO - Updating event: Unlimited: Recent Gifts from the William Goodman and Victoria Belco Photography Collection
+2024-10-24 18:55:43,927 - root - INFO - Updating event: Art Wall: Carlos Amorales
+2024-10-24 18:55:43,941 - root - INFO - Updating event: Hans Hofmann: The Nature of Abstraction
+2024-10-24 18:55:43,956 - root - INFO - Updating event: Aaron Marcus: Early Works
+2024-10-24 18:55:43,969 - root - INFO - Updating event: Masako Miki / MATRIX 273
+2024-10-24 18:55:43,983 - root - INFO - Updating event: Get Dancin’: Selections from the Collection
+2024-10-24 18:55:43,997 - root - INFO - Updating event: Ink, Paper, Silk: One Hundred Years of Collecting Japanese Art
+2024-10-24 18:55:44,017 - root - INFO - Updating event: Arthur Jafa / MATRIX 272
+2024-10-24 18:55:44,032 - root - INFO - Updating event: Dimensionism: Modern Art in the Age of Einstein
+2024-10-24 18:55:44,046 - root - INFO - Updating event: Harvey Quaytman: Against the Static
+2024-10-24 18:55:44,070 - root - INFO - Updating event: Boundless: Contemporary Tibetan Artists at Home and Abroad
+2024-10-24 18:55:44,114 - root - INFO - Updating event: Redacted: Art for Human Rights
+2024-10-24 18:55:44,141 - root - INFO - Updating event: Old Masters in a New Light: Rediscovering the European Collection
+2024-10-24 18:55:44,155 - root - INFO - Updating event: Christina Quarles / MATRIX 271
+2024-10-24 18:55:44,168 - root - INFO - Updating event: Art Wall: Barbara Stauffacher Solomon
+2024-10-24 18:55:44,182 - root - INFO - Updating event: Cecilia Vicuña: About to Happen
+2024-10-24 18:55:44,195 - root - INFO - Updating event: Joanne Leonard: Intimate Documentary
+2024-10-24 18:55:44,210 - root - INFO - Updating event: Peter Hujar: Speed of Life
+2024-10-24 18:55:44,224 - root - INFO - Updating event: Way Bay 2
+2024-10-24 18:55:44,237 - root - INFO - Updating event: Color, Form, Unicorn: Recent Acquisitions
+2024-10-24 18:55:44,249 - root - INFO - Updating event: Alicia McCarthy and Ruby Neri / MATRIX 270
+2024-10-24 18:55:44,262 - root - INFO - Updating event: Master Traces, Transcultural Visions
+2024-10-24 18:55:44,277 - root - INFO - Updating event: The 48th Annual UC Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:44,292 - root - INFO - Updating event: Al Wong: Lost Sister
+2024-10-24 18:55:44,312 - root - INFO - Updating event: Cal Conversations: Dreaming the Lost Ming 夢回金陵
+2024-10-24 18:55:44,325 - root - INFO - Updating event: Agony in Effigy: Art, Truth, Pain, and the Body
+2024-10-24 18:55:44,339 - root - INFO - Updating event: Jay Heikes / MATRIX 269
+2024-10-24 18:55:44,352 - root - INFO - Updating event: Theresa Hak Kyung Cha: Avant Dictee
+2024-10-24 18:55:44,365 - root - INFO - Updating event: Breaking ICE
+2024-10-24 18:55:44,378 - root - INFO - Updating event: Way Bay
+2024-10-24 18:55:44,392 - root - INFO - Updating event: Art Wall: Karabo Poppy Moletsane
+2024-10-24 18:55:44,405 - root - INFO - Updating event: On the Hour / Hayoun Kwon
+2024-10-24 18:55:44,418 - root - INFO - Updating event: Veronica De Jesus / MATRIX 268
+2024-10-24 18:55:44,431 - root - INFO - Updating event: Repentant Monk: Illusion and Disillusion in the Art of Chen Hongshou
+2024-10-24 18:55:44,446 - root - INFO - Updating event: Global Lives Project
+2024-10-24 18:55:44,460 - root - INFO - Updating event: Buddhist Realms
+2024-10-24 18:55:44,473 - root - INFO - Updating event: Miyoko Ito / MATRIX 267
+2024-10-24 18:55:44,486 - root - INFO - Updating event: Gordon Parks: The Making of an Argument
+2024-10-24 18:55:44,500 - root - INFO - Updating event: Martin Wong: Human Instamatic
+2024-10-24 18:55:44,513 - root - INFO - Updating event: To the Letter:  Regarding the Written Word
+2024-10-24 18:55:44,526 - root - INFO - Updating event: On the Hour / JJ PEET
+2024-10-24 18:55:44,545 - root - INFO - Updating event: Information in the Flesh: Art for Human Rights
+2024-10-24 18:55:44,558 - root - INFO - Updating event: Ugo Rondinone: the world just makes me laugh
+2024-10-24 18:55:44,571 - root - INFO - Updating event: Divine Visions, Earthly Pleasures: Five Hundred Years of Indian Painting
+2024-10-24 18:55:44,584 - root - INFO - Updating event: Charles Howard: A Margin of Chaos
+2024-10-24 18:55:44,597 - root - INFO - Updating event: Buddhist Realms
+2024-10-24 18:55:44,610 - root - INFO - Updating event: The 47th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:44,623 - root - INFO - Updating event: Sam Contis / MATRIX 266
+2024-10-24 18:55:44,637 - root - INFO - Updating event: Irwin Kremen / MATRIX 265
+2024-10-24 18:55:44,650 - root - INFO - Updating event: Asher Hartman and Cliff Hengst / MATRIX 264
+2024-10-24 18:55:44,663 - root - INFO - Updating event: AMERICA AMERICA: Art for Human Rights
+2024-10-24 18:55:44,679 - root - INFO - Updating event: Erica Deeman: Silhouettes
+2024-10-24 18:55:44,692 - root - INFO - Updating event: Art Wall: Lawrence Weiner
+2024-10-24 18:55:44,706 - root - INFO - Updating event: Hippie Modernism: The Struggle for Utopia
+2024-10-24 18:55:44,723 - root - INFO - Updating event: Slow Reading / Slow Seeing
+2024-10-24 18:55:44,736 - root - INFO - Updating event: Michael Armitage / MATRIX 263
+2024-10-24 18:55:44,749 - root - INFO - Updating event: Buddhist Art from the Roof of the World
+2024-10-24 18:55:44,764 - root - INFO - Updating event: Andy Warhol: Still Lifes and Portraits
+2024-10-24 18:55:44,778 - root - INFO - Updating event: Covered in Time and History: The Films of Ana Mendieta
+2024-10-24 18:55:44,791 - root - INFO - Updating event: Fernando Botero: Art for Human Rights
+2024-10-24 18:55:44,805 - root - INFO - Updating event: GIF Collider 1.0
+2024-10-24 18:55:44,817 - root - INFO - Updating event: Mind Over Matter: Conceptual Art from the Collection
+2024-10-24 18:55:44,830 - root - INFO - Updating event: Pat O'Neill / MATRIX 262
+2024-10-24 18:55:44,844 - root - INFO - Updating event: Push and Pull: Hans Hofmann
+2024-10-24 18:55:44,857 - root - INFO - Updating event: Art Wall: Terri Friedman
+2024-10-24 18:55:44,870 - root - INFO - Updating event: Sojourner Truth, Photography, and the Fight Against Slavery
+2024-10-24 18:55:44,889 - root - INFO - Updating event: Buddhist Art from the Roof of the World
+2024-10-24 18:55:44,902 - root - INFO - Updating event: Berkeley Eye
+2024-10-24 18:55:44,915 - root - INFO - Updating event: This Just In: Recent Acquisitions
+2024-10-24 18:55:44,928 - root - INFO - Updating event: Summer Trees Casting Shade: Chinese Painting at Berkeley
+2024-10-24 18:55:44,941 - root - INFO - Updating event: The 46th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:44,954 - root - INFO - Updating event: Cecilia Edefalk / MATRIX 261
+2024-10-24 18:55:44,967 - root - INFO - Updating event: Otobong Nkanga / MATRIX 260
+2024-10-24 18:55:44,980 - root - INFO - Updating event: Architecture of Life
+2024-10-24 18:55:44,994 - root - INFO - Updating event: Will Brown / MATRIX 259
+2024-10-24 18:55:45,007 - root - INFO - Updating event: The 45th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-10-24 18:55:45,020 - root - INFO - Updating event: Tarek Atoui / MATRIX 258
+2024-10-24 18:55:45,029 - root - INFO - Finished scrape for BAMPFA
+2024-10-24 18:55:45,029 - root - INFO - Finished

@@ -10074,6 +10074,7 @@
                 "start": "2024-08-07",
                 "end": "2024-12-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-rose-damato",
@@ -10084,8 +10085,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "c897768eafe57df733ced97af7ecd428"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "64840e5c2d6e0b04b0c719cb1c66abe3"
         },
         "MATRIX 285 / Young Joon Kwak: Resistance Pleasure-BAMPFA": {
             "name": "MATRIX 285 / Young Joon Kwak: Resistance Pleasure",
@@ -10101,6 +10102,7 @@
                 "start": "2024-08-07",
                 "end": "2024-12-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/matrix-285-young-joon-kwak-resistance-pleasure",
@@ -10111,8 +10113,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "764155ec85378d731589b1908c0657a2"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "717d4d025f323a4911d3dc8a3e4cb226"
         },
         "To Exalt the Ephemeral: The (Im)permanent Collection-BAMPFA": {
             "name": "To Exalt the Ephemeral: The (Im)permanent Collection",
@@ -10128,6 +10130,7 @@
                 "start": "2024-08-14",
                 "end": "2025-07-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/exalt-ephemeral-impermanent-collection",
@@ -10138,8 +10141,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "d4a5c031afc42e5ed61ed7d6fdbaef23"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "3c52e71901cbb526fbf77b75a20b2388"
         },
         "Teaching Wall / Water, Art, and California-BAMPFA": {
             "name": "Teaching Wall / Water, Art, and California",
@@ -10155,6 +10158,7 @@
                 "start": "2024-08-28",
                 "end": "2024-12-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/teaching-wall-water-art-and-california",
@@ -10165,8 +10169,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "a0249002c08f2ad053795d7d9ba6d94e"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "c7503a08405a6699be8c99d50a235db6"
         },
         "On the Outdoor Screen / Kathryn Andrews: Victoria Woodhull, Belva Ann Lockwood, Abigail Scott Duniway [ . . . ]-BAMPFA": {
             "name": "On the Outdoor Screen / Kathryn Andrews: Victoria Woodhull, Belva Ann Lockwood, Abigail Scott Duniway [ . . . ]",
@@ -10182,6 +10186,7 @@
                 "start": "2024-10-01",
                 "end": "2024-11-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/outdoor-screen-kathryn-andrews-2024",
@@ -10192,8 +10197,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "ffcffbe446399edace0b078e06001337"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "57e9dfaff451bd71da1cc0e4edb5a8a2"
         },
         "On the Outdoor Screen / Lena Wolff and Hope Meng: Art for Democracy-BAMPFA": {
             "name": "On the Outdoor Screen / Lena Wolff and Hope Meng: Art for Democracy",
@@ -10209,6 +10214,7 @@
                 "start": "2024-10-01",
                 "end": "2024-11-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/outdoor-screen-vote-2024",
@@ -10219,8 +10225,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "55b562286ea518f4f3ec2f730e9ad0ec"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "6749a0dd102addea69ee7903b229499f"
         },
         "On the Outdoor Screen / Michele Pred: United for Freedom-BAMPFA": {
             "name": "On the Outdoor Screen / Michele Pred: United for Freedom",
@@ -10236,6 +10242,7 @@
                 "start": "2024-10-01",
                 "end": "2024-11-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/outdoor-screen-michele-pred-united-freedom",
@@ -10246,8 +10253,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "54c42bbc9107624409ea3b379ab265c1"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "d932336d411e3fb095cdaa33f5241616"
         },
         "BODY FREEDOM FOR EVERY(BODY)-BAMPFA": {
             "name": "BODY FREEDOM FOR EVERY(BODY)",
@@ -10263,6 +10270,7 @@
                 "start": null,
                 "end": null
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/body-freedom-everybody",
@@ -10273,8 +10281,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "aff471ff912a18776065c42991d9c93b"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "042450dd3f44ec608ed696befb47c909"
         },
         "Abounaddara: The Ruins We Carry-BAMPFA": {
             "name": "Abounaddara: The Ruins We Carry",
@@ -10290,6 +10298,7 @@
                 "start": "2024-10-09",
                 "end": "2025-02-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/abounaddara-ruins-we-carry",
@@ -10300,8 +10309,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "6fdb51eb6b2e609acbb36de15a8c8fb5"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "845f91fe16e8f05677264f66f26265b7"
         },
         "Making Their Mark: Works from the Shah Garg Collection-BAMPFA": {
             "name": "Making Their Mark: Works from the Shah Garg Collection",
@@ -10317,6 +10326,7 @@
                 "start": "2024-10-27",
                 "end": "2025-04-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/making-their-mark",
@@ -10327,8 +10337,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "e83ed450c6a48ab974ed92a4b6ec2e90"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "e710a749a67b3ef5ff6dea6ca168fb22"
         },
         "Routed West: Twentieth-Century African American Quilts in California-BAMPFA": {
             "name": "Routed West: Twentieth-Century African American Quilts in California",
@@ -10344,6 +10354,7 @@
                 "start": null,
                 "end": null
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/routed-west",
@@ -10354,8 +10365,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:29",
-            "hash": "474bb3dc2b18acc8b4f4d02294758d4d"
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "c94f9c218ce2c5bc6d429b5064eaa32d"
         },
         "MITH & CO.: Fifty-Fourth Annual UC Berkeley Master of Fine Arts Exhibition-BAMPFA": {
             "name": "MITH & CO.: Fifty-Fourth Annual UC Berkeley Master of Fine Arts Exhibition",
@@ -10371,6 +10382,7 @@
                 "start": "2024-05-01",
                 "end": "2024-07-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/mith-co-fifty-fourth-annual-uc-berkeley-master-fine-arts-exhibition",
@@ -10381,9 +10393,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "bda9905674ce949e130133de425ad1ff",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "ea6d0846e3bcfac32634399c9571b3ea"
         },
         "A Movement in Every Direction: Legacies of the Great Migration-BAMPFA": {
             "name": "A Movement in Every Direction: Legacies of the Great Migration",
@@ -10399,6 +10410,7 @@
                 "start": "2024-04-13",
                 "end": "2024-09-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/movement-every-direction-legacies-great-migration",
@@ -10409,9 +10421,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "4f0243a67b02395168423330866a6fcb",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "0075f76641da37914045bff0503dd90e"
         },
         "On the Outdoor Screen: Navigating the Pilot School-BAMPFA": {
             "name": "On the Outdoor Screen: Navigating the Pilot School",
@@ -10427,6 +10438,7 @@
                 "start": "2024-03-21",
                 "end": "2024-04-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/outdoor-screen-navigating-pilot-school",
@@ -10437,9 +10449,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "8a0dc5a7aee36ff4d3f075fa58a6541e",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "8e444baee186f250907c7a624764d330"
         },
         "Art Wall / Yee I-Lann: TIKAR/MEJA/PLASTIK-BAMPFA": {
             "name": "Art Wall / Yee I-Lann: TIKAR/MEJA/PLASTIK",
@@ -10455,6 +10466,7 @@
                 "start": "2024-01-24",
                 "end": "2024-07-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-yee-i-lann-tikarmejaplastik",
@@ -10465,9 +10477,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "231a3b1eebb8f1e8a49ae7e08b0ad0d4",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "f3444ae7c8b72f6a0a133a95806867ae"
         },
         "On the Outdoor Screen: Lessons in Semaphore-BAMPFA": {
             "name": "On the Outdoor Screen: Lessons in Semaphore",
@@ -10483,6 +10494,7 @@
                 "start": "2024-01-15",
                 "end": "2024-02-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/outdoor-screen-lessons-semaphore",
@@ -10493,9 +10505,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "955f68a03f5971ec40717367d305af8c",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "1a0a7e1f1c129bc14afc01a6fabf8a7f"
         },
         "MATRIX 284 / Sin Wai Kin: The Story Changing-BAMPFA": {
             "name": "MATRIX 284 / Sin Wai Kin: The Story Changing",
@@ -10511,6 +10522,7 @@
                 "start": "2023-12-13",
                 "end": "2024-03-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/matrix-284-sin-wai-kin-story-changing",
@@ -10521,9 +10533,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "0a79f7a15a2087ae70385e73d368c20f",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "9b35f55d6c314f438e66584a332db557"
         },
         "MATRIX 283 / Gabriel Chaile: No hay nada que destruya el coraz\u00f3n como la pobreza-BAMPFA": {
             "name": "MATRIX 283 / Gabriel Chaile: No hay nada que destruya el coraz\u00f3n como la pobreza",
@@ -10539,6 +10550,7 @@
                 "start": "2023-12-13",
                 "end": "2024-04-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/matrix-283-gabriel-chaile-no-hay-nada-que-destruya-el-corazon-como-la-pobreza",
@@ -10549,9 +10561,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "a92b7c0066858a7a230099aba754314b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:42",
+            "hash": "1538dbcc3d20c4d48e6579bd2c8084c4"
         },
         "Duane Linklater: mymothersside-BAMPFA": {
             "name": "Duane Linklater: mymothersside",
@@ -10567,6 +10578,7 @@
                 "start": "2023-10-07",
                 "end": "2024-02-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/duane-linklater-mymothersside",
@@ -10577,9 +10589,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "b4f945567e528e24aabf9863ed40e723",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "480141c32bce49327b1f58c6c051b391"
         },
         "MATRIX 282 / Griselda Rosas: Yo te cuido-BAMPFA": {
             "name": "MATRIX 282 / Griselda Rosas: Yo te cuido",
@@ -10595,6 +10606,7 @@
                 "start": "2023-08-30",
                 "end": "2023-11-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/matrix-282-griselda-rosas-yo-te-cuido",
@@ -10605,9 +10617,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "e7fdb8e44a87ca5c877ab0217407ff72",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "8e8e45de57a2ee70e2d0a4e76ca4b469"
         },
         "MATRIX 281 / Kenneth Tam: The Founding of the World-BAMPFA": {
             "name": "MATRIX 281 / Kenneth Tam: The Founding of the World",
@@ -10623,6 +10634,7 @@
                 "start": "2023-08-16",
                 "end": "2023-11-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/matrix-281-kenneth-tam-founding-world",
@@ -10633,9 +10645,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "27019b8ebf9d42023601b4ca6a222872",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "39849a655e3462aa6d0abdce9016dfc1"
         },
         "Art Wall: Xylor Jane-BAMPFA": {
             "name": "Art Wall: Xylor Jane",
@@ -10651,6 +10662,7 @@
                 "start": "2023-08-16",
                 "end": "2024-01-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-xylor-jane",
@@ -10661,9 +10673,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "622df539dec34887521b91fe182b0f5b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "ebb5d9df4c3a73dc446753e97e6e42c1"
         },
         "What Has Been and What Could Be: The BAMPFA Collection-BAMPFA": {
             "name": "What Has Been and What Could Be: The BAMPFA Collection",
@@ -10679,6 +10690,7 @@
                 "start": "2023-06-07",
                 "end": "2024-07-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/what-has-been-and-what-could-be-bampfa-collection",
@@ -10689,9 +10701,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "3fc4f1499433854318e958de59670094",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "cba68f95e9f1bd7c064565863e4d8698"
         },
         "Fifty-Third Annual UC Berkeley Master of Fine Arts Exhibition-BAMPFA": {
             "name": "Fifty-Third Annual UC Berkeley Master of Fine Arts Exhibition",
@@ -10707,6 +10718,7 @@
                 "start": "2023-05-10",
                 "end": "2023-07-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/fifty-third-annual-uc-berkeley-master-fine-arts-exhibition",
@@ -10717,9 +10729,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "56edd36f0aed47b5896a41e863dad348",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "5438a3bc01a42bfd85b36ae229173905"
         },
         "Alexandre Dumas\u2019s Afro: Blackness Caricatured, Erased, and Back Again-BAMPFA": {
             "name": "Alexandre Dumas\u2019s Afro: Blackness Caricatured, Erased, and Back Again",
@@ -10735,6 +10746,7 @@
                 "start": "2023-04-12",
                 "end": "2023-07-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/alexandre-dumass-afro-blackness-caricatured-erased-and-back-again",
@@ -10745,9 +10757,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "97bcc189da1fd8d3f9285f6feae67c36",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "96e68e10eec0112a28ce53e53958b32e"
         },
         "On the Hour: Three short films by William Kentridge-BAMPFA": {
             "name": "On the Hour: Three short films by William Kentridge",
@@ -10763,6 +10774,7 @@
                 "start": "2023-03-09",
                 "end": "2023-04-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hour-three-short-films-william-kentridge",
@@ -10773,9 +10785,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "6b5feffc166194e5f6ed1a9d81ccaaed",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "40e0cea56a015608c7c5e842373a8dbe"
         },
         "Out of Africa: Selections from the Kramlich Collection-BAMPFA": {
             "name": "Out of Africa: Selections from the Kramlich Collection",
@@ -10791,6 +10802,7 @@
                 "start": "2023-03-08",
                 "end": "2023-04-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/out-africa-selections-kramlich-collection",
@@ -10801,9 +10813,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "38fd37736134c91b51c31e60f3839542",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "dc9777c9168c118d7134f3baa8ee2436"
         },
         "Apichatpong Weerasethakul \"Morakot (Emerald)\"-BAMPFA": {
             "name": "Apichatpong Weerasethakul \"Morakot (Emerald)\"",
@@ -10819,6 +10830,7 @@
                 "start": "2023-03-08",
                 "end": "2023-04-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/apichatpong-weerasethakul-morakot-emerald",
@@ -10829,9 +10841,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "47f636fd9eb526dd5b96da72c857f166",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "7fa5b47273b88a3b5a6d9df7d0076e0d"
         },
         "Amalia Mesa-Bains: Archaeology of Memory-BAMPFA": {
             "name": "Amalia Mesa-Bains: Archaeology of Memory",
@@ -10847,6 +10858,7 @@
                 "start": "2023-02-04",
                 "end": "2023-08-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/amalia-mesa-bains-archaeology-memory",
@@ -10857,9 +10869,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "1f936777a451bfd2a6c7f2e5c33dce0d",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "02275e02d38172f796065bf0174e7647"
         },
         "Frank Moore / MATRIX 280: Theater of Human Melting-BAMPFA": {
             "name": "Frank Moore / MATRIX 280: Theater of Human Melting",
@@ -10875,6 +10886,7 @@
                 "start": "2023-01-25",
                 "end": "2023-04-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/frank-moore-matrix-280-theater-human-melting",
@@ -10885,9 +10897,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "fd9a46f74a8db6e8dd7ec510be51abdc",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "ff90e4ef815aa9aed9fc9a986a7cfce6"
         },
         "Rina Kimche-BAMPFA": {
             "name": "Rina Kimche",
@@ -10903,6 +10914,7 @@
                 "start": "2023-01-11",
                 "end": "2023-03-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/rina-kimche",
@@ -10913,9 +10925,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "3345a604b7623a465c96977e6ef83021",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "ec0b23737338b9be5a963f24cc8957fc"
         },
         "Endless Knot: Struggle and Healing in the Buddhist World-BAMPFA": {
             "name": "Endless Knot: Struggle and Healing in the Buddhist World",
@@ -10931,6 +10942,7 @@
                 "start": "2022-12-14",
                 "end": "2023-05-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/endless-knot-struggle-and-healing-buddhist-world",
@@ -10941,9 +10953,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "0205aa742aaa065725ae1bfe02288058",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "0bb4b3b97e6c87e3bbf6f78afecff52a"
         },
         "Art Wall: Luis Camnitzer-BAMPFA": {
             "name": "Art Wall: Luis Camnitzer",
@@ -10959,6 +10970,7 @@
                 "start": "2022-11-30",
                 "end": "2023-07-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-luis-camnitzer",
@@ -10969,9 +10981,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "a5bee1301c923fbceeca769d1e145c86",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "cb9d7610c92191504ddaf2ca66038d50"
         },
         "Lena Wolff and Hope Meng: VOTE-BAMPFA": {
             "name": "Lena Wolff and Hope Meng: VOTE",
@@ -10987,6 +10998,7 @@
                 "start": "2022-10-08",
                 "end": "2022-11-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/lena-wolff-and-hope-meng-vote",
@@ -10997,9 +11009,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:45",
-            "hash": "b4465250db981333c7a3428dce46e24a",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "5840bbea22b114fd4fd3337113d7ea1f"
         },
         "Undoing Time: Art and Histories of Incarceration-BAMPFA": {
             "name": "Undoing Time: Art and Histories of Incarceration",
@@ -11015,6 +11026,7 @@
                 "start": "2022-09-03",
                 "end": "2022-12-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/undoing-time-art-and-histories-incarceration",
@@ -11025,9 +11037,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "76abdcd47f1020d121a3ce3be24fec88",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "85bf51f0a531d692dc9b8ea6fa8d825d"
         },
         "Hannah Levy / MATRIX 279-BAMPFA": {
             "name": "Hannah Levy / MATRIX 279",
@@ -11043,6 +11054,7 @@
                 "start": "2022-08-10",
                 "end": "2023-01-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hannah-levy-matrix-279",
@@ -11053,9 +11065,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "fd9b329bd284e8b9bd842ef2f4977829",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "5f634d9647332f03ca4d022615d2f2a6"
         },
         "Fluxus Reverb: Events, Scores, Boxes & More-BAMPFA": {
             "name": "Fluxus Reverb: Events, Scores, Boxes & More",
@@ -11071,6 +11082,7 @@
                 "start": "2022-07-20",
                 "end": "2023-02-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/fluxus-reverb-events-scores-boxes-more",
@@ -11081,9 +11093,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "5b07b34c5c6ed6a5afb76af4c2ab792b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "a94abe9c8a80bd5ad11c86278c661b39"
         },
         "by Alison Knowles: A Retrospective (1960\u20132022)-BAMPFA": {
             "name": "by Alison Knowles: A Retrospective (1960\u20132022)",
@@ -11099,6 +11110,7 @@
                 "start": "2022-07-20",
                 "end": "2023-02-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/alison-knowles-retrospective",
@@ -11109,9 +11121,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "82976937836afb00012a16e767302db8",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "7c2eadfb7531dd7caa234d94efa08ed8"
         },
         "Whitney Bradshaw: OUTCRY-BAMPFA": {
             "name": "Whitney Bradshaw: OUTCRY",
@@ -11127,6 +11138,7 @@
                 "start": "2022-07-13",
                 "end": "2022-12-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/whitney-bradshaw-outcry",
@@ -11137,9 +11149,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "c82b9a7a85f8458126df8ed725d5c53a",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "c05c0fe535ab0aa3ad46eed43922da73"
         },
         "The 52nd Annual UC Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 52nd Annual UC Berkeley Master of Fine Arts Graduate Exhibition",
@@ -11155,6 +11166,7 @@
                 "start": "2022-05-13",
                 "end": "2022-07-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/52nd-annual-uc-berkeley-master-fine-arts-graduate-exhibition",
@@ -11165,9 +11177,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "7cfe7b03d7c49059058c1216cc2c46d2",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "bdd66bf2cd2e6be4eab2b650180f641f"
         },
         "Candice Lin: Seeping, Rotting, Resting, Weeping-BAMPFA": {
             "name": "Candice Lin: Seeping, Rotting, Resting, Weeping",
@@ -11183,6 +11194,7 @@
                 "start": "2022-05-08",
                 "end": "2022-11-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/candice-lin-seeping-rotting-resting-weeping",
@@ -11193,9 +11205,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "57e4c30c7b8e6d6f7b29b742b55059f3",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "3d3ec8089208592b2d41c485f8140097"
         },
         "Art Wall: Caroline Kent-BAMPFA": {
             "name": "Art Wall: Caroline Kent",
@@ -11211,6 +11222,7 @@
                 "start": "2022-04-27",
                 "end": "2022-10-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-caroline-kent",
@@ -11221,9 +11233,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "23658192c945a5deb80487aa1c704277",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "1d79e204fcd493a9292ece567ca7c922"
         },
         "On the Hour: A Cool Million-BAMPFA": {
             "name": "On the Hour: A Cool Million",
@@ -11239,6 +11250,7 @@
                 "start": "2022-04-18",
                 "end": "2022-04-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hour-cool-million",
@@ -11249,9 +11261,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "d71d2ebb04a323e767d0fe880a98108f",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "c2c412494ca3f4b766f05976219364a0"
         },
         "The Artist\u2019s Eye: Tammy Rae Carland, David Huffman, Lava Thomas, John Zurier-BAMPFA": {
             "name": "The Artist\u2019s Eye: Tammy Rae Carland, David Huffman, Lava Thomas, John Zurier",
@@ -11267,6 +11278,7 @@
                 "start": "2022-03-19",
                 "end": "2022-07-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/artists-eye",
@@ -11277,9 +11289,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "a2152f31e0ba886b1454e9e4f09b3783",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "7acdbeb18986307a26d39e5de8c51e2f"
         },
         "Recent Acquisitions from the BAMPFA Collection-BAMPFA": {
             "name": "Recent Acquisitions from the BAMPFA Collection",
@@ -11295,6 +11306,7 @@
                 "start": "2022-03-02",
                 "end": "2022-04-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/recent-acquisitions-collection",
@@ -11305,9 +11317,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "86fa57cc620bbcc198a933c54fcd3d5b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "daa3b5064f4bc2d75fbbed3eb6ec013b"
         },
         "Spiritual Mountains: The Art of Wesley Tongson-BAMPFA": {
             "name": "Spiritual Mountains: The Art of Wesley Tongson",
@@ -11323,6 +11334,7 @@
                 "start": "2022-01-12",
                 "end": "2022-06-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/spiritual-mountains-art-wesley-tongson",
@@ -11333,9 +11345,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "ce0048d9041ef14575d30e8ddda19167",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "5e61767bc428784541401e7f8a45ea39"
         },
         "Lines of Thought-BAMPFA": {
             "name": "Lines of Thought",
@@ -11351,6 +11362,7 @@
                 "start": "2022-01-05",
                 "end": "2022-07-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/lines-thought",
@@ -11361,9 +11373,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "2a2701f0d7f7a700d8cf706eaa3a3647",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "51bb04b52453399edfc04ed255d32d65"
         },
         "Jumana Manna / MATRIX 278-BAMPFA": {
             "name": "Jumana Manna / MATRIX 278",
@@ -11379,6 +11390,7 @@
                 "start": "2022-12-08",
                 "end": "2022-03-06"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/jumana-manna-matrix-278",
@@ -11389,9 +11401,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "813f13184e3654a933d86dbf05f4bcf5",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "ed142f22bfda7c1ea24766977b5036fb"
         },
         "On the Hour: Night Watch-BAMPFA": {
             "name": "On the Hour: Night Watch",
@@ -11407,6 +11418,7 @@
                 "start": "2021-09-16",
                 "end": "2021-10-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hour-night-watch",
@@ -11417,9 +11429,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "bc1aff9230320c3ca0af3dc66933df75",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "4880b06f55102f272eba0de3e10e6bc0"
         },
         "New Time: Art and Feminisms in the 21st Century-BAMPFA": {
             "name": "New Time: Art and Feminisms in the 21st Century",
@@ -11435,6 +11446,7 @@
                 "start": "2021-08-28",
                 "end": "2022-01-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/new-time-art-and-feminisms-21st-century",
@@ -11445,9 +11457,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "b320558e46d2a6120b0948f98d0b5dde",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "769d2d64a197ef0a02d3c4dee694eb9e"
         },
         "Shirin Neshat: Fervor-BAMPFA": {
             "name": "Shirin Neshat: Fervor",
@@ -11463,6 +11474,7 @@
                 "start": "2021-08-25",
                 "end": "2021-11-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/shirin-neshat-fervor",
@@ -11473,9 +11485,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "5a10c985318c67607a43e1ee7bf235c6",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "2fdd0a3c8e81c861d5eef7e058b71595"
         },
         "The Enduring Mark-BAMPFA": {
             "name": "The Enduring Mark",
@@ -11491,6 +11502,7 @@
                 "start": "2021-08-06",
                 "end": "2021-11-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/enduring-mark",
@@ -11501,9 +11513,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "3baa83c2739b20f50a75373f20b9f397",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "f36dca8dbd009d8ebb71b7f381cd569c"
         },
         "Art Wall: Luchita Hurtado-BAMPFA": {
             "name": "Art Wall: Luchita Hurtado",
@@ -11519,6 +11530,7 @@
                 "start": "2022-08-06",
                 "end": "2022-03-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-luchita-hurtado",
@@ -11529,9 +11541,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "2c16398ea4cfa36aa084c7a0c5704be1",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "674e7a7f2002e0e9fd361580d48cf1df"
         },
         "The 51st Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 51st Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -11547,6 +11558,7 @@
                 "start": "2021-06-11",
                 "end": "2021-07-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/virtual/51st-annual-university-california-berkeley-master-fine-arts-graduate-exhibition",
@@ -11557,9 +11569,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "57333e3bd8ce4ffd56dfdf5066971115",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "7e1644b49b2d57b6e56152fe2dc4672c"
         },
         "Kay Sekimachi: Geometries-BAMPFA": {
             "name": "Kay Sekimachi: Geometries",
@@ -11575,6 +11586,7 @@
                 "start": "2021-05-28",
                 "end": "2021-10-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/virtual/kay-sekimachi-geometries",
@@ -11585,9 +11597,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "8a1ccc56dbf8f28d9e1a18c6cb4fe41f",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "2df992807e969023d74b76dd9ab053db"
         },
         "The 50th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 50th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -11603,6 +11614,7 @@
                 "start": "2021-05-14",
                 "end": "2021-06-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/virtual/50th-annual-university-california-berkeley-master-fine-arts-graduate-exhibition",
@@ -11613,9 +11625,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "768d348f3f240a3b9f9955a01778b78f",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "cc32db09b341a6e9173779408fcc3d0e"
         },
         "Ulrike Ottinger / MATRIX 276-BAMPFA": {
             "name": "Ulrike Ottinger / MATRIX 276",
@@ -11631,6 +11642,7 @@
                 "start": "2021-04-30",
                 "end": "2021-07-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/ulrike-ottinger-matrix-276",
@@ -11641,9 +11653,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "e75023da3ac53f0b6a71ecd62c50712a",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "5a32e79886c2c9485c9ccee9eb206757"
         },
         "Present Tense: Five Centuries of Colonialism in Latin American and Caribbean Art-BAMPFA": {
             "name": "Present Tense: Five Centuries of Colonialism in Latin American and Caribbean Art",
@@ -11659,6 +11670,7 @@
                 "start": "2021-04-30",
                 "end": "2021-06-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/virtual/present-tense-five-centuries-colonialism-latin-american-and-caribbean-art",
@@ -11669,9 +11681,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "6446ac26da9e32bdb2f1742497091658",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "a84c9b1651facee859e19d423cd94e39"
         },
         "Beyond Boundaries: Buddhist Art of Gandhara-BAMPFA": {
             "name": "Beyond Boundaries: Buddhist Art of Gandhara",
@@ -11687,6 +11698,7 @@
                 "start": "2021-04-30",
                 "end": "2022-03-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/beyond-boundaries-buddhist-art-gandhara",
@@ -11697,9 +11709,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "8b881bc892b13d8b18ae345de09c8c71",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "f83c7ac0c45975b0ebd9f04fba238fce"
         },
         "Orbits of Known and Unknown Objects: SFAI Histories / MATRIX 277-BAMPFA": {
             "name": "Orbits of Known and Unknown Objects: SFAI Histories / MATRIX 277",
@@ -11715,6 +11726,7 @@
                 "start": "2020-09-30",
                 "end": null
             },
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://bampfa.org/program/orbits-known-and-unknown-objects-sfai-histories-matrix-277",
@@ -11725,8 +11737,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "fe4f841e75ee86a4173fee6403e6f312"
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "e895afe941e3f9f9bcf61c2987dfa781"
         },
         "Catherine Opie: Political Landscapes-BAMPFA": {
             "name": "Catherine Opie: Political Landscapes",
@@ -11742,6 +11754,7 @@
                 "start": "2020-09-02",
                 "end": "2020-11-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/catherine-opie-political-landscapes",
@@ -11752,9 +11765,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "57e3210f202cfa8a18c2c926864ded64",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "4bdc5f623de04c4296ea043fe06761a0"
         },
         "When All That Is Solid Melts into Air-BAMPFA": {
             "name": "When All That Is Solid Melts into Air",
@@ -11770,6 +11782,7 @@
                 "start": "2020-03-04",
                 "end": "2020-11-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/virtual/when-all-solid-melts-air",
@@ -11780,9 +11793,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "44c529fd50e97e077bee7d3a10643d85",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "3911a8865fc039cb211d4c6afaa1d498"
         },
         "Art for Human Rights: Peace Now!-BAMPFA": {
             "name": "Art for Human Rights: Peace Now!",
@@ -11798,6 +11810,7 @@
                 "start": "2020-02-26",
                 "end": "2020-08-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-human-rights-peace-now",
@@ -11808,9 +11821,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "68b8507c8249b5ae107121b6e3f11a95",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "4de382838e3e30405965fca9d9f8015d"
         },
         "Rosie Lee Tompkins: A Retrospective-BAMPFA": {
             "name": "Rosie Lee Tompkins: A Retrospective",
@@ -11826,6 +11838,7 @@
                 "start": "2020-02-19",
                 "end": "2021-07-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/virtual/rosie-lee-tompkins-retrospective",
@@ -11836,9 +11849,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "c5eb6eebc33f60bd79168f18144d7c37",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "1b1135c31e0d2410eab09df52a610118"
         },
         "Ron Nagle: Handsome Drifter-BAMPFA": {
             "name": "Ron Nagle: Handsome Drifter",
@@ -11854,6 +11866,7 @@
                 "start": "2020-01-15",
                 "end": "2021-03-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/ron-nagle-handsome-drifter",
@@ -11864,9 +11877,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "34bbe70ee76bc794c30b8e2df58f66b7",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "f31a29765cd024b07e880ca49269eb09"
         },
         "Brave Warriors and Fantastic Tales: The World According to Yoshitoshi-BAMPFA": {
             "name": "Brave Warriors and Fantastic Tales: The World According to Yoshitoshi",
@@ -11882,6 +11894,7 @@
                 "start": "2020-01-15",
                 "end": "2020-07-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/brave-warriors-and-fantastic-tales-world-according-yoshitoshi",
@@ -11892,9 +11905,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "92dc892f3dd9d212d90b660fa1c9be77",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "9b55cab8a89429d6f0dd6302c7df00dd"
         },
         "Lands of Promise and Peril: Geographies of California-BAMPFA": {
             "name": "Lands of Promise and Peril: Geographies of California",
@@ -11910,6 +11922,7 @@
                 "start": "2019-12-11",
                 "end": "2020-08-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/lands-promise-and-peril-geographies-california",
@@ -11920,9 +11933,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "7f7885b43fefcc040449effe966ec6c3",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "50ede981bdf0bb7df0fa46009774127a"
         },
         "Art Wall: Edie Fake-BAMPFA": {
             "name": "Art Wall: Edie Fake",
@@ -11938,6 +11950,7 @@
                 "start": "2019-11-20",
                 "end": "2021-06-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/virtual/art-wall-edie-fake",
@@ -11948,9 +11961,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "d6f61329dea48f10dc509a09986e1b61",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "596c3d43095bdcbdea12e5b237565837"
         },
         "Sylvia Fein / MATRIX 275-BAMPFA": {
             "name": "Sylvia Fein / MATRIX 275",
@@ -11966,6 +11978,7 @@
                 "start": "2019-11-13",
                 "end": "2020-03-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/sylvia-fein-matrix-275",
@@ -11976,9 +11989,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "cb52279864a14538a568f98eacd0c7b8",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "ed9695e9336e966533a547c3269f38d8"
         },
         "BAMPFA AR\u2014Augmented Time-BAMPFA": {
             "name": "BAMPFA AR\u2014Augmented Time",
@@ -11994,6 +12006,7 @@
                 "start": "2019-10-23",
                 "end": "2019-12-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/bampfa-ar-augmented-time",
@@ -12004,9 +12017,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "5d307dd779b3e7b5a449a04c0147574b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "cee76269118da2b4d70affb6044f69a7"
         },
         "Dennis Feldman: Photographs-BAMPFA": {
             "name": "Dennis Feldman: Photographs",
@@ -12022,6 +12034,7 @@
                 "start": "2019-07-31",
                 "end": "2019-10-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/dennis-feldman-photographs",
@@ -12032,9 +12045,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "0d69803c6d68f4708a9ca914046f65fd",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "5f5be86bf51e42694696dcecde94e3d2"
         },
         "Terry Fox: Resonance-BAMPFA": {
             "name": "Terry Fox: Resonance",
@@ -12050,6 +12062,7 @@
                 "start": "2019-10-02",
                 "end": "2019-12-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/terry-fox-resonance",
@@ -12060,9 +12073,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "e306220ef0c5aa92fef1b355be0ff4bf",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "fd693c56eb1822b9b8abba1902309142"
         },
         "Hinges: Sakaki Hyakusen and the Birth of Nanga Painting-BAMPFA": {
             "name": "Hinges: Sakaki Hyakusen and the Birth of Nanga Painting",
@@ -12078,6 +12090,7 @@
                 "start": "2019-10-02",
                 "end": "2020-02-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hinges-sakaki-hyakusen-and-birth-nanga-painting",
@@ -12088,9 +12101,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "1a171c7ac390b7a04ebc523c8aa79aac",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "c375000330ed76585f9c9e497853e6f5"
         },
         "Kader Attia / MATRIX 274-BAMPFA": {
             "name": "Kader Attia / MATRIX 274",
@@ -12106,6 +12118,7 @@
                 "start": "2019-09-18",
                 "end": "2019-11-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/kader-attia-matrix-274",
@@ -12116,9 +12129,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "404e391ccd401ea6d0c1fb6a46afe956",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "5a35648fd4e7e605dec2020342949aa2"
         },
         "The San Quentin Project: Nigel Poor and the Men of San Quentin State Prison-BAMPFA": {
             "name": "The San Quentin Project: Nigel Poor and the Men of San Quentin State Prison",
@@ -12134,6 +12146,7 @@
                 "start": "2019-08-21",
                 "end": "2019-11-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/san-quentin-project-nigel-poor-and-men-san-quentin-state-prison",
@@ -12144,9 +12157,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "6df549cfa124673f085c170dcb88876d",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "7b61db34dbb4094a33b01c23c57b47bd"
         },
         "Strange-BAMPFA": {
             "name": "Strange",
@@ -12162,6 +12174,7 @@
                 "start": "2019-08-21",
                 "end": "2020-01-19"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/strange",
@@ -12172,9 +12185,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "f74febabacf35097c539c19d6125412b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "6f68814359d09268f9d1d8f6197eed1b"
         },
         "Meditation in Motion: Zen Calligraphy from the Stuart Katz Collection-BAMPFA": {
             "name": "Meditation in Motion: Zen Calligraphy from the Stuart Katz Collection",
@@ -12190,6 +12202,7 @@
                 "start": "2019-07-17",
                 "end": "2019-10-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/meditation-motion-zen-calligraphy-stuart-katz-collection",
@@ -12200,9 +12213,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "a923f13580856f8adb19a7c6aa89d2e5",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "3a32e87339007fd58cb7c1dab17551c4"
         },
         "No Horizon: Helen Mirra and Sean Thackrey-BAMPFA": {
             "name": "No Horizon: Helen Mirra and Sean Thackrey",
@@ -12218,6 +12230,7 @@
                 "start": "2019-07-03",
                 "end": "2019-08-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/no-horizon-helen-mirra-and-sean-thackrey",
@@ -12228,9 +12241,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "882cfbc89b2d7b47c3da05a1825d0e1d",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "c31f26ef050a38cd8a1a0d88b7802ce0"
         },
         "Divine Women, Divine Wisdom-BAMPFA": {
             "name": "Divine Women, Divine Wisdom",
@@ -12246,6 +12258,7 @@
                 "start": "2019-06-26",
                 "end": "2020-12-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/divine-women-divine-wisdom",
@@ -12256,9 +12269,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "192779c56c43189ce9554817049f26b3",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "d5db14ea613e12d091a7761515de014c"
         },
         "The 49th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 49th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -12274,6 +12286,7 @@
                 "start": "2019-05-17",
                 "end": "2019-06-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/49th-annual-university-california-berkeley-master-fine-arts-graduate-exhibition",
@@ -12284,9 +12297,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "099eb63f9034c82d1c699eaf75d0a19d",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "a2c02f55e9d572d7367b55f6b858ce58"
         },
         "About Things Loved: Blackness and Belonging-BAMPFA": {
             "name": "About Things Loved: Blackness and Belonging",
@@ -12302,6 +12314,7 @@
                 "start": "2019-05-17",
                 "end": "2019-07-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/about-things-loved-blackness-and-belonging",
@@ -12312,9 +12325,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "a6c55c296078cac7aa5f3b96fbce93d3",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "2edfb0adb59776268f48e49c81f10fcd"
         },
         "Permanent Accusation: Art for Human Rights-BAMPFA": {
             "name": "Permanent Accusation: Art for Human Rights",
@@ -12330,6 +12342,7 @@
                 "start": "2019-04-10",
                 "end": "2019-07-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/permanent-accusation-art-human-rights",
@@ -12340,9 +12353,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "6a137d4521142258647f487e5b0782e9",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "ea2ff94d6e581672c2d2c096a3b4c7dd"
         },
         "Looking: The Art of Frederick Hammersley-BAMPFA": {
             "name": "Looking: The Art of Frederick Hammersley",
@@ -12358,6 +12370,7 @@
                 "start": "2019-04-10",
                 "end": "2019-06-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/looking-art-frederick-hammersley",
@@ -12368,9 +12381,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "ab351d25809244428c64641c88229277",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "3a7178861a090d0cba6d8cf5167290cb"
         },
         "Unlimited: Recent Gifts from the William Goodman and Victoria Belco Photography Collection-BAMPFA": {
             "name": "Unlimited: Recent Gifts from the William Goodman and Victoria Belco Photography Collection",
@@ -12386,6 +12398,7 @@
                 "start": "2019-03-27",
                 "end": "2019-09-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/unlimited-recent-gifts-william-goodman-and-victoria-belco-photography-collection",
@@ -12396,9 +12409,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "166c6ea94ed5c1bf8e5e41f44d8c6711",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "63b3f006a5f8291bc5bd2351ca5697ae"
         },
         "Art Wall: Carlos Amorales-BAMPFA": {
             "name": "Art Wall: Carlos Amorales",
@@ -12414,6 +12426,7 @@
                 "start": "2019-03-27",
                 "end": "2019-10-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-carlos-amorales",
@@ -12424,9 +12437,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "757a2a3e9ab52055f56cb10ca97b053b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "a94811ae8070195b200fb6413869e761"
         },
         "Hans Hofmann: The Nature of Abstraction-BAMPFA": {
             "name": "Hans Hofmann: The Nature of Abstraction",
@@ -12442,6 +12454,7 @@
                 "start": "2019-02-27",
                 "end": "2019-07-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hans-hofmann-nature-abstraction",
@@ -12452,9 +12465,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:46",
-            "hash": "7b0f201da1e3d0fea6b0a73af93ec1be",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "a19edd6e9b5345583945b628a36ba05a"
         },
         "Aaron Marcus: Early Works-BAMPFA": {
             "name": "Aaron Marcus: Early Works",
@@ -12470,6 +12482,7 @@
                 "start": "2019-02-06",
                 "end": "2019-06-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/aaron-marcus-early-works",
@@ -12480,9 +12493,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "6f6e3d2e8205b78728348d174cc53999",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "cad8b265ad820fe782fdd95b6aeecdb0"
         },
         "Masako Miki / MATRIX 273-BAMPFA": {
             "name": "Masako Miki / MATRIX 273",
@@ -12498,6 +12510,7 @@
                 "start": "2019-01-09",
                 "end": "2019-04-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/masako-miki-matrix-273",
@@ -12508,9 +12521,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "dda8d2535d53c502e17d92df2cefbff5",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "652863fa8d0ca73a5010b1bd04b534ca"
         },
         "Get Dancin\u2019: Selections from the Collection-BAMPFA": {
             "name": "Get Dancin\u2019: Selections from the Collection",
@@ -12526,6 +12538,7 @@
                 "start": "2019-01-09",
                 "end": "2019-03-31"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/get-dancin%E2%80%99-selections-collection",
@@ -12536,9 +12549,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "05f3e3716fee16eab5469e7e429a3f78",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "6da3782e112dab75b93a515151a63e08"
         },
         "Ink, Paper, Silk: One Hundred Years of Collecting Japanese Art-BAMPFA": {
             "name": "Ink, Paper, Silk: One Hundred Years of Collecting Japanese Art",
@@ -12554,6 +12566,7 @@
                 "start": "2018-12-12",
                 "end": "2019-04-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/ink-paper-silk-one-hundred-years-collecting-japanese-art",
@@ -12564,9 +12577,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "29e0654be3f94ea1ba145eb1bffd3c6e",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:43",
+            "hash": "3b03e8506f8b4fe1ca1633f6e2f3cd81"
         },
         "Arthur Jafa / MATRIX 272-BAMPFA": {
             "name": "Arthur Jafa / MATRIX 272",
@@ -12582,6 +12594,7 @@
                 "start": "2018-12-12",
                 "end": "2019-03-24"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/arthur-jafa-matrix-272",
@@ -12592,9 +12605,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "9cfead73bcd30b819e04fdf15faf450e",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "5e1550f1ed7950831abfd2b95ef6ef42"
         },
         "Dimensionism: Modern Art in the Age of Einstein-BAMPFA": {
             "name": "Dimensionism: Modern Art in the Age of Einstein",
@@ -12610,6 +12622,7 @@
                 "start": "2018-11-07",
                 "end": "2019-03-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/dimensionism-modern-art-age-einstein",
@@ -12620,9 +12633,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "069cc02ce2f3a8f1acce4c4c3003541c",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "fcf47b0c084aa19e109c34495b8bb7cb"
         },
         "Harvey Quaytman: Against the Static-BAMPFA": {
             "name": "Harvey Quaytman: Against the Static",
@@ -12638,6 +12650,7 @@
                 "start": "2018-10-17",
                 "end": "2019-01-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/harvey-quaytman-against-static",
@@ -12648,9 +12661,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "2be3410b594267b70c1e6b73e552fe8b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "b948b11f201831162d70fda2e8da8d1a"
         },
         "Boundless: Contemporary Tibetan Artists at Home and Abroad-BAMPFA": {
             "name": "Boundless: Contemporary Tibetan Artists at Home and Abroad",
@@ -12666,6 +12678,7 @@
                 "start": "2018-10-03",
                 "end": "2019-05-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/boundless-contemporary-tibetan-artists-home-and-abroad",
@@ -12676,9 +12689,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "936b7dc6d8249fbc32691ef298ae8881",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "3df4ef7b51acfd387e3987f4cbdac43a"
         },
         "Redacted: Art for Human Rights-BAMPFA": {
             "name": "Redacted: Art for Human Rights",
@@ -12694,6 +12706,7 @@
                 "start": "2018-09-19",
                 "end": "2018-12-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/redacted-art-human-rights",
@@ -12704,9 +12717,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "e777f1e24158e49fb593be630cf3e65c",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "0c3a1a7199e40b221269481d92ce6ae8"
         },
         "Old Masters in a New Light: Rediscovering the European Collection-BAMPFA": {
             "name": "Old Masters in a New Light: Rediscovering the European Collection",
@@ -12722,6 +12734,7 @@
                 "start": "2018-09-19",
                 "end": "2018-12-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/old-masters-new-light-rediscovering-european-collection",
@@ -12732,9 +12745,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "ef308b5b4ce12cbd37496eec587f7277",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "0ed546e24ab6bd4909843db34c3613e5"
         },
         "Christina Quarles / MATRIX 271-BAMPFA": {
             "name": "Christina Quarles / MATRIX 271",
@@ -12750,6 +12762,7 @@
                 "start": "2018-09-19",
                 "end": "2018-11-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/christina-quarles-matrix-271",
@@ -12760,9 +12773,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "c70229a347c9a4ab43be536e68f3e981",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "461fdffc8e5c022a7fd0e1690a1a0997"
         },
         "Art Wall: Barbara Stauffacher Solomon-BAMPFA": {
             "name": "Art Wall: Barbara Stauffacher Solomon",
@@ -12778,6 +12790,7 @@
                 "start": "2018-08-15",
                 "end": "2019-03-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-barbara-stauffacher-solomon",
@@ -12788,9 +12801,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "316c956d1248c7462af066ce6c0cc8a2",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "58876f0fba9c64ffa805c07aac9f0935"
         },
         "Cecilia Vicu\u00f1a: About to Happen-BAMPFA": {
             "name": "Cecilia Vicu\u00f1a: About to Happen",
@@ -12806,6 +12818,7 @@
                 "start": "2018-07-11",
                 "end": "2018-10-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/cecilia-vicu%C3%B1a-about-happen",
@@ -12816,9 +12829,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "ef7f33292cc85a84a8e20b53df97a7c5",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "e7346cc2dadd942cd4bf3dd906162f02"
         },
         "Joanne Leonard: Intimate Documentary-BAMPFA": {
             "name": "Joanne Leonard: Intimate Documentary",
@@ -12834,6 +12846,7 @@
                 "start": null,
                 "end": null
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/joanne-leonard-intimate-documentary",
@@ -12844,8 +12857,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "a4b42e0f2068db0f27e2121fb028ddf2"
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "dd5bc0861948b97a82ceab4c8646a828"
         },
         "Peter Hujar: Speed of Life-BAMPFA": {
             "name": "Peter Hujar: Speed of Life",
@@ -12861,6 +12874,7 @@
                 "start": "2018-06-30",
                 "end": "2018-11-18"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/peter-hujar-speed-life",
@@ -12871,9 +12885,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "c9e0d62345123bd3a0496873b7d053d2",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "1092cbb2801bb31585a18321fae955e7"
         },
         "Way Bay 2-BAMPFA": {
             "name": "Way Bay 2",
@@ -12889,6 +12902,7 @@
                 "start": "2018-06-13",
                 "end": "2018-09-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/way-bay-2",
@@ -12899,9 +12913,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "64867bb1e1b1ffc1a99d37be7adc9f7f",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "82269b593091eb88e88522e5f1d209b3"
         },
         "Color, Form, Unicorn: Recent Acquisitions-BAMPFA": {
             "name": "Color, Form, Unicorn: Recent Acquisitions",
@@ -12917,6 +12930,7 @@
                 "start": null,
                 "end": null
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/color-form-unicorn-recent-acquisitions",
@@ -12927,8 +12941,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "af7b2283d991257955e921144fab2f2b"
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "dd22ff1f021cf28716e9a3864d98d738"
         },
         "Alicia McCarthy and Ruby Neri / MATRIX 270-BAMPFA": {
             "name": "Alicia McCarthy and Ruby Neri / MATRIX 270",
@@ -12944,6 +12958,7 @@
                 "start": "2018-05-23",
                 "end": "2018-08-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/alicia-mccarthy-and-ruby-neri-matrix-270",
@@ -12954,9 +12969,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "b7b41b5153d0520de7d90b286a3b9ca5",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "a1ad27ca1c8dc3c5f92e9f8b6cd8da2a"
         },
         "Master Traces, Transcultural Visions-BAMPFA": {
             "name": "Master Traces, Transcultural Visions",
@@ -12972,6 +12986,7 @@
                 "start": "2018-05-16",
                 "end": "2018-09-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/master-traces-transcultural-visions",
@@ -12982,9 +12997,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "5e587989fdeb72554414cafaac2a9023",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "e717ad87e6b978273b98e48daa5ed624"
         },
         "The 48th Annual UC Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 48th Annual UC Berkeley Master of Fine Arts Graduate Exhibition",
@@ -13000,6 +13014,7 @@
                 "start": "2018-05-11",
                 "end": "2018-06-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/48th-annual-uc-berkeley-master-fine-arts-graduate-exhibition",
@@ -13010,9 +13025,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "1920394cdfa6c4e6e7ae6b2919ab99a9",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "11a29f08e0c5f55c0c24bc9bea533537"
         },
         "Al Wong: Lost Sister-BAMPFA": {
             "name": "Al Wong: Lost Sister",
@@ -13028,6 +13042,7 @@
                 "start": "2018-03-28",
                 "end": "2018-06-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/al-wong-lost-sister",
@@ -13038,9 +13053,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "546652d38e52112fdcb9af11f65dffb2",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "ee7d306d6ad4678e6c0488a6483bb41b"
         },
         "Cal Conversations: Dreaming the Lost Ming \u5922\u56de\u91d1\u9675-BAMPFA": {
             "name": "Cal Conversations: Dreaming the Lost Ming \u5922\u56de\u91d1\u9675",
@@ -13056,6 +13070,7 @@
                 "start": "2018-02-21",
                 "end": "2018-05-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/cal-conversations-dreaming-lost-ming",
@@ -13066,9 +13081,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "94a6d7b5fbeb71e87640ef816ccabf66",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "d6cdeb6f8de25b8c153a78e8c24761ea"
         },
         "Agony in Effigy: Art, Truth, Pain, and the Body-BAMPFA": {
             "name": "Agony in Effigy: Art, Truth, Pain, and the Body",
@@ -13084,6 +13098,7 @@
                 "start": "2018-02-21",
                 "end": "2018-06-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/agony-effigy-art-truth-pain-and-body",
@@ -13094,9 +13109,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "73e0193af87d4901bc6764a676245623",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "f11626f6cd4ed31254634c65796b779f"
         },
         "Jay Heikes / MATRIX 269-BAMPFA": {
             "name": "Jay Heikes / MATRIX 269",
@@ -13112,6 +13126,7 @@
                 "start": "2018-02-14",
                 "end": "2018-04-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/jay-heikes-matrix-269",
@@ -13122,9 +13137,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "ee62119d936fd6e4e5826e8a4e5c0d37",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "f3f89b8dd9f72172675e82577f161281"
         },
         "Theresa Hak Kyung Cha: Avant Dictee-BAMPFA": {
             "name": "Theresa Hak Kyung Cha: Avant Dictee",
@@ -13140,6 +13154,7 @@
                 "start": "2018-01-31",
                 "end": "2018-04-22"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/theresa-hak-kyung-cha-avant-dictee",
@@ -13150,9 +13165,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "fd259ef9c15b9b68d8c22fa9ce1a376a",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "039d06b87d7652ce07b8057942b72aaa"
         },
         "Breaking ICE-BAMPFA": {
             "name": "Breaking ICE",
@@ -13168,6 +13182,7 @@
                 "start": "2018-01-31",
                 "end": "2018-05-20"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/breaking-ice",
@@ -13178,9 +13193,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "66907a6d4c89184d8e705b7fd00a640b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "b28a4657c030ec612411a7f32e5fa9f4"
         },
         "Way Bay-BAMPFA": {
             "name": "Way Bay",
@@ -13196,6 +13210,7 @@
                 "start": "2018-01-17",
                 "end": "2018-06-03"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/way-bay",
@@ -13206,9 +13221,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "c89fd789bfb36b45e48a7217b8ba0256",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "12db0054a57c02d55b2ce6cbb37f7140"
         },
         "Art Wall: Karabo Poppy Moletsane-BAMPFA": {
             "name": "Art Wall: Karabo Poppy Moletsane",
@@ -13224,6 +13238,7 @@
                 "start": "2017-11-22",
                 "end": "2018-07-15"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-karabo-poppy-moletsane",
@@ -13234,9 +13249,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "a2ab2c453d38340cc2e7a77efc1c39a1",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "0767baaa1b04fdde6275d06ca57674b1"
         },
         "On the Hour / Hayoun Kwon-BAMPFA": {
             "name": "On the Hour / Hayoun Kwon",
@@ -13252,6 +13266,7 @@
                 "start": "2017-11-01",
                 "end": "2017-12-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hour-hayoun-kwon",
@@ -13262,9 +13277,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "330104cfbb248a0109e94a7d5076074b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "29c12787cc6a5ecc58fb6d4a459cc764"
         },
         "Veronica De Jesus / MATRIX 268-BAMPFA": {
             "name": "Veronica De Jesus / MATRIX 268",
@@ -13280,6 +13294,7 @@
                 "start": "2017-10-25",
                 "end": "2018-02-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/veronica-de-jesus-matrix-268",
@@ -13290,9 +13305,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "012b2eec8faf30f901bf0fe2122d3c70",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "0a0898bb236b692d92f3167d4c2f181b"
         },
         "Repentant Monk: Illusion and Disillusion in the Art of Chen Hongshou-BAMPFA": {
             "name": "Repentant Monk: Illusion and Disillusion in the Art of Chen Hongshou",
@@ -13308,6 +13322,7 @@
                 "start": "2017-10-25",
                 "end": "2018-01-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/repentant-monk-illusion-and-disillusion-art-chen-hongshou",
@@ -13318,9 +13333,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "3d50884f000b31b23d89b02518d1d7d6",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "35bc0072f91cb68ba843b9ca3ea49e64"
         },
         "Global Lives Project-BAMPFA": {
             "name": "Global Lives Project",
@@ -13336,6 +13350,7 @@
                 "start": "2017-10-25",
                 "end": "2017-12-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/global-lives-project",
@@ -13346,9 +13361,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "a8eac1d5cc31167ea8690f0d67becb9d",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "678169c5a2fd175d593ac1c287b35cb5"
         },
         "Buddhist Realms-BAMPFA": {
             "name": "Buddhist Realms",
@@ -13364,6 +13378,7 @@
                 "start": "2017-05-24",
                 "end": "2017-10-08"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/buddhist-realms",
@@ -13374,9 +13389,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "53870268cf5a518567eac37c7c951d01",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "ef09a3f4f180256af728c1a219ea9f9a"
         },
         "Miyoko Ito / MATRIX 267-BAMPFA": {
             "name": "Miyoko Ito / MATRIX 267",
@@ -13392,6 +13406,7 @@
                 "start": "2017-09-27",
                 "end": "2018-01-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/miyoko-ito-matrix-267",
@@ -13402,9 +13417,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "1c2320bca1e35fae1fb04fe84b2dcf98",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "218c6c04712af41f286f208f6f10d5d2"
         },
         "Gordon Parks: The Making of an Argument-BAMPFA": {
             "name": "Gordon Parks: The Making of an Argument",
@@ -13420,6 +13434,7 @@
                 "start": "2017-09-27",
                 "end": "2017-12-17"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/gordon-parks-making-argument",
@@ -13430,9 +13445,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "207d46ce1899d6cfaae2a46d0c53bb16",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "a3deffb0e6bf8bbbcd5fba4ceb417e38"
         },
         "Martin Wong: Human Instamatic-BAMPFA": {
             "name": "Martin Wong: Human Instamatic",
@@ -13448,6 +13462,7 @@
                 "start": "2017-09-20",
                 "end": "2017-12-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/martin-wong-human-instamatic",
@@ -13458,9 +13473,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "291f36517d614614ba323be92a8409bb",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "d65473c330c4e2670076374c8ff03806"
         },
         "To the Letter:  Regarding the Written Word-BAMPFA": {
             "name": "To the Letter:  Regarding the Written Word",
@@ -13476,6 +13490,7 @@
                 "start": "2017-09-13",
                 "end": "2018-01-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/letter-regarding-written-word",
@@ -13486,9 +13501,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "050140b6d8198095dfa226582cc7c5e7",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "ee7e8bd81056de840200fe1b8a595a82"
         },
         "On the Hour / JJ PEET-BAMPFA": {
             "name": "On the Hour / JJ PEET",
@@ -13504,6 +13518,7 @@
                 "start": "2017-09-13",
                 "end": "2017-10-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hour-jj-peet",
@@ -13514,9 +13529,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "379ef5ee10a523956ce884821c7799e2",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "67bb328e6b4662f6afa692dd85d582b8"
         },
         "Information in the Flesh: Art for Human Rights-BAMPFA": {
             "name": "Information in the Flesh: Art for Human Rights",
@@ -13532,6 +13546,7 @@
                 "start": "2017-09-13",
                 "end": "2017-10-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/information-flesh-art-human-rights",
@@ -13542,9 +13557,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "5a9e2273d69c707f5b23e08467082ad6",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "c08ec0a710e9b42b1a709bb19459651e"
         },
         "Ugo Rondinone: the world just makes me laugh-BAMPFA": {
             "name": "Ugo Rondinone: the world just makes me laugh",
@@ -13560,6 +13574,7 @@
                 "start": "2017-06-28",
                 "end": "2017-08-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/ugo-rondinone-world-just-makes-me-laugh",
@@ -13570,9 +13585,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "566a4fb4a3526fb79e8f3d3927d29671",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "e1e66a132a4f4549c9db445f19addc88"
         },
         "Divine Visions, Earthly Pleasures: Five Hundred Years of Indian Painting-BAMPFA": {
             "name": "Divine Visions, Earthly Pleasures: Five Hundred Years of Indian Painting",
@@ -13588,6 +13602,7 @@
                 "start": "2017-06-22",
                 "end": "2017-09-10"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/divine-visions-earthly-pleasures-five-hundred-years-indian-painting",
@@ -13598,9 +13613,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "d9ec8fad2f0574823e7b5a3d95a7369b",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "61fc7ab057dec27538ca3f2c5b4ad62f"
         },
         "Charles Howard: A Margin of Chaos-BAMPFA": {
             "name": "Charles Howard: A Margin of Chaos",
@@ -13616,6 +13630,7 @@
                 "start": "2017-06-21",
                 "end": "2017-10-01"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/charles-howard-margin-chaos",
@@ -13626,9 +13641,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "6904bf9efd8bbc21cfc652c7732b61f2",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "98531410ebaab89d2772bb5d73ea9e9f"
         },
         "The 47th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 47th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -13644,6 +13658,7 @@
                 "start": "2017-05-17",
                 "end": "2017-06-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/47th-annual-university-california-berkeley-master-fine-arts-graduate-exhibition",
@@ -13654,9 +13669,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "88e11899b395dbe203c2b1c2b1f48fce",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "a1534a02c0fa7565aa64f46644f9ace5"
         },
         "Sam Contis / MATRIX 266-BAMPFA": {
             "name": "Sam Contis / MATRIX 266",
@@ -13672,6 +13686,7 @@
                 "start": "2017-05-03",
                 "end": "2017-08-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/sam-contis-matrix-266",
@@ -13682,9 +13697,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "619f58b93d619c31968624386ef4b537",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "fd573a5436f0779d01907b57df9c1110"
         },
         "Irwin Kremen / MATRIX 265-BAMPFA": {
             "name": "Irwin Kremen / MATRIX 265",
@@ -13700,6 +13714,7 @@
                 "start": "2017-04-26",
                 "end": "2017-08-26"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/irwin-kremen-matrix-265",
@@ -13710,9 +13725,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "59404e1520fdf2666fc8e4cb75991efb",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "319900991a0c9b81665fc20f357ebcf1"
         },
         "Asher Hartman and Cliff Hengst / MATRIX 264-BAMPFA": {
             "name": "Asher Hartman and Cliff Hengst / MATRIX 264",
@@ -13728,6 +13742,7 @@
                 "start": "2017-04-12",
                 "end": "2017-04-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/asher-hartman-and-cliff-hengst-matrix-264",
@@ -13738,9 +13753,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "72e6e9a27660cc32d89ca7c6c18bcbd4",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "d780124c5a4ad949b58c62095b427b55"
         },
         "AMERICA AMERICA: Art for Human Rights-BAMPFA": {
             "name": "AMERICA AMERICA: Art for Human Rights",
@@ -13756,6 +13770,7 @@
                 "start": "2017-03-22",
                 "end": "2017-04-16"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/america-america-art-human-rights",
@@ -13766,9 +13781,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "ce6de7b766727038bb77bd77d51a153a",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "dc7194752d7673813230a81fc61d8999"
         },
         "Erica Deeman: Silhouettes-BAMPFA": {
             "name": "Erica Deeman: Silhouettes",
@@ -13784,6 +13798,7 @@
                 "start": "2017-03-08",
                 "end": "2017-06-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/erica-deeman-silhouettes",
@@ -13794,9 +13809,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "1633b4ea4fa886ee61b4763efab4beec",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "f9a935689b72fcb71c071cad5672135a"
         },
         "Art Wall: Lawrence Weiner-BAMPFA": {
             "name": "Art Wall: Lawrence Weiner",
@@ -13812,6 +13826,7 @@
                 "start": "2017-03-01",
                 "end": "2017-10-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-lawrence-weiner",
@@ -13822,9 +13837,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "51ef0eedb845f110808d393c13efe4f6",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "d60b8c7886f93c0ba6df64695de048fe"
         },
         "Hippie Modernism: The Struggle for Utopia-BAMPFA": {
             "name": "Hippie Modernism: The Struggle for Utopia",
@@ -13840,6 +13854,7 @@
                 "start": "2017-02-08",
                 "end": "2017-05-21"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/hippie-modernism-struggle-utopia",
@@ -13850,9 +13865,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "15ad306ecac0dccee1e686a7f5fcbde3",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "01ae20194c93d36619b97b40eae1e70a"
         },
         "Slow Reading / Slow Seeing-BAMPFA": {
             "name": "Slow Reading / Slow Seeing",
@@ -13868,6 +13882,7 @@
                 "start": "2017-01-18",
                 "end": "2017-04-30"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/slow-reading-slow-seeing",
@@ -13878,9 +13893,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "a71944d5980653ba64a632716d2bc9e4",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "7fd03609ac103caca33de63132884db9"
         },
         "Michael Armitage / MATRIX 263-BAMPFA": {
             "name": "Michael Armitage / MATRIX 263",
@@ -13896,6 +13910,7 @@
                 "start": "2016-12-14",
                 "end": "2017-04-02"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/michael-armitage-matrix-263",
@@ -13906,9 +13921,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:47",
-            "hash": "ff9e460fd65bd81939bdfe868c1dd54f",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "8f1a22be0942bb4f680637d461d1b02b"
         },
         "Buddhist Art from the Roof of the World-BAMPFA": {
             "name": "Buddhist Art from the Roof of the World",
@@ -13924,6 +13938,7 @@
                 "start": "2016-07-27",
                 "end": "2016-11-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/buddhist-art-roof-world",
@@ -13934,9 +13949,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "bbe4e6d3c2fd35ca9d6af0485b26f64a",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "ef7f875ecd5872439c4d06052810a435"
         },
         "Andy Warhol: Still Lifes and Portraits-BAMPFA": {
             "name": "Andy Warhol: Still Lifes and Portraits",
@@ -13952,6 +13966,7 @@
                 "start": "2016-11-23",
                 "end": "2017-03-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/andy-warhol-still-lifes-and-portraits",
@@ -13962,9 +13977,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "bd8c5aa8cd223ef6ea5dce081d405ae7",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "c3891edf9d346b7bcb7b9c7509611aa5"
         },
         "Covered in Time and History: The Films of Ana Mendieta-BAMPFA": {
             "name": "Covered in Time and History: The Films of Ana Mendieta",
@@ -13980,6 +13994,7 @@
                 "start": "2016-11-09",
                 "end": "2017-02-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/covered-time-and-history-films-ana-mendieta",
@@ -13990,9 +14005,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "d8bea91e69dad9841dc955913b2d39f9",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "4cf4f9893bba9d27272214d124d7bbdd"
         },
         "Fernando Botero: Art for Human Rights-BAMPFA": {
             "name": "Fernando Botero: Art for Human Rights",
@@ -14008,6 +14022,7 @@
                 "start": null,
                 "end": null
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/fernando-botero-art-human-rights",
@@ -14018,8 +14033,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "f277a6bc9899bd9923e1ffcadaf614dd"
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "d7f13883833abb3aecee7fd8c1a5d04a"
         },
         "GIF Collider 1.0-BAMPFA": {
             "name": "GIF Collider 1.0",
@@ -14035,6 +14050,7 @@
                 "start": "2016-10-26",
                 "end": "2016-10-28"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/gif-collider-10",
@@ -14045,9 +14061,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "8c04f78fb9df60656547769e65da7794",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "d8100462e988b6414a19bed4858690ed"
         },
         "Mind Over Matter: Conceptual Art from the Collection-BAMPFA": {
             "name": "Mind Over Matter: Conceptual Art from the Collection",
@@ -14063,6 +14078,7 @@
                 "start": "2016-10-19",
                 "end": "2016-12-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/mind-over-matter-conceptual-art-collection",
@@ -14073,9 +14089,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "dce940aeb85059902b5e3038876b48cb",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "c03923096bb6505d4aa5008fac5cf768"
         },
         "Pat O'Neill / MATRIX 262-BAMPFA": {
             "name": "Pat O'Neill / MATRIX 262",
@@ -14091,6 +14106,7 @@
                 "start": "2016-09-28",
                 "end": "2016-11-27"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/pat-oneill-matrix-262",
@@ -14101,9 +14117,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "fb4158243029adc0c6d27ae7843bafc4",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "83acfc4f9dc59f1e2fc6343677107f71"
         },
         "Push and Pull: Hans Hofmann-BAMPFA": {
             "name": "Push and Pull: Hans Hofmann",
@@ -14119,6 +14134,7 @@
                 "start": "2016-08-31",
                 "end": "2016-12-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/push-and-pull-hans-hofmann",
@@ -14129,9 +14145,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "8795b4a21136711976ca8d12c3837102",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "8d5443f893c604411e6be4b93d2f72e7"
         },
         "Art Wall: Terri Friedman-BAMPFA": {
             "name": "Art Wall: Terri Friedman",
@@ -14147,6 +14162,7 @@
                 "start": "2016-08-25",
                 "end": "2017-02-12"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/art-wall-terri-friedman",
@@ -14157,9 +14173,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "50e245ad22efc7c4d1647110b0d7ff62",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "1f5717450171ae5044e9cace422a2217"
         },
         "Sojourner Truth, Photography, and the Fight Against Slavery-BAMPFA": {
             "name": "Sojourner Truth, Photography, and the Fight Against Slavery",
@@ -14175,6 +14190,7 @@
                 "start": "2016-07-27",
                 "end": "2016-10-23"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/sojourner-truth-photography-and-fight-against-slavery",
@@ -14185,9 +14201,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "8609202238d4a31aaa586a9e1db0289a",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "b11c678140f25349b5d9ac8f49ca476f"
         },
         "Berkeley Eye-BAMPFA": {
             "name": "Berkeley Eye",
@@ -14203,6 +14218,7 @@
                 "start": "2016-07-13",
                 "end": "2016-12-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/berkeley-eye",
@@ -14213,9 +14229,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "04336e346613407b29744831252d5e9f",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "71c644393461f5aa4dcb91f402a9b3ce"
         },
         "This Just In: Recent Acquisitions-BAMPFA": {
             "name": "This Just In: Recent Acquisitions",
@@ -14231,6 +14246,7 @@
                 "start": "2016-07-06",
                 "end": "2016-09-11"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/just-recent-acquisitions",
@@ -14241,9 +14257,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "e1727a3be54f8789c93c9efcc777cfea",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "6819f0ac53cee1d85258522a4d3aa2e2"
         },
         "Summer Trees Casting Shade: Chinese Painting at Berkeley-BAMPFA": {
             "name": "Summer Trees Casting Shade: Chinese Painting at Berkeley",
@@ -14259,6 +14274,7 @@
                 "start": "2016-07-06",
                 "end": "2016-09-25"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/summer-trees-casting-shade-chinese-painting-berkeley",
@@ -14269,9 +14285,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "26f2341170ca1fcc38a4712158fc84f0",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "8b742478d779b961b971b2d892768915"
         },
         "The 46th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 46th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -14287,6 +14302,7 @@
                 "start": "2016-06-29",
                 "end": "2016-08-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/46th-annual-university-california-berkeley-master-fine-arts-graduate-exhibition",
@@ -14297,9 +14313,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "bcb764eec4d19fd4037046a6871cd89e",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "1e9eeea9fc8550464e2894c75c81440e"
         },
         "Cecilia Edefalk / MATRIX 261-BAMPFA": {
             "name": "Cecilia Edefalk / MATRIX 261",
@@ -14315,6 +14330,7 @@
                 "start": null,
                 "end": null
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/cecilia-edefalk-matrix-261",
@@ -14325,8 +14341,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "af567968c2ce4b3016314ba38e84bcb6"
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "a0488e014d7904eabb18437a2b57bc05"
         },
         "Otobong Nkanga / MATRIX 260-BAMPFA": {
             "name": "Otobong Nkanga / MATRIX 260",
@@ -14342,6 +14358,7 @@
                 "start": null,
                 "end": null
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/otobong-nkanga-matrix-260",
@@ -14352,8 +14369,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "e7de8ee1b4c88bf7b100370e68f20b71"
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "34ea77be47ecc04dac21697d268cd103"
         },
         "Architecture of Life-BAMPFA": {
             "name": "Architecture of Life",
@@ -14369,6 +14386,7 @@
                 "start": "2016-01-31",
                 "end": "2016-05-29"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/architecture-life",
@@ -14379,9 +14397,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "4bfbeb5751c794e3a62795500df639c6",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "785e7782b631f44711a83b6d88ce0087"
         },
         "Will Brown / MATRIX 259-BAMPFA": {
             "name": "Will Brown / MATRIX 259",
@@ -14397,6 +14414,7 @@
                 "start": "2015-06-12",
                 "end": "2015-09-13"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/will-brown-matrix-259",
@@ -14407,9 +14425,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "95ae6450161c93a9a481069c3987965e",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:44",
+            "hash": "9fb20764d446eac39d4fa48b3c294be8"
         },
         "The 45th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 45th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -14425,6 +14442,7 @@
                 "start": "2015-05-15",
                 "end": "2015-06-14"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/45th-annual-university-california-berkeley-master-fine-arts-graduate-exhibition",
@@ -14435,9 +14453,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "53cc9d690c0371455cf01c0559564e44",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:45",
+            "hash": "bbf3adc153a215fc0901504c940bf6c3"
         },
         "Tarek Atoui / MATRIX 258-BAMPFA": {
             "name": "Tarek Atoui / MATRIX 258",
@@ -14453,6 +14470,7 @@
                 "start": "2015-03-02",
                 "end": "2015-11-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://bampfa.org/program/tarek-atoui-matrix-258",
@@ -14463,9 +14481,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-24 11:13:48",
-            "hash": "e43e922c0309b5955916999cc23fbf5c",
-            "ongoing": false
+            "last_updated": "2024-10-25 01:55:45",
+            "hash": "92c1eeba0e62d3f287bc9f610f6a2b88"
         }
     },
     "ARTogether": {

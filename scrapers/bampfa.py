@@ -46,7 +46,10 @@ def scrape_bampfa_exhibitions(env='prod'):
             date_tag = exhibition.find('span', class_='dates')
             if date_tag:
                 event_dates = date_tag.text.strip()
-                if '–' in event_dates:  # Handles date ranges
+                # Mark if ongoing
+                ongoing = True if 'ongoing' in event_dates.lower() else False
+                # Handle date ranges
+                if '–' in event_dates:
                     dates = event_dates.lower().replace(',', '').split('–')
                     # Handle edge cases
                     if event_title == 'On the Outdoor Screen: Navigating the Pilot School':
@@ -74,6 +77,7 @@ def scrape_bampfa_exhibitions(env='prod'):
                     end_date = None
             else:
                 start_date, end_date = None, None
+                ongoing = None
                 
             # Get description
             description_text = None
@@ -95,6 +99,7 @@ def scrape_bampfa_exhibitions(env='prod'):
                 'tags': ['exhibition', phase, 'museum'],
                 'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
+                'ongoing': ongoing,
                 'links': [{'link': event_link, 'description': 'Event Page'}],
                 'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }
