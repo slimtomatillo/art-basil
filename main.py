@@ -3,7 +3,7 @@ import logging
 from config import configure_logging
 from processing import update_event_phases
 from utils import copy_json_file, load_db
-from scrapers import de_young, sfmoma, cjm, bampfa, sf_womens_artist, asian_art_museum, omca, kala, cantor # Import other scrapers as needed
+from scrapers import de_young, sfmoma, cjm, bampfa, sf_womens_artist, asian_art_museum, omca, kala, cantor, museum_of_craft_and_design # Import other scrapers as needed
 
 def main(env='prod', selected_venues=None, skip_venues=None, write_summary=True):
     configure_logging(env)
@@ -32,6 +32,7 @@ def main(env='prod', selected_venues=None, skip_venues=None, write_summary=True)
         "OMCA": omca.scrape_oak_museum_of_ca_exhibitions,
         "Kala": kala.scrape_kala_exhibitions,
         "Cantor": cantor.scrape_cantor_exhibitions,
+        "Museum of Craft and Design": museum_of_craft_and_design.scrape_museum_of_craft_and_design_exhibitions,
         # Add other scrapers here
     }
 

@@ -5871,3 +5871,203 @@ NameError: name 'timezone' is not defined
 2024-10-24 18:55:45,020 - root - INFO - Updating event: Tarek Atoui / MATRIX 258
 2024-10-24 18:55:45,029 - root - INFO - Finished scrape for BAMPFA
 2024-10-24 18:55:45,029 - root - INFO - Finished
+2024-11-05 15:11:27,977 - root - INFO - ----------NEW LOG----------
+2024-11-05 15:11:28,012 - root - INFO - Copied docs/events_db.json to docs/events_db_copy.json
+2024-11-05 15:11:28,013 - root - INFO - Starting the scraping process
+2024-11-05 15:11:28,013 - root - INFO - Only scraping ['Museum of Craft and Design']
+2024-11-05 15:11:28,013 - root - INFO - Starting scrape for Museum of Craft and Design
+2024-11-05 15:11:28,217 - root - INFO - Updating event: Neon As Soulcraft
+2024-11-05 15:11:28,406 - root - INFO - Updating event: Ruglife
+2024-11-05 15:11:28,428 - root - INFO - Updating event: Beau Mccall: Buttons On!
+2024-11-05 15:11:28,448 - root - INFO - Updating event: A Roadmap To Stardust
+2024-11-05 15:11:28,622 - root - INFO - Updating event: Mr. Roboto
+2024-11-05 15:11:28,638 - root - INFO - Updating event: Indie Folk: New Art And Sounds From The Pacific Northwest
+2024-11-05 15:11:28,654 - root - INFO - Updating event: Designing Peace
+2024-11-05 15:11:28,679 - root - INFO - Updating event: Concrete Journals: Anne Hicks Siberell
+2024-11-05 15:11:28,696 - root - INFO - Updating event: Fight And Flight: Crafting A Bay Area Life
+2024-11-05 15:11:28,711 - root - INFO - Updating event: Bull.Miletic: Proxistant Vision
+2024-11-05 15:11:28,727 - root - INFO - Updating event: Iris Eichenberg: Where Words Fail
+2024-11-05 15:11:28,748 - root - INFO - Updating event: Robyn Horn: Material Illusions
+2024-11-05 15:11:28,768 - root - INFO - Updating event: Living With Scents
+2024-11-05 15:11:28,785 - root - INFO - Updating event: The Object In Its Place: As Designed By Ted Cohen
+2024-11-05 15:11:28,803 - root - INFO - Updating event: Mode Brut
+2024-11-05 15:11:28,819 - root - INFO - Updating event: Design By Time
+2024-11-05 15:11:28,840 - root - INFO - Updating event: Encoded Holidays: Gary Hutton X Tom Bonauro
+2024-11-05 15:11:28,857 - root - INFO - Updating event: Moto Mmxx
+2024-11-05 15:11:28,874 - root - INFO - Updating event: Survival Architecture And The Art Of Resilience
+2024-11-05 15:11:28,891 - root - INFO - Updating event: Linda Gass: And Then This Happened…
+2024-11-05 15:11:28,908 - root - INFO - Updating event: Bauhaus.Photo
+2024-11-05 15:11:28,925 - root - INFO - Updating event: Dead Nuts: A Search For The Ultimate Machined Object
+2024-11-05 15:11:28,943 - root - INFO - Updating event: Interior/Exterior
+2024-11-05 15:11:28,959 - root - INFO - Updating event: Wanxin Zhang: The Long Journey
+2024-11-05 15:11:28,977 - root - INFO - Updating event: Material Domestication
+2024-11-05 15:11:28,994 - root - INFO - Updating event: Tex Gieling: Sixty Years
+2024-11-05 15:11:29,011 - root - INFO - Updating event: Al Farrow: Divine Ammunition
+2024-11-05 15:11:29,028 - root - INFO - Updating event: Gustavo Pérez: Self Portrait In Black And White
+2024-11-05 15:11:29,044 - root - INFO - Updating event: Judy Kensley Mckie: Cast Of Characters
+2024-11-05 15:11:29,060 - root - INFO - Updating event: Anchors In Time: Dominic Di Mare
+2024-11-05 15:11:29,076 - root - INFO - Updating event: Raw Design
+2024-11-05 15:11:29,098 - root - INFO - Updating event: Tom Loeser: Please Please Please
+2024-11-05 15:11:29,119 - root - INFO - Updating event: T.W.Five
+2024-11-05 15:11:29,136 - root - INFO - Updating event: Architectural Pavilions: Experiments And Artifacts
+2024-11-05 15:11:29,171 - root - INFO - Updating event: Wendy Maruyama: The Wildlife Project
+2024-11-05 15:11:29,186 - root - INFO - Updating event: Felt Decoded | Wool: Nature’S Technology
+2024-11-05 15:11:29,226 - root - INFO - Updating event: Archive Of Creative Culture
+2024-11-05 15:11:29,244 - root - INFO - Updating event: Anja Ulfeldt: Of Sound | Mind And Objects
+2024-11-05 15:11:29,269 - root - INFO - Updating event: Marianne Lettieri: Reflections
+2024-11-05 15:11:29,291 - root - INFO - Updating event: Beyond The Pour Ii: The Creative Process
+2024-11-05 15:11:29,309 - root - INFO - Updating event: Constructed Communication: Nakayama, Sinbondit, Venom
+2024-11-05 15:11:29,345 - root - INFO - Updating event: Lines That Tie: Carole Beadle And Lia Cook
+2024-11-05 15:11:29,361 - root - INFO - Updating event: Without Camouflage. Dafna Kaffeman. Silvia Levenson.
+2024-11-05 15:11:29,377 - root - INFO - Updating event: Art And Other Tactics: Contemporary Craft By Artist Veterans
+2024-11-05 15:11:29,393 - root - INFO - Updating event: Hands Off: New Dutch Design At The Confluence Of Technology & Craft
+2024-11-05 15:11:29,413 - root - INFO - Updating event: Chris Eckert: Mechanical Parables
+2024-11-05 15:11:29,429 - root - INFO - Updating event: Data Clay: Digital Strategies For Parsing The Earth
+2024-11-05 15:11:29,445 - root - INFO - Updating event: Metamorphosis: The Transformation Of Everyday Objects
+2024-11-05 15:11:29,461 - root - INFO - Updating event: Amber Cowan: Second-Life Glass
+2024-11-05 15:11:29,477 - root - INFO - Updating event: Wendy Maruyama Executive Order 9066 And The Tag Project
+2024-11-05 15:11:29,493 - root - INFO - Updating event: Joe Brubaker And The Exquisite Gardeners: The Visible Transparency Project
+2024-11-05 15:11:29,509 - root - INFO - Updating event: Jennifer Crupi: A Display Of Gestures
+2024-11-05 15:11:29,525 - root - INFO - Updating event: Wheat Is Wheat Is Wheat: Peddy Mergui
+2024-11-05 15:11:29,541 - root - INFO - Updating event: Elevated Corrugated
+2024-11-05 15:11:29,558 - root - INFO - Updating event: Obsessive Reductive
+2024-11-05 15:11:29,575 - root - INFO - Updating event: Jerry Takigawa: False Food
+2024-11-05 15:11:29,591 - root - INFO - Updating event: A Sense Of Balance: The Sculpture Of Stoney Lamar
+2024-11-05 15:11:29,607 - root - INFO - Updating event: Jorg Dubin: Corporate Jets
+2024-11-05 15:11:29,624 - root - INFO - Updating event: New West Coast Design 2
+2024-11-05 15:11:29,640 - root - INFO - Updating event: Young Designer’S Show: Cca Interior Design Program
+2024-11-05 15:11:29,661 - root - INFO - Updating event: Good Design: Stories From Herman Miller
+2024-11-05 15:11:29,678 - root - INFO - Updating event: Holly Lane: Carving Allegories
+2024-11-05 15:11:29,695 - root - INFO - Updating event: Michael Cooper: A Sculptural Odyssey 1968-2011
+2024-11-05 15:11:29,713 - root - INFO - Updating event: Creatures Of The Deep
+2024-11-05 15:11:29,730 - root - INFO - Updating event: Rebecca Hutchinson: Affinity
+2024-11-05 15:11:29,747 - root - INFO - Updating event: Charlotte Kruk – Eye Candy
+2024-11-05 15:11:29,764 - root - INFO - Updating event: Almost Out Of The Woods
+2024-11-05 15:11:29,785 - root - INFO - Updating event: Place Making: Installations At Hayes And Octavia
+2024-11-05 15:11:29,802 - root - INFO - Updating event: Transference
+2024-11-05 15:11:29,818 - root - INFO - Updating event: Crafting Architecture: Concept, Sketch, Model
+2024-11-05 15:11:29,835 - root - INFO - Updating event: Foursite: 4 Artists | 4 Materials | 4 Sites
+2024-11-05 15:11:29,852 - root - INFO - Updating event: Designers On Jewelry: 12 Years Of Jewelry Production By Chi Ha Paura…?
+2024-11-05 15:11:29,869 - root - INFO - Updating event: Michael Peterson: Evolution | Revolution
+2024-11-05 15:11:29,886 - root - INFO - Updating event: Fred Ball Enamels
+2024-11-05 15:11:29,918 - root - INFO - Updating event: Silver Of The Stars
+2024-11-05 15:11:29,944 - root - INFO - Updating event: The Millenium Collection For Bute House Scotland
+2024-11-05 15:11:29,964 - root - INFO - Updating event: Matt Kahn: Artist And Educator
+2024-11-05 15:11:29,981 - root - INFO - Updating event: San Francisco Graphic Design
+2024-11-05 15:11:29,999 - root - INFO - Updating event: The Thinking Body
+2024-11-05 15:11:30,016 - root - INFO - Updating event: Randy Shull: Crossing Boundaries
+2024-11-05 15:11:30,033 - root - INFO - Updating event: Within Two Hands: The Eye Of The Collector
+2024-11-05 15:11:30,051 - root - INFO - Updating event: New West Coast Design: Contemporary Objects
+2024-11-05 15:11:30,069 - root - INFO - Updating event: M. Lee Fatherree’S Photography: Evidence Of Artists At Work, 1978 – 2006
+2024-11-05 15:11:30,086 - root - INFO - Updating event: Sculpture Transformed: The Work Of Marjorie Schick
+2024-11-05 15:11:30,105 - root - INFO - Updating event: Tools As Art: The Hechinger Collection
+2024-11-05 15:11:30,122 - root - INFO - Updating event: Cca: A Legacy In Studio Glass
+2024-11-05 15:11:30,140 - root - INFO - Updating event: Kickin’ It With Joyce J. Scott
+2024-11-05 15:11:30,157 - root - INFO - Updating event: Playing Around: Toys Designed By Artists
+2024-11-05 15:11:30,180 - root - INFO - Updating event: Raymond Loewy Designs For A Consumer Culture
+2024-11-05 15:11:30,198 - root - INFO - Updating event: Beyond The Pour: Pairing Art And Wine Label Design
+2024-11-05 15:11:30,216 - root - INFO - Updating event: Convergence: Crossing The Divide
+2024-11-05 15:11:30,234 - root - INFO - Updating event: Nouvelle Nuptials: New Visions In Wedding Traditions
+2024-11-05 15:11:30,252 - root - INFO - Updating event: Dovetailing Art And Life: The Bennett Collection
+2024-11-05 15:11:30,266 - root - INFO - Finished scrape for Museum of Craft and Design
+2024-11-05 15:11:30,266 - root - INFO - Finished
+2024-11-05 15:11:39,786 - root - INFO - ----------NEW LOG----------
+2024-11-05 15:11:39,804 - root - INFO - Copied docs/events_db.json to docs/events_db_copy.json
+2024-11-05 15:11:39,804 - root - INFO - Starting the scraping process
+2024-11-05 15:11:39,804 - root - INFO - Only scraping ['Museum of Craft and Design']
+2024-11-05 15:11:39,804 - root - INFO - Starting scrape for Museum of Craft and Design
+2024-11-05 15:11:39,978 - root - INFO - Updating event: Neon As Soulcraft
+2024-11-05 15:11:40,171 - root - INFO - Updating event: Ruglife
+2024-11-05 15:11:40,192 - root - INFO - Updating event: Beau Mccall: Buttons On!
+2024-11-05 15:11:40,210 - root - INFO - Updating event: A Roadmap To Stardust
+2024-11-05 15:11:40,394 - root - INFO - Updating event: Mr. Roboto
+2024-11-05 15:11:40,414 - root - INFO - Updating event: Indie Folk: New Art And Sounds From The Pacific Northwest
+2024-11-05 15:11:40,432 - root - INFO - Updating event: Designing Peace
+2024-11-05 15:11:40,450 - root - INFO - Updating event: Concrete Journals: Anne Hicks Siberell
+2024-11-05 15:11:40,472 - root - INFO - Updating event: Fight And Flight: Crafting A Bay Area Life
+2024-11-05 15:11:40,491 - root - INFO - Updating event: Bull.Miletic: Proxistant Vision
+2024-11-05 15:11:40,513 - root - INFO - Updating event: Iris Eichenberg: Where Words Fail
+2024-11-05 15:11:40,538 - root - INFO - Updating event: Robyn Horn: Material Illusions
+2024-11-05 15:11:40,557 - root - INFO - Updating event: Living With Scents
+2024-11-05 15:11:40,580 - root - INFO - Updating event: The Object In Its Place: As Designed By Ted Cohen
+2024-11-05 15:11:40,599 - root - INFO - Updating event: Mode Brut
+2024-11-05 15:11:40,617 - root - INFO - Updating event: Design By Time
+2024-11-05 15:11:40,635 - root - INFO - Updating event: Encoded Holidays: Gary Hutton X Tom Bonauro
+2024-11-05 15:11:40,655 - root - INFO - Updating event: Moto Mmxx
+2024-11-05 15:11:40,674 - root - INFO - Updating event: Survival Architecture And The Art Of Resilience
+2024-11-05 15:11:40,698 - root - INFO - Updating event: Linda Gass: And Then This Happened…
+2024-11-05 15:11:40,715 - root - INFO - Updating event: Bauhaus.Photo
+2024-11-05 15:11:40,732 - root - INFO - Updating event: Dead Nuts: A Search For The Ultimate Machined Object
+2024-11-05 15:11:40,749 - root - INFO - Updating event: Interior/Exterior
+2024-11-05 15:11:40,767 - root - INFO - Updating event: Wanxin Zhang: The Long Journey
+2024-11-05 15:11:40,785 - root - INFO - Updating event: Material Domestication
+2024-11-05 15:11:40,803 - root - INFO - Updating event: Tex Gieling: Sixty Years
+2024-11-05 15:11:40,825 - root - INFO - Updating event: Al Farrow: Divine Ammunition
+2024-11-05 15:11:40,843 - root - INFO - Updating event: Gustavo Pérez: Self Portrait In Black And White
+2024-11-05 15:11:40,864 - root - INFO - Updating event: Judy Kensley Mckie: Cast Of Characters
+2024-11-05 15:11:40,893 - root - INFO - Updating event: Anchors In Time: Dominic Di Mare
+2024-11-05 15:11:40,918 - root - INFO - Updating event: Raw Design
+2024-11-05 15:11:40,955 - root - INFO - Updating event: Tom Loeser: Please Please Please
+2024-11-05 15:11:40,975 - root - INFO - Updating event: T.W.Five
+2024-11-05 15:11:40,993 - root - INFO - Updating event: Architectural Pavilions: Experiments And Artifacts
+2024-11-05 15:11:41,022 - root - INFO - Updating event: Wendy Maruyama: The Wildlife Project
+2024-11-05 15:11:41,039 - root - INFO - Updating event: Felt Decoded | Wool: Nature’S Technology
+2024-11-05 15:11:41,058 - root - INFO - Updating event: Archive Of Creative Culture
+2024-11-05 15:11:41,080 - root - INFO - Updating event: Anja Ulfeldt: Of Sound | Mind And Objects
+2024-11-05 15:11:41,110 - root - INFO - Updating event: Marianne Lettieri: Reflections
+2024-11-05 15:11:41,135 - root - INFO - Updating event: Beyond The Pour Ii: The Creative Process
+2024-11-05 15:11:41,161 - root - INFO - Updating event: Constructed Communication: Nakayama, Sinbondit, Venom
+2024-11-05 15:11:41,180 - root - INFO - Updating event: Lines That Tie: Carole Beadle And Lia Cook
+2024-11-05 15:11:41,198 - root - INFO - Updating event: Without Camouflage. Dafna Kaffeman. Silvia Levenson.
+2024-11-05 15:11:41,216 - root - INFO - Updating event: Art And Other Tactics: Contemporary Craft By Artist Veterans
+2024-11-05 15:11:41,233 - root - INFO - Updating event: Hands Off: New Dutch Design At The Confluence Of Technology & Craft
+2024-11-05 15:11:41,250 - root - INFO - Updating event: Chris Eckert: Mechanical Parables
+2024-11-05 15:11:41,267 - root - INFO - Updating event: Data Clay: Digital Strategies For Parsing The Earth
+2024-11-05 15:11:41,301 - root - INFO - Updating event: Metamorphosis: The Transformation Of Everyday Objects
+2024-11-05 15:11:41,318 - root - INFO - Updating event: Amber Cowan: Second-Life Glass
+2024-11-05 15:11:41,335 - root - INFO - Updating event: Wendy Maruyama Executive Order 9066 And The Tag Project
+2024-11-05 15:11:41,353 - root - INFO - Updating event: Joe Brubaker And The Exquisite Gardeners: The Visible Transparency Project
+2024-11-05 15:11:41,370 - root - INFO - Updating event: Jennifer Crupi: A Display Of Gestures
+2024-11-05 15:11:41,389 - root - INFO - Updating event: Wheat Is Wheat Is Wheat: Peddy Mergui
+2024-11-05 15:11:41,411 - root - INFO - Updating event: Elevated Corrugated
+2024-11-05 15:11:41,429 - root - INFO - Updating event: Obsessive Reductive
+2024-11-05 15:11:41,447 - root - INFO - Updating event: Jerry Takigawa: False Food
+2024-11-05 15:11:41,467 - root - INFO - Updating event: A Sense Of Balance: The Sculpture Of Stoney Lamar
+2024-11-05 15:11:41,486 - root - INFO - Updating event: Jorg Dubin: Corporate Jets
+2024-11-05 15:11:41,505 - root - INFO - Updating event: New West Coast Design 2
+2024-11-05 15:11:41,524 - root - INFO - Updating event: Young Designer’S Show: Cca Interior Design Program
+2024-11-05 15:11:41,542 - root - INFO - Updating event: Good Design: Stories From Herman Miller
+2024-11-05 15:11:41,560 - root - INFO - Updating event: Holly Lane: Carving Allegories
+2024-11-05 15:11:41,578 - root - INFO - Updating event: Michael Cooper: A Sculptural Odyssey 1968-2011
+2024-11-05 15:11:41,597 - root - INFO - Updating event: Creatures Of The Deep
+2024-11-05 15:11:41,616 - root - INFO - Updating event: Rebecca Hutchinson: Affinity
+2024-11-05 15:11:41,634 - root - INFO - Updating event: Charlotte Kruk – Eye Candy
+2024-11-05 15:11:41,655 - root - INFO - Updating event: Almost Out Of The Woods
+2024-11-05 15:11:41,672 - root - INFO - Updating event: Place Making: Installations At Hayes And Octavia
+2024-11-05 15:11:41,689 - root - INFO - Updating event: Transference
+2024-11-05 15:11:41,711 - root - INFO - Updating event: Crafting Architecture: Concept, Sketch, Model
+2024-11-05 15:11:41,728 - root - INFO - Updating event: Foursite: 4 Artists | 4 Materials | 4 Sites
+2024-11-05 15:11:41,746 - root - INFO - Updating event: Designers On Jewelry: 12 Years Of Jewelry Production By Chi Ha Paura…?
+2024-11-05 15:11:41,763 - root - INFO - Updating event: Michael Peterson: Evolution | Revolution
+2024-11-05 15:11:41,781 - root - INFO - Updating event: Fred Ball Enamels
+2024-11-05 15:11:41,799 - root - INFO - Updating event: Silver Of The Stars
+2024-11-05 15:11:41,817 - root - INFO - Updating event: The Millenium Collection For Bute House Scotland
+2024-11-05 15:11:41,835 - root - INFO - Updating event: Matt Kahn: Artist And Educator
+2024-11-05 15:11:41,852 - root - INFO - Updating event: San Francisco Graphic Design
+2024-11-05 15:11:41,869 - root - INFO - Updating event: The Thinking Body
+2024-11-05 15:11:41,888 - root - INFO - Updating event: Randy Shull: Crossing Boundaries
+2024-11-05 15:11:41,921 - root - INFO - Updating event: Within Two Hands: The Eye Of The Collector
+2024-11-05 15:11:41,938 - root - INFO - Updating event: New West Coast Design: Contemporary Objects
+2024-11-05 15:11:41,956 - root - INFO - Updating event: M. Lee Fatherree’S Photography: Evidence Of Artists At Work, 1978 – 2006
+2024-11-05 15:11:41,997 - root - INFO - Updating event: Sculpture Transformed: The Work Of Marjorie Schick
+2024-11-05 15:11:42,014 - root - INFO - Updating event: Tools As Art: The Hechinger Collection
+2024-11-05 15:11:42,031 - root - INFO - Updating event: Cca: A Legacy In Studio Glass
+2024-11-05 15:11:42,049 - root - INFO - Updating event: Kickin’ It With Joyce J. Scott
+2024-11-05 15:11:42,067 - root - INFO - Updating event: Playing Around: Toys Designed By Artists
+2024-11-05 15:11:42,086 - root - INFO - Updating event: Raymond Loewy Designs For A Consumer Culture
+2024-11-05 15:11:42,103 - root - INFO - Updating event: Beyond The Pour: Pairing Art And Wine Label Design
+2024-11-05 15:11:42,120 - root - INFO - Updating event: Convergence: Crossing The Divide
+2024-11-05 15:11:42,142 - root - INFO - Updating event: Nouvelle Nuptials: New Visions In Wedding Traditions
+2024-11-05 15:11:42,161 - root - INFO - Updating event: Dovetailing Art And Life: The Bennett Collection
+2024-11-05 15:11:42,176 - root - INFO - Finished scrape for Museum of Craft and Design
+2024-11-05 15:11:42,176 - root - INFO - Finished
