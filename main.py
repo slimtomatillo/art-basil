@@ -1,5 +1,7 @@
 import time
 import logging
+import pandas as pd
+import os
 from config import configure_logging
 from processing import update_event_phases
 from utils import copy_json_file, load_db
@@ -58,11 +60,31 @@ def main(env='prod', selected_venues=None, skip_venues=None, write_summary=True)
         logging.info(f"Finished scrape for {venue}")
 
     if env == 'prod' and write_summary:
+        # Correct misaligment between phase and end date
         update_event_phases()
+
+        # Load db and count the venues and events
         db = load_db()
-        logging.info("Database contains {:,} venues and {:,} events".format(len(db), sum(len(v) for v in db.values())))
+        event_count = sum(len(v) for v in db.values())
+        logging.info("Database contains {:,} venues and {:,} events".format(len(db), event_count))
         execution_time_s = round(time.time() - start_time, 1)
         logging.info(f"Scraping took {execution_time_s} seconds")
+        # Record the number of venues and events in the db
+        file_path = 'docs/db_size.csv'
+        df = pd.DataFrame([{
+            "timestamp": pd.Timestamp.now(),
+            "num_venues": len(db),
+            "num_events": event_count,
+            "scrape_time_s": execution_time_s
+        }])
+        # Check if the file exists
+        if os.path.exists(file_path):
+            # File exists, append without writing the header
+            df.to_csv(file_path, mode='a', header=False, index=False)
+        else:
+            # File does not exist, write with the header
+            df.to_csv(file_path, mode='w', header=True, index=False)
+        logging.info("Database size recorded")
 
     logging.info("Finished")
 
