@@ -94,7 +94,7 @@ def scrape_museum_of_craft_and_design_exhibitions(env='prod'):
                 'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
                 'ongoing': ongoing,
-                'links': [{'link': event_link, 'description': 'Exhibition Page'}] if event_link else [],
+                'links': [{'link': event_link, 'description': 'Event Page'}] if event_link else [],
                 'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }
 
