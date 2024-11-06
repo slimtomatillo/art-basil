@@ -94,4 +94,21 @@ def scrape_museum_of_craft_and_design_exhibitions(env='prod'):
                 'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
                 'ongoing': ongoing,
-                'l
+                'links': [{'link': event_link, 'description': 'Exhibition Page'}] if event_link else [],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+            }
+
+            if image_link:
+                event_details['links'].append({'link': image_link, 'description': 'Image'})
+
+            if env == 'prod':
+                process_event(event_details)
+
+    # Scrape current exhibitions
+    process_exhibitions('https://sfmcd.org/exhibitions/', 'current', 'colcustom1')
+
+    # Scrape upcoming exhibitions
+    process_exhibitions('https://sfmcd.org/upcoming-exhibitions/', 'future', 'colcustom2')
+
+    # Scrape past exhibitions
+    process_exhibitions('https://sfmcd.org/past-exhibitions/', 'past', 'colcustom4')

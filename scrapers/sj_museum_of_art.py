@@ -90,4 +90,16 @@ def scrape_sj_museum_of_art_exhibitions(env='prod'):
             }
 
             if image_link:
-                event_details['links'].ap
+                event_details['links'].append({'link': image_link, 'description': 'Image'})
+
+            if env == 'prod':
+                process_event(event_details)
+
+    # On View Exhibitions
+    process_exhibitions('https://sjmusart.org/exhibitions-on-view', 'current')
+
+    # Upcoming Exhibitions
+    process_exhibitions('https://sjmusart.org/upcoming-exhibitions', 'future')
+
+    # Past Exhibitions
+    process_exhibitions('https://sjmusart.org/past-exhibitions', 'past')

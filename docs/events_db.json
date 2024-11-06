@@ -17237,3 +17237,930 @@
             "hash": "0ee7633ed2fe1be161b7b61f02b56684"
         }
     },
+    "San Jose Museum of Art": {
+        "Kambui Olujimi: North Star-San Jose Museum of Art": {
+            "name": "Kambui Olujimi: North Star",
+            "venue": "San Jose Museum of Art",
+            "description": "Kambui Olujimi: North Star  brings together Kambui Olujimi\u2019s multimedia inquiry into the liberatory possibilities of weightlessness, inviting us to imagine new relationships to our bodies, the self, the planet, and the universe.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2025-06-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/kambui-olujimi-north-star",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2024-03/Olujimi_When%20You%20Find%20Me.jpg?itok=Xm5Tbwf1",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "19c013261713b639187a0adfc18db337"
+        },
+        "Beta Space: Patty Chang and David Kelley-San Jose Museum of Art": {
+            "name": "Beta Space: Patty Chang and David Kelley",
+            "venue": "San Jose Museum of Art",
+            "description": "Beta Space: Patty Chang and David Kelley  premieres a multimedia exploration of the dynamic entanglements between humans, animals, minerals, and machines. Using deep sea mining as a point of departure, Chang and Kelley\u2019s project encourages us to think expansively and critically about the loops\u2014of scientific discovery, extraction, and technological development\u2014that connect us with places uninhabited by humans.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2025-06-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/beta-space-patty-chang-and-david-kelley",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2024-04/Chang-and-Kelley%2C-Straydog-Hydrophobia_image-1_edit.jpg?itok=ydona2Qo",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "85bb7e8a253e6883605d5b5113a44c9f"
+        },
+        "Calder: at home, among friends-San Jose Museum of Art": {
+            "name": "Calder: at home, among friends",
+            "venue": "San Jose Museum of Art",
+            "description": "Never one to rely on mass produced objects, Calder's rigorous inventiveness is reflected in the unique household items and jewelry that he made throughout his life. Drawing on the\u00a0Museum collection,\u00a0this installation highlights the intimate side of the artist through these personal objects, created abundantly and gifted generously to friends and family.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2025-08-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/calder-home-among-friends",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-12/53383341202_121a01245c_k.jpg?itok=5aUIDQAZ",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "c16324f991d1426ce98fe56d6254cb18"
+        },
+        "Still in Motion-San Jose Museum of Art": {
+            "name": "Still in Motion",
+            "venue": "San Jose Museum of Art",
+            "description": "Still in Motion  celebrates the unfolding legacy of Alexander Calder through the work of Calder Prize awardees, whose groundbreaking contributions push the limits of sculpture to propel it into the twenty-first century.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2025-08-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/still-motion",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2024-07/37667_DONOVAN_v02.jpg?itok=SyatUcmg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "d958a6105ea7ffcb59540ba1bb9eed3a"
+        },
+        "Hidden Heritages: San Jos\u00e9\u2019s Vietnamese Legacy-San Jose Museum of Art": {
+            "name": "Hidden Heritages: San Jos\u00e9\u2019s Vietnamese Legacy",
+            "venue": "San Jose Museum of Art",
+            "description": "Ongoing \u2022 Monday through Friday, 8am\u20135pm* Offsite at San Jos\u00e9 City Hall Tower Lobby",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/hidden-heritages",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-06/Workshop%202%20-%2009-44-01.jpg?itok=U9U8lVVv",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "a127a18476179ddd5189d35664652c55"
+        },
+        "Seeing through Stone-San Jose Museum of Art": {
+            "name": "Seeing through Stone",
+            "venue": "San Jose Museum of Art",
+            "description": "Seeing through Stone  brings together artwork by contemporary artists from around the globe whose work engages with prisons, justice, and freedom, to provide a vision and model of abolition in practice.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2025-01-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/seeing-through-stone",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2024-01/SeeingAndSeen_Gaspar_016_web_edit.jpg?itok=JB9gCgS-",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "3f269e4ff8ea9f5a65b7d183fc0c43ca"
+        },
+        "Koret Gallery: Art Learning Lab-San Jose Museum of Art": {
+            "name": "Koret Gallery: Art Learning Lab",
+            "venue": "San Jose Museum of Art",
+            "description": "Art Learning Lab is a dedicated exhibition space inspired by Sowing Creativity, the Museum\u2019s award-winning STEAM (Science, Technology, Engineering, Art and Math) education program. Featuring a diverse selection of work from the permanent collection, the Art Learning Lab reveals how artists engage cross-disciplinary concepts in their approach to art-making.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/koret-gallery-art-learning-lab",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2022-10/2021.11_alvarezcandida_itwassodarkicouldseethestars_crop.jpg?itok=4Ugc6L2L",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "f959bb30bdbc84dcce518326d34e9bea"
+        },
+        "Pae White: Noisy Blushes-San Jose Museum of Art": {
+            "name": "Pae White: Noisy Blushes",
+            "venue": "San Jose Museum of Art",
+            "description": "Pae White\u2019s  Noisy Blushes  (2020) is a meditation on movement and time, light and color, material presence and the elusiveness of form. Commissioned by SJMA, the sculpture soars within the Museum\u2019s thirty-foot high atrium and transforms its entrance into an experiential passageway, delivering a sublime experience for visitors.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/pae-white-noisy-blushes",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/20200917_sjm_pwhite_039_web_0.jpg?itok=WZJMIer_",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "0a945a6e4facd54d2156e38b84563078"
+        },
+        "Christina Fernandez: Multiple Exposures-San Jose Museum of Art": {
+            "name": "Christina Fernandez: Multiple Exposures",
+            "venue": "San Jose Museum of Art",
+            "description": "This landmark exhibition presents the work of Christina Fernandez, whose photographs and installations explore migration, labor, gender, and her Mexican American identity. Bringing together the artist\u2019s most important bodies of work for the first time,  Christina Fernandez: Multiple Exposures  invites us to reconsider history, borders, and the lives that cross and inhabit both.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-06-07",
+                "end": "2024-09-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/christina-fernandez-multiple-exposures",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2024-01/Fernandez-1999-Multiple-Exposure-4.jpg?itok=5HH1DH-F",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "76b904baa56a3fadac832cbbde3694b7"
+        },
+        "If toxic air is a monument to slavery, how do we take it down?-San Jose Museum of Art": {
+            "name": "If toxic air is a monument to slavery, how do we take it down?",
+            "venue": "San Jose Museum of Art",
+            "description": "Research agency Forensic Architecture uses cutting-edge technologies to investigate human rights violations, working on behalf of communities affected by police brutality, border regimes, and environmental violence. At SJMA, they present their research on the petrochemical corridor of \u201cDeath Alley,\u201d Louisiana, and offer tools to help combat a three-hundred-year continuum of environmental racism.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-01-18",
+                "end": "2024-04-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/if-toxic-air-monument-slavery-how-do-we-take-it-down",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-07/53021055635_67d0c1958b_k.jpg?itok=fFHCczRG",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "aa9cc8d8bbb8f5f26e4b6ea470982a3f"
+        },
+        "Encode/Store/Retrieve-San Jose Museum of Art": {
+            "name": "Encode/Store/Retrieve",
+            "venue": "San Jose Museum of Art",
+            "description": "The landscape of memory has shifted dramatically over the course of the Digital Age, marked by the ease and speed at which we can record, store, and share information.\u00a0 Encode/Store/Retrieve \u00a0draws together artworks from SJMA\u2019s collection to explore low-tech forms of memory production and provide strategies to grapple with the emerging issues of our growing digital archive.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-12-08",
+                "end": "2024-04-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/encode-store-retrieve",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-03/52763116093_8e3c7985d5_o.jpg?itok=LzZwIIsr",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "46c42a4d9942e9b8f7dabc671a17daea"
+        },
+        "Nuts and Who\u2019s: A Candy Store Sampler-San Jose Museum of Art": {
+            "name": "Nuts and Who\u2019s: A Candy Store Sampler",
+            "venue": "San Jose Museum of Art",
+            "description": "In the 1960s, artists in Northern California embraced an attitude towards art-making that was irreverent, bawdy, and free-spirited, which resonated with artists across the country who rejected the mainstream art world. Through objects primarily drawn from SJMA\u2019s permanent collection, this exhibition focuses on the convergence of these artists around the Candy Store Gallery, and the cross-fertilization of ideas that resulted.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-08-11",
+                "end": "2024-02-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/nuts-and-whos-candy-store-sampler",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-03/2006.27.02_gilhoolydavid_no10sampler_FV.jpg?itok=6w5935yX",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "886a49c08877624888aa4715668cdad6"
+        },
+        "Liliana Porter: Actualidades / Breaking News-San Jose Museum of Art": {
+            "name": "Liliana Porter: Actualidades / Breaking News",
+            "venue": "San Jose Museum of Art",
+            "description": "Liliana Porter\u2019s surreal compositions using toys interrogate the boundaries between representation and reality.  Liliana Porter: Actualidades / Breaking News  is a focused presentation of Porter\u2019s expansive conceptual practice, highlighting her skilled evocation of poignant philosophical and political questions through otherwise simple gestures and miniature objects.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-07-28",
+                "end": "2024-02-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/liliana-porter-actualidades-breaking-news",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-01/52608301352_77c5a6ea03_o.jpg?itok=4JPxdM4H",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "7b7289f6773e9baf66194c25c0fdf0f5"
+        },
+        "Yolanda L\u00f3pez: Portrait of the Artist-San Jose Museum of Art": {
+            "name": "Yolanda L\u00f3pez: Portrait of the Artist",
+            "venue": "San Jose Museum of Art",
+            "description": "Artist and activist Yolanda L\u00f3pez (1942\u20132021) created portraits that have become icons of feminist and working-class empowerment. This exhibition examines L\u00f3pez\u2019s profound influence as an artist who radically reimagined representations of women in Chicano/a/x culture and society at large, and highlights the formative role the Bay Area played in L\u00f3pez\u2019s artistic output and activism.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-07-07",
+                "end": "2023-10-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/yolanda-lopez-portrait-artist",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-04/yolanda_lopez_edit.jpg?itok=MIFbVOgr",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "7d740e3c02617300c3b2b70b4efefb63"
+        },
+        "Sadie Barnette: Family Business-San Jose Museum of Art": {
+            "name": "Sadie Barnette: Family Business",
+            "venue": "San Jose Museum of Art",
+            "description": "Sadie Barnette\u2019s multimedia practice explores her own family history as it mirrors a collective history of repression and resistance in the United States. In a new commission for the ongoing Visualizing Abolition collaboration with the Institute of the Arts and Sciences at University of California, Santa Cruz, Barnette proposes an alternate history of Black America, one shaped by state-sanctioned terror but also by love, support, celebration, and the fullness of human relationships.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-03-10",
+                "end": "2023-10-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/sadie-barnette-family-business",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-03/sjma_sbarnette_glen-cheriton-impart-photography_16_52764659459_o.jpg?itok=1C3BStTi",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "5b0253acd8f1f9e9ad010649d96eca90"
+        },
+        "A Point Stretched: Views on Time-San Jose Museum of Art": {
+            "name": "A Point Stretched: Views on Time",
+            "venue": "San Jose Museum of Art",
+            "description": "A Point Stretched  highlights artworks in a variety of mediums that stretch, compact, and warp the viewer\u2019s sense of time. Drawn primarily from SJMA\u2019s permanent collection, artworks by Diana Al-Hadid, Chitra Ganesh, David Huffman, Ranu Mukherjee, Maia Cruz Palileo, and others position human existence within broader timescales from long-ago ecologies to distant possible futures.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-11-04",
+                "end": "2023-07-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/point-stretched-views-time",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2022-06/PatrickNagatan_JapaneseChildrens.jpg?itok=IWv4XTU8",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "bd1e284403b8971386c237ca66db5bd0"
+        },
+        "Sky Hopinka: Seeing and Seen-San Jose Museum of Art": {
+            "name": "Sky Hopinka: Seeing and Seen",
+            "venue": "San Jose Museum of Art",
+            "description": "The artworks of Sky Hopinka, a member of the Ho-Chunk Nation and a descendant of the Pechanga Band of Luise\u00f1o Indians, traverse the legacies of colonial oppression and Native resistance through meditations on the continuities between past and present. A new film by Hopinka was commissioned as part of Visualizing Abolition, an art initiative of the Institute of the Arts and Sciences at University of California, Santa Cruz and San Jos\u00e9 Museum of Art.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-11-04",
+                "end": "2023-07-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/sky-hopinka-seeing-and-seen",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2022-08/SkyHopinka.crdownload.jpg?itok=vKn4WlFN",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "5a2e30d33a4e205fd706d42cbe02c9bb"
+        },
+        "Kelly Akashi: Formations-San Jose Museum of Art": {
+            "name": "Kelly Akashi: Formations",
+            "venue": "San Jose Museum of Art",
+            "description": "Kelly Akashi is known for her materially hybrid works that are compelling both formally and conceptually. Originally trained in analog photography, the artist is drawn to fluid, impressionable materials and old-world craft techniques, such as glass blowing and casting, candle making, bronze and silicone casting, and rope making. The exhibition encompasses artworks made over the past decade and features a newly commissioned series in which Akashi explores the inherited impact of her family\u2019s imprisonment in a Japanese American incarceration camp during World War II.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-09-03",
+                "end": "2023-05-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/kelly-akashi-formations",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/51665465396_b63f907f29_k_0.jpg?itok=Ss5s7Jxi",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "6f06c8bdc1ed248d96a398ec0a8d55f3"
+        },
+        "Evergreen: Art from the Collection-San Jose Museum of Art": {
+            "name": "Evergreen: Art from the Collection",
+            "venue": "San Jose Museum of Art",
+            "description": "SJMA\u2019s newly dedicated gallery space celebrates the Museum\u2019s collection as both a gift to and a product of its community and provides ongoing access to San Jos\u00e9\u2019s only publicly held art collection. Located in the Museum\u2019s historic building, the gallery presents select holdings that highlight the growing collection and the numerous San Jos\u00e9 stories it tells.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-07-22",
+                "end": "2024-08-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/evergreen-art-collection",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2023-03/3.photo-by-glen-cheriton-impart-photography_52663970379_o.jpg?itok=Dalec-xz",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "335cee6870da422be6b4ba83a4f93e8c"
+        },
+        "Brett Weston-San Jose Museum of Art": {
+            "name": "Brett Weston",
+            "venue": "San Jose Museum of Art",
+            "description": "Recognized for his bold, abstract compositions of western landscapes and natural forms, Brett Weston was a leading photographer of the early twentieth century. Spanning the 1930s through the 1970s,\u00a0 Brett Weston \u00a0features fifty-one photographs drawn exclusively from SJMA\u2019s permanent collection that highlight the photographer\u2019s enduring motifs and technical experimentation.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-07-22",
+                "end": "2023-01-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/brett-weston",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/51799405678_a914a04e5c_c.jpg?itok=d4fqm8sZ",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "23d8ce052213769f7f532d720b89fb44"
+        },
+        "Wayfinder: Juan Carlos Araujo-San Jose Museum of Art": {
+            "name": "Wayfinder: Juan Carlos Araujo",
+            "venue": "San Jose Museum of Art",
+            "description": "Wayfinder: Juan Carlos Araujo  is a public art project that encourages visitors to explore the heart of downtown San Jos\u00e9. Commissioned by SJMA, 40 streetlight banners designed by Araujo with bright, ebullient colors and vivid abstractions are installed along East Santa Clara Street between Market and 20th streets.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-06-03",
+                "end": "2023-06-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/wayfinder-juan-carlos-araujo",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2022-05/WayFinder_JuanCarlosAraujo%20render.jpg?itok=Jl0chLAj",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "fda3c3ca2d03a8965f5249ce810402c3"
+        },
+        "Jean Conner: Collage-San Jose Museum of Art": {
+            "name": "Jean Conner: Collage",
+            "venue": "San Jose Museum of Art",
+            "description": "Organized by SJMA,\u202f Jean Conner: Collage  is the artist\u2019s first solo museum exhibition and brings long-overdue recognition to her extraordinary and fanciful collages. Primarily made from images cut out of\u202fsuch\u202flarge-format color magazines as\u202f Life  and  Ladies\u2019 Home Journal,  Conner\u2019s vivid, pictorial worlds feature playful arrangements of animals, nature, religious symbolism, aquatic environments, food, women, dancers, and divers.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-05-06",
+                "end": "2022-09-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/jean-conner-collage",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/jean_conner_blue_pyramid_1970.jpg?itok=eDACpX5t",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "e705869fe32a2a4493d14d48d26777b0"
+        },
+        "Hulda Guzm\u00e1n: Hig\u00fcero-San Jose Museum of Art": {
+            "name": "Hulda Guzm\u00e1n: Hig\u00fcero",
+            "venue": "San Jose Museum of Art",
+            "description": "A COOL MILLION (ACM) is a public arts initiative for climate awareness led by artists and institutions to expand environmental justice programming and support the conservation of one million acres of land central to the California hydrological system.\u00a0See Hulda Guzm\u00e1n's\u00a0 Hig\u00fcero \u00a0(2020) enlarged on a banner on the exterior of SJMA's building.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-04-01",
+                "end": "2022-04-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/hulda-guzman-higuero-2020",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2022-04/Hulda_GUZMA.2020.0006_0021A.jpg?itok=U-PXyGqC",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "ab3e825c52f4d895690dd42c81b0a61b"
+        },
+        "Our whole, unruly selves-San Jose Museum of Art": {
+            "name": "Our whole, unruly selves",
+            "venue": "San Jose Museum of Art",
+            "description": "Human beings are\u202fboundless. We can unravel ourselves\u202falong various threads\u202fof identity\u2014gender, ethnicity,\u202fnationality\u2014but there are always more.\u202fThe nuanced experience of existing within a body has inspired artists throughout\u00a0history, and\u202fcontinues to drive new visual languages today.\u202fEncompassing a diverse group of artworks\u202ffrom\u202fthe 1960s to the present,\u00a0 Our\u00a0whole, unruly selves\u00a0 explores\u202fthe changing stakes of figurative representation, highlighting forms of\u202fresistance, openness, and an embrace of opacity.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-11-19",
+                "end": "2022-06-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/our-whole-unruly-selves",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/51160967124_bcf43df02d_o.jpg?itok=qAFuKh2O",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "e582f35c668cb70ab5222d2ecc098cec"
+        },
+        "Beta Space: Trevor Paglen-San Jose Museum of Art": {
+            "name": "Beta Space: Trevor Paglen",
+            "venue": "San Jose Museum of Art",
+            "description": "Beta Space: Trevor Paglen \u00a0will feature the artist\u2019s first sound piece, a new public commission titled,\u00a0 There Will Come Soft Rains \u00a0(2021), installed in SJMA\u2019s historic clocktower and resounding into the streets of downtown San Jos\u00e9 from 8am\u20138pm on the hour, as well as sunrise, solar noon, and sunset.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-11-05",
+                "end": "2023-10-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/beta-space-trevor-paglen",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2022-11/SJMA_FirstFriday_TrevorPaglen_Opening_Reception_11.5.2021_FLiang-14-web.jpg?itok=rI73RhDn",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "46e8449d3cb94d796b6e630ec35ecd4c"
+        },
+        "Wayfinder: Clare Rojas-San Jose Museum of Art": {
+            "name": "Wayfinder: Clare Rojas",
+            "venue": "San Jose Museum of Art",
+            "description": "Wayfinder: Clare Rojas  is a public art project that encourages visitors to explore the heart of downtown San Jos\u00e9. Commissioned by SJMA, 40 streetlight banners designed by Rojas in shades of pink, magenta, and lavender are installed along South Market and West San Carlos Streets.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-09-03",
+                "end": "2022-03-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/wayfinder-clare-rojas",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/sjma_rojas_9-2021_01_0.jpg?itok=DMxrAtBH",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:34",
+            "hash": "dece6296deac7fe50549f029edb47dd9"
+        },
+        "Kids Summer Art Camp Virtual Exhibition-San Jose Museum of Art": {
+            "name": "Kids Summer Art Camp Virtual Exhibition",
+            "venue": "San Jose Museum of Art",
+            "description": "Welcome to SJMA's 2021 Kids Summer Art Camp Virtual Exhibition featuring 75 works of art from our summer art camp artists, SJMA's gallery teachers and studio art educators, as well as our esteemed professional guest artists.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-08-07",
+                "end": "2021-09-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/kids-summer-art-camp-virtual-exhibition",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/sjma_virtual-exhibition-invite-1_0.jpg?itok=EFDuK1uT",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:35",
+            "hash": "bddae43a1416447948a2c473c3eace15"
+        },
+        "Hito Steyerl: Factory of the Sun-San Jose Museum of Art": {
+            "name": "Hito Steyerl: Factory of the Sun",
+            "venue": "San Jose Museum of Art",
+            "description": "SJMA presents the landmark video installation, Hito Steyerl\u2019s\u00a0 Factory of the Sun \u00a0(2015), a joint acquisition with the Hammer Museum in Los Angeles, the Museum of Contemporary Art in Chicago, and SJMA. Interweaving genres of video games, internet dance videos, news reportage, and documentary film, the installation tells the surreal story of workers whose forced moves in a motion capture studio are turned into artificial sunlight.\u00a0 Factory of the Sun \u00a0probes the pleasures and perils of digital image circulation, while exploring possibilities for collective resistance when surveillance has become routine in an increasingly virtual world.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-08-06",
+                "end": "2022-09-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/hito-steyerl-factory-sun",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/2017.08_steyerlhito_factoryofthesun_fv.jpg?itok=EXtCYxmp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:35",
+            "hash": "64762c2f5432922e77bcd3ed7340f0c5"
+        },
+        "Break + Bleed-San Jose Museum of Art": {
+            "name": "Break + Bleed",
+            "venue": "San Jose Museum of Art",
+            "description": "Like the break of a line or page and the bleed of various elements beyond the edge or boundary of a certain area, the artworks in  Break  +  Bleed  oscillate between ideas of linearity and geometry and overlapping planes of color and form. Drawn primarily from SJMA\u2019s permanent collection, the exhibition features artwork by Josef Albers, Karl Benjamin, Linda Besemer, Tony DeLap, Sam Francis, Sonia Gechtoff, Helen Lundeberg, Brice Marden, John McLaughlin, Ted Stamm, Frank Stella, Patrick Wilson, and Leo Valledor, among others.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-06-04",
+                "end": "2022-04-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/break-bleed",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/sjma_bb_6-2021_038.jpg?itok=tWZA2LZ9",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:35",
+            "hash": "170e5a63a780d2aef5daaf08296a3990"
+        },
+        "South East North West: New Works from the Collection-San Jose Museum of Art": {
+            "name": "South East North West: New Works from the Collection",
+            "venue": "San Jose Museum of Art",
+            "description": "Reflecting the high-tech interests, lively cultural diversity, and innovative spirit of Silicon Valley, this exhibition features artworks by 30 artists from 11 countries, from internationally renowned figures to those working in California and the Bay Area as well as emerging practitioners. The exhibition highlights a dynamic array of paintings, sculptures, photographs, works on paper, and new media acquired by SJMA in the last five years.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-10-30",
+                "end": "2021-10-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/south-east-north-west-new-works-collection",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/diana_al-hadid_senw_web.jpg?itok=5Tf_p7m5",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:35",
+            "hash": "81778c60d932344444a7bf56e5f6b50f"
+        },
+        "Barring Freedom-San Jose Museum of Art": {
+            "name": "Barring Freedom",
+            "venue": "San Jose Museum of Art",
+            "description": "Barring Freedom , co-organized with the\u00a0Institute of the Arts and Sciences at University of California, Santa Cruz,\u00a0brings together contemporary artists confronting the historical and structural racism embedded in the criminal justice and mass incarceration systems.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-10-30",
+                "end": "2021-04-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/barring-freedom",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/hwt14.040-if-the-leader-only-knew_b-hr_1.jpg?itok=4RHsAiVf",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:35",
+            "hash": "82846ea85239b0442d21f52209b595f2"
+        },
+        "Kids Summer Art Camp Virtual Exhibitions-San Jose Museum of Art": {
+            "name": "Kids Summer Art Camp Virtual Exhibitions",
+            "venue": "San Jose Museum of Art",
+            "description": "Welcome to SJMA's first ever interactive virtual exhibitions featuring artwork from our kids summer art camp young artists, SJMA's gallery teachers and studio art educators, as well as our professional guest artists.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-07-12",
+                "end": "2020-09-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/kids-summer-art-camp-virtual-exhibition-2020",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/ksac_promo_0_0.jpg?itok=zbiPPl0X",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:35",
+            "hash": "95ab6d2c8b7623d91fc9b7895a1c48dc"
+        },
+        "do it (home)-San Jose Museum of Art": {
+            "name": "do it (home)",
+            "venue": "San Jose Museum of Art",
+            "description": "In 1993, Hans Ulrich Obrist together with artists Christian Boltanski and Bertrand Lavier, conceived\u00a0 do it, \u00a0an exhibition based entirely on artists\u2019 instructions, which could be followed to create temporary art works for the duration of a show.\u00a0 do it\u00a0 questioned authorship, challenged traditional exhibition formats, and championed art\u2019s ability to exist beyond a single gallery space.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-05-18",
+                "end": "2020-08-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://sjmusart.org/exhibition/do-it-home",
+                    "description": "Exhibition Page"
+                },
+                {
+                    "link": "https://sjmusart.org/sites/default/files/styles/list_thumbnail/public/ici_do_it_thumb.jpg?itok=l9ob6zP6",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-06 07:37:35",
+            "hash": "fa98745b5287e33cd63dcff05edf0434"
+        }
+    }
+}
