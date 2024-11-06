@@ -32,7 +32,7 @@ def scrape_museum_of_craft_and_design_exhibitions(env='prod'):
             # Get title and link
             title_tag = exhibition.find('h4')
             event_title = title_tag.text.strip().title() if title_tag else None
-            event_link = title_tag.find('a')['href'] if title_tag and title_tag.find('a') else None
+            event_link = exhibition.find('a')['href'] if exhibition.find('a') else None
 
             # Extract date information
             if class_name == 'colcustom1':
