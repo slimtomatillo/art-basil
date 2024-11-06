@@ -60,4 +60,11 @@ def main(env='prod', selected_venues=None, skip_venues=None, write_summary=True)
     if env == 'prod' and write_summary:
         update_event_phases()
         db = load_db()
-        logging.info("Database contains {:,} venues and {:,} events".fo
+        logging.info("Database contains {:,} venues and {:,} events".format(len(db), sum(len(v) for v in db.values())))
+        execution_time_s = round(time.time() - start_time, 1)
+        logging.info(f"Scraping took {execution_time_s} seconds")
+
+    logging.info("Finished")
+
+if __name__ == "__main__":
+    main()
