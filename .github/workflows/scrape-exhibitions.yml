@@ -33,7 +33,9 @@ jobs:
         git config user.name 'GitHub Actions Bot'
         git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
         git add docs/events_db.json
-        git commit -m "Update events data [skip ci]"  # [skip ci] prevents triggering additional workflows
+        git add docs/events_db_copy.json
+        git add docs/db_size.csv
+        git commit -m "Update exhibition data [skip ci]"  # [skip ci] prevents triggering additional workflows
         git push origin HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
