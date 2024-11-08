@@ -16,8 +16,9 @@ def scrape_event_specific_page(event_url):
 
     # Get date info
     try:
-        event_dates = p_elements[1].text.strip().lower().replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
-    except IndexError:
+        p_text = [e.text for e in p_elements if '–' in e.text]
+        event_dates = p_text[0].strip().lower().replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
+    except:
         event_dates = None
 
     # Get event description
@@ -44,7 +45,7 @@ def convert_date_to_nums(date_string):
     day = int(date_parts[1])
     return month_num, day
 
-def scrape_sfwomenartists(env='prod', verbose=False):
+def scrape_sfwomenartists(env='prod'):
     """Scrape and process events from San Francisco Women Artists Gallery."""
     
     # Declare url
@@ -86,10 +87,9 @@ def scrape_sfwomenartists(env='prod', verbose=False):
             try:
                 start_date_month, start_date_day = convert_date_to_nums(dates[0])
             except KeyError:
-                if verbose:
-                    logging.info("Error processing start date:", event_dates, event_link)
+                logging.warning("Error processing start date:", event_dates, event_link)
                 continue  # Skip to the next event if start date conversion fails
-            
+                            
             # If no end month, use the start month
             if len(dates[1].split(' ')) == 1:
                 end_date_month = start_date_month
@@ -105,8 +105,7 @@ def scrape_sfwomenartists(env='prod', verbose=False):
                     try:
                         end_date_month, end_date_day = convert_date_to_nums(dates[1])
                     except KeyError:
-                        if verbose:
-                            logging.info("Error processing end date:", event_dates, event_link)
+                        logging.warning("Error processing end date:", event_dates, event_link)
                         continue  # Skip to the next event if end date conversion fails
             year = int(event.find('p').text.split(' ')[-1])
             
@@ -116,6 +115,9 @@ def scrape_sfwomenartists(env='prod', verbose=False):
                 start_date = None
             
             if end_date_month and end_date_day and year:
+                # If the end date is in the next year, set it to the next year
+                if start_date_month == 12 and end_date_month == 1:
+                    year += 1
                 end_date = dt.date(year, end_date_month, end_date_day)
             else:
                 end_date = None
