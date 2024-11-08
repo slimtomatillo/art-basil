@@ -35,6 +35,7 @@ jobs:
         git add docs/events_db.json
         git add docs/events_db_copy.json
         git add docs/db_size.csv
+        git add scraping.log
         git commit -m "Update exhibition data [skip ci]"  # [skip ci] prevents triggering additional workflows
         git push origin HEAD:main
       env:
