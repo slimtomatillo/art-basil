@@ -7428,3 +7428,143 @@ NameError: name 'timezone' is not defined
 2024-11-06 10:03:09,099 - root - INFO - Scraping took 135.8 seconds
 2024-11-06 10:03:09,125 - root - INFO - Database size recorded
 2024-11-06 10:03:09,125 - root - INFO - Finished
+2024-11-07 19:48:42,510 - root - INFO - ----------NEW LOG----------
+2024-11-07 19:48:44,511 - root - INFO - Copied docs/events_db.json to docs/events_db_copy.json
+2024-11-07 19:48:44,512 - root - INFO - Starting the scraping process
+2024-11-07 19:48:44,512 - root - INFO - Only scraping ["SF Women's Artist"]
+2024-11-07 19:48:44,512 - root - INFO - Starting scrape for SF Women's Artist
+2024-11-07 19:48:46,681 - root - INFO - Updating event: Remembrances
+2024-11-07 19:48:47,742 - root - INFO - Updating event: Animalistic
+2024-11-07 19:48:48,822 - root - INFO - Updating event: Artists Choice 2024
+2024-11-07 19:48:49,864 - root - INFO - Updating event: Motion
+2024-11-07 19:48:50,983 - root - INFO - Updating event: August Abstractions
+2024-11-07 19:48:52,161 - root - INFO - Updating event: Illuminations
+2024-11-07 19:48:53,273 - root - INFO - Updating event: Radiating Pride- Free To Be Me
+2024-11-07 19:48:54,368 - root - INFO - Updating event: The Delicious World
+2024-11-07 19:48:55,432 - root - INFO - Updating event: Hue And Me
+2024-11-07 19:48:57,134 - root - INFO - Updating event: I Am!
+2024-11-07 19:48:58,182 - root - INFO - Updating event: Spring! Lush!
+2024-11-07 19:48:59,224 - root - INFO - Updating event: Street Life
+2024-11-07 19:49:00,278 - root - INFO - Updating event: Textures, Patterns & Shapes
+2024-11-07 19:49:01,375 - root - INFO - Updating event: Being Human
+2024-11-07 19:49:02,479 - root - INFO - Updating event: Artistic Vision
+2024-11-07 19:49:03,504 - root - INFO - Updating event: Annual Bay Area Artists’ Choice
+2024-11-07 19:49:04,608 - root - INFO - Updating event: New Work
+2024-11-07 19:49:05,697 - root - INFO - Updating event: Close-up
+2024-11-07 19:49:06,762 - root - INFO - Updating event: Reflection
+2024-11-07 19:49:07,874 - root - INFO - Updating event: Art Of Pride- Moving Forward
+2024-11-07 19:49:08,903 - root - INFO - Updating event: Black White And Shades Between
+2024-11-07 19:49:09,886 - root - INFO - Updating event: Embracing Nature
+2024-11-07 19:49:10,826 - root - INFO - Updating event: Color Pop!
+2024-11-07 19:49:11,854 - root - INFO - Updating event: Patterns & Shapes
+2024-11-07 19:49:13,012 - root - INFO - Updating event: Climate Change: Protecting Mother Earth
+2024-11-07 19:49:14,036 - root - INFO - Updating event: Photographer’s Eye
+2024-11-07 19:49:15,110 - root - INFO - Updating event: Holiday Spirit
+2024-11-07 19:49:16,327 - root - INFO - Updating event: Edge Of Abstraction
+2024-11-07 19:49:17,555 - root - INFO - Updating event: Artists’ Choice 2022
+2024-11-07 19:49:18,635 - root - INFO - Updating event: Botanicals
+2024-11-07 19:49:19,665 - root - INFO - Updating event: Being Human – The Figuratve Show
+2024-11-07 19:49:20,728 - root - INFO - Updating event: Patterns, Textures And Materials
+2024-11-07 19:49:21,747 - root - INFO - Updating event: Melting: Climate Crisis – Water Is Life
+2024-11-07 19:49:22,766 - root - INFO - Updating event: Intense Palette
+2024-11-07 19:49:23,791 - root - INFO - Updating event: Capture The Moment
+2024-11-07 19:49:24,843 - root - INFO - Updating event: Celebrating Women’s History Month
+2024-11-07 19:49:25,862 - root - INFO - Updating event: 1st Annual Photography & Digital Art Exhibition
+2024-11-07 19:49:26,905 - root - INFO - Updating event: Fresh Perspective
+2024-11-07 19:49:27,953 - root - INFO - Updating event: Artful Giving
+2024-11-07 19:49:28,972 - root - INFO - Updating event: Light And Shadow
+2024-11-07 19:49:30,080 - root - INFO - Updating event: Artists Choice 2021
+2024-11-07 19:49:31,097 - root - INFO - Updating event: Abstract World
+2024-11-07 19:49:32,163 - root - INFO - Updating event: Bold. Colors!
+2024-11-07 19:49:33,229 - root - INFO - Updating event: Verdant
+2024-11-07 19:49:34,771 - root - INFO - Updating event: Art Matters
+2024-11-07 19:49:35,826 - root - INFO - Updating event: Collage & Mixed Media
+2024-11-07 19:49:36,881 - root - INFO - Updating event: Scapes – City, Land And Sea
+2024-11-07 19:49:37,912 - root - INFO - Updating event: Patterns & Symmetry
+2024-11-07 19:49:38,944 - root - INFO - Updating event: Slice Of Life
+2024-11-07 19:49:39,985 - root - INFO - Updating event: Gift Of Art
+2024-11-07 19:49:41,005 - root - INFO - Updating event: Reflective
+2024-11-07 19:49:42,068 - root - INFO - Updating event: Artists Choice 2020
+2024-11-07 19:49:44,257 - root - INFO - Updating event: Free To Be
+2024-11-07 19:49:45,354 - root - INFO - Updating event: Abstract Thinking
+2024-11-07 19:49:46,411 - root - INFO - Updating event: Sfwa Online Benefit Auction
+2024-11-07 19:49:52,025 - root - INFO - Updating event: Spirit Of San Francisco
+2024-11-07 19:49:56,253 - root - INFO - Updating event: Artist Choice 2019
+2024-11-07 19:49:57,313 - root - INFO - Updating event: Language And Letters
+2024-11-07 19:49:58,428 - root - INFO - Updating event: Hot Color
+2024-11-07 19:49:59,465 - root - INFO - Updating event: Memories
+2024-11-07 19:50:00,475 - root - INFO - Updating event: Season Of Abundance
+2024-11-07 19:50:01,490 - root - INFO - Updating event: Opposites
+2024-11-07 21:53:49,110 - root - INFO - ----------NEW LOG----------
+2024-11-07 21:53:51,188 - root - INFO - Copied docs/events_db.json to docs/events_db_copy.json
+2024-11-07 21:53:51,188 - root - INFO - Starting the scraping process
+2024-11-07 21:53:51,188 - root - INFO - Only scraping ["SF Women's Artist"]
+2024-11-07 21:53:51,188 - root - INFO - Starting scrape for SF Women's Artist
+2024-11-07 21:53:53,161 - root - INFO - Updating event: Remembrances
+2024-11-07 21:53:54,110 - root - INFO - Updating event: Animalistic
+2024-11-07 21:53:55,098 - root - INFO - Updating event: Artists Choice 2024
+2024-11-07 21:53:56,053 - root - INFO - Updating event: Motion
+2024-11-07 21:53:57,016 - root - INFO - Updating event: August Abstractions
+2024-11-07 21:53:58,152 - root - INFO - Updating event: Illuminations
+2024-11-07 21:53:59,166 - root - INFO - Updating event: Radiating Pride- Free To Be Me
+2024-11-07 21:54:00,118 - root - INFO - Updating event: The Delicious World
+2024-11-07 21:54:01,052 - root - INFO - Updating event: Hue And Me
+2024-11-07 21:54:02,036 - root - INFO - Updating event: I Am!
+2024-11-07 21:54:03,078 - root - INFO - Updating event: Spring! Lush!
+2024-11-07 21:54:04,044 - root - INFO - Updating event: Street Life
+2024-11-07 21:54:04,993 - root - INFO - Updating event: Textures, Patterns & Shapes
+2024-11-07 21:54:06,044 - root - INFO - Updating event: Being Human
+2024-11-07 21:54:07,045 - root - INFO - Updating event: Artistic Vision
+2024-11-07 21:54:08,058 - root - INFO - Updating event: Annual Bay Area Artists’ Choice
+2024-11-07 21:54:09,103 - root - INFO - Updating event: New Work
+2024-11-07 21:54:10,131 - root - INFO - Updating event: Close-up
+2024-11-07 21:54:11,102 - root - INFO - Updating event: Reflection
+2024-11-07 21:54:12,177 - root - INFO - Updating event: Art Of Pride- Moving Forward
+2024-11-07 21:54:13,170 - root - INFO - Updating event: Black White And Shades Between
+2024-11-07 21:54:14,134 - root - INFO - Updating event: Embracing Nature
+2024-11-07 21:54:15,112 - root - INFO - Updating event: Color Pop!
+2024-11-07 21:54:16,177 - root - INFO - Updating event: Patterns & Shapes
+2024-11-07 21:54:17,170 - root - INFO - Updating event: Climate Change: Protecting Mother Earth
+2024-11-07 21:54:18,228 - root - INFO - Updating event: Photographer’s Eye
+2024-11-07 21:54:19,320 - root - INFO - Updating event: Holiday Spirit
+2024-11-07 21:54:20,276 - root - INFO - Updating event: Edge Of Abstraction
+2024-11-07 21:54:21,291 - root - INFO - Updating event: Artists’ Choice 2022
+2024-11-07 21:54:23,347 - root - INFO - Updating event: Being Human – The Figuratve Show
+2024-11-07 21:54:24,368 - root - INFO - Updating event: Patterns, Textures And Materials
+2024-11-07 21:54:25,395 - root - INFO - Updating event: Melting: Climate Crisis – Water Is Life
+2024-11-07 21:54:26,348 - root - INFO - Updating event: Intense Palette
+2024-11-07 21:54:27,278 - root - INFO - Updating event: Capture The Moment
+2024-11-07 21:54:28,234 - root - INFO - Updating event: Celebrating Women’s History Month
+2024-11-07 21:54:29,180 - root - INFO - Updating event: 1st Annual Photography & Digital Art Exhibition
+2024-11-07 21:54:30,159 - root - INFO - Updating event: Fresh Perspective
+2024-11-07 21:54:31,230 - root - INFO - Updating event: Artful Giving
+2024-11-07 21:54:32,200 - root - INFO - Updating event: Light And Shadow
+2024-11-07 21:54:33,165 - root - INFO - Updating event: Artists Choice 2021
+2024-11-07 21:54:34,201 - root - INFO - Updating event: Abstract World
+2024-11-07 21:54:35,202 - root - INFO - Updating event: Bold. Colors!
+2024-11-07 21:54:36,155 - root - INFO - Updating event: Verdant
+2024-11-07 21:54:37,184 - root - INFO - Updating event: Art Matters
+2024-11-07 21:54:38,181 - root - INFO - Updating event: Collage & Mixed Media
+2024-11-07 21:54:39,179 - root - INFO - Updating event: Scapes – City, Land And Sea
+2024-11-07 21:54:40,198 - root - INFO - Updating event: Patterns & Symmetry
+2024-11-07 21:54:41,165 - root - INFO - Updating event: Slice Of Life
+2024-11-07 21:54:42,132 - root - INFO - Updating event: Gift Of Art
+2024-11-07 21:54:43,094 - root - INFO - Updating event: Reflective
+2024-11-07 21:54:44,127 - root - INFO - Updating event: Artists Choice 2020
+2024-11-07 21:54:46,010 - root - INFO - Updating event: Free To Be
+2024-11-07 21:54:47,874 - root - INFO - Updating event: Sfwa Online Benefit Auction
+2024-11-07 21:54:52,986 - root - INFO - Updating event: Spirit Of San Francisco
+2024-11-07 21:54:54,954 - root - INFO - Updating event: Art And Activism
+2024-11-07 21:54:55,949 - root - INFO - Updating event: Curves & Shapes
+2024-11-07 21:54:56,958 - root - INFO - Updating event: Artist Choice 2019
+2024-11-07 21:54:57,956 - root - INFO - Updating event: Language And Letters
+2024-11-07 21:54:58,920 - root - INFO - Updating event: Hot Color
+2024-11-07 21:54:59,839 - root - INFO - Updating event: Memories
+2024-11-07 21:55:00,758 - root - INFO - Updating event: Season Of Abundance
+2024-11-07 21:55:01,747 - root - INFO - Updating event: Opposites
+2024-11-07 21:55:02,737 - root - INFO - Updating event: Celebrating Bay Area Culture
+2024-11-07 21:55:03,742 - root - INFO - Updating event: Textures & Patterns
+2024-11-07 21:55:05,122 - root - INFO - Updating event: Celebrating Women
+2024-11-07 21:55:06,678 - root - INFO - Updating event: What I Love
+2024-11-07 21:55:35,949 - root - INFO - Finished scrape for SF Women's Artist
+2024-11-07 21:55:35,952 - root - INFO - Finished

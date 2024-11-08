@@ -16,8 +16,11 @@ def scrape_event_specific_page(event_url):
 
     # Get date info
     try:
-        p_text = [e.text for e in p_elements if '–' in e.text]
-        event_dates = p_text[0].strip().lower().replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
+        p_text = [e.text for e in p_elements if ' – ' in e.text.replace(' to ', ' – ')]
+        event_dates = p_text[0].strip().lower().replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace('1st', '1').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
+        # Handle cases where no date, only a time was provided
+        if ':' in p_text[0] or 'pm' in p_text[0]:
+            event_dates = None
     except:
         event_dates = None
 
@@ -74,13 +77,15 @@ def scrape_sfwomenartists(env='prod'):
             if not event_dates:
                 continue
             
-            # Handle edge case
+            # Handle edge cases
             if event_dates == 'august 10 2020':
-                event_dates = 'august 10 – august 31 2020'
+                event_dates = 'august 10 2020 – august 31 2020'
             elif event_dates == 'september 1 – 25 2020':
-                event_dates = 'september 1 – september 25 2020'
+                event_dates = 'september 1 2020 – september 25 2020'
             elif event_dates == 'october 2024 exhibition':
-                event_dates = 'october 8 – november 1'
+                event_dates = 'october 8 2024 – november 1 2024'
+            elif event_dates == 'november 5 – 30 2019':
+                event_dates = 'november 5 2019 – november 30 2019'
 
             # Extract date information
             dates = [d.strip() for d in event_dates.split('–')]
@@ -150,6 +155,7 @@ def scrape_sfwomenartists(env='prod'):
                 ],
                 'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }
+            
             # Add image link if it exists
             if image_link:
                 event_details['links'].append({
