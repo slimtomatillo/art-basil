@@ -22,18 +22,18 @@ def main(env='prod', selected_venues=None, skip_venues=None, write_summary=True)
 
     # Mapping venue names to their respective scraper functions
     venues = {
-        "de Young": de_young.scrape_de_young_and_legion_of_honor,
+        "de Young Museum": de_young.scrape_de_young_and_legion_of_honor,
         "SFMOMA": sfmoma.scrape_sfmoma,
-        "CJM": cjm.scrape_contemporary_jewish_museum,
+        "Contemporary Jewish Museum": cjm.scrape_contemporary_jewish_museum,
         "BAMPFA": bampfa.scrape_bampfa_exhibitions,
         "SF Women Artists": sf_women_artists.scrape_sfwomenartists,
         "Asian Art Museum": [
             asian_art_museum.scrape_asian_art_museum_current_events,
             asian_art_museum.scrape_asian_art_museum_past_events,
         ],
-        "OMCA": omca.scrape_oak_museum_of_ca_exhibitions,
-        "Kala": kala.scrape_kala_exhibitions,
-        "Cantor": cantor.scrape_cantor_exhibitions,
+        "Oakland Museum of California": omca.scrape_oak_museum_of_ca_exhibitions,
+        "Kala Art Institute": kala.scrape_kala_exhibitions,
+        "Cantor Arts Center": cantor.scrape_cantor_exhibitions,
         "Museum of Craft and Design": museum_of_craft_and_design.scrape_museum_of_craft_and_design_exhibitions,
         "San Jose Museum of Art": sj_museum_of_art.scrape_sj_museum_of_art_exhibitions,
         # Add other scrapers here
@@ -67,8 +67,11 @@ def main(env='prod', selected_venues=None, skip_venues=None, write_summary=True)
         db = load_db()
         event_count = sum(len(v) for v in db.values())
         logging.info("Database contains {:,} venues and {:,} events".format(len(db), event_count))
+        # Capture the execution time and convert to minutes and seconds
         execution_time_s = round(time.time() - start_time, 1)
-        logging.info(f"Scraping took {execution_time_s} seconds")
+        minutes = int(execution_time_s // 60)
+        seconds = int(execution_time_s % 60)
+        logging.info(f"Scraping took {minutes} minutes and {seconds} seconds")
         # Record the number of venues and events in the db
         file_path = 'docs/db_size.csv'
         df = pd.DataFrame([{
