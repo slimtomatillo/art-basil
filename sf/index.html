@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/art-basil/docs/styles.css">
+    <script src="/art-basil/docs/scroll.js" defer></script>
+    <title>Art Basil</title>
+    <link rel="icon" type="image/png" href="https://github.com/slimtomatillo/art-basil/blob/main/images/favicon.png">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G06G4L1YGN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G06G4L1YGN');
+</script>
+
+<!-- Import javascript file(s) -->
+<script src="/art-basil/docs/filter.js" defer></script>
+
+<body>
+
+    <style>
+        body, button { /* Apply custom cursor to body and button elements */
+            cursor: url('squirtle.cur'), auto; /* Fallback to default cursor if custom cursor fails */
+        }
+    </style>
+
+    <header>
+        <h1>San Francisco Bay Area</h1>
+        <body>Listings of art shows. Currently, just exhibitions are displayed. Events, like workshops and talks, will be added soon.</body>
+        <br>
+        <br>
+        <a href="/art-basil/docs/add_event.html">
+            <strong>Add an event</strong>
+        </a>
+        <br>
+        Comments/corrections:
+        <a href="mailto:info.artbasil@gmail.com">info.artbasil@gmail.com</a>
+        <br>
+        <br>
+        <!-- PayPal Donate Button -->
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="business" value="GPJR7D9YB2Z6W" />
+            <input type="hidden" name="no_recurring" value="0" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+            
+    </header>
+    
+    <div id="searchBarContainer">
+        <input type="text" id="searchBar" placeholder="Search...">
+    </div>
+
+    <div id="filterButtonsContainer">
+        <button id="currentButton" class="filter-button">Current</button>
+        <button id="futureButton" class="filter-button">Future</button>
+        <button id="pastButton" class="filter-button">Past</button>
+        <button id="allButton" class="filter-button">All</button>
+    </div>
+
+    <table class="event-table" id="eventTable">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Date</th>
+            <th>Show @ Venue</th>
+            <th>Tags</th>
+            <th>Links</th>
+            <!-- Add more header columns here if needed -->
+        </tr>
+    </thead>
+    <tbody id="event-list">
+        <!-- Add table rows with event data here -->
+    </tbody>
+    </table>
+
+    <footer>
+        <p>&copy; A. Smith</p>
+    </footer>
+
+</body>
+</html>

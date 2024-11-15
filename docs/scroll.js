@@ -21,24 +21,49 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Show search bar and table header when user scrolls down the page
-window.addEventListener('scroll', () => {
-    const searchBarContainer = document.getElementById('searchBarContainer');
+// Get the region from the URL path
+const getRegion = () => {
+    const path = window.location.pathname;
+    if (path.includes('/sf/')) return 'sf';
+    if (path.includes('/la/')) return 'la';
+    return 'sf'; // default to SF
+};
+
+// Function to calculate and update sticky positions
+function updateStickyPositions() {
+    const searchBar = document.getElementById('searchBarContainer');
     const tableHeader = document.querySelector('thead');
-    const offset = window.scrollY;
+    
+    if (!searchBar || !tableHeader) return;
 
-    if (offset > 0) {
-        searchBarContainer.classList.add('sticky');
-        tableHeader.classList.add('sticky');
+    const searchBarHeight = searchBar.offsetHeight;
+    
+    // Keep search bar at the very top
+    searchBar.style.position = 'sticky';
+    searchBar.style.top = '0';
+    searchBar.style.zIndex = '1000';
+    searchBar.style.backgroundColor = 'white'; // Ensure it's not transparent
+    
+    // Position table header below search bar
+    tableHeader.style.position = 'sticky';
+    tableHeader.style.top = `${searchBarHeight}px`;
+    tableHeader.style.zIndex = '999';
+    tableHeader.style.backgroundColor = 'white';
+}
 
-        // Dynamically adjust the top value for the table header
-        const searchBarHeight = searchBarContainer.offsetHeight; // Height of the search bar container
-        tableHeader.style.top = `${searchBarHeight - 1}px`; // Apply this height as the top value for the table header
-    } else {
-        searchBarContainer.classList.remove('sticky');
-        tableHeader.classList.remove('sticky');
-        tableHeader.style.top = '0px'; // Reset the top value when not sticky
-    }
+// Add scroll event listener
+window.addEventListener('scroll', () => {
+    requestAnimationFrame(updateStickyPositions);
+});
+
+// Update positions on window resize
+window.addEventListener('resize', () => {
+    requestAnimationFrame(updateStickyPositions);
+});
+
+// Initial position update
+document.addEventListener('DOMContentLoaded', () => {
+    updateStickyPositions();
 });
 
 function sortEvents(events) {
@@ -104,8 +129,9 @@ function sortEvents(events) {
 // Load venue data
 let venuesCache = null; // Cache for storing the venue data
 async function fetchVenues() {
+    const region = getRegion();
     try {
-        const response = await fetch('venues.json');
+        const response = await fetch(`/art-basil/docs/data/${region}_venues.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -121,8 +147,10 @@ async function fetchVenues() {
 window.addEventListener('DOMContentLoaded', async () => {
     // Fetch venue data once and store it in a constant
     const venues = await fetchVenues();
+    const region = getRegion();
+    
     // Load event data
-    fetch("events_db.json")
+    fetch(`/art-basil/docs/data/${region}_events.json`)
         .then(response => response.json())
         .then(unsortedData => {
             // Assuming `sortEvents` expects and returns the whole dataset

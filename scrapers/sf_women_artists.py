@@ -48,7 +48,7 @@ def convert_date_to_nums(date_string):
     day = int(date_parts[1])
     return month_num, day
 
-def scrape_sfwomenartists(env='prod'):
+def scrape_sfwomenartists(env='prod', region='sf'):
     """Scrape and process events from San Francisco Women Artists Gallery."""
     
     # Declare url
@@ -164,7 +164,7 @@ def scrape_sfwomenartists(env='prod'):
                 })
             
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
     else:
         logging.warning(f"Events not found for San Francisco Women Artists Gallery")

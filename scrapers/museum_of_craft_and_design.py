@@ -16,7 +16,7 @@ def convert_date_to_dt(date_string):
     else:
         return None
 
-def scrape_museum_of_craft_and_design_exhibitions(env='prod'):
+def scrape_museum_of_craft_and_design_exhibitions(env='prod', region='sf'):
     """Scrape and process exhibitions from the Museum of Craft and Design."""
     
     def process_exhibitions(url, phase, class_name):
@@ -102,7 +102,7 @@ def scrape_museum_of_craft_and_design_exhibitions(env='prod'):
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
     # Scrape current exhibitions
     process_exhibitions('https://sfmcd.org/exhibitions/', 'current', 'colcustom1')

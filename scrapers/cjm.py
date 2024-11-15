@@ -16,7 +16,7 @@ def convert_date_to_dt(date_string):
         date_dt = dt.date(year, month_num, day)
     return date_dt
 
-def scrape_contemporary_jewish_museum(env='prod'):
+def scrape_contemporary_jewish_museum(env='prod', region='sf'):
     """Scrape and process events from Contemporary Jewish Museum."""
     
     # Declare list of urls
@@ -107,7 +107,7 @@ def scrape_contemporary_jewish_museum(env='prod'):
                     })
 
                 if env == 'prod':
-                    process_event(event_details)
+                    process_event(event_details, region)
 
         else:
             logging.warning(f"Events not found for phase: {url_dict['phase']}")

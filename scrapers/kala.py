@@ -33,7 +33,7 @@ def convert_date_to_dt(date_text):
     # Create the date object
     return dt.date(year, month, day)
 
-def scrape_kala_exhibitions(env='prod'):
+def scrape_kala_exhibitions(env='prod', region='sf'):
     """Scrape and process exhibitions from the Kala Art Institute."""
     
     url = 'https://www.kala.org/gallery/exhibitions/'
@@ -79,7 +79,7 @@ def scrape_kala_exhibitions(env='prod'):
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
         except AttributeError as e:
             logging.info(f"Error parsing element: {e}")

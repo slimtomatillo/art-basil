@@ -1,7 +1,10 @@
 import logging
 
 # Constants
-DB_FILE = 'docs/events_db.json'
+DB_FILES = {
+    'sf': 'docs/data/sf_events.json',
+    'la': 'docs/data/la_events.json',
+}
 MONTH_TO_NUM_DICT = {
     'jan': 1,
     'feb': 2,
@@ -40,7 +43,7 @@ class InfoFilter(logging.Filter):
                     or "Database" in record.msg\
                     or "Scraping took" in record.msg\
                     or "Finished" in record.msg\
-                    or "Only scraping" in record.msg\
+                    or "Selecting" in record.msg\
                     or "Skipping" in record.msg
         return True  # Allow all other levels to pass through (e.g., WARNING and ERROR)
 

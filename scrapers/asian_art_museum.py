@@ -5,7 +5,7 @@ import datetime as dt
 from datetime import timezone
 import logging
 
-def scrape_asian_art_museum_current_events(env='prod'):
+def scrape_asian_art_museum_current_events(env='prod', region='sf'):
     """Scrape and process current events from Asian Art Museum."""
 
     def convert_date_to_dt(date_string):
@@ -99,7 +99,7 @@ def scrape_asian_art_museum_current_events(env='prod'):
             })
 
         if env == 'prod':
-            process_event(event_details)
+            process_event(event_details, region)
 
     # Find rest of events
     events_list = soup.find_all(class_='card split-grid__card split-grid__card--dark')
@@ -167,9 +167,9 @@ def scrape_asian_art_museum_current_events(env='prod'):
                 })
 
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
-def scrape_asian_art_museum_past_events(env='prod'):
+def scrape_asian_art_museum_past_events(env='prod', region='sf'):
     """Scrape and process past events from Asian Art Museum."""
     
     def convert_date_to_dt(date_string):
@@ -258,4 +258,4 @@ def scrape_asian_art_museum_past_events(env='prod'):
                     })
 
                 if env == 'prod':
-                    process_event(event_details)
+                    process_event(event_details, region)
