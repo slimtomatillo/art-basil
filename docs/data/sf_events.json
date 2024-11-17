@@ -8146,7 +8146,6 @@
             "name": "RAD (Research And Development)",
             "venue": "Asian Art Museum",
             "description": null,
-            "description": null,
             "tags": [
                 "exhibition",
                 "past",
@@ -8154,12 +8153,9 @@
                 "museum"
             ],
             "phase": "past",
-            "phase": "past",
             "dates": {
                 "start": "2024-01-18",
-                "end": "2024-10-31"
-                "start": "2024-01-18",
-                "end": "2024-10-31"
+                "end": "2024-10-31",
             },
             "links": [
                 {
