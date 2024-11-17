@@ -39,9 +39,9 @@ def update_event_phases(db, region):
                     event['phase'] = 'past'
                     event['ongoing'] = False
                     event['tags'] = [tag for tag in event['tags'] if tag != 'current']
-                # If the event is not tagged as 'past', add the 'past' tag
-                if 'past' not in event['tags']:
-                    event['tags'].append('past')
+                    # If the event is not tagged as 'past', add the 'past' tag
+                    if 'past' not in event['tags']:
+                        event['tags'].append('past')
             except Exception as e:
                 logging.error(f"[Error processing event '{event_key}': {e}")
     save_db(db, region)
