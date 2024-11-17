@@ -1,0 +1,536 @@
+{
+    "LACMA": {
+        "Mapping the Infinite: Cosmologies Across Cultures-LACMA": {
+            "name": "Mapping the Infinite: Cosmologies Across Cultures",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-10-20",
+                "end": "2025-03-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/mapping-infinite-cosmologies-across-cultures",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-04/METROPOLITAN%2057.36.4%20%281%29.jpg?itok=_70G4OWL",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "f93016988343ecd0dbe80487785c7509"
+        },
+        "We Live in Painting: The Nature of Color in Mesoamerican Art-LACMA": {
+            "name": "We Live in Painting: The Nature of Color in Mesoamerican Art",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-09-15",
+                "end": "2025-09-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/we-live-painting-nature-color-mesoamerican-art",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-04/weliveinpainting.png?itok=Qyk_J6xs",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "1ec58ac2b3f3697fd109b620b85b1a67"
+        },
+        "Josiah McElheny: Island Universe-LACMA": {
+            "name": "Josiah McElheny: Island Universe",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-09-12",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/josiah-mcelheny-island-universe",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-09/RSM2020_41-WC05.jpg?itok=-i_wcuoB",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "02aac354a22133e976ceee9f7460b9fd"
+        },
+        "Magdalena Suarez Frimkess: The Finest Disregard-LACMA": {
+            "name": "Magdalena Suarez Frimkess: The Finest Disregard",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-08-18",
+                "end": "2025-01-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/magdalena-suarez-frimkess-finest-disregard",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-04/RSEX9130_168-2023028-Access.jpg?itok=M59zfy7N",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "b3225bc314a2095cec8febcd3d21ac89"
+        },
+        "Simone Leigh-LACMA": {
+            "name": "Simone Leigh",
+            "venue": "LACMA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-05-26",
+                "end": "2025-01-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/simone-leigh",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2023-08/Screen%20Shot%202023-08-16%20at%2012.47.53%20PM.png?itok=K-KykhQz",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "d9263c5f92a210b6d054f68420ebd6fe"
+        },
+        "New Acquisitions to the Rifkind Center-LACMA": {
+            "name": "New Acquisitions to the Rifkind Center",
+            "venue": "LACMA",
+            "description": "BCAM, Level 3",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-05-18",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/new-acquisitions-rifkind-center",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-05/RSM2019_203-20201014-Access.jpg?itok=VKbr5Wrj",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "9997a5105d54a5ae1fee59bb36975898"
+        },
+        "Ai Weiwei: Circle of Animals/Zodiac Heads-LACMA": {
+            "name": "Ai Weiwei: Circle of Animals/Zodiac Heads",
+            "venue": "LACMA",
+            "description": "Zev Yaroslavsky Plaza",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2022-03-26",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/ai-weiwei-circle-animals-zodiac-heads",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2022-03/EX2464-VW010.jpg?itok=RMspRjXw",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "b81cd7f5f514dfb535fa91b974b53533"
+        },
+        "Modern Art-LACMA": {
+            "name": "Modern Art",
+            "venue": "LACMA",
+            "description": "BCAM, Level 3",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2021-06-13",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/modern-art",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2021-05/Modern%20Art_LACMA.jpg?itok=iWD3UgSM",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "97625335b7b55d3800e6357a863f52ec"
+        },
+        "Digital Witness: Revolutions in Design, Photography, and Film-LACMA": {
+            "name": "Digital Witness: Revolutions in Design, Photography, and Film",
+            "venue": "LACMA",
+            "description": "BCAM",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-11-24",
+                "end": "2025-07-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/digital-witness-revolutions-design-photography-and-film",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-03/RSM2023_107_4-20230906-Access.jpg?itok=72ouk3PK",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "e4a93176be41bff4c077ffe30cc80226"
+        },
+        "Imagining Black Diasporas: 21st-Century Art and Poetics-LACMA": {
+            "name": "Imagining Black Diasporas: 21st-Century Art and Poetics",
+            "venue": "LACMA",
+            "description": "BCAM, Level 2",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2024-12-15",
+                "end": "2025-08-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/imagining-black-diasporas-21st-century-art-and-poetics",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-07/RSM2022_68-20221004-Access.jpg?itok=JzrKMS72",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "1f94bd5bf4daa0093b1a2f2d2dee2b24"
+        },
+        "Realms of the Dharma: Buddhist Art across Asia-LACMA": {
+            "name": "Realms of the Dharma: Buddhist Art across Asia",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2025-05-11",
+                "end": "2026-04-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/realms-dharma-buddhist-art-across-asia",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-11/RSAC1994_232_1-20170606-Access.jpg?itok=k-YGLQGF",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "0e88c2cb91b40e04bb3d0eccc92fad61"
+        },
+        "American Artist: The Monophobic Response-LACMA": {
+            "name": "American Artist: The Monophobic Response",
+            "venue": "LACMA",
+            "description": "BCAM, Level 2",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-11-01",
+                "end": "2024-11-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/american-artist-monophobic-response",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-10/vlcsnap-2024-09-22-17h30m42s527.jpg?itok=9ft_pqYu",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "a3d33c849eae08614c8800830617638d"
+        },
+        "ED RUSCHA / NOW THEN-LACMA": {
+            "name": "ED RUSCHA / NOW THEN",
+            "venue": "LACMA",
+            "description": "BCAM, Level 2",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-04-07",
+                "end": "2024-10-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/ed-ruscha-now-then",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2023-11/89600scr_ce675705fecb156%20%282%29.jpg?itok=N-O3p9Er",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "9c1f3a21ab6b37c9d9c723168cae1cff"
+        },
+        "Zeng Fanzhi: Near and Far/Now and Then-LACMA": {
+            "name": "Zeng Fanzhi: Near and Far/Now and Then",
+            "venue": "LACMA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-04-17",
+                "end": "2024-09-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/zeng-fanzhi-near-and-farnow-and-then",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-04/RSZFZVM-7.jpg?itok=8jvrlUqi",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "35c001c3fac163080347ac90c0265cb5"
+        },
+        "Dining with the Sultan at Charles White Elementary School-LACMA": {
+            "name": "Dining with the Sultan at Charles White Elementary School",
+            "venue": "LACMA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-01-20",
+                "end": "2024-08-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/dining-sultan-charles-white-elementary-school",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2023-06/Screenshot%202023-06-15%20at%202.48.40%20PM.png?itok=ljfOJgS4",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "52b2f1e62f37322c08eb5d2d9c3bb36f"
+        },
+        "Dining with the Sultan: The Fine Art of Feasting-LACMA": {
+            "name": "Dining with the Sultan: The Fine Art of Feasting",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-12-17",
+                "end": "2024-08-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/dining-sultan-fine-art-feasting-0",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2023-07/EX8931_112_f040v_crop.jpg?itok=mXYJZaWT",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "72112243cfcbcc188c0e9014ff5be18d"
+        },
+        "Painting in the River of Angels: Judy Baca and The Great Wall-LACMA": {
+            "name": "Painting in the River of Angels: Judy Baca and The Great Wall",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-10-26",
+                "end": "2024-07-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/painting-river-angels-judy-baca-and-great-wall-0",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2023-09/BACA_Painting%20GW_4a%20SCAN_15_1%20%281%29%20%281%29.jpg?itok=hufip_yQ",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "6c0fb8c7fe2818eb4f5bfaaeb4bff548"
+        },
+        "Vincent Valdez and Ry Cooder: El Chavez Ravine-LACMA": {
+            "name": "Vincent Valdez and Ry Cooder: El Chavez Ravine",
+            "venue": "LACMA",
+            "description": "BCAM, Level 1",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-11-12",
+                "end": "2024-07-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/vincent-valdez-and-ry-cooder-el-chavez-ravine",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2023-09/Screen%20Shot%202023-09-07%20at%2010.19.07%20AM.png?itok=yoXIpY1Z",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "339582671f30048470c59d99c44106c1"
+        },
+        "Imagined Fronts: The Great War and Global Media-LACMA": {
+            "name": "Imagined Fronts: The Great War and Global Media",
+            "venue": "LACMA",
+            "description": "Resnick Pavilion",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-12-03",
+                "end": "2024-07-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/imagined-fronts-great-war-and-global-media",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2023-03/EX8938_060.jpg?itok=FqapsTYa",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2024-11-17 02:02:40",
+            "hash": "f9ce32924ff66c2dc63d131d675ddf6a"
+        }
+    }
+}

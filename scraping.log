@@ -16903,3 +16903,147 @@ TypeError: expected str, bytes or os.PathLike object, not dict
 2024-11-16 16:46:22,145 - root - INFO - Scraping took 4 min, 14 sec
 2024-11-16 16:46:23,919 - root - INFO - Database size recorded
 2024-11-16 16:46:23,920 - root - INFO - Finished
+2024-11-16 16:51:41,728 - root - INFO - ----------NEW LOG----------
+2024-11-16 16:51:41,729 - root - INFO - Starting the scraping process
+2024-11-16 16:51:41,729 - root - INFO - Selected venues: ['Cantor Arts Center']
+2024-11-16 16:51:41,729 - root - INFO - [sf] Starting scrape for Cantor Arts Center
+2024-11-16 16:51:41,958 - root - INFO - Updating event: Dwelling: New Acquisitions
+2024-11-16 16:51:41,991 - root - INFO - Updating event: Spirit House
+2024-11-16 16:51:42,025 - root - INFO - Updating event: Livien Yin: Thirsty
+2024-11-16 16:51:42,058 - root - INFO - Updating event: TT Takemoto: Remembering in the Absence of Memory
+2024-11-16 16:51:42,089 - root - INFO - Updating event: Archive Rooms
+2024-11-16 16:51:42,115 - root - INFO - Updating event: The Faces of Ruth Asawa
+2024-11-16 16:51:42,232 - root - INFO - Updating event: Second Nature: Photography in the Age of the Anthropocene
+2024-11-16 16:51:42,261 - root - INFO - Updating event: Tiffany Sia: No Place
+2024-11-16 16:51:42,385 - root - INFO - Updating event: Day Jobs
+2024-11-16 16:51:42,412 - root - INFO - Updating event: Sofía Gallisá Muriente: Celaje (Cloudscape)
+2024-11-16 16:51:42,435 - root - INFO - Updating event: Beyond Here: The Judy and Sidney Zuber Collection of Latin American Photography
+2024-11-16 16:51:42,458 - root - INFO - Updating event: Imvuselelo: The revival
+2024-11-16 16:51:42,481 - root - INFO - Updating event: Morris Hirshfield Rediscovered
+2024-11-16 16:51:42,505 - root - INFO - Updating event: Full Figure
+2024-11-16 16:51:42,529 - root - INFO - Updating event: Kenneth Tam: All of M
+2024-11-16 16:51:42,558 - root - INFO - Updating event: Printing Protest
+2024-11-16 16:51:42,585 - root - INFO - Updating event: Reality Makes Them Dream: American Photography, 1929–1941
+2024-11-16 16:51:42,621 - root - INFO - Updating event: A Change of Scenery: Photographs of Leisure in the Landscape
+2024-11-16 16:51:42,646 - root - INFO - Updating event: Yinka Shonibare CBE, RA: The American Library
+2024-11-16 16:51:42,672 - root - INFO - Updating event: A young Yu: Mourning Rituals
+2024-11-16 16:51:42,703 - root - INFO - Updating event: East of the Pacific: Making Histories of Asian American Art
+2024-11-16 16:51:42,736 - root - INFO - Updating event: At Home/On Stage: Asian American Representation in Photography and Film
+2024-11-16 16:51:42,761 - root - INFO - Updating event: Aura: Art and Authenticity
+2024-11-16 16:51:42,827 - root - INFO - Updating event: LJ Roberts: Carry You With Me
+2024-11-16 16:51:42,861 - root - INFO - Updating event: The Marmor Collection: Color as Form in Prints, 1953–1971
+2024-11-16 16:51:42,887 - root - INFO - Updating event: Ian Cheng: Emissary Sunsets The Self
+2024-11-16 16:51:42,913 - root - INFO - Updating event: Art/Object: Contemporary Works between Mediums
+2024-11-16 16:51:42,937 - root - INFO - Updating event: The Marmor Collection: Black and White Prints from the 1970s
+2024-11-16 16:51:42,956 - root - INFO - [sf] Finished scrape for Cantor Arts Center
+2024-11-16 16:51:42,963 - root - ERROR - [Error processing event 'No Spectators: The Art of Burning Man-Oakland Museum of California': unconverted data remains:  00:00:00
+2024-11-16 16:51:42,985 - root - INFO - Database contains 16 venues and 668 events
+2024-11-16 16:51:42,985 - root - INFO - Scraping took 0 min, 1 sec
+2024-11-16 16:51:42,992 - root - INFO - Database size recorded
+2024-11-16 16:51:42,992 - root - INFO - Finished
+2024-11-16 17:54:16,085 - root - INFO - ----------NEW LOG----------
+2024-11-16 17:54:18,728 - root - INFO - Starting the scraping process
+2024-11-16 17:54:18,730 - root - INFO - Selected regions: ['la']
+2024-11-16 17:54:18,730 - root - INFO - [la] Starting scrape for LACMA
+2024-11-16 17:57:41,455 - root - INFO - ----------NEW LOG----------
+2024-11-16 17:57:45,537 - root - INFO - Starting the scraping process
+2024-11-16 17:57:45,539 - root - INFO - Selected regions: ['la']
+2024-11-16 17:57:45,539 - root - INFO - [la] Starting scrape for LACMA
+2024-11-16 17:57:45,884 - root - WARNING - Empty or invalid JSON file at docs/data/la_events.json, returning empty list
+2024-11-16 18:01:49,572 - root - INFO - ----------NEW LOG----------
+2024-11-16 18:01:52,397 - root - INFO - Starting the scraping process
+2024-11-16 18:01:52,397 - root - INFO - Selected venues: ['Cantor Arts Center']
+2024-11-16 18:01:52,397 - root - INFO - [sf] Starting scrape for Cantor Arts Center
+2024-11-16 18:01:52,557 - root - INFO - Updating event: Dwelling: New Acquisitions
+2024-11-16 18:01:52,589 - root - INFO - Updating event: Spirit House
+2024-11-16 18:01:52,628 - root - INFO - Updating event: Livien Yin: Thirsty
+2024-11-16 18:01:52,656 - root - INFO - Updating event: TT Takemoto: Remembering in the Absence of Memory
+2024-11-16 18:01:52,678 - root - INFO - Updating event: Archive Rooms
+2024-11-16 18:01:52,699 - root - INFO - Updating event: The Faces of Ruth Asawa
+2024-11-16 18:01:52,883 - root - INFO - Updating event: Second Nature: Photography in the Age of the Anthropocene
+2024-11-16 18:01:52,906 - root - INFO - Updating event: Tiffany Sia: No Place
+2024-11-16 18:01:53,090 - root - INFO - Updating event: Day Jobs
+2024-11-16 18:01:53,115 - root - INFO - Updating event: Sofía Gallisá Muriente: Celaje (Cloudscape)
+2024-11-16 18:01:53,147 - root - INFO - Updating event: Beyond Here: The Judy and Sidney Zuber Collection of Latin American Photography
+2024-11-16 18:01:53,170 - root - INFO - Updating event: Imvuselelo: The revival
+2024-11-16 18:01:53,196 - root - INFO - Updating event: Morris Hirshfield Rediscovered
+2024-11-16 18:01:53,216 - root - INFO - Updating event: Full Figure
+2024-11-16 18:01:53,237 - root - INFO - Updating event: Kenneth Tam: All of M
+2024-11-16 18:01:53,258 - root - INFO - Updating event: Printing Protest
+2024-11-16 18:01:53,279 - root - INFO - Updating event: Reality Makes Them Dream: American Photography, 1929–1941
+2024-11-16 18:01:53,320 - root - INFO - Updating event: A Change of Scenery: Photographs of Leisure in the Landscape
+2024-11-16 18:01:53,350 - root - INFO - Updating event: Yinka Shonibare CBE, RA: The American Library
+2024-11-16 18:01:53,380 - root - INFO - Updating event: A young Yu: Mourning Rituals
+2024-11-16 18:01:53,401 - root - INFO - Updating event: East of the Pacific: Making Histories of Asian American Art
+2024-11-16 18:01:53,425 - root - INFO - Updating event: At Home/On Stage: Asian American Representation in Photography and Film
+2024-11-16 18:01:53,451 - root - INFO - Updating event: Aura: Art and Authenticity
+2024-11-16 18:01:53,474 - root - INFO - Updating event: LJ Roberts: Carry You With Me
+2024-11-16 18:01:53,495 - root - INFO - Updating event: The Marmor Collection: Color as Form in Prints, 1953–1971
+2024-11-16 18:01:53,518 - root - INFO - Updating event: Ian Cheng: Emissary Sunsets The Self
+2024-11-16 18:01:53,541 - root - INFO - Updating event: Art/Object: Contemporary Works between Mediums
+2024-11-16 18:01:53,564 - root - INFO - Updating event: The Marmor Collection: Black and White Prints from the 1970s
+2024-11-16 18:01:53,581 - root - INFO - [sf] Finished scrape for Cantor Arts Center
+2024-11-16 18:01:53,587 - root - ERROR - [Error processing event 'No Spectators: The Art of Burning Man-Oakland Museum of California': unconverted data remains:  00:00:00
+2024-11-16 18:01:53,612 - root - INFO - Database contains 16 venues and 668 events
+2024-11-16 18:01:53,612 - root - INFO - Scraping took 0 min, 1 sec
+2024-11-16 18:01:54,099 - root - INFO - Database size recorded
+2024-11-16 18:01:54,099 - root - INFO - Finished
+2024-11-16 18:02:10,886 - root - INFO - ----------NEW LOG----------
+2024-11-16 18:02:10,887 - root - INFO - Starting the scraping process
+2024-11-16 18:02:10,887 - root - INFO - Selected regions: ['la']
+2024-11-16 18:02:10,887 - root - INFO - [la] Starting scrape for LACMA
+2024-11-16 18:02:11,364 - root - WARNING - Empty or invalid JSON file at docs/data/la_events.json, returning empty dict
+2024-11-16 18:02:11,364 - root - INFO - Updating event: Mapping the Infinite: Cosmologies Across Cultures
+2024-11-16 18:02:11,365 - root - INFO - Updating event: We Live in Painting: The Nature of Color in Mesoamerican Art
+2024-11-16 18:02:11,365 - root - INFO - Updating event: Josiah McElheny: Island Universe
+2024-11-16 18:02:11,366 - root - INFO - Updating event: Magdalena Suarez Frimkess: The Finest Disregard
+2024-11-16 18:02:11,366 - root - INFO - Updating event: Simone Leigh
+2024-11-16 18:02:11,367 - root - INFO - Updating event: New Acquisitions to the Rifkind Center
+2024-11-16 18:02:11,367 - root - INFO - Updating event: Ai Weiwei: Circle of Animals/Zodiac Heads
+2024-11-16 18:02:11,368 - root - INFO - Updating event: Modern Art
+2024-11-16 18:02:11,606 - root - INFO - Updating event: Digital Witness: Revolutions in Design, Photography, and Film
+2024-11-16 18:02:11,607 - root - INFO - Updating event: Imagining Black Diasporas: 21st-Century Art and Poetics
+2024-11-16 18:02:11,608 - root - INFO - Updating event: Realms of the Dharma: Buddhist Art across Asia
+2024-11-16 18:02:11,836 - root - INFO - Updating event: American Artist: The Monophobic Response
+2024-11-16 18:02:11,837 - root - INFO - Updating event: ED RUSCHA / NOW THEN
+2024-11-16 18:02:11,837 - root - INFO - Updating event: Zeng Fanzhi: Near and Far/Now and Then
+2024-11-16 18:02:11,838 - root - INFO - Updating event: Dining with the Sultan at Charles White Elementary School
+2024-11-16 18:02:11,839 - root - INFO - Updating event: Dining with the Sultan: The Fine Art of Feasting
+2024-11-16 18:02:11,840 - root - INFO - Updating event: Painting in the River of Angels: Judy Baca and The Great Wall
+2024-11-16 18:02:11,841 - root - INFO - Updating event: Vincent Valdez and Ry Cooder: El Chavez Ravine
+2024-11-16 18:02:11,841 - root - INFO - Updating event: Imagined Fronts: The Great War and Global Media
+2024-11-16 18:02:11,842 - root - INFO - [la] Finished scrape for LACMA
+2024-11-16 18:02:11,849 - root - ERROR - [Error processing event 'No Spectators: The Art of Burning Man-Oakland Museum of California': unconverted data remains:  00:00:00
+2024-11-16 18:02:11,871 - root - INFO - Database contains 16 venues and 668 events
+2024-11-16 18:02:11,872 - root - INFO - Scraping took 0 min, 1 sec
+2024-11-16 18:02:11,876 - root - INFO - Database size recorded
+2024-11-16 18:02:11,876 - root - INFO - Finished
+2024-11-16 18:02:39,830 - root - INFO - ----------NEW LOG----------
+2024-11-16 18:02:39,833 - root - INFO - Starting the scraping process
+2024-11-16 18:02:39,834 - root - INFO - Selected regions: ['la']
+2024-11-16 18:02:39,834 - root - INFO - [la] Starting scrape for LACMA
+2024-11-16 18:02:40,119 - root - INFO - Updating event: Mapping the Infinite: Cosmologies Across Cultures
+2024-11-16 18:02:40,122 - root - INFO - Updating event: We Live in Painting: The Nature of Color in Mesoamerican Art
+2024-11-16 18:02:40,124 - root - INFO - Updating event: Josiah McElheny: Island Universe
+2024-11-16 18:02:40,125 - root - INFO - Updating event: Magdalena Suarez Frimkess: The Finest Disregard
+2024-11-16 18:02:40,127 - root - INFO - Updating event: Simone Leigh
+2024-11-16 18:02:40,128 - root - INFO - Updating event: New Acquisitions to the Rifkind Center
+2024-11-16 18:02:40,129 - root - INFO - Updating event: Ai Weiwei: Circle of Animals/Zodiac Heads
+2024-11-16 18:02:40,131 - root - INFO - Updating event: Modern Art
+2024-11-16 18:02:40,374 - root - INFO - Updating event: Digital Witness: Revolutions in Design, Photography, and Film
+2024-11-16 18:02:40,375 - root - INFO - Updating event: Imagining Black Diasporas: 21st-Century Art and Poetics
+2024-11-16 18:02:40,376 - root - INFO - Updating event: Realms of the Dharma: Buddhist Art across Asia
+2024-11-16 18:02:40,646 - root - INFO - Updating event: American Artist: The Monophobic Response
+2024-11-16 18:02:40,648 - root - INFO - Updating event: ED RUSCHA / NOW THEN
+2024-11-16 18:02:40,649 - root - INFO - Updating event: Zeng Fanzhi: Near and Far/Now and Then
+2024-11-16 18:02:40,650 - root - INFO - Updating event: Dining with the Sultan at Charles White Elementary School
+2024-11-16 18:02:40,652 - root - INFO - Updating event: Dining with the Sultan: The Fine Art of Feasting
+2024-11-16 18:02:40,653 - root - INFO - Updating event: Painting in the River of Angels: Judy Baca and The Great Wall
+2024-11-16 18:02:40,654 - root - INFO - Updating event: Vincent Valdez and Ry Cooder: El Chavez Ravine
+2024-11-16 18:02:40,655 - root - INFO - Updating event: Imagined Fronts: The Great War and Global Media
+2024-11-16 18:02:40,656 - root - INFO - [la] Finished scrape for LACMA
+2024-11-16 18:02:40,665 - root - ERROR - [Error processing event 'No Spectators: The Art of Burning Man-Oakland Museum of California': unconverted data remains:  00:00:00
+2024-11-16 18:02:40,693 - root - INFO - Database contains 16 venues and 668 events
+2024-11-16 18:02:40,693 - root - INFO - Scraping took 0 min, 0 sec
+2024-11-16 18:02:40,700 - root - INFO - Database size recorded
+2024-11-16 18:02:40,700 - root - INFO - Finished
