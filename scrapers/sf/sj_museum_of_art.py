@@ -16,7 +16,7 @@ def convert_date_to_dt(date_string):
     else:
         return None
 
-def scrape_sj_museum_of_art_exhibitions(env='prod'):
+def scrape_sj_museum_of_art_exhibitions(env='prod', region='sj'):
     """Scrape and process exhibitions from the San Jose Museum of Art."""
     
     def process_exhibitions(url, phase):
@@ -93,7 +93,7 @@ def scrape_sj_museum_of_art_exhibitions(env='prod'):
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
     # On View Exhibitions
     process_exhibitions('https://sjmusart.org/exhibitions-on-view', 'current')

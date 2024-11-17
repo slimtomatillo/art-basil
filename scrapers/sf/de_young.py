@@ -16,7 +16,7 @@ def convert_date_to_dt(date_string):
         date_dt = dt.date(year, month_num, day)
     return date_dt
 
-def scrape_de_young_and_legion_of_honor(env='prod'):
+def scrape_de_young_and_legion_of_honor(env='prod', region='sf'):
     """Scrape and process events from the de Young and Legion of Honor."""
 
     # Declare list of url dicts and then iterate through them
@@ -120,7 +120,7 @@ def scrape_de_young_and_legion_of_honor(env='prod'):
                             })
 
                         if env == 'prod':
-                            process_event(event_details)
+                            process_event(event_details, region)
 
                     except Exception as e:
                         logging.error(f"Error processing element for {u['venue']}: {e}", exc_info=True)

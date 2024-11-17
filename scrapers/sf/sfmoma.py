@@ -17,7 +17,7 @@ def convert_date_to_dt(date_string):
         date_dt = dt.date(year, month_num, day)
     return date_dt
 
-def scrape_sfmoma(env='prod'):
+def scrape_sfmoma(env='prod', region='sf'):
     """Scrape and process events from SFMOMA."""
     
     # Declare url
@@ -167,7 +167,7 @@ def scrape_sfmoma(env='prod'):
                 }
 
                 if env == 'prod':
-                    process_event(event_details)
+                    process_event(event_details, region)
 
             except Exception as e:
                 logging.error(f"Error processing event: {e}", exc_info=True)

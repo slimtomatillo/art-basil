@@ -18,7 +18,7 @@ def convert_date_to_dt(date_string):
 
     return dt.date(year, month_num, day)
 
-def scrape_bampfa_exhibitions(env='prod'):
+def scrape_bampfa_exhibitions(env='prod', region='sf'):
     """Scrape and process exhibitions from BAMPFA (Berkeley Art Museum and Pacific Film Archive)."""
 
     def process_exhibitions(url, phase):
@@ -112,7 +112,7 @@ def scrape_bampfa_exhibitions(env='prod'):
                 })
 
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
     # Scrape current exhibitions
     current_url = 'https://bampfa.org/on-view/exhibitions?field_event_series_type_value=1'

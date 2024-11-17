@@ -20,7 +20,7 @@ def convert_date_to_dt(date_string):
         date_dt = dt.date(year, month_num, day)
     return date_dt
 
-def scrape_cantor_exhibitions(env='prod'):
+def scrape_cantor_exhibitions(env='prod', region='sf'):
     """Scrape and process exhibitions from the Cantor Arts Center at Stanford University."""
     
     # Create dict to map our phases to the ones used by the venue
@@ -84,7 +84,7 @@ def scrape_cantor_exhibitions(env='prod'):
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
     # Scrape current exhibitions
     current_url = 'https://museum.stanford.edu/exhibitions'

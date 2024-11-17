@@ -33,7 +33,7 @@ def convert_date_to_dt(date_text):
     # Create the date object
     return dt.date(year, month, day)
 
-def scrape_oak_museum_of_ca_exhibitions(env='prod'):
+def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
     """Scrape and process events from the Oakland Museum of California (OMCA)."""
     
     def fetch_event_details(event_url):
@@ -157,7 +157,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod'):
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
             if env == 'prod':
-                process_event(event_details)
+                process_event(event_details, region)
 
         except Exception as e:
             logging.warning(f"Error parsing element of url {event_link}: {e}")

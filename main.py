@@ -2,83 +2,116 @@ import time
 import logging
 import pandas as pd
 import os
-from config import configure_logging
+from config import configure_logging, DB_FILES
 from processing import update_event_phases
-from utils import copy_json_file, load_db
-from scrapers import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, kala, cantor, museum_of_craft_and_design, sj_museum_of_art # Import other scrapers as needed
+from utils import load_db
+from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
+    kala, cantor, museum_of_craft_and_design, sj_museum_of_art
+from scrapers.la import lacma
 
-def main(env='prod', selected_venues=None, skip_venues=None, write_summary=True):
+def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=None):
+    """Return dictionary of venue:scraper pairs and venue-to-region mapping"""
+    all_scrapers = {
+        'sf': {
+            "de Young Museum": de_young.scrape_de_young_and_legion_of_honor,
+            "SFMOMA": sfmoma.scrape_sfmoma,
+            "Contemporary Jewish Museum": cjm.scrape_contemporary_jewish_museum,
+            "BAMPFA": bampfa.scrape_bampfa_exhibitions,
+            "SF Women Artists": sf_women_artists.scrape_sfwomenartists,
+            "Asian Art Museum": [
+                asian_art_museum.scrape_asian_art_museum_current_events,
+                asian_art_museum.scrape_asian_art_museum_past_events,
+            ],
+            "Oakland Museum of California": omca.scrape_oak_museum_of_ca_exhibitions,
+            "Kala Art Institute": kala.scrape_kala_exhibitions,
+            "Cantor Arts Center": cantor.scrape_cantor_exhibitions,
+            "Museum of Craft and Design": museum_of_craft_and_design.scrape_museum_of_craft_and_design_exhibitions,
+            "San Jose Museum of Art": sj_museum_of_art.scrape_sj_museum_of_art_exhibitions,
+        },
+        'la': {
+            "LACMA": lacma.scrape_lacma_exhibitions,
+        }
+    }
+    
+    # Create venue to region mapping
+    venue_to_region = {}
+    for region, scrapers in all_scrapers.items():
+        for venue in scrapers:
+            venue_to_region[venue] = region
+    
+    # Filter and flatten scrapers as before
+    if selected_regions:
+        all_scrapers = {k: v for k, v in all_scrapers.items() if k in selected_regions}
+    
+    venues = {}
+    for region_scrapers in all_scrapers.values():
+        venues.update(region_scrapers)
+    
+    if selected_venues:
+        venues = {k: v for k, v in venues.items() if k in selected_venues}
+    
+    if skip_venues:
+        venues = {k: v for k, v in venues.items() if k not in skip_venues}
+    
+    return venues, venue_to_region
+
+def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=None, write_summary=True):
     configure_logging(env)
     logging.info("----------NEW LOG----------")
-    
-    if env == 'prod':
-        try:
-            copy_json_file('docs/events_db.json', 'docs/events_db_copy.json')
-        except FileNotFoundError:
-            logging.warning('Original events_db.json file not found. No copy created.')
 
     start_time = time.time()
     logging.info('Starting the scraping process')
 
-    # Mapping venue names to their respective scraper functions
-    venues = {
-        "de Young Museum": de_young.scrape_de_young_and_legion_of_honor,
-        "SFMOMA": sfmoma.scrape_sfmoma,
-        "Contemporary Jewish Museum": cjm.scrape_contemporary_jewish_museum,
-        "BAMPFA": bampfa.scrape_bampfa_exhibitions,
-        "SF Women Artists": sf_women_artists.scrape_sfwomenartists,
-        "Asian Art Museum": [
-            asian_art_museum.scrape_asian_art_museum_current_events,
-            asian_art_museum.scrape_asian_art_museum_past_events,
-        ],
-        "Oakland Museum of California": omca.scrape_oak_museum_of_ca_exhibitions,
-        "Kala Art Institute": kala.scrape_kala_exhibitions,
-        "Cantor Arts Center": cantor.scrape_cantor_exhibitions,
-        "Museum of Craft and Design": museum_of_craft_and_design.scrape_museum_of_craft_and_design_exhibitions,
-        "San Jose Museum of Art": sj_museum_of_art.scrape_sj_museum_of_art_exhibitions,
-        # Add other scrapers here
-    }
-
+    # Log selection criteria if specified
+    if selected_regions:
+        logging.info(f"Selected regions: {selected_regions}")
     if selected_venues:
-        logging.info(f"Only scraping {selected_venues}")
-        venues = {k: v for k, v in venues.items() if k in selected_venues}
-
+        logging.info(f"Selected venues: {selected_venues}")
     if skip_venues:
-        logging.info(f"Skipping {skip_venues}")
-        venues = {k: v for k, v in venues.items() if k not in skip_venues}
+        logging.info(f"Skipping venues: {skip_venues}")
+
+    # Get both the scrapers and the mapping
+    venues, venue_to_region = get_venue_scrapers(selected_regions, selected_venues, skip_venues)
 
     for venue, scraper in venues.items():
-        logging.info(f"Starting scrape for {venue}")
+        region = venue_to_region[venue]
+        logging.info(f"[{region}] Starting scrape for {venue}")
         if isinstance(scraper, list):
-            # If scraper is a list (e.g., multiple functions for a venue), iterate through the list
             for s in scraper:
-                s(env=env)
+                s(env=env, region=region)
         else:
-            # Otherwise, call the single scraper function
-            scraper(env=env)
-        # Log the completion of scraping for each venue
-        logging.info(f"Finished scrape for {venue}")
+            scraper(env=env, region=region)
+        logging.info(f"[{region}] Finished scrape for {venue}")
 
     if env == 'prod' and write_summary:
-        # Correct misaligment between phase and end date
-        update_event_phases()
-
-        # Load db and count the venues and events
-        db = load_db()
-        event_count = sum(len(v) for v in db.values())
-        logging.info("Database contains {:,} venues and {:,} events".format(len(db), event_count))
+        # Load dbs and regions
+        # dbs = {region: load_db(db_file) for region, db_file in DB_FILES.items()}
+        # For now, only update the sf db
+        dbs = {region: load_db(db_file) for region, db_file in DB_FILES.items() if region == 'sf'}
+        
+        # Update the event phases for each db
+        for region, db in dbs.items():
+            update_event_phases(db, region)
+        
+        # Count the venues and events
+        event_count = sum(len(events) for db in dbs.values() for events in db.values())
+        venue_count = sum(len(db) for db in dbs.values())
+        logging.info("Database contains {:,} venues and {:,} events".format(venue_count, event_count))
+        
         # Capture the execution time and convert to minutes and seconds
         execution_time_s = round(time.time() - start_time, 1)
         minutes = int(execution_time_s // 60)
         seconds = int(execution_time_s % 60)
-        logging.info(f"Scraping took {minutes} minutes and {seconds} seconds")
+        logging.info(f"Scraping took {minutes} min, {seconds} sec")
+        
         # Record the number of venues and events in the db
-        file_path = 'docs/db_size.csv'
+        file_path = 'docs/data/db_size.csv'
         df = pd.DataFrame([{
             "timestamp": pd.Timestamp.now(),
-            "num_venues": len(db),
+            "num_venues": venue_count,
             "num_events": event_count,
-            "scrape_time_s": execution_time_s
+            "scrape_time_s": execution_time_s,
+            "regions": ','.join(selected_regions) if selected_regions else ','.join(dbs.keys())
         }])
         # Check if the file exists
         if os.path.exists(file_path):
