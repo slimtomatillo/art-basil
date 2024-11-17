@@ -131,7 +131,7 @@ let venuesCache = null; // Cache for storing the venue data
 async function fetchVenues() {
     const region = getRegion();
     try {
-        const response = await fetch(`/art-basil/docs/data/${region}_venues.json`);
+        const response = await fetch(`../data/${region}_venues.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -150,7 +150,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     const region = getRegion();
     
     // Load event data
-    fetch(`/art-basil/docs/data/${region}_events.json`)
+    fetch(`../data/${region}_events.json`)
         .then(response => response.json())
         .then(unsortedData => {
             // Assuming `sortEvents` expects and returns the whole dataset
