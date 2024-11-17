@@ -14185,3 +14185,673 @@ NameError: name 'timezone' is not defined
 2024-11-16 11:14:51,310 - root - INFO - Scraping took 2 minutes and 15 seconds
 2024-11-16 11:14:51,313 - root - INFO - Database size recorded
 2024-11-16 11:14:51,313 - root - INFO - Finished
+2024-11-17 11:13:50,344 - root - INFO - ----------NEW LOG----------
+2024-11-17 11:13:50,367 - root - INFO - Copied docs/events_db.json to docs/events_db_copy.json
+2024-11-17 11:13:50,367 - root - INFO - Starting the scraping process
+2024-11-17 11:13:50,367 - root - INFO - Starting scrape for de Young Museum
+2024-11-17 11:13:51,778 - root - INFO - Updating event: Robert Bechtle: Prints and Drawings
+2024-11-17 11:13:51,807 - root - INFO - Updating event: Nampeyo and the Sikyátki Revival
+2024-11-17 11:13:51,835 - root - INFO - Updating event: Art and War in the Renaissance: The Battle of Pavia Tapestries
+2024-11-17 11:13:51,862 - root - INFO - Updating event: Tamara de Lempicka
+2024-11-17 11:13:51,890 - root - INFO - Updating event: Matisse’s “Jazz” Unbound
+2024-11-17 11:13:51,918 - root - INFO - Updating event: Paul McCartney Photographs 1963–64: Eyes of the Storm
+2024-11-17 11:13:51,945 - root - INFO - Updating event: Leilah Babirye: We Have a History
+2024-11-17 11:13:51,973 - root - INFO - Updating event: About Place: Bay Area Artists from the Svane Gift
+2024-11-17 11:13:52,000 - root - INFO - Updating event: Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family
+2024-11-17 11:13:53,485 - root - INFO - Updating event: Mary Cassatt at Work
+2024-11-17 11:13:53,513 - root - INFO - Updating event: Dress Rehearsal: The Art of Theatrical Design
+2024-11-17 11:13:53,562 - root - INFO - Updating event: Wayne Thiebaud: Art Comes from Art
+2024-11-17 11:13:53,591 - root - INFO - Updating event: Celebrating 100 Years at the Legion of Honor
+2024-11-17 11:13:53,619 - root - INFO - Updating event: Yinka Shonibare
+2024-11-17 11:13:55,289 - root - INFO - Finished scrape for de Young Museum
+2024-11-17 11:13:55,289 - root - INFO - Starting scrape for SFMOMA
+2024-11-17 11:13:55,649 - root - INFO - Updating event: Get in the Game: Sports, Art, Culture
+2024-11-17 11:13:55,676 - root - INFO - Updating event: Amy Sherald: American Sublime
+2024-11-17 11:13:55,704 - root - INFO - Updating event: Consuelo Kanaga: Catch the Spirit
+2024-11-17 11:13:55,732 - root - INFO - Updating event: Fortuna and the Immortality Garden (Machine)
+2024-11-17 11:13:55,760 - root - INFO - Updating event: Unity through Skateboarding
+2024-11-17 11:13:55,788 - root - INFO - Updating event: Table Manners
+2024-11-17 11:13:55,816 - root - INFO - Updating event: When the World Is Watching
+2024-11-17 11:13:55,843 - root - INFO - Updating event: (Super)Natural: Paul Klee and Masako Miki
+2024-11-17 11:13:55,871 - root - INFO - Updating event: Count Me In
+2024-11-17 11:13:55,900 - root - INFO - Updating event: Yayoi Kusama: Dreaming of Earth’s Sphericity, I Would Offer My Love
+2024-11-17 11:13:55,927 - root - INFO - Updating event: Ragnar Kjartansson: The Visitors
+2024-11-17 11:13:55,955 - root - INFO - Updating event: Afterimages: Echoes of the 1960s from the Fisher and SFMOMA Collections
+2024-11-17 11:13:55,984 - root - INFO - Updating event: Alexander Calder: Dissonant Harmony
+2024-11-17 11:13:56,012 - root - INFO - Updating event: Bay Area Walls
+2024-11-17 11:13:56,039 - root - INFO - Updating event: Open Ended: SFMOMA's Collection, 1900 to Now
+2024-11-17 11:13:56,092 - root - INFO - Updating event: Freeform: Experiencing Abstraction
+2024-11-17 11:13:56,121 - root - INFO - Updating event: German Art After 1960
+2024-11-17 11:13:56,149 - root - INFO - Updating event: Artcade
+2024-11-17 11:13:56,177 - root - INFO - Updating event: Arborhythm
+2024-11-17 11:13:56,204 - root - INFO - Updating event: Barbara Stauffacher Solomon: Strips of Stripes
+2024-11-17 11:13:56,232 - root - INFO - Updating event: Yayoi Kusama: Aspiring to Pumpkin’s Love, the Love in My Heart
+2024-11-17 11:13:56,261 - root - INFO - Updating event: Wu Tsang: Of Whales
+2024-11-17 11:13:56,289 - root - INFO - Updating event: Olafur Eliasson: One-way colour tunnel
+2024-11-17 11:13:56,317 - root - INFO - Updating event: Julie Mehretu: HOWL, eon (I, II)
+2024-11-17 11:13:56,346 - root - INFO - Updating event: 2024 SECA Art Award Exhibition
+2024-11-17 11:13:56,374 - root - INFO - Updating event: New Work: Samson Young
+2024-11-17 11:13:56,404 - root - INFO - Updating event: New Work: Mary Lovelace O’Neal
+2024-11-17 11:13:56,435 - root - INFO - Updating event: Creative Growth: The House That Art Built
+2024-11-17 11:13:56,464 - root - INFO - Updating event: Wondering About Museums
+2024-11-17 11:13:56,492 - root - INFO - Updating event: What Matters: A Proposition in Eight Rooms
+2024-11-17 11:13:56,520 - root - INFO - Updating event: Art of Noise
+2024-11-17 11:13:56,549 - root - INFO - Updating event: Zanele Muholi: Eye Me
+2024-11-17 11:13:56,577 - root - INFO - Updating event: Marshall Brown Projects: Dequindre Civic Academy
+2024-11-17 11:13:56,597 - root - WARNING - No commas found in: june 22–25
+2024-11-17 11:13:56,606 - root - INFO - Updating event: Alexandra Pirici: Re-collection
+2024-11-17 11:13:56,634 - root - INFO - Updating event: Yayoi Kusama: Infinite Love
+2024-11-17 11:13:56,663 - root - INFO - Updating event: Sea Change: Photographs from the Collection
+2024-11-17 11:13:56,691 - root - INFO - Updating event: Susan Philipsz: Songs Sung in the First Person on Themes of Longing, Sympathy and Release
+2024-11-17 11:13:56,719 - root - INFO - Updating event: Wolfgang Tillmans: To look without fear
+2024-11-17 11:13:56,762 - root - INFO - Updating event: Sitting on Chrome: Mario Ayala, rafa esparza, and Guadalupe Rosales
+2024-11-17 11:13:56,790 - root - INFO - Updating event: New Work: Fernando Palma Rodríguez
+2024-11-17 11:13:56,819 - root - INFO - Updating event: Pacita Abad
+2024-11-17 11:13:56,846 - root - INFO - Updating event: Pan American Unity: A Mural by Diego Rivera
+2024-11-17 11:13:56,874 - root - INFO - Updating event: KLEE + BSS  Paul Klee and Barbara Stauffacher Solomon
+2024-11-17 11:13:56,902 - root - INFO - Updating event: Hung Liu: Witness
+2024-11-17 11:13:56,930 - root - INFO - Updating event: Kinship: Photography and Connection
+2024-11-17 11:13:56,949 - root - INFO - Finished scrape for SFMOMA
+2024-11-17 11:13:56,950 - root - INFO - Starting scrape for Contemporary Jewish Museum
+2024-11-17 11:13:57,347 - root - INFO - Updating event: California Jewish Open
+2024-11-17 11:13:57,377 - root - INFO - Updating event: Nicki Green: Firmament
+2024-11-17 11:13:57,405 - root - INFO - Updating event: Leah Rosenberg: When One Sees a Rainbow
+2024-11-17 11:13:57,433 - root - INFO - Updating event: L'Chaim: Celebrating Our Building at 15
+2024-11-17 11:13:57,461 - root - INFO - Updating event: Looted
+2024-11-17 11:13:57,490 - root - INFO - Updating event: Lamp of the Covenant: Dave Lane
+2024-11-17 11:13:57,732 - root - WARNING - Events not found for phase: future
+2024-11-17 11:13:58,111 - root - INFO - Updating event: Annie Albagli: We Become [Vessels]
+2024-11-17 11:13:58,139 - root - INFO - Updating event: RetroBlakesberg: The Music Never Stopped
+2024-11-17 11:13:58,167 - root - INFO - Updating event: First Light: Rituals of Glass and Neon Art
+2024-11-17 11:13:58,195 - root - INFO - Updating event: Radiant Practices: Illuminating Jewish Traditions
+2024-11-17 11:13:58,222 - root - INFO - Updating event: Virtual Exhibition—What We Hold: A Youth Audio Project
+2024-11-17 11:13:58,250 - root - INFO - Updating event: Mika Rottenberg: Spaghetti Blockchain
+2024-11-17 11:13:58,295 - root - INFO - Updating event: Cara Levine: To Survive I Need You to Survive
+2024-11-17 11:13:58,323 - root - INFO - Updating event: Gillian Laub: Family Matters
+2024-11-17 11:13:58,351 - root - INFO - Updating event: Virtual Exhibition—What We Hold: A Youth Audio Project
+2024-11-17 11:13:58,380 - root - INFO - Updating event: Oz is for Oznowicz: A Puppet Family's History
+2024-11-17 11:13:58,407 - root - INFO - Updating event: Tikkun: For the Cosmos, the Community, and Ourselves
+2024-11-17 11:13:58,435 - root - INFO - Updating event: The Jim Henson Exhibition: Imagination Unlimited
+2024-11-17 11:13:58,463 - root - INFO - Updating event: GOLEM: A Call to Action
+2024-11-17 11:13:58,491 - root - INFO - Updating event: Virtual Exhibition—What We Hold: A Youth Audio Project
+2024-11-17 11:13:58,518 - root - INFO - Updating event: Experience Leonard Cohen
+2024-11-17 11:13:58,546 - root - INFO - Updating event: Candice Breitz: I'm Your Man
+2024-11-17 11:13:58,574 - root - INFO - Updating event: Marshall Trammell in Residence
+2024-11-17 11:13:58,603 - root - INFO - Updating event: Judy Chicago: Cohanim
+2024-11-17 11:13:58,631 - root - INFO - Updating event: George Fok: Passing Through
+2024-11-17 11:13:58,660 - root - INFO - Updating event: Levi Strauss: A History of American Style
+2024-11-17 11:13:58,689 - root - INFO - Updating event: Predicting the Past: Zohar Studios, The Lost Years
+2024-11-17 11:13:58,716 - root - INFO - Updating event: Threads of Jewish Life: Ritual and Other Textiles from the San Francisco Bay Area
+2024-11-17 11:13:58,744 - root - INFO - Updating event: Virtual Exhibition—What We Hold: A Youth Audio Project
+2024-11-17 11:13:58,772 - root - INFO - Updating event: What We Hold: A Youth Audio Project
+2024-11-17 11:13:58,800 - root - INFO - Updating event: Daria Martin: Tonight the World
+2024-11-17 11:13:58,828 - root - INFO - Updating event: Annabeth Rosen: Fired, Broken, Gathered, Heaped
+2024-11-17 11:13:58,856 - root - INFO - Updating event: Izidora Leber LETHE: Peristyle
+2024-11-17 11:13:58,884 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art—Oxossi Ayofemi and Risa Wechsler
+2024-11-17 11:13:58,928 - root - INFO - Updating event: Show Me as I Want to Be Seen
+2024-11-17 11:13:58,957 - root - INFO - Updating event: Lew the Jew and His Circle: Origins of American Tattoo
+2024-11-17 11:13:58,985 - root - INFO - Updating event: What We Hold: Youth Voices on Roots and What Matters Most
+2024-11-17 11:13:59,013 - root - INFO - Updating event: Textile Lab
+2024-11-17 11:13:59,041 - root - INFO - Updating event: Veiled Meanings: Fashioning Jewish Dress, from the Collection of The Israel Museum, Jerusalem
+2024-11-17 11:13:59,068 - root - INFO - Updating event: Contraption: Rediscovering California Jewish Artists
+2024-11-17 11:13:59,096 - root - INFO - Updating event: Kutiman: offgrid offline
+2024-11-17 11:13:59,125 - root - INFO - Updating event: The Art of Rube Goldberg
+2024-11-17 11:13:59,153 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art—Allison Smith and Christina Zetterlund
+2024-11-17 11:13:59,181 - root - INFO - Updating event: Sabbath: The 2017 Dorothy Saxe Invitational
+2024-11-17 11:13:59,208 - root - INFO - Updating event: Jewish Folktales Retold: Artist as Maggid
+2024-11-17 11:13:59,236 - root - INFO - Updating event: The 613 by Archie Rand
+2024-11-17 11:13:59,264 - root - INFO - Updating event: Sukkah Studio
+2024-11-17 11:13:59,292 - root - INFO - Updating event: Roz Chast: Cartoon Memoirs
+2024-11-17 11:13:59,320 - root - INFO - Updating event: What We Hold
+2024-11-17 11:13:59,348 - root - INFO - Updating event: The Yud Video Project
+2024-11-17 11:13:59,376 - root - INFO - Updating event: Cary Leibowitz: Museum Show
+2024-11-17 11:13:59,404 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art—Kota Ezawa and James Kirby Rogers
+2024-11-17 11:13:59,433 - root - INFO - Updating event: From Generation to Generation: Inherited Memory and Contemporary Art
+2024-11-17 11:13:59,461 - root - INFO - Updating event: Ned Kahn: Negev Wheel
+2024-11-17 11:13:59,489 - root - INFO - Updating event: Stanley Kubrick: The Exhibition
+2024-11-17 11:13:59,517 - root - INFO - Updating event: Pour Crever by Trimpin
+2024-11-17 11:13:59,562 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art—Jenny Odell and Philip Buscemi
+2024-11-17 11:13:59,590 - root - INFO - Updating event: Bill Graham and the Rock & Roll Revolution
+2024-11-17 11:13:59,618 - root - INFO - Updating event: Hardly Strictly Warren Hellman
+2024-11-17 11:13:59,646 - root - INFO - Updating event: Roman Vishniac Rediscovered
+2024-11-17 11:13:59,673 - root - INFO - Updating event: Chasing Justice
+2024-11-17 11:13:59,701 - root - INFO - Updating event: NEAT: New Experiments in Art and Technology
+2024-11-17 11:13:59,729 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art—David Wilson and Francesco Spagnolo
+2024-11-17 11:13:59,757 - root - INFO - Updating event: Amy Winehouse: A Family Portait
+2024-11-17 11:13:59,785 - root - INFO - Updating event: You Know I’m No Good
+2024-11-17 11:13:59,813 - root - INFO - Updating event: X Is For
+2024-11-17 11:13:59,841 - root - INFO - Updating event: Night Begins the Day: Rethinking Space, Time, and Beauty
+2024-11-17 11:13:59,868 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art—Anthony Discenza and Peter Straub
+2024-11-17 11:13:59,897 - root - INFO - Updating event: Bound to Be Held: A Book Show
+2024-11-17 11:13:59,927 - root - INFO - Updating event: Poland and Palestine: Two Lands and Two Skies
+2024-11-17 11:13:59,955 - root - INFO - Updating event: Letters to Afar
+2024-11-17 11:13:59,983 - root - INFO - Updating event: Our Roots
+2024-11-17 11:14:00,012 - root - INFO - Updating event: The 2015 Dorothy Saxe Invitational: Tzedakah Box
+2024-11-17 11:14:00,040 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art—Helena Keeffe and Jessica Prentice
+2024-11-17 11:14:00,068 - root - INFO - Updating event: J. Otto Seibold and Mr. Lunch
+2024-11-17 11:14:00,097 - root - INFO - Updating event: Arnold Newman: Masterclass
+2024-11-17 11:14:00,125 - root - INFO - Updating event: In That Case: Havruta in Contemporary Art: Lindsey White and Ron Lynch
+2024-11-17 11:14:00,153 - root - INFO - Updating event: Project Mah Jongg
+2024-11-17 11:14:00,181 - root - INFO - Updating event: Designing Home: Jews and Midcentury Modernism
+2024-11-17 11:14:00,225 - root - INFO - Updating event: Forever Now!
+2024-11-17 11:14:00,253 - root - INFO - Updating event: To Build & To Be Built: Kibbutz History
+2024-11-17 11:14:00,281 - root - INFO - Updating event: Arthur Szyk and the Art of the Haggadah
+2024-11-17 11:14:00,309 - root - INFO - Updating event: Frog and Toad and the World of Arnold Lobel
+2024-11-17 11:14:00,337 - root - INFO - Updating event: Jason Lazarus: Live Archive
+2024-11-17 11:14:00,365 - root - INFO - Updating event: Work in Progress: Considering Utopia
+2024-11-17 11:14:00,394 - root - INFO - Updating event: StoryCorps StoryBooth
+2024-11-17 11:14:00,422 - root - INFO - Updating event: Beyond Belief: 100 Years of the Spiritual in Modern Art: Highlights from SFMOMA’s Collection
+2024-11-17 11:14:00,450 - root - INFO - Updating event: Beat Memories: The Photographs of Allen Ginsberg
+2024-11-17 11:14:00,477 - root - INFO - Updating event: Stanley Saitowitz: Judaica
+2024-11-17 11:14:00,505 - root - INFO - Updating event: Kehinde Wiley | The World Stage: Israel
+2024-11-17 11:14:00,532 - root - INFO - Updating event: California Dreaming: Jewish Life in the Bay Area from the Gold Rush to the Present
+2024-11-17 11:14:00,560 - root - INFO - Updating event: The Snowy Day and the Art of Ezra Jack Keats
+2024-11-17 11:14:00,588 - root - INFO - Updating event: The Radical Camera: New York’s Photo League, 1936–1951
+2024-11-17 11:14:00,615 - root - INFO - Updating event: Our Lens
+2024-11-17 11:14:00,643 - root - INFO - Updating event: Do Not Destroy: Trees, Art, and Jewish Thought: An Exhibition and The Dorothy Saxe Invitational
+2024-11-17 11:14:00,671 - root - INFO - Updating event: Six-Word Memoirs on Jewish Life: Live from The CJM!
+2024-11-17 11:14:00,699 - root - INFO - Updating event: Houdini: Art and Magic
+2024-11-17 11:14:00,727 - root - INFO - Updating event: "Being Jewish": A Bay Area Portrait
+2024-11-17 11:14:00,755 - root - INFO - Updating event: Charlotte Salomon: Life? Or Theatre?
+2024-11-17 11:14:00,782 - root - INFO - Updating event: Seeing Gertrude Stein: Five Stories
+2024-11-17 11:14:00,810 - root - INFO - Updating event: The Ping Pong Project
+2024-11-17 11:14:00,856 - root - INFO - Updating event: Jacques Lipchitz: Hagar in the Desert
+2024-11-17 11:14:00,885 - root - INFO - Updating event: Are We There Yet?: 5000 Years of Answering Questions with Questions
+2024-11-17 11:14:00,913 - root - INFO - Updating event: As It Is Written: Project 304,805
+2024-11-17 11:14:00,941 - root - INFO - Updating event: Reclaimed: Paintings from the Collection of Jacques Goudstikker
+2024-11-17 11:14:00,969 - root - INFO - Updating event: Black Sabbath: The Secret Musical History of Black–Jewish Relations
+2024-11-17 11:14:00,997 - root - INFO - Updating event: Curious George Saves the Day: The Art of Margret and H. A. Rey
+2024-11-17 11:14:01,025 - root - INFO - Updating event: There's a Mystery There: Sendak on Sendak
+2024-11-17 11:14:01,052 - root - INFO - Updating event: Maira Kalman: Various Illuminations (of a Crazy World)
+2024-11-17 11:14:01,081 - root - INFO - Updating event: Reinventing Ritual: Contemporary Art and Design for Jewish Life
+2024-11-17 11:14:01,109 - root - INFO - Updating event: Jews on Vinyl
+2024-11-17 11:14:01,137 - root - INFO - Updating event: Our Struggle: Responding to Mein Kampf
+2024-11-17 11:14:01,166 - root - INFO - Updating event: Chagall and the Artists of the Russian Jewish Theater, 1919–1949
+2024-11-17 11:14:01,194 - root - INFO - Updating event: From The New Yorker to Shrek: The Art of WIlliam Steig
+2024-11-17 11:14:01,222 - root - INFO - Updating event: Susan Hiller: The J.Street Project
+2024-11-17 11:14:01,250 - root - INFO - Updating event: New Works/Old Story: 80 Artists at the Passover Table—The Dorothy Saxe Invitational
+2024-11-17 11:14:01,278 - root - INFO - Updating event: Dateline 09—Adi Nes: Biblical Stories and Yael Bartana: Short Memory
+2024-11-17 11:14:01,305 - root - INFO - Updating event: Warhol's Jews: Ten Portraits Reconsidered
+2024-11-17 11:14:01,333 - root - INFO - Updating event: John Zorn Presents the Aleph-Bet Sound Project
+2024-11-17 11:14:01,361 - root - INFO - Updating event: In the Beginning: Artists Respond to Genesis
+2024-11-17 11:14:01,390 - root - INFO - Updating event: Exposing Identities—Young Photographers Explore Culture, Community, and Self
+2024-11-17 11:14:01,419 - root - INFO - Updating event: The Jewish Identity Project: New American Photography
+2024-11-17 11:14:01,447 - root - INFO - Updating event: Art of Living: Contemporary Photography and Video from the Israel Museum
+2024-11-17 11:14:01,492 - root - INFO - Updating event: Intersections: Reading the Space
+2024-11-17 11:14:01,520 - root - INFO - Updating event: Scents of Purpose: Artists Interpret the Spice Box
+2024-11-17 11:14:01,548 - root - INFO - Updating event: The Jewish Journey: Frederic Brenner's Photographic Odyssey
+2024-11-17 11:14:01,575 - root - INFO - Updating event: 100 Artists See God
+2024-11-17 11:14:01,603 - root - INFO - Updating event: Hidden in the Walls
+2024-11-17 11:14:01,631 - root - INFO - Updating event: Sharing the Screen
+2024-11-17 11:14:01,659 - root - INFO - Updating event: Stephanie Snyder: Hamakom/The Place
+2024-11-17 11:14:01,686 - root - INFO - Updating event: Ben Katchor: Picture Stories
+2024-11-17 11:14:01,714 - root - INFO - Updating event: Face(t)s of Memory: Found Photographs and Family Albums
+2024-11-17 11:14:01,743 - root - INFO - Updating event: Sophie Calle: Public Places—Private Spaces
+2024-11-17 11:14:01,776 - root - INFO - Updating event: To the Rescue: Eight Artists in an Archive
+2024-11-17 11:14:01,806 - root - INFO - Updating event: Making Change: 100 Artists Interpret the Tzedakah Box
+2024-11-17 11:14:01,826 - root - INFO - Finished scrape for Contemporary Jewish Museum
+2024-11-17 11:14:01,826 - root - INFO - Starting scrape for BAMPFA
+2024-11-17 11:14:07,477 - root - INFO - Updating event: Making Their Mark: Works from the Shah Garg Collection
+2024-11-17 11:14:07,505 - root - INFO - Updating event: Art Wall / Rose D’Amato: Mission Chevrolet
+2024-11-17 11:14:07,534 - root - INFO - Updating event: MATRIX 285 / Young Joon Kwak: Resistance Pleasure
+2024-11-17 11:14:07,562 - root - INFO - Updating event: To Exalt the Ephemeral: The (Im)permanent Collection
+2024-11-17 11:14:07,590 - root - INFO - Updating event: Teaching Wall / Water, Art, and California
+2024-11-17 11:14:07,618 - root - INFO - Updating event: On the Outdoor Screen / Kathryn Andrews: Victoria Woodhull, Belva Ann Lockwood, Abigail Scott Duniway [ . . . ]
+2024-11-17 11:14:07,646 - root - INFO - Updating event: Abounaddara: The Ruins We Carry
+2024-11-17 11:14:07,674 - root - INFO - Updating event: Art Wall / Tanya Aguiñiga
+2024-11-17 11:14:07,701 - root - INFO - Updating event: MATRIX 286 / Amol K Patil: A Forest of Remembrance
+2024-11-17 11:14:07,749 - root - INFO - Updating event: Routed West: Twentieth-Century African American Quilts in California
+2024-11-17 11:14:08,093 - root - INFO - Updating event: BODY FREEDOM FOR EVERY(BODY)
+2024-11-17 11:14:08,121 - root - INFO - Updating event: On the Outdoor Screen / Michele Pred: United for Freedom
+2024-11-17 11:14:08,149 - root - INFO - Updating event: On the Outdoor Screen / Lena Wolff and Hope Meng: Art for Democracy
+2024-11-17 11:14:08,177 - root - INFO - Updating event: MITH & CO.: Fifty-Fourth Annual UC Berkeley Master of Fine Arts Exhibition
+2024-11-17 11:14:08,205 - root - INFO - Updating event: A Movement in Every Direction: Legacies of the Great Migration
+2024-11-17 11:14:08,233 - root - INFO - Updating event: On the Outdoor Screen: Navigating the Pilot School
+2024-11-17 11:14:08,261 - root - INFO - Updating event: Art Wall / Yee I-Lann: TIKAR/MEJA/PLASTIK
+2024-11-17 11:14:08,288 - root - INFO - Updating event: On the Outdoor Screen: Lessons in Semaphore
+2024-11-17 11:14:08,316 - root - INFO - Updating event: MATRIX 284 / Sin Wai Kin: The Story Changing
+2024-11-17 11:14:08,344 - root - INFO - Updating event: MATRIX 283 / Gabriel Chaile: No hay nada que destruya el corazón como la pobreza
+2024-11-17 11:14:08,372 - root - INFO - Updating event: Duane Linklater: mymothersside
+2024-11-17 11:14:08,400 - root - INFO - Updating event: MATRIX 282 / Griselda Rosas: Yo te cuido
+2024-11-17 11:14:08,451 - root - INFO - Updating event: MATRIX 281 / Kenneth Tam: The Founding of the World
+2024-11-17 11:14:08,479 - root - INFO - Updating event: Art Wall: Xylor Jane
+2024-11-17 11:14:08,506 - root - INFO - Updating event: What Has Been and What Could Be: The BAMPFA Collection
+2024-11-17 11:14:08,535 - root - INFO - Updating event: Fifty-Third Annual UC Berkeley Master of Fine Arts Exhibition
+2024-11-17 11:14:08,562 - root - INFO - Updating event: Alexandre Dumas’s Afro: Blackness Caricatured, Erased, and Back Again
+2024-11-17 11:14:08,591 - root - INFO - Updating event: On the Hour: Three short films by William Kentridge
+2024-11-17 11:14:08,619 - root - INFO - Updating event: Out of Africa: Selections from the Kramlich Collection
+2024-11-17 11:14:08,648 - root - INFO - Updating event: Apichatpong Weerasethakul "Morakot (Emerald)"
+2024-11-17 11:14:08,678 - root - INFO - Updating event: Amalia Mesa-Bains: Archaeology of Memory
+2024-11-17 11:14:08,706 - root - INFO - Updating event: Frank Moore / MATRIX 280: Theater of Human Melting
+2024-11-17 11:14:08,736 - root - INFO - Updating event: Rina Kimche
+2024-11-17 11:14:08,765 - root - INFO - Updating event: Endless Knot: Struggle and Healing in the Buddhist World
+2024-11-17 11:14:08,794 - root - INFO - Updating event: Art Wall: Luis Camnitzer
+2024-11-17 11:14:08,822 - root - INFO - Updating event: Lena Wolff and Hope Meng: VOTE
+2024-11-17 11:14:08,850 - root - INFO - Updating event: Undoing Time: Art and Histories of Incarceration
+2024-11-17 11:14:08,879 - root - INFO - Updating event: Hannah Levy / MATRIX 279
+2024-11-17 11:14:08,907 - root - INFO - Updating event: Fluxus Reverb: Events, Scores, Boxes & More
+2024-11-17 11:14:08,936 - root - INFO - Updating event: by Alison Knowles: A Retrospective (1960–2022)
+2024-11-17 11:14:08,964 - root - INFO - Updating event: Whitney Bradshaw: OUTCRY
+2024-11-17 11:14:08,994 - root - INFO - Updating event: The 52nd Annual UC Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:09,023 - root - INFO - Updating event: Candice Lin: Seeping, Rotting, Resting, Weeping
+2024-11-17 11:14:09,052 - root - INFO - Updating event: Art Wall: Caroline Kent
+2024-11-17 11:14:09,080 - root - INFO - Updating event: On the Hour: A Cool Million
+2024-11-17 11:14:09,108 - root - INFO - Updating event: The Artist’s Eye: Tammy Rae Carland, David Huffman, Lava Thomas, John Zurier
+2024-11-17 11:14:09,137 - root - INFO - Updating event: Recent Acquisitions from the BAMPFA Collection
+2024-11-17 11:14:09,165 - root - INFO - Updating event: Spiritual Mountains: The Art of Wesley Tongson
+2024-11-17 11:14:09,216 - root - INFO - Updating event: Lines of Thought
+2024-11-17 11:14:09,244 - root - INFO - Updating event: Jumana Manna / MATRIX 278
+2024-11-17 11:14:09,272 - root - INFO - Updating event: On the Hour: Night Watch
+2024-11-17 11:14:09,300 - root - INFO - Updating event: New Time: Art and Feminisms in the 21st Century
+2024-11-17 11:14:09,328 - root - INFO - Updating event: Shirin Neshat: Fervor
+2024-11-17 11:14:09,356 - root - INFO - Updating event: The Enduring Mark
+2024-11-17 11:14:09,384 - root - INFO - Updating event: Art Wall: Luchita Hurtado
+2024-11-17 11:14:09,412 - root - INFO - Updating event: The 51st Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:09,440 - root - INFO - Updating event: Kay Sekimachi: Geometries
+2024-11-17 11:14:09,470 - root - INFO - Updating event: The 50th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:09,500 - root - INFO - Updating event: Ulrike Ottinger / MATRIX 276
+2024-11-17 11:14:09,531 - root - INFO - Updating event: Present Tense: Five Centuries of Colonialism in Latin American and Caribbean Art
+2024-11-17 11:14:09,561 - root - INFO - Updating event: Beyond Boundaries: Buddhist Art of Gandhara
+2024-11-17 11:14:09,590 - root - INFO - Updating event: Orbits of Known and Unknown Objects: SFAI Histories / MATRIX 277
+2024-11-17 11:14:09,619 - root - INFO - Updating event: Catherine Opie: Political Landscapes
+2024-11-17 11:14:09,647 - root - INFO - Updating event: When All That Is Solid Melts into Air
+2024-11-17 11:14:09,676 - root - INFO - Updating event: Art for Human Rights: Peace Now!
+2024-11-17 11:14:09,704 - root - INFO - Updating event: Rosie Lee Tompkins: A Retrospective
+2024-11-17 11:14:09,734 - root - INFO - Updating event: Ron Nagle: Handsome Drifter
+2024-11-17 11:14:09,763 - root - INFO - Updating event: Brave Warriors and Fantastic Tales: The World According to Yoshitoshi
+2024-11-17 11:14:09,791 - root - INFO - Updating event: Lands of Promise and Peril: Geographies of California
+2024-11-17 11:14:09,819 - root - INFO - Updating event: Art Wall: Edie Fake
+2024-11-17 11:14:09,869 - root - INFO - Updating event: Sylvia Fein / MATRIX 275
+2024-11-17 11:14:09,897 - root - INFO - Updating event: BAMPFA AR—Augmented Time
+2024-11-17 11:14:09,926 - root - INFO - Updating event: Dennis Feldman: Photographs
+2024-11-17 11:14:09,954 - root - INFO - Updating event: Terry Fox: Resonance
+2024-11-17 11:14:09,983 - root - INFO - Updating event: Hinges: Sakaki Hyakusen and the Birth of Nanga Painting
+2024-11-17 11:14:10,011 - root - INFO - Updating event: Kader Attia / MATRIX 274
+2024-11-17 11:14:10,039 - root - INFO - Updating event: The San Quentin Project: Nigel Poor and the Men of San Quentin State Prison
+2024-11-17 11:14:10,067 - root - INFO - Updating event: Strange
+2024-11-17 11:14:10,096 - root - INFO - Updating event: Dennis Feldman: Photographs
+2024-11-17 11:14:10,126 - root - INFO - Updating event: Meditation in Motion: Zen Calligraphy from the Stuart Katz Collection
+2024-11-17 11:14:10,154 - root - INFO - Updating event: No Horizon: Helen Mirra and Sean Thackrey
+2024-11-17 11:14:10,183 - root - INFO - Updating event: Divine Women, Divine Wisdom
+2024-11-17 11:14:10,212 - root - INFO - Updating event: The 49th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:10,241 - root - INFO - Updating event: About Things Loved: Blackness and Belonging
+2024-11-17 11:14:10,272 - root - INFO - Updating event: Permanent Accusation: Art for Human Rights
+2024-11-17 11:14:10,302 - root - INFO - Updating event: Looking: The Art of Frederick Hammersley
+2024-11-17 11:14:10,331 - root - INFO - Updating event: Unlimited: Recent Gifts from the William Goodman and Victoria Belco Photography Collection
+2024-11-17 11:14:10,361 - root - INFO - Updating event: Art Wall: Carlos Amorales
+2024-11-17 11:14:10,389 - root - INFO - Updating event: Hans Hofmann: The Nature of Abstraction
+2024-11-17 11:14:10,417 - root - INFO - Updating event: Aaron Marcus: Early Works
+2024-11-17 11:14:10,445 - root - INFO - Updating event: Masako Miki / MATRIX 273
+2024-11-17 11:14:10,473 - root - INFO - Updating event: Get Dancin’: Selections from the Collection
+2024-11-17 11:14:10,527 - root - INFO - Updating event: Ink, Paper, Silk: One Hundred Years of Collecting Japanese Art
+2024-11-17 11:14:10,556 - root - INFO - Updating event: Arthur Jafa / MATRIX 272
+2024-11-17 11:14:10,584 - root - INFO - Updating event: Dimensionism: Modern Art in the Age of Einstein
+2024-11-17 11:14:10,613 - root - INFO - Updating event: Harvey Quaytman: Against the Static
+2024-11-17 11:14:10,642 - root - INFO - Updating event: Boundless: Contemporary Tibetan Artists at Home and Abroad
+2024-11-17 11:14:10,670 - root - INFO - Updating event: Redacted: Art for Human Rights
+2024-11-17 11:14:10,699 - root - INFO - Updating event: Old Masters in a New Light: Rediscovering the European Collection
+2024-11-17 11:14:10,728 - root - INFO - Updating event: Christina Quarles / MATRIX 271
+2024-11-17 11:14:10,757 - root - INFO - Updating event: Art Wall: Barbara Stauffacher Solomon
+2024-11-17 11:14:10,785 - root - INFO - Updating event: Cecilia Vicuña: About to Happen
+2024-11-17 11:14:10,814 - root - INFO - Updating event: Joanne Leonard: Intimate Documentary
+2024-11-17 11:14:10,845 - root - INFO - Updating event: Peter Hujar: Speed of Life
+2024-11-17 11:14:10,873 - root - INFO - Updating event: Way Bay 2
+2024-11-17 11:14:10,901 - root - INFO - Updating event: Color, Form, Unicorn: Recent Acquisitions
+2024-11-17 11:14:10,929 - root - INFO - Updating event: Alicia McCarthy and Ruby Neri / MATRIX 270
+2024-11-17 11:14:10,957 - root - INFO - Updating event: Master Traces, Transcultural Visions
+2024-11-17 11:14:10,985 - root - INFO - Updating event: The 48th Annual UC Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:11,013 - root - INFO - Updating event: Al Wong: Lost Sister
+2024-11-17 11:14:11,042 - root - INFO - Updating event: Cal Conversations: Dreaming the Lost Ming 夢回金陵
+2024-11-17 11:14:11,072 - root - INFO - Updating event: Agony in Effigy: Art, Truth, Pain, and the Body
+2024-11-17 11:14:11,101 - root - INFO - Updating event: Jay Heikes / MATRIX 269
+2024-11-17 11:14:11,129 - root - INFO - Updating event: Theresa Hak Kyung Cha: Avant Dictee
+2024-11-17 11:14:11,179 - root - INFO - Updating event: Breaking ICE
+2024-11-17 11:14:11,207 - root - INFO - Updating event: Way Bay
+2024-11-17 11:14:11,235 - root - INFO - Updating event: Art Wall: Karabo Poppy Moletsane
+2024-11-17 11:14:11,263 - root - INFO - Updating event: On the Hour / Hayoun Kwon
+2024-11-17 11:14:11,291 - root - INFO - Updating event: Veronica De Jesus / MATRIX 268
+2024-11-17 11:14:11,319 - root - INFO - Updating event: Repentant Monk: Illusion and Disillusion in the Art of Chen Hongshou
+2024-11-17 11:14:11,347 - root - INFO - Updating event: Global Lives Project
+2024-11-17 11:14:11,375 - root - INFO - Updating event: Buddhist Realms
+2024-11-17 11:14:11,403 - root - INFO - Updating event: Miyoko Ito / MATRIX 267
+2024-11-17 11:14:11,432 - root - INFO - Updating event: Gordon Parks: The Making of an Argument
+2024-11-17 11:14:11,459 - root - INFO - Updating event: Martin Wong: Human Instamatic
+2024-11-17 11:14:11,487 - root - INFO - Updating event: To the Letter:  Regarding the Written Word
+2024-11-17 11:14:11,515 - root - INFO - Updating event: On the Hour / JJ PEET
+2024-11-17 11:14:11,542 - root - INFO - Updating event: Information in the Flesh: Art for Human Rights
+2024-11-17 11:14:11,570 - root - INFO - Updating event: Ugo Rondinone: the world just makes me laugh
+2024-11-17 11:14:11,598 - root - INFO - Updating event: Divine Visions, Earthly Pleasures: Five Hundred Years of Indian Painting
+2024-11-17 11:14:11,627 - root - INFO - Updating event: Charles Howard: A Margin of Chaos
+2024-11-17 11:14:11,654 - root - INFO - Updating event: Buddhist Realms
+2024-11-17 11:14:11,682 - root - INFO - Updating event: The 47th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:11,710 - root - INFO - Updating event: Sam Contis / MATRIX 266
+2024-11-17 11:14:11,738 - root - INFO - Updating event: Irwin Kremen / MATRIX 265
+2024-11-17 11:14:11,766 - root - INFO - Updating event: Asher Hartman and Cliff Hengst / MATRIX 264
+2024-11-17 11:14:11,818 - root - INFO - Updating event: AMERICA AMERICA: Art for Human Rights
+2024-11-17 11:14:11,846 - root - INFO - Updating event: Erica Deeman: Silhouettes
+2024-11-17 11:14:11,874 - root - INFO - Updating event: Art Wall: Lawrence Weiner
+2024-11-17 11:14:11,903 - root - INFO - Updating event: Hippie Modernism: The Struggle for Utopia
+2024-11-17 11:14:11,932 - root - INFO - Updating event: Slow Reading / Slow Seeing
+2024-11-17 11:14:11,960 - root - INFO - Updating event: Michael Armitage / MATRIX 263
+2024-11-17 11:14:11,987 - root - INFO - Updating event: Buddhist Art from the Roof of the World
+2024-11-17 11:14:12,015 - root - INFO - Updating event: Andy Warhol: Still Lifes and Portraits
+2024-11-17 11:14:12,044 - root - INFO - Updating event: Covered in Time and History: The Films of Ana Mendieta
+2024-11-17 11:14:12,073 - root - INFO - Updating event: Fernando Botero: Art for Human Rights
+2024-11-17 11:14:12,102 - root - INFO - Updating event: GIF Collider 1.0
+2024-11-17 11:14:12,131 - root - INFO - Updating event: Mind Over Matter: Conceptual Art from the Collection
+2024-11-17 11:14:12,160 - root - INFO - Updating event: Pat O'Neill / MATRIX 262
+2024-11-17 11:14:12,189 - root - INFO - Updating event: Push and Pull: Hans Hofmann
+2024-11-17 11:14:12,217 - root - INFO - Updating event: Art Wall: Terri Friedman
+2024-11-17 11:14:12,245 - root - INFO - Updating event: Sojourner Truth, Photography, and the Fight Against Slavery
+2024-11-17 11:14:12,274 - root - INFO - Updating event: Buddhist Art from the Roof of the World
+2024-11-17 11:14:12,303 - root - INFO - Updating event: Berkeley Eye
+2024-11-17 11:14:12,333 - root - INFO - Updating event: This Just In: Recent Acquisitions
+2024-11-17 11:14:12,362 - root - INFO - Updating event: Summer Trees Casting Shade: Chinese Painting at Berkeley
+2024-11-17 11:14:12,392 - root - INFO - Updating event: The 46th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:12,422 - root - INFO - Updating event: Cecilia Edefalk / MATRIX 261
+2024-11-17 11:14:12,450 - root - INFO - Updating event: Otobong Nkanga / MATRIX 260
+2024-11-17 11:14:12,502 - root - INFO - Updating event: Architecture of Life
+2024-11-17 11:14:12,530 - root - INFO - Updating event: Will Brown / MATRIX 259
+2024-11-17 11:14:12,558 - root - INFO - Updating event: The 45th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition
+2024-11-17 11:14:12,586 - root - INFO - Updating event: Tarek Atoui / MATRIX 258
+2024-11-17 11:14:12,606 - root - INFO - Finished scrape for BAMPFA
+2024-11-17 11:14:12,606 - root - INFO - Starting scrape for SF Women Artists
+2024-11-17 11:14:15,708 - root - INFO - Updating event: Remembrances
+2024-11-17 11:14:16,770 - root - INFO - Updating event: Animalistic
+2024-11-17 11:14:17,750 - root - INFO - Updating event: Artists Choice 2024
+2024-11-17 11:14:18,717 - root - INFO - Updating event: Motion
+2024-11-17 11:14:19,865 - root - INFO - Updating event: August Abstractions
+2024-11-17 11:14:20,858 - root - INFO - Updating event: Illuminations
+2024-11-17 11:14:21,845 - root - INFO - Updating event: Radiating Pride- Free To Be Me
+2024-11-17 11:14:22,842 - root - INFO - Updating event: The Delicious World
+2024-11-17 11:14:23,997 - root - INFO - Updating event: Hue And Me
+2024-11-17 11:14:25,205 - root - INFO - Updating event: I Am!
+2024-11-17 11:14:26,173 - root - INFO - Updating event: Spring! Lush!
+2024-11-17 11:14:27,125 - root - INFO - Updating event: Street Life
+2024-11-17 11:14:28,132 - root - INFO - Updating event: Textures, Patterns & Shapes
+2024-11-17 11:14:29,111 - root - INFO - Updating event: Being Human
+2024-11-17 11:14:30,193 - root - INFO - Updating event: Artistic Vision
+2024-11-17 11:14:31,106 - root - INFO - Updating event: Annual Bay Area Artists’ Choice
+2024-11-17 11:14:32,076 - root - INFO - Updating event: New Work
+2024-11-17 11:14:33,189 - root - INFO - Updating event: Close-up
+2024-11-17 11:14:34,150 - root - INFO - Updating event: Reflection
+2024-11-17 11:14:35,321 - root - INFO - Updating event: Art Of Pride- Moving Forward
+2024-11-17 11:14:36,279 - root - INFO - Updating event: Black White And Shades Between
+2024-11-17 11:14:37,261 - root - INFO - Updating event: Embracing Nature
+2024-11-17 11:14:38,362 - root - INFO - Updating event: Color Pop!
+2024-11-17 11:14:39,375 - root - INFO - Updating event: Patterns & Shapes
+2024-11-17 11:14:40,459 - root - INFO - Updating event: Climate Change: Protecting Mother Earth
+2024-11-17 11:14:41,429 - root - INFO - Updating event: Photographer’s Eye
+2024-11-17 11:14:42,394 - root - INFO - Updating event: Holiday Spirit
+2024-11-17 11:14:43,388 - root - INFO - Updating event: Edge Of Abstraction
+2024-11-17 11:14:44,370 - root - INFO - Updating event: Artists’ Choice 2022
+2024-11-17 11:14:46,808 - root - INFO - Updating event: Being Human – The Figuratve Show
+2024-11-17 11:14:47,828 - root - INFO - Updating event: Patterns, Textures And Materials
+2024-11-17 11:14:48,797 - root - INFO - Updating event: Melting: Climate Crisis – Water Is Life
+2024-11-17 11:14:49,817 - root - INFO - Updating event: Intense Palette
+2024-11-17 11:14:50,853 - root - INFO - Updating event: Capture The Moment
+2024-11-17 11:14:51,837 - root - INFO - Updating event: Celebrating Women’s History Month
+2024-11-17 11:14:52,839 - root - INFO - Updating event: 1st Annual Photography & Digital Art Exhibition
+2024-11-17 11:14:54,008 - root - INFO - Updating event: Fresh Perspective
+2024-11-17 11:14:55,133 - root - INFO - Updating event: Artful Giving
+2024-11-17 11:14:56,174 - root - INFO - Updating event: Light And Shadow
+2024-11-17 11:14:57,154 - root - INFO - Updating event: Artists Choice 2021
+2024-11-17 11:14:58,103 - root - INFO - Updating event: Abstract World
+2024-11-17 11:14:59,104 - root - INFO - Updating event: Bold. Colors!
+2024-11-17 11:15:00,093 - root - INFO - Updating event: Verdant
+2024-11-17 11:15:01,062 - root - INFO - Updating event: Art Matters
+2024-11-17 11:15:02,181 - root - INFO - Updating event: Collage & Mixed Media
+2024-11-17 11:15:03,160 - root - INFO - Updating event: Scapes – City, Land And Sea
+2024-11-17 11:15:04,168 - root - INFO - Updating event: Patterns & Symmetry
+2024-11-17 11:15:05,252 - root - INFO - Updating event: Slice Of Life
+2024-11-17 11:15:06,311 - root - INFO - Updating event: Gift Of Art
+2024-11-17 11:15:07,538 - root - INFO - Updating event: Reflective
+2024-11-17 11:15:08,518 - root - INFO - Updating event: Artists Choice 2020
+2024-11-17 11:15:10,985 - root - INFO - Updating event: Free To Be
+2024-11-17 11:15:13,270 - root - INFO - Updating event: Sfwa Online Benefit Auction
+2024-11-17 11:15:18,174 - root - INFO - Updating event: Spirit Of San Francisco
+2024-11-17 11:15:20,078 - root - INFO - Updating event: Art And Activism
+2024-11-17 11:15:21,278 - root - INFO - Updating event: Curves & Shapes
+2024-11-17 11:15:22,245 - root - INFO - Updating event: Artist Choice 2019
+2024-11-17 11:15:23,215 - root - INFO - Updating event: Language And Letters
+2024-11-17 11:15:24,350 - root - INFO - Updating event: Hot Color
+2024-11-17 11:15:25,319 - root - INFO - Updating event: Memories
+2024-11-17 11:15:26,259 - root - INFO - Updating event: Season Of Abundance
+2024-11-17 11:15:27,224 - root - INFO - Updating event: Opposites
+2024-11-17 11:15:28,246 - root - INFO - Updating event: Celebrating Bay Area Culture
+2024-11-17 11:15:29,216 - root - INFO - Updating event: Textures & Patterns
+2024-11-17 11:15:30,214 - root - INFO - Updating event: Celebrating Women
+2024-11-17 11:15:31,200 - root - INFO - Updating event: What I Love
+2024-11-17 11:15:59,975 - root - INFO - Finished scrape for SF Women Artists
+2024-11-17 11:15:59,975 - root - INFO - Starting scrape for Asian Art Museum
+2024-11-17 11:16:00,264 - root - INFO - Updating event: Hallyu! The Korean Wave
+2024-11-17 11:16:00,299 - root - INFO - Updating event: Hallyu! The Korean Wave
+2024-11-17 11:16:00,330 - root - INFO - Updating event: Mayumi Oda
+2024-11-17 11:16:00,361 - root - INFO - Updating event: Selections from the Guru Nanak Janamsakhi
+2024-11-17 11:16:00,391 - root - INFO - Updating event: Fukusa
+2024-11-17 11:16:00,421 - root - INFO - Updating event: A Billion Buddhas: The Awakened Ones in Himalayan Tradition
+2024-11-17 11:16:00,453 - root - INFO - Updating event: Myself Mona Ahmed
+2024-11-17 11:16:00,483 - root - INFO - Updating event: Mountains of the Mind: A Chinese Landscape Journey
+2024-11-17 11:16:00,514 - root - INFO - Updating event: Ashwini Bhat: What Will It Take / For Us To Awake?
+2024-11-17 11:16:00,543 - root - INFO - Updating event: Southeast Asian Galleries
+2024-11-17 11:16:00,574 - root - INFO - Updating event: Community Feast
+2024-11-17 11:16:00,780 - root - INFO - Updating event: Resilient Traditions: Korean American Stories Told Through Paper
+2024-11-17 11:16:00,809 - root - INFO - Updating event: Murakami: Monsterized
+2024-11-17 11:16:00,838 - root - INFO - Updating event: Japanese Tastes in Chinese Ceramics
+2024-11-17 11:16:00,866 - root - INFO - Updating event: Jakhodo Today
+2024-11-17 11:16:00,924 - root - INFO - Updating event: Deities, Paragons, and Legends: Storytelling in Chinese Pictorial Arts
+2024-11-17 11:16:00,953 - root - INFO - Updating event: Japanese Ink Paintings
+2024-11-17 11:16:00,982 - root - INFO - Updating event: Into View: New Voices, New Stories
+2024-11-17 11:16:01,010 - root - INFO - Updating event: RAD (Research And Development)
+2024-11-17 11:16:01,040 - root - INFO - Updating event: Phoenix Kingdoms: The Last Splendor of China’s Bronze Age
+2024-11-17 11:16:01,069 - root - INFO - Updating event: Takashi Murakami
+2024-11-17 11:16:01,098 - root - INFO - Updating event: Jenifer K Wofford: Pattern Recognition
+2024-11-17 11:16:01,126 - root - INFO - Updating event: Afruz Amighi: My House, My Tomb
+2024-11-17 11:16:01,154 - root - INFO - Updating event: Zheng Chongbin: I Look for the Sky
+2024-11-17 11:16:01,183 - root - INFO - Updating event: Into View: Bernice Bing
+2024-11-17 11:16:01,212 - root - INFO - Updating event: Bearing Witness: Selected Works by Chiura Obata
+2024-11-17 11:16:01,241 - root - INFO - Updating event: Beyond Bollywood: 2000 Years of Dance in Art
+2024-11-17 11:16:01,269 - root - INFO - Updating event: Color Trip: Yoshida Hodaka’s Modern Prints
+2024-11-17 11:16:01,298 - root - INFO - Updating event: Past Continuous Tense
+2024-11-17 11:16:01,327 - root - INFO - Updating event: Kongkee: Warring States Cyberpunk
+2024-11-17 11:16:01,357 - root - INFO - Updating event: Delightful Luxury: The Art of Chinese Lacquer
+2024-11-17 11:16:01,386 - root - INFO - Updating event: The Heart of Zen
+2024-11-17 11:16:01,415 - root - INFO - Updating event: Bernice Bing: Open Call
+2024-11-17 11:16:01,443 - root - INFO - Updating event: Hell: Arts of Asian Underworlds
+2024-11-17 11:16:01,472 - root - INFO - Updating event: Chinese Ink Paintings: A Selection of Modern Masters
+2024-11-17 11:16:01,501 - root - INFO - Updating event: teamLab: Sketch Ocean
+2024-11-17 11:16:01,530 - root - INFO - Updating event: teamLab: Continuity
+2024-11-17 11:16:01,575 - root - INFO - Updating event: After Hope: Videos of Resistance
+2024-11-17 11:16:01,604 - root - INFO - Updating event: Memento: Jayashree Chakravarty and Lam Tung Pang
+2024-11-17 11:16:01,633 - root - INFO - Updating event: Chanel Miller: I was, I am, I will be
+2024-11-17 11:16:01,670 - root - INFO - Updating event: Carlos Villa: Worlds in Collision
+2024-11-17 11:16:01,707 - root - INFO - Updating event: Seeing Gender
+2024-11-17 11:16:01,736 - root - INFO - Updating event: Weaving Stories
+2024-11-17 11:16:01,775 - root - INFO - Updating event: When Rabbit Left the Moon
+2024-11-17 11:16:01,795 - root - INFO - Finished scrape for Asian Art Museum
+2024-11-17 11:16:01,795 - root - INFO - Starting scrape for Oakland Museum of California
+2024-11-17 11:16:02,153 - root - INFO - Updating event: Calli: The Art of Xicanx Peoples
+2024-11-17 11:16:02,587 - root - INFO - Updating event: Born of the Bear Dance: Dugan Aguilar’s Photographs of Native California
+2024-11-17 11:16:02,751 - root - INFO - Updating event: You Are Here: California Stories on the Map
+2024-11-17 11:16:03,151 - root - INFO - Updating event: Black Power
+2024-11-17 11:16:03,571 - root - INFO - Updating event: OMCA Kids: Nature Playspace
+2024-11-17 11:16:04,030 - root - INFO - Updating event: Collecting a Moment
+2024-11-17 11:16:04,051 - root - WARNING - Error parsing element of url https://museumca.org/on-view/collecting-a-moment/: 'NoneType' object has no attribute 'text'
+2024-11-17 11:16:04,051 - root - WARNING - Error parsing element of url https://museumca.org/on-view/collecting-a-moment/: 'NoneType' object has no attribute 'text'
+2024-11-17 11:16:04,051 - root - WARNING - Error parsing element of url https://museumca.org/on-view/collecting-a-moment/: 'NoneType' object has no attribute 'text'
+2024-11-17 11:16:04,051 - root - WARNING - Error parsing element of url https://museumca.org/on-view/collecting-a-moment/: 'NoneType' object has no attribute 'text'
+2024-11-17 11:16:04,462 - root - WARNING - Error parsing element of url https://museumca.org/on-view/por-el-pueblo/: list index out of range
+2024-11-17 11:16:04,901 - root - INFO - Updating event: Into the Brightness: Artists from Creativity Explored, Creative Growth & NIAD
+2024-11-17 11:16:05,336 - root - INFO - Updating event: Angela Davis–Seize the Time
+2024-11-17 11:16:05,789 - root - INFO - Updating event: Hella Feminist
+2024-11-17 11:16:06,225 - root - INFO - Updating event: Edith Heath: A Life in Clay
+2024-11-17 11:16:06,649 - root - INFO - Updating event: Mothership: Voyage Into Afrofuturism
+2024-11-17 11:16:06,668 - root - INFO - Finished scrape for Oakland Museum of California
+2024-11-17 11:16:06,668 - root - INFO - Starting scrape for Kala Art Institute
+2024-11-17 11:16:07,783 - root - INFO - Updating event: Roadwork
+2024-11-17 11:16:07,803 - root - INFO - Finished scrape for Kala Art Institute
+2024-11-17 11:16:07,803 - root - INFO - Starting scrape for Cantor Arts Center
+2024-11-17 11:16:07,943 - root - INFO - Updating event: Dwelling: New Acquisitions
+2024-11-17 11:16:07,972 - root - INFO - Updating event: Spirit House
+2024-11-17 11:16:08,000 - root - INFO - Updating event: Livien Yin: Thirsty
+2024-11-17 11:16:08,029 - root - INFO - Updating event: TT Takemoto: Remembering in the Absence of Memory
+2024-11-17 11:16:08,057 - root - INFO - Updating event: Archive Rooms
+2024-11-17 11:16:08,087 - root - INFO - Updating event: The Faces of Ruth Asawa
+2024-11-17 11:16:08,223 - root - INFO - Updating event: Second Nature: Photography in the Age of the Anthropocene
+2024-11-17 11:16:08,251 - root - INFO - Updating event: Tiffany Sia: No Place
+2024-11-17 11:16:08,418 - root - INFO - Updating event: Day Jobs
+2024-11-17 11:16:08,446 - root - INFO - Updating event: Sofía Gallisá Muriente: Celaje (Cloudscape)
+2024-11-17 11:16:08,474 - root - INFO - Updating event: Beyond Here: The Judy and Sidney Zuber Collection of Latin American Photography
+2024-11-17 11:16:08,502 - root - INFO - Updating event: Imvuselelo: The revival
+2024-11-17 11:16:08,553 - root - INFO - Updating event: Morris Hirshfield Rediscovered
+2024-11-17 11:16:08,581 - root - INFO - Updating event: Full Figure
+2024-11-17 11:16:08,610 - root - INFO - Updating event: Kenneth Tam: All of M
+2024-11-17 11:16:08,639 - root - INFO - Updating event: Printing Protest
+2024-11-17 11:16:08,667 - root - INFO - Updating event: Reality Makes Them Dream: American Photography, 1929–1941
+2024-11-17 11:16:08,695 - root - INFO - Updating event: A Change of Scenery: Photographs of Leisure in the Landscape
+2024-11-17 11:16:08,724 - root - INFO - Updating event: Yinka Shonibare CBE, RA: The American Library
+2024-11-17 11:16:08,754 - root - INFO - Updating event: A young Yu: Mourning Rituals
+2024-11-17 11:16:08,784 - root - INFO - Updating event: East of the Pacific: Making Histories of Asian American Art
+2024-11-17 11:16:08,812 - root - INFO - Updating event: At Home/On Stage: Asian American Representation in Photography and Film
+2024-11-17 11:16:08,840 - root - INFO - Updating event: Aura: Art and Authenticity
+2024-11-17 11:16:08,868 - root - INFO - Updating event: LJ Roberts: Carry You With Me
+2024-11-17 11:16:08,897 - root - INFO - Updating event: The Marmor Collection: Color as Form in Prints, 1953–1971
+2024-11-17 11:16:08,924 - root - INFO - Updating event: Ian Cheng: Emissary Sunsets The Self
+2024-11-17 11:16:08,953 - root - INFO - Updating event: Art/Object: Contemporary Works between Mediums
+2024-11-17 11:16:08,981 - root - INFO - Updating event: The Marmor Collection: Black and White Prints from the 1970s
+2024-11-17 11:16:09,000 - root - INFO - Finished scrape for Cantor Arts Center
+2024-11-17 11:16:09,000 - root - INFO - Starting scrape for Museum of Craft and Design
+2024-11-17 11:16:09,264 - root - INFO - Updating event: Neon As Soulcraft
+2024-11-17 11:16:09,403 - root - INFO - Updating event: Ruglife
+2024-11-17 11:16:09,431 - root - INFO - Updating event: Beau Mccall: Buttons On!
+2024-11-17 11:16:09,459 - root - INFO - Updating event: A Roadmap To Stardust
+2024-11-17 11:16:09,761 - root - INFO - Updating event: Mr. Roboto
+2024-11-17 11:16:09,791 - root - INFO - Updating event: Indie Folk: New Art And Sounds From The Pacific Northwest
+2024-11-17 11:16:09,821 - root - INFO - Updating event: Designing Peace
+2024-11-17 11:16:09,851 - root - INFO - Updating event: Concrete Journals: Anne Hicks Siberell
+2024-11-17 11:16:09,882 - root - INFO - Updating event: Fight And Flight: Crafting A Bay Area Life
+2024-11-17 11:16:09,913 - root - INFO - Updating event: Bull.Miletic: Proxistant Vision
+2024-11-17 11:16:09,945 - root - INFO - Updating event: Iris Eichenberg: Where Words Fail
+2024-11-17 11:16:09,973 - root - INFO - Updating event: Robyn Horn: Material Illusions
+2024-11-17 11:16:10,001 - root - INFO - Updating event: Living With Scents
+2024-11-17 11:16:10,029 - root - INFO - Updating event: The Object In Its Place: As Designed By Ted Cohen
+2024-11-17 11:16:10,057 - root - INFO - Updating event: Mode Brut
+2024-11-17 11:16:10,085 - root - INFO - Updating event: Design By Time
+2024-11-17 11:16:10,114 - root - INFO - Updating event: Encoded Holidays: Gary Hutton X Tom Bonauro
+2024-11-17 11:16:10,142 - root - INFO - Updating event: Moto Mmxx
+2024-11-17 11:16:10,172 - root - INFO - Updating event: Survival Architecture And The Art Of Resilience
+2024-11-17 11:16:10,202 - root - INFO - Updating event: Linda Gass: And Then This Happened…
+2024-11-17 11:16:10,230 - root - INFO - Updating event: Bauhaus.Photo
+2024-11-17 11:16:10,258 - root - INFO - Updating event: Dead Nuts: A Search For The Ultimate Machined Object
+2024-11-17 11:16:10,286 - root - INFO - Updating event: Interior/Exterior
+2024-11-17 11:16:10,316 - root - INFO - Updating event: Wanxin Zhang: The Long Journey
+2024-11-17 11:16:10,346 - root - INFO - Updating event: Material Domestication
+2024-11-17 11:16:10,375 - root - INFO - Updating event: Tex Gieling: Sixty Years
+2024-11-17 11:16:10,430 - root - INFO - Updating event: Al Farrow: Divine Ammunition
+2024-11-17 11:16:10,462 - root - INFO - Updating event: Gustavo Pérez: Self Portrait In Black And White
+2024-11-17 11:16:10,495 - root - INFO - Updating event: Judy Kensley Mckie: Cast Of Characters
+2024-11-17 11:16:10,526 - root - INFO - Updating event: Anchors In Time: Dominic Di Mare
+2024-11-17 11:16:10,558 - root - INFO - Updating event: Raw Design
+2024-11-17 11:16:10,588 - root - INFO - Updating event: Tom Loeser: Please Please Please
+2024-11-17 11:16:10,618 - root - INFO - Updating event: T.W.Five
+2024-11-17 11:16:10,647 - root - INFO - Updating event: Architectural Pavilions: Experiments And Artifacts
+2024-11-17 11:16:10,675 - root - INFO - Updating event: Wendy Maruyama: The Wildlife Project
+2024-11-17 11:16:10,704 - root - INFO - Updating event: Felt Decoded | Wool: Nature’S Technology
+2024-11-17 11:16:10,733 - root - INFO - Updating event: Archive Of Creative Culture
+2024-11-17 11:16:10,763 - root - INFO - Updating event: Anja Ulfeldt: Of Sound | Mind And Objects
+2024-11-17 11:16:10,794 - root - INFO - Updating event: Marianne Lettieri: Reflections
+2024-11-17 11:16:10,824 - root - INFO - Updating event: Beyond The Pour Ii: The Creative Process
+2024-11-17 11:16:10,854 - root - INFO - Updating event: Constructed Communication: Nakayama, Sinbondit, Venom
+2024-11-17 11:16:10,883 - root - INFO - Updating event: Lines That Tie: Carole Beadle And Lia Cook
+2024-11-17 11:16:10,912 - root - INFO - Updating event: Without Camouflage. Dafna Kaffeman. Silvia Levenson.
+2024-11-17 11:16:10,941 - root - INFO - Updating event: Art And Other Tactics: Contemporary Craft By Artist Veterans
+2024-11-17 11:16:10,970 - root - INFO - Updating event: Hands Off: New Dutch Design At The Confluence Of Technology & Craft
+2024-11-17 11:16:10,999 - root - INFO - Updating event: Chris Eckert: Mechanical Parables
+2024-11-17 11:16:11,029 - root - INFO - Updating event: Data Clay: Digital Strategies For Parsing The Earth
+2024-11-17 11:16:11,058 - root - INFO - Updating event: Metamorphosis: The Transformation Of Everyday Objects
+2024-11-17 11:16:11,104 - root - INFO - Updating event: Amber Cowan: Second-Life Glass
+2024-11-17 11:16:11,133 - root - INFO - Updating event: Wendy Maruyama Executive Order 9066 And The Tag Project
+2024-11-17 11:16:11,162 - root - INFO - Updating event: Joe Brubaker And The Exquisite Gardeners: The Visible Transparency Project
+2024-11-17 11:16:11,194 - root - INFO - Updating event: Jennifer Crupi: A Display Of Gestures
+2024-11-17 11:16:11,223 - root - INFO - Updating event: Wheat Is Wheat Is Wheat: Peddy Mergui
+2024-11-17 11:16:11,252 - root - INFO - Updating event: Elevated Corrugated
+2024-11-17 11:16:11,281 - root - INFO - Updating event: Obsessive Reductive
+2024-11-17 11:16:11,309 - root - INFO - Updating event: Jerry Takigawa: False Food
+2024-11-17 11:16:11,337 - root - INFO - Updating event: A Sense Of Balance: The Sculpture Of Stoney Lamar
+2024-11-17 11:16:11,365 - root - INFO - Updating event: Jorg Dubin: Corporate Jets
+2024-11-17 11:16:11,394 - root - INFO - Updating event: New West Coast Design 2
+2024-11-17 11:16:11,423 - root - INFO - Updating event: Young Designer’S Show: Cca Interior Design Program
+2024-11-17 11:16:11,451 - root - INFO - Updating event: Good Design: Stories From Herman Miller
+2024-11-17 11:16:11,480 - root - INFO - Updating event: Holly Lane: Carving Allegories
+2024-11-17 11:16:11,508 - root - INFO - Updating event: Michael Cooper: A Sculptural Odyssey 1968-2011
+2024-11-17 11:16:11,537 - root - INFO - Updating event: Creatures Of The Deep
+2024-11-17 11:16:11,566 - root - INFO - Updating event: Rebecca Hutchinson: Affinity
+2024-11-17 11:16:11,595 - root - INFO - Updating event: Charlotte Kruk – Eye Candy
+2024-11-17 11:16:11,624 - root - INFO - Updating event: Almost Out Of The Woods
+2024-11-17 11:16:11,653 - root - INFO - Updating event: Place Making: Installations At Hayes And Octavia
+2024-11-17 11:16:11,683 - root - INFO - Updating event: Transference
+2024-11-17 11:16:11,714 - root - INFO - Updating event: Crafting Architecture: Concept, Sketch, Model
+2024-11-17 11:16:11,744 - root - INFO - Updating event: Foursite: 4 Artists | 4 Materials | 4 Sites
+2024-11-17 11:16:11,790 - root - INFO - Updating event: Designers On Jewelry: 12 Years Of Jewelry Production By Chi Ha Paura…?
+2024-11-17 11:16:11,819 - root - INFO - Updating event: Michael Peterson: Evolution | Revolution
+2024-11-17 11:16:11,848 - root - INFO - Updating event: Fred Ball Enamels
+2024-11-17 11:16:11,877 - root - INFO - Updating event: Silver Of The Stars
+2024-11-17 11:16:11,907 - root - INFO - Updating event: The Millenium Collection For Bute House Scotland
+2024-11-17 11:16:11,935 - root - INFO - Updating event: Matt Kahn: Artist And Educator
+2024-11-17 11:16:11,964 - root - INFO - Updating event: San Francisco Graphic Design
+2024-11-17 11:16:11,992 - root - INFO - Updating event: The Thinking Body
+2024-11-17 11:16:12,020 - root - INFO - Updating event: Randy Shull: Crossing Boundaries
+2024-11-17 11:16:12,048 - root - INFO - Updating event: Within Two Hands: The Eye Of The Collector
+2024-11-17 11:16:12,077 - root - INFO - Updating event: New West Coast Design: Contemporary Objects
+2024-11-17 11:16:12,106 - root - INFO - Updating event: M. Lee Fatherree’S Photography: Evidence Of Artists At Work, 1978 – 2006
+2024-11-17 11:16:12,136 - root - INFO - Updating event: Sculpture Transformed: The Work Of Marjorie Schick
+2024-11-17 11:16:12,166 - root - INFO - Updating event: Tools As Art: The Hechinger Collection
+2024-11-17 11:16:12,195 - root - INFO - Updating event: Cca: A Legacy In Studio Glass
+2024-11-17 11:16:12,225 - root - INFO - Updating event: Kickin’ It With Joyce J. Scott
+2024-11-17 11:16:12,254 - root - INFO - Updating event: Playing Around: Toys Designed By Artists
+2024-11-17 11:16:12,284 - root - INFO - Updating event: Raymond Loewy Designs For A Consumer Culture
+2024-11-17 11:16:12,313 - root - INFO - Updating event: Beyond The Pour: Pairing Art And Wine Label Design
+2024-11-17 11:16:12,341 - root - INFO - Updating event: Convergence: Crossing The Divide
+2024-11-17 11:16:12,369 - root - INFO - Updating event: Nouvelle Nuptials: New Visions In Wedding Traditions
+2024-11-17 11:16:12,399 - root - INFO - Updating event: Dovetailing Art And Life: The Bennett Collection
+2024-11-17 11:16:12,418 - root - INFO - Finished scrape for Museum of Craft and Design
+2024-11-17 11:16:12,418 - root - INFO - Starting scrape for San Jose Museum of Art
+2024-11-17 11:16:12,653 - root - INFO - Updating event: Kambui Olujimi: North Star
+2024-11-17 11:16:12,683 - root - INFO - Updating event: Beta Space: Patty Chang and David Kelley
+2024-11-17 11:16:12,712 - root - INFO - Updating event: Calder: at home, among friends
+2024-11-17 11:16:12,741 - root - INFO - Updating event: Still in Motion
+2024-11-17 11:16:12,772 - root - INFO - Updating event: Hidden Heritages: San José’s Vietnamese Legacy
+2024-11-17 11:16:12,804 - root - INFO - Updating event: Seeing through Stone
+2024-11-17 11:16:12,833 - root - INFO - Updating event: Koret Gallery: Art Learning Lab
+2024-11-17 11:16:12,862 - root - INFO - Updating event: Pae White: Noisy Blushes
+2024-11-17 11:16:13,124 - root - INFO - Updating event: Christina Fernandez: Multiple Exposures
+2024-11-17 11:16:13,154 - root - INFO - Updating event: If toxic air is a monument to slavery, how do we take it down?
+2024-11-17 11:16:13,184 - root - INFO - Updating event: Encode/Store/Retrieve
+2024-11-17 11:16:13,214 - root - INFO - Updating event: Nuts and Who’s: A Candy Store Sampler
+2024-11-17 11:16:13,246 - root - INFO - Updating event: Liliana Porter: Actualidades / Breaking News
+2024-11-17 11:16:13,276 - root - INFO - Updating event: Yolanda López: Portrait of the Artist
+2024-11-17 11:16:13,306 - root - INFO - Updating event: Sadie Barnette: Family Business
+2024-11-17 11:16:13,335 - root - INFO - Updating event: A Point Stretched: Views on Time
+2024-11-17 11:16:13,365 - root - INFO - Updating event: Sky Hopinka: Seeing and Seen
+2024-11-17 11:16:13,394 - root - INFO - Updating event: Kelly Akashi: Formations
+2024-11-17 11:16:13,451 - root - INFO - Updating event: Evergreen: Art from the Collection
+2024-11-17 11:16:13,481 - root - INFO - Updating event: Brett Weston
+2024-11-17 11:16:13,512 - root - INFO - Updating event: Wayfinder: Juan Carlos Araujo
+2024-11-17 11:16:13,542 - root - INFO - Updating event: Jean Conner: Collage
+2024-11-17 11:16:13,572 - root - INFO - Updating event: Hulda Guzmán: Higüero
+2024-11-17 11:16:13,602 - root - INFO - Updating event: Our whole, unruly selves
+2024-11-17 11:16:13,632 - root - INFO - Updating event: Beta Space: Trevor Paglen
+2024-11-17 11:16:13,662 - root - INFO - Updating event: Wayfinder: Clare Rojas
+2024-11-17 11:16:13,693 - root - INFO - Updating event: Kids Summer Art Camp Virtual Exhibition
+2024-11-17 11:16:13,723 - root - INFO - Updating event: Hito Steyerl: Factory of the Sun
+2024-11-17 11:16:13,752 - root - INFO - Updating event: Break + Bleed
+2024-11-17 11:16:13,781 - root - INFO - Updating event: South East North West: New Works from the Collection
+2024-11-17 11:16:13,813 - root - INFO - Updating event: Barring Freedom
+2024-11-17 11:16:13,844 - root - INFO - Updating event: Kids Summer Art Camp Virtual Exhibitions
+2024-11-17 11:16:13,874 - root - INFO - Updating event: do it (home)
+2024-11-17 11:16:13,894 - root - INFO - Finished scrape for San Jose Museum of Art
+2024-11-17 11:16:13,906 - root - ERROR - Error processing event 'No Spectators: The Art of Burning Man-Oakland Museum of California': unconverted data remains:  00:00:00
+2024-11-17 11:16:13,938 - root - INFO - Database contains 16 venues and 668 events
+2024-11-17 11:16:13,938 - root - INFO - Scraping took 2 minutes and 23 seconds
+2024-11-17 11:16:13,941 - root - INFO - Database size recorded
+2024-11-17 11:16:13,941 - root - INFO - Finished
