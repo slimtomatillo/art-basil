@@ -1,0 +1,14 @@
+body {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICACAA8AFQAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAFAAAABUAAAAAAAAAHwAAAAAAAAAfAAAADgAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////////////////////////////////////wH///8B////Af///wH///8B////Af///wH///8B////g////8f////H////x////8f////H////x////+//////////////////////////////////8='), auto;
+}
+
+.cursor-trail {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: opacity 2.2s ease;
+} 
