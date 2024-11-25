@@ -29,43 +29,6 @@ const getRegion = () => {
     return 'sf'; // default to SF
 };
 
-// Function to calculate and update sticky positions
-function updateStickyPositions() {
-    const searchBar = document.getElementById('searchBarContainer');
-    const tableHeader = document.querySelector('thead');
-    
-    if (!searchBar || !tableHeader) return;
-
-    const searchBarHeight = searchBar.offsetHeight;
-    
-    // Keep search bar at the very top
-    searchBar.style.position = 'sticky';
-    searchBar.style.top = '0';
-    searchBar.style.zIndex = '1000';
-    searchBar.style.backgroundColor = 'white'; // Ensure it's not transparent
-    
-    // Position table header below search bar
-    tableHeader.style.position = 'sticky';
-    tableHeader.style.top = `${searchBarHeight}px`;
-    tableHeader.style.zIndex = '999';
-    tableHeader.style.backgroundColor = 'white';
-}
-
-// Add scroll event listener
-window.addEventListener('scroll', () => {
-    requestAnimationFrame(updateStickyPositions);
-});
-
-// Update positions on window resize
-window.addEventListener('resize', () => {
-    requestAnimationFrame(updateStickyPositions);
-});
-
-// Initial position update
-document.addEventListener('DOMContentLoaded', () => {
-    updateStickyPositions();
-});
-
 function sortEvents(events) {
     let eventsArray = [];
     // Get today's date, reset hours to ensure we're only comparing dates
@@ -271,3 +234,4 @@ window.addEventListener('DOMContentLoaded', async () => {
             console.error('Error loading events:', error);
         });
 });
+

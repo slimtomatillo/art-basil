@@ -1,237 +1,136 @@
-/* Reset some default styles */
-body, h1, h2, p, table, th, td {
-    margin: 0;
-    padding: 0;
-}
-
-/* Reset some default styles */
-table, th, td {
-    border: none;
-}
-
-/* Basic styling */
+/* Custom styles on top of Bootstrap */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #f0f0f0;*/
-    line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Apply these styles to the block-level elements within the body */
-body > * {
-    margin: 0 auto; /* Center-align block-level elements with equal margins */
-    max-width: 70%; /* Limit the maximum width of block-level elements */
+.hover-card {
+    transition: transform 0.2s ease-in-out;
 }
 
-header {
-    display: block;
-    font-size: 10; /* this doesn't seem to be doing anything; ideally make dynamic? */
-    text-align: left;
-    padding: 10px;
-    margin-bottom: 20px;
+.hover-card:hover {
+    transform: translateY(-5px);
 }
 
-main {
-    padding: 10px;
-}
-
-/* Sticky styles */
-.sticky {
-    position: sticky;
-    top: 0; /* Default to the top */
-    z-index: 1000; /* Ensure it's above other content */
-    background-color: white; /* For visibility */
-}
-
-thead.sticky {
-    z-index: 999; /* Slightly lower than the search bar to appear beneath */
-    /* Don't set top here if you're adjusting it dynamically in JavaScript */
-}
-
-/* Other styling */
-#searchBarContainer {
-    position: sticky;
-    top: 0;
-    z-index: 1001;
+/* Table styles */
+.event-table {
     background-color: white;
-    padding: 10px 0;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Ensure table header stays sticky within table-responsive */
+.table-responsive {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+}
+
+.event-table thead {
+    background-color: white;
+}
+
+.event-table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    white-space: nowrap;
+    padding: 8px;
+}
+
+.event-table tbody td {
+    vertical-align: middle;
+}
+
+/* Adjust column widths */
+.event-table th:nth-child(1),
+.event-table td:nth-child(1) {
+    width: 15%;
+}
+
+.event-table th:nth-child(2),
+.event-table td:nth-child(2) {
+    width: 17%;
+}
+
+.event-table th:nth-child(3),
+.event-table td:nth-child(3) {
+    width: 36%;
+}
+
+.event-table th:nth-child(4),
+.event-table td:nth-child(4) {
+    width: 20%;
+}
+
+.event-table th:nth-child(5),
+.event-table td:nth-child(5) {
+    width: 12%;
+}
+
+/* Search bar styles */
+#searchBarContainer {
+    background-color: #f8f9fa;
+    padding: 4px 0;
+    margin-bottom: 0;
 }
 
 #searchBar {
-    margin-bottom: 10px; /* Adjust as needed for spacing below the search bar */
-    padding: 10px; /* Adjust padding inside the search bar as needed */
-    width: 100%; /* Make the search bar fill its container */
-    box-sizing: border-box; /* Keep this to include padding in the width calculation */
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 400px;
 }
 
-#locationsContainer {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    gap: 5px; /* Add space between elements */
-    justify-content: flex-start;
-    padding: 10px 0;
-    margin-bottom: 10px;
-}
-
-#locationsContainer a {
-    font-size: 24px; /* Adjust size as needed */
-}
-
-/* Styles for the filter buttons */
-#filterButtonsContainer {
-    display: flex; /* Use Flexbox for layout */
-    justify-content: flex-start; /* Align buttons to the left */
-    align-items: center; /* Vertically center the buttons */
-    padding: 10px 0;
-    margin-bottom: 30px; /* Adjust as needed for spacing below the filter buttons */
-}
-
+/* Filter buttons */
 .filter-button {
-    margin: 0 5px; /* Horizontal spacing between buttons */
-    padding: 8px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none; /* Remove default button borders */
-    background-color: #f0f0f0; /* Light background for buttons */
-    border-radius: 4px; /* Slightly rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-
-.filter-button:hover {
-    background-color: #e0e0e0; /* Darken on hover */
+    border-radius: 20px;
+    padding: 0.35rem 1.5rem;
+    margin: 0 0.25rem;
+    border: 1px solid #dee2e6;
+    background-color: white;
+    transition: all 0.2s ease;
 }
 
 .filter-button.active {
-    background-color: #007BFF; /* Active button background */
-    color: white; /* Active button text color */
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
 }
 
-.event-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-thead {
-    position: sticky;
-    top: 60px;  /* Adjust this value based on your search bar height */
-    z-index: 1000;
-    background-color: white;
-}
-
-/* Optional: If you want to apply to individual th elements */
-thead th {
-    background-color: white;  /* Ensure each header cell has a background */
-}
-
-/* Define CSS styles for alternating rows */
-.event-table tbody tr:nth-child(even) {
-    background-color: white; /* Background color for even rows */
-}
-
-.event-table tbody tr:nth-child(12n+1) {
-    background-color: #dcf2df; /* pastel green */
-}
-
-.event-table tbody tr:nth-child(12n+3) {
-    background-color: #ceecf8; /* pastel blue */
-}
-
-.event-table tbody tr:nth-child(12n+5) {
-    background-color: #f0e1f4; /* pastel purple */
-}
-
-.event-table tbody tr:nth-child(12n+7) {
-    background-color: #f8d6e1; /* pastel pink */
-}
-
-.event-table tbody tr:nth-child(12n+9) {
-    background-color: #fde4cf; /* pastel orange */
-}
-
-.event-table tbody tr:nth-child(12n+11) {
-    background-color: #f9f9da; /* pastel yellow */
-}
-
-/* Set different widths for specific columns */
-th:nth-child(1), td:nth-child(1) {
-    width: 16%; /* Adjust as needed */
-}
-
-th:nth-child(2), td:nth-child(2) {
-    width: 20%; /* Adjust as needed */
-}
-
-th:nth-child(3), td:nth-child(3) {
-    width: 31%; /* Adjust as needed */
-}
-
-th:nth-child(4), td:nth-child(4) {
-    width: 21%; /* Adjust as needed */
-}
-
-th:nth-child(5), td:nth-child(5) {
-    width: 12%; /* Adjust as needed */
-}
-
-/* Apply this style to the image */
+/* Event image styles */
 .event-image {
-    display: block;
-    margin: 0 auto; /* Horizontally center the image */
-    max-width: 100%; /* Ensure the image doesn't overflow the cell */
-}
-
-/* Apply hover effect only if the image does not have the 'event-image-enlarged' class */
-img.event-image:not(.event-image-enlarged) {
-    transition: transform 0.3s ease; /* Smooth transition */
-}
-  
-img.event-image:not(.event-image-enlarged):hover {
-    transform: scale(2.3); /* Adjust scale value as needed */
-}
-  
-/* CSS for the clicked/enlarged state */
-img.event-image-enlarged {
-    transform: scale(2.3); /* Adjust scale value as needed */
+    max-width: 150px;
+    max-height: 130px;
+    border-radius: 4px;
     transition: transform 0.3s ease;
-    z-index: 100; /* Ensure the image is above other content */
-    position: relative; /* May need adjustment based on your layout */
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #F5F5F5;
-    color: black;
+.event-image:not(.event-image-enlarged):hover {
+    transform: scale(2.3);
 }
 
-/* Responsive adjustments for smaller screens */
+.event-image-enlarged {
+    transform: scale(2.3);
+    z-index: 100;
+}
 
-/* Media query for tablets */
-@media (min-width: 601px) {
-    #searchBarContainer {
-        /* If your searchBarContainer should still be centered with the rest */
-        margin: 0 auto;
-        max-width: 70%; /* Match the max-width of the main content */
-        box-sizing: border-box; /* Include padding in the width if necessary */
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     
-    #searchBar {
-        /* Adjust the searchBar width as needed, potentially 100% to fill its container */
-        width: 27%;
-        /* Remove the margin-left calculation that was causing alignment issues */
+    .event-table {
+        font-size: 0.9rem;
     }
 }
 
-/* Optional: Media query for desktops if different styling is needed */
-@media (min-width: 1025px) {
-    #searchBarContainer {
-        /* Adjustments for desktop, if different from tablets */
-    }
+/* Filter buttons container */
+#filterButtonsContainer {
+    background-color: #f8f9fa;
+    padding: 4px 0;
+    margin-bottom: 4px;
 }
-
-/* Add other media queries or responsive design rules as needed */

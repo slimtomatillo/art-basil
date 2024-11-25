@@ -162,9 +162,8 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -271,11 +270,10 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-11-16",
                 "end": "2025-06-29"
@@ -326,8 +324,7 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum",
-                "past"
+                "museum"
             ],
             "phase": "future",
             "dates": {
@@ -511,9 +508,8 @@
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -539,9 +535,8 @@
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -8961,35 +8956,6 @@
             "hash": "05820406d0b8ea3877a9f3bea72ac614",
             "ongoing": false
         },
-        "Coming Soon: Hallyu! The Korean Wave-Asian Art Museum": {
-            "name": "Coming Soon: Hallyu! The Korean Wave",
-            "venue": "Asian Art Museum",
-            "description": "Discover why the world can\u2019t get enough K-pop, Korean dramas, and kimbap . Tickets now on sale",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum",
-                "past"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2024-09-27",
-                "end": "2025-01-06"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://exhibitions.asianart.org/exhibitions/hallyu-the-korean-wave/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/07/Hallyu-exh2_1600x900-1600x900.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2024-09-17 19:26:25",
-            "hash": "bd11f2fabcfc72bc30cbdfb5784124dc"
-        },
         "Community Feast-Asian Art Museum": {
             "name": "Community Feast",
             "venue": "Asian Art Museum",
@@ -10604,11 +10570,10 @@
             "description": "",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-10-09",
                 "end": "2025-03-09"
