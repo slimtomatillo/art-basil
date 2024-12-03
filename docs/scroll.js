@@ -137,17 +137,36 @@ window.addEventListener('DOMContentLoaded', async () => {
                 if (imageLinkObj && imageLinkObj.link) {
                     const imgElement = document.createElement('img');
                     imgElement.src = imageLinkObj.link;
-                    imgElement.alt = `${event.name} @ ${event.venue}`; // Make the alt attribute Event Name @ Venue
-                    imgElement.className = 'event-image'; // Initial class for hover effect
-                    imgElement.style.maxWidth = '150px'; // Set a max width to ensure the image fits nicely in the table cell
-                    imgElement.style.maxHeight = '130px'; // Set a max width to ensure the image fits nicely in the table cell
-                    imgElement.style.height = 'auto'; // Maintain aspect ratio
+                    imgElement.alt = `${event.name} @ ${event.venue}`;
+                    imgElement.className = 'event-image';
+                    imgElement.style.maxWidth = '150px';
+                    imgElement.style.maxHeight = '130px';
+                    imgElement.style.height = 'auto';
                     imgElement.style.justifySelf = 'center';
+                    imgElement.style.cursor = 'pointer';
                     imageCell.appendChild(imgElement);
 
-                    // Add click event listener to toggle enlarged class
-                    imgElement.addEventListener('click', () => {
-                        imgElement.classList.toggle('event-image-enlarged');
+                    // Get modal elements
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+
+                    // Add click event for opening modal
+                    imgElement.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        modal.style.display = 'block';
+                        modalImg.src = imageLinkObj.link;
+                    });
+
+                    // Close modal when clicking on it
+                    modal.addEventListener('click', () => {
+                        modal.style.display = 'none';
+                    });
+
+                    // Close modal when pressing Escape key
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Escape' && modal.style.display === 'block') {
+                            modal.style.display = 'none';
+                        }
                     });
                 } else {
                     // Handle the case where there is no image link
