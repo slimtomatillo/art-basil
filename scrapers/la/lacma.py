@@ -40,20 +40,20 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
             # Extract date information
             try:
                 start_date = exhibition.find('div', class_='views-field-field-start-date').text.strip()
-                start_date = start_date.lower().replace(',', '').replace('.', '')
+                start_date = start_date.lower().replace(',', '').replace('.', '') if start_date else None
             except:
                 try:
                     start_date = exhibition.find('div', class_='views-field-field-alternative-start-date').text.strip()
-                    start_date = start_date.lower().replace(',', '').replace('.', '')
+                    start_date = start_date.lower().replace(',', '').replace('.', '') if start_date else None
                 except:
                     start_date = None
             try:
                 end_date = exhibition.find('div', class_='views-field-field-end-date').text.strip()
-                end_date = end_date.lower().replace(',', '').replace('.', '')
+                end_date = end_date.lower().replace(',', '').replace('.', '') if end_date else None
             except:
                 try:
                     end_date = exhibition.find('div', class_='views-field-field-alternative-end-date').text.strip()
-                    end_date = end_date.lower().replace(',', '').replace('.', '')
+                    end_date = end_date.lower().replace(',', '').replace('.', '') if end_date else None
                 except:
                     end_date = None
 
@@ -67,27 +67,25 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
             else:
                 ongoing = False
 
-            if start_date and end_date:                
-                # Handle cases with complete start and end dates
-                if len(start_date.split()) == 3 and len(end_date.split()) == 3:
-                    start_date = convert_date_to_dt(start_date)
-                    end_date = convert_date_to_dt(end_date)
-                # Handle cases where the start date is missing the year but the end date has it
-                elif len(start_date.split()) == 2 and len(end_date.split()) == 3:
-                    start_date = convert_date_to_dt(start_date + ' ' + end_date.split()[-1])  # Append year from end date
-                    end_date = convert_date_to_dt(end_date)
-                # Handle cases where the start and end dates share the same year
-                elif len(start_date.split()) == 2 and len(end_date.split()) == 2:
-                    shared_year = dt.datetime.now().year  # Default to the current year if not specified
-                    start_date = convert_date_to_dt(start_date + ' ' + str(shared_year))
-                    end_date = convert_date_to_dt(end_date + ' ' + str(shared_year))
-            elif start_date:
+            # Convert dates if they exist
+            if start_date and len(start_date.split()) >= 2:
                 start_date = convert_date_to_dt(start_date)
-                        
+                if start_date:
+                    start_date = start_date.strftime("%Y-%m-%d")
+                else:
+                    start_date = None
+
+            if end_date and len(end_date.split()) >= 2:
+                end_date = convert_date_to_dt(end_date)
+                if end_date:
+                    end_date = end_date.strftime("%Y-%m-%d")
+                else:
+                    end_date = None
+
             # Extract description
             description_tag = exhibition.find('div', class_='views-field-field-location-building')
             description_text = description_tag.get_text().strip() if description_tag else None
-
+                        
             # Extract image if available
             img_tag = exhibition.find('img')
             image_link = 'https://lacma.org' + img_tag['src'] if img_tag else None
@@ -95,7 +93,7 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
             event_details = {
                 'name': event_title,
                 'venue': 'LACMA',
-                'description': description_text,
+                'description': description_text if description_text else None,
                 'tags': ['exhibition', phase, 'museum'],
                 'phase': phase,
                 'dates': {'start': start_date, 'end': end_date},
