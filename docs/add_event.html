@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Add Art Event</title>
+    <title>Add Art Event - Art Basil</title>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G06G4L1YGN"></script>
@@ -16,34 +17,67 @@
   gtag('config', 'G-G06G4L1YGN');
 </script>
 <body>
-    <header>
-        <h2>Add Art Event</h2>
-    </header>
-    <p>
-        If you would like to add an event to the calendar, please send an email to
-        <a href="mailto:info.artbasil@gmail.com">info.artbasil@gmail.com</a>
-        with as many of the following fields as possible. You MUST include a link to some kind of an event page/flyer for the event be added.
-    </p>
-    <br>
-    <ul>
-        <li>Event Title</li>
-        <li>Venue</li>
-        <li>Event Type (exhibition, workshop, talk, etc.)</li>
-        <li>Start and/or End Dates</li>
-        <li>Start and/or End Time (if relevant)</li>
-        <li>Tags (options <a href="tags.html">here</a>)</li>
-        <li>Price</li>
-        <li>Link to event page</li>
-        <li>Any other relevant links</li>
-        <li>Comments/notes</li>
-    </ul>
-    <br>
-    <p>
-        If you would like a venue to be added to the calendar (and its events), please send an email to
-        <a href="mailto:info.artbasil@gmail.com">info.artbasil@gmail.com</a>
-        with the name and website of the venue. This could be a museum, college/university, gallery, or other organization. 
-    </p>
-    <br>
-    <p>Thank you for your contribution!</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="sf/index.html">SF Bay Area</a>
+                <a class="nav-link" href="la/index.html">LA</a>
+                <a class="nav-link active" href="add_event.html">Add Event</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="text-center mb-4">
+            <h1>Add Art Event</h1>
+        </header>
+
+        <main>
+            <section class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                If you would like to add an event to the calendar, please send an email to
+                                <a href="mailto:info.artbasil@gmail.com" class="text-primary">info.artbasil@gmail.com</a>
+                                with as many of the following fields as possible. You MUST include a link to some kind of an event page/flyer for the event to be added.
+                            </p>
+
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">Region (SF Bay Area or LA)</li>
+                                <li class="list-group-item">Event Title</li>
+                                <li class="list-group-item">Venue</li>
+                                <li class="list-group-item">Event Type (exhibition, workshop, talk, etc.)</li>
+                                <li class="list-group-item">Start and/or End Dates</li>
+                                <li class="list-group-item">Start and/or End Time (if relevant)</li>
+                                <li class="list-group-item">Tags (options <a href="tags.html" class="text-primary">here</a>)</li>
+                                <li class="list-group-item">Price</li>
+                                <li class="list-group-item">Link to event page</li>
+                                <li class="list-group-item">Any other relevant links</li>
+                                <li class="list-group-item">Comments/notes</li>
+                            </ul>
+
+                            <p class="card-text">
+                                If you would like a venue to be added to the calendar (and its events), please send an email to
+                                <a href="mailto:info.artbasil@gmail.com" class="text-primary">info.artbasil@gmail.com</a>
+                                with the name and website of the venue. This could be a museum, college/university, gallery, or other organization. 
+                            </p>
+
+                            <p class="card-text text-center mt-4">Thank you for your contribution!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<footer class="bg-white py-3 mt-5">
+    <div class="container text-center">
+        <p class="text-muted mb-0">Developed by Alex Smith</p>
+        <br>
+    </div>
+</footer>
 </html>
