@@ -10,6 +10,11 @@
     <link rel="icon" type="image/png" href="https://github.com/slimtomatillo/art-basil/blob/main/images/favicon.png">
     <!-- Add cursor trail CSS -->
     <link rel="stylesheet" href="../cursorTrail.css">
+    <script>
+        // Change this to false for production
+        const isDevelopment = window.location.hostname === 'localhost';
+        const basePath = isDevelopment ? '../' : 'https://raw.githubusercontent.com/slimtomatillo/art-basil/main/';
+    </script>
 </head>
 <body class="bg-light">
     <!-- Google Analytics -->
@@ -23,6 +28,10 @@
 
     <div class="container py-4">
         <header class="mb-4">
+            <h1 class="h3 mb-4">
+                <img src="" id="logoImg" alt="Art Basil Logo" style="height: 40px; margin-bottom: 10px; vertical-align: middle;">
+                Art Basil
+            </h1>
             <h1 class="display-5">Greater Los Angeles</h1>
             <p class="lead">Current and upcoming art exhibitions</p>
             
@@ -82,5 +91,8 @@
     <div id="imageModal" class="image-modal">
         <img class="modal-content" id="modalImage">
     </div>
+    <script>
+        document.getElementById('logoImg').src = basePath + 'images/logo-no-background.png';
+    </script>
 </body>
 </html>
