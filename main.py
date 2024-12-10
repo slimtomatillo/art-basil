@@ -85,9 +85,7 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
 
     if env == 'prod' and write_summary:
         # Load dbs and regions
-        # dbs = {region: load_db(db_file) for region, db_file in DB_FILES.items()}
-        # For now, only update the sf db
-        dbs = {region: load_db(db_file) for region, db_file in DB_FILES.items() if region == 'sf'}
+        dbs = {region: load_db(db_file) for region, db_file in DB_FILES.items()}
         
         # Update the event phases for each db
         for region, db in dbs.items():
