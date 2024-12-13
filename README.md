@@ -5,7 +5,7 @@ You may have heard of Art Basel ([wikipedia](https://en.wikipedia.org/wiki/Art_B
 This project aims to create and populate (with fresh data!) a website that lists upcoming art events in your area.
 
 **Scope**  
-- *Location:* I will start with **San Francisco Bay Area** as that is my area.
+- *Location:* **San Francisco Bay Area** and ***Greater Los Angeles*** for now, more regions coming soon!
 - *Events:* Art shows + art-related events (e.g. workshops, talks, tours) at museums, galleries, and colleges/universities.
 
 **Acknowledgements**  
