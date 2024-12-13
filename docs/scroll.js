@@ -72,17 +72,26 @@ function sortEvents(events) {
         });
     });
 
-    // Sort by sortPriority, then by 'sortDate'
+    // Sort by sortPriority, then by appropriate date field
     eventsArray.sort((a, b) => {
         const priorityComparison = a.sortPriority - b.sortPriority;
         if (priorityComparison !== 0) return priorityComparison;
 
-        // For 'past' events (sortPriority === 3), sort by 'sortDate' descending
-        if(a.sortPriority === 3 && b.sortPriority === 3) {
-            return b.sortDate.localeCompare(a.sortDate); // Descending for 'past' events
+        // For future events (sortPriority === 3), sort by start date ascending
+        if (a.sortPriority === 3 && b.sortPriority === 3) {
+            const aStart = a.dates?.start || '9999-12-31';
+            const bStart = b.dates?.start || '9999-12-31';
+            return aStart.localeCompare(bStart); // Ascending for future events
         }
 
-        // For other events, sort by 'sortDate' ascending
+        // For past events (sortPriority === 4), sort by end date descending
+        if (a.sortPriority === 4 && b.sortPriority === 4) {
+            const aEnd = a.dates?.end || '0000-01-01';
+            const bEnd = b.dates?.end || '0000-01-01';
+            return bEnd.localeCompare(aEnd); // Descending for past events
+        }
+
+        // For other events, sort by sortDate ascending
         return a.sortDate.localeCompare(b.sortDate);
     });
 
