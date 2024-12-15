@@ -25,8 +25,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:14:59",
-            "hash": "bd0fe309b84586215a3ae085383c958c"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "301b58126d885dc6e524333d94e548de"
         },
         "We Live in Painting: The Nature of Color in Mesoamerican Art-LACMA": {
             "name": "We Live in Painting: The Nature of Color in Mesoamerican Art",
@@ -53,8 +53,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:14:59",
-            "hash": "b914314359fa952cd5e131f44ff5d478"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "27b92c35351ba8f1d4df296112c23780"
         },
         "Josiah McElheny: Island Universe-LACMA": {
             "name": "Josiah McElheny: Island Universe",
@@ -81,8 +81,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:14:59",
-            "hash": "e0174bb4092c23f2c6e979dede933d7b"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "3765bcbc2688d15f9487a3eeac7bb2d5"
         },
         "Magdalena Suarez Frimkess: The Finest Disregard-LACMA": {
             "name": "Magdalena Suarez Frimkess: The Finest Disregard",
@@ -109,8 +109,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:14:59",
-            "hash": "c28074af6b979065e65163fbceaa2301"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "d2fc7252d2ba4e0a4a2ae738c62bcaa5"
         },
         "Simone Leigh-LACMA": {
             "name": "Simone Leigh",
@@ -137,8 +137,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:14:59",
-            "hash": "21242ce00ad08dccd6193a84d6dadf5f"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "06bddf9aa748960922098ff92ac505d9"
         },
         "New Acquisitions to the Rifkind Center-LACMA": {
             "name": "New Acquisitions to the Rifkind Center",
@@ -165,8 +165,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:14:59",
-            "hash": "36c0cac3d8a2f6a799a6c5e567a0de86"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "8acd709aea3e24d18f0c0a470e4f6306"
         },
         "Ai Weiwei: Circle of Animals/Zodiac Heads-LACMA": {
             "name": "Ai Weiwei: Circle of Animals/Zodiac Heads",
@@ -249,8 +249,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:14:59",
-            "hash": "da754ce03516d11f7bdf62b25c9538ba"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "477228399fc5fa3744039202980a3bf7"
         },
         "Imagining Black Diasporas: 21st-Century Art and Poetics-LACMA": {
             "name": "Imagining Black Diasporas: 21st-Century Art and Poetics",
@@ -258,10 +258,10 @@
             "description": "BCAM, Level 2",
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2024-12-15",
                 "end": "2025-08-03"
@@ -277,8 +277,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "6bb00e625ee89c19d7d64c4b8df1dbaf"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "782f4a291a7e43e8fd8ed06d77379851"
         },
         "Realms of the Dharma: Buddhist Art across Asia-LACMA": {
             "name": "Realms of the Dharma: Buddhist Art across Asia",
@@ -305,8 +305,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "78108e3eed43de310d52877888d01224"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "06d19485f8972b805f67d82d50950156"
         },
         "American Artist: The Monophobic Response-LACMA": {
             "name": "American Artist: The Monophobic Response",
@@ -333,8 +333,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "c5e6419ee07d904ba435e0388e05a3c1"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "df7c30db68cf78b61dffc9e203db8e10"
         },
         "ED RUSCHA / NOW THEN-LACMA": {
             "name": "ED RUSCHA / NOW THEN",
@@ -361,8 +361,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "33ac0e4f4c0ea6fd1473b6e627e553dd"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "838496bce41d7ebc6c93d7850062d3b4"
         },
         "Zeng Fanzhi: Near and Far/Now and Then-LACMA": {
             "name": "Zeng Fanzhi: Near and Far/Now and Then",
@@ -389,8 +389,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "510a8c6da2dd7be69d15a865a6e99a4b"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "f9cd845d46467d2e059e0d7260e53222"
         },
         "Dining with the Sultan at Charles White Elementary School-LACMA": {
             "name": "Dining with the Sultan at Charles White Elementary School",
@@ -417,8 +417,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "1ec095cf585298d1bdebafe46dc02680"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "3942876dfaf0669ba1cb01ab9d25f0ca"
         },
         "Dining with the Sultan: The Fine Art of Feasting-LACMA": {
             "name": "Dining with the Sultan: The Fine Art of Feasting",
@@ -445,8 +445,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "f96c7420bbd24067e8d10af67308d6f3"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "c5287b341ca8b1b9c2b3c6c29294911e"
         },
         "Painting in the River of Angels: Judy Baca and The Great Wall-LACMA": {
             "name": "Painting in the River of Angels: Judy Baca and The Great Wall",
@@ -473,8 +473,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "5b6b0750bec772bbc4b12999c886091f"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "97950b302c584805bcdb912db1d0299e"
         },
         "Vincent Valdez and Ry Cooder: El Chavez Ravine-LACMA": {
             "name": "Vincent Valdez and Ry Cooder: El Chavez Ravine",
@@ -501,8 +501,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "df7da509b46bffc0d057fb49e93ea05a"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "b04b0adb469520837cdd4b15257ea629"
         },
         "Imagined Fronts: The Great War and Global Media-LACMA": {
             "name": "Imagined Fronts: The Great War and Global Media",
@@ -557,8 +557,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "e118cf64f5795b539ce72c8490bc7c0c"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "2101f9f436159dc0bb784eac4428fad0"
         },
         "Zheng Chongbin: Golden State-LACMA": {
             "name": "Zheng Chongbin: Golden State",
@@ -585,8 +585,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "0498595c6899590a41625eba4a8eac28"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "788d43ea773e9e95a8e2210b4fe133e1"
         },
         "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection-LACMA": {
             "name": "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection",
@@ -613,8 +613,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-14 11:15:00",
-            "hash": "fe78070d10af3ae40d1f8e61bd19642d"
+            "last_updated": "2024-12-15 11:14:46",
+            "hash": "a0afd6add7d8afb5d2581fc288ac6e57"
         }
     }
 }
