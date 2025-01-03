@@ -166,6 +166,11 @@ def scrape_sfmoma(env='prod', region='sf'):
                     'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
                 }
 
+                # Add logging for dev environment
+                if env == 'dev':
+                    logging.info(f"Event details - Name: {event_details['name']}, Venue: {event_details['venue']}")
+
+                # Process event in prod environment
                 if env == 'prod':
                     process_event(event_details, region)
 

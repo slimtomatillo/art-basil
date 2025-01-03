@@ -101,6 +101,10 @@ def scrape_museum_of_craft_and_design_exhibitions(env='prod', region='sf'):
             if image_link:
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
+            # Log event details in dev environment
+            if env == 'dev':
+                logging.info(f"Event: {event_details.get('name')} at {event_details.get('venue')}")
+
             if env == 'prod':
                 process_event(event_details, region)
 

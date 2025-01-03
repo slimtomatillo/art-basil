@@ -106,6 +106,11 @@ def scrape_contemporary_jewish_museum(env='prod', region='sf'):
                         'description': 'Image'
                     })
 
+                # Add dev environment logging
+                if env == 'dev':
+                    logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
+
+                # Process event in prod environment
                 if env == 'prod':
                     process_event(event_details, region)
 

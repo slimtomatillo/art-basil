@@ -156,6 +156,10 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
             if image_link:
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
+            # Add logging for dev environment
+            if env == 'dev':
+                logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
+
             if env == 'prod':
                 process_event(event_details, region)
 

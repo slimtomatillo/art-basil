@@ -111,6 +111,11 @@ def scrape_bampfa_exhibitions(env='prod', region='sf'):
                     'description': 'Image'
                 })
 
+            # Add logging for event details in dev environment
+            if env == 'dev':
+                logging.info(f"Event: {event_details['name']} at {event_details['venue']}")
+
+            # Process event in prod environment
             if env == 'prod':
                 process_event(event_details, region)
 

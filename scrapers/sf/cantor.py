@@ -83,6 +83,11 @@ def scrape_cantor_exhibitions(env='prod', region='sf'):
             if image_link:
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
+            # Add logging for event details in dev environment
+            if env == 'dev':
+                logging.info(f"Processing event: {event_details.get('name')} at {event_details.get('venue')}")
+            
+            # Process event in prod environment
             if env == 'prod':
                 process_event(event_details, region)
 

@@ -98,6 +98,10 @@ def scrape_asian_art_museum_current_events(env='prod', region='sf'):
                 'description': 'Image'
             })
 
+        # Add logging for dev environment
+        if env == 'dev':
+            logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
+
         if env == 'prod':
             process_event(event_details, region)
 
@@ -166,6 +170,10 @@ def scrape_asian_art_museum_current_events(env='prod', region='sf'):
                     'description': 'Image'
                 })
 
+            # Add logging for dev environment
+            if env == 'dev':
+                logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
+
             if env == 'prod':
                 process_event(event_details, region)
 
@@ -191,71 +199,77 @@ def scrape_asian_art_museum_past_events(env='prod', region='sf'):
     soup = fetch_and_parse(url)
     
     # Find rest of events
-    wrap_elements = soup.find(class_='exhibit-archive').find(class_='exhibit__content').find_all(class_='-wrap')
+    article_elements = soup.find(class_='exhibit-archive').find(class_='exhibit__content').find_all('article')
     articles = []
-    for e in wrap_elements:
+    for e in article_elements:
         a = e.find_all('article')
+        # Check if there are articles in the element
         if len(a) > 0:
-            articles += a
+            # Check if the element is not an empty year card
+            if 'no results for this year' not in e.text.lower():
+                # Check if the element is not a year card
+                if 'card-slash' not in e['class']:
+                    articles += a
 
     # Check if events were found
     if articles:
 
         for article in articles:
 
-            # Ignore the year cards
-            if 'card-slash' not in article['class']:
+            # Extract title and title link
+            title_tag = article.find('a', class_='card__title')
+            if title_tag:
+                event_title = title_tag.text.strip()
+                event_link = title_tag['href']
+            else:
+                event_title, event_link = None, None
 
-                # Extract title and title link
-                title_tag = article.find('a', class_='card__title')
-                if title_tag:
-                    event_title = title_tag.text.strip()
-                    event_link = title_tag['href']
-                else:
-                    event_title, event_link = None, None
+            # Extract image link if possible
+            img_tag = article.find('img', class_='card__img-src')
+            if img_tag:
+                image_link = img_tag['src']
+            else:
+                image_link = None
 
-                # Extract image link if possible
-                img_tag = article.find('img', class_='card__img-src')
-                if img_tag:
-                    image_link = img_tag['src']
-                else:
-                    image_link = None
+            # Extract date information
+            date_tag = article.find('div', class_='card__subtitle')
+            event_dates = date_tag.text.strip() if date_tag else None
+            dates = event_dates.lower().replace(',', '').split('–')
+            if event_dates:
+                start_date = convert_date_to_dt(dates[0])
+                end_date = convert_date_to_dt(dates[1])
+            else:
+                start_date = None
+                end_date = None
 
-                # Extract date information
-                date_tag = article.find('div', class_='card__subtitle')
-                event_dates = date_tag.text.strip() if date_tag else None
-                dates = event_dates.lower().replace(',', '').split('–')
-                if event_dates:
-                    start_date = convert_date_to_dt(dates[0])
-                    end_date = convert_date_to_dt(dates[1])
-                else:
-                    start_date = None
-                    end_date = None
+            # Identify phase
+            phase = 'past'
 
-                # Identify phase
-                phase = 'past'
+            event_details = {
+                'name': event_title,
+                'venue': 'Asian Art Museum',
+                'description': None,
+                'tags': ['exhibition'] + [phase] + ['museum'],
+                'phase': phase,
+                'dates': {'start': start_date, 'end': end_date},
+                'links': [
+                    {
+                        'link': event_link,
+                        'description': 'Event Page'
+                    },
+                ],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+            }
+            # Add image link if it exists
+            if image_link:
+                event_details['links'].append({
+                    'link': image_link,
+                    'description': 'Image'
+                })
 
-                event_details = {
-                    'name': event_title,
-                    'venue': 'Asian Art Museum',
-                    'description': None,
-                    'tags': ['exhibition'] + [phase] + ['museum'],
-                    'phase': phase,
-                    'dates': {'start': start_date, 'end': end_date},
-                    'links': [
-                        {
-                            'link': event_link,
-                            'description': 'Event Page'
-                        },
-                    ],
-                    'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
-                }
-                # Add image link if it exists
-                if image_link:
-                    event_details['links'].append({
-                        'link': image_link,
-                        'description': 'Image'
-                    })
+            # Add logging for dev environment
+            if env == 'dev':
+                logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
 
-                if env == 'prod':
-                    process_event(event_details, region)
+            if env == 'prod':
+                process_event(event_details, region)

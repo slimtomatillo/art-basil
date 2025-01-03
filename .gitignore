@@ -160,3 +160,6 @@ cython_debug/
 
 # Ignore .DS_Store files globally
 .DS_Store
+
+# Log files
+dev.log

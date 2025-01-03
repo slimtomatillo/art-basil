@@ -163,6 +163,11 @@ def scrape_sfwomenartists(env='prod', region='sf'):
                     'description': 'Image'
                 })
             
+            # Add debug logging for dev environment
+            if env == 'dev':
+                logging.info(f"Event found: {event_details.get('name')} at {event_details.get('venue')}")
+            
+            # Process event in prod environment
             if env == 'prod':
                 process_event(event_details, region)
 

@@ -119,6 +119,10 @@ def scrape_de_young_and_legion_of_honor(env='prod', region='sf'):
                                 'description': 'Image'
                             })
 
+                        # Log event details in dev environment
+                        if env == 'dev':
+                            logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
+
                         if env == 'prod':
                             process_event(event_details, region)
 

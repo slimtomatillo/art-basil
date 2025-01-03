@@ -9119,8 +9119,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "6a36a602eba29f44def5994212dc1ccf"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "b61dc70182d386f270552c5af35401ac"
         },
         "Ashwini Bhat: What Will It Take / For Us To Awake?-Asian Art Museum": {
             "name": "Ashwini Bhat: What Will It Take / For Us To Awake?",
@@ -9147,8 +9147,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "d0ab00b5138d471c2708aa12aa3c37de"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "d3704e7cd525d48245e5b4e8df5c1c6d"
         },
         "Mayumi Oda-Asian Art Museum": {
             "name": "Mayumi Oda",
@@ -9175,8 +9175,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "af78614ee95c8935bd21803475bb2d03"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "e992f8e8ddc896028c2b4e3251ac1a0d"
         },
         "Selections from the Guru Nanak Janamsakhi-Asian Art Museum": {
             "name": "Selections from the Guru Nanak Janamsakhi",
@@ -9203,8 +9203,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "80a9c3e160228602c031df389b5de0e8"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "7f431e8400bcab085d9953f0b243cb60"
         },
         "Southeast Asian Galleries-Asian Art Museum": {
             "name": "Southeast Asian Galleries",
@@ -9231,8 +9231,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "7b678619b52615b306266b665fa12084"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "8e3e0f1b1fa5fa475f6e4ecb3c987292"
         },
         "Hallyu! The Korean Wave-Asian Art Museum": {
             "name": "Hallyu! The Korean Wave",
@@ -9240,13 +9240,13 @@
             "description": "Discover why the world \ncan\u2019t\n get enough K-pop, Korean dramas, and \nkimbap\n.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
-                "end": "2024-01-06"
+                "end": "2025-01-06"
             },
             "ongoing": false,
             "links": [
@@ -9259,8 +9259,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "2308a9c9c9bc5c0e49f063f6ac71a430"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "f86ee0fd20c4bdc56020aa621b8c692f"
         },
         "Mountains of the Mind: A Chinese Landscape Journey-Asian Art Museum": {
             "name": "Mountains of the Mind: A Chinese Landscape Journey",
@@ -9287,8 +9287,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "22d6b51e99daf15a23d0170944f0bfc7"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "d1db9515c95d273da6d7140b8c1bfe97"
         },
         "Fukusa-Asian Art Museum": {
             "name": "Fukusa",
@@ -9315,8 +9315,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "6da94ed21919c88d98b7d96ef6f00e7e"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "48a46a9d1ac9d7452eac1a44eb55b276"
         },
         "A Billion Buddhas: The Awakened Ones in Himalayan Tradition-Asian Art Museum": {
             "name": "A Billion Buddhas: The Awakened Ones in Himalayan Tradition",
@@ -9343,8 +9343,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "6a28cfa56a2f8bbf493fdb5bed7d4008"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "ad94e7bdd660d63660e509f4317f9101"
         },
         "Myself Mona Ahmed-Asian Art Museum": {
             "name": "Myself Mona Ahmed",
@@ -9371,8 +9371,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "da92d397f9bb911e130808bdcbc78a05"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "6dce4ae1f7ba1209f904bd9b96bb8bd5"
         },
         "Moving Objects: Learning from Local and Global Communities-Asian Art Museum": {
             "name": "Moving Objects: Learning from Local and Global Communities",
@@ -9380,13 +9380,13 @@
             "description": "Engage with \nvoices\n from \nBay Area\n communities\n and share your thoughts on the future of museum collections.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
-                "end": "2024-03-10"
+                "end": "2025-03-10"
             },
             "ongoing": false,
             "links": [
@@ -9399,8 +9399,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "e49276e827a95ac2dbbe3a7772369de8"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "e6a8fd36f5a7defa54de6b9754197fa8"
         },
         "Celebrity Forms and Figures-Asian Art Museum": {
             "name": "Celebrity Forms and Figures",
@@ -9408,13 +9408,13 @@
             "description": "An eclectic mix of ancient and up-to-the-minute works engaging with the theme of celebrity.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
-                "end": "2024-04-28"
+                "end": "2025-04-28"
             },
             "ongoing": false,
             "links": [
@@ -9427,8 +9427,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "809402097c62f4717eeacf46ec3ad8ae"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "31c9796b8c13690902a47ba2a9da02b5"
         },
         "2024 New Generation Bamboo Art Prize Winners-Asian Art Museum": {
             "name": "2024 New Generation Bamboo Art Prize Winners",
@@ -9436,13 +9436,13 @@
             "description": "Five fresh, award-winning approaches to a time-honored art.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
-                "end": "2024-03-10"
+                "end": "2025-03-10"
             },
             "ongoing": false,
             "links": [
@@ -9455,8 +9455,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "90abb9cccd861bbd9df446c0052434aa"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "ebe330c292a5c29cce8e057b25a99390"
         },
         "Rustic Ceramics in the Japanese Teahouse-Asian Art Museum": {
             "name": "Rustic Ceramics in the Japanese Teahouse",
@@ -9464,13 +9464,13 @@
             "description": "Currently featuring a seasonal display of rustic ceramics by Tsujimura Shiro.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
-                "end": "2024-03-12"
+                "end": "2025-03-12"
             },
             "ongoing": false,
             "links": [
@@ -9483,8 +9483,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-12-31 11:14:46",
-            "hash": "6bd5b740b1d7c551a48a4c13eedc114d"
+            "last_updated": "2025-01-03 20:03:50",
+            "hash": "7352404731266067ab97524c8b02dc96"
         }
     },
     "Oakland Museum of California": {

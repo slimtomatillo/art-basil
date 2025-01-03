@@ -92,6 +92,10 @@ def scrape_sj_museum_of_art_exhibitions(env='prod', region='sj'):
             if image_link:
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
+            # Add logging for dev environment
+            logging.info(f"Event details in dev - Name: {event_details.get('name')}, Venue: {event_details.get('venue')}")
+
+            # Process event in prod environment
             if env == 'prod':
                 process_event(event_details, region)
 

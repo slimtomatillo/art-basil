@@ -78,6 +78,10 @@ def scrape_kala_exhibitions(env='prod', region='sf'):
             if image_link:
                 event_details['links'].append({'link': image_link, 'description': 'Image'})
 
+            # Process event in dev environment
+            if env == 'dev':
+                logging.info(f"Event details - Name: {event_details['name']}, Venue: {event_details['venue']}")
+
             if env == 'prod':
                 process_event(event_details, region)
 

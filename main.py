@@ -58,6 +58,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
 def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=None, write_summary=True):
     configure_logging(env)
     logging.info("----------NEW LOG----------")
+    logging.info(f"Environment: {env}")
 
     start_time = time.time()
     logging.info('Starting the scraping process')

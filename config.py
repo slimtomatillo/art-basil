@@ -55,18 +55,21 @@ def configure_logging(env):
 
     # Console handler for terminal output
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)  # Set to INFO level
-    console_handler.addFilter(InfoFilter())  # Add the custom filter to show selective info logs
+    console_handler.setLevel(logging.INFO)  # Keep INFO level for console in both environments
+    console_handler.addFilter(InfoFilter())
 
-    # File handler for logging all messages to file
-    handlers = [console_handler]
-    if env == 'prod':
-        file_handler = logging.FileHandler("scraping.log", mode='a')
-        file_handler.setLevel(logging.INFO)
-        handlers.append(file_handler)
+    # File handler with environment-specific log file
+    log_file = "dev.log" if env == 'dev' else "scraping.log"
+    file_handler = logging.FileHandler(log_file, mode='a')
+    
+    file_handler.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s - [%(filename)s:%(lineno)d]')
 
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    handlers = [console_handler, file_handler]
+
     for handler in handlers:
         handler.setFormatter(formatter)
         root_logger.addHandler(handler)
+    
+    # Set overall logging level
     root_logger.setLevel(logging.INFO)
