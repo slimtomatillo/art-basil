@@ -9207,8 +9207,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "b4327da97c0202985ee0337a468c4db0"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "5a8ba335dc45d4ab5c244cd67f3d7ead"
         },
         "Ashwini Bhat: What Will It Take / For Us To Awake?-Asian Art Museum": {
             "name": "Ashwini Bhat: What Will It Take / For Us To Awake?",
@@ -9235,8 +9235,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "3f99a920e376b3cbb3ee6a74da310090"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "5f4809343a0c14685d1f50d4f8599400"
         },
         "Mayumi Oda-Asian Art Museum": {
             "name": "Mayumi Oda",
@@ -9263,8 +9263,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "28c21f38665d9849a2be3b9fa62211c0"
+            "last_updated": "2025-01-31 19:03:54",
+            "hash": "2d7ba368faf52a7d39602375daee91ba"
         },
         "Selections from the Guru Nanak Janamsakhi-Asian Art Museum": {
             "name": "Selections from the Guru Nanak Janamsakhi",
@@ -9291,8 +9291,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "b15461f1537f5a786ed47b80268b7553"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "c840abf7d6d519fe21942cbc5bff1f50"
         },
         "Southeast Asian Galleries-Asian Art Museum": {
             "name": "Southeast Asian Galleries",
@@ -9319,8 +9319,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "0dee6cecbaffe7fe774317f9b213e0f2"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "9f819b96afb5e6ce17ba249bcd397618"
         },
         "Hallyu! The Korean Wave-Asian Art Museum": {
             "name": "Hallyu! The Korean Wave",
@@ -9353,30 +9353,30 @@
         "Mountains of the Mind: A Chinese Landscape Journey-Asian Art Museum": {
             "name": "Mountains of the Mind: A Chinese Landscape Journey",
             "venue": "Asian Art Museum",
-            "description": "Find a peaceful sojourn in landscapes depicting restful retreats.",
+            "description": "Find a peaceful sojourn in rivers and mountains inviting a spiritual encounter with nature.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
-                "start": null,
-                "end": "2025-01-27"
+                "start": "2025-01-30",
+                "end": null
             },
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://exhibitions.asianart.org/exhibitions/mountains-of-the-mind-a-chinese-landscape-journey/",
+                    "link": "https://exhibitions.asianart.org/exhibitions/mountains-of-the-mind/",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2024/10/chinese-painting-rotation2024b_1600w-600x450.jpg",
+                    "link": "https://exhibitions.asianart.org/wp-content/uploads/sites/7/2025/01/CHN_torrents_600w.jpg",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "9731f395ca3253e17a85176f7051410f"
+            "last_updated": "2025-01-31 19:03:54",
+            "hash": "04ba82b60f6248f28edc2ffb9598ae67"
         },
         "Fukusa-Asian Art Museum": {
             "name": "Fukusa",
@@ -9403,8 +9403,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "8a250c99864a897558a6de51f7957b83"
+            "last_updated": "2025-01-31 19:03:54",
+            "hash": "329555667fc8f3ed4e0c7039ffe86178"
         },
         "A Billion Buddhas: The Awakened Ones in Himalayan Tradition-Asian Art Museum": {
             "name": "A Billion Buddhas: The Awakened Ones in Himalayan Tradition",
@@ -9431,8 +9431,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "62f43ad2ce74b900f0946d6d626d17e9"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "4251e3bbd23eb25577b36ee908382a15"
         },
         "Myself Mona Ahmed-Asian Art Museum": {
             "name": "Myself Mona Ahmed",
@@ -9459,8 +9459,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "3bb8036cc1db6ab566ed9ca9d015fd82"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "24630159d497384c846b7b26e1ff3341"
         },
         "Moving Objects: Learning from Local and Global Communities-Asian Art Museum": {
             "name": "Moving Objects: Learning from Local and Global Communities",
@@ -9487,8 +9487,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "3a92a95d5703b4ad5c4b8949fec10e33"
+            "last_updated": "2025-01-31 19:03:54",
+            "hash": "7c585d95a5513e881c81886cbe77fda1"
         },
         "Celebrity Forms and Figures-Asian Art Museum": {
             "name": "Celebrity Forms and Figures",
@@ -9515,8 +9515,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "997603b8cef448e58f8c2a9de5365357"
+            "last_updated": "2025-01-31 19:03:54",
+            "hash": "4d5fcd4830e7445cc4d7f2c2cee3c189"
         },
         "2024 New Generation Bamboo Art Prize Winners-Asian Art Museum": {
             "name": "2024 New Generation Bamboo Art Prize Winners",
@@ -9543,8 +9543,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "5df701a56903d242b54529fa2ef46067"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "50029f3bc0bae646fb6a864d2af4fa8b"
         },
         "Rustic Ceramics in the Japanese Teahouse-Asian Art Museum": {
             "name": "Rustic Ceramics in the Japanese Teahouse",
@@ -9571,8 +9571,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "1ae9bed7c5d7f574ea8c9314941ee9b9"
+            "last_updated": "2025-01-31 19:03:55",
+            "hash": "b05a5f8aef9f1d870befde8efa0bea9b"
         },
         "Qi Baishi: Inspiration in Ink-Asian Art Museum": {
             "name": "Qi Baishi: Inspiration in Ink",
@@ -9599,8 +9599,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-29 11:14:40",
-            "hash": "f06ca05a492f3d454723f728f7c19f0c"
+            "last_updated": "2025-01-31 19:03:54",
+            "hash": "a413066748b3486b034b0f2a5593ef63"
         }
     },
     "Oakland Museum of California": {

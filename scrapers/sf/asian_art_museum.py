@@ -135,6 +135,10 @@ def scrape_asian_art_museum_current_events(env='prod', region='sf'):
             # Special case for January 2025
             elif event_date == 'january 2025':
                 end_date = convert_date_to_dt('january 31 2025')
+            # Handle "opens"
+            elif 'opens' in event_date:
+                start_date = convert_date_to_dt(event_date.split('opens')[1].strip())
+                end_date = None
             elif event_date:
                 end_date = convert_date_to_dt(event_date)
             else:
