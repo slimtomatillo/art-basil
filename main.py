@@ -7,7 +7,7 @@ from processing import update_event_phases
 from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art
-from scrapers.la import lacma
+from scrapers.la import lacma, the_broad
 
 def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=None):
     """Return dictionary of venue:scraper pairs and venue-to-region mapping"""
@@ -30,6 +30,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
         },
         'la': {
             "LACMA": lacma.scrape_lacma_exhibitions,
+            "The Broad": the_broad.scrape_the_broad_exhibitions,
         }
     }
     

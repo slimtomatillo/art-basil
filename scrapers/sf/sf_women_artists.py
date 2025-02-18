@@ -12,17 +12,23 @@ def scrape_event_specific_page(event_url):
     soup = fetch_and_parse(event_url)
 
     # Find all <p> elements within <header class="article-header">
-    p_elements = soup.find('header', class_='article-header').find_all('p')
+    header = soup.find('header', class_='article-header')
+    if not header:
+        return None, None, None
+        
+    p_elements = header.find_all('p')
 
     # Get date info
-    try:
-        p_text = [e.text for e in p_elements if ' – ' in e.text.replace(' to ', ' – ')]
-        event_dates = p_text[0].strip().lower().replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace('1st', '1').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
-        # Handle cases where no date, only a time was provided
-        if ':' in p_text[0] or 'pm' in p_text[0]:
-            event_dates = None
-    except:
-        event_dates = None
+    event_dates = None
+    for p in p_elements:
+        text = p.text.strip().lower()
+        # Skip if this looks like a title, opening reception, or other non-date text
+        if any(skip in text for skip in ['sfwa', 'members', 'exhibition', 'opening reception', 'opening', 'reception']):
+            continue
+        # Look for date separator and ensure it contains month names
+        if (' – ' in text or ' to ' in text) and any(month in text.lower() for month in MONTH_TO_NUM_DICT.keys()):
+            event_dates = text.replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace('1st', '1').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
+            break
 
     # Get event description
     try:
@@ -31,22 +37,27 @@ def scrape_event_specific_page(event_url):
         event_description = None
 
     # Get image link
-    first_link_tag = soup.find('div', class_='ngg-gallery-thumbnail').find('a')
-    # Extract the 'href' attribute from the <a> element
-    if first_link_tag:
-        image_link = first_link_tag.get('href')
-    else:
-        image_link = None
+    img_container = soup.find('div', class_='ngg-gallery-thumbnail')
+    image_link = None
+    if img_container:
+        first_link_tag = img_container.find('a')
+        if first_link_tag:
+            image_link = first_link_tag.get('href')
 
     return event_dates, event_description, image_link
 
 def convert_date_to_nums(date_string):
     """Takes a date in string form and converts it to ints"""
-
-    date_parts = date_string.split()
-    month_num = int(MONTH_TO_NUM_DICT[date_parts[0]])
-    day = int(date_parts[1])
-    return month_num, day
+    try:
+        date_parts = date_string.strip().split()
+        if not date_parts:
+            return None, None
+        month_num = int(MONTH_TO_NUM_DICT[date_parts[0]])
+        day = int(date_parts[1])
+        return month_num, day
+    except (KeyError, IndexError, ValueError) as e:
+        logging.warning(f"Error converting date string '{date_string}': {str(e)}")
+        return None, None
 
 def scrape_sfwomenartists(env='prod', region='sf'):
     """Scrape and process events from San Francisco Women Artists Gallery."""
@@ -65,7 +76,6 @@ def scrape_sfwomenartists(env='prod', region='sf'):
 
     # Check if events is found
     if events_list:
-
         for event in events_list:
             # Extract title and title-link
             event_title = event.find('h4', class_='gallery-title').text.strip()
@@ -75,6 +85,7 @@ def scrape_sfwomenartists(env='prod', region='sf'):
             event_dates, event_description, image_link = scrape_event_specific_page(event_link)
             # Skip to the next event if end date does not exist
             if not event_dates:
+                logging.warning(f"No valid dates found for event: {event_title} at {event_link}")
                 continue
             
             # Handle edge cases
@@ -89,11 +100,10 @@ def scrape_sfwomenartists(env='prod', region='sf'):
 
             # Extract date information
             dates = [d.strip() for d in event_dates.split('–')]
-            try:
-                start_date_month, start_date_day = convert_date_to_nums(dates[0])
-            except KeyError:
-                logging.warning("Error processing start date:", event_dates, event_link)
-                continue  # Skip to the next event if start date conversion fails
+            start_date_month, start_date_day = convert_date_to_nums(dates[0])
+            if start_date_month is None or start_date_day is None:
+                logging.warning(f"Could not parse start date from '{dates[0]}' for event: {event_title}")
+                continue
                             
             # If no end month, use the start month
             if len(dates[1].split(' ')) == 1:
@@ -107,12 +117,16 @@ def scrape_sfwomenartists(env='prod', region='sf'):
                     end_date_month = 6
                     end_date_day = 25
                 else:
-                    try:
-                        end_date_month, end_date_day = convert_date_to_nums(dates[1])
-                    except KeyError:
-                        logging.warning("Error processing end date:", event_dates, event_link)
-                        continue  # Skip to the next event if end date conversion fails
-            year = int(event.find('p').text.split(' ')[-1])
+                    end_date_month, end_date_day = convert_date_to_nums(dates[1])
+                    if end_date_month is None or end_date_day is None:
+                        logging.warning(f"Could not parse end date from '{dates[1]}' for event: {event_title}")
+                        continue
+
+            try:
+                year = int(event.find('p').text.split(' ')[-1])
+            except (ValueError, IndexError):
+                logging.warning(f"Could not parse year for event: {event_title}")
+                continue
             
             if start_date_month and start_date_day and year:
                 start_date = dt.date(year, start_date_month, start_date_day)
