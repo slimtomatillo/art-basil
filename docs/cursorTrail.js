@@ -16,8 +16,8 @@ class CursorTrail {
 
         const dot = document.createElement('div');
         dot.className = 'cursor-trail';
-        dot.style.left = `${e.pageX}px`;
-        dot.style.top = `${e.pageY}px`;
+        dot.style.left = `${e.clientX}px`;
+        dot.style.top = `${e.clientY}px`;
         
         dot.style.backgroundColor = `hsla(${this.hue}, 100%, 50%, 0.3)`;
         dot.style.boxShadow = `0 0 5px 2px hsla(${this.hue}, 100%, 50%, 0.2)`;
