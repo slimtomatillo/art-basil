@@ -319,6 +319,13 @@ body {
     border-color: #0b5ed7;
 }
 
+.notify-button:disabled {
+    background-color: #0d6efd !important;
+    color: white !important;
+    cursor: pointer !important;
+    opacity: 1 !important;
+}
+
 /* Notify modal styles */
 .notify-modal {
     display: none;

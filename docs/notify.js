@@ -19,7 +19,10 @@ window.openNotifyModal = function(event) {
     
     // Format dates
     let datesText = '';
-    if (event.dates.start && event.dates.start !== 'null') {
+    let hasStartDate = event.dates.start && event.dates.start !== 'null';
+    let hasEndDate = event.dates.end && event.dates.end !== 'null';
+    
+    if (hasStartDate) {
         const startDate = new Date(event.dates.start);
         datesText += `Opens: ${startDate.toLocaleDateString('en-US', { 
             year: 'numeric', 
@@ -28,13 +31,21 @@ window.openNotifyModal = function(event) {
         })}`;
     }
     
-    if (event.dates.end && event.dates.end !== 'null') {
+    if (hasEndDate) {
         const endDate = new Date(event.dates.end);
-        datesText += ` | Closes: ${endDate.toLocaleDateString('en-US', { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-        })}`;
+        if (hasStartDate) {
+            datesText += ` | Closes: ${endDate.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            })}`;
+        } else {
+            datesText += `Closes: ${endDate.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            })}`;
+        }
     }
     
     if (!datesText) {
@@ -116,6 +127,8 @@ window.createGoogleCalendarEvent = function(event, calendarType) {
     const endDateObj = event.dates.end && event.dates.end !== 'null' ? new Date(event.dates.end) : null;
     
     // Set event details based on calendar type
+    let eventPageLink; // Declare once outside the switch
+    
     switch (calendarType) {
         case 'opening':
             if (!startDateObj) {
@@ -153,6 +166,12 @@ window.createGoogleCalendarEvent = function(event, calendarType) {
         default:
             alert('Invalid calendar type selected');
             return;
+    }
+    
+    // Add event link if available (after switch statement)
+    eventPageLink = event.links.find(link => link.description === 'Event Page');
+    if (eventPageLink) {
+        eventDescription += `\n\nEvent Details: ${eventPageLink.link}`;
     }
     
     // Format dates for Google Calendar all-day events (YYYYMMDD format)

@@ -262,8 +262,14 @@ window.addEventListener('DOMContentLoaded', async () => {
                     const notifyButton = document.createElement('button');
                     notifyButton.className = 'notify-button';
                     notifyButton.textContent = 'Notify Me';
+                    notifyButton.disabled = false; // Ensure button is enabled
                     notifyButton.addEventListener('click', function() {
-                        window.openNotifyModal(event);
+                        console.log('Notify button clicked');
+                        if (typeof window.openNotifyModal === 'function') {
+                            window.openNotifyModal(event);
+                        } else {
+                            console.error('openNotifyModal function not found');
+                        }
                     });
                     linksCell.appendChild(notifyButton);
                 }
