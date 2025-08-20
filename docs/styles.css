@@ -301,19 +301,22 @@ body {
 
 /* Notify button styles */
 .notify-button {
-    background-color: #28a745;
+    background-color: #0d6efd;
     color: white;
-    border: none;
-    padding: 6px 12px;
+    border: 1px solid #0d6efd;
+    padding: 4px 8px;
     border-radius: 4px;
     font-size: 12px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 8px;
+    transition: all 0.3s ease;
+    margin-left: 0;
+    display: block;
+    margin-top: 4px;
 }
 
 .notify-button:hover {
-    background-color: #218838;
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
 }
 
 /* Notify modal styles */

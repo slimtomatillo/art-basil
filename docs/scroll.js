@@ -259,7 +259,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 
                 // Add notify button
                 if ((event.dates.start && event.dates.start !== 'null') || (event.dates.end && event.dates.end !== 'null')) {
-                    linksCell.appendChild(document.createElement('br'));
                     const notifyButton = document.createElement('button');
                     notifyButton.className = 'notify-button';
                     notifyButton.textContent = 'Notify Me';
