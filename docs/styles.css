@@ -298,3 +298,131 @@ body {
 .feedback-success button:hover {
     background-color: #218838;
 }
+
+/* Notify button styles */
+.notify-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+}
+
+.notify-button:hover {
+    background-color: #218838;
+}
+
+/* Notify modal styles */
+.notify-modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.notify-modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.notify-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+}
+
+.notify-close:hover {
+    color: #000;
+}
+
+.notify-form h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.notify-form .form-group {
+    margin-bottom: 20px;
+}
+
+.notify-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.notify-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.notify-form select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.notify-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.notify-form button:hover {
+    background-color: #218838;
+}
+
+.notify-form button.secondary {
+    background-color: #6c757d;
+}
+
+.notify-form button.secondary:hover {
+    background-color: #5a6268;
+}
+
+.event-info {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #28a745;
+}
+
+.event-info h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.event-info p {
+    margin-bottom: 5px;
+    color: #666;
+}

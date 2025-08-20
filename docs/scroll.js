@@ -256,6 +256,18 @@ window.addEventListener('DOMContentLoaded', async () => {
                     mapLinkElement.target = '_blank'; // Open in new tab/window
                     linksCell.appendChild(mapLinkElement);
                 }
+
+                // Add notify button
+                if ((event.dates.start && event.dates.start !== 'null') || (event.dates.end && event.dates.end !== 'null')) {
+                    linksCell.appendChild(document.createElement('br'));
+                    const notifyButton = document.createElement('button');
+                    notifyButton.className = 'notify-button';
+                    notifyButton.textContent = 'Notify Me';
+                    notifyButton.addEventListener('click', function() {
+                        window.openNotifyModal(event);
+                    });
+                    linksCell.appendChild(notifyButton);
+                }
             });
         })
         .catch(error => {
