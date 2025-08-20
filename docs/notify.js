@@ -166,8 +166,12 @@ window.createGoogleCalendarEvent = function(event, calendarType) {
     const startDateStr = formatDateForGoogleAllDay(startDate);
     const endDateStr = formatDateForGoogleAllDay(endDate);
     
-    // Create Google Calendar URL for all-day events with 1-week reminder
-    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateStr}/${endDateStr}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(event.venue)}&reminders=popup,10080`;
+    // Add reminder note to description
+    const reminderNote = '\n\n💡 Tip: Set a reminder for 1 week before this event!';
+    const fullDescription = eventDescription + reminderNote;
+    
+    // Create Google Calendar URL for all-day events
+    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateStr}/${endDateStr}&details=${encodeURIComponent(fullDescription)}&location=${encodeURIComponent(event.venue)}`;
     
     // Open Google Calendar in new tab
     window.open(googleCalendarUrl, '_blank');
