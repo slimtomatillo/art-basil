@@ -96,5 +96,55 @@
     <script>
         document.getElementById('logoImg').src = basePath + 'images/logo-no-background.png';
     </script>
+
+    <!-- Feedback Button -->
+    <button class="feedback-button" id="feedbackButton" title="Send Feedback">
+        ?
+    </button>
+
+    <!-- Feedback Modal -->
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="feedback-modal-content">
+            <span class="feedback-close" id="feedbackClose">&times;</span>
+            
+            <!-- Feedback Form -->
+            <form class="feedback-form" id="feedbackForm">
+                <h3>Send Feedback</h3>
+                <div class="form-group">
+                    <label for="feedbackType">Feedback Type</label>
+                    <select id="feedbackType" name="feedbackType" required>
+                        <option value="">Select feedback type</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="general">General Feedback</option>
+                        <option value="event">Event Information</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackName">Name (Optional)</label>
+                    <input type="text" id="feedbackName" name="feedbackName" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="feedbackEmail">Email (Optional)</label>
+                    <input type="email" id="feedbackEmail" name="feedbackEmail" placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="feedbackMessage">Message *</label>
+                    <textarea id="feedbackMessage" name="feedbackMessage" placeholder="Please describe your feedback..." required></textarea>
+                </div>
+                <button type="submit">Send</button
+            </form>
+
+            <!-- Success Message -->
+            <div class="feedback-success" id="feedbackSuccess" style="display: none;">
+                <h3>Thank You!</h3>
+                <p>Your feedback has been sent successfully. We appreciate your input!</p>
+                <button onclick="closeFeedbackModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback JavaScript -->
+    <script src="../feedback.js"></script>
 </body>
 </html>
