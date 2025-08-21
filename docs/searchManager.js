@@ -93,18 +93,23 @@ class SearchManager {
             
             // Get cell content for search
             const cells = row.getElementsByTagName('td');
-            if (cells.length < 4) return;
+            if (cells.length < 5) return;
             
-            const title = cells[0]?.textContent?.toLowerCase() || '';
+            // Column mapping based on actual table structure:
+            // Column 0: Image (empty, skip for search)
+            // Column 1: Date
+            // Column 2: Show @ Venue (title + venue)
+            // Column 3: Tags
+            // Column 4: Links (skip for search)
+            
             const date = cells[1]?.textContent?.toLowerCase() || '';
-            const location = cells[2]?.textContent?.toLowerCase() || '';
+            const titleVenue = cells[2]?.textContent?.toLowerCase() || '';
             const tags = cells[3]?.textContent?.toLowerCase() || '';
 
             // Check if row matches the search term
             const matchesSearch = 
-                title.includes(this.currentSearchTerm) ||
                 date.includes(this.currentSearchTerm) ||
-                location.includes(this.currentSearchTerm) ||
+                titleVenue.includes(this.currentSearchTerm) ||
                 tags.includes(this.currentSearchTerm);
 
             // Check if row matches the phase filter
@@ -151,7 +156,5 @@ class SearchManager {
     }
 }
 
-// Initialize search manager when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    window.searchManager = new SearchManager();
-});
+// SearchManager will be initialized by scroll.js after events are rendered
+// This prevents timing issues and ensures the table is populated before search is enabled

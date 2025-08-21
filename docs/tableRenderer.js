@@ -112,8 +112,28 @@ class TableRenderer {
         const options = { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC'};
         let dateText = 'Dates TBA'; // Default text for events without specific dates
     
-        const startDate = event.dates.start !== 'null' ? new Date(event.dates.start) : null;
-        const endDate = event.dates.end !== 'null' ? new Date(event.dates.end) : null;
+        // Helper function to safely create Date objects
+        const createSafeDate = (dateString) => {
+            if (!dateString || dateString === 'null' || dateString === '') {
+                return null;
+            }
+            
+            try {
+                const date = new Date(dateString);
+                // Check if the date is valid
+                if (isNaN(date.getTime())) {
+                    console.warn(`Invalid date string: ${dateString}`);
+                    return null;
+                }
+                return date;
+            } catch (error) {
+                console.warn(`Error parsing date: ${dateString}`, error);
+                return null;
+            }
+        };
+    
+        const startDate = createSafeDate(event.dates.start);
+        const endDate = createSafeDate(event.dates.end);
         const today = new Date();
         today.setHours(0, 0, 0, 0); // Normalize today's date for comparison
     
@@ -126,22 +146,42 @@ class TableRenderer {
             dateText = "Ongoing";
         } else if (isPastEvent && endDate) {
             // For past events with a known end date
-            dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+            try {
+                dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+            } catch (error) {
+                console.warn(`Error formatting end date:`, error);
+                dateText = "Closed (date unavailable)";
+            }
         } else if (isCurrentEvent) {
             // For current events
             if (endDate) {
                 // If end date is known
-                dateText = `Through ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+                try {
+                    dateText = `Through ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+                } catch (error) {
+                    console.warn(`Error formatting end date:`, error);
+                    dateText = "Through (date unavailable)";
+                }
             } else if (startDate) {
                 // If start date is known
-                dateText = `Started on ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+                try {
+                    dateText = `Started on ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+                } catch (error) {
+                    console.warn(`Error formatting start date:`, error);
+                    dateText = "Started on (date unavailable)";
+                }
             } else {
                 // If neither date is known, it remains "Dates TBA"
                 dateText = "Dates TBA";
             }
-        } else if (isFutureEvent) {
+        } else if (isFutureEvent && startDate) {
             // For future events
-            dateText = `Opens ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+            try {
+                dateText = `Opens ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+            } catch (error) {
+                console.warn(`Error formatting start date:`, error);
+                dateText = "Opens (date unavailable)";
+            }
         }
     
         return dateText;
