@@ -171,7 +171,7 @@ window.createGoogleCalendarEvent = function(event, calendarType) {
     // Add event link if available (after switch statement)
     eventPageLink = event.links.find(link => link.description === 'Event Page');
     if (eventPageLink) {
-        eventDescription += `\n\nEvent Details: ${eventPageLink.link}`;
+        eventDescription += `\n\n<a href="${eventPageLink.link}">Event Page</a>`;
     }
     
     // Format dates for Google Calendar all-day events (YYYYMMDD format)
@@ -187,7 +187,8 @@ window.createGoogleCalendarEvent = function(event, calendarType) {
     
     // Add reminder note to description
     const reminderNote = '\n\n💡 Tip: Set a reminder for 1 week before this event!';
-    const fullDescription = eventDescription + reminderNote;
+    const artBasilAttribution = '\n\nCreated by <a href="https://artbasil.info">Art Basil</a>';
+    const fullDescription = eventDescription + reminderNote + artBasilAttribution;
     
     // Create Google Calendar URL for all-day events
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateStr}/${endDateStr}&details=${encodeURIComponent(fullDescription)}&location=${encodeURIComponent(event.venue)}`;
