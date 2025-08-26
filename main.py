@@ -1,6 +1,7 @@
 import time
 import logging
 import pandas as pd
+import numpy as np
 import os
 from config import configure_logging, DB_FILES
 from processing import update_event_phases

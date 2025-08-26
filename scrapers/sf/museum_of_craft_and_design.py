@@ -80,9 +80,19 @@ def scrape_museum_of_craft_and_design_exhibitions(env='prod', region='sf'):
             # Extract image if available
             img_tag = exhibition.find('img')
             if img_tag:
-                image_link = img_tag['src']
-                if image_link.startswith('data:image/gif'):
+                # Check for lazy-loaded images first (data-src attribute)
+                if img_tag.get('data-src'):
                     image_link = img_tag['data-src']
+                # Fall back to src attribute
+                elif img_tag.get('src'):
+                    image_link = img_tag['src']
+                else:
+                    image_link = None
+                
+                # Filter out placeholder SVG images (1x1 pixel transparent images)
+                if image_link and (image_link.startswith('data:image/svg+xml') or 
+                                 'PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==' in image_link):
+                    image_link = None
             else:
                 image_link = None
                         
