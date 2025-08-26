@@ -28,36 +28,47 @@
 
     <div class="container py-4">
         <header class="mb-4">
-            <h1 class="h3 mb-4">
-                <a href="../index.html" style="text-decoration: none; color: inherit;">
-                    <img src="" id="logoImg" alt="Art Basil Logo" style="height: 40px; margin-bottom: 10px; vertical-align: middle;">
-                    Art Basil
-                </a>
-            </h1>
-            <h1 class="display-5">San Francisco Bay Area</h1>
-            <p class="lead">Current and upcoming art exhibitions</p>
-            
-            <div class="d-flex flex-wrap gap-3 align-items-center mt-4">
-                <a href="../add_event.html" class="btn btn-primary">Add an event</a>
-                <a href="mailto:info.artbasil@gmail.com" class="btn btn-outline-secondary">Contact Us</a>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+                <!-- Left side: Logo, search, and filters -->
+                <div class="mb-3 mb-md-0">
+                    <h1 class="h3 mb-3">
+                        <a href="../index.html" style="text-decoration: none; color: inherit;">
+                            <img src="" id="logoImg" alt="Art Basil Logo" style="height: 40px; margin-bottom: 10px; vertical-align: middle;">
+                            Art Basil
+                        </a>
+                    </h1>
+                    
+                    <!-- Search and Filter Section -->
+                    <div class="d-flex flex-column gap-3">
+                        <div id="searchBarContainer">
+                            <input type="text" id="searchBar" class="form-control" placeholder="Search exhibitions...">
+                        </div>
+                        <div id="filterButtonsContainer" class="d-flex gap-2">
+                            <button id="currentButton" class="filter-button">Current</button>
+                            <button id="futureButton" class="filter-button">Future</button>
+                            <button id="pastButton" class="filter-button">Past</button>
+                            <button id="allButton" class="filter-button active">All</button>
+                        </div>
+                    </div>
+                </div>
                 
-                <!-- PayPal Donate Button -->
-                <form action="https://www.paypal.com/donate/?business=GPJR7D9YB2Z6W&no_recurring=0&item_name=Thank+you+%3A%29&currency_code=USD" method="post" target="_top" class="d-inline">
-                    <button type="submit" class="btn btn-outline-primary">Support Us</button>
-                </form>
+                <!-- Right side: City name and action buttons -->
+                <div class="text-md-end">
+                    <h1 class="display-5 mb-3 text-md-end">San Francisco Bay Area</h1>
+                    <p class="lead mb-3 text-md-end">Current and upcoming art exhibitions</p>
+                    
+                    <div class="d-flex gap-2 justify-content-md-end">
+                        <a href="../add_event.html" class="btn btn-primary">Add an event</a>
+                        <a href="mailto:info.artbasil@gmail.com" class="btn btn-outline-secondary">Contact Us</a>
+                        
+                        <!-- PayPal Donate Button -->
+                        <form action="https://www.paypal.com/donate/?business=GPJR7D9YB2Z6W&no_recurring=0&item_name=Thank+you+%3A%29&currency_code=USD" method="post" target="_top" class="d-inline">
+                            <button type="submit" class="btn btn-outline-primary">Support Us</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </header>
-
-        <div id="searchBarContainer" class="mb-3">
-            <input type="text" id="searchBar" class="form-control" placeholder="Search exhibitions...">
-        </div>
-
-        <div id="filterButtonsContainer" class="mb-4">
-            <button id="currentButton" class="filter-button">Current</button>
-            <button id="futureButton" class="filter-button">Future</button>
-            <button id="pastButton" class="filter-button">Past</button>
-            <button id="allButton" class="filter-button active">All</button>
-        </div>
 
         <div class="table-responsive">
             <table class="table event-table" id="eventTable">
