@@ -566,10 +566,10 @@
             "description": "Resnick Pavilion",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2025-03-23",
                 "end": "2026-01-04"
@@ -581,12 +581,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://lacma.orghttps://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2025-01/RSEX9443_6.jpg?VersionId=J.Hhwl3aI22RKa1izaZKeEdoHggavoXn&itok=etseMdmL",
+                    "link": "https://lacma.orghttps://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2025-01/RSEX9443_6.jpg?VersionId=0Fg0NGr.DuP1HC_vLnbID.CFutAQ9h43&itok=etseMdmL",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-21 11:18:30",
-            "hash": "8715c97a477580d539a42f93aba2d70c"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "de12475143f66a1df9dbdffc366ee6d1"
         },
         "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection-LACMA": {
             "name": "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection",
@@ -641,8 +641,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:31",
-            "hash": "f699111cf02c27a784c88d5296674955"
+            "last_updated": "2026-01-05 11:21:41",
+            "hash": "20127169e6cb41771869ce70d6d549af"
         },
         "Mark Bradford: 150 Portrait Tone-LACMA": {
             "name": "Mark Bradford: 150 Portrait Tone",
@@ -669,8 +669,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:31",
-            "hash": "21ddc9495e2f95347b4799df146cb9db"
+            "last_updated": "2026-01-05 11:21:41",
+            "hash": "b207aec2e15318907128e94957f63c8d"
         },
         "Ritual Expressions: African Adornment from the Permanent Collection-LACMA": {
             "name": "Ritual Expressions: African Adornment from the Permanent Collection",
@@ -837,8 +837,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "24fa2f446e2b849d2022a6622d084d43"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "40ede4f2e47883f68d52933daf156dfc"
         },
         "Collecting Impressionism at LACMA-LACMA": {
             "name": "Collecting Impressionism at LACMA",
@@ -865,8 +865,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "3e55881cd7db0f0ca2071e71bd269735"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "2205b36bcb5dac2749c2a219b5b5d1b5"
         },
         "Artist Selects: Frances Stark, Periodic Love and Perpetual War-LACMA": {
             "name": "Artist Selects: Frances Stark, Periodic Love and Perpetual War",
@@ -893,8 +893,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:31",
-            "hash": "23a0d72a3841d16821f27c7303f68bb3"
+            "last_updated": "2026-01-05 11:21:41",
+            "hash": "41290b710ed13780c1a274b737a9fb30"
         },
         "Grounded-LACMA": {
             "name": "Grounded",
@@ -921,8 +921,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-12-20 11:18:32",
-            "hash": "2ff0150070701c8ad6bffd2585c8d755"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "85a6786c83ebf3a045a66b7e2e1e5e40"
         },
         "Deep Cuts: Block Printing Across Cultures-LACMA": {
             "name": "Deep Cuts: Block Printing Across Cultures",
@@ -949,8 +949,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "aade9ffb5b42e3c7b7f7b43d663c2b23"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "352170b44dd031ce03117f34e4fd7ed4"
         },
         "Nature on Notice: Contemporary Art and Ecology-LACMA": {
             "name": "Nature on Notice: Contemporary Art and Ecology",
@@ -1005,8 +1005,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "968948b50bc0e08050aa5fbc11b9a78e"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "5f317bf3aa1eca9fc046d47605c29fdc"
         },
         "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA-LACMA": {
             "name": "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA",
@@ -1033,8 +1033,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "4e26ed51097728a82ebee2a5a5d8962e"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "00d48b62bd460d70dfa6b8a828db0e94"
         },
         "Bruce Nauman: From the Collection-LACMA": {
             "name": "Bruce Nauman: From the Collection",
@@ -1089,8 +1089,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "482918fd3da9264fd13ce250fdc839e7"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "5b08a87ef334228da67f6571503e4325"
         },
         "Diffuse Control by Beeple-LACMA": {
             "name": "Diffuse Control by Beeple",
@@ -1098,10 +1098,10 @@
             "description": "BCAM, Level 1",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2025-10-26",
                 "end": "2026-01-04"
@@ -1117,8 +1117,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "c7f954bdbd37a17cea944892b915d4a4"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "f6e8c482896fb0266e5f6216597ee4a5"
         },
         "Austrian Expressionism and Otto Kallir-LACMA": {
             "name": "Austrian Expressionism and Otto Kallir",
@@ -1145,8 +1145,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "8016199c2cd442343394aa8133824722"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "4475bb1fb4bc9467178d6f10f7886b48"
         },
         "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu-LACMA": {
             "name": "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu",
@@ -1173,8 +1173,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "20c17caba567974f8f1b8ebfff0b1f42"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "c77482813e2577f0c8b94d6dd2a897e6"
         },
         "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.-LACMA": {
             "name": "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.",
@@ -1201,8 +1201,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "07909989fb3800e8c0140e54c0277e8f"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "7cedf6ea2f7c250bf3e83bd5e0d4344d"
         },
         "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection-LACMA": {
             "name": "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection",
@@ -1229,8 +1229,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "172dacf1dbc981ca0f4988f841742432"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "2f520b8fe9ecc52de4e27457b7b18ed3"
         },
         "john gerrard: SPIRITS-LACMA": {
             "name": "john gerrard: SPIRITS",
@@ -1257,8 +1257,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:30",
-            "hash": "6ee17a3d45468852bcbc006822c58015"
+            "last_updated": "2026-01-05 11:21:40",
+            "hash": "958a7ffd0b5165b0d3bf52d29bb5952b"
         },
         "Richard Serra: Band-LACMA": {
             "name": "Richard Serra: Band",
@@ -1285,8 +1285,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:31",
-            "hash": "9bf9ef2faed6adeffe4dedd51857063a"
+            "last_updated": "2026-01-05 11:21:41",
+            "hash": "825df375354db684cccda5313ba89081"
         },
         "Miracle Mile-LACMA": {
             "name": "Miracle Mile",
@@ -1313,8 +1313,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:31",
-            "hash": "b4eb9586313f3134ec6132121f6efca9"
+            "last_updated": "2026-01-05 11:21:41",
+            "hash": "bf1cd688699483938a5fddc32f57b53a"
         },
         "Metropolis II-LACMA": {
             "name": "Metropolis II",
@@ -1341,8 +1341,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:31",
-            "hash": "625af3e5131fa7666d924d0671e84c19"
+            "last_updated": "2026-01-05 11:21:41",
+            "hash": "dc6d47cbae9264b0788260aaea41ab9a"
         }
     },
     "The Broad": {
@@ -1371,8 +1371,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:44",
-            "hash": "2faf25c1d4ae2c8ee5255afe25d2a1e6"
+            "last_updated": "2026-01-05 11:21:52",
+            "hash": "2426bed81de768a9557ba73af71bf455"
         },
         "Expansive Presentation of Jean-Michel Basquiat-The Broad": {
             "name": "Expansive Presentation of Jean-Michel Basquiat",
@@ -1399,8 +1399,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:35",
-            "hash": "17f6c40f3a45d6ba11298556686afc43"
+            "last_updated": "2026-01-05 11:21:44",
+            "hash": "0ba491fc07fa3121d2cc1db1c8193127"
         },
         "Expansive Presentation of Andy Warhol-The Broad": {
             "name": "Expansive Presentation of Andy Warhol",
@@ -1427,8 +1427,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:37",
-            "hash": "76628c309f4408737c077a4ab7c8624a"
+            "last_updated": "2026-01-05 11:21:46",
+            "hash": "a75d23773e7da97f827d9d9921dc0d7a"
         },
         "Expansive Presentation of Roy Lichtenstein-The Broad": {
             "name": "Expansive Presentation of Roy Lichtenstein",
@@ -1455,8 +1455,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:39",
-            "hash": "4729191c618396e160f83dd7bfc08532"
+            "last_updated": "2026-01-05 11:21:47",
+            "hash": "d4e20ad6fc3e8495bfd8067a5ae149ce"
         },
         "Yayoi Kusama's Infinity Mirror Rooms-The Broad": {
             "name": "Yayoi Kusama's Infinity Mirror Rooms",
@@ -1483,8 +1483,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:40",
-            "hash": "92c775c5125792d2ab53a521626b5a2b"
+            "last_updated": "2026-01-05 11:21:48",
+            "hash": "a79bd393699804342727678548a869fa"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
@@ -1539,8 +1539,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:46",
-            "hash": "aa6733682d2f78fd7e8afa279d017bd9"
+            "last_updated": "2026-01-05 11:21:54",
+            "hash": "b25ea1ae566bfa8eca70930967ec1821"
         },
         "Desire, Knowledge, and Hope (with Smog)-The Broad": {
             "name": "Desire, Knowledge, and Hope (with Smog)",
@@ -1567,8 +1567,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:47",
-            "hash": "07fca31da207edf78d268498807b7754"
+            "last_updated": "2026-01-05 11:21:56",
+            "hash": "8e0c2ddaf6eacb06f8d6b30357452e32"
         },
         "Keith Haring: Art Is for Everybody-The Broad": {
             "name": "Keith Haring: Art Is for Everybody",
@@ -1595,8 +1595,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:49",
-            "hash": "152471171a65222fca18a6782d72e6b2"
+            "last_updated": "2026-01-05 11:21:57",
+            "hash": "6fdcccd4761348f4f71d6789bf2ebee7"
         },
         "William Kentridge: In Praise of Shadows-The Broad": {
             "name": "William Kentridge: In Praise of Shadows",
@@ -1623,8 +1623,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:51",
-            "hash": "353fa1d78a52ed83a9de80facfec8261"
+            "last_updated": "2026-01-05 11:21:58",
+            "hash": "f0c727d843d56f8222a65a4543f5276a"
         },
         "Takashi Murakami: Stepping on the Tail of a Rainbow-The Broad": {
             "name": "Takashi Murakami: Stepping on the Tail of a Rainbow",
@@ -1651,8 +1651,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:52",
-            "hash": "3c6ac284c94088bf5624f179c5f7a4ce"
+            "last_updated": "2026-01-05 11:22:00",
+            "hash": "b0483536df3101aa56ae0b61840e85e9"
         },
         "This Is Not America's Flag-The Broad": {
             "name": "This Is Not America's Flag",
@@ -1679,8 +1679,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:53",
-            "hash": "3cd137bb1fbaa3bc075de42c2e491ffe"
+            "last_updated": "2026-01-05 11:22:02",
+            "hash": "8807d67505a503e4124c27b6ed638e2d"
         },
         "Since Unveiling: Selected Acquisitions of a Decade-The Broad": {
             "name": "Since Unveiling: Selected Acquisitions of a Decade",
@@ -1707,8 +1707,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:55",
-            "hash": "65601ac31c66420b2c09a31c3406a441"
+            "last_updated": "2026-01-05 11:22:03",
+            "hash": "8cc9384c5080ce2f89dbe0db17f5db3a"
         },
         "Expansive Presentation of Christopher Wool-The Broad": {
             "name": "Expansive Presentation of Christopher Wool",
@@ -1735,8 +1735,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:57",
-            "hash": "0431badfcd0f944055308a32492930e7"
+            "last_updated": "2026-01-05 11:22:05",
+            "hash": "0e1c25a9e336e8772eb16a2f77059d63"
         },
         "Invisible Sun-The Broad": {
             "name": "Invisible Sun",
@@ -2071,8 +2071,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-04 11:18:43",
-            "hash": "7847adc96778dfd2bda5ca6b6b095e22"
+            "last_updated": "2026-01-05 11:21:51",
+            "hash": "a645b1bbb91b6edcb8b1096e3292e521"
         }
     }
 }
