@@ -53,8 +53,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "8a280e20ccb7528e928fc9fb5b8d9e3d"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "7d338202fb40e9e240ea9aaeacb50326"
         },
         "Josiah McElheny: Island Universe-LACMA": {
             "name": "Josiah McElheny: Island Universe",
@@ -287,9 +287,10 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "future",
+            "phase": "past",
             "dates": {
                 "start": "2025-05-11",
                 "end": "2026-04-05"
@@ -585,8 +586,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "9629aee9358c6a7ce98b4b48a306f18a"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "2d0ce1e0c1802479041a14630e8d1704"
         },
         "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection-LACMA": {
             "name": "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection",
@@ -613,8 +614,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "e2039e6b1a9637af02b8e0c8130ac29e"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "4425f7d4577a3a9f7f0a028fcc49f4b9"
         },
         "Barbara Kruger: Untitled (Shafted)-LACMA": {
             "name": "Barbara Kruger: Untitled (Shafted)",
@@ -753,8 +754,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "8f7e45717a6b16f078b453e74f6e657e"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "da8fa2f48f197e31fb6f19af59489e25"
         },
         "Nancy Baker Cahill: Substrate-LACMA": {
             "name": "Nancy Baker Cahill: Substrate",
@@ -837,8 +838,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "97c100c95897bffb557ca4a129cd9440"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "1f58a07181912826782899ad275e83b1"
         },
         "Collecting Impressionism at LACMA-LACMA": {
             "name": "Collecting Impressionism at LACMA",
@@ -865,8 +866,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "22c8c3f8a8f2464771f0a35f469fac3a"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "d044e1e3c6974f5b8a29e8193eb70277"
         },
         "Artist Selects: Frances Stark, Periodic Love and Perpetual War-LACMA": {
             "name": "Artist Selects: Frances Stark, Periodic Love and Perpetual War",
@@ -893,8 +894,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "dd298c9e3e75afd65b927c4abefc1ec1"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "4f3c5335e62dcfa2c6f935cec826fb8f"
         },
         "Grounded-LACMA": {
             "name": "Grounded",
@@ -949,8 +950,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "aafa73b4be06d1518907922a95484906"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "7121d5de02dda98ce71f4a548e59efdf"
         },
         "Nature on Notice: Contemporary Art and Ecology-LACMA": {
             "name": "Nature on Notice: Contemporary Art and Ecology",
@@ -1005,8 +1006,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "cf713b70920f7883d56fcc944fbddcf4"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "4f62b6be635d664cbe4a73ff3233ca55"
         },
         "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA-LACMA": {
             "name": "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA",
@@ -1033,8 +1034,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "4c0b4f2ac7f455171f4a115529d13332"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "6f0c0f2009b300df390098cfbbdb3864"
         },
         "Bruce Nauman: From the Collection-LACMA": {
             "name": "Bruce Nauman: From the Collection",
@@ -1061,8 +1062,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "4e18971c40bc152622ce10e83da4ab80"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "44939e034ccae91c925459f8c773dac6"
         },
         "Deep Time Cinematography-LACMA": {
             "name": "Deep Time Cinematography",
@@ -1117,8 +1118,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "8cc3d4c255df947d3fdea7afcc3c19d6"
+            "last_updated": "2026-04-06 11:51:22",
+            "hash": "1a52a34f94db04eadea9ae4485856d94"
         },
         "Austrian Expressionism and Otto Kallir-LACMA": {
             "name": "Austrian Expressionism and Otto Kallir",
@@ -1145,8 +1146,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "1713a7c03f3771db56d669b01f68df76"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "702b615c4d1ec8c1ec506dee4f2b5848"
         },
         "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu-LACMA": {
             "name": "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu",
@@ -1173,8 +1174,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "630d14bf3e9df2bc21bc2639789430ce"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "bc6be15edfd369e190268378ec379861"
         },
         "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.-LACMA": {
             "name": "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.",
@@ -1201,8 +1202,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "a2ca039b81386ac982bdb93fd7fb933f"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "3596320d72f50ffb252e538e79ab831a"
         },
         "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection-LACMA": {
             "name": "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection",
@@ -1229,8 +1230,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "a1349eba1b2a82c498ff14c4352399c7"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "3b68e613401aa8315aaea82bb378f8e1"
         },
         "john gerrard: SPIRITS-LACMA": {
             "name": "john gerrard: SPIRITS",
@@ -1369,8 +1370,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "d179daa62d0159f0a14107600e2dd8fe"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "75b65a41a85a4c83873e2ccad06a91c2"
         },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
@@ -1397,8 +1398,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:48",
-            "hash": "34d567f3dc0762a063236ddaea6ec013"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "b2de298a801a833542f0820c735edbf5"
         },
         "Paul R. Williams: Architect for Living-LACMA": {
             "name": "Paul R. Williams: Architect for Living",
@@ -1425,8 +1426,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "a00d99796257a990a540bddf09096aaf"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "e64b3d61f974de2945794e955ab2e407"
         },
         "Eileen Cowin: Between Panic and Paradise-LACMA": {
             "name": "Eileen Cowin: Between Panic and Paradise",
@@ -1453,8 +1454,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:50",
-            "hash": "86c4f50742cca61072f08f6c8acf1623"
+            "last_updated": "2026-04-06 11:51:20",
+            "hash": "09d87d70590007f7281329a9db8c6e94"
         }
     },
     "The Broad": {
@@ -1595,8 +1596,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:31:59",
-            "hash": "29e7f66d5cf8ebe4d64624b0fff45418"
+            "last_updated": "2026-04-06 11:51:30",
+            "hash": "ffd3c9bdfe7451e118830f3f3ad397c9"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
@@ -2183,8 +2184,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-04-05 11:32:18",
-            "hash": "64399c9cd63e73f89790473667f042ab"
+            "last_updated": "2026-04-06 11:51:49",
+            "hash": "702012d6c6fa4535b504f0b1cdeb415b"
         }
     }
 }
