@@ -62,10 +62,10 @@
             "description": "Resnick Pavilion",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2024-09-12",
                 "end": "2026-06-06"
@@ -586,8 +586,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "81e825f0a63e76630803f3244a0e96a7"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "314e9dd67aaebcaeff4777654d793817"
         },
         "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection-LACMA": {
             "name": "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection",
@@ -614,8 +614,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "cc1e01448079f32083eac284fdd9e7d8"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "53efc9e40bbbed725ed82636af75278a"
         },
         "Barbara Kruger: Untitled (Shafted)-LACMA": {
             "name": "Barbara Kruger: Untitled (Shafted)",
@@ -754,8 +754,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "ce22c4207667f4f1924495f4231eadc8"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "2e6bc146b3b96e3b38dd9057e064c396"
         },
         "Nancy Baker Cahill: Substrate-LACMA": {
             "name": "Nancy Baker Cahill: Substrate",
@@ -838,8 +838,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "204ab188a477fd6b8b12399bd45b20b3"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "1273feb45fe13b89edfdd01a65423121"
         },
         "Collecting Impressionism at LACMA-LACMA": {
             "name": "Collecting Impressionism at LACMA",
@@ -866,8 +866,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "5a2f8baa6693e3bbed391c5b13057f31"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "a0f85f231682d7d09f402002105ce594"
         },
         "Artist Selects: Frances Stark, Periodic Love and Perpetual War-LACMA": {
             "name": "Artist Selects: Frances Stark, Periodic Love and Perpetual War",
@@ -894,8 +894,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "ac3a9ce801ef0750140f7cff15ac59f3"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "e07510ee8214f61ae091923c213fbdca"
         },
         "Grounded-LACMA": {
             "name": "Grounded",
@@ -950,8 +950,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "9c5b44df885a2db87cc08e0525cbdc37"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "808b1d6989fc63674dfc1e5d0173ff08"
         },
         "Nature on Notice: Contemporary Art and Ecology-LACMA": {
             "name": "Nature on Notice: Contemporary Art and Ecology",
@@ -1006,8 +1006,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "9eafd157b572379c9be66e1e53783c63"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "e9c1413b6d205ae74709d99c15271220"
         },
         "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA-LACMA": {
             "name": "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA",
@@ -1034,8 +1034,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "b07717ca36c6b7360b16867c01df5243"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "b56fd7ac56718ff67e3ff68f88f570a9"
         },
         "Bruce Nauman: From the Collection-LACMA": {
             "name": "Bruce Nauman: From the Collection",
@@ -1118,8 +1118,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "4017d9bedd2d873f8e05458a027aa15a"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "7b28d61d7b9ab90ce124ef6f667c7f3d"
         },
         "Austrian Expressionism and Otto Kallir-LACMA": {
             "name": "Austrian Expressionism and Otto Kallir",
@@ -1146,8 +1146,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "20448471b8d744a7006ee8cbdcd363e3"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "8d5f75a868945bfec99417d99ba3a813"
         },
         "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu-LACMA": {
             "name": "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu",
@@ -1174,8 +1174,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "8b97e513657fc067492657ca1add237a"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "c1cca1146bf9fbb293cb516add90e8d6"
         },
         "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.-LACMA": {
             "name": "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.",
@@ -1202,8 +1202,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "9313eb6360dc9911786edca28067616b"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "ceabbf61461cec7cfcce6f609e0df508"
         },
         "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection-LACMA": {
             "name": "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection",
@@ -1230,8 +1230,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "33737d75ff21e99a19534299b6430d51"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "6470c6244476a70656a22c27e1be35b0"
         },
         "john gerrard: SPIRITS-LACMA": {
             "name": "john gerrard: SPIRITS",
@@ -1370,8 +1370,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "c459c61ddcad24bd0906ef8d41dc96d8"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "bce13940ce384f89965e945a3761c13f"
         },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
@@ -1398,8 +1398,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "cdaeaea1e5d9f69837e9ee65012489ce"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "7af7bbb3bd2ef337aef68cdb3f7dbf84"
         },
         "Paul R. Williams: Architect for Living-LACMA": {
             "name": "Paul R. Williams: Architect for Living",
@@ -1426,8 +1426,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "86aa18bb36d1edd2faffcf17b80aaac1"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "8c48583ff415062e5c931515c87a8bae"
         },
         "Eileen Cowin: Between Panic and Paradise-LACMA": {
             "name": "Eileen Cowin: Between Panic and Paradise",
@@ -1454,8 +1454,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "d9435a155593ace685d92a6c6b8c8b32"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "b7c44f54c45656dea8926afe8daba9a3"
         },
         "Home of the Future, 1925\u20131985: Designing Domestic Utopias-LACMA": {
             "name": "Home of the Future, 1925\u20131985: Designing Domestic Utopias",
@@ -1482,8 +1482,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "497b55ad23b44171276b7cecef9e4216"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "6b69adee745d3ca0e6c4314dd1784bdb"
         },
         "The Brockman Gallery: Los Angeles, 1967\u20131990-LACMA": {
             "name": "The Brockman Gallery: Los Angeles, 1967\u20131990",
@@ -1510,8 +1510,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "3cbc017a2e52c1347cd559df482aa812"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "b161bafcf82fdfcf519b4480895922c5"
         },
         "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)-LACMA": {
             "name": "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)",
@@ -1538,8 +1538,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "761622b3468ebee22684ad64a14c8fb3"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "6f5c941b4ee306d987789d125e8c49c6"
         },
         "From MacArthur Park, with Love-LACMA": {
             "name": "From MacArthur Park, with Love",
@@ -1594,8 +1594,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:57",
-            "hash": "76f18f0fd800b493a37212304e22541a"
+            "last_updated": "2026-06-07 12:22:20",
+            "hash": "4970d36df5548539063ed8a282c7fe8d"
         },
         "Andrew Thomas Huang: The Deer of Nine Colors-LACMA": {
             "name": "Andrew Thomas Huang: The Deer of Nine Colors",
@@ -1622,8 +1622,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:06:56",
-            "hash": "0d222353c188c86bc3af7877c7dc8b6a"
+            "last_updated": "2026-06-07 12:22:19",
+            "hash": "1c29c61f3a068afcba252627a40befbd"
         }
     },
     "The Broad": {
@@ -1764,8 +1764,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:07:08",
-            "hash": "bf4807e4b3f709a7afd461d48261cdde"
+            "last_updated": "2026-06-07 12:22:30",
+            "hash": "5bed62f92c6306c4e95ab8ed9aeca377"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
@@ -2330,7 +2330,7 @@
         "None-The Broad": {
             "name": null,
             "venue": "The Broad",
-            "description": "Featuring over twenty artists, the special exhibition This Is Not America\u2019s Flag spotlights the myriad ways artists explore the symbol of the flag of the United States of America, underscoring its vast, divergent, and complex meanings. Titled after Alfredo Jaar\u2019s iconic 1987 work, A Logo for America, This Is Not America\u2019s Flag provides a critical discourse on the symbol\u2019s meaning, the complexity and contradictions of contemporary national identity, and artists as active citizens. The exhibition was developed conceptually in the summer of 2020 during the groundswell of activism for racial justice in the wake of the murders of George Floyd, Ahmaud Arbery, and Breonna Taylor and was inspired by two works in the Broad collection, Flag (1967) by Jasper Johns and African-American Flag (1990) by David Hammons. This Is Not America\u2019s Flag presents works from over twenty artists including Laura Aguilar, Nicole Eisenman, Jeffrey Gibson, Jaar, and Johns, as well as African-American Flag (1990) by Hammons acquired by The Broad in 2019 and America (2021) by Hank Willis Thomas acquired last year. The exhibition includes works that both embrace the flag as the signifier of the nation and its ideals and subvert it to express injustices and inequities woven into the fabric of the U.S., past and present. FREE THIS IS NOT AMERICA'S FLAG ACCESS OPPORTUNITIES Receive free access to This Is Not America\u2019s Flag every Thursday evening from 5 p.m. to 8 p.m. and all day during operating hours on July 5 in honor of the Independence Day holiday. Reserve free advance tickets.",
+            "description": "Takashi Murakami is one of the most widely recognized artists working today. His body of work traverses fine art, fashion, animation, film, and other commercial art. Murakami\u2019s expansive artistic universe will be on view in Takashi Murakami: Stepping on the Tail of a Rainbow, the artist\u2019s first solo exhibition at The Broad. The exhibition, which includes all of Murakami\u2019s works in the Broad collection and key loans, features 18 works created throughout his career and new immersive environments developed in tandem with the artist and his studio, Kaikai Kiki Co., Ltd. In these works, spanning sculpture, painting, wallpaper, and immersive installations, the artist explores subject matter such as globalization, postwar Japan, pop culture, and religious iconography. Among the works presented are two of the artist\u2019s monumental paintings, the 32-foot-wide 100 Arhats (2013) and the 82-foot-wide In the Land of the Dead, Stepping on the Tail of a Rainbow (2014), and the 1999 sculpture DOB in the Strange Forest (Blue DOB) that features Murakami\u2019s iconic anime-inspired character Mr. DOB. Image credit (top): Takashi Murakami, In the Land of the Dead, Stepping on the Tail of a Rainbow (detail), 2014. Acrylic on canvas. The Broad Art Foundation. \u00a9 2014 Takashi Murakami\uff0fKaikai Kiki Co., Ltd. All Rights Reserved FREE TAKASHI MURAKAMI: STEPPING ON THE TAIL OF A RAINBOW OPPORTUNITIES Receive free access to Takashi Murakami: Stepping on the Tail of a Rainbow every Thursday evening from 5 p.m. to 8 p.m. and all day during operating hours on July 5 in honor of the Independence Day holiday. Reserve free advance tickets.",
             "tags": [
                 "exhibition",
                 "past",
@@ -2344,16 +2344,16 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.thebroad.org/art/special-exhibitions/not-americas-flag",
+                    "link": "https://www.thebroad.org/art/special-exhibitions/takashi-murakami-stepping-tail-rainbow",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2022-02/Hank%20Willis%20Thomas%20America%20web%20download%20-%20slightly%20smaller%20crop.png.webp?itok=LgZJmV8P",
+                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2022-02/Murakami_In_the_Land_new%2016x9%20for%20web.jpg.webp?itok=BkD6xNu1",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-06 12:07:25",
-            "hash": "1f6daa52531dd9480d84f7575308463e"
+            "last_updated": "2026-06-07 12:22:47",
+            "hash": "070afdbde6b3b75c8c592b4833cef09e"
         }
     }
 }
