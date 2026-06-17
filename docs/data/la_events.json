@@ -586,8 +586,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "d17f708fc316065af299081db5d83fac"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "30e67305c373fd592db96f08f8c89996"
         },
         "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection-LACMA": {
             "name": "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection",
@@ -754,8 +754,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "a740d5a6cc473d75cb5d71fd3a230974"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "f3e7f217ff3cfe0087f3662fa30fc862"
         },
         "Nancy Baker Cahill: Substrate-LACMA": {
             "name": "Nancy Baker Cahill: Substrate",
@@ -810,8 +810,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "e607b893b883cfc5edd954d70e6b4e3c"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "f4f17390c0fff63e43f675ae5e984c89"
         },
         "Tavares Strachan: The Day Tomorrow Began-LACMA": {
             "name": "Tavares Strachan: The Day Tomorrow Began",
@@ -838,8 +838,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "4fa4019fbae4675b2aee66bdc4cfdded"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "05b70c827ced8032baf226dd526f58f0"
         },
         "Collecting Impressionism at LACMA-LACMA": {
             "name": "Collecting Impressionism at LACMA",
@@ -866,8 +866,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "947f67de50b6a2b886f55e26aed1ecfc"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "8acfbe79686473f73ff21ae70279fccd"
         },
         "Artist Selects: Frances Stark, Periodic Love and Perpetual War-LACMA": {
             "name": "Artist Selects: Frances Stark, Periodic Love and Perpetual War",
@@ -903,13 +903,13 @@
             "description": "BCAM, Level 2",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2025-09-14",
-                "end": "2026-06-21"
+                "end": "2026-06-14"
             },
             "ongoing": false,
             "links": [
@@ -922,8 +922,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-02-20 11:34:24",
-            "hash": "422704aa14a7291ceaf63e3cd7c5f4da"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "edde0489ad95cc2cacefed1276c753a5"
         },
         "Deep Cuts: Block Printing Across Cultures-LACMA": {
             "name": "Deep Cuts: Block Printing Across Cultures",
@@ -950,8 +950,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "28394f16c4ab63b3c96d9f96629c56e7"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "607aee7842c89461cb8a45f9abf1ac44"
         },
         "Nature on Notice: Contemporary Art and Ecology-LACMA": {
             "name": "Nature on Notice: Contemporary Art and Ecology",
@@ -1006,8 +1006,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "1a1e64247e0e91b9363f83dcf3be507a"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "2266613493cd4c13193ff7692dd60aeb"
         },
         "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA-LACMA": {
             "name": "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA",
@@ -1034,8 +1034,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "a535b108f37f7c929a3afb8bef2ef728"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "acaa96cac7c887ee115ac989753738de"
         },
         "Bruce Nauman: From the Collection-LACMA": {
             "name": "Bruce Nauman: From the Collection",
@@ -1146,8 +1146,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "4ee4f2676abb3ac6959bf155a3bda6f5"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "241012d37fe745903cae0266ad58d168"
         },
         "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu-LACMA": {
             "name": "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu",
@@ -1174,8 +1174,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "e70a92418b5e87709c67d555a9ef2ff1"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "8396380d79d264a7d1d22507e775bb84"
         },
         "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.-LACMA": {
             "name": "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.",
@@ -1202,8 +1202,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "b9d6c943cc65bcf8fd260b348572ed41"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "21476123983495322aa256715ccd89a0"
         },
         "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection-LACMA": {
             "name": "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection",
@@ -1230,8 +1230,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "67d0830311e3e5a5c7caf56fc44055f2"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "935508b791be3ce0cfd8609967e85e76"
         },
         "john gerrard: SPIRITS-LACMA": {
             "name": "john gerrard: SPIRITS",
@@ -1370,8 +1370,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "a677189210e7a8b552eabeee5bd0f974"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "95c59b94d6dcc372b9fc3c4b1cad9120"
         },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
@@ -1398,8 +1398,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "f111d5483fd99cd404ac02c379e4e20f"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "c8f8049c19b6371ec5228c917702f40e"
         },
         "Paul R. Williams: Architect for Living-LACMA": {
             "name": "Paul R. Williams: Architect for Living",
@@ -1426,8 +1426,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "fbf4f74bf53eba94c7d5cb74d3531814"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "988956c9d21cbdef9a442825cb4297c4"
         },
         "Eileen Cowin: Between Panic and Paradise-LACMA": {
             "name": "Eileen Cowin: Between Panic and Paradise",
@@ -1454,8 +1454,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "03b75054d16d2a6d9e4e8ba77b3abda2"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "c6b857869ad396af529733db050ce1e4"
         },
         "Home of the Future, 1925\u20131985: Designing Domestic Utopias-LACMA": {
             "name": "Home of the Future, 1925\u20131985: Designing Domestic Utopias",
@@ -1482,8 +1482,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "8f5c1d92032470453ef2644c6b8fc2bc"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "d09b0c5d05f6eab6d52ae2e343061a8e"
         },
         "The Brockman Gallery: Los Angeles, 1967\u20131990-LACMA": {
             "name": "The Brockman Gallery: Los Angeles, 1967\u20131990",
@@ -1510,8 +1510,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "09d62c4c2ede39f7ca32380d7db6b350"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "2e2559ba384b57faa3d813cae381c24a"
         },
         "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)-LACMA": {
             "name": "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)",
@@ -1538,8 +1538,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "dd05ce3e7f86d613065db7b56f309ce9"
+            "last_updated": "2026-06-17 14:27:46",
+            "hash": "7ebbef86fa41236626b6b0059d4035ec"
         },
         "From MacArthur Park, with Love-LACMA": {
             "name": "From MacArthur Park, with Love",
@@ -1590,12 +1590,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://lacma.orghttps://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2026-04/AC1992_197_113-Access.jpg?VersionId=42DRVbTo8sYdDxNsSoyJVnCPauGv_6id&itok=-G1Vz5Ph",
+                    "link": "https://lacma.orghttps://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2026-06/AC1992_197_113-HWphoto.jpg?VersionId=XjMUvjhovE35XDyQjALUalyqwTsdLt7y&itok=wA7mbFXr",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "28653d4e020fa5b97c87e778f7c68f04"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "801511a18ff76249d6a4bd5d49895b2b"
         },
         "Andrew Thomas Huang: The Deer of Nine Colors-LACMA": {
             "name": "Andrew Thomas Huang: The Deer of Nine Colors",
@@ -1622,8 +1622,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:23",
-            "hash": "91e876ac987e047ac4bb0b6cf120a4f3"
+            "last_updated": "2026-06-17 14:27:47",
+            "hash": "4001d84348b392fc2d0841d6f25f0555"
         }
     },
     "The Broad": {
@@ -1764,8 +1764,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:32",
-            "hash": "dee63466a51193ad4cd8baed7a383815"
+            "last_updated": "2026-06-17 14:27:56",
+            "hash": "6e6b6b9dfe4ff197a66f5a438220bb53"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
@@ -2352,8 +2352,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-15 16:19:52",
-            "hash": "16cd8e9caaa5552f360d39f9514a8e3e"
+            "last_updated": "2026-06-17 14:28:13",
+            "hash": "05246af76db3adee463606f0c617bd9b"
         }
     }
 }
