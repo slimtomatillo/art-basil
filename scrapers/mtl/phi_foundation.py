@@ -7,6 +7,16 @@ import logging
 import re
 
 LISTING_URL = 'https://phi.ca/en/whats-on/'
+# phi.ca serves stripped HTML (no exhibition cards) to the default bot
+# User-Agent from datacenter IPs; a browser UA gets the full page.
+BROWSER_HEADERS = {
+    'User-Agent': (
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
+        '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    ),
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
 
 _MONTHS = {m.lower(): i for i, m in enumerate(calendar.month_abbr) if m}
 _MONTHS.update({m.lower(): i for i, m in enumerate(calendar.month_name) if m})
@@ -39,7 +49,7 @@ def infer_dates(start_month, start_day, end_month, end_day, today):
 def scrape_phi_foundation_exhibitions(env='prod', region='mtl'):
     """Scrape and process exhibitions from the PHI Foundation for Contemporary Art."""
 
-    soup = fetch_and_parse(LISTING_URL)
+    soup = fetch_and_parse(LISTING_URL, headers=BROWSER_HEADERS)
     if soup is None:
         logging.warning("Error scraping PHI Foundation exhibitions --> no soup found")
         return
