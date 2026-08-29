@@ -1,1 +1,958 @@
-{}
+{
+    "Montreal Museum of Fine Arts": {
+        "Keerat Kaur: Sweet Speech-Montreal Museum of Fine Arts": {
+            "name": "Keerat Kaur: Sweet Speech",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "Solo exhibition of Keerat Kaur at the Montreal Museum of Fine Arts: a multisensory experience blending artworks, poetry, and music, until September 20.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-20",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/13897/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/1200px-en-1776087819.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:16",
+            "hash": "434244ae37ac47151e55c2bb09c55bc4"
+        },
+        "Rising Suns: Art from the Confederacies of the Great Lakes and Rivers-Montreal Museum of Fine Arts": {
+            "name": "Rising Suns: Art from the Confederacies of the Great Lakes and Rivers",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "Visit the MMFA for Soleils levants, showcasing Indigenous artists from Quebec and Canada, reflecting the histories of the Confederacies.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-11",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/13516/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/2024_200_2026-04_bou_4_2907_jc_v2_web1200-en-1778522468.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:17",
+            "hash": "1cdd2b3c7be9255b16a4ee81c5fafc12"
+        },
+        "Beyond the Pedestal: Sculptures in the Collection, from the 1960s to Today-Montreal Museum of Fine Arts": {
+            "name": "Beyond the Pedestal: Sculptures in the Collection, from the 1960s to Today",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "Discover Beyond the Pedestal, a sculpture exhibition presented at the MMFA in Montreal from June 9, 2026, to March 7, 2027, featuring artists from here and abroad.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-07",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/14001/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/2012_166_in1-c_web1200-en-1779978473.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:19",
+            "hash": "8601065b0a99ba245cd7c8138642001c"
+        },
+        "From the Functional to the Fabulous: 600 Years of Decorative Arts and Design-Montreal Museum of Fine Arts": {
+            "name": "From the Functional to the Fabulous: 600 Years of Decorative Arts and Design",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "Explore one of North America\u2019s largest decorative arts collections at the MMFA: 800+ works from the 15th century to today, waiting to be discovered!",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/13488/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/mbam-reddad-visuel_invitation_statique-1200px-en-1754339346.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:21",
+            "hash": "8a3150e274adfdc8bdb7373f8485a0b4"
+        },
+        "Chiharu Shiota: The Soul Trembles-Montreal Museum of Fine Arts": {
+            "name": "Chiharu Shiota: The Soul Trembles",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "Chiharu Shiota exhibition at the MMFA in Montreal from Sept. 26, 2026 to Feb. 14, 2027: an immersive retrospective featuring her major installations.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-26",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/13640/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/sc_iv_uj1_sm_350dpi-1200px-en-1765209477.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:22",
+            "hash": "02b127d8ed93ead29a38a4a6e03e207f"
+        },
+        "Allison Katz: Jeu d'esprit-Montreal Museum of Fine Arts": {
+            "name": "Allison Katz: Jeu d'esprit",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "From Oct. 9, 2026 to Mar. 14, 2027, the MMFA in Montreal presents Allison Katz\u2019s first solo exhibition in Qu\u00e9bec, featuring recent works and new paintings.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-09",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/13638/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/kat1200px-en-1765210143.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:24",
+            "hash": "d355ba495d75a5ae534a74ad8864d908"
+        },
+        "Anne Kahane : Structures-Montreal Museum of Fine Arts": {
+            "name": "Anne Kahane : Structures",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "From Nov. 2026 to April 2027, the MMFA in Montreal presents a retrospective of Anne Kahane, an influential sculptor and the first Canadian woman at the Venice Biennale.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-19",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/13639/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/1200px-en-1765210110.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:25",
+            "hash": "cb51f99b5505b48b26764f0e74da3668"
+        },
+        "MARIE CHOUINARD: BECOMING BREATH-Montreal Museum of Fine Arts": {
+            "name": "MARIE CHOUINARD: BECOMING BREATH",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "Marie Chouinard\u2019s first solo museum exhibition at the MMFA, February 20\u2013May 9, 2027. An immersive, multisensory experience unlike any other.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-05-09",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/14081/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/1200px-en-1784749620.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:27",
+            "hash": "53a97a7293a1525794afda4c3d78c5a2"
+        },
+        "Keith Haring in 3D-Montreal Museum of Fine Arts": {
+            "name": "Keith Haring in 3D",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": "Keith Haring at the MMFA: the first Canadian exhibition dedicated to his three-dimensional work, from May 15 to September 12, 2027. A one-of-a-kind experience.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-09-12",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/14087/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.mbam.qc.ca/workspace/uploads/share/1200px-en-1785176457.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "ad7549e632b7aaad3b465fccc3219fa4"
+        },
+        "The Torlonia Collection: Masterpieces of Roman Sculpture-Montreal Museum of Fine Arts": {
+            "name": "The Torlonia Collection: Masterpieces of Roman Sculpture",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-03-14",
+                "end": "2026-07-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/the-torlonia-collection-masterpieces-of-roman-sculpture-2026/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2Fa14047a2-0024-473d-85a8-88d6509797a5.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "51601b6e0b1975be9d1d17fc2756e5fd"
+        },
+        "Richard Avedon: Immortal. Portraits of Aging, 1951-2004-Montreal Museum of Fine Arts": {
+            "name": "Richard Avedon: Immortal. Portraits of Aging, 1951-2004",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-02-12",
+                "end": "2026-08-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/richard-avedon-immortal-portraits-of-aging-1951-2004/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F53fb066f-2e0a-4eaa-9add-6af02209f920.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "9098051ef781ac6a5be1e5aae47c9d2a"
+        },
+        "Comfort and Indifference: Recent Acquisitions by the MAC-Montreal Museum of Fine Arts": {
+            "name": "Comfort and Indifference: Recent Acquisitions by the MAC",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-11-04",
+                "end": "2026-05-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/comfort-and-indifference-recent-acquisitions-by-the-mac/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2Fcf0457c8-1722-4aa4-9653-79b2c333156b.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "411548d51ea8569e05426c4f6179bb0c"
+        },
+        "Kurt Hentschl\u00e4ger : EVER MORE-Montreal Museum of Fine Arts": {
+            "name": "Kurt Hentschl\u00e4ger : EVER MORE",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-10-01",
+                "end": "2026-04-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/kurt-hentschlager-ever-more/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2Ff9c81609-956b-4964-baa5-5bd0097f03d4.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "c86c0ad95396dcce7205ba2d7fb3afdf"
+        },
+        "Kent Monkman: History Is Painted by the Victors-Montreal Museum of Fine Arts": {
+            "name": "Kent Monkman: History Is Painted by the Victors",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-09-27",
+                "end": "2026-03-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/kent-monkman/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F67acc3b5-9efe-4816-84ba-3a0da0eabfc9.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "8e4358927bbecded6ae1953e1ba87d58"
+        },
+        "MOMENTA x MBAM Anique Jordan: Underbelly-Montreal Museum of Fine Arts": {
+            "name": "MOMENTA x MBAM Anique Jordan: Underbelly",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-07-29",
+                "end": "2026-02-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/momenta-x-mbam-anique-jordan-underbelly/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F2496c432-1f0f-46cb-a2de-d4896cef1e08.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "9cc0ead2be28f1e5c612bbecf792eea5"
+        },
+        "Marie-Claire Blais: Streaming Light-Montreal Museum of Fine Arts": {
+            "name": "Marie-Claire Blais: Streaming Light",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-06-20",
+                "end": "2026-01-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/marie-claire-blais-2025/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2Fe74dc181-0271-4a69-b644-6c4776dd6fac.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "3df81718df3d6b476b3e50d13cfaa784"
+        },
+        "Berthe Weill, Art Dealer of the Parisian Avant-garde-Montreal Museum of Fine Arts": {
+            "name": "Berthe Weill, Art Dealer of the Parisian Avant-garde",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-05-10",
+                "end": "2025-09-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/berthe-weill/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F0dbda940-de28-4ab2-9101-361d641c3f98.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "f728285e5d71022c98cc2e39036e513c"
+        },
+        "Worlds of Wonder: The Surrealist Journey of Alan Glass-Montreal Museum of Fine Arts": {
+            "name": "Worlds of Wonder: The Surrealist Journey of Alan Glass",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-04-17",
+                "end": "2025-09-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/alan-glass-2025/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F8ba755a4-30e7-4bd6-9005-ebd0304a6a5a.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "680e95cb04b9b9e163183243286c8f6c"
+        },
+        "Bad Girls Only: Women and the Seven Deadly Sins-Montreal Museum of Fine Arts": {
+            "name": "Bad Girls Only: Women and the Seven Deadly Sins",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-03-26",
+                "end": "2025-08-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/bad-girls-only-2025/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F556a5ddc-75f6-4034-8be6-aaeb73d5e86f.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "547ada52314da5168136cdfea3c5694a"
+        },
+        "Joyce Wieland: Heart On-Montreal Museum of Fine Arts": {
+            "name": "Joyce Wieland: Heart On",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-02-08",
+                "end": "2025-05-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/joyce-wieland-heart-on/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F95e07e3c-3f5d-4e9c-a689-9b6cd19125f1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "a7a5929faf49550e955ab846c4a787a3"
+        },
+        "Anri Sala: Ravel Ravel Interval-Montreal Museum of Fine Arts": {
+            "name": "Anri Sala: Ravel Ravel Interval",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-11-29",
+                "end": "2025-04-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/anri-sala/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F42624794-6a20-4e1a-aa86-af9a5f739499.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "f4d876463577106a1430d723ae553ade"
+        },
+        "Glenn Gear: ulitsuak | mar\u00e9e montante | rising tide-Montreal Museum of Fine Arts": {
+            "name": "Glenn Gear: ulitsuak | mar\u00e9e montante | rising tide",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-10-01",
+                "end": "2025-03-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/glenn-gear-ulitsuak-maree-montante-rising-tide-2024/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2Ff10bef70-3074-4f55-8719-632ae22ea2e8.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "def49c96fcb55a84af0a09a0cc1c3075"
+        },
+        "Two by Two, Together: Recent Additions to the MMFA\u2019s Collection-Montreal Museum of Fine Arts": {
+            "name": "Two by Two, Together: Recent Additions to the MMFA\u2019s Collection",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-09-11",
+                "end": "2025-10-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/two-by-two-together/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2Fe054b005-d7a1-437e-8e7a-86ade0762bb8.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "29854096d34e67dca11054416b85b805"
+        },
+        "Saints, Sinners, Lovers and Fools-Montreal Museum of Fine Arts": {
+            "name": "Saints, Sinners, Lovers and Fools",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-06-08",
+                "end": "2024-10-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/saints-sinners-lovers-and-fools/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F261f33da-808e-49e1-a85a-e785c7f4b829.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "b63080ebb61b9c871f109dc032edb3ab"
+        },
+        "Tokaido: Dreamscapes by Ando Hiroshige-Montreal Museum of Fine Arts": {
+            "name": "Tokaido: Dreamscapes by Ando Hiroshige",
+            "venue": "Montreal Museum of Fine Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-04-27",
+                "end": "2024-10-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mbam.qc.ca/en/exhibitions/tokaido/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://mbam.ficelle.app/v1/?src=https%3A%2F%2Fbillets.mbam.qc.ca%2Fuploads%2F3bcd42ec-5e56-4ae7-bf0d-2aa48dc6b5ea.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:28",
+            "hash": "3b725aaff012a0077214510d7a49db5b"
+        }
+    },
+    "McCord Stewart Museum": {
+        "Montreal 1976: An Olympic Feat-McCord Stewart Museum": {
+            "name": "Montreal 1976: An Olympic Feat",
+            "venue": "McCord Stewart Museum",
+            "description": "Featuring a rich collection of documents and objects\u2014including clothing, archives, posters, cartoons, photographs and artefacts\u2014the exhibition explores the many facets of the Games, with a special focus on their aesthetic and design elements.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-09-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/montreal-1976-an-olympic-feat/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2025/06/mccord-stewart_montreal-1976-une-epreuve-olympique_1320x480.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:30",
+            "hash": "49325dd99a07cc68d9f0f8b7afdb9240"
+        },
+        "C\u00e9line in Dior: A Dazzling Moment-McCord Stewart Museum": {
+            "name": "C\u00e9line in Dior: A Dazzling Moment",
+            "venue": "McCord Stewart Museum",
+            "description": "A North American premiere of the exquisite Christian Dior Couture gown worn by C\u00e9line Dion during her unforgettable performance from the Eiffel Tower at the opening ceremony of the Paris 2024 Summer Olympics.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-09-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/celine-in-dior-dazzling-moment/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2026/04/mccord-stewart_exposition_celine-en-dior_800x800-640x375.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:31",
+            "hash": "0e718f521744f4209a5b3880ff60afba"
+        },
+        "Indigenous Voices of Today: Knowledge, Trauma, Resilience-McCord Stewart Museum": {
+            "name": "Indigenous Voices of Today: Knowledge, Trauma, Resilience",
+            "venue": "McCord Stewart Museum",
+            "description": "Discover the still unrecognized knowledge of Indigenous peoples as well as the deep wounds they carry and their incredible resilience.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/indigenous-voices-of-today/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2021/04/mccord_expositions_voixautochtones_640x375-640x375.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:33",
+            "hash": "54c105ff1ad4ba693d3af47a36aa7083"
+        },
+        "Museum Alley-McCord Stewart Museum": {
+            "name": "Museum Alley",
+            "venue": "McCord Stewart Museum",
+            "description": "The Museum presents Museum Alley, a new pedestrianized space on Victoria Street, reminiscent of the city\u2019s most beautiful ruelles vertes.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/museum-alley/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2024/06/mccord-stewart_ruelle_2026_900x480-2-640x375.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:34",
+            "hash": "7824539c77ad1027daf139f8e39a0a5a"
+        },
+        "Beyond the Games \u2013 Montreal\u2019s Olympic Story: Virtual exhibition-McCord Stewart Museum": {
+            "name": "Beyond the Games \u2013 Montreal\u2019s Olympic Story: Virtual exhibition",
+            "venue": "McCord Stewart Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/beyond-the-games-montreal-olympic-story/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2026/05/exposition-musee-numerique-1976_640x375.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:41",
+            "hash": "a47cee89511d3dff3644228907c7c361"
+        },
+        "On the Menu: Montreal: A Restaurant Story-McCord Stewart Museum": {
+            "name": "On the Menu: Montreal: A Restaurant Story",
+            "venue": "McCord Stewart Museum",
+            "description": "The exhibition On the Menu \u2013 Montreal: A Restaurant Story celebrates Montreal's extraordinarily diverse and inventive food scene from the 1960s\u202fto today.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-10-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/on-the-menu-montreal-restaurant-story/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2025/11/mccord-stewart_activite_discussion_les-restaurants-montrealais_640x448-640x375.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:42",
+            "hash": "e109a2559ec571c99da8cb8527477ca0"
+        },
+        "The Mountain at the Heart of Montreal: 150 Years of Mount Royal Park-McCord Stewart Museum": {
+            "name": "The Mountain at the Heart of Montreal: 150 Years of Mount Royal Park",
+            "venue": "McCord Stewart Museum",
+            "description": "Discover an outdoor exhibition tracing 150 years of Mount Royal Park\u2019s history through some fifty archival images drawn from the Museum\u2019s collections.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/the-mountain-heart-of-montreal/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2026/05/mccord-stewart_exposition_mont-royal_installation3_900x480-640x375.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:43",
+            "hash": "33d4d48d39334cde1d9b87cd00f4b833"
+        },
+        "Carrie Allison: ask\u014dht\u0113skanohw\u0113\u200b-McCord Stewart Museum": {
+            "name": "Carrie Allison: ask\u014dht\u0113skanohw\u0113\u200b",
+            "venue": "McCord Stewart Museum",
+            "description": "As part of the Artist-in-Residence program, multidisciplinary artist Carrie Allison is developing a new body of work inspired by floral beadwork traditions from her maternal n\u00eahiyaw and M\u00e9tis homelands.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-30",
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/askohteskanohwe-carrie-allison/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2026/03/mccord-stewart_exposition_carrie-allison_640x375_v2.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:45",
+            "hash": "f16d67bffb776abca53e97887fb578f1"
+        },
+        "Sovereign Stitches + Wild Weaves-McCord Stewart Museum": {
+            "name": "Sovereign Stitches + Wild Weaves",
+            "venue": "McCord Stewart Museum",
+            "description": "Sovereign Stitches + Wild Weaves, brings together more than 35 Indigenous artists from around the world whose work challenges the borders between contemporary art, culture, fashion, design and traditional practice.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-27",
+                "end": "2027-03-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/sovereign-stitches/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.musee-mccord-stewart.ca/app/uploads/2025/06/mccord-stewart_exposition_sovereign-stitches_640x375.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-08-29 03:41:46",
+            "hash": "8ed80c8d7537a24db36f34c69165e617"
+        }
+    }
+}
