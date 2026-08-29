@@ -7,15 +7,20 @@ from unicodedata import normalize
 import logging
 
 def convert_date_to_dt(date_string):
-    """Takes a date in string form and converts it to a dt object"""
+    """Takes a date in string form ('month day year') and converts it to a dt.date.
 
+    Returns None if the string is missing a part or has an unrecognized month,
+    so the caller can still record the event without that date.
+    """
     date_parts = date_string.split()
-    month_num = int(MONTH_TO_NUM_DICT[date_parts[0]])
-    day = int(date_parts[1])
-    year = int(date_parts[2])
-    if month_num and day and year:
-        date_dt = dt.date(year, month_num, day)
-    return date_dt
+    try:
+        month_num = int(MONTH_TO_NUM_DICT[date_parts[0]])
+        day = int(date_parts[1])
+        year = int(date_parts[2])
+        return dt.date(year, month_num, day)
+    except (KeyError, IndexError, ValueError):
+        logging.warning(f"Could not parse date string: {date_string!r}")
+        return None
 
 def scrape_sfmoma(env='prod', region='sf'):
     """Scrape and process events from SFMOMA."""
@@ -64,11 +69,12 @@ def scrape_sfmoma(env='prod', region='sf'):
                 # Event link
                 event_link = event['href']
 
-                # Title
-                event_title = event.find("div", class_="exhibitionsgrid-wrapper-grid-item-text-title").text.strip()
+                # Title (tag-agnostic: SFMOMA has moved this between <div> and <h4>)
+                event_title = event.find(class_="exhibitionsgrid-wrapper-grid-item-text-title").text.strip()
 
-                # Floor in SFMOMA - unique to SFMOMA
-                event_floor = normalize('NFKD', event.find("span", class_="exhibitionsgrid-wrapper-grid-item-location").text.strip())
+                # Floor in SFMOMA - unique to SFMOMA; not always present (e.g. past exhibitions)
+                floor_tag = event.find("span", class_="exhibitionsgrid-wrapper-grid-item-location")
+                event_floor = normalize('NFKD', floor_tag.text.strip()) if floor_tag else None
 
                 # Description
                 try:
@@ -79,6 +85,8 @@ def scrape_sfmoma(env='prod', region='sf'):
                 # Dates
                 event_date = event.find("div", class_="exhibitionsgrid-wrapper-grid-item-text-date").text.strip().lower()
                 event_date = event_date.split('member previews')[0]
+                # Multi-run exhibitions list each run separated by ';' - use the first
+                event_date = event_date.split(';')[0].strip()
                 # Replace seasons with estimated dates
                 if 'fall' in event_date:
                     event_date = event_date.replace('fall', 'sep 20,')
@@ -94,6 +102,9 @@ def scrape_sfmoma(env='prod', region='sf'):
                 if event_date in ('new exhibition! now on view', 'ongoing'):
                     start_date = None
                     end_date = None
+                elif event_date.startswith('on view through'):
+                    start_date = None
+                    end_date = convert_date_to_dt(event_date.replace('on view through ', '').replace(',', ''))
                 elif event_date.split()[0] == 'closing':
                     start_date = None
                     end_date = convert_date_to_dt(event_date.replace('closing ', '').replace(',', ''))
