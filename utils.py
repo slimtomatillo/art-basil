@@ -44,9 +44,12 @@ def save_db(db, region):
     with open(db_path, 'w') as file:
         json.dump(db, file, indent=4, default=str)
 
-def fetch_and_parse(url):
+def fetch_and_parse(url, headers=None):
+    request_headers = {'User-Agent': 'Your Bot 0.1'}
+    if headers:
+        request_headers.update(headers)
     try:
-        response = requests.get(url, headers={'User-Agent': 'Your Bot 0.1'})
+        response = requests.get(url, headers=request_headers)
         response.raise_for_status()
         return BeautifulSoup(response.content, 'html.parser')
     except requests.RequestException as e:

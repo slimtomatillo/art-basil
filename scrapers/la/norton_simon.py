@@ -3,9 +3,18 @@ from processing import process_event
 import datetime as dt
 from datetime import timezone
 import logging
-import re
 
 BASE_URL = 'https://www.nortonsimon.org'
+# Norton Simon's Cloudflare setup 403s the default bot User-Agent, so present a
+# browser one for this venue.
+BROWSER_HEADERS = {
+    'User-Agent': (
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
+        '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    ),
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
 # "Exhibitions on view" (current + upcoming) and the 2020s archive page
 LISTING_URLS = [
     ('https://www.nortonsimon.org/exhibitions/current', 'current'),
@@ -101,7 +110,7 @@ def scrape_norton_simon_exhibitions(env='prod', region='la'):
     seen_links = set()
 
     for url, _default_phase in LISTING_URLS:
-        soup = fetch_and_parse(url)
+        soup = fetch_and_parse(url, headers=BROWSER_HEADERS)
         if soup is None:
             logging.warning(f"Error scraping Norton Simon exhibitions ({url}) --> no soup found")
             continue
