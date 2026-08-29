@@ -10,7 +10,13 @@ const getRegion = () => {
     if (path.includes('/la/')) {
         return 'la';
     }
-    
+    if (path.includes('/mtl/')) {
+        return 'mtl';
+    }
+    if (path.includes('/tor/')) {
+        return 'tor';
+    }
+
     return 'sf'; // default to SF
 };
 

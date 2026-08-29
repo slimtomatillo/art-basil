@@ -4,6 +4,8 @@ import logging
 DB_FILES = {
     'sf': 'docs/data/sf_events.json',
     'la': 'docs/data/la_events.json',
+    'mtl': 'docs/data/mtl_events.json',
+    'tor': 'docs/data/tor_events.json',
 }
 MONTH_TO_NUM_DICT = {
     'jan': 1,

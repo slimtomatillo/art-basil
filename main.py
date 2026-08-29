@@ -9,6 +9,8 @@ from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca
+from scrapers.mtl import mbam, mccord_stewart, phi_foundation
+from scrapers.tor import moca_toronto, power_plant, aga_khan
 
 def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=None):
     """Return dictionary of venue:scraper pairs and venue-to-region mapping"""
@@ -36,6 +38,16 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Norton Simon Museum": norton_simon.scrape_norton_simon_exhibitions,
             "Hammer Museum": hammer.scrape_hammer_exhibitions,
             "MOCA": moca.scrape_moca_exhibitions,
+        },
+        'mtl': {
+            "Montreal Museum of Fine Arts": mbam.scrape_mbam_exhibitions,
+            "McCord Stewart Museum": mccord_stewart.scrape_mccord_stewart_exhibitions,
+            "PHI Foundation": phi_foundation.scrape_phi_foundation_exhibitions,
+        },
+        'tor': {
+            "MOCA Toronto": moca_toronto.scrape_moca_toronto_exhibitions,
+            "The Power Plant": power_plant.scrape_power_plant_exhibitions,
+            "Aga Khan Museum": aga_khan.scrape_aga_khan_exhibitions,
         }
     }
     
