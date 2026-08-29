@@ -25,7 +25,14 @@ def scrape_bampfa_exhibitions(env='prod', region='sf'):
         """Process exhibitions for a given URL and phase (current, past)."""
         soup = fetch_and_parse(url)
         if soup is None:
-            logging.warning(f"Error scraping BAMPFA {phase} exhibitions --> no soup found")
+            # BAMPFA is behind a Fastly WAF that returns 403 to datacenter IPs
+            # (e.g. GitHub Actions runners), so this fetch reliably fails in CI
+            # while working from a normal connection. The scrape is skipped and
+            # existing BAMPFA data is left untouched - see the fetch error above.
+            logging.warning(
+                f"Skipping BAMPFA {phase} exhibitions: could not fetch {url} "
+                f"(likely the CDN 403 block on CI IPs); existing data kept."
+            )
             return
 
         exhibition_list = soup.find_all('li', class_='exhibition')
