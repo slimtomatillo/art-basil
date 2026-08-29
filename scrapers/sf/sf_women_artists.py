@@ -67,10 +67,10 @@ def scrape_sfwomenartists(env='prod', region='sf'):
     
     # Scrape info and collect events
     soup = fetch_and_parse(url)
-    
-    # Get google maps link for venue
-    gmaps_link = soup.find('p').find('a')['href'].strip()
-                
+    if soup is None:
+        logging.warning("Error scraping San Francisco Women Artists Gallery --> no soup found")
+        return
+
     # Find all events
     events_list = soup.find_all(class_='exhibition-item')
 
