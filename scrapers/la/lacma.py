@@ -35,7 +35,10 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
 
             # Extract link
             event_link_tag = title_tag.find('a') if title_tag else None
-            event_link = 'https://lacma.org' + event_link_tag['href'] if event_link_tag else None
+            event_link = None
+            if event_link_tag and event_link_tag.get('href'):
+                href = event_link_tag['href']
+                event_link = href if href.startswith('http') else 'https://lacma.org' + href
 
             # Extract date information
             try:
@@ -88,9 +91,14 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
             description_tag = exhibition.find('div', class_='views-field-field-location-building')
             description_text = description_tag.get_text().strip() if description_tag else None
 
-            # Extract image if available
+            # Extract image if available. LACMA serves some images from an
+            # absolute host (www-images.lacma.org) and others as site-relative
+            # paths, so only prepend the base URL when it's relative.
             img_tag = exhibition.find('img')
-            image_link = 'https://lacma.org' + img_tag['src'] if img_tag else None
+            image_link = None
+            if img_tag and img_tag.get('src'):
+                src = img_tag['src']
+                image_link = src if src.startswith('http') else 'https://lacma.org' + src
                         
             event_details = {
                 'name': event_title,
