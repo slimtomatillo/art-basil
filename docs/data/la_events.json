@@ -81,8 +81,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "3fa398d61dc9b15754cc9fd558f75aea"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "6e309cfdcf836240ee186c593e8d6f56"
         },
         "Magdalena Suarez Frimkess: The Finest Disregard-LACMA": {
             "name": "Magdalena Suarez Frimkess: The Finest Disregard",
@@ -726,8 +726,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "ea0816e5660c6f3b445e6995324dd3e8"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "4185b767700368b876b73d93b51bfafb"
         },
         "Now Showing: Youssef Nabil\u2019s I Saved My Belly Dancer-LACMA": {
             "name": "Now Showing: Youssef Nabil\u2019s I Saved My Belly Dancer",
@@ -866,8 +866,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "593bb2cefff48612f4aefe35b2a3c67c"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "d61d0f06fd90066b4856406f5c14c756"
         },
         "Artist Selects: Frances Stark, Periodic Love and Perpetual War-LACMA": {
             "name": "Artist Selects: Frances Stark, Periodic Love and Perpetual War",
@@ -931,10 +931,10 @@
             "description": "Resnick Pavilion",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2025-11-09",
                 "end": "2026-09-13"
@@ -950,8 +950,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "b15bd6e053691885d52ee35cbe8a63a9"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "ff1b66c808c6e891773ac7d7e817b6e8"
         },
         "Nature on Notice: Contemporary Art and Ecology-LACMA": {
             "name": "Nature on Notice: Contemporary Art and Ecology",
@@ -1006,8 +1006,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "19766251f5930a095f707287eb3a6823"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "f3a20e571e22e4acfea7344cf5bc1b67"
         },
         "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA-LACMA": {
             "name": "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA",
@@ -1034,8 +1034,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "98c5d75635ca83ab174a603ad231dd94"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "5cdbb31cf106771801b6cecca838b09f"
         },
         "Bruce Nauman: From the Collection-LACMA": {
             "name": "Bruce Nauman: From the Collection",
@@ -1174,8 +1174,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "6fc7e5ded4af0dbe902e36dff822f114"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "5ec57a60be76bb130cbb229a084371ad"
         },
         "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.-LACMA": {
             "name": "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.",
@@ -1202,8 +1202,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "53b18b34c3334c876e2574d5218ccdc0"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "048de32e2633275ebc60e491bda91c8c"
         },
         "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection-LACMA": {
             "name": "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection",
@@ -1236,7 +1236,7 @@
         "john gerrard: SPIRITS-LACMA": {
             "name": "john gerrard: SPIRITS",
             "venue": "LACMA",
-            "description": null,
+            "description": "",
             "tags": [
                 "exhibition",
                 "current",
@@ -1244,8 +1244,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": "2025-12-21",
-                "end": "2026-12-21"
+                "start": "2025-09-21",
+                "end": "2026-09-21"
             },
             "ongoing": false,
             "links": [
@@ -1254,12 +1254,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://lacma.orghttps://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2025-11/gerrard_spirits_pacific%231_0.jpg?VersionId=wtxh2.zlgq2K9fWEIVILZZDfQ1XadiUF&itok=eRTUTMAr",
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2026-06/spirit_50_0.jpg?itok=nn5Dqz81",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-02-14 11:24:13",
-            "hash": "298782c4d934a8a26cdebe4de4c21a36"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "5b6dd10153f67a735d53bc955efa0dcd"
         },
         "Richard Serra: Band-LACMA": {
             "name": "Richard Serra: Band",
@@ -1370,8 +1370,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "f08efbca8d86dd6f79fbafee3de16bb8"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "7a3afea6aeebe58750aaf05b8e094ee1"
         },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
@@ -1398,8 +1398,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "5466229ade0104a7ba88c639fdfb5315"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "97179cf5581035ceb8c429bb0fbdd20b"
         },
         "Paul R. Williams: Architect for Living-LACMA": {
             "name": "Paul R. Williams: Architect for Living",
@@ -1426,8 +1426,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "f253a67524dab06ccba67475dd4eac4f"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "6537fcb9bdc660b56ed2095fce3c9370"
         },
         "Eileen Cowin: Between Panic and Paradise-LACMA": {
             "name": "Eileen Cowin: Between Panic and Paradise",
@@ -1454,8 +1454,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "fb584e6794ab8af3cb4b144ea16cb4e0"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "acd1555708e241c16c9ba14cf81fb803"
         },
         "Home of the Future, 1925\u20131985: Designing Domestic Utopias-LACMA": {
             "name": "Home of the Future, 1925\u20131985: Designing Domestic Utopias",
@@ -1482,8 +1482,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "ec305d3df55528f2985b98a48d4206bb"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "edf4f600ea141f843307969c2d45a1b2"
         },
         "The Brockman Gallery: Los Angeles, 1967\u20131990-LACMA": {
             "name": "The Brockman Gallery: Los Angeles, 1967\u20131990",
@@ -1510,8 +1510,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "ee60d421e80be9e00e8182d25a791bc6"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "28052425c10d1ca760008ad5960331ab"
         },
         "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)-LACMA": {
             "name": "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)",
@@ -1538,8 +1538,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "4c418cb663f591aa68bfa38076b4258f"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "c30b4a307ceb6c545b8db31c56083042"
         },
         "From MacArthur Park, with Love-LACMA": {
             "name": "From MacArthur Park, with Love",
@@ -1566,8 +1566,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "ac724e418dc54b583c9012b03dd6bc88"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "34fa67043751cbc7e72c94f15a2e91a2"
         },
         "The Kitchen and Its Discontents-LACMA": {
             "name": "The Kitchen and Its Discontents",
@@ -1594,8 +1594,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "c54ca051a1bb799f10dfc09f58dd2b35"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "4766fc9dfe5200ffe8ebbc0150b65f88"
         },
         "Andrew Thomas Huang: The Deer of Nine Colors-LACMA": {
             "name": "Andrew Thomas Huang: The Deer of Nine Colors",
@@ -1650,8 +1650,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "8ab080b7c4da2f03d1802059d35c1dea"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "ba1fe6ffac7bf877fb3e84542552a89c"
         },
         "Christian Marclay: The Clock-LACMA": {
             "name": "Christian Marclay: The Clock",
@@ -1678,8 +1678,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "0a8a94cce3d65a27a8b4649072c1b89e"
+            "last_updated": "2026-09-14 16:50:22",
+            "hash": "0e1886fbf429f9e36b1f67a723140174"
         },
         "Danse Macabre: Death in Print from Durer to Dix-LACMA": {
             "name": "Danse Macabre: Death in Print from Durer to Dix",
@@ -1706,8 +1706,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:32",
-            "hash": "91985b0e46bbba80235a4f9a865b883b"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "6d94f7a2549e63e080be76bfe38430d7"
         },
         "California Collectives: Asian American Moderns, 1924\u20131965-LACMA": {
             "name": "California Collectives: Asian American Moderns, 1924\u20131965",
@@ -1762,8 +1762,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "90e861a97e045cc23c7af94aa2bc4f1c"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "9ef1ef94218e220c3e87ca2907d171b3"
         },
         "Minor Feelings (working title)-LACMA": {
             "name": "Minor Feelings (working title)",
@@ -1790,8 +1790,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:33",
-            "hash": "ba20332b95c9eae8728babf79a123108"
+            "last_updated": "2026-09-14 16:50:21",
+            "hash": "48d66ee4903972a8d0b6851705102208"
         }
     },
     "The Broad": {
@@ -1932,8 +1932,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:40",
-            "hash": "043c3429d43b406e1475c4f7c954eef0"
+            "last_updated": "2026-09-14 16:50:30",
+            "hash": "6606eb903631d0983195964b32aae042"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
@@ -2520,8 +2520,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:53",
-            "hash": "f38807d7e34a781b0a7377fe0fcf0d47"
+            "last_updated": "2026-09-14 16:50:52",
+            "hash": "e9a4cf6d002641f3e9512340cef47148"
         }
     },
     "Getty": {
@@ -2550,8 +2550,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:58",
-            "hash": "29724a7624755f88ca853bf5bfcded86"
+            "last_updated": "2026-09-14 16:50:56",
+            "hash": "130c313783a3e778f76d8180c1244690"
         },
         "Odilon Redon: Otherworldly Visions-Getty": {
             "name": "Odilon Redon: Otherworldly Visions",
@@ -2578,8 +2578,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:59",
-            "hash": "b12cdf30a48b3b6e7e73fa31b60c1b4f"
+            "last_updated": "2026-09-14 16:50:58",
+            "hash": "e2b2ab7778b2939157f9147f15e65b8b"
         },
         "Lost. Found. Returned.-Getty": {
             "name": "Lost. Found. Returned.",
@@ -2606,8 +2606,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:01",
-            "hash": "18303c3ab8a701610e14087845f529b7"
+            "last_updated": "2026-09-14 16:50:59",
+            "hash": "d6b4e0ac13cfca53cbd3629dcef7d0f0"
         },
         "Stendahl\u2019s World-Getty": {
             "name": "Stendahl\u2019s World",
@@ -2634,8 +2634,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:03",
-            "hash": "849c57f39555e7e63bf482ecb54d9e15"
+            "last_updated": "2026-09-14 16:51:01",
+            "hash": "3b7a07c0f65b5896f6154e90567e7597"
         },
         "The Egyptian Book of the Dead-Getty": {
             "name": "The Egyptian Book of the Dead",
@@ -2662,8 +2662,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:04",
-            "hash": "47df2bc2d44c43f97bccb849fdb592b1"
+            "last_updated": "2026-09-14 16:51:03",
+            "hash": "9acb81b578355f83724e5f640bd250e8"
         },
         "Charles Ross Spectrum 14-Getty": {
             "name": "Charles Ross Spectrum 14",
@@ -2690,8 +2690,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:06",
-            "hash": "73f1321f45e4dc6e61ef46051f450a16"
+            "last_updated": "2026-09-14 16:51:04",
+            "hash": "93ba28b7b4201be98ab1ed266452248d"
         },
         "Sculpted Portraits from Ancient Egypt-Getty": {
             "name": "Sculpted Portraits from Ancient Egypt",
@@ -2718,8 +2718,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:08",
-            "hash": "50d45c7d49c4e6432ab414f0044434cb"
+            "last_updated": "2026-09-14 16:51:05",
+            "hash": "da177c9717398b56a525c3233603e7f2"
         },
         "J. Paul Getty Life and Legacy-Getty": {
             "name": "J. Paul Getty Life and Legacy",
@@ -2746,8 +2746,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:10",
-            "hash": "6ddb51941dc236d8ba6d149fed003627"
+            "last_updated": "2026-09-14 16:51:07",
+            "hash": "361517c70c40052253aebe3a813ed306"
         },
         "Every Minute Is History: Five Views of Los Angeles-Getty": {
             "name": "Every Minute Is History: Five Views of Los Angeles",
@@ -2774,8 +2774,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:54",
-            "hash": "ea31b3960ab12899f2e2f14311207653"
+            "last_updated": "2026-09-14 16:50:54",
+            "hash": "3379baad145fff61cca19381224be1f8"
         },
         "Instante/revelaci\u00f3n: Moments in Mexican Photography-Getty": {
             "name": "Instante/revelaci\u00f3n: Moments in Mexican Photography",
@@ -2802,8 +2802,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:51:56",
-            "hash": "2ced77433966385e17db7964dedf5abd"
+            "last_updated": "2026-09-14 16:50:55",
+            "hash": "8e4aad61a078a0501be792fde214816c"
         },
         "Joshua Reynolds's Portrait of Mai and 18th\u2011Century Portraiture-Getty": {
             "name": "Joshua Reynolds's Portrait of Mai and 18th\u2011Century Portraiture",
@@ -2830,8 +2830,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:11",
-            "hash": "b38a161a4e081698fe538375f0611caa"
+            "last_updated": "2026-09-14 16:51:09",
+            "hash": "4b84c8cae7ed05613525b5c9095f1183"
         },
         "The Holy Family at Home-Getty": {
             "name": "The Holy Family at Home",
@@ -2858,8 +2858,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:13",
-            "hash": "0a5ca77ff2dc02f7ab8831de47c36b9a"
+            "last_updated": "2026-09-14 16:51:10",
+            "hash": "e33676c7d26e2c50b97150997f6c83d3"
         },
         "Reggie Burrows Hodges: A Theater of Passions-Getty": {
             "name": "Reggie Burrows Hodges: A Theater of Passions",
@@ -2886,8 +2886,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:15",
-            "hash": "2235150351610fc01af1981efcc0538f"
+            "last_updated": "2026-09-14 16:51:12",
+            "hash": "45605f8644c3c4291089297ab67101a4"
         },
         "A Light in the Dark: Joseph Wright of Derby-Getty": {
             "name": "A Light in the Dark: Joseph Wright of Derby",
@@ -2914,8 +2914,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:17",
-            "hash": "2a1de6cee24c07508bed9f9e2139be88"
+            "last_updated": "2026-09-14 16:51:14",
+            "hash": "60e605b748b2862cf06d90397e5b2653"
         },
         "Paul R. Williams-Getty": {
             "name": "Paul R. Williams",
@@ -2942,8 +2942,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:18",
-            "hash": "bc93effcd95c7dc480c6e1d122357284"
+            "last_updated": "2026-09-14 16:51:15",
+            "hash": "73602358e75be628e8e490df0fe34f12"
         },
         "Ancient Queenship: Art, Power, and Presence-Getty": {
             "name": "Ancient Queenship: Art, Power, and Presence",
@@ -2970,8 +2970,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:20",
-            "hash": "356c858993ba40c0cd079887bc6df53a"
+            "last_updated": "2026-09-14 16:51:17",
+            "hash": "5aaf5f379b36504cec931b97c71307ca"
         }
     },
     "Hammer Museum": {
@@ -3000,8 +3000,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "f8f44480aef8a37b5ca9e85e51069600"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "561c0b530a1654c8ae41617e23a89374"
         },
         "Five Centuries of Works on Paper: The Grunwald Center at 70, Part II-Hammer Museum": {
             "name": "Five Centuries of Works on Paper: The Grunwald Center at 70, Part II",
@@ -3028,8 +3028,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:21",
-            "hash": "abef99fd392401f0b32ec48da02edcbe"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "fa8c5a1be8c573a4a6c98534c18a2c5d"
         },
         "Arthur Jafa: The White Album-Hammer Museum": {
             "name": "Arthur Jafa: The White Album",
@@ -3056,8 +3056,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "ccf3fb7fd9d9af3cffc14bd5bb047280"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "9ea00610dd5c54fb919540fabeb4e3d3"
         },
         "Hammer Projects: Mike Cloud-Hammer Museum": {
             "name": "Hammer Projects: Mike Cloud",
@@ -3084,8 +3084,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:21",
-            "hash": "66bca52c6908faa68d41fdea1bd7e561"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "b4a2a9f3d7306bcb422cbb260714b3ed"
         },
         "Huguette Caland: A Life in a Few Lines-Hammer Museum": {
             "name": "Huguette Caland: A Life in a Few Lines",
@@ -3112,8 +3112,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:22",
-            "hash": "410b38b459970dae21a1bd03a2cdad7a"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "6b41f87ce3bf8c3699e3348938f7f392"
         },
         "Hammer Projects: G\u00ea Viana-Hammer Museum": {
             "name": "Hammer Projects: G\u00ea Viana",
@@ -3140,8 +3140,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:22",
-            "hash": "f04b618925a9921af651a8d11fa210c5"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "50374af649fe6840148e2034d008e56a"
         },
         "Hammer Projects: Vibeke Mascini-Hammer Museum": {
             "name": "Hammer Projects: Vibeke Mascini",
@@ -3168,8 +3168,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:22",
-            "hash": "375f1a67823eae10c5e2c9ece498f2a5"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "47e52f00a229c5214f715993030b474d"
         },
         "Felipe Baeza: Anima-Hammer Museum": {
             "name": "Felipe Baeza: Anima",
@@ -3196,8 +3196,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:22",
-            "hash": "1b9597bab9d9af7e24cc121dddf4df05"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "8675d38bab4a516d705dd3b30bc2a4ab"
         },
         "Mavis Pusey: Mobile Images-Hammer Museum": {
             "name": "Mavis Pusey: Mobile Images",
@@ -3224,8 +3224,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:22",
-            "hash": "039227deb9744e81f31751af98516482"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "fa6aebd8b7988c426b9e10ff0ecd3453"
         },
         "Several Eternities in a Day: Form in the Age of Living Materials-Hammer Museum": {
             "name": "Several Eternities in a Day: Form in the Age of Living Materials",
@@ -3248,8 +3248,8 @@
                     "description": "Event Page"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "c54ac43053bc0b065205dd8c96a3605d"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "6c5f9169350c607d55a6aea13dbafc6f"
         },
         "Five Centuries of Works on Paper: The Grunwald Center at 70-Hammer Museum": {
             "name": "Five Centuries of Works on Paper: The Grunwald Center at 70",
@@ -3276,8 +3276,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "d691837fa7ba5fbdd1dc2c5b178e0c63"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "4f3a61901c54388ddc2e93e8a41b7457"
         },
         "Alake Shilling: Buggy Bear Crashes Made in L.A.-Hammer Museum": {
             "name": "Alake Shilling: Buggy Bear Crashes Made in L.A.",
@@ -3304,8 +3304,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "3dfe4b5d0955a6eda204ecb9d39f95e7"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "09d08b88f5d5d6be9ad2cca7aed14b9a"
         },
         "Made in L.A. 2025-Hammer Museum": {
             "name": "Made in L.A. 2025",
@@ -3332,8 +3332,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "913d0a1345f82dd5460238a11c954f8b"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "a010002b2f88acae4f66cca3715ecc86"
         },
         "Rising Sun, Falling Rain: Japanese Woodblock Prints from the Grunwald Center for the Graphic Arts-Hammer Museum": {
             "name": "Rising Sun, Falling Rain: Japanese Woodblock Prints from the Grunwald Center for the Graphic Arts",
@@ -3360,8 +3360,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "538a7bc2600d768ff1d6a6ee031c218e"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "aa24a841eb96c1b17db8c4a69ed0258a"
         },
         "Lawrence Lek: NOX High-Rise-Hammer Museum": {
             "name": "Lawrence Lek: NOX High-Rise",
@@ -3388,8 +3388,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "fd4399a05f38e79adf032382dfa399ee"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "1cf85ed0d4f4bf617e261c664fc03de7"
         },
         "Hammer Projects: Renata Petersen-Hammer Museum": {
             "name": "Hammer Projects: Renata Petersen",
@@ -3416,8 +3416,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "2fbb8f7dd8f3a4c8f3ffa2a190141cbf"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "66d3d63f2327cc931ac8bb789623fcd0"
         },
         "Hammer Projects: Lap-See Lam-Hammer Museum": {
             "name": "Hammer Projects: Lap-See Lam",
@@ -3444,8 +3444,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "9d8f2fdc6e698d909d43be0d8048823c"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "31b1bfbeb1123681a7a6cd35a8e5ff8d"
         },
         "Noah Davis-Hammer Museum": {
             "name": "Noah Davis",
@@ -3530,8 +3530,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "45eb133411f4678ae9a79c17909fdf6a"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "cc00e2355b896fcccf037c9b3459e4e4"
         },
         "Cecilia Vicu\u00f1a Quipu of Encounters: The Dream of Water-MOCA": {
             "name": "Cecilia Vicu\u00f1a Quipu of Encounters: The Dream of Water",
@@ -3558,8 +3558,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "ca85e07d6d3bc74c7a67aa4dd98170e9"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "55987bc7a76530bd01770926e0c45e1c"
         },
         "Julian Charri\u00e8re-MOCA": {
             "name": "Julian Charri\u00e8re",
@@ -3614,8 +3614,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "297a32b2eba6681a538d1c9eafad0cc2"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "6fde31d6bd749d1e989fc16d0821f45f"
         },
         "Alexander Ap\u00f3stol Regime: Dramatis Personae-MOCA": {
             "name": "Alexander Ap\u00f3stol Regime: Dramatis Personae",
@@ -3642,8 +3642,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "dbaa9aa077c274a2b9343e1944083f66"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "b51f2f03ed20ee4e31de886e95b93c1e"
         },
         "The Expanding Field: MOCA's Collection from the 1940s to 1970s-MOCA": {
             "name": "The Expanding Field: MOCA's Collection from the 1940s to 1970s",
@@ -3670,8 +3670,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "e45363687592fb896fb6b4cecdd58428"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "7855a82c914449f67ecaa125fa0c3a18"
         },
         "MOCA Focus: Diane Severin Nguyen WAR SONGS-MOCA": {
             "name": "MOCA Focus: Diane Severin Nguyen WAR SONGS",
@@ -3698,8 +3698,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "32d51e0445326d73b42cc6fea62f9129"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "984ac8c77c67ab9b4918c128f88d5685"
         },
         "Haegue Yang: Star-Crossed Rendezvous-MOCA": {
             "name": "Haegue Yang: Star-Crossed Rendezvous",
@@ -3726,8 +3726,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "a05aa2358318e8c847148b40926794e5"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "e52961ef475a7f8622cdef6b96be6b80"
         },
         "Michael Asher-MOCA": {
             "name": "Michael Asher",
@@ -3754,8 +3754,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "48cec554543b30224f8e0cd34cfbdbb6"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "94986e38ad750317475f86e15b19f4a6"
         },
         "Good on Paper: Works from the Gene J. and Betye M. Burton Acquisitions Endowment-MOCA": {
             "name": "Good on Paper: Works from the Gene J. and Betye M. Burton Acquisitions Endowment",
@@ -3782,8 +3782,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "8359c1c368c9da5629e5477c80970461"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "2f0d57ceb14c0e6f71e28bf059863416"
         },
         "Gifts of Michael Asher-MOCA": {
             "name": "Gifts of Michael Asher",
@@ -3810,8 +3810,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "0f5dd98dbe836ccc27aee280e2b76178"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "b08c01c55f619c4bd03169a7ce9ab83a"
         },
         "MONUMENTS-MOCA": {
             "name": "MONUMENTS",
@@ -3838,8 +3838,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "048ad76ebf6c5d8edab498479d872b51"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "21adc958061685ee8789286bbf81d588"
         },
         "MOCA Focus: Takako Yamaguchi-MOCA": {
             "name": "MOCA Focus: Takako Yamaguchi",
@@ -3866,8 +3866,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "5bb83f86b43a53c492b56c21b5246bad"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "a66a310c051de380490325233389f918"
         },
         "Fictions of Display-MOCA": {
             "name": "Fictions of Display",
@@ -3894,8 +3894,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "3807dd9c21cbe4652d9388e0bd567060"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "bfcc45f3803f2f195e2837fa65cb65dc"
         },
         "Diary of Flowers: Artists and their Worlds-MOCA": {
             "name": "Diary of Flowers: Artists and their Worlds",
@@ -3922,8 +3922,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "24a04ba81c0574fb36f3d4c582bf6b17"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "1edf39666da729906b2e0992b3038fdd"
         },
         "Wael Shawky: Drama 1882-MOCA": {
             "name": "Wael Shawky: Drama 1882",
@@ -3950,8 +3950,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "6da4def91b3430d83c135206cd4603a2"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "3ac58944de300f84da4cc6e5b0638493"
         },
         "Ordinary People: Photorealism and the Work of Art since 1968-MOCA": {
             "name": "Ordinary People: Photorealism and the Work of Art since 1968",
@@ -3978,8 +3978,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "091d1990360a8008cadeafbe9b3cb02f"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "d8d8230e8fb8d0dfb6b376ee80e3a24b"
         },
         "MOCA Focus: Ana Segovia-MOCA": {
             "name": "MOCA Focus: Ana Segovia",
@@ -4006,8 +4006,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "adc5f3e3ef81d7541adecc8658210812"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "7b3e1bf86af80affb4756075ca01ed2c"
         },
         "Olafur Eliasson: OPEN-MOCA": {
             "name": "Olafur Eliasson: OPEN",
@@ -4034,8 +4034,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "7c728c7a1f60f6409b90935ac05e9f0c"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "f999852a8d4745f0ee037d5b21fec748"
         },
         "Josh Kline: Climate Change-MOCA": {
             "name": "Josh Kline: Climate Change",
@@ -4062,8 +4062,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "0902c2b610b58eb7ac66e113fb5be7b7"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "a4eda5c612285fb2257e04f9b42cec24"
         },
         "Reverberations-MOCA": {
             "name": "Reverberations",
@@ -4090,8 +4090,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "4888d10095478f1b938434b0993c6979"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "7bba8070637f9221d17d0a889a62fa67"
         },
         "Julian Charri\u00e8re: Deep End-MOCA": {
             "name": "Julian Charri\u00e8re: Deep End",
@@ -4118,8 +4118,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-13 14:52:23",
-            "hash": "cea263db0a26eb8b0501710f6ebc3cfd"
+            "last_updated": "2026-09-14 16:51:18",
+            "hash": "85256ca98224e406be53421b42fc4c26"
         }
     }
 }
