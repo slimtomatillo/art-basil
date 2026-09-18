@@ -24615,5 +24615,31 @@
             "last_updated": "2026-08-29 03:47:28",
             "hash": "4bb8debfdd52c0cb2860efc825c07baf"
         }
+    },
+    "Bridge Gallery": {
+        "Pacific Edge: The Landscape We Carry-Bridge Gallery": {
+            "name": "Pacific Edge: The Landscape We Carry",
+            "venue": "Bridge Gallery",
+            "description": "Solo exhibition of paintings by Helena Roeber inspired by the Northern California coast, moving between landscape and abstraction. Opening reception Thu, Oct 1, 5-6:30 PM.",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-01",
+                "end": "2026-11-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.helenaroeber.com/bridge",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-09-18 22:01:22",
+            "hash": "8ce8951f62ddf9bb4c3c01e1036ee0ff"
+        }
     }
 }
