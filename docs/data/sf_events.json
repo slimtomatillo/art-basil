@@ -24786,10 +24786,14 @@
                 {
                     "link": "https://www.instagram.com/helenaroeber/",
                     "description": "Instagram"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/6a0d22661bf890261a8c4917/b5d38567-f5b6-43f5-823f-29d33d8b02d4/Helena+Roeber_Hammock+in+the+Sky+Closeup_2026_Website.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-18 22:06:58",
-            "hash": "4877518c05d05f149f9c4755950b2584"
+            "last_updated": "2026-09-18 22:27:14",
+            "hash": "e55eb59dacaf32d9a6aee7e34a57493e"
         }
     }
 }
