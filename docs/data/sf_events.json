@@ -24795,5 +24795,40 @@
             "last_updated": "2026-09-18 22:46:48",
             "hash": "1244d3be1560c4cf21722e4e1e1541a0"
         }
+    },
+    "Madrone Art Bar": {
+        "Madrone Artist Grant Showcase-Madrone Art Bar": {
+            "name": "Madrone Artist Grant Showcase",
+            "venue": "Madrone Art Bar",
+            "description": "Exhibition celebrating the first group of 2026 Madrone Artist Grant recipients. Main Wall: Hugo Kobayashi, Evgeniya Korotchenko. Front Window Installation: Zo\u00eb Greenham. Opening reception Wed, Sep 30, 6-9 PM.",
+            "tags": [
+                "exhibition",
+                "opening",
+                "future",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-30",
+                "end": "2026-11-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/event/madrone-artist-grant-fall-showcase-opening-night/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://partiful.com/e/xOrvw7lPgrmWyi3RAZgS",
+                    "description": "RSVP"
+                },
+                {
+                    "link": "https://madroneartbar.com/wp-content/uploads/2026/09/madroneartistgrantshowcase.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-18 23:06:00",
+            "hash": "06e9b8bc04cff6b26db7eb62b5ff33b7"
+        }
     }
 }
