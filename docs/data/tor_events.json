@@ -25,8 +25,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "087f9de9873ab35790beeee739237c76"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "be9b71cc1316217405aebd2eb6490eeb"
         },
         "Bharti Kher-MOCA Toronto": {
             "name": "Bharti Kher",
@@ -53,8 +53,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "9db57e36fb2cbb8b967ef4c1db5187f9"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "cb513bb82a6975dc9c7d0e9ec524937e"
         },
         "Kimsooja-MOCA Toronto": {
             "name": "Kimsooja",
@@ -81,8 +81,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "073ec76087c7ac0e434a666b6a23468a"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "104c737012b99736f9287193fb39a6a9"
         },
         "Sara Cwynar-MOCA Toronto": {
             "name": "Sara Cwynar",
@@ -109,8 +109,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "1c2d5d7a6e7e32551cfd32db498a9a3b"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "066345b020af76787854a6ba1fd490c6"
         },
         "Jeff Wall-MOCA Toronto": {
             "name": "Jeff Wall",
@@ -137,8 +137,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "5876b2e4879d2b6fa140ae696984d605"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "7a9885fe3d86adcfc85e969c7732b649"
         },
         "Alex Da Corte-MOCA Toronto": {
             "name": "Alex Da Corte",
@@ -165,8 +165,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "5492104b282e51c9acec4679effcc46f"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "3f3648814d860a92aca5648531455aea"
         },
         "Jessica Stockholder-MOCA Toronto": {
             "name": "Jessica Stockholder",
@@ -193,8 +193,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "4e6b9d4dec252495832e29f56401a5e4"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "3a2c215a88fbdc28f010e9ec36f7b0ca"
         },
         "Margaux Williamson-MOCA Toronto": {
             "name": "Margaux Williamson",
@@ -221,8 +221,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "78db614056d151f5c131fd6df0da5cee"
+            "last_updated": "2026-09-18 14:52:33",
+            "hash": "cce728b79ca0536e03fce6b99196797f"
         }
     },
     "The Power Plant": {
@@ -232,10 +232,10 @@
             "description": "The South Facade Billboard is an ongoing series of photographic works that resonate with the context within which they are presented on the lake-facing exterior wall of the gallery. For this edition, The Power Plant has partnered with ERA Architects to showcase the work of artist Christina Leslie in a presentation that aligns with the goals of Art=Waterfront, an ERA-led initiative that identifies the waterfront as a vital space to foster and celebrate the city\u2019s artistic and cultural landscape. Part of Leslie\u2019s photographic series Pinhole Parishes (2023-25), the selected image, _Pinhole 11_, explores memory, place, and intergenerational connection through the lens of her Jamaican heritage. Drawing inspiration from stories and memories shared by relatives, Leslie's images create a dialogue between past and present, reconstructing familial and cultural histories shaped by migration, geography, and fragmented archives. At once a personal act of remembrance and a broader act of reclamation, the series maps stories across all fourteen civil territorial divisions in Jamaica known as parishes. **About the Artist** **Christina Leslie** (b. 1983) is a Pickering-based photographic artist. She holds a BFA from OCAD University (2006) and an MFA from the Savannah College of Art and Design (2022). Leslie has exhibited at institutions including GAMU in Prague, Oakland University in Michigan, the Royal Ontario Museum, BAND Gallery, Canada\u2019s Pier 21, the Art Gallery of Windsor, Prefix Photo, the McMaster Museum of Art, MOCA Toronto, and many others. Recent exhibitions include Likkle Acts at the Robert McLaughlin Gallery (2024\u20132025) and Pinhole Portraits and Places at Stephen Bulger Gallery (2025). She also served as Interim Assistant Curator at the McMaster Museum of Art, curating THE GREAT UNSEEN(2025). Her photographs are held in private, corporate, and institutional collections, and she is represented by Stephen Bulger Gallery in Toronto.",
             "tags": [
                 "exhibition",
-                "current",
-                "gallery"
+                "gallery",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2025-11-07",
                 "end": "2026-09-07"
@@ -251,8 +251,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "9921aede0c3e2073295d9072de8cef70"
+            "last_updated": "2026-09-06 14:00:19",
+            "hash": "fc79dbbfd280195eb63926db44f781a2"
         },
         "Colourful Parachutes: Imagining Alternative Futures Through the Power of Play-The Power Plant": {
             "name": "Colourful Parachutes: Imagining Alternative Futures Through the Power of Play",
@@ -260,10 +260,10 @@
             "description": "_Colourful Parachutes: Imagining Alternative Futures Through the Power of Play_ brings together leading artists from Canada and abroad to examine the politics of the exhibition space through the radical power of play. Imagining children as the exhibition\u2019s primary audience, it puts into question how we make, present, and experience contemporary art\u2014often with unexpected and uniquely engaging results. Influenced by exhibitions like Palle Nielsen\u2019s _The Model_ (1968), which turned Stockholm\u2019s Moderna Museet into a giant adventure playground, _Colourful Parachutes_ views the gallery as a microcosm of society. If we allow children to reinvent it, what new worlds can we co-create? A key theme underlying _Colourful Parachutes_ is the relationship young people have to the future. Many of the works in the exhibition touch on the vital importance of fostering a relationship to the natural world during childhood, the increasing sense of eco-anxiety carried by young people, and how to advocate for child-led environmental activism. The title is borrowed from Ailton Krenak\u2019s book _Ideas to Postpone the End of the World_ (2019), in which the Brazilian Indigenous philosopher and environmental activist suggests using creativity and dreaming to create colourful parachutes that might slow our fall. Krenak asks: \u201cWhat sort of world are you boxing and wrapping for future generations? You keep talking about another world, but have you asked the generations of tomorrow if the world you\u2019re building is the world they want?\u201d Including several participatory, interactive works, _Colourful Parachutes_ transforms the gallery into a space where things can be made, moved, played with, tried out, tested, and touched. By disrupting the formal conventions that we are accustomed to in the gallery, it encourages people of all ages to become active participants in the shaping of their environment by giving them the power to envision a different world for us all.",
             "tags": [
                 "exhibition",
-                "current",
-                "gallery"
+                "gallery",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2026-04-25",
                 "end": "2026-09-07"
@@ -279,8 +279,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "08ff0be63539942ea619528a5d4fb5f0"
+            "last_updated": "2026-09-06 14:00:19",
+            "hash": "62d7c02b5b776e841712666f28f4dae2"
         },
         "Fogo-The Power Plant": {
             "name": "Fogo",
@@ -307,8 +307,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "84f3995db11f46de4ae4f9640bd122de"
+            "last_updated": "2026-09-18 14:52:34",
+            "hash": "474bba9c1f90f1e71952e0737b3c5114"
         },
         "Moonlit Confessions Across Deep Sea Echoes: Your Ancestors Are Whales, and Earth Remembers Everything-The Power Plant": {
             "name": "Moonlit Confessions Across Deep Sea Echoes: Your Ancestors Are Whales, and Earth Remembers Everything",
@@ -335,8 +335,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "2119f68f5804dd010077d6550eda8c8e"
+            "last_updated": "2026-09-18 14:52:34",
+            "hash": "43dbc568c944225662abbaedd0a2fef7"
         },
         "Owner of a Lonely Heart-The Power Plant": {
             "name": "Owner of a Lonely Heart",
@@ -363,8 +363,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:47",
-            "hash": "fd3f4a9d40f4c8281991c1d51abc9919"
+            "last_updated": "2026-09-18 14:52:34",
+            "hash": "35b5d88b729be2017d0df8a34bcb3e11"
         }
     },
     "Aga Khan Museum": {
@@ -374,10 +374,10 @@
             "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2026-04-03",
                 "end": "2026-09-07"
@@ -393,8 +393,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "7e1fe8fcb674bedb8aa80bb862819544"
+            "last_updated": "2026-09-08 14:58:59",
+            "hash": "a618652e005cb7ccd5a16653c1aba541"
         },
         "Hassan Hajjaj: La Salle de Gym des Femmes Arabes-Aga Khan Museum": {
             "name": "Hassan Hajjaj: La Salle de Gym des Femmes Arabes",
@@ -402,10 +402,10 @@
             "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2025-09-13",
                 "end": "2026-09-07"
@@ -421,8 +421,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "76e86bb8dc53d25df1cd60e0f60c55ab"
+            "last_updated": "2026-09-08 14:58:59",
+            "hash": "91f571a51ebd72e24230ee8c1ba504e6"
         },
         "Spotlight: Spanish Holbein Carpet-Aga Khan Museum": {
             "name": "Spotlight: Spanish Holbein Carpet",
@@ -449,8 +449,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "989111be8ea412277d34bc84e7cf1c1a"
+            "last_updated": "2026-09-18 14:52:34",
+            "hash": "5e8bc2b37578b237791024ee00a6d5c3"
         },
         "Kamrooz Aram: Lapis Intervention-Aga Khan Museum": {
             "name": "Kamrooz Aram: Lapis Intervention",
@@ -477,8 +477,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "b95488fd7197bddc6cf95365e4fbc7b8"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "e3e4d227010a2b55d6f0a0d8dfe8a780"
         },
         "Toronto Biennial of Art at the Aga Khan Museum-Aga Khan Museum": {
             "name": "Toronto Biennial of Art at the Aga Khan Museum",
@@ -505,8 +505,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "3ead76dc976d07c5f1e14fb09f433b98"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "abbbee851aa2e657c3baf98f01957c64"
         },
         "Hayv Kahraman: Nabog-Aga Khan Museum": {
             "name": "Hayv Kahraman: Nabog",
@@ -533,8 +533,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "e8a4e6794643bcb4d2eae3e60a11fb64"
+            "last_updated": "2026-09-18 14:52:34",
+            "hash": "37833c6d7e541f091ec55d6a32300fe6"
         },
         "Saks Afridi: SpaceMosque-Aga Khan Museum": {
             "name": "Saks Afridi: SpaceMosque",
@@ -561,8 +561,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "73fd6be73a3573bf20572ff8ec7a41be"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "3e979aaa0fd204dd06bd05deceb50a9a"
         },
         "The Garden of Ideas: Contemporary Art from Pakistan-Aga Khan Museum": {
             "name": "The Garden of Ideas: Contemporary Art from Pakistan",
@@ -589,8 +589,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "cbdea0a55d93d404bbf3ce6130936481"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "ad248fe7d76dc011bf2e1ff4d763761d"
         },
         "In Search of the Artist: Signed Drawings and Paintings from the Aga Khan Museum Collection-Aga Khan Museum": {
             "name": "In Search of the Artist: Signed Drawings and Paintings from the Aga Khan Museum Collection",
@@ -617,8 +617,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "073ecef1779864b972bab40cf83848fa"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "de2b0cc71bffdf0c28aea1de7288718e"
         },
         "The Lost Dhow: A Discovery from the Maritime Silk Route-Aga Khan Museum": {
             "name": "The Lost Dhow: A Discovery from the Maritime Silk Route",
@@ -645,8 +645,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "ffbc5bf8fd65ce7bef3025d74e7a0cba"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "e3bd68fd450a1c81822e4ba0ddc1d597"
         },
         "Home Ground: Contemporary Art from The Barjeel Art Foundation-Aga Khan Museum": {
             "name": "Home Ground: Contemporary Art from The Barjeel Art Foundation",
@@ -673,8 +673,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "9939d91e100e4f90ea0efaf7460fd75a"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "68dcbe71e47956f7f58e18301afa17dd"
         },
         "Inspired by India: Paintings by Howard Hodgkin-Aga Khan Museum": {
             "name": "Inspired by India: Paintings by Howard Hodgkin",
@@ -701,8 +701,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "b119311d72bd6e751fb710845a270872"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "fcd3cbd87dcdd6bf56f28b568150696e"
         },
         "Visions Of Mughal India: The Collection of Howard Hodgkin-Aga Khan Museum": {
             "name": "Visions Of Mughal India: The Collection of Howard Hodgkin",
@@ -729,8 +729,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-08-29 03:48:48",
-            "hash": "8aefe1605334941568d10fd885b0389b"
+            "last_updated": "2026-09-18 14:52:35",
+            "hash": "39cdd4ab41b23cd6d14d1a6fae4a665f"
         }
     }
 }
