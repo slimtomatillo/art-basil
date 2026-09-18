@@ -24617,14 +24617,16 @@
         }
     },
     "Bridge Gallery": {
-        "Pacific Edge: The Landscape We Carry-Bridge Gallery": {
-            "name": "Pacific Edge: The Landscape We Carry",
+        "Helena Roeber \u2014 Pacific Edge: The Landscape We Carry-Bridge Gallery": {
+            "name": "Helena Roeber \u2014 Pacific Edge: The Landscape We Carry",
             "venue": "Bridge Gallery",
-            "description": "Solo exhibition of paintings by Helena Roeber inspired by the Northern California coast, moving between landscape and abstraction. Opening reception Thu, Oct 1, 5-6:30 PM.",
+            "description": "Pacific Edge: The Landscape We Carry is a solo exhibition of paintings by Bay Area artist Helena Roeber. Moving between landscape and abstraction, the work explores the shifting light, fog, and coastal atmosphere of Northern California and the ways experiences of place become intertwined with memory and perception. Opening reception Thu, Oct 1, 5-6:30 PM.",
             "tags": [
                 "exhibition",
                 "future",
-                "gallery"
+                "free",
+                "gallery",
+                "opening"
             ],
             "phase": "future",
             "dates": {
@@ -24636,10 +24638,18 @@
                 {
                     "link": "https://www.helenaroeber.com/bridge",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.helenaroeber.com",
+                    "description": "Artist Website"
+                },
+                {
+                    "link": "https://www.instagram.com/helenaroeber/",
+                    "description": "Instagram"
                 }
             ],
-            "last_updated": "2026-09-18 22:01:22",
-            "hash": "8ce8951f62ddf9bb4c3c01e1036ee0ff"
+            "last_updated": "2026-09-18 22:06:58",
+            "hash": "4877518c05d05f149f9c4755950b2584"
         }
     }
 }
