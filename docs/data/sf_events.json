@@ -24756,10 +24756,10 @@
             "hash": "6d74d48ffff9662ead0f400254040b6b"
         }
     },
-    "Bridge Gallery": {
-        "Helena Roeber \u2014 Pacific Edge: The Landscape We Carry-Bridge Gallery": {
+    "Bridge Gallery (Mithun)": {
+        "Helena Roeber \u2014 Pacific Edge: The Landscape We Carry-Bridge Gallery (Mithun)": {
             "name": "Helena Roeber \u2014 Pacific Edge: The Landscape We Carry",
-            "venue": "Bridge Gallery",
+            "venue": "Bridge Gallery (Mithun)",
             "description": "Pacific Edge: The Landscape We Carry is a solo exhibition of paintings by Bay Area artist Helena Roeber. Moving between landscape and abstraction, the work explores the shifting light, fog, and coastal atmosphere of Northern California and the ways experiences of place become intertwined with memory and perception. Opening reception Thu, Oct 1, 5-6:30 PM.",
             "tags": [
                 "exhibition",
@@ -24792,8 +24792,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-18 22:27:14",
-            "hash": "e55eb59dacaf32d9a6aee7e34a57493e"
+            "last_updated": "2026-09-18 22:46:48",
+            "hash": "1244d3be1560c4cf21722e4e1e1541a0"
         }
     }
 }
