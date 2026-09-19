@@ -125,8 +125,15 @@ def scrape_mbam_exhibitions(env='prod', region='mtl'):
             img_tag = card.find('img')
             image_link = img_tag['src'] if img_tag and img_tag.get('src') else None
             description = None
+            ongoing = False
         else:
-            # Text-less "coming soon" card - fall back to the detail page
+            # Text-less card - fall back to the detail page. Most of these are
+            # "coming soon" shows whose detail page states a near-future date;
+            # a handful (the MMFA's permanent collection wings, e.g. "Quebec
+            # and Canadian Art", "Sculpture Garden") state no date anywhere on
+            # the listing card OR the detail page - treat those as ongoing
+            # rather than defaulting to phase 'current' with no date, which
+            # rendered on the site as "Dates TBA".
             detail = scrape_from_detail_page(event_link)
             time.sleep(1)
             if not detail or not detail['title']:
@@ -135,6 +142,7 @@ def scrape_mbam_exhibitions(env='prod', region='mtl'):
             start_date, end_date = detail['start_date'], detail['end_date']
             image_link = detail['image']
             description = detail['description']
+            ongoing = start_date is None and end_date is None
 
         if end_date and end_date < today:
             if end_date < cutoff:
@@ -152,7 +160,7 @@ def scrape_mbam_exhibitions(env='prod', region='mtl'):
             'tags': ['exhibition', phase, 'museum'],
             'phase': phase,
             'dates': {'start': start_date, 'end': end_date},
-            'ongoing': False,
+            'ongoing': ongoing,
             'links': [{'link': event_link, 'description': 'Event Page'}],
             'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
         }
