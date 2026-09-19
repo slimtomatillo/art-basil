@@ -24797,15 +24797,14 @@
         }
     },
     "Madrone Art Bar": {
-        "Madrone Artist Grant Showcase-Madrone Art Bar": {
-            "name": "Madrone Artist Grant Showcase",
+        "2026 Madrone Artist Grant Showcase-Madrone Art Bar": {
+            "name": "2026 Madrone Artist Grant Showcase",
             "venue": "Madrone Art Bar",
-            "description": "Exhibition celebrating the first group of 2026 Madrone Artist Grant recipients. Main Wall: Hugo Kobayashi, Evgeniya Korotchenko. Front Window Installation: Zo\u00eb Greenham. Opening reception Wed, Sep 30, 6-9 PM.",
+            "description": "Fall Exhibition Madrone Art Bar Presents: On the Main Wall:Hugo Kobayashi \u2014 Dream CatchersEvgeniya Korotchenko \u2014 Somewhere Better \u2013 This Place In the Front Window:Zo\u00eb Greenham \u2014 Slice, Stack September 30th to November 23rd 2026 Opening Party: September 30th, 6-9PM",
             "tags": [
                 "exhibition",
-                "opening",
                 "future",
-                "free"
+                "opening"
             ],
             "phase": "future",
             "dates": {
@@ -24815,20 +24814,201 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://madroneartbar.com/event/madrone-artist-grant-fall-showcase-opening-night/",
+                    "link": "https://madroneartbar.com/2026-madrone-artist-grant-showcase/",
                     "description": "Event Page"
-                },
-                {
-                    "link": "https://partiful.com/e/xOrvw7lPgrmWyi3RAZgS",
-                    "description": "RSVP"
                 },
                 {
                     "link": "https://madroneartbar.com/wp-content/uploads/2026/09/madroneartistgrantshowcase.png",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-18 23:06:00",
-            "hash": "06e9b8bc04cff6b26db7eb62b5ff33b7"
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "05578512ee1f82b79a34e92b799178a5"
+        },
+        "Madrone Summer Exhibition-Madrone Art Bar": {
+            "name": "Madrone Summer Exhibition",
+            "venue": "Madrone Art Bar",
+            "description": "Madrone Art Bar Presents: On the Main Wall:Ron Campbell \u2014 DIVE BAR Nick Yusi \u2014 DONCE In the Front Window:bianca levan + silvi alcivar \u2014 this is the shape of choosing July 23rd to September 21st 2026 Opening Party: July 23rd, 6-9PM",
+            "tags": [
+                "exhibition",
+                "current",
+                "opening"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-07-23",
+                "end": "2026-09-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/madrone-summer-exhibition/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://madroneartbar.com/wp-content/uploads/2026/07/MixCollage-11-Jul-2026-11-04-AM-1657-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "b7628ee6133185bedadea8bbb1811270"
+        },
+        "Saturnine Zydeco: The History of Badminton-Madrone Art Bar": {
+            "name": "Saturnine Zydeco: The History of Badminton",
+            "venue": "Madrone Art Bar",
+            "description": "Madrone Art Bar Presents: Mathew Mcgrath @mathmcgrath @farallongardens Saturnine Zydeco: The History of BadmintonApril 17th to July 12th 2026 Opening Event: Friday, April 17th, 6-9PM Bay Area-based artist Mathew McGrath, originally from Verona, New Jersey, initially gravitated towards the 1980s hip-hop, skateboarding, and punk scenes. As a sponsored skateboarder, he embarked on a journey to [\u2026]",
+            "tags": [
+                "exhibition",
+                "past",
+                "opening"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-04-17",
+                "end": "2026-07-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/saturnine-zydeco-the-history-of-badminton/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://madroneartbar.com/wp-content/uploads/2026/03/Screenshot-2026-03-31-at-1.40.28\u202fPM.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "2df36d4db62f7e95616a189cafb5df82"
+        },
+        "FART MARKET: Art Flea Market-Madrone Art Bar": {
+            "name": "FART MARKET: Art Flea Market",
+            "venue": "Madrone Art Bar",
+            "description": "Madrone Art Bar presents\u2026 FART MARKET: An Art Flea Market Where art gets drafted into a new home. FART MARKET is a two-month, community-driven exhibition inviting people to contribute artwork they\u2019re ready to let go of. Throughout the exhibition, donated pieces will accumulate on the bar walls and then be rehomed during a Claim Draft [\u2026]",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-02-01",
+                "end": "2026-04-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/fart-market-art-flea-market/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "1b19d70aa9a2b54f5fb2fe2e3f05e0f0"
+        },
+        "Artvent 2025-Madrone Art Bar": {
+            "name": "Artvent 2025",
+            "venue": "Madrone Art Bar",
+            "description": "Madrone Art Bar presents: ARTVENT 2025 An Advent Holiday Art Show December 1, 2025, to January 30th, 2026 Closing party on Thursday, January 29th, 6-8 PM 25 spots for Participating Artists: Silvi Alcivar, Nicole Andrijauskas, Kundan Baidwan, Anita Beshirs, Ron Campbell, Jon Carr, Rena Cheng, Manny Fabregas, Tim Genda, The Grippos, Tabitha Lahr, Moonji L., [\u2026]",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-12-01",
+                "end": "2026-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/artvent-2025/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://madroneartbar.com/wp-content/uploads/2025/12/unnamed-5.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "38d1fe527ad9da3682081f89f13ac520"
+        },
+        "SF Night Moves & Light Canopy-Madrone Art Bar": {
+            "name": "SF Night Moves & Light Canopy",
+            "venue": "Madrone Art Bar",
+            "description": "Main Wall Art Installation: SF NIGHT MOVES, photos of SF Bar Industry Personalities By Brendan Mainini Front Window Art Installation: Light Canopy by Tynan Winters",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": null,
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/sf-night-moves-light-canopy/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://madroneartbar.com/wp-content/uploads/2025/08/Nightmoves_Insta_3_Devito_1080x1080-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "0a962ad40a12220c3c9b12873b0ac2fa"
+        },
+        "Art Opening Reception this Wednesday 2/29-Madrone Art Bar": {
+            "name": "Art Opening Reception this Wednesday 2/29",
+            "venue": "Madrone Art Bar",
+            "description": "6-9PMIt\u2019s the Lunar New Year of Snake! Come and see Misssstencil\u2019s mural and find out about the snakes in Ssssan Francissssco Bay Area you live with every dayIt\u2019s the Lunar New Year of Snake! This sculpture is inspired by two half human half snake deities in Chinese mythology who created the humanity, invented Yingyang Bagua, [\u2026]",
+            "tags": [
+                "exhibition"
+            ],
+            "phase": null,
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/art-opening-reception-this-wednesday-2-29/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://madroneartbar.com/wp-content/uploads/2025/01/Misstencil_Social-copy.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "892e3db2e0aaed0d98f1b5b923a9ae89"
+        },
+        "Artvent 2024-Madrone Art Bar": {
+            "name": "Artvent 2024",
+            "venue": "Madrone Art Bar",
+            "description": "Madrone Art Bar presents: \ufeffARTVENT 2024 an Advent Holiday Art Show December 1, 2024, to January 19th, 2025 Closing party on Thursday, January 16th 6-9 PM Participating artists: Mike Davis, Kelly Jean Eagan, Amir Esfahani, Alejandro Esquivias, Manny Fabregas, Emily Fromm, Annie Galvin, Rebecca Goldfarb, Michael Goldman, Matt Gonzalez, Anthony Grant, Jeremiah Jenkins, Shane Killian, [\u2026]",
+            "tags": [
+                "exhibition",
+                "past"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-12-01",
+                "end": "2025-01-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://madroneartbar.com/artvent-2024/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://madroneartbar.com/wp-content/uploads/2025/02/unnamed-14.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-19 02:41:11",
+            "hash": "092313595076dde8392056a078000f1b"
         }
     }
 }
