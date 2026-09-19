@@ -163,3 +163,4 @@ cython_debug/
 
 # Log files
 dev.log
+scraping.log

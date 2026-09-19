@@ -63,8 +63,9 @@ def configure_logging(env):
     # File handler with environment-specific log file
     log_file = "dev.log" if env == 'dev' else "scraping.log"
     file_handler = logging.FileHandler(log_file, mode='a')
-    
+
     file_handler.setLevel(logging.INFO)
+    file_handler.addFilter(InfoFilter())
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s - [%(filename)s:%(lineno)d]')
 
     handlers = [console_handler, file_handler]
