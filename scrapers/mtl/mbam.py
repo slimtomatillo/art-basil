@@ -108,8 +108,6 @@ def scrape_mbam_exhibitions(env='prod', region='mtl'):
 
     for card in cards:
         href = card['href']
-        if '/exhibition' not in href:
-            continue
         event_link = absolute_url(href)
         if event_link in seen_links:
             continue
