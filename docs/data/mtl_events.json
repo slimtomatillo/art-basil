@@ -6,10 +6,10 @@
             "description": null,
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2026-04-14",
                 "end": "2026-09-20"
@@ -25,8 +25,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "9171385993b617764dcfe148de7d4be1"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "77c90afe6f18f2e5fe17a3835affac3e"
         },
         "Rising Suns: Art from the Confederacies of the Great Lakes and Rivers-Montreal Museum of Fine Arts": {
             "name": "Rising Suns: Art from the Confederacies of the Great Lakes and Rivers",
@@ -53,8 +53,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:04",
-            "hash": "9ac622c4f6730e420236ff06abfefff0"
+            "last_updated": "2026-09-21 16:52:36",
+            "hash": "1e777c1212f4d9c711ebb8b1c8f10232"
         },
         "Beyond the Pedestal: Sculptures in the Collection, from the 1960s to Today-Montreal Museum of Fine Arts": {
             "name": "Beyond the Pedestal: Sculptures in the Collection, from the 1960s to Today",
@@ -81,8 +81,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:07",
-            "hash": "98b48f728952e2994f446090b33b41f8"
+            "last_updated": "2026-09-21 16:52:39",
+            "hash": "d9fa5737a0a3bf88f3c0d2121f439dd5"
         },
         "From the Functional to the Fabulous: 600 Years of Decorative Arts and Design-Montreal Museum of Fine Arts": {
             "name": "From the Functional to the Fabulous: 600 Years of Decorative Arts and Design",
@@ -109,8 +109,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:14",
-            "hash": "f3744a115553d9be7ea4f361867a3c33"
+            "last_updated": "2026-09-21 16:52:47",
+            "hash": "e20e7597b1925f6481ff1f37fd210deb"
         },
         "Chiharu Shiota: The Soul Trembles-Montreal Museum of Fine Arts": {
             "name": "Chiharu Shiota: The Soul Trembles",
@@ -137,8 +137,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:18",
-            "hash": "be6afe21804d1fa8560bfe94615b31e0"
+            "last_updated": "2026-09-21 16:52:51",
+            "hash": "23c6940749380cf77bec7d862c5100c5"
         },
         "Allison Katz: Jeu d'esprit-Montreal Museum of Fine Arts": {
             "name": "Allison Katz: Jeu d'esprit",
@@ -165,8 +165,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:20",
-            "hash": "da6fa7dd506c9231784ffc878bfe07ef"
+            "last_updated": "2026-09-21 16:52:52",
+            "hash": "cb43c4ea6f36de3c59b8b1d62c6e251f"
         },
         "Anne Kahane : Structures-Montreal Museum of Fine Arts": {
             "name": "Anne Kahane : Structures",
@@ -193,8 +193,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:21",
-            "hash": "6c85a6033d0b5accfdc11efe58fb752d"
+            "last_updated": "2026-09-21 16:52:54",
+            "hash": "d2dc37eace0f81cedda932776dc88551"
         },
         "MARIE CHOUINARD: BECOMING BREATH-Montreal Museum of Fine Arts": {
             "name": "MARIE CHOUINARD: BECOMING BREATH",
@@ -221,8 +221,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:23",
-            "hash": "e48c5a15366edbe10796f87b986dfa7a"
+            "last_updated": "2026-09-21 16:52:55",
+            "hash": "a3e5638ee3b1f3780fa4d2c4f5f1776b"
         },
         "Keith Haring in 3D-Montreal Museum of Fine Arts": {
             "name": "Keith Haring in 3D",
@@ -249,8 +249,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "637aacffc0a4d407098959a341ea7030"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "f84216b41783a56b2e5a0f8b234813c9"
         },
         "The Torlonia Collection: Masterpieces of Roman Sculpture-Montreal Museum of Fine Arts": {
             "name": "The Torlonia Collection: Masterpieces of Roman Sculpture",
@@ -277,8 +277,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "d001c9d19a2ec81cc6c639a16ea5e56a"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "3ff00fbd463b7b57135caa1ef53a3362"
         },
         "Richard Avedon: Immortal. Portraits of Aging, 1951-2004-Montreal Museum of Fine Arts": {
             "name": "Richard Avedon: Immortal. Portraits of Aging, 1951-2004",
@@ -305,8 +305,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "0a383cda214545857a1e467ca6f8117d"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "2d6c4fe3f14c89c754502fef7b440809"
         },
         "Comfort and Indifference: Recent Acquisitions by the MAC-Montreal Museum of Fine Arts": {
             "name": "Comfort and Indifference: Recent Acquisitions by the MAC",
@@ -333,8 +333,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "ef087d3b41ad8df33e5fe4a72130ad3e"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "33a5bc9e14dbeb39291a20c2f977fbc8"
         },
         "Kurt Hentschl\u00e4ger : EVER MORE-Montreal Museum of Fine Arts": {
             "name": "Kurt Hentschl\u00e4ger : EVER MORE",
@@ -361,8 +361,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "762012fdcf00bc99be947e40422b5874"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "e2eb9c3a7fc2aa2d229f568f22de5bbc"
         },
         "Kent Monkman: History Is Painted by the Victors-Montreal Museum of Fine Arts": {
             "name": "Kent Monkman: History Is Painted by the Victors",
@@ -389,8 +389,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "4cb7429e56f4bdf5e73ce2db1ed96eb1"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "7fbb10f9a12bf690909db7a16d9fe4ba"
         },
         "MOMENTA x MBAM Anique Jordan: Underbelly-Montreal Museum of Fine Arts": {
             "name": "MOMENTA x MBAM Anique Jordan: Underbelly",
@@ -417,8 +417,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "e713e0e72f2083b3eff3a8e812d36c86"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "e5e13d898330777ee812306d91db9bf1"
         },
         "Marie-Claire Blais: Streaming Light-Montreal Museum of Fine Arts": {
             "name": "Marie-Claire Blais: Streaming Light",
@@ -445,8 +445,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "fb3239e007b1e9785f65e4b3f240cac0"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "0b0c55e79769412132497d2b0c48b146"
         },
         "Berthe Weill, Art Dealer of the Parisian Avant-garde-Montreal Museum of Fine Arts": {
             "name": "Berthe Weill, Art Dealer of the Parisian Avant-garde",
@@ -473,8 +473,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "8c5c6cc24505967d40dd281cf6d9487f"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "91306c34a9139821dbf4fbb117ee977e"
         },
         "Worlds of Wonder: The Surrealist Journey of Alan Glass-Montreal Museum of Fine Arts": {
             "name": "Worlds of Wonder: The Surrealist Journey of Alan Glass",
@@ -501,8 +501,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "5e43821a634c29e918b982a4e8c381bd"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "18a4ea292471fcd69ace1222aaf0046d"
         },
         "Bad Girls Only: Women and the Seven Deadly Sins-Montreal Museum of Fine Arts": {
             "name": "Bad Girls Only: Women and the Seven Deadly Sins",
@@ -529,8 +529,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "a5f2659b2aed46b58da9e423a70c27ef"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "1b6f1d38181cc4fd5058c3874af800de"
         },
         "Joyce Wieland: Heart On-Montreal Museum of Fine Arts": {
             "name": "Joyce Wieland: Heart On",
@@ -557,8 +557,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "5547be0e6b028bcc25568897ef9bc429"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "6c4d7d714abed0c51cc61c125c38a8aa"
         },
         "Anri Sala: Ravel Ravel Interval-Montreal Museum of Fine Arts": {
             "name": "Anri Sala: Ravel Ravel Interval",
@@ -585,8 +585,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "5cbb0c63d901a25f7316d4ff8f6ae41c"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "24dee3ddb3d219567d9915e84319e018"
         },
         "Glenn Gear: ulitsuak | mar\u00e9e montante | rising tide-Montreal Museum of Fine Arts": {
             "name": "Glenn Gear: ulitsuak | mar\u00e9e montante | rising tide",
@@ -613,8 +613,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "4ab8994543840ffb8d414162afbf6cb4"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "f52e8b22b732558479a1ef91bebfdaf9"
         },
         "Two by Two, Together: Recent Additions to the MMFA\u2019s Collection-Montreal Museum of Fine Arts": {
             "name": "Two by Two, Together: Recent Additions to the MMFA\u2019s Collection",
@@ -641,8 +641,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "ab565621a8e5b7c9de378c9603335de4"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "effc6a93b038af0610a537eb34e5141f"
         },
         "Saints, Sinners, Lovers and Fools-Montreal Museum of Fine Arts": {
             "name": "Saints, Sinners, Lovers and Fools",
@@ -669,8 +669,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "007a7187eb181e5fc34ae2ca49ff2fe1"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "2bd7409bd6b2c78112d01dd964c4e628"
         },
         "Tokaido: Dreamscapes by Ando Hiroshige-Montreal Museum of Fine Arts": {
             "name": "Tokaido: Dreamscapes by Ando Hiroshige",
@@ -697,8 +697,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:24",
-            "hash": "feb372d568744e322128afb2fe2c0512"
+            "last_updated": "2026-09-21 16:52:57",
+            "hash": "32d20a2e4863915825aa1990409052c9"
         },
         "Ready, Set, Go! Sports Inspire Art-Montreal Museum of Fine Arts": {
             "name": "Ready, Set, Go! Sports Inspire Art",
@@ -725,8 +725,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:06",
-            "hash": "bffa82b1a5ccc03d59b2d7b30bb40efd"
+            "last_updated": "2026-09-21 16:52:38",
+            "hash": "b9f5205dd619faf1850eb945f32c2b0a"
         },
         "Quebec and Canadian Art-Montreal Museum of Fine Arts": {
             "name": "Quebec and Canadian Art",
@@ -753,8 +753,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:09",
-            "hash": "598aac7e987dab394af67be2347cd278"
+            "last_updated": "2026-09-21 16:52:41",
+            "hash": "9d980666effe4ba62a26d4d32b23ad10"
         },
         "uummaqutik: essence of life-Montreal Museum of Fine Arts": {
             "name": "uummaqutik: essence of life",
@@ -781,8 +781,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:10",
-            "hash": "aab6b0bd7c9ebd513c117755f616dbad"
+            "last_updated": "2026-09-21 16:52:42",
+            "hash": "6967707aaad1a79fc44df86b50308d42"
         },
         "Early to Modern International Art-Montreal Museum of Fine Arts": {
             "name": "Early to Modern International Art",
@@ -809,8 +809,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:11",
-            "hash": "1838340d666db209efbb65482a9b63f5"
+            "last_updated": "2026-09-21 16:52:44",
+            "hash": "5902b2e4ff4eafb1e4500d171762bb0c"
         },
         "The Arts of One World-Montreal Museum of Fine Arts": {
             "name": "The Arts of One World",
@@ -837,8 +837,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:13",
-            "hash": "1f6e1d44af051b0ec4a0dfdb7fb15b50"
+            "last_updated": "2026-09-21 16:52:45",
+            "hash": "d5544d164e8f07b3031d145b1362a0ec"
         },
         "Contemporary Art-Montreal Museum of Fine Arts": {
             "name": "Contemporary Art",
@@ -865,8 +865,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:16",
-            "hash": "1a6c533961b979528deb9ae70a1233fa"
+            "last_updated": "2026-09-21 16:52:48",
+            "hash": "7fdbe7155ab9dad57ff83970aa12112c"
         },
         "Sculpture Garden-Montreal Museum of Fine Arts": {
             "name": "Sculpture Garden",
@@ -893,8 +893,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:17",
-            "hash": "57c1a306ca9f81d7c99d82c6279a79e4"
+            "last_updated": "2026-09-21 16:52:49",
+            "hash": "8204e8cfcfe56dfb59fd4efb065a32e1"
         }
     },
     "McCord Stewart Museum": {
@@ -979,8 +979,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:29",
-            "hash": "9587370d561709981d053c2057d00106"
+            "last_updated": "2026-09-21 16:53:03",
+            "hash": "5f15c54a192e9bbb99c1fb73dacff4ec"
         },
         "Museum Alley-McCord Stewart Museum": {
             "name": "Museum Alley",
@@ -1007,8 +1007,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:30",
-            "hash": "17b74c3a5c0402643d241485e5c9eeb2"
+            "last_updated": "2026-09-21 16:53:04",
+            "hash": "2f91e57f3a39caa60582e5d80456f394"
         },
         "Beyond the Games \u2013 Montreal\u2019s Olympic Story: Virtual exhibition-McCord Stewart Museum": {
             "name": "Beyond the Games \u2013 Montreal\u2019s Olympic Story: Virtual exhibition",
@@ -1035,8 +1035,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:27",
-            "hash": "45445e116f1c28e9cae7f1c62bbdab34"
+            "last_updated": "2026-09-21 16:53:01",
+            "hash": "373addc4d5bb295979d4beca9fbc89da"
         },
         "On the Menu: Montreal: A Restaurant Story-McCord Stewart Museum": {
             "name": "On the Menu: Montreal: A Restaurant Story",
@@ -1063,8 +1063,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:26",
-            "hash": "557dcb96117109c0df17946ef327f593"
+            "last_updated": "2026-09-21 16:52:59",
+            "hash": "0809cec511915a483f48802132c8cc56"
         },
         "The Mountain at the Heart of Montreal: 150 Years of Mount Royal Park-McCord Stewart Museum": {
             "name": "The Mountain at the Heart of Montreal: 150 Years of Mount Royal Park",
@@ -1091,8 +1091,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:31",
-            "hash": "4e8953220599728999b4d29d5c18b4cc"
+            "last_updated": "2026-09-21 16:53:06",
+            "hash": "4b1245aafc8363224870dc9dd02a2da2"
         },
         "Carrie Allison: ask\u014dht\u0113skanohw\u0113\u200b-McCord Stewart Museum": {
             "name": "Carrie Allison: ask\u014dht\u0113skanohw\u0113\u200b",
@@ -1119,8 +1119,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:32",
-            "hash": "c577c588ea419681b59a49205898b330"
+            "last_updated": "2026-09-21 16:53:07",
+            "hash": "2bb545d93f0422964f2c20ea58713f7d"
         },
         "Sovereign Stitches + Wild Weaves-McCord Stewart Museum": {
             "name": "Sovereign Stitches + Wild Weaves",
@@ -1147,8 +1147,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:33",
-            "hash": "4f9ce24fab3f20fba75e3962a2811e1c"
+            "last_updated": "2026-09-21 16:53:08",
+            "hash": "b14b4f3cbff36caa680dba9183582d22"
         }
     },
     "PHI Foundation": {
@@ -1233,8 +1233,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:34",
-            "hash": "52a59b9a4bf7791761179144250d64de"
+            "last_updated": "2026-09-21 16:53:09",
+            "hash": "642f6f680de16180b404f5ceedcfbebd"
         },
         "Jean-Fran\u00e7ois Bouchard: Turn or Burn-PHI Foundation": {
             "name": "Jean-Fran\u00e7ois Bouchard: Turn or Burn",
@@ -1261,8 +1261,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-20 14:35:34",
-            "hash": "5e639790d4de58c423c779a0a49aaad5"
+            "last_updated": "2026-09-21 16:53:09",
+            "hash": "ad4310575abedc454ec1a069f7836507"
         }
     }
 }
