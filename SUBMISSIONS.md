@@ -76,3 +76,29 @@ build the call from the email's fields rather than writing a JSON file first).
 Reply to the submitter using the template kept in the top-level project
 folder (`SUBMISSION_RESPONSE_TEMPLATE.md`, outside this repo) — link to the
 matching region page, e.g. `https://artbasil.info/sf/index.html`.
+
+## Keeping manual events current
+
+Nothing refreshes a manually-added event, so `add_submission` tags each one
+`"source": "manual"` and `manual_check.py` re-checks them at the end of every
+daily scrape (the same run, right after the phase update). It reports:
+
+- **Venue reminders** — a venue whose last listed show ends within 14 days, or
+  ended within the last 30, so you can add the next exhibition. Venues that
+  have been dormant longer than that stay quiet.
+- **Page problems** — a current/upcoming event whose page now 404s, errors,
+  is unreachable, or no longer mentions the event's title.
+- **Can't be verified** — sites that block automated requests (e.g.
+  hauserwirth.com), listed once per venue. These need a manual look.
+
+Results are logged as warnings and written to the run's **job summary** in
+GitHub Actions (open the "Daily Exhibition Scraper" run and scroll to the
+summary). The check never fails the run. To run it yourself:
+
+```bash
+python manual_check.py
+```
+
+Manually-added events for a venue that later gets a scraper should be removed
+once the scraper covers it (the scraper's copy will have its own title and
+key, so both would otherwise show).

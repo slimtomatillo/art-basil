@@ -5,6 +5,7 @@ import numpy as np
 import os
 from config import configure_logging, DB_FILES
 from processing import update_event_phases
+from manual_check import check_manual_events
 from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art, madrone_art_bar
@@ -117,6 +118,13 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
         for region, db in dbs.items():
             update_event_phases(db, region)
         
+        # Flag manually-entered events that may need a human update. A failure
+        # here must never abort the run or lose the scraped data.
+        try:
+            check_manual_events()
+        except Exception:
+            logging.exception("Manual-event check failed")
+
         # Count the venues and events
         event_count = sum(len(events) for db in dbs.values() for events in db.values())
         venue_count = sum(len(db) for db in dbs.values())

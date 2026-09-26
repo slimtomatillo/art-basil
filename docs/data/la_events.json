@@ -4259,7 +4259,8 @@
                 }
             ],
             "last_updated": "2026-09-26 07:22:35",
-            "hash": "c291b16c614d6232b540e5963c316f71"
+            "hash": "72075e3ca09a48e34f6e9d4c1b7dbcd7",
+            "source": "manual"
         },
         "Jack Whitten: The Numinous-Hauser & Wirth DTLA": {
             "name": "Jack Whitten: The Numinous",
@@ -4289,7 +4290,8 @@
                 }
             ],
             "last_updated": "2026-09-26 07:22:35",
-            "hash": "f25fe2139ed198a31f21c52f540911b5"
+            "hash": "a82fff4080581d09075efba5b2a5e9ac",
+            "source": "manual"
         }
     },
     "Hauser & Wirth WeHo": {
@@ -4320,7 +4322,8 @@
                 }
             ],
             "last_updated": "2026-09-26 07:22:50",
-            "hash": "0110e937ee1b768a191ffb65a3a78326"
+            "hash": "27cf363226df8c927fe4128a1f930e94",
+            "source": "manual"
         }
     }
 }

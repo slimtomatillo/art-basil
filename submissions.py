@@ -12,6 +12,7 @@ import sys
 from datetime import timezone
 
 from config import DB_FILES
+from manual_check import MANUAL_SOURCE
 from processing import process_event, generate_unique_identifier
 from utils import load_db, save_db
 
@@ -97,6 +98,7 @@ def add_submission(region, name, venue, start_date, end_date, description='',
         'dates': {'start': start_date, 'end': end_date},
         'ongoing': ongoing,
         'links': links or [],
+        'source': MANUAL_SOURCE,
         'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
     }
 

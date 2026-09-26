@@ -12998,8 +12998,9 @@
                     "description": "Image"
                 }
             ],
-            "hash": "401c082c0d48305526e78d9df5599072",
-            "ongoing": false
+            "hash": "774689f96fbbcea471bcbe7ace947c71",
+            "ongoing": false,
+            "source": "manual"
         },
         "Longing for Attachment-Oakland Asian Cultural Center": {
             "name": "Longing for Attachment",
@@ -13028,8 +13029,9 @@
                 }
             ],
             "last_updated": "2024-10-02 16:23:02",
-            "hash": "711f987893b46604580111b719418e69",
-            "ongoing": false
+            "hash": "fc73a9d5941bc21f2cc1f1e3ac6953f6",
+            "ongoing": false,
+            "source": "manual"
         },
         "We Plant Our Feet in the Sky-Oakland Asian Cultural Center": {
             "name": "We Plant Our Feet in the Sky",
@@ -13058,8 +13060,9 @@
                 }
             ],
             "last_updated": "2024-10-02 16:26:05",
-            "hash": "a216902446d0dcc861956bde7494199c",
-            "ongoing": false
+            "hash": "de71c681f19493192a42c55975a18dc4",
+            "ongoing": false,
+            "source": "manual"
         }
     },
     "Cantor Arts Center": {
@@ -20627,8 +20630,9 @@
                 }
             ],
             "last_updated": "2024-10-02 16:37:57",
-            "hash": "8df00792b79f4e65b419e517b49eb1d4",
-            "ongoing": false
+            "hash": "5a0878ab4857701e2bdb85ba8a96a64c",
+            "ongoing": false,
+            "source": "manual"
         }
     },
     "ARTogether & Oakland Asian Cultural Center": {
@@ -20659,8 +20663,9 @@
                 }
             ],
             "last_updated": "2024-10-02 16:34:50",
-            "hash": "e321f9f701e4d250a3a001784f762dbf",
-            "ongoing": false
+            "hash": "5981ffc33920e0119657641d8b67364e",
+            "ongoing": false,
+            "source": "manual"
         }
     },
     "Museum of Craft and Design": {
@@ -24822,7 +24827,8 @@
                 }
             ],
             "last_updated": "2026-09-18 22:46:48",
-            "hash": "1244d3be1560c4cf21722e4e1e1541a0"
+            "hash": "f48bcab6bcf4b015fb55c9c73c1c7de2",
+            "source": "manual"
         }
     },
     "Madrone Art Bar": {
