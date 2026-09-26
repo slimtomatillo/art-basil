@@ -16,6 +16,9 @@ const getRegion = () => {
     if (path.includes('/tor/')) {
         return 'tor';
     }
+    if (path.includes('/ist/')) {
+        return 'ist';
+    }
 
     return 'sf'; // default to SF
 };

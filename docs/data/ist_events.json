@@ -1,0 +1,482 @@
+{
+    "Istanbul Modern": {
+        "Beneath the Same Blue-Istanbul Modern": {
+            "name": "Beneath the Same Blue",
+            "venue": "Istanbul Modern",
+            "description": "Istanbul Modern\u2019s 10th collection exhibition brings together works by artists from T\u00fcrkiye and different parts of the world, produced across various periods and geographies, along historical and thematic axes. Spanning the museum\u2019s Dr. Nejat F. Eczac\u0131ba\u015f\u0131 Permanent Exhibition Gallery and different floors of the museum, the exhibition traces the transformation of modern and contemporary art in T\u00fcrkiye since the 1940s, while offering new ways of reading the collection through encounters and\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-08",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/beneath-the-same-blue",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/4153/1645x707-son3-62392-7506546.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:22",
+            "hash": "1702a15d5cdffcbd6a5fd1478bf5f554"
+        },
+        "Semiha Berksoy: Aria of All Colors-Istanbul Modern": {
+            "name": "Semiha Berksoy: Aria of All Colors",
+            "venue": "Istanbul Modern",
+            "description": "\u201cAria of All Colors,\u201d a major exhibition devoted to Semiha Berksoy (1910\u20132004), celebrates a pioneering artist whose versatility and resolve enabled her to break new ground in both T\u00fcrkiye and Europe. The exhibition brings together her expansive body of work \u2013 spanning the performing arts, visual arts, cinema, and literature \u2013 and offers a comprehensive look at the creative universe she built over the course of her extraordinary career. With more than 200 works on view, the exhibition makes\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-01-22",
+                "end": "2026-11-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/semiha-berksoy-aria-of-all-colors",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3902/1645x707-56877-4318115.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:23",
+            "hash": "c1663436b60ca637436d8afa7f846399"
+        },
+        "Panorama: Dreams and Places-Istanbul Modern": {
+            "name": "Panorama: Dreams and Places",
+            "venue": "Istanbul Modern",
+            "description": "Aiming to present a thematic narrative on contemporary photography and lens-based art in T\u00fcrkiye, \u201cPanorama: Dreams and Places\u201d brings together a comprehensive selection of works produced since the 2010s by 18 artists from different generations. The exhibition is on view in the galleries on the first floor of Istanbul Modern.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-02-19",
+                "end": "2026-10-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/panorama-dreams-and-places",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3899/escape2018-49862-1328216.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:24",
+            "hash": "045e3dd1b063eeff56dddc95b0c85ad1"
+        },
+        "Renzo Piano: Genius Loci-Istanbul Modern": {
+            "name": "Renzo Piano: Genius Loci",
+            "venue": "Istanbul Modern",
+            "description": "\u201cRenzo Piano: Genius Loci\u201d focuses on the architecture of Istanbul Modern\u2019s new museum building and its design and construction process, which spanned six years. Designed by Renzo Piano Building Workshop (RPBW), the new building greets art lovers at the same location where Istanbul Modern opened its doors in 2004 as T\u00fcrkiye's first museum of modern and contemporary art.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2023-05-04",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/renzo-piano-genius-loci",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/2/img-48813-5903719.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:24",
+            "hash": "f8521cfe7af0cb40e05305eddf500464"
+        },
+        "Manuel \u00c7\u0131tak: An Island of One\u2019s Own-Istanbul Modern": {
+            "name": "Manuel \u00c7\u0131tak: An Island of One\u2019s Own",
+            "venue": "Istanbul Modern",
+            "description": "The Istanbul Modern Photography Gallery hosts a solo exhibition of works by Manuel \u00c7\u0131tak (1962\u20132023), spanning from the 1980s, when he first took up photography, to his untimely passing in 2023. Comprising works that focus on human existence in the city, on urban peripheries, and across rural landscapes, \u201cAn Island of One\u2019s Own\u201d aims to illuminate \u00c7\u0131tak\u2019s poetic dialogue with documentary photography.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-05-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/manuel-citak-an-island-of-one-s-own",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/4207/ekran-goruntusu-2026-09-18-154910-56966-0838286.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:25",
+            "hash": "0cd18639551d30d735b90cd43eb0aef7"
+        },
+        "Ali Kazma: Landscapes of the Mind-Istanbul Modern": {
+            "name": "Ali Kazma: Landscapes of the Mind",
+            "venue": "Istanbul Modern",
+            "description": "\u201cLandscapes of the Mind\u201d at Istanbul Modern Photography Gallery focuses on works revealing the writer\u2019s mind through the metaphor of landscape painting by Ali Kazma (b. 1971), one of today\u2019s leading lens-based artists, whose practice explores fundamental questions about the meaning of human activity. The exhibition features videos from the 2010s to the present focused on books and literature and a selection of photographs from the artist\u2019s extensive archive.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-06-13",
+                "end": "2026-02-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/ali-kazma-landscapes-of-the-mind",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3679/sumi-ali-kazma-2025-03-48574-1264395.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:26",
+            "hash": "83801676fa4c6c402f21253e8907ff03"
+        },
+        "\u00d6mer Ulu\u00e7: Beyond the Horizon-Istanbul Modern": {
+            "name": "\u00d6mer Ulu\u00e7: Beyond the Horizon",
+            "venue": "Istanbul Modern",
+            "description": "Istanbul Modern presents the solo exhibition of \u00d6mer Ulu\u00e7 (1931\u20132010) titled \u201cBeyond the Horizon,\u201d which showcases his artistic journey. Bringing together different forms of expression that are key in the artist\u2019s practice through various themes, it features a comprehensive selection of works from the 1960s to 2010.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-03-21",
+                "end": "2025-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/omer-uluc-beyond-the-horizon",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3624/1645x707-38780-8131425.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:27",
+            "hash": "7590d8df0bd106016526d5125e9cb532"
+        },
+        "\u0130zzet Keribar: Journey of Colors-Istanbul Modern": {
+            "name": "\u0130zzet Keribar: Journey of Colors",
+            "venue": "Istanbul Modern",
+            "description": "\"Journey of Colors\" presents a selection from \u0130zzet Keribar's (b. 1936) vast archive of nearly 1.5 million images. The exhibition highlights the formal elements that have become the artist\u2019s trademark, such as color, light, texture, and graphic composition. It also reveals the artist's evolving style over the years, inviting viewers on a vibrant journey through different times and places.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-11-06",
+                "end": "2025-05-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/current/izzet-keribar-journey-of-colors",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3460/img-2655-2290275.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:27",
+            "hash": "9ecddc071deccd90950a74cfe974b11b"
+        },
+        "Chiharu Shiota: Between Worlds-Istanbul Modern": {
+            "name": "Chiharu Shiota: Between Worlds",
+            "venue": "Istanbul Modern",
+            "description": "Chiharu Shiota's solo exhibition \u201cBetween Worlds,\u201d organized on Istanbul Modern\u2019s invitation as part of the 100th anniversary of the establishment of diplomatic relations between Japan and T\u00fcrkiye, centers on the artist's sense of being \u201csomewhere in between.\u201d In shaping the exhibition\u2019s conceptual framework, Shiota draws on Istanbul's location between Asia and Europe. She is also inspired by Istanbul Modern's location in Karak\u00f6y, one of the city\u2019s busiest districts and home to its historic,\u2026",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-09-06",
+                "end": "2026-01-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/current/chiharu-shiota-between-worlds",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3359/img-53083-302093.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:28",
+            "hash": "516d69bbd8fe2728e82f28f5eb75237a"
+        },
+        "Olafur Eliasson: Your unexpected encounter-Istanbul Modern": {
+            "name": "Olafur Eliasson: Your unexpected encounter",
+            "venue": "Istanbul Modern",
+            "description": "Olafur Eliasson's first solo exhibition in T\u00fcrkiye, \u201cYour unexpected encounter,\u201d reflects the artist's deep interest in light, color, perception, movement, geometry, and the environment. The artworks also reveal the network of relationships the artist forges between broad areas of research and his multidisciplinary practice. As well as following the personal journey of the artist, the exhibition addresses navigation and orientation on a wider scale, inspired by the site of the museum and its\u2026",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-06-07",
+                "end": "2025-02-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/current/olafur-eliasson-your-unexpected-encounter",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3272/813x418-55232-3553456.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:29",
+            "hash": "0e744292ba5843e3bfdc5e5bca9411c9"
+        },
+        "Ozan Sa\u011fd\u0131\u00e7: The Photographer\u2019s Testimony-Istanbul Modern": {
+            "name": "Ozan Sa\u011fd\u0131\u00e7: The Photographer\u2019s Testimony",
+            "venue": "Istanbul Modern",
+            "description": "\u201cThe Photographer\u2019s Testimony\u201d presents a wide selection of works by Ozan Sa\u011fd\u0131\u00e7 (b. 1934), one of the most prominent names in the history of photography in T\u00fcrkiye. The exhibition focuses on documentary photography, a widespread genre of photography in the world, while also shedding light on the country\u2019s social, political, economic, cultural, and visual history from the 1950s to the present day.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-03-14",
+                "end": "2024-10-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.istanbulmodern.org/en/exhibitions/ozan-sagdic-the-photographer-s-testimony",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/3186/1600x1067-3-53561-0423973.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:30",
+            "hash": "8df8411e34029c1099088674a17ad14f"
+        }
+    },
+    "Sak\u0131p Sabanc\u0131 Museum": {
+        "Yoko Ono: Insound and Instructure-Sak\u0131p Sabanc\u0131 Museum": {
+            "name": "Yoko Ono: Insound and Instructure",
+            "venue": "Sak\u0131p Sabanc\u0131 Museum",
+            "description": "Sabanc\u0131 University Sak\u0131p Sabanc\u0131 Museum (SSM) presents the most comprehensive exhibition of Yoko Ono\u2019s work ever presented in T\u00fcrkiye, realised with the support of Akbank and in collaboration with MUSAC, Museo de Arte Contempor\u00e1neo de Castilla y Le\u00f3n in Le\u00f3n, Spain. Yoko Ono: Insound and Instructure presents an extensive selection from over seventy years of artistic production by Yoko Ono, whose career began in the avant-garde milieu of New York in the late 1950s. Comprising 67 works, including\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-25",
+                "end": "2026-12-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sakipsabancimuzesi.org/en/exhibitions-and-events/exhibition/78",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://emuseum.sakipsabancimuzesi.org/internal/media/dispatcher/5128/full",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:31",
+            "hash": "8af6b407af14e2d343f166b82f5883f7"
+        },
+        "Scribbled Exercises, Practice Pages-Sak\u0131p Sabanc\u0131 Museum": {
+            "name": "Scribbled Exercises, Practice Pages",
+            "venue": "Sak\u0131p Sabanc\u0131 Museum",
+            "description": "The exhibition \u201cScribbled Exercises, Practice Pages\u201d brings together the scribbled exercises and practice pages of Ottoman calligraphers, presenting master calligraphers from the sixteenth to the twentieth century. The selection features scribbled exercises and practice pages from the Arts of the Book and Calligraphy Collection of Sabanc\u0131 University Sak\u0131p Sabanc\u0131 Museum, alongside works from the collection of Kubbealt\u0131 Academy Cultural and Arts Foundation. It includes works by calligraphers\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-09",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.sakipsabancimuzesi.org/en/exhibitions-and-events/exhibition/77",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://emuseum.sakipsabancimuzesi.org/internal/media/dispatcher/5107/full",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:31",
+            "hash": "a1f10a026f3b79f7308144a05cf8d276"
+        },
+        "Sak\u0131p Sabanc\u0131 Museum Painting Collection-Sak\u0131p Sabanc\u0131 Museum": {
+            "name": "Sak\u0131p Sabanc\u0131 Museum Painting Collection",
+            "venue": "Sak\u0131p Sabanc\u0131 Museum",
+            "description": "Approached through a thematic and chronological narrative that considers the forces shaping the changing visual culture of a given era, the Sak\u0131p Sabanc\u0131 Museum Painting Collection extends from nineteenth-century Ottoman painting to twentieth-century examples of modern Turkish art. Initiated by Sak\u0131p Sabanc\u0131, a prominent businessperson, in the 1970s, and enriched over time through new acquisitions and long-term loans, the collection is presented to visitors in the museum\u2019s modern galleries with\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.sakipsabancimuzesi.org/en/exhibitions-and-events/exhibition/76",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://emuseum.sakipsabancimuzesi.org/internal/media/dispatcher/5036/full",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:32",
+            "hash": "3013c41e5e3bed7d6a75ecf66b5425d5"
+        },
+        "Sak\u0131p Sabanc\u0131 Museum The Arts of the Book and Calligraphy Collection-Sak\u0131p Sabanc\u0131 Museum": {
+            "name": "Sak\u0131p Sabanc\u0131 Museum The Arts of the Book and Calligraphy Collection",
+            "venue": "Sak\u0131p Sabanc\u0131 Museum",
+            "description": "Sak\u0131p Sabanc\u0131\u2019s (d. 2004) collection of calligraphic works by famous calligraphers, Korans and illuminated manuscripts began with the purchase of a levha (calligraphic panel) by Sultan Mahmud II (r. 1808-39). From 1989 onwards it was exhibited in major museums abroad. The keen interest attracted by these exhibitions cemented Sak\u0131p Sabanc\u0131 and his family\u2019s resolve to further enlarge the collection and encouraged the idea of founding a museum. In 1998 the family mansion Atl\u0131 K\u00f6\u015fk (the Mansion\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.sakipsabancimuzesi.org/en/exhibitions-and-events/exhibition/63",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://drupal.sakipsabancimuzesi.org/sites/default/files/2026-09/HatPoster_480x600_webcard_0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:33",
+            "hash": "9ed386c88f58ebe9344c893c4a3f1124"
+        },
+        "Suzanne Lacy: Birlikte/Tog\u00e6ther-Sak\u0131p Sabanc\u0131 Museum": {
+            "name": "Suzanne Lacy: Birlikte/Tog\u00e6ther",
+            "venue": "Sak\u0131p Sabanc\u0131 Museum",
+            "description": "Sabanc\u0131 University Sak\u0131p Sabanc\u0131 Museum presents Suzanne Lacy\u2019s Birlikte/Tog\u00e6ther , the first exhibition in Turkey by the American artist and educator. Recognized as a pioneer of feminist art and of participatory, community-oriented performance, Lacy\u2019s exhibition is on view through Sunday, March 8, 2026, with the support of the Sabanc\u0131 Foundation. This first exhibition in Turkey presents selections from Suzanne Lacy\u2019s long-term practice, which turns participation, solidarity, and mutual\u2026",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-09-12",
+                "end": "2026-03-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sakipsabancimuzesi.org/en/exhibitions-and-events/exhibition/75",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://emuseum.sakipsabancimuzesi.org/internal/media/dispatcher/4579/full",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:34",
+            "hash": "39de8bedc30ece2c768c3dcaf1f31d2e"
+        },
+        "Georg Baselitz: The Last Decade-Sak\u0131p Sabanc\u0131 Museum": {
+            "name": "Georg Baselitz: The Last Decade",
+            "venue": "Sak\u0131p Sabanc\u0131 Museum",
+            "description": "For tickets, click here . For the chronology text, click here . Georg Baselitz: The Last Decade at the Sabanc\u0131 University Sak\u0131p Sabanc\u0131 Museum (SSM), with the support of Akbank, presents works by German painter, printmaker, and sculptor Georg Baselitz, a leading figure in contemporary art. The exhibition features close to one hundred large-scale paintings and sculptures created by Baselitz in the past decade, displayed throughout all gallery spaces and the garden of the SSM. Concurrently, a\u2026",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-09-13",
+                "end": "2025-03-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.sakipsabancimuzesi.org/en/exhibitions-and-events/exhibition/73",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://emuseum.sakipsabancimuzesi.org/internal/media/dispatcher/3455/full",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 06:57:35",
+            "hash": "d24f003ca4f82277aea2508fcd87b093"
+        }
+    }
+}

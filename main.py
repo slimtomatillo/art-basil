@@ -11,6 +11,7 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan
+from scrapers.ist import istanbul_modern, sakip_sabanci
 
 def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=None):
     """Return dictionary of venue:scraper pairs and venue-to-region mapping"""
@@ -49,6 +50,10 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "MOCA Toronto": moca_toronto.scrape_moca_toronto_exhibitions,
             "The Power Plant": power_plant.scrape_power_plant_exhibitions,
             "Aga Khan Museum": aga_khan.scrape_aga_khan_exhibitions,
+        },
+        'ist': {
+            "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,
+            "Sakıp Sabancı Museum": sakip_sabanci.scrape_sakip_sabanci_exhibitions,
         }
     }
     

@@ -36,6 +36,7 @@ jobs:
         git add docs/data/la_events.json
         git add docs/data/mtl_events.json
         git add docs/data/tor_events.json
+        git add docs/data/ist_events.json
         git add docs/data/db_size.csv
         git commit -m "Update exhibition data [skip ci]"  # [skip ci] prevents triggering additional workflows
         # main can advance during the ~7-min scrape (e.g. a code push); replay

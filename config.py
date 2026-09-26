@@ -6,6 +6,7 @@ DB_FILES = {
     'la': 'docs/data/la_events.json',
     'mtl': 'docs/data/mtl_events.json',
     'tor': 'docs/data/tor_events.json',
+    'ist': 'docs/data/ist_events.json',
 }
 MONTH_TO_NUM_DICT = {
     'jan': 1,

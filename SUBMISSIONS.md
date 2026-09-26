@@ -5,7 +5,7 @@ listed on `docs/add_event.html`:
 
 | Form field | Maps to |
 |---|---|
-| Region | `region` (`sf`, `la`, `mtl`, `tor`) |
+| Region | `region` (`sf`, `la`, `mtl`, `tor`, `ist`) |
 | Event Title | `name` |
 | Venue | `venue` |
 | Event Type | folded into `tags` (e.g. `exhibition`, `workshop`, `talk`) |
