@@ -4229,5 +4229,67 @@
             "last_updated": "2026-09-24 15:47:02",
             "hash": "230ce481932b08149099fd20d66988b3"
         }
+    },
+    "Hauser & Wirth Los Angeles": {
+        "Glenn Ligon: Sit So Your Back Isn't Against The Door-Hauser & Wirth Los Angeles": {
+            "name": "Glenn Ligon: Sit So Your Back Isn't Against The Door",
+            "venue": "Hauser & Wirth Los Angeles",
+            "description": "Glenn Ligon's Coloring Book paintings, made from children's markings on Afrocentric coloring books of the late 1960s and early 1970s, are on view together for the first time in over 25 years. The show also debuts a new 22-part work, 'Black Panther Coloring Book #1.' Opening reception Wed, Sep 30.",
+            "tags": [
+                "exhibition",
+                "opening",
+                "free",
+                "gallery",
+                "future"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-30",
+                "end": "2027-01-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/glenn-ligon-exhibition-los-angeles-2026/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/c1a8ad46-46aa-45c6-89ee-762108b24dcc/web-midres-jpg-72dpi/LIGON141460-SM-250505-tif.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:20:19",
+            "hash": "45a9ac308b69718539d0dbc10f9618f8"
+        },
+        "Jack Whitten: The Numinous-Hauser & Wirth Los Angeles": {
+            "name": "Jack Whitten: The Numinous",
+            "venue": "Hauser & Wirth Los Angeles",
+            "description": "Paintings and works on paper from the 1980s, a decade of decisive experimentation in Jack Whitten's six-decade career, including the Soulspace paintings, circular acrylic reliefs, and Site paintings cast from urban textures. Opening reception Wed, Sep 30.",
+            "tags": [
+                "exhibition",
+                "opening",
+                "free",
+                "gallery",
+                "future"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-30",
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/jack-whitten-the-numinous/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/883de613-9795-4178-bd91-a678168e5462/web-midres-jpg-72dpi/WHITT145597-SM-260617-tif.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:20:19",
+            "hash": "8d6c27b0c2aec97389fd54b9b69401da"
+        }
     }
 }
