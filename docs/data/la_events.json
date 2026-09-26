@@ -4230,37 +4230,6 @@
             "hash": "230ce481932b08149099fd20d66988b3"
         }
     },
-    "Hauser & Wirth West Hollywood": {
-        "Night Window: David Smith Spray Paintings, 1958\u20131964-Hauser & Wirth West Hollywood": {
-            "name": "Night Window: David Smith Spray Paintings, 1958\u20131964",
-            "venue": "Hauser & Wirth West Hollywood",
-            "description": "An exhibition devoted to David Smith's pioneering Sprays, seldom-seen two-dimensional works made by the sculptor at night, that show his daring innovations of form, color, space and time.",
-            "tags": [
-                "exhibition",
-                "free",
-                "gallery",
-                "current"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": "2026-09-17",
-                "end": "2027-01-16"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/night-window-david-smith-spray-paintings-1958-1964/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://media.hauserwirth.com/asset/2f983d4b-a57b-4ecb-8a5b-e0984817ab65/web-midres-jpg-72dpi/SMIDA134724-SM-260629_DETAIL_2-tif.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-26 07:22:02",
-            "hash": "ab486811f7487958603b6f7140a50d4a"
-        }
-    },
     "Hauser & Wirth DTLA": {
         "Glenn Ligon: Sit So Your Back Isn't Against The Door-Hauser & Wirth DTLA": {
             "name": "Glenn Ligon: Sit So Your Back Isn't Against The Door",
@@ -4321,6 +4290,37 @@
             ],
             "last_updated": "2026-09-26 07:22:35",
             "hash": "f25fe2139ed198a31f21c52f540911b5"
+        }
+    },
+    "Hauser & Wirth WeHo": {
+        "Night Window: David Smith Spray Paintings, 1958\u20131964-Hauser & Wirth WeHo": {
+            "name": "Night Window: David Smith Spray Paintings, 1958\u20131964",
+            "venue": "Hauser & Wirth WeHo",
+            "description": "An exhibition devoted to David Smith's pioneering Sprays, seldom-seen two-dimensional works made by the sculptor at night, that show his daring innovations of form, color, space and time.",
+            "tags": [
+                "exhibition",
+                "free",
+                "gallery",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-17",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/night-window-david-smith-spray-paintings-1958-1964/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/2f983d4b-a57b-4ecb-8a5b-e0984817ab65/web-midres-jpg-72dpi/SMIDA134724-SM-260629_DETAIL_2-tif.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:22:50",
+            "hash": "0110e937ee1b768a191ffb65a3a78326"
         }
     }
 }
