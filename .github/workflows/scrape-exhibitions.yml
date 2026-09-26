@@ -29,6 +29,9 @@ jobs:
         python main.py
 
     - name: Commit and push updated data
+      # Run even if a scraper crashed (that step exits non-zero on purpose so the
+      # run goes red) - the other scrapers' data still needs committing.
+      if: ${{ !cancelled() }}
       run: |
         git config user.name 'GitHub Actions Bot'
         git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

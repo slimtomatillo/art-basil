@@ -1,3 +1,4 @@
+import sys
 import time
 import logging
 import pandas as pd
@@ -165,6 +166,9 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
         logging.info("Database size recorded")
 
     logging.info("Finished")
+    return failed
 
 if __name__ == "__main__":
-    main()
+    # Exit non-zero if any scraper crashed so the CI run goes red (and emails),
+    # after all the other scrapers have run and their data has been saved.
+    sys.exit(1 if main() else 0)

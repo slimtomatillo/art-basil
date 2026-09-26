@@ -44,12 +44,17 @@ def save_db(db, region):
     with open(db_path, 'w') as file:
         json.dump(db, file, indent=4, default=str)
 
+# (connect, read) seconds. Without a timeout a server that accepts the connection
+# but never responds hangs the scraper forever, which stalls every scraper after
+# it and the CI job's commit step.
+REQUEST_TIMEOUT = (10, 30)
+
 def fetch_and_parse(url, headers=None):
     request_headers = {'User-Agent': 'Your Bot 0.1'}
     if headers:
         request_headers.update(headers)
     try:
-        response = requests.get(url, headers=request_headers)
+        response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT)
         response.raise_for_status()
         return BeautifulSoup(response.content, 'html.parser')
     except requests.RequestException as e:
