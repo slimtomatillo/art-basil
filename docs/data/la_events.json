@@ -4230,10 +4230,10 @@
             "hash": "230ce481932b08149099fd20d66988b3"
         }
     },
-    "Hauser & Wirth Los Angeles": {
-        "Glenn Ligon: Sit So Your Back Isn't Against The Door-Hauser & Wirth Los Angeles": {
+    "Hauser & Wirth Downtown Los Angeles": {
+        "Glenn Ligon: Sit So Your Back Isn't Against The Door-Hauser & Wirth Downtown Los Angeles": {
             "name": "Glenn Ligon: Sit So Your Back Isn't Against The Door",
-            "venue": "Hauser & Wirth Los Angeles",
+            "venue": "Hauser & Wirth Downtown Los Angeles",
             "description": "Glenn Ligon's Coloring Book paintings, made from children's markings on Afrocentric coloring books of the late 1960s and early 1970s, are on view together for the first time in over 25 years. The show also debuts a new 22-part work, 'Black Panther Coloring Book #1.' Opening reception Wed, Sep 30.",
             "tags": [
                 "exhibition",
@@ -4258,12 +4258,12 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-26 07:20:19",
-            "hash": "45a9ac308b69718539d0dbc10f9618f8"
+            "last_updated": "2026-09-26 07:22:00",
+            "hash": "59549a1de23ef0b538daf4606099a916"
         },
-        "Jack Whitten: The Numinous-Hauser & Wirth Los Angeles": {
+        "Jack Whitten: The Numinous-Hauser & Wirth Downtown Los Angeles": {
             "name": "Jack Whitten: The Numinous",
-            "venue": "Hauser & Wirth Los Angeles",
+            "venue": "Hauser & Wirth Downtown Los Angeles",
             "description": "Paintings and works on paper from the 1980s, a decade of decisive experimentation in Jack Whitten's six-decade career, including the Soulspace paintings, circular acrylic reliefs, and Site paintings cast from urban textures. Opening reception Wed, Sep 30.",
             "tags": [
                 "exhibition",
@@ -4288,8 +4288,39 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-26 07:20:19",
-            "hash": "8d6c27b0c2aec97389fd54b9b69401da"
+            "last_updated": "2026-09-26 07:22:00",
+            "hash": "5bf34b6d022d636cf4d391b475e7c476"
+        }
+    },
+    "Hauser & Wirth West Hollywood": {
+        "Night Window: David Smith Spray Paintings, 1958\u20131964-Hauser & Wirth West Hollywood": {
+            "name": "Night Window: David Smith Spray Paintings, 1958\u20131964",
+            "venue": "Hauser & Wirth West Hollywood",
+            "description": "An exhibition devoted to David Smith's pioneering Sprays, seldom-seen two-dimensional works made by the sculptor at night, that show his daring innovations of form, color, space and time.",
+            "tags": [
+                "exhibition",
+                "free",
+                "gallery",
+                "current"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-17",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/night-window-david-smith-spray-paintings-1958-1964/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/2f983d4b-a57b-4ecb-8a5b-e0984817ab65/web-midres-jpg-72dpi/SMIDA134724-SM-260629_DETAIL_2-tif.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:22:02",
+            "hash": "ab486811f7487958603b6f7140a50d4a"
         }
     }
 }
