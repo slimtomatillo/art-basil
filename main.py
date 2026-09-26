@@ -6,6 +6,7 @@ import os
 from config import configure_logging, DB_FILES
 from processing import update_event_phases
 from manual_check import check_manual_events
+from scraper_health import find_stale_venues, report as report_scraper_health
 from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art, madrone_art_bar
@@ -100,14 +101,19 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
     # Get both the scrapers and the mapping
     venues, venue_to_region = get_venue_scrapers(selected_regions, selected_venues, skip_venues)
 
+    # A scraper that raises must not stop the others (or the commit step that
+    # follows) - a site redesign in one venue would otherwise lose the whole day's
+    # data for every region. Crashes are collected and reported below.
+    failed = []
     for venue, scraper in venues.items():
         region = venue_to_region[venue]
         logging.info(f"[{region}] Starting scrape for {venue}")
-        if isinstance(scraper, list):
-            for s in scraper:
+        for s in (scraper if isinstance(scraper, list) else [scraper]):
+            try:
                 s(env=env, region=region)
-        else:
-            scraper(env=env, region=region)
+            except Exception as e:
+                logging.exception(f"[{region}] Scraper crashed for {venue}; continuing with the next venue")
+                failed.append((region, venue, f"{type(e).__name__}: {e}"))
         logging.info(f"[{region}] Finished scrape for {venue}")
 
     if env == 'prod' and write_summary:
@@ -118,8 +124,12 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
         for region, db in dbs.items():
             update_event_phases(db, region)
         
-        # Flag manually-entered events that may need a human update. A failure
-        # here must never abort the run or lose the scraped data.
+        # Flag problems a human should look at. Failures here must never abort
+        # the run or lose the scraped data.
+        try:
+            report_scraper_health(failed, find_stale_venues())
+        except Exception:
+            logging.exception("Scraper health check failed")
         try:
             check_manual_events()
         except Exception:

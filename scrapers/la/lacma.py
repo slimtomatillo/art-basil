@@ -4,6 +4,36 @@ from config import MONTH_TO_NUM_DICT
 import datetime as dt
 from datetime import timezone
 import logging
+import re
+
+BASE_URL = 'https://lacma.org'
+MAX_DESCRIPTION_CHARS = 500
+_DATE_FORMATS = ('%B %d, %Y', '%b %d, %Y')
+
+
+def parse_one_date(text):
+    text = ' '.join(text.replace('\xa0', ' ').split())
+    for fmt in _DATE_FORMATS:
+        try:
+            return dt.datetime.strptime(text, fmt).date()
+        except ValueError:
+            continue
+    return None
+
+
+def parse_card_dates(text):
+    """Parse the grid layout's date line, e.g. 'June 14, 2026–October 12, 2026'.
+    Returns (start_date, end_date, ongoing)."""
+    text = ' '.join((text or '').replace('\xa0', ' ').split())
+    ongoing = 'ongoing' in text.lower()
+    parts = [part.strip() for part in re.split(r'\s*[–—-]\s*', text)]
+    end_date = None if ongoing or len(parts) < 2 else parse_one_date(parts[-1])
+    start_date = parse_one_date(parts[0])
+    if start_date is None and end_date is not None:
+        # "June 14–October 12, 2026": the start omits the year
+        start_date = parse_one_date(f"{parts[0]}, {end_date.year}")
+    return start_date, end_date, ongoing
+
 
 def convert_date_to_dt(date_string):
     """Converts a date in string form to a dt.date object."""
@@ -26,7 +56,69 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
             logging.warning(f"Error scraping LACMA {phase} exhibitions --> no soup found")
             return
 
-        exhibitions = soup.find('div', class_='exhibition-list').find_all('div', class_='views-row')
+        def emit(event_title, event_link, start_date, end_date, ongoing, description_text, image_link):
+            event_details = {
+                'name': event_title,
+                'venue': 'LACMA',
+                'description': description_text,
+                'tags': ['exhibition', phase, 'museum'],
+                'phase': phase,
+                'dates': {'start': start_date, 'end': end_date},
+                'ongoing': ongoing,
+                'links': [{'link': event_link, 'description': 'Event Page'}] if event_link else [],
+                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+            }
+
+            if image_link:
+                event_details['links'].append({'link': image_link, 'description': 'Image'})
+
+            # Add logging for dev environment
+            logging.info(f"Event details in dev - Name: {event_details.get('name')}, Venue: {event_details.get('venue')}")
+
+            # Process event in prod environment
+            if env == 'prod':
+                process_event(event_details, region)
+
+        # Layout introduced in Sept 2026 (current/past pages): article.exhibition cards
+        grid_cards = soup.select('article.exhibition')
+        if grid_cards:
+            for card in grid_cards:
+                try:
+                    title_tag = card.find('h3')
+                    if not title_tag or not title_tag.get_text(strip=True):
+                        continue
+                    link_tag = card.find('a', href=True)
+                    href = link_tag['href'] if link_tag else None
+                    event_link = (href if href.startswith('http') else BASE_URL + href) if href else None
+
+                    date_tag = card.select_one('header p')
+                    start_date, end_date, ongoing = parse_card_dates(date_tag.get_text(strip=True) if date_tag else None)
+                    if not start_date and not end_date and not ongoing:
+                        logging.warning(f"LACMA: could not parse dates for {title_tag.get_text(strip=True)!r}")
+
+                    description_tag = card.select_one('.event-list-view .rich-text')
+                    description_text = ' '.join(description_tag.get_text(' ', strip=True).split()) if description_tag else None
+                    if description_text and len(description_text) > MAX_DESCRIPTION_CHARS:
+                        description_text = description_text[:MAX_DESCRIPTION_CHARS].rsplit(' ', 1)[0] + '…'
+
+                    img_tag = card.find('img')
+                    image_link = None
+                    if img_tag and img_tag.get('src'):
+                        src = img_tag['src']
+                        image_link = src if src.startswith('http') else BASE_URL + src
+
+                    emit(' '.join(title_tag.get_text(' ', strip=True).split()), event_link,
+                         start_date, end_date, ongoing, description_text or None, image_link)
+                except Exception:
+                    logging.exception(f"LACMA: failed to process a {phase} exhibition card")
+            return
+
+        # Legacy layout (still used by the upcoming page)
+        exhibition_list = soup.find('div', class_='exhibition-list')
+        if exhibition_list is None:
+            logging.warning(f"Error scraping LACMA {phase} exhibitions --> exhibition markup not recognised")
+            return
+        exhibitions = exhibition_list.find_all('div', class_='views-row')
 
         for exhibition in exhibitions:
             # Extract title
@@ -100,27 +192,7 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
                 src = img_tag['src']
                 image_link = src if src.startswith('http') else 'https://lacma.org' + src
                         
-            event_details = {
-                'name': event_title,
-                'venue': 'LACMA',
-                'description': description_text,
-                'tags': ['exhibition', phase, 'museum'],
-                'phase': phase,
-                'dates': {'start': start_date, 'end': end_date},
-                'ongoing': ongoing,
-                'links': [{'link': event_link, 'description': 'Event Page'}] if event_link else [],
-                'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
-            }
-
-            if image_link:
-                event_details['links'].append({'link': image_link, 'description': 'Image'})
-
-            # Add logging for dev environment
-            logging.info(f"Event details in dev - Name: {event_details.get('name')}, Venue: {event_details.get('venue')}")
-
-            # Process event in prod environment
-            if env == 'prod':
-                process_event(event_details, region)
+            emit(event_title, event_link, start_date, end_date, ongoing, description_text, image_link)
 
     # Scrape current exhibitions
     process_exhibitions('https://www.lacma.org/currentexhibitions', 'current')
