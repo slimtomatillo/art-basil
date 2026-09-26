@@ -1,6 +1,13 @@
 // Notify Modal and Google Calendar Functionality
 let currentEvent = null;
 
+// Event dates are calendar days at the venue ("YYYY-MM-DD"), not moments in time.
+// new Date('YYYY-MM-DD') parses them as midnight UTC, so they must be read back in
+// UTC too. Using local-time getters/formatting would shift the day for every viewer
+// west of UTC (i.e. the whole US and Canada). Calendar days are never converted
+// between time zones: Nov 12 is Nov 12 for everyone.
+const CALENDAR_DATE_DISPLAY = { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
+
 // Function to open the notify modal - make it globally accessible
 window.openNotifyModal = function(event) {
     currentEvent = event;
@@ -24,27 +31,15 @@ window.openNotifyModal = function(event) {
     
     if (hasStartDate) {
         const startDate = new Date(event.dates.start);
-        datesText += `Opens: ${startDate.toLocaleDateString('en-US', { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-        })}`;
+        datesText += `Opens: ${startDate.toLocaleDateString('en-US', CALENDAR_DATE_DISPLAY)}`;
     }
     
     if (hasEndDate) {
         const endDate = new Date(event.dates.end);
         if (hasStartDate) {
-            datesText += ` | Closes: ${endDate.toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            })}`;
+            datesText += ` | Closes: ${endDate.toLocaleDateString('en-US', CALENDAR_DATE_DISPLAY)}`;
         } else {
-            datesText += `Closes: ${endDate.toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            })}`;
+            datesText += `Closes: ${endDate.toLocaleDateString('en-US', CALENDAR_DATE_DISPLAY)}`;
         }
     }
     
@@ -176,9 +171,9 @@ window.createGoogleCalendarEvent = function(event, calendarType) {
     
     // Format dates for Google Calendar all-day events (YYYYMMDD format)
     const formatDateForGoogleAllDay = (date) => {
-        const year = date.getFullYear();
-        const month = String(date.getMonth() + 1).padStart(2, '0');
-        const day = String(date.getDate()).padStart(2, '0');
+        const year = date.getUTCFullYear();
+        const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(date.getUTCDate()).padStart(2, '0');
         return `${year}${month}${day}`;
     };
     
