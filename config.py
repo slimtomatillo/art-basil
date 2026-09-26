@@ -8,6 +8,15 @@ DB_FILES = {
     'tor': 'docs/data/tor_events.json',
     'ist': 'docs/data/ist_events.json',
 }
+# Event dates are calendar days at the venue, so "today" for deciding whether a
+# show is current/upcoming/past is the date in the venue's own time zone.
+REGION_TIMEZONES = {
+    'sf': 'America/Los_Angeles',
+    'la': 'America/Los_Angeles',
+    'mtl': 'America/Toronto',
+    'tor': 'America/Toronto',
+    'ist': 'Europe/Istanbul',
+}
 MONTH_TO_NUM_DICT = {
     'jan': 1,
     'feb': 2,

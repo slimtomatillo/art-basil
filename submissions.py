@@ -13,7 +13,7 @@ from datetime import timezone
 
 from config import DB_FILES
 from manual_check import MANUAL_SOURCE
-from processing import process_event, generate_unique_identifier
+from processing import process_event, generate_unique_identifier, derive_phase, region_today
 from utils import load_db, save_db
 
 DUPLICATE_MATCH_THRESHOLD = 0.6
@@ -21,18 +21,6 @@ DUPLICATE_MATCH_THRESHOLD = 0.6
 
 class SubmissionError(Exception):
     pass
-
-
-def compute_phase(start_date, end_date, today=None):
-    today = today or dt.datetime.today().date()
-    if start_date and end_date:
-        if start_date <= today <= end_date:
-            return 'current'
-        elif start_date > today:
-            return 'future'
-        else:
-            return 'past'
-    return None
 
 
 def find_likely_duplicates(region, venue, name):
@@ -84,7 +72,7 @@ def add_submission(region, name, venue, start_date, end_date, description='',
                 f"Check them, then pass force=True if this is genuinely new."
             )
 
-    phase = compute_phase(start_date, end_date)
+    phase = derive_phase(start_date, end_date, region_today(region))
     tags = list(tags or ['exhibition'])
     if phase and phase not in tags:
         tags.append(phase)

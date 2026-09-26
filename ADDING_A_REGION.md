@@ -19,6 +19,11 @@ DB_FILES = {
     '<region>': 'docs/data/<region>_events.json',
 }
 ```
+Also add the region's IANA time zone to `REGION_TIMEZONES` in the same file
+(e.g. `'<region>': 'Europe/Istanbul'`). Event dates are calendar days at the venue,
+so this decides what "today" is when phases are advanced. **Easy to forget** - the
+nightly phase update raises without it.
+
 Everything else keys off `DB_FILES` automatically (`main.py` loads every region
 in it, `db_size.csv` lists every region in it).
 
