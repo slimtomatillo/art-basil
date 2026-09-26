@@ -1035,34 +1035,6 @@
             "last_updated": "2025-06-08 11:14:11",
             "hash": "e5b936437edf9325eaa1e25c9c0f72e8"
         },
-        "Manet and Morisot-Legion of Honor": {
-            "name": "Manet and Morisot",
-            "venue": "Legion of Honor",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-10-11",
-                "end": "2026-03-01"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.famsf.org/exhibitions/manet-morisot",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.famsf.org/storage/images/c09a406e-9358-473f-9483-2a13bdfd2363/manet-balcony-1868-1869.jpg?crop=1710,1137,x307,y670&format=webp&quality=80&width=2500",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-08-14 11:16:51",
-            "hash": "38752844454aa120e5f81facea7abd45"
-        },
         "Ferlinghetti for San Francisco-Legion of Honor": {
             "name": "Ferlinghetti for San Francisco",
             "venue": "Legion of Honor",
@@ -2344,34 +2316,6 @@
             "last_updated": "2025-06-22 11:14:45",
             "hash": "1fefc0f38cb49f491f7dfe43fc8caa7d"
         },
-        "Fortuna and the Immortality Garden (Machine)-SFMOMA": {
-            "name": "Fortuna and the Immortality Garden (Machine)",
-            "venue": "SFMOMA",
-            "description": "",
-            "tags": [
-                "exhibition",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2024-07-01",
-                "end": "2026-03-20"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.sfmoma.org/exhibition/fortuna-and-the-immortality-garden-machine/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://d1hhug17qm51in.cloudfront.net/www-media/2024/05/19122251/SFM_Walker_020-1024x683.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-08-19 11:15:34",
-            "hash": "c9cd579a75db8f5d136913cdaa7b9b36"
-        },
         "Arborhythm-SFMOMA": {
             "name": "Arborhythm",
             "venue": "SFMOMA",
@@ -2735,34 +2679,6 @@
             ],
             "last_updated": "2026-05-30 12:03:45",
             "hash": "e11f607d1cc02326d1b63965910b85ca"
-        },
-        "2024 SECA Art Award Exhibition-SFMOMA": {
-            "name": "2024 SECA Art Award Exhibition",
-            "venue": "SFMOMA",
-            "description": "The 2024 SECA Art Award Exhibition celebrates Rose D\u2019Amato, Angela Hennessy, and Rupy C. Tut. Each artist has conceived a gallery with new works that bring distinct perspectives, processes, and materials into the museum.",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2024-12-14",
-                "end": null
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.sfmoma.org/exhibition/2024-seca-art-award-exhibition/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2024/11/07154222/SECA_artist_portrait_composite_updated_14-1024x512.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2024-12-10 11:14:53",
-            "hash": "4b37fa84596a53df5f5576d24bfaf280"
         },
         "Around Group f.64: Legacies and Counterhistories in Bay Area Photography-SFMOMA": {
             "name": "Around Group f.64: Legacies and Counterhistories in Bay Area Photography",
@@ -3351,34 +3267,6 @@
             ],
             "last_updated": "2026-09-26 14:52:51",
             "hash": "9eff6ea3f74dad4fc91b3c13e2f58e32"
-        },
-        "RM x SFMOMA-SFMOMA": {
-            "name": "RM x SFMOMA",
-            "venue": "SFMOMA",
-            "description": "Curated by RM. Only at SFMOMA. See what inspires the voice of a generation.",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-10-03",
-                "end": "2027-02-07"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.sfmoma.org/exhibition/rm-x-sfmoma/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://d1hhug17qm51in.cloudfront.net/www-media/2026/02/05121955/RM_218-portrait_design_v1_crop-970x1024.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-05-20 13:36:34",
-            "hash": "d26654ccd5b1e61e161e96d5e2a19c2a"
         },
         "Memory and Matter: Personal and Collective Histories-SFMOMA": {
             "name": "Memory and Matter: Personal and Collective Histories",
@@ -9461,35 +9349,6 @@
             "last_updated": "2026-09-26 14:55:00",
             "hash": "b3d131313910924fd91b148f4d5a0484"
         },
-        "-San Francisco Women Artists Gallery": {
-            "name": "",
-            "venue": "San Francisco Women Artists Gallery",
-            "description": "SFWA MEMBER CALL \u201cFACING FORWARD\u201d",
-            "tags": [
-                "exhibition",
-                "future",
-                "gallery",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-01-07",
-                "end": "2025-01-31"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.sfwomenartists.org/exhibition/facing-forward/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.sfwomenartists.org/wp-content/gallery/facing-forward/AllenRo-Now-I-Sing-A-Mountain-Song-241207175135_1.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-01-06 20:18:34",
-            "hash": "f364a6d4778386fb6205710fa910e089"
-        },
         "Facing Forward-San Francisco Women Artists Gallery": {
             "name": "Facing Forward",
             "venue": "San Francisco Women Artists Gallery",
@@ -9826,35 +9685,6 @@
             "last_updated": "2026-09-26 14:53:13",
             "hash": "8c84487a63945abac5db4cb372c90557"
         },
-        "Passionate Palette-San Francisco Women Artists Gallery": {
-            "name": "Passionate Palette",
-            "venue": "San Francisco Women Artists Gallery",
-            "description": "All Bay Area Artists Juried Exhibition",
-            "tags": [
-                "exhibition",
-                "future",
-                "gallery",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2026-02-03",
-                "end": "2026-02-28"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.sfwomenartists.org/exhibition/passionate-palette/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.sfwomenartists.org/wp-content/gallery/2026-feb-passionate-palette/AddisonEl-Fervid-from-the-Obsession-series-251229123510_1.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-01-14 11:20:44",
-            "hash": "ef6d9ab89c9205e2cab397acb16305b7"
-        },
         "Passionate Palettes-San Francisco Women Artists Gallery": {
             "name": "Passionate Palettes",
             "venue": "San Francisco Women Artists Gallery",
@@ -9882,35 +9712,6 @@
             ],
             "last_updated": "2026-09-26 14:53:12",
             "hash": "161bd0c8879be8babc412425fc0626fa"
-        },
-        "Women Rule The Wall-San Francisco Women Artists Gallery": {
-            "name": "Women Rule The Wall",
-            "venue": "San Francisco Women Artists Gallery",
-            "description": "SFWA Member Juried Exhibition",
-            "tags": [
-                "exhibition",
-                "future",
-                "gallery",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2026-03-03",
-                "end": "2026-04-03"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.sfwomenartists.org/exhibition/women-rule-the-wall/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.sfwomenartists.org/wp-content/gallery/2025march-womenrulethewalls/AllenRo-The-Mighty-Music-Machine-260131165004_1.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-02-23 11:38:56",
-            "hash": "437b80059571b2e437e6fcbc03cbe2ae"
         },
         "Women Rule The Walls-San Francisco Women Artists Gallery": {
             "name": "Women Rule The Walls",
@@ -13878,35 +13679,6 @@
             "last_updated": "2026-04-17 11:54:36",
             "hash": "0531409029e3423573752e317e5d8f77"
         },
-        "Handle With Care-Cantor Arts Center": {
-            "name": "Handle With Care",
-            "venue": "Cantor Arts Center",
-            "description": "",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-03-19",
-                "end": "2025-09-14"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://museum.stanford.edu/exhibitions/handle-care",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://museum.stanford.edu/sites/default/files/styles/width_constrained_md/public/images/2024-11/fish-ewer.jpg?itok=HZIJPn3P",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-01-22 11:15:12",
-            "hash": "d7f9cc0a6fe99474d4d8ae7e19907a49"
-        },
         "Handle with Care-Cantor Arts Center": {
             "name": "Handle with Care",
             "venue": "Cantor Arts Center",
@@ -14132,35 +13904,6 @@
             ],
             "last_updated": "2026-04-17 11:54:36",
             "hash": "0f51a12347214002ede8c7b2635fe8c3"
-        },
-        "Cunning Folk:-Cantor Arts Center": {
-            "name": "Cunning Folk:",
-            "venue": "Cantor Arts Center",
-            "description": "",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-10-15",
-                "end": "2026-02-22"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://museum.stanford.edu/exhibitions/cunning-folk",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://museum.stanford.edu/sites/default/files/styles/width_constrained_md/public/images/2025-07/1988117-cdp-src-crop-web.jpg?itok=3NjWFRVY",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-10-15 11:17:39",
-            "hash": "4337731c3c9e2ce6a2ffde009e4e5965"
         },
         "Cunning Folk-Cantor Arts Center": {
             "name": "Cunning Folk",
@@ -20012,34 +19755,6 @@
             "last_updated": "2025-08-26 18:12:22",
             "hash": "b9dca8a264651d70f3f2f8492259828f"
         },
-        "Art Wall / Tanya Agui\u00f1iga-BAMPFA": {
-            "name": "Art Wall / Tanya Agui\u00f1iga",
-            "venue": "BAMPFA",
-            "description": "Tanya Agui\u00f1iga creates sculptures and installations using natural materials and objects gathered from her environment. Her Art Wall installation at BAMPFA is her first solo presentation in the Bay Area. Agui\u00f1iga presents a series of rust prints depicting a thirty-foot ladder made using an actual object that she found near the US\u2013Mexico border. ",
-            "tags": [
-                "exhibition",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-01-18",
-                "end": "2025-07-13"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://bampfa.org/program/art-wall-tanya-aguiniga",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Aguiniga_0.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2024-12-09 11:15:09",
-            "hash": "08ce507f1f93fabeb9a1861177cbb482"
-        },
         "MATRIX 286 / Amol K Patil: A Forest of Remembrance-BAMPFA": {
             "name": "MATRIX 286 / Amol K Patil: A Forest of Remembrance",
             "venue": "BAMPFA",
@@ -20348,34 +20063,6 @@
             "last_updated": "2025-08-26 18:12:19",
             "hash": "a83c2cf11ada16b234b28581d58abfe3"
         },
-        "MATRIX 287 / Berenice Olmedo-BAMPFA": {
-            "name": "MATRIX 287 / Berenice Olmedo",
-            "venue": "BAMPFA",
-            "description": "MATRIX 287 / Berenice Olmedo is the first museum exhibition in the United States for artist Berenice Olmedo (b. 1987, Oaxaca, Mexico; lives and works in Mexico City). Olmedo\u2019s intimate yet commanding anthropomorphic assemblages with fused prostheses and orthotics urge a reconsideration of standardized expectations of bodies. ",
-            "tags": [
-                "exhibition",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-08-13",
-                "end": "2025-11-23"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://bampfa.org/program/matrix-287-berenice-olmedo",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Berenice-Olmedo_Sicaru_3.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-06-16 11:16:44",
-            "hash": "a39fbbfe863d4a9048f59df11862ea56"
-        },
         "Fifty-Fifth Annual UC Berkeley MFA Exhibition: The Currents Beneath-BAMPFA": {
             "name": "Fifty-Fifth Annual UC Berkeley MFA Exhibition: The Currents Beneath",
             "venue": "BAMPFA",
@@ -20403,34 +20090,6 @@
             ],
             "last_updated": "2025-08-26 18:12:19",
             "hash": "40308f7dc86a3569188a6c562ff7c4e3"
-        },
-        "Beyond Face Value: Meditations on Portraiture-BAMPFA": {
-            "name": "Beyond Face Value: Meditations on Portraiture",
-            "venue": "BAMPFA",
-            "description": "Campus Collaborations",
-            "tags": [
-                "exhibition",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-05-07",
-                "end": "2025-08-17"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://bampfa.org/program/beyond-face-value",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://bamlive.s3.amazonaws.com/Oskar-Kokoschka.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-06-02 11:16:42",
-            "hash": "d1d6e963418710c7a50e0d54a4e7d763"
         },
         "Teaching Wall / Beyond Face Value: Meditations on Portraiture-BAMPFA": {
             "name": "Teaching Wall / Beyond Face Value: Meditations on Portraiture",

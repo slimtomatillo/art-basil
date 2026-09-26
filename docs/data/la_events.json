@@ -280,35 +280,6 @@
             "last_updated": "2026-09-26 14:55:54",
             "hash": "a4e6fe88b8d727e7556a213d001d23ce"
         },
-        "Realms of the Dharma: Buddhist Art across Asia-LACMA": {
-            "name": "Realms of the Dharma: Buddhist Art across Asia",
-            "venue": "LACMA",
-            "description": "Resnick Pavilion",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-05-11",
-                "end": "2026-04-05"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://lacma.org/art/exhibition/realms-dharma-buddhist-art-across-asia",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2024-11/RSAC1994_232_1-20170606-Access.jpg?itok=k-YGLQGF",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-01-22 11:15:24",
-            "hash": "0efffecee0893272a9dc3255f68d0683"
-        },
         "American Artist: The Monophobic Response-LACMA": {
             "name": "American Artist: The Monophobic Response",
             "venue": "LACMA",
@@ -1345,34 +1316,6 @@
             "last_updated": "2026-01-07 11:22:26",
             "hash": "148cfc23e5fd7002d0ec98a6603cc545"
         },
-        "Textile Alchemy: The Art of Reiko Sud\u014d and NUNO-LACMA": {
-            "name": "Textile Alchemy: The Art of Reiko Sud\u014d and NUNO",
-            "venue": "LACMA",
-            "description": "Resnick Pavilion",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-09-20",
-                "end": "2027-03-07"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://lacma.org/art/exhibition/textile-alchemy-art-reiko-sudo-and-nuno",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2026-02/M2020_288_8-DL001_3_2.jpg?itok=xsamD6wa",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-15 15:30:02",
-            "hash": "8a00e9e828a0ad2070df7d5da0f71c1c"
-        },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
             "venue": "LACMA",
@@ -1793,34 +1736,6 @@
             "last_updated": "2026-09-26 14:55:53",
             "hash": "bd7cf4b44ce581764d64eb10d286d155"
         },
-        "Textile Alchemy: The Art of Reiko Sud\u014d & NUNO-LACMA": {
-            "name": "Textile Alchemy: The Art of Reiko Sud\u014d & NUNO",
-            "venue": "LACMA",
-            "description": "Resnick Pavilion",
-            "tags": [
-                "exhibition",
-                "current",
-                "museum"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": "2026-09-20",
-                "end": "2027-03-07"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://lacma.org/art/exhibition/textile-alchemy-art-reiko-sudo-nuno-0",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2026-02/M2020_288_8-DL001_3_2.jpg?itok=xsamD6wa",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-21 16:51:40",
-            "hash": "a4f38f5c3a553782367dcb10513c2829"
-        },
         "Analia Saban: Title, Date, Medium-LACMA": {
             "name": "Analia Saban: Title, Date, Medium",
             "venue": "LACMA",
@@ -1986,34 +1901,6 @@
             ],
             "last_updated": "2026-03-31 11:51:29",
             "hash": "14d6542c210b74e3f3c0c243ecad6105"
-        },
-        "Yayoi Kusama's Infinity Mirror Rooms-The Broad": {
-            "name": "Yayoi Kusama's Infinity Mirror Rooms",
-            "venue": "The Broad",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "current",
-                "museum"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": null,
-                "end": null
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.thebroad.org/visit/mirror-rooms",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_heading_hero/public/images/kusama_the_souls_of_millions_1%20%282%29.jpg.webp?itok=DqJhYNYr",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-20 14:34:20",
-            "hash": "be866f076f3edec9fbddb5cd03d05cc2"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
@@ -2574,34 +2461,6 @@
             ],
             "last_updated": "2025-06-26 11:19:30",
             "hash": "38fa56ced09d8c5b5ed42cdb2d75ec6f"
-        },
-        "None-The Broad": {
-            "name": null,
-            "venue": "The Broad",
-            "description": "Ten years ago, Eli and Edythe Broad announced the plans for this museum, to share their collection with the public in perpetuity. More than fifty years in the making, the collection, one of the most prominent collections of postwar and contemporary art worldwide, is the cornerstone of The Broad. Since Unveiling highlights artworks that have entered the Broad collection in the last decade with some as recently as this year. The fifty-three works on view by twenty-seven artists represent many facets of contemporary art, from explorations of abstraction and figuration to examinations of place, identity, and narrative. Many works witness, critique, and interpret current events, speaking to politics and power structures. Featured artists include John Baldessari, Glenn Ligon, and Kara Walker, whom The Broad has collected over decades, as well as artists added to the collection this past decade, including Tauba Auerbach, Kerry James Marshall, Catherine Opie, Nathaniel Mary Quinn, and Charline von Heyl. The exhibition features a selection of both monographic and thematic galleries, including a dedicated presentation of works by Cindy Sherman spanning the artist\u2019s career; the nine-channel HD video projection of Ragnar Kjartansson\u2019s The Visitors; a gallery with works by Gregory Crewdson, Shirin Neshat, and Nathaniel Mary Quinn that use portraiture to explore loss and longing; explorations of political power and commerce with works by Mark Bradford and Andreas Gursky; and works by Julie Mehretu and Robert Longo that take on both global struggle and protest. The artworks on display represent a fraction of the works acquired during the past ten years. Others are on loan to institutions around the globe or stored in the second floor \u201cvault\u201d at the museum. As the collection grows and evolves into the future, The Broad will be guided by the long precedent set by Eli Broad, who collected art over five decades by following so many artists\u2019 journeys with curiosity, intensity, and ultimately, a public purpose.",
-            "tags": [
-                "exhibition",
-                "past",
-                "museum"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2021-11-20",
-                "end": "2022-04-03"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.thebroad.org/art/collection-exhibitions/unveiling-selected-acquisitions-decade",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2021-10/TheBroadMuseum_Photo%E2%94%AC%E2%8C%90BruceDamonte_35%20copy%203.jpg.webp?itok=aJZ03ZfZ",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-26 14:56:18",
-            "hash": "34f5d50f808f01341c69481ac8ad66f6"
         },
         "Yayoi Kusama's Infinity Mirror Room-The Broad": {
             "name": "Yayoi Kusama's Infinity Mirror Room",
@@ -3668,34 +3527,6 @@
             ],
             "last_updated": "2026-09-26 14:56:44",
             "hash": "78af0a807f5252c01a07727ec73efdb5"
-        },
-        "Julian Charri\u00e8re-MOCA": {
-            "name": "Julian Charri\u00e8re",
-            "venue": "MOCA",
-            "description": "The exhibition will be accompanied by a catalogue. The Eric and Wendy Schmidt Environment and Art Prize is a juried award supporting artists whose practices engage critical intersections of art, architecture, design, climate, conservation, sustainability, and environmental justice. Julian Charri\u00e8re is organized by Paula Kroll, Assistant Curator, The Museum of Contemporary Art, Los Angeles.",
-            "tags": [
-                "exhibition",
-                "future",
-                "museum"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-11-15",
-                "end": "2027-06-06"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.moca.org/exhibitions/julian-charriere",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://cdn.sanity.io/images/ianh83xv/production/a02dd71555f4082275174309f7c0031d72cdf4ba-1600x900.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-01 15:26:51",
-            "hash": "2e9f054bd5da38cc2131efcc7df2acc5"
         },
         "In These Times: Recent Acquisitions at MOCA-MOCA": {
             "name": "In These Times: Recent Acquisitions at MOCA",
