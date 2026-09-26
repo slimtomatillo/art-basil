@@ -478,5 +478,121 @@
             "last_updated": "2026-09-26 06:57:35",
             "hash": "d24f003ca4f82277aea2508fcd87b093"
         }
+    },
+    "Salt Galata": {
+        "80 Years of Tomorrows-Salt Galata": {
+            "name": "80 Years of Tomorrows",
+            "venue": "Salt Galata",
+            "description": "Mastercard Exhibition Hall The exhibition 80 Years of Tomorrows traces the eighty-year history of Garanti BBVA through Turkey's economic, social\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-03",
+                "end": "2026-09-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://saltonline.org/en/exhibition-80-years-of-tomorrows-3052",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://saltonline.org/assets/dddf60f1-33d7-40ed-a34a-6d6005468687?fit=contain&width=1200&quality=75&format=webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:08:07",
+            "hash": "42db3a1c19f9ed8882fbd918f06ee071"
+        }
+    },
+    "Salt Beyo\u011flu": {
+        "Across the Seas \u00d6zer Kaba\u015f and His Times-Salt Beyo\u011flu": {
+            "name": "Across the Seas \u00d6zer Kaba\u015f and His Times",
+            "venue": "Salt Beyo\u011flu",
+            "description": "Across the Seas: \u00d6zer Kaba\u015f and His Times examines the practice of artist, educator, and writer \u00d6zer Kaba\u015f (1934\u20131998)\u2014ranging from painting and design to\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-16",
+                "end": "2027-03-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://saltonline.org/en/exhibition-across-the-seas-ozer-kabas-and-his-times-3085",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://saltonline.org/assets/b6817ca6-0c40-4f23-818f-21b55443d8d4?fit=contain&width=1200&quality=75&format=webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:08:08",
+            "hash": "5a8952bb26079c5be2f9b1800ffbfbee"
+        },
+        "15 Years at Salt: Exhibition Posters-Salt Beyo\u011flu": {
+            "name": "15 Years at Salt: Exhibition Posters",
+            "venue": "Salt Beyo\u011flu",
+            "description": "Presented on the ground floor of Salt Beyo\u011flu, this installation brings together an extensive collection of posters produced for Salt\u2019s exhibitions over\u2026",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-16",
+                "end": "2027-01-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://saltonline.org/en/15-years-at-salt-exhibition-posters-3091",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://saltonline.org/assets/04819690-7e46-44f8-a736-f94c3d9225c3?fit=contain&width=1200&quality=75&format=webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:08:09",
+            "hash": "0991c5f4793174b0342f73ef18b89429"
+        },
+        "Breaking Through a Dam-Salt Beyo\u011flu": {
+            "name": "Breaking Through a Dam",
+            "venue": "Salt Beyo\u011flu",
+            "description": "The word \"landscape\" has no exact equivalent in Arabic or Turkish; instead, different terms including arazi (land), manzara (view), or peyzaj (terrain)\u2026",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-04-22",
+                "end": "2026-08-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://saltonline.org/en/exhibition-breaking-through-a-dam-3036",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://saltonline.org/assets/66c436a8-6a78-4d41-848f-2e095c611fe8?fit=contain&width=1200&quality=75&format=webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:08:09",
+            "hash": "fe6889ea7e786b398517bd53e4619776"
+        }
     }
 }
