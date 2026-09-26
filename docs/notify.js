@@ -177,8 +177,12 @@ window.createGoogleCalendarEvent = function(event, calendarType) {
         return `${year}${month}${day}`;
     };
     
+    // Google Calendar's all-day end date is exclusive: a one-day event on Nov 12 is
+    // 20261112/20261113, and a run that closes Nov 12 must end on Nov 13 or its last
+    // day is dropped. Dates are UTC midnight, so adding 24h is exactly the next day.
+    const oneDayMs = 24 * 60 * 60 * 1000;
     const startDateStr = formatDateForGoogleAllDay(startDate);
-    const endDateStr = formatDateForGoogleAllDay(endDate);
+    const endDateStr = formatDateForGoogleAllDay(new Date(endDate.getTime() + oneDayMs));
     
     // Add reminder note to description
     const reminderNote = '\n\n💡 Tip: Set a reminder for 1 week before this event!';
