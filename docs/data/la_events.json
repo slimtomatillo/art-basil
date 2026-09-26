@@ -4230,68 +4230,6 @@
             "hash": "230ce481932b08149099fd20d66988b3"
         }
     },
-    "Hauser & Wirth Downtown Los Angeles": {
-        "Glenn Ligon: Sit So Your Back Isn't Against The Door-Hauser & Wirth Downtown Los Angeles": {
-            "name": "Glenn Ligon: Sit So Your Back Isn't Against The Door",
-            "venue": "Hauser & Wirth Downtown Los Angeles",
-            "description": "Glenn Ligon's Coloring Book paintings, made from children's markings on Afrocentric coloring books of the late 1960s and early 1970s, are on view together for the first time in over 25 years. The show also debuts a new 22-part work, 'Black Panther Coloring Book #1.' Opening reception Wed, Sep 30.",
-            "tags": [
-                "exhibition",
-                "opening",
-                "free",
-                "gallery",
-                "future"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-09-30",
-                "end": "2027-01-17"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/glenn-ligon-exhibition-los-angeles-2026/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://media.hauserwirth.com/asset/c1a8ad46-46aa-45c6-89ee-762108b24dcc/web-midres-jpg-72dpi/LIGON141460-SM-250505-tif.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-26 07:22:00",
-            "hash": "59549a1de23ef0b538daf4606099a916"
-        },
-        "Jack Whitten: The Numinous-Hauser & Wirth Downtown Los Angeles": {
-            "name": "Jack Whitten: The Numinous",
-            "venue": "Hauser & Wirth Downtown Los Angeles",
-            "description": "Paintings and works on paper from the 1980s, a decade of decisive experimentation in Jack Whitten's six-decade career, including the Soulspace paintings, circular acrylic reliefs, and Site paintings cast from urban textures. Opening reception Wed, Sep 30.",
-            "tags": [
-                "exhibition",
-                "opening",
-                "free",
-                "gallery",
-                "future"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-09-30",
-                "end": "2027-01-10"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/jack-whitten-the-numinous/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://media.hauserwirth.com/asset/883de613-9795-4178-bd91-a678168e5462/web-midres-jpg-72dpi/WHITT145597-SM-260617-tif.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-26 07:22:00",
-            "hash": "5bf34b6d022d636cf4d391b475e7c476"
-        }
-    },
     "Hauser & Wirth West Hollywood": {
         "Night Window: David Smith Spray Paintings, 1958\u20131964-Hauser & Wirth West Hollywood": {
             "name": "Night Window: David Smith Spray Paintings, 1958\u20131964",
@@ -4321,6 +4259,68 @@
             ],
             "last_updated": "2026-09-26 07:22:02",
             "hash": "ab486811f7487958603b6f7140a50d4a"
+        }
+    },
+    "Hauser & Wirth DTLA": {
+        "Glenn Ligon: Sit So Your Back Isn't Against The Door-Hauser & Wirth DTLA": {
+            "name": "Glenn Ligon: Sit So Your Back Isn't Against The Door",
+            "venue": "Hauser & Wirth DTLA",
+            "description": "Glenn Ligon's Coloring Book paintings, made from children's markings on Afrocentric coloring books of the late 1960s and early 1970s, are on view together for the first time in over 25 years. The show also debuts a new 22-part work, 'Black Panther Coloring Book #1.' Opening reception Wed, Sep 30.",
+            "tags": [
+                "exhibition",
+                "opening",
+                "free",
+                "gallery",
+                "future"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-30",
+                "end": "2027-01-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/glenn-ligon-exhibition-los-angeles-2026/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/c1a8ad46-46aa-45c6-89ee-762108b24dcc/web-midres-jpg-72dpi/LIGON141460-SM-250505-tif.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:22:35",
+            "hash": "c291b16c614d6232b540e5963c316f71"
+        },
+        "Jack Whitten: The Numinous-Hauser & Wirth DTLA": {
+            "name": "Jack Whitten: The Numinous",
+            "venue": "Hauser & Wirth DTLA",
+            "description": "Paintings and works on paper from the 1980s, a decade of decisive experimentation in Jack Whitten's six-decade career, including the Soulspace paintings, circular acrylic reliefs, and Site paintings cast from urban textures. Opening reception Wed, Sep 30.",
+            "tags": [
+                "exhibition",
+                "opening",
+                "free",
+                "gallery",
+                "future"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-09-30",
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/jack-whitten-the-numinous/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/883de613-9795-4178-bd91-a678168e5462/web-midres-jpg-72dpi/WHITT145597-SM-260617-tif.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-26 07:22:35",
+            "hash": "f25fe2139ed198a31f21c52f540911b5"
         }
     }
 }
