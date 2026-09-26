@@ -2,19 +2,15 @@
 
 function sortEvents(events) {
     let eventsArray = [];
-    // Get today's date, reset hours to ensure we're only comparing dates
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
+    // Today's date at the venues ('YYYY-MM-DD' in the region's time zone), not the viewer's
+    const today = window.dataManager.regionToday(window.dataManager.getRegion());
 
     Object.entries(events).forEach(([venue, venueEvents]) => {
         Object.values(venueEvents).forEach(event => {
-            // Convert event.start date to Date object for comparison
-            // Check if start date is provided and valid
+            // Once an event has started (by the venue's date), drop its start date
             if (event.dates.start && event.dates.start !== 'null') {
-                const startDate = new Date(event.dates.start);
-                // Compare start date with today's date
-                if (startDate <= today) {
-                    // If the event's start date is today or earlier, set it to 'null'
+                // ISO date strings compare chronologically as plain strings
+                if (event.dates.start.slice(0, 10) <= today) {
                     event.dates.start = 'null';
                 }
             }

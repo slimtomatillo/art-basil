@@ -150,6 +150,16 @@ if (path.includes('/<region>/')) {
 }
 ```
 
+Also add the region's IANA time zone to `REGION_TIMEZONES` at the top of the same
+file, matching the entry in `config.py` (**easy to forget** - `regionToday()` fails
+without it, and the region's phases and sorting break):
+```js
+const REGION_TIMEZONES = {
+    ...
+    <region>: 'Europe/Istanbul',
+};
+```
+
 ### 3b. `docs/<region>/index.html`
 Copy `docs/sf/index.html` verbatim, then change exactly two things:
 - `<title>Art Basil - <City></title>`
@@ -208,4 +218,5 @@ Checklist:
 - [ ] workflow `git add` line added
 - [ ] `docs/<region>/index.html` created, `docs/index.html` card added,
       `getRegion()` branch added
+- [ ] time zone added to `REGION_TIMEZONES` in both `config.py` and `docs/dataManager.js`
 - [ ] dev run of each scraper produces dated events

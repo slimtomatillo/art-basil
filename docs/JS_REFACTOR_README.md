@@ -10,7 +10,9 @@ The JavaScript code has been refactored from a single monolithic `scroll.js` fil
 **Functions**:
 - `getRegion()` - Detects current region (SF/LA/MTL/TOR/IST) from URL
 - `fetchVenues()` - Fetches venue data from JSON files
-- `fetchEvents()` - Fetches event data from JSON files
+- `fetchEvents()` - Fetches event data from JSON files, then brings each event's phase/tags up to date for the visit (`applyRegionPhases`)
+- `regionToday(region)` - Today's date (`YYYY-MM-DD`) in the region's time zone
+- `derivePhase(start, end, today)` / `applyRegionPhases(events, region)` - Work out upcoming/current/past from the dates in the venue's time zone; phases only move forward. Mirrors `update_event_phases` in `processing.py`
 
 **Usage**:
 ```javascript
