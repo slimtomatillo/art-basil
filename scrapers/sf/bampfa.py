@@ -4,6 +4,7 @@ from config import MONTH_TO_NUM_DICT
 import datetime as dt
 from datetime import timezone
 import logging
+import re
 
 def convert_date_to_dt(date_string):
     """Takes a date in string form and converts it to a dt object."""
@@ -53,11 +54,16 @@ def scrape_bampfa_exhibitions(env='prod', region='sf'):
             date_tag = exhibition.find('span', class_='dates')
             if date_tag:
                 event_dates = date_tag.text.strip()
+                # Strip a leading day-of-week ("Thursday, October 3, 2024") - it
+                # otherwise adds a 4th token and convert_date_to_dt only accepts 3
+                event_dates = re.sub(r'^[A-Za-z]+day,\s*', '', event_dates)
                 # Mark if ongoing
                 ongoing = True if 'ongoing' in event_dates.lower() else False
-                # Handle date ranges
-                if '–' in event_dates:
-                    dates = event_dates.lower().replace(',', '').split('–')
+                # Handle date ranges. BAMPFA uses either an en dash or a plain
+                # hyphen ("July 4-September 2, 2018") for a range - normalize to
+                # one before splitting.
+                if '–' in event_dates or '-' in event_dates:
+                    dates = event_dates.lower().replace(',', '').replace('–', '-').split('-')
                     # Handle edge cases
                     if event_title == 'On the Outdoor Screen: Navigating the Pilot School':
                         start_date = convert_date_to_dt('march 21 2024')
@@ -79,6 +85,12 @@ def scrape_bampfa_exhibitions(env='prod', region='sf'):
                     else:
                         start_date = convert_date_to_dt(dates[0])
                         end_date = convert_date_to_dt(dates[1])
+                elif re.match(r'(?i)^([a-z]+ \d+) & (\d+), (\d+)$', event_dates.strip()):
+                    # Two non-contiguous days in one month, e.g. "May 11 & 14, 2016"
+                    m = re.match(r'(?i)^([a-z]+ \d+) & (\d+), (\d+)$', event_dates.strip())
+                    month = m.group(1).split()[0]
+                    start_date = convert_date_to_dt(f"{m.group(1)} {m.group(3)}")
+                    end_date = convert_date_to_dt(f"{month} {m.group(2)} {m.group(3)}")
                 else:
                     start_date = convert_date_to_dt(event_dates)
                     end_date = None

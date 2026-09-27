@@ -15356,8 +15356,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "fad4a0165bea3ca590b4551668db696d"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "3c6a41f9f1cb413264db8b86929615d5"
         },
         "MATRIX 285 / Young Joon Kwak: Resistance Pleasure-BAMPFA": {
             "name": "MATRIX 285 / Young Joon Kwak: Resistance Pleasure",
@@ -15384,13 +15384,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "6d4da8b01657cf1c25cd2ae7b962447d"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "91b5a8b432d4f6a5968c27ebe9e83aa6"
         },
         "To Exalt the Ephemeral: The (Im)permanent Collection-BAMPFA": {
             "name": "To Exalt the Ephemeral: The (Im)permanent Collection",
             "venue": "BAMPFA",
-            "description": "To Exalt the Ephemeral: The (Im)permanent Collection draws from BAMPFA\u2019s art and film collections to explore how museums collect, care for, and amplify the work of artists who celebrate ideas of impermanence and cycles of decay and regeneration. View\n",
+            "description": "To Exalt the Ephemeral: The (Im)permanent Collection draws from BAMPFA\u2019s art and film collections to explore how museums collect, care for, and amplify the work of artists who celebrate ideas of impermanence and cycles of decay and regeneration.\n",
             "tags": [
                 "exhibition",
                 "past",
@@ -15412,8 +15412,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "bff8ac6f5446041ca9446c0c3ea7ae74"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "d54b27725c94c1a27b7573e2a2528801"
         },
         "Teaching Wall / Water, Art, and California-BAMPFA": {
             "name": "Teaching Wall / Water, Art, and California",
@@ -15468,8 +15468,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "a72616aeb3db1ccfccd1dee12fe3f016"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "d27f473bc33d5d99b00327d3f742fff6"
         },
         "On the Outdoor Screen / Lena Wolff and Hope Meng: Art for Democracy-BAMPFA": {
             "name": "On the Outdoor Screen / Lena Wolff and Hope Meng: Art for Democracy",
@@ -15496,8 +15496,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "714c8d41ccf6a29b187e2bb3fb567430"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "7ab29ff4c1aae2b8aa77809c1b8b56b7"
         },
         "On the Outdoor Screen / Michele Pred: United for Freedom-BAMPFA": {
             "name": "On the Outdoor Screen / Michele Pred: United for Freedom",
@@ -15524,8 +15524,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "58bc362de6e504a124bf1008e15ada67"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "68f9d2b53f928a4982d1f514545702e8"
         },
         "BODY FREEDOM FOR EVERY(BODY)-BAMPFA": {
             "name": "BODY FREEDOM FOR EVERY(BODY)",
@@ -15538,7 +15538,7 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2024-10-03",
                 "end": null
             },
             "ongoing": false,
@@ -15552,8 +15552,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "f1627880c1bd7be3145f5db8e5f1a63d"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "73e0cfe9f5912e9e88cadb5d4dbdd5e3"
         },
         "Abounaddara: The Ruins We Carry-BAMPFA": {
             "name": "Abounaddara: The Ruins We Carry",
@@ -15580,8 +15580,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "fe562aaedb40312d2c3e51c1189dad93"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "3cadca78495cdafdb053e9b1d2808e31"
         },
         "Making Their Mark: Works from the Shah Garg Collection-BAMPFA": {
             "name": "Making Their Mark: Works from the Shah Garg Collection",
@@ -15608,8 +15608,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "f93fa4cea2da62a12b8e727d036a3930"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "0f75ccb46c6e19a003a11dc5c374a63a"
         },
         "Routed West: Twentieth-Century African American Quilts in California-BAMPFA": {
             "name": "Routed West: Twentieth-Century African American Quilts in California",
@@ -15617,8 +15617,8 @@
             "description": "Routed West: Twentieth-Century African American Quilts in California\u00a0traces the flow and flourishing of quilts in the context of the Second Great Migration through approximately one hundred quilts representing the work of eighty individuals, many of them women. It is the first group show drawn from a transformative bequest of African American quilts that the museum received in 2019.\u00a0",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -15636,8 +15636,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "af2fc14cad4b44b61d77106bd2361d76"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "35de15daa17201c33b0669504d753d35"
         },
         "MITH & CO.: Fifty-Fourth Annual UC Berkeley Master of Fine Arts Exhibition-BAMPFA": {
             "name": "MITH & CO.: Fifty-Fourth Annual UC Berkeley Master of Fine Arts Exhibition",
@@ -15664,8 +15664,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "bb6664dfab0af0cd845510b5336b72ca"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "24312b740688a0a284c5679342191417"
         },
         "A Movement in Every Direction: Legacies of the Great Migration-BAMPFA": {
             "name": "A Movement in Every Direction: Legacies of the Great Migration",
@@ -15692,8 +15692,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "bb33dab370c2dd3aeb161f9029eda8ea"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "8c4104bf1ebdb8b1bd21815fb8fdbd43"
         },
         "On the Outdoor Screen: Navigating the Pilot School-BAMPFA": {
             "name": "On the Outdoor Screen: Navigating the Pilot School",
@@ -15720,8 +15720,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "6fd56b9cd9488c5afa01077f4f6a104c"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "dec575af95710ea27bbf416300597bfc"
         },
         "Art Wall / Yee I-Lann: TIKAR/MEJA/PLASTIK-BAMPFA": {
             "name": "Art Wall / Yee I-Lann: TIKAR/MEJA/PLASTIK",
@@ -15748,8 +15748,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "dd37fddfe6997924cc665a6d2e68f1e4"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "aa596b97df6907806023404f139f9a7a"
         },
         "On the Outdoor Screen: Lessons in Semaphore-BAMPFA": {
             "name": "On the Outdoor Screen: Lessons in Semaphore",
@@ -15776,8 +15776,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "083ffcdcc48e8c26b3b1386830e8077e"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "58c8948f35fdf8299ca88d3eed07ba49"
         },
         "MATRIX 284 / Sin Wai Kin: The Story Changing-BAMPFA": {
             "name": "MATRIX 284 / Sin Wai Kin: The Story Changing",
@@ -15804,8 +15804,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "e86eec6098574e863f64a96bddebc61c"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "306e3d0ed45a84b1a5b9b7bf82cd7579"
         },
         "MATRIX 283 / Gabriel Chaile: No hay nada que destruya el coraz\u00f3n como la pobreza-BAMPFA": {
             "name": "MATRIX 283 / Gabriel Chaile: No hay nada que destruya el coraz\u00f3n como la pobreza",
@@ -15832,8 +15832,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "e239d8527812459eebce7be54285a1fc"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "1b638e337e7894366bbc8e5e0252362e"
         },
         "Duane Linklater: mymothersside-BAMPFA": {
             "name": "Duane Linklater: mymothersside",
@@ -15860,8 +15860,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "79386add350d935f740ef4b5649eecf1"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "77ecde6e035b36b5c640f72ef273b44c"
         },
         "MATRIX 282 / Griselda Rosas: Yo te cuido-BAMPFA": {
             "name": "MATRIX 282 / Griselda Rosas: Yo te cuido",
@@ -15888,8 +15888,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "f23c86f932780d3613bf21bd9f76c767"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "514edf33e8574e00a07f137c148af462"
         },
         "MATRIX 281 / Kenneth Tam: The Founding of the World-BAMPFA": {
             "name": "MATRIX 281 / Kenneth Tam: The Founding of the World",
@@ -15916,8 +15916,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "8d5f79266fc4ab7e87a5a40d1d2a57d4"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "62b9ab11ff9e5e24a582bd420baec368"
         },
         "Art Wall: Xylor Jane-BAMPFA": {
             "name": "Art Wall: Xylor Jane",
@@ -15944,8 +15944,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "097f6262139f789f96a8742810192f82"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "5c974cc8b79e600b62be7c6b8b0b778c"
         },
         "What Has Been and What Could Be: The BAMPFA Collection-BAMPFA": {
             "name": "What Has Been and What Could Be: The BAMPFA Collection",
@@ -15972,8 +15972,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "d5de82c23e5ddaaeae20afbae1e7c60a"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "d4a13c27383884a7b5c404da1402c5e1"
         },
         "Fifty-Third Annual UC Berkeley Master of Fine Arts Exhibition-BAMPFA": {
             "name": "Fifty-Third Annual UC Berkeley Master of Fine Arts Exhibition",
@@ -16000,8 +16000,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "b1d14fcc9eb160ce9bd8b419fc098a85"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "baec4c3ac0b4c3022a4dba95ddd586cf"
         },
         "Alexandre Dumas\u2019s Afro: Blackness Caricatured, Erased, and Back Again-BAMPFA": {
             "name": "Alexandre Dumas\u2019s Afro: Blackness Caricatured, Erased, and Back Again",
@@ -16028,8 +16028,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "a858c39f44a51d933b5dd953bcc2e5bc"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "6d546280070c572b1e0ee109266fe423"
         },
         "On the Hour: Three short films by William Kentridge-BAMPFA": {
             "name": "On the Hour: Three short films by William Kentridge",
@@ -16056,8 +16056,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "d1cb47bfb01d78418cb90e8cfc1925bf"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "2edf2bc4722f1221c42c598f1e6b5213"
         },
         "Out of Africa: Selections from the Kramlich Collection-BAMPFA": {
             "name": "Out of Africa: Selections from the Kramlich Collection",
@@ -16084,8 +16084,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "0a1f926949ce5c4b3f14feee83ffcac7"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "5479d57f7f6170859b3481683b9fcb16"
         },
         "Apichatpong Weerasethakul \"Morakot (Emerald)\"-BAMPFA": {
             "name": "Apichatpong Weerasethakul \"Morakot (Emerald)\"",
@@ -16112,8 +16112,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "12508bc34a508ba2edc3231e60211049"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "debecc4cad71e85e3511d4353a977cc5"
         },
         "Amalia Mesa-Bains: Archaeology of Memory-BAMPFA": {
             "name": "Amalia Mesa-Bains: Archaeology of Memory",
@@ -16140,8 +16140,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "5023051cb970765e2f17143f19ef8ae9"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "699ad7e8b3d3fb456f04bb2d91cc4143"
         },
         "Frank Moore / MATRIX 280: Theater of Human Melting-BAMPFA": {
             "name": "Frank Moore / MATRIX 280: Theater of Human Melting",
@@ -16168,8 +16168,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "8540a179a3d9ca97b6658ac831dbe4f7"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "0ad3d2fe60e19c70cb89f661613768d8"
         },
         "Rina Kimche-BAMPFA": {
             "name": "Rina Kimche",
@@ -16196,8 +16196,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "2dba6aeee7bd449e64e46cd0bf9bd0e8"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "f62938c8cd1a96acd9a594026b3f36fb"
         },
         "Endless Knot: Struggle and Healing in the Buddhist World-BAMPFA": {
             "name": "Endless Knot: Struggle and Healing in the Buddhist World",
@@ -16224,8 +16224,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "fc0d8ec9fea665e4583055375c26e55a"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "fbad2473530f2690b29a67b0383e4c6d"
         },
         "Art Wall: Luis Camnitzer-BAMPFA": {
             "name": "Art Wall: Luis Camnitzer",
@@ -16252,8 +16252,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "15b4bece8c9b4da37d984f63c6492f34"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "1e1256428412e01bbaad29964f471ea4"
         },
         "Lena Wolff and Hope Meng: VOTE-BAMPFA": {
             "name": "Lena Wolff and Hope Meng: VOTE",
@@ -16280,8 +16280,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "2584ea9a2235cf9c4d45f8c6bbbdfd0c"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "662e5c1794191fc9eb57bf0eb43b2985"
         },
         "Undoing Time: Art and Histories of Incarceration-BAMPFA": {
             "name": "Undoing Time: Art and Histories of Incarceration",
@@ -16308,8 +16308,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "8ff885c522992364365611b2c358281b"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "8a56c5f75572b507d96c066cb857daf8"
         },
         "Hannah Levy / MATRIX 279-BAMPFA": {
             "name": "Hannah Levy / MATRIX 279",
@@ -16336,8 +16336,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "2b549c37f28e1cbff632ab06c153fc3b"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "60628c43a3b0b5028ad56d346e3dda8e"
         },
         "Fluxus Reverb: Events, Scores, Boxes & More-BAMPFA": {
             "name": "Fluxus Reverb: Events, Scores, Boxes & More",
@@ -16364,8 +16364,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "e7d05e503a064923672f9c43ef89b7f4"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "7209945d1d426a65d9a88455d6ddd87f"
         },
         "by Alison Knowles: A Retrospective (1960\u20132022)-BAMPFA": {
             "name": "by Alison Knowles: A Retrospective (1960\u20132022)",
@@ -16392,8 +16392,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "9a59754533bbca5d4c47c2ab01f34118"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "126717652d09a1232a292f6e848b01fe"
         },
         "Whitney Bradshaw: OUTCRY-BAMPFA": {
             "name": "Whitney Bradshaw: OUTCRY",
@@ -16420,8 +16420,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "e4dde1e8e433297ffc04adebed266b9a"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "45837fe43361677167da7ae471c07ae5"
         },
         "The 52nd Annual UC Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 52nd Annual UC Berkeley Master of Fine Arts Graduate Exhibition",
@@ -16448,8 +16448,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "5c8f26a7697d5a57f56b2865715c2d64"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "73a3e4781fe2dec36f7d23ad22641fec"
         },
         "Candice Lin: Seeping, Rotting, Resting, Weeping-BAMPFA": {
             "name": "Candice Lin: Seeping, Rotting, Resting, Weeping",
@@ -16476,8 +16476,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "bb8f29f05969797266d4cf219e656dfd"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "8ba5b8fd25a4c13e0801c2e58425bba5"
         },
         "Art Wall: Caroline Kent-BAMPFA": {
             "name": "Art Wall: Caroline Kent",
@@ -16504,8 +16504,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "178b6c73bac4880936d10817cbb7f61c"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "a73cb75b8e9b3f0ffb0bb937c52c525b"
         },
         "On the Hour: A Cool Million-BAMPFA": {
             "name": "On the Hour: A Cool Million",
@@ -16532,8 +16532,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "55d26f30c115ddad20d59e37f3212d3f"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "4573a32456605d40240c62ada6d2b664"
         },
         "The Artist\u2019s Eye: Tammy Rae Carland, David Huffman, Lava Thomas, John Zurier-BAMPFA": {
             "name": "The Artist\u2019s Eye: Tammy Rae Carland, David Huffman, Lava Thomas, John Zurier",
@@ -16560,8 +16560,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "756f5873137abb9494cf2b45fba18d9f"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "25076744f31d5e7ad6f9e31d597fc557"
         },
         "Recent Acquisitions from the BAMPFA Collection-BAMPFA": {
             "name": "Recent Acquisitions from the BAMPFA Collection",
@@ -16588,8 +16588,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "249c156e06c3e3a3d854b3161c906225"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "4c434b795e9f83e933c54a98679d86ba"
         },
         "Spiritual Mountains: The Art of Wesley Tongson-BAMPFA": {
             "name": "Spiritual Mountains: The Art of Wesley Tongson",
@@ -16616,8 +16616,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "8dca9326e5243835d1cb76e26123163e"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "b0b85f13e9fd8ddc9a95151f932a8847"
         },
         "Lines of Thought-BAMPFA": {
             "name": "Lines of Thought",
@@ -16644,8 +16644,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "f1d0d626fe976f784d6b83e999feaf6c"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "00d7a8dfdbbc4e79e205de76c321dfcb"
         },
         "Jumana Manna / MATRIX 278-BAMPFA": {
             "name": "Jumana Manna / MATRIX 278",
@@ -16672,8 +16672,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "0b1dfdbbda6594748e648f0b2a2dd48e"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "5e72eefaab56a8e22662f0a30bbcb783"
         },
         "On the Hour: Night Watch-BAMPFA": {
             "name": "On the Hour: Night Watch",
@@ -16700,8 +16700,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "aad70b4358c9bdddd04ffc5eddda7cfa"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "fdd87988a68c1249c177f5fdd9532e45"
         },
         "New Time: Art and Feminisms in the 21st Century-BAMPFA": {
             "name": "New Time: Art and Feminisms in the 21st Century",
@@ -16728,8 +16728,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "65892d8b67616706ceec468a1b3723b7"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "58802688894818a79a9e1c1cdc0c7588"
         },
         "Shirin Neshat: Fervor-BAMPFA": {
             "name": "Shirin Neshat: Fervor",
@@ -16756,8 +16756,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "d91b5ed628d0f91b58aacece44d50edf"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "378d363dfcc53afdb08c00b662cde847"
         },
         "The Enduring Mark-BAMPFA": {
             "name": "The Enduring Mark",
@@ -16784,8 +16784,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "9b8e89ba3c11b2688e1bae22da3eb2bb"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "63e7df62756717c79287c4bf7054513a"
         },
         "Art Wall: Luchita Hurtado-BAMPFA": {
             "name": "Art Wall: Luchita Hurtado",
@@ -16812,8 +16812,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "7d5e4b9071482f90a1d841f55b4949fe"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "f270b4ee26edc322f2aec69e31522b69"
         },
         "The 51st Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 51st Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -16840,8 +16840,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "2bf7052fe321e142ebe31e4c7334f8c1"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "e2eb09808541b1ce212bf210e274efb9"
         },
         "Kay Sekimachi: Geometries-BAMPFA": {
             "name": "Kay Sekimachi: Geometries",
@@ -16868,8 +16868,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "b2de72a5a9a90c4c7c046e4a74d20faa"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "af4371a8e1d74035d7adcbbe5725a7d8"
         },
         "The 50th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 50th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -16896,8 +16896,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "b251e45b1670248a36e8a95a753b67be"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "1da73141ebc4a553772ab3d1c5ac9b13"
         },
         "Ulrike Ottinger / MATRIX 276-BAMPFA": {
             "name": "Ulrike Ottinger / MATRIX 276",
@@ -16924,8 +16924,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "99ec1a525971b4b4f674008e634a2abc"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "4ed51a3aaa46ed87c8fa00d4230947d3"
         },
         "Present Tense: Five Centuries of Colonialism in Latin American and Caribbean Art-BAMPFA": {
             "name": "Present Tense: Five Centuries of Colonialism in Latin American and Caribbean Art",
@@ -16952,8 +16952,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "5d181e80008f2512b878fe7a7e82bfca"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "7d51ff18a561627b52e8430976f033b6"
         },
         "Beyond Boundaries: Buddhist Art of Gandhara-BAMPFA": {
             "name": "Beyond Boundaries: Buddhist Art of Gandhara",
@@ -16980,8 +16980,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "8a9aa4c3cb101e9435d66fc04dcbeb94"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "834920d75747b2f607eb1fb5a676e276"
         },
         "Orbits of Known and Unknown Objects: SFAI Histories / MATRIX 277-BAMPFA": {
             "name": "Orbits of Known and Unknown Objects: SFAI Histories / MATRIX 277",
@@ -17008,8 +17008,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "f19eddf303a8e0dfa01d018f75a4bbdc"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "e93a7fa1108fd1c323926ee3faa2ed73"
         },
         "Catherine Opie: Political Landscapes-BAMPFA": {
             "name": "Catherine Opie: Political Landscapes",
@@ -17036,8 +17036,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "ff0f4d84542525e8e1a75d7675fa51b0"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "f761b9460cb21281cd2bc17f6a91f4a0"
         },
         "When All That Is Solid Melts into Air-BAMPFA": {
             "name": "When All That Is Solid Melts into Air",
@@ -17064,8 +17064,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "a0d2d2fd257b329bdc51306a43fbc952"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "fb0a27b556cf1e40c771128ab14234d4"
         },
         "Art for Human Rights: Peace Now!-BAMPFA": {
             "name": "Art for Human Rights: Peace Now!",
@@ -17092,8 +17092,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "037bbad8f5c71d03454076f45613b683"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "2ec00b40d9d70201c983fa0f6fee1476"
         },
         "Rosie Lee Tompkins: A Retrospective-BAMPFA": {
             "name": "Rosie Lee Tompkins: A Retrospective",
@@ -17120,8 +17120,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "4074e0cb89e378938ab6987e5f5b7096"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "f51cddbdea6e91e05295ed232348d145"
         },
         "Ron Nagle: Handsome Drifter-BAMPFA": {
             "name": "Ron Nagle: Handsome Drifter",
@@ -17148,8 +17148,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "e31457a7ebebee5ebeabb9e724322c44"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "c2cbdb9dbba106b90ba199558378f1f0"
         },
         "Brave Warriors and Fantastic Tales: The World According to Yoshitoshi-BAMPFA": {
             "name": "Brave Warriors and Fantastic Tales: The World According to Yoshitoshi",
@@ -17176,8 +17176,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "c3b53abf52e2da77e6f2fec1ec1c6837"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "a03f5ea95fc20cf99f65f2619cb38ee0"
         },
         "Lands of Promise and Peril: Geographies of California-BAMPFA": {
             "name": "Lands of Promise and Peril: Geographies of California",
@@ -17204,8 +17204,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "e3056d1f0cc3878e566cc8cc314ec961"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "b62e2623e87a308e5c595000b2ba34aa"
         },
         "Art Wall: Edie Fake-BAMPFA": {
             "name": "Art Wall: Edie Fake",
@@ -17232,8 +17232,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "d5bf1eb46601a549e6549aa9484e700d"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "61f79be58b241bc8f35e58adbf7179c9"
         },
         "Sylvia Fein / MATRIX 275-BAMPFA": {
             "name": "Sylvia Fein / MATRIX 275",
@@ -17260,8 +17260,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "ab6fae9362c084f22d2299dcf5ad4870"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "df6768b708ef65460dea5ce5380304f6"
         },
         "BAMPFA AR\u2014Augmented Time-BAMPFA": {
             "name": "BAMPFA AR\u2014Augmented Time",
@@ -17288,8 +17288,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "47222e9c0c163f89f3e47f68b2984698"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "39bbafce10966729e0f3a50be645b95e"
         },
         "Dennis Feldman: Photographs-BAMPFA": {
             "name": "Dennis Feldman: Photographs",
@@ -17316,8 +17316,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "3f57c1f683bee34cee9577ae99d05876"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "8662d5d46934649c0c205efc95704c23"
         },
         "Terry Fox: Resonance-BAMPFA": {
             "name": "Terry Fox: Resonance",
@@ -17344,8 +17344,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "2e7e3faf24b859fb88943f0d6e259599"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "6e9fbed4de55d1c0197292ded06bf655"
         },
         "Hinges: Sakaki Hyakusen and the Birth of Nanga Painting-BAMPFA": {
             "name": "Hinges: Sakaki Hyakusen and the Birth of Nanga Painting",
@@ -17372,8 +17372,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "dac141d84cf7b7334431d73a5eb53cdf"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "dd160ad6d7af81ad0b73ac763874bf74"
         },
         "Kader Attia / MATRIX 274-BAMPFA": {
             "name": "Kader Attia / MATRIX 274",
@@ -17400,8 +17400,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "fdcaa8db71cda6d330aa482798e6f21a"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "26b9e9010a435df2f00d0630c08cf001"
         },
         "The San Quentin Project: Nigel Poor and the Men of San Quentin State Prison-BAMPFA": {
             "name": "The San Quentin Project: Nigel Poor and the Men of San Quentin State Prison",
@@ -17428,8 +17428,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "1edb580bb8159b074425ad9c16a1fc5e"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "168cb950015249cacc4cdffe0cfecae4"
         },
         "Strange-BAMPFA": {
             "name": "Strange",
@@ -17456,8 +17456,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "7e2917d2279616e05b0247fa0f392546"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "2cbe28351642b5eed4548866d0dbca5b"
         },
         "Meditation in Motion: Zen Calligraphy from the Stuart Katz Collection-BAMPFA": {
             "name": "Meditation in Motion: Zen Calligraphy from the Stuart Katz Collection",
@@ -17484,8 +17484,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "38f4847013dc0f6a1fffd02d015d081a"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "16e3c0c673bf0addd4708a387eaeced9"
         },
         "No Horizon: Helen Mirra and Sean Thackrey-BAMPFA": {
             "name": "No Horizon: Helen Mirra and Sean Thackrey",
@@ -17512,8 +17512,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "3753a7ebfb71598182b3d63c65e154b1"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "20fdc61f1db77da8808b997ba92e810f"
         },
         "Divine Women, Divine Wisdom-BAMPFA": {
             "name": "Divine Women, Divine Wisdom",
@@ -17540,8 +17540,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "367e9be16098610b8dc942c0782561ab"
+            "last_updated": "2026-09-27 19:49:33",
+            "hash": "64eeb4e92d749161678215049bc7db35"
         },
         "The 49th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 49th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -17568,8 +17568,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "e00a3d5a848d29745bd3661a35491150"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "fba2f960de781d9e523c5331bbaa091e"
         },
         "About Things Loved: Blackness and Belonging-BAMPFA": {
             "name": "About Things Loved: Blackness and Belonging",
@@ -17596,8 +17596,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "9520b74337eba12f2fd5c28d2b3ed849"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "d5b02d81705e2550cd91a3459f67c209"
         },
         "Permanent Accusation: Art for Human Rights-BAMPFA": {
             "name": "Permanent Accusation: Art for Human Rights",
@@ -17624,8 +17624,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "f83b623f19e8fede12a2634b02edfff9"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "235759963ca33a04f199262929bc5895"
         },
         "Looking: The Art of Frederick Hammersley-BAMPFA": {
             "name": "Looking: The Art of Frederick Hammersley",
@@ -17652,8 +17652,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "184be0991c0c9d33e7c1af2dd333655b"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "0442360ee101a33de3fea5cd4ba36119"
         },
         "Unlimited: Recent Gifts from the William Goodman and Victoria Belco Photography Collection-BAMPFA": {
             "name": "Unlimited: Recent Gifts from the William Goodman and Victoria Belco Photography Collection",
@@ -17680,8 +17680,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "6fe7ddba1849ff0e5cf41f6408af9e9c"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "d65c88bc3e0704aff3e064e3a609f849"
         },
         "Art Wall: Carlos Amorales-BAMPFA": {
             "name": "Art Wall: Carlos Amorales",
@@ -17708,8 +17708,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "98a210df0bc11b6109a257b50a49058b"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "66637cedfedd3da37e64290db6a68e10"
         },
         "Hans Hofmann: The Nature of Abstraction-BAMPFA": {
             "name": "Hans Hofmann: The Nature of Abstraction",
@@ -17736,8 +17736,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "1c12bee3f92919513dfb308be118553c"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "4c5188054773bafb6d09c69bcd58062a"
         },
         "Aaron Marcus: Early Works-BAMPFA": {
             "name": "Aaron Marcus: Early Works",
@@ -17764,8 +17764,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "54589a0b75dccaf0f8fd26ae8af926d6"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "372180a581f43e98c0963587827ad156"
         },
         "Masako Miki / MATRIX 273-BAMPFA": {
             "name": "Masako Miki / MATRIX 273",
@@ -17792,8 +17792,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "8c4c572b61fc23ba4d555069e58fc210"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "3cd35c2abf46c51ebe88f6fe8947bc13"
         },
         "Get Dancin\u2019: Selections from the Collection-BAMPFA": {
             "name": "Get Dancin\u2019: Selections from the Collection",
@@ -17820,8 +17820,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "4d2756ba8ba9d4d7664fff037038c56e"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "5af209612bfda29248a7f0e794fc8689"
         },
         "Ink, Paper, Silk: One Hundred Years of Collecting Japanese Art-BAMPFA": {
             "name": "Ink, Paper, Silk: One Hundred Years of Collecting Japanese Art",
@@ -17848,8 +17848,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "deeaffdb22008fb1630bb174c8b49efe"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "29243301dff48c2dfe0ce76085a5005e"
         },
         "Arthur Jafa / MATRIX 272-BAMPFA": {
             "name": "Arthur Jafa / MATRIX 272",
@@ -17876,8 +17876,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "c838eda325f69695ece7e50e344b6c6d"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "0c71df9845833e3cc8612651ffdc3984"
         },
         "Dimensionism: Modern Art in the Age of Einstein-BAMPFA": {
             "name": "Dimensionism: Modern Art in the Age of Einstein",
@@ -17904,8 +17904,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "baf78d00c4a05d0e6ef009a24f9062de"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "2480fbed4588b94dd63a9b38ba566b1a"
         },
         "Harvey Quaytman: Against the Static-BAMPFA": {
             "name": "Harvey Quaytman: Against the Static",
@@ -17932,8 +17932,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "3311f94d5efce40bb7b6d3084ecbf775"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "f5cd68e48bc8c1523be6cf0008d9dde4"
         },
         "Boundless: Contemporary Tibetan Artists at Home and Abroad-BAMPFA": {
             "name": "Boundless: Contemporary Tibetan Artists at Home and Abroad",
@@ -17960,8 +17960,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "e89fb52c7b865d8e86525668acd481e8"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "bf18048eb09c369c1e5d1dd99ace4cba"
         },
         "Redacted: Art for Human Rights-BAMPFA": {
             "name": "Redacted: Art for Human Rights",
@@ -17988,8 +17988,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "bb8703ef0ad433b9abe9375b0aca75ea"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "c7ad0e364f4702862777d5f49634e78c"
         },
         "Old Masters in a New Light: Rediscovering the European Collection-BAMPFA": {
             "name": "Old Masters in a New Light: Rediscovering the European Collection",
@@ -18016,8 +18016,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "d798b2be193a3c13ad42df2b8efe8058"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "12ef101bd8c76dae03ff91c70ebeca8a"
         },
         "Christina Quarles / MATRIX 271-BAMPFA": {
             "name": "Christina Quarles / MATRIX 271",
@@ -18044,8 +18044,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "d7054811bae4d5d30027515f5d7a0a65"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "bb05bd091fbb82f7509c149be3050aa7"
         },
         "Art Wall: Barbara Stauffacher Solomon-BAMPFA": {
             "name": "Art Wall: Barbara Stauffacher Solomon",
@@ -18072,8 +18072,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "a9b1e451f794852d04c69ec25ece235d"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "8b6fa1d7fab2f16f856d8423787072bb"
         },
         "Cecilia Vicu\u00f1a: About to Happen-BAMPFA": {
             "name": "Cecilia Vicu\u00f1a: About to Happen",
@@ -18100,8 +18100,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "cf0ac5fd862f4481b85dc4dcc9aeee48"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "ac00b11b45b8d5310693b2d794aa67ee"
         },
         "Joanne Leonard: Intimate Documentary-BAMPFA": {
             "name": "Joanne Leonard: Intimate Documentary",
@@ -18114,8 +18114,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2018-07-04",
+                "end": "2018-09-02"
             },
             "ongoing": false,
             "links": [
@@ -18128,8 +18128,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "0f920f7b3aa630f2e7a5bc3e36e5e5ad"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "0892ecaa5a41f61dc31c53066cbca1da"
         },
         "Peter Hujar: Speed of Life-BAMPFA": {
             "name": "Peter Hujar: Speed of Life",
@@ -18156,8 +18156,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "039e89860b995fcea3265eae4b7a2939"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "ed557b51d31ddae09486cdfed3712767"
         },
         "Way Bay 2-BAMPFA": {
             "name": "Way Bay 2",
@@ -18184,8 +18184,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "fb3f04e516d4cb8670fa689a970c6b4c"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "3f5b30bd14b9e4948a0b234126677e82"
         },
         "Color, Form, Unicorn: Recent Acquisitions-BAMPFA": {
             "name": "Color, Form, Unicorn: Recent Acquisitions",
@@ -18198,8 +18198,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2018-06-06",
+                "end": "2018-08-19"
             },
             "ongoing": false,
             "links": [
@@ -18212,8 +18212,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "436cb7d105a0d843ef46464732343f89"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "6af918aff716f60c032502025c1ffbab"
         },
         "Alicia McCarthy and Ruby Neri / MATRIX 270-BAMPFA": {
             "name": "Alicia McCarthy and Ruby Neri / MATRIX 270",
@@ -18240,8 +18240,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "31736c09871fc8a92ec1395dfe61cc0a"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "8e9a61a927cbf5c3b5bf45aa49997220"
         },
         "Master Traces, Transcultural Visions-BAMPFA": {
             "name": "Master Traces, Transcultural Visions",
@@ -18268,8 +18268,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "3bf613164428ea28f46de2184562a7f1"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "cce096ebee82c835bf0615f52916060f"
         },
         "The 48th Annual UC Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 48th Annual UC Berkeley Master of Fine Arts Graduate Exhibition",
@@ -18296,8 +18296,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "b74d52e58795925515ecf1ebb8cc77e1"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "a1d2c9ab6ac31d4a35d53d681a4a0759"
         },
         "Al Wong: Lost Sister-BAMPFA": {
             "name": "Al Wong: Lost Sister",
@@ -18324,8 +18324,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "49aea4edc6aa7e17ceebb6500e3c07bb"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "9ca39032ae6a280d19afb41f0581e792"
         },
         "Cal Conversations: Dreaming the Lost Ming \u5922\u56de\u91d1\u9675-BAMPFA": {
             "name": "Cal Conversations: Dreaming the Lost Ming \u5922\u56de\u91d1\u9675",
@@ -18352,8 +18352,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "19beb78cffe1ead4f5bfb50fd0c7c0c9"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "ed18438c3b9facc8301739efdaff232d"
         },
         "Agony in Effigy: Art, Truth, Pain, and the Body-BAMPFA": {
             "name": "Agony in Effigy: Art, Truth, Pain, and the Body",
@@ -18380,8 +18380,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "64bc8bf2a51844d4c33f08e60165e44b"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "400bf7cf9c3890f2816319c249f54632"
         },
         "Jay Heikes / MATRIX 269-BAMPFA": {
             "name": "Jay Heikes / MATRIX 269",
@@ -18408,8 +18408,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:21",
-            "hash": "3b71d3ffa71dedcf773eac3761dbc57d"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "9c081f2db2bfacc0366c79f1862e7ddf"
         },
         "Theresa Hak Kyung Cha: Avant Dictee-BAMPFA": {
             "name": "Theresa Hak Kyung Cha: Avant Dictee",
@@ -18436,8 +18436,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "b3fb33612ac9dca23c5fda43165f3431"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "d96b6dc24b57e4b5cf7491a2a6fa800e"
         },
         "Breaking ICE-BAMPFA": {
             "name": "Breaking ICE",
@@ -18464,8 +18464,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "5b62e6bd59f2c830011d2f9edfe231bc"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "397bdadcd699ba703ff77dca03111f6d"
         },
         "Way Bay-BAMPFA": {
             "name": "Way Bay",
@@ -18492,8 +18492,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "5609e16c43e9cf079e863376c9e45eef"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "529865e4e43a0bf6bfa75dec0feb67c8"
         },
         "Art Wall: Karabo Poppy Moletsane-BAMPFA": {
             "name": "Art Wall: Karabo Poppy Moletsane",
@@ -18520,8 +18520,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "efc97f709c5144827b301fc957b95f1d"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "a66c1acfcef91b53896c6f5c32307a0f"
         },
         "On the Hour / Hayoun Kwon-BAMPFA": {
             "name": "On the Hour / Hayoun Kwon",
@@ -18548,8 +18548,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "1f45e1733b37d9c8f62c77e2cda491ab"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "7efa0bafc063a4fe4d4ec7c4a2d0c0f7"
         },
         "Veronica De Jesus / MATRIX 268-BAMPFA": {
             "name": "Veronica De Jesus / MATRIX 268",
@@ -18576,8 +18576,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "c32d767d245f463ac925c9079a08b220"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "95789c7024b37b42a271b16b83f95272"
         },
         "Repentant Monk: Illusion and Disillusion in the Art of Chen Hongshou-BAMPFA": {
             "name": "Repentant Monk: Illusion and Disillusion in the Art of Chen Hongshou",
@@ -18604,8 +18604,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "b190c88776f4825b08729600b1e0552e"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "99cb957733b38aa82aa84738a4368a79"
         },
         "Global Lives Project-BAMPFA": {
             "name": "Global Lives Project",
@@ -18632,8 +18632,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "950b1c4d745e0a3dfee28c562ee73141"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "474fa06939604e327a9524641586093d"
         },
         "Buddhist Realms-BAMPFA": {
             "name": "Buddhist Realms",
@@ -18660,8 +18660,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "c18854d3d9f1896711ac97d42bc0d8a6"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "6a2165a425c941b75eaa8dd0126644b5"
         },
         "Miyoko Ito / MATRIX 267-BAMPFA": {
             "name": "Miyoko Ito / MATRIX 267",
@@ -18688,8 +18688,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "2002e2abfb221241f212c514bc9e8a65"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "34a7f4a8055357d8e4e0630b7f5d92de"
         },
         "Gordon Parks: The Making of an Argument-BAMPFA": {
             "name": "Gordon Parks: The Making of an Argument",
@@ -18716,8 +18716,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "1672075814a8705b9cbb4d57d9809d11"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "6019e2a460a75a50b2bb296bdd654db9"
         },
         "Martin Wong: Human Instamatic-BAMPFA": {
             "name": "Martin Wong: Human Instamatic",
@@ -18744,8 +18744,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "77e9f061470fd850c87155c85c45872f"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "8957763a188c7f929526f0fb76a442c5"
         },
         "To the Letter:  Regarding the Written Word-BAMPFA": {
             "name": "To the Letter:  Regarding the Written Word",
@@ -18772,8 +18772,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "de298d86e06522ddd3a144bf3cba28e4"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "bf0831287bd25b5dd97ff7783150abcb"
         },
         "On the Hour / JJ PEET-BAMPFA": {
             "name": "On the Hour / JJ PEET",
@@ -18800,8 +18800,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "5a19449895286ca094151ab1b762532c"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "16e3417c21301184a44375c52a7e0678"
         },
         "Information in the Flesh: Art for Human Rights-BAMPFA": {
             "name": "Information in the Flesh: Art for Human Rights",
@@ -18828,8 +18828,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "492777d1bd09f5bb7834c7b7f83763de"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "c0ef1dd76dfa72c5f20877839b486855"
         },
         "Ugo Rondinone: the world just makes me laugh-BAMPFA": {
             "name": "Ugo Rondinone: the world just makes me laugh",
@@ -18856,8 +18856,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "312b826f9642da9769fb8de358538c69"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "ab4d1818eb59e73dceb48de461f9943e"
         },
         "Divine Visions, Earthly Pleasures: Five Hundred Years of Indian Painting-BAMPFA": {
             "name": "Divine Visions, Earthly Pleasures: Five Hundred Years of Indian Painting",
@@ -18884,8 +18884,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "6c55cf85f41c274c12450ef2efc7d0e7"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "8db1e95b40a4096018d525bddb5b4d7e"
         },
         "Charles Howard: A Margin of Chaos-BAMPFA": {
             "name": "Charles Howard: A Margin of Chaos",
@@ -18912,8 +18912,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "40a2cb5f6ce802d91ead5046cd5daa36"
+            "last_updated": "2026-09-27 19:49:34",
+            "hash": "e140a2106c25effc57b911b77549da2a"
         },
         "The 47th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 47th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -18940,8 +18940,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "2fcd47ba5c564c7e457e3092a49cf68d"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "115f4acaad737cd90dfe71e05525ccea"
         },
         "Sam Contis / MATRIX 266-BAMPFA": {
             "name": "Sam Contis / MATRIX 266",
@@ -18968,8 +18968,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "cb2fd6ce0d2c9cf97cf1d747b79f901f"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "fb9611b824e0fcb191089a2d43d30e89"
         },
         "Irwin Kremen / MATRIX 265-BAMPFA": {
             "name": "Irwin Kremen / MATRIX 265",
@@ -18996,8 +18996,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "d73fea1ec289e467cac0ff547b92dabf"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "c20eb8eaddc00d9b37a618f813f886b5"
         },
         "Asher Hartman and Cliff Hengst / MATRIX 264-BAMPFA": {
             "name": "Asher Hartman and Cliff Hengst / MATRIX 264",
@@ -19024,8 +19024,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "c6c8d4a271b8ff2911426c5ce338c302"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "43d08c445b5b67d9bef75c2d4b17359d"
         },
         "AMERICA AMERICA: Art for Human Rights-BAMPFA": {
             "name": "AMERICA AMERICA: Art for Human Rights",
@@ -19052,8 +19052,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "e9dea9b9e3860b2560a301ae91635cea"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "5b7e6cf6e021fe2187dbe22004fe9193"
         },
         "Erica Deeman: Silhouettes-BAMPFA": {
             "name": "Erica Deeman: Silhouettes",
@@ -19080,8 +19080,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "6296556d1d95e8179f6c2fa7dbce536b"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "609405aafe29b58f8d4922a97ff2d6b4"
         },
         "Art Wall: Lawrence Weiner-BAMPFA": {
             "name": "Art Wall: Lawrence Weiner",
@@ -19108,8 +19108,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "5d631af6203b640a40b95bc1e1eca3dd"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "aa97ce984bd595f859d604b0bb1d93a2"
         },
         "Hippie Modernism: The Struggle for Utopia-BAMPFA": {
             "name": "Hippie Modernism: The Struggle for Utopia",
@@ -19136,8 +19136,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "83191c19f8f39e0c49e02a4c7c510066"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "a08ede457f2fb951e7d49dd76f650456"
         },
         "Slow Reading / Slow Seeing-BAMPFA": {
             "name": "Slow Reading / Slow Seeing",
@@ -19164,8 +19164,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "14747c8584bcb1a37f11e0e66843ca29"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "f2e5930d9cc02b832dd4495d39371cf8"
         },
         "Michael Armitage / MATRIX 263-BAMPFA": {
             "name": "Michael Armitage / MATRIX 263",
@@ -19192,8 +19192,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "c809744347cdcde918d88e62f1e7998b"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "07ecad034dc027f83043a9ec1dcc93ca"
         },
         "Buddhist Art from the Roof of the World-BAMPFA": {
             "name": "Buddhist Art from the Roof of the World",
@@ -19220,8 +19220,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "e39eb82fd88d01b830f7dc571ede17e3"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "cd59c0616639bc469652dc7567e04169"
         },
         "Andy Warhol: Still Lifes and Portraits-BAMPFA": {
             "name": "Andy Warhol: Still Lifes and Portraits",
@@ -19248,8 +19248,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "86b20cd9d24a4c8b8e0bb441978cf9f0"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "4f51f043fe56cf97a4fceaec88bfc498"
         },
         "Covered in Time and History: The Films of Ana Mendieta-BAMPFA": {
             "name": "Covered in Time and History: The Films of Ana Mendieta",
@@ -19276,8 +19276,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "c8ec263dffc68e3282f059b6b226e711"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "2349c881cb60c150c7a918af39324ceb"
         },
         "Fernando Botero: Art for Human Rights-BAMPFA": {
             "name": "Fernando Botero: Art for Human Rights",
@@ -19304,8 +19304,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "4dea035046c780150f1228d5c0e59ad0"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "6bfd9fef6073b243cb2c54833e02fdd1"
         },
         "GIF Collider 1.0-BAMPFA": {
             "name": "GIF Collider 1.0",
@@ -19332,8 +19332,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "3e6ff0d9a8cc47cd332660aed9c9ab73"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "6e7d2f19f8cb6bb4c2f3233a36f9b57f"
         },
         "Mind Over Matter: Conceptual Art from the Collection-BAMPFA": {
             "name": "Mind Over Matter: Conceptual Art from the Collection",
@@ -19360,8 +19360,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "f2969b0f5a9c0959889b1c2f75f58c78"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "ff0c7caf8fbdd4aedd645a8b53d43677"
         },
         "Pat O'Neill / MATRIX 262-BAMPFA": {
             "name": "Pat O'Neill / MATRIX 262",
@@ -19388,8 +19388,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "b796edcfde4aef25825c93c370821e01"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "5f81e8d4b75397f2489e6f8f057e3da1"
         },
         "Push and Pull: Hans Hofmann-BAMPFA": {
             "name": "Push and Pull: Hans Hofmann",
@@ -19416,8 +19416,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "dc6d597af249308512b418711111b277"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "d9ac7273f1254cd332f57e2d82733ea7"
         },
         "Art Wall: Terri Friedman-BAMPFA": {
             "name": "Art Wall: Terri Friedman",
@@ -19444,8 +19444,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "5b529d2757516e298e5e472110bef087"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "0e6bb3f85d988e794aa2e3f81116b05e"
         },
         "Sojourner Truth, Photography, and the Fight Against Slavery-BAMPFA": {
             "name": "Sojourner Truth, Photography, and the Fight Against Slavery",
@@ -19472,8 +19472,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "8beeeace79977bdcb42ac7aede541187"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "0dc9217047aaeaee0920ba1d57c8d8ce"
         },
         "Berkeley Eye-BAMPFA": {
             "name": "Berkeley Eye",
@@ -19500,8 +19500,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "4d4f385b729f523c48929d4134e35a74"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "868d6738c661407a76c9543d982d4bf0"
         },
         "This Just In: Recent Acquisitions-BAMPFA": {
             "name": "This Just In: Recent Acquisitions",
@@ -19528,8 +19528,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "4fcea962a3f24ef912bdb20c2537a018"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "77f0a48a0eed5df5b0c6c39c14ca1692"
         },
         "Summer Trees Casting Shade: Chinese Painting at Berkeley-BAMPFA": {
             "name": "Summer Trees Casting Shade: Chinese Painting at Berkeley",
@@ -19556,8 +19556,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "eaaa839ccbe9f93400e7cc42767193c4"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "1ad2e33c3edf49b858bccd7cd6eb7a11"
         },
         "The 46th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 46th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -19584,8 +19584,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "92efee1cebe6c1be253dbca60c64afd6"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "7e3860bb966bb8cc36e11abfc1d82e07"
         },
         "Cecilia Edefalk / MATRIX 261-BAMPFA": {
             "name": "Cecilia Edefalk / MATRIX 261",
@@ -19598,8 +19598,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2016-06-29",
+                "end": "2016-10-16"
             },
             "ongoing": false,
             "links": [
@@ -19612,8 +19612,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "2573b2c9eabb419dd4051fb0bd8c99d4"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "9aebd7a121071ddb7577b21c830ef740"
         },
         "Otobong Nkanga / MATRIX 260-BAMPFA": {
             "name": "Otobong Nkanga / MATRIX 260",
@@ -19626,8 +19626,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2016-05-11",
+                "end": "2016-05-14"
             },
             "ongoing": false,
             "links": [
@@ -19640,8 +19640,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "85a41b37471654dccb5bb9c54a103bb7"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "a7f66aecd5e54362f36edfab058e4c37"
         },
         "Architecture of Life-BAMPFA": {
             "name": "Architecture of Life",
@@ -19668,8 +19668,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "5f0efc5ee00a6d894dd04b3ee5ad0e79"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "3debe8079875a790b25cd85aa819b9b3"
         },
         "Will Brown / MATRIX 259-BAMPFA": {
             "name": "Will Brown / MATRIX 259",
@@ -19696,8 +19696,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "4123610e30456f291bc6289d9fb6c43b"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "a745597d4b45ba4b5006ee80840cab23"
         },
         "The 45th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition-BAMPFA": {
             "name": "The 45th Annual University of California, Berkeley Master of Fine Arts Graduate Exhibition",
@@ -19724,8 +19724,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "55644fccbfa501faf91cdffbe6018b4b"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "d0d90249433c617029c5ed0038ef87b5"
         },
         "Tarek Atoui / MATRIX 258-BAMPFA": {
             "name": "Tarek Atoui / MATRIX 258",
@@ -19752,8 +19752,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:22",
-            "hash": "b9dca8a264651d70f3f2f8492259828f"
+            "last_updated": "2026-09-27 19:49:35",
+            "hash": "c8ec9e3ea26833ce2a02e18ca1df48ef"
         },
         "MATRIX 286 / Amol K Patil: A Forest of Remembrance-BAMPFA": {
             "name": "MATRIX 286 / Amol K Patil: A Forest of Remembrance",
@@ -19780,8 +19780,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "bcf18ff5957a16e657c463bc1e13fb87"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "669c1b2b82a72a316f31716a259dc915"
         },
         "Art Wall / Tanya Agui\u00f1iga: Border Fall Height-BAMPFA": {
             "name": "Art Wall / Tanya Agui\u00f1iga: Border Fall Height",
@@ -19808,8 +19808,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:20",
-            "hash": "1d705cb521ac56be3520fe0125d120cd"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "288e0a9ea0eb124ec8fc794c83cedef9"
         },
         "Lee ShinJa: Drawing with Thread-BAMPFA": {
             "name": "Lee ShinJa: Drawing with Thread",
@@ -19817,8 +19817,8 @@
             "description": "Lee ShinJa: Drawing with Thread\u00a0is the first North American survey of the work of the historically under-recognized Korean artist Lee ShinJa (b. 1930, Uljin, South Korea; lives and works in Seoul). Spanning more than five decades, from the 1950s to the early 2000s, the exhibition showcases the artist\u2019s bold innovations in fiber through forty monumental textile works, woven maquettes, and preparatory sketches.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -19836,8 +19836,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "86ba08aba28871d832dd87fadc62e39a"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "f4b0a2347c87b778ddbd480f2888f4e9"
         },
         "New Acquisition / Sky Hopinka: Sunflower Siege Engine-BAMPFA": {
             "name": "New Acquisition / Sky Hopinka: Sunflower Siege Engine",
@@ -19948,8 +19948,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "3a0c754df9825c5824b55f7bbfb50e27"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "59a05bd20421d2521369ac53136f7ba4"
         },
         "Teaching Wall / Lives on Paper, Drawing as Trace-BAMPFA": {
             "name": "Teaching Wall / Lives on Paper, Drawing as Trace",
@@ -20004,21 +20004,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "1c9a1da2db85f85e145b0c34b0f3b716"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "aff16a74301a849a83f9b6dff7045620"
         },
         "Theresa Hak Kyung Cha: Multiple Offerings-BAMPFA": {
             "name": "Theresa Hak Kyung Cha: Multiple Offerings",
             "venue": "BAMPFA",
-            "description": "Theresa Hak Kyung Cha: Multiple Offerings is the first retrospective in over two decades dedicated to the groundbreaking work of the artist Theresa Hak Kyung Cha. Beginning her artistic career in the Bay Area during the early 1970s, Cha produced an expansive range of works across text-based media, video, and performance. Best known for her posthumously published book, Dictee (1982), which weaves the personal and familial into historical narratives of displacement through word and image, Cha\u2019s interdisciplinary practice gave shape to the experimental art scenes in San Francisco, New York City, and beyond.",
+            "description": "Theresa Hak Kyung Cha: Multiple Offerings\u00a0is the first retrospective in twenty-five years dedicated to the groundbreaking work of the artist Theresa Hak Kyung Cha. Gathering over one hundred artworks and archival materials from across her short but prolific career, as well as select loans of works by Cha and other artists, the exhibition\u00a0highlights the inventive, playful, and meditative methods of Cha\u2019s practice while also situating her work within a constellation of artistic forebearers, peers, and contemporary artists for whom she has long been a lodestar.\u00a0",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": "2026-01-17",
+                "start": "2026-01-24",
                 "end": "2026-04-19"
             },
             "ongoing": false,
@@ -20028,12 +20028,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://bamlive.s3.amazonaws.com/02_Cha_Aveugle-Voix-1975.jpg",
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_01_Install_Multiple-Offerings_2026_069_hpr.jpg",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "d98115cc33f61ad220bee6db3800c237"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "5e8d4465ebb919ea78821f8f05ca79f6"
         },
         "Art Wall / Stephanie Syjuco: Present Tense (Roll Call)-BAMPFA": {
             "name": "Art Wall / Stephanie Syjuco: Present Tense (Roll Call)",
@@ -20041,13 +20041,13 @@
             "description": "Debuting her largest wall installation to date, artist Stephanie Syjuco (b. 1974, Manila, Philippines; lives and works in Oakland) presents Present Tense (Roll Call). Referencing the classroom routine of announcing one\u2019s presence, the exhibition explores radical pedagogy in the politics of education. Syjuco\u2019s practice spans from handcrafted textiles to archival excavations, interrogating how photography and archives shape racialized narratives of being and belonging.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
                 "start": "2025-08-13",
-                "end": "2026-06-28"
+                "end": "2026-07-05"
             },
             "ongoing": false,
             "links": [
@@ -20060,8 +20060,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "a83c2cf11ada16b234b28581d58abfe3"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "0817f0095b48644be821ea374cdf1912"
         },
         "Fifty-Fifth Annual UC Berkeley MFA Exhibition: The Currents Beneath-BAMPFA": {
             "name": "Fifty-Fifth Annual UC Berkeley MFA Exhibition: The Currents Beneath",
@@ -20088,36 +20088,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "40308f7dc86a3569188a6c562ff7c4e3"
-        },
-        "Teaching Wall / Beyond Face Value: Meditations on Portraiture-BAMPFA": {
-            "name": "Teaching Wall / Beyond Face Value: Meditations on Portraiture",
-            "venue": "BAMPFA",
-            "description": "Campus Collaborations",
-            "tags": [
-                "exhibition",
-                "past",
-                "museum"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-05-07",
-                "end": "2025-08-17"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://bampfa.org/program/beyond-face-value",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://bamlive.s3.amazonaws.com/Oskar-Kokoschka.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "5d42ec20d179cb00f2a3b749aa4ab532"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "342498604bbbfe1873fe674590456099"
         },
         "MATRIX 288 / Andro Eradze: Shifting Stillness-BAMPFA": {
             "name": "MATRIX 288 / Andro Eradze: Shifting Stillness",
@@ -20125,13 +20097,13 @@
             "description": "\nMATRIX 288 / Andro Eradze: Shifting Stillness brings together a trilogy of films by artist Andro Eradze (b. 1993, Tbilisi, Georgia; lives and works in Tbilisi). Eradze\u2019s mesmerizing films draw from surrealism and magic realism to dissolve distinctions between the real and imagined, alive and inanimate, domestic and wild. \r\n",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
                 "start": "2025-09-10",
-                "end": "2026-02-08"
+                "end": "2025-12-21"
             },
             "ongoing": false,
             "links": [
@@ -20140,12 +20112,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Eradze_3.jpg",
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1.jpg",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "981ba71de89ae6eb5c81f47874a17290"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "32abd494db5ceee3a26099ccc41ff08b"
         },
         "MATRIX 287 / Berenice Olmedo: To ti \u00ean einai-BAMPFA": {
             "name": "MATRIX 287 / Berenice Olmedo: To ti \u00ean einai",
@@ -20153,8 +20125,8 @@
             "description": "MATRIX 287 / Berenice Olmedo: To ti \u00ean einai is the first museum exhibition in the United States for artist Berenice Olmedo (b. 1987, Oaxaca, Mexico; lives and works in Mexico City). Olmedo\u2019s intimate yet commanding anthropomorphic assemblages with fused prostheses and orthotics urge a reconsideration of standardized expectations of bodies. ",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -20172,50 +20144,22 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "7eca83b9728bf7678fd3e2335bb1a465"
-        },
-        "Teaching Wall / Panther Meadows and Dangerous Worlds: Contemporary Readings of Asian American Landscapes-BAMPFA": {
-            "name": "Teaching Wall / Panther Meadows and Dangerous Worlds: Contemporary Readings of Asian American Landscapes",
-            "venue": "BAMPFA",
-            "description": "Campus Collaborations",
-            "tags": [
-                "exhibition",
-                "museum",
-                "past"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2025-08-20",
-                "end": "2025-12-14"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://bampfa.org/program/panther-meadows-dangerous-worlds",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Wong_Pineapple.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "a93602be97298c3132b88a73769b3e06"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "6e692816366fda3e40722441a627f023"
         },
         "Object Oriented: Abstraction and Design in the BAMPFA Collection-BAMPFA": {
             "name": "Object Oriented: Abstraction and Design in the BAMPFA Collection",
             "venue": "BAMPFA",
-            "description": "Object Oriented: Abstraction and Design in the BAMPFA Collection explores how artists have represented, reshaped, and reimagined familiar objects, drawing attention to the role of design in our everyday lives",
+            "description": "Object Oriented: Abstraction and Design in the BAMPFA Collection explores how artists have represented, reshaped, and reimagined familiar objects, drawing attention to the role of design in our everyday lives.",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
                 "start": "2025-09-10",
-                "end": "2026-07-12"
+                "end": "2026-06-28"
             },
             "ongoing": false,
             "links": [
@@ -20224,12 +20168,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://bamlive.s3.amazonaws.com/exhibition/Kelly_2017.64.jpg",
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/Object_Oriented_1.jpg",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "0cc01a07aeff3ed9104424213c4175ac"
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "3e03120d7fe496f5b798a9acd687a7db"
         },
         "Maren Hassinger: Living Moving Growing-BAMPFA": {
             "name": "Maren Hassinger: Living Moving Growing",
@@ -20252,12 +20196,488 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1977_2021_HASSINGER_Tree%20Duet%20I.jpg",
+                    "link": "https://bamlive.s3.amazonaws.com/Maren%20Hassinger%20BAMPFA%20Installation%20-%2001.jpg",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-26 18:12:19",
-            "hash": "e283063cc491275f88b2186d1d835660"
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "5ed173836ee1e392b54ad211b1b429a5"
+        },
+        "Atrium Projects / Sarah Cain: To\u2014you know\u2014you-BAMPFA": {
+            "name": "Atrium Projects / Sarah Cain: To\u2014you know\u2014you",
+            "venue": "BAMPFA",
+            "description": "Painter Sarah Cain (b. 1979, Albany, New York; lives and works in Los Angeles) presents the site-specific installation To\u2014you know\u2014you. Returning to UC Berkeley, where she received her MFA in 2006, the artist continues her intuitive approach to painting, improvising the installation on-site at the museum.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-10-30",
+                "end": "2027-06-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/atrium-projects-sarah-cain",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/Sarah-Cain-1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "44a60157c94133239e58e401a6549b6e"
+        },
+        "Jean-Luc Godard\u2019s Early Films: Posters Designed by Gvido Augusts-BAMPFA": {
+            "name": "Jean-Luc Godard\u2019s Early Films: Posters Designed by Gvido Augusts",
+            "venue": "BAMPFA",
+            "description": "Commissioned nearly sixty years ago by Tom Luddy (1943\u20132023), then the Program Director of the Pacific Film Archive, the works in the exhibition Jean-Luc Godard\u2019s Early Films: Posters Designed by Gvido Augusts\u00a0were designed by American painter and graphic artist Gvido Augusts (1932\u20132022) on the occasion of the filmmaker's first visit to Berkeley in March 1968 for a retrospective of his films.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-07-08",
+                "end": "2027-07-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/posters-designed-gvido-augusts",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/Gvido%20Augusts%20-%20Godard%20Posters_002_0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "40ceb7b3250a3770cebb6036563e58ed"
+        },
+        "Art Wall / Marcel Pardo Ariza: Las frutas del labor-BAMPFA": {
+            "name": "Art Wall / Marcel Pardo Ariza: Las frutas del labor",
+            "venue": "BAMPFA",
+            "description": "For the next installment of BAMPFA's annual Art Wall series, Marcel Pardo Ariza (b. 1991, Bogot\u00e1, Colombia; lives and works in Oakland) presents a site-specific installation that pays homage to art handlers. Las frutas del labor brings visibility to the often-overlooked yet essential part that art handlers play in museums and collection care, celebrating their vital contributions to cultural institutions.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-05",
+                "end": "2027-07-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/art-wall-marcel-pardo-ariza-las-frutas-del-labor",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/Install_Art%20Wall_Marcel%20Pardo%20Ariza_2026_029.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "0211a6a4bb62b22a5a6219f7ab257ccb"
+        },
+        "Some Particular Heaven: Ideas of Utopia in the BAMPFA Collection-BAMPFA": {
+            "name": "Some Particular Heaven: Ideas of Utopia in the BAMPFA Collection",
+            "venue": "BAMPFA",
+            "description": "Some Particular Heaven: Ideas of Utopia in the BAMPFA Collection is a yearlong exhibition that invites visitors to contemplate spiritual, social, environmental, and political possibilities through artworks from a vast range of historical periods and places. This wide-ranging, multidisciplinary presentation of artworks from BAMPFA's collection considers utopia as an ongoing project rooted in the pursuit of social justice, and a future in which all have the resources to thrive.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-05",
+                "end": "2027-07-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/some-particular-heaven-ideas-utopia-bampfa-collection",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/Install_Some%20Particular%20Heaven_2026_014.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "416b342d557b867719886279f0930411"
+        },
+        "Campus Collaborations / Lotty Rosenfeld: Disobedient Spaces-BAMPFA": {
+            "name": "Campus Collaborations / Lotty Rosenfeld: Disobedient Spaces",
+            "venue": "BAMPFA",
+            "description": "Lotty Rosenfeld: Disobedient Spaces is the first US retrospective of Chilean artist Lotty Rosenfeld (1943\u20132020), one of the most important feminist artists of the twentieth century. Through printmaking, collage, video, and site-specific installation, she encoded political gestures to contest the militarization of public space and celebrated the imagination as the antidote to systems of control.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-12",
+                "end": "2026-11-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/campus-collaborations-lotty-rosenfeld-disobedient-spaces",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/1300_1_MileofCrosses.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "bae7808863a38e94f8d79fbd7cf783b6"
+        },
+        "Teaching Gallery / Artists on Colonization, Nuclear Legacies, and Climate Crisis-BAMPFA": {
+            "name": "Teaching Gallery / Artists on Colonization, Nuclear Legacies, and Climate Crisis",
+            "venue": "BAMPFA",
+            "description": "This exhibition is part of K\u00f5mij Mour Ijin / Our Life Is Here, a series of art installations taking place across UC Berkeley\u2019s campus, which considers the legacies of nuclear testing and colonization in relation to climate crises. Featuring a selection of artworks from the BAMPFA Collection, it invites us to recognize our shared responsibility for planetary care.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-26",
+                "end": "2027-01-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/teaching-gallery-artists-colonization-nuclear-legacies-and-climate-crisis",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/1_Misrach_bampfa_2003-9_art.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "fdaeb6f05d8aee5a73881630117ce49a"
+        },
+        "Campus Collaborations / Private Frontiers: Media Legacies of the Cold War-BAMPFA": {
+            "name": "Campus Collaborations / Private Frontiers: Media Legacies of the Cold War",
+            "venue": "BAMPFA",
+            "description": "Private Frontiers presents new and recent work in photography, video, and installation by four contemporary artists who engage the Cold War as a prism for understanding today\u2019s media-saturated world. Through methodologically-driven practices drawing on historical archives, news broadcasts, pop songs, and game theory, Naeem Mohaiemen, Prajakta Potnis, TJ Shin, and Tiffany Sia examine media as a crucial arena in which politics was articulated and contested in the second half of the twentieth century.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-09",
+                "end": "2026-12-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/private-frontiers",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Potnis%2C%20Prajakta_still%20life%20%282009%29.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:31",
+            "hash": "8c5fae1a3f46e0208c86b486ef2026b3"
+        },
+        "Teaching Gallery / The Politics of the Poster-BAMPFA": {
+            "name": "Teaching Gallery / The Politics of the Poster",
+            "venue": "BAMPFA",
+            "description": "This exhibition considers the poster as a site of artistic expression and seeks to explore how it can be used to motivate people to collective action. Curated by the BAMPFA Student Committee in conjunction with museum staff, The Politics of the Poster is part of a regular series of rotating exhibitions that connect faculty teaching and student learning with artworks from the museum\u2019s collection.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-05-13",
+                "end": "2026-08-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/teaching-gallery-politics-poster",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/Pirkle%20Jones.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "3ce10b3a40d81e9096dad37fbdfea506"
+        },
+        "Countermyths: Fifty-Sixth Annual UC Berkeley MFA Exhibition-BAMPFA": {
+            "name": "Countermyths: Fifty-Sixth Annual UC Berkeley MFA Exhibition",
+            "venue": "BAMPFA",
+            "description": "For over fifty years, BAMPFA and the UC Berkeley Department of Art Practice have partnered to present an exhibition of work by graduating MFA students. This year\u2019s exhibition will present works by six artists from the class of 2026: Zuhoor Al Sayegh, Eleni Maria Berg, Itzli OCIEL, Kristiana Chan \u85a7\u793c\u9191, Swaleha Masude, and H\u00e9ctor Mu\u00f1oz-Guzm\u00e1n.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-05-13",
+                "end": "2026-07-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/countermyths-fifty-sixth-annual-uc-berkeley-mfa-exhibition",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_MFA%20installation_057.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "1879723cf51cd7ee5707666ffbac10d4"
+        },
+        "Collection Focus / Meriem Bennani: Life on the CAPS-BAMPFA": {
+            "name": "Collection Focus / Meriem Bennani: Life on the CAPS",
+            "venue": "BAMPFA",
+            "description": "Collection Focus / Meriem Bennani: Life on the CAPS presents the California debut of Bennani\u2019s acclaimed video trilogy Life on the CAPS (2018\u201322). In the style of augmented reality, layered with animation and live action, Bennani\u2019s three films explore a dystopian future in which a community of migrants navigates internment on a fictional island called the CAPS.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-05-06",
+                "end": "2026-08-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/collection-focus-meriem-bennani-life-caps",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/1200_Meriam%20Bennani%20BAMPFA%20installation%20view%20-%2001.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "94f9845508d7d96a8847f26f093cf62f"
+        },
+        "Rhapsody: Works from the Cooper Rosenwasser Collection-BAMPFA": {
+            "name": "Rhapsody: Works from the Cooper Rosenwasser Collection",
+            "venue": "BAMPFA",
+            "description": "Rhapsody: Works from the Cooper Rosenwasser Collection presents a selection of painting, printmaking, sculpture, and photography from the collection of Penny Cooper and Rena Rosenwasser. Cooper, a celebrated criminal defense attorney and advocate for social justice, and Rosenwasser, a poet and cofounder of the Bay Area\u2013based feminist publishing house Kelsey Street Press, have been longtime supporters of BAMPFA and have championed women artists for five decades.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-03-04",
+                "end": "2026-06-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/rhapsody",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Rhapsody%20Installation%2014_0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "c2621d6fb6856d2bbf099ad09ff43c7d"
+        },
+        "Teaching Gallery / Environmental Justice, Art, and Race-BAMPFA": {
+            "name": "Teaching Gallery / Environmental Justice, Art, and Race",
+            "venue": "BAMPFA",
+            "description": "This exhibition is presented in connection with Ethnic Studies 180, an undergraduate course at UC Berkeley that focuses on the social impacts of hazardous waste exposure, natural disasters, resource extraction, farming practices, deforestation, and pollution. It asks what role art can play in imagining alternate social and ecological relationships.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-01-21",
+                "end": "2026-05-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/environmental-justice-art-and-race",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/Teaching%20Wall%20-%20Masako%20Miki.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "fdd7e44b81e52a02df6421fa5f923506"
+        },
+        "MATRIX 289 / Zeinab Saleh: Signs of a softer world-BAMPFA": {
+            "name": "MATRIX 289 / Zeinab Saleh: Signs of a softer world",
+            "venue": "BAMPFA",
+            "description": "For her first solo museum exhibition in the United States, Zeinab Saleh (b. 1996, Nairobi; lives and works in London) debuts a new group of paintings that present a meditative perspective on the everyday.\u00a0MATRIX 289 / Zeinab Saleh: Signs of a softer world\u00a0offers a space of respite amidst a world so often filled with confusion and chaos.\u00a0",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-12-10",
+                "end": "2026-04-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/matrix-289-zeinab-saleh",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_SALZE.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "c27a525894e6186dac973ba11e3ef41e"
+        },
+        "Teaching Gallery / Panther Meadows and Dangerous Worlds: Contemporary Readings of Asian American Landscapes-BAMPFA": {
+            "name": "Teaching Gallery / Panther Meadows and Dangerous Worlds: Contemporary Readings of Asian American Landscapes",
+            "venue": "BAMPFA",
+            "description": "Panther Meadows and Dangerous Worlds brings together works on paper by Asian American artists that explore different perceptions of the natural world. The title references both Panther Meadows, the storied California site near Mt. Shasta that inspired Isho\u2019s sketches, and the surreal terrain of Rina Banerjee\u2019s print. Drawn from BAMPFA\u2019s collection, the exhibition is organized in collaboration with the UC Berkeley\u2013Stanford Transpacific/Asian American Art Histories Working Group",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-08-20",
+                "end": "2025-12-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/panther-meadows-dangerous-worlds",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Wong_Pineapple.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "faf25d9c3b8f3760000c7c235dff43d7"
+        },
+        "Teaching Gallery / Beyond Face Value: Meditations on Portraiture-BAMPFA": {
+            "name": "Teaching Gallery / Beyond Face Value: Meditations on Portraiture",
+            "venue": "BAMPFA",
+            "description": "For this exhibition, the BAMPFA Student Committee selected works from the museum\u2019s permanent collection that challenge portraiture\u2019s stylistic conventions and cultural associations by exploring alternative ways of expressing an individual\u2019s interiority and presence.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-05-07",
+                "end": "2025-08-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/beyond-face-value",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/Oskar-Kokoschka.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "5050d4b96e34bbc63a3db674b5ab558f"
+        },
+        "Teaching Gallery / Lives on Paper, Drawing as Trace-BAMPFA": {
+            "name": "Teaching Gallery / Lives on Paper, Drawing as Trace",
+            "venue": "BAMPFA",
+            "description": "This exhibition presents works on paper drawn from BAMPFA\u2019s collection, organized in partnership with Todd Olson, Professor of Early Modern Art in the Department of History of Art at UC Berkeley. It offers historical and cultural perspectives on a keystone of fine arts training: drawing the human figure through direct observation of a live model. This display provides students with direct access to artworks and themes connected to their classes in the History of Art and Art Practice Departments.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-01-30",
+                "end": "2025-03-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/lives-paper-drawing-trace",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Lippi_Young_Man.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "302c1629ee39d7cc2e3bd2d517b5ac3e"
+        },
+        "Teaching Gallery / Water, Art, and California-BAMPFA": {
+            "name": "Teaching Gallery / Water, Art, and California",
+            "venue": "BAMPFA",
+            "description": "This exhibition presents a group of works drawn from BAMPFA\u2019s collection, organized in conjunction with an undergraduate Art Practice course. Taught by Professor Greg Niemeyer, this course surveys the many waters that flow deep within our bodies and all across the globe.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-08-28",
+                "end": "2024-12-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://bampfa.org/program/water-art-and-california",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://bamlive.s3.amazonaws.com/exhibition/1200_Max%20Bill_Composition_1967.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:49:32",
+            "hash": "e2fbe494cc532d622a349730c62a328e"
         }
     },
     "ARTogether": {
