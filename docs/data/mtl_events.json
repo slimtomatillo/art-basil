@@ -979,8 +979,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:36:04",
-            "hash": "19fd469b638a6136a9cac473ee52827a"
+            "last_updated": "2026-09-27 19:43:15",
+            "hash": "c831e5499fbe2598945b100758563632"
         },
         "Museum Alley-McCord Stewart Museum": {
             "name": "Museum Alley",
@@ -1007,8 +1007,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:36:05",
-            "hash": "53c49a32750ed16870292615ee2c94e0"
+            "last_updated": "2026-09-27 19:43:17",
+            "hash": "d239029391bec50877d2a18b65ae364e"
         },
         "Beyond the Games \u2013 Montreal\u2019s Olympic Story: Virtual exhibition-McCord Stewart Museum": {
             "name": "Beyond the Games \u2013 Montreal\u2019s Olympic Story: Virtual exhibition",
@@ -1024,7 +1024,7 @@
                 "start": null,
                 "end": null
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.musee-mccord-stewart.ca/en/exhibitions/beyond-the-games-montreal-olympic-story/",
@@ -1035,8 +1035,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:36:02",
-            "hash": "df70453c2f1bd621dbf2c9f5ffc30fbc"
+            "last_updated": "2026-09-27 19:43:14",
+            "hash": "7cf00f91650a712424e5723cef46fab1"
         },
         "On the Menu: Montreal: A Restaurant Story-McCord Stewart Museum": {
             "name": "On the Menu: Montreal: A Restaurant Story",
@@ -1063,8 +1063,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:36:00",
-            "hash": "416997c081c6386a184b3f74b21e2eb1"
+            "last_updated": "2026-09-27 19:43:11",
+            "hash": "2b81fbafc4bcfdb087dd0ff307c4b464"
         },
         "The Mountain at the Heart of Montreal: 150 Years of Mount Royal Park-McCord Stewart Museum": {
             "name": "The Mountain at the Heart of Montreal: 150 Years of Mount Royal Park",
@@ -1091,8 +1091,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:36:06",
-            "hash": "cda8dedb768c9b3831abe2dbcb5caccf"
+            "last_updated": "2026-09-27 19:43:18",
+            "hash": "2eaebe97f697607cd3646b78cb43d0dd"
         },
         "Carrie Allison: ask\u014dht\u0113skanohw\u0113\u200b-McCord Stewart Museum": {
             "name": "Carrie Allison: ask\u014dht\u0113skanohw\u0113\u200b",
@@ -1119,8 +1119,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:36:07",
-            "hash": "f006df701cdaaed8b1e0fcf520ec9c0d"
+            "last_updated": "2026-09-27 19:43:19",
+            "hash": "b6cf664bb378b0b2a232f0f55f9270d6"
         },
         "Sovereign Stitches + Wild Weaves-McCord Stewart Museum": {
             "name": "Sovereign Stitches + Wild Weaves",
@@ -1147,8 +1147,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:36:09",
-            "hash": "baf9536dd30b9ae746e3cab8ebcb2607"
+            "last_updated": "2026-09-27 19:43:21",
+            "hash": "4aef795cc75321fd696b60f2251cd1c9"
         }
     },
     "PHI Foundation": {

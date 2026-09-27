@@ -87,6 +87,13 @@ def scrape_mccord_stewart_exhibitions(env='prod', region='mtl'):
             if meta_desc and meta_desc.get('content'):
                 description = meta_desc['content'].strip()
 
+        # "Virtual exhibition" entries are permanent interactive web features (e.g.
+        # Digital Museums Canada microsites), not date-bound shows - neither the
+        # listing card nor the detail page publishes a run date for them.
+        if not ongoing and not start_date and not end_date and subtitle_tag \
+                and 'virtual exhibition' in subtitle_tag.get_text(strip=True).lower():
+            ongoing = True
+
         if ongoing:
             phase = 'current'
         elif end_date and end_date < today:
