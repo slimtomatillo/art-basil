@@ -13,8 +13,9 @@ class TableRenderer {
     renderEventRow(event) {
         const row = this.tableBody.insertRow();
 
-        // Add data attribute to row for filtering
+        // Add data attributes to row for filtering
         row.setAttribute('data-phase', event.phase);
+        row.setAttribute('data-ongoing', event.ongoing === true);
 
         // Image column
         const imageCell = row.insertCell();
