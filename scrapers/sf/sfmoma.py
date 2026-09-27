@@ -22,6 +22,19 @@ def convert_date_to_dt(date_string):
         logging.warning(f"Could not parse date string: {date_string!r}")
         return None
 
+def convert_date_to_dt_year_optional(text, today, prefer_not_after=None):
+    """Parse 'month day[, year]'. If the year is missing (SFMOMA omits it for
+    'Closing <date>' and 'Opened <date>' phrasing), try today's year, and if
+    that lands after `prefer_not_after` use last year instead - "closing" and
+    "opened" describe a date that has already happened or is about to, not one
+    far in the future."""
+    if len(text.split()) >= 3:
+        return convert_date_to_dt(text)
+    candidate = convert_date_to_dt(f"{text} {today.year}")
+    if candidate and prefer_not_after and candidate > prefer_not_after:
+        candidate = convert_date_to_dt(f"{text} {today.year - 1}")
+    return candidate
+
 def scrape_sfmoma(env='prod', region='sf'):
     """Scrape and process events from SFMOMA."""
     
@@ -50,6 +63,8 @@ def scrape_sfmoma(env='prod', region='sf'):
         logging.error("Failed to fetch SFMOMA exhibitions page")
         return
     
+    today = dt.datetime.now().date()
+
     # Go through and collect events in each phase (current, future, and past)
     for phase_dict in divs:
 
@@ -96,18 +111,28 @@ def scrape_sfmoma(env='prod', region='sf'):
                     event_date = event_date.replace('spring', 'mar 20,')
                 if 'summer' in event_date:
                     event_date = event_date.replace('summer', 'jun 20,')
-                # Mark 'ongoing' flag
-                ongoing = True if 'ongoing' in event_date else False
+                # Mark 'ongoing' flag - only meaningful for a currently-on-view show;
+                # SFMOMA sometimes leaves a stale "Ongoing" label on a card after
+                # moving it to the past section, which would otherwise produce a
+                # self-contradictory (and unrenderable) phase='past' + ongoing=True.
+                ongoing = 'ongoing' in event_date and phase_dict['phase'] == 'current'
                 # Get start date and end date
                 if event_date in ('new exhibition! now on view', 'ongoing'):
                     start_date = None
+                    end_date = None
+                elif event_date.startswith('new exhibition') and 'opened' in event_date:
+                    # "New Exhibition: Opened July 25" - no year given; "opened" is
+                    # past tense, so it can't be in the future
+                    start_date = convert_date_to_dt_year_optional(
+                        event_date.split('opened')[-1].strip().replace(',', ''), today, prefer_not_after=today)
                     end_date = None
                 elif event_date.startswith('on view through'):
                     start_date = None
                     end_date = convert_date_to_dt(event_date.replace('on view through ', '').replace(',', ''))
                 elif event_date.split()[0] == 'closing':
                     start_date = None
-                    end_date = convert_date_to_dt(event_date.replace('closing ', '').replace(',', ''))
+                    end_date = convert_date_to_dt_year_optional(
+                        event_date.replace('closing ', '').replace(',', ''), today, prefer_not_after=today)
                 elif event_date.split()[0] == 'opening':
                     start_date = convert_date_to_dt(event_date.replace('opening ', '').replace(',', ''))
                     end_date = None
