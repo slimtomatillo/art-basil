@@ -1793,7 +1793,7 @@
         "Joseph Beuys: In Defense of Nature-The Broad": {
             "name": "Joseph Beuys: In Defense of Nature",
             "venue": "The Broad",
-            "description": "Joseph Beuys: In Defense of Nature is a free exhibition that explores the legacy of one of the most influential artists of the 20th century. The exhibition emphasizes Beuys\u2019s commitment to environmental justice through his intertwined artmaking and political action. Known for his belief in art as a tool for societal transformation, Beuys used his creativity to model how art can inspire change\u2014a vision that is more urgent than ever in the face of today\u2019s climate crisis. Curated by The Broad\u2019s Sarah Loyer and Beuys scholar Andrea Gyorody, the exhibition reflects Beuys\u2019s groundbreaking ideas alongside Social Forest: Oaks of Tovaangar, The Broad\u2019s major reforestation initiative presented as part of Getty\u2019s PST ART: Art & Science Collide. Together, these initiatives celebrate the power of art and action in shaping our future.",
+            "description": "Joseph Beuys: In Defense of Nature was a free exhibition that explored the legacy of one of the most influential artists of the 20th century. The exhibition emphasized Beuys\u2019s commitment to environmental justice through his intertwined artmaking and political action. Known for his belief in art as a tool for societal transformation, Beuys used his creativity to model how art can inspire change\u2014a vision that is more urgent than ever in the face of today\u2019s climate crisis. Curated by The Broad\u2019s Sarah Loyer and Beuys scholar Andrea Gyorody, the exhibition reflected Beuys\u2019s groundbreaking ideas alongside Social Forest: Oaks of Tovaangar, The Broad\u2019s major reforestation initiative presented as part of Getty\u2019s PST ART: Art & Science Collide. Together, these initiatives celebrated the power of art and action in shaping our future.",
             "tags": [
                 "exhibition",
                 "past",
@@ -1815,101 +1815,17 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:37",
-            "hash": "51413bbaad89fc48bba99259a3ea91a2"
-        },
-        "Expansive Presentation of Jean-Michel Basquiat-The Broad": {
-            "name": "Expansive Presentation of Jean-Michel Basquiat",
-            "venue": "The Broad",
-            "description": "Book free general admission tickets to see this in-depth installation of Jean-Michel Basquiat that features works by the artist, including Untitled (1981) and Beef Ribs Longhorn (1982).An outcome of sustained and ongoing engagement with artists and artwork, the Broad collection is distinctive in its exceptional dedication to the full arc of artists\u2019 careers. The Broad has highlighted this depth through expansive presentations in the third floor galleries, featuring Jean-Michel Basquiat, Roy Lichtenstein, and Andy Warhol along with works by many others.\u00a9 The Estate of Jean-Michel Basquiat. Licensed by Artestar, New York",
-            "tags": [
-                "exhibition",
-                "current",
-                "museum"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": null,
-                "end": null
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.thebroad.org/art/featured-installations/expansive-presentation-jean-michel-basquiat",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2020-03/basquiat-obnoxious_liberals.jpg.webp?itok=QJUzBSMz",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-03-31 11:51:26",
-            "hash": "3078f20e529b3e8fb0356e58486e225f"
-        },
-        "Expansive Presentation of Andy Warhol-The Broad": {
-            "name": "Expansive Presentation of Andy Warhol",
-            "venue": "The Broad",
-            "description": "Book free general admission tickets to see this in-depth installation of Andy Warhol that features 18 works (11 on view for the first time at The Broad) by the artist, including Mao (1973) and Liz [Early Colored Liz] (1963).Liz [Early Colored Liz] is a celebrated work featuring a silkscreened image of Elizabeth Taylor, who represented both celebrity and beauty as well as tragedy for the artist.An outcome of sustained and ongoing engagement with artists and artwork, the Broad collection is distinctive in its exceptional dedication to the full arc of artists\u2019 careers. The Broad has highlighted this depth through expansive presentations in the third floor galleries, featuring Jean-Michel Basquiat, Roy Lichtenstein, and Andy Warhol along with works by many others.\u00a9 The Andy Warhol Foundation for the Visual Arts/Artists Rights Society (ARS), New York",
-            "tags": [
-                "exhibition",
-                "current",
-                "museum"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": null,
-                "end": null
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.thebroad.org/art/featured-installations/expansive-presentation-andy-warhol",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2020-03/warhol_two_marilyns.jpg.webp?itok=GSkCeyx_",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-03-31 11:51:27",
-            "hash": "c429c22067bb87227525649ede0fe709"
-        },
-        "Expansive Presentation of Roy Lichtenstein-The Broad": {
-            "name": "Expansive Presentation of Roy Lichtenstein",
-            "venue": "The Broad",
-            "description": "Book free general admission tickets to see this in-depth installation of Roy Lichtenstein that features 13 artworks including Purist Still Life (1975) and Female Figure (1979).An outcome of sustained and ongoing engagement with artists and artwork, the Broad collection is distinctive in its exceptional dedication to the full arc of artists\u2019 careers. The Broad has highlighted this depth through expansive presentations in the third floor galleries, featuring Jean-Michel Basquiat, Roy Lichtenstein, and Andy Warhol along with works by many others. \u00a9 Estate of Roy Lichtenstein",
-            "tags": [
-                "exhibition",
-                "current",
-                "museum"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": null,
-                "end": null
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.thebroad.org/art/featured-installations/expansive-presentation-roy-lichtenstein",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2021-05/lichtenstein_reflections_on_interior.jpg.webp?itok=Dn1p6Wjv",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-03-31 11:51:29",
-            "hash": "14d6542c210b74e3f3c0c243ecad6105"
+            "last_updated": "2026-09-27 19:41:27",
+            "hash": "7465334a2e1269a97b092d126f8c440d"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
             "venue": "The Broad",
-            "description": "Jeffrey Gibson: the space in which to place me is a kaleidoscopic special exhibition filled with vibrant colors, intricate beadwork, towering sculptures, and powerful storytelling, all reflecting the artist\u2019s radical vision for a future in which all people are seen, accepted, and loved. The show comes to The Broad directly from the 60th Venice Biennale (2024), one of the most prestigious exhibitions of visual art in the world, where Gibson made history as the first Indigenous artist to represent the United States with a solo show at the US Pavilion. Gibson\u2019s practice celebrates individuals and communities who have maintained their dignity and traditions in impossible circumstances, centering the resilience present in the legacies of Indigenous makers. He juxtaposes a variety of texts, from foundational legal documents to quotes from civil rights activists to pop song lyrics, combining American, Indigenous, and LGBTQ+ histories with references to popular subcultures, literature, and global artistic traditions.",
+            "description": "Jeffrey Gibson: the space in which to place me was a kaleidoscopic special exhibition filled with vibrant colors, intricate beadwork, towering sculptures, and powerful storytelling, all reflecting the artist\u2019s radical vision for a future in which all people are seen, accepted, and loved. The show came to The Broad directly from the 60th Venice Biennale (2024), one of the most prestigious exhibitions of visual art in the world, where Gibson made history as the first Indigenous artist to represent the United States with a solo show at the US Pavilion. Gibson\u2019s practice celebrates individuals and communities who have maintained their dignity and traditions in impossible circumstances, centering the resilience present in the legacies of Indigenous makers. He juxtaposes a variety of texts, from foundational legal...",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -1923,17 +1839,17 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2025-05/Gibson%20Hero%20Image%20Broad%20Install_1500x1000_Ancestral%20Figures.jpg.webp?itok=-8i3dYqO",
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2025-08/Gibson%20Hero%20Image_1460x840.jpg.webp?itok=KM-0DFHR",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-05-20 11:18:03",
-            "hash": "5be5e1d3be1687fea8ed78afb844cc44"
+            "last_updated": "2026-09-27 19:41:26",
+            "hash": "7451af4816b125671d454986f07b4afa"
         },
         "Mickalene Thomas: All About Love-The Broad": {
             "name": "Mickalene Thomas: All About Love",
             "venue": "The Broad",
-            "description": "Debuting at The Broad with over 90 works made by the artist over the last 20 years, Mickalene Thomas: All About Love is the first major international tour of this pioneering artist\u2019s work. The exhibition highlights how Mickalene Thomas has mastered and innovated within several disciplines, from mixed-media painting and collage to installation and photography. The exhibition shares its title and several of its themes with the pivotal text by feminist author bell hooks, in which love is an active process rooted in healing, carving a path away from domination and towards collective liberation. Through her queries into pop culture and mass media, Thomas offers a reverberating demand for Black women to be seen and understood, and for viewers to become what hooks calls \u201cpractitioners of love.\u201d Born in 1971 in Camden, New Jersey, Thomas completed her MFA from the Yale University School of Art in 2002 and a residency at the Studio Museum in Harlem in 2003. Soon after, she became well known for her large-scale acrylic paintings of Black women in states of leisure and repose using rhinestones, a central material in her practice that symbolizes the complexities of femininity. Depicting women with confident and assured expressions, the subjects of her works are often seen in domestic interiors from Black America, claiming the agency of womanhood while deconstructing the art historical canon. Similarly, Thomas\u2019s photographs, collages, and figurative paintings often re-stage scenes from 19th-century French painters such as Henri Matisse and \u00c9douard Manet, pushing back against the subjugation and oppressive narratives upheld by Western archives, cultural institutions, and representation systems. The Broad\u2019s debut of Mickalene Thomas: All About Love reflects some of the artist\u2019s earliest inquiries into visual culture, sexuality, and memory, and move into the present. On view is the early photographic triptych, Lounging, Standing, Looking (2003), a piece which depicts the artist\u2019s own mother, exploring kinship and care. These modes of intimate relations come to inform work such as Portrait of Maya No. 10 (2017) from the Broad collection. This acrylic and rhinestone work embodies Thomas\u2019s signature ability to apply several layers of material and symbolic meaning into a single surface. At eight feet tall, the subject is empowered, sparkled, and poised, commanding her outward gaze. Unifying these larger-than-life subjects together in the museum\u2019s galleries, the show envelops viewers into the bold and dynamic universe the artist has created, where steadfast love overcomes political strife. The themes of the exhibition extend into a full slate of associated programming developed in collaboration with the artist, including a summer concert series featuring Flo Milli and a tribute to J Dilla, a comedy night under the stars co-curated and hosted by Chaunt\u00e9 Wayans, wellness and healing events with Tai Beauchamp and Angela Manuel Davis, and additional programs and workshops centering women and Black and queer communities. View all upcoming events. Mickalene Thomas: All About Love is co-organized by the Hayward Gallery, London, and The Broad, Los Angeles, in partnership with the Barnes Foundation, Philadelphia. Image Credit: Mickalene Thomas, Din avec la main dans le miroir et jupe rouge, 2023. Rhinestones, acrylic, and glitter on canvas mounted on wood panel. \u00a9 Mickalene Thomas",
+            "description": "Debuting at The Broad with over 90 works made by the artist over the last 20 years, Mickalene Thomas: All About Love was the first major international tour of this pioneering artist\u2019s work. The exhibition highlighted how Mickalene Thomas has mastered and innovated within several disciplines, from mixed-media painting and collage to installation and photography. The exhibition shares its title and several of its themes with the pivotal text by feminist author bell hooks, in which love is an active process rooted in healing, carving a path away from domination and towards collective liberation. Through her queries into pop culture and mass media, Thomas offers a reverberating demand for Black women to be seen and understood, and for viewers to become what hooks calls \u201cpractitioners of love.\u201d Born in 1971 in Camden, New Jersey, Thomas completed her MFA from the Yale University School of Art in 2002 and a residency at the Studio Museum in Harlem in 2003. Soon after, she became well known for her large-scale acrylic paintings of Black women in states of leisure and repose using rhinestones, a central material in her practice that symbolizes the complexities of femininity. Depicting women with confident and assured expressions, the subjects of her works are often seen in domestic interiors from Black America, claiming the agency of womanhood while deconstructing the art historical canon. Similarly, Thomas\u2019s photographs, collages, and figurative paintings often re-stage scenes from 19th-century French painters such as Henri Matisse and \u00c9douard Manet, pushing back against the subjugation and oppressive narratives upheld by Western archives, cultural institutions, and representation systems. The Broad\u2019s debut of Mickalene Thomas: All About Love reflected some of the artist\u2019s earliest inquiries into visual culture, sexuality, and memory, and move into the present. On view was the early photographic triptych, Lounging, Standing, Looking (2003), a piece which depicts the artist\u2019s own mother, exploring kinship and care. These modes of intimate relations come to inform work such as Portrait of Maya No. 10 (2017) from the Broad collection. This acrylic and rhinestone work embodies Thomas\u2019s signature ability to apply several layers of material and symbolic meaning into a single surface. At eight feet tall, the subject is empowered, sparkled, and poised, commanding her outward gaze. Unifying these larger-than-life subjects together in the museum\u2019s galleries, the show envelops viewers into the bold and dynamic universe the artist has created, where steadfast love overcomes political strife. The themes of the exhibition extended into a full slate of associated programming developed in collaboration with the artist, including a summer concert series featuring Flo Milli and a tribute to J Dilla, a comedy night under the stars co-curated and hosted by Chaunt\u00e9 Wayans, wellness and healing events with Tai Beauchamp and Angela Manuel Davis, and additional programs and workshops centering women and Black and queer communities. View all upcoming events. Mickalene Thomas: All About Love was co-organized by the Hayward Gallery, London, and The Broad, Los Angeles, in partnership with the Barnes Foundation, Philadelphia. Image Credit: Mickalene Thomas, Din avec la main dans le miroir et jupe rouge, 2023. Rhinestones, acrylic, and glitter on canvas mounted on wood panel. \u00a9 Mickalene Thomas",
             "tags": [
                 "exhibition",
                 "past",
@@ -1955,8 +1871,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:38",
-            "hash": "9b3704ceefaf92c8ac5a225c03d4ff3b"
+            "last_updated": "2026-09-27 19:41:28",
+            "hash": "9ca996765208433e59d37075d329883f"
         },
         "Desire, Knowledge, and Hope (with Smog)-The Broad": {
             "name": "Desire, Knowledge, and Hope (with Smog)",
@@ -1983,8 +1899,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:40",
-            "hash": "3ce90b28148dd3bc492e84304ac254f5"
+            "last_updated": "2026-09-27 19:41:29",
+            "hash": "fc3c0083334f19bc9f296d6b05471892"
         },
         "Keith Haring: Art Is for Everybody-The Broad": {
             "name": "Keith Haring: Art Is for Everybody",
@@ -2011,8 +1927,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:42",
-            "hash": "f0a03b3b62d90d6de0ae29c32ae83104"
+            "last_updated": "2026-09-27 19:41:30",
+            "hash": "12e1c2142731a3822d1827abca247a89"
         },
         "William Kentridge: In Praise of Shadows-The Broad": {
             "name": "William Kentridge: In Praise of Shadows",
@@ -2039,8 +1955,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:44",
-            "hash": "1f17eddbd2c5d4870e33fb8220363779"
+            "last_updated": "2026-09-27 19:41:31",
+            "hash": "74c8ac8782aa23129c3792ca32ccd6e6"
         },
         "Takashi Murakami: Stepping on the Tail of a Rainbow-The Broad": {
             "name": "Takashi Murakami: Stepping on the Tail of a Rainbow",
@@ -2067,8 +1983,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:46",
-            "hash": "4ccbf648ad61116a744fcbb48b717252"
+            "last_updated": "2026-09-27 19:41:33",
+            "hash": "9df7dd8ad9eb8666a29d8252e2b43619"
         },
         "This Is Not America's Flag-The Broad": {
             "name": "This Is Not America's Flag",
@@ -2095,8 +2011,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:47",
-            "hash": "328b8fa565b57f48b39ae9e816a764ea"
+            "last_updated": "2026-09-27 19:41:34",
+            "hash": "7a64b9e99d7993b37ab3767f6d4ae6da"
         },
         "Since Unveiling: Selected Acquisitions of a Decade-The Broad": {
             "name": "Since Unveiling: Selected Acquisitions of a Decade",
@@ -2123,8 +2039,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-31 11:51:49",
-            "hash": "6ed21e0d00079d1e048624b0f8f13277"
+            "last_updated": "2026-09-27 19:41:35",
+            "hash": "7c1979d8b0907811f7cdc1a1f4ed5a9a"
         },
         "Expansive Presentation of Christopher Wool-The Broad": {
             "name": "Expansive Presentation of Christopher Wool",
@@ -2476,7 +2392,7 @@
                 "start": null,
                 "end": null
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://www.thebroad.org/visit/mirror-rooms",
@@ -2487,13 +2403,181 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:55",
-            "hash": "77c11dd4ef0da709d50afda4527c3324"
+            "last_updated": "2026-09-27 19:41:22",
+            "hash": "5198545dca25690b43db93216a3538d8"
         },
-        "None-The Broad": {
-            "name": null,
+        "Yoko Ono: Music of the Mind-The Broad": {
+            "name": "Yoko Ono: Music of the Mind",
             "venue": "The Broad",
-            "description": "Ten years ago, Eli and Edythe Broad announced the plans for this museum, to share their collection with the public in perpetuity. More than fifty years in the making, the collection, one of the most prominent collections of postwar and contemporary art worldwide, is the cornerstone of The Broad. Since Unveiling highlights artworks that have entered the Broad collection in the last decade with some as recently as this year. The fifty-three works on view by twenty-seven artists represent many facets of contemporary art, from explorations of abstraction and figuration to examinations of place, identity, and narrative. Many works witness, critique, and interpret current events, speaking to politics and power structures. Featured artists include John Baldessari, Glenn Ligon, and Kara Walker, whom The Broad has collected over decades, as well as artists added to the collection this past decade, including Tauba Auerbach, Kerry James Marshall, Catherine Opie, Nathaniel Mary Quinn, and Charline von Heyl. The exhibition features a selection of both monographic and thematic galleries, including a dedicated presentation of works by Cindy Sherman spanning the artist\u2019s career; the nine-channel HD video projection of Ragnar Kjartansson\u2019s The Visitors; a gallery with works by Gregory Crewdson, Shirin Neshat, and Nathaniel Mary Quinn that use portraiture to explore loss and longing; explorations of political power and commerce with works by Mark Bradford and Andreas Gursky; and works by Julie Mehretu and Robert Longo that take on both global struggle and protest. The artworks on display represent a fraction of the works acquired during the past ten years. Others are on loan to institutions around the globe or stored in the second floor \u201cvault\u201d at the museum. As the collection grows and evolves into the future, The Broad will be guided by the long precedent set by Eli Broad, who collected art over five decades by following so many artists\u2019 journeys with curiosity, intensity, and ultimately, a public purpose.",
+            "description": "Yoko Ono: Music of the Mind traces more than seven decades of Yoko Ono's groundbreaking career, from her early text-based works in the 1950s and '60s to recent large-scale installations informed by her ongoing campaigns for world peace. Organized in collaboration with Tate Modern, London, the exhibition\u2014Ono's first solo museum exhibition in Southern California\u2014explores her radical approach to art, language, and participation, challenging conventional ideas about the roles of artist and audience.Throughout the exhibition, Ono's celebrated \"instruction\" pieces invite you to become a part of the art itself. Tie a wish to an olive tree. Hammer a nail into a painting. Write a note about your mother. Sometimes the work unfolds through physical action; other times, it takes shape in your imagination. On view...",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-05-23",
+                "end": "2026-10-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.thebroad.org/art/special-exhibitions/yoko-ono-music-mind",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2025-11/Yoko%20Ono%20Exhibition%20Page%20Hero%20Image.jpg.webp?itok=LslSw9rX",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:41:16",
+            "hash": "c6350c38229057de0ebb8fddde5500e8"
+        },
+        "Fresh Collection Galleries-The Broad": {
+            "name": "Fresh Collection Galleries",
+            "venue": "The Broad",
+            "description": "More from the Vault. New Art on View.Unfolding through October, The Broad is reinstalling nearly two-thirds of its collection galleries, bringing more than 30 works out of the vault. Highlights include pairings of works by Cindy Sherman and John Baldessari, Urs Fischer and Jonas Wood, and Anselm Kiefer and Kara Walker, along with changes in the Takashi Murakami gallery and much more throughout the third floor.These changes mean new artworks to see each month, offering a chance to see more of The Broad's over 2,000-works collection and a preview of what's to come. When the expanded museum opens in 2028, gallery space will grow by 70%.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.thebroad.org/art/free-accesss/fresh-collection-galleries",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2026-08/FRESHCOLLECTIONGALLERIES.jpg.webp?itok=dp76pzFH",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:41:17",
+            "hash": "cc4d00050ae198eb0d0be9c4bdc23cde"
+        },
+        "Featured Installation of Takashi Murakami-The Broad": {
+            "name": "Featured Installation of Takashi Murakami",
+            "venue": "The Broad",
+            "description": "On the third floor, a rotating installation of works by Takashi Murakami spans his engagement with pop imagery, Japanese art history, and recurring motifs like flowers and skulls. Free to visit. Reserve your tickets today.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.thebroad.org/art/featured-installations/featured-installation-takashi-murakami",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2026-08/Tan%20Tan%20Webpage%20Hero%20%281%29.jpg.webp?itok=gzQXr1Kw",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:41:18",
+            "hash": "8f84f808c099b342af322dc18248789d"
+        },
+        "Featured Installation of Jean-Michel Basquiat-The Broad": {
+            "name": "Featured Installation of Jean-Michel Basquiat",
+            "venue": "The Broad",
+            "description": "Book free general admission tickets to see this in-depth installation of Jean-Michel Basquiat that features works by the artist, including Untitled (1981) and Melting Point of Ice (1984).",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.thebroad.org/art/featured-installations/featured-installation-jean-michel-basquiat",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2026-09/Basquiat%20Featured%20Installation%20Hero%20v2.jpg.webp?itok=qGug6-f-",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:41:19",
+            "hash": "e1674f07f9e74f60555dd0072ab20d7f"
+        },
+        "Yoko Ono: Music of the Mind | Free Thursday-The Broad": {
+            "name": "Yoko Ono: Music of the Mind | Free Thursday",
+            "venue": "The Broad",
+            "description": "Every Thursday Evening5 \u2013 8 pmYoko Ono: Music of the Mind is free every Thursday evening starting May 28, 2026. Tickets include free admission to the exhibition and The Broad\u2019s collection galleries on Thursdays from 5 pm to 8 pm, which feature a frequently changing selection of works from the Broad collection. Separate reservations are required for Yayoi Kusama's Infinity Mirrored Room\u2014The Souls of Millions of Light Years Away (2013), which can be booked here \u2192Not seeing availability on your preferred date and time? We accept walk ups to the exhibition pending capacity. Book a general admission ticket for Thursday evening \u2192Accessibility: See our accessibility resources and email info@thebroad.org for any questions or assistance.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-05-28",
+                "end": "2026-10-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.thebroad.org/art/free-accesss/yoko-ono-music-mind-free-thursday",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2026-05/TBRO-0076_ono_free_thurs_web_graphics__r2v1_ef_1460%20x%20840.jpg.webp?itok=JK0hjUrC",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:41:21",
+            "hash": "57168f75165b6c0b1daa30876bc29df6"
+        },
+        "Has the myth been shattered-The Broad": {
+            "name": "Has the myth been shattered",
+            "venue": "The Broad",
+            "description": "This fall, The Broad presents Has the myth been shattered, a free exhibition drawn entirely from the museum's collection, spanning six decades and a wide range of media. New acquisitions by Guadalupe Rosales and Hank Willis Thomas are among more than a dozen works on view at the museum for the first time, joining pieces by artists foundational to the collection, including Barbara Kruger, Glenn Ligon, and Andy Warhol. The exhibition takes its title from the Rosales work, in which the artist looks back at a charged moment in history and probes questions that remain unanswered today. Gathered together, the works create unexpected connections across generations, prompting an examination of how media has shaped history, memory, and collective experience.The presentation...",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": "2027-04-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.thebroad.org/art/collection-exhibitions/has-myth-been-shattered",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2026-08/Myth%20Shattered%20Hero%20Image.jpg.webp?itok=wu1M5r9p",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-27 19:41:23",
+            "hash": "c746b9763ed6891f906d7b6b1083855e"
+        },
+        "Robert Therrien: This is a Story-The Broad": {
+            "name": "Robert Therrien: This is a Story",
+            "venue": "The Broad",
+            "description": "The Broad presented Robert Therrien: This is a Story, the largest museum exhibition of the late artist\u2019s widely-adored work to date, on view November 22, 2025 to April 5, 2026. Therrien\u2019s meditations on scale and material are a deeply influential and well-known approach within the field of contemporary sculpture, significant to The Broad\u2019s own identity as a museum, and long admired by visitors of all ages. The installation showcased Therrien\u2019s personal vocabulary of images and symbols\u2014from enormous tables, chairs, and dishes, to intimate drawings of snowmen, birds, and chapels\u2014as they become a language of continuous creation and transformation for the artist over time. Featuring more than 120 works spanning five decades, the exhibition offered unprecedented access to the artist\u2019s exploration of scale, memory, and...",
             "tags": [
                 "exhibition",
                 "past",
@@ -2501,22 +2585,22 @@
             ],
             "phase": "past",
             "dates": {
-                "start": "2021-11-20",
-                "end": "2022-04-03"
+                "start": "2025-11-22",
+                "end": "2026-04-05"
             },
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.thebroad.org/art/collection-exhibitions/unveiling-selected-acquisitions-decade",
+                    "link": "https://www.thebroad.org/art/special-exhibitions/robert-therrien-story",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.thebroad.org/sites/default/files/styles/broad_pages_scale_1000px_width/public/exhibitions/2021-10/TheBroadMuseum_Photo%E2%94%AC%E2%8C%90BruceDamonte_35%20copy%203.jpg.webp?itok=aJZ03ZfZ",
+                    "link": "https://www.thebroad.org/sites/default/files/styles/featured_image/public/2025-10/TBRO-0075_therrien_hero_r2v1_ef_1460%20x%20840.jpg.webp?itok=amfkYHU2",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:35:10",
-            "hash": "91eddffb23a52e967d4cf506e9b23ae7"
+            "last_updated": "2026-09-27 19:41:24",
+            "hash": "670dc243294322ccc37db6a270cd2d3c"
         }
     },
     "Getty": {
