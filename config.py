@@ -1,3 +1,4 @@
+import json
 import logging
 
 # Constants
@@ -9,14 +10,11 @@ DB_FILES = {
     'ist': 'docs/data/ist_events.json',
 }
 # Event dates are calendar days at the venue, so "today" for deciding whether a
-# show is current/upcoming/past is the date in the venue's own time zone.
-REGION_TIMEZONES = {
-    'sf': 'America/Los_Angeles',
-    'la': 'America/Los_Angeles',
-    'mtl': 'America/Toronto',
-    'tor': 'America/Toronto',
-    'ist': 'Europe/Istanbul',
-}
+# show is current/upcoming/past is the date in the venue's own time zone. Single
+# source of truth shared with the browser: docs/dataManager.js fetches this same
+# file rather than keeping its own copy of the map.
+with open('docs/data/regions.json') as _regions_file:
+    REGION_TIMEZONES = json.load(_regions_file)
 MONTH_TO_NUM_DICT = {
     'jan': 1,
     'feb': 2,

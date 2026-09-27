@@ -150,7 +150,7 @@ PHASE_ORDER = {phase: i for i, phase in enumerate(PHASES)}
 def region_today(region, now=None):
     """Today's date in the region's time zone (where its venues are)."""
     if region not in REGION_TIMEZONES:
-        raise KeyError(f"No time zone for region '{region}'; add it to REGION_TIMEZONES in config.py")
+        raise KeyError(f"No time zone for region '{region}'; add it to docs/data/regions.json")
     now = now or dt.datetime.now(dt.timezone.utc)
     return now.astimezone(ZoneInfo(REGION_TIMEZONES[region])).date()
 

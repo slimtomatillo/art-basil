@@ -19,13 +19,16 @@ DB_FILES = {
     '<region>': 'docs/data/<region>_events.json',
 }
 ```
-Also add the region's IANA time zone to `REGION_TIMEZONES` in the same file
-(e.g. `'<region>': 'Europe/Istanbul'`). Event dates are calendar days at the venue,
-so this decides what "today" is when phases are advanced. **Easy to forget** - the
-nightly phase update raises without it.
-
 Everything else keys off `DB_FILES` automatically (`main.py` loads every region
 in it, `db_size.csv` lists every region in it).
+
+### 1a-2. `docs/data/regions.json`
+Add the region's IANA time zone (e.g. `"<region>": "Europe/Istanbul"`). Event dates
+are calendar days at the venue, so this decides what "today" is when phases are
+advanced. This one file is the source of truth for both sides: `config.py` loads
+it (`REGION_TIMEZONES`) and `docs/dataManager.js` fetches it (`regionToday()`) -
+nothing to keep in sync. **Easy to forget** - the nightly phase update raises
+without it, and so does `regionToday()` in the browser.
 
 ### 1b. `docs/data/<region>_events.json`
 Create it containing just `{}` and commit it. `load_db()` will create it on the
@@ -149,16 +152,8 @@ if (path.includes('/<region>/')) {
     return '<region>';
 }
 ```
-
-Also add the region's IANA time zone to `REGION_TIMEZONES` at the top of the same
-file, matching the entry in `config.py` (**easy to forget** - `regionToday()` fails
-without it, and the region's phases and sorting break):
-```js
-const REGION_TIMEZONES = {
-    ...
-    <region>: 'Europe/Istanbul',
-};
-```
+(No time zone entry needed here - `regionToday()` reads `docs/data/regions.json`,
+added in step 1a-2.)
 
 ### 3b. `docs/<region>/index.html`
 Copy `docs/sf/index.html` verbatim, then change exactly two things:
@@ -218,5 +213,5 @@ Checklist:
 - [ ] workflow `git add` line added
 - [ ] `docs/<region>/index.html` created, `docs/index.html` card added,
       `getRegion()` branch added
-- [ ] time zone added to `REGION_TIMEZONES` in both `config.py` and `docs/dataManager.js`
+- [ ] time zone added to `docs/data/regions.json`
 - [ ] dev run of each scraper produces dated events
