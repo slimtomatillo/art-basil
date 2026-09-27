@@ -202,10 +202,10 @@
             "description": "BCAM, Level 3",
             "tags": [
                 "exhibition",
-                "past",
-                "museum"
+                "museum",
+                "current"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": "2021-06-13",
                 "end": null
@@ -221,8 +221,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-07-07 13:22:56",
-            "hash": "d76c061639a5c0e407ec2f66d2353d68"
+            "last_updated": "2026-09-27 19:51:35",
+            "hash": "2452685d652e4b97de480634e7bd7fd2"
         },
         "Digital Witness: Revolutions in Design, Photography, and Film-LACMA": {
             "name": "Digital Witness: Revolutions in Design, Photography, and Film",
@@ -594,15 +594,15 @@
             "description": "",
             "tags": [
                 "exhibition",
-                "past",
-                "museum"
+                "museum",
+                "current"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
                 "end": ""
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://lacma.org/art/exhibition/barbara-kruger-untitled-shafted",
@@ -613,8 +613,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-07 11:22:26",
-            "hash": "42c7a59a97a1bb7019a26a24e28bb977"
+            "last_updated": "2026-09-27 19:51:35",
+            "hash": "6e7ef8d1a65580a154b9729c38f16308"
         },
         "Mark Bradford: 150 Portrait Tone-LACMA": {
             "name": "Mark Bradford: 150 Portrait Tone",
@@ -622,15 +622,15 @@
             "description": "Resnick Pavilion",
             "tags": [
                 "exhibition",
-                "past",
-                "museum"
+                "museum",
+                "current"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
                 "end": ""
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://lacma.org/art/exhibition/mark-bradford-150-portrait-tone",
@@ -641,8 +641,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-07 11:22:26",
-            "hash": "104ff43a578726f7043220149f99f2d2"
+            "last_updated": "2026-09-27 19:51:35",
+            "hash": "fc66ec9e61dda4d71160eb8068b203a9"
         },
         "Ritual Expressions: African Adornment from the Permanent Collection-LACMA": {
             "name": "Ritual Expressions: African Adornment from the Permanent Collection",
@@ -1238,15 +1238,15 @@
             "description": "BCAM, Level 1",
             "tags": [
                 "exhibition",
-                "past",
-                "museum"
+                "museum",
+                "current"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
                 "end": ""
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://lacma.org/art/exhibition/richard-serra-band",
@@ -1257,8 +1257,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-07 11:22:26",
-            "hash": "2c8bfeafe8442106f3ea05663c353aef"
+            "last_updated": "2026-09-27 19:51:35",
+            "hash": "c44d991a92a0d45ba1cd91bea65211ce"
         },
         "Miracle Mile-LACMA": {
             "name": "Miracle Mile",
@@ -1266,15 +1266,15 @@
             "description": "BCAM, Level 1",
             "tags": [
                 "exhibition",
-                "past",
-                "museum"
+                "museum",
+                "current"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
                 "end": ""
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://lacma.org/art/exhibition/miracle-mile",
@@ -1285,8 +1285,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-07 11:22:26",
-            "hash": "bd452b2321da84bdb6ce91a5c3523c49"
+            "last_updated": "2026-09-27 19:51:35",
+            "hash": "2cdf8685c3009f80f71dd4fe3b5bc4ed"
         },
         "Metropolis II-LACMA": {
             "name": "Metropolis II",
@@ -1294,15 +1294,15 @@
             "description": "BCAM, Level 1",
             "tags": [
                 "exhibition",
-                "past",
-                "museum"
+                "museum",
+                "current"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
                 "end": ""
             },
-            "ongoing": false,
+            "ongoing": true,
             "links": [
                 {
                     "link": "https://lacma.org/art/exhibition/metropolis-ii",
@@ -1313,8 +1313,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-01-07 11:22:26",
-            "hash": "148cfc23e5fd7002d0ec98a6603cc545"
+            "last_updated": "2026-09-27 19:51:35",
+            "hash": "4555a430abaf1f307841e56d9848033e"
         },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
