@@ -4,6 +4,7 @@ from config import MONTH_TO_NUM_DICT
 import datetime as dt
 from datetime import timezone
 import logging
+import re
 
 def convert_date_to_dt(date_string):
     """Converts a date in string form to a dt.date object."""
@@ -15,6 +16,39 @@ def convert_date_to_dt(date_string):
         return dt.date(year, month_num, day)
     else:
         return None
+
+
+def parse_single_date(text):
+    """Best-effort parse of a 'Month [D,] YYYY' fragment found anywhere in text
+    (day defaults to the 1st when omitted, e.g. a season name like 'Fall 2027'
+    won't match at all - there's no reasonable day to guess). Returns a date or None."""
+    match = re.search(
+        rf"({'|'.join(MONTH_TO_NUM_DICT.keys())})\.?\s+(?:(\d{{1,2}})\s*,?\s+)?(\d{{4}})",
+        text.lower()
+    )
+    if not match:
+        return None
+    month, day, year = match.groups()
+    return dt.date(int(year), MONTH_TO_NUM_DICT[month], int(day) if day else 1)
+
+
+def parse_date_label(text):
+    """SJMA gives some exhibitions no <time> tag at all - just a plain-text status
+    line as the first paragraph, e.g. 'Ongoing Installation', 'Through end of
+    October 2025', or 'March 12, 2027 - Fall 2027'. Returns (start, end, ongoing)
+    if `text` looks like one of these, else None (treat it as real description)."""
+    normalized = ' '.join(text.split())
+    if re.match(r'(?i)^ongoing', normalized):
+        return None, None, True
+    if re.match(r'(?i)^through', normalized):
+        end = parse_single_date(normalized)
+        return (None, end, False) if end else None
+    parts = re.split(r'\s*[–—-]\s*', normalized, maxsplit=1)
+    if len(parts) == 2:
+        start, end = parse_single_date(parts[0]), parse_single_date(parts[1])
+        if start or end:
+            return start, end, False
+    return None
 
 def scrape_sj_museum_of_art_exhibitions(env='prod', region='sj'):
     """Scrape and process exhibitions from the San Jose Museum of Art."""
@@ -60,22 +94,29 @@ def scrape_sj_museum_of_art_exhibitions(env='prod', region='sj'):
                         # Parse the datetime attribute if it exists
                         datetime_str = date_tags[1]['datetime']
                         end_date = dt.datetime.strptime(datetime_str, "%Y-%m-%dT%H:%M:%SZ").date()
-                        
-            # Extract description
-            description_tag = exhibition.find('p')
-            description_text = description_tag.get_text(separator=' ').strip() if description_tag else None
+
+            # Some exhibitions (permanent installations, offsite shows) have no <time>
+            # tag at all - just a plain-text status line as the first paragraph, e.g.
+            # "Ongoing Installation" or "Through end of October 2025". When there's no
+            # structured date, try parsing that line; if it looks like a status/date
+            # line rather than real description text, use it for dates and skip it
+            # below when picking the description.
+            abstract_paragraphs = exhibition.select('.field--name-field-abstract p')
+            label_result = None
+            if not start_date and not end_date:
+                first_p_text = abstract_paragraphs[0].get_text(strip=True) if abstract_paragraphs else None
+                if first_p_text:
+                    label_result = parse_date_label(first_p_text)
+                    if label_result:
+                        start_date, end_date, ongoing = label_result
+
+            # Extract description - the first paragraph that isn't a date/status label
+            description_paragraphs = abstract_paragraphs[1:] if label_result else abstract_paragraphs
+            description_text = description_paragraphs[0].get_text(separator=' ').strip() if description_paragraphs else None
 
             # Extract image if available
             img_tag = exhibition.find('img')
             image_link = 'https://sjmusart.org' + img_tag['src'] if img_tag else None
-
-            # Handle edge cases
-            if phase == 'current' and event_title == 'Hidden Heritages: San José’s Vietnamese Legacy':
-                ongoing = True
-            elif phase == 'current' and event_title == 'Koret Gallery: Art Learning Lab':
-                ongoing = True
-            elif phase == 'current' and event_title == 'Pae White: Noisy Blushes':
-                ongoing = True
                         
             event_details = {
                 'name': event_title,
