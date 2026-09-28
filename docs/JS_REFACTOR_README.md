@@ -87,6 +87,9 @@ window.modalManager.openImageModal('image-url.jpg');
   - `notify.js` - Notification functionality
   - `feedback.js` - Feedback form functionality
   - `cursorTrail.js` - Cursor trail effects
+  - `venuesRenderer.js` - Renders the venue directory (`<region>/venues.html`)
+    from `dataManager.fetchVenues()`. Standalone - only loaded on that page,
+    not part of the `scroll.js`-orchestrated event-table pipeline above.
 
 ## Loading Order
 The modules should be loaded in this order in your HTML:

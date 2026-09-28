@@ -44,6 +44,12 @@ gets no map link**. The key must match the scraper's `venue` string byte-for-byt
     "Montreal Museum of Fine Arts": "1380 Sherbrooke St W, Montreal, QC"
 }
 ```
+This file is also the *only* source for `docs/<region>/venues.html` (see 3b-2) -
+`venuesRenderer.js` renders whatever's in here. **Adding a venue here is the
+entire "add it to the venue list page" step** - there's nothing to update on
+the front end, for a new region or an existing one. This applies whether the
+venue was added by a new scraper (2c) or by hand for a manual submission (see
+`SUBMISSIONS.md`).
 
 ### 1d. `scrapers/<region>/`
 New directory, one module per venue. **No `__init__.py`** — the project uses
@@ -161,6 +167,18 @@ Copy `docs/sf/index.html` verbatim, then change exactly two things:
 - `<h1 class="display-5 mb-3 text-md-end"><City></h1>`
 (The lead paragraph and everything else is region-agnostic.)
 
+### 3b-2. `docs/<region>/venues.html`  ← **easy to forget**
+Copy `docs/sf/venues.html` verbatim, then change exactly two things:
+- `<title>Art Basil - <City> Venues</title>`
+- `<h1 class="display-5 mb-3 text-md-end"><City></h1>`
+Nothing else is region-specific - `venuesRenderer.js` detects the region from
+the URL path the same way `dataManager.js` does (3a) and fetches
+`<region>_venues.json` (1c) itself. Also add the link to it from the region's
+own `index.html`, in the `header-region` block, below the button row:
+```html
+<p class="mt-3 mb-0 text-md-end"><a href="venues.html">List of venues</a></p>
+```
+
 ### 3c. `docs/index.html`
 Add a city card next to the existing two:
 ```html
@@ -213,5 +231,6 @@ Checklist:
 - [ ] workflow `git add` line added
 - [ ] `docs/<region>/index.html` created, `docs/index.html` card added,
       `getRegion()` branch added
+- [ ] `docs/<region>/venues.html` created, linked from `index.html`
 - [ ] time zone added to `docs/data/regions.json`
 - [ ] dev run of each scraper produces dated events

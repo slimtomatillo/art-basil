@@ -31,6 +31,9 @@ page yourself first.
   `"description": "Image"`).
 - **New venue?** If `venue` isn't already in `<region>_venues.json`, you need
   its address (`venue_address`). Check the linked event page or search for it.
+  Adding it there is the whole job - `docs/<region>/venues.html` (the venue
+  directory page) reads straight from this file, so the new venue shows up on
+  it automatically with no separate front-end step.
 - **Multi-event submissions.** A submission can imply more than one event
   (e.g. an exhibition + a separately-timed opening reception). Decide
   whether that's one entry (reception folded into tags/description) or two —
