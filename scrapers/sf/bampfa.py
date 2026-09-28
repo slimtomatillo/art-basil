@@ -57,8 +57,12 @@ def scrape_bampfa_exhibitions(env='prod', region='sf'):
                 # Strip a leading day-of-week ("Thursday, October 3, 2024") - it
                 # otherwise adds a 4th token and convert_date_to_dt only accepts 3
                 event_dates = re.sub(r'^[A-Za-z]+day,\s*', '', event_dates)
-                # Mark if ongoing
-                ongoing = True if 'ongoing' in event_dates.lower() else False
+                # Mark if ongoing - only meaningful for a currently-on-view show;
+                # BAMPFA sometimes leaves a stale "...-Ongoing" end date on a
+                # listing after moving it to the past section, which would
+                # otherwise produce a self-contradictory (and unrenderable)
+                # phase='past' + ongoing=True.
+                ongoing = 'ongoing' in event_dates.lower() and phase == 'current'
                 # Handle date ranges. BAMPFA uses either an en dash or a plain
                 # hyphen ("July 4-September 2, 2018") for a range - normalize to
                 # one before splitting.

@@ -154,13 +154,31 @@ class TableRenderer {
         if (event.ongoing === true && isCurrentEvent === true) {
             // If the event is marked as ongoing
             dateText = "Ongoing";
-        } else if (isPastEvent && endDate) {
-            // For past events with a known end date
-            try {
-                dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
-            } catch (error) {
-                console.warn(`Error formatting end date:`, error);
-                dateText = "Closed (date unavailable)";
+        } else if (isPastEvent) {
+            // For past events
+            if (endDate) {
+                // Known end date
+                try {
+                    dateText = `Closed ${new Intl.DateTimeFormat('en-US', options).format(endDate)}`;
+                } catch (error) {
+                    console.warn(`Error formatting end date:`, error);
+                    dateText = "Closed (date unavailable)";
+                }
+            } else if (startDate) {
+                // No end date on record, but we know when it opened
+                try {
+                    dateText = `Opened ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+                } catch (error) {
+                    console.warn(`Error formatting start date:`, error);
+                    dateText = "Opened (date unavailable)";
+                }
+            } else {
+                // A closed show with no date on record at all. Unlike "Dates
+                // TBA" (which implies an announcement is still pending), this
+                // exhibition already happened - the source just never gave a
+                // date, or it's an orphaned entry that dropped off the source
+                // before a date could be captured.
+                dateText = "Closed (date unknown)";
             }
         } else if (isCurrentEvent) {
             // For current events
@@ -184,16 +202,25 @@ class TableRenderer {
                 // If neither date is known, it remains "Dates TBA"
                 dateText = "Dates TBA";
             }
-        } else if (isFutureEvent && startDate) {
+        } else if (isFutureEvent) {
             // For future events
-            try {
-                dateText = `Opens ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
-            } catch (error) {
-                console.warn(`Error formatting start date:`, error);
-                dateText = "Opens (date unavailable)";
+            if (startDate) {
+                try {
+                    dateText = `Opens ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+                } catch (error) {
+                    console.warn(`Error formatting start date:`, error);
+                    dateText = "Opens (date unavailable)";
+                }
             }
+            // else: stays "Dates TBA" - the show is coming but no date has
+            // been announced yet, which is exactly what "TBA" means here.
+        } else if (!isPastEvent && !isCurrentEvent && !isFutureEvent) {
+            // No phase at all - we don't even know whether this is open or
+            // closed, so "Dates TBA" (which implies a pending announcement)
+            // would be a guess. Be explicit that this is a data gap instead.
+            dateText = "Dates unavailable";
         }
-    
+
         return dateText;
     }
 
