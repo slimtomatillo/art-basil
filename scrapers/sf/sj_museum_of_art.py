@@ -109,6 +109,11 @@ def scrape_sj_museum_of_art_exhibitions(env='prod', region='sj'):
                     label_result = parse_date_label(first_p_text)
                     if label_result:
                         start_date, end_date, ongoing = label_result
+                        # Only meaningful for a currently-on-view show; a
+                        # stale "Ongoing" status line on the past/upcoming
+                        # listing would otherwise produce an unrenderable
+                        # phase='past'/'future' + ongoing=True contradiction.
+                        ongoing = ongoing and phase == 'current'
 
             # Extract description - the first paragraph that isn't a date/status label
             description_paragraphs = abstract_paragraphs[1:] if label_result else abstract_paragraphs

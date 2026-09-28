@@ -244,7 +244,12 @@ def scrape_the_broad_exhibitions(env='prod', region='la'):
                 'tags': ['exhibition', phase, 'museum'],
                 'phase': phase,
                 'dates': details['dates'],
-                'ongoing': details['ongoing'],
+                # Only meaningful for a currently-on-view show; a detail page
+                # that still says "Ongoing"/"Featured Installation" while
+                # being linked from the past/upcoming container would
+                # otherwise produce an unrenderable phase='past'/'future' +
+                # ongoing=True contradiction.
+                'ongoing': details['ongoing'] and phase == 'current',
                 'links': [{'link': event_link, 'description': 'Event Page'}],
                 'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
             }

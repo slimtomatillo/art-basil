@@ -41,7 +41,11 @@ def scrape_museum_of_craft_and_design_exhibitions(env='prod', region='sf'):
                 date_tag = exhibition.find('p')
             if date_tag:
                 event_dates = date_tag.text.strip().lower().replace(',', '').replace(' – ', '-').replace('–', '-').replace('.', '')
-                ongoing = 'ongoing' in event_dates
+                # Only meaningful for a currently-on-view show; a stale
+                # "ongoing" label on the past/upcoming listing would
+                # otherwise produce an unrenderable phase='past'/'future' +
+                # ongoing=True contradiction.
+                ongoing = 'ongoing' in event_dates and phase == 'current'
                 
                 # Handle edge cases
                 if event_dates == 'october 2004 - january 2005':

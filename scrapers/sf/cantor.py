@@ -53,8 +53,11 @@ def scrape_cantor_exhibitions(env='prod', region='sf'):
             
             # Dates
             date_range = event_element.find('div', class_='exhibition__dynamic-token-fieldnode-start-date-to-end-date').text.strip()
-            # Mark 'ongoing' flag
-            ongoing = True if 'ongoing' in date_range.lower() else False
+            # Mark 'ongoing' flag - only meaningful for a currently-on-view
+            # show; a stale "ongoing" label on the past/upcoming listing
+            # would otherwise produce an unrenderable phase='past'/'future'
+            # + ongoing=True contradiction.
+            ongoing = 'ongoing' in date_range.lower() and phase == 'current'
             dates = date_range.lower().replace(',', '').split('–')
             # Get dt versions of start and end dates
             if len(dates[0].split()) == 2:

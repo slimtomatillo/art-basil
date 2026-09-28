@@ -93,6 +93,13 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
 
                     date_tag = card.select_one('header p')
                     start_date, end_date, ongoing = parse_card_dates(date_tag.get_text(strip=True) if date_tag else None)
+                    # Only meaningful for a currently-on-view show; a stale
+                    # "ongoing" label on the past/upcoming listing would
+                    # otherwise produce an unrenderable phase + ongoing=True
+                    # contradiction (this is exactly what happened to the 6
+                    # permanent-installation entries fixed manually in
+                    # WEBSITE-46 - guarding it here stops it recurring).
+                    ongoing = ongoing and phase == 'current'
                     if not start_date and not end_date and not ongoing:
                         logging.warning(f"LACMA: could not parse dates for {title_tag.get_text(strip=True)!r}")
 
@@ -152,10 +159,12 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
                 except:
                     end_date = None
 
-            # Check if the exhibition is ongoing
+            # Check if the exhibition is ongoing - only meaningful for a
+            # currently-on-view show; see the same guard on the new-layout
+            # branch above for why.
             if end_date:
                 if 'ongoing' in end_date:
-                    ongoing = True
+                    ongoing = phase == 'current'
                     end_date = None
                 else:
                     ongoing = False

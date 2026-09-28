@@ -69,7 +69,11 @@ def scrape_contemporary_jewish_museum(env='prod', region='sf'):
                 if event_dates.lower() == 'ongoing exhibit':
                     start_date = None
                     end_date = None
-                    ongoing = True
+                    # Only meaningful for a currently-on-view show; a stale
+                    # "Ongoing Exhibit" label on the past/upcoming listing
+                    # would otherwise produce an unrenderable
+                    # phase='past'/'future' + ongoing=True contradiction.
+                    ongoing = url_dict['phase'] == 'current'
                 else:
                     start_date = convert_date_to_dt(dates[0])
                     end_date = convert_date_to_dt(dates[1])
