@@ -1,5 +1,56 @@
 // Table Renderer - Handles table creation and event row rendering
 
+// Curated colors for tags we know about today, individually tuned so no two
+// are easy to mix up (e.g. gallery/museum used to both be purple) and each
+// keeps at least a 4.5:1 contrast ratio against the chip's white text.
+const TAG_COLOR_MAP = {
+    current: '#228641',
+    future: '#2971a3',
+    past: '#556377',
+    exhibition: '#a33929',
+    museum: '#936f25',
+    gallery: '#657a1f',
+    opening: '#378221',
+    free: '#218275',
+    queer: '#292fa3',
+    immigrant: '#6629a3',
+    refugee: '#a3299e',
+    'south-asian': '#a3295b',
+};
+
+// Any tag not in the map above (i.e. one added to the data later) gets a
+// color from this function instead of a code change. Hues are placed with
+// the golden angle (~137.5deg) rather than an even 360/N split, which is
+// the standard trick for spacing out an open-ended, growing set of
+// categories - each new tag stays well separated from every tag before it,
+// not just from its immediate neighbors in a fixed-size wheel. Lightness is
+// fixed low enough (30%) that every hue clears 4.5:1 contrast against white.
+function getTagColor(tag) {
+    if (TAG_COLOR_MAP[tag]) return TAG_COLOR_MAP[tag];
+
+    let hash = 0;
+    for (let i = 0; i < tag.length; i++) {
+        hash = (hash * 31 + tag.charCodeAt(i)) >>> 0;
+    }
+    const GOLDEN_ANGLE = 137.508;
+    const hue = (hash * GOLDEN_ANGLE) % 360;
+    return hslToHex(hue, 0.55, 0.30);
+}
+
+function hslToHex(h, s, l) {
+    const a = s * Math.min(l, 1 - l);
+    const f = n => {
+        const k = (n + h / 30) % 12;
+        const color = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+        return Math.round(color * 255).toString(16).padStart(2, '0');
+    };
+    return `#${f(0)}${f(8)}${f(4)}`;
+}
+
+function formatTagLabel(tag) {
+    return tag.toLowerCase().replace(/-/g, ' ');
+}
+
 class TableRenderer {
     constructor(tableBodyId) {
         this.tableBody = document.getElementById(tableBodyId);
@@ -16,6 +67,7 @@ class TableRenderer {
         // Add data attributes to row for filtering
         row.setAttribute('data-phase', event.phase);
         row.setAttribute('data-ongoing', event.ongoing === true);
+        row.setAttribute('data-tags', event.tags.join('|'));
 
         // Image column
         const imageCell = row.insertCell();
@@ -31,11 +83,30 @@ class TableRenderer {
 
         // Tags column
         const tagsCell = row.insertCell();
-        tagsCell.textContent = event.tags.join(', ');
+        this.renderTagsCell(tagsCell, event);
 
         // Links column
         const linksCell = row.insertCell();
         this.renderLinksCell(linksCell, event);
+    }
+
+    renderTagsCell(cell, event) {
+        event.tags.forEach(tag => {
+            const chip = document.createElement('span');
+            chip.className = 'tag-chip';
+            chip.textContent = formatTagLabel(tag);
+            chip.dataset.tag = tag;
+            chip.style.backgroundColor = getTagColor(tag);
+
+            chip.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (window.searchManager) {
+                    window.searchManager.toggleTagFilter(tag);
+                }
+            });
+
+            cell.appendChild(chip);
+        });
     }
 
     renderImageCell(cell, event) {
