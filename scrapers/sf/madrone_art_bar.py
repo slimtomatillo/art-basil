@@ -110,15 +110,19 @@ def scrape_madrone_art_bar(env='prod', region='sf'):
         content_html = post.get('content', {}).get('rendered', '')
         content_text = re.sub(r'\s+', ' ', BeautifulSoup(content_html, 'html.parser').get_text(' ', strip=True))
 
-        publish_year = post.get('date', '')[:4]
-        start_date, end_date = parse_date_range(content_text, publish_year)
+        publish_date = dt.datetime.strptime(post['date'][:10], '%Y-%m-%d').date() if post.get('date') else None
+        start_date, end_date = parse_date_range(content_text, publish_date.year if publish_date else None)
 
-        # Skip old posts we couldn't date and that are outside the window;
-        # for undated posts, use the publish date as a rough stand-in so we
-        # still surface anything recent.
-        reference_date = end_date or start_date or (
-            dt.datetime.strptime(post['date'][:10], '%Y-%m-%d').date() if post.get('date') else None
-        )
+        # A handful of posts (e.g. a wall-installation photo announcement) never
+        # state a date anywhere in the body. Fall back to when the post itself
+        # was published as a single, verifiable anchor date, rather than leaving
+        # the event permanently undated - it's a reasonable proxy for "around
+        # when this went up" for the kind of announcement these posts are.
+        if not start_date and not end_date and publish_date:
+            start_date = publish_date
+
+        # Skip old posts we couldn't date and that are outside the window
+        reference_date = end_date or start_date or publish_date
         still_upcoming = start_date and start_date > today
         if reference_date and reference_date < cutoff and not still_upcoming:
             continue

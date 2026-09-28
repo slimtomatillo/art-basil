@@ -25079,8 +25079,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "9de2ba36e9263baf30f43c7ccf19f9fe"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "0d52bb72d75db5fe0ac61b6b9dc0eee6"
         },
         "Madrone Summer Exhibition-Madrone Art Bar": {
             "name": "Madrone Summer Exhibition",
@@ -25107,8 +25107,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "64c012dcd2bb38c73301298ed96af1be"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "3b206e660daf5b779a1e1c5ea5b57f6e"
         },
         "Saturnine Zydeco: The History of Badminton-Madrone Art Bar": {
             "name": "Saturnine Zydeco: The History of Badminton",
@@ -25135,8 +25135,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "15ab48767cb2aac4018364c98b2d2f7b"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "66cecc97b6790382aa41020112a2bd20"
         },
         "FART MARKET: Art Flea Market-Madrone Art Bar": {
             "name": "FART MARKET: Art Flea Market",
@@ -25158,8 +25158,8 @@
                     "description": "Event Page"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "74e21893f900e207ea0473a4d00bc50a"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "a64611e73c055f34c5fe86b969b331b5"
         },
         "Artvent 2025-Madrone Art Bar": {
             "name": "Artvent 2025",
@@ -25185,19 +25185,20 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "0491f659068e34b8030ccfe67cf554d5"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "7e66d471163575f5bebee576a8873702"
         },
         "SF Night Moves & Light Canopy-Madrone Art Bar": {
             "name": "SF Night Moves & Light Canopy",
             "venue": "Madrone Art Bar",
             "description": "Main Wall Art Installation: SF NIGHT MOVES, photos of SF Bar Industry Personalities By Brendan Mainini Front Window Art Installation: Light Canopy by Tynan Winters",
             "tags": [
-                "exhibition"
+                "exhibition",
+                "current"
             ],
-            "phase": null,
+            "phase": "current",
             "dates": {
-                "start": null,
+                "start": "2025-08-20",
                 "end": null
             },
             "ongoing": false,
@@ -25211,19 +25212,20 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "7d029b995d7e9cc2c89d4df25fbc29aa"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "6ed0a773d5deda15a61ada593924c7dd"
         },
         "Art Opening Reception this Wednesday 2/29-Madrone Art Bar": {
             "name": "Art Opening Reception this Wednesday 2/29",
             "venue": "Madrone Art Bar",
             "description": "6-9PMIt\u2019s the Lunar New Year of Snake! Come and see Misssstencil\u2019s mural and find out about the snakes in Ssssan Francissssco Bay Area you live with every dayIt\u2019s the Lunar New Year of Snake! This sculpture is inspired by two half human half snake deities in Chinese mythology who created the humanity, invented Yingyang Bagua, [\u2026]",
             "tags": [
-                "exhibition"
+                "exhibition",
+                "current"
             ],
-            "phase": null,
+            "phase": "current",
             "dates": {
-                "start": null,
+                "start": "2025-01-27",
                 "end": null
             },
             "ongoing": false,
@@ -25237,8 +25239,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "f807c64ff01a7f3f19740074f92d758d"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "f7b07369e48a0003720061d0fc99a56f"
         },
         "Artvent 2024-Madrone Art Bar": {
             "name": "Artvent 2024",
@@ -25264,8 +25266,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:45",
-            "hash": "d503da2630e93f8005fbc300890b6ee2"
+            "last_updated": "2026-09-28 03:23:15",
+            "hash": "05c0188ae48e559d5c24298c5c753147"
         }
     }
 }
