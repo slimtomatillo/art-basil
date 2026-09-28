@@ -23,11 +23,22 @@ class SearchManager {
 
         // Initialize ongoing-events checkbox
         this.initOngoingCheckbox();
+
+        // Apply an initial search term from the URL if one was passed in
+        // (e.g. a venue name clicked on venues.html), then show its results.
+        this.filterEvents();
     }
 
     initSearchBar() {
         const searchBar = document.getElementById('searchBar');
         if (searchBar) {
+            const params = new URLSearchParams(window.location.search);
+            const initialSearch = params.get('search');
+            if (initialSearch) {
+                searchBar.value = initialSearch;
+                this.currentSearchTerm = initialSearch.toLowerCase();
+            }
+
             searchBar.addEventListener('keyup', (e) => {
                 this.currentSearchTerm = e.target.value.toLowerCase();
                 this.filterEvents();
