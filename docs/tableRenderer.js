@@ -7,6 +7,32 @@
 // have real opening-event data to back it up.
 const HIDDEN_TAGS = new Set(['opening']);
 
+// Different scrapers build each event's tags array in a different order
+// (e.g. `[exhibition, past, museum]` vs `[exhibition, museum, past]`), so
+// the raw data order isn't consistent from one event to the next. This is
+// the canonical display order every event's chips get sorted into,
+// regardless of how the scraper that produced it ordered them. Anything
+// not listed here (a tag added later) sorts after everything that is,
+// alphabetically among itself.
+const TAG_DISPLAY_ORDER = [
+    'exhibition',
+    'current', 'future', 'past',
+    'museum', 'gallery',
+    'free',
+    'opening',
+    'queer', 'immigrant', 'refugee', 'south-asian',
+];
+
+function sortTagsForDisplay(tags) {
+    return [...tags].sort((a, b) => {
+        const ia = TAG_DISPLAY_ORDER.indexOf(a);
+        const ib = TAG_DISPLAY_ORDER.indexOf(b);
+        const ra = ia === -1 ? TAG_DISPLAY_ORDER.length : ia;
+        const rb = ib === -1 ? TAG_DISPLAY_ORDER.length : ib;
+        return ra !== rb ? ra - rb : a.localeCompare(b);
+    });
+}
+
 // Curated colors for tags we know about today. Two things drove this pass
 // specifically (exhibition/current/museum used to look like near-identical
 // greens): `exhibition` and `past` - by far the two most common tags, and
@@ -110,7 +136,7 @@ class TableRenderer {
     }
 
     renderTagsCell(cell, event) {
-        event.tags
+        sortTagsForDisplay(event.tags)
             .filter(tag => !HIDDEN_TAGS.has(tag))
             .forEach(tag => {
             const chip = document.createElement('span');
