@@ -1,21 +1,31 @@
 // Table Renderer - Handles table creation and event row rendering
 
+// Tags that exist in the data but shouldn't render as a chip right now.
+// "opening" currently just means the description mentions an opening
+// reception somewhere, not that this listing IS the opening event, and
+// as a prominent chip that reads as a misleading claim. Revisit once we
+// have real opening-event data to back it up.
+const HIDDEN_TAGS = new Set(['opening']);
+
 // Curated colors for tags we know about today, individually tuned so no two
 // are easy to mix up (e.g. gallery/museum used to both be purple) and each
-// keeps at least a 4.5:1 contrast ratio against the chip's white text.
+// keeps at least a 4.5:1 contrast ratio against the chip's white text. Hues
+// stay out of the ~35-115deg range entirely (yellow/amber/lime/olive) since
+// every color that landed there read as a muddy brown or olive rather than
+// a clean color. `past` is deliberately flat grey rather than a hue, for
+// its own "faded/done" look and to free up more spacing for the rest.
 const TAG_COLOR_MAP = {
-    current: '#228641',
-    future: '#2971a3',
-    past: '#556377',
-    exhibition: '#a33929',
-    museum: '#936f25',
-    gallery: '#657a1f',
-    opening: '#378221',
-    free: '#218275',
-    queer: '#292fa3',
-    immigrant: '#6629a3',
-    refugee: '#a3299e',
-    'south-asian': '#a3295b',
+    current: '#198548',
+    future: '#3e58da',
+    past: '#475569',
+    exhibition: '#1d8519',
+    museum: '#188176',
+    gallery: '#2178ab',
+    free: '#6d3eda',
+    queer: '#b43ad9',
+    immigrant: '#ce27a7',
+    refugee: '#d83163',
+    'south-asian': '#ce4327',
 };
 
 // Any tag not in the map above (i.e. one added to the data later) gets a
@@ -23,8 +33,10 @@ const TAG_COLOR_MAP = {
 // the golden angle (~137.5deg) rather than an even 360/N split, which is
 // the standard trick for spacing out an open-ended, growing set of
 // categories - each new tag stays well separated from every tag before it,
-// not just from its immediate neighbors in a fixed-size wheel. Lightness is
-// fixed low enough (30%) that every hue clears 4.5:1 contrast against white.
+// not just from its immediate neighbors in a fixed-size wheel. The hue is
+// then remapped out of the same muddy 35-115deg range the curated colors
+// above avoid, and lightness is fixed low enough (30%) that every hue
+// clears 4.5:1 contrast against white.
 function getTagColor(tag) {
     if (TAG_COLOR_MAP[tag]) return TAG_COLOR_MAP[tag];
 
@@ -33,7 +45,8 @@ function getTagColor(tag) {
         hash = (hash * 31 + tag.charCodeAt(i)) >>> 0;
     }
     const GOLDEN_ANGLE = 137.508;
-    const hue = (hash * GOLDEN_ANGLE) % 360;
+    const rawHue = (hash * GOLDEN_ANGLE) % 360;
+    const hue = (118 + (rawHue / 360) * 280) % 360; // remapped into the 280deg usable arc
     return hslToHex(hue, 0.55, 0.30);
 }
 
@@ -91,7 +104,9 @@ class TableRenderer {
     }
 
     renderTagsCell(cell, event) {
-        event.tags.forEach(tag => {
+        event.tags
+            .filter(tag => !HIDDEN_TAGS.has(tag))
+            .forEach(tag => {
             const chip = document.createElement('span');
             chip.className = 'tag-chip';
             chip.textContent = formatTagLabel(tag);
