@@ -5,6 +5,7 @@ class SearchManager {
         this.currentSearchTerm = '';
         this.currentPhaseFilter = 'all';
         this.includeOngoing = true;
+        this.currentTagFilters = new Set();
         this.tableBody = null;
         this.init();
     }
@@ -86,6 +87,32 @@ class SearchManager {
         }
     }
 
+    // Toggle a tag chip filter: multiple tags can be selected at once. An
+    // event must carry every selected tag to match (selecting more tags
+    // narrows the results, like most faceted filters).
+    toggleTagFilter(tag) {
+        if (this.currentTagFilters.has(tag)) {
+            this.currentTagFilters.delete(tag);
+        } else {
+            this.currentTagFilters.add(tag);
+        }
+        this.updateTagChipStates();
+        this.filterEvents();
+    }
+
+    // Reflect the current tag selection on every chip in the table: a
+    // selected chip looks the same as it would with no filter active: every
+    // unselected chip dims while at least one tag is selected.
+    updateTagChipStates() {
+        const chips = document.querySelectorAll('.tag-chip');
+        chips.forEach(chip => {
+            const isSelected = this.currentTagFilters.has(chip.dataset.tag);
+            const isDimmed = this.currentTagFilters.size > 0 && !isSelected;
+            chip.classList.toggle('selected', isSelected);
+            chip.classList.toggle('dimmed', isDimmed);
+        });
+    }
+
     setActiveButton(activeButton) {
         const buttons = document.querySelectorAll('.filter-button');
         buttons.forEach(button => {
@@ -105,6 +132,7 @@ class SearchManager {
         Array.from(rows).forEach(row => {
             const eventPhase = row.getAttribute('data-phase');
             const isOngoing = row.getAttribute('data-ongoing') === 'true';
+            const rowTags = (row.getAttribute('data-tags') || '').split('|');
 
             // Get cell content for search
             const cells = row.getElementsByTagName('td');
@@ -133,8 +161,11 @@ class SearchManager {
             // Check if row matches the ongoing filter (only excludes ongoing events, never non-ongoing ones)
             const matchesOngoing = this.includeOngoing || !isOngoing;
 
-            // Show row if it matches search, phase, and the ongoing filter
-            if (matchesSearch && matchesPhase && matchesOngoing) {
+            // Check if row matches the selected tag chip, if any
+            const matchesTag = Array.from(this.currentTagFilters).every(tag => rowTags.includes(tag));
+
+            // Show row if it matches search, phase, ongoing, and tag filters
+            if (matchesSearch && matchesPhase && matchesOngoing && matchesTag) {
                 row.style.display = '';
             } else {
                 row.style.display = 'none';
@@ -169,6 +200,8 @@ class SearchManager {
         this.currentSearchTerm = '';
         this.currentPhaseFilter = 'all';
         this.includeOngoing = true;
+        this.currentTagFilters.clear();
+        this.updateTagChipStates();
         this.filterEvents();
 
         // Clear search bar

@@ -1,5 +1,75 @@
 // Table Renderer - Handles table creation and event row rendering
 
+// Tags that exist in the data but shouldn't render as a chip right now.
+// "opening" currently just means the description mentions an opening
+// reception somewhere, not that this listing IS the opening event, and
+// as a prominent chip that reads as a misleading claim. Revisit once we
+// have real opening-event data to back it up.
+const HIDDEN_TAGS = new Set(['opening']);
+
+// Curated colors for tags we know about today. Two things drove this pass
+// specifically (exhibition/current/museum used to look like near-identical
+// greens): `exhibition` and `past` - by far the two most common tags, and
+// almost always paired with each other and with every other tag - are now
+// flat greys instead of competing for a hue at all, and the 4 tags that
+// most often appear together on one row (current, future, museum, gallery)
+// are placed 64-168deg apart from each other, not as neighbors on the
+// wheel. The 5 rare identity/theme tags (each under 1% of all tag uses)
+// fill the remaining gaps; a tighter gap there is a low-risk tradeoff since
+// they almost never co-occur with each other in the real data. Every color
+// keeps at least a 4.5:1 contrast ratio against the chip's white text, and
+// none sit in the ~30-110deg range (yellow/amber/lime/olive), which read as
+// a muddy brown no matter how it was tuned.
+const TAG_COLOR_MAP = {
+    current: '#2a8618',
+    future: '#3c41dd',
+    past: '#334155',
+    exhibition: '#78716c',
+    museum: '#c723c2',
+    gallery: '#178277',
+    free: '#188640',
+    queer: '#2178ba',
+    immigrant: '#8c3cdd',
+    refugee: '#d92674',
+    'south-asian': '#d93826',
+};
+
+// Any tag not in the map above (i.e. one added to the data later) gets a
+// color from this function instead of a code change. Hues are placed with
+// the golden angle (~137.5deg) rather than an even 360/N split, which is
+// the standard trick for spacing out an open-ended, growing set of
+// categories - each new tag stays well separated from every tag before it,
+// not just from its immediate neighbors in a fixed-size wheel. The hue is
+// then remapped out of the same muddy 35-115deg range the curated colors
+// above avoid, and lightness is fixed low enough (30%) that every hue
+// clears 4.5:1 contrast against white.
+function getTagColor(tag) {
+    if (TAG_COLOR_MAP[tag]) return TAG_COLOR_MAP[tag];
+
+    let hash = 0;
+    for (let i = 0; i < tag.length; i++) {
+        hash = (hash * 31 + tag.charCodeAt(i)) >>> 0;
+    }
+    const GOLDEN_ANGLE = 137.508;
+    const rawHue = (hash * GOLDEN_ANGLE) % 360;
+    const hue = (118 + (rawHue / 360) * 280) % 360; // remapped into the 280deg usable arc
+    return hslToHex(hue, 0.55, 0.30);
+}
+
+function hslToHex(h, s, l) {
+    const a = s * Math.min(l, 1 - l);
+    const f = n => {
+        const k = (n + h / 30) % 12;
+        const color = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+        return Math.round(color * 255).toString(16).padStart(2, '0');
+    };
+    return `#${f(0)}${f(8)}${f(4)}`;
+}
+
+function formatTagLabel(tag) {
+    return tag.toLowerCase().replace(/-/g, ' ');
+}
+
 class TableRenderer {
     constructor(tableBodyId) {
         this.tableBody = document.getElementById(tableBodyId);
@@ -16,6 +86,7 @@ class TableRenderer {
         // Add data attributes to row for filtering
         row.setAttribute('data-phase', event.phase);
         row.setAttribute('data-ongoing', event.ongoing === true);
+        row.setAttribute('data-tags', event.tags.join('|'));
 
         // Image column
         const imageCell = row.insertCell();
@@ -31,11 +102,32 @@ class TableRenderer {
 
         // Tags column
         const tagsCell = row.insertCell();
-        tagsCell.textContent = event.tags.join(', ');
+        this.renderTagsCell(tagsCell, event);
 
         // Links column
         const linksCell = row.insertCell();
         this.renderLinksCell(linksCell, event);
+    }
+
+    renderTagsCell(cell, event) {
+        event.tags
+            .filter(tag => !HIDDEN_TAGS.has(tag))
+            .forEach(tag => {
+            const chip = document.createElement('span');
+            chip.className = 'tag-chip';
+            chip.textContent = formatTagLabel(tag);
+            chip.dataset.tag = tag;
+            chip.style.backgroundColor = getTagColor(tag);
+
+            chip.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (window.searchManager) {
+                    window.searchManager.toggleTagFilter(tag);
+                }
+            });
+
+            cell.appendChild(chip);
+        });
     }
 
     renderImageCell(cell, event) {

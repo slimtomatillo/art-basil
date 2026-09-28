@@ -99,6 +99,38 @@ body {
     border-color: #0d6efd;
 }
 
+/* Tag chips */
+.tag-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 2px 4px 2px 0;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.15s ease, opacity 0.15s ease, filter 0.15s ease;
+}
+
+.tag-chip:hover {
+    filter: brightness(0.9);
+    transform: translateY(-1px);
+}
+
+/* A selected chip is left at its normal appearance - the unselected chips
+   dimming around it (below) is what signals the selection. */
+
+.tag-chip.dimmed {
+    opacity: 0.35;
+    filter: grayscale(60%);
+}
+
+.tag-chip.dimmed:hover {
+    opacity: 0.6;
+}
+
 /* Event image styles */
 .event-image {
     max-width: 150px;
