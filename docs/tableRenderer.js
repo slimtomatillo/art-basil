@@ -165,12 +165,16 @@ class TableRenderer {
                     dateText = "Closed (date unavailable)";
                 }
             } else if (startDate) {
-                // No end date on record, but we know when it opened
+                // No end date on record, but we know when it opened. Lead
+                // with "Closed" (like every other past-event row) rather
+                // than "Opened <date>" alone - on its own that could read as
+                // still running, especially next to "Started on <date>"
+                // (which *is* used for a currently-open show).
                 try {
-                    dateText = `Opened ${new Intl.DateTimeFormat('en-US', options).format(startDate)}`;
+                    dateText = `Closed (opened ${new Intl.DateTimeFormat('en-US', options).format(startDate)})`;
                 } catch (error) {
                     console.warn(`Error formatting start date:`, error);
-                    dateText = "Opened (date unavailable)";
+                    dateText = "Closed (date unavailable)";
                 }
             } else {
                 // A closed show with no date on record at all. Unlike "Dates
