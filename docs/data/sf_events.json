@@ -20827,12 +20827,10 @@
             "hash": "5a0878ab4857701e2bdb85ba8a96a64c",
             "ongoing": false,
             "source": "manual"
-        }
-    },
-    "ARTogether & Oakland Asian Cultural Center": {
-        "Dalit Dreamlands: Toward An Anti-Caste Future-ARTogether & Oakland Asian Cultural Center": {
+        },
+        "Dalit Dreamlands: Toward An Anti-Caste Future-ARTogether": {
             "name": "Dalit Dreamlands: Toward An Anti-Caste Future",
-            "venue": "ARTogether & Oakland Asian Cultural Center",
+            "venue": "ARTogether",
             "description": "\nAsian American Women Artists Association (AAWAA), ARTogether, Discostan, and Oakland Asian Cultural Center co-presents \u201cDalit Dreamlands: Toward an Anti-Caste Future\u201d \u2013 a landmark multimedia Dalit art exhibition and dance party that will bring together over 30 multiply marginalized artists from Dalit*, Adivasi*, Bahujan*, Afro-Indian, Indo-Caribbean, and Muslim communities to showcase the depths of creativity and community.\nDalit Dreamlands, curated by Manu Kaur (they/them) and supported through AAWAA\u2019s Emerging Curator\u2019s Program, will center queer and trans caste abolitionist futurisms through art across various mediums, including fashion design, music, performances, films, paintings and visuals. One of the headlining artists, Malvika Raj, is a Dalit artist who challenges the casteist restrictions present in the Madhubani style of painting, by incorporating pro-Dalit assertions into her intricate and hypnotizing designs. Nazrina Rodjan is a queer Indo-Surinamese artist who integrates the history of indentured labor and femme resilience within her large paintings of indentured Indian women.\nLondon-based trans Dalit artist Mya Mehmi from Pxssy Palace will be one of four guest DJs and performers at the opening reception dance party in collaboration with Discostan\u2019s Arshia Fatima Haq. Dalit Dreamlands is a historic event that marks one of the first queer Dalit-centered spaces to exist in California.\n*Dalit is a caste marker for caste-oppressed communities formerly known as Untouchables, Adivasi refers to tribes who are indigenous to South Asia, and Bahujan is an umbrella term that includes all caste-oppressed communities.\n \nCURATOR\nManu Kaur\nEXHIBITING ARTISTS\nRinku Kumari, Jessie Sohpaul, Shivam Kamble, Nazrina Rodjan, Manpreet Singh, Malvika Raj, Seema Mattu, Mya Mehmi, Seema Hari, Shyama Kuver, Akhil Kang, Kaushik Tadvi, Rahee Punyashloka, Aravind Chedayan, Ajay Madhukar Dhoke, Shweta Ashokraj, Kamna Singh, Anika Nawar Ullah, Aindriya Barua, Ramnath Siddi, Siddi Tribe of Karnataka, Nrithya Pillai, Dalit Queer Project, Parth Pawar, Imaan Abbasi, Sri Vamsi Matta, R V Purusothaman (Purushu Arie), Shradha Raj, Jay Sagathia, Dee Chawla, Mia Kaur, Riri Kumbhar, Rohini bhadarge, John Spencer, Kulpreet Rana, & Simrah Farrukh\nEvent graphic by Parth Pawar.\n",
             "tags": [
                 "exhibition",
@@ -20856,8 +20854,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-02 16:34:50",
-            "hash": "5981ffc33920e0119657641d8b67364e",
+            "last_updated": "2026-09-28 09:04:13",
+            "hash": "49deeaf27ede16060c2628705fddff6a",
             "ongoing": false,
             "source": "manual"
         }
