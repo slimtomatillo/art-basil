@@ -7,25 +7,31 @@
 // have real opening-event data to back it up.
 const HIDDEN_TAGS = new Set(['opening']);
 
-// Curated colors for tags we know about today, individually tuned so no two
-// are easy to mix up (e.g. gallery/museum used to both be purple) and each
-// keeps at least a 4.5:1 contrast ratio against the chip's white text. Hues
-// stay out of the ~35-115deg range entirely (yellow/amber/lime/olive) since
-// every color that landed there read as a muddy brown or olive rather than
-// a clean color. `past` is deliberately flat grey rather than a hue, for
-// its own "faded/done" look and to free up more spacing for the rest.
+// Curated colors for tags we know about today. Two things drove this pass
+// specifically (exhibition/current/museum used to look like near-identical
+// greens): `exhibition` and `past` - by far the two most common tags, and
+// almost always paired with each other and with every other tag - are now
+// flat greys instead of competing for a hue at all, and the 4 tags that
+// most often appear together on one row (current, future, museum, gallery)
+// are placed 64-168deg apart from each other, not as neighbors on the
+// wheel. The 5 rare identity/theme tags (each under 1% of all tag uses)
+// fill the remaining gaps; a tighter gap there is a low-risk tradeoff since
+// they almost never co-occur with each other in the real data. Every color
+// keeps at least a 4.5:1 contrast ratio against the chip's white text, and
+// none sit in the ~30-110deg range (yellow/amber/lime/olive), which read as
+// a muddy brown no matter how it was tuned.
 const TAG_COLOR_MAP = {
-    current: '#198548',
-    future: '#3e58da',
-    past: '#475569',
-    exhibition: '#1d8519',
-    museum: '#188176',
-    gallery: '#2178ab',
-    free: '#6d3eda',
-    queer: '#b43ad9',
-    immigrant: '#ce27a7',
-    refugee: '#d83163',
-    'south-asian': '#ce4327',
+    current: '#2a8618',
+    future: '#3c41dd',
+    past: '#334155',
+    exhibition: '#78716c',
+    museum: '#178277',
+    gallery: '#c723c2',
+    free: '#188640',
+    queer: '#2178ba',
+    immigrant: '#8c3cdd',
+    refugee: '#d92674',
+    'south-asian': '#d93826',
 };
 
 // Any tag not in the map above (i.e. one added to the data later) gets a
