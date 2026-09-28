@@ -38,6 +38,11 @@ body {
 
 .header-search {
     grid-area: search;
+    /* Only meaningful when stacked (see below) - separates it from the
+       region/buttons block above it now that they're no longer adjacent
+       in the desktop two-column layout. */
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -48,6 +53,14 @@ body {
             "search region";
         column-gap: 2rem;
         align-items: start;
+    }
+
+    .header-search {
+        /* Sits below the logo in its own column here, not below the
+           region block, so the divider from the stacked layout doesn't
+           apply. */
+        border-top: none;
+        padding-top: 0;
     }
 }
 
