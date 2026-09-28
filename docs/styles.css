@@ -11,6 +11,46 @@ body {
     transform: translateY(-5px);
 }
 
+/* Page header layout. Desktop keeps the original two-column look (logo
+   stacked above search/filters on the left, region info + buttons on the
+   right) while narrow/stacked screens get a different reading order:
+   logo, then region info + buttons, then search/filters - see WEBSITE-54
+   follow-up. A CSS grid (rather than flex order) is what lets the same
+   three blocks be arranged completely differently at each breakpoint
+   without duplicating any markup. */
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "logo"
+        "region"
+        "search";
+    gap: 1rem;
+}
+
+.header-logo {
+    grid-area: logo;
+}
+
+.header-region {
+    grid-area: region;
+}
+
+.header-search {
+    grid-area: search;
+}
+
+@media (min-width: 768px) {
+    .header-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo   region"
+            "search region";
+        column-gap: 2rem;
+        align-items: start;
+    }
+}
+
 /* Table styles */
 .event-table {
     background-color: white;
