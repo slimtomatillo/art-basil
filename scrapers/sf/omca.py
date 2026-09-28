@@ -4,6 +4,39 @@ from config import MONTH_TO_NUM_DICT
 import datetime as dt
 from datetime import timezone
 import logging
+import re
+
+_MONTH_RE = '|'.join(sorted(MONTH_TO_NUM_DICT.keys(), key=len, reverse=True))
+_WEEKDAY_RE = r'(?:mon|tues?|wed(?:nes)?|thu(?:rs)?|fri|sat(?:ur)?|sun)\w*,\s*'
+# OMCA's date-range header is inconsistent: an optional weekday name on either
+# side, either dash character as the separator, the start year often omitted
+# (inferred from the end year), an optional trailing " | <Location>", and
+# occasionally a 4-digit year split by a stray space from an inline element
+# boundary ("202 6").
+_DATE_RANGE_RE = re.compile(
+    rf'(?:{_WEEKDAY_RE})?({_MONTH_RE})\.?\s+(\d{{1,2}})(?:st|nd|rd|th)?,?\s*(\d{{3}}\s?\d)?'
+    rf'\s*[\u2013\u2014-]\s*'
+    rf'(?:{_WEEKDAY_RE})?({_MONTH_RE})\.?\s+(\d{{1,2}})(?:st|nd|rd|th)?,?\s*(\d{{3}}\s?\d)',
+    re.IGNORECASE
+)
+
+
+def parse_date_range(text):
+    """Extract (start_date, end_date) from an OMCA date-range header, or
+    (None, None) if it doesn't look like one."""
+    match = _DATE_RANGE_RE.search(text)
+    if not match:
+        return None, None
+    m1, d1, y1, m2, d2, y2 = match.groups()
+    y2 = y2.replace(' ', '')
+    y1 = (y1 or y2).replace(' ', '')
+    try:
+        start_date = dt.date(int(y1), MONTH_TO_NUM_DICT[m1.lower()], int(d1))
+        end_date = dt.date(int(y2), MONTH_TO_NUM_DICT[m2.lower()], int(d2))
+    except (ValueError, KeyError):
+        return None, None
+    return start_date, end_date
+
 
 def convert_date_to_dt(date_text):
     """Convert date text to a datetime object, determining the year based on the next occurrence."""
@@ -46,7 +79,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
         # Find all header tags (h1, h2, h3, h4, h5, h6)
         header_tags = event_soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
         for header in header_tags:
-            date_text = header.get_text(strip=True).lower().replace('-', '–') # make dashes the same
+            date_text = header.get_text(strip=True).lower().replace('-', '–').replace('—', '–') # make dashes the same
             # Handle edge cases
             if '“' in date_text:
                 continue
@@ -76,22 +109,23 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
                     date_text = date_text.replace('opens ', '').split(' | ')
                     start_date = convert_date_to_dt(date_text[0])
                     return start_date, None, False
-                # Past exhibition
+                # Date range, e.g. "On view Friday, February 7, 2025–Sunday,
+                # February 1, 2026 | Gallery of California Art" - search() finds
+                # the range regardless of a leading "on view"/trailing location
                 elif '–' in date_text:
-                    date_text = date_text.replace(',', '').replace('.', '').split(' | ')[0].split(' i ')[0].split('–')
-                    start_date = convert_date_to_dt(date_text[0])
-                    end_date = convert_date_to_dt(date_text[1]) if len(date_text) > 1 else None
-                    ongoing = False
-                    return start_date, end_date, ongoing
+                    start_date, end_date = parse_date_range(date_text)
+                    if start_date is None and end_date is None:
+                        logging.warning(f"OMCA: could not parse date range {date_text!r} for {event_url}")
+                        continue
+                    return start_date, end_date, False
 
         # Otherwise, it's a past exhibition
-        date_text = event_soup.find('h1', class_='wp-block-post-title').find_next('p')
+        title_tag = event_soup.find('h1', class_='wp-block-post-title')
+        date_text = title_tag.find_next('p') if title_tag else None
         if date_text:
-            date_text = date_text.get_text(strip=True).lower().replace(',', '').split('–')
-            start_date = convert_date_to_dt(date_text[0])
-            end_date = convert_date_to_dt(date_text[1]) if len(date_text) > 1 else None
-            ongoing = False
-            return start_date, end_date, ongoing
+            start_date, end_date = parse_date_range(date_text.get_text(strip=True).lower())
+            if start_date or end_date:
+                return start_date, end_date, False
 
         return None, None, False
 

@@ -12022,12 +12022,13 @@
             "description": "Explore the living impact of Chicano artist, Malaqu\u00edas Montoya, whose legacy as a public-serving artist, activist, and community elder serves as inspiration for younger generations within the Chicano community and beyond. Montoya\u2019s posters, graphic prints, and murals highlighting political and social justice issues have helped define the Chicano identity for nearly five decades.",
             "tags": [
                 "exhibition",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": null,
+            "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2023-10-06",
+                "end": "2024-06-30"
             },
             "ongoing": null,
             "links": [
@@ -12040,8 +12041,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-09-24 11:32:35",
-            "hash": "a96cc34a7f03d359d57be59eeb4200ac"
+            "last_updated": "2026-09-28 03:21:34",
+            "hash": "589ec10ea866aa005cd8b5e654d23b43"
         },
         "Calli: The Art of Xicanx Peoples-Oakland Museum of California": {
             "name": "Calli: The Art of Xicanx Peoples",
@@ -12049,26 +12050,27 @@
             "description": "Experience intergenerational, feminist, queer, and Xicanx-Indigenous artworks offering ancestral forms of liberation, healing, and being at Calli: The Art of Xicanx Peoples, only at OMCA. Calli layers multiple artistic perspectives, featuring posters from late queer Chicana activist and professor Margaret \u201cMargie\u201d Terrazas Santos\u2019 collection in conversation with contemporary works by Xicanx artists who expand the horizons of possibility, inspiring reflection and fostering dialogue about a world in which we can all belong.",
             "tags": [
                 "exhibition",
+                "past",
                 "museum"
             ],
-            "phase": null,
+            "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2024-06-14",
+                "end": "2025-01-26"
             },
-            "ongoing": null,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://museumca.org/on-view/calli-the-art-of-xicanx-peoples/",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://museumca.org/wp-content/uploads/2024/05/CALLI-ManuelPaul-sm-1-1024x772.jpg",
+                    "link": "https://museumca.org/wp-content/smush-webp/2024/05/CALLI-ManuelPaul-sm-1-1024x772.jpg.webp",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-09-24 11:27:52",
-            "hash": "b46f3f50c18d2d1a4aa2128de9ea3466"
+            "last_updated": "2026-09-28 03:21:06",
+            "hash": "41fa9fc55e375bc6ae61b257788105ec"
         },
         "You Are Here: California Stories on the Map-Oakland Museum of California": {
             "name": "You Are Here: California Stories on the Map",
@@ -12095,8 +12097,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:27",
-            "hash": "87e8fa5da89080838b56d414dd743636"
+            "last_updated": "2026-09-28 03:21:01",
+            "hash": "7377d8ebeb0a7661dfc24ecab41060d7"
         },
         "Black Power-Oakland Museum of California": {
             "name": "Black Power",
@@ -12123,8 +12125,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:28",
-            "hash": "fba3f612dd76ba0247c2065d4566ca0b"
+            "last_updated": "2026-09-28 03:21:01",
+            "hash": "4ce155fd387f048f00167e317b3e39a3"
         },
         "OMCA Kids: Nature Playspace-Oakland Museum of California": {
             "name": "OMCA Kids: Nature Playspace",
@@ -12376,8 +12378,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:25",
-            "hash": "fe718b5f71100dc1b431981d4fd99a95"
+            "last_updated": "2026-09-28 03:21:00",
+            "hash": "1cbb1146757aeea87e20939bec1da350"
         },
         "Born of the Bear Dance: Dugan Aguilar\u2019s Photographs of Native California-Oakland Museum of California": {
             "name": "Born of the Bear Dance: Dugan Aguilar\u2019s Photographs of Native California",
@@ -12385,27 +12387,27 @@
             "description": "Experience the diverse voices of California\u2019s Indigenous peoples as they shape the present and future through the lens of celebrated Indigenous photographer Dugan Aguilar.OMCA\u2019s latest exhibition, Born of the Bear Dance: Dugan Aguilar\u2019s Photographs of Native California offers guests a first look at a significant collection that highlights Indigenous endurance and explores the vivid tapestry of contemporary Indigenous California life.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2024-11-08",
+                "end": "2025-07-13"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://museumca.org/on-view/born-of-the-bear-dance-dugan-aguilars-photographs-of-native-california/",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://museumca.org/wp-content/uploads/2024/07/Cousine-Fred-Truckee-1.jpg",
+                    "link": "https://museumca.org/wp-content/smush-webp/2024/07/Cousine-Fred-Truckee-1.jpg.webp",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-07-14 11:19:16",
-            "hash": "7ec4a7fc69d7280fa0a26c0202200c37"
+            "last_updated": "2026-09-28 03:21:06",
+            "hash": "f313b4fede8956d5558e0ff8fcd7ab64"
         },
         "Black Spaces: Reclaim & Remain-Oakland Museum of California": {
             "name": "Black Spaces: Reclaim & Remain",
@@ -12413,15 +12415,15 @@
             "description": "Black Spaces: Reclaim & Remain navigates the braided histories of displacement, resistance, and resilience within Black American communities in Oakland and the East Bay. Through new commissions in art, architecture, and archival research, the exhibition traces how these communities have creatively resisted dispossession and reimagined spaces of home and belonging.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-07-18",
+                "end": "2026-03-01"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://museumca.org/on-view/black-spaces-reclaim-remain/",
@@ -12432,8 +12434,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-03-04 11:31:51",
-            "hash": "67bb4465de326cf704adb51721f7e765"
+            "last_updated": "2026-09-28 03:21:04",
+            "hash": "02f0d26c8695b79e5ca0d8dd98d6c1e8"
         },
         "Ancestral Visions-Oakland Museum of California": {
             "name": "Ancestral Visions",
@@ -12441,26 +12443,27 @@
             "description": "Fashion, family histories, and personal identity intersect in a new installation at OMCA by Bay Area artist Chelsea Ryoko Wong. Wong\u2019s energetic and colorful paintings, drawn from both real-life events and her imagination, depict  busy, rhythmic scenes of people going about their daily lives. For this project, Wong\u2019s paintings take inspiration from dresses owned by seven 20th century Chinese American women, whose clothing and legacies live on in OMCA\u2019s collection. Ancestral Visions features paintings along with a selection of the fashions that inspired them. Visitors to the installation are invited into the world of the dresses and the women who wore them to ponder history, the value of what we wear to future generations, and the role of clothing as an expression of identity. Dresses that belonged to Rose Setzo, Sophia Chang Wong, Grace Dea, Lei Kim Lim, Chop Chin Chum, and Sun Fung Lee Wong caught Wong\u2019s eye and are re-envisioned in the abstract narratives of her vibrant work.",
             "tags": [
                 "exhibition",
+                "past",
                 "museum"
             ],
-            "phase": null,
+            "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-02-07",
+                "end": "2026-02-01"
             },
-            "ongoing": null,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://museumca.org/on-view/an-installation-by-chelsea-ryoko-wong-omca-artist-in-residence/",
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://museumca.org/wp-content/uploads/2024/12/6U4A0266-Enhanced-NR-1024x683.jpg",
+                    "link": "https://museumca.org/wp-content/smush-webp/2024/12/6U4A0266-Enhanced-NR-1024x683.jpg.webp",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-09-24 11:17:43",
-            "hash": "14950e3241344a1873c37fe9da4cce83"
+            "last_updated": "2026-09-28 03:21:05",
+            "hash": "187054a1de0a38eff514c85ffe4a5a1c"
         },
         "Fairyland @ 75: A Legacy of Magic-Oakland Museum of California": {
             "name": "Fairyland @ 75: A Legacy of Magic",
@@ -12487,8 +12490,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 15:34:26",
-            "hash": "da70f4199a2144b19addf4d6aa683fe9"
+            "last_updated": "2026-09-28 03:21:00",
+            "hash": "9da8519512277ac685348a61c6203b86"
         },
         "Good Fire: Tending Native Lands-Oakland Museum of California": {
             "name": "Good Fire: Tending Native Lands",
@@ -12496,15 +12499,15 @@
             "description": "Good Fire: Tending Native Lands explores how Native communities in Northern California have used controlled fire\u2014also called \u201cgood fire\u201d or \u201ccultural burning\u201d\u2014to care for the land and sustain traditions for millennia. Organized in collaboration with Native California fire practitioners, artists, ecologists, and cultural leaders, the exhibition reframes fire not only as a destructive force, but as an essential tool for supporting healthy ecosystems and vibrant communities.",
             "tags": [
                 "exhibition",
-                "current",
+                "past",
                 "museum"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-11-07",
+                "end": "2026-05-31"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://museumca.org/on-view/good-fire-tending-native-lands/",
@@ -12515,8 +12518,148 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-06-01 16:37:57",
-            "hash": "34f235f43f1c1dc5e712616eda595581"
+            "last_updated": "2026-09-28 03:21:03",
+            "hash": "49eaf2ed15f331719355efc5fc42364e"
+        },
+        "BeHere / 1942: A New Lens on the Japanese American Incarceration-Oakland Museum of California": {
+            "name": "BeHere / 1942: A New Lens on the Japanese American Incarceration",
+            "venue": "Oakland Museum of California",
+            "description": "Can looking closely at photographs change what we see, know, and feel about this history? Japanese artist Masaki Fujihata explores this very question in BeHere / 1942: A New Lens on the Japanese American Incarceration. Through immersive installations of historic images and augmented reality (AR) experiences, the exhibition brings visitors into the moments of 1942\u2014before Japanese Americans in Oakland, San Francisco, and Los Angeles were transported to concentration camps during World War II.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2026-12-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/behere-1942-a-new-lens-on-the-japanese-american-incarceration/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/smush-webp/2026/07/20-3148M-965x1024.png.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-28 03:20:59",
+            "hash": "8c79a655eed9692b1bc7e87925fa6f04"
+        },
+        "Mildred Howard: Poetics of Memory-Oakland Museum of California": {
+            "name": "Mildred Howard: Poetics of Memory",
+            "venue": "Oakland Museum of California",
+            "description": "Mildred Howard: Poetics of Memory is the first major museum exhibition to celebrate the work of beloved Bay Area artist Mildred Howard. Spanning Howard\u2019s five-decade practice, Poetics of Memory brings together her renowned collages, found-object sculptures, and immersive installations that explore memory, identity, and the African American experience. New and never-before-seen pieces punctuate the exhibition, while archival materials from Howard\u2019s Oakland studio illuminate the cultural currents and lived experiences that shape her practice.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-12",
+                "end": "2026-10-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/mildred-howard-poetics-of-memory/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/smush-webp/2025/12/DSCF0127-1-1024x683.jpg.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-28 03:20:59",
+            "hash": "061beeee3437c51e281f3e275709a0cd"
+        },
+        "Radical Blooms: The Unexpected Power of Flowers-Oakland Museum of California": {
+            "name": "Radical Blooms: The Unexpected Power of Flowers",
+            "venue": "Oakland Museum of California",
+            "description": "Radical Blooms: The Unexpected Power of Flowers draws on the OMCA\u2019s  interdisciplinary collection to reveal flowers as potent symbols of beauty and expression as well as  resistance, healing, and connection. Through artworks, clothing, posters, furniture, and photographs, the exhibition explores how flowers have shaped California\u2019s political, social, environmental, and cultural histories. Reflecting stories of ecological exchange, ritual, protest, and a reminder of life\u2019s fleeting nature, Radical Blooms uplifts flowers as an expression of California\u2019s signature creativity, hope, and radical spirit.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-12",
+                "end": "2027-08-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/radical-blooms/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/smush-webp/2026/08/2_2010.5.82_13OH_1768_D1-Social-Media-Use-1024x741.jpg.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-28 03:21:02",
+            "hash": "a8fbaf862f743b6710d5978271dd948c"
+        },
+        "Stephanie Syjuco: After/Images-Oakland Museum of California": {
+            "name": "Stephanie Syjuco: After/Images",
+            "venue": "Oakland Museum of California",
+            "description": "Stephanie Syjuco: After/Images explores how photographs and archives shape our understanding of history, power, and belonging. Oakland artist Stephanie Syjuco engages with and manipulates photographs and objects from US institutional archives, making visible the tools and choices behind image-making.Through cutting, layering, pixelating, crumpling, and rephotographing, she \u201ctalks back\u201d to the archive, repurposing its tools to care for and return agency to the people represented within it. Throughout the exhibition, chromakey green, staged photographs, props, mannequins, and video installations transform OMCA\u2019s Great Hall into a dynamic space where image-making unfolds. Visitors are invited to look closely, question what they see, and consider how images can be reshaped to tell more complete stories of the past.",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-15",
+                "end": "2027-05-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/stephanie-syjuco-after-images/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/smush-webp/2026/09/DodgeandBurn_Seattle_2024-1024x683.jpg.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-28 03:21:03",
+            "hash": "e21a7142836e76d4caefbe5c2bc6af32"
+        },
+        "Students on Strike-Oakland Museum of California": {
+            "name": "Students on Strike",
+            "venue": "Oakland Museum of California",
+            "description": "Students on Strike is a new installation opening in the OMCA Gallery of California History. The installation explores the enduring legacy of student activism at San Francisco State University by comparing the 1968-1969 student strike that established the nation\u2019s first Black Studies Department and first College of Ethnic Studies to the recent campus protests against the war in Gaza. Through historical and contemporary posters and photographs, the intimate feature shows how students have consistently demanded justice and accountability from institutions, then and now.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-04-09",
+                "end": "2026-05-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://museumca.org/on-view/students-on-strike/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://museumca.org/wp-content/smush-webp/2025/03/Illegal-speaker-near-AD-Building-1024x823.jpg.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-09-28 03:21:04",
+            "hash": "a382919b971ea887d7c35aa840ce2c9a"
         }
     },
     "Kala Art Institute": {
