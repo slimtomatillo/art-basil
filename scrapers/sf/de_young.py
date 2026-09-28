@@ -88,9 +88,20 @@ def scrape_de_young_and_legion_of_honor(env='prod', region='sf'):
                         # Extract date info
                         date = e.find(class_="mt-12 text-secondary f-subheading-1").get_text()
                         ongoing = True if date.lower() == 'ongoing' else False
-                        
+
                         # Identify phase and date fields
-                        if date.lower().split()[0] == 'through':
+                        if ongoing:
+                            # A bare "Ongoing" label (permanent installations)
+                            # has no date range to parse. Without this branch,
+                            # "ongoing".split()[0] != 'through' sends it into
+                            # the future-dated branch below, which crashes
+                            # trying to parse "ongoing" as a month/day/year -
+                            # caught by the except below, silently dropping
+                            # the event instead of storing it correctly.
+                            phase = 'current'
+                            start_date = None
+                            end_date = None
+                        elif date.lower().split()[0] == 'through':
                             # Get phase
                             phase = 'current'
                             # Get dt versions of start and end dates

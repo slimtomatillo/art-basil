@@ -51,7 +51,15 @@ def scrape_asian_art_museum_current_events(env='prod', region='sf'):
         event_date = date_element.find('span').text.lower().replace(',', '').strip()
         ongoing = True if event_date == 'ongoing' else False
         phase = 'current'
-        if 'open' in date_element.text.lower(): # This implies the date corresponds to the opening date
+        if ongoing:
+            # A bare "Ongoing" label - no date to parse at all. Without this
+            # guard, trying to parse "ongoing" as a month/day/year below
+            # raises an uncaught KeyError that takes down the rest of this
+            # function (including the non-featured events loop below it) for
+            # the whole run, not just this one card.
+            start_date = None
+            end_date = None
+        elif 'open' in date_element.text.lower(): # This implies the date corresponds to the opening date
             start_date = convert_date_to_dt(event_date)
             end_date = None # Ideally scrape the exhibition page to get the end date
             if start_date > dt.datetime.now().date():
