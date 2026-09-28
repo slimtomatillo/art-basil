@@ -42,7 +42,19 @@ def scrape_de_young_and_legion_of_honor(env='prod', region='sf'):
             else:
                 url = u['base_url'] + f"?page={i}"
             soup = fetch_and_parse(url)
-            if soup:
+            if soup is None:
+                # famsf.org is behind a Cloudflare WAF that returns 403 to
+                # datacenter IPs (e.g. GitHub Actions runners) on every page of
+                # this calendar, so this fetch reliably fails in CI while
+                # generally working from a normal connection - see WEBSITE-53
+                # for the same pattern on BAMPFA. Skip this page and leave
+                # existing data untouched rather than erroring out.
+                logging.warning(
+                    f"Skipping {u['venue']} exhibitions page {i}: could not fetch {url} "
+                    f"(likely the CDN 403 block on CI IPs); existing data kept."
+                )
+                break
+            else:
                 # Find elements a class
                 group_elements = soup.find_all(class_="flex flex-col-reverse")
                 

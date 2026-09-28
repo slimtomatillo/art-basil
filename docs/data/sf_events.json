@@ -1483,34 +1483,6 @@
             "last_updated": "2026-09-27 19:46:17",
             "hash": "e08ce8bd7dc4933cc5bf8827d9dbacad"
         },
-        "Open Ended: SFMOMA's Collection, 1900 to Now-SFMOMA": {
-            "name": "Open Ended: SFMOMA's Collection, 1900 to Now",
-            "venue": "SFMOMA",
-            "description": "",
-            "tags": [
-                "exhibition",
-                "current",
-                "museum"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": null,
-                "end": null
-            },
-            "ongoing": true,
-            "links": [
-                {
-                    "link": "https://www.sfmoma.org/exhibition/open-ended/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://sfmoma-media-dev.s3.us-west-1.amazonaws.com/www-media/2018/05/07143229/open_ended_thumbnail.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2025-01-09 11:13:20",
-            "hash": "a6708b925eda6a3d0ef913cd766845e3"
-        },
         "Freeform: Experiencing Abstraction-SFMOMA": {
             "name": "Freeform: Experiencing Abstraction",
             "venue": "SFMOMA",

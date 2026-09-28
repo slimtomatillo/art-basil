@@ -54,6 +54,15 @@ class TableRenderer {
             imgElement.style.cursor = 'pointer';
             cell.appendChild(imgElement);
 
+            // Some venues' images are hotlinked from a third-party CDN that
+            // can intermittently fail to load for a visitor (e.g. a bot-
+            // protection challenge on the source site) even though the URL
+            // is otherwise valid. Rather than showing a broken-image icon,
+            // remove the element so the cell just renders empty.
+            imgElement.addEventListener('error', () => {
+                imgElement.remove();
+            }, { once: true });
+
             // Add click event for opening modal
             imgElement.addEventListener('click', (e) => {
                 e.stopPropagation();
