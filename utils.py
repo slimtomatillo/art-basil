@@ -55,17 +55,21 @@ REQUEST_TIMEOUT = (10, 30)
 # proxy instead of a direct request. Each domain maps to only the ZenRows
 # params it actually needs, kept as cheap as possible since a "protected"
 # (js_render + premium_proxy) request costs 25x a plain one:
-#   - bampfa.org (Fastly WAF) and nortonsimon.org (Cloudflare) block on IP/UA
-#     reputation alone - no JS challenge - so a premium (residential) proxy
-#     IP is enough.
-#   - huntington.org (Vercel) and ago.ca (Cloudflare) run an actual
-#     JavaScript challenge page, so they need js_render too.
+#   - bampfa.org (Fastly WAF) blocks on IP/UA reputation alone - no JS
+#     challenge - so a premium (residential) proxy IP is enough.
+#   - nortonsimon.org, huntington.org, and ago.ca all run an actual
+#     JavaScript challenge page, so they need js_render too. Norton Simon
+#     looked like a plain IP/UA block from the ticket's original diagnosis,
+#     but a live test against the real ZenRows API came back
+#     "RESP001: could not get content, try enabling javascript rendering" -
+#     verify a domain's actual requirement this way rather than assuming
+#     from how the block merely *looks* from a browser.
 # A domain not listed here is fetched directly, exactly as before - this is
 # deliberately an allowlist, not a blanket "proxy everything", both for cost
 # and because most venues' sites have no issue with CI's IP at all.
 PROXY_DOMAINS = {
     'bampfa.org': {'premium_proxy': 'true'},
-    'www.nortonsimon.org': {'premium_proxy': 'true'},
+    'www.nortonsimon.org': {'premium_proxy': 'true', 'js_render': 'true'},
     'www.huntington.org': {'premium_proxy': 'true', 'js_render': 'true'},
     'ago.ca': {'premium_proxy': 'true', 'js_render': 'true'},
 }

@@ -65,7 +65,10 @@ def scrape_ago(env='prod', region='tor'):
             title_link = title_tag.find('a') if title_tag else None
             if not title_link:
                 continue
-            event_title = ' '.join(title_link.get_text(strip=True).split())
+            # Separator needed: a subtitle (e.g. "...from the Dallas Museum
+            # of Art") sits in its own <span> right after the main title
+            # with no space in the markup between them.
+            event_title = ' '.join(title_link.get_text(' ', strip=True).split())
             href = title_link.get('href')
             if not href:
                 continue
