@@ -4,37 +4,75 @@ from config import MONTH_TO_NUM_DICT
 import datetime as dt
 from datetime import timezone
 import logging
+import re
+
+# Longest names first so e.g. "june" matches before the "jun" abbreviation
+# would otherwise eat only part of it.
+_MONTH_PATTERN = '|'.join(sorted(MONTH_TO_NUM_DICT.keys(), key=len, reverse=True))
+# A date range, e.g. "July 4 – August 5th", "Oct. 3 – Nov. 4", or
+# "June 3 – 27, 2025". Matched with .search() rather than against the whole
+# line, since the surrounding prose (an exhibition title, "An SFWA Members'
+# Exhibition,") is free-form and shouldn't have to be stripped out first.
+_DATE_RANGE_RE = re.compile(
+    rf'\b(?P<start>(?:{_MONTH_PATTERN})\.?\s*\d{{1,2}}(?:st|nd|rd|th)?)'
+    rf'\s*(?:–|—|-|to)\s*'
+    rf'(?P<end>(?:(?:{_MONTH_PATTERN})\.?\s*)?\d{{1,2}}(?:st|nd|rd|th)?)'
+    rf'(?:,?\s*(?P<year>\d{{4}}))?',
+    re.IGNORECASE,
+)
 
 def scrape_event_specific_page(event_url):
     """Given the url for a specific event, scrape info"""
 
     # Scrape info and collect events
     soup = fetch_and_parse(event_url)
+    if soup is None:
+        logging.warning(f"Could not fetch event page: {event_url}")
+        return None, None, None
 
-    # Find all <p> elements within <header class="article-header">
     header = soup.find('header', class_='article-header')
     if not header:
         return None, None, None
-        
-    p_elements = header.find_all('p')
 
-    # Get date info
+    # The site mixes a <p>-based layout with a <ul><li><strong> one, and some
+    # pages have both (e.g. an image-only <p> alongside the real <li> text) -
+    # gather both tag types, in document order, rather than picking just one.
+    text_blocks = header.find_all(['p', 'li'])
+
+    # Get date info. Each block can bundle several logical lines separated by
+    # <br> (e.g. "An SFWA Members' Exhibition,<br>May 8th – June 2nd<br>..."),
+    # and some pages instead put the title and dates on one single line (e.g.
+    # "Open Call Exhibition, July 4 – August 5th"). Rather than requiring the
+    # whole line to be date-only text, search each line for just the date
+    # range substring - that way free-form prose ("An SFWA Members'
+    # Exhibition,", "Open Call Exhibition,") around it doesn't matter, and the
+    # opening-reception line is naturally skipped since "5:30 – 8pm" has no
+    # month name for the pattern to match.
     event_dates = None
-    for p in p_elements:
-        text = p.text.strip().lower()
-        # Skip if this looks like a title, opening reception, or other non-date text
-        if any(skip in text for skip in ['sfwa', 'members', 'exhibition', 'opening reception', 'opening', 'reception']):
-            continue
-        # Look for date separator and ensure it contains month names
-        if (' – ' in text or ' to ' in text) and any(month in text.lower() for month in MONTH_TO_NUM_DICT.keys()):
-            event_dates = text.replace(' to ', ' – ').replace('th', '').replace('rd', '').replace('nd', '').replace('1st', '1').replace(',', '').replace('beginning ', '').replace('show dates: ', '')
+    for block in text_blocks:
+        lines = block.get_text('\n').split('\n')
+        for line in lines:
+            # Normalize non-breaking spaces (seen as "June&nbsp;6 – July&nbsp;1")
+            # to regular spaces so later whitespace-based splitting works.
+            text = line.strip().lower().replace('\xa0', ' ')
+            if not text or 'reception' in text:
+                continue
+            match = _DATE_RANGE_RE.search(text)
+            if match:
+                event_dates = f"{match['start']} – {match['end']}"
+                if match['year']:
+                    event_dates += f" {match['year']}"
+                event_dates = event_dates.replace('th', '').replace('rd', '').replace('nd', '').replace('1st', '1').replace(',', '').replace('.', '')
+                break
+        if event_dates:
             break
 
-    # Get event description
-    try:
-        event_description = p_elements[0].text.strip().replace('\n', ' ')
-    except IndexError:
-        event_description = None
+    # Get event description - the first block with actual text (skips e.g.
+    # an image-only <p> that carries no text of its own).
+    event_description = next(
+        (text for block in text_blocks if (text := block.get_text(' ', strip=True))),
+        None,
+    )
 
     # Get image link
     img_container = soup.find('div', class_='ngg-gallery-thumbnail')
@@ -78,9 +116,14 @@ def scrape_sfwomenartists(env='prod', region='sf'):
     if events_list:
         for event in events_list:
             # Extract title and title-link
-            event_title = event.find('h4', class_='gallery-title').text.strip()
-            event_link = event.find('a')['href'].strip()
-            
+            title_tag = event.find('h4', class_='gallery-title')
+            link_tag = event.find('a')
+            if not title_tag or not link_tag:
+                logging.warning("Skipping exhibition-item with missing title or link")
+                continue
+            event_title = title_tag.text.strip()
+            event_link = link_tag['href'].strip()
+
             # Scrape additional info from event url
             event_dates, event_description, image_link = scrape_event_specific_page(event_link)
             # Skip to the next event if end date does not exist
@@ -106,25 +149,26 @@ def scrape_sfwomenartists(env='prod', region='sf'):
                 continue
                             
             # If no end month, use the start month
-            if len(dates[1].split(' ')) == 1:
+            end_tokens = dates[1].split(' ')
+            if len(end_tokens) == 1:
                 end_date_month = start_date_month
                 end_date_day = int(dates[1])
+            elif len(end_tokens) == 2 and all(t.isdigit() for t in end_tokens):
+                # Same-month range with a trailing year attached to the end day,
+                # e.g. "june 3 – 27 2025" (also covers what "august 3 – 27 2021"
+                # and "june 1 – 25 2021" were previously hardcoded for).
+                end_date_month = start_date_month
+                end_date_day = int(end_tokens[0])
             else:
-                if event_dates == 'august 3 – 27 2021':
-                    end_date_month = 8
-                    end_date_day = 27
-                elif event_dates == 'june 1 – 25 2021':
-                    end_date_month = 6
-                    end_date_day = 25
-                else:
-                    end_date_month, end_date_day = convert_date_to_nums(dates[1])
-                    if end_date_month is None or end_date_day is None:
-                        logging.warning(f"Could not parse end date from '{dates[1]}' for event: {event_title}")
-                        continue
+                end_date_month, end_date_day = convert_date_to_nums(dates[1])
+                if end_date_month is None or end_date_day is None:
+                    logging.warning(f"Could not parse end date from '{dates[1]}' for event: {event_title}")
+                    continue
 
+            year_tag = event.find('p')
             try:
-                year = int(event.find('p').text.split(' ')[-1])
-            except (ValueError, IndexError):
+                year = int(year_tag.text.split(' ')[-1])
+            except (AttributeError, ValueError, IndexError):
                 logging.warning(f"Could not parse year for event: {event_title}")
                 continue
             
