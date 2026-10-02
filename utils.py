@@ -73,11 +73,8 @@ PROXY_DOMAINS = {
     'ago.ca': {'premium_proxy': 'true', 'js_render': 'true'},
     # Cantor Arts Center
     'museum.stanford.edu': {'premium_proxy': 'true', 'js_render': 'true'},
-    # famsf.org (de Young / Legion of Honor / Virtual) is intentionally left
-    # out: the proxy fetch succeeds, but de_young.py's selectors are broken
-    # independent of that (see WEBSITE-68), and the type=exhibition filter in
-    # its URL doesn't appear to survive ZenRows' rendering either - needs its
-    # own investigation rather than being bundled in here.
+    # de Young, Legion of Honor (WEBSITE-68)
+    'www.famsf.org': {'premium_proxy': 'true', 'js_render': 'true'},
 }
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')

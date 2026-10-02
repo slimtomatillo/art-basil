@@ -17,137 +17,105 @@ def convert_date_to_dt(date_string):
     return date_dt
 
 def scrape_de_young_and_legion_of_honor(env='prod', region='sf'):
-    """Scrape and process events from the de Young and Legion of Honor."""
+    """Scrape and process exhibitions from the de Young and Legion of Honor."""
 
-    # Declare list of url dicts and then iterate through them
-    urls = [
-        {
-            'venue': 'de Young',
-            'base_url': 'https://www.famsf.org/calendar?type=exhibition&location=de-young'
-        },
-        {
-            'venue': 'Legion of Honor',
-            'base_url': 'https://www.famsf.org/calendar?type=exhibition&location=legion-of-honor'
-        },
-        {
-            'venue': 'Virtual',
-            'base_url': 'https://www.famsf.org/calendar?type=exhibition&location=virtual'
-        }
+    # Not /calendar?type=exhibition&location=... - that filter isn't actually
+    # applied server- or client-side (confirmed in a real browser: it returns
+    # every event type - tours, talks, parties - unfiltered), so the scraper
+    # was never reading exhibition data from it. /exhibitions is the real
+    # exhibitions listing, with a genuine `where=` location filter. famsf.org
+    # has no "Virtual" location here (it's an event type on /calendar, not a
+    # real exhibition venue - WEBSITE-68's "Virtual" venue never had any
+    # stored events), so it's dropped.
+    locations = [
+        {'venue': 'de Young', 'slug': 'de-young'},
+        {'venue': 'Legion of Honor', 'slug': 'legion-of-honor'},
     ]
-    for u in urls:
-        # Iterate through the pages
-        for i in range(1, 10):
-            if i == 1:
-                url = u['base_url']
-            else:
-                url = u['base_url'] + f"?page={i}"
+
+    today = dt.date.today()
+
+    def process_card(card, venue):
+        title_link = card.find('h3').find('a')
+        name = title_link.get_text(strip=True)
+        link = title_link.get('href')
+
+        date_text = card.find('p').get_text(' ', strip=True).lower().replace(',', '')
+        ongoing = date_text == 'ongoing'
+
+        if ongoing:
+            # A bare "Ongoing" label (permanent installations) has no date
+            # range to parse.
+            phase = 'current'
+            start_date = None
+            end_date = None
+        elif date_text.startswith('through'):
+            phase = 'current'
+            start_date = None
+            end_date = convert_date_to_dt(date_text.replace('through ', ''))
+        else:
+            dates = date_text.split(' – ')
+            # If no year on the start date, borrow the end date's year
+            if len(dates[0].split()) == 2:
+                dates[0] = dates[0] + ' ' + dates[1].split()[-1]
+            start_date = convert_date_to_dt(dates[0])
+            end_date = convert_date_to_dt(dates[1])
+            phase = 'future' if start_date > today else 'past'
+
+        img = card.select_one('picture img')
+        image_link = img.get('src') if img else None
+
+        event_details = {
+            'name': name,
+            'venue': venue,
+            'tags': ['exhibition', phase, 'museum'],
+            'phase': phase,
+            'dates': {'start': start_date, 'end': end_date},
+            'ongoing': ongoing,
+            'links': [{'link': link, 'description': 'Event Page'}],
+            'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        if image_link:
+            event_details['links'].append({'link': image_link, 'description': 'Image'})
+
+        if env == 'dev':
+            logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
+        if env == 'prod':
+            process_event(event_details, region)
+
+    for loc in locations:
+        venue = loc['venue']
+        # Current+upcoming exhibitions live on one page; a separate page
+        # holds past exhibitions (257+ deep per location) - only its first
+        # page (most recent ~21) is pulled, matching this scraper's
+        # historical scope rather than paging through the full archive.
+        for url in [
+            f"https://www.famsf.org/exhibitions?where={loc['slug']}",
+            f"https://www.famsf.org/exhibitions/past?where={loc['slug']}",
+        ]:
             soup = fetch_and_parse(url)
             if soup is None:
                 # famsf.org is behind a Cloudflare WAF that returns 403 to
-                # datacenter IPs (e.g. GitHub Actions runners) on every page of
-                # this calendar, so this fetch reliably fails in CI while
-                # generally working from a normal connection - see WEBSITE-53
-                # for the same pattern on BAMPFA. Skip this page and leave
-                # existing data untouched rather than erroring out.
+                # datacenter IPs (e.g. GitHub Actions runners) unless routed
+                # through the proxy - see WEBSITE-53. Skip this page and
+                # leave existing data untouched rather than erroring out.
                 logging.warning(
-                    f"Skipping {u['venue']} exhibitions page {i}: could not fetch {url} "
+                    f"Skipping {venue} ({url}): could not fetch "
                     f"(likely the CDN 403 block on CI IPs); existing data kept."
                 )
-                break
-            else:
-                # Find elements a class
-                group_elements = soup.find_all(class_="flex flex-col-reverse")
-                
-                # If no pages left, exit loop
-                if len(group_elements) == 0: # this will be 0 when we've gone through all the pages
-                    break
+                continue
 
-                for element in group_elements:
-                    try:
-                        # Get image link if possible
-                        pics = element.find_all("picture")
-                        source_tag = pics[1].find('source')
-                        # Assuming srcset is found
-                        if source_tag and source_tag.has_attr('srcset'):
-                            srcset_value = source_tag['srcset']
-                            srcset_list = srcset_value.split(', ')
-                            urls = [item.split(' ')[0] for item in srcset_list]
-                            # Get biggest image
-                            image_link = urls[-1]
-                        else:
-                            image_link = None
-                                                
-                        e = element.find(class_="mt-24 xl:mt-32")
+            # The site reuses this same data-behavior marker on non-exhibition
+            # cards too (e.g. "visit us" venue-hours promos), which have no
+            # /exhibitions/ link - filter to real exhibition cards only.
+            cards = soup.find_all(attrs={'data-behavior': 'BlockLink'})
+            cards = [
+                c for c in cards
+                if c.find('h3') and c.find('h3').find('a')
+                and '/exhibitions/' in (c.find('h3').find('a').get('href') or '')
+            ]
 
-                        # Extract name
-                        name = e.find("a").find("h3").get_text().strip()
-
-                        # Extract link
-                        link = e.find("a").get("href")
-
-                        # Extract date info
-                        date = e.find(class_="mt-12 text-secondary f-subheading-1").get_text()
-                        ongoing = True if date.lower() == 'ongoing' else False
-
-                        # Identify phase and date fields
-                        if ongoing:
-                            # A bare "Ongoing" label (permanent installations)
-                            # has no date range to parse. Without this branch,
-                            # "ongoing".split()[0] != 'through' sends it into
-                            # the future-dated branch below, which crashes
-                            # trying to parse "ongoing" as a month/day/year -
-                            # caught by the except below, silently dropping
-                            # the event instead of storing it correctly.
-                            phase = 'current'
-                            start_date = None
-                            end_date = None
-                        elif date.lower().split()[0] == 'through':
-                            # Get phase
-                            phase = 'current'
-                            # Get dt versions of start and end dates
-                            start_date = None
-                            dates = [date.lower().replace(',', '').replace('through ', '')]
-                            end_date = convert_date_to_dt(dates[0])
-
-                        else:
-                            # Get phase
-                            phase = 'future'
-                            # Get dt versions of start and end dates
-                            dates = date.lower().replace(',', '').split(' – ')
-                            # If no year in the date, add the year (use year of end date)
-                            if len(dates[0].split()) == 2:
-                                dates[0] = dates[0] + ' ' + dates[1].split()[-1]
-                            start_date = convert_date_to_dt(dates[0])
-                            end_date = convert_date_to_dt(dates[1])
-                                                
-                        event_details = {
-                            'name': name,
-                            'venue': u['venue'],
-                            'tags': ['exhibition'] + [phase] + ['museum'],
-                            'phase': phase, # Possible phases are past, current, future
-                            'dates': {'start': start_date, 'end': end_date},
-                            'ongoing': ongoing,
-                            'links': [
-                                {
-                                    'link': link,
-                                    'description': 'Event Page'
-                                },
-                            ],
-                            'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
-                        }
-                        # Add image link if it exists
-                        if image_link:
-                            event_details['links'].append({
-                                'link': image_link,
-                                'description': 'Image'
-                            })
-
-                        # Log event details in dev environment
-                        if env == 'dev':
-                            logging.info(f"Event found: {event_details['name']} at {event_details['venue']}")
-
-                        if env == 'prod':
-                            process_event(event_details, region)
-
-                    except Exception as e:
-                        logging.error(f"Error processing element for {u['venue']}: {e}", exc_info=True)
+            for card in cards:
+                try:
+                    process_card(card, venue)
+                except Exception as e:
+                    logging.error(f"Error processing exhibition card for {venue}: {e}", exc_info=True)
