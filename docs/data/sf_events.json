@@ -31,8 +31,8 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -46,23 +46,24 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/c1ec6c99-c1a4-4003-b27f-527578c875b4/heade-orchid-hummingbird-1885.jpg?crop=3000,1997,x0,y137&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/1d939195-207e-4d60-b296-2e301e3eb4cc/bouquets-to-art-rdodson-2024-1.jpg?crop=2995,1998,x0,y130&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "hash": "7e2bc43b6596fd156fabaf0fa3ac2690"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "0df7a022fe95d6f8090c91374776082e"
         },
         "Lee Mingwei: Rituals of Care-de Young": {
             "name": "Lee Mingwei: Rituals of Care",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2024-02-17",
                 "end": "2024-07-07"
             },
             "ongoing": false,
@@ -72,23 +73,24 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/53f57f9f-6e90-4e3c-ac63-e27328492a52/lee-mingwei-mending-project-taipei-fine-arts-museum-01.jpg?crop=5184,3456,x0,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/53f57f9f-6e90-4e3c-ac63-e27328492a52/lee-mingwei-mending-project-taipei-fine-arts-museum-01.jpg?crop=5184,3456,x0,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "hash": "31a3e84c1140fc21365670f8266b258b"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "8c2896ca3624d347a4ea5d8a727b83d8"
         },
         "Irving Penn-de Young": {
             "name": "Irving Penn",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2024-03-16",
                 "end": "2024-07-21"
             },
             "ongoing": false,
@@ -98,23 +100,24 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/04dc2bf7-f33b-40f6-bbcc-2fa8ea46e136/penn-audrey-hepburn-1951-gray.jpg?crop=1978,1320,x1543,y5&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/04dc2bf7-f33b-40f6-bbcc-2fa8ea46e136/penn-audrey-hepburn-1951-gray.jpg?crop=1978,1320,x1543,y5&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "hash": "beac0433abe24567cf9492b59899bec7"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "77d425cca80b32abe923e03918047680"
         },
         "Fashioning San Francisco: A Century of Style-de Young": {
             "name": "Fashioning San Francisco: A Century of Style",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2024-01-20",
                 "end": "2024-08-11"
             },
             "ongoing": false,
@@ -124,11 +127,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/e4f9c897-6035-4e13-8fb2-4b6f1ce5648c/fashioning-san-francisco-r2-v2.jpg?crop=2070,1380,x135,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/e4f9c897-6035-4e13-8fb2-4b6f1ce5648c/fashioning-san-francisco-r2-v2.jpg?crop=2070,1380,x135,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "hash": "f26c49b703af7b22552fae0ee006c497"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "714a728465cb2be28eaa46d2793e9cae"
         },
         "Nampeyo and the Siky\u00e1tki Revival-de Young": {
             "name": "Nampeyo and the Siky\u00e1tki Revival",
@@ -178,21 +182,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/24f02a10-ed93-4b91-b0f0-0b47cac052be/okeeffe-ranchos-church-1930.jpg?crop=2393,1594,x251,y234&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/24f02a10-ed93-4b91-b0f0-0b47cac052be/okeeffe-ranchos-church-1930.jpg?crop=2393,1594,x251,y234&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-21 03:15:11",
-            "hash": "3af43f2800131157ab1c563f8942ef2b"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "42791d5168f8c1ab0f4ed69751e6f77a"
         },
         "Art and War in the Renaissance: The Battle of Pavia Tapestries-de Young": {
             "name": "Art and War in the Renaissance: The Battle of Pavia Tapestries",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -206,21 +209,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/4102ba54-cf77-4033-ae20-309a708d5de2/orley-tapestry-francis-i-santangelo-1528-31.jpg?crop=1957,1305,x566,y72&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/4102ba54-cf77-4033-ae20-309a708d5de2/orley-tapestry-francis-i-santangelo-1528-31.jpg?crop=1957,1305,x566,y72&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-12 11:12:56",
-            "hash": "566338541c1ccd525c8eb5d29c477ddd"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "23884601404085e9d91d92b1cfecf230"
         },
         "Tamara de Lempicka-de Young": {
             "name": "Tamara de Lempicka",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -234,24 +236,24 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/c1e6f705-27c0-4966-b3b5-361c39aa1edb/lempicka-young-woman-gloves-1930-31-3.jpg?crop=5046,3365,x148,y330&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/c1e6f705-27c0-4966-b3b5-361c39aa1edb/lempicka-young-woman-gloves-1930-31-3.jpg?crop=5046,3365,x148,y330&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-02-09 11:11:39",
-            "hash": "f405c7b6eabde39c8815739c10350b63"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "2b9bfa7d8017639e311d20aa6421b0e5"
         },
         "Leilah Babirye: We Have a History-de Young": {
             "name": "Leilah Babirye: We Have a History",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2024-06-22",
                 "end": "2026-05-03"
             },
             "ongoing": false,
@@ -261,25 +263,25 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/de980aae-7325-483e-8033-4548f551dd36/156-leilah-babirye-gary-sexton.jpg?crop=9052,6038,x0,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/de980aae-7325-483e-8033-4548f551dd36/156-leilah-babirye-gary-sexton.jpg?crop=9052,6038,x0,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "3d9778e5624ca4aa5d06894a14754776"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "c942739cfa37800e3dc6487071137a1c"
         },
         "Rose B. Simpson: LEXICON-de Young": {
             "name": "Rose B. Simpson: LEXICON",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
-                "end": "2026-08-02"
+                "end": "2027-02-07"
             },
             "ongoing": false,
             "links": [
@@ -288,24 +290,24 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/17e06ad1-3149-4779-addd-79dbe237ee87/2014-rose-simpson-maria-car-krussel-3000.jpg?crop=2224,1484,x433,y243&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/17e06ad1-3149-4779-addd-79dbe237ee87/2014-rose-simpson-maria-car-krussel-3000.jpg?crop=2224,1484,x433,y243&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "5ced182314c1dd1b2ff1031e56c8d9b6"
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "3de787629bb696aaf2d62a73f93828bd"
         },
         "About Place: Bay Area Artists from the Svane Gift-de Young": {
             "name": "About Place: Bay Area Artists from the Svane Gift",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2024-08-10",
                 "end": "2026-07-05"
             },
             "ongoing": false,
@@ -315,26 +317,25 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/d8ec0f17-acd7-458e-ba4a-88c33bf08840/arzabe-quiero-inti-2021.jpg?crop=2978,1982,x5,y136&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/d8ec0f17-acd7-458e-ba4a-88c33bf08840/arzabe-quiero-inti-2021.jpg?crop=2978,1982,x5,y136&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "67b7bd1b05b687c4256e9de27a458d3d"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "b5d444ae1b10b7c7d45dba4e352456eb"
         },
         "Embroidered Histories-de Young": {
             "name": "Embroidered Histories",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
                 "start": "2025-11-29",
-                "end": "2026-05-24"
+                "end": "2026-05-03"
             },
             "ongoing": false,
             "links": [
@@ -343,25 +344,25 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/ab102e07-6f31-4909-ae1e-08aa44e80be8/spot-sampler-1685.jpg?crop=1066,712,x174,y279&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/ab102e07-6f31-4909-ae1e-08aa44e80be8/spot-sampler-1685.jpg?crop=1066,712,x174,y279&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "be1d2c4a59704ab23d9f98afb9e5a825"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "8cb9c00da040cf06bd800949100ba7d7"
         },
         "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family-de Young": {
             "name": "Contemporary Painting in Papua New Guinea: Mathias Kauage and His Family",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "current",
+                "museum"
             ],
-            "phase": "past",
+            "phase": "current",
             "dates": {
                 "start": null,
-                "end": "2026-03-15"
+                "end": "2026-12-06"
             },
             "ongoing": false,
             "links": [
@@ -370,21 +371,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/b49eed86-b2ca-4fe8-a103-f21093571def/kauage-flies-scotland-1999.jpg?crop=2123,1416,x30,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/b49eed86-b2ca-4fe8-a103-f21093571def/kauage-flies-scotland-1999.jpg?crop=2123,1416,x30,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "b144fa9718c8ef87ed68c1c7270299f9"
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "c62d1fab2ed720fdf594e71651037082"
         },
         "Robert Bechtle: Prints and Drawings-de Young": {
             "name": "Robert Bechtle: Prints and Drawings",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -398,21 +398,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/2b866279-01dc-44a5-ac0f-09edbb9a3329/robert-bechtle-bopdqswipcvf3-5rggntbxxramlmic27hfw5ttwszu8.png?crop=526,351,x61,y30&format=webp&quality=80&width=1250",
+                    "link": "https://www.famsf.org/storage/images/0108944e-c5f8-4c54-bb25-229c2b24e53d/robert-bechtle-34th-ave-1987.png?crop=533,355,x56,y56&format=jpg&quality=80&width=533",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-05 11:11:54",
-            "hash": "d9f666c28ffcd733efe72c7e46e80eec"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "082a1646b625df4f11af76e2314999f8"
         },
         "Paul McCartney Photographs 1963\u201364: Eyes of the Storm-de Young": {
             "name": "Paul McCartney Photographs 1963\u201364: Eyes of the Storm",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -426,21 +425,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/eda8491d-9b76-447e-88c7-3adf7410a9e4/mccartney-self-portrait-1963.jpg?crop=2398,1599,x764,y32&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/eda8491d-9b76-447e-88c7-3adf7410a9e4/mccartney-self-portrait-1963.jpg?crop=2398,1599,x764,y32&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-10-05 11:12:53",
-            "hash": "6885225ca08a25db25cfab9453b637d0"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "3a54a9f9a57166dbb499f5f2ff74c629"
         },
         "Matisse\u2019s \u201cJazz\u201d Unbound-de Young": {
             "name": "Matisse\u2019s \u201cJazz\u201d Unbound",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -454,21 +452,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/6ae2d174-a095-48e1-b63e-134c13f07a5f/matisse-clown-1947-2.jpg?crop=3086,2058,x459,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/6ae2d174-a095-48e1-b63e-134c13f07a5f/matisse-clown-1947-2.jpg?crop=3086,2058,x459,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-09-28 11:12:54",
-            "hash": "6586eedd78369362ba85c67980d46497"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "8610afbf729a766a451599a2a7d69b4c"
         },
         "Bouquets to Art 2025-de Young": {
             "name": "Bouquets to Art 2025",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -482,21 +479,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/1d939195-207e-4d60-b296-2e301e3eb4cc/bouquets-to-art-rdodson-2024-9.jpg?crop=2218,1479,x125,y20&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/1d939195-207e-4d60-b296-2e301e3eb4cc/bouquets-to-art-rdodson-2024-9.jpg?crop=2218,1479,x125,y20&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-06-08 11:14:09",
-            "hash": "126b19c4c0afbfc03c903c9c888c67ea"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "4407e25d14ce468f13dc43b21ef64964"
         },
         "Isaac Julien: I Dream a World-de Young": {
             "name": "Isaac Julien: I Dream a World",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -510,25 +506,25 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/6e5c1c42-7738-4b56-b0cc-46f0d03251cf/isaac-julien-i-dream-a-world-henrik-kam-2025-318-808a6796.jpg?crop=1955,1303,x315,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/6e5c1c42-7738-4b56-b0cc-46f0d03251cf/isaac-julien-i-dream-a-world-henrik-kam-2025-318-808a6796.jpg?crop=1955,1303,x315,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-07-13 11:15:15",
-            "hash": "6e79e9e0c0aa3ad79ac08cc78ce99b84"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "6288c0c7d9a77314628437e62197e6c0"
         },
         "Art of Manga-de Young": {
             "name": "Art of Manga",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": "2026-01-25"
+                "start": "2025-09-27",
+                "end": "2026-02-01"
             },
             "ongoing": false,
             "links": [
@@ -537,25 +533,25 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/f98445aa-5852-45a4-897e-6d087985232d/digital-25-art-of-manga-web-header-image-r5b.jpg?crop=3242,2160,x327,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/f98445aa-5852-45a4-897e-6d087985232d/digital-25-art-of-manga-web-header-image-r5b.jpg?crop=3242,2160,x327,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "05a580dd9facd6f1cac1acb0f3f54196"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "34ad1278f0e24dab19624f98a895e3b0"
         },
         "Boom and Bust: Photographing Northern California-de Young": {
             "name": "Boom and Bust: Photographing Northern California",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": "2026-06-07"
+                "start": "2025-10-18",
+                "end": "2026-08-02"
             },
             "ongoing": false,
             "links": [
@@ -564,12 +560,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/611df340-0cb4-4bb4-852c-0451649ccb40/howard-street-sf-earthquake-victorians-1906.jpg?crop=2698,1798,x145,y151&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/611df340-0cb4-4bb4-852c-0451649ccb40/howard-street-sf-earthquake-victorians-1906.jpg?crop=2698,1798,x145,y151&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "46deff4ff0079a570a5058eed8b57649"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "89beaa833e96066a25881f4ce0d6cec0"
         },
         "Rooted in Place: California Native Art-de Young": {
             "name": "Rooted in Place: California Native Art",
@@ -591,12 +587,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/a93bfa86-e0f0-459c-831b-2f437092b6ae/rick-bartow-magical-mind-rural-america-2015.jpg?crop=3862,2574,x78,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/a93bfa86-e0f0-459c-831b-2f437092b6ae/rick-bartow-magical-mind-rural-america-2015.jpg?crop=3862,2574,x78,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "43e99d230f5289dfa94779bec4b0ef4b"
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "3840a8fc153ac2cc67990405c4ebf56d"
         },
         "Arts of Indigenous America-de Young": {
             "name": "Arts of Indigenous America",
@@ -618,12 +614,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/c78f6667-03ca-4a0d-a8ac-18b87f41ab57/cannupa-hanska-luger-special-forces-2025.jpg?crop=2543,1695,x256,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/c78f6667-03ca-4a0d-a8ac-18b87f41ab57/cannupa-hanska-luger-special-forces-2025.jpg?crop=2543,1695,x256,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "24f21e80bcd49953088e33875222644d"
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "b99fc8b1f1805085cfea01153e432f99"
         },
         "The McCoy Jones Collection: Textiles from Central Asia and the Near East-de Young": {
             "name": "The McCoy Jones Collection: Textiles from Central Asia and the Near East",
@@ -658,9 +654,8 @@
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -674,26 +669,25 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/4debb448-d140-40ab-8726-32ad65a1c72b/monet-church-san-giorgio-maggiore-venice-1908-web-size.jpg?crop=2500,1668,x0,y45&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/4debb448-d140-40ab-8726-32ad65a1c72b/monet-church-san-giorgio-maggiore-venice-1908-web-size.jpg?crop=2500,1668,x0,y45&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "31943ff3a865fb94aae68bef02221bb6"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "72a27c78888dca546e9d502d9d63b531"
         },
         "The McCoy Jones Collection: Textiles from Central Asia and the Middle East-de Young": {
             "name": "The McCoy Jones Collection: Textiles from Central Asia and the Middle East",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
                 "start": "2025-11-29",
-                "end": "2026-05-24"
+                "end": "2026-05-03"
             },
             "ongoing": false,
             "links": [
@@ -702,21 +696,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/72d82aa5-819d-4180-92c5-ae909e863007/embroidered-hanging-suzani-19th.jpg?crop=2274,1514,x84,y726&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/72d82aa5-819d-4180-92c5-ae909e863007/embroidered-hanging-suzani-19th.jpg?crop=2274,1514,x84,y726&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "82e1492294ffe6eb9c14cb337e628748"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "66c10250a679334d4d98cac89198eec3"
         },
         "Bouquets to Art 2026-de Young": {
             "name": "Bouquets to Art 2026",
             "venue": "de Young",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -730,12 +723,228 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/ecc24cb2-f2f1-42d6-a6b1-1b7a8388ae06/ms-loh-bta-finished-bouquets-20250609-16.jpg?crop=2000,1333,x0,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/c5633161-2c7d-4f1d-b7dc-98b2c71f7faa/0746-bouquets-210607.jpg?crop=3525,2347,x56,y39&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:40",
-            "hash": "e5fca8e0da2dbba34f12bcc86ef69f75"
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "9736ef04cf0a2ff5590e83ef065134ab"
+        },
+        "Vitality Arts-de Young": {
+            "name": "Vitality Arts",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-02-03",
+                "end": "2024-03-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/vitality-arts",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/e18f7810-5238-4372-bb14-5817885dd1eb/100-de-young-2023-andria-lo.jpg?crop=2805,1871,x195,y130&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:20",
+            "hash": "8aa48e8ce07458c8700e9213be329b7a"
+        },
+        "Treasures of the Pharaohs-de Young": {
+            "name": "Treasures of the Pharaohs",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/treasures-pharaohs",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/8643cf1b-8abf-47e6-973a-268e713887f5/pharaohs-gilded-wooden-anthropoid-coffin-18th-dynasty-retouch.jpg?crop=2985,1991,x0,y940&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "a94b45888bbfb2c17d63f7c73ab3c39e"
+        },
+        "A Gallery of Their Own: Women Artists from the Carr and Goldblum Gift-de Young": {
+            "name": "A Gallery of Their Own: Women Artists from the Carr and Goldblum Gift",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/gallery-women-artists-carr-goldblum",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/8fbe5242-378f-4e4f-b0e1-52c68d8da4f7/sandy-skoglund-fragile-steps-walking-on-eggshells-1997.jpg?crop=3000,1997,x0,y83&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "7e7bbd33818fc1de854ed3f2ebfe618f"
+        },
+        "Bouquets to Art 2027-de Young": {
+            "name": "Bouquets to Art 2027",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-02",
+                "end": "2027-03-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/bouquets-to-art-2027",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/412fd3ce-da1a-4dde-9c0b-05f6ac6d668f/09098-bouquets-260302.jpg?crop=2666,1777,x0,y1637&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "c6a2ae05126b56faea2401aa259792a0"
+        },
+        "Superficial Matters: Artists from the Svane Gift and Beyond-de Young": {
+            "name": "Superficial Matters: Artists from the Svane Gift and Beyond",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-04-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/superficial-matters-artists-svane",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/f7161e76-4309-4659-bfc5-6c0da4d78397/christianne-lyons-leonora-radiant-magenta-cadium-red-2021.jpg?crop=2208,1472,x7,y14&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "fd2b86ac9960a39562ddde5b4a6392c0"
+        },
+        "Spectacular Freedom: Andrew Wyeth and the Modern American Watercolor-de Young": {
+            "name": "Spectacular Freedom: Andrew Wyeth and the Modern American Watercolor",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-13",
+                "end": "2027-07-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/andrew-wyeth-watercolor",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/687b5cb3-e33d-482f-877c-e2a7e07b46a0/andrew-wyeth-maine-fisherman-1936.jpg?crop=2859,1903,x483,y123&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "a3b03b2e93389962744ef940ae362b45"
+        },
+        "Made in San Francisco-de Young": {
+            "name": "Made in San Francisco",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-10",
+                "end": "2027-10-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/made-in-san-francisco",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/12f9e81f-c7d6-4425-bd60-1716bb668989/diebenkorn-cityscape-1963.jpg?crop=2520,1681,x0,y0&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "94723745dca48487ca4bbd9a82e09d85"
+        },
+        "Nengi Omuku: The Gathering-de Young": {
+            "name": "Nengi Omuku: The Gathering",
+            "venue": "de Young",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2028-05-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/nengi-omuku",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/b7948130-c7a5-497b-b1ad-02ba28474a43/nengi-omuku-gathering-2020.jpg?crop=2595,1730,x209,y140&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:16",
+            "hash": "72c3b5d36e5d04f40fb795525efad179"
         }
     },
     "Legion of Honor": {
@@ -752,26 +961,31 @@
                 "start": "2023-08-05",
                 "end": "2024-04-07"
             },
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://www.famsf.org/exhibitions/drawing-the-line",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/8061f7ca-cea2-40d0-9064-40fac36bff84/eduart-drawing-the-line-1.jpg?crop=2791,1862,x1554,y10&format=jpg&quality=80&width=1000",
+                    "description": "Image"
                 }
             ],
-            "hash": "9355f87c3cce5a275f11b075bb1df903",
-            "ongoing": false
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "0e14437121d3f550b73609992a460562"
         },
         "Japanese Prints in Transition: From the Floating World to the Modern World-Legion of Honor": {
             "name": "Japanese Prints in Transition: From the Floating World to the Modern World",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2024-04-06",
                 "end": "2024-08-18"
             },
             "ongoing": false,
@@ -781,11 +995,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/5f6713f6-a9a0-4e5b-afe8-f1369d30fa6c/great-wave-japanese-prints-a002255-hero.jpg?crop=2854,1901,x23,y37&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/5f6713f6-a9a0-4e5b-afe8-f1369d30fa6c/great-wave-japanese-prints-a002255-hero.jpg?crop=2854,1901,x23,y37&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "hash": "6dab92659df1817f34cbb89b9227fbf5"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "2fa68f59dbc5f2150e73e2bbd508d50a"
         },
         "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)-Legion of Honor": {
             "name": "Zuan-cho: Kimono Design in Modern Japan (1868\u20131912)",
@@ -807,12 +1022,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/b43f02b8-e8e9-4de6-8444-fb1975ed7d40/textile-design-sono-no-kaori-op-a407923-v1-crop-3000x3000.jpg?crop=2887,1924,x59,y147&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/b43f02b8-e8e9-4de6-8444-fb1975ed7d40/textile-design-sono-no-kaori-op-a407923-v1-crop-3000x3000.jpg?crop=2887,1924,x59,y147&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-27 11:12:23",
-            "hash": "3267ff064055096c8a4871cd18947536"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "5628d005eba7a58364c9e5557e1f024f"
         },
         "Woodcut: Primary Printmaking-Legion of Honor": {
             "name": "Woodcut: Primary Printmaking",
@@ -834,21 +1049,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/57d7c1b8-6e39-4a02-ace8-b54d02b0330c/munch-moonlight-1896.jpg?crop=1698,1131,x844,y819&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/57d7c1b8-6e39-4a02-ace8-b54d02b0330c/munch-moonlight-1896.jpg?crop=1698,1131,x844,y819&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2024-10-21 03:15:14",
-            "hash": "7214be126a37c50c90fd0fa187133ffd"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "5f217a66eb78858f8550f630feaf35bc"
         },
         "Mary Cassatt at Work-Legion of Honor": {
             "name": "Mary Cassatt at Work",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -862,21 +1076,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/ba531e88-5047-4895-ba9b-e661438aa8cc/cassatt-little-girl-blue-armchair-1878.jpg?crop=4096,2731,x0,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/ba531e88-5047-4895-ba9b-e661438aa8cc/cassatt-little-girl-blue-armchair-1878.jpg?crop=4096,2731,x0,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-01-26 11:11:45",
-            "hash": "c0d18bde876650e3468a8157f2bbe622"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "287a564388256c0e3c16abd77eca8fd1"
         },
         "Dress Rehearsal: The Art of Theatrical Design-Legion of Honor": {
             "name": "Dress Rehearsal: The Art of Theatrical Design",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -890,21 +1103,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/5f714bd0-756e-427c-8a40-4fc147d758e3/exter-revue-pl-10-dcors-thtre-1930.jpg?crop=2853,1903,x77,y483&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/5f714bd0-756e-427c-8a40-4fc147d758e3/exter-revue-pl-10-dcors-thtre-1930.jpg?crop=2853,1903,x77,y483&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-07-06 11:16:05",
-            "hash": "60b61b30b3f01e30a214bdbbeb184608"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "590d254964818739d1b8f23fbc921014"
         },
         "Wayne Thiebaud: Art Comes from Art-Legion of Honor": {
             "name": "Wayne Thiebaud: Art Comes from Art",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -918,25 +1130,25 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/42ded8e8-8e24-4f23-900d-3e31a7772134/thiebaud-masterworks-1970.jpg?crop=2322,1549,x0,y412&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/42ded8e8-8e24-4f23-900d-3e31a7772134/thiebaud-masterworks-1970.jpg?crop=2322,1549,x0,y412&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-08-17 11:14:47",
-            "hash": "37bb28e94c4438c3a2426a868fbbb706"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "1ac3c10c2faf1aa6cae112631123827e"
         },
         "Celebrating 100 Years at the Legion of Honor-Legion of Honor": {
             "name": "Celebrating 100 Years at the Legion of Honor",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": "2026-01-04"
+                "start": "2024-11-09",
+                "end": "2026-02-16"
             },
             "ongoing": false,
             "links": [
@@ -945,12 +1157,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/87d298f3-6fdd-486f-9d4a-51f809aeb66b/legion-honor-1920s-rotated.png?crop=1475,983,x75,y48&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/87d298f3-6fdd-486f-9d4a-51f809aeb66b/legion-honor-1920s-rotated.png?crop=1475,983,x75,y48&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:42",
-            "hash": "d7dcf492fb2438b5c11f1387191caf7e"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "bea952815a9267ef3f90e46c2318b8e3"
         },
         "Yinka Shonibare-Legion of Honor": {
             "name": "Yinka Shonibare",
@@ -985,12 +1197,12 @@
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2025-05-24",
                 "end": "2026-01-04"
             },
             "ongoing": false,
@@ -1000,21 +1212,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/9e03656a-8a98-411d-80ff-9a2d25c67dfa/bennett-forever-2006.jpg?crop=1686,1123,x331,y447&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/9e03656a-8a98-411d-80ff-9a2d25c67dfa/bennett-forever-2006.jpg?crop=1686,1123,x331,y447&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:42",
-            "hash": "efff2ac488bf17c651f7600c6b15a4ed"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "8d8530081636f074bcb4b3437adba961"
         },
         "Bouquets to Art 2025-Legion of Honor": {
             "name": "Bouquets to Art 2025",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -1028,24 +1239,24 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/1d939195-207e-4d60-b296-2e301e3eb4cc/bouquets-to-art-rdodson-2024-9.jpg?crop=2218,1479,x125,y20&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/1d939195-207e-4d60-b296-2e301e3eb4cc/bouquets-to-art-rdodson-2024-9.jpg?crop=2218,1479,x125,y20&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-06-08 11:14:11",
-            "hash": "e5b936437edf9325eaa1e25c9c0f72e8"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "fe7159d3336a14505c45e8b343b99bda"
         },
         "Ferlinghetti for San Francisco-Legion of Honor": {
             "name": "Ferlinghetti for San Francisco",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2025-07-19",
                 "end": "2026-07-19"
             },
             "ongoing": false,
@@ -1055,24 +1266,24 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/c6bf230c-37da-47fe-9dd6-e04428a166db/ferlinghetti-lovers-at-sea-1992-grey.jpg?crop=2896,1933,x1155,y110&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/c6bf230c-37da-47fe-9dd6-e04428a166db/ferlinghetti-lovers-at-sea-1992-grey.jpg?crop=2896,1933,x1155,y110&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:42",
-            "hash": "78854fc4933ce404e1d1aa3f2cfe3755"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "4b7dbe5aa093e465dc5c334f8d759183"
         },
         "Manet & Morisot-Legion of Honor": {
             "name": "Manet & Morisot",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
-                "start": null,
+                "start": "2025-10-11",
                 "end": "2026-03-01"
             },
             "ongoing": false,
@@ -1082,12 +1293,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/c09a406e-9358-473f-9483-2a13bdfd2363/manet-balcony-1868-1869.jpg?crop=1710,1137,x307,y670&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/c09a406e-9358-473f-9483-2a13bdfd2363/manet-balcony-1868-1869.jpg?crop=1710,1137,x307,y670&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:42",
-            "hash": "9d4248e907889e0ba70fe94ca8040e94"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "19442723908dc128203d86f36e24df30"
         },
         "Drawn in Venice-Legion of Honor": {
             "name": "Drawn in Venice",
@@ -1122,9 +1333,8 @@
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -1138,21 +1348,20 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/ecc24cb2-f2f1-42d6-a6b1-1b7a8388ae06/ms-loh-bta-finished-bouquets-20250609-16.jpg?crop=2000,1333,x0,y0&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/c5633161-2c7d-4f1d-b7dc-98b2c71f7faa/0746-bouquets-210607.jpg?crop=3525,2347,x56,y39&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:42",
-            "hash": "62e31642493f52ac8b34968329f8629a"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "45b6d21ae78435828bbaddc82218efb4"
         },
         "The Etruscans: From the Heart of Ancient Italy-Legion of Honor": {
             "name": "The Etruscans: From the Heart of Ancient Italy",
             "venue": "Legion of Honor",
             "tags": [
                 "exhibition",
-                "future",
-                "museum",
-                "past"
+                "past",
+                "museum"
             ],
             "phase": "past",
             "dates": {
@@ -1166,12 +1375,309 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.famsf.org/storage/images/0dffb553-e9dc-4b00-9e55-3e136e43054e/etruscans-hydra-dark-v4.jpg?crop=3046,2029,x382,y70&format=webp&quality=80&width=2500",
+                    "link": "https://www.famsf.org/storage/images/8bce6e66-522c-4db1-b914-773e5953b3e4/digital-26-etruscans-web-image-r1-v8-cinerary-urn.jpg?crop=3242,2160,x126,y0&format=jpg&quality=80&width=1000",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-11-17 11:16:43",
-            "hash": "e8a7c561a07c6b739c14a425e34cb0d9"
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "032917f9c3249fb2fa22f38d1d99699c"
+        },
+        "Bouquets to Art 2027-Legion of Honor": {
+            "name": "Bouquets to Art 2027",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-02",
+                "end": "2027-03-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/bouquets-to-art-2027",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/412fd3ce-da1a-4dde-9c0b-05f6ac6d668f/09098-bouquets-260302.jpg?crop=2666,1777,x0,y1637&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:23",
+            "hash": "cefc890aeb4d40af8479a4a607ab3632"
+        },
+        "Eternal Paris: Photographing the City of Light-Legion of Honor": {
+            "name": "Eternal Paris: Photographing the City of Light",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-04-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/eternal-paris-photographing-city-light",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/a4f0222f-0d74-440e-88c1-d0ea2be5d38a/louis-gabriel-loppe-vue-de-la-tour-eiffel-1900.jpg?crop=3000,1998,x0,y15&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:23",
+            "hash": "ea3345e5e3cb2fd5ffa3cdd6b3f855ba"
+        },
+        "Azzedine Ala\u00efa: Sculpting Fashion-Legion of Honor": {
+            "name": "Azzedine Ala\u00efa: Sculpting Fashion",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": "2027-04-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/azzedine-alaia-sculpting-fashion",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/0e82719a-886d-4060-9d5c-aa5c55a3adb1/alaia-white-bandage-dress-spring-summer-1990-andrea-valentina-crop.jpg?crop=3242,2160,x281,y0&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:23",
+            "hash": "f51a3911f55b11bac3f39314b61b9798"
+        },
+        "Mir\u00f3: Proof Against All-Legion of Honor": {
+            "name": "Mir\u00f3: Proof Against All",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-07-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/miro-proof-against-all",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/f34687b0-6090-4fc0-ac32-de47a7484f85/miro-toute-epreuve-1958.jpg?crop=2731,1820,x164,y82&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:23",
+            "hash": "e98406a0c25c630eb7f2cb6fd453d0ed"
+        },
+        "Drawn to Venice-Legion of Honor": {
+            "name": "Drawn to Venice",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-01-24",
+                "end": "2026-08-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/drawn-to-venice",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/2765c0f1-cda2-4897-99e6-54683177dd01/giovanni-domenico-tiepolo-la-furlana-1790-1800.jpg?crop=2241,1491,x403,y440&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "2e659695115ffc2f27eabdd644e77437"
+        },
+        "Botticelli Drawings-Legion of Honor": {
+            "name": "Botticelli Drawings",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-11-19",
+                "end": "2024-02-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/botticelli-drawings",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/c24713a3-9590-4371-96b5-efe4124d2c3c/botticelli-g-0zd5t-qcojxvspoqvf1yyyjifznxekpytrokcwy0g.jpg?crop=1741,1158,x946,y97&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "c96ed725ff8bccd1319d7848e678a47e"
+        },
+        "Benoit \u00c9diteur-Legion of Honor": {
+            "name": "Benoit \u00c9diteur",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-08-26",
+                "end": "2024-03-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/benoit-editeur",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/3b9c4701-fb49-4411-a101-7b3b782dd194/f3-mk-q-3gh2t5f4vrjbke9tixr-pkmzt7uu7w4p83e.jpg?crop=1688,1126,x228,y68&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "e874b803a43f5f34aa7830bcbe85fe45"
+        },
+        "Bouke de Vries: Memories in Porcelain-Legion of Honor": {
+            "name": "Bouke de Vries: Memories in Porcelain",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-07-22",
+                "end": "2024-03-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/bouke-de-vries-porcelain",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/c1629577-329a-408e-98e9-598009c940f7/bdv153devriessassoon.jpg?crop=4000,2670,x0,y726&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "9ab6cf9c96dc5544dadd0920afa25122"
+        },
+        "The Tudors: Art and Majesty in Renaissance England-Legion of Honor": {
+            "name": "The Tudors: Art and Majesty in Renaissance England",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-06-24",
+                "end": "2023-09-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/tudors",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/c58349dd-823e-4009-aa14-baaef8154d7f/tudors-whos-who-4-272017-l.jpg?crop=2648,1764,x0,y0&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "0a1a3f2bcfbcee7a149a036e845bbd4c"
+        },
+        "Sargent and Spain-Legion of Honor": {
+            "name": "Sargent and Spain",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-02-11",
+                "end": "2023-05-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/sargent-and-spain",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/fab8b35c-177e-49e3-9059-d45bfc8d0405/la-carmencita-1wxskorpptwiujuimpeopwquqyue63kij7wn-8yfhxo.jpg?crop=5751,3839,x1350,y1407&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "10673bd87c1499bac4fa033f6b03d42f"
+        },
+        "Bookworks: 10 Years of Acquisitions-Legion of Honor": {
+            "name": "Bookworks: 10 Years of Acquisitions",
+            "venue": "Legion of Honor",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-01-14",
+                "end": "2023-07-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.famsf.org/exhibitions/bookworks",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.famsf.org/storage/images/4ea512a0-e09e-41bb-ac1c-2aaf48d203f7/picasso-frontispiece-and-title-page-1.jpg?crop=1921,1282,x873,y615&format=jpg&quality=80&width=1000",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:11:29",
+            "hash": "e74ab1ddcd176d6891e6e453bdb6b7a0"
         }
     },
     "SFMOMA": {
