@@ -9,6 +9,12 @@ import time
 
 BASE_URL = 'https://saltonline.org'
 PROGRAM_URL = f'{BASE_URL}/en/program'
+# The program page only lists what is on now; every exhibition ever (newest
+# first, 25 per page) is under the "Exhibition" tag.
+ARCHIVE_URL = f'{BASE_URL}/en/tags/exhibition-17'
+MAX_ARCHIVE_PAGES = 20
+# Only keep roughly the last two years of past shows.
+PAST_WINDOW_DAYS = 730
 
 # SALT runs separate buildings; each is its own venue so the Map link goes to
 # the right one.
@@ -53,8 +59,37 @@ def collect_exhibition_links(soup):
     return links
 
 
+def collect_archive_links(cutoff):
+    """Walk the tagged-exhibitions archive, newest first, until it reaches shows that
+    ended before `cutoff`. Each card's text carries its dates, so no detail fetch is needed here."""
+    links = []
+    for page in range(MAX_ARCHIVE_PAGES):
+        soup = fetch_and_parse(f'{ARCHIVE_URL}?p={page}')
+        if soup is None:
+            logging.warning(f"SALT: could not fetch exhibition archive page {page}")
+            break
+        cards = soup.find_all('a', href=re.compile(r'^/en/.+-\d+$'))
+        if not cards:
+            break
+        reached_cutoff = False
+        for a in cards:
+            _, end_date = parse_dates(a.get_text(' ', strip=True))
+            if end_date is None:
+                continue  # footer links and undated blog posts
+            if end_date < cutoff:
+                reached_cutoff = True
+            elif a['href'] not in links:
+                links.append(a['href'])
+        if reached_cutoff:
+            break
+        time.sleep(0.5)
+    return links
+
+
 def scrape_salt_exhibitions(env='prod', region='ist'):
-    """Scrape and process current/upcoming exhibitions from SALT Galata and SALT Beyoğlu."""
+    """Scrape and process current, upcoming and recent past exhibitions from SALT Galata and SALT Beyoğlu."""
+
+    today = dt.datetime.now().date()
 
     soup = fetch_and_parse(PROGRAM_URL)
     if soup is None:
@@ -65,8 +100,7 @@ def scrape_salt_exhibitions(env='prod', region='ist'):
     if not hrefs:
         logging.warning("SALT: no exhibition cards found on the program page")
         return
-
-    today = dt.datetime.now().date()
+    hrefs += [h for h in collect_archive_links(today - dt.timedelta(days=PAST_WINDOW_DAYS)) if h not in hrefs]
 
     for href in hrefs:
         event_link = BASE_URL + href
