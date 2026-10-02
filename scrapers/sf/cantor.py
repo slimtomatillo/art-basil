@@ -49,7 +49,10 @@ def scrape_cantor_exhibitions(env='prod', region='sf'):
         events = exhibition_section.find_all('div', class_='container')
                         
         for event_element in events:
-            title = event_element.find('a').text.strip()
+            # The container's first <a> wraps the thumbnail image and has no
+            # text; the actual title link lives in an <h2> (class "subtitle"
+            # on the current/past listings, no class on the upcoming one).
+            title = event_element.find('h2').find('a').text.strip()
             
             # Dates
             date_range = event_element.find('div', class_='exhibition__dynamic-token-fieldnode-start-date-to-end-date').text.strip()

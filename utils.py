@@ -57,13 +57,12 @@ REQUEST_TIMEOUT = (10, 30)
 # (js_render + premium_proxy) request costs 25x a plain one:
 #   - bampfa.org (Fastly WAF) blocks on IP/UA reputation alone - no JS
 #     challenge - so a premium (residential) proxy IP is enough.
-#   - nortonsimon.org, huntington.org, and ago.ca all run an actual
-#     JavaScript challenge page, so they need js_render too. Norton Simon
-#     looked like a plain IP/UA block from the ticket's original diagnosis,
-#     but a live test against the real ZenRows API came back
-#     "RESP001: could not get content, try enabling javascript rendering" -
-#     verify a domain's actual requirement this way rather than assuming
-#     from how the block merely *looks* from a browser.
+#   - everything else below needs js_render too, confirmed by a live test
+#     against the real ZenRows API rather than assumed from how the block
+#     merely *looks* from a browser - several of these (Norton Simon,
+#     famsf.org, Stanford) initially looked like plain IP/UA blocks and
+#     weren't; premium_proxy alone got back "RESP001: could not get
+#     content, try enabling javascript rendering" from ZenRows itself.
 # A domain not listed here is fetched directly, exactly as before - this is
 # deliberately an allowlist, not a blanket "proxy everything", both for cost
 # and because most venues' sites have no issue with CI's IP at all.
@@ -72,6 +71,13 @@ PROXY_DOMAINS = {
     'www.nortonsimon.org': {'premium_proxy': 'true', 'js_render': 'true'},
     'www.huntington.org': {'premium_proxy': 'true', 'js_render': 'true'},
     'ago.ca': {'premium_proxy': 'true', 'js_render': 'true'},
+    # Cantor Arts Center
+    'museum.stanford.edu': {'premium_proxy': 'true', 'js_render': 'true'},
+    # famsf.org (de Young / Legion of Honor / Virtual) is intentionally left
+    # out: the proxy fetch succeeds, but de_young.py's selectors are broken
+    # independent of that (see WEBSITE-68), and the type=exhibition filter in
+    # its URL doesn't appear to survive ZenRows' rendering either - needs its
+    # own investigation rather than being bundled in here.
 }
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
