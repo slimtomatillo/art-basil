@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from config import DB_FILES
 import os
+from urllib.parse import urlparse
 
 def convert_nan_to_none(data):
     if isinstance(data, dict):
@@ -49,12 +50,53 @@ def save_db(db, region):
 # it and the CI job's commit step.
 REQUEST_TIMEOUT = (10, 30)
 
+# Domains whose own protection blocks GitHub Actions' datacenter IPs outright
+# (confirmed by direct testing - see WEBSITE-53), routed through the ZenRows
+# proxy instead of a direct request. Each domain maps to only the ZenRows
+# params it actually needs, kept as cheap as possible since a "protected"
+# (js_render + premium_proxy) request costs 25x a plain one:
+#   - bampfa.org (Fastly WAF) and nortonsimon.org (Cloudflare) block on IP/UA
+#     reputation alone - no JS challenge - so a premium (residential) proxy
+#     IP is enough.
+#   - huntington.org (Vercel) and ago.ca (Cloudflare) run an actual
+#     JavaScript challenge page, so they need js_render too.
+# A domain not listed here is fetched directly, exactly as before - this is
+# deliberately an allowlist, not a blanket "proxy everything", both for cost
+# and because most venues' sites have no issue with CI's IP at all.
+PROXY_DOMAINS = {
+    'bampfa.org': {'premium_proxy': 'true'},
+    'www.nortonsimon.org': {'premium_proxy': 'true'},
+    'www.huntington.org': {'premium_proxy': 'true', 'js_render': 'true'},
+    'ago.ca': {'premium_proxy': 'true', 'js_render': 'true'},
+}
+ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
+ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
+
 def fetch_and_parse(url, headers=None):
     request_headers = {'User-Agent': 'Your Bot 0.1'}
     if headers:
         request_headers.update(headers)
+
+    proxy_params = PROXY_DOMAINS.get(urlparse(url).netloc)
+
     try:
-        response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT)
+        if proxy_params and ZENROWS_API_KEY:
+            # Routed through ZenRows. It manages its own User-Agent and
+            # browser fingerprinting for the anti-bot path, so our usual
+            # headers (e.g. a scraper's custom browser UA) don't apply here -
+            # only our own URL and the domain's minimum required params go.
+            response = requests.get(
+                ZENROWS_API_URL,
+                params={'url': url, 'apikey': ZENROWS_API_KEY, **proxy_params},
+                timeout=REQUEST_TIMEOUT,
+            )
+        else:
+            if proxy_params:
+                logging.warning(
+                    f"{urlparse(url).netloc} needs the proxy to work from CI but "
+                    f"SCRAPER_PROXY_API_KEY isn't set; fetching directly (likely to fail)."
+                )
+            response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT)
         response.raise_for_status()
         return BeautifulSoup(response.content, 'html.parser')
     except requests.RequestException as e:

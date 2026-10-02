@@ -27,6 +27,13 @@ jobs:
     - name: Run exhibition scraper
       run: |
         python main.py
+      env:
+        # Routes BAMPFA/Norton Simon/Huntington/AGO through the ZenRows proxy
+        # (see utils.py's PROXY_DOMAINS) since their own CDN/WAF 403s this
+        # runner's IP outright - see WEBSITE-53. Every other scraper ignores
+        # this; leaving the secret unset just makes those 4 fail exactly as
+        # they did before (gracefully skipped, logged, existing data kept).
+        SCRAPER_PROXY_API_KEY: ${{ secrets.SCRAPER_PROXY_API_KEY }}
 
     - name: Commit and push updated data
       # Run even if a scraper crashed (that step exits non-zero on purpose so the

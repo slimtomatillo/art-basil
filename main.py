@@ -11,9 +11,9 @@ from scraper_health import find_stale_venues, report as report_scraper_health
 from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art, madrone_art_bar
-from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca
+from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
-from scrapers.tor import moca_toronto, power_plant, aga_khan
+from scrapers.tor import moca_toronto, power_plant, aga_khan, ago
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt
 
 def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=None):
@@ -43,6 +43,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Norton Simon Museum": norton_simon.scrape_norton_simon_exhibitions,
             "Hammer Museum": hammer.scrape_hammer_exhibitions,
             "MOCA": moca.scrape_moca_exhibitions,
+            "Huntington": huntington.scrape_huntington,
         },
         'mtl': {
             "Montreal Museum of Fine Arts": mbam.scrape_mbam_exhibitions,
@@ -53,6 +54,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "MOCA Toronto": moca_toronto.scrape_moca_toronto_exhibitions,
             "The Power Plant": power_plant.scrape_power_plant_exhibitions,
             "Aga Khan Museum": aga_khan.scrape_aga_khan_exhibitions,
+            "AGO": ago.scrape_ago,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,
