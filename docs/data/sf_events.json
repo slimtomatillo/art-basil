@@ -25405,5 +25405,1222 @@
             "last_updated": "2026-10-02 02:32:00",
             "hash": "24532b6d99000f1f2c04376302599fcb"
         }
+    },
+    "The Walt Disney Family Museum": {
+        "Awaking Beauty: The Art of Eyvind Earle-The Walt Disney Family Museum": {
+            "name": "Awaking Beauty: The Art of Eyvind Earle",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-23",
+                "end": "2027-04-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/eyvind-earle",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2026-08/WDFM_EyvindEarle_WebAssets_v1_840x560_Carousel.png?itok=sQcJX6zT",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "e2a953b2f439e588b81ed21be1a35355"
+        },
+        "Happiest Place on Earth: The Disneyland Story-The Walt Disney Family Museum": {
+            "name": "Happiest Place on Earth: The Disneyland Story",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-11-14",
+                "end": "2026-09-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/happiest-place",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2025-09/WDFM_HPOE_WebAssets_v2_850x560_ExhibitionCarousel_A.png?itok=OVCzFsvi",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "594284c4da008bec173796b9ca169de6"
+        },
+        "Walt Disney Treasures Objects-The Walt Disney Family Museum": {
+            "name": "Walt Disney Treasures Objects",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-10-01",
+                "end": "2025-10-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/walt-disney-treasures-objects",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2025-08/WDFM_Tea%20set-04.jpg?itok=eSRFIpYU",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "24bc1c0ad656ac76ade22f4a632225ef"
+        },
+        "Mary Blair: Mid-Century Magic-The Walt Disney Family Museum": {
+            "name": "Mary Blair: Mid-Century Magic",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-05-22",
+                "end": "2025-10-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/mary-blair",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2025-04/WDFM_MaryBlair_WebAssets_v2_850x560_ExhibitionCarousel_A.png?itok=omrVRDSG",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "8bce238f9b510dc765efbd814437b441"
+        },
+        "Directing at Disney-The Walt Disney Family Museum": {
+            "name": "Directing at Disney",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-10-17",
+                "end": "2025-03-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/directing",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2024-10/WDFM_DirDis_WebAssets_v3A_850x560_ExhibitionCarousel_A.png?itok=sbSnG2u3",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "7a30dc2fad10c64060b05d83cb37a64b"
+        },
+        "100th Anniversary Pop-Up Objects-The Walt Disney Family Museum": {
+            "name": "100th Anniversary Pop-Up Objects",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-11-01",
+                "end": "2024-08-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/100th-anniversary-pop-objects",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2024-08/SAmerica-01.jpg?itok=JfWUFuL2",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "b76ab8c989a8dda895b5d94579b44c73"
+        },
+        "The Art of Disneyland Attraction Posters-The Walt Disney Family Museum": {
+            "name": "The Art of Disneyland Attraction Posters",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-05-31",
+                "end": "2024-08-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/art-disneyland-attraction-posters",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2024-06/IMG_2376.jpeg?itok=7O9mSvNo",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "b5bd41ceb4e21b39e3129d050654f6ee"
+        },
+        "Disney Cats & Dogs-The Walt Disney Family Museum": {
+            "name": "Disney Cats & Dogs",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-06-24",
+                "end": "2024-06-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/cats-and-dogs",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2023-05/WDFM_CatsDogs_v1_carousel_media_840_560.png?itok=BWcTpm0w",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "730a7486a71e95819095637b242933a5"
+        },
+        "Pawsibilities Unleashed: A Pet Portrait Exhibition-The Walt Disney Family Museum": {
+            "name": "Pawsibilities Unleashed: A Pet Portrait Exhibition",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-11-16",
+                "end": "2024-03-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/unleashed",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2023-10/Ball%20Hog_highres.jpg?itok=bxM3z9-O",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "d8b04836c8a072d32d6fd49853d0a1c4"
+        },
+        "Pencils and Passion: A Student Art Exhibition-The Walt Disney Family Museum": {
+            "name": "Pencils and Passion: A Student Art Exhibition",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-05-11",
+                "end": "2023-10-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/pencils-and-passion",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2023-04/WDFM_PencilsPassion_Web_v1_carousel_media_840_560.png?itok=5spwFVTp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "8bfb1255356cfad6235fd92d9e0d70a7"
+        },
+        "Chris Miller: Kaleidoscope-The Walt Disney Family Museum": {
+            "name": "Chris Miller: Kaleidoscope",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-11-17",
+                "end": "2023-03-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/chris-miller",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2022-10/Verdant%20Wall.jpg?itok=CvpRtznK",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "8269d7f1c9fd8e4c692598c8b68335d4"
+        },
+        "Spirit of the Season: A Community Art Exhibition-The Walt Disney Family Museum": {
+            "name": "Spirit of the Season: A Community Art Exhibition",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-11-18",
+                "end": "2022-03-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/spirit-season-community-art-exhibition",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2021-11/WDFM_SpiritSeason_Web_feed_629x500.png?itok=YZp74xdO",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "db133b680b583bac478d93d63b892371"
+        },
+        "Walt Disney's The Jungle Book: Making a Masterpiece-The Walt Disney Family Museum": {
+            "name": "Walt Disney's The Jungle Book: Making a Masterpiece",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-06-23",
+                "end": "2022-12-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/jungle-book",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2022-05/Al%20Dempster%20%28United%20States%2C%201911%20-%202001%29_Concept%20art_The%20Jungle%20Book%20%281967%29_Watercolor%20on%20paper_Courtesy%20of%20David%20Pacheco%2C%20%28c%29%20Disney.%20%281%29.jpg?itok=_vrs4sAA",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "fcb633007b01cb33e3f62184a1a55ccb"
+        },
+        "Creative Conservation: The Art of Endangered Animals-The Walt Disney Family Museum": {
+            "name": "Creative Conservation: The Art of Endangered Animals",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-04-22",
+                "end": "2022-10-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/creative-conservation",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2022-03/G1.6_cropped.jpg?h=f5701574&itok=vf0Ezgeo",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "4e6b5e3c92e84684537b6a70b2e9e1e0"
+        },
+        "The Walt Disney Studios and World War II-The Walt Disney Family Museum": {
+            "name": "The Walt Disney Studios and World War II",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-03-18",
+                "end": "2022-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/wwii",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2020-11/WDFM_WWII_Web_feed_629x500B.png?itok=53Z2m07i",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "830efacca0b4788fe71e50001bfe11b0"
+        },
+        "Veterans' Voices: Painted Realities-The Walt Disney Family Museum": {
+            "name": "Veterans' Voices: Painted Realities",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/veteransvoices",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2021-05/WDFM_VetVoices_carousel_840x700.png?itok=xryzWOo7",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "845b2378aecd8a8a4c98a8973cfc9b99"
+        },
+        "Conserving the Magic of Our Planet: A Virtual Community Art Exhibition-The Walt Disney Family Museum": {
+            "name": "Conserving the Magic of Our Planet: A Virtual Community Art Exhibition",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/earth-day",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2021-03/WDFM_EarthDay_carousel_A_840x700.png?itok=V8qkDHtn",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "c0ff3e04faa5e6f9f1fa0aa9411f2592"
+        },
+        "it\u2019s a small world: A Virtual Community Art Exhibition-The Walt Disney Family Museum": {
+            "name": "it\u2019s a small world: A Virtual Community Art Exhibition",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/smallworld",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2020-07/WDFM_SmallWorld_V3_feed_629x500.png?itok=finys6j9",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "961198230938bbc9cd03f0cb15b615e8"
+        },
+        "The World of Tomorrow: A Virtual Community Art Exhibition-The Walt Disney Family Museum": {
+            "name": "The World of Tomorrow: A Virtual Community Art Exhibition",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/world-tomorrow-virtual-community-art-exhibition",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2020-04/WDFM_WorldOfTomorrow_carousel_840x700_1.png?itok=Uy2OuPfW",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "aba0825e9c92c5792f7dc0842cf31336"
+        },
+        "Mickey Mouse: From Walt to the World-The Walt Disney Family Museum": {
+            "name": "Mickey Mouse: From Walt to the World",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-05-16",
+                "end": "2020-02-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/mickey-mouse-walt-world",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-12/WDFM_MickeyWeb_840x700b.png?itok=Vpj7ikfK",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "fa11a43cc83622a87b3d3123783a7727"
+        },
+        "A Powerful Force: Working to End Homelessness Through Art-The Walt Disney Family Museum": {
+            "name": "A Powerful Force: Working to End Homelessness Through Art",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2019-09-25",
+                "end": "2020-01-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/powerful-force",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2019-09/Colin%20Heart%20of%20Grass%20LSYS_0.jpg?h=f95d122b&itok=Dlgz4CKe",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "f0066501048b23e310c494f1c18b3114"
+        },
+        "Home for the Holidays at Carolwood-The Walt Disney Family Museum": {
+            "name": "Home for the Holidays at Carolwood",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-11-09",
+                "end": "2018-01-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/home-holidays-carolwood",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/WDFM_HFTH_FEED2.jpg?itok=x-ZbuSai",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "cf07644c3457ed352c1e07387c008540"
+        },
+        "Fresh Starts-The Walt Disney Family Museum": {
+            "name": "Fresh Starts",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-09-26",
+                "end": "2019-01-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/fresh-starts",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-08/Road-to-the-Future-%28CF%29-feed.jpg?itok=wpa2GD51",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "e581324f11218f56f5934bc8151183c1"
+        },
+        "Walt Disney\u2019s Nine Old Men: Masters of Animation-The Walt Disney Family Museum": {
+            "name": "Walt Disney\u2019s Nine Old Men: Masters of Animation",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-05-17",
+                "end": "2019-01-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/walt-disneys-nine-old-men-masters-animation",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-07/9OM-Header-1680x550_0.jpg?itok=rctoXS5K",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "aa403fc1ec2877564e17e5865b44a386"
+        },
+        "Make Believe: The World of Glen Keane-The Walt Disney Family Museum": {
+            "name": "Make Believe: The World of Glen Keane",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2018-03-08",
+                "end": "2018-09-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/make-believe-world-glen-keane",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/keane-carousel.jpg?itok=2ufX86_-",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "ad97b9d29916e901eb1df60e8b989e08"
+        },
+        "Looking Inward: Painting a Journey-The Walt Disney Family Museum": {
+            "name": "Looking Inward: Painting a Journey",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-09-28",
+                "end": "2018-01-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/looking-inward-painting-journey",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/looking-inward-feed.jpg?itok=VLIIOm6-",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:33",
+            "hash": "3451de12731b686acb8089340bf57f8d"
+        },
+        "Deja View: The Art of Andreas Deja-The Walt Disney Family Museum": {
+            "name": "Deja View: The Art of Andreas Deja",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2017-03-23",
+                "end": "2017-10-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/deja-view-art-andreas-deja",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/WDFM_Deja_WebAssetsV2_Feed.jpg?itok=Nkh4UVs_",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "324c7f5e71dada3dc927e28603ae9223"
+        },
+        "Wish Upon a Star: The Art of Pinocchio-The Walt Disney Family Museum": {
+            "name": "Wish Upon a Star: The Art of Pinocchio",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-05-18",
+                "end": "2017-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/wish-upon-star-art-pinocchio",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/pinocchio-exhibition-feed_0.jpg?itok=FmYg0Fan",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "560ab0ca2cdebb7cbc790446a2d74be5"
+        },
+        "Transformations: Creativity from the Inside Out-The Walt Disney Family Museum": {
+            "name": "Transformations: Creativity from the Inside Out",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-09-21",
+                "end": "2016-12-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/transformations-creativity-inside-out",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/WDFM_Transformations_FEED.jpg?itok=VwacAXMI",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "8994c389702a2ca8ea7be301f87a74e9"
+        },
+        "Mel Shaw: An Animator on Horseback-The Walt Disney Family Museum": {
+            "name": "Mel Shaw: An Animator on Horseback",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2016-01-13",
+                "end": "2016-09-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/mel-shaw-animator-horseback",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/exhibition-shaw-module_0.jpg?itok=Rc0AghkQ",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "4d03ce61381c3f0899008a50ba060f44"
+        },
+        "Disney and Dal\u00ed: Architects of the Imagination-The Walt Disney Family Museum": {
+            "name": "Disney and Dal\u00ed: Architects of the Imagination",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-07-10",
+                "end": "2016-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/disney-and-dali-architects-imagination",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/exhibition-2-module.jpg?itok=WZBHYlvc",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "2d370e85d30c710259895054a653707b"
+        },
+        "Tomorrowland: Walt\u2019s Vision For Today-The Walt Disney Family Museum": {
+            "name": "Tomorrowland: Walt\u2019s Vision For Today",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-07-22",
+                "end": "2015-12-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/tomorrowland-walts-vision-today",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/exhibition-1-module.jpg?itok=NNT2hEDA",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "11f13646f0f247d9292ade0d353f2f46"
+        },
+        "Lights! Camera! Glamour! The Photography of George Hurrell-The Walt Disney Family Museum": {
+            "name": "Lights! Camera! Glamour! The Photography of George Hurrell",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2015-02-11",
+                "end": "2015-06-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/lights-camera-glamour-photography-george-hurrell",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/Hurrell_feed.jpg?itok=bdzl15u8",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "fe86e85f0f0c86d32efba7f81ee90b34"
+        },
+        "All Aboard: A Celebration of Walt's Trains-The Walt Disney Family Museum": {
+            "name": "All Aboard: A Celebration of Walt's Trains",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-11-13",
+                "end": "2015-03-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/all-aboard-celebration-walts-trains",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/Trains_feed_0.jpg?itok=U67s5HDb",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "f8918c565faacc305eded8b33117f66f"
+        },
+        "The Lost Notebook: Secrets of Disney's Movie Magic-The Walt Disney Family Museum": {
+            "name": "The Lost Notebook: Secrets of Disney's Movie Magic",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-11-26",
+                "end": "2015-01-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/lost-notebook-secrets-disneys-movie-magic",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/LostNotebook_feed.jpg?itok=UTgtN0D4",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "0e8a5d217a35e2b0b581893ef5548a99"
+        },
+        "Leading Ladies and Femmes Fatales: The Art of Marc Davis-The Walt Disney Family Museum": {
+            "name": "Leading Ladies and Femmes Fatales: The Art of Marc Davis",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-04-30",
+                "end": "2014-11-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/leading-ladies-and-femmes-fatales-art-marc-davis",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/MarkDavis_feed.jpg?itok=eelyrRkW",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "e66d39eb27945c84663acbccb363252d"
+        },
+        "MAGIC, COLOR, FLAIR: the world of Mary Blair-The Walt Disney Family Museum": {
+            "name": "MAGIC, COLOR, FLAIR: the world of Mary Blair",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2014-03-13",
+                "end": "2014-09-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/magic-color-flair-world-mary-blair",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/MaryBlair_feed.jpg?itok=xwGWSpWT",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "d644948d05fcbb86b7181c367b623f24"
+        },
+        "Bruno Bozzetto: Animation Maestro!-The Walt Disney Family Museum": {
+            "name": "Bruno Bozzetto: Animation Maestro!",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-11-21",
+                "end": "2014-03-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/bruno-bozzetto-animation-maestro",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/Bozzetto_feed.jpg?itok=_kY-3s5t",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "0e104505c5b61e236cab8df2351a6a92"
+        },
+        "Water to Paper, Paint to Sky: The Art of Tyrus Wong-The Walt Disney Family Museum": {
+            "name": "Water to Paper, Paint to Sky: The Art of Tyrus Wong",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2013-08-15",
+                "end": "2014-02-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/water-paper-paint-sky-art-tyrus-wong",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/TWong_feed.jpg?h=87b22a3d&itok=OR8H1LZi",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "de2fb640d6c3fe637f9019879aef7049"
+        },
+        "Camille Rose Garcia: Down the Rabbit Hole-The Walt Disney Family Museum": {
+            "name": "Camille Rose Garcia: Down the Rabbit Hole",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-05-09",
+                "end": "2013-11-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/camille-rose-garcia-down-rabbit-hole",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/CRGarcia_feed.jpg?itok=uZmS1XFr",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "a59aa4b1312e565c1bd41fac36b16abb"
+        },
+        "Maurice Sendak 50 Years, 50 Works, 50 Reasons-The Walt Disney Family Museum": {
+            "name": "Maurice Sendak 50 Years, 50 Works, 50 Reasons",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-05-23",
+                "end": "2013-07-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/maurice-sendak-50-years-50-works-50-reasons",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/Sendak_feed.jpg?itok=N-fjBaH7",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "402cb4b50cf0a46f40a44fff12e9f136"
+        },
+        "Between Frames: The Magic Behind Stop Motion Animation-The Walt Disney Family Museum": {
+            "name": "Between Frames: The Magic Behind Stop Motion Animation",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-09-27",
+                "end": "2013-04-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/between-frames-magic-behind-stop-motion-animation",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/BetweenFrames_feed.jpg?itok=OhrQpiYB",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "ab5f2d3f630f80eec8d2dbac9e4d58d6"
+        },
+        "Snow White and the Seven Dwarfs: The Creation of a Classic-The Walt Disney Family Museum": {
+            "name": "Snow White and the Seven Dwarfs: The Creation of a Classic",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-11-15",
+                "end": "2013-04-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/snow-white-and-seven-dwarfs-creation-classic",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/SnowWhite_feed.jpg?itok=DRwwa5Uy",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "e7bc5a1fa48a7bb99e200e6b1e80cc8d"
+        },
+        "Christian Louboutin's Modern-Day Cinderella Inspired Slipper-The Walt Disney Family Museum": {
+            "name": "Christian Louboutin's Modern-Day Cinderella Inspired Slipper",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2011-09-26",
+                "end": "2012-10-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/christian-louboutins-modern-day-cinderella-inspired-slipper",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/louboutin_thumb.jpg?itok=juMgZxDb",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "dc0e1e67ec5257988092a9d79f42bc23"
+        },
+        "Heinrich Kley: From Fantasy to Fantasia-The Walt Disney Family Museum": {
+            "name": "Heinrich Kley: From Fantasy to Fantasia",
+            "venue": "The Walt Disney Family Museum",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2012-05-11",
+                "end": "2012-09-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.waltdisney.org/exhibitions/heinrich-kley-fantasy-fantasia",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.waltdisney.org/sites/default/files/styles/media_panel/public/2018-06/Kley_feed.jpg?itok=d7ToQMPv",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 03:05:34",
+            "hash": "0c1d30af2a035c296de8e1bf0611ec2d"
+        }
     }
 }
