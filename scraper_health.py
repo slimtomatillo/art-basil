@@ -16,14 +16,17 @@ from manual_check import MANUAL_SOURCE
 from utils import load_db
 
 STALE_AFTER_DAYS = 7
+# One-time imports of a closed venue's history (e.g. the Cartoon Art Museum,
+# WEBSITE-33). No scraper refreshes them, by design.
+ARCHIVE_SOURCE = 'archive'
 
 
 def find_stale_venues(today=None):
     """Venues whose scraped events haven't been refreshed in STALE_AFTER_DAYS.
 
     Every successful scrape rewrites last_updated, so a venue whose freshest
-    event is old is one no scraper is reaching. Manually-entered events are
-    ignored - nothing refreshes those by design.
+    event is old is one no scraper is reaching. Manually-entered and archive
+    events are ignored - nothing refreshes those by design.
     """
     today = today or dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
     stale = []
@@ -31,7 +34,7 @@ def find_stale_venues(today=None):
         for venue, events in load_db(path).items():
             stamps = [dt.datetime.strptime(e['last_updated'], '%Y-%m-%d %H:%M:%S')
                       for e in events.values()
-                      if e.get('source') != MANUAL_SOURCE and e.get('last_updated')]
+                      if e.get('source') not in (MANUAL_SOURCE, ARCHIVE_SOURCE) and e.get('last_updated')]
             if not stamps:
                 continue
             days = (today - max(stamps)).days
