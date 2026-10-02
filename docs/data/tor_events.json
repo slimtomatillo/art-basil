@@ -816,5 +816,903 @@
             "last_updated": "2026-10-01 17:22:17",
             "hash": "23158b5ce3a8070eb69f8a5e3dd7a027"
         }
+    },
+    "AGO": {
+        "The Impressionist Revolution: Monet to Matisse from the Dallas Museum of Art-AGO": {
+            "name": "The Impressionist Revolution: Monet to Matisse from the Dallas Museum of Art",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-10-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/impressionist-revolution-monet-matisse-dallas-museum-art",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/image_large/public/2025-09/2019.67.13.McD__0.jpg?itok=L1Qgmgqy",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "3224598141758bfd2473212fa4b19c66"
+        },
+        "Melissa Auf der Maur: My \u201890s Rock Photographs-AGO": {
+            "name": "Melissa Auf der Maur: My \u201890s Rock Photographs",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-06-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/melissa-auf-der-maur-my-90s-rock-photographs",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/image_large/public/2025-10/Auf%20der%20maur%20EDIT_0.jpg?itok=X8cUdwLo",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "121fce2e9a04b16b1c5ddb0aee8419ee"
+        },
+        "Diego Marcon: The Bubble Boy-AGO": {
+            "name": "Diego Marcon: The Bubble Boy",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-10-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/diego-marcon-bubble-boy",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-05/EXH.175284.a04-Web%20and%20Standard%20PowerPoint.jpg?itok=gdEEONbP",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "f055c72845e303f80463793f697de20f"
+        },
+        "Painted Presence: Rembrandt and his Peers-AGO": {
+            "name": "Painted Presence: Rembrandt and his Peers",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-10-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/painted-presence-rembrandt-and-his-peers",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2023-09/Rembrandt%20arms%20akimbo.jpg?itok=oroTnX2J",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "5e267b67705f811f85cde6e5b6a6e1e3"
+        },
+        "Yayoi Kusama's INFINITY MIRRORED ROOM - LET'S SURVIVE FOREVER-AGO": {
+            "name": "Yayoi Kusama's INFINITY MIRRORED ROOM - LET'S SURVIVE FOREVER",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-10-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/yayoi-kusamas-infinity-mirrored-room-lets-survive-forever",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2024-10/AGO.151397-1200px-72dpi.jpg?itok=OOXe86Ob",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "a7059eeb91fd4b99cc7245814ebc80ba"
+        },
+        "Picture Space-AGO": {
+            "name": "Picture Space",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-11-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/picture-space",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-05/AGO.4082-Web%20and%20Standard%20PowerPoint.jpg?itok=YOH4J8wg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "37d5e60740cc0a8815190258c2511caa"
+        },
+        "Ranbir Sidhu: No Limits-AGO": {
+            "name": "Ranbir Sidhu: No Limits",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/ranbir-sidhu-no-limits",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2025-10/Asteroid.jpg?itok=ZcuyXeph",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "a8a9e159128cba8587b2fc67f82c9e30"
+        },
+        "Brian Groombridge: New Models for Measurement-AGO": {
+            "name": "Brian Groombridge: New Models for Measurement",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/brian-groombridge-new-models-measurement",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2025-10/AGO.170704-1200px-72dpi.jpg?itok=1Yre12T6",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "2be1bd24e50a7b71cbe12217d27bd26e"
+        },
+        "Critical Views: Recent Acquisitions by the Department of Arts of Global Africa & the Diaspora-AGO": {
+            "name": "Critical Views: Recent Acquisitions by the Department of Arts of Global Africa & the Diaspora",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-04-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/critical-views-recent-acquisitions-department-arts-global-africa-diaspora",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-06/AGO_173216.jpg?itok=C7tsHdTY",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "60f63eda8febb58d90eec9336114f406"
+        },
+        "Steam: Impressionist Painting Across the Atlantic-AGO": {
+            "name": "Steam: Impressionist Painting Across the Atlantic",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/steam-impressionist-painting-across-atlantic",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2022-10/Seine%20cropped.jpg?itok=YkUECKqC",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "f4a9d84f42358868284e7753f5a04aff"
+        },
+        "Letendre/Morrisseau-AGO": {
+            "name": "Letendre/Morrisseau",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/letendre/morrisseau",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2024-09/AGO.44951-1200px-72dpi.jpg?itok=5GJ7pxDA",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "c2f4b227ea6073b031cf73bff18a9644"
+        },
+        "Dawoud Bey: Material Histories, Living Landscapes-AGO": {
+            "name": "Dawoud Bey: Material Histories, Living Landscapes",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-07-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/dawoud-bey-material-histories-living-landscapes",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2025-10/Dawoud%20Bey%20install%20350%2C000.png?itok=zL9lxH7U",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "0d6b1159ab74e6383787fbda73addc16"
+        },
+        "Kazuo Nakamura: Blue Dimension-AGO": {
+            "name": "Kazuo Nakamura: Blue Dimension",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/kazuo-nakamura-blue-dimension",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2023-09/AGO.11081-1200px-72dpi.jpg?itok=VjAZSHCH",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "a5e99f41130f69f2662dabd9aec016df"
+        },
+        "Remade: Clay, Plaster, Stone-AGO": {
+            "name": "Remade: Clay, Plaster, Stone",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/remade-clay-plaster-stone",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2024-10/AGO.38881-1200px-72dpi.jpg?itok=JvXiTha-",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "a6696f03f43e77ed8422ea02e68ccdf2"
+        },
+        "Bill Nasogaluak-AGO": {
+            "name": "Bill Nasogaluak",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/bill-nasogaluak",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2021-12/AGO-119815_nasogaluak.jpg?itok=VAWelFmR",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "a3d7c58677325ca942deecda86251a41"
+        },
+        "Reality & Reverie: Canadian and European Painting Beyond Impressionism-AGO": {
+            "name": "Reality & Reverie: Canadian and European Painting Beyond Impressionism",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/reality-reverie-canadian-and-european-painting-beyond-impressionism",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2024-03/Picture1.png?itok=kjXerr7M",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "229696ffe60c7b83c29d59227a54ae98"
+        },
+        "Elizabeth Wyn Wood-AGO": {
+            "name": "Elizabeth Wyn Wood",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/elizabeth-wyn-wood",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-02/AGO_173725.jpg?itok=WWm3Pxac",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "1e72da6320e27771f4581b3b7b78cbd7"
+        },
+        "Moments Contained-AGO": {
+            "name": "Moments Contained",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/moments-contained",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2025-07/DSF3348_web_sm.jpg?itok=CeKL-l2G",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "d9eab70f01328c9b478265dbd795f57e"
+        },
+        "The J.S. McLean Centre for Indigenous & Canadian Art-AGO": {
+            "name": "The J.S. McLean Centre for Indigenous & Canadian Art",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/j.s.-mclean-centre-indigenous-canadian-art-2021",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2020-09/Christi-Belcourt-Wisdom.jpg?itok=Llukgsnu",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "1188b58048174bda27af95f16d21e52f"
+        },
+        "Couch Monster: Sadz\u011b\u0294 yaagh\u0119hch\u2019ill-AGO": {
+            "name": "Couch Monster: Sadz\u011b\u0294 yaagh\u0119hch\u2019ill",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/couch-monster-sadze-yaaghehchill",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2022-07/CouchMonster_DSF3587.jpg?itok=NxlVcpBt",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "b272a962644035e50a5f822acb1ceeaf"
+        },
+        "Sunday Best: The Power & The Glory of Black Style-AGO": {
+            "name": "Sunday Best: The Power & The Glory of Black Style",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-07",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/sunday-best-power-glory-black-style",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-06/EXH.175222-1200px-72dpi.jpg?itok=E33x0L_y",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "9a96ea3e499c2846c44a7914467def19"
+        },
+        "In Plain Sight: Highlights from the AGO\u2019s Collection of Historic Picture Frames-AGO": {
+            "name": "In Plain Sight: Highlights from the AGO\u2019s Collection of Historic Picture Frames",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-17",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/plain-sight-highlights-agos-collection-historic-picture-frames",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2025-10/AGO.24960-1200px-72dpi.jpg?itok=RdTi_pOY",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "21daab7addb442b9c3842b500668a89c"
+        },
+        "Dominique Gonzalez-Foerster: OPERA (QM.15)-AGO": {
+            "name": "Dominique Gonzalez-Foerster: OPERA (QM.15)",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-20",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/dominique-gonzalez-foerster-opera-qm-15",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/37245869-8ac1-4e66-a438-52c326f629f8.png?itok=1vn02NEU",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "6f8907fbd04b6719c766f644f98344c7"
+        },
+        "Lawrence Paul Yuxweluptun Lets\u2019lo:tseltun: Man of Many Masks, Man of Many Colours-AGO": {
+            "name": "Lawrence Paul Yuxweluptun Lets\u2019lo:tseltun: Man of Many Masks, Man of Many Colours",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-05",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/lawrence-paul-yuxweluptun-letslotseltun-man-many-masks-man-many-colours",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/Lawrence%20Paul%20Yuxweluptun%2C%20Fire%20Landscape%20Painting%2C%202018-Web%20and%20Standard%20PowerPoint.jpg?itok=E1flhbgw",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "548fe24a4aa804c73e84586c7e325ded"
+        },
+        "Future Geographies: Art in the Century of Climate Change-AGO": {
+            "name": "Future Geographies: Art in the Century of Climate Change",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-03",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/future-geographies-art-century-climate-change",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/EXH.174525-1200px-72dpi.jpg?itok=8KeYjN9q",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "89cef2778562fcce505028b502e621cd"
+        },
+        "Gershon Iskowitz: Memory Works-AGO": {
+            "name": "Gershon Iskowitz: Memory Works",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-23",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/gershon-iskowitz-memory-works",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/AGO.15666.a-1200px-72dpi.jpg?itok=mfq5TtDq",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "ffabc56c2dc17fc058c5f6795df80686"
+        },
+        "Matisse: Notes on Jazz-AGO": {
+            "name": "Matisse: Notes on Jazz",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-07-28",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/matisse-notes-jazz",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/AGO.15723.a-1200px-72dpi.jpg?itok=GVKTJWVL",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "6dc42c242346894c5cdcf0c508407953"
+        },
+        "Mary Pratt & Jack Chambers: The Lives of Others-AGO": {
+            "name": "Mary Pratt & Jack Chambers: The Lives of Others",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-07-28",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/mary-pratt-jack-chambers-lives-others",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/pratt-chambers.png?itok=6N9SWPqx",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "a66a04b34a8f2f64783cb631fab84788"
+        },
+        "Lisa Reihana: in Pursuit of Venus [infected]-AGO": {
+            "name": "Lisa Reihana: in Pursuit of Venus [infected]",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-08-06",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/lisa-reihana-pursuit-venus-infected-2027",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/E-23358-1200px-72dpi.jpg?itok=8CAoNl3I",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "3f2e0db8eb750ccadacd147bd378e4f9"
+        },
+        "Pointillist Politics: Neo-Impressionism, Anarchy, Utopia-AGO": {
+            "name": "Pointillist Politics: Neo-Impressionism, Anarchy, Utopia",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-11-03",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/pointillist-politics-neo-impressionism-anarchy-utopia",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/CMoA_77.416-Web%20and%20Standard%20PowerPoint.jpg?itok=qIg2cMuQ",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "050588d2c3d4372f60283be08f2d159b"
+        },
+        "Tides of Treasure: Medieval Art and the Sea-AGO": {
+            "name": "Tides of Treasure: Medieval Art and the Sea",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-12-04",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/tides-treasure-medieval-art-and-sea",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/AGO.6262-1200px-72dpi.jpg?itok=D43GrgsH",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "17fe4559278fec89b65739146545f9bd"
+        },
+        "Image Incarnate: Icons from the Malcove Collection-AGO": {
+            "name": "Image Incarnate: Icons from the Malcove Collection",
+            "venue": "AGO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-12-18",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ago.ca/exhibitions/image-incarnate-icons-malcove-collection",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://ago.ca/sites/default/files/styles/ago_card/public/2026-09/M82_108%20Recto_cropped-Web%20and%20Standard%20PowerPoint.jpg?itok=ut2rixrI",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:47:07",
+            "hash": "0d80769a92d6e18bd83e266b4e97b4d8"
+        }
     }
 }

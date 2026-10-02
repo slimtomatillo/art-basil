@@ -4268,5 +4268,1073 @@
             "hash": "27cf363226df8c927fe4128a1f930e94",
             "source": "manual"
         }
+    },
+    "Norton Simon Museum": {
+        "Making History: Manet\u2019s \u201cExecution of Maximilian\u201d from the National Gallery, London-Norton Simon Museum": {
+            "name": "Making History: Manet\u2019s \u201cExecution of Maximilian\u201d from the National Gallery, London",
+            "venue": "Norton Simon Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2027-03-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/making-history-manets-the-execution-of-maximilian-from-the-national-gallery-london",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/N-3294-00-000064_cropped_500x300_v2__ScaleWidthWzQwMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:44",
+            "hash": "dbdfe8be7e5d93c9bb9296467722555e"
+        },
+        "Takers | Makers: Photographic Practice in California, 1945\u20131980-Norton Simon Museum": {
+            "name": "Takers | Makers: Photographic Practice in California, 1945\u20131980",
+            "venue": "Norton Simon Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-09",
+                "end": "2027-09-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/takers-makers-photographic-practice-in-california-19451980",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/dater_untitled_1966_PH196917_500x300__ScaleWidthWzQwMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:44",
+            "hash": "3ce0d69ab1f0d715a7ee3534e1ac91db"
+        },
+        "Raphael 2020-Norton Simon Museum": {
+            "name": "Raphael 2020",
+            "venue": "Norton Simon Museum",
+            "description": "This winter and spring, the Norton Simon Museum joins institutions around the world in observing the 500th anniversary of Raphael\u2019s death with a special display and a series of programs focused on the artist\u2019sMadonna and Child with Book, from around 1502\u20133.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2020-01-15",
+                "end": "2020-05-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/raphael-2020",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/54a7edadf6/Raphael-600x600__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "59276ed8e902abc20df9dc629ab610c3"
+        },
+        "Unseen Picasso-Norton Simon Museum": {
+            "name": "Unseen Picasso",
+            "venue": "Norton Simon Museum",
+            "description": "Unseen Picassopresents a selection of innovative, rarely seen prints created throughout the artist\u2019s prodigious career.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-09-03",
+                "end": "2022-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/unseen-picasso",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/95ad32c236/P19824-800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "eb8fa59f403d24a1bb864ca5c125bff8"
+        },
+        "The Expressive Body: Memory, Devotion, Desire (1400\u20131750)-Norton Simon Museum": {
+            "name": "The Expressive Body: Memory, Devotion, Desire (1400\u20131750)",
+            "venue": "Norton Simon Museum",
+            "description": "This exhibition explores the ways that images of the human body were used to generate profound physical and emotional responses in viewers throughout the 15th through 18th centuries.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-10-15",
+                "end": "2022-03-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/the-expressive-body-memory-devotion-desire-14001750",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/735c9679e6/Guercino-800x801__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "fb4e408c8381caa6aec9d489c5b068a4"
+        },
+        "Manet\u2019s Philosophers from the Art Institute of Chicago-Norton Simon Museum": {
+            "name": "Manet\u2019s Philosophers from the Art Institute of Chicago",
+            "venue": "Norton Simon Museum",
+            "description": "This special installation reunites three of Manet\u2019sPhilosophersfor the first time in more than fifty years: The Norton Simon\u2019sRagpicker, c. 1865\u201370, and two paintings on loan from the Art Institute,Beggar with Oysters (Philosopher)andBeggar with a Duffle Coat (Philosopher), both dated 1865/67.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2021-11-19",
+                "end": "2022-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/manets-philosophers",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Manet_Oysters-800x800px__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "90e1cf3d8bbc9f5fbc5f402b274f5f98"
+        },
+        "Richard Hunt: Details-Norton Simon Museum": {
+            "name": "Richard Hunt: Details",
+            "venue": "Norton Simon Museum",
+            "description": "This focus exhibition features a selection of lithographs made by sculptor Richard Hunt during his 1965 residency at the Tamarind Lithography Workshop in Los Angeles.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-02-25",
+                "end": "2022-07-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/richard-hunt-details",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Richard-Hunt_P__ScaleWidthWzIzMF0.1967.20.077-800x800.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "a88845036a089eaaed43ac7bbc472b56"
+        },
+        "Alternate Realities: Altoon, Diebenkorn, Lobdell, Woelffer-Norton Simon Museum": {
+            "name": "Alternate Realities: Altoon, Diebenkorn, Lobdell, Woelffer",
+            "venue": "Norton Simon Museum",
+            "description": "Drawn from the Norton Simon Museum\u2019s expansive holdings of postwar American art,Alternate Realitiesexplores the ways in which artists John Altoon, Richard Diebenkorn, Frank Lobdell and Emerson Woelffer challenged the limitations of pure, gestural abstraction by exploiting the resonance of figural forms.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-05-13",
+                "end": "2022-08-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/alternate-realities-altoon-diebenkorn-lobdell-woelffer",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Altoon_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "f6f2b5bd6174d71e8dc24becb23efa1a"
+        },
+        "Modernism in Miniature-Norton Simon Museum": {
+            "name": "Modernism in Miniature",
+            "venue": "Norton Simon Museum",
+            "description": "This intimate exhibition presents small-scale works of art by some of the most celebrated artists of the mid-20th century.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-08-12",
+                "end": "2023-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/modernism-in-miniature",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Chamberlain_Untitled-800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "94d29d71f5d3c2d228ac3214544ddd5b"
+        },
+        "Ink, Paper, Stone: Six Women Artists and the Language of Lithography-Norton Simon Museum": {
+            "name": "Ink, Paper, Stone: Six Women Artists and the Language of Lithography",
+            "venue": "Norton Simon Museum",
+            "description": "This exhibition examines the prints of six critically acclaimed female artists who visited Los Angeles in the 1960s to explore the art of lithography: Ruth Asawa, Gego, Eleanore Mikus, Louise Nevelson, Irene Siegel and Hedda Sterne.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-14",
+                "end": "2023-02-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/ink-paper-stone-six-women-artists-and-the-language-of-lithography",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/P196720279_800x800px__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "9a8f5ae3123168b852b50a04bee4c2fd"
+        },
+        "Picasso Ingres: Face to Face-Norton Simon Museum": {
+            "name": "Picasso Ingres: Face to Face",
+            "venue": "Norton Simon Museum",
+            "description": "In partnership with the National Gallery, London, this special installation brings together for the first time Pablo Picasso\u2019s dazzlingWoman with a Bookwith the painting that inspired it, Jean-Auguste-Dominique Ingres\u2019s late, great portraitMadame Moitessier(1856).",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-10-21",
+                "end": "2023-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/picasso-ingres-face-to-face",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Madame-Moitessior_800x800px__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "e5448b089d2d0fc2badeed10756dad89"
+        },
+        "Saint Sebastian: Anatomy of a Sculpture-Norton Simon Museum": {
+            "name": "Saint Sebastian: Anatomy of a Sculpture",
+            "venue": "Norton Simon Museum",
+            "description": "Through historical and scientific research, this small exhibition explores the rich life\u2014from its creation to its arrival at the Museum\u2014of a previously unstudied 15th-century Italian painted sculpture of St. Sebastian.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-02-10",
+                "end": "2023-07-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/saint-sebastian-anatomy-of-a-sculpture",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/NEW-St-Sebastian_800x800-v2__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "2da05d1325403fd69f0314e6a0f7b884"
+        },
+        "All Consuming: Art and the Essence of Food-Norton Simon Museum": {
+            "name": "All Consuming: Art and the Essence of Food",
+            "venue": "Norton Simon Museum",
+            "description": "This expansive exhibition explores how artists responded to and shaped food cultures in Europe from 1500 to 1900.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-04-14",
+                "end": "2023-08-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/all-consuming-art-and-the-essence-of-food",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Snyders_600x600-px-v2__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "9c6cb0689d4743bb4617882a2b656e8c"
+        },
+        "Word as Image-Norton Simon Museum": {
+            "name": "Word as Image",
+            "venue": "Norton Simon Museum",
+            "description": "Spanning the comical to the political to the conceptual,Word as Imageexplores how artists challenge viewers to consider language and image anew, by positioning words as an essential part of visual culture.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-08-11",
+                "end": "2024-02-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/word-as-image",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Popova_M196711P_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "4b6b0ec929ad00b13a84a7024d2f1f40"
+        },
+        "Benevolent Beings: Buddhas and Bodhisattvas from South and Southeast Asia-Norton Simon Museum": {
+            "name": "Benevolent Beings: Buddhas and Bodhisattvas from South and Southeast Asia",
+            "venue": "Norton Simon Museum",
+            "description": "Explore how buddhas, bodhisattvas and other protective deities have been seen to offer blessings, guidance and security to their devotees.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-10-13",
+                "end": "2024-02-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/benevolent-beings-buddhas-and-bodhisattvas-from-south-and-southeast-asia",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Tara-India_West-Bengal-or-Bangladesh_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "d74bc190d4b1c583c1f4d03689a3bebe"
+        },
+        "I Saw It: Francisco de Goya, Printmaker-Norton Simon Museum": {
+            "name": "I Saw It: Francisco de Goya, Printmaker",
+            "venue": "Norton Simon Museum",
+            "description": "This fascinating exhibition presents Spanish artist Francisco de Goya's four major print series in their entirety:Caprichos(1799),Desastres de la Guerra(c. 1810\u201315),La Tauromaquia(1815\u201316) andLos Disparates(c. 1815\u201323), offering insight into the artist's creative process and the full range of his expressive capacity.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-04-19",
+                "end": "2024-08-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/i-saw-it-francisco-de-goya-printmaker",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/M197802101G_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "c5401c2aab8e07ba7cafe28c5734ce2e"
+        },
+        "I Saw It: Modern Artists Respond to Goya-Norton Simon Museum": {
+            "name": "I Saw It: Modern Artists Respond to Goya",
+            "venue": "Norton Simon Museum",
+            "description": "On view in the Museum\u2019s focus gallery, works by artists Enrique Chagoya, Leon Golub, Pablo Picasso, Yinka Shonibare and Andy Warhol demonstrate these artists\u2019 deep connection with the concerns Goya expressed as a printmaker and even his direct influence on their art making.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-04-19",
+                "end": "2024-08-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/i-saw-it-modern-artists",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/P196607194_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "24755ae48455a2a7396fb68f29313f2c"
+        },
+        "Plugged In: Art and Electric Light-Norton Simon Museum": {
+            "name": "Plugged In: Art and Electric Light",
+            "venue": "Norton Simon Museum",
+            "description": "This illuminating exhibition shines a light on the ways that artists in the mid-20th century engaged with electric light in their artworks.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-09-20",
+                "end": "2025-02-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/plugged-in-art-and-electric-light",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Flavin_Reppin_800px-x-800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "b0c60ab76fdad0a4ad21491d7a119429"
+        },
+        "Look Alive! A Still Life Comparison-Norton Simon Museum": {
+            "name": "Look Alive! A Still Life Comparison",
+            "venue": "Norton Simon Museum",
+            "description": "Explore the practice of slow looking through an intriguing pairing of two still-life paintings: Jacques Linard\u2019sStill Life: The Five Senses with Flowers,1639, and Tom Wesselmann\u2019sStill Life #2,1962.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-09-27",
+                "end": "2025-01-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/look-alive",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Linard_Still-Life_800-v2__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "799b081b80df27c94748111f6a7f80c6"
+        },
+        "Mariana: Vel\u00e1zquez\u2019s Portrait of a Queen from the Museo Nacional del Prado-Norton Simon Museum": {
+            "name": "Mariana: Vel\u00e1zquez\u2019s Portrait of a Queen from the Museo Nacional del Prado",
+            "venue": "Norton Simon Museum",
+            "description": "Exhibited on the West Coast for the very first time, Diego Vel\u00e1zquez\u2019s extraordinary paintingQueen Mariana of Austria(1652\u201353) is on special loan from the Museo del Prado in Madrid.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-12-13",
+                "end": "2025-03-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/mariana-velazquezs-portrait-of-a-queen-from-the-museo-del-prado",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Velazquez_Queen-Mariana_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "213d41ad5ae1f9f2343b525a2650ce16"
+        },
+        "Retrospect: 50 Years at the Norton Simon Museum-Norton Simon Museum": {
+            "name": "Retrospect: 50 Years at the Norton Simon Museum",
+            "venue": "Norton Simon Museum",
+            "description": "Through rare photos from the Museum\u2019s archive,Retrospecthighlights both significant and lesser-known stories from the Museum\u2019s 50-year history. This small exhibition is held in the Museum\u2019s Focus Gallery.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-02-14",
+                "end": "2026-01-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/retrospect-50-years-at-the-norton-simon-museum",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/19th-c-works-downstairs_Gallery-24-ca-1977_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "e5de84cfcf6ef4ffc57450fa4efb0310"
+        },
+        "Gold: Enduring Power, Sacred Craft-Norton Simon Museum": {
+            "name": "Gold: Enduring Power, Sacred Craft",
+            "venue": "Norton Simon Museum",
+            "description": "Organized on the occasion of the Museum\u2019s 50th anniversary, a milestone traditionally associated with this metal,Gold: Enduring Power, Sacred Craftinvites fresh inquiry into the nature of gold as an artistic medium.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-10-24",
+                "end": "2026-02-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/gold-enduring-power-sacred-craft",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Nepal_Indra_800x800_v2__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "9c9e442c882cb2da8c99f4a5902e1836"
+        },
+        "Dear Little Friend: Impressions of Galka Scheyer-Norton Simon Museum": {
+            "name": "Dear Little Friend: Impressions of Galka Scheyer",
+            "venue": "Norton Simon Museum",
+            "description": "This focus exhibition looks at the legacy of German-born art dealer Galka Scheyer, who played a pivotal role in bringing European modernism to the United States.",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-02-20",
+                "end": "2026-07-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/dear-little-friend-impressions-of-galka-scheyer",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Jawlensky_Mystical-Head-Galka-1917_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "8c29707528c152d2a591fc02c9c562d8"
+        },
+        "The Art of Kandy: Sri Lanka\u2019s Last Kingdom-Norton Simon Museum": {
+            "name": "The Art of Kandy: Sri Lanka\u2019s Last Kingdom",
+            "venue": "Norton Simon Museum",
+            "description": "This focus exhibition features art from Kandy, the final royal capital of Sri Lanka before the onset of British colonial rule, that reflects wide-ranging themes of royal sponsorship, Buddhist devotion and creative imagination.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-04",
+                "end": "2027-02-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nortonsimon.org/exhibitions/2020-2029/the-art-of-kandy-sri-lankas-last-kingdom",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.nortonsimon.org/assets/Exhibition/Images/Sri-Lanka_Buddha_800x800__ScaleWidthWzIzMF0.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:49",
+            "hash": "ff0fa26fc5ba988e80f40c7437e1613e"
+        }
+    },
+    "Huntington": {
+        "Laura Aguilar: Day of the Dead-Huntington": {
+            "name": "Laura Aguilar: Day of the Dead",
+            "venue": "Huntington",
+            "description": "Drawn from recent acquisitions from Laura Aguilar\u2019s estate, \u201cLaura Aguilar: Day of the Dead\u201d presents photographs made from 1984 to 1992 documenting D\u00eda de los Muertos celebrations in Los Angeles.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-20",
+                "end": "2027-03-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/laura-aguilar-day-dead",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13ZUD4.jpg?h=b044a8f9&itok=zzSf2kzR",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "fc9333546565cc8f5d9205f8d44019e0"
+        },
+        "Doyle Lane: Master of Clay-Huntington": {
+            "name": "Doyle Lane: Master of Clay",
+            "venue": "Huntington",
+            "description": "Experience the first major museum retrospective on Los Angeles ceramic artist Doyle Lane (1923\u20132002).",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-13",
+                "end": "2027-03-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/doyle-lane",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13ZUDQ.jpg?h=b044a8f9&itok=8xF5eddm",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "c352f238c825a7e2b3ffd3701e2d332b"
+        },
+        "Stories from the Library: Damaged Goods-Huntington": {
+            "name": "Stories from the Library: Damaged Goods",
+            "venue": "Huntington",
+            "description": "See how damaged objects, visible mistakes, and other imperfections reveal how physical traces can make library materials more compelling, beautiful, and revealing.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-27",
+                "end": "2026-11-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/stories-library-damaged-goods",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13XAOO.jpg?h=91ceaae5&itok=3_T1BZR2",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "a77efe76a952d391b529edfae8495331"
+        },
+        "Stories from the Library: The Mirror of the Moon-Huntington": {
+            "name": "Stories from the Library: The Mirror of the Moon",
+            "venue": "Huntington",
+            "description": "Follow surprising threads across centuries that show how artists, scientists, writers, and dreamers have traced their ideas onto the lunar surface and discover how the moon is a mirror of humanity.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-27",
+                "end": "2026-11-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/stories-library-mirror-moon",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13XTDI.jpg?h=3b574121&itok=w8mnxP3M",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "ca349f75bae865990393dd9c4300ef9e"
+        },
+        "\"This Land Is ...\" Exhibition-Huntington": {
+            "name": "\"This Land Is ...\" Exhibition",
+            "venue": "Huntington",
+            "description": "In dialogue with the 250th anniversary of the Declaration of Independence, the exhibition brings together diverse perspectives on the relationship between nature and nation, and how the ideals of life, liberty, and the pursuit of happiness are intertwined with place.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-14",
+                "end": "2027-01-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/this-land-is",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13XK19.jpg?h=70429604&itok=gP_Icx8M",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "5c1e00de041ba20d7e2be54dd3521912"
+        },
+        "Mercedes Dorame\u2014Deliquescence: Sites of Transformation-Huntington": {
+            "name": "Mercedes Dorame\u2014Deliquescence: Sites of Transformation",
+            "venue": "Huntington",
+            "description": "Tongva artist Mercedes Dorame\u2019s large-scale installation draws on archival research\u2014including historical images of regional freshwater springs\u2014to present her monumental photographs together with sculptural and painted elements. The installation reflects her ongoing interest in place, memory, and the presence of ancestral histories.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-03-22",
+                "end": "2029-03-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/mercedes-dorame-deliquescence-sites-transformation",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13XM9G.jpg?h=b044a8f9&itok=lpHxXupd",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "7a79b75bb5e20f462b34de93fb33d804"
+        },
+        "Sandy Rodriguez: Book 13-Huntington": {
+            "name": "Sandy Rodriguez: Book 13",
+            "venue": "Huntington",
+            "description": "Sandy Rodriguez\u2019s \u201cBook 13,\u201d her largest installation to date, includes a 20-foot-wide map of the United States, plant portraits, a book, and a landscape painting, all created on hand-processed amate-fiber paper. Drawing on a range of colonial Mexican sources in dialogue with 19th-century maps and boundary surveys from The Huntington\u2019s collections, the installation brings together research on place, ecology, and regional histories.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-03-22",
+                "end": "2027-04-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/sandy-rodriguez-book-13",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13XS6H.jpg?h=b044a8f9&itok=FIFwIu8y",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "f9a049ada798e4b3db1ceebfa949805b"
+        },
+        "the eight directions of the wind: Edmund de Waal at The Huntington-Huntington": {
+            "name": "the eight directions of the wind: Edmund de Waal at The Huntington",
+            "venue": "Huntington",
+            "description": "The Huntington presents the evocative works of acclaimed British artist and author Edmund de Waal in \u201cthe eight directions of the wind: Edmund de Waal at The Huntington.\u201d This yearlong exhibition features de Waal\u2019s site-specific installations at three iconic Huntington sites: the Huntington Art Gallery, the Chinese Garden, and the Japanese Garden.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-10-18",
+                "end": "2026-10-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/eight-directions-wind-edmund-de-waal-huntington",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13WGM3.jpg?h=be10b229&itok=i9Rk7UpA",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "0383128dab1fd37b57b358327d420277"
+        },
+        "Mineo Mizuno: Homage to Nature-Huntington": {
+            "name": "Mineo Mizuno: Homage to Nature",
+            "venue": "Huntington",
+            "description": "This site-specific work explores the fragility of the Earth\u2019s ecosystem, as well as the destruction of the forest and its potential for regeneration. The sculpture celebrates the beauty of wood in its natural state and emphasizes its potential as a reusable and renewable resource.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-05-25",
+                "end": "2029-05-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/mineo-mizuno-homage-nature",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/2024-05/Mizuno_Round2-01.png?h=5217535f&itok=cK6GxRVR",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "f256dc69f7f8a8627688261a837db09b"
+        },
+        "Betye Saar: Drifting Toward Twilight-Huntington": {
+            "name": "Betye Saar: Drifting Toward Twilight",
+            "venue": "Huntington",
+            "description": "Renowned American artist Betye Saar\u2019s large-scale work \u201cDrifting Toward Twilight\u201d\u2014commissioned by The Huntington\u2014is a site-specific installation that features a 17-foot-long vintage wooden canoe and found objects, including birdcages, antlers, and natural materials harvested by Saar from The Huntington\u2019s grounds.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2023-11-11",
+                "end": "2027-11-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/betye-saar-drifting-toward-twilight",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/2023-10/Calendar_Saar_1.jpg?h=ccdc98e2&itok=jFvyFZaF",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "1b20f73192913299bf41c5af773bdff1"
+        },
+        "Reimagined American Art Galleries-Huntington": {
+            "name": "Reimagined American Art Galleries",
+            "venue": "Huntington",
+            "description": "Discover seven newly unveiled galleries of American art.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/reimagined-american-art-galleries",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13X5XN.jpg?h=56d0ca2e&itok=CLitZM-U",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "1eb53955cb4ccc6348eb3d29e32276d0"
+        },
+        "Mapel Orientation Gallery-Huntington": {
+            "name": "Mapel Orientation Gallery",
+            "venue": "Huntington",
+            "description": "Learn about the founding of The Huntington, grab a themed tour guide, and even create your own masterpiece!",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/mapel-orientation-gallery",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/exhibitions/grid/red-car-500.gif?h=2a479378&itok=DPni4g-W",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "8c09c91edf7cd0359a0e92293909b85e"
+        },
+        "Borderlands-Huntington": {
+            "name": "Borderlands",
+            "venue": "Huntington",
+            "description": "See artwork from the 19th century to today in dialogue with installations by contemporary artists that offer fresh perspectives on American art.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/borderlands",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU12TEQD.jpg?h=19f108c5&itok=dLLXpyW5",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "d1fe932f13527ec5a67e3b70351ffdca"
+        },
+        "Red Earth by Lita Albuquerque-Huntington": {
+            "name": "Red Earth by Lita Albuquerque",
+            "venue": "Huntington",
+            "description": "Installed near the southern entrance to the Japanese Garden, Lita Albuquerque\u2019s Red Earth features an approximately 6-by-4-foot rock slab coated with bright red pigment and surrounded by bamboo.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://www.huntington.org/exhibitions/red-earth-lita-albuquerque",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/exhibitions/grid/red-earth_sq.jpg?h=2a479378&itok=zJ9MIVTN",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-02 01:46:57",
+            "hash": "796b9971b4cd65619889b6276574414e"
+        }
     }
 }
