@@ -703,3 +703,4 @@ timestamp,num_venues,num_events,scrape_time_s,regions
 2026-10-04 15:48:56.592245,43,1808,557.0,"sf,la,mtl,tor,ist"
 2026-10-06 00:24:51.844349,43,1809,483.2,"sf,la,mtl,tor,ist"
 2026-10-06 17:11:51.549377,43,1810,569.0,"sf,la,mtl,tor,ist"
+2026-10-07 17:50:25.657819,43,1813,617.0,"sf,la,mtl,tor,ist"
