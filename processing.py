@@ -8,6 +8,7 @@ import unicodedata
 from zoneinfo import ZoneInfo
 from config import DB_FILES, REGION_TIMEZONES
 from utils import load_db, save_db
+from tagging import add_content_tags
 
 def generate_event_hash(event_details):
     event_string = json.dumps(event_details, sort_keys=True, default=str)
@@ -88,6 +89,9 @@ _processed_this_run = set()
 
 
 def process_event(event_details, region):
+    # Add subject tags (photography, ceramics, ...) from the title and description;
+    # done first so they are part of the hash and every scraper gets them.
+    add_content_tags(event_details)
     db = load_db(DB_FILES[region])
     venue = event_details['venue']
     site_events = db.get(venue, {})

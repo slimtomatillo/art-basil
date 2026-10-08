@@ -147,6 +147,10 @@ if env == 'prod':
     process_event(event_details, region)
 ```
 
+Scrapers only set the type, phase and venue-kind tags above. Don't add subject
+tags (photography, ceramics, latinx, ...) yourself: `process_event` adds them
+from the title and description using the rules in `tagging.py`.
+
 ### 2c. The `venue` string
 `event_details['venue']` is the identity key everywhere:
 - it's the top-level key in `<region>_events.json`

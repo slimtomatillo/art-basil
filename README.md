@@ -53,6 +53,7 @@ python3 -m http.server -d docs                         # view the site at http:/
 ```
 - `phase` is `current`, `future` or `past`, worked out from `dates` in the venue's local time zone (`docs/data/regions.json`) and only ever moving forward. The dates may be `null`.
 - `ongoing: true` means a current show with no end date.
+- `tags` start with the type, phase and venue kind the scraper sets (`exhibition`, `current`, `museum`/`gallery`). Subject tags (medium such as `photography` or `ceramics`, and themes such as `latinx` or `woman-artist`) are added automatically from the title and description by `tagging.py` for every event; the approved list is on `docs/tags.html`.
 - `source` is absent for scraped events, or `"manual"` / `"archive"` (see above).
 - The `venue` string must match a key in `<region>_venues.json`, which maps each venue to its street address (for the map links and the venues page).
 

@@ -118,6 +118,25 @@ alternative is a paid ZenRows plan.
 
 To add a blocked site, see section 2f of [ADDING_A_REGION.md](ADDING_A_REGION.md).
 
+## Subject tags
+
+Subject tags (medium and theme) are added automatically by the keyword rules in
+`tagging.py`, to every event, whenever it is saved. Adding a tag is a deliberate
+step: draft its rule in `PROPOSED`, get the tag approved, then add it to
+`APPROVED_TAGS` and to `docs/tags.html`. After editing any rule, apply it to the
+events already stored with:
+
+```bash
+python tagging.py        # safe to repeat; only ever adds tags, never removes or changes anything else
+```
+
+Rules match the title and description with the venue's own name blanked out, and
+the identity-based tags (`asian-american`, `latinx`, `black-art`, `indigenous`,
+`woman-artist`, `queer`) fire only on explicit language in the venue's text,
+never on place names or an artist's origin. A missing tag is invisible and a
+wrong one is a visible error, so prefer a rule that is slightly too narrow. A
+tag a person added by hand is never removed.
+
 ## Fixing data by hand
 
 - **A missing event:** add it with `submissions.py` (see
