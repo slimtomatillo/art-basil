@@ -38455,5 +38455,2255 @@
             "last_updated": "2026-10-08 17:49:21",
             "hash": "98cb4bd8f1305049a6a90472c5d83b09"
         }
+    },
+    "Minnesota Street Project": {
+        "Zedekiah Gonsalves Schild: A Verb Meaning to Wash One's Wounds in an Ocean-Minnesota Street Project": {
+            "name": "Zedekiah Gonsalves Schild: A Verb Meaning to Wash One's Wounds in an Ocean",
+            "venue": "Minnesota Street Project",
+            "description": "At 1150 25th St / / (Slash)",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-03",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1150-25th-st/zedekiah-gonsalves-schild-verb-meaning-wash-ones-wounds-ocean",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-29_at_2.23.27_pm.png?itok=bjTITjkz",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "45e83ae9f60ad050cc58f5004328445e"
+        },
+        "Sideways Glance-Minnesota Street Project": {
+            "name": "Sideways Glance",
+            "venue": "Minnesota Street Project",
+            "description": "At 1150 25th St / / Slash",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-03",
+                "end": "2027-02-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1150-25th-st/sideways-glance",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-29_at_2.18.15_pm_0.png?itok=ICsV7Y_W",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "1932c59fc5bc1d2e155804c4c3c5a047"
+        },
+        "Martin Malvar: For Your Amusement-Minnesota Street Project": {
+            "name": "Martin Malvar: For Your Amusement",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Bass & Reiner",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-03",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/martin-malvar-your-amusement",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-29_at_2.11.13_pm.png?itok=gjpKOacm",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "d90736ffd74e72d3c461aef6aa888f7f"
+        },
+        "Felicia Chiao - Not Too Sweet-Minnesota Street Project": {
+            "name": "Felicia Chiao - Not Too Sweet",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Harman Projects (Hashimoto Contemporary)",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-03",
+                "end": "2026-10-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/felicia-chiao-not-too-sweet",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-29_at_1.57.36_pm_1.png?itok=oy-IGQiB",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "6a64664d77f8e018600a961a8c0eaefc"
+        },
+        "David Driskell: Wake Up Everybody-Minnesota Street Project": {
+            "name": "David Driskell: Wake Up Everybody",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Jenkins Johnson Gallery",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-02",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/david-driskell-wake-everybody",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-29_at_1.37.43_pm_1.png?itok=b5sHl-3e",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "c8f533bcbc986fbb3831d2a8c2990493"
+        },
+        "Unfinished Lines-Minnesota Street Project": {
+            "name": "Unfinished Lines",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Art of Contemporary Africa",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-24",
+                "end": "2026-10-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/unfinished-lines",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-29_at_2.04.30_pm.png?itok=cxioYAx9",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "ec7e0b3687e17764e905e6ec793d14ca"
+        },
+        "Raymond Meeks: Assemblage-Minnesota Street Project": {
+            "name": "Raymond Meeks: Assemblage",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Casemore Gallery",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2026-11-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/raymond-meeks-assemblage",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/2026_09_15_casemore_ray3283_web-1.jpeg?itok=eMCsxhhZ",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "c13f0e73c592c8d5bc0bfb55cbe0bdd2"
+        },
+        "BLACK INTERIORS: Celebrating 5 Years of Black (Space) Residency-Minnesota Street Project": {
+            "name": "BLACK INTERIORS: Celebrating 5 Years of Black (Space) Residency",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Atrium",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/black-interiors-celebrating-5-years-black-space-residency",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-22_at_1.36.35_pm.png?itok=giTETRKN",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "bfacc48610036c721680f214e6252cb1"
+        },
+        "20 Years - Anniversary Exhibition-Minnesota Street Project": {
+            "name": "20 Years - Anniversary Exhibition",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Eleanor Harwood Gallery",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/20-years-anniversary-exhibition",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-10_at_2.26.28_pm_0.png?itok=lT-w1a3f",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "c48e22f2790f3c6ba4d9389d7d15246e"
+        },
+        "Rex Ray-Minnesota Street Project": {
+            "name": "Rex Ray",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Themes + Projects",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/rex-ray",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-10_at_2.20.33_pm.png?itok=m9AKznuK",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "d329897b8d0887171f8d1482b4f3e2ef"
+        },
+        "Blaise Rosenthal: A Far country-Minnesota Street Project": {
+            "name": "Blaise Rosenthal: A Far country",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Municipal Bonds",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/blaise-rosenthal-far-country",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-10_at_2.17.32_pm_0.png?itok=s8k-oav3",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "c4ac5800dda2792e083c03730a870fd0"
+        },
+        "Isadora Gullov-Singh: Traces we Hold-Minnesota Street Project": {
+            "name": "Isadora Gullov-Singh: Traces we Hold",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / re.riddle",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/isadora-gullov-singh-traces-we-hold",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-10_at_2.13.40_pm.png?itok=fCqCQlad",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "7fd7d8e09d8d6c351552b6c29ed8c3ee"
+        },
+        "Megan Broughton: False Horizon-Minnesota Street Project": {
+            "name": "Megan Broughton: False Horizon",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / The San Francisco Arts Education Project",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/megan-broughton-false-horizon",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/ice_watch_studies_1_gallery_route_one_winter_2025_photo_by_kelseyfloyd.jpg?itok=OQsYEjeS",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "242d732a947c0854d82192aa0a4fbe85"
+        },
+        "Flora + Fauna-Minnesota Street Project": {
+            "name": "Flora + Fauna",
+            "venue": "Minnesota Street Project",
+            "description": "At 1150 25th St / Chandler Gallery",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": "2026-10-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1150-25th-st/flora-fauna",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/ryan_steadman_leashed_2024-2025_oil_on_canvas_16_x_20_inches.png?itok=15PyDU4X",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "e323cc775880efd01eaa155cbbedf67d"
+        },
+        "Character Development -Minnesota Street Project": {
+            "name": "Character Development ",
+            "venue": "Minnesota Street Project",
+            "description": "At Outside Location / 1201 Minnesota Street",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-10",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/outside-location/character-development",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/mspf-character_development-newsletter.png?itok=3AhA-QH5",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "f5eb6f5d344b52da688b409004b281ff"
+        },
+        "Alex Weinstein: I\u2019ll Be Your Mirror-Minnesota Street Project": {
+            "name": "Alex Weinstein: I\u2019ll Be Your Mirror",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Nancy Toomey Fine Art",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-09",
+                "end": "2026-10-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/alex-weinstein-i%E2%80%99ll-be-your-mirror",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-10_at_11.14.49_am.png?itok=Tt9j7qkA",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "779cddd616989980c7fb038c6a349ee9"
+        },
+        "Shepard Fairey Mural: Frida Kahlo-Minnesota Street Project": {
+            "name": "Shepard Fairey Mural: Frida Kahlo",
+            "venue": "Minnesota Street Project",
+            "description": "At Outside Location / 1231 25th St.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-06-14",
+                "end": "2027-07-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/outside-location/shepard-fairey-mural-frida-kahlo",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2025-07-09_at_12.45.53_pm.png?itok=LRUdunkr",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "36cb0edc91bb9c7cf537c7bdc03a69d3"
+        },
+        "Lasting Joy: Asawa Family Selections-Minnesota Street Project": {
+            "name": "Lasting Joy: Asawa Family Selections",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Ruth Asawa Lanier, Inc.",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-10",
+                "end": "2026-12-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/lasting-joy-asawa-family-selections",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-10-07_at_2.26.03_pm_0.png?itok=aWIa80nh",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "4e40bc0b1f489414462a15a8b20e6c39"
+        },
+        "Isabelle Maynard: This is my Nature-Minnesota Street Project": {
+            "name": "Isabelle Maynard: This is my Nature",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / 60Six (Gallery 201)",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-09-08",
+                "end": "2026-09-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/isabelle-maynard-my-nature",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/dedication_diptych_web_.jpg?itok=IXVP_wJF",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "bb0ffaf8fb9d189dc5710d1396a4caf5"
+        },
+        "J\u00fcrgen Trautwein: Under the Volcano-Minnesota Street Project": {
+            "name": "J\u00fcrgen Trautwein: Under the Volcano",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / 60Six (Gallery 211)",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-09-08",
+                "end": "2026-09-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/j%C3%BCrgen-trautwein-under-volcano",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-09-10_at_2.04.37_pm.png?itok=CEKvPmQc",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "e9bf2236aa2801f5f4911b60e3954de8"
+        },
+        "Automata Sigils: Billie Ocean, Kelley O'Leary, Sonya Rapoport, Ariella Robinson, Mia Weiner, and Carmen Winant-Minnesota Street Project": {
+            "name": "Automata Sigils: Billie Ocean, Kelley O'Leary, Sonya Rapoport, Ariella Robinson, Mia Weiner, and Carmen Winant",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Casemore Gallery",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-08-31",
+                "end": "2026-09-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/automata-sigils-billie-ocean-kelley-oleary-sonya-rapoport-ariella",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/automata_sigils.jpeg?itok=L6zjTPVm",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "550cafcd15f69f8c79519f6fccd51810"
+        },
+        "Ruth Asawa: Endless Variations-Minnesota Street Project": {
+            "name": "Ruth Asawa: Endless Variations",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Ruth Asawa Lanier, Inc.",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-08-08",
+                "end": "2026-10-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/ruth-asawa-endless-variations",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/sd.152_300dpi_jpaonessa_3_-_mack_somers_1_0.jpg?itok=h1OnfOpN",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "e755e8423015afc39abbbf06dd5c8931"
+        },
+        "Sunfire-Minnesota Street Project": {
+            "name": "Sunfire",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Atrium",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-08-08",
+                "end": "2026-09-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/sunfire",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/chris_mccaw_sunburned_gsp_860_install_at_sf_camerawork.jpg?itok=rpeEUJv4",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "3acaf06bc3e6ba38e567704daa324c51"
+        },
+        "Paul Pickrel: Paul's Drawings-Minnesota Street Project": {
+            "name": "Paul Pickrel: Paul's Drawings",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Themes + Projects",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-08-01",
+                "end": "2026-08-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/paul-pickrel-pauls-drawings",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/01_2026.themesprojets.paulpickrel.figure1.1972.11x14in_8139_-_danny_sanchez.jpg?itok=ughzKmvb",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "c8b583d56556ec60eb95c596f53a60b0"
+        },
+        "Terraesthesia-Minnesota Street Project": {
+            "name": "Terraesthesia",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Hashimoto Contemporary / Harman Projects",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-08-01",
+                "end": "2026-08-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/terraesthesia",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/madeleine_tonzi_front_low_res_-_sf_hashimoto_contemporary.jpg?itok=aEDz_5rU",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "2605e01ee46a103a9c15e5c7002ee3fa"
+        },
+        "The Magician's Room-Minnesota Street Project": {
+            "name": "The Magician's Room",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Hashimoto Contemporary / Harman Projects",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-08-01",
+                "end": "2026-08-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/magicians-room",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/lou_benesch_ig_announcement_-_sf_hashimoto_contemporary.jpg?itok=qQPo6EAF",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:41",
+            "hash": "10a2ae18fef2936ed5d08a6559d4954e"
+        },
+        "Angie Zheng \u90d1\u6674: \u5370\u8c61/Impressions-Minnesota Street Project": {
+            "name": "Angie Zheng \u90d1\u6674: \u5370\u8c61/Impressions",
+            "venue": "Minnesota Street Project",
+            "description": "At 1150 25th St / Slash",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-07-23",
+                "end": "2026-09-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1150-25th-st/angie-zheng-%E9%83%91%E6%99%B4-%E5%8D%B0%E8%B1%A1impressions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/lead_image_slash_-_efe_ozmen.jpg?itok=beyNUMHI",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:42",
+            "hash": "53e446bd01d5cdc2a8d781424637ec31"
+        },
+        "Lindsey White: New and Recent Signs!-Minnesota Street Project": {
+            "name": "Lindsey White: New and Recent Signs!",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Casemore Gallery",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-07-23",
+                "end": "2026-09-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/lindsey-white-new-and-recent-signs",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/screenshot_2026-08-24_at_1.40.06_pm.png?itok=XRtWAd0F",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:42",
+            "hash": "52b5866fc77bb65b96656823aee0c305"
+        },
+        "Turn the Party-Minnesota Street Project": {
+            "name": "Turn the Party",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Themes + Projects",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-07-11",
+                "end": "2026-08-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/turn-party",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/2026cr.crownedlady.droppedbackground_-_danny_sanchez.jpg?itok=AERdrFzL",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:42",
+            "hash": "b1fe0ae34b83d6f9aa6af0dab198234b"
+        },
+        "Wave Comes In, Wave Goes Out-Minnesota Street Project": {
+            "name": "Wave Comes In, Wave Goes Out",
+            "venue": "Minnesota Street Project",
+            "description": "At 1275 Minnesota St / Municipal Bonds",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-07-07",
+                "end": "2026-08-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://minnesotastreetproject.com/exhibitions/1275-minnesota-st/wave-comes-wave-goes-out",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://minnesotastreetproject.com/sites/default/files/styles/small_crop/public/springwater_1.png?itok=Mr7loF_t",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:42",
+            "hash": "4fb16ce1e11ed746f3e460e92993f696"
+        }
+    },
+    "Berkeley Art Center": {
+        "I see every wave-Berkeley Art Center": {
+            "name": "I see every wave",
+            "venue": "Berkeley Art Center",
+            "description": "I see every wave is a group exhibition curated by Aay Preston-Myint, on view September 12\u2013November 22, 2026, at Berkeley Art Center in Live Oak Park. Featuring artists Joshua Moreno, Annie Albagli, and Ruby T, it explores attentiveness and ecological care through a site-responsive commission, immersive video, and mixed-media drawings.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-12",
+                "end": "2026-11-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.berkeleyartcenter.org/i-see-every-wave",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/5e84e6bbf817eb0b020753e6/929e1c82-9d1c-4245-82eb-dd2e840ba7ad/everywave_1-1.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:42",
+            "hash": "5859eecf93a97f2851f5ebabf4bf6961"
+        }
+    },
+    "Southern Exposure": {
+        "Land/ Water/ Meat/ Noise-Southern Exposure": {
+            "name": "Land/ Water/ Meat/ Noise",
+            "venue": "Southern Exposure",
+            "description": "Bringing together artists working with water, landscape, food, and sound as primary mediums",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-10-10",
+                "end": "2026-12-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://soex.org/projects-exhibitions/land-water-meat-noise",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://soex.org/sites/default/files/styles/medium/public/1.%20SUPERFLEX_0.jpg?itok=h5YL8RIa",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:43",
+            "hash": "5884533fbf3bac02383f72926cdb19cc"
+        }
+    },
+    "Sonoma Valley Museum of Art": {
+        "The Real-Life Art History of M. Louise Stanley-Sonoma Valley Museum of Art": {
+            "name": "The Real-Life Art History of M. Louise Stanley",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2027-01-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/the-real-life-art-history-of-m-louise-stanley/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2025/11/sm_MLS_Garage_Sale.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "ea260dc252a88ab0450e650e38054ac9"
+        },
+        "Silent Light: San Francisco and the Art of California Zen-Sonoma Valley Museum of Art": {
+            "name": "Silent Light: San Francisco and the Art of California Zen",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-06",
+                "end": "2027-06-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/silentlight/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2026/08/Ruth-Asawa_Untitled_01_white_background.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "15163e30f045e2f9e53ba0abdd523a64"
+        },
+        "John Paul Morabito: Dancing in the Night-Sonoma Valley Museum of Art": {
+            "name": "John Paul Morabito: Dancing in the Night",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-05-09",
+                "end": "2026-09-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/john-paul-morabito/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2025/11/Untitled-do-you-wanna-funk_03.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "4a70adaf98ad5ac716330aa4c485cd1e"
+        },
+        "Norma I. Quintana: Paradise of Memory / Para\u00edso de la Memoria-Sonoma Valley Museum of Art": {
+            "name": "Norma I. Quintana: Paradise of Memory / Para\u00edso de la Memoria",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-05-09",
+                "end": "2026-09-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/norma-i-quintana/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2025/11/sm_NormaIQuintana_OaxacanWomen_2021.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "57f249d496edb9e33c6b221769f39517"
+        },
+        "Maija Peeples-Bright: Life is Just a Bowl of Terriers-Sonoma Valley Museum of Art": {
+            "name": "Maija Peeples-Bright: Life is Just a Bowl of Terriers",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-01-17",
+                "end": "2026-04-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/maija-peeples-bright/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2025/11/mpb_web.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "36cbb73bd93b3c4ad5d8bbf550762db9"
+        },
+        "Last West: Dorothea Lange\u2019s California Revisited-Sonoma Valley Museum of Art": {
+            "name": "Last West: Dorothea Lange\u2019s California Revisited",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-09-20",
+                "end": "2026-01-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/last-west/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2024/12/master-pnp-cph-3a00000-3a01000-3a01300-3a01366u.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "a0c3c8037841211c8eb9b39d041deef4"
+        },
+        "Nancy Genn: The Nature of Being-Sonoma Valley Museum of Art": {
+            "name": "Nancy Genn: The Nature of Being",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-05-10",
+                "end": "2025-09-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/nancy-genn-the-nature-of-being/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2024/11/Taiz-21-2005-casein-lithograph-chine-colle-on-japanese-paper-30x41.5in.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "0fa9e7bc5c05312ed97c713aa80f871a"
+        },
+        "Book Becoming Art-Sonoma Valley Museum of Art": {
+            "name": "Book Becoming Art",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-01-18",
+                "end": "2025-04-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/book-becoming-art/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2024/10/Yohei_NHISHIMURA_Websters-Third-New-International_2021_Fired-book_Courtesy_1.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "1b160420859b8d58ef11404e6b32c8b0"
+        },
+        "Cenote de Sue\u00f1os: The Art of Juana Alicia-Sonoma Valley Museum of Art": {
+            "name": "Cenote de Sue\u00f1os: The Art of Juana Alicia",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-09-21",
+                "end": "2025-01-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/the-art-of-juana-alicia/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2023/10/sm_Juana-Alicia_Nopal-de-resistencia-y-raices_2012_digitial-print-and-watercolor-on-paper_courtesy-of-the-artist.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "117a2cb234369ac8ad2f0d1db6c4bc38"
+        },
+        "Arthur Monroe: A Tow to Carry-Sonoma Valley Museum of Art": {
+            "name": "Arthur Monroe: A Tow to Carry",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-05-11",
+                "end": "2024-09-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/arthur-monroe-a-tow-to-carry/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2023/10/1_Arthur-Monroe_Untitled_2014_oil-on-canvas_estate-of-arthur-monroe.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "61f5cbcec2d958560694928dc0620503"
+        },
+        "Tsherin Sherpa: Different Worlds-Sonoma Valley Museum of Art": {
+            "name": "Tsherin Sherpa: Different Worlds",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-01-20",
+                "end": "2024-04-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/tsherin-sherpa-different-worlds/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2023/09/Untitled2017_sm.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "8605a15f00a53ae778072449d7c530ab"
+        },
+        "Richard Mayhew: Inner Terrain-Sonoma Valley Museum of Art": {
+            "name": "Richard Mayhew: Inner Terrain",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-09-16",
+                "end": "2024-01-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/richard-mayhew-inner-terrain/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2023/04/Richard-Mayhew_Nostalgia_2016_Oil-on-canvas_Crocker-Art-Museum.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "9f5abea74b092792ac61400cc69d3419"
+        },
+        "Labyrinth of Forms-Sonoma Valley Museum of Art": {
+            "name": "Labyrinth of Forms",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-05-13",
+                "end": "2023-09-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/labyrinth-of-forms-women-and-abstraction-1930-1950/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2022/11/2.-Dehner_Nocturne_2010_109.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "68b258f8e90a619fadd0ec827b473876"
+        },
+        "The New Californians-Sonoma Valley Museum of Art": {
+            "name": "The New Californians",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-05-13",
+                "end": "2023-09-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/the-new-californians/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2022/09/Judy-Dater_Ulla-McKnight-.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "f6ea6f426c5477e094c9d954c9c47ed8"
+        },
+        "A.R.T.S. Student Exhibition 2023-Sonoma Valley Museum of Art": {
+            "name": "A.R.T.S. Student Exhibition 2023",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-04-19",
+                "end": "2023-04-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/a-r-t-s-student-exhibition-2023/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2023/03/Isaac-Sahagan-Vega_4th-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "e3235d6523bbb6ed25e2a2379258d6e6"
+        },
+        "We Are Still Here-Sonoma Valley Museum of Art": {
+            "name": "We Are Still Here",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2023-01-21",
+                "end": "2023-04-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/we-are-still-here/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2022/07/Robin-Meely_Tuleles-Basket-2022.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "93c1c168f1df5e5938c9d2b63f34da09"
+        },
+        "Raymond Saunders: On Freedom and Trust-Sonoma Valley Museum of Art": {
+            "name": "Raymond Saunders: On Freedom and Trust",
+            "venue": "Sonoma Valley Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2022-09-10",
+                "end": "2023-01-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://svma.org/exhibition/raymond-saunders-on-freedom/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://svma.org/wp-content/uploads/2022/08/Saunders-Title-sans-sponsors-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:44",
+            "hash": "9ee07a99f877d9b531e1db4aea256768"
+        }
+    },
+    "Richmond Art Center": {
+        "One Artist Contributes, Then Another, Then Another-Richmond Art Center": {
+            "name": "One Artist Contributes, Then Another, Then Another",
+            "venue": "Richmond Art Center",
+            "description": "90th Anniversary Exhibition One Artist Contributes, Then Another, Then Another A 90-Year Continuum Exhibition: September 2 \u2013 November 19, 2026 Location: Main Gallery SPECIAL EVENTS: Opening Reception & 90th Birthday Party: Saturday, August 29, 12pm-3pm | Learn more\u2026 Making History: Block Printing in the Galleries: Saturday, October 10, 2026, 11am-1pm | Learn more\u2026 One Artist [\u2026]",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-02",
+                "end": "2026-11-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://richmondartcenter.org/exhibitions/one-artist-contributes-then-another-then-another/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://richmondartcenter.org/wp-content/uploads/2026/07/hazel-salmi-art-box-detail-paint-800x800.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:45",
+            "hash": "498308e358c585c3a060b6d26d60da03"
+        },
+        "Ninety@Ninety-Richmond Art Center": {
+            "name": "Ninety@Ninety",
+            "venue": "Richmond Art Center",
+            "description": "90th Anniversary Exhibition Ninety@Ninety Small Works for a Big Milestone Exhibition: September 2 \u2013 November 19, 2026 Opening Reception & 90th Birthday Party: Saturday, August 29, 12pm-3pm | Learn more\u2026 Location: South Gallery Gallery Hours: Wednesday-Saturday, 10am-4pm The galleries will be closed Saturday, September 5, 2026 (Labor Day), Saturday, September 26, 2026 (gala cleanup), and [\u2026]",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-02",
+                "end": "2026-11-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://richmondartcenter.org/exhibitions/ninetyninety/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://richmondartcenter.org/wp-content/uploads/2026/07/Livia-Stein-All-in-the-Day-2025-web_.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:45",
+            "hash": "6d016c8110d306be07282ce1b5873128"
+        },
+        "First Impressions-Richmond Art Center": {
+            "name": "First Impressions",
+            "venue": "Richmond Art Center",
+            "description": "90th Anniversary Exhibition First Impressions A student printmaking showcase Exhibition: September 2 \u2013 November 19, 2026 Opening Reception & 90th Birthday Party: Saturday, August 29, 12pm-3pm | Learn more\u2026 Location: Community Gallery Gallery Hours: Wednesday-Saturday, 10am-4pm The galleries will be closed Saturday, September 5, 2026 (Labor Day), Saturday, September 26, 2026 (gala cleanup), and Wednesday, [\u2026]",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-02",
+                "end": "2026-11-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://richmondartcenter.org/exhibitions/first-impressions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://richmondartcenter.org/wp-content/uploads/2026/06/student-print-2026-533x800.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:45",
+            "hash": "17e720862f5956e66389d1cf3381ac7e"
+        }
+    },
+    "Anderson Collection": {
+        "Patty Chang: surfacing-Anderson Collection": {
+            "name": "Patty Chang: surfacing",
+            "venue": "Anderson Collection",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-17",
+                "end": "2027-02-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://anderson.stanford.edu/exhibitions/patty-chang-surfacing/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://anderson.stanford.edu/wp-content/uploads/2026/08/Untitled-1600-x-1200-px-1-1024x768.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:48",
+            "hash": "fb48a6fae1b7928a907994ba1ee157cf"
+        },
+        "Spotlight-Anderson Collection": {
+            "name": "Spotlight",
+            "venue": "Anderson Collection",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-09-10",
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://anderson.stanford.edu/exhibitions/spotlights/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://anderson.stanford.edu/wp-content/uploads/2025/09/Anderson_10-7-25_078-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:49",
+            "hash": "4fac0040bb99257fd2f438a087c3e40d"
+        }
+    },
+    "Wattis Institute": {
+        "Alexandre Estrela: RedSkyFalls-Wattis Institute": {
+            "name": "Alexandre Estrela: RedSkyFalls",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-05-09",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/alexandre-estrela-i-redskyfalls-i",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://wattis.org/media/05676.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:49",
+            "hash": "92f4b2fe2863695982e1c95f4811f735"
+        },
+        "Caguiat Delacruz: The Tramp-Wattis Institute": {
+            "name": "Caguiat Delacruz: The Tramp",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-10",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/justin-caguiat-and-rafael-delacruz-the-tramp",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://wattis.org/media/05709.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:50",
+            "hash": "b43df2ce2a09a40c0dea8b7ca3dffb4b"
+        },
+        "Artist-in-Residence: CFGNY-Wattis Institute": {
+            "name": "Artist-in-Residence: CFGNY",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-14",
+                "end": "2026-11-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/artist-in-residence-cfgny",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://wattis.org/media/05760.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:50",
+            "hash": "e04a7e732f4d106777354b16b4140d46"
+        },
+        "3,345 Postcards: An Untimely Conversation with Rayyane Tabet and Jay DeFeo-Wattis Institute": {
+            "name": "3,345 Postcards: An Untimely Conversation with Rayyane Tabet and Jay DeFeo",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-19",
+                "end": "2027-04-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/3345-postcards-an-untimely-conversation-with-rayyane-tabet-and-jay-defeo",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://wattis.org/media/05801.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:50",
+            "hash": "b289ff3ee3ee0455234347d29fd600c4"
+        },
+        "STEADY: Michelle Lopez and Ester Parteg\u00e0s-Wattis Institute": {
+            "name": "STEADY: Michelle Lopez and Ester Parteg\u00e0s",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-01-21",
+                "end": "2025-04-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/steady",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:50",
+            "hash": "cd0461626fdba669a4ef63b4c98a6cdf"
+        },
+        "CCA Exhibitions: 2025 MFA Thesis Exhibition-Wattis Institute": {
+            "name": "CCA Exhibitions: 2025 MFA Thesis Exhibition",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-04-30",
+                "end": "2025-05-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/cca-exhibitions-i-2025-mfa-thesis-exhibition-i",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:51",
+            "hash": "192aa4111ddbc4ad3879b8054547cea6"
+        },
+        "Viaje a la luna-Wattis Institute": {
+            "name": "Viaje a la luna",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-06-12",
+                "end": "2025-10-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/viaje-a-la-luna",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:51",
+            "hash": "3993e9a4c1564f30ad945ba9156d1c40"
+        },
+        "8 Hours of Work-Wattis Institute": {
+            "name": "8 Hours of Work",
+            "venue": "Wattis Institute",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-10-29",
+                "end": "2025-12-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wattis.org/our-program/on-view/8-hours-of-work",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:51",
+            "hash": "6e79af4ad1efaa5ab66a5bc5bffcda47"
+        }
+    },
+    "Triton Museum of Art": {
+        "-futility in three acts- by Sieglinde Van Damme-Triton Museum of Art": {
+            "name": "-futility in three acts- by Sieglinde Van Damme",
+            "venue": "Triton Museum of Art",
+            "description": "AUG 29 - JAN 10Sieglinde Van Damme is a multi-disciplinary artist based in California, although she used to be an economist with European roots. Focused on abstraction as an open, undefined potential to new interpretations, her work reflects on the deep layers of our individual past histories and the complex dynamics behind big life choices. Her message:\"re-imagine what else is possible.\u201d\u2122\n\nSieglinde holds both an MS Economics from the Catholic University of Leuven (Belgium) and a Master in Fine Arts from San Jose State University. As an award-winning artist, she participated in numerous solo and group exhibitions spanning the US, Europe, Russia, India, and Japan.\n\nSieglinde\u2019s art and writings have been published in various catalogs and media publications both in the US and in Europe. Her art is included in private and corporate collections around the globe, including Sotheby\u2019s International Realty in France - Monaco.\n\nAward highlights include the Lorenzo il Magnifico Award for video art in Italy; the Belle Foundation Grant for artistic merit as well as the Leigh Weimers Artist Award in Silicon Valley, CA; a Grant from the San Jose Office of Cultural Affairs' Creative Industries Incentive Fund through the Center for Cultural Innovation; both a 2021 & 2022 Certificate of Artistic Merit from the jury at the Luxembourg Art Prize; and a 2024 Opulent Art Global Art Award.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-29",
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.tritonmuseum.org/on-view/-futility-in-three-acts-",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/7781c5_4d819b4e910e47e384abc4451cde760a~mv2.jpg/v1/fill/w_2434,h_1370,al_c,q_90/Sieglinde%20Van%20Damme_futility%20in%20three%20acts_2011_video%20(still).jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:51",
+            "hash": "616ff1dd9984533788889899e92bd860"
+        },
+        "Intrusive Thoughts by Devon Blood-Triton Museum of Art": {
+            "name": "Intrusive Thoughts by Devon Blood",
+            "venue": "Triton Museum of Art",
+            "description": "AUG 15 - JAN 17My name is Devon Blood. Third generation San Franciscan. I grew up in a working-class family, with a strong, single mother, and seven siblings. Things were tough, but what made it tougher was my struggle with undiagnosed OCD. This condition is the framework of my whole life, during my highest highs and lowest lows. It's the one thing that's never left me, not when my best friend died, not when I survived a near-fatal shooting protecting my girlfriend, not when I learned how to tattoo and paint with the left side of my body after suffering hemiparesis. This exhibit is the culmination of my experiences, good times and bad, and of the journey through some of my greatest dreams and worst nightmares. It's a twisted tribute to my firm conviction in life that no matter who you are, or what you're going through, you have to stay up, stay strong, and above all else - keep laughing. This is the Intrusive Thoughts exhibit. It marks a particularly personal chapter in my life, and I hope you enjoy it, maybe even reflecting on your own experience through something that challenged you.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-15",
+                "end": "2027-01-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.tritonmuseum.org/on-view/intrusive-thoughts",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/7781c5_b0ffc2887c8844bf8e832147c65f8741~mv2.jpg/v1/fill/w_1049,h_1141,al_c,q_85/Devon%20Blood%20Artwork.JPG",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:51",
+            "hash": "f6ba20874c5913b1c8f5358a8a5d992e"
+        },
+        "Eye/Hand by Harry Clewans-Triton Museum of Art": {
+            "name": "Eye/Hand by Harry Clewans",
+            "venue": "Triton Museum of Art",
+            "description": "AUG 29 - JAN 3Harry Clewans is largely self-taught and has worked in his studio in Oakland, California, since 1983. Clewans creates unique large-scale woodblock prints by assembling hundreds of smaller printed images. Exhibited extensively in California, nationally and abroad, his work been awarded the James Phalen Award for printmaking and a fellowship at the Kala Institute of Art and has been collected by The Berkeley Art Museum and Pacific Film Archive, the Achenbach Foundation for Graphic Art, the Mills College Art Collection and the Judah L. Magnes Museum.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-29",
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.tritonmuseum.org/on-view/eye%2Fhand",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/7781c5_fe1cca921e5748fc86b6f0817be8a26d~mv2.jpeg/v1/fill/w_3060,h_3959,al_c,q_90/Harry%20Clewans_Photographers%20Studio%20after%20Atget_2024_woodblock%20prints%20on%20kozo%20paper%20on%20wood.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:51",
+            "hash": "3449d3f6c62a4ef1dbb1e2bc5d8f85fc"
+        },
+        "Rose Sellery: Fragile Strength-Triton Museum of Art": {
+            "name": "Rose Sellery: Fragile Strength",
+            "venue": "Triton Museum of Art",
+            "description": "AUG 29 - JAN 3Rose Sellery is a multidisciplinary, self-taught artist whose work navigates the charged terrain between beauty and brutality, fragility and strength, and tradition and rebellion. Through humor, irony, and unflinching confrontation, she explores themes of innocence and loss, societal pressure, resilience, and survival \u2013 inviting viewers to reflect on how lives, particularly women\u2019s lives, are shaped, constrained, celebrated, and discarded.\n\nSellery transforms everyday materials into evocative sculptural narratives. Her work reimagines objects such as glass slippers, garments, and boxing gloves, imbuing them with layered meaning and emotional resonance. Whether through shattered forms, unconventional materials, or conceptual garments, each piece exposes the tension between vulnerability and power while honoring personal and collective stories. Her sculptures create space for reckoning, recognition, and transformation, challenging the inequities and expectations imposed on women.\n\nA storyteller at heart, Sellery brings a sharp, satirical awareness to the social ills and contradictions of contemporary life. Her irreverent approach incorporates a wide range of materials \u2013 metal, bone, fabric, cigarette butts, rose petals, and photography \u2013 chosen specifically to serve each concept. The result is a body of work that is humorous, thought provoking, and at times unsettling, often moving viewers to reflection, laughter, or tears.\n\nRaised in Venice, California, Sellery now lives and works in the mountains of Santa Cruz. Her creative path includes years in the ceramics industry, woodworking and jewelry, experiences that continue to inform her tactile, materially driven practice. She has also played a significant role in the local arts community, serving as Program Coordinator at the Cabrillo Gallery and as a driving force behind FashionArt Santa Cruz, later co-founding Pivot: The Art of Fashion. Rose is currently co-owner and curator at MK Contemporary Art in downtown Santa Cruz and the founder of the Ripple Effect Arts Festival.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-29",
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.tritonmuseum.org/on-view/rose-sellery%3A-fragile-strength",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/7781c5_d9ead30f20434b63b7dec5c5e656d98a~mv2.jpg/v1/fill/w_3150,h_1745,al_c,q_90/Rose%20Sellery_Tension_no%20date_vintage%20shoes%2C%20resin%2C%20steel%2C%20acrylic.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:52",
+            "hash": "dda716309a9a3a466b4f94bdcba0902a"
+        },
+        "Here and There by Tim Guan-Triton Museum of Art": {
+            "name": "Here and There by Tim Guan",
+            "venue": "Triton Museum of Art",
+            "description": "AUG 22 - JAN 17Tim Guan is an American-born painter living and working in San Francisco. Though he has been making art for as long as he can remember, he found his way to a committed art practice during the COVID-19 pandemic. In 2025 he left his career in tech to devote himself to painting full time.\n\nTim\u2019s background in technology and life in San Francisco have shaped his artistic point of view. He is interested in the social and cultural conditions we create through our collective obsession with innovation and progress, and in how those conditions influence the way we navigate our reality and relate to one another. As a resident of the Bay Area for over a decade, he has borne witness to tremendous transformations of public and private life. And as a former \"true believer\" in the promises of the tech sector, he uses painting to wrestle with complicated feelings about his own complicity in those transformations.\n\nWorking figuratively in oil, Tim is particularly drawn to painting because of its ability to hold a material record of human time and energy in a two dimensional object. His direct encounters with great works from art history have shown him the medium\u2019s power to communicate care and attention across time and space.\n\nAgainst the relentless speed and chaos of modern life, he views this kind of \u201cslow\u201d connection as radical and necessary to preserve our humanity. He aspires to take part in this tradition by making attentive, resonant work that both reflects what it\u2019s like to be alive today and inspires questions about where we\u2019re headed.\n\nTim studied painting at Studio Escalier in Argenton-Ch\u00e2teau, France. His work has been exhibited around the Bay Area at Wessling Contemporary, Decentered Arts Studio, The Drawing Room, Rosebud Gallery, and the Triton Museum of Art. You can learn more on Tim\u2019s website and socials at timguan.art.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-22",
+                "end": "2027-01-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.tritonmuseum.org/on-view/here-and-there",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/7781c5_014e1cbf2ca947f098a7f25a7cb1f2c2~mv2.jpg/v1/fill/w_2000,h_2755,al_c,q_90/Tim%20Guan_Je%20Reverai%20Des%20Horizons%20Bleuatres_2026_oil%20on%20linen.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:52",
+            "hash": "b867467fa7d2c8baa19390f3bc971faa"
+        },
+        "Mitchell Johnson: Fifty Years of Painting-Triton Museum of Art": {
+            "name": "Mitchell Johnson: Fifty Years of Painting",
+            "venue": "Triton Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-16",
+                "end": "2027-04-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.tritonmuseum.org/upcoming-exhibitions/mitchell-johnson-fifty-years-of-painting",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/7781c5_8b423bdfa173469ca96bd9019010c259~mv2.jpeg/v1/fill/w_3243,h_2767,al_c,q_90/Mitchell%20Johnson_Soup_1997_oil%20painting_50x58.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:52",
+            "hash": "34caa39ba541b6b4c97e766c0f4109d9"
+        }
+    },
+    "Palo Alto Art Center": {
+        "Live the Moment Light-Palo Alto Art Center": {
+            "name": "Live the Moment Light",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2026-12-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Current-Exhibition",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.paloalto.gov/files/content/public/v/6/departments/community-services/arts-sciences/palo-alto-art-center/see-art/exhibitions/current-exhibition/live-the-moment-light/picture1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:54",
+            "hash": "834ffbcb65726aea1232cc5c4cfe5aea"
+        },
+        "Big Feelings-Palo Alto Art Center": {
+            "name": "Big Feelings",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-23",
+                "end": "2027-04-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Upcoming",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.paloalto.gov/files/content/public/v/88/departments/community-services/arts-sciences/palo-alto-art-center/see-art/exhibitions/upcoming/copy-of-oliveira_profile_2010-1.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:54",
+            "hash": "888a29a56ca3128984afe45af8465b2b"
+        },
+        "Thrown, Stamped, Stacked, and Poured: Ceramic Installation and Performance-Palo Alto Art Center": {
+            "name": "Thrown, Stamped, Stacked, and Poured: Ceramic Installation and Performance",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-06-20",
+                "end": "2026-08-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "a77f248f906eddc1f813898a3df0b83a"
+        },
+        "Ashwini Bhat: Being, Longing\u2026-Palo Alto Art Center": {
+            "name": "Ashwini Bhat: Being, Longing\u2026",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-09-13",
+                "end": "2026-08-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "2b3101e3776031fa8cd50ed08fe93832"
+        },
+        "Creative Connections and PAUSD Youth Art--Belonging: Centering Voice and Story-Palo Alto Art Center": {
+            "name": "Creative Connections and PAUSD Youth Art--Belonging: Centering Voice and Story",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-05-02",
+                "end": "2026-05-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "3d268691714c55eb5fef03c10f584f87"
+        },
+        "Clay Sustains: Vessels of Change-Palo Alto Art Center": {
+            "name": "Clay Sustains: Vessels of Change",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-01-17",
+                "end": "2026-04-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "fcffd5fee0e738f8935bd00fbfb8a766"
+        },
+        "Pushing Boundaries: Ceramic Artists and Identity-Palo Alto Art Center": {
+            "name": "Pushing Boundaries: Ceramic Artists and Identity",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-09-13",
+                "end": "2025-12-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "ed31d0d1ea541288b9211ede434138b0"
+        },
+        "Forming Function: Ceramics with a Purpose-Palo Alto Art Center": {
+            "name": "Forming Function: Ceramics with a Purpose",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-06-21",
+                "end": "2025-08-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "8683c0103f66ce690b062d5f71d82313"
+        },
+        "Creative Connections and Youth Art-Palo Alto Art Center": {
+            "name": "Creative Connections and Youth Art",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-05-03",
+                "end": "2025-05-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "11fec636c6bfab62c11df0c4b322d807"
+        },
+        "Cut from the Same Cloth-Palo Alto Art Center": {
+            "name": "Cut from the Same Cloth",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-01-18",
+                "end": "2025-04-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "da0718796bc30d89f64880e0333a8e07"
+        },
+        "Grow-Palo Alto Art Center": {
+            "name": "Grow",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-09-21",
+                "end": "2024-12-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "7773374e778cae3576d604b9ac158393"
+        },
+        "What\u2019s Cookin\u2019?: Art about food, culture and community-Palo Alto Art Center": {
+            "name": "What\u2019s Cookin\u2019?: Art about food, culture and community",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-06-22",
+                "end": "2024-08-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "d65c1baa453e04c5b21f1517407f9271"
+        },
+        "Youth Art and Cultural Kaleidoscope-Palo Alto Art Center": {
+            "name": "Youth Art and Cultural Kaleidoscope",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-04-27",
+                "end": "2024-05-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "91814d4738e9da5d08fd4ce143da8160"
+        },
+        "In Feast or Famine-Palo Alto Art Center": {
+            "name": "In Feast or Famine",
+            "venue": "Palo Alto Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "museum"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-01-20",
+                "end": "2024-04-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Past-Exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-08 18:49:55",
+            "hash": "4282218f669db20ad176e60df062251a"
+        }
     }
 }
