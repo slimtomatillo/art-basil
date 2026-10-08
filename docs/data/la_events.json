@@ -1130,7 +1130,8 @@
                 "past",
                 "museum",
                 "painting",
-                "printmaking"
+                "printmaking",
+                "drawing"
             ],
             "phase": "past",
             "dates": {
@@ -1389,7 +1390,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "architecture"
             ],
             "phase": "future",
             "dates": {
@@ -1449,7 +1451,8 @@
                 "exhibition",
                 "current",
                 "museum",
-                "photography"
+                "photography",
+                "drawing"
             ],
             "phase": "current",
             "dates": {
@@ -1968,7 +1971,8 @@
                 "past",
                 "museum",
                 "painting",
-                "sculpture"
+                "sculpture",
+                "drawing"
             ],
             "phase": "past",
             "dates": {
@@ -2001,7 +2005,8 @@
                 "printmaking",
                 "textiles",
                 "installation",
-                "film-video"
+                "film-video",
+                "drawing"
             ],
             "phase": "past",
             "dates": {
@@ -2304,7 +2309,8 @@
                 "museum",
                 "painting",
                 "sculpture",
-                "printmaking"
+                "printmaking",
+                "drawing"
             ],
             "phase": "past",
             "dates": {
@@ -2679,7 +2685,8 @@
                 "exhibition",
                 "past",
                 "museum",
-                "sculpture"
+                "sculpture",
+                "drawing"
             ],
             "phase": "past",
             "dates": {
@@ -4143,7 +4150,8 @@
                 "past",
                 "museum",
                 "painting",
-                "sculpture"
+                "sculpture",
+                "drawing"
             ],
             "phase": "past",
             "dates": {

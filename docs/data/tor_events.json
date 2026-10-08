@@ -206,7 +206,8 @@
                 "exhibition",
                 "past",
                 "museum",
-                "photography"
+                "photography",
+                "drawing"
             ],
             "phase": "past",
             "dates": {
@@ -695,7 +696,8 @@
                 "exhibition",
                 "past",
                 "museum",
-                "painting"
+                "painting",
+                "drawing"
             ],
             "phase": "past",
             "dates": {
