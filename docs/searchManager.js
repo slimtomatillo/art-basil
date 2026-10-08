@@ -1,16 +1,8 @@
-// Search Manager - owns the filter state (search text, phase, ongoing, tags),
+// Search Manager - owns the filter state (search text, phases, ongoing, tags),
 // shows/hides the table rows to match it, and keeps the URL in step so a
 // filtered view can be bookmarked or shared. The matching rules live in
 // filterState.js; FilterPanel draws the tag/summary controls and subscribes
 // to changes here.
-
-const PHASE_BUTTONS = {
-    upcomingButton: 'upcoming',
-    currentButton: 'current',
-    futureButton: 'future',
-    pastButton: 'past',
-    allButton: 'all',
-};
 
 class SearchManager {
     constructor() {
@@ -29,7 +21,6 @@ class SearchManager {
 
         this.buildRowModel();
         this.initSearchBar();
-        this.initFilterButtons();
         this.initOngoingCheckbox();
 
         // Show the results for whatever the URL asked for (the URL itself is
@@ -67,12 +58,6 @@ class SearchManager {
         });
     }
 
-    initFilterButtons() {
-        for (const [id, phase] of Object.entries(PHASE_BUTTONS)) {
-            document.getElementById(id)?.addEventListener('click', () => this.setPhaseFilter(phase));
-        }
-    }
-
     initOngoingCheckbox() {
         const ongoingCheckbox = document.getElementById('ongoingCheckbox');
         if (!ongoingCheckbox) return;
@@ -94,9 +79,6 @@ class SearchManager {
     }
 
     syncControls() {
-        for (const [id, phase] of Object.entries(PHASE_BUTTONS)) {
-            document.getElementById(id)?.classList.toggle('active', this.state.phase === phase);
-        }
         const searchBar = document.getElementById('searchBar');
         if (searchBar && searchBar.value.trim() !== this.state.q) searchBar.value = this.state.q;
         const ongoingCheckbox = document.getElementById('ongoingCheckbox');
@@ -156,9 +138,26 @@ class SearchManager {
         this.applyFilters();
     }
 
+    // Tick or untick one phase in the "When" filter. The last ticked phase can't
+    // be unticked, so the view is never empty by construction.
+    togglePhase(phase) {
+        const phases = this.state.phases;
+        if (!filterState.ALL_PHASES.includes(phase)) return;
+        if (phases.includes(phase)) {
+            if (phases.length > 1) this.state.phases = phases.filter(p => p !== phase);
+        } else {
+            this.state.phases = filterState.normalizePhases([...phases, phase]);
+        }
+        this.applyFilters();
+    }
+
+    // Set the phases directly: a phase name, a list of them, or 'upcoming'
+    // (current + future) / 'all' for convenience.
     setPhaseFilter(phase) {
-        if (!filterState.PHASES.includes(phase)) return;
-        this.state.phase = phase;
+        const aliases = { upcoming: filterState.DEFAULT_PHASES, all: filterState.ALL_PHASES };
+        const phases = filterState.normalizePhases([].concat(aliases[phase] || phase));
+        if (phases.length === 0) return;
+        this.state.phases = phases;
         this.applyFilters();
     }
 
@@ -167,7 +166,7 @@ class SearchManager {
         this.applyFilters();
     }
 
-    // Back to the default view: now & upcoming, nothing searched or selected.
+    // Back to the default view: current + future, nothing searched or selected.
     clearFilters() {
         this.state = filterState.defaultState();
         this.applyFilters();

@@ -6,44 +6,62 @@ const path = require('node:path');
 const fs_ = require('../docs/filterState.js');
 
 const row = (phase, tags, extra = {}) => ({ phase, ongoing: false, tags, text: 'show @ venue', ...extra });
+const state = (overrides = {}) => ({ ...fs_.defaultState(), ...overrides });
 
-test('default state is "now & upcoming" with no filters, and round-trips to an empty query', () => {
-    const state = fs_.defaultState();
-    assert.strictEqual(fs_.isDefault(state), true);
-    assert.strictEqual(fs_.toQuery(state), '');
-    assert.deepStrictEqual(fs_.parseUrl(''), state);
+test('default state is current + future with no filters, and round-trips to an empty query', () => {
+    const s = fs_.defaultState();
+    assert.deepStrictEqual(s.phases, ['current', 'future']);
+    assert.strictEqual(fs_.isDefault(s), true);
+    assert.strictEqual(fs_.toQuery(s), '');
+    assert.deepStrictEqual(fs_.parseUrl(''), s);
 });
 
 test('URL state round-trips', () => {
-    const state = { q: 'Asian Art Museum', phase: 'past', ongoing: false, tags: ['photography', 'latinx', 'museum'] };
-    const query = fs_.toQuery(state);
-    assert.strictEqual(query, '?q=Asian+Art+Museum&phase=past&tags=photography,latinx,museum&ongoing=0');
-    assert.deepStrictEqual(fs_.parseUrl(query), state);
+    const s = { q: 'Asian Art Museum', phases: ['current', 'past'], ongoing: false, tags: ['photography', 'latinx', 'museum'] };
+    const query = fs_.toQuery(s);
+    assert.strictEqual(query, '?q=Asian+Art+Museum&phase=current,past&tags=photography,latinx,museum&ongoing=0');
+    assert.deepStrictEqual(fs_.parseUrl(query), s);
 });
 
-test('a search keeps its explicit phase through the URL, even "upcoming"', () => {
-    const state = { q: 'Wattis', phase: 'upcoming', ongoing: true, tags: [] };
-    assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(state)), state);
+test('a single phase and all phases both round-trip', () => {
+    assert.strictEqual(fs_.toQuery(state({ phases: ['past'] })), '?phase=past');
+    assert.deepStrictEqual(fs_.parseUrl('?phase=past').phases, ['past']);
+    const all = state({ phases: ['current', 'future', 'past'] });
+    assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(all)).phases, ['current', 'future', 'past']);
 });
 
-test('legacy ?search= (venue directory links) is read as q and shows every phase', () => {
-    const state = fs_.parseUrl('?search=SFMOMA');
-    assert.strictEqual(state.q, 'SFMOMA');
-    assert.strictEqual(state.phase, 'all');
+test('a search keeps its explicit phases through the URL, even the default ones', () => {
+    const s = { q: 'Wattis', phases: ['current', 'future'], ongoing: true, tags: [] };
+    assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(s)), s);
 });
 
-test('bad or missing URL values fall back to defaults', () => {
-    assert.strictEqual(fs_.parseUrl('?phase=bogus').phase, 'upcoming');
+test('legacy ?search= (venue directory links) is read as q and ticks every phase', () => {
+    const s = fs_.parseUrl('?search=SFMOMA');
+    assert.strictEqual(s.q, 'SFMOMA');
+    assert.deepStrictEqual(s.phases, ['current', 'future', 'past']);
+});
+
+test('bad or missing URL values fall back to defaults; phases are ordered and de-duplicated', () => {
+    assert.deepStrictEqual(fs_.parseUrl('?phase=bogus').phases, ['current', 'future']);
+    assert.deepStrictEqual(fs_.parseUrl('?phase=past,current,past').phases, ['current', 'past']);
     assert.deepStrictEqual(fs_.parseUrl('?tags=,photography,,photography').tags, ['photography']);
     assert.strictEqual(fs_.parseUrl('?ongoing=1').ongoing, true);
 });
 
-test('phase "upcoming" is current + future; "all" is everything', () => {
-    assert.ok(fs_.phaseMatches('upcoming', 'current'));
-    assert.ok(fs_.phaseMatches('upcoming', 'future'));
-    assert.ok(!fs_.phaseMatches('upcoming', 'past'));
-    assert.ok(fs_.phaseMatches('all', 'past'));
-    assert.ok(!fs_.phaseMatches('current', 'future'));
+test('phases: matches ticked phases only; ticking all shows everything, even an event with no phase', () => {
+    assert.ok(fs_.phaseMatches(['current', 'future'], 'current'));
+    assert.ok(fs_.phaseMatches(['current', 'future'], 'future'));
+    assert.ok(!fs_.phaseMatches(['current', 'future'], 'past'));
+    assert.ok(fs_.phaseMatches(['past'], 'past'));
+    assert.ok(!fs_.phaseMatches(['past'], 'current'));
+    assert.ok(!fs_.phaseMatches(['current', 'future'], null));
+    assert.ok(fs_.phaseMatches(['current', 'future', 'past'], null));
+});
+
+test('phases are described for the result line', () => {
+    assert.strictEqual(fs_.describePhases(['current', 'future']), 'current & future');
+    assert.strictEqual(fs_.describePhases(['past']), 'past');
+    assert.strictEqual(fs_.describePhases(['current', 'future', 'past']), 'all dates');
 });
 
 test('tags: OR within a group, AND across groups', () => {
@@ -51,11 +69,9 @@ test('tags: OR within a group, AND across groups', () => {
     const paint = row('current', ['painting', 'latinx']);
     const both = row('current', ['photography', 'latinx']);
     const none = row('current', ['sculpture']);
-    // photography OR painting (same group)
     assert.ok(fs_.tagsMatch(['photography', 'painting'], photo.tags));
     assert.ok(fs_.tagsMatch(['photography', 'painting'], paint.tags));
     assert.ok(!fs_.tagsMatch(['photography', 'painting'], none.tags));
-    // medium AND theme (different groups)
     assert.ok(fs_.tagsMatch(['photography', 'latinx'], both.tags));
     assert.ok(!fs_.tagsMatch(['photography', 'latinx'], photo.tags));
     assert.ok(!fs_.tagsMatch(['photography', 'latinx'], paint.tags));
@@ -69,37 +85,51 @@ test('tags outside every group (e.g. museum) must each match', () => {
 
 test('ongoing shows are hidden only when "include ongoing" is off', () => {
     const ongoing = row('current', [], { ongoing: true });
-    assert.ok(fs_.rowMatches(ongoing, { ...fs_.defaultState(), ongoing: true }));
-    assert.ok(!fs_.rowMatches(ongoing, { ...fs_.defaultState(), ongoing: false }));
-    assert.ok(fs_.rowMatches(row('current', []), { ...fs_.defaultState(), ongoing: false }));
+    assert.ok(fs_.rowMatches(ongoing, state({ ongoing: true })));
+    assert.ok(!fs_.rowMatches(ongoing, state({ ongoing: false })));
+    assert.ok(fs_.rowMatches(row('current', []), state({ ongoing: false })));
 });
 
 test('search matches text case-insensitively', () => {
     const r = row('current', [], { text: 'monet at the legion of honor' });
-    assert.ok(fs_.rowMatches(r, { ...fs_.defaultState(), q: 'LEGION' }));
-    assert.ok(!fs_.rowMatches(r, { ...fs_.defaultState(), q: 'sfmoma' }));
+    assert.ok(fs_.rowMatches(r, state({ q: 'LEGION' })));
+    assert.ok(!fs_.rowMatches(r, state({ q: 'sfmoma' })));
 });
 
-test('counts show what selecting a tag would add, ignoring that tag\'s own group', () => {
+test('tag counts show what ticking a tag would add, ignoring that tag\'s own group', () => {
     const rows = [
         row('current', ['photography', 'latinx']),
         row('current', ['painting', 'latinx']),
         row('current', ['painting']),
-        row('past', ['photography', 'latinx']),   // hidden by the default phase
+        row('past', ['photography', 'latinx']),   // hidden by the default phases
     ];
-    // nothing selected: current rows only
-    let counts = fs_.countTags(rows, fs_.defaultState());
+    let counts = fs_.countTags(rows, state());
     assert.strictEqual(counts.photography, 1);
     assert.strictEqual(counts.painting, 2);
     assert.strictEqual(counts.latinx, 2);
-    // latinx selected: medium counts are within latinx rows; latinx itself is not narrowed by itself
-    counts = fs_.countTags(rows, { ...fs_.defaultState(), tags: ['latinx'] });
+    counts = fs_.countTags(rows, state({ tags: ['latinx'] }));
     assert.strictEqual(counts.photography, 1);
     assert.strictEqual(counts.painting, 1);
     assert.strictEqual(counts.latinx, 2);
-    // photography selected: other medium tags still show what they would add (OR within the group)
-    counts = fs_.countTags(rows, { ...fs_.defaultState(), tags: ['photography'] });
+    counts = fs_.countTags(rows, state({ tags: ['photography'] }));
     assert.strictEqual(counts.painting, 2);
+    // ticking Past brings the past photography+latinx show into the counts
+    counts = fs_.countTags(rows, state({ phases: ['current', 'future', 'past'] }));
+    assert.strictEqual(counts.photography, 2);
+});
+
+test('phase counts show what ticking each When option would add, given the other filters', () => {
+    const rows = [
+        row('current', ['photography']),
+        row('future', ['photography']),
+        row('future', ['painting']),
+        row('past', ['photography']),
+        row('past', ['painting']),
+        row('past', ['painting']),
+    ];
+    assert.deepStrictEqual(fs_.countPhases(rows, state()), { current: 1, future: 2, past: 3 });
+    // with photography selected, only photography shows are counted
+    assert.deepStrictEqual(fs_.countPhases(rows, state({ tags: ['photography'] })), { current: 1, future: 1, past: 1 });
 });
 
 test('every panel tag is documented on tags.html', () => {

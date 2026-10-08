@@ -50,10 +50,10 @@ renderer.renderEventRow(event);
 
 `filterState.js` holds the **pure logic**, with no DOM access, so it is unit tested in Node (`node --test tests/`):
 - `TAG_GROUPS` - the tag groups offered as dropdowns (Medium, Theme, Cost, Format). Keep in step with `docs/tags.html` and `APPROVED_TAGS` in `tagging.py`; a test checks the tags are documented
-- `parseUrl(search)` / `toQuery(state)` - filters <-> URL (`?q=text&phase=past&tags=photography,latinx&ongoing=0`), so a view can be bookmarked or shared. The older `?search=Venue` (used by `venues.html`) is still read, and means "all phases"
+- `parseUrl(search)` / `toQuery(state)` - filters <-> URL (`?q=text&phase=past&tags=photography,latinx&ongoing=0`), so a view can be bookmarked or shared. `phase` is one or more of `current`, `future`, `past` (e.g. `phase=current,past`). The older `?search=Venue` (used by `venues.html`) is still read, and means "every phase"
+- **When** is a multi-select over `current` / `future` / `past`; ticking all three shows everything (there is no separate "All"). **The default is current + future**, not the long archive. At least one phase must stay ticked
 - `rowMatches(row, state)` - the matching rule: tags in the same group widen the results (photography OR painting), tags in different groups narrow them (photography AND latinx), and a tag outside every group (e.g. `museum`) must always match
-- `countTags(rows, state)` - the counts shown beside each option in the panel
-- Phases: `upcoming` (current + future, **the default**), `current`, `future`, `past`, `all`
+- `countTags(rows, state)` / `countPhases(rows, state)` - the counts shown beside each option in the dropdowns
 
 `searchManager.js` (`SearchManager`) owns the live state: it reads the URL on load, shows/hides rows, keeps the buttons, search box and tag chips in sync, and rewrites the URL (`replaceState`, so the back button isn't filled with every keystroke). `FilterPanel` subscribes to it.
 
@@ -61,13 +61,14 @@ renderer.renderEventRow(event);
 ```javascript
 // The search manager is automatically initialized by scroll.js
 window.searchManager.setSearchTerm('exhibition');
-window.searchManager.setPhaseFilter('past');       // 'upcoming' | 'current' | 'future' | 'past' | 'all'
+window.searchManager.togglePhase('past');          // tick/untick one phase in the When filter
+window.searchManager.setPhaseFilter('upcoming');   // or set them: a phase, a list, 'upcoming' (current+future) or 'all'
 window.searchManager.toggleTagFilter('photography');
 window.searchManager.clearFilters();               // back to the default view
 ```
 
 ### 4b. `filterPanel.js`
-**Purpose**: Draws the filter controls from `SearchManager`'s state: a single row of independent dropdowns (Medium, Theme, Cost, ...), one per tag group in `TAG_GROUPS`. Each opens a popover of checkboxes with counts, and its button shows a badge with how many of its tags are selected. Only one popover is open at a time; a click outside or Escape closes it. On phones the row still fits on one line and the popover opens full width underneath. Below the row is the "Showing X of Y events" line, a removable pill for each active filter, and "Clear all".
+**Purpose**: Draws the filter controls from `SearchManager`'s state: a single row of independent dropdowns: **When** (Current / Future / Past) first, then one per tag group in `TAG_GROUPS` (Medium, Theme, Cost, ...). Each opens a popover of checkboxes with counts, and its button shows a badge with how many of its options are selected (for When, only when it differs from the default). Only one popover is open at a time; a click outside or Escape closes it. On phones the row still fits on one line and the popover opens full width underneath. Below the row is the "Showing X of Y events" line, a removable pill for each active filter, and "Clear all".
 
 A group with no tags in a region's data gets no dropdown (so "Cost" only appears where events carry `free`, and "Format" stays hidden until some events carry its tags). Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
 

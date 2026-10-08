@@ -28,49 +28,64 @@
             'tour', 'virtual', 'workshop'] },
     ];
 
-    // "upcoming" is current + future together (what a visitor usually wants).
-    const PHASES = ['upcoming', 'current', 'future', 'past', 'all'];
-    const DEFAULT_PHASE = 'upcoming';
-
-    const PHASE_LABELS = {
-        upcoming: 'Now & upcoming', current: 'Current', future: 'Future', past: 'Past', all: 'All',
-    };
+    // "When" is a multi-select over an event's phase. Ticking all three shows
+    // everything, so there is no separate "All". By default a visitor sees what
+    // is on now and what is coming (current + future), not the long archive.
+    const ALL_PHASES = ['current', 'future', 'past'];
+    const DEFAULT_PHASES = ['current', 'future'];
+    const PHASE_LABELS = { current: 'Current', future: 'Future', past: 'Past' };
 
     function groupOf(tag) {
         const group = TAG_GROUPS.find(g => g.tags.includes(tag));
         return group ? group.id : null;
     }
 
+    // Keep phases in canonical order, valid and without duplicates
+    function normalizePhases(phases) {
+        return ALL_PHASES.filter(phase => phases.includes(phase));
+    }
+
+    function samePhases(a, b) {
+        return a.length === b.length && a.every((phase, i) => phase === b[i]);
+    }
+
     function defaultState() {
-        return { q: '', phase: DEFAULT_PHASE, ongoing: true, tags: [] };
+        return { q: '', phases: [...DEFAULT_PHASES], ongoing: true, tags: [] };
     }
 
     function isDefault(state) {
-        return state.q === '' && state.phase === DEFAULT_PHASE && state.ongoing && state.tags.length === 0;
+        return state.q === '' && samePhases(state.phases, DEFAULT_PHASES) && state.ongoing && state.tags.length === 0;
+    }
+
+    // "current & future", "past", "all dates" - for the result count line
+    function describePhases(phases) {
+        if (phases.length === ALL_PHASES.length) return 'all dates';
+        return phases.map(phase => PHASE_LABELS[phase].toLowerCase()).join(' & ');
     }
 
     // --- URL <-> state -------------------------------------------------------
 
-    // ?q=text&phase=past&tags=photography,latinx&ongoing=0. The older
+    // ?q=text&phase=past&tags=photography,latinx&ongoing=0, where phase is one
+    // or more of current, future, past (e.g. phase=current,past). The older
     // ?search=name (used by the venue directory links) is still read as q.
     // A search with no explicit phase means "show everything for that venue"
-    // (its shows may all be past), so it starts on "all".
+    // (its shows may all be past), so it starts with every phase ticked.
     function parseUrl(search) {
         const params = new URLSearchParams(search || '');
         const q = (params.get('q') ?? params.get('search') ?? '').trim();
-        const requestedPhase = params.get('phase');
-        const phase = PHASES.includes(requestedPhase) ? requestedPhase : (q ? 'all' : DEFAULT_PHASE);
+        const requested = normalizePhases((params.get('phase') || '').split(',').map(p => p.trim()));
+        const phases = requested.length ? requested : (q ? [...ALL_PHASES] : [...DEFAULT_PHASES]);
         const tags = [...new Set((params.get('tags') || '').split(',').map(t => t.trim()).filter(Boolean))];
-        return { q, phase, ongoing: params.get('ongoing') !== '0', tags };
+        return { q, phases, ongoing: params.get('ongoing') !== '0', tags };
     }
 
     // Inverse of parseUrl: '' for the default view, else '?...'. The phase is
     // always written when there is a search, because parseUrl treats a search
-    // with no phase as "all".
+    // with no phase as "every phase".
     function toQuery(state) {
         const params = new URLSearchParams();
         if (state.q) params.set('q', state.q);
-        if (state.phase !== DEFAULT_PHASE || state.q) params.set('phase', state.phase);
+        if (state.q || !samePhases(state.phases, DEFAULT_PHASES)) params.set('phase', state.phases.join(','));
         if (state.tags.length) params.set('tags', state.tags.join(','));
         if (!state.ongoing) params.set('ongoing', '0');
         const query = params.toString().replace(/%2C/g, ',');
@@ -79,10 +94,9 @@
 
     // --- matching ------------------------------------------------------------
 
-    function phaseMatches(phase, eventPhase) {
-        if (phase === 'all') return true;
-        if (phase === 'upcoming') return eventPhase === 'current' || eventPhase === 'future';
-        return eventPhase === phase;
+    // With every phase ticked nothing is excluded, including an event with no phase
+    function phaseMatches(phases, eventPhase) {
+        return phases.length === ALL_PHASES.length || phases.includes(eventPhase);
     }
 
     // Within a group any selected tag matches (photography OR painting); across
@@ -104,20 +118,21 @@
         return true;
     }
 
-    // `row` is { phase, ongoing, tags: [...], text: 'lowercased searchable text' }
-    function rowMatches(row, state, skipGroup = null) {
+    // `row` is { phase, ongoing, tags: [...], text: 'lowercased searchable text' }.
+    // `skipGroup` / `skipPhase` leave one filter out, to count what changing it would show.
+    function rowMatches(row, state, { skipGroup = null, skipPhase = false } = {}) {
         if (state.q && !row.text.includes(state.q.toLowerCase())) return false;
-        if (!phaseMatches(state.phase, row.phase)) return false;
+        if (!skipPhase && !phaseMatches(state.phases, row.phase)) return false;
         if (!state.ongoing && row.ongoing) return false;
         return tagsMatch(state.tags, row.tags, skipGroup);
     }
 
-    // How many rows each tag in the panel would show: the rows matching every
-    // other filter (including the other groups' selections) that carry the tag.
+    // How many rows each tag would show: the rows matching every other filter
+    // (including the other groups' selections and the When choice) that carry the tag.
     function countTags(rows, state) {
         const counts = {};
         for (const group of TAG_GROUPS) {
-            const eligible = rows.filter(row => rowMatches(row, state, group.id));
+            const eligible = rows.filter(row => rowMatches(row, state, { skipGroup: group.id }));
             for (const tag of group.tags) {
                 counts[tag] = eligible.filter(row => row.tags.includes(tag)).length;
             }
@@ -125,9 +140,19 @@
         return counts;
     }
 
+    // How many rows each When option would show, given every other filter
+    function countPhases(rows, state) {
+        const eligible = rows.filter(row => rowMatches(row, state, { skipPhase: true }));
+        const counts = {};
+        for (const phase of ALL_PHASES) {
+            counts[phase] = eligible.filter(row => row.phase === phase).length;
+        }
+        return counts;
+    }
+
     return {
-        TAG_GROUPS, PHASES, PHASE_LABELS, DEFAULT_PHASE,
-        groupOf, defaultState, isDefault, parseUrl, toQuery,
-        phaseMatches, tagsMatch, rowMatches, countTags,
+        TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, PHASE_LABELS,
+        groupOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
+        phaseMatches, tagsMatch, rowMatches, countTags, countPhases,
     };
 }));
