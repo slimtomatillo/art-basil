@@ -14,6 +14,55 @@ Events live in `docs/data/<region>_events.json`. Each one comes from one of thre
 - *Manual* (`"source": "manual"`): added by hand from an emailed submission. `manual_check.py` re-checks these daily. See [SUBMISSIONS.md](SUBMISSIONS.md).
 - *Archive* (`"source": "archive"`): a one-time import of a closed venue's exhibition history. Nothing refreshes or re-checks it, by design, and the stale check skips it.
 
+**How it works**  
+There is no server. Python scrapers (`scrapers/<region>/`, one module per venue, registered in `main.py`) read each venue's website and write events into `docs/data/<region>_events.json`. A GitHub Actions workflow runs `main.py` every day at 4am Pacific and commits the changed data. The site in `docs/` is plain HTML and JavaScript on GitHub Pages: each page fetches the JSON files directly in the browser.
+
+**Quick start**  
+Python 3.12 (what CI uses):
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+python main.py --env dev --venues "Wattis Institute"   # try one scraper; writes nothing
+python main.py --regions sf                            # scrape a region and update its data file
+python main.py                                         # everything, as CI does
+python3 -m http.server -d docs                         # view the site at http://localhost:8000/sf/
+```
+`python main.py --help` lists every option. The only secret is the optional `SCRAPER_PROXY_API_KEY` (a [ZenRows](https://www.zenrows.com) key, used for venues that block GitHub's servers); without it those venues just keep their old data.
+
+**Data format**  
+`<region>_events.json` maps venue name to events, and each event's key is `title-venue`:
+```json
+{
+  "Wattis Institute": {
+    "Alexandre Estrela: RedSkyFalls-Wattis Institute": {
+      "name": "Alexandre Estrela: RedSkyFalls",
+      "venue": "Wattis Institute",
+      "description": null,
+      "tags": ["exhibition", "current", "gallery"],
+      "phase": "current",
+      "dates": {"start": "2026-05-09", "end": "2026-11-21"},
+      "ongoing": false,
+      "links": [{"link": "https://...", "description": "Event Page"},
+                {"link": "https://...", "description": "Image"}],
+      "last_updated": "2026-10-08 19:33:17",
+      "hash": "5b1fe59b..."
+    }
+  }
+}
+```
+- `phase` is `current`, `future` or `past`, worked out from `dates` in the venue's local time zone (`docs/data/regions.json`) and only ever moving forward. The dates may be `null`.
+- `ongoing: true` means a current show with no end date.
+- `source` is absent for scraped events, or `"manual"` / `"archive"` (see above).
+- The `venue` string must match a key in `<region>_venues.json`, which maps each venue to its street address (for the map links and the venues page).
+
+**Documentation**  
+- [OPERATIONS.md](OPERATIONS.md): the daily run, spotting and fixing a venue that stopped updating, running scrapers by hand, and the proxy and its credit budget.
+- [ADDING_A_REGION.md](ADDING_A_REGION.md): adding a venue or a whole region.
+- [SUBMISSIONS.md](SUBMISSIONS.md): handling emailed events.
+- [docs/JS_REFACTOR_README.md](docs/JS_REFACTOR_README.md): how the front-end modules fit together.
+- `notebooks/`: older tools for editing a single combined database file that no longer exists. They are superseded by `submissions.py` and the automatic phase updates, and kept only for reference.
+
 **Closed venues**  
 - *Cartoon Art Museum* (SF): closed its galleries in 2026. Its history (1988–2026) was imported once as archive data for [WEBSITE-33](https://artbasil.atlassian.net/browse/WEBSITE-33). It has no scraper and, on purpose, no entry in `sf_venues.json`, so it stays off the venues page. If it reopens, build a regular scraper.
 

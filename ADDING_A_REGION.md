@@ -1,3 +1,26 @@
+# Adding a venue, or a new region (city)
+
+## Just adding a venue to an existing region?
+
+You need three things, then you're done (the venue page and map links pick it up
+automatically):
+
+1. **A scraper**, `scrapers/<region>/<venue>.py` — write it as described in
+   [section 2](#2-per-venue-scraper) below, and check it with
+   `python main.py --env dev --venues "<Venue Name>" --no-summary` once it is
+   registered.
+2. **A registry entry** in `main.py`: import the module and add
+   `"<Venue Name>": <module>.<scrape_function>` to that region's block in
+   `get_venue_scrapers()` (section 1e).
+3. **An address** in `docs/data/<region>_venues.json`, under the exact `venue`
+   string the scraper writes (section 1c) — missing, the venue gets no map link.
+
+Then write the real data with `python main.py --venues "<Venue Name>" --no-summary`,
+and check it in CI once (section 2a). If the site blocks GitHub's servers, also
+see section 2f. Everything below this point is for a whole new city.
+
+---
+
 # Adding a new region (city)
 
 A "region" is a city / metro area (`sf`, `la`, ...). Each region has its own
