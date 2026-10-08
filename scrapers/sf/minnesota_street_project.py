@@ -38,7 +38,7 @@ def scrape_minnesota_street_project(env='prod', region='sf'):
                 continue
             seen_links.add(event_link)
 
-            name = link_tag.get('title') or link_tag.get_text(' ', strip=True)
+            name = ' '.join((link_tag.get('title') or link_tag.get_text(' ', strip=True)).split())
 
             # First line of the paragraph is the date range, second is
             # "<address> / <gallery name>" for the gallery hosting the show.
