@@ -39,7 +39,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Madrone Art Bar": madrone_art_bar.scrape_madrone_art_bar,
             "The Walt Disney Family Museum": walt_disney_family_museum.scrape_walt_disney_family_museum,
             "Museum of the African Diaspora": moad.scrape_moad_exhibitions,
-            "Institute of Contemporary Art San José": ica_san_jose.scrape_ica_san_jose,
+            "Institute of Contemporary Art San Jose": ica_san_jose.scrape_ica_san_jose,
             "Minnesota Street Project": minnesota_street_project.scrape_minnesota_street_project,
             "Berkeley Art Center": berkeley_art_center.scrape_berkeley_art_center,
             "Southern Exposure": southern_exposure.scrape_southern_exposure,

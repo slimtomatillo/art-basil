@@ -11,7 +11,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-VENUE = 'Institute of Contemporary Art San José'
+VENUE = 'Institute of Contemporary Art San Jose'
 BASE_URL = 'https://www.icasanjose.org'
 # The listing pages are built with the "Epic News Element" WordPress plugin;
 # its "Load More" button POSTs here for each further page of results. (The
@@ -180,7 +180,7 @@ def fetch_archive_pages(first_page, known_links):
 
 
 def scrape_ica_san_jose(env='prod', region='sf'):
-    """Scrape and process exhibitions from the Institute of Contemporary Art San José."""
+    """Scrape and process exhibitions from the Institute of Contemporary Art San Jose."""
 
     # Detail pages (for descriptions, and dates the listing lacks) are one
     # request per show - ~150 for the full archive - and old shows never
