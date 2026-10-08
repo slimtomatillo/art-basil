@@ -40,22 +40,33 @@ def scrape_cantor_exhibitions(env='prod', region='sf'):
         # Define class based on phase
         phase_class = f'view--exhibitions--block-exhibitions-{phase_dict[phase]}'
         
-        try:
-            exhibition_section = soup.find_all('div', class_=phase_class)[0]
+        sections = soup.find_all('div', class_=phase_class)
+        if not sections:
+            # Nothing is listed - normal for "upcoming" between seasons, but a
+            # layout change if it happens for current or past. Either way there
+            # is nothing to iterate (this used to fall through and crash on the
+            # unassigned section).
+            log = logging.info if phase == 'future' else logging.warning
+            log(f"Cantor Arts Center: no {phase} exhibitions section found at {url}")
+            return
+        exhibition_section = sections[0]
 
-        except Exception as e:
-            logging.warning(f"Error scraping Cantor Arts Center {phase} exhibitions: {e}")
-            
         events = exhibition_section.find_all('div', class_='container')
                         
         for event_element in events:
             # The container's first <a> wraps the thumbnail image and has no
             # text; the actual title link lives in an <h2> (class "subtitle"
             # on the current/past listings, no class on the upcoming one).
-            title = event_element.find('h2').find('a').text.strip()
-            
+            title_tag = event_element.find('h2')
+            title_link = title_tag.find('a') if title_tag else None
+            date_tag = event_element.find('div', class_='exhibition__dynamic-token-fieldnode-start-date-to-end-date')
+            if not title_link or not date_tag:
+                logging.warning(f"Cantor Arts Center: skipping a {phase} listing with no title or date")
+                continue
+            title = ' '.join(title_link.text.split())
+
             # Dates
-            date_range = event_element.find('div', class_='exhibition__dynamic-token-fieldnode-start-date-to-end-date').text.strip()
+            date_range = date_tag.text.strip()
             # Mark 'ongoing' flag - only meaningful for a currently-on-view
             # show; a stale "ongoing" label on the past/upcoming listing
             # would otherwise produce an unrenderable phase='past'/'future'
@@ -63,10 +74,14 @@ def scrape_cantor_exhibitions(env='prod', region='sf'):
             ongoing = 'ongoing' in date_range.lower() and phase == 'current'
             dates = date_range.lower().replace(',', '').split('–')
             # Get dt versions of start and end dates
-            if len(dates[0].split()) == 2:
-                dates[0] = dates[0] + ' ' + dates[1].split()[-1]
-            start_date = convert_date_to_dt(dates[0])
-            end_date = convert_date_to_dt(dates[1])
+            try:
+                if len(dates[0].split()) == 2:
+                    dates[0] = dates[0] + ' ' + dates[1].split()[-1]
+                start_date = convert_date_to_dt(dates[0])
+                end_date = convert_date_to_dt(dates[1])
+            except (KeyError, ValueError, IndexError):
+                logging.warning(f"Cantor Arts Center: could not parse dates {date_range!r} for {title!r}")
+                continue
 
             event_link_tag = event_element.find('a')
             event_link = 'https://museum.stanford.edu' + event_link_tag['href'] if event_link_tag else None
