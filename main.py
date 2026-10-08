@@ -1,5 +1,6 @@
 import sys
 import time
+import datetime as dt
 import logging
 import pandas as pd
 import numpy as np
@@ -8,6 +9,7 @@ from config import configure_logging, DB_FILES
 from processing import update_event_phases
 from manual_check import check_manual_events
 from scraper_health import find_stale_venues, report as report_scraper_health
+import utils
 from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art, madrone_art_bar, walt_disney_family_museum, \
@@ -17,6 +19,33 @@ from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, hun
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter
+
+# Scrapers whose sites are fetched through the paid ZenRows proxy (see
+# utils.PROXY_DOMAINS), mapped to the venue names they write data under (some
+# write several). A full refresh of these costs ~315 credits and the free
+# allowance is 5,000 a month, so they are refreshed every few days, not daily.
+PROXIED_VENUES = {
+    "BAMPFA": ["BAMPFA"],
+    "Cantor Arts Center": ["Cantor Arts Center"],
+    "de Young Museum": ["de Young", "Legion of Honor"],
+    "Southern Exposure": ["Southern Exposure"],
+    "Norton Simon Museum": ["Norton Simon Museum"],
+    "Huntington": ["Huntington"],
+    "AGO": ["AGO"],
+}
+# "Every 3 days" with slack, so run-to-run start-time jitter can't push a venue
+# to every 4th day. A venue is due once its newest event is this old; a failed
+# fetch leaves it that old, so it is retried on the next daily run.
+PROXY_REFRESH_MIN_AGE = dt.timedelta(hours=60)
+
+def proxy_refresh_due(region, venue, now=None):
+    """True if a proxied scraper's data is old enough (or absent) to refresh."""
+    now = now or dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
+    db = load_db(DB_FILES[region])
+    stamps = [dt.datetime.strptime(e['last_updated'][:19], "%Y-%m-%d %H:%M:%S")
+              for data_venue in PROXIED_VENUES[venue]
+              for e in db.get(data_venue, {}).values() if e.get('last_updated')]
+    return not stamps or now - max(stamps) >= PROXY_REFRESH_MIN_AGE
 
 def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=None):
     """Return dictionary of venue:scraper pairs and venue-to-region mapping"""
@@ -126,6 +155,17 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
     failed = []
     for venue, scraper in venues.items():
         region = venue_to_region[venue]
+        # Proxied venues are skipped between refreshes to stay inside the
+        # ZenRows allowance (their existing data is kept). Naming a venue
+        # explicitly, or a dev run, always scrapes it.
+        if env == 'prod' and venue in PROXIED_VENUES and not (selected_venues and venue in selected_venues) \
+                and utils.ZENROWS_API_KEY:
+            if utils.PROXY_EXHAUSTED:
+                logging.warning(f"[{region}] Skipping {venue}: the ZenRows account is out of credits; existing data kept.")
+                continue
+            if not proxy_refresh_due(region, venue):
+                logging.info(f"[{region}] Skipping {venue}: refreshed recently (proxied venues refresh about every 3 days); existing data kept.")
+                continue
         logging.info(f"[{region}] Starting scrape for {venue}")
         for s in (scraper if isinstance(scraper, list) else [scraper]):
             try:

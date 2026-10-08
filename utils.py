@@ -92,6 +92,11 @@ PROXY_DOMAINS = {
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
 
+# Set once ZenRows answers 402 (account out of credits). Every later proxied
+# request in the run would fail the same way, so fetch_and_parse stops sending
+# them and main.py skips the remaining proxied scrapers.
+PROXY_EXHAUSTED = False
+
 def _proxy_get(url, proxy_params):
     """GET through ZenRows, retrying once on a timeout or transient error."""
     for attempt in range(1, PROXY_ATTEMPTS + 1):
@@ -112,6 +117,7 @@ def _proxy_get(url, proxy_params):
         time.sleep(PROXY_RETRY_DELAY)
 
 def fetch_and_parse(url, headers=None):
+    global PROXY_EXHAUSTED
     request_headers = {'User-Agent': 'Your Bot 0.1'}
     if headers:
         request_headers.update(headers)
@@ -120,11 +126,18 @@ def fetch_and_parse(url, headers=None):
 
     try:
         if proxy_params and ZENROWS_API_KEY:
+            if PROXY_EXHAUSTED:
+                logging.info(f"Not fetching {url}: the ZenRows account is out of credits.")
+                return None
             # Routed through ZenRows. It manages its own User-Agent and
             # browser fingerprinting for the anti-bot path, so our usual
             # headers (e.g. a scraper's custom browser UA) don't apply here -
             # only our own URL and the domain's minimum required params go.
             response = _proxy_get(url, proxy_params)
+            if response.status_code == 402:
+                PROXY_EXHAUSTED = True
+                logging.error("ZenRows reports the account is out of credits (402); "
+                              "skipping all remaining proxied fetches this run.")
         else:
             if proxy_params:
                 logging.warning(
