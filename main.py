@@ -1,3 +1,4 @@
+import argparse
 import sys
 import time
 import datetime as dt
@@ -226,7 +227,35 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
     logging.info("Finished")
     return failed
 
+def parse_args(argv=None):
+    """Command-line options. With none, every region and venue is scraped, as CI does."""
+    venues, venue_to_region = get_venue_scrapers()
+    regions = sorted(set(venue_to_region.values()))
+    parser = argparse.ArgumentParser(
+        description="Scrape exhibitions and update docs/data/<region>_events.json.",
+        epilog="Venue names contain spaces, so quote them. Naming a venue with --venues "
+               "always scrapes it, even a ZenRows-proxied one that isn't due for a refresh yet.")
+    parser.add_argument('--regions', nargs='+', metavar='REGION', help=f"only these regions ({', '.join(regions)})")
+    parser.add_argument('--venues', nargs='+', metavar='VENUE', help="only these venues")
+    parser.add_argument('--skip-venues', nargs='+', metavar='VENUE', help="skip these venues")
+    parser.add_argument('--env', choices=['prod', 'dev'], default='prod',
+                        help="'dev' logs what each scraper finds without writing any data (default: prod)")
+    parser.add_argument('--no-summary', action='store_true',
+                        help="skip the end-of-run phase update, health checks and db_size.csv entry")
+    args = parser.parse_args(argv)
+
+    # Reject unknown names up front: a typo here would otherwise just scrape nothing.
+    for flag, names, valid in (('--regions', args.regions, regions),
+                               ('--venues', args.venues, list(venues)),
+                               ('--skip-venues', args.skip_venues, list(venues))):
+        unknown = [n for n in (names or []) if n not in valid]
+        if unknown:
+            parser.error(f"{flag}: unknown {', '.join(map(repr, unknown))}. Choose from: {', '.join(valid)}")
+    return args
+
 if __name__ == "__main__":
+    args = parse_args()
     # Exit non-zero if any scraper crashed so the CI run goes red (and emails),
     # after all the other scrapers have run and their data has been saved.
-    sys.exit(1 if main() else 0)
+    sys.exit(1 if main(env=args.env, selected_regions=args.regions, selected_venues=args.venues,
+                       skip_venues=args.skip_venues, write_summary=not args.no_summary) else 0)
