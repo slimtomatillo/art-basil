@@ -41,6 +41,7 @@ class FilterPanel {
         bar.append(this.buildDropdown('when', 'When', filterState.ALL_PHASES.map(phase => ({
             value: phase,
             label: filterState.PHASE_LABELS[phase],
+            hint: filterState.PHASE_HINTS[phase],
             color: this.tagColor(phase),
             onChange: () => this.searchManager.togglePhase(phase),
             register: (box) => this.phaseBoxes.set(phase, box),
@@ -119,6 +120,13 @@ class FilterPanel {
             const name = document.createElement('span');
             name.className = 'filter-name';
             name.textContent = option.label;
+            if (option.hint) {
+                // one muted line under the name, e.g. "no end date" under Ongoing
+                const hint = document.createElement('span');
+                hint.className = 'filter-hint';
+                hint.textContent = option.hint;
+                name.append(hint);
+            }
 
             const count = document.createElement('span');
             count.className = 'filter-n';
@@ -238,9 +246,6 @@ class FilterPanel {
         }
         for (const tag of state.tags) {
             items.push(pill(this.tagLabel(tag), () => this.searchManager.toggleTagFilter(tag), this.tagLabel(tag)));
-        }
-        if (!state.ongoing) {
-            items.push(pill('ongoing hidden', () => this.searchManager.setOngoingFilter(true), 'ongoing hidden'));
         }
 
         if (!filterState.isDefault(state)) {

@@ -613,6 +613,13 @@ body {
     overflow-wrap: anywhere;
 }
 
+.filter-hint {
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    color: #6c757d;
+}
+
 .filter-n {
     margin-left: auto;
     padding-left: 0.5rem;

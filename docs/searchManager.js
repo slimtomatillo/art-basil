@@ -1,4 +1,4 @@
-// Search Manager - owns the filter state (search text, phases, ongoing, tags),
+// Search Manager - owns the filter state (search text, phases, tags),
 // shows/hides the table rows to match it, and keeps the URL in step so a
 // filtered view can be bookmarked or shared. The matching rules live in
 // filterState.js; FilterPanel draws the tag/summary controls and subscribes
@@ -21,7 +21,6 @@ class SearchManager {
 
         this.buildRowModel();
         this.initSearchBar();
-        this.initOngoingCheckbox();
 
         // Show the results for whatever the URL asked for (the URL itself is
         // already right, so don't rewrite it).
@@ -39,8 +38,8 @@ class SearchManager {
             const text = [1, 2, 3].map(i => cells[i]?.textContent?.toLowerCase() || '').join('\n');
             return [{
                 el,
-                phase: el.getAttribute('data-phase'),
-                ongoing: el.getAttribute('data-ongoing') === 'true',
+                // current / ongoing / future / past: what the "When" filter works on
+                bucket: filterState.bucketOf(el.getAttribute('data-phase'), el.getAttribute('data-ongoing') === 'true'),
                 tags: (el.getAttribute('data-tags') || '').split('|').filter(Boolean),
                 text,
             }];
@@ -58,16 +57,6 @@ class SearchManager {
         });
     }
 
-    initOngoingCheckbox() {
-        const ongoingCheckbox = document.getElementById('ongoingCheckbox');
-        if (!ongoingCheckbox) return;
-        ongoingCheckbox.checked = this.state.ongoing;
-        ongoingCheckbox.addEventListener('change', () => {
-            this.state.ongoing = ongoingCheckbox.checked;
-            this.applyFilters();
-        });
-    }
-
     // Show/hide rows, then bring every control and the URL in line with the state.
     applyFilters({ updateUrl = true } = {}) {
         this.rows.forEach(row => {
@@ -81,8 +70,6 @@ class SearchManager {
     syncControls() {
         const searchBar = document.getElementById('searchBar');
         if (searchBar && searchBar.value.trim() !== this.state.q) searchBar.value = this.state.q;
-        const ongoingCheckbox = document.getElementById('ongoingCheckbox');
-        if (ongoingCheckbox) ongoingCheckbox.checked = this.state.ongoing;
         this.updateTagChipStates();
     }
 
@@ -152,7 +139,7 @@ class SearchManager {
     }
 
     // Set the phases directly: a phase name, a list of them, or 'upcoming'
-    // (current + future) / 'all' for convenience.
+    // (current, ongoing & future) / 'all' for convenience.
     setPhaseFilter(phase) {
         const aliases = { upcoming: filterState.DEFAULT_PHASES, all: filterState.ALL_PHASES };
         const phases = filterState.normalizePhases([].concat(aliases[phase] || phase));
@@ -161,12 +148,7 @@ class SearchManager {
         this.applyFilters();
     }
 
-    setOngoingFilter(include) {
-        this.state.ongoing = include;
-        this.applyFilters();
-    }
-
-    // Back to the default view: current + future, nothing searched or selected.
+    // Back to the default view: current, ongoing & future, nothing searched or selected.
     clearFilters() {
         this.state = filterState.defaultState();
         this.applyFilters();

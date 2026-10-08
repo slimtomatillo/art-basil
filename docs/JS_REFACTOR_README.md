@@ -50,8 +50,8 @@ renderer.renderEventRow(event);
 
 `filterState.js` holds the **pure logic**, with no DOM access, so it is unit tested in Node (`node --test tests/`):
 - `TAG_GROUPS` - the tag groups offered as dropdowns (Medium, Theme, Cost, Format). Keep in step with `docs/tags.html` and `APPROVED_TAGS` in `tagging.py`; a test checks the tags are documented
-- `parseUrl(search)` / `toQuery(state)` - filters <-> URL (`?q=text&phase=past&tags=photography,latinx&ongoing=0`), so a view can be bookmarked or shared. `phase` is one or more of `current`, `future`, `past` (e.g. `phase=current,past`). The older `?search=Venue` (used by `venues.html`) is still read, and means "every phase"
-- **When** is a multi-select over `current` / `future` / `past`; ticking all three shows everything (there is no separate "All"). **The default is current + future**, not the long archive. At least one phase must stay ticked
+- `parseUrl(search)` / `toQuery(state)` - filters <-> URL (`?q=text&phase=past&tags=photography,latinx`), so a view can be bookmarked or shared. `phase` is one or more of `current`, `ongoing`, `future`, `past` (e.g. `phase=current,past`). The older `?search=Venue` (used by `venues.html`) is still read, and means "every phase"
+- **When** is a multi-select over four mutually exclusive buckets: `current` (on view, has an end date), `ongoing` (on view, no end date - `bucketOf(phase, ongoing)`), `future` and `past`. Ticking all four shows everything (there is no separate "All" and no separate "include ongoing" checkbox). **The default is current + ongoing + future**, not the long archive. At least one must stay ticked
 - `rowMatches(row, state)` - the matching rule: tags in the same group widen the results (photography OR painting), tags in different groups narrow them (photography AND latinx), and a tag outside every group (e.g. `museum`) must always match
 - `countTags(rows, state)` / `countPhases(rows, state)` - the counts shown beside each option in the dropdowns
 
@@ -68,7 +68,7 @@ window.searchManager.clearFilters();               // back to the default view
 ```
 
 ### 4b. `filterPanel.js`
-**Purpose**: Draws the filter controls from `SearchManager`'s state: a single row of independent dropdowns: **When** (Current / Future / Past) first, then one per tag group in `TAG_GROUPS` (Medium, Theme, Cost, ...). Each opens a popover of checkboxes with counts, and its button shows a badge with how many of its options are selected (for When, only when it differs from the default). Only one popover is open at a time; a click outside or Escape closes it. On phones the row still fits on one line and the popover opens full width underneath. Below the row is the "Showing X of Y events" line, a removable pill for each active filter, and "Clear all".
+**Purpose**: Draws the filter controls from `SearchManager`'s state: a single row of independent dropdowns: **When** (Current / Ongoing / Future / Past, with a one-line hint under Current and Ongoing) first, then one per tag group in `TAG_GROUPS` (Medium, Theme, Cost, ...). Each opens a popover of checkboxes with counts, and its button shows a badge with how many of its options are selected (for When, only when it differs from the default). Only one popover is open at a time; a click outside or Escape closes it. On phones the row still fits on one line and the popover opens full width underneath. Below the row is the "Showing X of Y events" line, a removable pill for each active filter, and "Clear all".
 
 A group with no tags in a region's data gets no dropdown (so "Cost" only appears where events carry `free`, and "Format" stays hidden until some events carry its tags). Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
 
