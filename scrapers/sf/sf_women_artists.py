@@ -128,7 +128,19 @@ def scrape_sfwomenartists(env='prod', region='sf'):
             event_dates, event_description, image_link = scrape_event_specific_page(event_link)
             # Skip to the next event if end date does not exist
             if not event_dates:
-                logging.warning(f"No valid dates found for event: {event_title} at {event_link}")
+                # The gallery's archive back to 2017 has shows whose pages never
+                # gave a date range (only "Until July 31, 2020", a reception, or
+                # nothing). Those are expected and permanent, so keep the warning
+                # for recent shows, where a missing date means the page layout
+                # has changed again.
+                try:
+                    listing_year = int(event.find('p').text.split(' ')[-1])
+                except (AttributeError, ValueError, IndexError):
+                    listing_year = None
+                if listing_year is not None and listing_year <= dt.date.today().year - 2:
+                    logging.info(f"No date range for archived event: {event_title} ({listing_year}) at {event_link}")
+                else:
+                    logging.warning(f"No valid dates found for event: {event_title} at {event_link}")
                 continue
             
             # Handle edge cases
