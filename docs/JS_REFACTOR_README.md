@@ -49,7 +49,7 @@ renderer.renderEventRow(event);
 **Purpose**: The event filters (search text, phase, ongoing, tags) and the table rows they show or hide.
 
 `filterState.js` holds the **pure logic**, with no DOM access, so it is unit tested in Node (`node --test tests/`):
-- `TAG_GROUPS` - the tags offered in the filter panel (Medium, Theme, Type). Keep in step with `docs/tags.html` and `APPROVED_TAGS` in `tagging.py`; a test checks the tags are documented
+- `TAG_GROUPS` - the tags offered in the filter panel (Medium, Theme, Format). Keep in step with `docs/tags.html` and `APPROVED_TAGS` in `tagging.py`; a test checks the tags are documented
 - `parseUrl(search)` / `toQuery(state)` - filters <-> URL (`?q=text&phase=past&tags=photography,latinx&ongoing=0`), so a view can be bookmarked or shared. The older `?search=Venue` (used by `venues.html`) is still read, and means "all phases"
 - `rowMatches(row, state)` - the matching rule: tags in the same group widen the results (photography OR painting), tags in different groups narrow them (photography AND latinx), and a tag outside every group (e.g. `museum`) must always match
 - `countTags(rows, state)` - the counts shown beside each option in the panel
@@ -67,7 +67,7 @@ window.searchManager.clearFilters();               // back to the default view
 ```
 
 ### 4b. `filterPanel.js`
-**Purpose**: Draws the filter controls from `SearchManager`'s state: a collapsible panel of tag checkboxes grouped by Medium / Theme / Type with counts (open on wide screens, collapsed on phones), the "Showing X of Y events" line, removable pills for each active filter, and "Clear all". Only tags present in the region's data are offered. Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
+**Purpose**: Draws the filter controls from `SearchManager`'s state: a collapsible "Filters" panel of tag checkboxes grouped by Medium / Theme / Format with counts (closed by default, with a badge showing how many are applied), the "Showing X of Y events" line, removable pills for each active filter, and "Clear all". Only tags present in the region's data are offered. Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
 
 ### 5. `modalManager.js`
 **Purpose**: Handles modal functionality

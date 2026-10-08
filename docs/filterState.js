@@ -21,7 +21,7 @@
         { id: 'theme', label: 'Theme', tags: [
             'asian-american', 'black-art', 'immigrant', 'indigenous', 'latinx', 'queer',
             'refugee', 'south-asian', 'woman-artist'] },
-        { id: 'type', label: 'Type', tags: [
+        { id: 'type', label: 'Format', tags: [
             'audio', 'closing', 'family', 'free', 'performance', 'symposium', 'talk',
             'tour', 'virtual', 'workshop'] },
     ];

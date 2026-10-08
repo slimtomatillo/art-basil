@@ -33,12 +33,11 @@ class FilterPanel {
 
         const details = document.createElement('details');
         details.className = 'filter-panel';
-        // Open on wide screens (so the options are discoverable); closed on phones, where it would push the table down
-        details.open = window.matchMedia('(min-width: 768px)').matches;
+        // Closed by default on every screen size: it opens on demand, and the badge on the toggle shows when filters are applied
 
         const summary = document.createElement('summary');
         summary.className = 'filter-panel-toggle';
-        summary.append('Filter by medium, theme & type ');
+        summary.append('Filters ');
         this.badge = document.createElement('span');
         this.badge.className = 'filter-badge';
         this.badge.hidden = true;
