@@ -49,7 +49,7 @@ renderer.renderEventRow(event);
 **Purpose**: The event filters (search text, phase, ongoing, tags) and the table rows they show or hide.
 
 `filterState.js` holds the **pure logic**, with no DOM access, so it is unit tested in Node (`node --test tests/`):
-- `TAG_GROUPS` - the tags offered in the filter panel (Medium, Theme, Format). Keep in step with `docs/tags.html` and `APPROVED_TAGS` in `tagging.py`; a test checks the tags are documented
+- `TAG_GROUPS` - the tag groups offered as dropdowns (Medium, Theme, Cost, Format). Keep in step with `docs/tags.html` and `APPROVED_TAGS` in `tagging.py`; a test checks the tags are documented
 - `parseUrl(search)` / `toQuery(state)` - filters <-> URL (`?q=text&phase=past&tags=photography,latinx&ongoing=0`), so a view can be bookmarked or shared. The older `?search=Venue` (used by `venues.html`) is still read, and means "all phases"
 - `rowMatches(row, state)` - the matching rule: tags in the same group widen the results (photography OR painting), tags in different groups narrow them (photography AND latinx), and a tag outside every group (e.g. `museum`) must always match
 - `countTags(rows, state)` - the counts shown beside each option in the panel
@@ -67,7 +67,9 @@ window.searchManager.clearFilters();               // back to the default view
 ```
 
 ### 4b. `filterPanel.js`
-**Purpose**: Draws the filter controls from `SearchManager`'s state: a collapsible "Filters" panel of tag checkboxes grouped by Medium / Theme / Format with counts (closed by default, with a badge showing how many are applied), the "Showing X of Y events" line, removable pills for each active filter, and "Clear all". Only tags present in the region's data are offered. Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
+**Purpose**: Draws the filter controls from `SearchManager`'s state: a single row of independent dropdowns (Medium, Theme, Cost, ...), one per tag group in `TAG_GROUPS`. Each opens a popover of checkboxes with counts, and its button shows a badge with how many of its tags are selected. Only one popover is open at a time; a click outside or Escape closes it. On phones the row still fits on one line and the popover opens full width underneath. Below the row is the "Showing X of Y events" line, a removable pill for each active filter, and "Clear all".
+
+A group with no tags in a region's data gets no dropdown (so "Cost" only appears where events carry `free`, and "Format" stays hidden until some events carry its tags). Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
 
 ### 5. `modalManager.js`
 **Purpose**: Handles modal functionality

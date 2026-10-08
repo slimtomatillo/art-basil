@@ -21,8 +21,10 @@
         { id: 'theme', label: 'Theme', tags: [
             'asian-american', 'black-art', 'immigrant', 'indigenous', 'latinx', 'queer',
             'refugee', 'south-asian', 'woman-artist'] },
-        { id: 'type', label: 'Format', tags: [
-            'audio', 'closing', 'family', 'free', 'performance', 'symposium', 'talk',
+        { id: 'cost', label: 'Cost', tags: ['free'] },
+        // No events carry these yet (only `free` is used today), so this group stays hidden until some do.
+        { id: 'format', label: 'Format', tags: [
+            'audio', 'closing', 'family', 'performance', 'symposium', 'talk',
             'tour', 'virtual', 'workshop'] },
     ];
 

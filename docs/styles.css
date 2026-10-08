@@ -526,26 +526,60 @@ body {
     flex-wrap: wrap;
 }
 
-/* Tag filter panel (filterPanel.js) */
-.filter-panel {
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    background-color: #f8f9fa;
+/* Filter bar (filterPanel.js): one dropdown per filter type, in a single row
+   when there is room; each opens a popover of tag options. */
+.filter-bar {
+    position: relative;   /* anchors the full-width popovers used on phones */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-bottom: 0.75rem;
 }
 
-.filter-panel-toggle {
+.filter-dropdown {
+    position: relative;
+}
+
+.filter-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    background-color: white;
+    font: inherit;
     cursor: pointer;
-    padding: 0.6rem 1rem;
-    font-weight: 500;
-    user-select: none;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-dropdown-toggle:hover {
+    border-color: #adb5bd;
+}
+
+.filter-dropdown-toggle[aria-expanded="true"],
+.filter-dropdown-toggle.has-selection {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+.filter-caret {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    transition: transform 0.15s ease;
+}
+
+.filter-dropdown-toggle[aria-expanded="true"] .filter-caret {
+    transform: rotate(180deg);
 }
 
 .filter-badge {
     display: inline-block;
     min-width: 1.4rem;
     padding: 0 0.4rem;
-    margin-left: 0.25rem;
     border-radius: 999px;
     background-color: #0d6efd;
     color: white;
@@ -554,47 +588,37 @@ body {
     text-align: center;
 }
 
-.filter-groups {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 2rem;
-    padding: 0 1rem 0.75rem;
+/* Above the sticky table header (Bootstrap's .sticky-top is 1020) */
+.filter-popover {
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    left: 0;
+    z-index: 1030;
+    min-width: 15rem;
+    padding: 0.5rem 0.9rem;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-.filter-group {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    min-width: 0;
-    flex: 1 1 16rem;
-    /* Options flow into as many columns as fit, so a long group (medium) is wide and short rather than a tall list */
+/* Medium has the most options, so its popover is wider, in two columns */
+.filter-dropdown[data-group="medium"] .filter-popover {
+    width: 30rem;
+    max-width: calc(100vw - 2rem);
+}
+
+.filter-dropdown[data-group="medium"] .filter-options {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
-    column-gap: 1.25rem;
-    align-content: start;
-}
-
-.filter-group[data-group="medium"] {
-    flex: 3 1 24rem;
-}
-
-.filter-group legend {
-    grid-column: 1 / -1;
-    float: none;
-    width: auto;
-    margin: 0 0 0.25rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: #6c757d;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.5rem;
 }
 
 .filter-option {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.2rem 0;
+    padding: 0.25rem 0;
     cursor: pointer;
     font-size: 0.9rem;
 }
@@ -609,6 +633,11 @@ body {
     height: 0.65rem;
     border-radius: 50%;
     flex: none;
+}
+
+.filter-name {
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .filter-n {
@@ -663,20 +692,18 @@ body {
 }
 
 @media (max-width: 768px) {
-    .filter-groups {
-        gap: 0.5rem 1rem;
+    /* Popovers open full width under the whole row of buttons, not under one button */
+    .filter-dropdown {
+        position: static;
     }
-    .filter-group {
-        flex: 1 1 100%;
-        /* two columns of options fit a phone and keep the panel short */
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 0.75rem;
+    .filter-popover,
+    .filter-dropdown[data-group="medium"] .filter-popover {
+        left: 0;
+        right: 0;
+        width: auto;
+        max-width: none;
     }
-    .filter-name {
-        min-width: 0;
-        overflow-wrap: anywhere;
-    }
-    .filter-group .filter-option {
+    .filter-option {
         padding: 0.45rem 0;   /* larger touch targets */
     }
 }

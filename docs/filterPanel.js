@@ -1,17 +1,19 @@
-// Filter Panel - the visible filter controls: a collapsible panel of tag
-// checkboxes (grouped, with counts) and a summary line with the result count,
-// the active filters as removable pills, and "Clear all". All state lives in
-// SearchManager; this only draws it and forwards clicks.
+// Filter Panel - the visible filter controls: a row of independent dropdowns
+// (Medium, Theme, Cost, ...), each opening a popover of tag checkboxes with
+// counts, plus a summary line with the result count, the active filters as
+// removable pills, and "Clear all". All state lives in SearchManager; this only
+// draws it and forwards clicks.
 
 class FilterPanel {
     constructor(searchManager) {
         this.searchManager = searchManager;
         this.panelEl = document.getElementById('filterPanel');
         this.summaryEl = document.getElementById('filterSummary');
-        this.checkboxes = new Map();   // tag -> { input, label, count }
-        this.badge = null;
+        this.dropdowns = new Map();    // group id -> { wrap, toggle, badge, popover }
+        this.checkboxes = new Map();   // tag -> { input, label, count, group }
+        this.openGroup = null;
 
-        if (this.panelEl) this.buildPanel();
+        if (this.panelEl) this.buildBar();
         searchManager.subscribe(() => this.update());
         this.update();
     }
@@ -21,47 +23,54 @@ class FilterPanel {
     }
 
     tagColor(tag) {
-        // getTagColor comes from tableRenderer.js, so panel dots match the table chips
+        // getTagColor comes from tableRenderer.js, so the dots match the table chips
         return typeof getTagColor === 'function' ? getTagColor(tag) : '#6c757d';
     }
 
-    // Built once; update() only changes counts and checked/disabled states, so
-    // the panel's open/closed state and the visitor's focus aren't lost.
-    buildPanel() {
+    // Built once; update() only changes counts and checked/disabled states, so a
+    // popover that is open stays open (and keeps focus) while the visitor ticks options.
+    buildBar() {
         const rows = this.searchManager.rows;
         const hidden = typeof HIDDEN_TAGS !== 'undefined' ? HIDDEN_TAGS : new Set();
 
-        const details = document.createElement('details');
-        details.className = 'filter-panel';
-        // Closed by default on every screen size: it opens on demand, and the badge on the toggle shows when filters are applied
-
-        const summary = document.createElement('summary');
-        summary.className = 'filter-panel-toggle';
-        summary.append('Filters ');
-        this.badge = document.createElement('span');
-        this.badge.className = 'filter-badge';
-        this.badge.hidden = true;
-        summary.append(this.badge);
-        details.append(summary);
-
-        const groups = document.createElement('div');
-        groups.className = 'filter-groups';
+        const bar = document.createElement('div');
+        bar.className = 'filter-bar';
 
         for (const group of filterState.TAG_GROUPS) {
-            // Only offer tags this region actually has
+            // Only offer tags this region actually has, and no dropdown at all if there are none
             const tags = group.tags.filter(tag => !hidden.has(tag) && rows.some(row => row.tags.includes(tag)));
             if (tags.length === 0) continue;
 
-            const fieldset = document.createElement('fieldset');
-            fieldset.className = 'filter-group';
-            fieldset.dataset.group = group.id;
-            const legend = document.createElement('legend');
-            legend.textContent = group.label;
-            fieldset.append(legend);
+            const wrap = document.createElement('div');
+            wrap.className = 'filter-dropdown';
+            wrap.dataset.group = group.id;
 
+            const toggle = document.createElement('button');
+            toggle.type = 'button';
+            toggle.className = 'filter-dropdown-toggle';
+            toggle.setAttribute('aria-haspopup', 'true');
+            toggle.setAttribute('aria-expanded', 'false');
+            const label = document.createElement('span');
+            label.textContent = group.label;
+            const badge = document.createElement('span');
+            badge.className = 'filter-badge';
+            badge.hidden = true;
+            const caret = document.createElement('span');
+            caret.className = 'filter-caret';
+            caret.setAttribute('aria-hidden', 'true');
+            toggle.append(label, badge, caret);
+
+            const popover = document.createElement('div');
+            popover.className = 'filter-popover';
+            popover.setAttribute('role', 'group');
+            popover.setAttribute('aria-label', group.label);
+            popover.hidden = true;
+
+            const options = document.createElement('div');
+            options.className = 'filter-options';
             for (const tag of tags) {
-                const label = document.createElement('label');
-                label.className = 'filter-option';
+                const optionLabel = document.createElement('label');
+                optionLabel.className = 'filter-option';
 
                 const input = document.createElement('input');
                 input.type = 'checkbox';
@@ -79,38 +88,79 @@ class FilterPanel {
                 const count = document.createElement('span');
                 count.className = 'filter-n';
 
-                label.append(input, dot, name, count);
-                fieldset.append(label);
-                this.checkboxes.set(tag, { input, label, count });
+                optionLabel.append(input, dot, name, count);
+                options.append(optionLabel);
+                this.checkboxes.set(tag, { input, label: optionLabel, count, group: group.id });
             }
-            groups.append(fieldset);
+            popover.append(options);
+
+            toggle.addEventListener('click', () => this.toggleDropdown(group.id));
+            wrap.append(toggle, popover);
+            bar.append(wrap);
+            this.dropdowns.set(group.id, { wrap, toggle, badge, popover });
         }
 
-        details.append(groups);
-        this.panelEl.replaceChildren(details);
+        // A click anywhere outside the bar, or Escape, closes the open popover
+        document.addEventListener('click', (e) => {
+            if (this.openGroup && !bar.contains(e.target)) this.closeDropdown();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.openGroup) {
+                const { toggle } = this.dropdowns.get(this.openGroup);
+                this.closeDropdown();
+                toggle.focus();
+            }
+        });
+
+        this.panelEl.replaceChildren(bar);
+    }
+
+    // Only one popover is open at a time
+    toggleDropdown(groupId) {
+        const wasOpen = this.openGroup === groupId;
+        this.closeDropdown();
+        if (!wasOpen) {
+            const { toggle, popover } = this.dropdowns.get(groupId);
+            popover.hidden = false;
+            toggle.setAttribute('aria-expanded', 'true');
+            this.openGroup = groupId;
+        }
+    }
+
+    closeDropdown() {
+        if (!this.openGroup) return;
+        const { toggle, popover } = this.dropdowns.get(this.openGroup);
+        popover.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+        this.openGroup = null;
     }
 
     update() {
         const state = this.searchManager.getState();
-        this.updatePanel(state);
+        this.updateBar(state);
         this.updateSummary(state);
     }
 
-    updatePanel(state) {
+    updateBar(state) {
         if (this.checkboxes.size === 0) return;
         const counts = filterState.countTags(this.searchManager.rows, state);
-        for (const [tag, { input, label, count }] of this.checkboxes) {
+        const selectedPerGroup = {};
+        for (const [tag, { input, label, count, group }] of this.checkboxes) {
             const selected = state.tags.includes(tag);
             input.checked = selected;
             count.textContent = counts[tag];
+            if (selected) selectedPerGroup[group] = (selectedPerGroup[group] || 0) + 1;
             // A tag that would show nothing is unavailable, unless it is already selected (so it can be unticked)
             const empty = counts[tag] === 0 && !selected;
             input.disabled = empty;
             label.classList.toggle('is-empty', empty);
         }
-        const selectedInPanel = state.tags.filter(tag => this.checkboxes.has(tag)).length;
-        this.badge.textContent = selectedInPanel;
-        this.badge.hidden = selectedInPanel === 0;
+        for (const [groupId, { toggle, badge }] of this.dropdowns) {
+            const n = selectedPerGroup[groupId] || 0;
+            badge.textContent = n;
+            badge.hidden = n === 0;
+            toggle.classList.toggle('has-selection', n > 0);
+        }
     }
 
     updateSummary(state) {
