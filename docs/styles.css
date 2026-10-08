@@ -520,3 +520,163 @@ body {
     margin-bottom: 5px;
     color: #666;
 }
+
+/* Filter buttons wrap on narrow screens (there are five now) */
+#filterButtonsContainer {
+    flex-wrap: wrap;
+}
+
+/* Tag filter panel (filterPanel.js) */
+.filter-panel {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 0.75rem;
+}
+
+.filter-panel-toggle {
+    cursor: pointer;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    user-select: none;
+}
+
+.filter-badge {
+    display: inline-block;
+    min-width: 1.4rem;
+    padding: 0 0.4rem;
+    margin-left: 0.25rem;
+    border-radius: 999px;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+.filter-groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    padding: 0 1rem 0.75rem;
+}
+
+.filter-group {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    flex: 1 1 16rem;
+    /* Options flow into as many columns as fit, so a long group (medium) is wide and short rather than a tall list */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+    column-gap: 1.25rem;
+    align-content: start;
+}
+
+.filter-group[data-group="medium"] {
+    flex: 3 1 24rem;
+}
+
+.filter-group legend {
+    grid-column: 1 / -1;
+    float: none;
+    width: auto;
+    margin: 0 0 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6c757d;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.2rem 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.filter-option.is-empty {
+    opacity: 0.45;
+    cursor: default;
+}
+
+.filter-dot {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    flex: none;
+}
+
+.filter-n {
+    margin-left: auto;
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    color: #6c757d;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Result count, active filters and "Clear all" */
+.filter-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.6rem;
+    margin-bottom: 0.75rem;
+    min-height: 1.75rem;
+    font-size: 0.9rem;
+}
+
+.filter-result-count {
+    color: #495057;
+}
+
+.filter-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.1rem 0.25rem 0.1rem 0.7rem;
+    border-radius: 999px;
+    background-color: #e7f1ff;
+    color: #0a58ca;
+}
+
+.filter-pill button {
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0 0.35rem;
+    cursor: pointer;
+}
+
+.filter-pill button:hover {
+    color: #08418e;
+}
+
+.filter-clear {
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .filter-groups {
+        gap: 0.5rem 1rem;
+    }
+    .filter-group {
+        flex: 1 1 100%;
+        /* two columns of options fit a phone and keep the panel short */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 0.75rem;
+    }
+    .filter-name {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+    .filter-group .filter-option {
+        padding: 0.45rem 0;   /* larger touch targets */
+    }
+}

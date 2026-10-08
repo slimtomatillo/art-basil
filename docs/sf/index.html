@@ -64,10 +64,11 @@
                             <input type="text" id="searchBar" class="form-control" placeholder="Search exhibitions...">
                         </div>
                         <div id="filterButtonsContainer" class="d-flex gap-2">
+                            <button id="upcomingButton" class="filter-button active">Now &amp; upcoming</button>
                             <button id="currentButton" class="filter-button">Current</button>
                             <button id="futureButton" class="filter-button">Future</button>
                             <button id="pastButton" class="filter-button">Past</button>
-                            <button id="allButton" class="filter-button active">All</button>
+                            <button id="allButton" class="filter-button">All</button>
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="ongoingCheckbox" checked>
@@ -77,6 +78,10 @@
                 </div>
             </div>
         </header>
+
+        <!-- Tag filter panel and the result count / active filters (drawn by filterPanel.js) -->
+        <div id="filterPanel"></div>
+        <div id="filterSummary" class="filter-summary"></div>
 
         <div class="table-responsive">
             <table class="table event-table" id="eventTable">
@@ -109,7 +114,9 @@
     <script src="../dataManager.js"></script>
     <script src="../eventSorter.js"></script>
     <script src="../tableRenderer.js"></script>
+    <script src="../filterState.js"></script>
     <script src="../searchManager.js"></script>
+    <script src="../filterPanel.js"></script>
     <script src="../modalManager.js"></script>
     
     <!-- Load main orchestrator last -->

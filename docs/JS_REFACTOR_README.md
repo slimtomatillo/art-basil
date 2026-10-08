@@ -45,21 +45,29 @@ renderer.setVenues(venues);
 renderer.renderEventRow(event);
 ```
 
-### 4. `searchManager.js`
-**Purpose**: Handles unified search and filtering functionality
-**Class**: `SearchManager`
-**Features**:
-- Search bar functionality
-- Phase filtering (current/future/past/all)
-- Combined search and filter logic
+### 4. `filterState.js` and `searchManager.js`
+**Purpose**: The event filters (search text, phase, ongoing, tags) and the table rows they show or hide.
+
+`filterState.js` holds the **pure logic**, with no DOM access, so it is unit tested in Node (`node --test tests/`):
+- `TAG_GROUPS` - the tags offered in the filter panel (Medium, Theme, Type). Keep in step with `docs/tags.html` and `APPROVED_TAGS` in `tagging.py`; a test checks the tags are documented
+- `parseUrl(search)` / `toQuery(state)` - filters <-> URL (`?q=text&phase=past&tags=photography,latinx&ongoing=0`), so a view can be bookmarked or shared. The older `?search=Venue` (used by `venues.html`) is still read, and means "all phases"
+- `rowMatches(row, state)` - the matching rule: tags in the same group widen the results (photography OR painting), tags in different groups narrow them (photography AND latinx), and a tag outside every group (e.g. `museum`) must always match
+- `countTags(rows, state)` - the counts shown beside each option in the panel
+- Phases: `upcoming` (current + future, **the default**), `current`, `future`, `past`, `all`
+
+`searchManager.js` (`SearchManager`) owns the live state: it reads the URL on load, shows/hides rows, keeps the buttons, search box and tag chips in sync, and rewrites the URL (`replaceState`, so the back button isn't filled with every keystroke). `FilterPanel` subscribes to it.
 
 **Usage**:
 ```javascript
-// The search manager is automatically initialized
-// Access via window.searchManager
+// The search manager is automatically initialized by scroll.js
 window.searchManager.setSearchTerm('exhibition');
-window.searchManager.setPhaseFilter('current');
+window.searchManager.setPhaseFilter('past');       // 'upcoming' | 'current' | 'future' | 'past' | 'all'
+window.searchManager.toggleTagFilter('photography');
+window.searchManager.clearFilters();               // back to the default view
 ```
+
+### 4b. `filterPanel.js`
+**Purpose**: Draws the filter controls from `SearchManager`'s state: a collapsible panel of tag checkboxes grouped by Medium / Theme / Type with counts (open on wide screens, collapsed on phones), the "Showing X of Y events" line, removable pills for each active filter, and "Clear all". Only tags present in the region's data are offered. Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
 
 ### 5. `modalManager.js`
 **Purpose**: Handles modal functionality
@@ -82,7 +90,7 @@ window.modalManager.openImageModal('image-url.jpg');
 - Much simpler and focused
 
 ### 7. Legacy Files (Deprecated)
-- `filter.js` - Functionality moved to `searchManager.js`
+- `filter.js` - Functionality moved to `searchManager.js` / `filterState.js`
 - Other files remain unchanged:
   - `notify.js` - Notification functionality
   - `feedback.js` - Feedback form functionality
@@ -99,7 +107,9 @@ The modules should be loaded in this order in your HTML:
 <script src="dataManager.js"></script>
 <script src="eventSorter.js"></script>
 <script src="tableRenderer.js"></script>
+<script src="filterState.js"></script>
 <script src="searchManager.js"></script>
+<script src="filterPanel.js"></script>
 <script src="modalManager.js"></script>
 
 <!-- Load main orchestrator last -->

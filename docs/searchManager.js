@@ -1,237 +1,176 @@
-// Search Manager - Handles unified search and filtering functionality
+// Search Manager - owns the filter state (search text, phase, ongoing, tags),
+// shows/hides the table rows to match it, and keeps the URL in step so a
+// filtered view can be bookmarked or shared. The matching rules live in
+// filterState.js; FilterPanel draws the tag/summary controls and subscribes
+// to changes here.
+
+const PHASE_BUTTONS = {
+    upcomingButton: 'upcoming',
+    currentButton: 'current',
+    futureButton: 'future',
+    pastButton: 'past',
+    allButton: 'all',
+};
 
 class SearchManager {
     constructor() {
-        this.currentSearchTerm = '';
-        this.currentPhaseFilter = 'all';
-        this.includeOngoing = true;
-        this.currentTagFilters = new Set();
+        // Initial state comes from the URL, e.g. ?phase=past&tags=photography,latinx
+        // (or ?search=Venue from a venues.html link), so shared links reproduce a view.
+        this.state = filterState.parseUrl(window.location.search);
+        this.rows = [];
         this.tableBody = null;
+        this.listeners = [];
         this.init();
     }
 
     init() {
-        // Get table body reference
         this.tableBody = document.getElementById('eventTable')?.getElementsByTagName('tbody')[0] ||
                         document.getElementById('event-list');
 
-        // Initialize search bar
+        this.buildRowModel();
         this.initSearchBar();
-
-        // Initialize filter buttons
         this.initFilterButtons();
-
-        // Initialize ongoing-events checkbox
         this.initOngoingCheckbox();
 
-        // Apply an initial search term from the URL if one was passed in
-        // (e.g. a venue name clicked on venues.html), then show its results.
-        this.filterEvents();
+        // Show the results for whatever the URL asked for (the URL itself is
+        // already right, so don't rewrite it).
+        this.applyFilters({ updateUrl: false });
+    }
+
+    // One pass over the rendered table, so each filter change is just in-memory matching.
+    buildRowModel() {
+        if (!this.tableBody) return;
+        this.rows = Array.from(this.tableBody.getElementsByTagName('tr')).flatMap(el => {
+            const cells = el.getElementsByTagName('td');
+            if (cells.length < 5) return [];
+            // Columns: 0 image, 1 date, 2 "title @ venue", 3 tags, 4 links. The
+            // text search covers date, title/venue and tags, as it always has.
+            const text = [1, 2, 3].map(i => cells[i]?.textContent?.toLowerCase() || '').join('\n');
+            return [{
+                el,
+                phase: el.getAttribute('data-phase'),
+                ongoing: el.getAttribute('data-ongoing') === 'true',
+                tags: (el.getAttribute('data-tags') || '').split('|').filter(Boolean),
+                text,
+            }];
+        });
     }
 
     initSearchBar() {
         const searchBar = document.getElementById('searchBar');
-        if (searchBar) {
-            const params = new URLSearchParams(window.location.search);
-            const initialSearch = params.get('search');
-            if (initialSearch) {
-                searchBar.value = initialSearch;
-                this.currentSearchTerm = initialSearch.toLowerCase();
-            }
-
-            searchBar.addEventListener('keyup', (e) => {
-                this.currentSearchTerm = e.target.value.toLowerCase();
-                this.filterEvents();
-            });
-        }
+        if (!searchBar) return;
+        searchBar.value = this.state.q;
+        // "input" rather than "keyup" so pasting and the clear (x) button count too
+        searchBar.addEventListener('input', (e) => {
+            this.state.q = e.target.value.trim();
+            this.applyFilters();
+        });
     }
 
     initFilterButtons() {
-        const currentButton = document.getElementById('currentButton');
-        const futureButton = document.getElementById('futureButton');
-        const pastButton = document.getElementById('pastButton');
-        const allButton = document.getElementById('allButton');
-
-        if (currentButton) {
-            currentButton.addEventListener('click', () => {
-                this.currentPhaseFilter = 'current';
-                this.filterEvents();
-                this.setActiveButton(currentButton);
-            });
-        }
-
-        if (futureButton) {
-            futureButton.addEventListener('click', () => {
-                this.currentPhaseFilter = 'future';
-                this.filterEvents();
-                this.setActiveButton(futureButton);
-            });
-        }
-
-        if (pastButton) {
-            pastButton.addEventListener('click', () => {
-                this.currentPhaseFilter = 'past';
-                this.filterEvents();
-                this.setActiveButton(pastButton);
-            });
-        }
-
-        if (allButton) {
-            allButton.addEventListener('click', () => {
-                this.currentPhaseFilter = 'all';
-                this.filterEvents();
-                this.setActiveButton(allButton);
-            });
-            
-            // Set initial active button
-            this.setActiveButton(allButton);
+        for (const [id, phase] of Object.entries(PHASE_BUTTONS)) {
+            document.getElementById(id)?.addEventListener('click', () => this.setPhaseFilter(phase));
         }
     }
 
     initOngoingCheckbox() {
         const ongoingCheckbox = document.getElementById('ongoingCheckbox');
-        if (ongoingCheckbox) {
-            ongoingCheckbox.addEventListener('change', () => {
-                this.includeOngoing = ongoingCheckbox.checked;
-                this.filterEvents();
-            });
-        }
+        if (!ongoingCheckbox) return;
+        ongoingCheckbox.checked = this.state.ongoing;
+        ongoingCheckbox.addEventListener('change', () => {
+            this.state.ongoing = ongoingCheckbox.checked;
+            this.applyFilters();
+        });
     }
 
-    // Toggle a tag chip filter: multiple tags can be selected at once. An
-    // event must carry every selected tag to match (selecting more tags
-    // narrows the results, like most faceted filters).
-    toggleTagFilter(tag) {
-        if (this.currentTagFilters.has(tag)) {
-            this.currentTagFilters.delete(tag);
-        } else {
-            this.currentTagFilters.add(tag);
+    // Show/hide rows, then bring every control and the URL in line with the state.
+    applyFilters({ updateUrl = true } = {}) {
+        this.rows.forEach(row => {
+            row.el.style.display = filterState.rowMatches(row, this.state) ? '' : 'none';
+        });
+        this.syncControls();
+        if (updateUrl) this.updateUrl();
+        this.listeners.forEach(listener => listener(this));
+    }
+
+    syncControls() {
+        for (const [id, phase] of Object.entries(PHASE_BUTTONS)) {
+            document.getElementById(id)?.classList.toggle('active', this.state.phase === phase);
         }
+        const searchBar = document.getElementById('searchBar');
+        if (searchBar && searchBar.value.trim() !== this.state.q) searchBar.value = this.state.q;
+        const ongoingCheckbox = document.getElementById('ongoingCheckbox');
+        if (ongoingCheckbox) ongoingCheckbox.checked = this.state.ongoing;
         this.updateTagChipStates();
-        this.filterEvents();
     }
 
-    // Reflect the current tag selection on every chip in the table: a
-    // selected chip looks the same as it would with no filter active: every
-    // unselected chip dims while at least one tag is selected.
+    // replaceState (not pushState) so typing and clicking don't fill the back button
+    updateUrl() {
+        const url = window.location.pathname + filterState.toQuery(this.state) + window.location.hash;
+        window.history.replaceState(null, '', url);
+    }
+
+    // FilterPanel registers here to redraw whenever the state changes
+    subscribe(listener) {
+        this.listeners.push(listener);
+    }
+
+    getState() {
+        return { ...this.state, tags: [...this.state.tags] };
+    }
+
+    totalCount() {
+        return this.rows.length;
+    }
+
+    visibleCount() {
+        return this.rows.filter(row => filterState.rowMatches(row, this.state)).length;
+    }
+
+    // Toggle a tag filter (from a table chip or the panel). Several tags can be
+    // selected: tags in the same group widen the results (photography OR
+    // painting), tags in different groups narrow them (photography AND latinx).
+    toggleTagFilter(tag) {
+        const tags = this.state.tags;
+        const index = tags.indexOf(tag);
+        if (index === -1) {
+            tags.push(tag);
+        } else {
+            tags.splice(index, 1);
+        }
+        this.applyFilters();
+    }
+
+    // The selected chip looks normal and every other chip dims while any tag is selected.
     updateTagChipStates() {
-        const chips = document.querySelectorAll('.tag-chip');
-        chips.forEach(chip => {
-            const isSelected = this.currentTagFilters.has(chip.dataset.tag);
-            const isDimmed = this.currentTagFilters.size > 0 && !isSelected;
+        document.querySelectorAll('.tag-chip').forEach(chip => {
+            const isSelected = this.state.tags.includes(chip.dataset.tag);
+            const isDimmed = this.state.tags.length > 0 && !isSelected;
             chip.classList.toggle('selected', isSelected);
             chip.classList.toggle('dimmed', isDimmed);
         });
     }
 
-    setActiveButton(activeButton) {
-        const buttons = document.querySelectorAll('.filter-button');
-        buttons.forEach(button => {
-            if (button === activeButton) {
-                button.classList.add('active');
-            } else {
-                button.classList.remove('active');
-            }
-        });
-    }
-
-    filterEvents() {
-        if (!this.tableBody) return;
-
-        const rows = this.tableBody.getElementsByTagName('tr');
-
-        Array.from(rows).forEach(row => {
-            const eventPhase = row.getAttribute('data-phase');
-            const isOngoing = row.getAttribute('data-ongoing') === 'true';
-            const rowTags = (row.getAttribute('data-tags') || '').split('|');
-
-            // Get cell content for search
-            const cells = row.getElementsByTagName('td');
-            if (cells.length < 5) return;
-
-            // Column mapping based on actual table structure:
-            // Column 0: Image (empty, skip for search)
-            // Column 1: Date
-            // Column 2: Show @ Venue (title + venue)
-            // Column 3: Tags
-            // Column 4: Links (skip for search)
-
-            const date = cells[1]?.textContent?.toLowerCase() || '';
-            const titleVenue = cells[2]?.textContent?.toLowerCase() || '';
-            const tags = cells[3]?.textContent?.toLowerCase() || '';
-
-            // Check if row matches the search term
-            const matchesSearch =
-                date.includes(this.currentSearchTerm) ||
-                titleVenue.includes(this.currentSearchTerm) ||
-                tags.includes(this.currentSearchTerm);
-
-            // Check if row matches the phase filter
-            const matchesPhase = this.currentPhaseFilter === 'all' || eventPhase === this.currentPhaseFilter;
-
-            // Check if row matches the ongoing filter (only excludes ongoing events, never non-ongoing ones)
-            const matchesOngoing = this.includeOngoing || !isOngoing;
-
-            // Check if row matches the selected tag chip, if any
-            const matchesTag = Array.from(this.currentTagFilters).every(tag => rowTags.includes(tag));
-
-            // Show row if it matches search, phase, ongoing, and tag filters
-            if (matchesSearch && matchesPhase && matchesOngoing && matchesTag) {
-                row.style.display = '';
-            } else {
-                row.style.display = 'none';
-            }
-        });
-    }
-
-    // Method to update search term programmatically
     setSearchTerm(term) {
-        this.currentSearchTerm = term.toLowerCase();
-        this.filterEvents();
+        this.state.q = term.trim();
+        this.applyFilters();
     }
 
-    // Method to update phase filter programmatically
     setPhaseFilter(phase) {
-        this.currentPhaseFilter = phase;
-        this.filterEvents();
+        if (!filterState.PHASES.includes(phase)) return;
+        this.state.phase = phase;
+        this.applyFilters();
     }
 
-    // Method to update the ongoing-events filter programmatically
     setOngoingFilter(include) {
-        this.includeOngoing = include;
-        const ongoingCheckbox = document.getElementById('ongoingCheckbox');
-        if (ongoingCheckbox) {
-            ongoingCheckbox.checked = include;
-        }
-        this.filterEvents();
+        this.state.ongoing = include;
+        this.applyFilters();
     }
 
-    // Method to clear all filters
+    // Back to the default view: now & upcoming, nothing searched or selected.
     clearFilters() {
-        this.currentSearchTerm = '';
-        this.currentPhaseFilter = 'all';
-        this.includeOngoing = true;
-        this.currentTagFilters.clear();
-        this.updateTagChipStates();
-        this.filterEvents();
-
-        // Clear search bar
-        const searchBar = document.getElementById('searchBar');
-        if (searchBar) {
-            searchBar.value = '';
-        }
-
-        // Reset ongoing checkbox
-        const ongoingCheckbox = document.getElementById('ongoingCheckbox');
-        if (ongoingCheckbox) {
-            ongoingCheckbox.checked = true;
-        }
-
-        // Reset active button
-        const allButton = document.getElementById('allButton');
-        if (allButton) {
-            this.setActiveButton(allButton);
-        }
+        this.state = filterState.defaultState();
+        this.applyFilters();
     }
 }
 

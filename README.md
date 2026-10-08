@@ -27,6 +27,7 @@ python main.py --env dev --venues "Wattis Institute"   # try one scraper; writes
 python main.py --regions sf                            # scrape a region and update its data file
 python main.py                                         # everything, as CI does
 python3 -m http.server -d docs                         # view the site at http://localhost:8000/sf/
+node --test tests/                                     # unit tests for the front-end filter logic (Node 20+)
 ```
 `python main.py --help` lists every option. The only secret is the optional `SCRAPER_PROXY_API_KEY` (a [ZenRows](https://www.zenrows.com) key, used for venues that block GitHub's servers); without it those venues just keep their old data.
 
