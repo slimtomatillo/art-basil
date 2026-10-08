@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from config import DB_FILES
 import os
+import time
 from urllib.parse import urlparse
 
 def convert_nan_to_none(data):
@@ -50,6 +51,15 @@ def save_db(db, region):
 # it and the CI job's commit step.
 REQUEST_TIMEOUT = (10, 30)
 
+# Proxied requests run a real browser on ZenRows' side (js_render), which takes
+# 5-20s normally and occasionally much longer; at the plain 30s limit CI runs
+# kept losing a page to a read timeout (Cantor, then Huntington). Give them more
+# room, and retry once on a timeout or a transient ZenRows error (429 = over its
+# concurrency limit, 5xx = their side) since the pages are only fetched daily.
+PROXY_TIMEOUT = (10, 90)
+PROXY_ATTEMPTS = 2
+PROXY_RETRY_DELAY = 5
+
 # Domains whose own protection blocks GitHub Actions' datacenter IPs outright
 # (confirmed by direct testing - see WEBSITE-53), routed through the ZenRows
 # proxy instead of a direct request. Each domain maps to only the ZenRows
@@ -82,6 +92,25 @@ PROXY_DOMAINS = {
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
 
+def _proxy_get(url, proxy_params):
+    """GET through ZenRows, retrying once on a timeout or transient error."""
+    for attempt in range(1, PROXY_ATTEMPTS + 1):
+        try:
+            response = requests.get(
+                ZENROWS_API_URL,
+                params={'url': url, 'apikey': ZENROWS_API_KEY, **proxy_params},
+                timeout=PROXY_TIMEOUT,
+            )
+        except (requests.Timeout, requests.ConnectionError) as e:
+            if attempt == PROXY_ATTEMPTS:
+                raise
+            logging.warning(f"Proxy request for {url} failed ({type(e).__name__}); retrying.")
+        else:
+            if response.status_code != 429 and response.status_code < 500 or attempt == PROXY_ATTEMPTS:
+                return response
+            logging.warning(f"Proxy request for {url} returned {response.status_code}; retrying.")
+        time.sleep(PROXY_RETRY_DELAY)
+
 def fetch_and_parse(url, headers=None):
     request_headers = {'User-Agent': 'Your Bot 0.1'}
     if headers:
@@ -95,11 +124,7 @@ def fetch_and_parse(url, headers=None):
             # browser fingerprinting for the anti-bot path, so our usual
             # headers (e.g. a scraper's custom browser UA) don't apply here -
             # only our own URL and the domain's minimum required params go.
-            response = requests.get(
-                ZENROWS_API_URL,
-                params={'url': url, 'apikey': ZENROWS_API_KEY, **proxy_params},
-                timeout=REQUEST_TIMEOUT,
-            )
+            response = _proxy_get(url, proxy_params)
         else:
             if proxy_params:
                 logging.warning(
@@ -112,4 +137,3 @@ def fetch_and_parse(url, headers=None):
     except requests.RequestException as e:
         logging.error(f"Error fetching {url}: {e}")
         return None
-    

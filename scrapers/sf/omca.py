@@ -138,6 +138,9 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
     exhibition_elements = soup.find_all('div', class_='post-tile post-tile_type-on-view')
 
     for elem in exhibition_elements:
+        # Reset so a tile that fails before its link is read doesn't log the
+        # previous tile's link in the warning below.
+        event_link = None
         try:
             # Extract title
             title = elem.find('span', class_='post-tile__title').text.strip()
@@ -198,5 +201,6 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
                 process_event(event_details, region)
 
         except Exception as e:
-            logging.warning(f"Error parsing element of url {event_link}: {e}")
+            tile_title = elem.find('span', class_='post-tile__title')
+            logging.warning(f"Error parsing OMCA tile {tile_title.get_text(strip=True) if tile_title else '?'!r}: {e}")
             continue
