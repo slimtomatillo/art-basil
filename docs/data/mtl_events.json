@@ -35,7 +35,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "indigenous"
             ],
             "phase": "future",
             "dates": {
@@ -63,7 +64,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "future",
             "dates": {
@@ -147,7 +149,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "future",
             "dates": {
@@ -175,7 +178,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "future",
             "dates": {
@@ -259,7 +263,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -763,7 +768,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "indigenous"
             ],
             "phase": "current",
             "dates": {
@@ -847,7 +853,9 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -875,7 +883,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -905,7 +914,8 @@
             "tags": [
                 "exhibition",
                 "museum",
-                "past"
+                "past",
+                "photography"
             ],
             "phase": "past",
             "dates": {
@@ -933,7 +943,8 @@
             "tags": [
                 "exhibition",
                 "museum",
-                "past"
+                "past",
+                "fashion"
             ],
             "phase": "past",
             "dates": {
@@ -961,7 +972,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "indigenous"
             ],
             "phase": "current",
             "dates": {
@@ -1129,7 +1141,9 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "fashion",
+                "indigenous"
             ],
             "phase": "future",
             "dates": {

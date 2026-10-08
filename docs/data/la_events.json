@@ -35,7 +35,10 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture",
+                "textiles"
             ],
             "phase": "past",
             "dates": {
@@ -231,7 +234,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -259,7 +264,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "black-art"
             ],
             "phase": "past",
             "dates": {
@@ -427,7 +433,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -539,7 +546,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -651,7 +659,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "textiles"
             ],
             "phase": "past",
             "dates": {
@@ -707,7 +716,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -791,7 +802,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture",
+                "ceramics"
             ],
             "phase": "past",
             "dates": {
@@ -819,7 +832,12 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "sculpture",
+                "printmaking",
+                "fashion"
             ],
             "phase": "current",
             "dates": {
@@ -903,7 +921,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "printmaking",
+                "textiles"
             ],
             "phase": "past",
             "dates": {
@@ -959,7 +979,9 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "textiles",
+                "fashion"
             ],
             "phase": "current",
             "dates": {
@@ -987,7 +1009,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -1015,7 +1039,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -1043,7 +1069,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "film-video"
             ],
             "phase": "current",
             "dates": {
@@ -1071,7 +1098,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -1099,7 +1128,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -1127,7 +1158,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "installation",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -1155,7 +1188,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -1183,7 +1217,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -1211,7 +1247,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -1323,7 +1360,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -1379,7 +1417,10 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "film-video"
             ],
             "phase": "current",
             "dates": {
@@ -1407,7 +1448,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "current",
             "dates": {
@@ -1603,7 +1645,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "textiles"
             ],
             "phase": "past",
             "dates": {
@@ -1631,7 +1674,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "printmaking"
             ],
             "phase": "current",
             "dates": {
@@ -1659,7 +1703,8 @@
             "tags": [
                 "exhibition",
                 "museum",
-                "current"
+                "current",
+                "asian-american"
             ],
             "phase": "current",
             "dates": {
@@ -1767,7 +1812,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "textiles"
             ],
             "phase": "current",
             "dates": {
@@ -1825,7 +1871,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture",
+                "indigenous"
             ],
             "phase": "past",
             "dates": {
@@ -1853,7 +1901,12 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "black-art",
+                "woman-artist",
+                "queer"
             ],
             "phase": "past",
             "dates": {
@@ -1881,7 +1934,11 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "sculpture",
+                "ceramics"
             ],
             "phase": "past",
             "dates": {
@@ -1909,7 +1966,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -1937,7 +1996,12 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture",
+                "printmaking",
+                "textiles",
+                "installation",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -1965,7 +2029,10 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture",
+                "fashion"
             ],
             "phase": "past",
             "dates": {
@@ -1993,7 +2060,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "black-art"
             ],
             "phase": "past",
             "dates": {
@@ -2049,7 +2117,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -2077,7 +2146,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -2105,7 +2175,10 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "installation",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -2133,7 +2206,12 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "sculpture",
+                "printmaking",
+                "black-art"
             ],
             "phase": "past",
             "dates": {
@@ -2161,7 +2239,12 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "sculpture",
+                "installation",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -2189,7 +2272,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -2217,7 +2301,10 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -2245,7 +2332,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -2273,7 +2362,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "installation"
             ],
             "phase": "past",
             "dates": {
@@ -2301,7 +2391,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "installation"
             ],
             "phase": "past",
             "dates": {
@@ -2329,7 +2420,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -2357,7 +2450,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "installation"
             ],
             "phase": "past",
             "dates": {
@@ -2413,7 +2507,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -2469,7 +2564,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "installation"
             ],
             "phase": "current",
             "dates": {
@@ -2497,7 +2593,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "installation"
             ],
             "phase": "current",
             "dates": {
@@ -2581,7 +2678,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -2835,7 +2933,9 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography",
+                "latinx"
             ],
             "phase": "current",
             "dates": {
@@ -2863,7 +2963,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "current",
             "dates": {
@@ -2919,7 +3020,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -2947,7 +3049,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "future",
             "dates": {
@@ -2975,7 +3078,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "future",
             "dates": {
@@ -3421,7 +3525,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -3591,7 +3696,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "future",
             "dates": {
@@ -3619,7 +3725,9 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "textiles",
+                "indigenous"
             ],
             "phase": "future",
             "dates": {
@@ -3647,7 +3755,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -3675,7 +3784,10 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography",
+                "latinx",
+                "queer"
             ],
             "phase": "current",
             "dates": {
@@ -3703,7 +3815,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -3731,7 +3845,11 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "sculpture",
+                "film-video",
+                "fashion"
             ],
             "phase": "past",
             "dates": {
@@ -3759,7 +3877,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "installation"
             ],
             "phase": "past",
             "dates": {
@@ -3787,7 +3906,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -3871,7 +3991,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "black-art"
             ],
             "phase": "past",
             "dates": {
@@ -3899,7 +4020,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -3927,7 +4049,12 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture",
+                "ceramics",
+                "film-video",
+                "fashion"
             ],
             "phase": "past",
             "dates": {
@@ -3983,7 +4110,10 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "installation",
+                "film-video",
+                "fashion"
             ],
             "phase": "past",
             "dates": {
@@ -4011,7 +4141,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -4039,7 +4171,10 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting",
+                "film-video",
+                "queer"
             ],
             "phase": "past",
             "dates": {
@@ -4095,7 +4230,10 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography",
+                "sculpture",
+                "film-video"
             ],
             "phase": "past",
             "dates": {
@@ -4123,7 +4261,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -4179,7 +4318,9 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "textiles",
+                "indigenous"
             ],
             "phase": "future",
             "dates": {
@@ -4211,7 +4352,8 @@
                 "opening",
                 "free",
                 "gallery",
-                "current"
+                "current",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -4242,7 +4384,8 @@
                 "opening",
                 "free",
                 "gallery",
-                "current"
+                "current",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -4274,7 +4417,9 @@
                 "exhibition",
                 "free",
                 "gallery",
-                "current"
+                "current",
+                "painting",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -4333,7 +4478,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "future",
             "dates": {
@@ -4389,7 +4535,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -4445,7 +4592,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -4473,7 +4621,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -4557,7 +4707,9 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "printmaking",
+                "woman-artist"
             ],
             "phase": "past",
             "dates": {
@@ -4585,7 +4737,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -4613,7 +4766,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "past",
             "dates": {
@@ -4725,7 +4879,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -4753,7 +4908,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "printmaking"
             ],
             "phase": "past",
             "dates": {
@@ -4809,7 +4965,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -5007,7 +5164,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "current",
             "dates": {
@@ -5035,7 +5193,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "ceramics"
             ],
             "phase": "current",
             "dates": {
@@ -5147,7 +5306,10 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography",
+                "sculpture",
+                "installation"
             ],
             "phase": "current",
             "dates": {
@@ -5175,7 +5337,9 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting",
+                "installation"
             ],
             "phase": "current",
             "dates": {
@@ -5231,7 +5395,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {

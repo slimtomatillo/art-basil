@@ -91,7 +91,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "past",
             "dates": {
@@ -119,7 +120,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "past",
             "dates": {
@@ -203,7 +205,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "past",
             "dates": {
@@ -233,7 +236,8 @@
             "tags": [
                 "exhibition",
                 "gallery",
-                "past"
+                "past",
+                "photography"
             ],
             "phase": "past",
             "dates": {
@@ -261,7 +265,8 @@
             "tags": [
                 "exhibition",
                 "gallery",
-                "past"
+                "past",
+                "indigenous"
             ],
             "phase": "past",
             "dates": {
@@ -289,7 +294,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "gallery"
+                "gallery",
+                "photography"
             ],
             "phase": "future",
             "dates": {
@@ -317,7 +323,9 @@
             "tags": [
                 "exhibition",
                 "future",
-                "gallery"
+                "gallery",
+                "painting",
+                "sculpture"
             ],
             "phase": "future",
             "dates": {
@@ -373,7 +381,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "gallery"
+                "gallery",
+                "ceramics"
             ],
             "phase": "future",
             "dates": {
@@ -429,7 +438,9 @@
             "tags": [
                 "exhibition",
                 "future",
-                "gallery"
+                "gallery",
+                "film-video",
+                "queer"
             ],
             "phase": "future",
             "dates": {
@@ -683,7 +694,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -767,7 +779,8 @@
             "tags": [
                 "exhibition",
                 "past",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "past",
             "dates": {
@@ -853,7 +866,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "current",
             "dates": {
@@ -1077,7 +1091,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -1245,7 +1260,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -1329,7 +1345,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "indigenous"
             ],
             "phase": "current",
             "dates": {
