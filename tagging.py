@@ -57,8 +57,8 @@ PROPOSED = {
 # docs/tags.html. A tag goes in only once Alex has approved it.
 APPROVED_TAGS = {
     # medium
-    'photography', 'painting', 'sculpture', 'printmaking', 'ceramics', 'textiles',
-    'installation', 'film-video', 'fashion',
+    'photography', 'painting', 'sculpture', 'drawing', 'printmaking', 'ceramics',
+    'textiles', 'installation', 'film-video', 'fashion', 'architecture',
     # theme
     'indigenous', 'asian-american', 'latinx', 'black-art', 'woman-artist', 'queer',
 }
