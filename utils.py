@@ -75,6 +75,9 @@ PROXY_DOMAINS = {
     'museum.stanford.edu': {'premium_proxy': 'true', 'js_render': 'true'},
     # de Young, Legion of Honor (WEBSITE-68)
     'www.famsf.org': {'premium_proxy': 'true', 'js_render': 'true'},
+    # Southern Exposure (WEBSITE-71): 403s GitHub Actions' IPs, fine from a
+    # normal connection; a premium proxy IP alone gets through (live-tested).
+    'soex.org': {'premium_proxy': 'true'},
 }
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
