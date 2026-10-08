@@ -10,7 +10,7 @@ This project aims to create and populate (with fresh data!) a website that lists
 
 **Where the data comes from**  
 Events live in `docs/data/<region>_events.json`. Each one comes from one of three places, marked by its `source` field:
-- *Scraped* (no `source` field): a scraper in `scrapers/<region>/` refreshes it every day. If a venue's data stops refreshing for a week, the daily run flags it as stale. See [ADDING_A_REGION.md](ADDING_A_REGION.md).
+- *Scraped* (no `source` field): a scraper in `scrapers/<region>/` refreshes it every day. If a venue's data stops refreshing for a week, the daily run flags it as stale. A few venues sit behind bot protection that blocks GitHub's servers, so they are fetched through a paid proxy (ZenRows) and refreshed about every 3 days instead, to stay within its free monthly allowance. See [ADDING_A_REGION.md](ADDING_A_REGION.md).
 - *Manual* (`"source": "manual"`): added by hand from an emailed submission. `manual_check.py` re-checks these daily. See [SUBMISSIONS.md](SUBMISSIONS.md).
 - *Archive* (`"source": "archive"`): a one-time import of a closed venue's exhibition history. Nothing refreshes or re-checks it, by design, and the stale check skips it.
 

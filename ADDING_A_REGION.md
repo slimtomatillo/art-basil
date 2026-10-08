@@ -97,6 +97,10 @@ def scrape_<venue>(env='prod', region='<region>'):
 - Use `fetch_and_parse(url)` from `utils` (returns a `BeautifulSoup` or `None`).
 - It accepts an optional `headers=` dict to override/extend the default
   `User-Agent` (some CDNs — Cloudflare, Fastly — 403 the default bot UA).
+- **A site that loads fine from your laptop can still 403 GitHub's servers.**
+  After adding a scraper, check it in CI (`gh workflow run scrape-exhibitions.yml`,
+  then grep the job log for `Error fetching <your site>`). If it's blocked, route
+  it through the ZenRows proxy — see 2f.
 - Always guard `if soup is None:` — log a warning and `return`, don't raise.
   An uncaught exception in one scraper aborts the whole daily run.
 
@@ -130,17 +134,51 @@ It must be **identical** in the scraper and in `<region>_venues.json`. A mismatc
 shows up as on the site).
 
 ### 2d. Phase
-Derive it from the dates rather than trusting a page's "current/past" tab:
+Derive it from the dates rather than trusting a page's "current/past" tab, using
+the helpers in `processing.py` (`today` is in the region's time zone, from
+`docs/data/regions.json`):
 ```python
-if end_date and end_date < today:      phase = 'past'
-elif start_date and start_date > today: phase = 'future'
-else:                                   phase = 'current'
+from processing import process_event, derive_phase, region_today
+
+today = region_today(region)
+phase = derive_phase(start_date, end_date, today) or 'current'   # tab's phase as the fallback
 ```
 `processing.update_event_phases()` re-checks past-dated events on every run, so
 getting `current` vs `future` slightly wrong self-corrects; `past` should be
 right at write time.
 
-### 2e. Absolute vs relative URLs
+### 2e. Parsing dates
+`date_parsing.parse_date_text(text, today)` returns `(start, end)` for the
+styles venues actually use: `Oct 3–Dec 19, 2026`, `Oct 3rd, 2026–Feb 27, 2027`,
+`Oct 3–24, 2026`, `Through January 3` (no year — inferred from `today`) and a
+lone `October 10, 2026` (a start date). It returns `(None, None)` when it can't
+read the text, so log and skip rather than guess. If a venue uses a style it
+doesn't handle, extend it rather than writing a second parser.
+
+### 2f. Venues that block GitHub's servers (the ZenRows proxy)
+Some sites (Cloudflare, Vercel and Fastly protections) 403 or challenge GitHub
+Actions' IPs while loading fine elsewhere. Those are fetched through the ZenRows
+proxy. Adding one takes three steps:
+
+1. **Find the cheapest tier that works — by live test, not by guessing.** In
+   `utils.py`, `PROXY_DOMAINS` maps a hostname (exactly as in the URL, so
+   `www.` matters) to ZenRows params. `premium_proxy` alone costs 10 credits a
+   request; adding `js_render` (needed for JavaScript challenges) costs 25. Several
+   sites that looked like plain IP blocks turned out to need `js_render`, and
+   ZenRows says so (`RESP001`) when they do.
+2. **Register the scraper in `main.py`'s `PROXIED_VENUES`**: scraper name → the
+   venue names it writes data under (some scrapers write several). Without this
+   it runs daily and spends credits it shouldn't.
+3. **Budget it.** The free plan is 5,000 credits a month; a full refresh of every
+   proxied venue is ~315 credits, so `main.py` refreshes each one only when its
+   data is 60+ hours old (about every 3 days). Out of credits, ZenRows answers
+   `402`; the first one stops all proxying for that run and the venues keep their
+   old data. Avoid casual manual CI runs and tier experiments — each full run on a
+   due day spends ~315 credits.
+
+Naming a venue in `selected_venues` always runs it, bypassing the gate.
+
+### 2g. Absolute vs relative URLs
 When a page gives a relative `src`/`href`, only prepend the base when it's
 relative — some sites mix absolute and relative:
 ```python
@@ -234,3 +272,5 @@ Checklist:
 - [ ] `docs/<region>/venues.html` created, linked from `index.html`
 - [ ] time zone added to `docs/data/regions.json`
 - [ ] dev run of each scraper produces dated events
+- [ ] each scraper has run once in CI, with no `Error fetching` for its site in the job log
+- [ ] if a venue needed the proxy: in `PROXY_DOMAINS` **and** `PROXIED_VENUES`
