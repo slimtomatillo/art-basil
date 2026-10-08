@@ -142,18 +142,19 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
         # previous tile's link in the warning below.
         event_link = None
         try:
-            # Extract title. Joined with spaces because some titles are split
-            # across a <br> ("Gallery of<br>California Art").
+            # Tiles with no excerpt are OMCA's permanent galleries (Gallery of
+            # California Art/History/Natural Sciences, the Garden): they are
+            # part of the museum rather than shows, so they are not listed.
+            excerpt_tag = elem.find('span', class_='post-tile__excerpt')
+            if excerpt_tag is None:
+                continue
+
+            # Extract title. Joined with spaces in case a title is split
+            # across a <br>.
             title = ' '.join(elem.find('span', class_='post-tile__title').get_text(' ', strip=True).split())
 
-            # Extract description. The permanent galleries (Gallery of
-            # California Art/History/Natural Sciences, the Garden) have no
-            # excerpt on their tile and no dates anywhere - they are simply
-            # always open - so they are recorded as ongoing, with the
-            # description taken from the gallery's own page.
-            excerpt_tag = elem.find('span', class_='post-tile__excerpt')
-            permanent = excerpt_tag is None
-            description = None if permanent else excerpt_tag.text.strip().replace('\n', '').replace('\xa0', ' ')
+            # Extract description
+            description = excerpt_tag.text.strip().replace('\n', '').replace('\xa0', ' ')
 
             # Extract location
             location_tag = elem.find('span', class_='post-tile__tax-location')
@@ -164,13 +165,7 @@ def scrape_oak_museum_of_ca_exhibitions(env='prod', region='sf'):
             event_link = event_link_tag['href'] if event_link_tag else None
             
             # Extract dates
-            if permanent:
-                start_date, end_date, ongoing = None, None, True
-                page = fetch_and_parse(event_link)
-                meta = page.find('meta', attrs={'name': 'description'}) or page.find('meta', property='og:description') if page else None
-                description = ' '.join(meta['content'].split()) if meta and meta.get('content') else None
-            else:
-                start_date, end_date, ongoing = fetch_event_details(event_link)
+            start_date, end_date, ongoing = fetch_event_details(event_link)
 
             # Extract image link
             image_tag = elem.find('img', src=True)
