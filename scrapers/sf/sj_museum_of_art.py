@@ -89,8 +89,8 @@ def scrape_sj_museum_of_art_exhibitions(env='prod', region='sj'):
                         # Parse the datetime attribute if it exists
                         datetime_str = date_tags[0]['datetime']
                         start_date = dt.datetime.strptime(datetime_str, "%Y-%m-%dT%H:%M:%SZ").date()
-                    # Check for the datetime attribute first
-                    if date_tags[1].has_attr('datetime'):
+                    # Some listings carry only one <time> tag, so guard the index
+                    if len(date_tags) > 1 and date_tags[1].has_attr('datetime'):
                         # Parse the datetime attribute if it exists
                         datetime_str = date_tags[1]['datetime']
                         end_date = dt.datetime.strptime(datetime_str, "%Y-%m-%dT%H:%M:%SZ").date()
