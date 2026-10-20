@@ -230,7 +230,7 @@ added in step 1a-2.)
 Copy `docs/sf/index.html` verbatim, then change exactly two things:
 - `<title>Art Basil - <City></title>`
 - `<h1 class="display-5 mb-3 text-md-end"><City></h1>`
-(The lead paragraph and everything else is region-agnostic.)
+(The lead paragraph and everything else is region-agnostic, including the filter panel - `#filterPanel`, `#filterSummary` and the `filterState.js` / `filterPanel.js` scripts - which offers only the tags that region's data has.)
 
 ### 3b-2. `docs/<region>/venues.html`  ← **easy to forget**
 Copy `docs/sf/venues.html` verbatim, then change exactly two things:

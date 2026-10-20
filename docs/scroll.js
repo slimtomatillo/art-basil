@@ -42,12 +42,9 @@ window.addEventListener('DOMContentLoaded', async () => {
             }
         });
         
-        // Initialize search manager after events are rendered
-        if (window.searchManager) {
-            window.searchManager = new SearchManager();
-        } else {
-            window.searchManager = new SearchManager();
-        }
+        // Initialize search manager after events are rendered, then the filter panel that draws its state
+        window.searchManager = new SearchManager();
+        window.filterPanel = new FilterPanel(window.searchManager);
         
     } catch (error) {
         console.error('Error loading events:', error);
