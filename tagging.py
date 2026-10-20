@@ -1,4 +1,5 @@
-"""Subject tags (medium and theme) derived from an event's title and description.
+"""Subject tags (medium and theme) derived from an event's title and description,
+plus `free` for non-museum galleries.
 
 Scrapers only know an event's type, phase and venue kind (exhibition, museum,
 gallery); this adds what the show is *about* - photography, ceramics, an
@@ -88,10 +89,18 @@ def content_tags(event):
     return matches(event, RULES)
 
 
+def venue_tags(event):
+    """Tags that follow from the kind of venue rather than the text: every gallery
+    that isn't a museum is free to enter. Museums vary, so they are left to be
+    tagged per venue (WEBSITE-75)."""
+    tags = event.get('tags') or []
+    return ['free'] if 'gallery' in tags and 'museum' not in tags else []
+
+
 def add_content_tags(event):
-    """Add any missing rule-based tags to event['tags']; returns True if it changed."""
+    """Add any missing rule-based and venue-based tags to event['tags']; returns True if it changed."""
     tags = event.setdefault('tags', [])
-    new = [tag for tag in content_tags(event) if tag not in tags]
+    new = [tag for tag in content_tags(event) + venue_tags(event) if tag not in tags]
     tags.extend(new)
     return bool(new)
 

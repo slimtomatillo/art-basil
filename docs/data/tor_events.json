@@ -238,7 +238,8 @@
                 "exhibition",
                 "gallery",
                 "past",
-                "photography"
+                "photography",
+                "free"
             ],
             "phase": "past",
             "dates": {
@@ -267,7 +268,8 @@
                 "exhibition",
                 "gallery",
                 "past",
-                "indigenous"
+                "indigenous",
+                "free"
             ],
             "phase": "past",
             "dates": {
@@ -296,7 +298,8 @@
                 "exhibition",
                 "future",
                 "gallery",
-                "photography"
+                "photography",
+                "free"
             ],
             "phase": "future",
             "dates": {
@@ -326,7 +329,8 @@
                 "future",
                 "gallery",
                 "painting",
-                "sculpture"
+                "sculpture",
+                "free"
             ],
             "phase": "future",
             "dates": {
@@ -355,7 +359,8 @@
                 "exhibition",
                 "future",
                 "gallery",
-                "film-video"
+                "film-video",
+                "free"
             ],
             "phase": "future",
             "dates": {
@@ -384,7 +389,8 @@
                 "exhibition",
                 "future",
                 "gallery",
-                "ceramics"
+                "ceramics",
+                "free"
             ],
             "phase": "future",
             "dates": {
@@ -412,7 +418,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "gallery"
+                "gallery",
+                "free"
             ],
             "phase": "future",
             "dates": {
@@ -442,7 +449,8 @@
                 "future",
                 "gallery",
                 "film-video",
-                "queer"
+                "queer",
+                "free"
             ],
             "phase": "future",
             "dates": {
