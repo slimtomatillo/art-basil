@@ -941,10 +941,10 @@ body {
     margin-top: 0.4rem;
     padding: 0.2rem 0.65rem;
     background-color: #fff !important;
-    color: var(--ink) !important;
-    border: 2px solid var(--ink);
+    color: var(--region-c) !important;
+    border: 2px solid var(--region-c);
     border-radius: 999px;
-    box-shadow: 2px 2px 0 var(--ink);
+    box-shadow: 2px 2px 0 var(--region-c);
     font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
@@ -955,9 +955,9 @@ body {
 .region-page .notify-button:focus-visible {
     background-color: var(--region-c) !important;
     color: #fff !important;
-    border-color: var(--ink);
+    border-color: var(--region-c);
     transform: translate(2px, 2px);
-    box-shadow: 0 0 0 var(--ink);
+    box-shadow: 0 0 0 var(--region-c);
 }
 
 /* On phones the title blob must stay inside the screen (no sideways scroll) */
