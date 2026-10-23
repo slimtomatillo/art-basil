@@ -777,3 +777,177 @@ body {
         padding: 0.45rem 0;   /* larger touch targets */
     }
 }
+
+/* ---- Region pages (WEBSITE-61): the home page's blobs carried inside ------
+   Each region page sets --region-c (its blob colour from the home page) and
+   --region-t (a tilt) on <body>. Everything below hangs off that, so a new
+   region only needs those two values. Buttons and filter chips borrow the pop
+   sticker look: dark outline, hard shadow, press down on hover. */
+.region-page {
+    --ink: #111;
+    --pop-shadow: 3px 3px 0 var(--ink);
+}
+
+.region-page header {
+    position: relative;
+    isolation: isolate;
+}
+
+/* A soft blob of the region's colour behind the title */
+.region-page .region-title {
+    position: relative;
+    font-family: 'Bagel Fat One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--region-c);
+}
+
+.region-page .region-title::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -0.55em -0.7em -0.4em -0.6em;
+    background: color-mix(in srgb, var(--region-c) 14%, transparent);
+    border-radius: 62% 38% 54% 46% / 55% 44% 56% 45%;
+    transform: rotate(var(--region-t));
+}
+
+.region-page .header-region .lead {
+    font-size: 1.05rem;
+}
+
+/* Action buttons: sticker style */
+.region-page header .btn {
+    padding: 0.4rem 1rem;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px 18px 13px 17px;
+    box-shadow: 4px 4px 0 var(--ink);
+    color: var(--ink);
+    background: #fff;
+    font-weight: 700;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.region-page header .btn-primary {
+    background: var(--region-c);
+    color: #fff;
+}
+
+.region-page header .btn-outline-primary {
+    background: #ffd23f;
+}
+
+.region-page header .btn:hover,
+.region-page header .btn:focus-visible {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 var(--ink);
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+.region-page header .btn-primary:hover,
+.region-page header .btn-primary:focus-visible {
+    background: var(--region-c);
+    color: #fff;
+}
+
+.region-page header .btn-outline-secondary:hover { background: #fff; }
+.region-page header .btn-outline-primary:hover { background: #ffd23f; }
+
+.region-page .header-region a:not(.btn) {
+    color: var(--region-c);
+    font-weight: 600;
+}
+
+/* Search box and filter buttons */
+.region-page #searchBar {
+    border: 2px solid var(--ink);
+    box-shadow: var(--pop-shadow);
+}
+
+.region-page #searchBar:focus {
+    border-color: var(--region-c);
+    box-shadow: var(--pop-shadow), 0 0 0 0.2rem color-mix(in srgb, var(--region-c) 25%, transparent);
+}
+
+.region-page .filter-dropdown-toggle {
+    border: 2px solid var(--ink);
+    box-shadow: var(--pop-shadow);
+    font-weight: 600;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+
+.region-page .filter-dropdown-toggle:hover {
+    border-color: var(--ink);
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--ink);
+}
+
+.region-page .filter-dropdown-toggle[aria-expanded="true"],
+.region-page .filter-dropdown-toggle.has-selection {
+    border-color: var(--ink);
+    background-color: var(--region-c);
+    color: #fff;
+}
+
+.region-page .filter-badge {
+    background-color: #fff;
+    color: var(--region-c);
+    font-weight: 700;
+}
+
+.region-page .filter-popover {
+    border: 2px solid var(--ink);
+    border-radius: 14px;
+    box-shadow: 5px 5px 0 var(--ink);
+}
+
+.region-page .filter-pill {
+    border-color: var(--region-c);
+}
+
+.region-page .filter-clear,
+.region-page .filter-summary a {
+    color: var(--region-c);
+}
+
+/* Event table */
+.region-page .event-table thead th {
+    border-bottom: 3px solid var(--region-c);
+}
+
+.region-page .event-table tbody tr:hover > td {
+    background-color: color-mix(in srgb, var(--region-c) 7%, transparent);
+}
+
+.region-page .event-table .event-image {
+    border: 2px solid var(--ink);
+    border-radius: 10px;
+    box-shadow: var(--pop-shadow);
+}
+
+.region-page .notify-button,
+.region-page .notify-button:disabled {
+    background-color: var(--region-c) !important;
+    border: 2px solid var(--ink);
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 var(--ink);
+    font-weight: 600;
+}
+
+.region-page .notify-button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 var(--ink);
+}
+
+/* On phones the title blob must stay inside the screen (no sideways scroll) */
+@media (max-width: 767.98px) {
+    .region-page .region-title::before {
+        inset: -0.45em -0.1em -0.3em -0.3em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .region-page header .btn,
+    .region-page .filter-dropdown-toggle { transition: none; }
+}
