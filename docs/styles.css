@@ -3,12 +3,84 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.hover-card {
-    transition: transform 0.2s ease-in-out;
+/* Home page: region links as floating paint blobs. Each has its own colour,
+   tilt, size and bobbing speed (set inline); overlapping blobs show through each
+   other, and hovering one stops it and makes it solid. */
+.region-blobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
 }
 
-.hover-card:hover {
-    transform: translateY(-5px);
+.region-blob {
+    --r1: 62% 38% 54% 46% / 55% 44% 56% 45%;
+    --r2: 41% 59% 38% 62% / 60% 40% 60% 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: var(--w);
+    max-width: 92vw;
+    height: calc(var(--w) * 0.68);
+    margin: -6px -8px;
+    color: #fff;
+    text-decoration: none;
+    background: color-mix(in srgb, var(--c) 90%, transparent);
+    border-radius: var(--r1);
+    transform: rotate(var(--t));
+    animation: blob-bob var(--dur) ease-in-out infinite, blob-morph calc(var(--dur) * 2) ease-in-out infinite;
+    transition: transform 0.3s;
+}
+
+.region-blob.shape-b { --r1: 42% 58% 44% 56% / 52% 60% 40% 48%; --r2: 60% 40% 55% 45% / 42% 55% 45% 58%; }
+.region-blob.shape-c { --r1: 55% 45% 62% 38% / 40% 56% 44% 60%; --r2: 38% 62% 40% 60% / 58% 42% 58% 42%; }
+
+.region-blob:hover,
+.region-blob:focus-visible {
+    color: #fff;
+    text-decoration: none;
+    animation-play-state: paused;
+    background: var(--c);
+    z-index: 2;
+    transform: scale(1.1);
+}
+
+.region-blob:focus-visible {
+    outline: 3px solid #111;
+    outline-offset: 4px;
+}
+
+.region-name {
+    padding: 0 0.6rem;
+    font-family: 'Bagel Fat One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+    font-size: calc(var(--w) * 0.125);
+    line-height: 1;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.region-meta {
+    min-height: 1.1em;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes blob-bob {
+    0%, 100% { transform: translateY(0) rotate(var(--t)); }
+    50% { transform: translateY(-9px) rotate(calc(var(--t) * -0.6)); }
+}
+
+@keyframes blob-morph {
+    0%, 100% { border-radius: var(--r1); }
+    50% { border-radius: var(--r2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .region-blob { animation: none; transition: none; }
 }
 
 /* Page header layout. Desktop keeps the original two-column look (logo
