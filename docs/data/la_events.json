@@ -1968,7 +1968,6 @@
                 "photography",
                 "painting",
                 "black-art",
-                "woman-artist",
                 "queer"
             ],
             "phase": "past",
@@ -4805,8 +4804,7 @@
                 "exhibition",
                 "past",
                 "museum",
-                "printmaking",
-                "woman-artist"
+                "printmaking"
             ],
             "phase": "past",
             "dates": {

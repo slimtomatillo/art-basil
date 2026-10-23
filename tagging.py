@@ -50,7 +50,6 @@ PROPOSED = {
     'asian-american': (r"\basian[- ]american|\baapi\b|\basian diaspora|\bpacific islander", 1),
     'latinx': (r"\blatinx?\b|\blatino|\blatina|\blatine\b|\bchican", 1),
     'black-art': (r"\bblack (artists?|art|power|culture|community|communities|history|identity|spaces?|women|men|joy|life|lives)\b|\bblackness\b|\bafrican[- ]american|\bafrican diaspora|\bafrofutur", 1),
-    'woman-artist': (r"\bwomen artists?\b|\bwoman artist|\bfemale artists?\b|\bfeminis|\bwomen['\u2019]s (art|work|history|voices)\b", 1),
     'queer': (r"\bqueer|\blgbtq|\btransgender|\bnon-?binary\b|\bgender[- ]?(queer|nonconforming|fluid)", 1),
 }
 
@@ -61,7 +60,7 @@ APPROVED_TAGS = {
     'photography', 'painting', 'sculpture', 'drawing', 'printmaking', 'ceramics',
     'textiles', 'installation', 'film-video', 'fashion', 'architecture',
     # theme
-    'indigenous', 'asian-american', 'latinx', 'black-art', 'woman-artist', 'queer',
+    'indigenous', 'asian-american', 'latinx', 'black-art', 'queer',
 }
 
 def _compile(spec):
