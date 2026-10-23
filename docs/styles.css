@@ -927,6 +927,18 @@ body {
     background-color: color-mix(in srgb, var(--region-c) 7%, transparent);
 }
 
+/* Event Page / Map links (and the venue links on the venues pages) */
+.region-page .event-table td a {
+    color: var(--region-c);
+    font-weight: 600;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.region-page .event-table td a:hover {
+    color: color-mix(in srgb, var(--region-c) 65%, #000);
+}
+
 .region-page .event-table .event-image {
     border: 2px solid var(--ink);
     border-radius: 10px;
