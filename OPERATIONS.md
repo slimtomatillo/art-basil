@@ -132,7 +132,7 @@ python tagging.py        # safe to repeat; only ever adds tags, never removes or
 
 Rules match the title and description with the venue's own name blanked out, and
 the identity-based tags (`asian-american`, `latinx`, `black-art`, `indigenous`,
-`woman-artist`, `queer`) fire only on explicit language in the venue's text,
+`queer`) fire only on explicit language in the venue's text,
 never on place names or an artist's origin. A missing tag is invisible and a
 wrong one is a visible error, so prefer a rule that is slightly too narrow. A
 tag a person added by hand is never removed.

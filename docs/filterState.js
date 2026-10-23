@@ -20,7 +20,7 @@
             'painting', 'photography', 'printmaking', 'sculpture', 'textiles'] },
         { id: 'theme', label: 'Theme', tags: [
             'asian-american', 'black-art', 'immigrant', 'indigenous', 'latinx', 'queer',
-            'refugee', 'south-asian', 'woman-artist'] },
+            'refugee', 'south-asian'] },
         { id: 'cost', label: 'Cost', tags: ['free'] },
         // No events carry these yet (only `free` is used today), so this group stays hidden until some do.
         { id: 'format', label: 'Format', tags: [
