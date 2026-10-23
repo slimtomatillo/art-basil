@@ -30,6 +30,7 @@ PROXIED_VENUES = {
     "Cantor Arts Center": ["Cantor Arts Center"],
     "de Young Museum": ["de Young", "Legion of Honor"],
     "Southern Exposure": ["Southern Exposure"],
+    "Asian Art Museum": ["Asian Art Museum"],
     "Norton Simon Museum": ["Norton Simon Museum"],
     "Huntington": ["Huntington"],
     "AGO": ["AGO"],
