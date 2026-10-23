@@ -88,6 +88,11 @@ PROXY_DOMAINS = {
     # Southern Exposure (WEBSITE-71): 403s GitHub Actions' IPs, fine from a
     # normal connection; a premium proxy IP alone gets through (live-tested).
     'soex.org': {'premium_proxy': 'true'},
+    # Asian Art Museum: began 403ing GitHub Actions' IPs on 2026-10-21 (Cloudflare);
+    # still fine from a normal connection. A static WordPress site, so a premium
+    # proxy IP without JS rendering should be enough - not live-tested yet, the
+    # ZenRows account was out of credits when this was added.
+    'exhibitions.asianart.org': {'premium_proxy': 'true'},
 }
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
