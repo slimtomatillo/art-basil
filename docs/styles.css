@@ -1009,8 +1009,8 @@ body {
 }
 
 .region-page main .card-title {
-    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
-    font-weight: 600;
+    font-family: 'Nunito', 'Arial Rounded MT Bold', system-ui, sans-serif;
+    font-weight: 800;
     font-size: 1.25rem;
 }
 
@@ -1052,6 +1052,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.4rem;
+    margin-bottom: 1.5rem;
 }
 
 .region-page .tag-list .tag-pill {
