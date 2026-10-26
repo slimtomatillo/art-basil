@@ -1,0 +1,114 @@
+/* Cursor & effects settings: a small sticker button, bottom left, that opens a
+   panel of radio pills (see cursorFx.js). Hidden on touch-only devices, where
+   there is no cursor to style. */
+.fx-settings {
+    position: fixed;
+    left: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 10001;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.fx-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: #fff;
+    border: 2.5px solid #111;
+    border-radius: 50%;
+    box-shadow: 3px 3px 0 #111;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.fx-toggle svg {
+    width: 26px;
+    height: 26px;
+}
+
+.fx-toggle:hover,
+.fx-toggle[aria-expanded="true"] {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #111;
+}
+
+.fx-toggle:focus-visible,
+.fx-pill input:focus-visible + span {
+    outline: 3px solid #1c78c0;
+    outline-offset: 2px;
+}
+
+.fx-panel {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 0.7rem);
+    width: 270px;
+    padding: 0.9rem 1rem 0.5rem;
+    background: #fff;
+    border: 2.5px solid #111;
+    border-radius: 16px;
+    box-shadow: 5px 5px 0 #111;
+}
+
+.fx-group {
+    margin: 0 0 0.6rem;
+    padding: 0;
+    border: 0;
+}
+
+.fx-group legend {
+    float: none;
+    width: auto;
+    margin: 0 0 0.35rem;
+    padding: 0;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.fx-pill {
+    display: inline-block;
+    position: relative;
+    margin: 0 0.3rem 0.4rem 0;
+    cursor: pointer;
+}
+
+.fx-pill input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.fx-pill span {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    background: #fff;
+    color: #111;
+    border: 2px solid #111;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    box-shadow: 2px 2px 0 #111;
+    transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.fx-pill input:checked + span {
+    background: #111;
+    color: #fff;
+}
+
+@media (hover: none) {
+    .fx-settings { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fx-toggle, .fx-pill span { transition: none; }
+}
