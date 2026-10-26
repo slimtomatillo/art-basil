@@ -993,6 +993,79 @@ body {
     box-shadow: 0 0 0 var(--ink);
 }
 
+/* ---- Utility pages (Add Event, Tags): same look, black as the accent ------
+   They aren't a region, so --region-c is black here and colour comes only from
+   the region and tag chips. */
+.region-page .region-title-center {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.region-page main .card {
+    background: #fff;
+    border: 2.5px solid var(--ink);
+    border-radius: 18px;
+    box-shadow: 6px 6px 0 var(--ink);
+}
+
+.region-page main .card-title {
+    font-family: 'Bagel Fat One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.region-page main .list-group-item {
+    background: transparent;
+    border-color: #dee2e6;
+}
+
+.region-page main .card a {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration-color: var(--region-c);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.region-page main .card a:hover {
+    text-decoration-thickness: 3px;
+}
+
+/* A region name shown as a coloured pill */
+.region-chip {
+    display: inline-block;
+    margin: 0.1rem 0.1rem;
+    padding: 0 0.65rem;
+    border-radius: 999px;
+    background: var(--c);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+/* Tags page: the lists become rows of the same chips the event table uses.
+   (Without JavaScript they stay a plain list.) */
+.region-page .tag-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.region-page .tag-list .tag-pill {
+    width: auto;
+    padding: 2px 11px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--chip);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
 /* On phones the title blob must stay inside the screen (no sideways scroll) */
 @media (max-width: 767.98px) {
     .region-page .region-title::before {
