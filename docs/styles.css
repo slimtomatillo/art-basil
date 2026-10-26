@@ -3,12 +3,84 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.hover-card {
-    transition: transform 0.2s ease-in-out;
+/* Home page: region links as floating paint blobs. Each has its own colour,
+   tilt, size and bobbing speed (set inline); overlapping blobs show through each
+   other, and hovering one stops it and makes it solid. */
+.region-blobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
 }
 
-.hover-card:hover {
-    transform: translateY(-5px);
+.region-blob {
+    --r1: 62% 38% 54% 46% / 55% 44% 56% 45%;
+    --r2: 41% 59% 38% 62% / 60% 40% 60% 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: var(--w);
+    max-width: 92vw;
+    height: calc(var(--w) * 0.68);
+    margin: -6px -8px;
+    color: #fff;
+    text-decoration: none;
+    background: color-mix(in srgb, var(--c) 90%, transparent);
+    border-radius: var(--r1);
+    transform: rotate(var(--t));
+    animation: blob-bob var(--dur) ease-in-out infinite, blob-morph calc(var(--dur) * 2) ease-in-out infinite;
+    transition: transform 0.3s;
+}
+
+.region-blob.shape-b { --r1: 42% 58% 44% 56% / 52% 60% 40% 48%; --r2: 60% 40% 55% 45% / 42% 55% 45% 58%; }
+.region-blob.shape-c { --r1: 55% 45% 62% 38% / 40% 56% 44% 60%; --r2: 38% 62% 40% 60% / 58% 42% 58% 42%; }
+
+.region-blob:hover,
+.region-blob:focus-visible {
+    color: #fff;
+    text-decoration: none;
+    animation-play-state: paused;
+    background: var(--c);
+    z-index: 2;
+    transform: scale(1.1);
+}
+
+.region-blob:focus-visible {
+    outline: 3px solid #111;
+    outline-offset: 4px;
+}
+
+.region-name {
+    padding: 0 0.6rem;
+    font-family: 'Bagel Fat One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+    font-size: calc(var(--w) * 0.125);
+    line-height: 1;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.region-meta {
+    min-height: 1.1em;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes blob-bob {
+    0%, 100% { transform: translateY(0) rotate(var(--t)); }
+    50% { transform: translateY(-9px) rotate(calc(var(--t) * -0.6)); }
+}
+
+@keyframes blob-morph {
+    0%, 100% { border-radius: var(--r1); }
+    50% { border-radius: var(--r2); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .region-blob { animation: none; transition: none; }
 }
 
 /* Page header layout. Desktop keeps the original two-column look (logo
@@ -381,6 +453,12 @@ body {
     border-color: #0b5ed7;
 }
 
+.notify-button svg {
+    width: 14px;
+    height: 14px;
+    flex: none;
+}
+
 .notify-button:disabled {
     background-color: #0d6efd !important;
     color: white !important;
@@ -704,4 +782,302 @@ body {
     .filter-option {
         padding: 0.45rem 0;   /* larger touch targets */
     }
+}
+
+/* ---- Region pages (WEBSITE-61): the home page's blobs carried inside ------
+   Each region page sets --region-c (its blob colour from the home page) and
+   --region-t (a tilt) on <body>. Everything below hangs off that, so a new
+   region only needs those two values. Buttons and filter chips borrow the pop
+   sticker look: dark outline, hard shadow, press down on hover. */
+.region-page {
+    --ink: #111;
+    --pop-shadow: 3px 3px 0 var(--ink);
+    --region-tint: color-mix(in srgb, var(--region-c) 22%, #fff);
+}
+
+.region-page header {
+    position: relative;
+    isolation: isolate;
+}
+
+/* A soft blob of the region's colour behind the title */
+.region-page .region-title {
+    position: relative;
+    font-family: 'Bagel Fat One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--region-c);
+}
+
+.region-page .region-title::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: -0.55em -0.7em -0.4em -0.6em;
+    background: color-mix(in srgb, var(--region-c) 14%, transparent);
+    border-radius: 62% 38% 54% 46% / 55% 44% 56% 45%;
+    transform: rotate(var(--region-t));
+}
+
+.region-page .header-region .lead {
+    font-size: 1.05rem;
+}
+
+/* Action buttons: sticker style */
+.region-page header .btn {
+    padding: 0.4rem 1rem;
+    border: 2.5px solid var(--ink);
+    border-radius: 14px 18px 13px 17px;
+    box-shadow: 4px 4px 0 var(--ink);
+    color: var(--ink);
+    background: #fff;
+    font-weight: 700;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.region-page header .btn-primary {
+    background: var(--region-c);
+    color: #fff;
+}
+
+.region-page header .btn-outline-primary {
+    background: var(--region-tint);
+}
+
+.region-page header .btn:hover,
+.region-page header .btn:focus-visible {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 var(--ink);
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+.region-page header .btn-primary:hover,
+.region-page header .btn-primary:focus-visible {
+    background: var(--region-c);
+    color: #fff;
+}
+
+.region-page header .btn-outline-secondary:hover { background: #fff; }
+.region-page header .btn-outline-primary:hover { background: var(--region-tint); }
+
+.region-page .header-region a:not(.btn) {
+    color: var(--region-c);
+    font-weight: 600;
+}
+
+/* Search box and filter buttons */
+.region-page #searchBar {
+    border: 2px solid var(--ink);
+    box-shadow: var(--pop-shadow);
+}
+
+.region-page #searchBar:focus {
+    border-color: var(--region-c);
+    box-shadow: var(--pop-shadow), 0 0 0 0.2rem color-mix(in srgb, var(--region-c) 25%, transparent);
+}
+
+.region-page .filter-dropdown-toggle {
+    border: 2px solid var(--ink);
+    box-shadow: var(--pop-shadow);
+    font-weight: 600;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+
+.region-page .filter-dropdown-toggle:hover {
+    border-color: var(--ink);
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--ink);
+}
+
+.region-page .filter-dropdown-toggle[aria-expanded="true"],
+.region-page .filter-dropdown-toggle.has-selection {
+    border-color: var(--ink);
+    background-color: var(--region-c);
+    color: #fff;
+}
+
+.region-page .filter-badge {
+    background-color: #fff;
+    color: var(--region-c);
+    font-weight: 700;
+}
+
+.region-page .filter-popover {
+    border: 2px solid var(--ink);
+    border-radius: 14px;
+    box-shadow: 5px 5px 0 var(--ink);
+}
+
+.region-page .filter-pill {
+    border-color: var(--region-c);
+}
+
+.region-page .filter-clear,
+.region-page .filter-summary a {
+    color: var(--region-c);
+}
+
+/* Event table */
+.region-page .event-table thead th {
+    border-bottom: 3px solid var(--region-c);
+}
+
+.region-page .event-table tbody tr:hover > td {
+    background-color: color-mix(in srgb, var(--region-c) 7%, transparent);
+}
+
+/* Event Page / Map links (and the venue links on the venues pages): dark text,
+   underlined in the region colour, so a column of them stays calm. The main
+   link in each row is semibold; the region colour takes over the text on hover. */
+.region-page .event-table td a {
+    color: var(--ink);
+    font-weight: 400;
+    text-decoration-color: var(--region-c);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.region-page .event-table td:nth-child(5) a:first-of-type,
+.region-page #venueTable td:first-child a {
+    font-weight: 600;
+}
+
+.region-page .event-table td a:hover {
+    color: var(--region-c);
+}
+
+/* Venue names on the venues pages have no underline, so colour is what marks
+   them as links. */
+.region-page #venueTable td:first-child a {
+    color: var(--region-c);
+}
+
+.region-page #venueTable td:first-child a:hover {
+    color: color-mix(in srgb, var(--region-c) 65%, #000);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.region-page .event-table .event-image {
+    border: 2px solid var(--ink);
+    border-radius: 10px;
+    box-shadow: var(--pop-shadow);
+}
+
+.region-page .notify-button,
+.region-page .notify-button:disabled {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.4rem;
+    padding: 0.2rem 0.65rem;
+    background-color: #fff !important;
+    color: var(--ink) !important;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    box-shadow: 2px 2px 0 var(--ink);
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+
+.region-page .notify-button:hover,
+.region-page .notify-button:focus-visible {
+    background-color: var(--region-c) !important;
+    color: #fff !important;
+    border-color: var(--ink);
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 var(--ink);
+}
+
+/* ---- Utility pages (Add Event, Tags): same look, black as the accent ------
+   They aren't a region, so --region-c is black here and colour comes only from
+   the region and tag chips. */
+.region-page .region-title-center {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.region-page main .card {
+    background: #fff;
+    border: 2.5px solid var(--ink);
+    border-radius: 18px;
+    box-shadow: 6px 6px 0 var(--ink);
+}
+
+.region-page main .card-title {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.region-page main .list-group-item {
+    background: transparent;
+    border-color: #dee2e6;
+}
+
+.region-page main .card a {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration-color: var(--region-c);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.region-page main .card a:hover {
+    text-decoration-thickness: 3px;
+}
+
+/* A region name shown as a coloured pill */
+.region-chip {
+    display: inline-block;
+    margin: 0.1rem 0.1rem;
+    padding: 0 0.65rem;
+    border-radius: 999px;
+    background: var(--c);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+/* Tags page: the lists become rows of the same chips the event table uses.
+   (Without JavaScript they stay a plain list.) */
+.region-page .tag-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.region-page .tag-list .tag-pill {
+    width: auto;
+    padding: 2px 11px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--chip);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* On phones the title blob must stay inside the screen (no sideways scroll) */
+@media (max-width: 767.98px) {
+    .region-page .region-title::before {
+        inset: -0.45em -0.1em -0.3em -0.3em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .region-page header .btn,
+    .region-page .notify-button,
+    .region-page .filter-dropdown-toggle { transition: none; }
 }

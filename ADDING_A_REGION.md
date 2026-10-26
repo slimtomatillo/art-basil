@@ -227,15 +227,17 @@ if (path.includes('/<region>/')) {
 added in step 1a-2.)
 
 ### 3b. `docs/<region>/index.html`
-Copy `docs/sf/index.html` verbatim, then change exactly two things:
+Copy `docs/sf/index.html` verbatim, then change exactly three things:
 - `<title>Art Basil - <City></title>`
-- `<h1 class="display-5 mb-3 text-md-end"><City></h1>`
+- `<h1 class="display-5 mb-3 text-md-end region-title"><City></h1>`
+- the region colour on `<body>`: `style="--region-c: <hex>; --region-t: <tilt>deg;"` (pick the colour in 3c-2)
 (The lead paragraph and everything else is region-agnostic, including the filter panel - `#filterPanel`, `#filterSummary` and the `filterState.js` / `filterPanel.js` scripts - which offers only the tags that region's data has.)
 
 ### 3b-2. `docs/<region>/venues.html`  ← **easy to forget**
-Copy `docs/sf/venues.html` verbatim, then change exactly two things:
+Copy `docs/sf/venues.html` verbatim, then change exactly three things:
 - `<title>Art Basil - <City> Venues</title>`
-- `<h1 class="display-5 mb-3 text-md-end"><City></h1>`
+- `<h1 class="display-5 mb-3 text-md-end region-title"><City></h1>`
+- the same `--region-c` / `--region-t` style on `<body>` as the region's `index.html`
 Nothing else is region-specific - `venuesRenderer.js` detects the region from
 the URL path the same way `dataManager.js` does (3a) and fetches
 `<region>_venues.json` (1c) itself. Also add the link to it from the region's
@@ -245,23 +247,54 @@ own `index.html`, in the `header-region` block, below the button row:
 ```
 
 ### 3c. `docs/index.html`
-Add a city card next to the existing two:
+Add a blob inside `<nav class="region-blobs">`, next to the existing ones:
 ```html
-<div class="col-md-6 col-lg-4">
-    <a href="<region>/index.html" class="text-decoration-none">
-        <div class="card h-100 shadow-sm hover-card">
-            <div class="card-body text-center">
-                <h2 class="h4 mb-3"><City></h2>
-                <p class="text-muted">Discover <City>'s art scene</p>
-            </div>
-        </div>
-    </a>
-</div>
+<a href="<region>/index.html" class="region-blob shape-a" aria-label="<Full city name>"
+   style="--c: <hex>; --t: 1.8deg; --w: 220px; --dur: 6s">
+    <span class="region-name"><City></span>
+    <span class="region-meta" data-region="<region>"></span>
+</a>
 ```
+- `--c` is the region colour (3c-2). `--t` is the tilt (alternate the sign down the
+  row), `--w` the width (the biggest region gets the biggest blob), `--dur` the
+  bobbing speed (5.5s to 7.5s, different for each). `shape-a`, `shape-b` or
+  `shape-c` picks the blob outline; vary it between neighbours.
+- The "N venues" line fills itself in from `<region>_venues.json` (1c), so there is
+  nothing else to change.
+
+### 3c-2. Pick the region's colour
+One colour per region, used for the home blob, the page title, filters, links and
+buttons. Take the next unused one, in this order:
+
+| Used by | Colour | Hex |
+|---|---|---|
+| San Francisco Bay Area | green | `#14806b` |
+| Los Angeles | orange | `#c4520f` |
+| Montreal | blue | `#3358d6` |
+| Toronto | purple | `#8f3fc0` |
+| Istanbul | red | `#c93631` |
+| *next 1* | magenta | `#b8227a` |
+| *next 2* | cyan | `#00748f` |
+| *next 3* | olive | `#5f7a0a` |
+| *next 4* | sky | `#1c78c0` |
+| *next 5* | sunshine yellow | `#ffc61a` — **not wired up yet**, see below |
+
+These were chosen to read white text at 4.5:1 or better and to sit at least 25
+(CIE76 distance) away from every colour already in use. **Check any other colour
+the same way** before using it; most hues are already taken, and the closest
+existing pair (Los Angeles and Istanbul) is only 23 apart.
+
+**Sunshine yellow needs dark text.** White text on `#ffc61a` is 1.6:1, and yellow
+text on a light page is unreadable. Before using it, add two variables (for
+example `--region-on`, the text colour on blobs and filled buttons, and
+`--region-ink`, the colour for the title and links), default them to white and
+`--region-c`, and set them to near-black for that region. Nothing uses them yet.
 
 ### 3d. `docs/add_event.html`
-Update the region hint line (currently `Region (SF Bay Area or LA)`) to include
-the new city.
+In the "Region:" line, add a chip for the new city, in the region's colour (3c-2):
+```html
+<span class="region-chip" style="--c: <hex>"><City></span>
+```
 
 ---
 

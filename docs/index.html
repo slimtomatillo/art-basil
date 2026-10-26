@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Basil</title>
     <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="" id="faviconLink">
@@ -34,45 +37,33 @@
             </h1>
         </header>
 
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6 d-flex flex-column gap-3">
-                <a href="sf/index.html" class="text-decoration-none">
-                    <div class="card shadow-sm hover-card">
-                        <div class="card-body text-center">
-                            <h2 class="h4 mb-0">San Francisco Bay Area</h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="la/index.html" class="text-decoration-none">
-                    <div class="card shadow-sm hover-card">
-                        <div class="card-body text-center">
-                            <h2 class="h4 mb-0">Los Angeles</h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="mtl/index.html" class="text-decoration-none">
-                    <div class="card shadow-sm hover-card">
-                        <div class="card-body text-center">
-                            <h2 class="h4 mb-0">Montreal</h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="tor/index.html" class="text-decoration-none">
-                    <div class="card shadow-sm hover-card">
-                        <div class="card-body text-center">
-                            <h2 class="h4 mb-0">Toronto</h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="ist/index.html" class="text-decoration-none">
-                    <div class="card shadow-sm hover-card">
-                        <div class="card-body text-center">
-                            <h2 class="h4 mb-0">Istanbul</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+        <nav class="region-blobs" aria-label="Choose a region">
+            <a href="sf/index.html" class="region-blob shape-a" aria-label="San Francisco Bay Area"
+               style="--c:#14806b; --t:-2.5deg; --w:290px; --dur:6.5s">
+                <span class="region-name">Bay Area</span>
+                <span class="region-meta" data-region="sf"></span>
+            </a>
+            <a href="la/index.html" class="region-blob shape-b" aria-label="Los Angeles"
+               style="--c:#c4520f; --t:1.8deg; --w:235px; --dur:5.6s">
+                <span class="region-name">Los Angeles</span>
+                <span class="region-meta" data-region="la"></span>
+            </a>
+            <a href="mtl/index.html" class="region-blob shape-c" aria-label="Montreal"
+               style="--c:#3358d6; --t:-1.4deg; --w:200px; --dur:7.2s">
+                <span class="region-name">Montreal</span>
+                <span class="region-meta" data-region="mtl"></span>
+            </a>
+            <a href="tor/index.html" class="region-blob shape-a" aria-label="Toronto"
+               style="--c:#8f3fc0; --t:2.2deg; --w:215px; --dur:6.1s">
+                <span class="region-name">Toronto</span>
+                <span class="region-meta" data-region="tor"></span>
+            </a>
+            <a href="ist/index.html" class="region-blob shape-b" aria-label="Istanbul"
+               style="--c:#c93631; --t:-1.9deg; --w:225px; --dur:5.9s">
+                <span class="region-name">Istanbul</span>
+                <span class="region-meta" data-region="ist"></span>
+            </a>
+        </nav>
     </div>
 
     <!-- Bootstrap JS -->
@@ -83,6 +74,15 @@
     <script>
         document.getElementById('logoImg').src = basePath + 'images/logo-no-background.png';
         document.getElementById('faviconLink').href = basePath + 'images/favicon.png';
+
+        // "29 venues" under each region name. The venue lists are tiny, unlike the event data.
+        document.querySelectorAll('.region-meta').forEach(async (el) => {
+            try {
+                const venues = await (await fetch(`data/${el.dataset.region}_venues.json`)).json();
+                const n = Object.keys(venues).length;
+                el.textContent = `${n} ${n === 1 ? 'venue' : 'venues'}`;
+            } catch (e) { /* leave blank */ }
+        });
     </script>
 
     <!-- Feedback Button -->
