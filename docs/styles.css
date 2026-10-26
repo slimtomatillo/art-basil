@@ -1009,9 +1009,11 @@ body {
 }
 
 .region-page main .card-title {
-    font-family: 'Nunito', 'Arial Rounded MT Bold', system-ui, sans-serif;
-    font-weight: 800;
-    font-size: 1.25rem;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 
 .region-page main .list-group-item {
