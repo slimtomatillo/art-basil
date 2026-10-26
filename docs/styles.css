@@ -1009,9 +1009,9 @@ body {
 }
 
 .region-page main .card-title {
-    font-family: 'Bagel Fat One', 'Arial Rounded MT Bold', system-ui, sans-serif;
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
 
 .region-page main .list-group-item {
