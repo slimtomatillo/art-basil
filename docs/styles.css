@@ -927,16 +927,37 @@ body {
     background-color: color-mix(in srgb, var(--region-c) 7%, transparent);
 }
 
-/* Event Page / Map links (and the venue links on the venues pages) */
+/* Event Page / Map links (and the venue links on the venues pages): dark text,
+   underlined in the region colour, so a column of them stays calm. The main
+   link in each row is semibold; the region colour takes over the text on hover. */
 .region-page .event-table td a {
-    color: var(--region-c);
-    font-weight: 600;
+    color: var(--ink);
+    font-weight: 400;
+    text-decoration-color: var(--region-c);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
 }
 
+.region-page .event-table td:nth-child(5) a:first-of-type,
+.region-page #venueTable td:first-child a {
+    font-weight: 600;
+}
+
 .region-page .event-table td a:hover {
+    color: var(--region-c);
+}
+
+/* Venue names on the venues pages have no underline, so colour is what marks
+   them as links. */
+.region-page #venueTable td:first-child a {
+    color: var(--region-c);
+}
+
+.region-page #venueTable td:first-child a:hover {
     color: color-mix(in srgb, var(--region-c) 65%, #000);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 
 .region-page .event-table .event-image {
@@ -953,10 +974,10 @@ body {
     margin-top: 0.4rem;
     padding: 0.2rem 0.65rem;
     background-color: #fff !important;
-    color: var(--region-c) !important;
-    border: 2px solid var(--region-c);
+    color: var(--ink) !important;
+    border: 2px solid var(--ink);
     border-radius: 999px;
-    box-shadow: 2px 2px 0 var(--region-c);
+    box-shadow: 2px 2px 0 var(--ink);
     font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
@@ -967,9 +988,9 @@ body {
 .region-page .notify-button:focus-visible {
     background-color: var(--region-c) !important;
     color: #fff !important;
-    border-color: var(--region-c);
+    border-color: var(--ink);
     transform: translate(2px, 2px);
-    box-shadow: 0 0 0 var(--region-c);
+    box-shadow: 0 0 0 var(--ink);
 }
 
 /* On phones the title blob must stay inside the screen (no sideways scroll) */
