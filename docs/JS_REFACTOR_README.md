@@ -97,7 +97,7 @@ window.modalManager.openImageModal('image-url.jpg');
 - Other files remain unchanged:
   - `notify.js` - Notification functionality
   - `feedback.js` - Feedback form functionality
-  - `cursorTrail.js` - Cursor trail effects
+  - `cursorFx.js` / `cursorFx.css` - The visitor's choice of mouse effect (Kid Pix stamps, marker line, pixel squares or off) and cursor (normal, sticker arrow or blob dot), saved in localStorage; a small settings button on every page
   - `venuesRenderer.js` - Renders the venue directory (`<region>/venues.html`)
     from `dataManager.fetchVenues()`. Standalone - only loaded on that page,
     not part of the `scroll.js`-orchestrated event-table pipeline above.
@@ -121,7 +121,7 @@ The modules should be loaded in this order in your HTML:
 <!-- Other functionality -->
 <script src="notify.js"></script>
 <script src="feedback.js"></script>
-<script src="cursorTrail.js"></script>
+<script src="cursorFx.js"></script>
 ```
 
 ## Benefits of Refactoring

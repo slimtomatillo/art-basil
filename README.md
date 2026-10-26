@@ -70,6 +70,5 @@ node --test tests/                                     # unit tests for the fron
 
 **Acknowledgements**  
 - This project was inspired by [19hz.info](https://19hz.info/eventlisting_BayArea.php) which has local listings for electronic music events.
-- Thank you to [Chris Nager](https://github.com/chrisnager/) for the [squirtle cursor](https://github.com/chrisnager/cursors/blob/gh-pages/squirtle.cur)! You can see some of Chris's other curors in his [repo](https://github.com/chrisnager/cursors).
 
 © A. Smith
