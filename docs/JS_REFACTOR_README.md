@@ -96,7 +96,9 @@ window.modalManager.openImageModal('image-url.jpg');
 - `filter.js` - Functionality moved to `searchManager.js` / `filterState.js`
 - Other files remain unchanged:
   - `notify.js` - Notification functionality
-  - `feedback.js` - Feedback form functionality
+  - `feedback.js` - Feedback dialog; sends through `web3forms.js` (needs it loaded first)
+  - `web3forms.js` - Sends form submissions to the site inbox via Web3Forms; holds the access key (see OPERATIONS.md, "Forms and feedback")
+  - `siteForms.js` - Validation, sending state and messages for the Add Event page's forms
   - `cursorFx.js` / `cursorFx.css` - The visitor's choice of mouse effect (Kid Pix stamps, marker line, pixel squares or off) and cursor (normal, sticker arrow or blob dot), saved in localStorage; a small settings button on every page
   - `venuesRenderer.js` - Renders the venue directory (`<region>/venues.html`)
     from `dataManager.fetchVenues()`. Standalone - only loaded on that page,
@@ -120,6 +122,7 @@ The modules should be loaded in this order in your HTML:
 
 <!-- Other functionality -->
 <script src="notify.js"></script>
+<script src="web3forms.js"></script>
 <script src="feedback.js"></script>
 <script src="cursorFx.js"></script>
 ```

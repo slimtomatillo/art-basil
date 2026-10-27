@@ -324,6 +324,7 @@ body {
 .feedback-close:focus-visible,
 .notify-close:focus-visible,
 .feedback-form button:focus-visible,
+.site-form button:focus-visible,
 .feedback-success button:focus-visible,
 .notify-form button:focus-visible {
     outline: 3px solid #1c78c0;
@@ -389,11 +390,13 @@ body {
     color: #111;
 }
 
-.feedback-form .form-group {
+.feedback-form .form-group,
+.site-form .form-group {
     margin-bottom: 20px;
 }
 
-.feedback-form label {
+.feedback-form label,
+.site-form label {
     display: block;
     margin-bottom: 7px;
     font-size: 0.72rem;
@@ -405,7 +408,10 @@ body {
 
 .feedback-form input,
 .feedback-form textarea,
-.feedback-form select {
+.feedback-form select,
+.site-form input,
+.site-form textarea,
+.site-form select {
     width: 100%;
     padding: 10px 12px;
     background: #fff;
@@ -418,18 +424,23 @@ body {
 
 .feedback-form input:focus,
 .feedback-form textarea:focus,
-.feedback-form select:focus {
+.feedback-form select:focus,
+.site-form input:focus,
+.site-form textarea:focus,
+.site-form select:focus {
     outline: none;
     border-color: var(--region-c, #111);
     box-shadow: 3px 3px 0 color-mix(in srgb, var(--region-c, #111) 40%, transparent);
 }
 
-.feedback-form textarea {
+.feedback-form textarea,
+.site-form textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-.feedback-form button {
+.feedback-form button,
+.site-form button {
     background-color: var(--region-c, #111);
     color: #fff;
     border: 2.5px solid #111;
@@ -442,13 +453,15 @@ body {
     transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
-.feedback-form button:hover {
+.feedback-form button:hover,
+.site-form button:hover {
     background-color: var(--region-c, #111);
     transform: translate(3px, 3px);
     box-shadow: 1px 1px 0 #111;
 }
 
-.feedback-form button:disabled {
+.feedback-form button:disabled,
+.site-form button:disabled {
     background-color: #adb5bd;
     transform: none;
     box-shadow: 4px 4px 0 #111;
@@ -1172,4 +1185,68 @@ body {
     .region-page header .btn,
     .region-page .notify-button,
     .region-page .filter-dropdown-toggle { transition: none; }
+}
+
+/* ---- Page forms (Add Event, WEBSITE-70) and the feedback dialog's messages ----
+   Fields, labels and buttons share the dialog rules above (.site-form). */
+.region-page main .form-title {
+    margin: 0 0 14px;
+    font-family: 'Bagel Fat One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.site-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 16px;
+}
+
+@media (min-width: 576px) {
+    .site-form .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.site-form .req {
+    color: #c93631;
+}
+
+.site-form select {
+    background-color: #fff;
+}
+
+.form-hint {
+    margin: 6px 0 0;
+    font-size: 0.82rem;
+    color: #495057;
+}
+
+.form-status {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border: 2px solid #111;
+    border-radius: 12px;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.form-status.is-success {
+    background: #e7f5ec;
+}
+
+.form-status.is-error {
+    background: #fdecea;
+}
+
+.form-status a {
+    color: #111;
+    font-weight: 700;
+}
+
+.feedback-error {
+    margin: 0 0 16px;
 }

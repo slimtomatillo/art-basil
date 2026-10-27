@@ -291,9 +291,12 @@ example `--region-on`, the text colour on blobs and filled buttons, and
 `--region-c`, and set them to near-black for that region. Nothing uses them yet.
 
 ### 3d. `docs/add_event.html`
-In the "Region:" line, add a chip for the new city, in the region's colour (3c-2):
+Add the new city in three places: a chip in the "We cover" line, in the region's
+colour (3c-2), and an `<option>` in each of the two Region menus (the event form
+and the venue-suggestion form):
 ```html
 <span class="region-chip" style="--c: <hex>"><City></span>
+<option><City></option>
 ```
 
 ---

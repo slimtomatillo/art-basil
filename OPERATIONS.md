@@ -118,6 +118,30 @@ alternative is a paid ZenRows plan.
 
 To add a blocked site, see section 2f of [ADDING_A_REGION.md](ADDING_A_REGION.md).
 
+## Forms and feedback (Web3Forms)
+
+The Add Event page (an event form and a "suggest a venue" form) and the "?" feedback
+dialog send their messages to info.artbasil@gmail.com through
+[Web3Forms](https://web3forms.com), so the site stays static with no backend. The
+shared sender is `docs/web3forms.js`; `docs/siteForms.js` drives the Add Event forms
+and `docs/feedback.js` the dialog.
+
+- **The access key** is the `WEB3FORMS_ACCESS_KEY` constant at the top of
+  `docs/web3forms.js`. It is meant to be public (it can only send mail to the inbox
+  it was created for), so it is committed. While it is empty every form fails with
+  an honest "did not send, email us instead" message and a prefilled `mailto:` link;
+  nothing is ever reported as sent unless Web3Forms accepted it.
+- **Limits:** the free plan allows 250 submissions a month and has no domain
+  allowlist, so anyone who copies the key can send to the inbox until the cap. Spam
+  protection is a hidden checkbox (`botcheck`) plus rejecting a submit sooner than
+  2.5 seconds after the form appeared; both pretend to succeed and send nothing. If
+  junk gets through, add Web3Forms' hCaptcha (free) or move to a paid plan with
+  trusted domains. Check the cap and history in the Web3Forms dashboard.
+- **Emails** list every filled-in field under its label (Region, Event title, Venue,
+  ...); the submitter's address, if given, is the reply-to.
+- **Testing:** the forms' logic is covered by `node --test tests/` with a faked
+  network. To test for real, submit each form once and check the inbox.
+
 ## Subject tags
 
 Subject tags (medium and theme) are added automatically by the keyword rules in
