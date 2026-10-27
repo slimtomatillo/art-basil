@@ -1,7 +1,7 @@
 // Cursor & effects (WEBSITE-61): the visitor can pick a mouse effect (Kid Pix
 // stamps, marker line, pixel squares or none) and a cursor (normal, sticker
 // arrow or blob dot) from a small panel on every page. The choice is kept in
-// localStorage. Effects are drawn on one fixed canvas and only run while there is
+// localStorage. Effects are drawn on one fixed canvas (only present while an effect is on) and only run while there is
 // something to draw; they never run for touch input, and default to off for
 // visitors who prefer reduced motion. The pure parts (validating a saved choice,
 // building the cursor CSS) are testable in Node: `node --test tests/`.
@@ -82,14 +82,21 @@
         applyCursor();
 
         // ---- canvas effects
-        const canvas = document.createElement('canvas');
-        canvas.setAttribute('aria-hidden', 'true');
-        canvas.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:9999';
-        document.body.append(canvas);
-        const ctx = canvas.getContext('2d');
-        let W = 0, H = 0;
-        const resize = () => { const dpr = window.devicePixelRatio || 1; W = innerWidth; H = innerHeight; canvas.width = W * dpr; canvas.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
-        resize();
+        // The canvas only exists while an effect is on: a full-viewport layer over the
+        // page makes some browsers flash the cursor over clickable things, even when
+        // nothing is drawn on it.
+        let canvas = null, ctx = null, W = 0, H = 0;
+        const resize = () => { if (!canvas) return; const dpr = window.devicePixelRatio || 1; W = innerWidth; H = innerHeight; canvas.width = W * dpr; canvas.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
+        const syncCanvas = () => {
+            if (!FX[settings.effect]) { if (canvas) { canvas.remove(); canvas = ctx = null; } return; }
+            if (canvas) return;
+            canvas = document.createElement('canvas');
+            canvas.setAttribute('aria-hidden', 'true');
+            canvas.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:9999';
+            document.body.append(canvas);
+            ctx = canvas.getContext('2d');
+            resize();
+        };
         addEventListener('resize', resize);
 
         const rnd = (a, b) => a + Math.random() * (b - a);
@@ -128,14 +135,15 @@
 
         function loop(now) {
             const dt = Math.min(0.05, (now - t0) / 1000); t0 = now;
-            ctx.clearRect(0, 0, W, H);
             const fx = FX[settings.effect];
-            if (!fx) { running = false; return; }
+            if (!fx || !ctx) { running = false; return; }
+            ctx.clearRect(0, 0, W, H);
             fx.draw(dt);
             if (fx.busy()) requestAnimationFrame(loop); else running = false;   // stop when nothing is left to draw
         }
         function wake() { if (!running) { running = true; t0 = performance.now(); requestAnimationFrame(loop); } }
-        function reset() { items = []; pts = []; last = null; ctx.clearRect(0, 0, W, H); }
+        function reset() { items = []; pts = []; last = null; if (ctx) ctx.clearRect(0, 0, W, H); syncCanvas(); }
+        syncCanvas();
 
         addEventListener('pointermove', (e) => { if (e.pointerType === 'touch') return; const fx = FX[settings.effect]; if (fx) { fx.move(e.clientX, e.clientY); wake(); } });
         addEventListener('pointerdown', (e) => { if (e.pointerType === 'touch') return; const fx = FX[settings.effect]; if (fx && fx.click) { fx.click(e.clientX, e.clientY); wake(); } });
