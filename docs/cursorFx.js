@@ -43,19 +43,49 @@
     // Things that should show the "clickable" version of the cursor
     const CLICKABLE = 'a[href], button, label, select, summary, [role="button"], input[type="checkbox"], input[type="radio"], input[type="submit"], .tag-chip, .region-blob, .filter-dropdown-toggle, .notify-button, .filter-option';
 
-    function cursorCss(cursor, accent) {
-        if (cursor === 'sticker') {
-            const link = svgUri(arrowSvg(accent || YELLOW));
-            return `html{cursor:${svgUri(arrowSvg('#fff'))} 4 3,auto}` +
-                `:is(${CLICKABLE}):not(:disabled){cursor:${link} 4 3,pointer!important}` +
-                `input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),textarea{cursor:text!important}`;
-        }
-        if (cursor === 'dot') {
-            return `html{cursor:${svgUri(dotSvg(accent || YELLOW))} 16 16,auto}` +
-                `:is(${CLICKABLE}):not(:disabled){cursor:${svgUri(dotSvg('#fff'))} 16 16,pointer!important}` +
-                `input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),textarea{cursor:text!important}`;
-        }
-        return '';
+    // The two images (resting and over-a-link) and their hotspots for a cursor choice
+    function cursorShapes(cursor, accent) {
+        if (cursor === 'sticker') return { base: [arrowSvg('#fff'), 4, 3], link: [arrowSvg(accent || YELLOW), 4, 3] };
+        if (cursor === 'dot') return { base: [dotSvg(accent || YELLOW), 16, 16], link: [dotSvg('#fff'), 16, 16] };
+        return null;
+    }
+
+    // `images` (optional) maps an SVG string to a ready-made PNG image-set(); the SVG
+    // data URI stays as the fallback in the line before it.
+    function cursorCss(cursor, accent, images) {
+        const shapes = cursorShapes(cursor, accent);
+        if (!shapes) return '';
+        const rule = ([svg, x, y], fallback, important) => {
+            const flag = important ? '!important' : '';
+            const plain = `cursor:${svgUri(svg)} ${x} ${y},${fallback}${flag}`;
+            const set = images && images.get(svg);
+            return set ? `${plain};cursor:${set} ${x} ${y},${fallback}${flag}` : plain;
+        };
+        return `html{${rule(shapes.base, 'auto')}}` +
+            `:is(${CLICKABLE}):not(:disabled){${rule(shapes.link, 'pointer', true)}}` +
+            `input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),textarea{cursor:text!important}`;
+    }
+
+    // Draws an SVG cursor to PNG at 1x and 2x. Browsers decode a data-URI SVG every
+    // time the cursor is set, and on some of them that makes it flash as the pointer
+    // moves; a PNG is decoded once. Resolves to an image-set() value, or null.
+    function rasterize(svg) {
+        return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => {
+                try {
+                    const png = (scale) => {
+                        const c = document.createElement('canvas');
+                        c.width = c.height = 32 * scale;
+                        c.getContext('2d').drawImage(img, 0, 0, 32 * scale, 32 * scale);
+                        return c.toDataURL('image/png');
+                    };
+                    resolve(`image-set(url("${png(1)}") 1x, url("${png(2)}") 2x)`);
+                } catch (e) { resolve(null); }
+            };
+            img.onerror = () => resolve(null);
+            img.src = svgUri(svg).slice(5, -2);
+        });
     }
 
     // On a region page most of the colour is the region's accent, with some of the
@@ -78,7 +108,17 @@
 
         const style = document.createElement('style');
         document.head.append(style);
-        const applyCursor = () => { style.textContent = cursorCss(settings.cursor, accent); };
+        const pngs = new Map();   // SVG string -> image-set() value, filled in as they are drawn
+        const applyCursor = () => {
+            const choice = settings.cursor;
+            style.textContent = cursorCss(choice, accent, pngs);
+            const shapes = cursorShapes(choice, accent);
+            if (!shapes) return;
+            Promise.all([shapes.base[0], shapes.link[0]].filter((svg) => !pngs.has(svg)).map(async (svg) => {
+                const set = await rasterize(svg);
+                if (set) pngs.set(svg, set);
+            })).then(() => { if (settings.cursor === choice) style.textContent = cursorCss(choice, accent, pngs); });
+        };
         applyCursor();
 
         // ---- canvas effects
@@ -173,5 +213,5 @@
         });
     }
 
-    return { EFFECTS, CURSORS, DEFAULTS, STORAGE_KEY, POP, sanitize, cursorCss, pickColour, init };
+    return { EFFECTS, CURSORS, DEFAULTS, STORAGE_KEY, POP, sanitize, cursorShapes, cursorCss, pickColour, init };
 }));

@@ -45,6 +45,15 @@ test('the sticker and dot cursors are SVG data URIs with a hotspot, and keep the
     assert.match(fx.cursorCss('sticker', '#14806b'), /%2314806b/i, 'accent colours the link cursor');
 });
 
+test('once the PNG versions are ready they follow the SVG line, which stays as the fallback', () => {
+    const { base, link } = fx.cursorShapes('sticker', '#14806b');
+    const images = new Map([[base[0], 'image-set(url("b.png") 1x)'], [link[0], 'image-set(url("l.png") 1x)']]);
+    const css = fx.cursorCss('sticker', '#14806b', images);
+    assert.match(css, /html\{cursor:url\("data:image\/svg.*?,auto;cursor:image-set\(url\("b\.png"\) 1x\) 4 3,auto\}/);
+    assert.match(css, /cursor:image-set\(url\("l\.png"\) 1x\) 4 3,pointer!important/);
+    assert.strictEqual(fx.cursorShapes('normal', null), null);
+});
+
 test('colours: with an accent most picks are the accent; without one it is always the palette', () => {
     assert.strictEqual(fx.pickColour('#14806b', () => 0.1), '#14806b');
     assert.ok(fx.POP.includes(fx.pickColour('#14806b', () => 0.9)));
