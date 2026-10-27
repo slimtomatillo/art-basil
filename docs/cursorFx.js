@@ -42,6 +42,8 @@
 
     // Things that should show the "clickable" version of the cursor
     const CLICKABLE = 'a[href], button, label, select, summary, [role="button"], input[type="checkbox"], input[type="radio"], input[type="submit"], .tag-chip, .region-blob, .filter-dropdown-toggle, .notify-button, .filter-option';
+    // Fields where the real text cursor is kept
+    const TEXT_FIELDS = 'input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), textarea';
 
     // The two images (resting and over-a-link) and their hotspots for a cursor choice
     function cursorShapes(cursor, accent) {
@@ -50,42 +52,14 @@
         return null;
     }
 
-    // `images` (optional) maps an SVG string to a ready-made PNG image-set(); the SVG
-    // data URI stays as the fallback in the line before it.
-    function cursorCss(cursor, accent, images) {
-        const shapes = cursorShapes(cursor, accent);
-        if (!shapes) return '';
-        const rule = ([svg, x, y], fallback, important) => {
-            const flag = important ? '!important' : '';
-            const plain = `cursor:${svgUri(svg)} ${x} ${y},${fallback}${flag}`;
-            const set = images && images.get(svg);
-            return set ? `${plain};cursor:${set} ${x} ${y},${fallback}${flag}` : plain;
-        };
-        return `html{${rule(shapes.base, 'auto')}}` +
-            `:is(${CLICKABLE}):not(:disabled){${rule(shapes.link, 'pointer', true)}}` +
-            `input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),textarea{cursor:text!important}`;
-    }
-
-    // Draws an SVG cursor to PNG at 1x and 2x. Browsers decode a data-URI SVG every
-    // time the cursor is set, and on some of them that makes it flash as the pointer
-    // moves; a PNG is decoded once. Resolves to an image-set() value, or null.
-    function rasterize(svg) {
-        return new Promise((resolve) => {
-            const img = new Image();
-            img.onload = () => {
-                try {
-                    const png = (scale) => {
-                        const c = document.createElement('canvas');
-                        c.width = c.height = 32 * scale;
-                        c.getContext('2d').drawImage(img, 0, 0, 32 * scale, 32 * scale);
-                        return c.toDataURL('image/png');
-                    };
-                    resolve(`image-set(url("${png(1)}") 1x, url("${png(2)}") 2x)`);
-                } catch (e) { resolve(null); }
-            };
-            img.onerror = () => resolve(null);
-            img.src = svgUri(svg).slice(5, -2);
-        });
+    // The sticker and dot cursors are not browser cursors: browsers flash a custom
+    // cursor image as the pointer moves (it is re-set on every move), so the real
+    // cursor is hidden and a small element follows the pointer instead (see init).
+    // The text cursor is kept inside text fields.
+    function cursorCss(cursor) {
+        if (!cursorShapes(cursor)) return '';
+        return 'html.fx-own-cursor,html.fx-own-cursor *{cursor:none!important}' +
+            `html.fx-own-cursor :is(${TEXT_FIELDS}){cursor:text!important}`;
     }
 
     // On a region page most of the colour is the region's accent, with some of the
@@ -108,18 +82,34 @@
 
         const style = document.createElement('style');
         document.head.append(style);
-        const pngs = new Map();   // SVG string -> image-set() value, filled in as they are drawn
+        // ---- sticker / dot cursor: an element that follows the pointer
+        const root = document.documentElement;
+        const canOwnCursor = matchMedia('(hover: hover) and (pointer: fine)').matches;
+        const own = document.createElement('div');
+        own.className = 'fx-own-cursor-img';
+        own.setAttribute('aria-hidden', 'true');
+        own.hidden = true;
+        document.body.append(own);
+        let hotspot = null;
         const applyCursor = () => {
-            const choice = settings.cursor;
-            style.textContent = cursorCss(choice, accent, pngs);
-            const shapes = cursorShapes(choice, accent);
-            if (!shapes) return;
-            Promise.all([shapes.base[0], shapes.link[0]].filter((svg) => !pngs.has(svg)).map(async (svg) => {
-                const set = await rasterize(svg);
-                if (set) pngs.set(svg, set);
-            })).then(() => { if (settings.cursor === choice) style.textContent = cursorCss(choice, accent, pngs); });
+            const shapes = canOwnCursor ? cursorShapes(settings.cursor, accent) : null;
+            hotspot = shapes ? [shapes.base[1], shapes.base[2]] : null;
+            style.textContent = shapes ? cursorCss(settings.cursor) : '';
+            root.classList.toggle('fx-own-cursor', Boolean(shapes));
+            own.hidden = true;                                   // shown again on the next move
+            own.innerHTML = shapes ? `<span class="rest">${shapes.base[0]}</span><span class="link">${shapes.link[0]}</span>` : '';
         };
         applyCursor();
+        addEventListener('pointermove', (e) => {
+            if (!hotspot || e.pointerType === 'touch') return;
+            const target = e.target instanceof Element ? e.target : null;
+            if (target && target.closest(TEXT_FIELDS)) { own.hidden = true; return; }
+            const link = target && target.closest(CLICKABLE);
+            own.hidden = false;
+            own.classList.toggle('is-link', Boolean(link) && !link.matches(':disabled'));
+            own.style.transform = `translate3d(${e.clientX - hotspot[0]}px,${e.clientY - hotspot[1]}px,0)`;
+        }, { passive: true });
+        root.addEventListener('mouseleave', () => { own.hidden = true; });
 
         // ---- canvas effects
         // The canvas only exists while an effect is on: a full-viewport layer over the

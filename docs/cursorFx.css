@@ -130,3 +130,33 @@
 @media (prefers-reduced-motion: reduce) {
     .fx-toggle, .fx-pill span { transition: none; }
 }
+
+/* The sticker / blob dot cursor: a small element that follows the pointer while the
+   real cursor is hidden (see cursorFx.js). Above everything, never catches the pointer. */
+.fx-own-cursor-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2147483647;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    will-change: transform;
+}
+
+.fx-own-cursor-img[hidden] {
+    display: none;
+}
+
+.fx-own-cursor-img svg {
+    display: block;
+}
+
+.fx-own-cursor-img .link,
+.fx-own-cursor-img.is-link .rest {
+    display: none;
+}
+
+.fx-own-cursor-img.is-link .link {
+    display: block;
+}
