@@ -237,7 +237,6 @@ body {
 
 .tag-chip:hover {
     filter: brightness(0.9);
-    transform: translateY(-1px);
 }
 
 /* A selected chip is left at its normal appearance - the unselected chips
@@ -388,7 +387,6 @@ body {
 
 .feedback-close:hover {
     color: #111;
-    transform: translate(1px, 1px);
     box-shadow: 1px 1px 0 #111;
 }
 
@@ -597,7 +595,6 @@ body {
 
 .notify-close:hover {
     color: #111;
-    transform: translate(1px, 1px);
     box-shadow: 1px 1px 0 #111;
 }
 
@@ -1260,4 +1257,30 @@ body {
 
 .feedback-error {
     margin: 0 0 16px;
+}
+
+/* ---- Stable hover area for the sticker buttons (fixes a flickering cursor) -------
+   These buttons shift a few pixels on hover or focus ("press down"). Near an edge that
+   shift moves the button out from under the pointer, so hover switches off and on again
+   as the pointer jitters (a trackpad always does) and the cursor icon flashes between
+   arrow and link; a click can even miss, because the button moves between mouse-down
+   and mouse-up. Each one gets an invisible layer that shifts the opposite way, so the
+   area that was hoverable before the shift stays hoverable. */
+.region-page header .btn, .feedback-form button, .site-form button, .feedback-success button, .notify-form button, .region-page .filter-dropdown-toggle, .region-page .notify-button {
+    position: relative;   /* .feedback-button is already position: fixed */
+}
+
+:is(.region-page header .btn, .feedback-form button, .site-form button, .feedback-success button, .notify-form button, .region-page .filter-dropdown-toggle, .region-page .notify-button, .feedback-button)::before {
+    content: '';
+    position: absolute;
+    inset: -3px;   /* absolute children start inside the border, so reach out over it */
+    transition: transform 0.12s ease;
+}
+
+:is(.region-page header .btn, .feedback-form button, .site-form button, .feedback-success button, .notify-form button):is(:hover, :focus-visible)::before {
+    transform: translate(-3px, -3px);
+}
+
+:is(.region-page .filter-dropdown-toggle, .region-page .notify-button, .feedback-button):is(:hover, :focus-visible)::before {
+    transform: translate(-2px, -2px);
 }

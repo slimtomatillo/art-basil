@@ -35,6 +35,24 @@
     box-shadow: 1px 1px 0 #111;
 }
 
+/* An invisible layer that shifts the opposite way keeps the hoverable area put, so the
+   button does not flicker under a jittering pointer (same fix as in styles.css) */
+.fx-toggle {
+    position: relative;
+}
+
+.fx-toggle::before {
+    content: '';
+    position: absolute;
+    inset: -3px;   /* absolute children start inside the border, so reach out over it */
+    transition: transform 0.12s ease;
+}
+
+.fx-toggle:hover::before,
+.fx-toggle[aria-expanded="true"]::before {
+    transform: translate(-2px, -2px);
+}
+
 .fx-toggle:focus-visible,
 .fx-pill input:focus-visible + span {
     outline: 3px solid #1c78c0;
