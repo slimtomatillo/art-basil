@@ -968,7 +968,10 @@ body {
 
 .region-page .notify-button,
 .region-page .notify-button:disabled {
-    display: inline-flex;
+    /* A block-level flex box that is only as wide as its content, so it always
+       sits on its own line under the links, however wide the column is. */
+    display: flex;
+    width: fit-content;
     align-items: center;
     gap: 0.35rem;
     margin-top: 0.4rem;
