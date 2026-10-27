@@ -160,3 +160,13 @@
 .fx-own-cursor-img.is-link .link {
     display: block;
 }
+
+/* One piece of a trail effect (pixel square, stamp or marker segment): a small
+   element positioned and animated from cursorFx.js, never catching the pointer. */
+.fx-bit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+}
