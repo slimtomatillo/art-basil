@@ -4,7 +4,7 @@
 // each field is sent under a human-readable label.
 //
 // The access key below is not a secret: Web3Forms designs it to be public, and it
-// can only send mail to the inbox it was created for. Until it is filled in, every
+// can only send mail to the inbox it was created for. If it is ever empty, every
 // submission fails with the "email us instead" message, so nothing looks like it
 // worked when it did not.
 //
@@ -19,7 +19,7 @@
     }
 }(typeof self !== 'undefined' ? self : this, function () {
 
-    const WEB3FORMS_ACCESS_KEY = '';   // paste the key from web3forms.com here (see WEBSITE-70)
+    const WEB3FORMS_ACCESS_KEY = '99b3fc37-d53f-44b8-a3ef-04ab91c3ed21';   // public by design; created at web3forms.com for info.artbasil@gmail.com (WEBSITE-70)
     const ENDPOINT = 'https://api.web3forms.com/submit';
     const FALLBACK_EMAIL = 'info.artbasil@gmail.com';
     const MIN_FILL_MS = 2500;          // a person cannot read and fill a form faster than this
