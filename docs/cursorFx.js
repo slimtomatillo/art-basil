@@ -56,9 +56,13 @@
     // cursor image as the pointer moves (it is re-set on every move), so the real
     // cursor is hidden and a small element follows the pointer instead (see init).
     // The text cursor is kept inside text fields.
+    // `cursor: none` is not used: on macOS some browsers only hide the cursor until
+    // the next mouse move, so the arrow reappears for a moment on every move (a ghost
+    // flickering behind the drawn cursor). A 1x1 transparent image stays hidden.
+    const INVISIBLE = 'url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7") 0 0,none';
     function cursorCss(cursor) {
         if (!cursorShapes(cursor)) return '';
-        return 'html.fx-own-cursor,html.fx-own-cursor *{cursor:none!important}' +
+        return `html.fx-own-cursor,html.fx-own-cursor *{cursor:${INVISIBLE}!important}` +
             `html.fx-own-cursor :is(${TEXT_FIELDS}){cursor:text!important}`;
     }
 

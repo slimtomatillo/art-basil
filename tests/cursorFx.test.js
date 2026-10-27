@@ -37,7 +37,8 @@ test('the normal cursor adds no CSS', () => {
 test('the sticker and dot cursors hide the real cursor but keep the text cursor in fields', () => {
     for (const kind of ['sticker', 'dot']) {
         const css = fx.cursorCss(kind);
-        assert.match(css, /html\.fx-own-cursor,html\.fx-own-cursor \*\{cursor:none!important\}/);
+        assert.match(css, /html\.fx-own-cursor,html\.fx-own-cursor \*\{cursor:url\("data:image\/gif;base64,[^"]+"\) 0 0,none!important\}/);
+        assert.ok(!/cursor:none/.test(css), 'plain cursor:none flashes the arrow on macOS');
         assert.match(css, /textarea\)\{cursor:text!important\}/);
     }
 });
