@@ -61,12 +61,23 @@ body {
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* The venue count sits on a small dark pill: white text straight on a translucent
+   blob was 3.97:1 to 4.5:1 (below the 4.5:1 target) and gets worse where blobs
+   overlap. On the pill it is about 6.7:1 or better whatever is behind it. */
 .region-meta {
-    min-height: 1.1em;
-    margin-top: 0.3rem;
+    min-height: 1.5em;
+    margin-top: 0.4rem;
+    padding: 0.05rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.28);
     font-size: 0.8rem;
     font-weight: 600;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Empty until the count loads: keep the space, hide the pill */
+.region-meta:empty {
+    background: none;
+    padding: 0;
 }
 
 @keyframes blob-bob {
