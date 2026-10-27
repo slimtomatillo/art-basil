@@ -15,7 +15,8 @@ from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art, madrone_art_bar, walt_disney_family_museum, \
     moad, ica_san_jose, minnesota_street_project, berkeley_art_center, southern_exposure, svma, \
-    richmond_art_center, anderson_collection, wattis_institute, triton_museum, palo_alto_art_center
+    richmond_art_center, anderson_collection, wattis_institute, triton_museum, palo_alto_art_center, \
+    art_works_downtown
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago
@@ -80,6 +81,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Wattis Institute": wattis_institute.scrape_wattis_institute,
             "Triton Museum of Art": triton_museum.scrape_triton_museum,
             "Palo Alto Art Center": palo_alto_art_center.scrape_palo_alto_art_center,
+            "Art Works Downtown": art_works_downtown.scrape_art_works_downtown,
         },
         'la': {
             "LACMA": lacma.scrape_lacma_exhibitions,
