@@ -41781,5 +41781,107 @@
             "last_updated": "2026-10-29 17:22:53",
             "hash": "7117045d8780039c385654ca3ab19624"
         }
+    },
+    "Sanchez Art Center": {
+        "68th Annual Art Guild of Pacifica Members Show-Sanchez Art Center": {
+            "name": "68th Annual Art Guild of Pacifica Members Show",
+            "venue": "Sanchez Art Center",
+            "description": "67th Annual Awards Show Chris Darst, Jeff Dikio, Nancy Mona Russell, Darin Steinberg",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-23",
+                "end": "2026-11-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "http://sanchezartcenter.org/Calendar.htm",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-28 16:56:37",
+            "hash": "fc18fbfc7a328eaa99b9c3f2d6b5823b"
+        },
+        "Award Artists + Curator Eileen David, Adjunct Professor, Studio Arts, Skyline College Talk-Sanchez Art Center": {
+            "name": "Award Artists + Curator Eileen David, Adjunct Professor, Studio Arts, Skyline College Talk",
+            "venue": "Sanchez Art Center",
+            "description": null,
+            "tags": [
+                "event",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-01",
+                "end": "2026-11-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "http://sanchezartcenter.org/Calendar.htm",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-28 16:56:39",
+            "hash": "e285ed1f06d94695dfc9f8af9414429f"
+        },
+        "Arbor Day Tree Art Contest Award Winners Popup-Sanchez Art Center": {
+            "name": "Arbor Day Tree Art Contest Award Winners Popup",
+            "venue": "Sanchez Art Center",
+            "description": "( Tree City Pacifica and Pacifica School District) Special Note: Arbor Day Pacifica will be celebrated on Sat, Nov 7, beginning at 10am on the Pacifica Center for the Arts / Sanchez Fields Campus. If you or your family would like to volunteer to plant a tree, send an email to Tree City Pacifica. Only those who have registered will be able to plant a tree, but everyone is welcome to come to the cel",
+            "tags": [
+                "event",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-11-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "http://sanchezartcenter.org/Calendar.htm",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-28 16:56:39",
+            "hash": "1e7687b8a4e25b515784dc40f923bc4c"
+        },
+        "AGP Winter Art Faire-Sanchez Art Center": {
+            "name": "AGP Winter Art Faire",
+            "venue": "Sanchez Art Center",
+            "description": ", extended hours 11am \u2013 5 pm",
+            "tags": [
+                "event",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-12-12",
+                "end": "2026-12-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "http://sanchezartcenter.org/2026WinterArtFaire.html",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-28 16:56:39",
+            "hash": "fc8315a7cdc3973fd2afc18ad209fa51"
+        }
     }
 }
