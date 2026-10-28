@@ -130,3 +130,43 @@
 @media (prefers-reduced-motion: reduce) {
     .fx-toggle, .fx-pill span { transition: none; }
 }
+
+/* The sticker / blob dot cursor: a small element that follows the pointer while the
+   real cursor is hidden (see cursorFx.js). Above everything, never catches the pointer. */
+.fx-own-cursor-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2147483647;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    will-change: transform;
+}
+
+.fx-own-cursor-img[hidden] {
+    display: none;
+}
+
+.fx-own-cursor-img svg {
+    display: block;
+}
+
+.fx-own-cursor-img .link,
+.fx-own-cursor-img.is-link .rest {
+    display: none;
+}
+
+.fx-own-cursor-img.is-link .link {
+    display: block;
+}
+
+/* One piece of a trail effect (pixel square, stamp or marker segment): a small
+   element positioned and animated from cursorFx.js, never catching the pointer. */
+.fx-bit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+}

@@ -34,15 +34,24 @@ test('the normal cursor adds no CSS', () => {
     assert.strictEqual(fx.cursorCss('normal', '#14806b'), '');
 });
 
-test('the sticker and dot cursors are SVG data URIs with a hotspot, and keep the text cursor in inputs', () => {
+test('the sticker and dot cursors hide the real cursor but keep the text cursor in fields', () => {
     for (const kind of ['sticker', 'dot']) {
-        const css = fx.cursorCss(kind, '#14806b');
-        assert.match(css, /cursor:url\("data:image\/svg\+xml;utf8,/);
-        assert.match(css, /textarea\{cursor:text!important\}/);
-        assert.ok(!/<svg/.test(css), 'the SVG must be URL-encoded inside the CSS');
+        const css = fx.cursorCss(kind);
+        assert.match(css, /html\.fx-own-cursor,html\.fx-own-cursor \*\{cursor:url\("data:image\/gif;base64,[^"]+"\) 0 0,none!important\}/);
+        assert.ok(!/cursor:none/.test(css), 'plain cursor:none flashes the arrow on macOS');
+        assert.match(css, /textarea\)\{cursor:text!important\}/);
     }
-    assert.match(fx.cursorCss('sticker', null), /%23ffd23f/i, 'no accent: links use the yellow');
-    assert.match(fx.cursorCss('sticker', '#14806b'), /%2314806b/i, 'accent colours the link cursor');
+});
+
+test('each cursor has a resting and a link image with a hotspot; the link image takes the accent', () => {
+    const sticker = fx.cursorShapes('sticker', '#14806b');
+    assert.ok(sticker.base[0].includes('#fff') && sticker.link[0].includes('#14806b'));
+    assert.deepStrictEqual([sticker.base[1], sticker.base[2]], [4, 3]);
+    assert.ok(fx.cursorShapes('sticker', null).link[0].toLowerCase().includes('#ffd23f'), 'no accent: links use the yellow');
+    const dot = fx.cursorShapes('dot', '#14806b');
+    assert.ok(dot.base[0].includes('#14806b') && dot.link[0].includes('#fff'));
+    assert.deepStrictEqual([dot.base[1], dot.base[2]], [16, 16]);
+    assert.strictEqual(fx.cursorShapes('normal', null), null);
 });
 
 test('colours: with an accent most picks are the accent; without one it is always the palette', () => {

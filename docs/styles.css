@@ -14,20 +14,32 @@ body {
     padding: 0.5rem 0;
 }
 
+/* The link itself never moves or changes shape: it is a fixed ellipse that catches
+   the pointer. The coloured blob (.blob-body) bobs and morphs inside it and ignores
+   the pointer. When the blob moved itself, the thing under the pointer changed every
+   frame and the cursor flickered as the pointer moved over it. */
 .region-blob {
     --r1: 62% 38% 54% 46% / 55% 44% 56% 45%;
     --r2: 41% 59% 38% 62% / 60% 40% 60% 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: block;
     width: var(--w);
     max-width: 92vw;
     height: calc(var(--w) * 0.68);
     margin: -6px -8px;
     color: #fff;
     text-decoration: none;
+    border-radius: 50%;
+}
+
+.blob-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    pointer-events: none;
     background: color-mix(in srgb, var(--c) 90%, transparent);
     border-radius: var(--r1);
     transform: rotate(var(--t));
@@ -42,9 +54,13 @@ body {
 .region-blob:focus-visible {
     color: #fff;
     text-decoration: none;
+    z-index: 2;
+}
+
+.region-blob:hover .blob-body,
+.region-blob:focus-visible .blob-body {
     animation-play-state: paused;
     background: var(--c);
-    z-index: 2;
     transform: scale(1.1);
 }
 
@@ -91,7 +107,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .region-blob { animation: none; transition: none; }
+    .blob-body { animation: none; transition: none; }
 }
 
 /* Page header layout. Desktop keeps the original two-column look (logo
