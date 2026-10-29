@@ -16,7 +16,9 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     kala, cantor, museum_of_craft_and_design, sj_museum_of_art, madrone_art_bar, walt_disney_family_museum, \
     moad, ica_san_jose, minnesota_street_project, berkeley_art_center, southern_exposure, svma, \
     richmond_art_center, anderson_collection, wattis_institute, triton_museum, palo_alto_art_center, \
-    art_works_downtown, sanchez_art_center, marinmoca, marin_society_of_artists
+    art_works_downtown, sanchez_art_center, marinmoca, marin_society_of_artists, \
+    mercury_20_gallery, creative_growth, transmission_gallery, the_grand_gallery_oakland, slate_contemporary, \
+    manna_gallery, helvella_art, thelma_harris_art_gallery
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago
@@ -85,6 +87,14 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Sanchez Art Center": sanchez_art_center.scrape_sanchez_art_center,
             "Marin Museum of Contemporary Art": marinmoca.scrape_marinmoca,
             "Marin Society of Artists": marin_society_of_artists.scrape_marin_society_of_artists,
+            "Mercury 20 Gallery": mercury_20_gallery.scrape_mercury_20_gallery,
+            "Creative Growth Art Center": creative_growth.scrape_creative_growth,
+            "Transmission Gallery": transmission_gallery.scrape_transmission_gallery,
+            "The Grand Gallery Oakland": the_grand_gallery_oakland.scrape_the_grand_gallery_oakland,
+            "SLATE Contemporary": slate_contemporary.scrape_slate_contemporary,
+            "Manna Gallery": manna_gallery.scrape_manna_gallery,
+            "Helvella Art": helvella_art.scrape_helvella_art,
+            "Thelma Harris Art Gallery": thelma_harris_art_gallery.scrape_thelma_harris_art_gallery,
         },
         'la': {
             "LACMA": lacma.scrape_lacma_exhibitions,

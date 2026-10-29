@@ -42050,5 +42050,571 @@
             "last_updated": "2026-10-29 17:15:08",
             "hash": "b249ae363165ca998fc0c645ad70cd0e"
         }
+    },
+    "Mercury 20 Gallery": {
+        "Andrea Brewster \u2013 Draft-Mercury 20 Gallery": {
+            "name": "Andrea Brewster \u2013 Draft",
+            "venue": "Mercury 20 Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-23",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://mercurytwenty.com/exhibition/andrea-brewster-draft/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:02",
+            "hash": "90aebe071e4a8b78d8566eccb108cc18"
+        },
+        "Leah Korican \u2013 DOILoveYou-Mercury 20 Gallery": {
+            "name": "Leah Korican \u2013 DOILoveYou",
+            "venue": "Mercury 20 Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-23",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://mercurytwenty.com/exhibition/leah-korican-doiloveyou/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:02",
+            "hash": "9680933709b2170d40616c3d7f5b24dd"
+        },
+        "Jill McLennan \u2013 harm_less-Mercury 20 Gallery": {
+            "name": "Jill McLennan \u2013 harm_less",
+            "venue": "Mercury 20 Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-23",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://mercurytwenty.com/exhibition/jill-mclennan-harm_less/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:02",
+            "hash": "2e2590a73c4ba9e1b5d90cf5859da150"
+        },
+        "Pat O\u2019Connor, K.C. Rosenberg, Emily Shepard \u2013 Material Messages-Mercury 20 Gallery": {
+            "name": "Pat O\u2019Connor, K.C. Rosenberg, Emily Shepard \u2013 Material Messages",
+            "venue": "Mercury 20 Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-23",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://mercurytwenty.com/exhibition/pat-oconnor-k-c-rosenberg-emily-shepard-material-messages/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:02",
+            "hash": "803f2128c47fda6fc1d8c7298b12a281"
+        }
+    },
+    "Creative Growth Art Center": {
+        "Stereo Dynamic-Creative Growth Art Center": {
+            "name": "Stereo Dynamic",
+            "venue": "Creative Growth Art Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://creativegrowth.org/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:03",
+            "hash": "19e8e3c5ee5ceddea22a34fb241dbe27"
+        }
+    },
+    "Transmission Gallery": {
+        "Ellen Bepp: The Ghosts We Carry-Transmission Gallery": {
+            "name": "Ellen Bepp: The Ghosts We Carry",
+            "venue": "Transmission Gallery",
+            "description": "Transmission Gallery is pleased to present The Ghosts We Carry, a solo exhibition of work by Ellen Bepp.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-24",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thetransmissiongallery.com/ellen-bepp-the-ghosts-we-carry.html",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:03",
+            "hash": "11b60bfd2f7a6e518ef56ac0c8fbb111"
+        },
+        "William Rhodes: Fear Not-Transmission Gallery": {
+            "name": "William Rhodes: Fear Not",
+            "venue": "Transmission Gallery",
+            "description": "Transmission Gallery is pleased to present Fear Not, a solo exhibtion of recent work by William Rhodes",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-17",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thetransmissiongallery.com/william-rhodes-fear-not.html",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:04",
+            "hash": "5cec30ddc7becef8e7c5b6cc62cbabbe"
+        },
+        "Tiffany Schmierer: Aggregate Vision-Transmission Gallery": {
+            "name": "Tiffany Schmierer: Aggregate Vision",
+            "venue": "Transmission Gallery",
+            "description": "Transmission Gallery is pleased to present Aggregate Vision, a solo exhibition of recent work by Tiffany Schmierer,",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thetransmissiongallery.com/tiffany-schmierer-aggregate-vision.html",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:04",
+            "hash": "0fd33bd202774eebf1ac325d25345b89"
+        },
+        "Dana DeKalb: No Lifeguard on Duty-Transmission Gallery": {
+            "name": "Dana DeKalb: No Lifeguard on Duty",
+            "venue": "Transmission Gallery",
+            "description": "Transmission Gallery is pleased to present Dana DeKalb's recent work in solo exhibition, No Life Guard on Duty, Nov 12, 2026 - Jan 16, 2027",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thetransmissiongallery.com/dana-dekalb-no-lifeguard-on-duty.html",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:04",
+            "hash": "bfc866bf277dd9863af7d1545c5709d9"
+        }
+    },
+    "The Grand Gallery Oakland": {
+        "Tiny Monster Show-The Grand Gallery Oakland": {
+            "name": "Tiny Monster Show",
+            "venue": "The Grand Gallery Oakland",
+            "description": "Reception October 3rd,\u00a0Noon - 3pm Artist Talk October 10th,\u00a0Noon - 2pm The month of October brings with it an air\u00a0of mischeveousness.\u00a0Witches, ghosts and",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-02",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thegrandgalleryoakland.com/tiny-monster-show/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:21:05",
+            "hash": "3bcfb0bd730d5b82b65f978171ca9fda"
+        }
+    },
+    "SLATE Contemporary": {
+        "Angela Johal: Intersecting Colour-SLATE Contemporary": {
+            "name": "Angela Johal: Intersecting Colour",
+            "venue": "SLATE Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-09",
+                "end": "2026-11-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://slatecontemporary.com/show/slate-contemporary-gallery-angela-johal-intersecting-colour-inventory",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:56",
+            "hash": "c3d6bcdc044efb8f910e35261b2d537e"
+        },
+        "Allison Allessio: New Works-SLATE Contemporary": {
+            "name": "Allison Allessio: New Works",
+            "venue": "SLATE Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-20",
+                "end": "2026-11-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://slatecontemporary.com/show/slate-contemporary-gallery-allison-allessio-new-works",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:56",
+            "hash": "60bba56f00fb881ae186e8c94e8876d5"
+        }
+    },
+    "Manna Gallery": {
+        "Big, Small, and Everything In Between-Manna Gallery": {
+            "name": "Big, Small, and Everything In Between",
+            "venue": "Manna Gallery",
+            "description": "A Group Show of Bay Area Muralists Big Small and Everything In Between , a group exhibition featuring Bay Area artists known for their work in public spaces. Drawing on the region\u2019s rich tradition of mural making, the exhibition brings the work of Julie Engelmann, Amos Goldbaum, Liv Losee-Unger, Fernanda Mart\u00ednez, and Deirdre Weinberg into the gallery for a more intimate encounter. Working across ",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-26",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://mannagallery.com/current-1",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:56",
+            "hash": "8e73e1f778c6e753c8356385833b68a5"
+        },
+        "Hindsight is 20/20-Manna Gallery": {
+            "name": "Hindsight is 20/20",
+            "venue": "Manna Gallery",
+            "description": "Wayne Armstrong \u00b7 Patrick Crotty \u00b7 Gina Gaiser Pam Ju \u00b7 Sandra Wong Orloff \u00b7 Alexander Yoshikawa Artists Reception: Saturday November 14th 2-4pm 25th St Holiday Party: Saturday December 12th 3-5pm 473 25th St Oakland Ca 94612 | info@mannagallery.com | 510 905 6330 Saturday 12 - 5 pm \u00b7 First Fridays 5 - 8 pm",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://mannagallery.com/upcoming",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:57",
+            "hash": "0d3a15f872a838033132295ac10641dd"
+        }
+    },
+    "Helvella Art": {
+        "Mushi Mushi IV-Helvella Art": {
+            "name": "Mushi Mushi IV",
+            "venue": "Helvella Art",
+            "description": "Join us for the 4th annual Mushi Mushi art show celebrating mushrooms through art and science!",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-09-20",
+                "end": "2025-09-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.helvella.art/event-details/mushi-mushi-iv",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:57",
+            "hash": "13bd84e125e124ae8450028c2f95fb68"
+        },
+        "3 of Hearts -- a triptych art show!-Helvella Art": {
+            "name": "3 of Hearts -- a triptych art show!",
+            "venue": "Helvella Art",
+            "description": "Join us for a show celebrating the magic number 3 -- a gallery full of triptychs, and it's our 3rd birthday!",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-07-05",
+                "end": "2025-07-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.helvella.art/event-details/3-of-hearts-a-triptych-art-show",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:57",
+            "hash": "152688f16a3cdb50124d00264fd91fb1"
+        },
+        "Open Studio-Helvella Art": {
+            "name": "Open Studio",
+            "venue": "Helvella Art",
+            "description": "Come check out our Open Studios and enjoy great deals on original art!",
+            "tags": [
+                "event",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-04-19",
+                "end": "2025-04-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.helvella.art/event-details/open-studio",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:57",
+            "hash": "d4267ad5169b00bcac08ee3c861ecc44"
+        },
+        "Big Cat Smol Cat-Helvella Art": {
+            "name": "Big Cat Smol Cat",
+            "venue": "Helvella Art",
+            "description": "Cats, Art, Cats as Art -- $300 and under for the holidays!",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-12-06",
+                "end": "2024-12-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.helvella.art/event-details/big-cat-smol-cat",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:57",
+            "hash": "11d7ae191a928eb1b1f0a179ec7d31a1"
+        },
+        "No Squares!-Helvella Art": {
+            "name": "No Squares!",
+            "venue": "Helvella Art",
+            "description": "Featuring unique, out-of-the-box artworks on any shape except squares and rectangles!",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-10-12",
+                "end": "2024-10-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.helvella.art/event-details/no-squares",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:57",
+            "hash": "5440c7e36d3ce5ef8124671a287f44c3"
+        },
+        "Lucky Dragon-Helvella Art": {
+            "name": "Lucky Dragon",
+            "venue": "Helvella Art",
+            "description": "Join us for a vibrant Lunar New Year celebration full of Art, Food, and Community!",
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2024-02-24",
+                "end": "2024-02-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.helvella.art/event-details/lucky-dragon-1",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:57",
+            "hash": "46b98c44c85b7851effb4c1ca2fa84dd"
+        }
+    },
+    "Thelma Harris Art Gallery": {
+        "Improvisations in Color: Wosene Worke Kosrof Celebrates Coltrane at 100-Thelma Harris Art Gallery": {
+            "name": "Improvisations in Color: Wosene Worke Kosrof Celebrates Coltrane at 100",
+            "venue": "Thelma Harris Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2026-08-22",
+                "end": "2026-10-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.thelmaharrisartgallery.com/improvisations-in-color-wosene-worke-kosrof",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:58",
+            "hash": "0f21f8c538cf81e5d119a4b29e253746"
+        },
+        "Family Ties: Art, Memory, & Migration-Thelma Harris Art Gallery": {
+            "name": "Family Ties: Art, Memory, & Migration",
+            "venue": "Thelma Harris Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "past",
+                "gallery",
+                "free"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-10-18",
+                "end": "2026-01-24"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.thelmaharrisartgallery.com/familyties-art-memory-and-migration",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:31:58",
+            "hash": "dadc17c66ac44973e3f3692a6a217353"
+        }
     }
 }
