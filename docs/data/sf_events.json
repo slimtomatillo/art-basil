@@ -42616,5 +42616,374 @@
             "last_updated": "2026-10-29 18:34:47",
             "hash": "2484868b7b96c933fba377605e2e58bf"
         }
+    },
+    "Hashimoto Contemporary": {
+        "James Eddy - \"Figments of the Imagination\"-Hashimoto Contemporary": {
+            "name": "James Eddy - \"Figments of the Imagination\"",
+            "venue": "Hashimoto Contemporary",
+            "description": "Hashimoto Contemporary is pleased to present Figments of the Imagination, a solo exhibition by Bay Area-based artist James Eddy. The exhibition marks Eddy's debut solo exhibition at Hashimoto Contemporary. Opening Night Reception: Saturday, December 5th 5pm - 7pm The artist will be in attendance Gallery Hours: Tuesday - Saturday /...",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-12-05",
+                "end": "2027-01-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hashimotocontemporary.com/exhibitions/324-james-eddy-figments-of-the-imagination/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:13",
+            "hash": "48dc7b74abcf9a0398fe37a4c42a77ac"
+        }
+    },
+    "Jenkins Johnson Gallery": {
+        "David Driskell: Wake Up Everybody-Jenkins Johnson Gallery": {
+            "name": "David Driskell: Wake Up Everybody",
+            "venue": "Jenkins Johnson Gallery",
+            "description": "Jenkins Johnson Gallery is pleased to present David C. Driskell: Wake Up Everybody , a new exhibition celebrating the creative legacy of the legendary artist, curator, art historian, and educator David C. Driskell. Featuring works created between 1960 and the early 2000s, the exhibition brings together paintings, works on paper,...",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "painting",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-02",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.jenkinsjohnsongallery.com/exhibitions/100-david-driskell-wake-up-everybody/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:14",
+            "hash": "85b55f117ba6a96f2e87a6b9a2a3a4cc"
+        }
+    },
+    "Jessica Silverman Gallery": {
+        "GaHee Park: Soft Shell-Jessica Silverman Gallery": {
+            "name": "GaHee Park: Soft Shell",
+            "venue": "Jessica Silverman Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-28",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://jessicasilvermangallery.com/online-shows/gahee-park-soft-shell-ovr/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:15",
+            "hash": "982a7756e2c8f22c30df4f42ef36edcb"
+        },
+        "Chelsea Ryoko Wong: Swimming in the Pool of Memory-Jessica Silverman Gallery": {
+            "name": "Chelsea Ryoko Wong: Swimming in the Pool of Memory",
+            "venue": "Jessica Silverman Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-28",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://jessicasilvermangallery.com/online-shows/chelsea-ryoko-pool-of-memory-ovr/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:15",
+            "hash": "98451e3d23204f3449d1823df723715c"
+        },
+        "Clare Rojas-Jessica Silverman Gallery": {
+            "name": "Clare Rojas",
+            "venue": "Jessica Silverman Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-07",
+                "end": "2027-02-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://jessicasilvermangallery.com/online-shows/clare-rojas/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:15",
+            "hash": "01790f98c3f12ab3a52b9f0d3bb6a336"
+        },
+        "Tia Keobounpheng-Jessica Silverman Gallery": {
+            "name": "Tia Keobounpheng",
+            "venue": "Jessica Silverman Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-07",
+                "end": "2027-02-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://jessicasilvermangallery.com/online-shows/tia-keobounpheng/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:15",
+            "hash": "596cfb77348b4cdc8a1dc2cbc6bd4cf8"
+        }
+    },
+    "Fraenkel Gallery": {
+        "Robert Adams: Contact-Fraenkel Gallery": {
+            "name": "Robert Adams: Contact",
+            "venue": "Fraenkel Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-29",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fraenkelgallery.com/exhibitions/robert-adams-contact",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:15",
+            "hash": "172832bd7917a2e74921675a9fd37ea8"
+        }
+    },
+    "Traywick Contemporary": {
+        "Amy Kaufman: Recent Work-Traywick Contemporary": {
+            "name": "Amy Kaufman: Recent Work",
+            "venue": "Traywick Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-26",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.traywick.com/exhibition/amy-kaufman-recent-work-2026",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:16",
+            "hash": "adfcee4f7e0fa2b1d1b5cc7421c56659"
+        }
+    },
+    "ACCI Gallery": {
+        "Masquerade: Art to Wear-ACCI Gallery": {
+            "name": "Masquerade: Art to Wear",
+            "venue": "ACCI Gallery",
+            "description": "\u200b Opening Reception: Saturday, October 3, 4-6pm. Guests are encouraged to dress artfully! Mask Making Workshop with Curator Mirto Golino: Saturday, October 10, 2-4pm. Demo Days : Masquerade...",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-03",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.accigallery.com/masquerade.html",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:17",
+            "hash": "db1cf647b2f4113a6e4340d5b3cf9b20"
+        }
+    },
+    "Headlands Center for the Arts": {
+        "Project Space: Aleksandra Walaszek & Sam Stevens-Headlands Center for the Arts": {
+            "name": "Project Space: Aleksandra Walaszek & Sam Stevens",
+            "venue": "Headlands Center for the Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-14",
+                "end": "2026-11-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.headlands.org/event/project-space-aleksandra-walaszek-sam-stevens/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:17",
+            "hash": "0a04bc6fdc2005ebb63e1435d5f98dbf"
+        },
+        "Project Space: Scott Snibbe-Headlands Center for the Arts": {
+            "name": "Project Space: Scott Snibbe",
+            "venue": "Headlands Center for the Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-20",
+                "end": "2026-11-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.headlands.org/event/project-space-scott-snibbe/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:42:17",
+            "hash": "eefe7a76f7bad1cce820fc45b60199bb"
+        }
+    },
+    "Shooting Gallery": {
+        "Wet Geometry - Adam Lister-Shooting Gallery": {
+            "name": "Wet Geometry - Adam Lister",
+            "venue": "Shooting Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-11",
+                "end": "2026-11-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://shootinggallerysf.com/events/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:49:04",
+            "hash": "4c390faa5be732504ea3aa8c9cc3345b"
+        },
+        "As Above, So Below - APEX-Shooting Gallery": {
+            "name": "As Above, So Below - APEX",
+            "venue": "Shooting Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-08",
+                "end": "2026-12-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://shootinggallerysf.com/events/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:49:04",
+            "hash": "bfc1f1f9611de881b5558e9c6433333d"
+        }
+    },
+    "El Cerrito City Hall Gallery": {
+        "Revived, by Susan Kuchinskas, El Cerrito Creative ReUse (ECCRU) Artist in Residence-El Cerrito City Hall Gallery": {
+            "name": "Revived, by Susan Kuchinskas, El Cerrito Creative ReUse (ECCRU) Artist in Residence",
+            "venue": "El Cerrito City Hall Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2026-12-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.elcerrito.gov/95/City-Hall-Gallery-Space",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 18:49:05",
+            "hash": "f96b180660a9a4853be464482c387dec"
+        }
     }
 }

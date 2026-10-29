@@ -18,7 +18,9 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     richmond_art_center, anderson_collection, wattis_institute, triton_museum, palo_alto_art_center, \
     art_works_downtown, sanchez_art_center, marinmoca, marin_society_of_artists, \
     mercury_20_gallery, creative_growth, transmission_gallery, the_grand_gallery_oakland, slate_contemporary, \
-    manna_gallery, helvella_art, thelma_harris_art_gallery
+    manna_gallery, helvella_art, thelma_harris_art_gallery, hashimoto_contemporary, jenkins_johnson_gallery, \
+    jessica_silverman_gallery, fraenkel_gallery, traywick_contemporary, acci_gallery, abrams_claghorn_gallery, \
+    headlands_center_for_the_arts, shooting_gallery, el_cerrito_city_hall_gallery
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago
@@ -95,6 +97,16 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Manna Gallery": manna_gallery.scrape_manna_gallery,
             "Helvella Art": helvella_art.scrape_helvella_art,
             "Thelma Harris Art Gallery": thelma_harris_art_gallery.scrape_thelma_harris_art_gallery,
+            "Hashimoto Contemporary": hashimoto_contemporary.scrape_hashimoto_contemporary,
+            "Jenkins Johnson Gallery": jenkins_johnson_gallery.scrape_jenkins_johnson_gallery,
+            "Jessica Silverman Gallery": jessica_silverman_gallery.scrape_jessica_silverman_gallery,
+            "Fraenkel Gallery": fraenkel_gallery.scrape_fraenkel_gallery,
+            "Traywick Contemporary": traywick_contemporary.scrape_traywick_contemporary,
+            "ACCI Gallery": acci_gallery.scrape_acci_gallery,
+            "Abrams Claghorn Gallery": abrams_claghorn_gallery.scrape_abrams_claghorn_gallery,
+            "Headlands Center for the Arts": headlands_center_for_the_arts.scrape_headlands_center_for_the_arts,
+            "Shooting Gallery": shooting_gallery.scrape_shooting_gallery,
+            "El Cerrito City Hall Gallery": el_cerrito_city_hall_gallery.scrape_el_cerrito_city_hall_gallery,
         },
         'la': {
             "LACMA": lacma.scrape_lacma_exhibitions,
