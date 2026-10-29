@@ -41883,5 +41883,172 @@
             "last_updated": "2026-10-28 16:56:39",
             "hash": "fc8315a7cdc3973fd2afc18ad209fa51"
         }
+    },
+    "Marin Museum of Contemporary Art": {
+        "In Other Words-Marin Museum of Contemporary Art": {
+            "name": "In Other Words",
+            "venue": "Marin Museum of Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-26",
+                "end": "2026-12-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.marinmoca.org/see-and-experience",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "http://static1.squarespace.com/static/67904a92ced4630d3c7759e5/t/69f11188ab123426df2b0f84/1777406344928/Screenshot+2026-02-26+at+12.28.29%E2%80%AFPM+%281%29.png?format=1500w",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-29 17:15:06",
+            "hash": "c984c45b69ace7a813e3f4e6f1278f63"
+        },
+        "Gather, Press, Release: A Score for New Bay Relations-Marin Museum of Contemporary Art": {
+            "name": "Gather, Press, Release: A Score for New Bay Relations",
+            "venue": "Marin Museum of Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-16",
+                "end": "2027-04-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.marinmoca.org/exhibitions/gather-press-release-1",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/67904a92ced4630d3c7759e5/1790881083733-82MJ49EVC9X3TU1CKVFU/1X9A5963+%282%29.JPG",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-29 17:15:08",
+            "hash": "bb0cc6482634867fa18a727a2c164a72"
+        },
+        "Tiffany Bozic: The Fragile Key-Marin Museum of Contemporary Art": {
+            "name": "Tiffany Bozic: The Fragile Key",
+            "venue": "Marin Museum of Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-20",
+                "end": "2027-05-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.marinmoca.org/exhibitions/the-fragile-key",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/67904a92ced4630d3c7759e5/1792523134261-NU1NK6FCLAQ09S12KVHE/TiffanyBozic_CabinetOfCuriosities_2025+%281%29.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-29 17:15:08",
+            "hash": "4a4aca48e382678b25c67b00985fc3e4"
+        },
+        "Ashwini Bhat: Trail Notes-Marin Museum of Contemporary Art": {
+            "name": "Ashwini Bhat: Trail Notes",
+            "venue": "Marin Museum of Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-05-15",
+                "end": "2027-08-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.marinmoca.org/exhibitions/ashwini-bhat-trail-notes",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/67904a92ced4630d3c7759e5/1792523671098-2IUTMHVQ5TSDW189M3DW/Self+Portrait%2C+Wildfire_Ashwini+Bhat+%283%29.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-10-29 17:15:08",
+            "hash": "5969e3de44e075883c6dbf036664efb1"
+        }
+    },
+    "Marin Society of Artists": {
+        "MSA 99th Annual-Marin Society of Artists": {
+            "name": "MSA 99th Annual",
+            "venue": "Marin Society of Artists",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-30",
+                "end": "2026-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.marinsocietyofartists.org/99th-annual",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:15:08",
+            "hash": "9bd0a7986de2137bcd01b3cb2d12d4d3"
+        },
+        "MSA All About Women 2026-Marin Society of Artists": {
+            "name": "MSA All About Women 2026",
+            "venue": "Marin Society of Artists",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "online",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-29",
+                "end": "2026-11-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.marinsocietyofartists.org/all-about-women-2026",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-10-29 17:15:08",
+            "hash": "b249ae363165ca998fc0c645ad70cd0e"
+        }
     }
 }
