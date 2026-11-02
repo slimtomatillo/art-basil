@@ -45,7 +45,7 @@ It's a joke told with affection, not an attack, and we are not affiliated with A
 - **Colour:** one accent colour per region, applied the same way everywhere. The palette and rules for adding new regions are in [ADDING_A_REGION.md](ADDING_A_REGION.md). Black is the accent on pages that don't belong to a region.
 - **Type:** Bagel Fat One for titles and region names, Inter for everything else.
 - **Motion and effects:** fun, optional, and respectful. Visitors choose their own cursor and trail effect, and everything calms down for `prefers-reduced-motion`.
-- **Logo and favicon:** not decided yet. They should feel hand-made and a little irreverent, read clearly at 16 pixels, and hint at basil and art without copying Art Basel's wordmark.
+- **Logo and favicon:** the wordmark is "art basil" in lowercase, in Gluten Bold (an open-licence font under the SIL Open Font License, so commercial use is fine), drawn as outlines. A hand-painted basil leaf with one pair of veins replaces the dot of the i. The tab icon is the leaf on its own (on a white tile for the iPhone home-screen icon). Files live in `docs/images/` (`logo.svg`, `logo.png`, `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`). Keep the leaf's tilt and the space around the logo as they are, and don't recolour the letters. It's friendly and a bit irreverent, reads at 16 pixels, and doesn't copy Art Basel's wordmark.
 
 ## What we're not
 
