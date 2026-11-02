@@ -32,21 +32,21 @@
     </script>
 
     <div class="container py-4">
-        <header class="mb-4">
+        <header class="mb-3">
             <div class="header-grid">
                 <!-- Logo -->
                 <div class="header-logo">
-                    <h1 class="h3 mb-3">
+                    <h1 class="h3 mb-3 mb-md-0">
                         <a href="../index.html" style="text-decoration: none; color: inherit;">
-                            <img src="../images/logo.svg" alt="Art Basil" style="height: 44px; margin-bottom: 8px; vertical-align: middle;">
+                            <img src="../images/logo.svg" alt="Art Basil" style="height: 44px; vertical-align: middle;">
                         </a>
                     </h1>
                 </div>
 
                 <!-- City name and action buttons -->
                 <div class="header-region text-md-end">
-                    <h1 class="display-5 mb-3 text-md-end region-title">San Francisco Bay Area</h1>
-                    <p class="lead mb-3 text-md-end">Current and upcoming art exhibitions</p>
+                    <h1 class="display-5 mb-3 mb-md-3 text-md-end region-title">San Francisco Bay Area</h1>
+                    <p class="lead mb-3 mb-md-0 text-md-end">Current and upcoming art exhibitions <span aria-hidden="true">&middot;</span> <a href="venues.html">List of venues</a></p>
 
                     <div class="d-flex gap-2 justify-content-md-end">
                         <a href="../add_event.html" class="btn btn-primary">Add an event</a>
@@ -57,8 +57,6 @@
                             <button type="submit" class="btn btn-outline-primary">Support Us</button>
                         </form>
                     </div>
-
-                    <p class="mt-3 mb-0 text-md-end"><a href="venues.html">List of venues</a></p>
                 </div>
 
                 <!-- Search and Filter Section -->
@@ -69,11 +67,13 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Filter buttons (drawn by filterPanel.js) -->
+                <div id="filterPanel" class="header-filters"></div>
             </div>
         </header>
 
-        <!-- Tag filter panel and the result count / active filters (drawn by filterPanel.js) -->
-        <div id="filterPanel"></div>
+        <!-- The result count / active filters (drawn by filterPanel.js) -->
         <div id="filterSummary" class="filter-summary"></div>
 
         <div class="table-responsive">

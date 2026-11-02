@@ -123,7 +123,8 @@ body {
     grid-template-areas:
         "logo"
         "region"
-        "search";
+        "search"
+        "filters";
     gap: 1rem;
 }
 
@@ -133,6 +134,10 @@ body {
 
 .header-region {
     grid-area: region;
+}
+
+.header-filters {
+    grid-area: filters;
 }
 
 .header-search {
@@ -145,21 +150,60 @@ body {
 }
 
 @media (min-width: 768px) {
+    /* A compact header: the left column is the logo, search and filters; the
+       right column is the region title, the subtitle and the buttons, which
+       line up with the search box and the filters. .header-region is
+       flattened with display: contents so its title, subtitle and buttons
+       can sit in this grid without duplicating any markup. */
     .header-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(0, 1fr) auto;
         grid-template-areas:
-            "logo   region"
-            "search region";
+            "logo    title"
+            "search  sub"
+            "filters actions";
         column-gap: 2rem;
-        align-items: start;
+        row-gap: 0.5rem;
+        align-items: center;
+        /* The region title's blob reaches ~0.55em above the text; without this
+           it gets clipped by the top of the page. */
+        padding-top: 0.75rem;
+    }
+
+    /* Level with the region title's line, not centred in its row */
+    .header-logo {
+        align-self: start;
+        padding-top: 0.2rem;
+    }
+
+    .header-region {
+        display: contents;
+    }
+
+    .header-region .region-title {
+        grid-area: title;
+        justify-self: end;
+    }
+
+    .header-region .lead {
+        grid-area: sub;
+        justify-self: end;
+    }
+
+    .header-region > .d-flex {
+        grid-area: actions;
+        justify-self: end;
     }
 
     .header-search {
-        /* Sits below the logo in its own column here, not below the
-           region block, so the divider from the stacked layout doesn't
-           apply. */
+        /* Sits beside the subtitle here, not below the region block, so the
+           divider from the stacked layout doesn't apply. */
         border-top: none;
         padding-top: 0;
+        max-width: 420px;
+    }
+
+    .header-filters .filter-bar {
+        margin-bottom: 0;
     }
 }
 
@@ -924,6 +968,9 @@ body {
 .region-page header {
     position: relative;
     isolation: isolate;
+    /* Above the table below it: the filter dropdowns open from inside the
+       header and have to overlap the table's sticky header row. */
+    z-index: 20;
 }
 
 /* A soft blob of the region's colour behind the title */
@@ -947,6 +994,11 @@ body {
 
 .region-page .header-region .lead {
     font-size: 1.05rem;
+}
+
+/* Keep the venues link in one piece when the subtitle line wraps */
+.region-page .header-region .lead a {
+    white-space: nowrap;
 }
 
 /* Action buttons: sticker style */
