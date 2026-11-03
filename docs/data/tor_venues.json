@@ -20,5 +20,8 @@
     "Stephen Bulger Gallery": "1356 Dundas St W, Toronto, ON M6J 1Y2",
     "The Joan and Martin Goldfarb Gallery of York University": "83A York Blvd, Toronto, ON",
     "Propeller Art Gallery": "30 Abell St, Toronto, ON M6J 0A9",
-    "Art Museum at the University of Toronto": "7 Hart House Circle, Toronto, ON M5S 3H3"
+    "Art Museum at the University of Toronto": [
+        {"label": "Hart House", "address": "7 Hart House Circle, Toronto, ON M5S 3H3"},
+        {"label": "King's College Circle", "address": "15 King's College Circle, Toronto, ON M5S 3H7"}
+    ]
 }
