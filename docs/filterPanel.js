@@ -15,6 +15,7 @@ class FilterPanel {
         this.openGroup = null;
 
         if (this.panelEl) this.buildBar();
+        this.buildEmptyState();
         searchManager.subscribe(() => this.update());
         this.update();
     }
@@ -213,6 +214,64 @@ class FilterPanel {
         }
     }
 
+    // The friendly card shown in place of the table when nothing matches. Built once
+    // from constant text, next to the table; updateEmptyState() fills it in and
+    // shows or hides it. (Only the region pages have an event table, so this does
+    // nothing elsewhere.)
+    buildEmptyState() {
+        const table = document.getElementById('eventTable');
+        this.tableWrap = table ? table.closest('.table-responsive') : null;
+        if (!this.tableWrap) return;
+
+        const el = document.createElement('div');
+        el.className = 'empty-state';
+        el.hidden = true;
+
+        this.emptyTitle = document.createElement('p');
+        this.emptyTitle.className = 'empty-state-title';
+        this.emptyText = document.createElement('p');
+        this.emptyText.className = 'empty-state-text';
+
+        const actions = document.createElement('div');
+        actions.className = 'empty-state-actions';
+        this.emptyClear = document.createElement('button');
+        this.emptyClear.type = 'button';
+        this.emptyClear.className = 'btn btn-primary empty-state-clear';
+        this.emptyClear.textContent = 'Clear all filters';
+        this.emptyClear.addEventListener('click', () => this.searchManager.clearFilters());
+        const add = document.createElement('a');
+        add.className = 'empty-state-add';
+        add.href = '../add_event.html';
+        add.textContent = 'Know a show we\u2019re missing? Add an event';
+        actions.append(this.emptyClear, add);
+
+        el.append(this.emptyTitle, this.emptyText, actions);
+        this.tableWrap.after(el);
+        this.emptyEl = el;
+    }
+
+    // Swap the table for the card when there is nothing to show, and say why.
+    updateEmptyState(state, visible) {
+        if (!this.emptyEl) return;
+        const empty = visible === 0;
+        this.tableWrap.hidden = empty;
+        this.emptyEl.hidden = !empty;
+        if (!empty) return;
+
+        if (filterState.isDefault(state)) {
+            // No filters at all, so this region just has nothing current listed
+            this.emptyTitle.textContent = 'Nothing on right now';
+            this.emptyText.textContent = 'There are no current or upcoming exhibitions listed here yet. Check back soon.';
+            this.emptyClear.hidden = true;
+        } else {
+            this.emptyTitle.textContent = 'Nothing matches that';
+            this.emptyText.textContent = state.phases.includes('past')
+                ? 'Try a different search, or take off a filter.'
+                : 'Try a different search, or take off a filter. Past events are hidden unless you include them in the When filter.';
+            this.emptyClear.hidden = false;
+        }
+    }
+
     updateSummary(state) {
         if (!this.summaryEl) return;
         const total = this.searchManager.totalCount();
@@ -221,9 +280,9 @@ class FilterPanel {
         const count = document.createElement('span');
         count.className = 'filter-result-count';
         count.setAttribute('role', 'status');
-        count.textContent = visible === 0
-            ? 'No events match these filters.'
-            : `Showing ${visible.toLocaleString()} of ${total.toLocaleString()} events (${filterState.describePhases(state.phases)})`;
+        count.textContent = `Showing ${visible.toLocaleString()} of ${total.toLocaleString()} events (${filterState.describePhases(state.phases)})`;
+
+        this.updateEmptyState(state, visible);
 
         const items = [count];
 
