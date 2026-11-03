@@ -1800,5 +1800,1060 @@
             "last_updated": "2026-11-03 18:19:31",
             "hash": "9d83c3bc4e768dbc8ffb773f8b68fa16"
         }
+    },
+    "Gardiner Museum": {
+        "Magnus Hara: The Light of Day-Gardiner Museum": {
+            "name": "Magnus Hara: The Light of Day",
+            "venue": "Gardiner Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2026-11-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:44",
+            "hash": "d01f14fc3e96b30f8c1cc34affd79743"
+        },
+        "In Search of Imperfection: The Macdonald Collection of Japanese and Japanese-Inspired Ceramics-Gardiner Museum": {
+            "name": "In Search of Imperfection: The Macdonald Collection of Japanese and Japanese-Inspired Ceramics",
+            "venue": "Gardiner Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "ceramics"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-07-10",
+                "end": "2027-03-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:44",
+            "hash": "e546b3dd218d9d25e0a1c806d47ec5ad"
+        },
+        "After the Island: Caribbean Canadian Ceramics-Gardiner Museum": {
+            "name": "After the Island: Caribbean Canadian Ceramics",
+            "venue": "Gardiner Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "ceramics"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-09",
+                "end": "2027-04-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:44",
+            "hash": "89c71b16a091f2e50b68a234584943d8"
+        },
+        "Adaptive Ceramic Histories-Gardiner Museum": {
+            "name": "Adaptive Ceramic Histories",
+            "venue": "Gardiner Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "ceramics"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-20",
+                "end": "2027-03-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:44",
+            "hash": "a54fb96124ac7d74f271176cf2313a9c"
+        }
+    },
+    "Textile Museum of Canada": {
+        "Made By Many: 50 Years of the Textile Museum of Canada-Textile Museum of Canada": {
+            "name": "Made By Many: 50 Years of the Textile Museum of Canada",
+            "venue": "Textile Museum of Canada",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-10-30",
+                "end": "2027-02-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://textilemuseum.ca/programming/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:46",
+            "hash": "8daa7b8d82c37b3766d60710e9b69ea1"
+        },
+        "Always In Fashion-Textile Museum of Canada": {
+            "name": "Always In Fashion",
+            "venue": "Textile Museum of Canada",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "fashion"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-05-01",
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://textilemuseum.ca/programming/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:46",
+            "hash": "6cf60eec8db4cdae51a53217351b0852"
+        },
+        "Retracing Tatreez: Palestinian Thobes through the 20th Century-Textile Museum of Canada": {
+            "name": "Retracing Tatreez: Palestinian Thobes through the 20th Century",
+            "venue": "Textile Museum of Canada",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-24",
+                "end": "2027-05-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://textilemuseum.ca/programming/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:46",
+            "hash": "f05ae2ac7f766f3dbc9f5bc4a3377309"
+        },
+        "Body & Head: Philippine Indigenous Blankets and Headscarves From the 20th Century and Beyond-Textile Museum of Canada": {
+            "name": "Body & Head: Philippine Indigenous Blankets and Headscarves From the 20th Century and Beyond",
+            "venue": "Textile Museum of Canada",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "indigenous"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-28",
+                "end": "2026-11-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://textilemuseum.ca/programming/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:46",
+            "hash": "6624c6a9a93c381d039d83dfc9570b6c"
+        }
+    },
+    "Bata Shoe Museum": {
+        "Brilliant-Bata Shoe Museum": {
+            "name": "Brilliant",
+            "venue": "Bata Shoe Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-22",
+                "end": "2028-04-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://batashoemuseum.ca/exhibitions/beads/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:50",
+            "hash": "c01b1eb0e3128239acf3a0a4356fb03a"
+        },
+        "Unearthing Vindolanda-Bata Shoe Museum": {
+            "name": "Unearthing Vindolanda",
+            "venue": "Bata Shoe Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-05-07",
+                "end": "2027-09-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://batashoemuseum.ca/exhibitions/vindolanda/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:52",
+            "hash": "57df848873f4ae74740de0d99177a697"
+        },
+        "Andr\u00e9 Perugia-Bata Shoe Museum": {
+            "name": "Andr\u00e9 Perugia",
+            "venue": "Bata Shoe Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-04-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://batashoemuseum.ca/exhibitions/perugia/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:53",
+            "hash": "a3a701d2ba2090de4b10ba12182f1424"
+        }
+    },
+    "Koffler Arts": {
+        "Kamiphony: Cyb\u00e8le Young-Koffler Arts": {
+            "name": "Kamiphony: Cyb\u00e8le Young",
+            "venue": "Koffler Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-24",
+                "end": "2026-12-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.kofflerarts.org/whatson/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:54",
+            "hash": "23ce3dfe209ba44760bb8f0d0958ddcf"
+        },
+        "Lessons in Objectology: Gord Peteran-Koffler Arts": {
+            "name": "Lessons in Objectology: Gord Peteran",
+            "venue": "Koffler Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-24",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.kofflerarts.org/whatson/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:54",
+            "hash": "6924dcaf491b17485116dbb0396f5be7"
+        },
+        "Walking Through Life: Yu Hong-Koffler Arts": {
+            "name": "Walking Through Life: Yu Hong",
+            "venue": "Koffler Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-14",
+                "end": "2027-03-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.kofflerarts.org/whatson/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:54",
+            "hash": "603fa38587205c4f8cc7ccfe1a411f8b"
+        }
+    },
+    "Mercer Union": {
+        "Rouzbeh Akhbari: Of Wool and Diesel-Mercer Union": {
+            "name": "Rouzbeh Akhbari: Of Wool and Diesel",
+            "venue": "Mercer Union",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-26",
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mercerunion.org/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "9ef870454db067d4f91ecf4cb02ece54"
+        }
+    },
+    "Gallery TPW": {
+        "Toronto Biennial of Art 2026: Things Fall Apart-Gallery TPW": {
+            "name": "Toronto Biennial of Art 2026: Things Fall Apart",
+            "venue": "Gallery TPW",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-26",
+                "end": "2026-12-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gallerytpw.ca/current-upcoming",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "902146ab71b13354ab0e66cad87b241a"
+        },
+        "The Soil and the Daylight Recognize Me-Gallery TPW": {
+            "name": "The Soil and the Daylight Recognize Me",
+            "venue": "Gallery TPW",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-09",
+                "end": "2026-12-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gallerytpw.ca/current-upcoming",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "eeef54f2c7ee07c6beda215515e8aa36"
+        }
+    },
+    "Gallery 44": {
+        "Static and Noise-Gallery 44": {
+            "name": "Static and Noise",
+            "venue": "Gallery 44",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gallery44.org/exhibitions-and-public-programs",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "ecb8406f05fa06c7e32a2c339b312490"
+        },
+        "body \u2014 mind \u2014 distance-Gallery 44": {
+            "name": "body \u2014 mind \u2014 distance",
+            "venue": "Gallery 44",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gallery44.org/exhibitions-and-public-programs",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "6526c86358f3fa9341cbbc5ac077dd27"
+        },
+        "From the Laurentian Highlands to a Higher Place-Gallery 44": {
+            "name": "From the Laurentian Highlands to a Higher Place",
+            "venue": "Gallery 44",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gallery44.org/exhibitions-and-public-programs",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "314917ac915eaebb5a513640961101cd"
+        },
+        "Northumberland-Gallery 44": {
+            "name": "Northumberland",
+            "venue": "Gallery 44",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2027-02-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.gallery44.org/exhibitions-and-public-programs",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "fe7c6484f4ee81047380cb257d0f7d13"
+        }
+    },
+    "InterAccess": {
+        "poodle soup \u2014 Komal Lally-InterAccess": {
+            "name": "poodle soup \u2014 Komal Lally",
+            "venue": "InterAccess",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2026-12-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.interaccess.org/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:56",
+            "hash": "e8bd8d1610363ca68e0ead2b4e053c63"
+        }
+    },
+    "Paul Petro Contemporary Art": {
+        "Mythical Threads: Barbara Klunder - Embroidered Fables and Figures-Paul Petro Contemporary Art": {
+            "name": "Mythical Threads: Barbara Klunder - Embroidered Fables and Figures",
+            "venue": "Paul Petro Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "textiles",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-09",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paulpetro.com/ppca/current",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:57",
+            "hash": "a248c3885698c5ce0bb16087b2c3501d"
+        },
+        "Eventually We Bend: Amy Bowles - new porcelain sculpture-Paul Petro Contemporary Art": {
+            "name": "Eventually We Bend: Amy Bowles - new porcelain sculpture",
+            "venue": "Paul Petro Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "sculpture",
+                "ceramics",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-09",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paulpetro.com/ppca/current",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:57",
+            "hash": "3e61917021e4be9b1ddb2c0e089f269e"
+        }
+    },
+    "Nicholas Metivier Gallery": {
+        "Emmanuel Osahor: Things Once Seen-Nicholas Metivier Gallery": {
+            "name": "Emmanuel Osahor: Things Once Seen",
+            "venue": "Nicholas Metivier Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-17",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://metiviergallery.com/art-exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:58",
+            "hash": "7a5e0cedf24f6a43ce48c8c2b93166d8"
+        },
+        "From Collins to Cape Dorset: John Hartman: Early Works-Nicholas Metivier Gallery": {
+            "name": "From Collins to Cape Dorset: John Hartman: Early Works",
+            "venue": "Nicholas Metivier Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-17",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://metiviergallery.com/art-exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:58",
+            "hash": "9743a3cd8aa8b7be49f909d1f87b96ea"
+        },
+        "Ben Reeves: Parklife-Nicholas Metivier Gallery": {
+            "name": "Ben Reeves: Parklife",
+            "venue": "Nicholas Metivier Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-14",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://metiviergallery.com/art-exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:58",
+            "hash": "5e51c23ce203e475831fa9232ec875b0"
+        }
+    },
+    "Olga Korper Gallery": {
+        "Meaghan Hyckie: Haunts-Olga Korper Gallery": {
+            "name": "Meaghan Hyckie: Haunts",
+            "venue": "Olga Korper Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-17",
+                "end": "2026-11-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.olgakorpergallery.com/exhibitions-page/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:58",
+            "hash": "63b81fd5d6eb1d7e1a8645a3f8ed8084"
+        }
+    },
+    "Doris McCarthy Gallery": {
+        "Cartographies of Longing-Doris McCarthy Gallery": {
+            "name": "Cartographies of Longing",
+            "venue": "Doris McCarthy Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-15",
+                "end": "2026-12-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://dorismccarthygallery.utoronto.ca",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:59",
+            "hash": "b255379e0340d00efc40f892725f81d1"
+        },
+        "t\u00f3k\u0161a | I will see you again-Doris McCarthy Gallery": {
+            "name": "t\u00f3k\u0161a | I will see you again",
+            "venue": "Doris McCarthy Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-17",
+                "end": "2027-07-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://dorismccarthygallery.utoronto.ca",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:59",
+            "hash": "4c3f5b4341ba5c8f34fda6c23038ab1e"
+        }
+    },
+    "Onsite Gallery": {
+        "Michael Massie: now and then-Onsite Gallery": {
+            "name": "Michael Massie: now and then",
+            "venue": "Onsite Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-02",
+                "end": "2027-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.ocadu.ca/galleries/onsite-gallery",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:59",
+            "hash": "671400a7a7fc61e9e666d632f614f3a1"
+        },
+        "Returning to Ourselves: Rebecca Baird and Kenny Alvin Baird\u2014A Retrospective of Art and Design by Cree M\u00e9tis Siblings-Onsite Gallery": {
+            "name": "Returning to Ourselves: Rebecca Baird and Kenny Alvin Baird\u2014A Retrospective of Art and Design by Cree M\u00e9tis Siblings",
+            "venue": "Onsite Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-02",
+                "end": "2027-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.ocadu.ca/galleries/onsite-gallery",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:59",
+            "hash": "085c47f0a5fb916d699be0612556e3d6"
+        },
+        "Lost in the Right Direction, 2026-Onsite Gallery": {
+            "name": "Lost in the Right Direction, 2026",
+            "venue": "Onsite Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-06",
+                "end": "2027-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.ocadu.ca/galleries/onsite-gallery",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:10:59",
+            "hash": "33f383a38d23c0259e6545d9a7eaa7d0"
+        }
+    },
+    "Stephen Bulger Gallery": {
+        "Geoffrey James: Ancient and Modern: Selected Panoramas-Stephen Bulger Gallery": {
+            "name": "Geoffrey James: Ancient and Modern: Selected Panoramas",
+            "venue": "Stephen Bulger Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-31",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.bulgergallery.com/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:11:00",
+            "hash": "5befa37bf87d93a555793d22076731ca"
+        }
+    },
+    "The Joan and Martin Goldfarb Gallery of York University": {
+        "Torkwase Dyson: The Distance Inside Us (Bird and Lava)-The Joan and Martin Goldfarb Gallery of York University": {
+            "name": "Torkwase Dyson: The Distance Inside Us (Bird and Lava)",
+            "venue": "The Joan and Martin Goldfarb Gallery of York University",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-11",
+                "end": "2027-03-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thegoldfarbgallery.ca/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:22",
+            "hash": "627f867f3711d663973785101f30a91e"
+        },
+        "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism-The Joan and Martin Goldfarb Gallery of York University": {
+            "name": "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism",
+            "venue": "The Joan and Martin Goldfarb Gallery of York University",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-11",
+                "end": "2027-03-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thegoldfarbgallery.ca/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:22",
+            "hash": "3c433f41a01e65d4161fbccbf18331a0"
+        }
+    },
+    "Propeller Art Gallery": {
+        "Desert Frequencies: Jelena Duma-Propeller Art Gallery": {
+            "name": "Desert Frequencies: Jelena Duma",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-21",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/desert-frequencies-jelena-duma/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:24",
+            "hash": "a1ff83e5e5d1010220a298c2d9956afa"
+        },
+        "Meandering: Ruth Martin Maude-Propeller Art Gallery": {
+            "name": "Meandering: Ruth Martin Maude",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-21",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/meandering-ruth-martin-maude/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:24",
+            "hash": "cdce4af798a66a5c248f4e7738bf1f53"
+        },
+        "With A Magpie\u2019s Pleasure: Pria Muzumdar-Propeller Art Gallery": {
+            "name": "With A Magpie\u2019s Pleasure: Pria Muzumdar",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2026-11-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/with-a-magpies-pleasure-pria-muzumdar/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:26",
+            "hash": "85fe44baf4a50788d4cf6a456c4b2c94"
+        },
+        "Marks and Flow: New Paintings: Susan Freypons-Propeller Art Gallery": {
+            "name": "Marks and Flow: New Paintings: Susan Freypons",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "painting",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2026-11-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/marks-and-flow-new-paintings-susan-freypons/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:27",
+            "hash": "905e509aef41bf304cd7f58ca6259062"
+        },
+        "Primary 2: Selected Artists-Propeller Art Gallery": {
+            "name": "Primary 2: Selected Artists",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2026-11-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/primary-2-group-exhibition/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:27",
+            "hash": "be3c9a4fba19ef16f1a41ca6b027c381"
+        }
     }
 }

@@ -23,7 +23,10 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     headlands_center_for_the_arts, shooting_gallery, el_cerrito_city_hall_gallery
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
-from scrapers.tor import moca_toronto, power_plant, aga_khan, ago
+from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
+    textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
+    interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
+    doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -127,6 +130,23 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "The Power Plant": power_plant.scrape_power_plant_exhibitions,
             "Aga Khan Museum": aga_khan.scrape_aga_khan_exhibitions,
             "AGO": ago.scrape_ago,
+            "Gardiner Museum": gardiner_museum.scrape_gardiner_museum,
+            "Textile Museum of Canada": textile_museum_of_canada.scrape_textile_museum_of_canada,
+            "Bata Shoe Museum": bata_shoe_museum.scrape_bata_shoe_museum,
+            "Koffler Arts": koffler_arts.scrape_koffler_arts,
+            "Mercer Union": mercer_union.scrape_mercer_union,
+            "Gallery TPW": gallery_tpw.scrape_gallery_tpw,
+            "Gallery 44": gallery_44.scrape_gallery_44,
+            "InterAccess": interaccess.scrape_interaccess,
+            "Paul Petro Contemporary Art": paul_petro_contemporary_art.scrape_paul_petro_contemporary_art,
+            "Nicholas Metivier Gallery": nicholas_metivier_gallery.scrape_nicholas_metivier_gallery,
+            "Olga Korper Gallery": olga_korper_gallery.scrape_olga_korper_gallery,
+            "Cooper Cole": cooper_cole.scrape_cooper_cole,
+            "Doris McCarthy Gallery": doris_mccarthy_gallery.scrape_doris_mccarthy_gallery,
+            "Onsite Gallery": onsite_gallery.scrape_onsite_gallery,
+            "Stephen Bulger Gallery": stephen_bulger_gallery.scrape_stephen_bulger_gallery,
+            "The Joan and Martin Goldfarb Gallery of York University": goldfarb_gallery.scrape_goldfarb_gallery,
+            "Propeller Art Gallery": propeller_art_gallery.scrape_propeller_art_gallery,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,
