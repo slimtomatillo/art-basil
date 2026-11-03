@@ -1315,6 +1315,125 @@ body {
     box-shadow: 0 0 0 var(--ink);
 }
 
+/* Phones (under 576px): the event list is a stack of cards instead of a table, so
+   nothing scrolls sideways (WEBSITE-91). Each row becomes a card: the thumbnail on the
+   left, then the show @ venue, the dates and the tags; the links and the bell along the
+   bottom. Only the event table (#eventTable); the venues table is unchanged. From
+   576px up it is still a table. */
+@media (max-width: 575.98px) {
+    /* The page scrolls normally, rather than the list scrolling inside its own box */
+    .region-page .table-responsive:has(> #eventTable) {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .region-page #eventTable,
+    .region-page #eventTable tbody {
+        display: block;
+    }
+
+    .region-page #eventTable {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    /* The column headings aren't shown (a card says what it is) but stay for screen readers */
+    .region-page #eventTable thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    .region-page #eventTable tbody tr {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        grid-template-areas:
+            "image title"
+            "image date"
+            "image tags"
+            "links links";
+        align-items: start;
+        margin: 0 0 1rem;
+        padding: 0.75rem;
+        background: #fff;
+        border: 2.5px solid var(--ink);
+        border-radius: 16px;
+        box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .region-page #eventTable tbody td {
+        display: block;
+        width: auto;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    /* Thumbnail. With no image (or one that failed to load) the cell is empty and
+       takes no room, so the text uses the full width. */
+    .region-page #eventTable td:nth-child(1) {
+        grid-area: image;
+        padding-right: 0.75rem;
+    }
+
+    .region-page #eventTable td:nth-child(1):empty {
+        display: none;
+    }
+
+    .region-page #eventTable td:nth-child(1) .event-image {
+        display: block;
+        max-width: 96px;
+    }
+
+    .region-page #eventTable td:nth-child(3) {
+        grid-area: title;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    .region-page #eventTable td:nth-child(2) {
+        grid-area: date;
+        margin-top: 0.2rem;
+        font-size: 0.85rem;
+        color: #495057;
+    }
+
+    .region-page #eventTable td:nth-child(4) {
+        grid-area: tags;
+        margin-top: 0.45rem;
+    }
+
+    .region-page #eventTable td:nth-child(5) {
+        grid-area: links;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem 1rem;
+        margin-top: 0.75rem;
+        padding-top: 0.65rem;
+        border-top: 1.5px dashed #ced4da;
+    }
+
+    /* The links are flex items here, so this padding makes them easier to tap */
+    .region-page #eventTable td:nth-child(5) a {
+        padding: 0.4rem 0;
+    }
+
+    /* Room for the full label again, and the button goes to the right end of the row */
+    .region-page #eventTable .notify-button {
+        margin: 0 0 0 auto;
+        padding: 0.2rem 0.65rem;
+    }
+
+    .region-page #eventTable .notify-button span {
+        display: inline;
+    }
+}
+
 /* ---- Utility pages (Add Event, Tags): same look, black as the accent ------
    They aren't a region, so --region-c is black here and colour comes only from
    the region and tag chips. */

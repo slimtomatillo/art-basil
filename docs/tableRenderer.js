@@ -100,6 +100,17 @@ class TableRenderer {
     constructor(tableBodyId) {
         this.tableBody = document.getElementById(tableBodyId);
         this.venues = null;
+
+        // On phones the CSS shows each row as a card (display: grid), and changing a
+        // table's display makes some screen readers stop treating it as a table. Naming
+        // the roles keeps it one, whatever the layout.
+        const table = this.tableBody && this.tableBody.closest('table');
+        if (table) {
+            table.setAttribute('role', 'table');
+            table.querySelectorAll('thead, tbody').forEach(el => el.setAttribute('role', 'rowgroup'));
+            table.querySelectorAll('tr').forEach(el => el.setAttribute('role', 'row'));
+            table.querySelectorAll('th').forEach(el => el.setAttribute('role', 'columnheader'));
+        }
     }
 
     setVenues(venues) {
@@ -108,6 +119,7 @@ class TableRenderer {
 
     renderEventRow(event) {
         const row = this.tableBody.insertRow();
+        row.setAttribute('role', 'row');
 
         // Add data attributes to row for filtering
         row.setAttribute('data-phase', event.phase);
@@ -133,6 +145,8 @@ class TableRenderer {
         // Links column
         const linksCell = row.insertCell();
         this.renderLinksCell(linksCell, event);
+
+        Array.from(row.cells).forEach(cell => cell.setAttribute('role', 'cell'));
     }
 
     renderTagsCell(cell, event) {
