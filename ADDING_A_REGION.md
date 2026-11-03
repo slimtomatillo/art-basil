@@ -14,6 +14,8 @@ automatically):
    `get_venue_scrapers()` (section 1e).
 3. **An address** in `docs/data/<region>_venues.json`, under the exact `venue`
    string the scraper writes (section 1c) — missing, the venue gets no map link.
+   A venue with more than one space can list several addresses, each with its own
+   map link (see "A venue with more than one space" in 1c).
 
 Then write the real data with `python main.py --venues "<Venue Name>" --no-summary`,
 and check it in CI once (section 2a). If the site blocks GitHub's servers, also
@@ -79,6 +81,38 @@ entire "add it to the venue list page" step** - there's nothing to update on
 the front end, for a new region or an existing one. This applies whether the
 venue was added by a new scraper (2c) or by hand for a manual submission (see
 `SUBMISSIONS.md`).
+
+#### A venue with more than one space
+The map link is built from the venue's value, one link per address. For the usual
+single address that is a plain string (above). If one venue has **two or more
+spaces that list their shows together**, give it a list of `label` + `address`
+instead, and each address gets its own link ("Map: Hart House", "Map: King's
+College Circle"); the venues page lists them on separate lines:
+```json
+{
+    "Art Museum at the University of Toronto": [
+        {"label": "Hart House", "address": "7 Hart House Circle, Toronto, ON M5S 3H3"},
+        {"label": "King's College Circle", "address": "15 King's College Circle, Toronto, ON M5S 3H7"}
+    ]
+}
+```
+- Every entry needs a short `label` once there are two or more (a test checks
+  this); a list with one entry shows a plain "Map" like a string would.
+- The `venue` key stays one string, identical in the scraper and in this file (2c).
+  An event belongs to one venue, so every event shows **all** the venue's links,
+  including shows held in only one of the spaces. That is the trade-off.
+- **Or split it into two venues** (two keys, two scrapers or one scraper writing
+  two `venue` strings) when the spaces are really separate places: they have their
+  own sites or listings, and no show spans both. That is how Hauser & Wirth
+  DTLA / WeHo and Salt Galata / Salt Beyoğlu are done, and it gives each event a
+  single exact map link. Choose multiple addresses only when one site lists the
+  shows of both spaces and some span them (the Art Museum at the University of
+  Toronto does).
+- Reading the value is done by `docs/venueAddresses.js` (used by both
+  `tableRenderer.js` and `venuesRenderer.js`); nothing else in the front end
+  needs to change. `submissions.py` also accepts this shape. Before you list
+  several addresses, make sure each really is a place to visit (for example,
+  a university's own street address in its footer is not a gallery space).
 
 ### 1d. `scrapers/<region>/`
 New directory, one module per venue. **No `__init__.py`** — the project uses
@@ -160,7 +194,8 @@ from the title and description using the rules in `tagging.py`.
 ### 2c. The `venue` string
 `event_details['venue']` is the identity key everywhere:
 - it's the top-level key in `<region>_events.json`
-- `tableRenderer.js` looks it up in `<region>_venues.json` for the map link
+- `tableRenderer.js` looks it up in `<region>_venues.json` for the map link(s)
+  (one per address; see "A venue with more than one space" in 1c)
 
 It must be **identical** in the scraper and in `<region>_venues.json`. A mismatch
 = events with no map link (and the broken-image / missing-link symptoms that
@@ -334,6 +369,7 @@ EOF
 
 Checklist:
 - [ ] every scraper's `venue` string has a matching key in `<region>_venues.json`
+      (a venue with several spaces: a list of `label` + `address`, see 1c)
 - [ ] `<region>_events.json` committed (as `{}`)
 - [ ] workflow `git add` line added
 - [ ] `docs/<region>/index.html` created, `docs/index.html` card added,

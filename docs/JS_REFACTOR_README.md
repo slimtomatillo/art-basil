@@ -45,6 +45,14 @@ renderer.setVenues(venues);
 renderer.renderEventRow(event);
 ```
 
+### 3b. `venueAddresses.js`
+**Purpose**: The pure logic (no DOM, unit tested in Node) behind a venue's address(es) and map links. A venue's value in `<region>_venues.json` is a street address string, or a list of `{label, address}` for a venue with more than one space.
+**Functions**:
+- `normalize(value)` - any accepted shape -> a list of `{label, address}` (empty if there is no usable address)
+- `mapLinks(value)` - one Google Maps link per address: `{text, href, title}`. One address gives plain "Map"; several give "Map: <label>"
+
+`tableRenderer.js` (the "Map" link under each event) and `venuesRenderer.js` (the venue directory) both use it, so load `venueAddresses.js` before them (after `dataManager.js`) on every region page and venues page.
+
 ### 4. `filterState.js` and `searchManager.js`
 **Purpose**: The event filters (search text, phase, ongoing, tags) and the table rows they show or hide.
 
@@ -110,6 +118,7 @@ The modules should be loaded in this order in your HTML:
 ```html
 <!-- Load modules first -->
 <script src="dataManager.js"></script>
+<script src="venueAddresses.js"></script>
 <script src="eventSorter.js"></script>
 <script src="tableRenderer.js"></script>
 <script src="filterState.js"></script>

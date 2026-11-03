@@ -58,7 +58,7 @@ def add_submission(region, name, venue, start_date, end_date, description='',
         venues[venue] = venue_address
         save_venues(region, venues)
         print(f"Added new venue: {venue} ({venue_address})")
-    elif venue_address and venues[venue] != venue_address:
+    elif venue_address and venue_address not in venue_addresses(venues[venue]):
         print(f"Note: venue '{venue}' already exists with address "
               f"'{venues[venue]}' — leaving it as-is, not overwriting with "
               f"'{venue_address}'.")
@@ -94,6 +94,16 @@ def add_submission(region, name, venue, start_date, end_date, description='',
     event_id = generate_unique_identifier(event_details)
     print(f"Added event: {event_id} (phase: {phase})")
     return event_id
+
+
+def venue_addresses(value):
+    """The street addresses a venues file holds for one venue. The value is a single address
+    string, or a list of {"label": ..., "address": ...} for a venue with more than one space
+    (see "A venue with more than one space" in ADDING_A_REGION.md)."""
+    if isinstance(value, str):
+        return [value]
+    return [item if isinstance(item, str) else item.get('address') for item in (value or [])
+            if isinstance(item, (str, dict))]
 
 
 def save_venues(region, venues):

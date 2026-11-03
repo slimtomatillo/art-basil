@@ -26,7 +26,8 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
 
     names.forEach(name => {
-        const address = venues[name];
+        // A plain address, or a list of spaces (see venueAddresses.js)
+        const entries = window.venueAddresses.normalize(venues[name]);
         const row = tbody.insertRow();
 
         // Venue name links back to the region's exhibitions, pre-filtered
@@ -39,16 +40,22 @@ window.addEventListener('DOMContentLoaded', async () => {
         nameLink.className = 'fw-semibold text-decoration-none';
         nameCell.appendChild(nameLink);
 
+        // One line per space: "Hart House: 7 Hart House Circle, ..." (just the address for a single space)
         const addressCell = row.insertCell();
-        addressCell.textContent = address || '';
+        entries.forEach((entry, i) => {
+            if (i) addressCell.appendChild(document.createElement('br'));
+            addressCell.appendChild(document.createTextNode(
+                entries.length > 1 && entry.label ? `${entry.label}: ${entry.address}` : entry.address));
+        });
 
         const linksCell = row.insertCell();
-        if (address) {
+        window.venueAddresses.mapLinks(venues[name]).forEach((map, i) => {
+            if (i) linksCell.appendChild(document.createTextNode(' · '));
             const mapLink = document.createElement('a');
-            mapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-            mapLink.textContent = 'Map';
+            mapLink.href = map.href;
+            mapLink.textContent = map.text;
             mapLink.target = '_blank';
             linksCell.appendChild(mapLink);
-        }
+        });
     });
 });
