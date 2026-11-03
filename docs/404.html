@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found - Art Basil</title>
+    <meta name="robots" content="noindex">
+    <!-- GitHub Pages serves this file for any address that doesn't exist, from any folder depth,
+         so every path below starts with / -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/cursorFx.css">
+</head>
+<body class="bg-light region-page" style="--region-c: #111; --region-t: -1deg;">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G06G4L1YGN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G06G4L1YGN');
+    </script>
+
+    <div class="container py-4">
+        <header class="mb-4">
+            <h1 class="h3 mb-0">
+                <a href="/" style="text-decoration: none; color: inherit;">
+                    <img src="/images/logo.svg" alt="Art Basil" style="height: 44px; vertical-align: middle;">
+                </a>
+            </h1>
+        </header>
+
+        <header class="text-center mt-5 mb-5">
+            <p class="display-4 region-title region-title-center mb-5">That page wandered off</p>
+            <p class="lead mb-4">We can't find the page you were looking for.<br class="d-none d-sm-inline"> It may have moved, or the link might be a little off.</p>
+            <a href="/" class="btn btn-primary btn-lg">Back to home</a>
+        </header>
+
+        <main>
+            <p class="text-center text-muted mb-4">Or pick a city to find art near you:</p>
+        <nav class="region-blobs" aria-label="Choose a region">
+            <a href="/sf/index.html" class="region-blob shape-a" aria-label="San Francisco Bay Area"
+               style="--c:#14806b; --t:-2.5deg; --w:290px; --dur:6.5s">
+                <span class="blob-body">
+                    <span class="region-name">Bay Area</span>
+                </span>
+            </a>
+            <a href="/la/index.html" class="region-blob shape-b" aria-label="Los Angeles"
+               style="--c:#c4520f; --t:1.8deg; --w:235px; --dur:5.6s">
+                <span class="blob-body">
+                    <span class="region-name">Los Angeles</span>
+                </span>
+            </a>
+            <a href="/mtl/index.html" class="region-blob shape-c" aria-label="Montreal"
+               style="--c:#3358d6; --t:-1.4deg; --w:200px; --dur:7.2s">
+                <span class="blob-body">
+                    <span class="region-name">Montreal</span>
+                </span>
+            </a>
+            <a href="/tor/index.html" class="region-blob shape-a" aria-label="Toronto"
+               style="--c:#8f3fc0; --t:2.2deg; --w:215px; --dur:6.1s">
+                <span class="blob-body">
+                    <span class="region-name">Toronto</span>
+                </span>
+            </a>
+            <a href="/ist/index.html" class="region-blob shape-b" aria-label="Istanbul"
+               style="--c:#c93631; --t:-1.9deg; --w:225px; --dur:5.9s">
+                <span class="blob-body">
+                    <span class="region-name">Istanbul</span>
+                </span>
+            </a>
+        </nav>
+        </main>
+    </div>
+
+    <script src="/cursorFx.js"></script>
+</body>
+</html>
