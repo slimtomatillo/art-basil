@@ -17,9 +17,10 @@ def page_lines(soup):
 
 
 def publish(env, region, venue, name, start_date, end_date, link, tag='gallery', description=None,
-            keep_past=False, seen=None):
-    """Build and store one exhibition. Returns True if it was published (past shows are
-    skipped unless keep_past, and a (name, start) pair already in `seen` is skipped)."""
+            keep_past=False, seen=None, kind='exhibition', extra_tags=()):
+    """Build and store one exhibition (or, with kind='event', one program). Returns True if it
+    was published (past entries are skipped unless keep_past, and a (name, start) pair already
+    in `seen` is skipped)."""
     today = region_today(region)
     # A show that only says "Until <date>" has no start date; one with neither date can't be placed
     if not (name and (start_date or end_date)):
@@ -36,7 +37,7 @@ def publish(env, region, venue, name, start_date, end_date, link, tag='gallery',
         'name': name,
         'venue': venue,
         'description': description,
-        'tags': ['exhibition'] + [phase] + [tag],
+        'tags': [kind] + [phase] + [tag] + list(extra_tags),
         'phase': phase,
         'dates': {'start': start_date, 'end': end_date},
         'ongoing': False,

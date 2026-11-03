@@ -26,7 +26,8 @@ from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
-    doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery
+    doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery, \
+    art_museum_uoft
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -42,6 +43,7 @@ PROXIED_VENUES = {
     "Norton Simon Museum": ["Norton Simon Museum"],
     "Huntington": ["Huntington"],
     "AGO": ["AGO"],
+    "Art Museum at the University of Toronto": ["Art Museum at the University of Toronto"],
 }
 # "Every 3 days" with slack, so run-to-run start-time jitter can't push a venue
 # to every 4th day. A venue is due once its newest event is this old; a failed
@@ -147,6 +149,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Stephen Bulger Gallery": stephen_bulger_gallery.scrape_stephen_bulger_gallery,
             "The Joan and Martin Goldfarb Gallery of York University": goldfarb_gallery.scrape_goldfarb_gallery,
             "Propeller Art Gallery": propeller_art_gallery.scrape_propeller_art_gallery,
+            "Art Museum at the University of Toronto": art_museum_uoft.scrape_art_museum_uoft,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,
