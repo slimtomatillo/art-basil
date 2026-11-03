@@ -98,23 +98,36 @@ fall back to a direct fetch, fail, and keep their old data.
 
 **Credits are the constraint.** The free plan gives 5,000 credits a month. A
 request costs 10 credits with `premium_proxy` and 25 with `premium_proxy` +
-`js_render`. A full refresh of every proxied venue is about 315 credits, so
-refreshing them daily would need about 9,500 a month. Instead:
+`js_render`. One refresh of every proxied venue is about 375 credits: about 255
+for the current and upcoming pages, and about 120 for the past-exhibition pages
+(BAMPFA, Cantor, de Young / Legion of Honor, Norton Simon, Asian Art Museum).
+Refreshing everything daily would need about 11,400 a month. Instead:
 
-- `main.py` refreshes a proxied venue only when its newest stored event is 60+
-  hours old, which is about every 3 days (~3,200 credits a month). The other
+- `main.py` refreshes a proxied venue only when its newest stored event is 84+
+  hours old, which is **every 4 days** (about 7.6 refreshes a month). The other
   daily runs skip it. The registry is `PROXIED_VENUES` in `main.py`; a new
   proxied scraper must be added there or it will run daily.
+- **Past-exhibition pages are pulled only on every second refresh** (about every
+  8 days), because they change rarely. The choice comes from the calendar
+  (`utils.past_pages_due`: `date.toordinal() // 4` is even), so there is no stored
+  state. A scraper with a past page wraps that fetch in `past_pages_due(env)`.
+- That comes to about **2,400 credits a month** (255 x 7.6 + 120 x 3.8), around
+  half the allowance, which leaves about 2,600 for new proxied venues. A venue
+  with one 10-credit page costs about 76 a month, and one 25-credit page about 190.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
-  run rather than waiting another 3 days.
+  run rather than waiting another 4 days. (The stale-data check flags a venue
+  after 7 days.)
 - On the first `402` in a run, all proxying stops for that run and the remaining
   proxied venues are skipped with one warning.
-- `--venues` always runs the venue, ignoring the 3-day gate.
+- `--venues` always runs the venue, ignoring the 4-day gate, and fetches its past
+  pages too.
 
 So avoid manual workflow runs on a day when the proxied venues are due, and
 avoid live-testing ZenRows options casually: each spends real credits. Check
-remaining credits in the ZenRows dashboard. If 3-day freshness isn't enough, the
-alternative is a paid ZenRows plan.
+remaining credits in the ZenRows dashboard; the figures above are estimates from
+counting each scraper's fetches, not measured usage. The schedule is covered by
+`tests/test_proxy_schedule.py`. If 4-day freshness isn't enough, the alternative
+is a paid ZenRows plan.
 
 To add a blocked site, see section 2f of [ADDING_A_REGION.md](ADDING_A_REGION.md).
 

@@ -1,4 +1,4 @@
-from utils import fetch_and_parse
+from utils import fetch_and_parse, past_pages_due
 from processing import process_event
 from config import MONTH_TO_NUM_DICT
 import datetime as dt
@@ -146,6 +146,9 @@ def scrape_bampfa_exhibitions(env='prod', region='sf'):
     current_url = 'https://bampfa.org/on-view/exhibitions?field_event_series_type_value=1'
     process_exhibitions(current_url, 'current')
 
-    # Scrape past exhibitions
-    past_url = 'https://bampfa.org/on-view/exhibitions/past'
-    process_exhibitions(past_url, 'past')
+    # Scrape past exhibitions: a rarely changing page, so proxied runs pull it about weekly
+    if past_pages_due(env):
+        past_url = 'https://bampfa.org/on-view/exhibitions/past'
+        process_exhibitions(past_url, 'past')
+    else:
+        logging.info("BAMPFA: skipping the past-exhibitions page this run (pulled about weekly); existing data kept.")

@@ -1,4 +1,4 @@
-from utils import fetch_and_parse
+from utils import fetch_and_parse, past_pages_due
 from processing import process_event
 import datetime as dt
 from datetime import timezone
@@ -109,7 +109,10 @@ def scrape_norton_simon_exhibitions(env='prod', region='la'):
     today = dt.datetime.now().date()
     seen_links = set()
 
-    for url, _default_phase in LISTING_URLS:
+    for url, default_phase in LISTING_URLS:
+        if default_phase == 'past' and not past_pages_due(env):
+            logging.info("Norton Simon: skipping the past-exhibitions page this run (pulled about weekly); existing data kept.")
+            continue
         soup = fetch_and_parse(url, headers=BROWSER_HEADERS)
         if soup is None:
             logging.warning(f"Error scraping Norton Simon exhibitions ({url}) --> no soup found")

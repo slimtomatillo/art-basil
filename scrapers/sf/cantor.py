@@ -1,4 +1,4 @@
-from utils import fetch_and_parse
+from utils import fetch_and_parse, past_pages_due
 from processing import process_event
 from config import MONTH_TO_NUM_DICT
 import datetime as dt
@@ -120,6 +120,9 @@ def scrape_cantor_exhibitions(env='prod', region='sf'):
     upcoming_url = 'https://museum.stanford.edu/exhibitions/upcoming-exhibitions'
     process_exhibitions(upcoming_url, 'future')
 
-    # Scrape past exhibitions
-    past_url = 'https://museum.stanford.edu/exhibitions/past-exhibitions'
-    process_exhibitions(past_url, 'past')
+    # Scrape past exhibitions: a rarely changing page, so proxied runs pull it about weekly
+    if past_pages_due(env):
+        past_url = 'https://museum.stanford.edu/exhibitions/past-exhibitions'
+        process_exhibitions(past_url, 'past')
+    else:
+        logging.info("Cantor Arts Center: skipping the past-exhibitions page this run (pulled about weekly); existing data kept.")
