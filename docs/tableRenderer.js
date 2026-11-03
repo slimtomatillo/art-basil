@@ -220,15 +220,20 @@ class TableRenderer {
         // Add maps link
         const venueName = event.venue;
 
-        if (venueName && this.venues[venueName]) {
+        // One link per address; a venue with several spaces gets "Map: <space>" for each
+        const mapLinks = venueName ? window.venueAddresses.mapLinks((this.venues || {})[venueName]) : [];
+        if (mapLinks.length) {
             cell.appendChild(document.createElement('br'));
-            const address = this.venues[venueName];
-            const venueLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-            const mapLinkElement = document.createElement('a');
-            mapLinkElement.href = venueLink;
-            mapLinkElement.textContent = 'Map';
-            mapLinkElement.target = '_blank'; // Open in new tab/window
-            cell.appendChild(mapLinkElement);
+            mapLinks.forEach((map, i) => {
+                // The Links column is narrow, so each space's link sits on its own line
+                if (i) cell.appendChild(document.createElement('br'));
+                const mapLinkElement = document.createElement('a');
+                mapLinkElement.href = map.href;
+                mapLinkElement.textContent = map.text;
+                if (mapLinks.length > 1) mapLinkElement.title = map.title;
+                mapLinkElement.target = '_blank'; // Open in new tab/window
+                cell.appendChild(mapLinkElement);
+            });
         }
 
         // Add notify button
