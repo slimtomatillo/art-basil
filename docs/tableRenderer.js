@@ -165,7 +165,6 @@ class TableRenderer {
             imgElement.src = imageLinkObj.link;
             imgElement.alt = `${event.name} @ ${event.venue}`;
             imgElement.className = 'event-image';
-            imgElement.style.maxWidth = '150px';
             imgElement.style.maxHeight = '130px';
             imgElement.style.height = 'auto';
             imgElement.style.justifySelf = 'center';
@@ -227,6 +226,10 @@ class TableRenderer {
                 '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" ' +
                 'stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>' +
                 '<path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span>Notify Me</span>';
+            // The "Notify Me" label is hidden on narrow screens (see styles.css), so the
+            // button needs its own name; it still starts with the visible words.
+            notifyButton.setAttribute('aria-label', 'Notify me about this event');
+            notifyButton.title = 'Notify me';
             notifyButton.disabled = false; // Ensure button is enabled
             notifyButton.addEventListener('click', function() {
                 console.log('Notify button clicked');

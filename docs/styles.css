@@ -1231,6 +1231,30 @@ body {
     transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
 }
 
+/* Narrow windows: the table has to fit without scrolling sideways. The
+   "Notify Me" label can't wrap, so it kept the Links column ~65px wider than
+   the links need, and the image column was held open by the thumbnails' natural
+   width. Show just the bell (it keeps its name via aria-label and a tooltip) and
+   cap the thumbnails. */
+@media (max-width: 767.98px) {
+    .region-page .notify-button {
+        padding: 0.3rem 0.45rem;
+    }
+
+    .region-page .notify-button span {
+        display: none;
+    }
+
+    .region-page .notify-button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .region-page .event-table .event-image {
+        max-width: 100px;
+    }
+}
+
 .region-page .notify-button:hover,
 .region-page .notify-button:focus-visible {
     background-color: var(--region-c) !important;
