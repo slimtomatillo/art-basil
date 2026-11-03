@@ -1097,9 +1097,15 @@ body {
     content: '';
     position: absolute;
     z-index: -1;
-    inset: -0.55em -0.7em -0.4em -0.6em;
+    /* Everything here is in em, so the bubble keeps the same padding and the
+       same corner roundness around any region name and scales smoothly with the
+       title as the window changes. (Percentage radii made it a flat ellipse
+       for long names and a round blob for short ones.) The sides overhang by
+       0.4em, which stays inside the page margin even on a phone, so no
+       breakpoint is needed. */
+    inset: -0.5em -0.4em -0.4em -0.4em;
     background: color-mix(in srgb, var(--region-c) 14%, transparent);
-    border-radius: 62% 38% 54% 46% / 55% 44% 56% 45%;
+    border-radius: 1.7em 1.2em 1.6em 1.3em / 1em 0.9em 1em 0.95em;
     transform: rotate(var(--region-t));
 }
 
@@ -1385,13 +1391,6 @@ body {
     font-size: 0.82rem;
     font-weight: 500;
     line-height: 1.6;
-}
-
-/* On phones the title blob must stay inside the screen (no sideways scroll) */
-@media (max-width: 767.98px) {
-    .region-page .region-title::before {
-        inset: -0.45em -0.1em -0.3em -0.3em;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
