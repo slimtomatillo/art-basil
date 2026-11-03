@@ -26,7 +26,7 @@ from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
-    doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery
+    doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -145,6 +145,8 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Doris McCarthy Gallery": doris_mccarthy_gallery.scrape_doris_mccarthy_gallery,
             "Onsite Gallery": onsite_gallery.scrape_onsite_gallery,
             "Stephen Bulger Gallery": stephen_bulger_gallery.scrape_stephen_bulger_gallery,
+            "The Joan and Martin Goldfarb Gallery of York University": goldfarb_gallery.scrape_goldfarb_gallery,
+            "Propeller Art Gallery": propeller_art_gallery.scrape_propeller_art_gallery,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,

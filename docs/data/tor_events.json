@@ -2675,5 +2675,185 @@
             "last_updated": "2026-11-03 19:11:00",
             "hash": "5befa37bf87d93a555793d22076731ca"
         }
+    },
+    "The Joan and Martin Goldfarb Gallery of York University": {
+        "Torkwase Dyson: The Distance Inside Us (Bird and Lava)-The Joan and Martin Goldfarb Gallery of York University": {
+            "name": "Torkwase Dyson: The Distance Inside Us (Bird and Lava)",
+            "venue": "The Joan and Martin Goldfarb Gallery of York University",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-11",
+                "end": "2027-03-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thegoldfarbgallery.ca/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:22",
+            "hash": "627f867f3711d663973785101f30a91e"
+        },
+        "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism-The Joan and Martin Goldfarb Gallery of York University": {
+            "name": "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism",
+            "venue": "The Joan and Martin Goldfarb Gallery of York University",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-11",
+                "end": "2027-03-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://thegoldfarbgallery.ca/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:22",
+            "hash": "3c433f41a01e65d4161fbccbf18331a0"
+        }
+    },
+    "Propeller Art Gallery": {
+        "Desert Frequencies: Jelena Duma-Propeller Art Gallery": {
+            "name": "Desert Frequencies: Jelena Duma",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-21",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/desert-frequencies-jelena-duma/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:24",
+            "hash": "a1ff83e5e5d1010220a298c2d9956afa"
+        },
+        "Meandering: Ruth Martin Maude-Propeller Art Gallery": {
+            "name": "Meandering: Ruth Martin Maude",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-21",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/meandering-ruth-martin-maude/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:24",
+            "hash": "cdce4af798a66a5c248f4e7738bf1f53"
+        },
+        "With A Magpie\u2019s Pleasure: Pria Muzumdar-Propeller Art Gallery": {
+            "name": "With A Magpie\u2019s Pleasure: Pria Muzumdar",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2026-11-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/with-a-magpies-pleasure-pria-muzumdar/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:26",
+            "hash": "85fe44baf4a50788d4cf6a456c4b2c94"
+        },
+        "Marks and Flow: New Paintings: Susan Freypons-Propeller Art Gallery": {
+            "name": "Marks and Flow: New Paintings: Susan Freypons",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "painting",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2026-11-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/marks-and-flow-new-paintings-susan-freypons/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:27",
+            "hash": "905e509aef41bf304cd7f58ca6259062"
+        },
+        "Primary 2: Selected Artists-Propeller Art Gallery": {
+            "name": "Primary 2: Selected Artists",
+            "venue": "Propeller Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2026-11-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://propellerartgallery.com/exhibitions/primary-2-group-exhibition/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-03 19:16:27",
+            "hash": "be3c9a4fba19ef16f1a41ca6b027c381"
+        }
     }
 }
