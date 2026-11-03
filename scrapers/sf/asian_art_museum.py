@@ -1,4 +1,4 @@
-from utils import fetch_and_parse
+from utils import fetch_and_parse, past_pages_due
 from processing import process_event
 from config import MONTH_TO_NUM_DICT
 import datetime as dt
@@ -206,9 +206,16 @@ def scrape_asian_art_museum_past_events(env='prod', region='sf'):
             date_dt = dt.date(year, month_num, day)
         return date_dt
 
+    if not past_pages_due(env):
+        logging.info("Asian Art Museum: skipping the past-exhibitions page this run (pulled about weekly); existing data kept.")
+        return
+
     # Scrape info
     url = 'https://exhibitions.asianart.org/past/'
     soup = fetch_and_parse(url)
+    if soup is None:
+        logging.warning("Asian Art Museum: could not fetch the past-exhibitions page; existing data kept.")
+        return
     
     # Find rest of events
     article_elements = soup.find(class_='exhibit-archive').find(class_='exhibit__content').find_all('article')

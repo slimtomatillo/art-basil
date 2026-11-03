@@ -32,8 +32,9 @@ from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arte
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
 # utils.PROXY_DOMAINS), mapped to the venue names they write data under (some
-# write several). A full refresh of these costs ~315 credits and the free
-# allowance is 5,000 a month, so they are refreshed every few days, not daily.
+# write several). A refresh of these costs about 375 credits (255 for the current and
+# upcoming pages, 120 for the past-exhibition pages) and the free allowance is 5,000 a
+# month, so they are refreshed every 4 days, and their past pages every other time.
 PROXIED_VENUES = {
     "BAMPFA": ["BAMPFA"],
     "Cantor Arts Center": ["Cantor Arts Center"],
@@ -45,10 +46,10 @@ PROXIED_VENUES = {
     "AGO": ["AGO"],
     "Art Museum at the University of Toronto": ["Art Museum at the University of Toronto"],
 }
-# "Every 3 days" with slack, so run-to-run start-time jitter can't push a venue
-# to every 4th day. A venue is due once its newest event is this old; a failed
+# "Every 4 days" with 12 hours of slack, so run-to-run start-time jitter can't push a
+# venue to every 5th day. A venue is due once its newest event is this old; a failed
 # fetch leaves it that old, so it is retried on the next daily run.
-PROXY_REFRESH_MIN_AGE = dt.timedelta(hours=60)
+PROXY_REFRESH_MIN_AGE = dt.timedelta(days=utils.PROXY_REFRESH_DAYS) - dt.timedelta(hours=12)
 
 def proxy_refresh_due(region, venue, now=None):
     """True if a proxied scraper's data is old enough (or absent) to refresh."""
@@ -207,6 +208,8 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
     failed = []
     for venue, scraper in venues.items():
         region = venue_to_region[venue]
+        # A venue named on the command line fetches everything, past pages included
+        utils.FORCE_PAST_PAGES = bool(selected_venues and venue in selected_venues)
         # Proxied venues are skipped between refreshes to stay inside the
         # ZenRows allowance (their existing data is kept). Naming a venue
         # explicitly, or a dev run, always scrapes it.
@@ -216,7 +219,7 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
                 logging.warning(f"[{region}] Skipping {venue}: the ZenRows account is out of credits; existing data kept.")
                 continue
             if not proxy_refresh_due(region, venue):
-                logging.info(f"[{region}] Skipping {venue}: refreshed recently (proxied venues refresh about every 3 days); existing data kept.")
+                logging.info(f"[{region}] Skipping {venue}: refreshed recently (proxied venues refresh about every {utils.PROXY_REFRESH_DAYS} days); existing data kept.")
                 continue
         logging.info(f"[{region}] Starting scrape for {venue}")
         for s in (scraper if isinstance(scraper, list) else [scraper]):

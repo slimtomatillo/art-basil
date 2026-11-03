@@ -1,4 +1,4 @@
-from utils import fetch_and_parse
+from utils import fetch_and_parse, past_pages_due
 from processing import process_event
 from config import MONTH_TO_NUM_DICT
 import datetime as dt
@@ -88,10 +88,12 @@ def scrape_de_young_and_legion_of_honor(env='prod', region='sf'):
         # holds past exhibitions (257+ deep per location) - only its first
         # page (most recent ~21) is pulled, matching this scraper's
         # historical scope rather than paging through the full archive.
-        for url in [
-            f"https://www.famsf.org/exhibitions?where={loc['slug']}",
-            f"https://www.famsf.org/exhibitions/past?where={loc['slug']}",
-        ]:
+        urls = [f"https://www.famsf.org/exhibitions?where={loc['slug']}"]
+        if past_pages_due(env):
+            urls.append(f"https://www.famsf.org/exhibitions/past?where={loc['slug']}")
+        else:
+            logging.info(f"{venue}: skipping the past-exhibitions page this run (pulled about weekly); existing data kept.")
+        for url in urls:
             soup = fetch_and_parse(url)
             if soup is None:
                 # famsf.org is behind a Cloudflare WAF that returns 403 to

@@ -1,3 +1,4 @@
+import datetime as dt
 import json
 import numpy as np
 import logging
@@ -105,6 +106,24 @@ ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
 # request in the run would fail the same way, so fetch_and_parse stops sending
 # them and main.py skips the remaining proxied scrapers.
 PROXY_EXHAUSTED = False
+
+# Proxied venues are refreshed about every PROXY_REFRESH_DAYS days (main.py). Their
+# "past exhibitions" pages change rarely but cost as much as any other page, so they
+# are pulled on every second refresh only, about every 8 days. Which refreshes those
+# are comes from the calendar (no stored state): a venue's refreshes fall 4 days
+# apart, so they alternate between even and odd 4-day blocks.
+PROXY_REFRESH_DAYS = 4
+
+# main.py sets this while it runs a venue that was named on the command line
+# (--venues), which always fetches everything.
+FORCE_PAST_PAGES = False
+
+def past_pages_due(env='prod', today=None):
+    """True if a proxied scraper should fetch its past-exhibition pages in this run."""
+    if env != 'prod' or FORCE_PAST_PAGES or not ZENROWS_API_KEY:
+        return True    # dev runs, named venues and direct (free) fetches always get everything
+    today = today or dt.date.today()
+    return (today.toordinal() // PROXY_REFRESH_DAYS) % 2 == 0
 
 def _proxy_get(url, proxy_params):
     """GET through ZenRows, retrying once on a timeout or transient error."""

@@ -237,12 +237,15 @@ proxy. Adding one takes three steps:
 2. **Register the scraper in `main.py`'s `PROXIED_VENUES`**: scraper name → the
    venue names it writes data under (some scrapers write several). Without this
    it runs daily and spends credits it shouldn't.
-3. **Budget it.** The free plan is 5,000 credits a month; a full refresh of every
-   proxied venue is ~315 credits, so `main.py` refreshes each one only when its
-   data is 60+ hours old (about every 3 days). Out of credits, ZenRows answers
-   `402`; the first one stops all proxying for that run and the venues keep their
-   old data. Avoid casual manual CI runs and tier experiments — each full run on a
-   due day spends ~315 credits.
+3. **Budget it.** The free plan is 5,000 credits a month; one refresh of every
+   proxied venue is ~375 credits, so `main.py` refreshes each one only when its
+   data is 84+ hours old (every 4 days, ~2,400 credits a month in all, see
+   OPERATIONS.md). If the venue has a separate page of past exhibitions, wrap that
+   fetch in `past_pages_due(env)` (from `utils`) so it is pulled only about every 8
+   days; the scrapers for BAMPFA, Cantor, de Young and Norton Simon show how.
+   Out of credits, ZenRows answers `402`; the first one stops all proxying for that
+   run and the venues keep their old data. Avoid casual manual CI runs and tier
+   experiments: each full run on a due day spends ~375 credits.
 
 Naming a venue in `selected_venues` always runs it, bypassing the gate.
 
