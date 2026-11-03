@@ -88,6 +88,11 @@
                 </span>
             </a>
         </nav>
+
+        <section class="request-area" aria-labelledby="requestAreaHint">
+            <p class="request-area-hint" id="requestAreaHint">Don't see your city?</p>
+            <button type="button" class="request-area-button" id="requestAreaButton" aria-haspopup="dialog">Add my area</button>
+        </section>
     </div>
 
     <!-- Bootstrap JS -->
@@ -154,9 +159,39 @@
         </div>
     </div>
 
+    <!-- Request your area: a small form sent through Web3Forms (siteForms.js), shown in the same dialog style as feedback -->
+    <div class="feedback-modal" id="areaModal" role="dialog" aria-modal="true" aria-labelledby="areaTitle">
+        <div class="feedback-modal-content">
+            <button type="button" class="feedback-close" id="areaClose" aria-label="Close">&times;</button>
+            <form class="feedback-form site-form" id="areaForm" data-web3form
+                  data-subject="Art Basil: area request" data-subject-field="City or area"
+                  data-success="Thank you! We'll look into your area, and write back if you left an email.">
+                <h3 id="areaTitle">Add my area</h3>
+                <p class="form-hint mb-3">Tell us where you are and we'll look into adding it. If you know of galleries or museums there, tell us about those too.</p>
+                <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="form-group">
+                    <label for="area-name">City or area <span class="req">*</span></label>
+                    <input id="area-name" name="area" data-label="City or area" type="text" maxlength="200" placeholder="For example Chicago" required>
+                </div>
+                <div class="form-group">
+                    <label for="area-notes">Anything we should know? (optional)</label>
+                    <textarea id="area-notes" name="notes" data-label="Notes" rows="3" maxlength="1500" placeholder="Galleries, museums or listing pages we should look at"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="area-email">Your email (optional)</label>
+                    <input id="area-email" name="email" data-label="email" type="email" maxlength="200" autocomplete="email" placeholder="So we can tell you when it's up">
+                </div>
+                <button type="submit">Send request</button>
+                <div class="form-status" hidden></div>
+            </form>
+        </div>
+    </div>
+
     <!-- Feedback JavaScript -->
     <script src="web3forms.js"></script>
     <script src="feedback.js"></script>
+    <script src="siteForms.js"></script>
+    <script src="areaRequest.js"></script>
 
     <!-- Notify Modal -->
     <div class="notify-modal" id="notifyModal">

@@ -273,6 +273,46 @@ body {
     .empty-state-clear { transition: none; }
 }
 
+/* Home page: "Don't see your city?" and the Add my area button (areaRequest.js) */
+.request-area {
+    margin: 2.5rem auto 1rem;
+    text-align: center;
+}
+
+.request-area-hint {
+    margin: 0 0 0.75rem;
+    color: #495057;
+}
+
+.request-area-button {
+    padding: 0.5rem 1.4rem;
+    background: #fff;
+    color: #111;
+    border: 2.5px solid #111;
+    border-radius: 14px 18px 13px 17px;
+    box-shadow: 4px 4px 0 #111;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.request-area-button:hover,
+.request-area-button:focus-visible {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 #111;
+}
+
+.request-area-button:focus-visible {
+    outline: 3px solid #1c78c0;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .request-area-button { transition: none; }
+}
+
 /* Table styles */
 .event-table {
     background-color: white;

@@ -23,6 +23,12 @@ see section 2f. Everything below this point is for a whole new city.
 
 # Adding a new region (city)
 
+> **Where requests come from.** The "Add my area" button on the home page emails
+> `info.artbasil@gmail.com` (through Web3Forms, like the other site forms) with the
+> subject "Art Basil: area request - <city or area>", the visitor's notes, and their
+> email as the reply-to if they left one. Look there for cities people want before
+> choosing the next region.
+
 A "region" is a city / metro area (`sf`, `la`, ...). Each region has its own
 event database, venue-address map, scraper package, and front-end page.
 
