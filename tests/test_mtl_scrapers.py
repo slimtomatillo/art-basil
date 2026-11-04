@@ -177,6 +177,15 @@ def run_pages(module, func, pages):
     return {(e['venue'], e['name']): e for e in stored}
 
 
+    def test_the_shows_picture_is_taken_not_the_galleries_logo(self):
+        page = BeautifulSoup('<head><meta property="og:image" content="/wp-content/uploads/2018/02/Logo_GalerieUQAM.jpg"/></head>'
+                             '<body><main><img src="/wp-content/themes/Galerie2017/assets/images/logo_galerie_uqam.svg"/>'
+                             '<img src="/wp-content/uploads/03_2026_visuelpromo_norouzi-1056x594.jpg"/>'
+                             '<img src="/wp-content/uploads/Calq_noir.png"/></main></body>', 'html.parser')
+        self.assertEqual(galerie_uqam._show_image(page, 'https://galerie.uqam.ca/en/expositions/rift/'),
+                         'https://galerie.uqam.ca/wp-content/uploads/03_2026_visuelpromo_norouzi-1056x594.jpg')
+
+
 class CcaTest(unittest.TestCase):
     BASE = 'https://www.cca.qc.ca/en/events/'
 

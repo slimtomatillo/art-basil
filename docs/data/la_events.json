@@ -7322,10 +7322,15 @@
                 {
                     "link": "https://www.davidkordanskygallery.com/exhibitions/upcoming",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1600,h_1200,c_lfill/exhibit-e/675c7754605ea781900ec16e/a999f6015fd359a28c1e53411433c740.jpeg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-04 18:25:39",
-            "hash": "3b1e00e45a23f16c3910991ba97d5726"
+            "hash": "3b1e00e45a23f16c3910991ba97d5726",
+            "image_checked": "2026-11-04"
         },
         "Ivan Morley: Trees-David Kordansky Gallery": {
             "name": "Ivan Morley: Trees",
@@ -7347,10 +7352,15 @@
                 {
                     "link": "https://www.davidkordanskygallery.com/exhibitions/upcoming",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1600,h_1200,c_lfill/exhibit-e/675c7754605ea781900ec16e/560d19cc9a06b56c921baaabee04167d.jpeg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-04 18:25:39",
-            "hash": "234696fab7a286c1fd1c1cbb0723737e"
+            "hash": "234696fab7a286c1fd1c1cbb0723737e",
+            "image_checked": "2026-11-04"
         },
         "Abraham Lincoln Walker: After World, 1980\u20131991-David Kordansky Gallery": {
             "name": "Abraham Lincoln Walker: After World, 1980\u20131991",
