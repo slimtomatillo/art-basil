@@ -67,6 +67,17 @@ class SecureImageUrlTest(unittest.TestCase):
         self.assertTrue(found.startswith('https://images.weserv.nl/'))
 
 
+class ResizedImageUrlTest(unittest.TestCase):
+    def test_gives_a_small_jpeg_copy_through_the_proxy(self):
+        url = images.resized_image_url('https://caamuseum.org/content/x y/shot.png', 500)
+        self.assertTrue(url.startswith('https://images.weserv.nl/?url=caamuseum.org%2Fcontent%2Fx%20y%2Fshot.png'))
+        self.assertIn('w=500', url)
+        self.assertIn('output=jpg', url)
+
+    def test_missing_url_passes_through(self):
+        self.assertIsNone(images.resized_image_url(None))
+
+
 class CandidateImagesTest(unittest.TestCase):
     def test_share_image_comes_first_then_page_images_without_repeats(self):
         page = soup('''<html><head>
@@ -330,6 +341,12 @@ class KeepFoundImageTest(unittest.TestCase):
         incoming = {'links': []}
         processing.keep_found_image(incoming, None)
         self.assertEqual(incoming, {'links': []})
+
+    def test_check_date_is_dropped_when_the_event_page_changes(self):
+        # the venue now links a show's own page, so the page must be looked at again
+        incoming = {'links': [{'link': 'https://g.example/new-page', 'description': 'Event Page'}]}
+        processing.keep_found_image(incoming, self.STORED)
+        self.assertNotIn('image_checked', incoming)
 
     def test_process_event_keeps_a_found_image_through_a_rescrape(self):
         with tempfile.TemporaryDirectory() as directory:

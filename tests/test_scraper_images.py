@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import images
 from scrapers.sf import creative_growth, sanchez_art_center, shooting_gallery
+from scrapers.la import california_african_american_museum as caam, ica_la, molaa
 from scrapers.tor import _common, art_museum_uoft, paul_petro_contemporary_art
 
 PAGE = 'https://g.example/shows/'
@@ -227,6 +228,45 @@ class SanchezTest(unittest.TestCase):
     def test_exhibitions_page_about_another_show_is_not_used(self):
         stale = self.EXHIBITIONS.replace('68th Annual', '67th Annual')
         self.assertEqual(self.run_sanchez(stale)['68th Annual Art Guild of Pacifica Members Show'], [])
+
+
+class LosAngelesPicturesTest(ScraperRunner, unittest.TestCase):
+    def test_caam_uses_a_small_copy_of_the_feeds_lead_picture(self):
+        item = {'title': 'Sadie Barnette: How to Fly', 'contentUrl': 'https://caamuseum.org/content/x/10-sadie',
+                'image': 'https://caamuseum.org/content/x/10-sadie/caam-pr_3.jpg',
+                'content': {'start_date': 'October 1', 'start_year': 2026, 'end_date': 'December 1', 'end_year': 2026,
+                            'display_date': '', 'main_image': 'caam-pr_3.jpg'}}
+        response = mock.Mock(json=lambda: {'current': [item], 'upcoming': []})
+        stored = []
+        with mock.patch.object(caam.requests, 'get', return_value=response), \
+                mock.patch.object(caam, 'region_today', return_value=TODAY), \
+                mock.patch.object(_common, 'region_today', return_value=TODAY), \
+                mock.patch.object(_common, 'process_event', side_effect=lambda d, r: stored.append(d)):
+            caam.scrape_california_african_american_museum(env='prod')
+        image = [l['link'] for l in stored[0]['links'] if l['description'] == 'Image'][0]
+        self.assertTrue(image.startswith('https://images.weserv.nl/?url=caamuseum.org%2Fcontent%2Fx%2F10-sadie%2Fcaam-pr_3.jpg'))
+
+    def test_ica_la_links_each_show_to_its_own_page(self):
+        html = ('<div>Current Exhibitions</div>'
+                '<a class="info-card--wrapper" href="/en/exhibitions/765-carl-cheng"><div class="info-card"><div class="info-card--title">Carl Cheng: Nature</div>'
+                '<div class="info-card--sub-title">On view through February 28, 2027</div></div></a>'
+                '<div>Find us on</div>')
+        stored = self.run_scraper(ica_la, 'scrape_ica_la', html)
+        self.assertEqual(stored[0]['links'][0]['link'], 'https://theicala.org/en/exhibitions/765-carl-cheng')
+
+    def test_molaa_falls_back_to_the_shows_title_card(self):
+        listing = '<a class="image-slide-anchor" href="/2026-sigils"></a>'
+        show = ('<img src="//cdn/header.jpg"><h1>SIGILS</h1><p>Starting October 4, 2026 - February 21, 2027</p>'
+                '<img data-src="https://cdn.example/TitularSigils_Logo.jpg"><img data-src="https://cdn.example/30th-logo.jpg">')
+        pages = {molaa.EXHIBITIONS_URL: listing, 'https://molaa.org/2026-sigils': show}
+        stored = []
+        with mock.patch.object(molaa, 'fetch_and_parse', side_effect=lambda u: soup(pages[u])), \
+                mock.patch.object(molaa, 'region_today', return_value=TODAY), \
+                mock.patch.object(_common, 'region_today', return_value=TODAY), \
+                mock.patch.object(_common, 'process_event', side_effect=lambda d, r: stored.append(d)):
+            molaa.scrape_molaa(env='prod')
+        images_ = [l['link'] for l in stored[0]['links'] if l['description'] == 'Image']
+        self.assertEqual(images_, ['https://cdn.example/TitularSigils_Logo.jpg'])
 
 
 if __name__ == '__main__':

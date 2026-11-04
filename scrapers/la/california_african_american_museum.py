@@ -1,3 +1,4 @@
+from images import resized_image_url
 from scrapers.tor._common import publish
 from processing import region_today
 import datetime as dt
@@ -44,8 +45,10 @@ def scrape_california_african_american_museum(env='prod', region='la'):
             # "October 20, 2026 - February 27, 2027 at Art + Practice": shown at another venue
             if ' at ' in str(content.get('display_date') or ''):
                 continue
-            stored += publish(env, region, VENUE, item['title'].strip(), start, end,
-                              item.get('contentUrl') or item.get('url') or 'https://caamuseum.org/exhibitions',
-                              tag='museum', seen=seen)
+            page = item.get('contentUrl') or item.get('url') or 'https://caamuseum.org/exhibitions'
+            # The feed names each show's lead picture; the originals are huge PNGs, so a small copy is used
+            picture = item.get('image') or (f"{page.rstrip('/')}/{content['main_image']}" if content.get('main_image') else None)
+            stored += publish(env, region, VENUE, item['title'].strip(), start, end, page,
+                              tag='museum', seen=seen, image=resized_image_url(picture))
     if not stored:
         logging.warning("CAAM: no exhibitions found; existing data kept.")

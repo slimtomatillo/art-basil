@@ -36,6 +36,14 @@ def _title(lines, dates_at):
     return ' '.join(parts) if parts[0].endswith(':') else ': '.join(parts)
 
 
+def _title_card(page):
+    """The show's own graphic (its title set in type, named like "...Logo.jpg"): the first lazy-loaded
+    picture on its page, ahead of the museum's anniversary logo, footer and sponsor pictures. The pages
+    have no share image and no photo, and this is the only thing that belongs to the show."""
+    img = page.select_one('img[data-src]')
+    return urljoin('https:', img['data-src']) if img else None
+
+
 def scrape_molaa(env='prod', region='la'):
     """Scrape and process the current and upcoming exhibitions at the Museum of Latin American Art."""
     region_today(region)
@@ -66,6 +74,6 @@ def scrape_molaa(env='prod', region='la'):
         name = _title(lines, dates_at)
         og = page.find('meta', property='og:image')
         stored += publish(env, region, VENUE, name, _date(m.group(1)), _date(m.group(2)), url,
-                          tag='museum', seen=seen, image=og.get('content') if og else None)
+                          tag='museum', seen=seen, image=og.get('content') if og else _title_card(page))
     if not stored:
         logging.warning("MOLAA: no exhibitions found; existing data kept.")
