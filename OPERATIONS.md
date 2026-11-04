@@ -29,6 +29,14 @@ At the end of each run, the **job summary** on the Actions run page lists:
   in 7 days. A blocked or redesigned site usually just logs an error and
   carries on, so this is how silent failures get caught. Manual and archive
   events are ignored.
+- **Shows not seen on the venue's site** — a current or upcoming event its working
+  scraper hasn't reported for 21 days. The stale-venue check can't see these: while a
+  scraper refreshes a venue's other events the venue looks healthy, yet a show that
+  dropped off the listing, or moved to a page the scraper doesn't read, would otherwise
+  sit on the site as current or upcoming forever (LACMA's permanent installations did,
+  because its "Ongoing" tab wasn't scraped). For each one, look at the venue's site:
+  if the show is over, mark it past by hand or let it age out; if it is still on, the
+  scraper is missing a page or a layout, so fix the scraper.
 - **Manual events to review** — hand-entered events whose show is about to end,
   or whose page disappeared (`manual_check.py`)
 

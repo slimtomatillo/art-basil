@@ -11,7 +11,7 @@ import image_audit
 import images
 from processing import update_event_phases
 from manual_check import check_manual_events
-from scraper_health import find_stale_venues, report as report_scraper_health
+from scraper_health import find_stale_venues, find_unseen_events, report as report_scraper_health
 import utils
 from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
@@ -293,7 +293,8 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
         # Flag problems a human should look at. Failures here must never abort
         # the run or lose the scraped data.
         try:
-            report_scraper_health(failed, find_stale_venues())
+            stale_venues = find_stale_venues()
+            report_scraper_health(failed, stale_venues, find_unseen_events(stale=stale_venues))
         except Exception:
             logging.exception("Scraper health check failed")
         try:
