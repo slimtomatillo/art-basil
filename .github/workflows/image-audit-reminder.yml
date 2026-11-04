@@ -1,0 +1,58 @@
+name: Monthly Picture Audit Reminder
+
+# On the first of each month, open a GitHub issue holding the latest IMAGE_AUDIT.md (events that
+# still have no picture of their own), so it gets looked at: a better scraper, or a logo in
+# docs/data/venue_images.json. See OPERATIONS.md, "Event images". The previous month's issue is
+# closed when the new one opens.
+
+on:
+  schedule:
+    - cron: '0 16 1 * *'   # 9am Pacific (PDT) / 8am (PST) on the 1st
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v7
+
+    - name: Open the monthly audit issue
+      env:
+        GH_TOKEN: ${{ github.token }}
+        GH_REPO: ${{ github.repository }}
+      run: |
+        if [ ! -f IMAGE_AUDIT.md ]; then
+          echo "IMAGE_AUDIT.md does not exist yet: the daily scrape writes it. Nothing to report."
+          exit 1
+        fi
+        month=$(date -u +%Y-%m)
+        gh label create image-audit --color 5319e7 --description "Monthly check of events without pictures" --force
+        {
+          echo "The latest \`IMAGE_AUDIT.md\` (rewritten by every daily run). For each venue listed:"
+          echo
+          echo "- is there a better picture on the venue's site now, or does its scraper need to read one?"
+          echo "- if it only shows the venue logo or is blank, add or improve its entry in \`docs/data/venue_images.json\`"
+          echo "- a venue with nothing usable can stay as it is"
+          echo
+          echo "Notes are in OPERATIONS.md, \"Event images\". Close this issue when reviewed."
+          echo
+          echo "---"
+          echo
+          # an issue body is limited to 65,536 characters
+          head -c 58000 IMAGE_AUDIT.md
+          if [ "$(wc -c < IMAGE_AUDIT.md)" -gt 58000 ]; then
+            echo
+            echo
+            echo "(Cut short. The full list is in [IMAGE_AUDIT.md](https://github.com/${GH_REPO}/blob/main/IMAGE_AUDIT.md).)"
+          fi
+        } > body.md
+        # close last month's issue(s) first, so only one is ever open
+        for n in $(gh issue list --label image-audit --state open --json number --jq '.[].number'); do
+          gh issue close "$n" --comment "Superseded by the ${month} audit."
+        done
+        gh issue create --title "Picture audit ${month}" --label image-audit --body-file body.md
