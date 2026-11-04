@@ -98,6 +98,10 @@ PROXY_DOMAINS = {
     # any connection (a browser is fine). A server-rendered WordPress site, so premium
     # proxy alone is tried first - not live-tested; if CI still gets a 403, add js_render.
     'artmuseum.utoronto.ca': {'premium_proxy': 'true'},
+    # Armory Center for the Arts (WEBSITE-90): fine from a normal connection, 403s
+    # GitHub Actions' IPs (seen 2026-11-04). Premium proxy alone is tried first - not
+    # live-tested (no proxy key locally); if CI still gets a 403, add js_render.
+    'www.armoryarts.org': {'premium_proxy': 'true'},
 }
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
