@@ -19,6 +19,11 @@ _FRENCH_MONTHS = {
     # abbreviations ("2 oct au 28 nov", "12 sept. au 4 déc.")
     'janv': 'january', 'févr': 'february', 'fevr': 'february', 'avr': 'april', 'juil': 'july',
     'sept': 'september', 'déc': 'december',
+    # Turkish ("12 Eylül - 20 Aralık 2026", day first like French); the capitals İ/I make no month's first letter
+    'ocak': 'january', 'şubat': 'february', 'subat': 'february', 'mart': 'march', 'nisan': 'april', 'mayıs': 'may', 'mayis': 'may',
+    'haziran': 'june', 'temmuz': 'july', 'ağustos': 'august', 'agustos': 'august', 'eylül': 'september',
+    'eylul': 'september', 'ekim': 'october', 'kasım': 'november', 'kasim': 'november', 'aralık': 'december',
+    'aralik': 'december',
 }
 _FRENCH_MONTH_RE = re.compile(rf"\b({'|'.join(sorted(_FRENCH_MONTHS, key=len, reverse=True))})\b\.?")
 # Any month word, English or French-turned-English, for the day-first swap
@@ -27,9 +32,9 @@ _DAY_FIRST_RE = re.compile(rf"\b(\d{{1,2}})(?:er)?\s+({_ANY_MONTH})\b\.?")
 
 
 def _from_french(text):
-    """'du 24 octobre au 28 novembre 2026' -> 'october 24 - november 28 2026'. Text with neither a
-    French month name nor a French 'au' ("2 oct au 28 nov") is returned as it is, so English
-    dates are never touched."""
+    """'du 24 octobre au 28 novembre 2026' -> 'october 24 - november 28 2026' (Turkish month names
+    are read the same way). Text with neither a French/Turkish month name nor a French 'au'
+    ("2 oct au 28 nov") is returned as it is, so English dates are never touched."""
     text = text.lower()
     if not (_FRENCH_MONTH_RE.search(text) or re.search(r'\d\s+(?:\S+\s+)?au\s+\d', text)):
         return text

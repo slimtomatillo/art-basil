@@ -22,6 +22,17 @@ class FrenchDatesTest(unittest.TestCase):
         self.assertEqual(parse_date_text('12 sept. au 4 déc. 2026', TODAY), (dt.date(2026, 9, 12), dt.date(2026, 12, 4)))
         self.assertEqual(parse_date_text('20 au 28 nov 2026', TODAY), (dt.date(2026, 11, 20), dt.date(2026, 11, 28)))
 
+    def test_turkish_months(self):
+        self.assertEqual(parse_date_text('12 Eylül - 20 Aralık 2026', TODAY), (dt.date(2026, 9, 12), dt.date(2026, 12, 20)))
+        self.assertEqual(parse_date_text('3 Kasım 2026 – 14 Şubat 2027', TODAY), (dt.date(2026, 11, 3), dt.date(2027, 2, 14)))
+        self.assertEqual(parse_date_text('1 Mayıs - 30 Ağustos 2027', TODAY), (dt.date(2027, 5, 1), dt.date(2027, 8, 30)))
+        self.assertEqual(parse_date_text('10 Ekim - 7 Ocak 2027', TODAY), (dt.date(2026, 10, 10), dt.date(2027, 1, 7)))
+
+    def test_every_turkish_month_is_read(self):
+        months = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']
+        for number, name in enumerate(months, start=1):
+            self.assertEqual(parse_date_text(f'3 {name} 2027 - 5 {name} 2027', TODAY), (dt.date(2027, number, 3), dt.date(2027, number, 5)), name)
+
     def test_until_and_lone_dates(self):
         self.assertEqual(parse_date_text("jusqu'au 15 mars 2027", TODAY), (None, dt.date(2027, 3, 15)))
         self.assertEqual(parse_date_text('8 août 2027', TODAY), (dt.date(2027, 8, 8), None))

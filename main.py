@@ -35,7 +35,7 @@ from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_muse
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
     doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery, \
     art_museum_uoft
-from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter
+from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
 # utils.PROXY_DOMAINS), mapped to the venue names they write data under (some
@@ -204,6 +204,11 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "SALT": salt.scrape_salt_exhibitions,
             "Pera Museum": pera_museum.scrape_pera_museum_exhibitions,
             "Arter": arter.scrape_arter_exhibitions,
+            "Galerist": galerist.scrape_galerist,
+            "Pi Artworks Istanbul": pi_artworks.scrape_pi_artworks,
+            "Zilberman Istanbul": zilberman_gallery.scrape_zilberman_gallery,
+            "DEPO": depo_istanbul.scrape_depo_istanbul,
+            "Elgiz Museum of Contemporary Art": elgiz_museum.scrape_elgiz_museum,
         }
     }
     
