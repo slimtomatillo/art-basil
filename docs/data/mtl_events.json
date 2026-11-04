@@ -2006,5 +2006,409 @@
             "last_updated": "2026-11-04 18:56:24",
             "hash": "3a7ece01462487709c982e3fd543f8d8"
         }
+    },
+    "Galerie de l'UQAM": {
+        "Replaying the Petite collection: second round-Galerie de l'UQAM": {
+            "name": "Replaying the Petite collection: second round",
+            "venue": "Galerie de l'UQAM",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galerie.uqam.ca/en/expositions/replaying-the-petite-collection-second-round/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://galerie.uqam.ca/wp-content/uploads/2018/02/Logo_GalerieUQAM.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:29",
+            "hash": "b05c9067bdf884c69d04524551ce4ae6"
+        },
+        "Anne Isabelle Leonard. \u00c9cole de glisse-Galerie de l'UQAM": {
+            "name": "Anne Isabelle Leonard. \u00c9cole de glisse",
+            "venue": "Galerie de l'UQAM",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-10",
+                "end": "2027-04-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galerie.uqam.ca/en/expositions/anne-isabelle-leonard-ecole-de-glisse-working-title/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://galerie.uqam.ca/wp-content/uploads/2018/02/Logo_GalerieUQAM.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:30",
+            "hash": "89caef2a237b30405a5e0bf09bb552d2"
+        },
+        "Anahita Norouzi. Rift-Galerie de l'UQAM": {
+            "name": "Anahita Norouzi. Rift",
+            "venue": "Galerie de l'UQAM",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galerie.uqam.ca/en/expositions/anahita-norouzi-rift/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://galerie.uqam.ca/wp-content/uploads/2018/02/Logo_GalerieUQAM.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:31",
+            "hash": "56ef97fece378cedd523f034c2005586"
+        },
+        "Lucia Choulakian. Le ciel \u00e9tait d\u2019un bleu \u00e9clatant-Galerie de l'UQAM": {
+            "name": "Lucia Choulakian. Le ciel \u00e9tait d\u2019un bleu \u00e9clatant",
+            "venue": "Galerie de l'UQAM",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galerie.uqam.ca/en/expositions/lucia-choulakian-le-ciel-etait-dun-bleu-eclatant/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://galerie.uqam.ca/wp-content/uploads/2018/02/Logo_GalerieUQAM.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:32",
+            "hash": "e7d20dc8c2b14ac1c16b17067986dcf0"
+        },
+        "Refuser le verdict-Galerie de l'UQAM": {
+            "name": "Refuser le verdict",
+            "venue": "Galerie de l'UQAM",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-10",
+                "end": "2027-04-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galerie.uqam.ca/en/expositions/refuser-le-verdict/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://galerie.uqam.ca/wp-content/uploads/2018/02/Logo_GalerieUQAM.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:34",
+            "hash": "d9fb9cb7dfc5bef6f358e8a9b2de49d4"
+        }
+    },
+    "Arsenal art contemporain": {
+        "Biennale ELEKTRA: F(R)ICTION - Art et Jeux-Arsenal art contemporain": {
+            "name": "Biennale ELEKTRA: F(R)ICTION - Art et Jeux",
+            "venue": "Arsenal art contemporain",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-15",
+                "end": "2026-11-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.arsenalcontemporary.com/montreal/expositions/details/la-biennale-elektra-friction",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "http://static1.squarespace.com/static/67ed9d7fb089a1242d17d15b/688b903c3899163bc9696920/6a567a7e6c85ac69d20850bd/1793739904263/728x825.png?format=1500w",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:35",
+            "hash": "acb175e468f9f1ec3c996311809aa6d6"
+        }
+    },
+    "Leonard & Bina Ellen Art Gallery": {
+        "Pratiques Alimentaires-Leonard & Bina Ellen Art Gallery": {
+            "name": "Pratiques Alimentaires",
+            "venue": "Leonard & Bina Ellen Art Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-01",
+                "end": "2026-12-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ellengallery.concordia.ca/exposition/pratiques-alimentaires/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:37",
+            "hash": "7aba43cddc0aa218975fd7610201e316"
+        }
+    },
+    "Canadian Centre for Architecture": {
+        "Reframing the American Landscape-Canadian Centre for Architecture": {
+            "name": "Reframing the American Landscape",
+            "venue": "Canadian Centre for Architecture",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-01",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "8e802608ee7c89b10c45fe1877f70138"
+        },
+        "The fortune of the city is that it has never been perfect-Canadian Centre for Architecture": {
+            "name": "The fortune of the city is that it has never been perfect",
+            "venue": "Canadian Centre for Architecture",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "b1fbe6c7c0b277db7e8ebd8e28639536"
+        },
+        "Everlasting-Canadian Centre for Architecture": {
+            "name": "Everlasting",
+            "venue": "Canadian Centre for Architecture",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "dc66c227baea2cfc6197b9026696d7e1"
+        },
+        "Neighbours-Canadian Centre for Architecture": {
+            "name": "Neighbours",
+            "venue": "Canadian Centre for Architecture",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-05",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "2b6dde4e34c6ff138a76e9945933cbd9"
+        },
+        "LAWS-Canadian Centre for Architecture": {
+            "name": "LAWS",
+            "venue": "Canadian Centre for Architecture",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-18",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "1a698d6d2064238281dab6e46c823e2a"
+        }
+    },
+    "Galerie Simon Blais": {
+        "Benjamin Klein: Magic City-Galerie Simon Blais": {
+            "name": "Benjamin Klein: Magic City",
+            "venue": "Galerie Simon Blais",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galeriesimonblais.com/en/expos/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "00d49bb0260318edcfd7dbd08345339a"
+        },
+        "Jean McEwen: La lumi\u00e8re sous les blasons-Galerie Simon Blais": {
+            "name": "Jean McEwen: La lumi\u00e8re sous les blasons",
+            "venue": "Galerie Simon Blais",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galeriesimonblais.com/en/expos/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "4f4e355080df8941f76d2a1ec858e2fc"
+        },
+        "Serge Lemoyne: Lemoyne's Universe-Galerie Simon Blais": {
+            "name": "Serge Lemoyne: Lemoyne's Universe",
+            "venue": "Galerie Simon Blais",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://galeriesimonblais.com/en/expos/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 19:29:38",
+            "hash": "b9fcb921dd32e81bee2f5cf44ff3dcf2"
+        }
     }
 }

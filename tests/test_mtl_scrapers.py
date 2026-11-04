@@ -8,7 +8,8 @@ from unittest import mock
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from scrapers.mtl import belgo_galleries, blouin_division, circa, oboro, skol
+from scrapers.mtl import (belgo_galleries, blouin_division, cca, circa, galerie_simon_blais as simon_blais,
+                          galerie_uqam, oboro, skol)
 from scrapers.tor import _common
 
 TODAY = dt.date(2026, 11, 4)
@@ -94,6 +95,59 @@ class BlouinDivisionTest(unittest.TestCase):
             + self.item('2026 | Sean Weisgerber | TORONTO', 'Long Live the New', 'Oct 30 - Dec 19, 2026') + '</ul>'
         events = run(blouin_division, 'scrape_blouin_division', page)
         self.assertEqual(sorted(n for _, n in events), ['Camille Charbonneau: Unmoored', 'Caroline Monnet: Kwìngwan'])
+
+
+def run_pages(module, func, pages):
+    """Like run(), for a scraper that reads several pages: pages maps each URL to its HTML."""
+    stored = []
+
+    def fetch(url, headers=None):
+        return BeautifulSoup(f'<main>{pages[url]}</main>', 'html.parser') if url in pages else None
+
+    with mock.patch.object(module, 'fetch_and_parse', fetch), \
+            mock.patch.object(module, 'region_today', lambda region: TODAY, create=True), \
+            mock.patch.object(_common, 'region_today', lambda region: TODAY), \
+            mock.patch.object(_common, 'process_event', lambda details, region: stored.append(details)):
+        getattr(module, func)(env='prod')
+    return {(e['venue'], e['name']): e for e in stored}
+
+
+class UqamTest(unittest.TestCase):
+    PAGES = {
+        'https://galerie.uqam.ca/en/statut/current/': '<a href="https://galerie.uqam.ca/en/expositions/touring/">Emmanuelle Léonard. Deployment</a>'
+                                                       '<a href="https://galerie.uqam.ca/en/expositions/virtual/">Virtual exhibition: Agora</a>',
+        'https://galerie.uqam.ca/en/statut/upcoming/': '<a href="https://galerie.uqam.ca/en/expositions/rift/">Anahita Norouzi. Rift</a>'
+                                                        '<a href="https://galerie.uqam.ca/en/expositions/later/">Passage à découvert 2027</a>',
+        'https://galerie.uqam.ca/en/expositions/touring/': blocks('Artist:', 'Emmanuelle Léonard', 'Confederation Centre, Charlottetown',
+                                                                 'September 19, 2026 - January 10, 2027', 'Deployment'),
+        'https://galerie.uqam.ca/en/expositions/rift/': blocks('Artist:', 'Anahita Norouzi', 'November 6, 2026 - January 16, 2027', 'Opening:'),
+        'https://galerie.uqam.ca/en/expositions/later/': blocks('Artist:', 'Someone', 'Opening:'),
+    }
+
+    def test_only_gallery_shows_with_dates_are_kept(self):
+        events = run_pages(galerie_uqam, 'scrape_galerie_uqam', self.PAGES)
+        self.assertEqual(list(events), [("Galerie de l'UQAM", 'Anahita Norouzi. Rift')])
+        self.assertEqual(events[("Galerie de l'UQAM", 'Anahita Norouzi. Rift')]['dates'],
+                         {'start': dt.date(2026, 11, 6), 'end': dt.date(2027, 1, 16)})
+
+
+class CcaTest(unittest.TestCase):
+    def test_end_dates_and_start_dates(self):
+        page = blocks('On view', 'The fortune of the city is that it has never been perfect',
+                      'is on display in our Main Galleries until 10 January 2027.', 'Upcoming', 'LAWS',
+                      'opens in our Main Galleries on 18 March 2027.', 'We see each exhibition as an opportunity')
+        events = run(cca, 'scrape_cca', page)
+        self.assertEqual(events[('Canadian Centre for Architecture', 'The fortune of the city is that it has never been perfect')]['dates'],
+                         {'start': None, 'end': dt.date(2027, 1, 10)})
+        self.assertEqual(events[('Canadian Centre for Architecture', 'LAWS')]['dates'], {'start': dt.date(2027, 3, 18), 'end': None})
+
+
+class SimonBlaisTest(unittest.TestCase):
+    def test_duplicates_and_offsite_shows_are_dropped(self):
+        shows = blocks('Jean McEwen', 'La lumière sous les blasons', 'Nov. 4, 2026 to Dec. 19, 2026', 'View',
+                       'Jean-Sébastien Denis', 'OFFSITE - HORS-GALERIE — Extensions', 'Oct. 15, 2026 to Mar. 21, 2027', 'View')
+        events = run(simon_blais, 'scrape_galerie_simon_blais', shows + shows)
+        self.assertEqual(list(events), [('Galerie Simon Blais', 'Jean McEwen: La lumière sous les blasons')])
 
 
 if __name__ == '__main__':
