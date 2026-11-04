@@ -11,8 +11,37 @@ _MONTH_YEAR_RE = re.compile(rf'({_MONTHS})\.?\s+(\d{{4}})')
 _YEARLESS_LOOKBACK_DAYS = 60
 
 
+_FRENCH_MONTHS = {
+    'janvier': 'january', 'février': 'february', 'fevrier': 'february', 'mars': 'march', 'avril': 'april',
+    'mai': 'may', 'juin': 'june', 'juillet': 'july', 'août': 'august', 'aout': 'august',
+    'septembre': 'september', 'octobre': 'october', 'novembre': 'november', 'décembre': 'december',
+    'decembre': 'december',
+    # abbreviations ("2 oct au 28 nov", "12 sept. au 4 déc.")
+    'janv': 'january', 'févr': 'february', 'fevr': 'february', 'avr': 'april', 'juil': 'july',
+    'sept': 'september', 'déc': 'december',
+}
+_FRENCH_MONTH_RE = re.compile(rf"\b({'|'.join(sorted(_FRENCH_MONTHS, key=len, reverse=True))})\b\.?")
+# Any month word, English or French-turned-English, for the day-first swap
+_ANY_MONTH = '|'.join(sorted(set(_FRENCH_MONTHS.values()) | set(MONTH_TO_NUM_DICT), key=len, reverse=True))
+_DAY_FIRST_RE = re.compile(rf"\b(\d{{1,2}})(?:er)?\s+({_ANY_MONTH})\b\.?")
+
+
+def _from_french(text):
+    """'du 24 octobre au 28 novembre 2026' -> 'october 24 - november 28 2026'. Text with neither a
+    French month name nor a French 'au' ("2 oct au 28 nov") is returned as it is, so English
+    dates are never touched."""
+    text = text.lower()
+    if not (_FRENCH_MONTH_RE.search(text) or re.search(r'\d\s+(?:\S+\s+)?au\s+\d', text)):
+        return text
+    text = _FRENCH_MONTH_RE.sub(lambda m: _FRENCH_MONTHS[m.group(1)], text)
+    text = _DAY_FIRST_RE.sub(r'\2 \1', text)
+    text = re.sub(r"^\s*jusqu['’]au\s+", 'through ', text)
+    text = re.sub(r'^\s*du\s+', '', text)
+    return re.sub(r'\s+au\s+', ' - ', text)
+
+
 def _normalize(text):
-    text = text.lower().replace('–', '-').replace('—', '-')
+    text = _from_french(text).replace('–', '-').replace('—', '-')
     text = re.sub(r'(\d)(st|nd|rd|th)\b', r'\1', text)
     text = re.sub(r'\s+to\s+', '-', text)
     text = text.replace(',', ' ')

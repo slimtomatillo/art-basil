@@ -8,11 +8,15 @@ import datetime as dt
 import re
 
 from config import MONTH_TO_NUM_DICT
-from date_parsing import parse_date_text
+from date_parsing import _FRENCH_MONTHS, parse_date_text
 
 _MONTHS = '|'.join(sorted(MONTH_TO_NUM_DICT, key=len, reverse=True))
-# "November 7 – December 19, 2026", "On view through December 19" (one site spells it "though")
-_LABEL_START_RE = re.compile(rf'^(?:through\s+)?(?:{_MONTHS})\.?\s+\d', re.IGNORECASE)
+_FRENCH = '|'.join(sorted(_FRENCH_MONTHS, key=len, reverse=True))
+# "November 7 – December 19, 2026", "On view through December 19" (one site spells it "though"),
+# and the French day-first "Du 5 novembre au 19 décembre 2026" / "jusqu'au 15 mars"
+_LABEL_START_RE = re.compile(
+    rf"^(?:through\s+)?(?:{_MONTHS})\.?\s+\d|^(?:(?:du|le)\s+|jusqu['’]au\s+)?\d{{1,2}}(?:er)?\s+(?:{_FRENCH})\b",
+    re.IGNORECASE)
 FAIR_PREFIXES = ('frieze', 'art basel', 'the armory show', 'felix', 'nada', 'untitled art')
 
 
