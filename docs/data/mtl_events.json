@@ -2519,66 +2519,6 @@
             "hash": "2d7610ec461e004f1bd9832f2d7c63bc"
         }
     },
-    "Art Mur": {
-        "Karine Giboulo: Retrospective and New Works-Art Mur": {
-            "name": "Karine Giboulo: Retrospective and New Works",
-            "venue": "Art Mur",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "future",
-                "gallery",
-                "free"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-11-14",
-                "end": "2026-12-19"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://artmur.com/en/upcoming-exhibitions/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://artmur.com/wp-content/uploads/Karine-Giboulo-National-Geographic-03-1-1024x683.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-11-04 19:44:56",
-            "hash": "166360a0dfaafcf2a5b9736b3d958105"
-        },
-        "\u00c9closion 2026-Art Mur": {
-            "name": "\u00c9closion 2026",
-            "venue": "Art Mur",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "future",
-                "gallery",
-                "free"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-11-07",
-                "end": "2026-12-10"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://artmur.com/en/upcoming-exhibitions/",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://artmur.com/wp-content/uploads/Jonathan-Jouan-1024x1536.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-11-04 19:44:56",
-            "hash": "f3811c034105359021d465addad32427"
-        }
-    },
     "La Guilde": {
         "\u00c9changes: Une s\u00e9lection d\u2019oeuvres des m\u00e9tiers d\u2019art autochtone des Territoires du Nord-Ouest-La Guilde": {
             "name": "\u00c9changes: Une s\u00e9lection d\u2019oeuvres des m\u00e9tiers d\u2019art autochtone des Territoires du Nord-Ouest",
@@ -2608,6 +2548,66 @@
             ],
             "last_updated": "2026-11-04 19:44:56",
             "hash": "bf10a24aaa6ef5a517b78dc2b4715cc1"
+        }
+    },
+    "Art M\u00fbr": {
+        "Karine Giboulo: Retrospective and New Works-Art M\u00fbr": {
+            "name": "Karine Giboulo: Retrospective and New Works",
+            "venue": "Art M\u00fbr",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-14",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://artmur.com/en/upcoming-exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://artmur.com/wp-content/uploads/Karine-Giboulo-National-Geographic-03-1-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:48:53",
+            "hash": "31fa92e8979109f1882ff72bb35f5b90"
+        },
+        "\u00c9closion 2026-Art M\u00fbr": {
+            "name": "\u00c9closion 2026",
+            "venue": "Art M\u00fbr",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://artmur.com/en/upcoming-exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://artmur.com/wp-content/uploads/Jonathan-Jouan-1024x1536.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:48:53",
+            "hash": "7d84742940d483cd59842ffb69e3f3fe"
         }
     }
 }

@@ -171,7 +171,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Canadian Centre for Architecture": cca.scrape_cca,
             "Galerie Simon Blais": galerie_simon_blais.scrape_galerie_simon_blais,
             "Fonderie Darling": fonderie_darling.scrape_fonderie_darling,
-            "Art Mur": art_mur.scrape_art_mur,
+            "Art Mûr": art_mur.scrape_art_mur,
             "La Guilde": la_guilde.scrape_la_guilde,
         },
         'tor': {

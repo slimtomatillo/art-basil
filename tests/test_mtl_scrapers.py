@@ -203,10 +203,10 @@ class ArtMurTest(unittest.TestCase):
                 '<em>Éclosion</em> 2026<br/>Artists: Marine Bordy</div></div>')
         current = '<div class="entry-content type-page">Installation in progress</div>'
         events = run_pages(art_mur, 'scrape_art_mur', {art_mur.LIST_URLS[0]: current, art_mur.LIST_URLS[1]: page})
-        giboulo = events[('Art Mur', 'Karine Giboulo: Retrospective and New Works')]
+        giboulo = events[('Art Mûr', 'Karine Giboulo: Retrospective and New Works')]
         self.assertEqual(giboulo['dates'], {'start': dt.date(2026, 11, 14), 'end': dt.date(2026, 12, 19)})
         self.assertIn({'link': 'https://artmur.com/g-1024x683.jpg', 'description': 'Image'}, giboulo['links'])
-        self.assertEqual(events[('Art Mur', 'Éclosion 2026')]['dates'], {'start': dt.date(2026, 11, 7), 'end': dt.date(2026, 12, 10)})
+        self.assertEqual(events[('Art Mûr', 'Éclosion 2026')]['dates'], {'start': dt.date(2026, 11, 7), 'end': dt.date(2026, 12, 10)})
 
 
 class LaGuildeTest(unittest.TestCase):

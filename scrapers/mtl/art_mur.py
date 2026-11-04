@@ -6,7 +6,7 @@ import logging
 import re
 
 LIST_URLS = ['https://artmur.com/en/current-exhibitions/', 'https://artmur.com/en/upcoming-exhibitions/']
-VENUE = 'Art Mur'
+VENUE = 'Art Mûr'
 # Each show is a div.one_half of <br>-separated lines, with its picture in the div.one_half.last beside it:
 #   November 14–December 19, 2026
 #   Opening reception: Saturday, November 14, from 3:00 p.m. to 5:00 p.m.
@@ -53,7 +53,7 @@ def read_shows(soup, today):
 
 
 def scrape_art_mur(env='prod', region='mtl'):
-    """Scrape and process the current and upcoming exhibitions at Art Mur."""
+    """Scrape and process the current and upcoming exhibitions at Art Mûr."""
     today = region_today(region)
     seen = set()
     fetched = stored = 0
@@ -65,6 +65,6 @@ def scrape_art_mur(env='prod', region='mtl'):
         for name, start, end, image in read_shows(soup, today):
             stored += publish(env, region, VENUE, name, start, end, list_url, tag='gallery', seen=seen, image=image)
     if not fetched:
-        logging.warning("Art Mur: could not fetch the exhibition lists; existing data kept.")
+        logging.warning("Art Mûr: could not fetch the exhibition lists; existing data kept.")
     elif not stored:
-        logging.warning("Art Mur: no exhibitions found; existing data kept.")
+        logging.warning("Art Mûr: no exhibitions found; existing data kept.")
