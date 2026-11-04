@@ -27,7 +27,8 @@ from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, hun
     skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary, \
     california_african_american_museum, molaa, ica_la, \
     regen_projects, david_kordansky_gallery, night_gallery, roberts_projects, nazarian_curcio, francois_ghebaly, charlie_james_gallery, anat_ebgi_gallery, commonwealth_and_council, gagosian_beverly_hills, spruth_magers_los_angeles, kohn_gallery
-from scrapers.mtl import mbam, mccord_stewart, phi_foundation, belgo_galleries, oboro, skol, circa, blouin_division
+from scrapers.mtl import mbam, mccord_stewart, phi_foundation, belgo_galleries, oboro, skol, circa, blouin_division, \
+    galerie_uqam, arsenal_art_contemporain, ellen_art_gallery, cca, galerie_simon_blais
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
@@ -163,6 +164,11 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "SKOL": skol.scrape_skol,
             "CIRCA art actuel": circa.scrape_circa,
             "Blouin Division": blouin_division.scrape_blouin_division,
+            "Galerie de l'UQAM": galerie_uqam.scrape_galerie_uqam,
+            "Arsenal art contemporain": arsenal_art_contemporain.scrape_arsenal_art_contemporain,
+            "Leonard & Bina Ellen Art Gallery": ellen_art_gallery.scrape_ellen_art_gallery,
+            "Canadian Centre for Architecture": cca.scrape_cca,
+            "Galerie Simon Blais": galerie_simon_blais.scrape_galerie_simon_blais,
         },
         'tor': {
             "MOCA Toronto": moca_toronto.scrape_moca_toronto_exhibitions,
