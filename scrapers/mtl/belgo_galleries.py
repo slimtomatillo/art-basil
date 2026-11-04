@@ -5,6 +5,7 @@ from date_parsing import parse_date_text
 from processing import region_today
 import logging
 import re
+from urllib.parse import urlparse
 
 LISTING_URL = 'https://belgo.art/'
 # The Belgo Building (372 Sainte-Catherine W) lists every tenant's current show on one page, in French:
@@ -29,6 +30,10 @@ def _name(title_lines):
     return title
 
 
+def _site(url):
+    return urlparse(url).netloc.lower().removeprefix('www.')
+
+
 def _tenant_links(soup):
     """{tenant name: link} from the page: each tenant's heading is followed by its home page and, when it has
     a show on, that show's own page. belgo.art itself has no pictures, so the show's page is the best link."""
@@ -43,8 +48,11 @@ def _tenant_links(soup):
                     social.append(el['href'])
                 elif el['href'] not in links:
                     links.append(el['href'])
-        # a tenant with only an Instagram page links to that, not to belgo.art (whose only picture is the building)
-        link = (links[1] if len(links) > 1 else links[0]) if links else (social[0] if social else None)
+        # The show's page is on the tenant's own site. A link to another site is an artist the tenant shows
+        # (Espace DÈS_ lists past artists' sites after its own), so the tenant's home page is used instead.
+        # A tenant with only an Instagram page links to that, not to belgo.art (whose only picture is the building).
+        show_page = links[1] if len(links) > 1 and _site(links[1]) == _site(links[0]) else None
+        link = (show_page or links[0]) if links else (social[0] if social else None)
         if link:
             found[heading.get_text(' ', strip=True).split(' | ')[0]] = link
     return found
