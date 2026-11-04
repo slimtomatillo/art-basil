@@ -5709,5 +5709,1088 @@
             "last_updated": "2026-11-02 20:46:02",
             "hash": "099d91cdd152118ab86f2976d1fcfc7b"
         }
+    },
+    "Skirball Cultural Center": {
+        "Inventing America: The Comic Book Revolution-Skirball Cultural Center": {
+            "name": "Inventing America: The Comic Book Revolution",
+            "venue": "Skirball Cultural Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skirball.org/museum/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.skirball.org/sites/default/files/styles/teaser_medium/public/2026-06/inventingamerica_gallerymain.jpg?h=1527d5a1&itok=dUYY3DuY",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "a28db6d4eb19a33d44500bf0fd3ec63a"
+        },
+        "The 1960s\u2014A Generation on Fire: Judy Baca's Great Wall of Los Angeles-Skirball Cultural Center": {
+            "name": "The 1960s\u2014A Generation on Fire: Judy Baca's Great Wall of Los Angeles",
+            "venue": "Skirball Cultural Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skirball.org/museum/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.skirball.org/sites/default/files/styles/square_medium/public/2026-07/greatwall_main.jpg?h=b9cec95b&itok=W8ZqJ0Aq",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "bd4361ddb50a376ef92288d5b3b3bafd"
+        },
+        "Jenny Yurshansky: What We Carry-Skirball Cultural Center": {
+            "name": "Jenny Yurshansky: What We Carry",
+            "venue": "Skirball Cultural Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skirball.org/museum/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.skirball.org/sites/default/files/styles/square_medium/public/2026-07/Yurshansky_what_we_carry_main.jpg?h=b734da35&itok=47zJBR-p",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "500779f7205e1802ee563ae6bf2f9c52"
+        },
+        "Patrisse Cullors: Wishes Made Material-Skirball Cultural Center": {
+            "name": "Patrisse Cullors: Wishes Made Material",
+            "venue": "Skirball Cultural Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skirball.org/museum/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.skirball.org/sites/default/files/styles/square_medium/public/2026-07/P_Cullors_main.jpg?h=067cb125&itok=DEKofyoq",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "1a5dd728ab70c43d0d21b9862fc236cf"
+        },
+        "Common Ground-Skirball Cultural Center": {
+            "name": "Common Ground",
+            "venue": "Skirball Cultural Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2028-01-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skirball.org/museum/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.skirball.org/sites/default/files/styles/square_medium/public/2023-11/common_ground_main.jpg?h=df51affa&itok=StNwfbqk",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "eadacb653ebe392ca344bc736fae524a"
+        }
+    },
+    "USC Fisher Museum of Art": {
+        "Paul R. Williams: An Architect Considered-USC Fisher Museum of Art": {
+            "name": "Paul R. Williams: An Architect Considered",
+            "venue": "USC Fisher Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "architecture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-18",
+                "end": "2027-03-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fisher.usc.edu/whats-on-view/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "acb4c3b2c9ef35f53ed4a59f982d1bf8"
+        }
+    },
+    "Fowler Museum at UCLA": {
+        "Uhengaparaoa, Taonga Tuku Iho: Ancestral Gifts and Contemporary M\u0101ori Art-Fowler Museum at UCLA": {
+            "name": "Uhengaparaoa, Taonga Tuku Iho: Ancestral Gifts and Contemporary M\u0101ori Art",
+            "venue": "Fowler Museum at UCLA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-11",
+                "end": "2027-05-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fowler.ucla.edu/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://fowler.ucla.edu/wp-content/uploads/2026/08/Whak-Digit-1200x555-F.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "e9878b0436c7e4f5d86202f9a3118b0b"
+        },
+        "Field Notes from Begumpura-Fowler Museum at UCLA": {
+            "name": "Field Notes from Begumpura",
+            "venue": "Fowler Museum at UCLA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-09",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fowler.ucla.edu/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://fowler.ucla.edu/wp-content/uploads/2026/06/rahee.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "5a9d53e924cdd1f7478eaa3a2bba2f5b"
+        },
+        "Textiles as Monument-Fowler Museum at UCLA": {
+            "name": "Textiles as Monument",
+            "venue": "Fowler Museum at UCLA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free",
+                "textiles"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-09",
+                "end": "2027-06-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fowler.ucla.edu/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://fowler.ucla.edu/wp-content/uploads/2026/05/TAM-new-1.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "d1857c939fa1e1d16ad7c971ee97dbc2"
+        },
+        "Mountain Spirits: Rice and Indigeneity in the Northern Luzon Highlands, Philippines-Fowler Museum at UCLA": {
+            "name": "Mountain Spirits: Rice and Indigeneity in the Northern Luzon Highlands, Philippines",
+            "venue": "Fowler Museum at UCLA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-04-12",
+                "end": "2027-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fowler.ucla.edu/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://fowler.ucla.edu/wp-content/uploads/2025/11/mt-spirits-featured-1-scaled.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "bbd0daf44c79a4401b50203350b1dd34"
+        }
+    },
+    "Vincent Price Art Museum": {
+        "Anida Yoeu Ali: The Buddhist Bug-Vincent Price Art Museum": {
+            "name": "Anida Yoeu Ali: The Buddhist Bug",
+            "venue": "Vincent Price Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-26",
+                "end": "2027-05-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://vpam.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://vpam.org/wp-content/uploads/2026/06/Live-02-51-Bug_saam_0432-BruceTom-1-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "fbaee5ba914bd1ee03bf27bdc3b57221"
+        },
+        "francis and anthony almend\u00e1rez: navigating the archives within, vol. 2-Vincent Price Art Museum": {
+            "name": "francis and anthony almend\u00e1rez: navigating the archives within, vol. 2",
+            "venue": "Vincent Price Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": "2027-05-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://vpam.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://vpam.org/wp-content/uploads/2026/09/NTAW-Vol2_Promo-Image_Final.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "eb7cb80421b4f90645941e3a2f7ab77d"
+        },
+        "California Collectives: Asian American moderns, 1924-1965-Vincent Price Art Museum": {
+            "name": "California Collectives: Asian American moderns, 1924-1965",
+            "venue": "Vincent Price Art Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "free",
+                "asian-american"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": "2027-03-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://vpam.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://vpam.org/wp-content/uploads/2026/09/M2025_140-20250327-Access.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:15",
+            "hash": "dde06aed01e82e42407881444441f966"
+        }
+    },
+    "Armory Center for the Arts": {
+        "Nurtured Flames: The Medicine of Fire-Armory Center for the Arts": {
+            "name": "Nurtured Flames: The Medicine of Fire",
+            "venue": "Armory Center for the Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.armoryarts.org/exhibitions/current",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.armoryarts.org/assets/Exhibition/Images/fire-thumb-1__ScaleMaxWidthWzM0Nl0_ScaleMaxHeightWzEzOV0.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "9677d6190f13ddfd7a2a3f52385d4975"
+        },
+        "NOMAD: Dominique Moody and the Assemblage of Home-Armory Center for the Arts": {
+            "name": "NOMAD: Dominique Moody and the Assemblage of Home",
+            "venue": "Armory Center for the Arts",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.armoryarts.org/exhibitions/current",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.armoryarts.org/assets/Exhibition/Images/moody-web-thumb-1__ScaleMaxWidthWzM0Nl0_ScaleMaxHeightWzEzOV0.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "fea4d841e083801d3f244f72cbe38610"
+        }
+    },
+    "Japanese American National Museum": {
+        "Pictures of Belonging: Miki Hayakawa, Hisako Hibi, and Min\u00e9 Okubo-Japanese American National Museum": {
+            "name": "Pictures of Belonging: Miki Hayakawa, Hisako Hibi, and Min\u00e9 Okubo",
+            "venue": "Japanese American National Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-23",
+                "end": "2027-08-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.janm.org/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.janm.org/sites/default/files/styles/small_image/public/2024-01/janm-exhibition-hibi-red-sky-spec-1.png?h=42a19710&itok=UmvT9ZT1",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "4d407e94fe849704eda67837922911d6"
+        }
+    },
+    "18th Street Arts Center": {
+        "Momo Nagano: Archeology of Motherhood-18th Street Arts Center": {
+            "name": "Momo Nagano: Archeology of Motherhood",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-01",
+                "end": "2027-06-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2026/06/IMG_6583-1-scaled.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "e77bb13df2efd2457b09a31e1f8e1697"
+        },
+        "Haruka Yamada: \u201cSun of the City\u201d Mural-18th Street Arts Center": {
+            "name": "Haruka Yamada: \u201cSun of the City\u201d Mural",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2024-06-25",
+                "end": "2027-06-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2024/09/sun-of-the-city-1-1-1024x769.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "810ce08e4f73fa54f70642ff752ba8b5"
+        },
+        "Lauren Bon: Meandros-18th Street Arts Center": {
+            "name": "Lauren Bon: Meandros",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-02-23",
+                "end": "2028-02-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2025/02/1000012881.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "c1a169e26fa6b5998dd2f570d954357d"
+        },
+        "Rhizome\u2019s Solar Server-18th Street Arts Center": {
+            "name": "Rhizome\u2019s Solar Server",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-11-25",
+                "end": "2028-11-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2025/12/IMG_6427-1-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "d2f4143f1cf0aa0fd46dec6e7bbdf045"
+        },
+        "Hilla Toony Navok: Yellow Marquee-18th Street Arts Center": {
+            "name": "Hilla Toony Navok: Yellow Marquee",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-07-01",
+                "end": "2029-07-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2026/07/DSC1440-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "7657a990a7a66409fcb15ee734882930"
+        },
+        "Sage Ni\u2019Ja Whitson: Revival_ _Revival-18th Street Arts Center": {
+            "name": "Sage Ni\u2019Ja Whitson: Revival_ _Revival",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "event",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-08",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "a4c80f998b4f25017aa4f82bca00297c"
+        },
+        "RED ALL NIGHTmare on 18th Street-18th Street Arts Center": {
+            "name": "RED ALL NIGHTmare on 18th Street",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2026-12-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2026/09/Exhibtion-Banner_BeckCol-300x150.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "83e2f30ed190d725f9c9285436ba814c"
+        },
+        "RED ALL NIGHTmare on 18th Street \u2013 Opening Reception-18th Street Arts Center": {
+            "name": "RED ALL NIGHTmare on 18th Street \u2013 Opening Reception",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "event",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2026-11-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2026/09/Opening-Reception-Banner_BeckCol-300x150.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "818aafc39bff4b0b861bafcf412dbfa8"
+        },
+        "Ghost Agency: Smooth Criminal-18th Street Arts Center": {
+            "name": "Ghost Agency: Smooth Criminal",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-01",
+                "end": "2028-03-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2026/07/Ghost-Agency-Smooth-Criminal-300x188.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "13ed9cec9bacc4a0ac7eec0149efed4d"
+        },
+        "Molly Cleator and Anne Bray present: Skirting-18th Street Arts Center": {
+            "name": "Molly Cleator and Anne Bray present: Skirting",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-05",
+                "end": "2027-04-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2026/10/Bray-Cleator-Exhibition-300x149.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "f6ee451e6c93e0933d56083ab224c9d0"
+        },
+        "The Final Rally: Anemone Bleaching-18th Street Arts Center": {
+            "name": "The Final Rally: Anemone Bleaching",
+            "venue": "18th Street Arts Center",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-05-07",
+                "end": "2027-05-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://18thstreet.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://18thstreet.org/wp-content/uploads/2026/09/symbiosis-for-18th-02-300x100.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:16",
+            "hash": "205656d9e464c417bf41e29dee6185c6"
+        }
+    },
+    "USC Pacific Asia Museum": {
+        "Gateway to Himalayan Art-USC Pacific Asia Museum": {
+            "name": "Gateway to Himalayan Art",
+            "venue": "USC Pacific Asia Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-17",
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://pacificasiamuseum.usc.edu/whats-on-view/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/08/Chakrasamvara-with-Consort-Vajravarahi-1920x2732.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "412f4bc577ecb2783002d1f25db0da07"
+        },
+        "We Are Connected: Highlights from the USC Pacific Asia Museum Himalayan Collection-USC Pacific Asia Museum": {
+            "name": "We Are Connected: Highlights from the USC Pacific Asia Museum Himalayan Collection",
+            "venue": "USC Pacific Asia Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-17",
+                "end": "2027-05-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://pacificasiamuseum.usc.edu/whats-on-view/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/09/05008001.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "524260d771078a8b5fe7c6898af1615d"
+        },
+        "Hung Liu: Secret Freedom-USC Pacific Asia Museum": {
+            "name": "Hung Liu: Secret Freedom",
+            "venue": "USC Pacific Asia Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-12-12",
+                "end": "2027-07-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://pacificasiamuseum.usc.edu/whats-on-view/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/09/1-Hung-Liu-My-Secret-Freedom-34-1920x1343.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "858534e883bdee062705fb90ac33e3ba"
+        },
+        "Ten Years to Sharpen a Sword: Lauren YS Featuring Makoto-USC Pacific Asia Museum": {
+            "name": "Ten Years to Sharpen a Sword: Lauren YS Featuring Makoto",
+            "venue": "USC Pacific Asia Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-12-12",
+                "end": "2027-07-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://pacificasiamuseum.usc.edu/whats-on-view/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "64a54ea75cf0495cd89b249f8ecb81a2"
+        }
+    },
+    "Wende Museum": {
+        "Bumdog Torres-Wende Museum": {
+            "name": "Bumdog Torres",
+            "venue": "Wende Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-01",
+                "end": "2027-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wendemuseum.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://wendemuseum.org/wp-content/smush-webp/2026/11/bumdog_torres_16x9.png.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "4af6255a09a10737ad19e8c76812c4eb"
+        },
+        "Between Two Empires: Argentina in the Cold War Pendulum (1945\u20131989)-Wende Museum": {
+            "name": "Between Two Empires: Argentina in the Cold War Pendulum (1945\u20131989)",
+            "venue": "Wende Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-01",
+                "end": "2027-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wendemuseum.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://wendemuseum.org/wp-content/smush-webp/2026/08/la-razon-reader-16x9-1.png.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "a99a327bca8ac40e7569c9f97d1e53a7"
+        },
+        "Competing Cosmologies: Interpreting the Sky-Wende Museum": {
+            "name": "Competing Cosmologies: Interpreting the Sky",
+            "venue": "Wende Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-01",
+                "end": "2027-10-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://wendemuseum.org/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://wendemuseum.org/wp-content/smush-webp/2024/03/The-Great-escape-2020-oil-on-canvas-4x3-1.jpg.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "036e2e74971a9b36677a5a27053ecf27"
+        }
+    },
+    "Craft Contemporary": {
+        "Carlos Castro Arias: Vandalismo Artesanal-Craft Contemporary": {
+            "name": "Carlos Castro Arias: Vandalismo Artesanal",
+            "venue": "Craft Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-15",
+                "end": "2027-05-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.craftcontemporary.org/exhibitions/carlos-castro-arias-vandalismo-artesanal/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "f6e6848888ca14db6d78aee6751a61ed"
+        },
+        "Embers of Generational Memory-Craft Contemporary": {
+            "name": "Embers of Generational Memory",
+            "venue": "Craft Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-15",
+                "end": "2027-05-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.craftcontemporary.org/exhibitions/embers-of-generational-memory/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "8d5829ff4c6b8301fce4781bc7e63970"
+        },
+        "Maker-in-Residence: Meztli Projects-Craft Contemporary": {
+            "name": "Maker-in-Residence: Meztli Projects",
+            "venue": "Craft Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-15",
+                "end": "2027-05-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.craftcontemporary.org/exhibitions/maker-in-residence-meztli-projects/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "1a344dc2dbb121b53fb5228d42531f82"
+        },
+        "B\u2019atz\u2019: Legacy in Guatemalan Textiles & Contemporary Art-Craft Contemporary": {
+            "name": "B\u2019atz\u2019: Legacy in Guatemalan Textiles & Contemporary Art",
+            "venue": "Craft Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "textiles"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-12-05",
+                "end": "2028-05-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.craftcontemporary.org/exhibitions/batz/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:27:17",
+            "hash": "fe701075ec8b89b005e107063af50e13"
+        }
     }
 }

@@ -22,7 +22,8 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     manna_gallery, helvella_art, thelma_harris_art_gallery, hashimoto_contemporary, jenkins_johnson_gallery, \
     jessica_silverman_gallery, fraenkel_gallery, traywick_contemporary, acci_gallery, abrams_claghorn_gallery, \
     headlands_center_for_the_arts, shooting_gallery, el_cerrito_city_hall_gallery
-from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington
+from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington, \
+    skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
@@ -123,6 +124,16 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Hammer Museum": hammer.scrape_hammer_exhibitions,
             "MOCA": moca.scrape_moca_exhibitions,
             "Huntington": huntington.scrape_huntington,
+            "Skirball Cultural Center": skirball_cultural_center.scrape_skirball_cultural_center,
+            "USC Fisher Museum of Art": usc_fisher_museum_of_art.scrape_usc_fisher_museum_of_art,
+            "Fowler Museum at UCLA": fowler_museum_at_ucla.scrape_fowler_museum_at_ucla,
+            "Vincent Price Art Museum": vincent_price_art_museum.scrape_vincent_price_art_museum,
+            "Armory Center for the Arts": armory_center_for_the_arts.scrape_armory_center_for_the_arts,
+            "Japanese American National Museum": japanese_american_national_museum.scrape_japanese_american_national_museum,
+            "18th Street Arts Center": eighteenth_street_arts_center.scrape_eighteenth_street_arts_center,
+            "USC Pacific Asia Museum": usc_pacific_asia_museum.scrape_usc_pacific_asia_museum,
+            "Wende Museum": wende_museum.scrape_wende_museum,
+            "Craft Contemporary": craft_contemporary.scrape_craft_contemporary,
         },
         'mtl': {
             "Montreal Museum of Fine Arts": mbam.scrape_mbam_exhibitions,
