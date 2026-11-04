@@ -210,7 +210,10 @@ of a venue's shows (then it is a banner). The fallback also needs a picture of a
   audit; looking again for a better picture happens by itself (scrapers on every run,
   `images.py` every 14 days for an event with no picture), so the audit is the list for a
   person: a venue sitting in it run after run needs a better scraper, or a logo in
-  `venue_images.json`. A good rhythm is to read it about once a month.
+  `venue_images.json`. On the 1st of each month the "Monthly Picture Audit Reminder"
+  workflow (`.github/workflows/image-audit-reminder.yml`) opens a GitHub issue, labelled
+  `image-audit`, holding the latest audit, and closes last month's. It can also be run by
+  hand from the Actions tab.
 - Try it without changing any data: `python images.py [region ...]` prints what it would
   add and which pictures it rejected as shared.
 - **A venue's logo stands in when an event has no picture.** `docs/data/venue_images.json`
