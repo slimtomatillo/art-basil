@@ -22,16 +22,23 @@ def parse_one_date(text):
 
 
 def parse_card_dates(text):
-    """Parse the grid layout's date line, e.g. 'June 14, 2026–October 12, 2026'.
-    Returns (start_date, end_date, ongoing)."""
-    text = ' '.join((text or '').replace('\xa0', ' ').split())
+    """Parse the grid layout's date line, e.g. 'Oct 18, 2026–Jan 24, 2027 | BCAM, Level 1',
+    'Jun 12–Dec 6, 2026 | BCAM, Level 3' or 'Ongoing | Outdoor'. Returns (start_date, end_date, ongoing).
+
+    The gallery follows the dates after a '|' ("| BCAM, Level 1"); it is not part of the date, and
+    left in it made the end date unreadable, so those shows never got an end date (and so never
+    moved on to "past")."""
+    text = ' '.join((text or '').replace('\xa0', ' ').split()).split('|')[0].strip()
     ongoing = 'ongoing' in text.lower()
     parts = [part.strip() for part in re.split(r'\s*[–—-]\s*', text)]
     end_date = None if ongoing or len(parts) < 2 else parse_one_date(parts[-1])
     start_date = parse_one_date(parts[0])
     if start_date is None and end_date is not None:
-        # "June 14–October 12, 2026": the start omits the year
+        # "June 14–October 12, 2026": the start omits the year. A start later in the calendar than
+        # the end ("Dec 21–Jan 3, 2027") began the year before.
         start_date = parse_one_date(f"{parts[0]}, {end_date.year}")
+        if start_date is not None and start_date > end_date:
+            start_date = parse_one_date(f"{parts[0]}, {end_date.year - 1}")
     return start_date, end_date, ongoing
 
 
@@ -208,6 +215,11 @@ def scrape_lacma_exhibitions(env='prod', region='la'):
 
     # Scrape upcoming exhibitions
     process_exhibitions('https://www.lacma.org/upcomingexhibitions', 'future')
+
+    # Scrape the permanent installations (Metropolis II, Serra's Band, ...). LACMA lists them on a
+    # separate "Ongoing" tab. Without this page they were stored once, never refreshed, and sat
+    # as "current" with stale data for good.
+    process_exhibitions('https://www.lacma.org/art/exhibitions/ongoing', 'current')
 
     # Scrape past exhibitions
     process_exhibitions('https://www.lacma.org/pastexhibitions', 'past')

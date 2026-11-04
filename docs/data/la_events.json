@@ -1062,35 +1062,6 @@
             "last_updated": "2026-11-04 18:32:44",
             "hash": "f7832f19ff4c02656772b5e004be1def"
         },
-        "Deep Time Cinematography-LACMA": {
-            "name": "Deep Time Cinematography",
-            "venue": "LACMA",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "current",
-                "museum",
-                "film-video"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": "2025-09-14",
-                "end": null
-            },
-            "ongoing": true,
-            "links": [
-                {
-                    "link": "https://lacma.org/art/exhibition/deep-time-cinematography",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2025-08/DeepTimeMilleniumCamera_crop.jpg?VersionId=2Q5k8wZ9OfvUORpUdsb7Bh07r2wN1lQI&itok=aTqBuQLV",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-02-20 11:34:24",
-            "hash": "df366fe713f71cd7b3ee686362dbd46e"
-        },
         "Diffuse Control by Beeple-LACMA": {
             "name": "Diffuse Control by Beeple",
             "venue": "LACMA",
@@ -1297,62 +1268,6 @@
             ],
             "last_updated": "2026-09-27 19:51:35",
             "hash": "c44d991a92a0d45ba1cd91bea65211ce"
-        },
-        "Miracle Mile-LACMA": {
-            "name": "Miracle Mile",
-            "venue": "LACMA",
-            "description": "BCAM, Level 1",
-            "tags": [
-                "exhibition",
-                "museum",
-                "current"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": null,
-                "end": ""
-            },
-            "ongoing": true,
-            "links": [
-                {
-                    "link": "https://lacma.org/art/exhibition/miracle-mile",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2018-10/EX7995_1%20%281%29.jpg?itok=cjCQwPi3",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-27 19:51:35",
-            "hash": "2cdf8685c3009f80f71dd4fe3b5bc4ed"
-        },
-        "Metropolis II-LACMA": {
-            "name": "Metropolis II",
-            "venue": "LACMA",
-            "description": "BCAM, Level 1",
-            "tags": [
-                "exhibition",
-                "museum",
-                "current"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": null,
-                "end": ""
-            },
-            "ongoing": true,
-            "links": [
-                {
-                    "link": "https://lacma.org/art/exhibition/metropolis-ii",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2018-11/L2010_33_1-EX2478-SF2953-AV002.jpg?itok=Klfn-M-U",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-09-27 19:51:35",
-            "hash": "4555a430abaf1f307841e56d9848033e"
         },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
