@@ -20,5 +20,23 @@
     "Craft Contemporary": "5814 Wilshire Blvd, Los Angeles, CA 90036",
     "California African American Museum": "600 State Dr, Los Angeles, CA 90037",
     "Museum of Latin American Art": "628 Alamitos Ave, Long Beach, CA 90802",
-    "Institute of Contemporary Art, Los Angeles": "1717 E 7th St, Los Angeles, CA 90021"
+    "Institute of Contemporary Art, Los Angeles": "1717 E 7th St, Los Angeles, CA 90021",
+    "Regen Projects": "6750 Santa Monica Blvd, Los Angeles, CA 90038",
+    "David Kordansky Gallery": "5130 W Edgewood Pl, Los Angeles, CA 90019",
+    "Night Gallery": "2276 E 16th St, Los Angeles, CA 90021",
+    "Roberts Projects": "442 S La Brea Ave, Los Angeles, CA 90036",
+    "Nazarian / Curcio": "616 N La Brea Ave, Los Angeles, CA 90036",
+    "François Ghebaly": [
+        {"label": "Los Angeles", "address": "2245 E Washington Blvd, Los Angeles, CA 90021"},
+        {"label": "Beverly Hills", "address": "417 N Camden Dr, Beverly Hills, CA 90210"}
+    ],
+    "Charlie James Gallery": [
+        {"label": "Gallery 1", "address": "969 Chung King Rd, Los Angeles, CA 90012"},
+        {"label": "Gallery 2", "address": "961 Chung King Rd, Los Angeles, CA 90012"}
+    ],
+    "Anat Ebgi Gallery": "6150 Wilshire Blvd Suite 5, Los Angeles, CA 90048",
+    "Commonwealth and Council": "3006 W 7th St Suite 220, Los Angeles, CA 90005",
+    "Gagosian Beverly Hills": "456 N Camden Dr, Beverly Hills, CA 90210",
+    "Sprüth Magers Los Angeles": "5900 Wilshire Blvd, Los Angeles, CA 90036",
+    "Kohn Gallery": "1227 N Highland Ave, Los Angeles, CA 90038"
 }
