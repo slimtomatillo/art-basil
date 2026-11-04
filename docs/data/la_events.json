@@ -7340,5 +7340,747 @@
             "last_updated": "2026-11-04 18:06:30",
             "hash": "0317be7a53d79c1d4453372f81e11b89"
         }
+    },
+    "Regen Projects": {
+        "Sable Elyse Smith: SKY FENCE GROUND-Regen Projects": {
+            "name": "Sable Elyse Smith: SKY FENCE GROUND",
+            "venue": "Regen Projects",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.regenprojects.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_2200,h_860,c_limit/exhibit-e/54522d19cfaf3430698b4568/ddb10a196390094565528c095b3bf0ae.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:33",
+            "hash": "aaa33d5db94546f1c3c5bdcc56587487"
+        }
+    },
+    "David Kordansky Gallery": {
+        "Chris Martin: In Memory of My Feelings-David Kordansky Gallery": {
+            "name": "Chris Martin: In Memory of My Feelings",
+            "venue": "David Kordansky Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2026-12-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.davidkordanskygallery.com/exhibitions/upcoming",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:39",
+            "hash": "3b1e00e45a23f16c3910991ba97d5726"
+        },
+        "Ivan Morley: Trees-David Kordansky Gallery": {
+            "name": "Ivan Morley: Trees",
+            "venue": "David Kordansky Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2026-12-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.davidkordanskygallery.com/exhibitions/upcoming",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:39",
+            "hash": "234696fab7a286c1fd1c1cbb0723737e"
+        },
+        "Abraham Lincoln Walker: After World, 1980\u20131991-David Kordansky Gallery": {
+            "name": "Abraham Lincoln Walker: After World, 1980\u20131991",
+            "venue": "David Kordansky Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2026-12-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.davidkordanskygallery.com/exhibitions/upcoming",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1600,h_1200,c_lfill/exhibit-e/675c7754605ea781900ec16e/0f2d7b4522186925cae15ce57b47d862.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:39",
+            "hash": "9b0dbc6024861fe618274299dc3549e5"
+        }
+    },
+    "Night Gallery": {
+        "Tidawhitney Lek: Something Familiar-Night Gallery": {
+            "name": "Tidawhitney Lek: Something Familiar",
+            "venue": "Night Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": "2027-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nightgallery.ca/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1080,h_840,c_lfill/exhibit-e/58efe75202a9377c212b12c6/88d3423ac99912128d831c35cfef89f8.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:40",
+            "hash": "7bbb07773f1d769805dcbc34db2c9d94"
+        },
+        "Carla Edwards: Wrung Out Put Up Wet-Night Gallery": {
+            "name": "Carla Edwards: Wrung Out Put Up Wet",
+            "venue": "Night Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": "2027-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nightgallery.ca/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1080,h_840,c_lfill/exhibit-e/58efe75202a9377c212b12c6/c40d9b876e964d5bc2a42e487cc65ada.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:40",
+            "hash": "64200a2f11b682e2e3b7e0be64e4be5d"
+        }
+    },
+    "Roberts Projects": {
+        "Wendy Red Star: False Stars-Roberts Projects": {
+            "name": "Wendy Red Star: False Stars",
+            "venue": "Roberts Projects",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.robertsprojectsla.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_816,h_600,c_lfill/exhibit-e/5cba1172a5aa2c2c113bee51/bab958c06c6af12f3b2d5fa3e1625f63.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:43",
+            "hash": "410694b77e5aac396afaa64f7adfc7d9"
+        },
+        "Collins Obijiaku: Wherever You Are, Remember Me-Roberts Projects": {
+            "name": "Collins Obijiaku: Wherever You Are, Remember Me",
+            "venue": "Roberts Projects",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.robertsprojectsla.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_816,h_600,c_lfill/exhibit-e/5cba1172a5aa2c2c113bee51/328289ecb3407b6dd87e22f08852235c.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:43",
+            "hash": "041de7fccd2c52a5e5d709ab77b75a0b"
+        }
+    },
+    "Nazarian / Curcio": {
+        "Kuldeep Singh-Nazarian / Curcio": {
+            "name": "Kuldeep Singh",
+            "venue": "Nazarian / Curcio",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://nazariancurcio.com/exhibitions/114-kuldeep-singh-neither-sun-nor-moon/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-shulamitnazarian/usr/images/exhibitions/main_image_override/114/folds_kuldeep-singh_nazarian-curcio.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:43",
+            "hash": "6b6bae40b069464d48db49750c6cdd38"
+        },
+        "Mar Figueroa-Nazarian / Curcio": {
+            "name": "Mar Figueroa",
+            "venue": "Nazarian / Curcio",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://nazariancurcio.com/exhibitions/115-mar-figueroa-the-witching-hour/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-shulamitnazarian/usr/images/exhibitions/main_image_override/115/the-witching-hour_mar-figueroa_nazarian-curcio.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:43",
+            "hash": "6e28ff8012466696a10d18ddc74da8be"
+        },
+        "Peter McRury-Nazarian / Curcio": {
+            "name": "Peter McRury",
+            "venue": "Nazarian / Curcio",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://nazariancurcio.com/exhibitions/116-peter-mcrury-at-a-familiar-distance/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-shulamitnazarian/usr/images/exhibitions/main_image_override/116/september_peter-mcrury_nazarian-curcio.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:44",
+            "hash": "c9af633f32a07308e8fee8b99e3b0355"
+        }
+    },
+    "Fran\u00e7ois Ghebaly": {
+        "Farah Al Qasimi-Fran\u00e7ois Ghebaly": {
+            "name": "Farah Al Qasimi",
+            "venue": "Fran\u00e7ois Ghebaly",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://ghebaly.com/exhibitions/farah-al-qasimi-rubberneck/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-ghebaly/usr/images/exhibitions/main_image_override/230/faq-26-005-1-1-3-image.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:44",
+            "hash": "60691285cdafe4d2eb5b83f3b14db570"
+        }
+    },
+    "Charlie James Gallery": {
+        "Narsiso Martinez: Eat Happy-Charlie James Gallery": {
+            "name": "Narsiso Martinez: Eat Happy",
+            "venue": "Charlie James Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-25",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cjamesgallery.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/5fa196c157852a3ac79f4c49/1790008706035-X9LLCH5V69UJA0YVEQO2/Screenshot+2026-09-21+at+9.38.22%E2%80%AFAM.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:45",
+            "hash": "8797017b28b5b705c656f5b4f4b3d643"
+        },
+        "Food and Beyond, Beyond Food-Charlie James Gallery": {
+            "name": "Food and Beyond, Beyond Food",
+            "venue": "Charlie James Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-25",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cjamesgallery.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/5fa196c157852a3ac79f4c49/1790286880591-JR0MKZXW5L58R12FEV4D/15_6KpxLong_260923_Narsiso_250.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:45",
+            "hash": "d7e1fb57a5647f83c342135218ac9893"
+        },
+        "Rigoberto Torres: Vecinos-Charlie James Gallery": {
+            "name": "Rigoberto Torres: Vecinos",
+            "venue": "Charlie James Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cjamesgallery.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/5fa196c157852a3ac79f4c49/1792706792148-N6INPLNMSQ0I8YE7BXR9/Swagger+and+Tenderness-27.jpg.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:45",
+            "hash": "caa586dbd4457dfa742ca8144ab90574"
+        }
+    },
+    "Anat Ebgi Gallery": {
+        "Erin Wright: Memnosphere-Anat Ebgi Gallery": {
+            "name": "Erin Wright: Memnosphere",
+            "venue": "Anat Ebgi Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://anatebgi.com/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://anatebgi.com/wp-content/uploads/2026/08/07-2-header-1200x675.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:46",
+            "hash": "bae47d39fe513702fb83b9b4e86fa82e"
+        },
+        "Jenny Morgan: Hours at the Edge-Anat Ebgi Gallery": {
+            "name": "Jenny Morgan: Hours at the Edge",
+            "venue": "Anat Ebgi Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://anatebgi.com/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://anatebgi.com/wp-content/uploads/2026/10/dscf8522-1-1-header-1200x675.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:46",
+            "hash": "26c6830a9da07bf28ad1f42324ee7f53"
+        }
+    },
+    "Commonwealth and Council": {
+        "Michelle Lopez: FOLDING BOY AND BLUE-Commonwealth and Council": {
+            "name": "Michelle Lopez: FOLDING BOY AND BLUE",
+            "venue": "Commonwealth and Council",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://commonwealthandcouncil.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=res.cloudinary.com%2Flacuna%2Fimage%2Fupload%2Fw_1000%2Cc_limit%2Ffuhufpnwvszdtf9ngkl0.jpg&w=800&we",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:46",
+            "hash": "c742f0e8a2000a013e55d82c62900d7e"
+        },
+        "Jemima Wyman: Shimmering Menace-Commonwealth and Council": {
+            "name": "Jemima Wyman: Shimmering Menace",
+            "venue": "Commonwealth and Council",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://commonwealthandcouncil.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=res.cloudinary.com%2Flacuna%2Fimage%2Fupload%2Fw_1000%2Cc_limit%2Fkhvgria1x3yok3dwtb6u.jpg&w=800&we",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:46",
+            "hash": "ae5e9e632c160222f15cbd55da2ba044"
+        },
+        "Maryrose Cobarrubias Mendoza: AAAgent presents: Past Time-Commonwealth and Council": {
+            "name": "Maryrose Cobarrubias Mendoza: AAAgent presents: Past Time",
+            "venue": "Commonwealth and Council",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://commonwealthandcouncil.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=res.cloudinary.com%2Flacuna%2Fimage%2Fupload%2Fw_1000%2Cc_limit%2Feysbtthogcvmbozrozlq.jpg&w=800&we",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:46",
+            "hash": "bd41f7de338f7913a404d964bd007e1a"
+        }
+    },
+    "Gagosian Beverly Hills": {
+        "Richard Avedon: Hollywood-Gagosian Beverly Hills": {
+            "name": "Richard Avedon: Hollywood",
+            "venue": "Gagosian Beverly Hills",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://gagosian.com/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://gagosian.com/media/images/exhibitions/2026/richard-avedon-hollywood/Nr_SjfIxn4Tr_300x300.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:46",
+            "hash": "e783793f38b3b1b3a2232b488fae9fd4"
+        },
+        "Friends and Legends: The Collection of Michael Chow-Gagosian Beverly Hills": {
+            "name": "Friends and Legends: The Collection of Michael Chow",
+            "venue": "Gagosian Beverly Hills",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://gagosian.com/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://gagosian.com/media/images/exhibitions/2026/friends-and-legends-the-collection-of-michael-chow-beverly-hills/rT09XqB_GSBe_300x300.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:46",
+            "hash": "584192fb82b1bf3139a834ff49795951"
+        }
+    },
+    "Spr\u00fcth Magers Los Angeles": {
+        "John Baldessari: Sculptures-Spr\u00fcth Magers Los Angeles": {
+            "name": "John Baldessari: Sculptures",
+            "venue": "Spr\u00fcth Magers Los Angeles",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "sculpture",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-11",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://spruethmagers.com/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://res.cloudinary.com/smimagebank/image/upload/w_500,c_fill,f_auto,fl_progressive,ar_15:10/v1781600454/sprueth_magers__44137.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:48",
+            "hash": "a19ee8fb1251cf259c6cf88457e8b58b"
+        }
+    },
+    "Kohn Gallery": {
+        "Charles Arnoldi-Kohn Gallery": {
+            "name": "Charles Arnoldi",
+            "venue": "Kohn Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.kohngallery.com/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/52cdc37be4b0396942d19481/16bdbf98-ed08-44ce-a658-fa78470987e0/arnoldi_boost_00010_detail.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:49",
+            "hash": "11a9aaadcdf7a51e430114e609512243"
+        },
+        "Lita Albuquerque-Kohn Gallery": {
+            "name": "Lita Albuquerque",
+            "venue": "Kohn Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.kohngallery.com/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/52cdc37be4b0396942d19481/dd40d285-59db-47fd-b2af-ccfeb93807f0/DSC05936.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:25:50",
+            "hash": "0e190824867f624fb1a57c1472e8d0e6"
+        }
     }
 }

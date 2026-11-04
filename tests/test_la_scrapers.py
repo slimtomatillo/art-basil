@@ -11,7 +11,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from scrapers.la import (eighteenth_street_arts_center as eighteenth, fowler_museum_at_ucla as fowler,
                          japanese_american_national_museum as janm, skirball_cultural_center as skirball,
                          vincent_price_art_museum as vpam, wende_museum as wende,
-                         california_african_american_museum as caam, ica_la, molaa)
+                         california_african_american_museum as caam, ica_la, molaa, _gallery,
+                         anat_ebgi_gallery as anat_ebgi, charlie_james_gallery as charlie_james,
+                         commonwealth_and_council as commonwealth, david_kordansky_gallery as kordansky,
+                         gagosian_beverly_hills as gagosian, night_gallery)
 from scrapers.tor import _common
 
 TODAY = dt.date(2026, 11, 4)
@@ -176,6 +179,68 @@ class CaamTest(unittest.TestCase):
         events = {e['name']: e for e in stored}
         self.assertEqual(sorted(events), ['Fred Wilson', 'Sinners'])
         self.assertEqual(events['Fred Wilson']['phase'], 'future')
+
+
+class GalleryHelpersTest(unittest.TestCase):
+    def test_date_label_reads_only_short_date_lines(self):
+        self.assertEqual(_gallery.date_label('November 7 – December 19, 2026', TODAY), (dt.date(2026, 11, 7), dt.date(2026, 12, 19)))
+        self.assertEqual(_gallery.date_label('On view though December 19', TODAY), (None, dt.date(2026, 12, 19)))
+        self.assertIsNone(_gallery.date_label('November was a busy month for the gallery and its artists, who showed widely', TODAY))
+        self.assertIsNone(_gallery.date_label('Los Angeles', TODAY))
+
+    def test_a_run_already_over_is_moved_a_year_on(self):
+        self.assertEqual(_gallery.next_year_if_past(dt.date(2025, 11, 21), dt.date(2026, 1, 30), TODAY),
+                         (dt.date(2026, 11, 21), dt.date(2027, 1, 30)))
+        self.assertEqual(_gallery.next_year_if_past(dt.date(2026, 11, 7), dt.date(2026, 12, 19), TODAY),
+                         (dt.date(2026, 11, 7), dt.date(2026, 12, 19)))
+
+
+class GalleryScrapersTest(unittest.TestCase):
+    def test_night_gallery_capitals_and_year(self):
+        page = blocks('Upcoming', 'Past', 'TIDAWHITNEY LEK', 'Something Familiar', 'NOVEMBER 21 - JANUARY 30, 2026')
+        events = run(night_gallery, 'scrape_night_gallery', page)
+        show = events['Tidawhitney Lek: Something Familiar']
+        self.assertEqual(show['dates'], {'start': dt.date(2026, 11, 21), 'end': dt.date(2027, 1, 30)})
+
+    def test_kordansky_keeps_only_los_angeles(self):
+        page = blocks('Current', 'Upcoming', 'Past', 'Jenna Gribbon', 'Projections', 'November 6 – December 19, 2026', 'New York',
+                      'Chris Martin', 'In Memory of My Feelings', 'November 13 – December 16, 2026', 'Los Angeles',
+                      'Abraham Lincoln Walker: After World, 1980–1991', 'November 13 – December 16, 2026', 'Los Angeles')
+        events = run(kordansky, 'scrape_david_kordansky_gallery', page)
+        self.assertEqual(sorted(events), ['Abraham Lincoln Walker: After World, 1980–1991', 'Chris Martin: In Memory of My Feelings'])
+
+    def test_charlie_james_solo_and_curated_names_and_repeats(self):
+        page = blocks('EXHIBITIONS', 'Featured', 'Eat Happy', 'Narsiso Martinez', 'Eat Happy', 'September 25 - November 7, 2026', 'Read more →',
+                      'Food and Beyond, Beyond Food', 'Food and Beyond, Beyond Food', 'Curated by Narsiso Martinez',
+                      'September 25 - November 7, 2026', 'Read more →', 'UPCOMING', 'Vecinos', 'Rigoberto Torres', 'Vecinos',
+                      'November 6 - December 19, 2026', 'Read more →', 'Vecinos', 'Rigoberto Torres', 'Vecinos',
+                      'November 6 - December 19, 2026', 'Read more →')
+        events = run(charlie_james, 'scrape_charlie_james_gallery', page)
+        self.assertEqual(sorted(events), ['Food and Beyond, Beyond Food', 'Narsiso Martinez: Eat Happy', 'Rigoberto Torres: Vecinos'])
+
+    def test_gagosian_keeps_beverly_hills_and_reads_a_short_run(self):
+        page = blocks('Exhibitions', 'List', 'Brice Marden', 'I Am Plane Image', 'September 15', '–', 'December 12, 2026', 'West 21st Street, New York',
+                      'Friends and Legends', 'The Collection of Michael Chow', 'November 4', '–', '7, 2026', 'Beverly Hills')
+        events = run(gagosian, 'scrape_gagosian_beverly_hills', page)
+        self.assertEqual(list(events), ['Friends and Legends: The Collection of Michael Chow'])
+        self.assertEqual(events['Friends and Legends: The Collection of Michael Chow']['dates'],
+                         {'start': dt.date(2026, 11, 4), 'end': dt.date(2026, 11, 7)})
+
+    def test_anat_ebgi_keeps_los_angeles_in_the_current_section(self):
+        page = blocks('Current & Announced Exhibitions', 'Erin Wright: Memnosphere', 'September 19, 2026', '—', 'January 16, 2027', ',',
+                      '6150 Wilshire Blvd, Suite 5, Los Angeles, CA 90048, USA', 'Wilshire',
+                      'Meeson Pae: Seed Memory', 'November 6', '—', 'December 19, 2026', ',',
+                      '372 Broadway, New York City, NY 10013, USA', 'Tribeca', 'Past Exhibitions',
+                      'Jordan Nassar: Describing Clouds', 'September 19', '—', 'October 31, 2026', ',',
+                      '6150 Wilshire Blvd, Suite 5, Los Angeles, CA 90048, USA', 'Wilshire')
+        events = run(anat_ebgi, 'scrape_anat_ebgi_gallery', page)
+        self.assertEqual(list(events), ['Erin Wright: Memnosphere'])
+
+    def test_commonwealth_and_council_skips_fair_booths(self):
+        page = blocks('Visit', 'Now', '2026', 'FOLDING BOY AND BLUE', 'Michelle Lopez', 'November 7, 2026', '–', 'December 19, 2026',
+                      'Art Basel', 'American Artist', 'November 1, 2026', '–', 'November 8, 2026')
+        events = run(commonwealth, 'scrape_commonwealth_and_council', page)
+        self.assertEqual(list(events), ['Michelle Lopez: FOLDING BOY AND BLUE'])
 
 
 if __name__ == '__main__':
