@@ -1892,5 +1892,218 @@
             "last_updated": "2026-11-04 18:37:04",
             "hash": "94a9b370fd6050b40545bcebde27c90c"
         }
+    },
+    "Galerist": {
+        "LABOUR OF LOVE-Galerist": {
+            "name": "LABOUR OF LOVE",
+            "venue": "Galerist",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-16",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.galerist.com.tr/exhibitions/162-labour-of-love/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite1907/usr/images/exhibitions/main_image_override/162/_dsc8368_low.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 23:07:40",
+            "hash": "3a72a1eb1ae635de1f4f051c22db9d8f"
+        }
+    },
+    "Pi Artworks Istanbul": {
+        "Albano Hern\u00e1ndez-Pi Artworks Istanbul": {
+            "name": "Albano Hern\u00e1ndez",
+            "venue": "Pi Artworks Istanbul",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.piartworks.com/exhibitions/239-albano-hernandez-from-within/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-piartworks/usr/images/exhibitions/main_image_override/239/whatsapp-image-2026-11-03-at-3.03.36-pm.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 23:07:41",
+            "hash": "e3265a49be94f9220ca33a3352b6074e"
+        }
+    },
+    "Zilberman Istanbul": {
+        "R\u00fb Bi R\u00fb-Zilberman Istanbul": {
+            "name": "R\u00fb Bi R\u00fb",
+            "venue": "Zilberman Istanbul",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-15",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.zilbermangallery.com/exhibitions/212-ru-bi-ru-fatos-irwen/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2345/usr/images/exhibitions/main_image_override/212/_dsf2928-copy.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 23:07:42",
+            "hash": "6a47e8b30a15b7d5ead4c32b9da49c12"
+        }
+    },
+    "DEPO": {
+        "Ak\u0131mlar: Tarabya K\u00fclt\u00fcr Akademisi 15 Ya\u015f\u0131nda-DEPO": {
+            "name": "Ak\u0131mlar: Tarabya K\u00fclt\u00fcr Akademisi 15 Ya\u015f\u0131nda",
+            "venue": "DEPO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-11-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.depoistanbul.net/sergiler/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.depoistanbul.net/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pb/WFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGd3d3LmRlcG9pc3RhbmJ1bC5uZXQlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjYlMkYxMCUyRkFraW1sYXItQ3VycmVudHMtVGFyYWJ5YS1LdWx0dXItQWthZGVtaXNpLTc2OHg0MjkuanBnJmNhY2hlTWFya2VyPTE3OTMxMTQxNTYtMzE5NDYmdG9rZW49YTBkMTlhZDZmNWE2NWMyOA.q.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 23:07:44",
+            "hash": "8b222858b8b69ff4e01e40153a6b868b"
+        },
+        "Dilan Cudi Saruhan \u2013 Bir \u0130htimal G\u00f6ky\u00fcz\u00fc-DEPO": {
+            "name": "Dilan Cudi Saruhan \u2013 Bir \u0130htimal G\u00f6ky\u00fcz\u00fc",
+            "venue": "DEPO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-22",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.depoistanbul.net/sergiler/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.depoistanbul.net/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dH/BzJTNBJTJGJTJGd3d3LmRlcG9pc3RhbmJ1bC5uZXQlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjYlMkYwOSUyRkRpbGFuLUN1ZGktU2FydWhhbi1CaXItSWh0aW1hbC1Hb2t5dXp1LVBlcmhhcHMtVGhlLVNreS03Njh4NDMyLmpwZyZjYWNoZU1hcmtlcj0xNzg4OTc2MDUyLTUzODg4JnRva2VuPWYzYTI3YjRmMmEwZjExMjY.q.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 23:07:44",
+            "hash": "be6c0810ffe2a8068ecfbd7315e27ff1"
+        },
+        "Silinmenin Manzaralar\u0131-DEPO": {
+            "name": "Silinmenin Manzaralar\u0131",
+            "venue": "DEPO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-16",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.depoistanbul.net/sergiler/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.depoistanbul.net/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGd3d3LmRlcG9pc3RhbmJ1bC5uZXQlMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjYlMkYwOSUyRlNpbGlubWVuaW4tTWFuemFyYWxhcmktLTc2OHg0MzIuanBnJmNhY2hlTWFya2VyPTE3ODgzNTUzNDktNTAzMzYmdG9rZW49YmI3MmE3YzAyNDhjNzk4NQ.q.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 23:07:44",
+            "hash": "6f154f4fdc9cdd01e514b84b2cb4f5b4"
+        }
+    },
+    "Elgiz Museum of Contemporary Art": {
+        "Elgiz M\u00fczesi'nin Yeni Sergisi 'Bulu\u015fma'-Elgiz Museum of Contemporary Art": {
+            "name": "Elgiz M\u00fczesi'nin Yeni Sergisi 'Bulu\u015fma'",
+            "venue": "Elgiz Museum of Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-08-28",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.elgizmuseum.org/tr_TR/sergiler/temporary-exhibitions/zamanlarin-corafyalarin-ve-formlarin-diyalou-buluma-sergisi-elgiz-muezesinde",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.elgizmuseum.org/assets/Ekran-goeruentuesue-2026-10-25-114722.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 23:07:47",
+            "hash": "ab27777597526aba98d97b50e83d2fb1",
+            "image_checked": "2026-11-04"
+        }
     }
 }

@@ -15,7 +15,7 @@ _FRENCH = '|'.join(sorted(_FRENCH_MONTHS, key=len, reverse=True))
 # "November 7 – December 19, 2026", "On view through December 19" (one site spells it "though"),
 # and the French day-first "Du 5 novembre au 19 décembre 2026" / "jusqu'au 15 mars"
 _LABEL_START_RE = re.compile(
-    rf"^(?:through\s+)?(?:{_MONTHS})\.?\s+\d|^(?:(?:du|le)\s+|jusqu['’]au\s+)?\d{{1,2}}(?:er)?\s+(?:{_FRENCH})\b",
+    rf"^(?:through\s+)?(?:{_MONTHS})\.?\s+\d|^(?:(?:du|le)\s+|jusqu['’]au\s+)?\d{{1,2}}(?:er)?(?:\s*[-–]\s*\d{{1,2}})?\s+(?:{_FRENCH})\b",
     re.IGNORECASE)
 FAIR_PREFIXES = ('frieze', 'art basel', 'the armory show', 'felix', 'nada', 'untitled art')
 
@@ -26,7 +26,10 @@ def date_label(line, today):
     text = re.sub(r'^on view thr?ough\s+', 'through ', line.strip(), flags=re.IGNORECASE)
     if len(text) > 70 or not _LABEL_START_RE.match(text):
         return None
-    start, end = parse_date_text(text, today)
+    try:
+        start, end = parse_date_text(text, today)
+    except ValueError:  # a line that looks like a date but isn't one (an impossible day, say)
+        return None
     return (start, end) if (start or end) else None
 
 

@@ -20,6 +20,10 @@ def parse_day_first_range(text):
     parts = re.split(r'\s+[-–—]\s+', text.strip(), maxsplit=1)
     if len(parts) != 2:
         return None, None
+    # "13 - 28 Nov 2026": the start borrows the end's month
+    month_of_end = _SIDE_RE.search(parts[1])
+    if month_of_end and re.fullmatch(r'\s*\d{1,2}\s*', parts[0]):
+        parts[0] = f"{parts[0].strip()} {month_of_end.group(2)}"
     sides = []
     for part in parts:
         m = _SIDE_RE.search(part)
