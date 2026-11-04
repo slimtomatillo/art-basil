@@ -28,7 +28,8 @@ from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, hun
     california_african_american_museum, molaa, ica_la, \
     regen_projects, david_kordansky_gallery, night_gallery, roberts_projects, nazarian_curcio, francois_ghebaly, charlie_james_gallery, anat_ebgi_gallery, commonwealth_and_council, gagosian_beverly_hills, spruth_magers_los_angeles, kohn_gallery
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation, belgo_galleries, oboro, skol, circa, blouin_division, \
-    galerie_uqam, arsenal_art_contemporain, ellen_art_gallery, cca, galerie_simon_blais
+    galerie_uqam, arsenal_art_contemporain, ellen_art_gallery, cca, galerie_simon_blais, \
+    fonderie_darling, art_mur, la_guilde
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
@@ -169,6 +170,9 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Leonard & Bina Ellen Art Gallery": ellen_art_gallery.scrape_ellen_art_gallery,
             "Canadian Centre for Architecture": cca.scrape_cca,
             "Galerie Simon Blais": galerie_simon_blais.scrape_galerie_simon_blais,
+            "Fonderie Darling": fonderie_darling.scrape_fonderie_darling,
+            "Art Mur": art_mur.scrape_art_mur,
+            "La Guilde": la_guilde.scrape_la_guilde,
         },
         'tor': {
             "MOCA Toronto": moca_toronto.scrape_moca_toronto_exhibitions,
