@@ -710,13 +710,13 @@
             "description": "Discover Ready, Set, Go! Sports Inspire Art, a selection of works at the MMFA in Montreal from June 15 to October 12, 2026, marking the 50th anniversary of the Olympic Games.",
             "tags": [
                 "exhibition",
-                "current",
-                "museum"
+                "museum",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": "2026-10-12",
-                "end": null
+                "start": "2026-06-15",
+                "end": "2026-10-12"
             },
             "ongoing": false,
             "links": [
