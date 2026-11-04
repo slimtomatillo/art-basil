@@ -1365,5 +1365,646 @@
             "last_updated": "2026-11-04 18:34:08",
             "hash": "7ca86cb8c4175a92d2703af86464c98f"
         }
+    },
+    "Galeries Bellemare Lambert": {
+        "Jocelyne Alloucherie: De si loin, de si pr\u00e8s\u2026-Galeries Bellemare Lambert": {
+            "name": "Jocelyne Alloucherie: De si loin, de si pr\u00e8s\u2026",
+            "venue": "Galeries Bellemare Lambert",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-24",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "ea7fb1a2c3d3905d17cb6382793ea2fa"
+        }
+    },
+    "MICA": {
+        "\u00c9cologies de la conscience-MICA": {
+            "name": "\u00c9cologies de la conscience",
+            "venue": "MICA",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-26",
+                "end": "2026-12-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "18aaa19f64e06af1ad0579764b05072f"
+        }
+    },
+    "Galerie Hugues Charbonneau": {
+        "Cabinet de dessins-Galerie Hugues Charbonneau": {
+            "name": "Cabinet de dessins",
+            "venue": "Galerie Hugues Charbonneau",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "b98855f4891c014fc8f2781e28c9f72e"
+        }
+    },
+    "\u00c9clats Art contemporain": {
+        "Lignes de Rencontres-\u00c9clats Art contemporain": {
+            "name": "Lignes de Rencontres",
+            "venue": "\u00c9clats Art contemporain",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-15",
+                "end": "2026-11-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "14bf80b051d17902a10ea8ddb31225ef"
+        }
+    },
+    "Atelier 531": {
+        "Eye on the Figure-Atelier 531": {
+            "name": "Eye on the Figure",
+            "venue": "Atelier 531",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-19",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "0e6d7222cb228dabe1a14414199f0f8b"
+        }
+    },
+    "Galerie B-312": {
+        "Gambits-Galerie B-312": {
+            "name": "Gambits",
+            "venue": "Galerie B-312",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "07a2f28cea997c0e6a9ff67360a388fe"
+        }
+    },
+    "Galerie Wishbone": {
+        "Kaori Izumiya: Le jardin bleu en silence-Galerie Wishbone": {
+            "name": "Kaori Izumiya: Le jardin bleu en silence",
+            "venue": "Galerie Wishbone",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-15",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "0e734439e0299a307111eeb69d695381"
+        }
+    },
+    "Galerie Kub\u2019Art": {
+        "Exposition inaugurale-Galerie Kub\u2019Art": {
+            "name": "Exposition inaugurale",
+            "venue": "Galerie Kub\u2019Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2026-12-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "fb4e02ba47d831dbe0c6c720c61dc917"
+        }
+    },
+    "Atelier d\u2019art photographique": {
+        "Jean-Claude Lussier: \u00c9crin floral-Atelier d\u2019art photographique": {
+            "name": "Jean-Claude Lussier: \u00c9crin floral",
+            "venue": "Atelier d\u2019art photographique",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-10",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "24cfc3f117c34c310b34498f2c6b73b1"
+        }
+    },
+    "McBride Contemporain": {
+        "Stephen Schofield: They do dream things true-McBride Contemporain": {
+            "name": "Stephen Schofield: They do dream things true",
+            "venue": "McBride Contemporain",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "c46a699c479dacd4b9100181f03f6324"
+        }
+    },
+    "Chiguer Art contemporain": {
+        "Ma c\u00e9r\u00e9monie de souvenirs-Chiguer Art contemporain": {
+            "name": "Ma c\u00e9r\u00e9monie de souvenirs",
+            "venue": "Chiguer Art contemporain",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-15",
+                "end": "2026-11-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "f71ee9fa858a7e20414f9edcb1ddd280"
+        }
+    },
+    "Espace D\u00c8S_": {
+        "Janie Julien-Fort: Quelque chose d\u2019impossible \u00e0 saisir-Espace D\u00c8S_": {
+            "name": "Janie Julien-Fort: Quelque chose d\u2019impossible \u00e0 saisir",
+            "venue": "Espace D\u00c8S_",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-22",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "a95f3c58ceb887168b4f5ab2e7383ca7"
+        }
+    },
+    "Louis-Bernard St-Jean Art contemporain": {
+        "Exposition permanente: Paradis bleu Redux-Louis-Bernard St-Jean Art contemporain": {
+            "name": "Exposition permanente: Paradis bleu Redux",
+            "venue": "Louis-Bernard St-Jean Art contemporain",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-27",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "af3ddcc8a4421d62510ac0095e723aa3"
+        }
+    },
+    "Galerie INGANG": {
+        "Pikanoa: BRAQUAGE DES CODES : Quand l\u2019art subvertit les r\u00e8gles de genre dans l\u2019univers vid\u00e9oludique-Galerie INGANG": {
+            "name": "Pikanoa: BRAQUAGE DES CODES : Quand l\u2019art subvertit les r\u00e8gles de genre dans l\u2019univers vid\u00e9oludique",
+            "venue": "Galerie INGANG",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "40ab23ec23a9a153c6d527bc1831eb44"
+        }
+    },
+    "Galerie POPOP": {
+        "Po\u00e9sie(s) de l\u2019urgence-Galerie POPOP": {
+            "name": "Po\u00e9sie(s) de l\u2019urgence",
+            "venue": "Galerie POPOP",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-03",
+                "end": "2026-11-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "bf7001dbf3ee4ed0b2d2eb2d6037e014"
+        }
+    },
+    "Arprim": {
+        "L\u2019endroit o\u00f9 se cache le temps-Arprim": {
+            "name": "L\u2019endroit o\u00f9 se cache le temps",
+            "venue": "Arprim",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-10",
+                "end": "2026-11-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "96d03c2519df644d0eaf47ceaeab0f08"
+        }
+    },
+    "Galerie Ayenai": {
+        "Marcus Troy: Exposition Inaugurale: Barrel Baby-Galerie Ayenai": {
+            "name": "Marcus Troy: Exposition Inaugurale: Barrel Baby",
+            "venue": "Galerie Ayenai",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-08",
+                "end": "2026-12-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://belgo.art/",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:19",
+            "hash": "219c299f54e2d7323123a649c0f4fc92"
+        }
+    },
+    "OBORO": {
+        "Le jaguar et l'oiseau \u00e9carlate-OBORO": {
+            "name": "Le jaguar et l'oiseau \u00e9carlate",
+            "venue": "OBORO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-02",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.oboro.net/programmation/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.oboro.net/wp-content/uploads/2026/07/jaguar_oiseau.png?ver=2.1.11",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:20",
+            "hash": "a0f4d26f4f2fa652d411aaebfcef74a3"
+        },
+        "Karl Lemieux: Plateformes-OBORO": {
+            "name": "Karl Lemieux: Plateformes",
+            "venue": "OBORO",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-20",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.oboro.net/programmation/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.oboro.net/wp-content/uploads/2026/07/001_IMG_7532-1024x671.jpeg?ver=2.1.11",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:20",
+            "hash": "e3ec3212fa2d47ed9daffd6054629042"
+        }
+    },
+    "SKOL": {
+        "Fait maison : histoires badass des communaut\u00e9s QTBIPOC de Montr\u00e9al-SKOL": {
+            "name": "Fait maison : histoires badass des communaut\u00e9s QTBIPOC de Montr\u00e9al",
+            "venue": "SKOL",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-10",
+                "end": "2026-11-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://skol.ca/expositions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://skol.ca/wp-content/uploads/2026/08/background-only-240x240.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:21",
+            "hash": "4821972b5f25fc0dc6d0c6e939df93a6"
+        }
+    },
+    "CIRCA art actuel": {
+        "Janeva L. Fauve: Excavation et ablution-CIRCA art actuel": {
+            "name": "Janeva L. Fauve: Excavation et ablution",
+            "venue": "CIRCA art actuel",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://circa-art.com/exhibitions_period/a-venir/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://circa-art.com/wp-content/uploads/2026/10/FauveLjaneva_Image-600x400.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:23",
+            "hash": "a5024d928eb15822d5479c637139a772"
+        }
+    },
+    "Blouin Division": {
+        "Caroline Monnet: Kw\u00ecngwan : The Earth Trembles-Blouin Division": {
+            "name": "Caroline Monnet: Kw\u00ecngwan : The Earth Trembles",
+            "venue": "Blouin Division",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-10",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://blouin-division.com/en/exhibitions/130-2026-caroline-monnet-montreal-kwingwan-la-terre-tremble/overview/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2712/usr/images/exhibitions/main_image_override/130/_pl17893.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:24",
+            "hash": "80a1f710b49f443697dd9a1d08518ee2"
+        },
+        "Camille Charbonneau: Unmoored-Blouin Division": {
+            "name": "Camille Charbonneau: Unmoored",
+            "venue": "Blouin Division",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-10",
+                "end": "2026-11-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://blouin-division.com/en/exhibitions/132-2026-camille-charbonneau-montreal-project-space-unmoored/overview/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite2712/usr/images/exhibitions/main_image_override/132/_pl18039.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 18:56:24",
+            "hash": "3a7ece01462487709c982e3fd543f8d8"
+        }
     }
 }

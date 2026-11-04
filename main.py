@@ -27,7 +27,7 @@ from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, hun
     skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary, \
     california_african_american_museum, molaa, ica_la, \
     regen_projects, david_kordansky_gallery, night_gallery, roberts_projects, nazarian_curcio, francois_ghebaly, charlie_james_gallery, anat_ebgi_gallery, commonwealth_and_council, gagosian_beverly_hills, spruth_magers_los_angeles, kohn_gallery
-from scrapers.mtl import mbam, mccord_stewart, phi_foundation
+from scrapers.mtl import mbam, mccord_stewart, phi_foundation, belgo_galleries, oboro, skol, circa, blouin_division
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
@@ -158,6 +158,11 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Montreal Museum of Fine Arts": mbam.scrape_mbam_exhibitions,
             "McCord Stewart Museum": mccord_stewart.scrape_mccord_stewart_exhibitions,
             "PHI Foundation": phi_foundation.scrape_phi_foundation_exhibitions,
+            "Belgo Building galleries": belgo_galleries.scrape_belgo_galleries,
+            "OBORO": oboro.scrape_oboro,
+            "SKOL": skol.scrape_skol,
+            "CIRCA art actuel": circa.scrape_circa,
+            "Blouin Division": blouin_division.scrape_blouin_division,
         },
         'tor': {
             "MOCA Toronto": moca_toronto.scrape_moca_toronto_exhibitions,
