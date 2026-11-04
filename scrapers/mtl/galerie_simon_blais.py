@@ -1,7 +1,8 @@
 from utils import fetch_and_parse
-from scrapers.tor._common import Listing, page_lines
-from scrapers.la._gallery import dated_headings
+from scrapers.tor._common import publish
+from date_parsing import parse_date_text
 from processing import region_today
+from urllib.parse import urljoin
 import logging
 
 EXHIBITIONS_URL = 'https://galeriesimonblais.com/en/expos/'
@@ -15,14 +16,24 @@ def scrape_galerie_simon_blais(env='prod', region='mtl'):
     if soup is None:
         logging.warning("Galerie Simon Blais: could not fetch the exhibitions page; existing data kept.")
         return
-    lines = page_lines(soup)
-    listing = Listing(env, region, VENUE, soup, EXHIBITIONS_URL)
-    # "Jean McEwen | La lumière sous les blasons | Nov. 4, 2026 to Dec. 19, 2026 | View" (the page lists the shows twice,
-    # and shows held "OFFSITE - HORS-GALERIE" at a museum are not in the gallery)
+    # Each show is a row: <a><img></a> then .expo_summary_artists (h3), .expo_summary_name, .expo_summary_dates
+    # ("Nov. 4, 2026 to Dec. 19, 2026") and a View button. The page lists the shows twice, and shows held
+    # "OFFSITE - HORS-GALERIE" at a museum are not in the gallery.
     seen = set()
-    for parts, start, end, _ in dated_headings(lines, today, stops=('View',), after=1):
-        if parts and not any('OFFSITE' in p.upper() for p in parts):
-            listing.add(f"{parts[0]}: {parts[1]}" if len(parts) == 2 else parts[0], start, end, anchor=parts[0],
-                        tag='gallery', seen=seen)
-    if not listing.publish():
+    stored = 0
+    for text in soup.select('.expo_summary_text'):
+        artist, title, dates, button = (text.select_one('.expo_summary_artists'), text.select_one('.expo_summary_name'),
+                                        text.select_one('.expo_summary_dates'), text.select_one('a[href]'))
+        if not (artist and title and dates):
+            continue
+        artist, title = artist.get_text(' ', strip=True), title.get_text(' ', strip=True)
+        start, end = parse_date_text(dates.get_text(' ', strip=True), today)
+        if 'OFFSITE' in title.upper() or not (start or end):
+            continue
+        row = text.find_parent(class_='row')
+        img = row.select_one('img[src]') if row else None
+        stored += publish(env, region, VENUE, f"{artist}: {title}", start, end,
+                          urljoin(EXHIBITIONS_URL, button['href']) if button else EXHIBITIONS_URL, tag='gallery',
+                          seen=seen, image=urljoin(EXHIBITIONS_URL, img['src']) if img else None)
+    if not stored:
         logging.warning("Galerie Simon Blais: no exhibitions found; existing data kept.")

@@ -15,6 +15,7 @@ _DAY_RANGE_RE = re.compile(r'^\d{1,2}(?:er)? \S+ au \d{1,2}(?:er)? \S+')
 _YEAR_RE = re.compile(r'^,?\s*(\d{4})$')
 _SKIP = ('Exposition :', 'Dates :')
 # The page misspells one tenant's name
+_SOCIAL_AND_TRANSIT = ('instagram.com', 'facebook.com', 'stm.info', 'quartierdesspectacles.com')
 _RENAMES = {'Éclats Art contemmporain': 'Éclats Art contemporain'}
 
 
@@ -28,6 +29,27 @@ def _name(title_lines):
     return title
 
 
+def _tenant_links(soup):
+    """{tenant name: link} from the page: each tenant's heading is followed by its home page and, when it has
+    a show on, that show's own page. belgo.art itself has no pictures, so the show's page is the best link."""
+    found = {}
+    for heading in soup.select('h3.TitleName'):
+        links, social = [], []
+        for el in heading.find_all_next():
+            if el is not heading and el.name == 'h3' and 'TitleName' in (el.get('class') or []):
+                break
+            if el.name == 'a' and el.get('href'):
+                if any(h in el['href'] for h in _SOCIAL_AND_TRANSIT):
+                    social.append(el['href'])
+                elif el['href'] not in links:
+                    links.append(el['href'])
+        # a tenant with only an Instagram page links to that, not to belgo.art (whose only picture is the building)
+        link = (links[1] if len(links) > 1 else links[0]) if links else (social[0] if social else None)
+        if link:
+            found[heading.get_text(' ', strip=True).split(' | ')[0]] = link
+    return found
+
+
 def scrape_belgo_galleries(env='prod', region='mtl'):
     """Scrape and process the exhibitions of the galleries and artist-run centres in the Belgo Building."""
     today = region_today(region)
@@ -35,6 +57,7 @@ def scrape_belgo_galleries(env='prod', region='mtl'):
     if soup is None:
         logging.warning("Belgo galleries: could not fetch belgo.art; existing data kept.")
         return
+    tenant_links = _tenant_links(soup)
     lines = page_lines(soup)
     locals_at = [i for i, l in enumerate(lines) if l == 'Local :']
     page_end = index_of(lines, 'Le Belgo —', len(lines))
@@ -59,6 +82,6 @@ def scrape_belgo_galleries(env='prod', region='mtl'):
         start, end = parse_date_text(text, today)
         if title_lines and (start or end):
             stored += publish(env, region, _RENAMES.get(venue, venue), _name(title_lines), start, end,
-                              LISTING_URL, tag='gallery')
+                              tenant_links.get(venue, LISTING_URL), tag='gallery')
     if not stored:
         logging.warning("Belgo galleries: no exhibitions found; existing data kept.")

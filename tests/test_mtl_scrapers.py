@@ -55,6 +55,19 @@ class BelgoTest(unittest.TestCase):
         self.assertIn(('Galerie INGANG', 'Pikanoa: BRAQUAGE DES CODES : Quand l’art subvertit les règles vidéoludique'), events)
 
 
+    def test_each_show_links_to_its_own_page_when_the_tenant_has_one(self):
+        page = ('<h3 class="t TitleName"><a href="https://b312.ca/">Galerie B-312</a></h3><a href="https://b312.ca/programmation/gambits"></a>'
+                + blocks('Local :', '403', 'Centre d’artistes', 'Heures d’ouverture :', 'Mardi au samedi, 12h-17h',
+                         'Exposition :', 'Gambits', 'Dates :', '5 novembre au 12 décembre', '2026')
+                + '<h3 class="t TitleName"><a href="https://kubart.example/">Galerie Kub’Art</a></h3><a href="https://www.instagram.com/kubart/"></a>'
+                + blocks('Local :', '411', 'Galerie d’art', 'Heures d’ouverture :', '(Ouvert sur rendez-vous)',
+                         'Exposition inaugurale', '12 novembre au 11 décembre'))
+        events = run(belgo_galleries, 'scrape_belgo_galleries', page)
+        links = {v: [l['link'] for l in e['links'] if l['description'] == 'Event Page'][0] for (v, _), e in events.items()}
+        self.assertEqual(links['Galerie B-312'], 'https://b312.ca/programmation/gambits')
+        self.assertEqual(links['Galerie Kub’Art'], 'https://kubart.example/')
+
+
 class OboroTest(unittest.TestCase):
     def test_group_and_solo_shows(self):
         page = blocks('Expositions', 'En cours', '2 oct', 'au', '28 nov 2026', 'Le jaguar et l\'oiseau écarlate', 'Exposition collective',
@@ -242,11 +255,20 @@ class LaGuildeTest(unittest.TestCase):
 
 
 class SimonBlaisTest(unittest.TestCase):
-    def test_duplicates_and_offsite_shows_are_dropped(self):
-        shows = blocks('Jean McEwen', 'La lumière sous les blasons', 'Nov. 4, 2026 to Dec. 19, 2026', 'View',
-                       'Jean-Sébastien Denis', 'OFFSITE - HORS-GALERIE — Extensions', 'Oct. 15, 2026 to Mar. 21, 2027', 'View')
+    @staticmethod
+    def row(artist, title, dates, href, image):
+        return (f'<div class="row"><div class="col-6"><a href="{href}"><img src="{image}"/></a></div><div class="col-6">'
+                f'<div class="expo_summary_text"><h3 class="expo_summary_artists">{artist}</h3>'
+                f'<div class="expo_summary_name">{title}</div><div class="expo_summary_dates">{dates}</div>'
+                f'<a class="btn" href="{href}">View</a></div></div></div>')
+
+    def test_duplicates_and_offsite_shows_are_dropped_and_the_row_picture_is_kept(self):
+        shows = self.row('Jean McEwen', 'La lumière sous les blasons', 'Nov. 4, 2026 to Dec. 19, 2026', '/en/expos/mcewen', '/media/mcewen.jpg') \
+            + self.row('Jean-Sébastien Denis', 'OFFSITE - HORS-GALERIE — Extensions', 'Oct. 15, 2026 to Mar. 21, 2027', '/en/expos/denis', '/media/denis.jpg')
         events = run(simon_blais, 'scrape_galerie_simon_blais', shows + shows)
         self.assertEqual(list(events), [('Galerie Simon Blais', 'Jean McEwen: La lumière sous les blasons')])
+        links = events[('Galerie Simon Blais', 'Jean McEwen: La lumière sous les blasons')]['links']
+        self.assertIn({'link': 'https://galeriesimonblais.com/media/mcewen.jpg', 'description': 'Image'}, links)
 
 
 if __name__ == '__main__':
