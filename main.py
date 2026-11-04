@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import os
 from config import configure_logging, DB_FILES
+import image_audit
 import images
 from processing import update_event_phases
 from manual_check import check_manual_events
@@ -240,6 +241,11 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
                          f"dropped {len(added['dropped'])} pictures shared by several shows")
         except Exception:
             logging.exception("Adding event images failed")
+        # Record which events still have no picture of their own (IMAGE_AUDIT.md)
+        try:
+            image_audit.write_report()
+        except Exception:
+            logging.exception("Writing the image audit failed")
 
         # Load dbs and regions
         dbs = {region: load_db(db_file) for region, db_file in DB_FILES.items()}

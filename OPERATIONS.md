@@ -201,6 +201,16 @@ of a venue's shows (then it is a banner). The fallback also needs a picture of a
   backlog clears over a few days.
 - Pages on proxied sites are skipped (an extra fetch would spend ZenRows credits), and
   hand-entered and archived events are left alone.
+- **Tracking what's still missing:** every daily run rewrites [IMAGE_AUDIT.md](IMAGE_AUDIT.md)
+  (`image_audit.py`) and adds its summary to the Actions job summary. For current and
+  upcoming events it gives the share with their own picture, the venues whose events show
+  only the venue logo or nothing, and each such event with its page and the day its page
+  was last checked. The file is committed with the data, so its history shows coverage
+  over time. Print it on demand with `python image_audit.py`. Nothing is fetched for the
+  audit; looking again for a better picture happens by itself (scrapers on every run,
+  `images.py` every 14 days for an event with no picture), so the audit is the list for a
+  person: a venue sitting in it run after run needs a better scraper, or a logo in
+  `venue_images.json`. A good rhythm is to read it about once a month.
 - Try it without changing any data: `python images.py [region ...]` prints what it would
   add and which pictures it rejected as shared.
 - **A venue's logo stands in when an event has no picture.** `docs/data/venue_images.json`
