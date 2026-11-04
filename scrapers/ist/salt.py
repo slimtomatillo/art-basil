@@ -48,6 +48,12 @@ def parse_dates(text):
         return None, None
 
 
+def clean_title(text):
+    """Most titles read "Exhibition: <name>", and a page before the show opens "Upcoming Exhibition: <name>";
+    the type is redundant on this site, and keeping it would store the show under a second name once it opens."""
+    return re.sub(r'^(?:Upcoming\s+)?Exhibition:\s*', '', ' '.join(text.split()), flags=re.IGNORECASE)
+
+
 def collect_exhibition_links(soup):
     """The program page mixes exhibitions with tours, screenings, talks and walks;
     each card's text opens with its type label, so keep only 'Exhibition'."""
@@ -113,9 +119,7 @@ def scrape_salt_exhibitions(env='prod', region='ist'):
         if not h1:
             logging.warning(f"SALT: no title found at {event_link}")
             continue
-        title = ' '.join(h1.get_text(' ', strip=True).split())
-        # Most titles read "Exhibition: <name>"; the type is redundant on this site
-        title = re.sub(r'^Exhibition:\s*', '', title)
+        title = clean_title(h1.get_text(' ', strip=True))
 
         # The venue is followed directly by the date range, e.g.
         # "... Salt Galata June 3 – September 30, 2026 Exhibition Share"

@@ -709,34 +709,6 @@
             "last_updated": "2026-11-04 18:36:24",
             "hash": "4467f6d80405a075a5a3a172e288a368"
         },
-        "Upcoming Exhibition: No Admittance Except on Business-Salt Galata": {
-            "name": "Upcoming Exhibition: No Admittance Except on Business",
-            "venue": "Salt Galata",
-            "description": "Workplaces are among the most central yet least visible spaces of everyday life. These spaces, where the relationship between capital and labor is\u2026",
-            "tags": [
-                "exhibition",
-                "museum",
-                "current"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": "2026-10-17",
-                "end": "2027-02-14"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://saltonline.org/en/upcoming-exhibition-no-admittance-except-on-business-3107",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://saltonline.org/assets/54f7a717-ba45-429b-8aa7-51046d2c9a9c?fit=contain&width=1200&quality=75&format=webp",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-10-16 15:19:23",
-            "hash": "1677390c5e2fa457c3ffe08f4493c301"
-        },
         "No Admittance Except on Business-Salt Galata": {
             "name": "No Admittance Except on Business",
             "venue": "Salt Galata",
