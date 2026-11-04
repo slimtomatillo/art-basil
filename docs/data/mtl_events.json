@@ -2225,17 +2225,21 @@
             "phase": "current",
             "dates": {
                 "start": "2026-10-01",
-                "end": null
+                "end": "2027-01-03"
             },
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/102331/reframing-the-american-landscape",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/iljwhkb-dpDvTFXo8PvqgQEwRnE=/1920x0/20741/19299/CCA96327_AmRe_Pic_Lock_00_19_43_19_1.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "8e802608ee7c89b10c45fe1877f70138"
+            "last_updated": "2026-11-04 19:44:49",
+            "hash": "fae3ee3fbcbc6f89b2627ef2f9abff2b"
         },
         "The fortune of the city is that it has never been perfect-Canadian Centre for Architecture": {
             "name": "The fortune of the city is that it has never been perfect",
@@ -2248,18 +2252,22 @@
             ],
             "phase": "current",
             "dates": {
-                "start": null,
-                "end": "2027-01-10"
+                "start": "2026-05-21",
+                "end": "2027-02-28"
             },
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/102435/the-fortune-of-the-city-is-that-it-has-never-been-perfect",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/oaLPcAh5QlWKxKYMuq3yoyQ1HCw=/1920x0/20101/18738/CCA83386_ARCH290882_lpr.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "b1fbe6c7c0b277db7e8ebd8e28639536"
+            "last_updated": "2026-11-04 19:44:49",
+            "hash": "1fbbaa64db4c883eefe261f8f8c179a9"
         },
         "Everlasting-Canadian Centre for Architecture": {
             "name": "Everlasting",
@@ -2272,18 +2280,22 @@
             ],
             "phase": "current",
             "dates": {
-                "start": null,
+                "start": "2025-09-25",
                 "end": "2026-11-08"
             },
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/100227/everlasting",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/oTCO1OzvXjv7Vpe_owM0JROkgf0=/1920x0/19495/18181/fish-skin-transformation_1.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "dc66c227baea2cfc6197b9026696d7e1"
+            "last_updated": "2026-11-04 19:44:49",
+            "hash": "5cbd79da2704c0c41f85ac57cdebdc16"
         },
         "Neighbours-Canadian Centre for Architecture": {
             "name": "Neighbours",
@@ -2297,17 +2309,21 @@
             "phase": "future",
             "dates": {
                 "start": "2026-11-05",
-                "end": null
+                "end": "2027-11-28"
             },
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/105857/neighbours",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/NGG-g7ye9GMVxm1XISme8U6_cDU=/1920x0/20787/19346/CCA88634_PH2023_0005_002_lpr.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "2b6dde4e34c6ff138a76e9945933cbd9"
+            "last_updated": "2026-11-04 19:44:49",
+            "hash": "0a21e41fd2bfb267fef17e95b1256178"
         },
         "LAWS-Canadian Centre for Architecture": {
             "name": "LAWS",
@@ -2321,17 +2337,49 @@
             "phase": "future",
             "dates": {
                 "start": "2027-03-18",
-                "end": null
+                "end": "2027-10-17"
             },
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/102824/laws",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/-hrnI8lRd0GijuVwRbVfV8U04n8=/1920x0/20170/18795/302054.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "1a698d6d2064238281dab6e46c823e2a"
+            "last_updated": "2026-11-04 19:44:49",
+            "hash": "4fac8d67b4a629a8a1db86a063555d9d"
+        },
+        "Out of the Box: Gillian Hopwood and John Godwin-Canadian Centre for Architecture": {
+            "name": "Out of the Box: Gillian Hopwood and John Godwin",
+            "venue": "Canadian Centre for Architecture",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-01",
+                "end": "2028-03-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.cca.qc.ca/en/events/104058/out-of-the-box-gillian-hopwood-and-john-godwin",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/90L4Nsuhv_WLvYuU4iXcA_awIyU=/1920x0/20440/19024/8e150436-5616-45df-a5bb-4644368521fd.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:44:49",
+            "hash": "13cb25edd5ec6108bdc8110713ae5447"
         }
     },
     "Galerie Simon Blais": {
@@ -2409,6 +2457,157 @@
             ],
             "last_updated": "2026-11-04 19:29:38",
             "hash": "b9fcb921dd32e81bee2f5cf44ff3dcf2"
+        }
+    },
+    "Fonderie Darling": {
+        "Shanie Tomassini: Solar Lamentation-Fonderie Darling": {
+            "name": "Shanie Tomassini: Solar Lamentation",
+            "venue": "Fonderie Darling",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-17",
+                "end": "2026-11-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fonderiedarling.org/en/Solar-Lamentation",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://fonderiedarling.org/en/assets/components/phpthumbof/cache/ShanieTomassini-SolarLamentation-FonderieDarling-2026-Credit-SimonSBelleau-01.dc8732448d1b7f95922b8dae15867dfe.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:44:51",
+            "hash": "a38faba57c0246d79788ddef70b2793c"
+        },
+        "Christopher Varady-Szabo: Apr\u00e8s la pluie, la boue-Fonderie Darling": {
+            "name": "Christopher Varady-Szabo: Apr\u00e8s la pluie, la boue",
+            "venue": "Fonderie Darling",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-17",
+                "end": "2026-11-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://fonderiedarling.org/en/Apr\u00e8s-la-pluie-la-boue",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://fonderiedarling.org/en/assets/components/phpthumbof/cache/ChristopherVaradySzabo-Apreslapluielaboue-FonderieDarling-2026-Credit-SimonSBelleau-03.390d81e5b5662174f9dd44766c7f587a.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:44:51",
+            "hash": "2d7610ec461e004f1bd9832f2d7c63bc"
+        }
+    },
+    "La Guilde": {
+        "\u00c9changes: Une s\u00e9lection d\u2019oeuvres des m\u00e9tiers d\u2019art autochtone des Territoires du Nord-Ouest-La Guilde": {
+            "name": "\u00c9changes: Une s\u00e9lection d\u2019oeuvres des m\u00e9tiers d\u2019art autochtone des Territoires du Nord-Ouest",
+            "venue": "La Guilde",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-08",
+                "end": "2026-11-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://laguilde.com/blogs/expositions/echanges-une-selection-d-oeuvre-des-metiers-d-art-autochtone-des-territoires-du-nord-ouest",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://laguilde.com/cdn/shop/files/NWT_Square_8x8in_BILINGUAL_1080x.jpg?v=1790189483",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:44:56",
+            "hash": "bf10a24aaa6ef5a517b78dc2b4715cc1"
+        }
+    },
+    "Art M\u00fbr": {
+        "Karine Giboulo: Retrospective and New Works-Art M\u00fbr": {
+            "name": "Karine Giboulo: Retrospective and New Works",
+            "venue": "Art M\u00fbr",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-14",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://artmur.com/en/upcoming-exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://artmur.com/wp-content/uploads/Karine-Giboulo-National-Geographic-03-1-1024x683.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:48:53",
+            "hash": "31fa92e8979109f1882ff72bb35f5b90"
+        },
+        "\u00c9closion 2026-Art M\u00fbr": {
+            "name": "\u00c9closion 2026",
+            "venue": "Art M\u00fbr",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": "2026-12-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://artmur.com/en/upcoming-exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://artmur.com/wp-content/uploads/Jonathan-Jouan-1024x1536.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 19:48:53",
+            "hash": "7d84742940d483cd59842ffb69e3f3fe"
         }
     }
 }
