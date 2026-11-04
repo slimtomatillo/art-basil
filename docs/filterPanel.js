@@ -261,7 +261,7 @@ class FilterPanel {
         if (filterState.isDefault(state)) {
             // No filters at all, so this region just has nothing current listed
             this.emptyTitle.textContent = 'Nothing on right now';
-            this.emptyText.textContent = 'There are no current or upcoming exhibitions listed here yet. Check back soon.';
+            this.emptyText.textContent = 'There are no current or upcoming art shows listed here yet. Check back soon.';
             this.emptyClear.hidden = true;
         } else {
             this.emptyTitle.textContent = 'Nothing matches that';
