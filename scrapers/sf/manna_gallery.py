@@ -1,4 +1,5 @@
 from utils import fetch_and_parse
+from images import image_in_card
 from processing import process_event, derive_phase, region_today
 from date_parsing import parse_date_text
 import datetime as dt
@@ -54,6 +55,9 @@ def scrape_manna_gallery(env='prod', region='sf'):
             'links': [{'link': url, 'description': 'Event Page'}],
             'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
         }
+        image = image_in_card(soup, name, url, check_size=False)
+        if image:
+            event_details['links'].append({'link': image, 'description': 'Image'})
         found += 1
         if env == 'dev':
             logging.info(f"Event found: {name} ({phase}, {start_date} - {end_date}) at {event_details['venue']}")

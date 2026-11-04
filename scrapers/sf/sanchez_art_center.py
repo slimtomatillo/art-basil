@@ -1,4 +1,6 @@
 from utils import fetch_and_parse
+from images import secure_image_url
+from urllib.parse import urljoin
 from processing import process_event, derive_phase, region_today
 from date_parsing import parse_date_text
 import datetime as dt
@@ -16,6 +18,33 @@ CALENDAR_URL = 'http://sanchezartcenter.org/Calendar.htm'
 _EXHIBITION_RE = re.compile(r'\b(show|exhibition|exhibit)\b', re.I)
 _MAX_DESCRIPTION = 400
 
+# The calendar has no pictures, but the site keeps a show's pictures in a year folder
+# (images/2026/...): the Exhibitions page has the current members show's, and a show with its
+# own page (the winter art faire) has its poster there. Header, mural and badge pictures
+# elsewhere on the page are the site's own and are not used.
+EXHIBITIONS_URL = 'http://sanchezartcenter.org/EXHIBITIONS.html'
+_YEAR_FOLDER_RE = re.compile(r'(?:^|/)images/20\d\d/', re.I)
+_PHOTO_RE = re.compile(r'\.(?:jpe?g|png)$', re.I)       # the .gif files there are title banners
+_ORDINAL_RE = re.compile(r'\d+(?:st|nd|rd|th) annual', re.I)
+
+
+def _year_folder_pictures(soup, base_url):
+    return [urljoin(base_url, i['src']) for i in soup.find_all('img', src=True) if _YEAR_FOLDER_RE.search(i['src'])]
+
+
+def _exhibition_photo(exhibitions, name):
+    """The first photo on the Exhibitions page, when that page is about the show `name` (matched by
+    its "68th Annual" style number)."""
+    key = _ORDINAL_RE.search(name)
+    if exhibitions is None or not key or key.group(0).lower() not in exhibitions.get_text(' ').lower():
+        return None
+    return next((u for u in _year_folder_pictures(exhibitions, EXHIBITIONS_URL) if _PHOTO_RE.search(u)), None)
+
+
+def _own_page_poster(url):
+    soup = fetch_and_parse(url)
+    return next(iter(_year_folder_pictures(soup, url)), None) if soup is not None else None
+
 
 def scrape_sanchez_art_center(env='prod', region='sf'):
     """Scrape and process the exhibitions and events on the Sanchez Art Center calendar."""
@@ -26,6 +55,7 @@ def scrape_sanchez_art_center(env='prod', region='sf'):
         logging.warning("Sanchez Art Center: could not fetch the calendar page; existing data kept.")
         return
 
+    exhibitions = fetch_and_parse(EXHIBITIONS_URL)
     for row in soup.find_all('tr'):
         cells = row.find_all('td', recursive=False)
         # Date label and details are the two cells that hold text
@@ -54,8 +84,11 @@ def scrape_sanchez_art_center(env='prod', region='sf'):
 
         link_tag = texts[1].find('a', href=True)
         event_link = CALENDAR_URL
+        image = _exhibition_photo(exhibitions, name) if phase != 'past' else None
         if link_tag and not link_tag['href'].startswith(('http', 'mailto')):
             event_link = 'http://sanchezartcenter.org/' + link_tag['href']
+            if phase != 'past':
+                image = _own_page_poster(event_link) or image
 
         event_details = {
             'name': name,
@@ -65,7 +98,8 @@ def scrape_sanchez_art_center(env='prod', region='sf'):
             'phase': phase,
             'dates': {'start': start_date, 'end': end_date},
             'ongoing': False,
-            'links': [{'link': event_link, 'description': 'Event Page'}],
+            'links': [{'link': event_link, 'description': 'Event Page'}]
+                     + ([{'link': secure_image_url(image), 'description': 'Image'}] if image else []),
             'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
         }
 

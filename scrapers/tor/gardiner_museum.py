@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 from processing import region_today
 import logging
 import re
@@ -18,11 +18,11 @@ def scrape_gardiner_museum(env='prod', region='tor'):
         logging.warning("Gardiner Museum: could not fetch the exhibitions page; existing data kept.")
         return
     lines = page_lines(soup)
-    found = 0
+    listing = Listing(env, region, 'Gardiner Museum', soup, EXHIBITIONS_URL)
     for i, line in enumerate(lines):
         if i and _RANGE_RE.match(line):
             start_date, end_date = parse_date_text(line, today)
-            found += publish(env, region, 'Gardiner Museum', lines[i - 1], start_date, end_date,
-                             EXHIBITIONS_URL, tag='museum')
+            listing.add(lines[i - 1], start_date, end_date, tag='museum')
+    found = listing.publish()
     if not found:
         logging.warning("Gardiner Museum: no exhibitions found; existing data kept.")

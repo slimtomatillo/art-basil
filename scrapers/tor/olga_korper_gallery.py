@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 from processing import region_today
 import logging
 import re
@@ -19,7 +19,7 @@ def scrape_olga_korper_gallery(env='prod', region='tor'):
         logging.warning("Olga Korper Gallery: could not fetch the exhibitions page; existing data kept.")
         return
     lines = page_lines(soup)
-    found = 0
+    listing = Listing(env, region, 'Olga Korper Gallery', soup, PAGE_URL)
     seen = set()
     # Each entry is artist(s) (or "Group Exhibition") / title / dates
     for i, line in enumerate(lines):
@@ -30,7 +30,7 @@ def scrape_olga_korper_gallery(env='prod', region='tor'):
             continue
         name = title if artist.lower() == 'group exhibition' else f'{artist}: {title}'
         start_date, end_date = parse_date_text(line, today)
-        found += publish(env, region, 'Olga Korper Gallery', name, start_date, end_date, PAGE_URL,
-                         tag='gallery', seen=seen)
+        listing.add(name, start_date, end_date, tag='gallery', seen=seen)
+    found = listing.publish()
     if not found:
         logging.warning("Olga Korper Gallery: no exhibitions found; existing data kept.")

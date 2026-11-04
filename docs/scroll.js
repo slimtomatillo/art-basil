@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         
         // Fetch venue data
         const venues = await window.dataManager.fetchVenues();
+        const venueImages = await window.dataManager.fetchVenueImages();
         
         // Fetch and sort event data
         const unsortedData = await window.dataManager.fetchEvents();
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         // Initialize table renderer
         const tableRenderer = new window.TableRenderer('event-list');
         tableRenderer.setVenues(venues);
+        tableRenderer.setVenueImages(venueImages);
         
         // Clear existing table content
         tableRenderer.clearTable();

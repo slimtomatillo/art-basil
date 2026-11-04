@@ -1,7 +1,9 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
 from scrapers.tor._common import publish
+from images import plausible_image_url
 from processing import region_today
+from urllib.parse import urljoin
 import logging
 
 BASE_URL = 'https://artmuseum.utoronto.ca'
@@ -9,7 +11,7 @@ VENUE = 'Art Museum at the University of Toronto'
 
 # (page, CSS selector for its entries, kind of entry). The museum's own sidebar menu leads to
 # these three pages; each entry is <div class="... item"><a href><h3 class="item-title">
-# <p class="date">. "Upcoming Exhibitions" is on the exhibitions page and is empty between shows.
+# <p class="date"> and a thumbnail <img> (the picture that goes with the show). "Upcoming Exhibitions" is on the exhibitions page and is empty between shows.
 PAGES = (
     (BASE_URL + '/exhibitions/', '#current .exhibition.item, #upcoming .exhibition.item', 'exhibition'),
     (BASE_URL + '/exhibition-type/touring-exhibitions/', '.post.item.touring-exhibitions', 'exhibition'),
@@ -41,7 +43,10 @@ def scrape_art_museum_uoft(env='prod', region='tor'):
             start_date, end_date = parse_date_text(' '.join(date.get_text(' ').split()), today)
             if start_date and not end_date:
                 end_date = start_date
+            thumb = item.find('img')
+            image = urljoin(url, thumb['src']) if thumb and thumb.get('src') else None
             found += publish(env, region, VENUE, ' '.join(title.get_text().split()), start_date, end_date,
-                             link['href'], tag='museum', kind=kind, extra_tags=('free',), seen=seen)
+                             link['href'], tag='museum', kind=kind, extra_tags=('free',), seen=seen,
+                             image=image if image and plausible_image_url(image) else None)
     if fetched and not found:
         logging.info("Art Museum at the University of Toronto: nothing current or upcoming on its pages.")

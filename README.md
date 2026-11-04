@@ -54,6 +54,7 @@ node --test tests/                                     # unit tests for the fron
 ```
 - `phase` is `current`, `future` or `past`, worked out from `dates` in the venue's local time zone (`docs/data/regions.json`) and only ever moving forward. The dates may be `null`.
 - `ongoing: true` means a current show with no end date.
+- The `Image` link is the thumbnail; an event without one shows its venue's logo from `docs/data/venue_images.json`, if there is one. A scraper supplies it when the listing shows one; otherwise `images.py` finds one from the show's own page after the scrapers run (see [OPERATIONS.md](OPERATIONS.md)) and stamps the day it looked in `image_checked`.
 - `tags` start with the type, phase and venue kind the scraper sets (`exhibition`, `current`, `museum`/`gallery`). Subject tags (medium such as `photography` or `ceramics`, and themes such as `latinx` or `queer`) are added automatically from the title and description by `tagging.py` for every event; the approved list is on `docs/tags.html`.
 - `source` is absent for scraped events, or `"manual"` / `"archive"` (see above).
 - The `venue` string must match a key in `<region>_venues.json`, which maps each venue to its street address (for the map links and the venues page). A venue with more than one space can list several addresses, each with its own map link; see "A venue with more than one space" in [ADDING_A_REGION.md](ADDING_A_REGION.md).

@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 from processing import region_today
 import logging
 import re
@@ -23,13 +23,13 @@ def scrape_onsite_gallery(env='prod', region='tor'):
         logging.warning("Onsite Gallery: no 'Current exhibitions' section found; existing data kept.")
         return
     end = next((i for i, l in enumerate(lines) if i > start and l.lower().startswith('upcoming programming')), len(lines))
-    found = 0
+    listing = Listing(env, region, 'Onsite Gallery', soup, PAGE_URL)
     seen = set()
     # Each show: title / "September 2, 2026 - January 30, 2027" / location / "Exhibition"
     for i in range(start + 1, end):
         if _RANGE_RE.match(lines[i]):
             start_date, end_date = parse_date_text(lines[i], today)
-            found += publish(env, region, 'Onsite Gallery', lines[i - 1], start_date, end_date, PAGE_URL,
-                             tag='gallery', seen=seen)
+            listing.add(lines[i - 1], start_date, end_date, tag='gallery', seen=seen)
+    found = listing.publish()
     if not found:
         logging.warning("Onsite Gallery: no exhibitions found; existing data kept.")

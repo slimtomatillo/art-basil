@@ -17,6 +17,25 @@ def generate_event_hash(event_details):
 def generate_unique_identifier(event_details):
     return f"{event_details['name']}-{event_details['venue']}"
 
+def image_link(event):
+    """The URL of an event's "Image" link, or None."""
+    return next((l['link'] for l in event.get('links', []) if l.get('description') == 'Image' and l.get('link')), None)
+
+def keep_found_image(event_details, stored):
+    """Carry an image found earlier (images.py) over to the event a scraper is rewriting.
+
+    Scrapers replace the whole stored event on every run. One that doesn't supply an image would
+    wipe the one images.py found, so the stored image (and the day it was last looked for) is
+    kept. An image the scraper does supply always wins."""
+    if not stored:
+        return
+    if not image_link(event_details):
+        old = next((l for l in stored.get('links', []) if l.get('description') == 'Image' and l.get('link')), None)
+        if old:
+            event_details['links'] = [*event_details.get('links', []), dict(old)]
+    if stored.get('image_checked') and 'image_checked' not in event_details:
+        event_details['image_checked'] = stored['image_checked']
+
 # Events are keyed by "name-venue", so when a source retitles a show ("and" -> "&",
 # a subtitle added, an accent dropped) the scraper writes a second entry and the old
 # one, never refreshed again, lingers as a duplicate. These helpers recognise the same
@@ -96,6 +115,7 @@ def process_event(event_details, region):
     venue = event_details['venue']
     site_events = db.get(venue, {})
     event_id = generate_unique_identifier(event_details)
+    keep_found_image(event_details, site_events.get(event_id))
     event_hash = generate_event_hash(event_details)
     _processed_this_run.add((region, venue, event_id))
 

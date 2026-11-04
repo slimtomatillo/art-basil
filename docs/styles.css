@@ -429,6 +429,15 @@ body {
     border-radius: 4px;
 }
 
+/* A venue's logo shown for an event with no picture of its own: kept whole (not cropped)
+   on a white tile so a transparent logo stays readable */
+.event-image.venue-logo {
+    background: #fff;
+    object-fit: contain;
+    padding: 6px;
+    max-width: 150px;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {

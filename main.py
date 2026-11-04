@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import os
 from config import configure_logging, DB_FILES
+import images
 from processing import update_event_phases
 from manual_check import check_manual_events
 from scraper_health import find_stale_venues, report as report_scraper_health
@@ -231,6 +232,15 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
         logging.info(f"[{region}] Finished scrape for {venue}")
 
     if env == 'prod' and write_summary:
+        # Give image-less current and upcoming events a picture from their own page (images.py).
+        # Never lets a failure here lose the scraped data.
+        try:
+            added = images.enrich_missing_images(selected_regions)
+            logging.info(f"Images: opened {added['checked']} event pages, added {len(added['added'])}, "
+                         f"dropped {len(added['dropped'])} pictures shared by several shows")
+        except Exception:
+            logging.exception("Adding event images failed")
+
         # Load dbs and regions
         dbs = {region: load_db(db_file) for region, db_file in DB_FILES.items()}
         

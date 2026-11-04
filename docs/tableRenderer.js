@@ -100,6 +100,7 @@ class TableRenderer {
     constructor(tableBodyId) {
         this.tableBody = document.getElementById(tableBodyId);
         this.venues = null;
+        this.venueImages = {};
 
         // On phones the CSS shows each row as a card (display: grid), and changing a
         // table's display makes some screen readers stop treating it as a table. Naming
@@ -115,6 +116,11 @@ class TableRenderer {
 
     setVenues(venues) {
         this.venues = venues;
+    }
+
+    // {venue name: picture URL}: a logo or banner shown for events with no picture of their own
+    setVenueImages(venueImages) {
+        this.venueImages = venueImages || {};
     }
 
     renderEventRow(event) {
@@ -173,12 +179,17 @@ class TableRenderer {
     renderImageCell(cell, event) {
         // Find the image link with the description "Image"
         const imageLinkObj = event.links.find(link => link.description === 'Image');
+        // No picture of its own: fall back to the venue's logo, if we have one
+        const venueImage = this.venueImages[event.venue];
+        const imageSrc = imageLinkObj && imageLinkObj.link ? imageLinkObj.link : venueImage;
 
-        if (imageLinkObj && imageLinkObj.link) {
+        if (imageSrc) {
             const imgElement = document.createElement('img');
-            imgElement.src = imageLinkObj.link;
-            imgElement.alt = `${event.name} @ ${event.venue}`;
-            imgElement.className = 'event-image';
+            imgElement.src = imageSrc;
+            imgElement.alt = imageLinkObj && imageLinkObj.link
+                ? `${event.name} @ ${event.venue}`
+                : `${event.venue} logo`;
+            imgElement.className = imageLinkObj && imageLinkObj.link ? 'event-image' : 'event-image venue-logo';
             imgElement.style.maxHeight = '130px';
             imgElement.style.height = 'auto';
             imgElement.style.justifySelf = 'center';
@@ -197,7 +208,7 @@ class TableRenderer {
             // Add click event for opening modal
             imgElement.addEventListener('click', (e) => {
                 e.stopPropagation();
-                this.openImageModal(imageLinkObj.link);
+                this.openImageModal(imageSrc);
             });
         } else {
             // Handle the case where there is no image link
