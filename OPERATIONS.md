@@ -231,6 +231,13 @@ of a venue's shows (then it is a banner). The fallback also needs a picture of a
   (`images.secure_image_url`). If that service ever goes away, those thumbnails vanish
   quietly (the page hides a broken picture) and the logo fallback does not apply to them;
   copying the files into `docs/` would be the replacement.
+- **Venues with huge originals** (CAAM's pictures are 5-8 MB PNGs) get a small JPEG copy
+  through the same proxy (`images.resized_image_url`), and the table lazy-loads thumbnails
+  so rows below the fold load their pictures only as they are scrolled to. A venue whose
+  pictures are slow to load is a candidate for the same treatment.
+- `image_checked` only counts while an event still points at the same Event Page. When a
+  scraper starts linking a show's own page instead of a listing, the page is looked at
+  again on the next run rather than after 14 days.
 - Creative Growth's picture is not in its page's HTML: the page is built by JavaScript
   from a JSON blob, which its scraper reads (the image block that links to the show's
   page), and the Event Page link now goes to the show's own page.

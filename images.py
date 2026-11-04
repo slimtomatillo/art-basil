@@ -66,6 +66,17 @@ def secure_image_url(url):
     return url
 
 
+def resized_image_url(url, width=640):
+    """A small JPEG copy of a picture, served by images.weserv.nl (the same free proxy as
+    secure_image_url). For a site whose pictures are huge originals (CAAM's are 5-8 MB PNGs),
+    which would otherwise make the page download tens of megabytes. For photos only: a
+    transparent logo would lose its transparency."""
+    if not url:
+        return url
+    bare = re.sub(r'^https?://', '', url, flags=re.I)
+    return f'https://images.weserv.nl/?url={quote(bare, safe="")}&w={width}&we&output=jpg&q=80'
+
+
 def plausible_image_url(url):
     """False for anything that can't be an exhibition photo, judged from the URL alone."""
     if not url or not url.lower().startswith(('http://', 'https://')):

@@ -30,7 +30,9 @@ def _links(soup):
     found = {}
     for a in soup.find_all('a', href=True):
         if '/exhibitions/' in a['href']:
-            text = re.sub(r'\s+', ' ', a.get_text(' ', strip=True))
+            # a card's link text is its title plus its dates, so use the title element alone
+            title = a.select_one('.info-card--title')
+            text = re.sub(r'\s+', ' ', (title or a).get_text(' ', strip=True))
             if text:
                 found.setdefault(text, urljoin(EXHIBITIONS_URL, a['href']))
     return found

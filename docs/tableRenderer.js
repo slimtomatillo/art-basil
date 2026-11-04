@@ -190,6 +190,7 @@ class TableRenderer {
                 ? `${event.name} @ ${event.venue}`
                 : `${event.venue} logo`;
             imgElement.className = imageLinkObj && imageLinkObj.link ? 'event-image' : 'event-image venue-logo';
+            imgElement.loading = 'lazy';   // rows below the fold load their pictures as they are scrolled to
             imgElement.style.maxHeight = '130px';
             imgElement.style.height = 'auto';
             imgElement.style.justifySelf = 'center';

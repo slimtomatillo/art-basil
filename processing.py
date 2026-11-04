@@ -21,6 +21,10 @@ def image_link(event):
     """The URL of an event's "Image" link, or None."""
     return next((l['link'] for l in event.get('links', []) if l.get('description') == 'Image' and l.get('link')), None)
 
+def _event_page(event):
+    return next((l.get('link') for l in event.get('links', []) if l.get('description') == 'Event Page'), None)
+
+
 def keep_found_image(event_details, stored):
     """Carry an image found earlier (images.py) over to the event a scraper is rewriting.
 
@@ -33,7 +37,9 @@ def keep_found_image(event_details, stored):
         old = next((l for l in stored.get('links', []) if l.get('description') == 'Image' and l.get('link')), None)
         if old:
             event_details['links'] = [*event_details.get('links', []), dict(old)]
-    if stored.get('image_checked') and 'image_checked' not in event_details:
+    # The day the page was last looked at only counts while the event still points at that page
+    if (stored.get('image_checked') and 'image_checked' not in event_details
+            and _event_page(stored) == _event_page(event_details)):
         event_details['image_checked'] = stored['image_checked']
 
 # Events are keyed by "name-venue", so when a source retitles a show ("and" -> "&",
