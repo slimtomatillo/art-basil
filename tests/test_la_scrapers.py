@@ -10,7 +10,8 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from scrapers.la import (eighteenth_street_arts_center as eighteenth, fowler_museum_at_ucla as fowler,
                          japanese_american_national_museum as janm, skirball_cultural_center as skirball,
-                         vincent_price_art_museum as vpam, wende_museum as wende)
+                         vincent_price_art_museum as vpam, wende_museum as wende,
+                         california_african_american_museum as caam, ica_la, molaa)
 from scrapers.tor import _common
 
 TODAY = dt.date(2026, 11, 4)
@@ -20,6 +21,21 @@ def run(module, func, html):
     """Run one scraper over a page of text blocks (one line each); returns {name: stored event}."""
     stored = []
     with mock.patch.object(module, 'fetch_and_parse', lambda url: BeautifulSoup(f'<main>{html}</main>', 'html.parser')), \
+            mock.patch.object(module, 'region_today', lambda region: TODAY, create=True), \
+            mock.patch.object(_common, 'region_today', lambda region: TODAY), \
+            mock.patch.object(_common, 'process_event', lambda details, region: stored.append(details)):
+        getattr(module, func)(env='prod')
+    return {e['name']: e for e in stored}
+
+
+def run_pages(module, func, pages):
+    """Like run(), for a scraper that reads several pages: pages maps each URL to its HTML."""
+    stored = []
+
+    def fetch(url, headers=None):
+        return BeautifulSoup(f'<main>{pages[url]}</main>', 'html.parser') if url in pages else None
+
+    with mock.patch.object(module, 'fetch_and_parse', fetch), \
             mock.patch.object(module, 'region_today', lambda region: TODAY, create=True), \
             mock.patch.object(_common, 'region_today', lambda region: TODAY), \
             mock.patch.object(_common, 'process_event', lambda details, region: stored.append(details)):
@@ -99,6 +115,67 @@ class JanmTest(unittest.TestCase):
         events = run(janm, 'scrape_japanese_american_national_museum', page)
         self.assertEqual(list(events), ['Pictures of Belonging'])
         self.assertEqual(events['Pictures of Belonging']['phase'], 'future')
+
+
+class IcaLaTest(unittest.TestCase):
+    PAGE = blocks('Current Exhibitions', 'Carl Cheng: Nature Never Loses', 'On view through February 28, 2027',
+                  'Outdoor Projects', 'Zoe Walsh: Gathering', 'On view through February 28, 2027',
+                  'Upcoming', 'Opening March 27, 2027', 'Teresa Baker: Somewhere Between', 'Opening November 07',
+                  'Sming Sming Books', 'Find us on', 'Opening December 1', 'Not A Show')
+
+    def test_current_shows_have_only_an_end_and_upcoming_ones_only_a_start(self):
+        events = run(ica_la, 'scrape_ica_la', self.PAGE)
+        self.assertEqual(sorted(events), ['Carl Cheng: Nature Never Loses', 'Sming Sming Books',
+                                          'Teresa Baker: Somewhere Between', 'Zoe Walsh: Gathering'])
+        self.assertEqual(events['Carl Cheng: Nature Never Loses']['dates'], {'start': None, 'end': dt.date(2027, 2, 28)})
+        # No year given: the coming November 7
+        self.assertEqual(events['Sming Sming Books']['dates']['start'], dt.date(2026, 11, 7))
+        self.assertEqual(events['Teresa Baker: Somewhere Between']['phase'], 'future')
+
+
+class MolaaTest(unittest.TestCase):
+    PAGES = {
+        'https://molaa.org/exhibitions/': '<a class="image-slide-anchor" href="/2026-red">x</a>'
+                                          '<a class="image-slide-anchor" href="/2026-romero">x</a>'
+                                          '<a class="image-slide-anchor" href="/molaa-collection-lab">x</a>'
+                                          '<a class="image-slide-anchor">x</a>'
+                                          '<a class="image-slide-anchor" href="/2025-old">x</a>',
+        'https://molaa.org/2026-red': blocks('Donate', 'RED RED RED, Geometry of a Scar', 'ORGANIZED BY MIA ART COLLECTION',
+                                             'Starting October 4, 2026 - February 21, 2027'),
+        'https://molaa.org/2026-romero': blocks('Donate', 'Antonio Romero:', 'TROPICALIA [VOL2]', 'Exhibition Brochure',
+                                                'Starting March 29, 2026'),
+    }
+
+    def test_current_slides_are_read_until_the_gap_and_titles_are_joined(self):
+        events = run_pages(molaa, 'scrape_molaa', self.PAGES)
+        self.assertEqual(sorted(events), ['Antonio Romero: TROPICALIA [VOL2]', 'RED RED RED, Geometry of a Scar'])
+        self.assertEqual(events['RED RED RED, Geometry of a Scar']['dates'],
+                         {'start': dt.date(2026, 10, 4), 'end': dt.date(2027, 2, 21)})
+        self.assertIsNone(events['Antonio Romero: TROPICALIA [VOL2]']['dates']['end'])
+
+
+class CaamTest(unittest.TestCase):
+    @staticmethod
+    def item(title, start, end, display=''):
+        return {'title': title, 'contentUrl': 'https://caamuseum.org/x', 'content': {
+            'start_date': start[0], 'start_year': start[1], 'end_date': end[0], 'end_year': end[1], 'display_date': display}}
+
+    def test_ongoing_and_offsite_entries_are_skipped(self):
+        feed = {'current': [self.item('Sinners', ('October 20', 2026), ('March 14', 2027)),
+                            self.item('Public Sculpture', ('June 21', 2023), ('June 21', 2030), 'Ongoing'),
+                            self.item('Elsewhere', ('October 20', 2026), ('February 27', 2027),
+                                      'October 20, 2026 - February 27, 2027 at Art + Practice')],
+                'upcoming': [self.item('Fred Wilson', ('November 17', 2026), ('April 4', 2027))]}
+        stored = []
+        response = mock.Mock(json=lambda: feed, raise_for_status=lambda: None)
+        with mock.patch.object(caam.requests, 'get', return_value=response), \
+                mock.patch.object(caam, 'region_today', lambda region: TODAY), \
+                mock.patch.object(_common, 'region_today', lambda region: TODAY), \
+                mock.patch.object(_common, 'process_event', lambda details, region: stored.append(details)):
+            caam.scrape_california_african_american_museum(env='prod')
+        events = {e['name']: e for e in stored}
+        self.assertEqual(sorted(events), ['Fred Wilson', 'Sinners'])
+        self.assertEqual(events['Fred Wilson']['phase'], 'future')
 
 
 if __name__ == '__main__':

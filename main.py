@@ -23,7 +23,8 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     jessica_silverman_gallery, fraenkel_gallery, traywick_contemporary, acci_gallery, abrams_claghorn_gallery, \
     headlands_center_for_the_arts, shooting_gallery, el_cerrito_city_hall_gallery
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington, \
-    skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary
+    skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary, \
+    california_african_american_museum, molaa, ica_la
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation
 from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_museum, \
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
@@ -134,6 +135,9 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "USC Pacific Asia Museum": usc_pacific_asia_museum.scrape_usc_pacific_asia_museum,
             "Wende Museum": wende_museum.scrape_wende_museum,
             "Craft Contemporary": craft_contemporary.scrape_craft_contemporary,
+            "California African American Museum": california_african_american_museum.scrape_california_african_american_museum,
+            "Museum of Latin American Art": molaa.scrape_molaa,
+            "Institute of Contemporary Art, Los Angeles": ica_la.scrape_ica_la,
         },
         'mtl': {
             "Montreal Museum of Fine Arts": mbam.scrape_mbam_exhibitions,

@@ -6792,5 +6792,385 @@
             "last_updated": "2026-11-04 17:27:17",
             "hash": "fe701075ec8b89b005e107063af50e13"
         }
+    },
+    "California African American Museum": {
+        "Sadie Barnette: How to Fly-California African American Museum": {
+            "name": "Sadie Barnette: How to Fly",
+            "venue": "California African American Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-09-30",
+                "end": "2027-10-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://caamuseum.org/content/3-exhibitions/1-2025/10-sadie-barnette-how-to-fly",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:50",
+            "hash": "0c44da31e3a17e8834058494cd2ee5fe"
+        },
+        "Free and Queer: Black Californian Roots of Gay Liberation-California African American Museum": {
+            "name": "Free and Queer: Black Californian Roots of Gay Liberation",
+            "venue": "California African American Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "queer"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-04-07",
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://caamuseum.org/content/3-exhibitions/43-2026/2-free-and-queer-black-californian-roots-of-gay-liberation",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:50",
+            "hash": "74ba2d009bbb2027c0f83a96d28e8705"
+        },
+        "Reggie Burrows Hodges: A Theater of Miracles-California African American Museum": {
+            "name": "Reggie Burrows Hodges: A Theater of Miracles",
+            "venue": "California African American Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-20",
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://caamuseum.org/content/3-exhibitions/43-2026/8-reggie-burrows-hodges-a-theater-of-miracles",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:50",
+            "hash": "4303943ce653c7e473509a5e3769147d"
+        },
+        "Sinners: Sounds That Summon-California African American Museum": {
+            "name": "Sinners: Sounds That Summon",
+            "venue": "California African American Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-20",
+                "end": "2027-03-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://caamuseum.org/content/3-exhibitions/43-2026/11-sinners-sounds-that-summon",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:50",
+            "hash": "4f3636262a064777fb12dae2d0071092"
+        },
+        "Fred Wilson: Reflections-California African American Museum": {
+            "name": "Fred Wilson: Reflections",
+            "venue": "California African American Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-17",
+                "end": "2027-04-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://caamuseum.org/content/3-exhibitions/43-2026/9-fred-wilson-reflections",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:50",
+            "hash": "6b9d1077d1bb606738667013a5b377a0"
+        },
+        "Jamea Richmond-Edwards: Another World and Yet the Same-California African American Museum": {
+            "name": "Jamea Richmond-Edwards: Another World and Yet the Same",
+            "venue": "California African American Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-17",
+                "end": "2027-04-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://caamuseum.org/content/3-exhibitions/43-2026/10-jamea-richmond-edwards-another-world-and-yet-the-same",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:50",
+            "hash": "752617719670767af3f4b39822e76c9e"
+        }
+    },
+    "Museum of Latin American Art": {
+        "Concrete Forms: A Look at the Brillembourg-Capriles Collection-Museum of Latin American Art": {
+            "name": "Concrete Forms: A Look at the Brillembourg-Capriles Collection",
+            "venue": "Museum of Latin American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-04",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://molaa.org/2026-concrete-forms",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:50",
+            "hash": "fc28d3996a36febe40e9b27f4685fd5f"
+        },
+        "Sigils: Unveiling the Sacred in the MOLAA Permanent Collection-Museum of Latin American Art": {
+            "name": "Sigils: Unveiling the Sacred in the MOLAA Permanent Collection",
+            "venue": "Museum of Latin American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-04",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://molaa.org/2026-sigils",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:51",
+            "hash": "4619365bd5053538eba484633369460e"
+        },
+        "RED RED RED, Geometry of a Scar-Museum of Latin American Art": {
+            "name": "RED RED RED, Geometry of a Scar",
+            "venue": "Museum of Latin American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-04",
+                "end": "2027-02-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://molaa.org/2026-red-red-red",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:51",
+            "hash": "3614acec9f0119d025a032da7c8a969d"
+        },
+        "Antonio Romero: TROPICALIA [VOL2]-Museum of Latin American Art": {
+            "name": "Antonio Romero: TROPICALIA [VOL2]",
+            "venue": "Museum of Latin American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-03-29",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://molaa.org/2026-antonio-romero-exh",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:51",
+            "hash": "50acddc862876bc46417db4c7ddd16a5"
+        }
+    },
+    "Institute of Contemporary Art, Los Angeles": {
+        "Carl Cheng: Nature Never Loses-Institute of Contemporary Art, Los Angeles": {
+            "name": "Carl Cheng: Nature Never Loses",
+            "venue": "Institute of Contemporary Art, Los Angeles",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://theicala.org/en/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:52",
+            "hash": "ce06bfadac088327947a1a3e2f8b0ddb"
+        },
+        "Zoe Walsh: Gathering-Institute of Contemporary Art, Los Angeles": {
+            "name": "Zoe Walsh: Gathering",
+            "venue": "Institute of Contemporary Art, Los Angeles",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://theicala.org/en/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:52",
+            "hash": "8d98c7dcd8d220457fa5bc9642b83029"
+        },
+        "Amia Yokoyama: Our Strange Hollows-Institute of Contemporary Art, Los Angeles": {
+            "name": "Amia Yokoyama: Our Strange Hollows",
+            "venue": "Institute of Contemporary Art, Los Angeles",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://theicala.org/en/exhibitions",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:52",
+            "hash": "b8ad79c239ce76f24c4d696a90d09cf0"
+        },
+        "Teresa Baker: Somewhere Between Earth and Sky-Institute of Contemporary Art, Los Angeles": {
+            "name": "Teresa Baker: Somewhere Between Earth and Sky",
+            "venue": "Institute of Contemporary Art, Los Angeles",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-27",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://theicala.org/en/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://d1u1wt6xlk1ysg.cloudfront.net/api/file/sFgDtggQSTijfRw0QugU/convert?fit=max&format=jpg&h=&quality=95&w=612&compress=true&fit=max",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:52",
+            "hash": "483fc0dddc4f674c89a0128a1883d688"
+        },
+        "Sming Sming Books: LONG LIVE BOOKS!-Institute of Contemporary Art, Los Angeles": {
+            "name": "Sming Sming Books: LONG LIVE BOOKS!",
+            "venue": "Institute of Contemporary Art, Los Angeles",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-07",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://theicala.org/en/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://d1u1wt6xlk1ysg.cloudfront.net/api/file/IfrpijJQF2bHNLnm5DE9/convert?fit=max&format=jpg&h=&quality=95&w=612&compress=true&fit=max",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-04 17:43:52",
+            "hash": "95c3905d66f933925784adbef9b968ff"
+        }
     }
 }
