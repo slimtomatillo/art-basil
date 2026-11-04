@@ -1823,10 +1823,15 @@
                 {
                     "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.gardinermuseum.on.ca/wp-content/uploads/Magnus-Hara-Thumbnail-1.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:24",
-            "hash": "8c20d47d70b48e2ade692f4c8a7db039"
+            "hash": "8c20d47d70b48e2ade692f4c8a7db039",
+            "image_checked": "2026-11-04"
         },
         "In Search of Imperfection: The Macdonald Collection of Japanese and Japanese-Inspired Ceramics-Gardiner Museum": {
             "name": "In Search of Imperfection: The Macdonald Collection of Japanese and Japanese-Inspired Ceramics",
@@ -1848,10 +1853,15 @@
                 {
                     "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.gardinermuseum.on.ca/wp-content/uploads/In-Search-of-Imperfection-Thumbnail-2.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:24",
-            "hash": "21bdd1bac3be6f122febf929c0306cb1"
+            "hash": "21bdd1bac3be6f122febf929c0306cb1",
+            "image_checked": "2026-11-04"
         },
         "After the Island: Caribbean Canadian Ceramics-Gardiner Museum": {
             "name": "After the Island: Caribbean Canadian Ceramics",
@@ -1873,10 +1883,15 @@
                 {
                     "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.gardinermuseum.on.ca/wp-content/uploads/After-the-Island-Thumbnail-retouched.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:24",
-            "hash": "ed6d909dfbf6facbdc51a11353bd5355"
+            "hash": "ed6d909dfbf6facbdc51a11353bd5355",
+            "image_checked": "2026-11-04"
         },
         "Adaptive Ceramic Histories-Gardiner Museum": {
             "name": "Adaptive Ceramic Histories",
@@ -1898,10 +1913,15 @@
                 {
                     "link": "https://www.gardinermuseum.on.ca/whats-on/exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.gardinermuseum.on.ca/wp-content/uploads/Adaptive-Ceramic-Histories-thumbnail.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:24",
-            "hash": "58b4175c55692451f201fea4f505ee07"
+            "hash": "58b4175c55692451f201fea4f505ee07",
+            "image_checked": "2026-11-04"
         }
     },
     "Textile Museum of Canada": {
@@ -1924,10 +1944,15 @@
                 {
                     "link": "https://textilemuseum.ca/programming/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://textilemuseum.ca/wp-content/uploads/2025/10/20211029_113300-2_1-1140x898.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:35",
-            "hash": "24b919c56aabb54781f07bb96ebf84ae"
+            "hash": "24b919c56aabb54781f07bb96ebf84ae",
+            "image_checked": "2026-11-04"
         },
         "Always In Fashion-Textile Museum of Canada": {
             "name": "Always In Fashion",
@@ -1949,10 +1974,15 @@
                 {
                     "link": "https://textilemuseum.ca/programming/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://textilemuseum.ca/wp-content/uploads/2026/03/Always-in-Fashion_Square_Blank-1140x1140.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:35",
-            "hash": "ee521f9733a29bf6b974eb88a46c2b6e"
+            "hash": "ee521f9733a29bf6b974eb88a46c2b6e",
+            "image_checked": "2026-11-04"
         },
         "Retracing Tatreez: Palestinian Thobes through the 20th Century-Textile Museum of Canada": {
             "name": "Retracing Tatreez: Palestinian Thobes through the 20th Century",
@@ -1973,10 +2003,15 @@
                 {
                     "link": "https://textilemuseum.ca/programming/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://textilemuseum.ca/wp-content/uploads/2026/08/Tatreez-Marketing-PHOTO-1x1-NoText-2-1140x1140.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:35",
-            "hash": "b470148d07d1d775c47fd0f5222c9534"
+            "hash": "b470148d07d1d775c47fd0f5222c9534",
+            "image_checked": "2026-11-04"
         },
         "Body & Head: Philippine Indigenous Blankets and Headscarves From the 20th Century and Beyond-Textile Museum of Canada": {
             "name": "Body & Head: Philippine Indigenous Blankets and Headscarves From the 20th Century and Beyond",
@@ -1998,10 +2033,15 @@
                 {
                     "link": "https://textilemuseum.ca/programming/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://textilemuseum.ca/wp-content/uploads/2026/09/Body-Head-Square-without-text-1140x1140.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:35",
-            "hash": "8c4c0c1814e3f45d08d4f1d152a9e689"
+            "hash": "8c4c0c1814e3f45d08d4f1d152a9e689",
+            "image_checked": "2026-11-04"
         }
     },
     "Bata Shoe Museum": {
@@ -2024,10 +2064,15 @@
                 {
                     "link": "https://batashoemuseum.ca/exhibitions/beads/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://batashoemuseum.ca/wp-content/uploads/Beads_SigImg_website-1024x576.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:39",
-            "hash": "17f00aa2991f6624943e98b2cc981100"
+            "hash": "17f00aa2991f6624943e98b2cc981100",
+            "image_checked": "2026-11-04"
         },
         "Unearthing Vindolanda-Bata Shoe Museum": {
             "name": "Unearthing Vindolanda",
@@ -2048,10 +2093,15 @@
                 {
                     "link": "https://batashoemuseum.ca/exhibitions/vindolanda/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://batashoemuseum.ca/wp-content/uploads/BSM_Vindolanda_1920x1080-1024x576.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:41",
-            "hash": "c7dba370bf7d035f6067568ad116e4ac"
+            "hash": "c7dba370bf7d035f6067568ad116e4ac",
+            "image_checked": "2026-11-04"
         },
         "Andr\u00e9 Perugia-Bata Shoe Museum": {
             "name": "Andr\u00e9 Perugia",
@@ -2072,10 +2122,15 @@
                 {
                     "link": "https://batashoemuseum.ca/exhibitions/perugia/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://batashoemuseum.ca/wp-content/uploads/BSM_Perugia_169_v3-1024x576.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 19:31:12",
-            "hash": "d71f2587e8d80b53a64c96d00d8721c7"
+            "hash": "d71f2587e8d80b53a64c96d00d8721c7",
+            "image_checked": "2026-11-04"
         }
     },
     "Koffler Arts": {
@@ -2099,10 +2154,15 @@
                 {
                     "link": "https://www.kofflerarts.org/whatson/exhibitions",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.kofflerarts.org/de/cache/apps/exhibitions/123/ft_4153-Kofflerarts-KamiphonyExhibition-HeroBanner-v2_04.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:45",
-            "hash": "8a6214fcb12e39b79659c1795686db87"
+            "hash": "8a6214fcb12e39b79659c1795686db87",
+            "image_checked": "2026-11-04"
         },
         "Lessons in Objectology: Gord Peteran-Koffler Arts": {
             "name": "Lessons in Objectology: Gord Peteran",
@@ -2124,10 +2184,15 @@
                 {
                     "link": "https://www.kofflerarts.org/whatson/exhibitions",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.kofflerarts.org/de/cache/apps/exhibitions/125/ft_4161-Kofflerarts-GordPeteranExhibition-HeroBanner_05.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:45",
-            "hash": "57dfe8b001d6859efb73c0c98b74728d"
+            "hash": "57dfe8b001d6859efb73c0c98b74728d",
+            "image_checked": "2026-11-04"
         },
         "Walking Through Life: Yu Hong-Koffler Arts": {
             "name": "Walking Through Life: Yu Hong",
@@ -2149,10 +2214,15 @@
                 {
                     "link": "https://www.kofflerarts.org/whatson/exhibitions",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.kofflerarts.org/de/cache/apps/exhibitions/126/ft_HONG190005_001.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:45",
-            "hash": "57931d63c3d6fc9504d610ef60bd05fe"
+            "hash": "57931d63c3d6fc9504d610ef60bd05fe",
+            "image_checked": "2026-11-04"
         }
     },
     "Mercer Union": {
@@ -2176,10 +2246,15 @@
                 {
                     "link": "https://www.mercerunion.org/exhibitions",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn1.mercerunion.org/media/pages/exhibitions/akhbari-of-wool-and-diesel/50fc49e1a4-1786479036/sheep_websitecrop.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:47",
-            "hash": "fc84ee158df02212b2f55aa401d8207d"
+            "hash": "fc84ee158df02212b2f55aa401d8207d",
+            "image_checked": "2026-11-04"
         }
     },
     "Gallery TPW": {
@@ -2203,10 +2278,15 @@
                 {
                     "link": "https://www.gallerytpw.ca/current-upcoming",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/0dfb56_1b9d0bd0526a4b04b03168a675144830~mv2.png/v1/fill/w_548,h_308,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0dfb56_1b9d0bd0526a4b04b03168a675144830~mv2.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:47",
-            "hash": "47b5387fb039963d598c82d1b17fc27a"
+            "hash": "47b5387fb039963d598c82d1b17fc27a",
+            "image_checked": "2026-11-04"
         },
         "The Soil and the Daylight Recognize Me-Gallery TPW": {
             "name": "The Soil and the Daylight Recognize Me",
@@ -2228,10 +2308,15 @@
                 {
                     "link": "https://www.gallerytpw.ca/current-upcoming",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/0dfb56_6b739837590446c6acbd5ed3d47458b3~mv2.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:47",
-            "hash": "484448714865ef31eb3baa0a2bb96f02"
+            "hash": "484448714865ef31eb3baa0a2bb96f02",
+            "image_checked": "2026-11-04"
         }
     },
     "Gallery 44": {
@@ -2255,10 +2340,15 @@
                 {
                     "link": "https://www.gallery44.org/exhibitions-and-public-programs",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.prod.website-files.com/5f6b78272e5d4762056e9fcc/6a74fff30154a240f63cf21d_COLUMN-6-BOTTOM.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:48",
-            "hash": "353ed7257437b9b8ab742698aff2798c"
+            "hash": "353ed7257437b9b8ab742698aff2798c",
+            "image_checked": "2026-11-04"
         },
         "body \u2014 mind \u2014 distance-Gallery 44": {
             "name": "body \u2014 mind \u2014 distance",
@@ -2280,10 +2370,15 @@
                 {
                     "link": "https://www.gallery44.org/exhibitions-and-public-programs",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.prod.website-files.com/5f6b78272e5d4762056e9fcc/6a75047761040c8a8e444298_COLUMN-5%2B6-TOP.jpeg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:48",
-            "hash": "53c74cc41f90599636d02bae4d09d826"
+            "hash": "53c74cc41f90599636d02bae4d09d826",
+            "image_checked": "2026-11-04"
         },
         "From the Laurentian Highlands to a Higher Place-Gallery 44": {
             "name": "From the Laurentian Highlands to a Higher Place",
@@ -2305,10 +2400,15 @@
                 {
                     "link": "https://www.gallery44.org/exhibitions-and-public-programs",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.prod.website-files.com/5f6b78272e5d4762056e9fcc/6a6bb43175c01d7dcdcd5ffd_20260726%20%20-%20WSM%20-%20laurentian%20highlands%20image.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:48",
-            "hash": "c6af6ec0718fd6b480413b440a2c8216"
+            "hash": "c6af6ec0718fd6b480413b440a2c8216",
+            "image_checked": "2026-11-04"
         },
         "Northumberland-Gallery 44": {
             "name": "Northumberland",
@@ -2330,10 +2430,15 @@
                 {
                     "link": "https://www.gallery44.org/exhibitions-and-public-programs",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.prod.website-files.com/5f6b78272e5d4762056e9fcc/6a6bb8033cf42060394b6c4c_1-4_Doherty_Shiloh%2C%20Ontario%2C%202013.jpeg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:48",
-            "hash": "0f85585db1ded18784e7de1e62ee8ade"
+            "hash": "0f85585db1ded18784e7de1e62ee8ade",
+            "image_checked": "2026-11-04"
         }
     },
     "InterAccess": {
@@ -2357,10 +2462,15 @@
                 {
                     "link": "https://www.interaccess.org/exhibitions",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.prod.website-files.com/679403f0ec05f63703645535/6ac95a05aa5d17a5974bdac2_IMG_8310.JPEG",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:48",
-            "hash": "6a591f83b63cbd3172e0ed03c738b0dc"
+            "hash": "6a591f83b63cbd3172e0ed03c738b0dc",
+            "image_checked": "2026-11-04"
         }
     },
     "Paul Petro Contemporary Art": {
@@ -2385,10 +2495,15 @@
                 {
                     "link": "https://www.paulpetro.com/ppca/current",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.paulpetro.com/images/originals/Barbara-Klunder-1.-Barbara-Klunder-Mythical-Threads-2026-installation-view.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:48",
-            "hash": "ce0548d08bdb837330032f837508ef0b"
+            "hash": "ce0548d08bdb837330032f837508ef0b",
+            "image_checked": "2026-11-04"
         },
         "Eventually We Bend: Amy Bowles - new porcelain sculpture-Paul Petro Contemporary Art": {
             "name": "Eventually We Bend: Amy Bowles - new porcelain sculpture",
@@ -2412,10 +2527,15 @@
                 {
                     "link": "https://www.paulpetro.com/ppca/current",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.paulpetro.com/images/originals/Amy-Bowles-1.-Amy-Bowles-Eventually-We-Bend-2026-installation-view.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:48",
-            "hash": "71acf2183abc0fbd557a310b27b9d1d3"
+            "hash": "71acf2183abc0fbd557a310b27b9d1d3",
+            "image_checked": "2026-11-04"
         }
     },
     "Nicholas Metivier Gallery": {
@@ -2439,10 +2559,15 @@
                 {
                     "link": "https://metiviergallery.com/art-exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-metiviergallery/usr/images/exhibitions/main_image_override/269/eo-website.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:49",
-            "hash": "5552eae18a60fcc49caec11dd72b5644"
+            "hash": "5552eae18a60fcc49caec11dd72b5644",
+            "image_checked": "2026-11-04"
         },
         "From Collins to Cape Dorset: John Hartman: Early Works-Nicholas Metivier Gallery": {
             "name": "From Collins to Cape Dorset: John Hartman: Early Works",
@@ -2464,10 +2589,15 @@
                 {
                     "link": "https://metiviergallery.com/art-exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-metiviergallery/usr/images/exhibitions/main_image_override/270/double-portrait.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:49",
-            "hash": "2b4c26a72afd209fb1ec65a4081214d2"
+            "hash": "2b4c26a72afd209fb1ec65a4081214d2",
+            "image_checked": "2026-11-04"
         },
         "Ben Reeves: Parklife-Nicholas Metivier Gallery": {
             "name": "Ben Reeves: Parklife",
@@ -2489,10 +2619,15 @@
                 {
                     "link": "https://metiviergallery.com/art-exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-metiviergallery/usr/images/exhibitions/main_image_override/271/picnic-br17875.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:49",
-            "hash": "889e4bb335860d0e38d7131f3bf4ba90"
+            "hash": "889e4bb335860d0e38d7131f3bf4ba90",
+            "image_checked": "2026-11-04"
         }
     },
     "Olga Korper Gallery": {
@@ -2516,10 +2651,15 @@
                 {
                     "link": "https://www.olgakorpergallery.com/exhibitions-page/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.olgakorpergallery.com/wp-content/uploads/2026/09/Roswell-Kitty-Studio-2048x1536.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:49",
-            "hash": "6bacf8517e12e1c6b03a1a8a3a1713e8"
+            "hash": "6bacf8517e12e1c6b03a1a8a3a1713e8",
+            "image_checked": "2026-11-04"
         }
     },
     "Doris McCarthy Gallery": {
@@ -2543,10 +2683,15 @@
                 {
                     "link": "https://dorismccarthygallery.utoronto.ca",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://dorismccarthygallery.utoronto.ca/media/pages/exhibitions/cartographies-of-longing/c01e0a088a-1779912809/muriel-jaouich-in-the-garden-of-mardin-high-res-crop-1800x.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:50",
-            "hash": "03f4a05f0a7d2a882152274e413b3ffc"
+            "hash": "03f4a05f0a7d2a882152274e413b3ffc",
+            "image_checked": "2026-11-04"
         },
         "t\u00f3k\u0161a | I will see you again-Doris McCarthy Gallery": {
             "name": "t\u00f3k\u0161a | I will see you again",
@@ -2568,10 +2713,15 @@
                 {
                     "link": "https://dorismccarthygallery.utoronto.ca",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://dorismccarthygallery.utoronto.ca/media/pages/exhibitions/toksa/524bc7353f-1786061506/img-9639-1800x.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:50",
-            "hash": "b1ed2fff3e3d63ddc7d81fdb9f9c2a1e"
+            "hash": "b1ed2fff3e3d63ddc7d81fdb9f9c2a1e",
+            "image_checked": "2026-11-04"
         }
     },
     "Onsite Gallery": {
@@ -2595,10 +2745,15 @@
                 {
                     "link": "https://www.ocadu.ca/galleries/onsite-gallery",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.ocadu.ca/sites/default/files/styles/16_9_medium/public/2026-07/DSC01338_wide-web.jpg.webp?itok=q7OLxHqm",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:51",
-            "hash": "18681c95fd9c9cd70919f4dc9523b123"
+            "hash": "18681c95fd9c9cd70919f4dc9523b123",
+            "image_checked": "2026-11-04"
         },
         "Returning to Ourselves: Rebecca Baird and Kenny Alvin Baird\u2014A Retrospective of Art and Design by Cree M\u00e9tis Siblings-Onsite Gallery": {
             "name": "Returning to Ourselves: Rebecca Baird and Kenny Alvin Baird\u2014A Retrospective of Art and Design by Cree M\u00e9tis Siblings",
@@ -2620,10 +2775,15 @@
                 {
                     "link": "https://www.ocadu.ca/galleries/onsite-gallery",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.ocadu.ca/sites/default/files/styles/16_9_medium/public/2026-08/Bairds---05_North-Star_RK-%281%29.jpg.webp?itok=XLK80YeQ",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:51",
-            "hash": "1d26a85febbbff074f18197eeeb88803"
+            "hash": "1d26a85febbbff074f18197eeeb88803",
+            "image_checked": "2026-11-04"
         },
         "Lost in the Right Direction, 2026-Onsite Gallery": {
             "name": "Lost in the Right Direction, 2026",
@@ -2645,10 +2805,15 @@
                 {
                     "link": "https://www.ocadu.ca/galleries/onsite-gallery",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.ocadu.ca/sites/default/files/styles/16_9_medium/public/2026-10/2026-09-16%20Onsite_Polina%20Teif-338%20-%20web.jpg.webp?itok=M50d4iA8",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:51",
-            "hash": "372e840c2289b7b3918bae0b27378486"
+            "hash": "372e840c2289b7b3918bae0b27378486",
+            "image_checked": "2026-11-04"
         }
     },
     "Stephen Bulger Gallery": {
@@ -2672,10 +2837,15 @@
                 {
                     "link": "https://www.bulgergallery.com/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy/ws-stephenbulger/usr/library/images/main/pages/1/gj2.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:51",
-            "hash": "8869e1c215a2f6004de560f89c3a7949"
+            "hash": "8869e1c215a2f6004de560f89c3a7949",
+            "image_checked": "2026-11-04"
         }
     },
     "The Joan and Martin Goldfarb Gallery of York University": {
@@ -2699,10 +2869,15 @@
                 {
                     "link": "https://thegoldfarbgallery.ca/exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://thegoldfarbgallery.ca/wp-content/uploads/2026/08/92715.jpeg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:52",
-            "hash": "a4cbdffec4160cbe7c69106915dd33f9"
+            "hash": "a4cbdffec4160cbe7c69106915dd33f9",
+            "image_checked": "2026-11-04"
         },
         "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism-The Joan and Martin Goldfarb Gallery of York University": {
             "name": "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism",
@@ -2724,10 +2899,15 @@
                 {
                     "link": "https://thegoldfarbgallery.ca/exhibitions/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://thegoldfarbgallery.ca/wp-content/uploads/2026/08/FabNeoCon.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:52",
-            "hash": "e1e96e48ff78fcdb629a163eb249dd07"
+            "hash": "e1e96e48ff78fcdb629a163eb249dd07",
+            "image_checked": "2026-11-04"
         }
     },
     "Propeller Art Gallery": {
@@ -2751,10 +2931,15 @@
                 {
                     "link": "https://propellerartgallery.com/exhibitions/desert-frequencies-jelena-duma/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://propellerartgallery.com/wp-content/uploads/2026/09/Desert-Frequency-Square-1024x1024.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:53",
-            "hash": "4c99dc8c7b3790629ff25ff8b2e2f767"
+            "hash": "4c99dc8c7b3790629ff25ff8b2e2f767",
+            "image_checked": "2026-11-04"
         },
         "Meandering: Ruth Martin Maude-Propeller Art Gallery": {
             "name": "Meandering: Ruth Martin Maude",
@@ -2776,10 +2961,15 @@
                 {
                     "link": "https://propellerartgallery.com/exhibitions/meandering-ruth-martin-maude/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://propellerartgallery.com/wp-content/uploads/2026/09/Meandering-square-website-image.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:53",
-            "hash": "537beaa869e09c21cb7e0444bb8191e1"
+            "hash": "537beaa869e09c21cb7e0444bb8191e1",
+            "image_checked": "2026-11-04"
         },
         "With A Magpie\u2019s Pleasure: Pria Muzumdar-Propeller Art Gallery": {
             "name": "With A Magpie\u2019s Pleasure: Pria Muzumdar",
@@ -2801,10 +2991,15 @@
                 {
                     "link": "https://propellerartgallery.com/exhibitions/with-a-magpies-pleasure-pria-muzumdar/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://propellerartgallery.com/wp-content/uploads/2026/10/Pria-Magpie.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:55",
-            "hash": "be875edd64aaaf5063a87ea82bce95a5"
+            "hash": "be875edd64aaaf5063a87ea82bce95a5",
+            "image_checked": "2026-11-04"
         },
         "Marks and Flow: New Paintings: Susan Freypons-Propeller Art Gallery": {
             "name": "Marks and Flow: New Paintings: Susan Freypons",
@@ -2827,10 +3022,15 @@
                 {
                     "link": "https://propellerartgallery.com/exhibitions/marks-and-flow-new-paintings-susan-freypons/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://propellerartgallery.com/wp-content/uploads/2026/10/1_Susan-Invite-Oct-23.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:57",
-            "hash": "74d4bfce4999968a84f6614f88dcd313"
+            "hash": "74d4bfce4999968a84f6614f88dcd313",
+            "image_checked": "2026-11-04"
         },
         "Primary 2: Selected Artists-Propeller Art Gallery": {
             "name": "Primary 2: Selected Artists",
@@ -2852,10 +3052,15 @@
                 {
                     "link": "https://propellerartgallery.com/exhibitions/primary-2-group-exhibition/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://propellerartgallery.com/wp-content/uploads/2026/10/Primary-2.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:16:57",
-            "hash": "d085351359db01a6b649237365c2a9c2"
+            "hash": "d085351359db01a6b649237365c2a9c2",
+            "image_checked": "2026-11-04"
         }
     },
     "Art Museum at the University of Toronto": {
@@ -2879,10 +3084,15 @@
                 {
                     "link": "https://artmuseum.utoronto.ca/exhibition/things-fall-apart/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://artmuseum.utoronto.ca/wp-content/uploads/2026/09/2026_ThingsFallApart_i.png",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:17:05",
-            "hash": "f21d5df0516de8caa179e71ea390a7f0"
+            "hash": "f21d5df0516de8caa179e71ea390a7f0",
+            "image_checked": "2026-11-04"
         },
         "acknowledging the land-Art Museum at the University of Toronto": {
             "name": "acknowledging the land",
@@ -2904,10 +3114,15 @@
                 {
                     "link": "https://artmuseum.utoronto.ca/program/acknowledging-the-land/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://artmuseum.utoronto.ca/wp-content/uploads/2023/09/2023_simcoe-claxton_i.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:17:10",
-            "hash": "5184c63affacab57b50c6ba394e58701"
+            "hash": "5184c63affacab57b50c6ba394e58701",
+            "image_checked": "2026-11-04"
         },
         "Over and Over Again-Art Museum at the University of Toronto": {
             "name": "Over and Over Again",
@@ -2929,10 +3144,15 @@
                 {
                     "link": "https://artmuseum.utoronto.ca/program/over-and-over-again/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://artmuseum.utoronto.ca/wp-content/uploads/2026/09/2026_over-and-over-again.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:17:10",
-            "hash": "2dd2deb0ac360412b095ce02b18abdfc"
+            "hash": "2dd2deb0ac360412b095ce02b18abdfc",
+            "image_checked": "2026-11-04"
         },
         "Soft Calm: Seed Quilts Workshops-Art Museum at the University of Toronto": {
             "name": "Soft Calm: Seed Quilts Workshops",
@@ -2955,10 +3175,15 @@
                 {
                     "link": "https://artmuseum.utoronto.ca/program/soft-calm-seed-quilts/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://artmuseum.utoronto.ca/wp-content/uploads/2026/10/01seedart.jpg",
+                    "description": "Image"
                 }
             ],
             "last_updated": "2026-11-03 20:17:10",
-            "hash": "6f5c4897949bd3faf5ec7ae91af0f71d"
+            "hash": "6f5c4897949bd3faf5ec7ae91af0f71d",
+            "image_checked": "2026-11-04"
         }
     }
 }
