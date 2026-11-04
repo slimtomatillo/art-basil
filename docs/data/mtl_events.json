@@ -1385,12 +1385,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://www.bellemarelambert.com/fr/exposition/jocelyne-alloucherie-de-si-loin-de-si-pres",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.bellemarelambert.com/fr//wp-content/uploads/2026/10/03152204/GVI01298.jpg?ver=17938214",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "ea7fb1a2c3d3905d17cb6382793ea2fa"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "f95f565b55ded3615b6937e91d8bd014"
         }
     },
     "MICA": {
@@ -1412,12 +1417,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://mica-montreal.ca/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://mica-montreal.ca/app/uploads/2026/06/image.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "18aaa19f64e06af1ad0579764b05072f"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "28856e8367c5b6f64d0b5d7bb916df52"
         }
     },
     "Galerie Hugues Charbonneau": {
@@ -1439,12 +1449,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://huguescharbonneau.com/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://huguescharbonneau.com/wp-content/uploads/2026/09/KITE2026026c.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "b98855f4891c014fc8f2781e28c9f72e"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "cbe0fdc6dca223af35ffa1df7f7f344d"
         }
     },
     "\u00c9clats Art contemporain": {
@@ -1466,12 +1481,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://www.eclats521.ca/lignes-de-rencontres",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/3feb04_517ecd55d9e8418fb33d7cd0cd635320~mv2.png/v1/fill/w_2500,h_3333,al_c/3feb04_517ecd55d9e8418fb33d7cd0cd635320~mv2.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "14bf80b051d17902a10ea8ddb31225ef"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "d7819d4c057917bc4b3693827b9270b9"
         }
     },
     "Atelier 531": {
@@ -1493,12 +1513,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://atelier531.com/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://img1.wsimg.com/isteam/getty/1594228594",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "0e6d7222cb228dabe1a14414199f0f8b"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "b20a0424e0dceb70e4dab8f51984b552"
         }
     },
     "Galerie B-312": {
@@ -1520,12 +1545,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://galerieb312.ca/programmation/brendan-flanagan-gambits",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://galerieb312.ca/sites/default/files/styles/cke_media_resize_xl/public/2026-10/Brendan%20Flanagan_Intuitive%2C%20Portable%2C%20Easy%20to%20Use.jpg?itok=k7oiaBhC",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "07a2f28cea997c0e6a9ff67360a388fe"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "f56aa49aff57b7423bea090c7de795ed"
         }
     },
     "Galerie Wishbone": {
@@ -1547,12 +1577,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://wishboneart.com/show/wishbone-gallery-kaori-izumiya-le-jardin-bleu-en-silence",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.artcld.com/img/w_1920,c_fit/5trjex5i1rrqpw3214ey.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "0e734439e0299a307111eeb69d695381"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "6cdc3c08ba085356207a6d0dc2e0a4b9"
         }
     },
     "Galerie Kub\u2019Art": {
@@ -1574,12 +1609,12 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://www.instagram.com/kubartgallery/",
                     "description": "Event Page"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "fb4e02ba47d831dbe0c6c720c61dc917"
+            "last_updated": "2026-11-04 19:44:36",
+            "hash": "15e1341b490f9b3590acb82afed563e1"
         }
     },
     "Atelier d\u2019art photographique": {
@@ -1601,12 +1636,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://jeanclaudelussier.art/fr/expositions/2026/ecrin-floral",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static1.squarespace.com%2Fstatic%2F6851af6ed76b70510b635627%2F6851ce137545380004c0ca7f%2F6a887ed28dc6d6191c5ba9fe%2F1787331782243%2F2026-09-10-JCL-Photo-exposition-%25C3%2589crin-Floral-%2528IMG_0916%2529-2500px.JPG%3Fformat%3D1500w&w=800&we",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "24cfc3f117c34c310b34498f2c6b73b1"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "f7275f053a93eb4f6383ce82cd2b133d"
         }
     },
     "McBride Contemporain": {
@@ -1628,12 +1668,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://mcbridecontemporain.com/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://mcbridecontemporain.com/wp-content/uploads/2025/09/Website-Banner-Bea-Parsons-2025-Ontological-Shock-McBride-Contemporain-1.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "c46a699c479dacd4b9100181f03f6324"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "d17932fab5aa5a818b88305db9c524eb"
         }
     },
     "Chiguer Art contemporain": {
@@ -1655,12 +1700,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://chiguerartcontemporain.com/expositions/ma-ceremonie-de-souvenirs-ni-mikawenindjgan-inakonigewin/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://chiguerartcontemporain.com/app/uploads/2026/09/053-jobena-petonoquot-photo-michaelpatten-1-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "f71ee9fa858a7e20414f9edcb1ddd280"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "1a9cf29302b86afaaf524e9dff50002f"
         }
     },
     "Espace D\u00c8S_": {
@@ -1682,12 +1732,13 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://denisrioux.art",
                     "description": "Event Page"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "a95f3c58ceb887168b4f5ab2e7383ca7"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "0d730155b730c6853237145c4b497fec"
         }
     },
     "Louis-Bernard St-Jean Art contemporain": {
@@ -1709,12 +1760,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://stjean.art/fr/expositions/2026/paradis-bleu",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static1.squarespace.com%2Fstatic%2F50ac3fe1e4b0b1fe7ccedfda%2F5398cd69e4b0c1ccf468ce23%2F6a5e3f9a15d32f56655b1744%2F1793392745965%2FParadis-Bleu-2026-huile-sur-bois-6x6po%2529--ZOOMED.jpg%3Fformat%3D1500w&w=800&we",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "af3ddcc8a4421d62510ac0095e723aa3"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "af00d247ad5ed02e798e516cb3f41b54"
         }
     },
     "Galerie INGANG": {
@@ -1736,12 +1792,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://www.galerieingang.com/artistes/pikanoa",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://static.wixstatic.com/media/460727_fbd20510018244f6a3f632f3f6482f66~mv2.png/v1/fill/w_356,h_504,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/GTA%20-%20Femme%20I.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "40ab23ec23a9a153c6d527bc1831eb44"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "3b2bd414abd016f502f828b43c366fbd"
         }
     },
     "Galerie POPOP": {
@@ -1763,12 +1824,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://galeriepopopgallery.com/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://galeriepopopgallery.com/wp-content/uploads/2018/12/popop-2_670.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "bf7001dbf3ee4ed0b2d2eb2d6037e014"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "acdbe096a5555560e92fb304501a014b"
         }
     },
     "Arprim": {
@@ -1790,12 +1856,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://arprim.org/programmation/2026-2027/510-poli-wilhelm.html",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://arprim.org/images/PW-15_small.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "96d03c2519df644d0eaf47ceaeab0f08"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "c3bf94c0fb4237e954cc104bb72798ec"
         }
     },
     "Galerie Ayenai": {
@@ -1817,12 +1888,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://belgo.art/",
+                    "link": "https://ayenaigallery.com/show/ayenai-gallery-barrel-baby",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.artcld.com/img/w_1920,c_fit/j5fduoakik351r40abwc.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:56:19",
-            "hash": "219c299f54e2d7323123a649c0f4fc92"
+            "last_updated": "2026-11-04 19:44:36",
+            "image_checked": "2026-11-04",
+            "hash": "5aa862d0167b7c96009463d1dc1bd941"
         }
     },
     "OBORO": {
@@ -2206,10 +2282,15 @@
                 {
                     "link": "https://ellengallery.concordia.ca/exposition/pratiques-alimentaires/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://ellengallery.concordia.ca/wp-content/uploads/2026/09/ConcordiaSeptembre2026-1-of-60-copy.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:37",
-            "hash": "7aba43cddc0aa218975fd7610201e316"
+            "last_updated": "2026-11-04 19:43:46",
+            "hash": "e4a362a91441e6fbf2b82061cc22ea5a",
+            "image_checked": "2026-11-04"
         }
     },
     "Canadian Centre for Architecture": {
@@ -2230,12 +2311,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/102331/reframing-the-american-landscape",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/iljwhkb-dpDvTFXo8PvqgQEwRnE=/1920x0/20741/19299/CCA96327_AmRe_Pic_Lock_00_19_43_19_1.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "8e802608ee7c89b10c45fe1877f70138"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "786d1c76e8b386595066f25d328bb1e7",
+            "image_checked": "2026-11-04"
         },
         "The fortune of the city is that it has never been perfect-Canadian Centre for Architecture": {
             "name": "The fortune of the city is that it has never been perfect",
@@ -2254,12 +2340,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/102435/the-fortune-of-the-city-is-that-it-has-never-been-perfect",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/oaLPcAh5QlWKxKYMuq3yoyQ1HCw=/1920x0/20101/18738/CCA83386_ARCH290882_lpr.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "b1fbe6c7c0b277db7e8ebd8e28639536"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "2899866844386899dc5e604d9746849d",
+            "image_checked": "2026-11-04"
         },
         "Everlasting-Canadian Centre for Architecture": {
             "name": "Everlasting",
@@ -2278,12 +2369,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/100227/everlasting",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/oTCO1OzvXjv7Vpe_owM0JROkgf0=/1920x0/19495/18181/fish-skin-transformation_1.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "dc66c227baea2cfc6197b9026696d7e1"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "ea9632be2c0cbb28948bbc5b23d051fc",
+            "image_checked": "2026-11-04"
         },
         "Neighbours-Canadian Centre for Architecture": {
             "name": "Neighbours",
@@ -2302,12 +2398,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/105857/neighbours",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/NGG-g7ye9GMVxm1XISme8U6_cDU=/1920x0/20787/19346/CCA88634_PH2023_0005_002_lpr.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "2b6dde4e34c6ff138a76e9945933cbd9"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "e4765574c390c6926efc6b9d44a7b5cb",
+            "image_checked": "2026-11-04"
         },
         "LAWS-Canadian Centre for Architecture": {
             "name": "LAWS",
@@ -2326,12 +2427,17 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://www.cca.qc.ca/en/about-exhibitions",
+                    "link": "https://www.cca.qc.ca/en/events/102824/laws",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.cca.qc.ca/img/-hrnI8lRd0GijuVwRbVfV8U04n8=/1920x0/20170/18795/302054.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "1a698d6d2064238281dab6e46c823e2a"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "4c01f1a34b4e819208d602490504518c",
+            "image_checked": "2026-11-04"
         }
     },
     "Galerie Simon Blais": {
@@ -2353,12 +2459,16 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://galeriesimonblais.com/en/expos/",
+                    "link": "https://galeriesimonblais.com/en/expos/magic_city_benjamin_klein_en",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://galeriesimonblais.com/media/images/expo/image/4c418c95-fd59-4d9f-903f-d19e08612e05/image/expo-klein-carrousel.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "00d49bb0260318edcfd7dbd08345339a"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "c077fc94397feb0eb05858253ccd6b54"
         },
         "Jean McEwen: La lumi\u00e8re sous les blasons-Galerie Simon Blais": {
             "name": "Jean McEwen: La lumi\u00e8re sous les blasons",
@@ -2378,12 +2488,16 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://galeriesimonblais.com/en/expos/",
+                    "link": "https://galeriesimonblais.com/en/expos/jean_mcewen_works_on_paper",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://galeriesimonblais.com/media/images/expo/image/bd1e6806-c98b-4d27-8414-981b059603ec/image/expo-mcewen-carrousel.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "4f4e355080df8941f76d2a1ec858e2fc"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "d39229540f565aa323aa78a5a7165806"
         },
         "Serge Lemoyne: Lemoyne's Universe-Galerie Simon Blais": {
             "name": "Serge Lemoyne: Lemoyne's Universe",
@@ -2403,12 +2517,16 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://galeriesimonblais.com/en/expos/",
+                    "link": "https://galeriesimonblais.com/en/expos/lemoynes_univers",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://galeriesimonblais.com/media/images/expo/image/69dbc666-8bcb-441c-98b7-86d4f5809f69/image/expo-lemoyne-carrousel.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:29:38",
-            "hash": "b9fcb921dd32e81bee2f5cf44ff3dcf2"
+            "last_updated": "2026-11-04 19:43:47",
+            "hash": "70891e187610f974336612914819ba50"
         }
     }
 }

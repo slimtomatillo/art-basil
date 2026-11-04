@@ -1,6 +1,7 @@
 from utils import fetch_and_parse
 from scrapers.tor._common import page_lines, publish
 from processing import region_today
+from urllib.parse import urljoin
 import datetime as dt
 import logging
 import re
@@ -19,6 +20,10 @@ def scrape_cca(env='prod', region='mtl'):
     if soup is None:
         logging.warning("CCA: could not fetch the exhibitions page; existing data kept.")
         return
+    # Each show's title links to its own page (/en/events/<id>/<slug>), where its picture is
+    links = {}
+    for a in soup.find_all('a', href=True):
+        links.setdefault(a.get_text(' ', strip=True), urljoin(EXHIBITIONS_URL, a['href']))
     lines = page_lines(soup)
     if 'On view' not in lines:
         logging.warning("CCA: no 'On view' list on the exhibitions page; existing data kept.")
@@ -35,6 +40,6 @@ def scrape_cca(env='prod', region='mtl'):
         # "until 10 January 2027" is an end date; "on 5 November 2026" / "opens ... on 18 March 2027" a start date
         if re.search(r'\buntil\b', lines[i]):
             start, end = None, start
-        stored += publish(env, region, VENUE, lines[i - 1], start, end, EXHIBITIONS_URL, tag='museum')
+        stored += publish(env, region, VENUE, lines[i - 1], start, end, links.get(lines[i - 1], EXHIBITIONS_URL), tag='museum')
     if not stored:
         logging.warning("CCA: no exhibitions found; existing data kept.")
