@@ -49,6 +49,7 @@ PROXIED_VENUES = {
     "Huntington": ["Huntington"],
     "AGO": ["AGO"],
     "Art Museum at the University of Toronto": ["Art Museum at the University of Toronto"],
+    "Armory Center for the Arts": ["Armory Center for the Arts"],
 }
 # "Every 4 days" with 12 hours of slack, so run-to-run start-time jitter can't push a
 # venue to every 5th day. A venue is due once its newest event is this old; a failed
