@@ -67,6 +67,27 @@ class BelgoTest(unittest.TestCase):
         self.assertEqual(links['Galerie B-312'], 'https://b312.ca/programmation/gambits')
         self.assertEqual(links['Galerie Kub’Art'], 'https://kubart.example/')
 
+    def test_a_link_to_another_site_is_an_artist_not_the_show(self):
+        page = ('<h3 class="t TitleName"><a href="https://espacedes.art">Espace DÈS_</a></h3>'
+                '<a href="https://denisrioux.art"></a><a href="https://leilazelli.com"></a>'
+                + blocks('Local :', '418', 'Galerie d’art', 'Heures d’ouverture :', 'Jeudi au samedi, 12h-17h',
+                         'Exposition :', 'Quelque chose d’impossible à saisir', 'Janie Julien-Fort',
+                         'Dates :', '22 octobre au 7 novembre', '2026'))
+        events = run(belgo_galleries, 'scrape_belgo_galleries', page)
+        show = events[('Espace DÈS_', 'Janie Julien-Fort: Quelque chose d’impossible à saisir')]
+        self.assertEqual([l['link'] for l in show['links'] if l['description'] == 'Event Page'], ['https://espacedes.art'])
+
+    def test_a_second_link_on_the_tenants_own_site_is_the_show_even_with_www(self):
+        page = ('<h3 class="t TitleName"><a href="https://eclats521.ca">Éclats Art contemporain</a></h3>'
+                '<a href="https://www.eclats521.ca/lignes-de-rencontres"></a>'
+                + blocks('Local :', '521', 'Galerie d’art', 'Heures d’ouverture :', 'Lun.-ven., 11h30-16h',
+                         'Exposition :', 'Lignes de Rencontres', 'Sonia Roseval et Won Ch. Kimetarx',
+                         'Dates :', '15 octobre au 14 novembre', '2026'))
+        events = run(belgo_galleries, 'scrape_belgo_galleries', page)
+        show = events[('Éclats Art contemporain', 'Lignes de Rencontres')]
+        self.assertEqual([l['link'] for l in show['links'] if l['description'] == 'Event Page'],
+                         ['https://www.eclats521.ca/lignes-de-rencontres'])
+
 
 class OboroTest(unittest.TestCase):
     def test_group_and_solo_shows(self):

@@ -1733,13 +1733,16 @@
             "ongoing": false,
             "links": [
                 {
-                    "link": "https://denisrioux.art",
+                    "link": "https://espacedes.art",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://janiejfort.com/wp-content/uploads/2026/10/Carton-Janie-Julien-Fort-R-914x1280.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 19:51:10",
-            "hash": "4731df1b5de6016b8e336f53e913b51e",
-            "image_checked": "2026-11-04"
+            "last_updated": "2026-11-04 22:46:24",
+            "hash": "7c4d3e8a7eb4c8a5e209201f04f4a3ae"
         }
     },
     "Louis-Bernard St-Jean Art contemporain": {
