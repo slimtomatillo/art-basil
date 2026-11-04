@@ -231,10 +231,15 @@ of a venue's shows (then it is a banner). The fallback also needs a picture of a
   (`images.secure_image_url`). If that service ever goes away, those thumbnails vanish
   quietly (the page hides a broken picture) and the logo fallback does not apply to them;
   copying the files into `docs/` would be the replacement.
-- **Venues with huge originals** (CAAM's pictures are 5-8 MB PNGs) get a small JPEG copy
-  through the same proxy (`images.resized_image_url`), and the table lazy-loads thumbnails
-  so rows below the fold load their pictures only as they are scrolled to. A venue whose
-  pictures are slow to load is a candidate for the same treatment.
+- **Heavy pictures are shrunk automatically.** Some venues serve full-size originals (CAAM's
+  are 5-8 MB PNGs). After each scrape `images.shrink_heavy_images` measures every current and
+  upcoming event's picture from its response headers (nothing is downloaded) and swaps any over
+  700 KB for a small JPEG copy from the same proxy (`images.resized_image_url`), but only after
+  checking that the proxy really serves it, so a site that blocks the proxy keeps its original.
+  Scrapers write the original link again on their next run and the step repeats, so it is
+  redone daily. The table also lazy-loads thumbnails, so rows below the fold load their pictures
+  as they are scrolled to. The copy is a JPEG, so a transparent logo would lose its transparency:
+  that is why only event pictures are shrunk, never `venue_images.json`.
 - `image_checked` only counts while an event still points at the same Event Page. When a
   scraper starts linking a show's own page instead of a listing, the page is looked at
   again on the next run rather than after 14 days.

@@ -319,6 +319,69 @@ class EnrichMissingImagesTest(unittest.TestCase):
         self.assertEqual(len(report['added']), 1)
 
 
+class ShrinkHeavyImagesTest(unittest.TestCase):
+    def setUp(self):
+        self.dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self.dir.cleanup)
+        self.path = os.path.join(self.dir.name, 'test_events.json')
+        patcher = mock.patch.dict(DB_FILES, {'test': self.path})
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def write(self, events):
+        with open(self.path, 'w') as f:
+            json.dump({'Gallery': {e['name'] + '-Gallery': e for e in events}}, f)
+
+    def read(self):
+        with open(self.path) as f:
+            return json.load(f)['Gallery']
+
+    def photo(self, name, url, phase='current'):
+        return event(name, phase=phase, links=[{'link': 'https://g.example/' + name, 'description': 'Event Page'},
+                                               {'link': url, 'description': 'Image'}])
+
+    def run_shrink(self, sizes, proxy_ok=lambda url: True, **kwargs):
+        return images.shrink_heavy_images(['test'], size_of=lambda url: sizes.get(url), proxy_ok=proxy_ok,
+                                          max_bytes=1000, workers=2, **kwargs)
+
+    def test_a_heavy_picture_is_swapped_for_a_small_copy_and_a_light_one_is_not(self):
+        self.write([self.photo('Heavy', 'https://g.example/big.png'), self.photo('Light', 'https://g.example/small.jpg')])
+        report = self.run_shrink({'https://g.example/big.png': 5000, 'https://g.example/small.jpg': 200})
+        stored = self.read()
+        self.assertTrue(images.image_link(stored['Heavy-Gallery']).startswith('https://images.weserv.nl/?url=g.example%2Fbig.png'))
+        self.assertEqual(images.image_link(stored['Light-Gallery']), 'https://g.example/small.jpg')
+        self.assertEqual(report['checked'], 2)
+        self.assertEqual([(s[2], s[3]) for s in report['shrunk']], [('Heavy', 5000)])
+
+    def test_not_swapped_when_the_proxy_cannot_serve_it(self):
+        self.write([self.photo('Heavy', 'https://blocked.example/big.png')])
+        self.run_shrink({'https://blocked.example/big.png': 5000}, proxy_ok=lambda url: False)
+        self.assertEqual(images.image_link(self.read()['Heavy-Gallery']), 'https://blocked.example/big.png')
+
+    def test_unknown_size_proxied_svg_and_past_events_are_left_alone(self):
+        proxied = 'https://images.weserv.nl/?url=g.example%2Fa.jpg&w=640'
+        self.write([self.photo('Unknown', 'https://g.example/u.png'), self.photo('Proxied', proxied),
+                    self.photo('Vector', 'https://g.example/v.svg'),
+                    self.photo('Old', 'https://g.example/old.png', phase='past')])
+        sizes = {'https://g.example/u.png': None, proxied: 9000, 'https://g.example/v.svg': 9000,
+                 'https://g.example/old.png': 9000}
+        report = self.run_shrink(sizes)
+        self.assertEqual(report['shrunk'], [])
+        self.assertEqual(report['checked'], 1)                  # only the unknown-size current picture was measured
+        stored = self.read()
+        self.assertEqual(images.image_link(stored['Proxied-Gallery']), proxied)
+        self.assertEqual(images.image_link(stored['Old-Gallery']), 'https://g.example/old.png')
+
+    def test_dry_run_writes_nothing(self):
+        self.write([self.photo('Heavy', 'https://g.example/big.png')])
+        with open(self.path) as f:
+            before = f.read()
+        report = self.run_shrink({'https://g.example/big.png': 5000}, save=False)
+        with open(self.path) as f:
+            self.assertEqual(f.read(), before)
+        self.assertEqual(len(report['shrunk']), 1)
+
+
 class KeepFoundImageTest(unittest.TestCase):
     """A scraper that supplies no image rewrites the stored event on every run; the image
     images.py found must survive that."""

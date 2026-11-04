@@ -23,6 +23,7 @@ Sites fetched through the paid proxy are skipped (an extra page would cost credi
 Dry run on the real data, writing nothing:  python images.py
 """
 
+import concurrent.futures
 import datetime as dt
 import logging
 import re
@@ -42,6 +43,7 @@ from utils import fetch_and_parse, load_db, save_db
 MIN_IMAGE_BYTES = 25_000          # real photos clear this; logos, icons and layout graphics don't
 RECHECK_AFTER = dt.timedelta(days=14)
 MAX_PAGES_PER_RUN = 80            # keeps a run short; a backlog is cleared over a few days
+MAX_IMAGE_BYTES = 700_000          # a thumbnail heavier than this is swapped for a small copy
 MAX_CANDIDATES = 12               # images tried per page
 CARD_CLIMB = 7                    # parent levels searched from a show's title for its picture
 IMAGE_TIMEOUT = (5, 10)
@@ -332,6 +334,72 @@ def enrich_missing_images(regions=None, today=None, finder=find_event_image, car
                 report['added'].append((region, venue, event['name'], url))
         if changed and save:
             save_db(db, region)
+    return report
+
+
+PROXY_HOST = 'https://images.weserv.nl/'
+
+
+def image_size(url):
+    """The size in bytes a server reports for a picture (read from the response headers; the body
+    is not downloaded), or None if it can't be told."""
+    try:
+        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True) as response:
+            if not response.ok or 'image' not in response.headers.get('Content-Type', ''):
+                return None
+            return int(response.headers.get('Content-Length') or 0) or None
+    except (requests.RequestException, ValueError):
+        return None
+
+
+def proxy_serves(url):
+    """True if the image proxy returns a picture for `url` (it can't reach every site: one that
+    blocks it would leave a broken thumbnail, so a swap is made only after this check)."""
+    try:
+        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True) as response:
+            return response.ok and 'image' in response.headers.get('Content-Type', '')
+    except requests.RequestException:
+        return False
+
+
+def shrink_heavy_images(regions=None, today=None, size_of=image_size, proxy_ok=proxy_serves,
+                        max_bytes=MAX_IMAGE_BYTES, save=True, workers=16):
+    """Swap a current or upcoming event's picture for a small JPEG copy when the original is
+    heavy. Some venues serve full-size originals (several MB each), and a page of them is slow
+    to load. The copy comes from images.weserv.nl (resized_image_url) and is used only when the
+    proxy really serves it. Pictures already on the proxy are left alone.
+
+    A scraper rewrites the event with the original link on its next run, so this runs after
+    every scrape. Returns {'checked': pictures measured, 'shrunk': [(region, venue, event name, bytes)]}.
+    """
+    today = today or dt.date.today()
+    todo = []                                        # (region, db, venue, event, link dict)
+    dbs = {}
+    for region in (regions or DB_FILES):
+        dbs[region] = load_db(DB_FILES[region])
+        for venue, events in dbs[region].items():
+            for event in events.values():
+                if event.get('phase') not in WANTED_PHASES:
+                    continue
+                for link in event.get('links', []):
+                    url = link.get('link') or ''
+                    if (link.get('description') == 'Image' and url.lower().startswith(('http://', 'https://'))
+                            and not url.startswith(PROXY_HOST) and not url.lower().split('?')[0].endswith('.svg')):
+                        todo.append((region, venue, event, link))
+    with concurrent.futures.ThreadPoolExecutor(workers) as pool:
+        sizes = list(pool.map(lambda item: size_of(item[3]['link']), todo))
+    report = {'checked': len(todo), 'shrunk': []}
+    changed = set()
+    for (region, venue, event, link), size in zip(todo, sizes):
+        if size and size > max_bytes:
+            small = resized_image_url(link['link'])
+            if proxy_ok(small):
+                link['link'] = small
+                changed.add(region)
+                report['shrunk'].append((region, venue, event['name'], size))
+    if save:
+        for region in changed:
+            save_db(dbs[region], region)
     return report
 
 
