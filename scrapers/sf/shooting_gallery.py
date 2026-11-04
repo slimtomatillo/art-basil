@@ -1,4 +1,5 @@
 from utils import fetch_and_parse
+from images import PageText, image_in_card
 from processing import process_event, derive_phase, region_today
 from date_parsing import parse_date_text
 import datetime as dt
@@ -25,6 +26,8 @@ def scrape_shooting_gallery(env='prod', region='sf'):
         logging.warning("Shooting Gallery: could not fetch the calendar page; existing data kept.")
         return
 
+    page = PageText(soup)
+    all_titles = [h.get_text(' ', strip=True) for h in soup.select('.event h2')]
     lines = [l.strip() for l in soup.get_text('\n').split('\n') if l.strip()]
     found = 0
     last_year = None
@@ -62,6 +65,10 @@ def scrape_shooting_gallery(env='prod', region='sf'):
             'links': [{'link': CALENDAR_URL, 'description': 'Event Page'}],
             'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
         }
+        # Each show's block on the page starts with its thumbnail (the site has no larger version)
+        image = image_in_card(page, lines[i + 1], CALENDAR_URL, all_titles, check_size=False)
+        if image:
+            event_details['links'].append({'link': image, 'description': 'Image'})
         found += 1
         if env == 'dev':
             logging.info(f"Event found: {name} ({phase}, {start_date} - {end_date}) at {event_details['venue']}")

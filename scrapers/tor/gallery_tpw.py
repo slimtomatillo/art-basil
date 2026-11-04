@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 from processing import region_today
 import logging
 import re
@@ -19,7 +19,7 @@ def scrape_gallery_tpw(env='prod', region='tor'):
         logging.warning("Gallery TPW: could not fetch the current and upcoming page; existing data kept.")
         return
     lines = page_lines(soup)
-    found = 0
+    listing = Listing(env, region, 'Gallery TPW', soup, PAGE_URL)
     block = []
     for line in lines:
         if line.lower() in _MARKERS:
@@ -33,7 +33,8 @@ def scrape_gallery_tpw(env='prod', region='tor'):
         if block:
             name = block[0] if len(block) < 3 else f'{block[0]}: {block[1]}'
             start_date, end_date = parse_date_text(line, today)
-            found += publish(env, region, 'Gallery TPW', name, start_date, end_date, PAGE_URL, tag='gallery')
+            listing.add(name, start_date, end_date, tag='gallery')
         block = []
+    found = listing.publish()
     if not found:
         logging.warning("Gallery TPW: no programs found; existing data kept.")

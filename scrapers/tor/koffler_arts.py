@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 from processing import region_today
 import logging
 
@@ -15,14 +15,14 @@ def scrape_koffler_arts(env='prod', region='tor'):
         logging.warning("Koffler Arts: could not fetch the exhibitions page; existing data kept.")
         return
     lines = page_lines(soup)
-    found = 0
+    listing = Listing(env, region, 'Koffler Arts', soup, EXHIBITIONS_URL)
     # Each show reads: "Gallery Exhibitions" / dates / title / artist / location
     for i, line in enumerate(lines[:-2]):
         if line != 'Gallery Exhibitions':
             continue
         start_date, end_date = parse_date_text(lines[i + 1], today)
         # The title line already carries the artist ("Kamiphony | Cybèle Young")
-        found += publish(env, region, 'Koffler Arts', lines[i + 2].replace(' | ', ': '), start_date, end_date,
-                         EXHIBITIONS_URL, tag='gallery')
+        listing.add(lines[i + 2].replace(' | ', ': '), start_date, end_date, tag='gallery')
+    found = listing.publish()
     if not found:
         logging.warning("Koffler Arts: no exhibitions found; existing data kept.")

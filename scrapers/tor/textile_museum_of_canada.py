@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 from processing import region_today
 import logging
 import re
@@ -20,7 +20,7 @@ def scrape_textile_museum_of_canada(env='prod', region='tor'):
         logging.warning("Textile Museum of Canada: could not fetch the programming page; existing data kept.")
         return
     lines = page_lines(soup)
-    found = 0
+    listing = Listing(env, region, 'Textile Museum of Canada', soup, PROGRAMMING_URL)
     for i, line in enumerate(lines[:-2]):
         if line != 'Exhibition':
             continue
@@ -28,7 +28,7 @@ def scrape_textile_museum_of_canada(env='prod', region='tor'):
         if not m:
             continue
         start_date, end_date = parse_date_text(f'{m.group(1)} - {m.group(2)}', today)
-        found += publish(env, region, 'Textile Museum of Canada', lines[i + 1], start_date, end_date,
-                         PROGRAMMING_URL, tag='museum')
+        listing.add(lines[i + 1], start_date, end_date, tag='museum')
+    found = listing.publish()
     if not found:
         logging.warning("Textile Museum of Canada: no exhibitions found; existing data kept.")

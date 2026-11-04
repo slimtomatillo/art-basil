@@ -142,10 +142,26 @@ async function fetchEvents() {
     }
 }
 
+// Venue pictures (a logo or banner) shown for an event that has no picture of its own.
+// Optional: if the file can't be loaded the table simply shows no picture for those events.
+async function fetchVenueImages() {
+    try {
+        const response = await fetch('../data/venue_images.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error('Failed to fetch venue images:', error);
+        return {};
+    }
+}
+
 // Export functions for use in other modules
 window.dataManager = {
     getRegion,
     fetchVenues,
+    fetchVenueImages,
     fetchEvents,
     ensureRegionTimezones,
     regionToday,

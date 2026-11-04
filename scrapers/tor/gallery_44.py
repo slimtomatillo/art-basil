@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from date_parsing import parse_date_text
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 from processing import region_today
 import logging
 import re
@@ -17,12 +17,13 @@ def scrape_gallery_44(env='prod', region='tor'):
         logging.warning("Gallery 44: could not fetch the exhibitions page; existing data kept.")
         return
     lines = page_lines(soup)
-    found = 0
+    listing = Listing(env, region, 'Gallery 44', soup, PAGE_URL)
     # Dates are split over three lines ("Sep 18" / "–" / "Nov 7"), then the space, then the title
     for i, line in enumerate(lines[:-4]):
         if not (_MONTH_DAY_RE.match(line) and lines[i + 1] in ('–', '-') and _MONTH_DAY_RE.match(lines[i + 2])):
             continue
         start_date, end_date = parse_date_text(f'{line} - {lines[i + 2]}', today)
-        found += publish(env, region, 'Gallery 44', lines[i + 4], start_date, end_date, PAGE_URL, tag='gallery')
+        listing.add(lines[i + 4], start_date, end_date, tag='gallery')
+    found = listing.publish()
     if not found:
         logging.warning("Gallery 44: no exhibitions found; existing data kept.")

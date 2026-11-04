@@ -1,6 +1,6 @@
 from utils import fetch_and_parse
 from scrapers.sf._artlogic import parse_day_first_range
-from scrapers.tor._common import page_lines, publish
+from scrapers.tor._common import Listing, page_lines
 import logging
 
 EXHIBITIONS_URL = 'https://thegoldfarbgallery.ca/exhibitions/'
@@ -14,7 +14,7 @@ def scrape_goldfarb_gallery(env='prod', region='tor'):
         logging.warning("Goldfarb Gallery: could not fetch the exhibitions page; existing data kept.")
         return
     lines = page_lines(soup)
-    found = 0
+    listing = Listing(env, region, 'The Joan and Martin Goldfarb Gallery of York University', soup, EXHIBITIONS_URL)
     seen = set()
     # Each entry: title (sometimes split over two lines, the first ending ":" or ",") /
     # "exhibition" or "on-site exhibition" / "11 Sep 2026 – 6 Mar 2027". The archive follows;
@@ -28,7 +28,7 @@ def scrape_goldfarb_gallery(env='prod', region='tor'):
         name = lines[i - 1]
         if lines[i - 2].endswith((':', ',')):
             name = f'{lines[i - 2]} {name}'
-        found += publish(env, region, 'The Joan and Martin Goldfarb Gallery of York University', name,
-                         start_date, end_date, EXHIBITIONS_URL, tag='gallery', seen=seen)
+        listing.add(name, start_date, end_date, tag='gallery', seen=seen)
+    found = listing.publish()
     if not found:
         logging.warning("Goldfarb Gallery: no exhibitions found; existing data kept.")

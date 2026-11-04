@@ -174,6 +174,56 @@ never on place names or an artist's origin. A missing tag is invisible and a
 wrong one is a visible error, so prefer a rule that is slightly too narrow. A
 tag a person added by hand is never removed.
 
+## Event images
+
+Pictures come from two places, and a wrong picture is worse than none:
+
+1. **The scraper**, which is the main source. A scraper takes each show's picture from
+   the card that holds its title on the listing page (`Listing` in
+   `scrapers/tor/_common.py`, or `images.image_in_card`; see ADDING_A_REGION.md 2b-i).
+   This covers most Toronto venues and Manna, Shooting Gallery and the Art Museum at
+   U of T.
+2. **A fallback, `images.py`**, which runs after the scrapers. It opens the page of each
+   current or upcoming event that still has no image and picks a picture from it (the
+   page's share image first, then its own pictures). Events that share one listing page
+   are looked up together by title, the same way as in a scraper.
+
+Either way a picture is skipped if it is an SVG, is named like a logo, icon, badge or
+placeholder (or sits in an `icons/` or `logos/` folder), or is used for more than one
+of a venue's shows (then it is a banner). The fallback also needs a picture of at least
+25 KB; scrapers don't, since small thumbnails are fine.
+
+- The result is stored as a normal `Image` link, so the table shows it like any other.
+  `processing.py` keeps it when the scraper rewrites the event later; a scraper that
+  supplies its own image always wins.
+- `image_checked` on an event is the day it was last looked at; events with nothing
+  found are retried every 14 days, not daily. At most 80 pages are opened per run, so a
+  backlog clears over a few days.
+- Pages on proxied sites are skipped (an extra fetch would spend ZenRows credits), and
+  hand-entered and archived events are left alone.
+- Try it without changing any data: `python images.py [region ...]` prints what it would
+  add and which pictures it rejected as shared.
+- **A venue's logo stands in when an event has no picture.** `docs/data/venue_images.json`
+  maps a venue name to a logo or banner URL; the table shows it (kept whole, on a white
+  tile) for any of that venue's events with no `Image` link, and a real picture replaces
+  it as soon as one is found. To add one, find the logo on the venue's site (its
+  `og:image`, a header image or `apple-touch-icon`), check it loads from another site,
+  and add a line. The name must match the venue's `venue` string exactly. Today it covers
+  Marin Society of Artists (its pages carry only the society's logo), Sanchez Art Center,
+  Creative Growth, Jessica Silverman and Paul Petro. After a daily run, a venue that
+  still shows blank thumbnails is a candidate: look for it with
+  `python images.py` (events listed as not found) or on the site.
+- **http-only sites** (Sanchez Art Center) can't show their pictures on our https pages,
+  so those pictures go through `images.weserv.nl`, a free image proxy
+  (`images.secure_image_url`). If that service ever goes away, those thumbnails vanish
+  quietly (the page hides a broken picture) and the logo fallback does not apply to them;
+  copying the files into `docs/` would be the replacement.
+- Creative Growth's picture is not in its page's HTML: the page is built by JavaScript
+  from a JSON blob, which its scraper reads (the image block that links to the show's
+  page), and the Event Page link now goes to the show's own page.
+- Paul Petro's listing has no pictures, so its scraper links each show to the show's own
+  page and the fallback takes the picture from there.
+
 ## Fixing data by hand
 
 - **A missing event:** add it with `submissions.py` (see

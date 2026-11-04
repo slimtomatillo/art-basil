@@ -187,6 +187,36 @@ if env == 'prod':
     process_event(event_details, region)
 ```
 
+### 2b-i. Pictures
+A show with no `Image` link gets no thumbnail, so capture one in the scraper. Take the
+picture shown with the show on the listing page, not a site-wide header or logo, and
+look at the result (a logo or banner in the table is worse than no picture):
+
+- **A listing of several shows** (the usual case for a text-reading Toronto-style
+  scraper): build the shows with `Listing` from `scrapers/tor/_common.py`. Call
+  `listing.add(name, start, end, tag=...)` for each show as you read it, then
+  `found = listing.publish()`. `Listing` finds each show's picture on the page (the one
+  in the same card as its title; the title can be split over tags and punctuation does
+  not matter), skips logo-like and icon files, leaves off a picture that would go to
+  more than one show, and stores the show. `link=` sets a show's own Event Page link.
+- **One show per page, or a scraper that builds `event_details` itself:** call
+  `images.image_in_card(soup, title, page_url, all_titles, check_size=False)` and append
+  the result as the `Image` link, as `scrapers/sf/manna_gallery.py` does. Pass every
+  show's title as `all_titles` on a listing so a card with no picture can't borrow its
+  neighbour's. It also reads CSS background images and lazy-loaded `data-src` pictures.
+- **A show with its own page:** link to that page as the Event Page. If the scraper
+  supplies no image, `images.py` opens the page after the scrapers run and picks one (see
+  "Event images" in [OPERATIONS.md](OPERATIONS.md)).
+- **A page built by JavaScript** may still hold the picture in a JSON blob inside a
+  `<script>` tag; look there before giving up (see `scrapers/sf/creative_growth.py`).
+- Pictures must load over https from another site (the site is https). An http-only host
+  needs `images.secure_image_url(url)`, which routes it through a free https image proxy
+  (`image_in_card` already does this); a host that blocks other sites embedding its
+  pictures will not show them.
+- **No picture to find?** Add the venue's logo to `docs/data/venue_images.json` (venue
+  name to image URL, exactly as the scraper's `venue` string). The table shows it for that
+  venue's events that have no picture (OPERATIONS.md, "Event images").
+
 Scrapers only set the type, phase and venue-kind tags above. Don't add subject
 tags (photography, ceramics, latinx, ...) yourself: `process_event` adds them
 from the title and description using the rules in `tagging.py`.
