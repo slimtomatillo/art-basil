@@ -11950,16 +11950,15 @@
             "description": "A chance to intimately encounter one of Ruth Asawa\u2019s most celebrated works.",
             "tags": [
                 "exhibition",
-                "current",
                 "museum",
                 "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2023-11-17",
+                "end": "2026-06-30"
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/ruth-asawa-untitled/",
@@ -11979,16 +11978,15 @@
             "description": "The East West Bank Art Terrace is an outdoor platform for contemporary art featuring thought-provoking works by both emerging and world-renowned artists.",
             "tags": [
                 "exhibition",
-                "current",
                 "museum",
                 "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": null,
                 "end": null
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://exhibitions.asianart.org/exhibitions/east-west-bank-art-terrace/",
@@ -12057,7 +12055,8 @@
                 }
             ],
             "last_updated": "2024-09-17 19:26:25",
-            "hash": "29dbb7460115e49ddf126702859592f0"
+            "hash": "29dbb7460115e49ddf126702859592f0",
+            "source": "manual"
         },
         "Resilient Traditions: Korean American Stories Told Through Paper-Asian Art Museum": {
             "name": "Resilient Traditions: Korean American Stories Told Through Paper",
@@ -12818,7 +12817,8 @@
                 }
             ],
             "last_updated": "2026-02-17 11:41:08",
-            "hash": "e574d45a0626a2e2ecabf4aca277391d"
+            "hash": "e574d45a0626a2e2ecabf4aca277391d",
+            "source": "manual"
         },
         "Mayumi Oda-Asian Art Museum": {
             "name": "Mayumi Oda",
@@ -14071,7 +14071,8 @@
                 }
             ],
             "last_updated": "2026-07-17 12:11:04",
-            "hash": "01555e6f357a64eab42b94c3b7fa5823"
+            "hash": "01555e6f357a64eab42b94c3b7fa5823",
+            "source": "manual"
         },
         "Remembering Artist Hung Liu-Oakland Museum of California": {
             "name": "Remembering Artist Hung Liu",
@@ -14079,16 +14080,15 @@
             "description": "Drawing from our collection, this installation features four of Liu\u2019s works in our Gallery of California Art, offering a quiet setting for visitors to enjoy and appreciate her work, as well as space for remembrance and reflection, including opportunities to contribute memories of Liu.",
             "tags": [
                 "exhibition",
-                "current",
                 "museum",
                 "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": null,
                 "end": null
             },
-            "ongoing": true,
+            "ongoing": false,
             "links": [
                 {
                     "link": "https://museumca.org/on-view/remembering-artist-hung-liu/",
