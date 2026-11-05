@@ -8,7 +8,7 @@ from unittest import mock
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from scrapers.ist import _artlogic_listing, depo_istanbul, elgiz_museum, pi_artworks
+from scrapers.ist import _artlogic_listing, anna_laudel, depo_istanbul, elgiz_museum, pi_artworks, rahmi_koc_museum
 from scrapers.tor import _common
 
 TODAY = dt.date(2026, 11, 4)
@@ -54,6 +54,26 @@ class DepoTest(unittest.TestCase):
         self.assertEqual(sorted(events), ['Akımlar: Tarabya Kültür Akademisi 15 Yaşında', 'Dilan Cudi Saruhan – Bir İhtimal Gökyüzü'])
         self.assertEqual(events['Akımlar: Tarabya Kültür Akademisi 15 Yaşında']['dates'],
                          {'start': dt.date(2026, 11, 5), 'end': dt.date(2026, 11, 22)})
+
+
+class AnnaLaudelTest(unittest.TestCase):
+    def test_only_istanbul_shows_are_kept_each_once_with_readable_names(self):
+        show = ('BİLAL HAKAN KARAKAYA', 'LUGGAGE OF THE UNSEEN', 'NOVEMBER 14, 2026 – JANUARY 3, 2027', 'ISTANBUL')
+        page = blocks('Upcoming', *show, *show, 'TUĞÇE DİRİ', 'LITTLE PIECES OF INFINITY', 'NOVEMBER 27, 2026 – JANUARY 23, 2027', 'ANKARA',
+                      'SERKAN KÜÇÜKÖZCÜ', 'PROLOGUE', 'OCTOBER 30, 2026 – JANUARY 6, 2027', 'DUSSELDORF')
+        events = run(anna_laudel, 'scrape_anna_laudel', page)
+        self.assertEqual(list(events), ['Bilal Hakan Karakaya: Luggage Of The Unseen'])
+        self.assertEqual(events['Bilal Hakan Karakaya: Luggage Of The Unseen']['dates'],
+                         {'start': dt.date(2026, 11, 14), 'end': dt.date(2027, 1, 3)})
+
+
+class RahmiKocTest(unittest.TestCase):
+    def test_the_on_view_exhibition_is_read(self):
+        page = blocks('Devam Eden Sergiler', 'Geçmiş Sergiler', '09 Ekim 2026 - 07 Şubat 2027', 'Yerli Sanayi, Uluslararası İtibar',
+                      'Sergi, Koç Topluluğu’nun bir asırlık üretim yolculuğunu anlatıyor.', 'ÇALIŞMA SAATLERİMİZ', 'Haftaiçi')
+        events = run(rahmi_koc_museum, 'scrape_rahmi_koc_museum', page)
+        self.assertEqual(list(events), ['Yerli Sanayi, Uluslararası İtibar'])
+        self.assertEqual(events['Yerli Sanayi, Uluslararası İtibar']['dates'], {'start': dt.date(2026, 10, 9), 'end': dt.date(2027, 2, 7)})
 
 
 class ArtlogicListingTest(unittest.TestCase):
