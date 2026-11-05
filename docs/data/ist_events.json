@@ -2105,5 +2105,124 @@
             "image_checked": "2026-11-04",
             "hash": "56139c43797160c637831c9e0ef8db59"
         }
+    },
+    "Anna Laudel Istanbul": {
+        "Bilal Hakan Karakaya: Luggage Of The Unseen-Anna Laudel Istanbul": {
+            "name": "Bilal Hakan Karakaya: Luggage Of The Unseen",
+            "venue": "Anna Laudel Istanbul",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-14",
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://annalaudel.gallery/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://annalaudel.gallery/wp-content/uploads/2026/11/BHK_Anna_Laudel_Istanbul-600x403.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-05 23:56:51",
+            "hash": "a49b0e61e4de31507405ba53e67d89b4"
+        },
+        "Ardan \u00d6zmeno\u011flu: Make Me Up-Anna Laudel Istanbul": {
+            "name": "Ardan \u00d6zmeno\u011flu: Make Me Up",
+            "venue": "Anna Laudel Istanbul",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-14",
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://annalaudel.gallery/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://annalaudel.gallery/wp-content/uploads/2026/11/AO_Anna_Laudel_Istanbul-600x403.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-05 23:56:51",
+            "hash": "3b64d16fe22277b000b442a0ff160c20"
+        },
+        "Jacques Tange: On Forgein Ground-Anna Laudel Istanbul": {
+            "name": "Jacques Tange: On Forgein Ground",
+            "venue": "Anna Laudel Istanbul",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-08",
+                "end": "2027-01-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://annalaudel.gallery/exhibitions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://annalaudel.gallery/wp-content/uploads/2016/10/Jacques-Tange-Banksters-2012-100x180cm-oil-on-canvas_art350-450x600.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-05 23:56:51",
+            "hash": "5036282723ca25c3421571eddf226845"
+        }
+    },
+    "Rahmi M. Ko\u00e7 Museum": {
+        "Yerli Sanayi, Uluslararas\u0131 \u0130tibar-Rahmi M. Ko\u00e7 Museum": {
+            "name": "Yerli Sanayi, Uluslararas\u0131 \u0130tibar",
+            "venue": "Rahmi M. Ko\u00e7 Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-09",
+                "end": "2027-02-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://rmk-museum.org.tr/istanbul/sergiler/devam-eden-sergiler",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://rmk-museum.org.tr/_next/image?url=https%3A%2F%2Frmk-museum.org.tr%2Fuploads%2Fsergi_poster_Acilis_Sonrasi_50x70cm_44e114cfd3.jpg&w=828&q=75",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-05 23:56:52",
+            "hash": "bdc271c493f1a2538e68accc09fb620a"
+        }
     }
 }
