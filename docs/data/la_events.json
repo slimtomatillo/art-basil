@@ -43,7 +43,7 @@
             "phase": "past",
             "dates": {
                 "start": "2024-09-15",
-                "end": null
+                "end": "2025-09-01"
             },
             "ongoing": false,
             "links": [
@@ -56,8 +56,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "1321fc55737bf1a2327820f6f1176f89"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "2a1fa4d9772fd10d13b68e48bdece3bc"
         },
         "Josiah McElheny: Island Universe-LACMA": {
             "name": "Josiah McElheny: Island Universe",
@@ -71,7 +71,7 @@
             "phase": "past",
             "dates": {
                 "start": "2024-09-12",
-                "end": null
+                "end": "2026-06-28"
             },
             "ongoing": false,
             "links": [
@@ -84,8 +84,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "a1465241a358aec76314b8729c80f8af"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "0d3f00719af0c2601bfcf16da23ad1c3"
         },
         "Magdalena Suarez Frimkess: The Finest Disregard-LACMA": {
             "name": "Magdalena Suarez Frimkess: The Finest Disregard",
@@ -174,15 +174,16 @@
         "Ai Weiwei: Circle of Animals/Zodiac Heads-LACMA": {
             "name": "Ai Weiwei: Circle of Animals/Zodiac Heads",
             "venue": "LACMA",
-            "description": "Zev Yaroslavsky Plaza",
+            "description": "Ai Weiwei\u2019s Circle of Animals/Zodiac Heads references a long and ongoing story of cross-cultural exchange and collision between China and the West, beginning with a mid-18th century fountain at Yuanmingyuan, the Old Summer Palace in Beijing. The fountain, commissioned by Emperor Qianlong and designed by Jesuit priests promoting Catholicism in China, was used to tell time: 12 zodiac animal sculptures each spouted water for two hours (or one shichen) each...",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
-                "start": "2022-03-26",
+                "start": null,
                 "end": null
             },
             "ongoing": true,
@@ -192,25 +193,28 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://lacma.org/sites/default/files/styles/exhibition_listing/public/primary_image/2022-03/EX2464-VW010.jpg?itok=RMspRjXw",
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2022-03/EX2464-VW010.jpg.webp?VersionId=U92z90ZZrNVGc4ys4EF4FNs8_2EZrH6G&h=79b5ae1d&itok=9bIJlkB5",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2025-09-13 11:15:46",
-            "hash": "64b7363c1eae4bf33c05ff7de5de1cab"
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "9edc159c12e07e2dacb1f7cb7e535c66"
         },
         "Modern Art-LACMA": {
             "name": "Modern Art",
             "venue": "LACMA",
-            "description": "BCAM, Level 3",
+            "description": "LACMA\u2019s Modern Art collection features primarily European and American art from 1900 to the 1960s, including examples from the museum\u2019s American and Latin American collections. Several galleries are dedicated to the Janice and Henri Lazarof Collection\u2014including concentrations of work by Pablo Picasso and Alberto Giacometti\u2014and others are devoted to the museum\u2019s renowned German Expressionist holdings of paintings, sculpture, and works on paper. The installation presents Michael McMillen\u2019s\u2026",
             "tags": [
                 "exhibition",
+                "current",
                 "museum",
-                "current"
+                "painting",
+                "sculpture",
+                "latinx"
             ],
             "phase": "current",
             "dates": {
-                "start": "2021-06-13",
+                "start": null,
                 "end": null
             },
             "ongoing": true,
@@ -220,12 +224,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2021-05/Modern%20Art_LACMA.jpg?VersionId=bAWeWgvRGAbZPfilzQS8.Vnp7QKLUTMw&itok=iWD3UgSM",
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2021-05/Modern%20Art_LACMA.jpg.webp?h=e524f7fd&itok=LLwRjwcd",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 19:51:35",
-            "hash": "2452685d652e4b97de480634e7bd7fd2"
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "7b1dd173b716b583bb955cbfacc31435"
         },
         "Digital Witness: Revolutions in Design, Photography, and Film-LACMA": {
             "name": "Digital Witness: Revolutions in Design, Photography, and Film",
@@ -241,7 +245,7 @@
             "phase": "past",
             "dates": {
                 "start": "2024-11-24",
-                "end": null
+                "end": "2025-07-13"
             },
             "ongoing": false,
             "links": [
@@ -254,8 +258,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "8d0db9c5f625781502799d758931b54e"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "74554cd8bf13b84460453bf812e7bb7e"
         },
         "Imagining Black Diasporas: 21st-Century Art and Poetics-LACMA": {
             "name": "Imagining Black Diasporas: 21st-Century Art and Poetics",
@@ -270,7 +274,7 @@
             "phase": "past",
             "dates": {
                 "start": "2024-12-15",
-                "end": null
+                "end": "2025-07-27"
             },
             "ongoing": false,
             "links": [
@@ -283,8 +287,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "97d71a463a6ba05fd2e9832854edbc0b"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "804d09bea4faa7e23cb933718b6d1c81"
         },
         "American Artist: The Monophobic Response-LACMA": {
             "name": "American Artist: The Monophobic Response",
@@ -552,7 +556,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-03-23",
-                "end": null
+                "end": "2026-01-04"
             },
             "ongoing": false,
             "links": [
@@ -565,8 +569,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "fb12ecc84b19187fc8664bdaf118ed32"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "a9c9e412feaaafe6a9209a01e1275ece"
         },
         "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection-LACMA": {
             "name": "Line, Form, Qi: Calligraphic Art from the Fondation INK Collection",
@@ -579,8 +583,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-04-06",
+                "end": "2025-10-19"
             },
             "ongoing": false,
             "links": [
@@ -593,22 +597,22 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "275cb9e0b90f6cd628ca501958f8e794"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "5f5c176c4c1a4eb1b578110581152e08"
         },
         "Barbara Kruger: Untitled (Shafted)-LACMA": {
             "name": "Barbara Kruger: Untitled (Shafted)",
             "venue": "LACMA",
-            "description": "",
+            "description": "Barbara Kruger\u2019s Untitled (Shafted) features her distinctive use of advertising text and sharp, poetic phrases that criticize consumerism, misogyny, power, and desire. Commissioned by LACMA in 2008, this monumental installation occupies the full elevator shaft of BCAM and utilizes the architecture to a powerful end. While visitors wait for the elevator to arrive\u2014on any of the three floors\u2014they are visually bombarded with messages about consumption and consumerism. Beginning at the...",
             "tags": [
                 "exhibition",
-                "museum",
-                "current"
+                "current",
+                "museum"
             ],
             "phase": "current",
             "dates": {
                 "start": null,
-                "end": ""
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -617,26 +621,26 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2019-02/20091014_lc-kruger_04d.jpg?itok=n0LFd--Z",
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2019-02/20091014_lc-kruger_04d.jpg.webp?VersionId=8NbSF3o2.qrI_c2r8ALNMSxDyR0wb7U0&h=8c17b279&itok=vfKpF43L",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 19:51:35",
-            "hash": "6e7ef8d1a65580a154b9729c38f16308"
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "5fa3d1f785fd8d99e891610843a4c196"
         },
         "Mark Bradford: 150 Portrait Tone-LACMA": {
             "name": "Mark Bradford: 150 Portrait Tone",
             "venue": "LACMA",
-            "description": "Resnick Pavilion",
+            "description": "Mark Bradford\u2019s 150 Portrait Tone , a mural-size composition that contains elements of both abstraction and realism, is based on an idea for a work that the artist conceived after the fatal shooting of Philando Castile by a police officer in Saint Paul, Minnesota, in July 2016. Castile, a nutrition services supervisor at an elementary school, was shot after being pulled over in his car\u2014an incident that was livestreamed on...",
             "tags": [
                 "exhibition",
-                "museum",
-                "current"
+                "current",
+                "museum"
             ],
             "phase": "current",
             "dates": {
                 "start": null,
-                "end": ""
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -645,12 +649,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2018-12/SF3253_02.jpg?itok=0p4OJbJ8",
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2018-12/SF3253_02.jpg.webp?VersionId=jEVVQlWRmT9k8kS91WFP6YWzPE7q5F9W&h=4765a0ce&itok=qyQr0crI",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 19:51:35",
-            "hash": "fc66ec9e61dda4d71160eb8068b203a9"
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "a50f10cbe42eccc197088c4f6333f510"
         },
         "Ritual Expressions: African Adornment from the Permanent Collection-LACMA": {
             "name": "Ritual Expressions: African Adornment from the Permanent Collection",
@@ -664,8 +668,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-02-23",
+                "end": "2025-07-06"
             },
             "ongoing": false,
             "links": [
@@ -678,8 +682,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "ad431fff42145583aa30bf2bd90f0a29"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "27f0f9c3f37bb10fde6e2021b5f6d969"
         },
         "Realms of the Dharma: Buddhist Art Across Asia-LACMA": {
             "name": "Realms of the Dharma: Buddhist Art Across Asia",
@@ -693,7 +697,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-05-11",
-                "end": null
+                "end": "2026-07-12"
             },
             "ongoing": false,
             "links": [
@@ -706,8 +710,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "54d80e6182298367f66487f3499a830a"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "a5680323c31a64c6835fe6f9c1d9483c"
         },
         "Now Showing: Youssef Nabil\u2019s I Saved My Belly Dancer-LACMA": {
             "name": "Now Showing: Youssef Nabil\u2019s I Saved My Belly Dancer",
@@ -723,7 +727,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-08-24",
-                "end": null
+                "end": "2026-01-11"
             },
             "ongoing": false,
             "links": [
@@ -736,8 +740,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "98e9458a716c145d959d87bd39ff282a"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "148182537be52213fd4cd7ac4b554809"
         },
         "Nancy Baker Cahill: Substrate-LACMA": {
             "name": "Nancy Baker Cahill: Substrate",
@@ -750,8 +754,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-05-04",
+                "end": "2025-08-24"
             },
             "ongoing": false,
             "links": [
@@ -764,8 +768,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "488e18de0cc2e3fb67ab0fffb1a81146"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "4d698f5cfb72b0010170efb7d53b5740"
         },
         "Act on It! Artists, Community, and the Brockman Gallery in Los Angeles-LACMA": {
             "name": "Act on It! Artists, Community, and the Brockman Gallery in Los Angeles",
@@ -809,7 +813,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-10-12",
-                "end": null
+                "end": "2026-03-29"
             },
             "ongoing": false,
             "links": [
@@ -822,8 +826,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "791deda1d2c59b21de7239d995e7cd98"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "aa5da4b702896ade6a38039371895078"
         },
         "Collecting Impressionism at LACMA-LACMA": {
             "name": "Collecting Impressionism at LACMA",
@@ -842,7 +846,7 @@
             "phase": "current",
             "dates": {
                 "start": "2025-12-21",
-                "end": null
+                "end": "2027-01-03"
             },
             "ongoing": false,
             "links": [
@@ -855,8 +859,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "64e38cdf0af143685a38564f08f58433"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "408ce6b718f0e797595e65fdf56b40e4"
         },
         "Artist Selects: Frances Stark, Periodic Love and Perpetual War-LACMA": {
             "name": "Artist Selects: Frances Stark, Periodic Love and Perpetual War",
@@ -869,8 +873,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-06-13",
+                "end": "2025-11-09"
             },
             "ongoing": false,
             "links": [
@@ -883,8 +887,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "bea08858516f2db323a1f7f9dc674583"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "e43f06cd2a6e0f53b2c9eeb22ec9acd1"
         },
         "Grounded-LACMA": {
             "name": "Grounded",
@@ -898,7 +902,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-09-14",
-                "end": null
+                "end": "2026-06-14"
             },
             "ongoing": false,
             "links": [
@@ -911,8 +915,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "234e2734e272afe7bbd120720104124e"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "87dbc671ac31fc9c72b7c39ebedbdb47"
         },
         "Deep Cuts: Block Printing Across Cultures-LACMA": {
             "name": "Deep Cuts: Block Printing Across Cultures",
@@ -928,7 +932,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-11-09",
-                "end": null
+                "end": "2026-09-13"
             },
             "ongoing": false,
             "links": [
@@ -941,8 +945,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "226f25ce6c181da15a0de5883d72b092"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "78bb65d77a30432ed2dd5998476187ac"
         },
         "Nature on Notice: Contemporary Art and Ecology-LACMA": {
             "name": "Nature on Notice: Contemporary Art and Ecology",
@@ -985,8 +989,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-06-14",
+                "end": "2026-10-12"
             },
             "ongoing": false,
             "links": [
@@ -999,8 +1003,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "dbf53110a48ab754c4f6dae0f64409f8"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "e0c9c2e9694768a8286c7d5795b1558d"
         },
         "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA-LACMA": {
             "name": "Village Square: Gifts of Modern Art from the Pearlman Collection to the Brooklyn Museum, LACMA, and MoMA",
@@ -1015,8 +1019,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-02-22",
+                "end": "2026-07-19"
             },
             "ongoing": false,
             "links": [
@@ -1029,8 +1033,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "f69b35a2893e7ea50daf7b4411d3ebfd"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "5d371e2b2f510125be054e9d6156a68d"
         },
         "Bruce Nauman: From the Collection-LACMA": {
             "name": "Bruce Nauman: From the Collection",
@@ -1045,8 +1049,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2025-08-31",
+                "end": "2025-10-13"
             },
             "ongoing": false,
             "links": [
@@ -1059,8 +1063,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "f7832f19ff4c02656772b5e004be1def"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "c5415573381fca207af4f20696112a7a"
         },
         "Diffuse Control by Beeple-LACMA": {
             "name": "Diffuse Control by Beeple",
@@ -1076,7 +1080,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-10-26",
-                "end": null
+                "end": "2026-01-04"
             },
             "ongoing": false,
             "links": [
@@ -1089,8 +1093,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "319a422fa50049c9c7da24915b6154ec"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "66b3b788a40d39eec86425decd1e8425"
         },
         "Austrian Expressionism and Otto Kallir-LACMA": {
             "name": "Austrian Expressionism and Otto Kallir",
@@ -1107,7 +1111,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-11-21",
-                "end": null
+                "end": "2026-05-31"
             },
             "ongoing": false,
             "links": [
@@ -1120,8 +1124,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "99ec3d1c7a2196dccccef2fd3ca3a66b"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "823b85bd25a9efc99f462affda0b6286"
         },
         "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu-LACMA": {
             "name": "SUE\u00d1O PERRO: A Film Installation by Alejandro G. I\u00f1\u00e1rritu",
@@ -1136,8 +1140,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-02-22",
+                "end": "2026-06-21"
             },
             "ongoing": false,
             "links": [
@@ -1150,8 +1154,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "de86ce8bb10349be3430057bd915f99d"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "e727b571ab465bfdab58b370706f882b"
         },
         "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.-LACMA": {
             "name": "F\u00fatbol Is Life: Animated Sportraits by Lyndon J. Barrois, Sr.",
@@ -1165,8 +1169,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-02-15",
+                "end": "2026-07-26"
             },
             "ongoing": false,
             "links": [
@@ -1179,8 +1183,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "62cf83f3e87140ab5a2cee3f97f29331"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "5dcb44f5e8c9135a2ba63a4acd16b4ae"
         },
         "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection-LACMA": {
             "name": "Arp\u2014Klee: With Selections from the Janice and Henri Lazarof Collection",
@@ -1196,7 +1200,7 @@
             "phase": "past",
             "dates": {
                 "start": "2025-11-21",
-                "end": null
+                "end": "2026-05-31"
             },
             "ongoing": false,
             "links": [
@@ -1209,8 +1213,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "9ab0a0dfd9eaecd3aca1935a2b241e70"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "ee3051199494836e8328c88220ff93aa"
         },
         "john gerrard: SPIRITS-LACMA": {
             "name": "john gerrard: SPIRITS",
@@ -1238,22 +1242,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "201af89afee768dad6e6614ef1418e5a"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "a66c1debe5b0c2e4117a4ad26bdc3e14"
         },
         "Richard Serra: Band-LACMA": {
             "name": "Richard Serra: Band",
             "venue": "LACMA",
-            "description": "BCAM, Level 1",
+            "description": "Band (2006) may qualify as Richard Serra's magnum opus, representing the fullest expression of the formal vocabulary proffered by his monumental steel arcs and torqued ellipses of the 1980s and 1990s. Among the most formally elegant and technically complex works of Serra's oeuvre, this sculpture took him two-and-a-half years to develop. At 12 feet high and more than 70 feet long, the work is vast even by Serra's monumental standard...",
             "tags": [
                 "exhibition",
+                "current",
                 "museum",
-                "current"
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
                 "start": null,
-                "end": ""
+                "end": null
             },
             "ongoing": true,
             "links": [
@@ -1262,12 +1267,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/primary_image/2019-02/M2007_122-SF2126_013.jpg?itok=GGJ_LhD8",
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2019-02/M2007_122-SF2126_013.jpg.webp?VersionId=TnNpJaoKJ5k6OWzrObpD1sX3ULf3Hkjv&h=c54c88ae&itok=8PpsPeu0",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-09-27 19:51:35",
-            "hash": "c44d991a92a0d45ba1cd91bea65211ce"
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "0692ff1bcc700a8cd710fc8b50c13a79"
         },
         "Alfonso Gonzalez Jr.: In Between Stops-LACMA": {
             "name": "Alfonso Gonzalez Jr.: In Between Stops",
@@ -1295,8 +1300,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "e64ca59ce83b30eefddce2ef11917c72"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "6b999c8427816f5dca623854faf7e131"
         },
         "Paul R. Williams: Architect for Living-LACMA": {
             "name": "Paul R. Williams: Architect for Living",
@@ -1324,8 +1329,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "2ee938a6c6bd7896fce6ff9d452d8bab"
+            "last_updated": "2026-11-05 18:36:32",
+            "hash": "6d48adf7da1eb58c39bfb299d17341bc"
         },
         "Eileen Cowin: Between Panic and Paradise-LACMA": {
             "name": "Eileen Cowin: Between Panic and Paradise",
@@ -1342,7 +1347,7 @@
             "phase": "current",
             "dates": {
                 "start": "2026-08-23",
-                "end": null
+                "end": "2027-01-03"
             },
             "ongoing": false,
             "links": [
@@ -1355,8 +1360,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "6aae2b015e4d88046e80284ccaea8616"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "37011bc288829c90d62bc7a286f7d3b3"
         },
         "Home of the Future, 1925\u20131985: Designing Domestic Utopias-LACMA": {
             "name": "Home of the Future, 1925\u20131985: Designing Domestic Utopias",
@@ -1372,7 +1377,7 @@
             "phase": "current",
             "dates": {
                 "start": "2026-09-27",
-                "end": null
+                "end": "2027-03-14"
             },
             "ongoing": false,
             "links": [
@@ -1385,8 +1390,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "9fbfc4b791546be0aa10d650e1009f71"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "1a3451b512f34dee9d5e301a796375c2"
         },
         "The Brockman Gallery: Los Angeles, 1967\u20131990-LACMA": {
             "name": "The Brockman Gallery: Los Angeles, 1967\u20131990",
@@ -1400,7 +1405,7 @@
             "phase": "current",
             "dates": {
                 "start": "2026-10-18",
-                "end": null
+                "end": "2027-01-24"
             },
             "ongoing": false,
             "links": [
@@ -1413,8 +1418,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:43",
-            "hash": "853ea3f2f909ac68595a6e8f5a98fd6f"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "0511c35c393d9b22c0dad6b04e80b20b"
         },
         "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)-LACMA": {
             "name": "Christina Quarles: Now We\u2019re There (And We\u2019 Only Just Begun)",
@@ -1441,8 +1446,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "51a28545b84ff52aed7474f8bd078bee"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "1e88c1fe7c151f62c19abca4e6517983"
         },
         "From MacArthur Park, with Love-LACMA": {
             "name": "From MacArthur Park, with Love",
@@ -1484,7 +1489,7 @@
             "phase": "current",
             "dates": {
                 "start": "2026-09-27",
-                "end": null
+                "end": "2027-03-14"
             },
             "ongoing": false,
             "links": [
@@ -1497,8 +1502,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "8aaeb44153927861d9cc32adf125a31e"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "308f7872af59fba8c743de577d99804d"
         },
         "Andrew Thomas Huang: The Deer of Nine Colors-LACMA": {
             "name": "Andrew Thomas Huang: The Deer of Nine Colors",
@@ -1511,8 +1516,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-05-31",
+                "end": "2026-06-14"
             },
             "ongoing": false,
             "links": [
@@ -1525,8 +1530,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "3efa5eddf09ec6eaa84f1987b2aa6aaa"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "0b4a981378c4997308752fec2b519a6c"
         },
         "Pablo Picasso\u2014Portraits in Disguise-LACMA": {
             "name": "Pablo Picasso\u2014Portraits in Disguise",
@@ -1539,8 +1544,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-06-12",
+                "end": "2026-12-06"
             },
             "ongoing": false,
             "links": [
@@ -1553,8 +1558,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "fe59b9eb8341218eaea54d5739a2c96a"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "315e6dc7748f1b2490e5f50af1e6de67"
         },
         "Christian Marclay: The Clock-LACMA": {
             "name": "Christian Marclay: The Clock",
@@ -1568,8 +1573,8 @@
             ],
             "phase": "past",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-07-26",
+                "end": "2026-08-23"
             },
             "ongoing": false,
             "links": [
@@ -1582,8 +1587,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "0561a084951bb968273f13c910b74637"
+            "last_updated": "2026-11-05 18:36:34",
+            "hash": "60d25c501a8808cfeec8293ded68b6ba"
         },
         "Danse Macabre: Death in Print from Durer to Dix-LACMA": {
             "name": "Danse Macabre: Death in Print from Durer to Dix",
@@ -1597,8 +1602,8 @@
             ],
             "phase": "current",
             "dates": {
-                "start": null,
-                "end": null
+                "start": "2026-06-12",
+                "end": "2026-12-06"
             },
             "ongoing": false,
             "links": [
@@ -1611,8 +1616,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "00c9c409a0ef1f118060dc3995bb35bb"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "cfdcd56be137851ea412cdb17f27e5b8"
         },
         "California Collectives: Asian American Moderns, 1924\u20131965-LACMA": {
             "name": "California Collectives: Asian American Moderns, 1924\u20131965",
@@ -1664,12 +1669,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www-images.lacma.org/s3fs-public/styles/exhibition_listing/public/2026-07/M2025_153_no_background.png?VersionId=tunS5BzG0fGTkVEFtrt7m2dD6BLk1fTJ&itok=7M-Sihn2",
+                    "link": "https://images.weserv.nl/?url=www-images.lacma.org%2Fs3fs-public%2Fstyles%2Fexhibition_listing%2Fpublic%2F2026-07%2FM2025_153_no_background.png%3FVersionId%3DtunS5BzG0fGTkVEFtrt7m2dD6BLk1fTJ%26itok%3D7M-Sihn2&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "245933385da06b53669f2eafe0594a18"
+            "last_updated": "2026-11-05 18:36:32",
+            "hash": "e68159e8685439314b6822d83afcf451"
         },
         "Minor Feelings (working title)-LACMA": {
             "name": "Minor Feelings (working title)",
@@ -1696,8 +1701,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "4bba5e5f2ab40c61b64d8a68b7c89a40"
+            "last_updated": "2026-11-05 18:36:32",
+            "hash": "e02eec3b16a92ada470a80521c31c9d7"
         },
         "Analia Saban: Title, Date, Medium-LACMA": {
             "name": "Analia Saban: Title, Date, Medium",
@@ -1724,8 +1729,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "0fff5708ad7404b591eb758b6dbaa96b"
+            "last_updated": "2026-11-05 18:36:32",
+            "hash": "c77ccefdb7c0f763ad5c1509b8bfc037"
         },
         "Textile Alchemy: The Art of Reiko Sudo & NUNO-LACMA": {
             "name": "Textile Alchemy: The Art of Reiko Sudo & NUNO",
@@ -1740,7 +1745,7 @@
             "phase": "current",
             "dates": {
                 "start": "2026-09-20",
-                "end": null
+                "end": "2027-03-07"
             },
             "ongoing": false,
             "links": [
@@ -1753,8 +1758,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "4c764dfd417ce81f51eb63303de253da"
+            "last_updated": "2026-11-05 18:36:31",
+            "hash": "55d93f96333ab4a3f9e6c5655366742b"
         },
         "Expressionisms: Japan, Germany, China-LACMA": {
             "name": "Expressionisms: Japan, Germany, China",
@@ -1781,8 +1786,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "00e9f84b6453d9de61476c3631e9a602"
+            "last_updated": "2026-11-05 18:36:32",
+            "hash": "6738925703a03a6ea3a470b73bf14830"
         },
         "Rococo: Beyond Decadence-LACMA": {
             "name": "Rococo: Beyond Decadence",
@@ -1809,8 +1814,94 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:44",
-            "hash": "9cbfe24cd5bd697ab8321849ed0806f7"
+            "last_updated": "2026-11-05 18:36:32",
+            "hash": "fac716e3813f6c92e99c4fb1a19631ac"
+        },
+        "Chris Burden: Metropolis II-LACMA": {
+            "name": "Chris Burden: Metropolis II",
+            "venue": "LACMA",
+            "description": "Chris Burden's Metropolis II is an intense kinetic sculpture, modeled after a fast paced, frenetic modern city. Steel beams form an eclectic grid interwoven with an elaborate system of 18 roadways, including one six lane freeway, and HO scale train tracks. Miniature cars speed through the city at 240 scale miles per hour; every hour, the equivalent of approximately 100,000 cars circulate through the dense network of buildings. According to...",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "sculpture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/chris-burden-metropolis-ii",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/primary_image/2018-11/L2010_33_1-EX2478-SF2953-AV002__jpg/3722.webp?VersionId=jYv7pic9rb1d6zeNazZ5.14DollJkUzr&itok=F6YohML8&h=823378e5",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "9adbd03ec619dbccb36adc6adabee3e9"
+        },
+        "Jonathon Keats: Deep Time Cinematography-LACMA": {
+            "name": "Jonathon Keats: Deep Time Cinematography",
+            "venue": "LACMA",
+            "description": "Deep Time Cinematography is a site-specific conceptual artwork by Jonathon Keats that will create a 10-frame zoetrope movie of the Hollywood Hills over the next 10,000 years. The work utilizes a handcrafted pinhole camera, installed on the third-floor escalator landing of BCAM, to capture 10 millennia-spanning portraits of Los Angeles's evolving landscape. Through its radical temporality, Deep Time Cinematography is Keats\u2019s powerful call to the imagination and to action, raising...",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "film-video"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/jonathon-keats-deep-time-cinematography",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2025-08/DeepTimeMilleniumCamera_crop.jpg.webp?VersionId=_cVOggVOnEUpSSl.2S8j1rTnCidcZPxV&h=07f16142&itok=OIR-f4wm",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "91ff4fcff5767f93a7edde69728670c8"
+        },
+        "Robert Irwin: Miracle Mile-LACMA": {
+            "name": "Robert Irwin: Miracle Mile",
+            "venue": "LACMA",
+            "description": "Artist Robert Irwin\u2019s work in the last five decades has investigated perception and the experience of art. With Miracle Mile , Irwin reconsiders the properties of light, material, and color. The site-specific work subtly plays with the architecture in which it is housed and responds to both Wilshire Boulevard (the storied thoroughfare it faces) and Primal Palm Garden (an outdoor installation created by Irwin in 2008). A linear configuration composed...",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "ongoing": true,
+            "links": [
+                {
+                    "link": "https://lacma.org/art/exhibition/robert-irwin-miracle-mile",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2018-10/EX7995_1%20%281%29.jpg.webp?h=9a0cd236&itok=E6wMwyTY",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-05 18:36:33",
+            "hash": "02b0afba1bbfba7e8e4cfe69e9de7abf"
         }
     },
     "The Broad": {
@@ -1839,8 +1930,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:58",
-            "hash": "503d227bd3eb49c9dab84ecbadd10357"
+            "last_updated": "2026-11-05 18:36:48",
+            "hash": "e7f9e245f71b74bcaf04ae91c01197da"
         },
         "Jeffrey Gibson: the space in which to place me-The Broad": {
             "name": "Jeffrey Gibson: the space in which to place me",
@@ -1869,8 +1960,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:56",
-            "hash": "a1a9a8b133786f0a7baaf629d32b0f2b"
+            "last_updated": "2026-11-05 18:36:47",
+            "hash": "9de77735963a94690a994d31d56a7f3a"
         },
         "Mickalene Thomas: All About Love-The Broad": {
             "name": "Mickalene Thomas: All About Love",
@@ -1901,8 +1992,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:59",
-            "hash": "6b4f31d0065f5f093aeb8a8bc0fab777"
+            "last_updated": "2026-11-05 18:36:50",
+            "hash": "6418358112c72437cc4f3b1bce3235e2"
         },
         "Desire, Knowledge, and Hope (with Smog)-The Broad": {
             "name": "Desire, Knowledge, and Hope (with Smog)",
@@ -1933,8 +2024,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:00",
-            "hash": "d60a6bf590956831c0c418cba829a214"
+            "last_updated": "2026-11-05 18:36:51",
+            "hash": "70187ec645fc28a6a6b6d72f25c6514d"
         },
         "Keith Haring: Art Is for Everybody-The Broad": {
             "name": "Keith Haring: Art Is for Everybody",
@@ -1964,8 +2055,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:01",
-            "hash": "d1042d8d156589e0e72e2762e6655596"
+            "last_updated": "2026-11-05 18:36:52",
+            "hash": "a84561d2900a1266f7771b138bf5eb11"
         },
         "William Kentridge: In Praise of Shadows-The Broad": {
             "name": "William Kentridge: In Praise of Shadows",
@@ -1998,8 +2089,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:03",
-            "hash": "99ea135484893d15ead4e803267e12f4"
+            "last_updated": "2026-11-05 18:36:54",
+            "hash": "98d4f99efeb03d81e434b81dc2fdc9f3"
         },
         "Takashi Murakami: Stepping on the Tail of a Rainbow-The Broad": {
             "name": "Takashi Murakami: Stepping on the Tail of a Rainbow",
@@ -2029,8 +2120,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-02 20:45:22",
-            "hash": "03d7afeaf36ece859fa34d2f866ed375"
+            "last_updated": "2026-11-05 18:36:55",
+            "hash": "1bd02b9016f12541323d664356c17aec"
         },
         "This Is Not America's Flag-The Broad": {
             "name": "This Is Not America's Flag",
@@ -2477,8 +2568,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:50",
-            "hash": "0e0c24934b2fbf41a6ef7856908e822d"
+            "last_updated": "2026-11-05 18:36:39",
+            "hash": "e7d5f565be3acfbcaff9825c70e30c87"
         },
         "Yoko Ono: Music of the Mind-The Broad": {
             "name": "Yoko Ono: Music of the Mind",
@@ -2506,8 +2597,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:54",
-            "hash": "ec4b7b0f6ade007283f5e57f5564d1f4"
+            "last_updated": "2026-11-05 18:36:43",
+            "hash": "9a68eaeadf59d1f86ea4cd73b55c6292"
         },
         "Fresh Collection Galleries-The Broad": {
             "name": "Fresh Collection Galleries",
@@ -2534,8 +2625,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:46",
-            "hash": "670afe9744ac830af6b88aaffe9a84bb"
+            "last_updated": "2026-11-05 18:36:36",
+            "hash": "9f5be0a649ba9dc19dd8a0bdd148d478"
         },
         "Featured Installation of Takashi Murakami-The Broad": {
             "name": "Featured Installation of Takashi Murakami",
@@ -2563,8 +2654,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:47",
-            "hash": "62cd64aa657d6f3b802dfcbaa374dcf7"
+            "last_updated": "2026-11-05 18:36:37",
+            "hash": "689e3567d729dd11d95d59566887c75b"
         },
         "Featured Installation of Jean-Michel Basquiat-The Broad": {
             "name": "Featured Installation of Jean-Michel Basquiat",
@@ -2592,8 +2683,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:48",
-            "hash": "f493ad05d15adff83f3f68dc48cc6462"
+            "last_updated": "2026-11-05 18:36:38",
+            "hash": "63ab7d443b9607d47887cf87271ba016"
         },
         "Yoko Ono: Music of the Mind | Free Thursday-The Broad": {
             "name": "Yoko Ono: Music of the Mind | Free Thursday",
@@ -2648,8 +2739,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:51",
-            "hash": "596e2b149fc1e6c42ed2fb9f24056ef6"
+            "last_updated": "2026-11-05 18:36:41",
+            "hash": "e97cef61eb57a24075fad292417f997c"
         },
         "Robert Therrien: This is a Story-The Broad": {
             "name": "Robert Therrien: This is a Story",
@@ -2678,8 +2769,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:55",
-            "hash": "a230a05c045ac2bb156f9611a92eabb1"
+            "last_updated": "2026-11-05 18:36:46",
+            "hash": "02d03e9da90eafc222f3c0909b639738"
         },
         "Yoko Ono: Music of the Mind\u2014Early Access-The Broad": {
             "name": "Yoko Ono: Music of the Mind\u2014Early Access",
@@ -2706,8 +2797,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:32:53",
-            "hash": "f5b6cdab8a6c42947065d70af1ae88f4"
+            "last_updated": "2026-11-05 18:36:45",
+            "hash": "ac8ba0fa8f955b33f86f35c4df0ea95c"
         }
     },
     "Getty": {
@@ -2736,8 +2827,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:14",
-            "hash": "e23081ff19d994b01d5cebda1e8de845"
+            "last_updated": "2026-11-05 18:37:08",
+            "hash": "a537d5645444b322a42db73a1dcf0d1f"
         },
         "Odilon Redon: Otherworldly Visions-Getty": {
             "name": "Odilon Redon: Otherworldly Visions",
@@ -2848,8 +2939,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:15",
-            "hash": "72d3a663970805039d64da4bd4eaf6cb"
+            "last_updated": "2026-11-05 18:37:10",
+            "hash": "865cdc35af3eebfa1f623fa3d6e8306b"
         },
         "Charles Ross Spectrum 14-Getty": {
             "name": "Charles Ross Spectrum 14",
@@ -2876,8 +2967,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:17",
-            "hash": "6016f5a20895579625d7e4be274949bf"
+            "last_updated": "2026-11-05 18:37:11",
+            "hash": "fa7b563d9f0f8ff4352ecd0c73ec01de"
         },
         "Sculpted Portraits from Ancient Egypt-Getty": {
             "name": "Sculpted Portraits from Ancient Egypt",
@@ -2904,8 +2995,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:19",
-            "hash": "685671bcd1eb57a323ca91a3eddb4f1f"
+            "last_updated": "2026-11-05 18:37:12",
+            "hash": "e1634f94c053977db13530346748488f"
         },
         "J. Paul Getty Life and Legacy-Getty": {
             "name": "J. Paul Getty Life and Legacy",
@@ -2962,8 +3053,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:11",
-            "hash": "6080cc3ae23b12c3ff5213e559966a90"
+            "last_updated": "2026-11-05 18:37:06",
+            "hash": "0f8327082551722fc7cbb86b96e403e0"
         },
         "Instante/revelaci\u00f3n: Moments in Mexican Photography-Getty": {
             "name": "Instante/revelaci\u00f3n: Moments in Mexican Photography",
@@ -2991,8 +3082,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:12",
-            "hash": "2ce86fc728ee7d1a763abe3e2829cc17"
+            "last_updated": "2026-11-05 18:37:07",
+            "hash": "e7eae3c68b4dfe61ad2d0a28b42851b6"
         },
         "Joshua Reynolds's Portrait of Mai and 18th\u2011Century Portraiture-Getty": {
             "name": "Joshua Reynolds's Portrait of Mai and 18th\u2011Century Portraiture",
@@ -3019,8 +3110,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:09",
-            "hash": "7f72de52087bad4cc1b834131dbcb882"
+            "last_updated": "2026-11-05 18:37:05",
+            "hash": "8f8e85dce04bb9d4bdd2fb49bee3d520"
         },
         "The Holy Family at Home-Getty": {
             "name": "The Holy Family at Home",
@@ -3048,8 +3139,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:07",
-            "hash": "b88389423f67915daab54ee9ba1b836c"
+            "last_updated": "2026-11-05 18:37:03",
+            "hash": "6622791c621bd13cb4c7d8d96c2d3e19"
         },
         "Reggie Burrows Hodges: A Theater of Passions-Getty": {
             "name": "Reggie Burrows Hodges: A Theater of Passions",
@@ -3077,8 +3168,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:06",
-            "hash": "d812a426944a1e34dd45a3350c33f228"
+            "last_updated": "2026-11-05 18:37:02",
+            "hash": "5a7845089c36499fe1da3cdf837ba6d3"
         },
         "A Light in the Dark: Joseph Wright of Derby-Getty": {
             "name": "A Light in the Dark: Joseph Wright of Derby",
@@ -3106,8 +3197,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:21",
-            "hash": "794d9d1d3447016db795b5e70946657e"
+            "last_updated": "2026-11-05 18:37:14",
+            "hash": "d72e6836bfcd8f697d3f3fb0d14fd2c1"
         },
         "Paul R. Williams-Getty": {
             "name": "Paul R. Williams",
@@ -3134,8 +3225,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:22",
-            "hash": "2029a312fa94fd9edc5138b3bffd5370"
+            "last_updated": "2026-11-05 18:37:15",
+            "hash": "4435e441b1a0e5a92e7479aa29ef20ff"
         },
         "Ancient Queenship: Art, Power, and Presence-Getty": {
             "name": "Ancient Queenship: Art, Power, and Presence",
@@ -3162,8 +3253,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "eab1c893f48ea90a9e7394af131903e6"
+            "last_updated": "2026-11-05 18:37:17",
+            "hash": "1f749628936de65d9709e2b23feedf9c"
         }
     },
     "Hammer Museum": {
@@ -3192,8 +3283,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "bcc8793255f0df8eda8d949edba80794"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "e9a760dd5078a704fd34848f50632212"
         },
         "Five Centuries of Works on Paper: The Grunwald Center at 70, Part II-Hammer Museum": {
             "name": "Five Centuries of Works on Paper: The Grunwald Center at 70, Part II",
@@ -3220,8 +3311,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "8b457e031fede44a7bb1f9f6562bc532"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "1944b2f57aef8855d60ab41fd3ca511d"
         },
         "Arthur Jafa: The White Album-Hammer Museum": {
             "name": "Arthur Jafa: The White Album",
@@ -3248,8 +3339,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "c4d6112c3e4c4adf65cc67f29fd3a804"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "b896ea55bba9b1766f6620b3959f44e5"
         },
         "Hammer Projects: Mike Cloud-Hammer Museum": {
             "name": "Hammer Projects: Mike Cloud",
@@ -3276,8 +3367,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "79612fdf3d367163f323214b967210e8"
+            "last_updated": "2026-11-05 18:37:17",
+            "hash": "a72f98a4fd4b14ccec5cc54bba976dd3"
         },
         "Huguette Caland: A Life in a Few Lines-Hammer Museum": {
             "name": "Huguette Caland: A Life in a Few Lines",
@@ -3304,8 +3395,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "731497997fd1e282619e1a7a1db28422"
+            "last_updated": "2026-11-05 18:37:17",
+            "hash": "d84714a1ce743c360d7db3bb7e8fafd8"
         },
         "Hammer Projects: G\u00ea Viana-Hammer Museum": {
             "name": "Hammer Projects: G\u00ea Viana",
@@ -3332,8 +3423,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "c57256a2fdb64e832bc78ce986ca7db7"
+            "last_updated": "2026-11-05 18:37:17",
+            "hash": "08018b5a5a5e88816d151107e6a6c949"
         },
         "Hammer Projects: Vibeke Mascini-Hammer Museum": {
             "name": "Hammer Projects: Vibeke Mascini",
@@ -3360,8 +3451,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "e85992e553cec74b42947d188e49fb98"
+            "last_updated": "2026-11-05 18:37:17",
+            "hash": "d943f28a5958ff02988bacc4ce6fae5e"
         },
         "Felipe Baeza: Anima-Hammer Museum": {
             "name": "Felipe Baeza: Anima",
@@ -3388,8 +3479,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "7cace8853ec9f8dc5c714e2300079ed6"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "c1fcba963bf12c76325d418ca919e8a7"
         },
         "Mavis Pusey: Mobile Images-Hammer Museum": {
             "name": "Mavis Pusey: Mobile Images",
@@ -3416,8 +3507,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "067adc96b3500e794fd55b4b0cd74d65"
+            "last_updated": "2026-11-05 18:37:17",
+            "hash": "452c03fb59f8696d4fc16a13a7436fa0"
         },
         "Several Eternities in a Day: Form in the Age of Living Materials-Hammer Museum": {
             "name": "Several Eternities in a Day: Form in the Age of Living Materials",
@@ -3440,8 +3531,8 @@
                     "description": "Event Page"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "6222397fbc071bc2e9a60445bda9ac49"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "f45a7c63966e42abdc775b26264e72a8"
         },
         "Five Centuries of Works on Paper: The Grunwald Center at 70-Hammer Museum": {
             "name": "Five Centuries of Works on Paper: The Grunwald Center at 70",
@@ -3468,8 +3559,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "dc067d492b2318ac5b5ee0d1ad8a67f2"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "478f6c3de8d6ef8ae092e0b1ea8126a1"
         },
         "Alake Shilling: Buggy Bear Crashes Made in L.A.-Hammer Museum": {
             "name": "Alake Shilling: Buggy Bear Crashes Made in L.A.",
@@ -3496,8 +3587,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "8cc8c0b2589661eaa7bc72f753712227"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "37fd99bd91fea7f0f3de81969310b264"
         },
         "Made in L.A. 2025-Hammer Museum": {
             "name": "Made in L.A. 2025",
@@ -3524,8 +3615,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "497cf44252fce2fe8c1352c458e71236"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "0cca350bb8bf32224b81260b792b2d73"
         },
         "Rising Sun, Falling Rain: Japanese Woodblock Prints from the Grunwald Center for the Graphic Arts-Hammer Museum": {
             "name": "Rising Sun, Falling Rain: Japanese Woodblock Prints from the Grunwald Center for the Graphic Arts",
@@ -3553,8 +3644,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "8a45f4fb375f3f14f260257a81e6bcfb"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "a687e9c73eddcea618be676342f05fd2"
         },
         "Lawrence Lek: NOX High-Rise-Hammer Museum": {
             "name": "Lawrence Lek: NOX High-Rise",
@@ -3581,8 +3672,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "cdc9a9e954d876a6231cb8ec3a13950b"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "f4c3847b216223852fef08583e4200fb"
         },
         "Hammer Projects: Renata Petersen-Hammer Museum": {
             "name": "Hammer Projects: Renata Petersen",
@@ -3609,8 +3700,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:25",
-            "hash": "9797f78f72e20375657c5eab98996b3a"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "d4a402e1c28fec268689979aeef98afd"
         },
         "Hammer Projects: Lap-See Lam-Hammer Museum": {
             "name": "Hammer Projects: Lap-See Lam",
@@ -3721,8 +3812,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "5fef5729639d69ba1066bd3e1739b99d"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "836a8c460020ff7f942d8a2e3b1e5795"
         },
         "Michelle Stuart: The Memory of Paper-Hammer Museum": {
             "name": "Michelle Stuart: The Memory of Paper",
@@ -3749,8 +3840,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "eecd1a61b4c6c411edd00f16b3387683"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "03e12e48f7886996be72570fbb30cdef"
         },
         "Hammer Projects: Inga Somdyala-Hammer Museum": {
             "name": "Hammer Projects: Inga Somdyala",
@@ -3777,8 +3868,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "7a25a456e5c4d20c026f0799dcc3674d"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "2e192beeaa1e5c8a2cc4338c1ecca312"
         },
         "Hammer Projects: Oriol Vilanova-Hammer Museum": {
             "name": "Hammer Projects: Oriol Vilanova",
@@ -3805,8 +3896,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:24",
-            "hash": "06cd2abeda316b33db498923a7035cc1"
+            "last_updated": "2026-11-05 18:37:18",
+            "hash": "5568f5aa80dbe8c672bca5a7151d5ac9"
         }
     },
     "MOCA": {
@@ -3836,8 +3927,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "63fdb640243b01b2a33235d3e75099fa"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "647b15279d5f4b047dec65419273d5dd"
         },
         "In These Times: Recent Acquisitions at MOCA-MOCA": {
             "name": "In These Times: Recent Acquisitions at MOCA",
@@ -3865,8 +3956,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "40bbdcc5d8e8130ad9336a5982fbcda1"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "795673f7e66b54d0f560fab3e6767145"
         },
         "Alexander Ap\u00f3stol Regime: Dramatis Personae-MOCA": {
             "name": "Alexander Ap\u00f3stol Regime: Dramatis Personae",
@@ -3896,8 +3987,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "f4f91eb0075f93ae5f47edd8695fbc58"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "c8e6ba9721e7f9b100ed0c669a0cf56c"
         },
         "The Expanding Field: MOCA's Collection from the 1940s to 1970s-MOCA": {
             "name": "The Expanding Field: MOCA's Collection from the 1940s to 1970s",
@@ -3926,8 +4017,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "698620ab63cec51057cb47051c9d327d"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "9d1d1ad601c08174b6d89b32c0d5ce2d"
         },
         "MOCA Focus: Diane Severin Nguyen WAR SONGS-MOCA": {
             "name": "MOCA Focus: Diane Severin Nguyen WAR SONGS",
@@ -3958,8 +4049,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "f89e6f4572360e2bc09b3077b0fc073c"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "25c798d5a676544b5612a2dfee31a1f4"
         },
         "Haegue Yang: Star-Crossed Rendezvous-MOCA": {
             "name": "Haegue Yang: Star-Crossed Rendezvous",
@@ -3987,8 +4078,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "585999b95f91191a444f510f313d9723"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "7deac6550022b26fcb3a2ab0b88b825b"
         },
         "Michael Asher-MOCA": {
             "name": "Michael Asher",
@@ -4016,8 +4107,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "8540c0019eb7222e7eb776ea79f9bf64"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "4d0021fde940eb57af3f64824bbad5b2"
         },
         "Good on Paper: Works from the Gene J. and Betye M. Burton Acquisitions Endowment-MOCA": {
             "name": "Good on Paper: Works from the Gene J. and Betye M. Burton Acquisitions Endowment",
@@ -4044,8 +4135,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "b8443127b76b0991d4c1b20c71e9d893"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "1bf4474a87c287ecaf278f66ec435d10"
         },
         "Gifts of Michael Asher-MOCA": {
             "name": "Gifts of Michael Asher",
@@ -4072,8 +4163,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "fb53e15de4c91dda2ed5adc7bfb1f753"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "a56de8fc58e427e0ea24a0ef4f5cfeae"
         },
         "MONUMENTS-MOCA": {
             "name": "MONUMENTS",
@@ -4101,8 +4192,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "b65239d77aec7110b2c6499db2a1c6ed"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "e58035eccbfa71af3711aa00f438665a"
         },
         "MOCA Focus: Takako Yamaguchi-MOCA": {
             "name": "MOCA Focus: Takako Yamaguchi",
@@ -4130,8 +4221,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "8bcf761b425e32a9873d052478deb37a"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "e3a336f905e0bddca391639496a43526"
         },
         "Fictions of Display-MOCA": {
             "name": "Fictions of Display",
@@ -4163,8 +4254,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "c55d470fdcb042a8fd34a10f6d3a4266"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "69e6bbd549498bb5643bb1ab3d36278e"
         },
         "Diary of Flowers: Artists and their Worlds-MOCA": {
             "name": "Diary of Flowers: Artists and their Worlds",
@@ -4191,8 +4282,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "f5c0c1bb9d300930de3af8b029d32839"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "4a7d9228e932e8a86904e4230190ab26"
         },
         "Wael Shawky: Drama 1882-MOCA": {
             "name": "Wael Shawky: Drama 1882",
@@ -4222,8 +4313,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "ab35c2621596168c5e7f38949406dc39"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "b78f31220f32e0fe37b8a34474b2ad6c"
         },
         "Ordinary People: Photorealism and the Work of Art since 1968-MOCA": {
             "name": "Ordinary People: Photorealism and the Work of Art since 1968",
@@ -4253,8 +4344,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "1d9c76d4f1acfc4febe243858fea3252"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "96a9da6c1f5384c186895879553daceb"
         },
         "MOCA Focus: Ana Segovia-MOCA": {
             "name": "MOCA Focus: Ana Segovia",
@@ -4284,8 +4375,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "5e3a03286155434e9b491460276aaa7e"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "6551c953fe59238dc7efcf210e58eda0"
         },
         "Olafur Eliasson: OPEN-MOCA": {
             "name": "Olafur Eliasson: OPEN",
@@ -4312,8 +4403,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "99ee3545f6cd19126068356adff668a1"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "36efd1fb74a736939d2c105afe2f2ecf"
         },
         "Josh Kline: Climate Change-MOCA": {
             "name": "Josh Kline: Climate Change",
@@ -4343,8 +4434,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "9d8826149d26854f7cc35bab3e67e41e"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "c00487070439d194f8ae4bb68b407fa9"
         },
         "Reverberations-MOCA": {
             "name": "Reverberations",
@@ -4401,8 +4492,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "a8e16c2963517968d11ee711afc95a45"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "5238201ca2ee5e0b5518df7948aa4472"
         },
         "Cecilia Vicu\u00f1a The Dream of Water: Quipu of Encounters Maricunga-MOCA": {
             "name": "Cecilia Vicu\u00f1a The Dream of Water: Quipu of Encounters Maricunga",
@@ -4428,12 +4519,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://cdn.sanity.io/images/ianh83xv/production/b6d1c7ed411d54943ee0eb95bfef3e7fb1a59d3a-11648x8736.jpg",
+                    "link": "https://images.weserv.nl/?url=cdn.sanity.io%2Fimages%2Fianh83xv%2Fproduction%2Fb6d1c7ed411d54943ee0eb95bfef3e7fb1a59d3a-11648x8736.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:26",
-            "hash": "138df277e5075415b4fb713a25228239"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "ca6791bda326340d6408c3722960f7a5"
         }
     },
     "Hauser & Wirth DTLA": {
@@ -5329,7 +5420,7 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13ZUDQ.jpg?h=b044a8f9&itok=8xF5eddm",
+                    "link": "https://images.weserv.nl/?url=cms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point_grid%2Fpublic%2Frail%2FHU13ZUDQ.jpg%3Fh%3Db044a8f9%26itok%3D8xF5eddm&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
@@ -5444,7 +5535,7 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13XM9G.jpg?h=b044a8f9&itok=lpHxXupd",
+                    "link": "https://images.weserv.nl/?url=cms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point_grid%2Fpublic%2Frail%2FHU13XM9G.jpg%3Fh%3Db044a8f9%26itok%3DlpHxXupd&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
@@ -5474,7 +5565,7 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/rail/HU13XS6H.jpg?h=b044a8f9&itok=FIFwIu8y",
+                    "link": "https://images.weserv.nl/?url=cms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point_grid%2Fpublic%2Frail%2FHU13XS6H.jpg%3Fh%3Db044a8f9%26itok%3DFIFwIu8y&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
@@ -5531,7 +5622,7 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://cms.huntington.org/sites/default/files/styles/large_focal_point_grid/public/2024-05/Mizuno_Round2-01.png?h=5217535f&itok=cK6GxRVR",
+                    "link": "https://images.weserv.nl/?url=cms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point_grid%2Fpublic%2F2024-05%2FMizuno_Round2-01.png%3Fh%3D5217535f%26itok%3DcK6GxRVR&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
@@ -5733,8 +5824,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "8843ff2f95d8917413f246b53a3a7cea"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "5f5eee7347f38127ce07783a49b55311"
         },
         "The 1960s\u2014A Generation on Fire: Judy Baca's Great Wall of Los Angeles-Skirball Cultural Center": {
             "name": "The 1960s\u2014A Generation on Fire: Judy Baca's Great Wall of Los Angeles",
@@ -5761,8 +5852,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "8da53557c5570731c0799722b44bda4e"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "4905d9bf696187888ffec4eee03c5c96"
         },
         "Jenny Yurshansky: What We Carry-Skirball Cultural Center": {
             "name": "Jenny Yurshansky: What We Carry",
@@ -5789,8 +5880,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "de67b746379bc1123d1fba3566dc2e04"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "c493e103b0987262f52160d5f01b09be"
         },
         "Patrisse Cullors: Wishes Made Material-Skirball Cultural Center": {
             "name": "Patrisse Cullors: Wishes Made Material",
@@ -5817,8 +5908,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "7837866b2f16734431047f81c8306428"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "610bfd500949d938fea77852d803e4f7"
         },
         "Common Ground-Skirball Cultural Center": {
             "name": "Common Ground",
@@ -5845,8 +5936,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "8d90b67fd4e4ea12297e42331cbe7f5c"
+            "last_updated": "2026-11-05 18:37:19",
+            "hash": "38060d07cea9d3abad9c92d85ee13a06"
         }
     },
     "USC Fisher Museum of Art": {
@@ -5876,9 +5967,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
+            "last_updated": "2026-11-05 18:37:20",
             "image_checked": "2026-11-04",
-            "hash": "74e9ce037e0e0734cd1f42dcd4111c85"
+            "hash": "4a691733471c266ec476ed28902e26ec"
         }
     },
     "Fowler Museum at UCLA": {
@@ -5908,8 +5999,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "4f3cc56eead3da9cbe5e792715315dc5"
+            "last_updated": "2026-11-05 18:37:20",
+            "hash": "c400f375acf34fcce78c0f9aa9e1e6d0"
         },
         "Field Notes from Begumpura-Fowler Museum at UCLA": {
             "name": "Field Notes from Begumpura",
@@ -5937,8 +6028,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "6b9f41cf6abd8e242a7f978861342068"
+            "last_updated": "2026-11-05 18:37:20",
+            "hash": "0d46a4f2f23ec36857ee1ee5ea27f054"
         },
         "Textiles as Monument-Fowler Museum at UCLA": {
             "name": "Textiles as Monument",
@@ -5963,12 +6054,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://fowler.ucla.edu/wp-content/uploads/2026/05/TAM-new-1.png",
+                    "link": "https://images.weserv.nl/?url=fowler.ucla.edu%2Fwp-content%2Fuploads%2F2026%2F05%2FTAM-new-1.png&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:27",
-            "hash": "0c837963c432b4650b0edd972c27f5e1"
+            "last_updated": "2026-11-05 18:37:20",
+            "hash": "a650d92a1f074fd8034450ccad51f5bf"
         },
         "Mountain Spirits: Rice and Indigeneity in the Northern Luzon Highlands, Philippines-Fowler Museum at UCLA": {
             "name": "Mountain Spirits: Rice and Indigeneity in the Northern Luzon Highlands, Philippines",
@@ -5996,8 +6087,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:28",
-            "hash": "d2d390aee8528c2eda4998d285cebdaf"
+            "last_updated": "2026-11-05 18:37:20",
+            "hash": "9388735937f68c2309fa70bf7fdc7107"
         }
     },
     "Vincent Price Art Museum": {
@@ -6027,8 +6118,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:28",
-            "hash": "cd91f78d22e4705e9d58b332bc085695"
+            "last_updated": "2026-11-05 18:37:20",
+            "hash": "7144106d4b2bfcfb7dbd13c5431444cb"
         },
         "francis and anthony almend\u00e1rez: navigating the archives within, vol. 2-Vincent Price Art Museum": {
             "name": "francis and anthony almend\u00e1rez: navigating the archives within, vol. 2",
@@ -6052,12 +6143,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://vpam.org/wp-content/uploads/2026/09/NTAW-Vol2_Promo-Image_Final.jpg",
+                    "link": "https://images.weserv.nl/?url=vpam.org%2Fwp-content%2Fuploads%2F2026%2F09%2FNTAW-Vol2_Promo-Image_Final.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:28",
-            "hash": "1c198e0dfaf57c3c5f0d1c84d34a7fa4"
+            "last_updated": "2026-11-05 18:37:20",
+            "hash": "c72b8a8231a58d8ab7996d220c7b5a49"
         },
         "California Collectives: Asian American moderns, 1924-1965-Vincent Price Art Museum": {
             "name": "California Collectives: Asian American moderns, 1924-1965",
@@ -6086,8 +6177,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:28",
-            "hash": "7d5d9bf9bc1200d5f01ba4184d886bf6"
+            "last_updated": "2026-11-05 18:37:20",
+            "hash": "f02f90676d61a202f25de41240b7ef23"
         }
     },
     "Armory Center for the Arts": {
@@ -6172,12 +6263,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.janm.org/sites/default/files/styles/small_image/public/2024-01/janm-exhibition-hibi-red-sky-spec-1.png?h=42a19710&itok=UmvT9ZT1",
+                    "link": "https://images.weserv.nl/?url=www.janm.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fsmall_image%2Fpublic%2F2024-01%2Fjanm-exhibition-hibi-red-sky-spec-1.png%3Fh%3D42a19710%26itok%3DUmvT9ZT1&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:30",
-            "hash": "5e6c5855df90b05ad1c8ecba162b7c9d"
+            "last_updated": "2026-11-05 18:37:21",
+            "hash": "5a9fcb7bd8138558e5872132ff62fe1e"
         }
     },
     "18th Street Arts Center": {
@@ -6203,12 +6294,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://18thstreet.org/wp-content/uploads/2026/06/IMG_6583-1-scaled.jpeg",
+                    "link": "https://images.weserv.nl/?url=18thstreet.org%2Fwp-content%2Fuploads%2F2026%2F06%2FIMG_6583-1-scaled.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "800339773afa08f099ff1f57d43cd2ec"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "843af8056ec2d6042c79736a6f0ef560"
         },
         "Haruka Yamada: \u201cSun of the City\u201d Mural-18th Street Arts Center": {
             "name": "Haruka Yamada: \u201cSun of the City\u201d Mural",
@@ -6236,8 +6327,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "bcd3076a300ba6e864f46aa58e63d3ba"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "8bdb6e6034d24574745425ea36a06c2a"
         },
         "Lauren Bon: Meandros-18th Street Arts Center": {
             "name": "Lauren Bon: Meandros",
@@ -6265,8 +6356,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "7c0d99d9845778be20fa390aacb09d05"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "5426913b20f6b5ffc9b599fd00dd5ce9"
         },
         "Rhizome\u2019s Solar Server-18th Street Arts Center": {
             "name": "Rhizome\u2019s Solar Server",
@@ -6294,8 +6385,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "ea53f0417494eb67494714d8a47971b6"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "e756bcd0fefa4a4d7f445fb4adadf28b"
         },
         "Hilla Toony Navok: Yellow Marquee-18th Street Arts Center": {
             "name": "Hilla Toony Navok: Yellow Marquee",
@@ -6323,8 +6414,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "29f065c048503ebdefd7747a2eb59754"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "e1a9b06019010623e223f89d1a434595"
         },
         "Sage Ni\u2019Ja Whitson: Revival_ _Revival-18th Street Arts Center": {
             "name": "Sage Ni\u2019Ja Whitson: Revival_ _Revival",
@@ -6352,9 +6443,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
+            "last_updated": "2026-11-05 18:37:22",
             "image_checked": "2026-11-04",
-            "hash": "914f490b5fda92905211086bae3aa09f"
+            "hash": "f8be7bcd918ac43ef503d183a3844c21"
         },
         "RED ALL NIGHTmare on 18th Street-18th Street Arts Center": {
             "name": "RED ALL NIGHTmare on 18th Street",
@@ -6382,8 +6473,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "71d61e77bb6da155d6b59956ba15a601"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "e9324e4dcd1ceaab23a075b08eb3751c"
         },
         "RED ALL NIGHTmare on 18th Street \u2013 Opening Reception-18th Street Arts Center": {
             "name": "RED ALL NIGHTmare on 18th Street \u2013 Opening Reception",
@@ -6411,8 +6502,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "b41df51739a9c286fd5b0489637201d7"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "07c57f5435f044cc4b2c345db19e8b0d"
         },
         "Ghost Agency: Smooth Criminal-18th Street Arts Center": {
             "name": "Ghost Agency: Smooth Criminal",
@@ -6440,8 +6531,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "c28057c79de5ef2323e7445e23b125f7"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "93b9193f3e223685e1817b1d5867aec6"
         },
         "Molly Cleator and Anne Bray present: Skirting-18th Street Arts Center": {
             "name": "Molly Cleator and Anne Bray present: Skirting",
@@ -6469,8 +6560,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "08af93146584dfae3012af3601c595a0"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "d26367b69d3c7c17dc3929652db35d03"
         },
         "The Final Rally: Anemone Bleaching-18th Street Arts Center": {
             "name": "The Final Rally: Anemone Bleaching",
@@ -6498,8 +6589,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "415dc30d76c2ab7efc4e535426db60e2"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "56ab975bce2367fea35aa5bf9f8091a5"
         }
     },
     "USC Pacific Asia Museum": {
@@ -6524,12 +6615,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/08/Chakrasamvara-with-Consort-Vajravarahi-1920x2732.jpg",
+                    "link": "https://images.weserv.nl/?url=pacificasiamuseum.usc.edu%2Fwp-content%2Fuploads%2F2026%2F08%2FChakrasamvara-with-Consort-Vajravarahi-1920x2732.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "6bf8f31041618b25758e6a9d469b4ff5"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "ba3aaa68255773d4d9a4c433163e8c73"
         },
         "We Are Connected: Highlights from the USC Pacific Asia Museum Himalayan Collection-USC Pacific Asia Museum": {
             "name": "We Are Connected: Highlights from the USC Pacific Asia Museum Himalayan Collection",
@@ -6552,12 +6643,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/09/05008001.jpg",
+                    "link": "https://images.weserv.nl/?url=pacificasiamuseum.usc.edu%2Fwp-content%2Fuploads%2F2026%2F09%2F05008001.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "c4ff8a40116fdd1d5db80f82a8099b06"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "1bdaba7e71549e946840689f94f9ee57"
         },
         "Hung Liu: Secret Freedom-USC Pacific Asia Museum": {
             "name": "Hung Liu: Secret Freedom",
@@ -6584,8 +6675,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:31",
-            "hash": "e1c3d5ffb5f521e191ead8e21d9207e5"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "cb59ff2f67e2a04c5af36fa342fe4ea8"
         },
         "Ten Years to Sharpen a Sword: Lauren YS Featuring Makoto-USC Pacific Asia Museum": {
             "name": "Ten Years to Sharpen a Sword: Lauren YS Featuring Makoto",
@@ -6612,9 +6703,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:32",
+            "last_updated": "2026-11-05 18:37:22",
             "image_checked": "2026-11-04",
-            "hash": "0fb29624b147ebec9c03500739a94d81"
+            "hash": "ea02f202574acece8eca156140a15760"
         }
     },
     "Wende Museum": {
@@ -6644,8 +6735,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:32",
-            "hash": "7917bfda4f218a9b96b365896d3cb319"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "f3ecc5e6b5623b872298f98e4297858a"
         },
         "Between Two Empires: Argentina in the Cold War Pendulum (1945\u20131989)-Wende Museum": {
             "name": "Between Two Empires: Argentina in the Cold War Pendulum (1945\u20131989)",
@@ -6673,8 +6764,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:32",
-            "hash": "29f60cfbebcd6bdcc8e4c3f920dd47c2"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "1aaa8b4caab1f7ff447f1ee5e2056867"
         },
         "Competing Cosmologies: Interpreting the Sky-Wende Museum": {
             "name": "Competing Cosmologies: Interpreting the Sky",
@@ -6702,8 +6793,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:32",
-            "hash": "db44683679aedc7eaa30b24ca5868f02"
+            "last_updated": "2026-11-05 18:37:22",
+            "hash": "0990fae2ca3d40049957718e053d2959"
         }
     },
     "Craft Contemporary": {
@@ -6732,9 +6823,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:33",
+            "last_updated": "2026-11-05 18:37:23",
             "image_checked": "2026-11-04",
-            "hash": "8652efc7bed9c4d7655218ce2f6836ce"
+            "hash": "0b6f7990487e5c5eb6a7239c4400efa7"
         },
         "Embers of Generational Memory-Craft Contemporary": {
             "name": "Embers of Generational Memory",
@@ -6761,9 +6852,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:33",
+            "last_updated": "2026-11-05 18:37:24",
             "image_checked": "2026-11-04",
-            "hash": "08f764e6db8257153be7f040f4f37dc1"
+            "hash": "32f88f97338c5e51d0d0418ef2bef3e7"
         },
         "Maker-in-Residence: Meztli Projects-Craft Contemporary": {
             "name": "Maker-in-Residence: Meztli Projects",
@@ -6790,9 +6881,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:33",
+            "last_updated": "2026-11-05 18:37:25",
             "image_checked": "2026-11-04",
-            "hash": "afbe15c19f012a7def5468271ba3eb6c"
+            "hash": "07a791512816fb7299e15980f25c1546"
         },
         "B\u2019atz\u2019: Legacy in Guatemalan Textiles & Contemporary Art-Craft Contemporary": {
             "name": "B\u2019atz\u2019: Legacy in Guatemalan Textiles & Contemporary Art",
@@ -6820,9 +6911,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:33",
+            "last_updated": "2026-11-05 18:37:25",
             "image_checked": "2026-11-04",
-            "hash": "43c8f013edce0e11b560c1a58af6f0f3"
+            "hash": "6a1269bf33983444a97b3a836b21de21"
         }
     },
     "California African American Museum": {
@@ -6851,9 +6942,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:34",
+            "last_updated": "2026-11-05 18:37:26",
             "image_checked": "2026-11-04",
-            "hash": "b73b7c2f21e2d134e8c3a6817135e7df"
+            "hash": "0cc5c6b86418cc0859a6f26d31a7b325"
         },
         "Free and Queer: Black Californian Roots of Gay Liberation-California African American Museum": {
             "name": "Free and Queer: Black Californian Roots of Gay Liberation",
@@ -6881,9 +6972,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:34",
+            "last_updated": "2026-11-05 18:37:26",
             "image_checked": "2026-11-04",
-            "hash": "b1b254de5c46ed934808c20f39e0ceb1"
+            "hash": "f2b57eafc89fdf27981e7965775aa79b"
         },
         "Reggie Burrows Hodges: A Theater of Miracles-California African American Museum": {
             "name": "Reggie Burrows Hodges: A Theater of Miracles",
@@ -6910,9 +7001,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:34",
+            "last_updated": "2026-11-05 18:37:26",
             "image_checked": "2026-11-04",
-            "hash": "66e4b6a0d0f0ef4bf39e98817eb1c923"
+            "hash": "e6681570321bbbce257d9f28e5a09b85"
         },
         "Sinners: Sounds That Summon-California African American Museum": {
             "name": "Sinners: Sounds That Summon",
@@ -6939,9 +7030,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:34",
+            "last_updated": "2026-11-05 18:37:26",
             "image_checked": "2026-11-04",
-            "hash": "4820d244dfea9e65d03194de4442fc72"
+            "hash": "becb9588cdaebebd43e5840bca753d46"
         },
         "Fred Wilson: Reflections-California African American Museum": {
             "name": "Fred Wilson: Reflections",
@@ -6968,9 +7059,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:34",
+            "last_updated": "2026-11-05 18:37:26",
             "image_checked": "2026-11-04",
-            "hash": "3c9f1b6724632511f755de5569c82781"
+            "hash": "6bd8d2c5408791c05e6f93794ffb4eef"
         },
         "Jamea Richmond-Edwards: Another World and Yet the Same-California African American Museum": {
             "name": "Jamea Richmond-Edwards: Another World and Yet the Same",
@@ -6997,9 +7088,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:34",
+            "last_updated": "2026-11-05 18:37:26",
             "image_checked": "2026-11-04",
-            "hash": "7cd593f569e0e1119b7c3bfd18d2f482"
+            "hash": "7dfa799376cfcdfdfc64e76935e255f2"
         }
     },
     "Museum of Latin American Art": {
@@ -7028,9 +7119,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:35",
+            "last_updated": "2026-11-05 18:37:27",
             "image_checked": "2026-11-04",
-            "hash": "3aee1895a245f83ace27f67f0cb7f49a"
+            "hash": "fc6840a1a90fbda371aa34cca4172db4"
         },
         "Sigils: Unveiling the Sacred in the MOLAA Permanent Collection-Museum of Latin American Art": {
             "name": "Sigils: Unveiling the Sacred in the MOLAA Permanent Collection",
@@ -7057,9 +7148,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:35",
+            "last_updated": "2026-11-05 18:37:27",
             "image_checked": "2026-11-04",
-            "hash": "91bd46ebf4f648d009cf94a14748a912"
+            "hash": "127da32a51cbbe6a3964309a7cc82e9a"
         },
         "RED RED RED, Geometry of a Scar-Museum of Latin American Art": {
             "name": "RED RED RED, Geometry of a Scar",
@@ -7086,9 +7177,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:35",
+            "last_updated": "2026-11-05 18:37:27",
             "image_checked": "2026-11-04",
-            "hash": "59a930133a318e33193ff7c334af8603"
+            "hash": "78cdbe0f09d9b13560c209bb42423d36"
         },
         "Antonio Romero: TROPICALIA [VOL2]-Museum of Latin American Art": {
             "name": "Antonio Romero: TROPICALIA [VOL2]",
@@ -7115,9 +7206,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:36",
+            "last_updated": "2026-11-05 18:37:28",
             "image_checked": "2026-11-04",
-            "hash": "b1384241995af8267500cf84ce5a1a00"
+            "hash": "89b2a81072f00f1f29194a686cd8b9af"
         }
     },
     "Institute of Contemporary Art, Los Angeles": {
@@ -7147,9 +7238,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:36",
-            "hash": "bcd2c197ba6624d5165c45c74bc0bab6",
-            "image_checked": "2026-11-04"
+            "last_updated": "2026-11-05 18:37:29",
+            "image_checked": "2026-11-04",
+            "hash": "38404902dd6300300a7cd51f481e6cd8"
         },
         "Zoe Walsh: Gathering-Institute of Contemporary Art, Los Angeles": {
             "name": "Zoe Walsh: Gathering",
@@ -7177,9 +7268,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:36",
-            "hash": "eda28f8c3e2b8af6024a1e40eb9d776d",
-            "image_checked": "2026-11-04"
+            "last_updated": "2026-11-05 18:37:29",
+            "image_checked": "2026-11-04",
+            "hash": "ef7df9b55d30076ae8726154f2fd9cb3"
         },
         "Amia Yokoyama: Our Strange Hollows-Institute of Contemporary Art, Los Angeles": {
             "name": "Amia Yokoyama: Our Strange Hollows",
@@ -7207,9 +7298,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:37",
-            "hash": "7c2af8b94524d2ff77fc5e19e6ef22c4",
-            "image_checked": "2026-11-04"
+            "last_updated": "2026-11-05 18:37:29",
+            "image_checked": "2026-11-04",
+            "hash": "c8b5580fe509579df036e7245d338007"
         },
         "Teresa Baker: Somewhere Between Earth and Sky-Institute of Contemporary Art, Los Angeles": {
             "name": "Teresa Baker: Somewhere Between Earth and Sky",
@@ -7237,8 +7328,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:37",
-            "hash": "bacafc83716d2a51d9c29ccd39f00c2e"
+            "last_updated": "2026-11-05 18:37:29",
+            "hash": "16e713af464e286f98d81ef458107615"
         },
         "Sming Sming Books: LONG LIVE BOOKS!-Institute of Contemporary Art, Los Angeles": {
             "name": "Sming Sming Books: LONG LIVE BOOKS!",
@@ -7266,8 +7357,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:33:37",
-            "hash": "1395d1c05a88dc21f294b7175d04c901"
+            "last_updated": "2026-11-05 18:37:29",
+            "hash": "898f434d79727a26e94959f75fc6498f"
         }
     },
     "Regen Projects": {
@@ -7297,8 +7388,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:33",
-            "hash": "aaa33d5db94546f1c3c5bdcc56587487"
+            "last_updated": "2026-11-05 18:37:29",
+            "hash": "68562167400d0e46322bba2cefc406ab"
         }
     },
     "David Kordansky Gallery": {
@@ -7324,13 +7415,13 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_1600,h_1200,c_lfill/exhibit-e/675c7754605ea781900ec16e/a999f6015fd359a28c1e53411433c740.jpeg",
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1600%2Ch_1200%2Cc_lfill%2Fexhibit-e%2F675c7754605ea781900ec16e%2Fa999f6015fd359a28c1e53411433c740.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:39",
-            "hash": "3b1e00e45a23f16c3910991ba97d5726",
-            "image_checked": "2026-11-04"
+            "last_updated": "2026-11-05 18:37:33",
+            "image_checked": "2026-11-04",
+            "hash": "689749812a69eb2a42f92e0bb2c9e462"
         },
         "Ivan Morley: Trees-David Kordansky Gallery": {
             "name": "Ivan Morley: Trees",
@@ -7354,13 +7445,13 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_1600,h_1200,c_lfill/exhibit-e/675c7754605ea781900ec16e/560d19cc9a06b56c921baaabee04167d.jpeg",
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1600%2Ch_1200%2Cc_lfill%2Fexhibit-e%2F675c7754605ea781900ec16e%2F560d19cc9a06b56c921baaabee04167d.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:39",
-            "hash": "234696fab7a286c1fd1c1cbb0723737e",
-            "image_checked": "2026-11-04"
+            "last_updated": "2026-11-05 18:37:33",
+            "image_checked": "2026-11-04",
+            "hash": "330be1d9109e54c6c2bd5bc9755222f4"
         },
         "Abraham Lincoln Walker: After World, 1980\u20131991-David Kordansky Gallery": {
             "name": "Abraham Lincoln Walker: After World, 1980\u20131991",
@@ -7384,12 +7475,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_1600,h_1200,c_lfill/exhibit-e/675c7754605ea781900ec16e/0f2d7b4522186925cae15ce57b47d862.jpeg",
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1600%2Ch_1200%2Cc_lfill%2Fexhibit-e%2F675c7754605ea781900ec16e%2F0f2d7b4522186925cae15ce57b47d862.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:39",
-            "hash": "9b0dbc6024861fe618274299dc3549e5"
+            "last_updated": "2026-11-05 18:37:33",
+            "hash": "0c976075f7c79b3ff05b02dd19d6ecff"
         }
     },
     "Night Gallery": {
@@ -7415,12 +7506,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_1080,h_840,c_lfill/exhibit-e/58efe75202a9377c212b12c6/88d3423ac99912128d831c35cfef89f8.jpeg",
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1080%2Ch_840%2Cc_lfill%2Fexhibit-e%2F58efe75202a9377c212b12c6%2F88d3423ac99912128d831c35cfef89f8.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:40",
-            "hash": "7bbb07773f1d769805dcbc34db2c9d94"
+            "last_updated": "2026-11-05 18:37:34",
+            "hash": "7725c78727b60f1ca6b9e5c961517513"
         },
         "Carla Edwards: Wrung Out Put Up Wet-Night Gallery": {
             "name": "Carla Edwards: Wrung Out Put Up Wet",
@@ -7448,8 +7539,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:40",
-            "hash": "64200a2f11b682e2e3b7e0be64e4be5d"
+            "last_updated": "2026-11-05 18:37:34",
+            "hash": "32a7eb346a523023f06ab26ed1264f25"
         }
     },
     "Roberts Projects": {
@@ -7475,12 +7566,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_816,h_600,c_lfill/exhibit-e/5cba1172a5aa2c2c113bee51/bab958c06c6af12f3b2d5fa3e1625f63.jpeg",
+                    "link": "https://static-assets.artlogic.net/w_816,h_600,c_lfill/exhibit-e/5cba1172a5aa2c2c113bee51/aad4a9f32f3cb05a80bba5d69fc6a325.jpeg",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:43",
-            "hash": "410694b77e5aac396afaa64f7adfc7d9"
+            "last_updated": "2026-11-05 18:37:36",
+            "hash": "f964e78e2544f623b16f2f9761a79294"
         },
         "Collins Obijiaku: Wherever You Are, Remember Me-Roberts Projects": {
             "name": "Collins Obijiaku: Wherever You Are, Remember Me",
@@ -7504,12 +7595,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_816,h_600,c_lfill/exhibit-e/5cba1172a5aa2c2c113bee51/328289ecb3407b6dd87e22f08852235c.jpeg",
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_816%2Ch_600%2Cc_lfill%2Fexhibit-e%2F5cba1172a5aa2c2c113bee51%2F7d7a2d96c39593d175fa4537eba396b9.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:43",
-            "hash": "041de7fccd2c52a5e5d709ab77b75a0b"
+            "last_updated": "2026-11-05 18:37:36",
+            "hash": "4e0e2d5a668c3169a3c8eac48387741a"
         }
     },
     "Nazarian / Curcio": {
@@ -7539,8 +7630,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:43",
-            "hash": "6b6bae40b069464d48db49750c6cdd38"
+            "last_updated": "2026-11-05 18:37:37",
+            "hash": "a4b8ab6a7de071ed38a5e265ec618e73"
         },
         "Mar Figueroa-Nazarian / Curcio": {
             "name": "Mar Figueroa",
@@ -7568,8 +7659,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:43",
-            "hash": "6e28ff8012466696a10d18ddc74da8be"
+            "last_updated": "2026-11-05 18:37:37",
+            "hash": "581852705c5a6357fd0d936bbb9f8dc0"
         },
         "Peter McRury-Nazarian / Curcio": {
             "name": "Peter McRury",
@@ -7597,8 +7688,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:44",
-            "hash": "c9af633f32a07308e8fee8b99e3b0355"
+            "last_updated": "2026-11-05 18:37:37",
+            "hash": "48c3b7414de75af3b47c98537d634295"
         }
     },
     "Fran\u00e7ois Ghebaly": {
@@ -7628,8 +7719,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:44",
-            "hash": "60691285cdafe4d2eb5b83f3b14db570"
+            "last_updated": "2026-11-05 18:37:38",
+            "hash": "7333d20719cd24390b3fedae19e2d395"
         }
     },
     "Charlie James Gallery": {
@@ -7655,12 +7746,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://images.squarespace-cdn.com/content/v1/5fa196c157852a3ac79f4c49/1790008706035-X9LLCH5V69UJA0YVEQO2/Screenshot+2026-09-21+at+9.38.22%E2%80%AFAM.png",
+                    "link": "https://images.weserv.nl/?url=images.squarespace-cdn.com%2Fcontent%2Fv1%2F5fa196c157852a3ac79f4c49%2F1790008706035-X9LLCH5V69UJA0YVEQO2%2FScreenshot%2B2026-09-21%2Bat%2B9.38.22%25E2%2580%25AFAM.png&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:45",
-            "hash": "8797017b28b5b705c656f5b4f4b3d643"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "ac0cf0e117004eae7087c8f7f7ff4e8a"
         },
         "Food and Beyond, Beyond Food-Charlie James Gallery": {
             "name": "Food and Beyond, Beyond Food",
@@ -7688,8 +7779,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:45",
-            "hash": "d7e1fb57a5647f83c342135218ac9893"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "d3bb583f4be20c2d15aec47ff66da519"
         },
         "Rigoberto Torres: Vecinos-Charlie James Gallery": {
             "name": "Rigoberto Torres: Vecinos",
@@ -7717,8 +7808,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:45",
-            "hash": "caa586dbd4457dfa742ca8144ab90574"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "45f492cde7cc510d91d25b73c9acebed"
         }
     },
     "Anat Ebgi Gallery": {
@@ -7748,8 +7839,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:46",
-            "hash": "bae47d39fe513702fb83b9b4e86fa82e"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "6f70705376b5f8997a828532b20213e0"
         },
         "Jenny Morgan: Hours at the Edge-Anat Ebgi Gallery": {
             "name": "Jenny Morgan: Hours at the Edge",
@@ -7777,8 +7868,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:46",
-            "hash": "26c6830a9da07bf28ad1f42324ee7f53"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "06df0174740410146433bf67afed188c"
         }
     },
     "Commonwealth and Council": {
@@ -7808,8 +7899,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:46",
-            "hash": "c742f0e8a2000a013e55d82c62900d7e"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "042fb7621724635c46ea642e719e4ddc"
         },
         "Jemima Wyman: Shimmering Menace-Commonwealth and Council": {
             "name": "Jemima Wyman: Shimmering Menace",
@@ -7837,8 +7928,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:46",
-            "hash": "ae5e9e632c160222f15cbd55da2ba044"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "deb0d2eba41bd5eae78daf0bb2e0b03c"
         },
         "Maryrose Cobarrubias Mendoza: AAAgent presents: Past Time-Commonwealth and Council": {
             "name": "Maryrose Cobarrubias Mendoza: AAAgent presents: Past Time",
@@ -7866,8 +7957,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:46",
-            "hash": "bd41f7de338f7913a404d964bd007e1a"
+            "last_updated": "2026-11-05 18:37:39",
+            "hash": "09e7b320fb6ab076780f18727064c015"
         }
     },
     "Gagosian Beverly Hills": {
@@ -7897,8 +7988,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:46",
-            "hash": "e783793f38b3b1b3a2232b488fae9fd4"
+            "last_updated": "2026-11-05 18:37:40",
+            "hash": "ba9c289cd906ad770fce4c7e72859804"
         },
         "Friends and Legends: The Collection of Michael Chow-Gagosian Beverly Hills": {
             "name": "Friends and Legends: The Collection of Michael Chow",
@@ -7926,8 +8017,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:46",
-            "hash": "584192fb82b1bf3139a834ff49795951"
+            "last_updated": "2026-11-05 18:37:40",
+            "hash": "3e9f21741fa61d8cced2135364ac6090"
         }
     },
     "Spr\u00fcth Magers Los Angeles": {
@@ -7958,8 +8049,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:48",
-            "hash": "a19ee8fb1251cf259c6cf88457e8b58b"
+            "last_updated": "2026-11-05 18:37:42",
+            "hash": "600ee674628fb67f5d974fb036a589c9"
         }
     },
     "Kohn Gallery": {
@@ -7989,8 +8080,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:49",
-            "hash": "11a9aaadcdf7a51e430114e609512243"
+            "last_updated": "2026-11-05 18:37:44",
+            "hash": "8f047e0fc5d4f78a46d11961db1b771c"
         },
         "Lita Albuquerque-Kohn Gallery": {
             "name": "Lita Albuquerque",
@@ -8018,8 +8109,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:25:50",
-            "hash": "0e190824867f624fb1a57c1472e8d0e6"
+            "last_updated": "2026-11-05 18:37:44",
+            "hash": "363443a4b605f44d52bb6c5575b8ef48"
         }
     }
 }

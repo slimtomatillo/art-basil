@@ -25,8 +25,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:24",
-            "hash": "077f37b0bac1462bdc7d8a4d8d3219b6"
+            "last_updated": "2026-11-05 18:40:21",
+            "hash": "a3b8b91d98ce36231cc61aab2c51262e"
         },
         "Semiha Berksoy: Aria of All Colors-Istanbul Modern": {
             "name": "Semiha Berksoy: Aria of All Colors",
@@ -53,8 +53,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:25",
-            "hash": "2efe5d518cef67f6e895f63139a57852"
+            "last_updated": "2026-11-05 18:40:22",
+            "hash": "d1989f1a4f4af5dc4cda68b60c0d7e8a"
         },
         "Panorama: Dreams and Places-Istanbul Modern": {
             "name": "Panorama: Dreams and Places",
@@ -81,8 +81,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:33",
-            "hash": "b2fa8fb2a03e0c6209660f41a113e8e5"
+            "last_updated": "2026-11-05 18:40:28",
+            "hash": "4b02d5d84e213c990b1db9fa88a20993"
         },
         "Renzo Piano: Genius Loci-Istanbul Modern": {
             "name": "Renzo Piano: Genius Loci",
@@ -109,8 +109,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:27",
-            "hash": "4ba7530406a1e5d6e178acd20025a36d"
+            "last_updated": "2026-11-05 18:40:24",
+            "hash": "723b2b30856b7b5c5cda529cb2b4abfa"
         },
         "Manuel \u00c7\u0131tak: An Island of One\u2019s Own-Istanbul Modern": {
             "name": "Manuel \u00c7\u0131tak: An Island of One\u2019s Own",
@@ -118,10 +118,10 @@
             "description": null,
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "museum"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": null,
                 "end": null
@@ -133,12 +133,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.istanbulmodern.org/contents/piclib/content/4207/ekran-goruntusu-2026-09-18-154910-56966-0838286.png",
+                    "link": "https://www.istanbulmodern.org/contents/piclib/content/4207/manuel-citak-50482-5410917.jpg",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:31",
-            "hash": "2c965bdb21301646720f4ca31b73c239"
+            "last_updated": "2026-11-05 18:40:19",
+            "hash": "9e2ee70decb5ed8ff6512750c711b052"
         },
         "Ali Kazma: Landscapes of the Mind-Istanbul Modern": {
             "name": "Ali Kazma: Landscapes of the Mind",
@@ -165,8 +165,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:34",
-            "hash": "b368414a50e1b60df73ce938261cb9e8"
+            "last_updated": "2026-11-05 18:40:30",
+            "hash": "82765d9d0125d6a67ee2a91a4c79c116"
         },
         "\u00d6mer Ulu\u00e7: Beyond the Horizon-Istanbul Modern": {
             "name": "\u00d6mer Ulu\u00e7: Beyond the Horizon",
@@ -193,8 +193,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:36",
-            "hash": "56443d74e45ca6f2abe64b052b35e70a"
+            "last_updated": "2026-11-05 18:40:32",
+            "hash": "3147d34d8ac0948b748898698aacdecf"
         },
         "\u0130zzet Keribar: Journey of Colors-Istanbul Modern": {
             "name": "\u0130zzet Keribar: Journey of Colors",
@@ -221,8 +221,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:38",
-            "hash": "9c06168b4699b27831a07c4c7835dd37"
+            "last_updated": "2026-11-05 18:40:34",
+            "hash": "eed63695e3e5755eab30d21ac682f63c"
         },
         "Chiharu Shiota: Between Worlds-Istanbul Modern": {
             "name": "Chiharu Shiota: Between Worlds",
@@ -249,8 +249,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:39",
-            "hash": "250d3f52007d0ba5dc913d06711190ed"
+            "last_updated": "2026-11-05 18:40:36",
+            "hash": "53a79d1d607e980792f0b923d395eb65"
         },
         "Olafur Eliasson: Your unexpected encounter-Istanbul Modern": {
             "name": "Olafur Eliasson: Your unexpected encounter",
@@ -277,8 +277,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:41",
-            "hash": "a45d394dfd3fb0a9c39ed79e494577b3"
+            "last_updated": "2026-11-05 18:40:38",
+            "hash": "f9ae9778da26d89ea396532e67a0681c"
         },
         "Ozan Sa\u011fd\u0131\u00e7: The Photographer\u2019s Testimony-Istanbul Modern": {
             "name": "Ozan Sa\u011fd\u0131\u00e7: The Photographer\u2019s Testimony",
@@ -334,8 +334,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:29",
-            "hash": "e4e5a4c38460a815fb770aff142c1afc"
+            "last_updated": "2026-11-05 18:40:26",
+            "hash": "4170b0818e93c59cfceb4f19054a1e38"
         }
     },
     "Sak\u0131p Sabanc\u0131 Museum": {
@@ -364,8 +364,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:44",
-            "hash": "e3505f3f32268f38345648c6901cc23b"
+            "last_updated": "2026-11-05 18:40:42",
+            "hash": "68c450e8d911149a523b60d551cccd7a"
         },
         "Scribbled Exercises, Practice Pages-Sak\u0131p Sabanc\u0131 Museum": {
             "name": "Scribbled Exercises, Practice Pages",
@@ -392,8 +392,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:46",
-            "hash": "e6c4839fa3b6df2e9a28ed3de3df611d"
+            "last_updated": "2026-11-05 18:40:44",
+            "hash": "5aececcf4d36e7d4c15e2f9753623126"
         },
         "Sak\u0131p Sabanc\u0131 Museum Painting Collection-Sak\u0131p Sabanc\u0131 Museum": {
             "name": "Sak\u0131p Sabanc\u0131 Museum Painting Collection",
@@ -421,8 +421,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:48",
-            "hash": "63ccdfe485901f61d3e6dcf93d1efde7"
+            "last_updated": "2026-11-05 18:40:46",
+            "hash": "9e60f86c8909b9b7a23d28b33a83c605"
         },
         "Sak\u0131p Sabanc\u0131 Museum The Arts of the Book and Calligraphy Collection-Sak\u0131p Sabanc\u0131 Museum": {
             "name": "Sak\u0131p Sabanc\u0131 Museum The Arts of the Book and Calligraphy Collection",
@@ -449,8 +449,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:51",
-            "hash": "5df1a8ac038fdbf62c522f7249fe37f7"
+            "last_updated": "2026-11-05 18:40:48",
+            "hash": "a5a600a018fd21d1e6fd3b8a1b978625"
         },
         "Suzanne Lacy: Birlikte/Tog\u00e6ther-Sak\u0131p Sabanc\u0131 Museum": {
             "name": "Suzanne Lacy: Birlikte/Tog\u00e6ther",
@@ -477,8 +477,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:52",
-            "hash": "e87b7398df7b21d979e2024d32984c40"
+            "last_updated": "2026-11-05 18:40:51",
+            "hash": "bdeaab3d7377a90ec0d5d34d3774b3a2"
         },
         "Georg Baselitz: The Last Decade-Sak\u0131p Sabanc\u0131 Museum": {
             "name": "Georg Baselitz: The Last Decade",
@@ -508,8 +508,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:54",
-            "hash": "b0b1ab996d38bb4397831534b731001e"
+            "last_updated": "2026-11-05 18:40:53",
+            "hash": "29576cd3b9c06988e86076ecf4c0e40d"
         }
     },
     "Salt Galata": {
@@ -538,8 +538,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:04",
-            "hash": "e83af734e1678816e84fdd7e98c0d260"
+            "last_updated": "2026-11-05 18:41:07",
+            "hash": "9610fd971ab0b90da946662cada386a5"
         },
         "Subsoil Onur G\u00f6kmen-Salt Galata": {
             "name": "Subsoil Onur G\u00f6kmen",
@@ -566,8 +566,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:07",
-            "hash": "21f88f7a955df208ea07d0d864d2c54d"
+            "last_updated": "2026-11-05 18:41:11",
+            "hash": "c3132b2cb2c4414a6ceb6cce8990e911"
         },
         "Epipe G\u00fcne\u015f Terkol-Salt Galata": {
             "name": "Epipe G\u00fcne\u015f Terkol",
@@ -594,8 +594,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:11",
-            "hash": "62bb59dcd528a2e9ba934a16a500aac5"
+            "last_updated": "2026-11-05 18:41:15",
+            "hash": "92a19b8ebf7ed15eb3be4aa5f355b3a3"
         },
         "Dark World-Salt Galata": {
             "name": "Dark World",
@@ -622,8 +622,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:15",
-            "hash": "2db276b97d097e1c837521bf857f4b17"
+            "last_updated": "2026-11-05 18:41:18",
+            "hash": "4422e0268d9c5432bf48e648fe1e2c61"
         },
         "Ali Tapt\u0131k, Merve Mepa, Asl\u0131 Uluda\u011f-Salt Galata": {
             "name": "Ali Tapt\u0131k, Merve Mepa, Asl\u0131 Uluda\u011f",
@@ -650,8 +650,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:21",
-            "hash": "56ab7c81bc792a5ae1163af94486f964"
+            "last_updated": "2026-11-05 18:41:25",
+            "hash": "fc615a7b3681687e60bedb7193fdc497"
         },
         "Ayamama Swa(m)p: Urban Resilience & Revival of the River Corridor-Salt Galata": {
             "name": "Ayamama Swa(m)p: Urban Resilience & Revival of the River Corridor",
@@ -678,8 +678,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:22",
-            "hash": "7bffc7f4d38f751d83b3055dd2f00f2c"
+            "last_updated": "2026-11-05 18:41:28",
+            "hash": "480d25327c738c17ba70963c99dc9fdf"
         },
         "Translated into Socialism-Salt Galata": {
             "name": "Translated into Socialism",
@@ -706,8 +706,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:24",
-            "hash": "4467f6d80405a075a5a3a172e288a368"
+            "last_updated": "2026-11-05 18:41:30",
+            "hash": "2d944c908b87d30f2391fee6048a0eb6"
         },
         "No Admittance Except on Business-Salt Galata": {
             "name": "No Admittance Except on Business",
@@ -730,12 +730,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://saltonline.org/assets/54f7a717-ba45-429b-8aa7-51046d2c9a9c?fit=contain&width=1200&quality=75&format=webp",
+                    "link": "https://images.weserv.nl/?url=saltonline.org%2Fassets%2F54f7a717-ba45-429b-8aa7-51046d2c9a9c%3Ffit%3Dcontain%26width%3D1200%26quality%3D75%26format%3Dwebp&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:02",
-            "hash": "dfaa575134035608feef63cea7c8e037"
+            "last_updated": "2026-11-05 18:41:05",
+            "hash": "9a7405ff3e8de3d0142ae02078229005"
         }
     },
     "Salt Beyo\u011flu": {
@@ -765,8 +765,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:35:58",
-            "hash": "fb75f0a49a0a178c02c178f6c99984df"
+            "last_updated": "2026-11-05 18:41:00",
+            "hash": "f4a89f991708ec0684ff63cc8e75af3c"
         },
         "15 Years at Salt: Exhibition Posters-Salt Beyo\u011flu": {
             "name": "15 Years at Salt: Exhibition Posters",
@@ -793,8 +793,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:00",
-            "hash": "e84c7caa117e6e55cab8642a24b8ee81"
+            "last_updated": "2026-11-05 18:41:03",
+            "hash": "531e3ba1bdfd5c8bd2e364893ab28813"
         },
         "Breaking Through a Dam-Salt Beyo\u011flu": {
             "name": "Breaking Through a Dam",
@@ -821,8 +821,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:06",
-            "hash": "fc92fc1c1a6feb8a5a092393fce90f5b"
+            "last_updated": "2026-11-05 18:41:09",
+            "hash": "262e6735d3cd6a7b08888d6c2ea8176c"
         },
         "Trash-Salt Beyo\u011flu": {
             "name": "Trash",
@@ -849,8 +849,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:09",
-            "hash": "edf165d6a7a8261ef7665df2b468fb09"
+            "last_updated": "2026-11-05 18:41:13",
+            "hash": "b443ead87e7c20f3179778d396fb3d92"
         },
         "We've Been at the Tapestry Studio Since the 90s-Salt Beyo\u011flu": {
             "name": "We've Been at the Tapestry Studio Since the 90s",
@@ -878,8 +878,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:13",
-            "hash": "46338f5a1bccab2dde4d84fd23100b2e"
+            "last_updated": "2026-11-05 18:41:16",
+            "hash": "baf8e7dc3a474319dc517a1a7c31bea4"
         },
         "Anatolian Plant Legacy-Salt Beyo\u011flu": {
             "name": "Anatolian Plant Legacy",
@@ -906,8 +906,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:17",
-            "hash": "f3c6610f8579bccbcce9d6d1fa32bbfd"
+            "last_updated": "2026-11-05 18:41:21",
+            "hash": "ff68d694d8b3ee587788559324da7bcd"
         },
         "The Lives of Animals-Salt Beyo\u011flu": {
             "name": "The Lives of Animals",
@@ -934,8 +934,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:19",
-            "hash": "b5361b72b9df44f977ab0c7f5617c99e"
+            "last_updated": "2026-11-05 18:41:23",
+            "hash": "ca91ead1ad904b96d7ee755e9018b1cd"
         },
         "Designer's Note-Salt Beyo\u011flu": {
             "name": "Designer's Note",
@@ -962,8 +962,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:26",
-            "hash": "893217d875d51d8d780c03f9aa795a59"
+            "last_updated": "2026-11-05 18:41:32",
+            "hash": "96e0e2522c4eda7d7e1f8d83157cc2ab"
         }
     },
     "Pera Museum": {
@@ -993,8 +993,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "020936a74df9200e238c45ace8eab96b"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "61ad92360febe8e4bb743658faa6795f"
         },
         "Frank Bowling: Creation and Destruction-Pera Museum": {
             "name": "Frank Bowling: Creation and Destruction",
@@ -1022,8 +1022,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "7e58566f9f77355dac3b468b85f1722a"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "44c8a5795f32264f6823dbcea35763b2"
         },
         "Intersecting Worlds: Ambassadors and Painters-Pera Museum": {
             "name": "Intersecting Worlds: Ambassadors and Painters",
@@ -1051,8 +1051,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "eb875fa0c8e664af744fb46420974131"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "5245056c046414373a2ad8d1b701d8cc"
         },
         "Osman Hamdi Bey-Pera Museum": {
             "name": "Osman Hamdi Bey",
@@ -1080,8 +1080,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "3dc1f1c82b11fa05bec46f1f75e353b8"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "9d132f5e67a023e92655114b2e4bcf12"
         },
         "The Art of Weights and Measures-Pera Museum": {
             "name": "The Art of Weights and Measures",
@@ -1108,8 +1108,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "0668a7f97e30d484247689e7f55c7f8f"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "820d82c3009112847f826ceed7b3fcb0"
         },
         "Extraordinary Minas-Pera Museum": {
             "name": "Extraordinary Minas",
@@ -1133,12 +1133,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.peramuseum.org/Repo/Exhibition/Images/siradisi-minas-1.jpg",
+                    "link": "https://images.weserv.nl/?url=www.peramuseum.org%2FRepo%2FExhibition%2FImages%2Fsiradisi-minas-1.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "6d092868d88ad6c2e14e9957b4187ef7"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "caf51a9ab42e8b2a64de6854fcfb221a"
         },
         "By the Water-Pera Museum": {
             "name": "By the Water",
@@ -1166,8 +1166,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "891965dd4555d86a59f9353f3c8a6c30"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "7a12b9e3939fb3a3904d38f54864521e"
         },
         "Feelings in Common-Pera Museum": {
             "name": "Feelings in Common",
@@ -1194,8 +1194,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "8cccb5b8eccc388272f0bdf638a9177f"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "165942e6deb8accd6fe6a3e5dc507741"
         },
         "\u00c5sa Jungnelius-Pera Museum": {
             "name": "\u00c5sa Jungnelius",
@@ -1222,8 +1222,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "16cbbf05caf82ca9ba0fef3a03304fec"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "7762c2c11bde25be7ffb21a1d33f7cce"
         },
         "SAM\u0130H R\u0130FAT \"Much Is to Be Done\"-Pera Museum": {
             "name": "SAM\u0130H R\u0130FAT \"Much Is to Be Done\"",
@@ -1253,8 +1253,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "e35634b0a701c25ad06fbcd4a82ebac6"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "41808d5cfee08929187c102b80e5cf7c"
         },
         "MARCEL DZAMA Dancing with the Moon-Pera Museum": {
             "name": "MARCEL DZAMA Dancing with the Moon",
@@ -1281,8 +1281,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "9c8206f365da5d71080b16fbd7fc767e"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "d7b2c50e557a1c609e1edc44bf511f17"
         },
         "Calculations and Coincidences-Pera Museum": {
             "name": "Calculations and Coincidences",
@@ -1309,8 +1309,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "423739e10ee0c08d4744b65bd2758dcd"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "b0a69fffbabc094f3210a8c7cec478ae"
         },
         "In Search of Vera Moln\u00e1r-Pera Museum": {
             "name": "In Search of Vera Moln\u00e1r",
@@ -1337,8 +1337,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:29",
-            "hash": "d4baaf1544ff51a7d486873cc0e23351"
+            "last_updated": "2026-11-05 18:41:36",
+            "hash": "2cf6e7fe2c38d08510dc8a3d5934c5d2"
         }
     },
     "Arter": {
@@ -1367,8 +1367,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:41",
-            "hash": "22e23b83d6ab2af2df119cfa8092f146"
+            "last_updated": "2026-11-05 18:41:49",
+            "hash": "5f025509aba649063132b357fb23048e"
         },
         "Mehtap Baydu: Loving You Is So Hard!-Arter": {
             "name": "Mehtap Baydu: Loving You Is So Hard!",
@@ -1397,8 +1397,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:36",
-            "hash": "7b63772184b02d374e85b925a6001db2"
+            "last_updated": "2026-11-05 18:41:44",
+            "hash": "68df7027a9f738735a64f20253209928"
         },
         "Tayfun Erdo\u011fmu\u015f: Atlas 1/137.035999-Arter": {
             "name": "Tayfun Erdo\u011fmu\u015f: Atlas 1/137.035999",
@@ -1421,12 +1421,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.arter.org.tr/Upload/Events/TayfunErdogmus2.jpg",
+                    "link": "https://images.weserv.nl/?url=www.arter.org.tr%2FUpload%2FEvents%2FTayfunErdogmus2.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:37",
-            "hash": "84307055189c7fc9bec524fc8b9b43da"
+            "last_updated": "2026-11-05 18:41:46",
+            "hash": "1b0d5f27e796d93cfe4c573b53f05252"
         },
         "The Sky Was Candy-Arter": {
             "name": "The Sky Was Candy",
@@ -1452,12 +1452,12 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://www.arter.org.tr/Upload/Events/GokyuzuSekerdendi.jpg",
+                    "link": "https://images.weserv.nl/?url=www.arter.org.tr%2FUpload%2FEvents%2FGokyuzuSekerdendi.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:39",
-            "hash": "285fd6d0ec31ce34e89cc7c9f846181f"
+            "last_updated": "2026-11-05 18:41:48",
+            "hash": "d3233b019413e2c1bae68001dbe2bc28"
         },
         "Work in Progress-Arter": {
             "name": "Work in Progress",
@@ -1484,8 +1484,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:43",
-            "hash": "d7789410c6e3883db2183cfbb2216009"
+            "last_updated": "2026-11-05 18:41:51",
+            "hash": "4dfa3611a417f20d1d109f602c11d9b9"
         },
         "Hera B\u00fcy\u00fckta\u015fc\u0131yan: Phantom Quartet-Arter": {
             "name": "Hera B\u00fcy\u00fckta\u015fc\u0131yan: Phantom Quartet",
@@ -1512,8 +1512,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:44",
-            "hash": "dc02ac2c5413e5500263f1565220149a"
+            "last_updated": "2026-11-05 18:41:54",
+            "hash": "68d6230889c84e43b47effd98ab05925"
         },
         "Nilbar G\u00fcre\u015f: Velvet Stare-Arter": {
             "name": "Nilbar G\u00fcre\u015f: Velvet Stare",
@@ -1544,8 +1544,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:46",
-            "hash": "db4e1339c194afc84060689218a40141"
+            "last_updated": "2026-11-05 18:41:56",
+            "hash": "1721d79149788c4e975331f1e2a03a0f"
         },
         "Hah!-Arter": {
             "name": "Hah!",
@@ -1572,8 +1572,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:48",
-            "hash": "c72bc67c7f1569a8334aee2dc52f2cc2"
+            "last_updated": "2026-11-05 18:41:57",
+            "hash": "8cd20f9411531e6e784ebec75238f859"
         },
         "I Need More Time-Arter": {
             "name": "I Need More Time",
@@ -1601,8 +1601,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:49",
-            "hash": "adbeb40c62c4a562990118f6664a73e0"
+            "last_updated": "2026-11-05 18:41:59",
+            "hash": "ec3956004cc2c6f77e417b786735ea43"
         },
         "Under Pressure Above Water-Arter": {
             "name": "Under Pressure Above Water",
@@ -1632,8 +1632,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:50",
-            "hash": "4a42b2956c872f7ad5dcf910e3de5e5e"
+            "last_updated": "2026-11-05 18:42:00",
+            "hash": "70c034d3beb4d480eb3b5d511b47e539"
         },
         "Franz Erhard Walther: Attempt to be a Sculpture-Arter": {
             "name": "Franz Erhard Walther: Attempt to be a Sculpture",
@@ -1661,8 +1661,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:52",
-            "hash": "405d660f4ad37db2976113634c24f691"
+            "last_updated": "2026-11-05 18:42:03",
+            "hash": "7032a769508f6081a1c27bd9f54ef552"
         },
         "Kader Attia: Asesinos! Asesinos!-Arter": {
             "name": "Kader Attia: Asesinos! Asesinos!",
@@ -1689,8 +1689,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:54",
-            "hash": "b5e23369b9a7a75c65514cde6dedb73e"
+            "last_updated": "2026-11-05 18:42:04",
+            "hash": "8c7fd56301cb186bf56d28ec33cae10b"
         },
         "Koray Ari\u015f: The Skin We Live In-Arter": {
             "name": "Koray Ari\u015f: The Skin We Live In",
@@ -1718,8 +1718,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:55",
-            "hash": "b6bded0faa4447adb9417a86874a51a4"
+            "last_updated": "2026-11-05 18:42:06",
+            "hash": "617ed32ac4d1ca4f83775fee50df4fb8"
         },
         "Angelica Mesiti: Future Perfect Continuous-Arter": {
             "name": "Angelica Mesiti: Future Perfect Continuous",
@@ -1747,8 +1747,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:57",
-            "hash": "71ecbdbbe95f99f05abdd157e75a4b0a"
+            "last_updated": "2026-11-05 18:42:07",
+            "hash": "1663004dcd8aaf63b99c0c1d4861fa95"
         },
         "Yasemin \u00d6zcan: Wet Floor-Arter": {
             "name": "Yasemin \u00d6zcan: Wet Floor",
@@ -1775,8 +1775,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:36:58",
-            "hash": "df37f2ae835e837191cb4b82df33e9ca"
+            "last_updated": "2026-11-05 18:42:09",
+            "hash": "e5829c6d4adbb604be3d657bed43d997"
         },
         "Maaria Wirkkala: Landing Prohibited-Arter": {
             "name": "Maaria Wirkkala: Landing Prohibited",
@@ -1803,8 +1803,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:37:00",
-            "hash": "b09b758f75a1df0b893d15d9d70c1c80"
+            "last_updated": "2026-11-05 18:42:11",
+            "hash": "009d7099de558911d18ad8d12a44b0fb"
         },
         "Suppose You Are Not-Arter": {
             "name": "Suppose You Are Not",
@@ -1831,8 +1831,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:37:01",
-            "hash": "21f0f0a6584e7caa762ee2304b8d8078"
+            "last_updated": "2026-11-05 18:42:12",
+            "hash": "e1b97815db2883d59970fadbd00266f2"
         },
         "Jackie Matisse: Kite Time-Arter": {
             "name": "Jackie Matisse: Kite Time",
@@ -1859,8 +1859,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:37:03",
-            "hash": "86b2365ed8acbf2e6e15f8ae7c554c85"
+            "last_updated": "2026-11-05 18:42:14",
+            "hash": "ecd6b623a55b75b4f6bb6eacb6098f8c"
         },
         "\u015eakir G\u00f6k\u00e7eba\u011f: As It Seems-Arter": {
             "name": "\u015eakir G\u00f6k\u00e7eba\u011f: As It Seems",
@@ -1889,8 +1889,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 18:37:04",
-            "hash": "94a9b370fd6050b40545bcebde27c90c"
+            "last_updated": "2026-11-05 18:42:17",
+            "hash": "2c05ac37f1322c82770b5f8b4976b90a"
         }
     },
     "Galerist": {
@@ -1920,8 +1920,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 23:07:40",
-            "hash": "3a72a1eb1ae635de1f4f051c22db9d8f"
+            "last_updated": "2026-11-05 18:42:18",
+            "hash": "e017dc3076fa635b4aa2306b713518cd"
         }
     },
     "Pi Artworks Istanbul": {
@@ -1951,8 +1951,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 23:07:41",
-            "hash": "e3265a49be94f9220ca33a3352b6074e"
+            "last_updated": "2026-11-05 18:42:20",
+            "hash": "b998f1f70df0af7b7772a41f08ebaab1"
         }
     },
     "Zilberman Istanbul": {
@@ -1982,8 +1982,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 23:07:42",
-            "hash": "6a47e8b30a15b7d5ead4c32b9da49c12"
+            "last_updated": "2026-11-05 18:42:21",
+            "hash": "89bf2f3ddb5dc1a556ffad2876e47c72"
         }
     },
     "DEPO": {
@@ -2013,8 +2013,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 23:07:44",
-            "hash": "8b222858b8b69ff4e01e40153a6b868b"
+            "last_updated": "2026-11-05 18:42:25",
+            "hash": "64ac7eb4941818a79c4ab0bd81a942bb"
         },
         "Dilan Cudi Saruhan \u2013 Bir \u0130htimal G\u00f6ky\u00fcz\u00fc-DEPO": {
             "name": "Dilan Cudi Saruhan \u2013 Bir \u0130htimal G\u00f6ky\u00fcz\u00fc",
@@ -2042,8 +2042,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 23:07:44",
-            "hash": "be6c0810ffe2a8068ecfbd7315e27ff1"
+            "last_updated": "2026-11-05 18:42:25",
+            "hash": "9c94f3ba812543c2956e545852de576e"
         },
         "Silinmenin Manzaralar\u0131-DEPO": {
             "name": "Silinmenin Manzaralar\u0131",
@@ -2071,8 +2071,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 23:07:44",
-            "hash": "6f154f4fdc9cdd01e514b84b2cb4f5b4"
+            "last_updated": "2026-11-05 18:42:25",
+            "hash": "f78882e8d0fbb635127ad789bc9413ff"
         }
     },
     "Elgiz Museum of Contemporary Art": {
@@ -2101,9 +2101,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-04 23:07:47",
-            "hash": "ab27777597526aba98d97b50e83d2fb1",
-            "image_checked": "2026-11-04"
+            "last_updated": "2026-11-05 18:42:28",
+            "image_checked": "2026-11-04",
+            "hash": "56139c43797160c637831c9e0ef8db59"
         }
     }
 }
