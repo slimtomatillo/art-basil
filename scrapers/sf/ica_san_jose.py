@@ -179,6 +179,22 @@ def fetch_archive_pages(first_page, known_links):
     return items
 
 
+def link_slug(link):
+    """The last part of a show page's address. A show's page moves from /upcoming-exhibitions/<slug>/ to
+    /current-exhibitions/<slug>/ when it opens, so the slug is what tells the two addresses are one show."""
+    return link.rstrip('/').rsplit('/', 1)[-1]
+
+
+def count_titles(stored_by_link, listings):
+    """How many shows share each title, counting stored shows too (the archive walk usually stops before the older
+    ones). A stored show whose page is listed again under a new address is the same show, not a second one."""
+    listed = {link_slug(item['link']) for _, item in listings}
+    title_by_link = {link: re.sub(r' \(\d{4}\)$', '', event['name']) for link, event in stored_by_link.items()
+                     if link_slug(link) not in listed}
+    title_by_link.update({item['link']: item['name'] for _, item in listings})
+    return Counter(title_by_link.values())
+
+
 def scrape_ica_san_jose(env='prod', region='sf'):
     """Scrape and process exhibitions from the Institute of Contemporary Art San Jose."""
 
@@ -210,13 +226,12 @@ def scrape_ica_san_jose(env='prod', region='sf'):
     # ("Lift Off" is an annual MFA show) - repeats get a year suffix below so
     # they don't overwrite each other. Counted across stored shows too, since
     # the archive walk usually stops before reaching the older ones.
-    title_by_link = {link: re.sub(r' \(\d{4}\)$', '', event['name']) for link, event in stored_by_link.items()}
-    title_by_link.update({item['link']: item['name'] for _, item in listings})
-    name_counts = Counter(title_by_link.values())
+    name_counts = count_titles(stored_by_link, listings)
+    stored_by_slug = {link_slug(link): event for link, event in stored_by_link.items()}
 
     for phase, item in listings:
         name = item['name']
-        cached = stored_by_link.get(item['link'])
+        cached = stored_by_link.get(item['link']) or stored_by_slug.get(link_slug(item['link']))
 
         description = cached.get('description') if cached else None
         dates = parse_date_range(item['date_text'])
