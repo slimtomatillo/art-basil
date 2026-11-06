@@ -116,7 +116,7 @@ def write_report(today=None, regions=None, path=REPORT_PATH):
         with open(summary_path, 'a') as f:
             f.write(render_markdown(audit, today, details=False))
     t = totals(audit)
-    logging.info(f"Image audit: {t['own']} of {t['total']} current/upcoming events have their own picture, "
+    logging.info(f"Finished image audit: {t['own']} of {t['total']} current/upcoming events have their own picture, "
                  f"{t['logo']} use a venue logo, {t['none']} have none")
     return t
 

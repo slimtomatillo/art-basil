@@ -286,15 +286,16 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
         # Never lets a failure here lose the scraped data.
         try:
             added = images.enrich_missing_images(selected_regions)
-            logging.info(f"Images: opened {added['checked']} event pages, added {len(added['added'])}, "
-                         f"dropped {len(added['dropped'])} pictures shared by several shows")
+            # (The console log only prints INFO lines containing words like "Finished"; see config.InfoFilter.)
+            logging.info(f"Finished looking for event pictures: opened {added['checked']} event pages, "
+                         f"added {len(added['added'])}, dropped {len(added['dropped'])} pictures shared by several shows")
         except Exception:
             logging.exception("Adding event images failed")
         # Swap heavy original pictures for small copies so pages load quickly
         try:
             shrunk = images.shrink_heavy_images(selected_regions)
-            logging.info(f"Images: measured {shrunk['checked']} pictures, made {len(shrunk['shrunk'])} smaller "
-                         f"({sum(s[3] for s in shrunk['shrunk']) // 1_000_000} MB of originals)")
+            logging.info(f"Finished shrinking heavy pictures: measured {shrunk['checked']}, made {len(shrunk['shrunk'])} "
+                         f"smaller ({sum(s[3] for s in shrunk['shrunk']) // 1_000_000} MB of originals)")
         except Exception:
             logging.exception("Shrinking heavy images failed")
         # Record which events still have no picture of their own (IMAGE_AUDIT.md)
