@@ -229,7 +229,9 @@ of a venue's shows (then it is a banner). The fallback also needs a picture of a
   tile) for any of that venue's events with no `Image` link, and a real picture replaces
   it as soon as one is found. To add one, find the logo on the venue's site (its
   `og:image`, a header image or `apple-touch-icon`), check it loads from another site,
-  and add a line. The name must match the venue's `venue` string exactly. Today it covers
+  and add a line. The name must match the venue's `venue` string exactly. A venue with no
+  logo online (or a site that isn't up yet) can have one kept in the repo: put the file in
+  `docs/images/venues/` and give its site path, e.g. `"/images/venues/kubart-gallery.jpg"`. Today it covers
   Marin Society of Artists (its pages carry only the society's logo), Sanchez Art Center,
   Creative Growth, Jessica Silverman and Paul Petro. After a daily run, a venue that
   still shows blank thumbnails is a candidate: look for it with

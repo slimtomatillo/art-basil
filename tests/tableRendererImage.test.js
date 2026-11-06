@@ -68,7 +68,7 @@ test('a missing or empty venue image list is harmless', () => {
     assert.strictEqual(c.children.length, 0);
 });
 
-test('every venue in venue_images.json is a real venue with an https picture', () => {
+test('every venue in venue_images.json is a real venue with an https picture or one of our own', () => {
     const images = JSON.parse(fs.readFileSync(path.join(__dirname, '../docs/data/venue_images.json'), 'utf8'));
     const known = new Set();
     for (const region of ['sf', 'la', 'mtl', 'tor', 'ist']) {
@@ -77,6 +77,11 @@ test('every venue in venue_images.json is a real venue with an https picture', (
     }
     for (const [venue, url] of Object.entries(images)) {
         assert.ok(known.has(venue), `${venue} is not in any *_venues.json`);
-        assert.ok(url.startsWith('https://'), `${venue}: picture must be https`);
+        // a logo kept in docs/images/venues/ is given as a site path ("/images/venues/x.jpg"); anything else must be https
+        if (url.startsWith('/images/venues/')) {
+            assert.ok(fs.existsSync(path.join(__dirname, '../docs', url)), `${venue}: ${url} is missing from docs/`);
+        } else {
+            assert.ok(url.startsWith('https://'), `${venue}: picture must be https`);
+        }
     }
 });

@@ -6,13 +6,14 @@ import datetime as dt
 import json
 import os
 import sys
+import logging
 import tempfile
 import unittest
 from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import image_audit
-from config import DB_FILES
+from config import DB_FILES, InfoFilter
 
 TODAY = dt.date(2026, 11, 4)
 PAGE = [{'link': 'https://g.example/s', 'description': 'Event Page'}]
@@ -106,6 +107,14 @@ class ImageAuditTest(unittest.TestCase):
             body = f.read()
         self.assertIn('| `test` | V |', body)
         self.assertNotIn('### Events without', body)
+
+    def test_the_summary_line_gets_past_the_console_log_filter(self):
+        # config.InfoFilter hides INFO lines without certain words; the audit line was silently dropped once
+        self.write({'V': {'a': event('A')}})
+        with self.assertLogs(level=logging.INFO) as logs:
+            image_audit.write_report(TODAY, ['test'], path=os.path.join(self.dir.name, 'IMAGE_AUDIT.md'))
+        record = next(r for r in logs.records if 'image audit' in r.getMessage().lower())
+        self.assertTrue(InfoFilter().filter(record), record.getMessage())
 
 
 if __name__ == '__main__':
