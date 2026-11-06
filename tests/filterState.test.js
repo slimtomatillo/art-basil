@@ -107,6 +107,27 @@ test('search matches text case-insensitively', () => {
     assert.ok(!fs_.rowMatches(r, state({ q: 'sfmoma' })));
 });
 
+test('foldText lowers case and takes accents off, including letters that do not split', () => {
+    assert.strictEqual(fs_.foldText('Art Mûr'), 'art mur');
+    assert.strictEqual(fs_.foldText('François Ghebaly'), 'francois ghebaly');
+    assert.strictEqual(fs_.foldText('Sakıp Sabancı Müzesi'), 'sakip sabanci muzesi');
+    assert.strictEqual(fs_.foldText('İstanbul Şişli'), 'istanbul sisli');
+    assert.strictEqual(fs_.foldText('Sprüth Magers, Ørsted, Łódź, Æther, Straße'), 'spruth magers, orsted, lodz, aether, strasse');
+    assert.strictEqual(fs_.foldText('plain text'), 'plain text');
+});
+
+test('search finds accented names typed without accents, and the other way round', () => {
+    const artMur = row('current', [], { text: fs_.foldText('Some Show @ Art Mûr') });
+    assert.ok(fs_.rowMatches(artMur, state({ q: 'Art Mur' })));
+    assert.ok(fs_.rowMatches(artMur, state({ q: 'art mûr' })));
+    assert.ok(fs_.rowMatches(artMur, state({ q: 'ART MÛR' })));
+    assert.ok(!fs_.rowMatches(artMur, state({ q: 'Art Murray' })));
+    const ghebaly = row('current', [], { text: fs_.foldText('Show @ François Ghebaly') });
+    assert.ok(fs_.rowMatches(ghebaly, state({ q: 'francois' })));
+    const sakip = row('current', [], { text: fs_.foldText('Show @ Sakıp Sabancı Museum') });
+    assert.ok(fs_.rowMatches(sakip, state({ q: 'sakip sabanci' })));
+});
+
 test('tag counts show what ticking a tag would add, ignoring that tag\'s own group', () => {
     const rows = [
         row('current', ['photography', 'latinx']),

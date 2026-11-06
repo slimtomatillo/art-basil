@@ -35,7 +35,7 @@ class SearchManager {
             if (cells.length < 5) return [];
             // Columns: 0 image, 1 date, 2 "title @ venue", 3 tags, 4 links. The
             // text search covers date, title/venue and tags, as it always has.
-            const text = [1, 2, 3].map(i => cells[i]?.textContent?.toLowerCase() || '').join('\n');
+            const text = filterState.foldText([1, 2, 3].map(i => cells[i]?.textContent || '').join('\n'));
             return [{
                 el,
                 // current / ongoing / future / past: what the "When" filter works on
