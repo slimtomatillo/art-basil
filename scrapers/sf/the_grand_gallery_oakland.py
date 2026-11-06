@@ -9,8 +9,9 @@ import re
 HOME_URL = 'https://thegrandgalleryoakland.com/'
 
 # The home page slider mixes shows, classes and events; a show is the slide
-# whose text opens with "Show Dates <range>" ("October 2nd – 31st", no year).
-_SHOW_DATES_RE = re.compile(r'Show Dates\s+(.+?)\s+(?:Artist|Reception|Opening|$)')
+# whose text opens with "Show Dates <range>" ("October 2nd – 31st", no year); the
+# label is sometimes written with a colon ("Show Dates: Nov 5th - Nov 29th").
+_SHOW_DATES_RE = re.compile(r'Show Dates:?\s+(.+?)\s+(?:Artist|Reception|Opening|$)')
 _MAX_DESCRIPTION = 400
 
 
