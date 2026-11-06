@@ -39,7 +39,7 @@ def scrape_kala_exhibitions(env='prod', region='sf'):
     url = 'https://www.kala.org/gallery/exhibitions/'
     soup = fetch_and_parse(url)
     if soup is None:
-        logging.ingo('Error scraping Kala exhibitions')
+        logging.warning("Kala Art Institute: could not fetch the exhibitions page; existing data kept.")
         return
 
     # Find current exhibitions

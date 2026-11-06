@@ -2,6 +2,7 @@ import datetime as dt
 import json
 import numpy as np
 import logging
+import re
 import requests
 from bs4 import BeautifulSoup
 from config import DB_FILES
@@ -179,6 +180,20 @@ def _proxy_get(url, proxy_params):
             logging.warning(f"Proxy request for {url} returned {response.status_code}; retrying.")
         time.sleep(PROXY_RETRY_DELAY)
 
+# Some sites answer a runner they distrust with a "200 OK" bot-check page instead of an error, so the scraper
+# finds no shows and reports only "no exhibitions found". Say what the page really was.
+BLOCK_PAGE_TITLE_RE = re.compile(
+    r'just a moment|attention required|access denied|are you (?:a )?(?:human|robot)|verify you are (?:a )?human|'
+    r'security check|captcha|request blocked|forbidden|too many requests', re.IGNORECASE)
+
+
+def _warn_if_block_page(url, soup):
+    title = soup.title.get_text(' ', strip=True) if soup.title else ''
+    if BLOCK_PAGE_TITLE_RE.search(title):
+        logging.warning(f"{url} answered with what looks like a bot-check or block page (title {title[:80]!r}); "
+                        "the site may be blocking this connection.")
+
+
 def fetch_and_parse(url, headers=None):
     global PROXY_EXHAUSTED
     request_headers = {'User-Agent': 'Your Bot 0.1'}
@@ -209,7 +224,9 @@ def fetch_and_parse(url, headers=None):
                 )
             response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT, verify=verify_for(url))
         response.raise_for_status()
-        return BeautifulSoup(response.content, 'html.parser')
+        soup = BeautifulSoup(response.content, 'html.parser')
+        _warn_if_block_page(url, soup)
+        return soup
     except requests.RequestException as e:
         logging.error(f"Error fetching {url}: {e}")
         return None

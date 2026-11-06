@@ -27,5 +27,25 @@ class VerifyForTest(unittest.TestCase):
         self.assertEqual(open(utils.INTERMEDIATES_FILE).read().count('BEGIN CERTIFICATE'), 1)
 
 
+class BlockPageWarningTest(unittest.TestCase):
+    def warnings_for(self, html):
+        from bs4 import BeautifulSoup
+        with self.assertLogs(level='WARNING') as captured:
+            import logging
+            logging.warning('sentinel')  # assertLogs needs at least one record
+            utils._warn_if_block_page('https://example.org/x', BeautifulSoup(html, 'html.parser'))
+        return [r.getMessage() for r in captured.records if r.getMessage() != 'sentinel']
+
+    def test_a_bot_check_page_is_reported_with_its_title(self):
+        messages = self.warnings_for('<html><head><title>Just a moment...</title></head><body></body></html>')
+        self.assertEqual(len(messages), 1)
+        self.assertIn('Just a moment...', messages[0])
+        self.assertIn('https://example.org/x', messages[0])
+
+    def test_an_ordinary_page_is_not(self):
+        self.assertEqual(self.warnings_for('<html><head><title>Exhibitions | A Museum</title></head></html>'), [])
+        self.assertEqual(self.warnings_for('<html><body>No title at all</body></html>'), [])
+
+
 if __name__ == '__main__':
     unittest.main()
