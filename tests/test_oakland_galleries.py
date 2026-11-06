@@ -1,7 +1,7 @@
 # Run with the project's Python (needs its dependencies): python -m unittest discover -s tests
 #
 # Oakland Photo Workshop (the East Bay Photo Collective's gallery, read from its Squarespace JSON feed)
-# and GearBox Gallery (read from its home page), WEBSITE-98. No network, no event data.
+# GearBox Gallery (read from its home page) and FM Oakland (the main block of its home page), WEBSITE-98. No network, no event data.
 import datetime as dt
 import json
 import os
@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import main
-from scrapers.sf import gearbox_gallery, oakland_photo_workshop as opw
+from scrapers.sf import fm_oakland, gearbox_gallery, oakland_photo_workshop as opw
 from scrapers.tor import _common
 
 TODAY = dt.date(2026, 11, 5)
@@ -121,12 +121,58 @@ class GearBoxTest(unittest.TestCase):
         self.assertEqual(run_gearbox(None), {})
 
 
+FM_HOME = '''<main><div class="page"><div class="media-and-info"><a class="page-media"><img class="u-img" src="//img-cache.oppcdn.com/fixed/21686/assets/cowboy.jpg"></a></div>
+<div class="description t-full-width"><p><br><br>For October/November FM Oakland is excited to host the recent works by local Berkeley native Paul Thompson. {intro}</p>
+<p>{title}  <br>\u201cI always played cowboys and indians with my brother as a kid, and our father loved westerns.\u201d</p>
+<p>{run}</p><p>Art Murmur Receptions:</p><p>First Friday, October 2nd, 5-10pm</p></div></div></main>'''
+INTRO = "Thompson's work focuses on the romance and excitement of the wild west as he plays with paint, line, brushwork and composition."
+
+
+def fm_page(title='Paul Thompson: Life of a Cowboy', run='October 2nd - November 28th, 2026'):
+    return FM_HOME.format(title=title, run=run, intro=INTRO)
+
+
+def run_fm(html):
+    stored = []
+    with mock.patch.object(fm_oakland, 'fetch_and_parse', return_value=BeautifulSoup(html, 'html.parser') if html else None), \
+            mock.patch.object(fm_oakland, 'region_today', return_value=TODAY), \
+            mock.patch.object(_common, 'region_today', return_value=TODAY), \
+            mock.patch.object(_common, 'process_event', side_effect=lambda d, r: stored.append(d)):
+        fm_oakland.scrape_fm_oakland(env='prod')
+    return stored
+
+
+class FmOaklandTest(unittest.TestCase):
+    def test_the_current_exhibit_is_read_from_the_main_block(self):
+        stored = run_fm(fm_page())
+        self.assertEqual(len(stored), 1)
+        show = stored[0]
+        self.assertEqual(show['name'], 'Paul Thompson: Life of a Cowboy')       # not the artist's quoted statement
+        self.assertEqual(show['dates'], {'start': dt.date(2026, 10, 2), 'end': dt.date(2026, 11, 28)})
+        self.assertEqual(show['phase'], 'current')
+        self.assertTrue(show['description'].startswith('For October/November FM Oakland is excited'))
+        self.assertEqual(show['links'][1], {'link': 'https://img-cache.oppcdn.com/fixed/21686/assets/cowboy.jpg',
+                                            'description': 'Image'})
+
+    def test_title_and_dates_on_one_line_still_read(self):
+        stored = run_fm(fm_page(title='Okamoto & Cibrian - \u201cDreamscapes\u201d April 3rd, \u2013 May 30th, 2027', run='Opening Friday'))
+        self.assertEqual(stored[0]['name'], 'Okamoto & Cibrian - \u201cDreamscapes\u201d')
+        self.assertEqual(stored[0]['dates'], {'start': dt.date(2027, 4, 3), 'end': dt.date(2027, 5, 30)})
+
+    def test_an_ended_exhibit_is_not_published(self):
+        self.assertEqual(run_fm(fm_page(run='October 2nd - October 30th, 2026')), [])
+
+    def test_a_page_without_a_dated_exhibit_or_unreachable_stores_nothing(self):
+        self.assertEqual(run_fm('<main><div class="page"><div class="description"><p>Coming soon</p></div></div></main>'), [])
+        self.assertEqual(run_fm(None), [])
+
+
 class RegistrationTest(unittest.TestCase):
     def test_registered_and_has_an_address(self):
         scrapers, _ = main.get_venue_scrapers(selected_regions=['sf'])
         with open(os.path.join(os.path.dirname(__file__), '../docs/data/sf_venues.json')) as f:
             venues = json.load(f)
-        for venue in (opw.VENUE, gearbox_gallery.VENUE):
+        for venue in (opw.VENUE, gearbox_gallery.VENUE, fm_oakland.VENUE):
             self.assertIn(venue, scrapers)
             self.assertIn(venue, venues)        # else no map link
 
