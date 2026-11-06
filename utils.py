@@ -6,8 +6,11 @@ import requests
 from bs4 import BeautifulSoup
 from config import DB_FILES
 import os
+import tempfile
 import time
 from urllib.parse import urlparse
+
+import certifi
 
 def convert_nan_to_none(data):
     if isinstance(data, dict):
@@ -103,6 +106,30 @@ PROXY_DOMAINS = {
     # live-tested (no proxy key locally); if CI still gets a 403, add js_render.
     'www.armoryarts.org': {'premium_proxy': 'true'},
 }
+# Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
+# fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are
+# kept in certs/intermediates.pem and added to the standard roots for these hosts only; verification
+# stays on. (A site with an expired certificate or a broken TLS setup is not fixable this way.)
+EXTRA_CA_HOSTS = ('theimagecentre.ca',)
+INTERMEDIATES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'certs', 'intermediates.pem')
+_ca_bundle = None
+
+
+def verify_for(url):
+    """The `verify` argument for requests.get(url): True, or for a host in EXTRA_CA_HOSTS a CA bundle of
+    the standard roots plus certs/intermediates.pem."""
+    global _ca_bundle
+    host = urlparse(url).netloc.lower()
+    if not any(host == h or host.endswith('.' + h) for h in EXTRA_CA_HOSTS):
+        return True
+    if _ca_bundle is None:
+        with open(certifi.where()) as roots, open(INTERMEDIATES_FILE) as extra:
+            bundle = tempfile.NamedTemporaryFile('w', suffix='.pem', delete=False)
+            bundle.write(roots.read() + '\n' + extra.read())
+            bundle.close()
+        _ca_bundle = bundle.name
+    return _ca_bundle
+
 ZENROWS_API_URL = 'https://api.zenrows.com/v1/'
 ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
 
@@ -176,7 +203,7 @@ def fetch_and_parse(url, headers=None):
                     f"{urlparse(url).netloc} needs the proxy to work from CI but "
                     f"SCRAPER_PROXY_API_KEY isn't set; fetching directly (likely to fail)."
                 )
-            response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT)
+            response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT, verify=verify_for(url))
         response.raise_for_status()
         return BeautifulSoup(response.content, 'html.parser')
     except requests.RequestException as e:

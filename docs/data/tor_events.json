@@ -3189,5 +3189,183 @@
             "hash": "6f5c4897949bd3faf5ec7ae91af0f71d",
             "image_checked": "2026-11-04"
         }
+    },
+    "The Image Centre": {
+        "Richard Avedon Immortal: Portraits of Aging, 1951\u20132004-The Image Centre": {
+            "name": "Richard Avedon Immortal: Portraits of Aging, 1951\u20132004",
+            "venue": "The Image Centre",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-09",
+                "end": "2026-12-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.theimagecentre.ca/exhibition/richard-avedon-immortal/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://theimagecentre.ca/media/resized/medium/Gloria_Swanson_actor_New_York_1980.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "30bf9f833a1f3b30a201a529003d3162"
+        },
+        "Tanya Marcuse: Portent-The Image Centre": {
+            "name": "Tanya Marcuse: Portent",
+            "venue": "The Image Centre",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-09",
+                "end": "2026-12-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.theimagecentre.ca/exhibition/tanya-marcuse-portent/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://theimagecentre.ca/media/resized/medium/Pauline_2025_Photograph_with_pressed_flower_E3IBNkI.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "ac695ece7732e583b5f09fab9265dc8e",
+            "image_checked": "2026-11-05"
+        },
+        "Molly Steels: I Am/Was/Always-The Image Centre": {
+            "name": "Molly Steels: I Am/Was/Always",
+            "venue": "The Image Centre",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-28",
+                "end": "2026-12-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.theimagecentre.ca/exhibition/molly-steels-iamwasalways/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://theimagecentre.ca/media/resized/medium/Marian_Anderson_singer_in_the_role_of_Ulrica_in__An_Ballo_in_Maxhera__New_York_June_30_1955.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "bafbd5fc33b9c465094c913ffbb4a173",
+            "image_checked": "2026-11-05"
+        },
+        "Donna Gottschalk: We Others-The Image Centre": {
+            "name": "Donna Gottschalk: We Others",
+            "venue": "The Image Centre",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-20",
+                "end": "2027-04-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.theimagecentre.ca/exhibition/donna-gottschalk-we-others/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://theimagecentre.ca/media/resized/large/114_-_P05-L4-20a.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "cdd77f72c6623d5693bfd61518560ea9"
+        },
+        "Lee Shulman & Omar Victor Diop: Being There-The Image Centre": {
+            "name": "Lee Shulman & Omar Victor Diop: Being There",
+            "venue": "The Image Centre",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-20",
+                "end": "2027-04-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.theimagecentre.ca/exhibition/lee-shulman-omar-victor-diop-being-there/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://theimagecentre.ca/media/resized/large/OMAR-LEE-68_copie.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "7b22212e1540c948777ea41c071da518"
+        },
+        "Cao Fei: Isle of Instability-The Image Centre": {
+            "name": "Cao Fei: Isle of Instability",
+            "venue": "The Image Centre",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-20",
+                "end": "2027-04-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.theimagecentre.ca/exhibition/cao-fei-isle-of-instability/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://theimagecentre.ca/media/resized/large/Stills_Isle_of_Instability_-02.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "82982a3340c3358df9bc2451f7231c50"
+        }
     }
 }

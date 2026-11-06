@@ -34,8 +34,8 @@ from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_muse
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
     doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery, \
-    art_museum_uoft
-from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum
+    art_museum_uoft, image_centre
+from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
 # utils.PROXY_DOMAINS), mapped to the venue names they write data under (some
@@ -197,6 +197,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "The Joan and Martin Goldfarb Gallery of York University": goldfarb_gallery.scrape_goldfarb_gallery,
             "Propeller Art Gallery": propeller_art_gallery.scrape_propeller_art_gallery,
             "Art Museum at the University of Toronto": art_museum_uoft.scrape_art_museum_uoft,
+            "The Image Centre": image_centre.scrape_image_centre,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,
@@ -211,6 +212,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Elgiz Museum of Contemporary Art": elgiz_museum.scrape_elgiz_museum,
             "Anna Laudel Istanbul": anna_laudel.scrape_anna_laudel,
             "Rahmi M. Koç Museum": rahmi_koc_museum.scrape_rahmi_koc_museum,
+            "Borusan Contemporary": borusan_contemporary.scrape_borusan_contemporary,
         }
     }
     
