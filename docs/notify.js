@@ -31,7 +31,10 @@ window.openNotifyModal = function(event) {
     
     if (hasStartDate) {
         const startDate = new Date(event.dates.start);
-        datesText += `Opens: ${startDate.toLocaleDateString('en-US', CALENDAR_DATE_DISPLAY)}`;
+        // "Opened" for a show that is already open, by the venue's date (ISO dates compare as strings)
+        const today = window.dataManager.regionToday(window.dataManager.getRegion());
+        const label = String(event.dates.start).slice(0, 10) <= today ? 'Opened' : 'Opens';
+        datesText += `${label}: ${startDate.toLocaleDateString('en-US', CALENDAR_DATE_DISPLAY)}`;
     }
     
     if (hasEndDate) {
