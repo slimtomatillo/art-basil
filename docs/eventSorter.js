@@ -7,18 +7,19 @@ function sortEvents(events) {
 
     Object.entries(events).forEach(([venue, venueEvents]) => {
         Object.values(venueEvents).forEach(event => {
-            // Once an event has started (by the venue's date), drop its start date
-            if (event.dates.start && event.dates.start !== 'null') {
-                // ISO date strings compare chronologically as plain strings
-                if (event.dates.start.slice(0, 10) <= today) {
-                    event.dates.start = 'null';
-                }
-            }
+            // The event's own dates are left as they are: the table shows "Started on ..." for an open
+            // show with no end date, and Notify Me offers a started show's real opening day and full
+            // run. The sort keys below are separate fields.
 
             // Handle 'null' or missing end dates
             event.sortDate = event.dates.end && event.dates.end !== 'null' ? event.dates.end : '9999-12-31';
+            // For sorting upcoming shows by opening date: a show that has already started (by the
+            // venue's date) sorts after the ones that really are upcoming, as it always has
+            // (ISO date strings compare chronologically as plain strings)
+            const hasStarted = event.dates.start && event.dates.start !== 'null' && event.dates.start.slice(0, 10) <= today;
+            event.sortStart = hasStarted ? 'null' : (event.dates.start || '9999-12-31');
             // Assign a default high sort priority (will sort last)
-            event.sortPriority = 5; 
+            event.sortPriority = 5;
             event.venue = venue;
 
             // Determine sortPriority based on specific tags ('current', 'future', 'past')
@@ -34,7 +35,7 @@ function sortEvents(events) {
             } else if (event.tags.includes('past')) {
                 event.sortPriority = 4;
             }
-            
+
             eventsArray.push(event);
         });
     });
@@ -46,9 +47,7 @@ function sortEvents(events) {
 
         // For future events (sortPriority === 3), sort by start date ascending
         if (a.sortPriority === 3 && b.sortPriority === 3) {
-            const aStart = a.dates?.start || '9999-12-31';
-            const bStart = b.dates?.start || '9999-12-31';
-            return aStart.localeCompare(bStart); // Ascending for future events
+            return a.sortStart.localeCompare(b.sortStart); // Ascending for future events
         }
 
         // For past events (sortPriority === 4), sort by end date descending
