@@ -1,5 +1,6 @@
 """Subject tags (medium and theme) derived from an event's title and description,
-plus `free` for non-museum galleries.
+plus `free` for non-museum galleries and for venues recorded as free in
+docs/data/venue_admission.json.
 
 Scrapers only know an event's type, phase and venue kind (exhibition, museum,
 gallery); this adds what the show is *about* - photography, ceramics, an
@@ -19,7 +20,9 @@ are ever applied. Prefer a rule that is a little too narrow over one that tags
 the wrong shows - a missing tag is invisible, a wrong one is a visible error.
 """
 
+import json
 import logging
+import os
 import re
 
 # tag -> (regex, minimum hits[, title regex]). A hit of the regex in the title
@@ -88,12 +91,34 @@ def content_tags(event):
     return matches(event, RULES)
 
 
+ADMISSION_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'docs', 'data', 'venue_admission.json')
+_free_venues = None
+
+
+def free_venues():
+    """Names of venues recorded as free in docs/data/venue_admission.json (WEBSITE-75).
+    Only an explicit "free" counts: "paid" and "unverified" venues are not tagged."""
+    global _free_venues
+    if _free_venues is None:
+        try:
+            with open(ADMISSION_FILE, encoding='utf-8') as f:
+                record = json.load(f)
+        except (OSError, ValueError):
+            logging.warning(f"Could not read {ADMISSION_FILE}; museums will not be tagged free.")
+            record = {}
+        _free_venues = {venue for region, venues in record.items() if isinstance(venues, dict)
+                        for venue, info in venues.items() if isinstance(info, dict) and info.get('admission') == 'free'}
+    return _free_venues
+
+
 def venue_tags(event):
-    """Tags that follow from the kind of venue rather than the text: every gallery
-    that isn't a museum is free to enter. Museums vary, so they are left to be
-    tagged per venue (WEBSITE-75)."""
+    """Tags that follow from the venue rather than the text: `free` for every gallery
+    that isn't a museum, and for every venue recorded as free in venue_admission.json
+    (the museums and art centers, whose admission varies and is checked one by one)."""
     tags = event.get('tags') or []
-    return ['free'] if 'gallery' in tags and 'museum' not in tags else []
+    if 'gallery' in tags and 'museum' not in tags:
+        return ['free']
+    return ['free'] if event.get('venue') in free_venues() else []
 
 
 def add_content_tags(event):

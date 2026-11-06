@@ -1,0 +1,355 @@
+{
+    "_about": "Admission per venue, used by tagging.py to add the `free` tag. admission: free = free to see the exhibitions (donation-only, free-for-residents or free-some-days do not count); paid = not free in general (free days in the note); unverified = not tagged. See OPERATIONS.md for how to re-check.",
+    "sf": {
+        "Cantor Arts Center": {
+            "admission": "free",
+            "source": "https://museum.stanford.edu/visit",
+            "checked": "2026-11-06",
+            "note": "Always free."
+        },
+        "Anderson Collection": {
+            "admission": "free",
+            "source": "https://anderson.stanford.edu/",
+            "checked": "2026-11-06",
+            "note": "Free; timed tickets may be needed on some weekends."
+        },
+        "Palo Alto Art Center": {
+            "admission": "free",
+            "source": "https://paacf.org/",
+            "checked": "2026-11-06",
+            "note": "Exhibitions free; classes and workshops cost money."
+        },
+        "Triton Museum of Art": {
+            "admission": "free",
+            "source": "https://tritonmuseum.org/visit",
+            "checked": "2026-11-06",
+            "note": "Free admission to exhibitions; classes cost money."
+        },
+        "Institute of Contemporary Art San Jose": {
+            "admission": "free",
+            "source": "https://sjica.org/",
+            "checked": "2026-11-06",
+            "note": "Free, funded by donors and grants."
+        },
+        "Marin Museum of Contemporary Art": {
+            "admission": "unverified",
+            "source": "https://www.marinmoca.org/",
+            "checked": "2026-11-06",
+            "note": "Sources conflict (mostly free, one 2023 post says $10) and the museum site states no policy. Check by phone, 415-506-0137."
+        },
+        "SFMOMA": {
+            "admission": "paid",
+            "source": "https://www.sfmoma.org/free-days/",
+            "checked": "2026-11-06",
+            "note": "About $30 for adults. Free for 18 and under; free Community Days on some Sundays."
+        },
+        "de Young": {
+            "admission": "paid",
+            "source": "https://www.famsf.org/visit/free-reduced-admission",
+            "checked": "2026-11-06",
+            "note": "Free Saturdays for Bay Area residents (permanent collection, timed ticket)."
+        },
+        "Legion of Honor": {
+            "admission": "paid",
+            "source": "https://www.famsf.org/visit/free-reduced-admission",
+            "checked": "2026-11-06",
+            "note": "Free Saturdays for Bay Area residents (permanent collection, timed ticket)."
+        },
+        "BAMPFA": {
+            "admission": "paid",
+            "source": "https://bampfa.org/visit/hours",
+            "checked": "2026-11-06",
+            "note": "$18 general admission. Free for members, children 0-13 and UC Berkeley students."
+        },
+        "Asian Art Museum": {
+            "admission": "paid",
+            "source": "https://asianart.org/visit/",
+            "checked": "2026-11-06",
+            "note": "About $10 for adults (third-party listings; official price page not read)."
+        },
+        "Contemporary Jewish Museum": {
+            "admission": "paid",
+            "source": "https://www.thecjm.org/",
+            "checked": "2026-11-06",
+            "note": "$16 last listed (2024); galleries were reported closed from Dec 2024. Free first Fridays when open."
+        },
+        "Museum of Craft and Design": {
+            "admission": "paid",
+            "source": "https://sfmcd.org/",
+            "checked": "2026-11-06",
+            "note": "$10. Free first Thursdays; pay what you wish on Wednesdays."
+        },
+        "Museum of the African Diaspora": {
+            "admission": "paid",
+            "source": "https://moadsf.org/tickets",
+            "checked": "2026-11-06",
+            "note": "$15. Free on second Saturdays."
+        },
+        "Oakland Museum of California": {
+            "admission": "paid",
+            "source": "https://omca.org/",
+            "checked": "2026-11-06",
+            "note": "Paid; free general admission first Sundays (third-party listings)."
+        },
+        "San Jose Museum of Art": {
+            "admission": "paid",
+            "source": "https://sjmusart.org/specials",
+            "checked": "2026-11-06",
+            "note": "Paid. Free for 17 and under, college students, teachers; free first Fridays from 6 pm."
+        },
+        "Sonoma Valley Museum of Art": {
+            "admission": "paid",
+            "source": "https://svma.org/?p=15",
+            "checked": "2026-11-06",
+            "note": "$10; free for 18 and under."
+        },
+        "The Walt Disney Family Museum": {
+            "admission": "paid",
+            "source": "https://www.waltdisney.org/",
+            "checked": "2026-11-06",
+            "note": "About $25 for adults (third-party listings)."
+        },
+        "Cartoon Art Museum": {
+            "admission": "paid",
+            "source": "https://www.cartoonart.org/visit",
+            "checked": "2026-11-06",
+            "note": "Was $10; the museum closed in August 2026."
+        },
+        "Madrone Art Bar": {
+            "admission": "unverified",
+            "source": "https://madroneartbar.com/",
+            "checked": "2026-11-06",
+            "note": "A bar: some nights have a cover charge, openings have been listed as free. Not a venue-wide answer."
+        }
+    },
+    "la": {
+        "California African American Museum": {
+            "admission": "free",
+            "source": "https://caamuseum.org/",
+            "checked": "2026-11-06",
+            "note": "Always free."
+        },
+        "Getty": {
+            "admission": "free",
+            "source": "https://www.getty.edu/visit/center/plan/faqs.html",
+            "checked": "2026-11-06",
+            "note": "Admission free; parking costs money."
+        },
+        "Hammer Museum": {
+            "admission": "free",
+            "source": "https://hammer.ucla.edu/visit",
+            "checked": "2026-11-06",
+            "note": "Free since 2014; no reservation needed."
+        },
+        "The Broad": {
+            "admission": "free",
+            "source": "https://www.thebroad.org/art/generals/general-admission",
+            "checked": "2026-11-06",
+            "note": "General admission always free; paid special exhibitions and the Infinity Mirrored Room are separate."
+        },
+        "MOCA": {
+            "admission": "free",
+            "source": "https://www.moca.org/visit",
+            "checked": "2026-11-06",
+            "note": "Free general admission since 2020 (the visit page may still show old prices)."
+        },
+        "USC Fisher Museum of Art": {
+            "admission": "free",
+            "source": "https://fisher.usc.edu/visit/",
+            "checked": "2026-11-06",
+            "note": "Always free."
+        },
+        "Fowler Museum at UCLA": {
+            "admission": "free",
+            "source": "https://www.fowler.ucla.edu/visit/",
+            "checked": "2026-11-06",
+            "note": "Free; donations welcome."
+        },
+        "Vincent Price Art Museum": {
+            "admission": "free",
+            "source": "https://www.elac.edu/campus-life/vincentprice",
+            "checked": "2026-11-06",
+            "note": "Always free; parking costs $2."
+        },
+        "Wende Museum": {
+            "admission": "free",
+            "source": "https://wendemuseum.org/visit-the-wende",
+            "checked": "2026-11-06",
+            "note": "Free for all exhibitions and public programs."
+        },
+        "Craft Contemporary": {
+            "admission": "paid",
+            "source": "https://www.craftcontemporary.org/visit/",
+            "checked": "2026-11-06",
+            "note": "About $9; free Sundays (donation basis)."
+        },
+        "Japanese American National Museum": {
+            "admission": "paid",
+            "source": "https://www.janm.org/",
+            "checked": "2026-11-06",
+            "note": "Paid ($16 listed); closed for renovation until about January 2027."
+        },
+        "LACMA": {
+            "admission": "paid",
+            "source": "https://www.lacma.org/tickets",
+            "checked": "2026-11-06",
+            "note": "About $28-30 for adults; free for LA County youth."
+        },
+        "Huntington": {
+            "admission": "paid",
+            "source": "https://www.huntington.org/plan-your-visit",
+            "checked": "2026-11-06",
+            "note": "About $29-34 for adults; free first Thursdays (competitive)."
+        },
+        "Museum of Latin American Art": {
+            "admission": "paid",
+            "source": "https://www.molaa.org/",
+            "checked": "2026-11-06",
+            "note": "$15 for adults; free Sundays."
+        },
+        "Norton Simon Museum": {
+            "admission": "paid",
+            "source": "https://www.nortonsimon.org/visit/tickets",
+            "checked": "2026-11-06",
+            "note": "$20 for adults; free first Fridays 4-7 pm."
+        },
+        "Skirball Cultural Center": {
+            "admission": "paid",
+            "source": "https://skirball.org/visit",
+            "checked": "2026-11-06",
+            "note": "$18; free on Thursdays."
+        },
+        "USC Pacific Asia Museum": {
+            "admission": "paid",
+            "source": "https://pacificasiamuseum.usc.edu/visit/",
+            "checked": "2026-11-06",
+            "note": "Paid; free second Sundays."
+        }
+    },
+    "mtl": {
+        "Canadian Centre for Architecture": {
+            "admission": "paid",
+            "source": "https://www.cca.qc.ca/",
+            "checked": "2026-11-06",
+            "note": "Paid (CA$10-15 listed); free Thursday evenings and first Sundays."
+        },
+        "McCord Stewart Museum": {
+            "admission": "paid",
+            "source": "https://musee-mccord-stewart.ca/en/",
+            "checked": "2026-11-06",
+            "note": "Paid; free for Quebec residents on the first Sunday, pay-what-you-can day monthly."
+        },
+        "Montreal Museum of Fine Arts": {
+            "admission": "paid",
+            "source": "https://www.mbam.qc.ca/en/information",
+            "checked": "2026-11-06",
+            "note": "About $31 for adults; permanent collection free for Quebec residents with a reservation."
+        }
+    },
+    "tor": {
+        "Art Museum at the University of Toronto": {
+            "admission": "free",
+            "source": "https://artmuseum.utoronto.ca/visiting/",
+            "checked": "2026-11-06",
+            "note": "Admission always free."
+        },
+        "The Image Centre": {
+            "admission": "free",
+            "source": "https://theimagecentre.ca/visit",
+            "checked": "2026-11-06",
+            "note": "Free; no ticket needed."
+        },
+        "AGO": {
+            "admission": "paid",
+            "source": "https://ago.ca/",
+            "checked": "2026-11-06",
+            "note": "About CA$25-30; free for Ontarians 25 and under."
+        },
+        "Aga Khan Museum": {
+            "admission": "paid",
+            "source": "https://www.agakhanmuseum.org/plan-your-visit",
+            "checked": "2026-11-06",
+            "note": "CA$20; free Wednesday evenings per one listing."
+        },
+        "Bata Shoe Museum": {
+            "admission": "paid",
+            "source": "https://batashoemuseum.ca/visit/",
+            "checked": "2026-11-06",
+            "note": "CA$16."
+        },
+        "Gardiner Museum": {
+            "admission": "paid",
+            "source": "https://www.gardinermuseum.on.ca/visit/hours-admission/",
+            "checked": "2026-11-06",
+            "note": "CA$18; Wednesday evening free or half price (pages conflict)."
+        },
+        "MOCA Toronto": {
+            "admission": "paid",
+            "source": "https://moca.ca/visit/",
+            "checked": "2026-11-06",
+            "note": "CA$14; free Fridays 5-9 pm and first Sundays."
+        },
+        "Textile Museum of Canada": {
+            "admission": "paid",
+            "source": "https://textilemuseum.ca/",
+            "checked": "2026-11-06",
+            "note": "CA$15."
+        }
+    },
+    "ist": {
+        "Salt Beyoğlu": {
+            "admission": "free",
+            "source": "https://saltonline.org/ziyaret",
+            "checked": "2026-11-06",
+            "note": "SALT states that entry and all programs are free."
+        },
+        "Salt Galata": {
+            "admission": "free",
+            "source": "https://saltonline.org/ziyaret",
+            "checked": "2026-11-06",
+            "note": "SALT states that entry and all programs are free."
+        },
+        "Arter": {
+            "admission": "paid",
+            "source": "https://www.arter.org.tr/",
+            "checked": "2026-11-06",
+            "note": "60 TL listed; Thursdays free per listings."
+        },
+        "Istanbul Modern": {
+            "admission": "paid",
+            "source": "https://www.istanbulmodern.org/en/visit",
+            "checked": "2026-11-06",
+            "note": "Paid; free Thursdays 10:00-14:00 for residents of Turkiye."
+        },
+        "Pera Museum": {
+            "admission": "paid",
+            "source": "https://peramuseum.org/faq",
+            "checked": "2026-11-06",
+            "note": "300 TL; free Fridays 18:00-22:00."
+        },
+        "Sakıp Sabancı Museum": {
+            "admission": "paid",
+            "source": "https://sakipsabancimuzesi.org/en/visit",
+            "checked": "2026-11-06",
+            "note": "About 300 TL; free Tuesdays."
+        },
+        "Borusan Contemporary": {
+            "admission": "paid",
+            "source": "https://www.borusancontemporary.com/",
+            "checked": "2026-11-06",
+            "note": "Paid for adults; free for children 12 and under, disabled visitors."
+        },
+        "Rahmi M. Koç Museum": {
+            "admission": "paid",
+            "source": "https://www.rmk-museum.org.tr/",
+            "checked": "2026-11-06",
+            "note": "Paid."
+        },
+        "Elgiz Museum of Contemporary Art": {
+            "admission": "unverified",
+            "source": "https://elgizmuseum.org/",
+            "checked": "2026-11-06",
+            "note": "Older third-party pages say free; no current policy found on the museum site."
+        }
+    }
+}
