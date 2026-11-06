@@ -28,4 +28,4 @@ def scrape_cooper_cole(env='prod', region='tor'):
         found += publish(env, region, 'Cooper Cole', f'{lines[i - 2]}: {lines[i - 1]}', start_date, end_date,
                          PAGE_URL, tag='gallery', seen=seen)
     if not found:
-        logging.warning("Cooper Cole: no exhibitions found; existing data kept.")
+        logging.warning("Cooper Cole: no current or upcoming exhibitions on the page (between shows?); existing data kept.")
