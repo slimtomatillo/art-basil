@@ -102,6 +102,19 @@
 
     // --- matching ------------------------------------------------------------
 
+    // Lower case with the accents taken off, so "Art Mur" finds "Art Mûr", "francois" finds "François
+    // Ghebaly" and "sakip" finds "Sakıp". Letters that don't split into a base letter plus an accent
+    // (the Turkish dotless ı, ł, ø, æ, ß...) are mapped by hand. Both the search box text and the
+    // table text go through this.
+    const UNSPLIT_LETTERS = { 'ı': 'i', 'ł': 'l', 'ø': 'o', 'đ': 'd', 'ð': 'd', 'þ': 'th', 'æ': 'ae', 'œ': 'oe', 'ß': 'ss' };
+    function foldText(text) {
+        return String(text)
+            .normalize('NFD')
+            .replace(/[̀-ͯ]/g, '')
+            .toLowerCase()
+            .replace(/[ıłøđðþæœß]/g, ch => UNSPLIT_LETTERS[ch]);
+    }
+
     // With every phase ticked nothing is excluded, including an event with no phase
     function phaseMatches(phases, eventPhase) {
         return phases.length === ALL_PHASES.length || phases.includes(eventPhase);
@@ -126,11 +139,11 @@
         return true;
     }
 
-    // `row` is { bucket, tags: [...], text: 'lowercased searchable text' } where bucket
+    // `row` is { bucket, tags: [...], text: foldText(searchable text) } where bucket
     // is bucketOf(phase, ongoing).
     // `skipGroup` / `skipPhase` leave one filter out, to count what changing it would show.
     function rowMatches(row, state, { skipGroup = null, skipPhase = false } = {}) {
-        if (state.q && !row.text.includes(state.q.toLowerCase())) return false;
+        if (state.q && !row.text.includes(foldText(state.q))) return false;
         if (!skipPhase && !phaseMatches(state.phases, row.bucket)) return false;
         return tagsMatch(state.tags, row.tags, skipGroup);
     }
@@ -161,6 +174,6 @@
     return {
         TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, PHASE_LABELS, PHASE_HINTS,
         groupOf, bucketOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
-        phaseMatches, tagsMatch, rowMatches, countTags, countPhases,
+        foldText, phaseMatches, tagsMatch, rowMatches, countTags, countPhases,
     };
 }));
