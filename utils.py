@@ -92,10 +92,10 @@ PROXY_DOMAINS = {
     # Southern Exposure (WEBSITE-71): 403s GitHub Actions' IPs, fine from a
     # normal connection; a premium proxy IP alone gets through (live-tested).
     'soex.org': {'premium_proxy': 'true'},
-    # Marin Civic Center (WEBSITE-81): Cloudflare 403s scripted requests from any
-    # connection (a browser is fine). A server-rendered Drupal page, so premium proxy alone should do
-    # - not live-tested; if CI still gets a 403, add js_render (25 credits per request).
-    'www.marincounty.gov': {'premium_proxy': 'true'},
+    # Marin Civic Center (WEBSITE-81): Cloudflare 403s scripted requests from any connection (a browser
+    # is fine). premium_proxy alone was tried first and ZenRows answered 422 in CI (2026-11-05), so this
+    # adds js_render (25 credits per request, about 190 a month). Not live-tested with it yet.
+    'www.marincounty.gov': {'premium_proxy': 'true', 'js_render': 'true'},
     # Asian Art Museum: began 403ing GitHub Actions' IPs on 2026-10-21 (Cloudflare);
     # still fine from a normal connection. A static WordPress site, so a premium
     # proxy IP without JS rendering should be enough - not live-tested yet, the
@@ -197,6 +197,10 @@ def fetch_and_parse(url, headers=None):
             # headers (e.g. a scraper's custom browser UA) don't apply here -
             # only our own URL and the domain's minimum required params go.
             response = _proxy_get(url, proxy_params)
+            if response.status_code >= 400 and response.status_code != 402:
+                # ZenRows explains a refusal in the body (e.g. a 422 for a site its basic options can't
+                # get past); without it the log only says "Unprocessable Entity"
+                logging.error(f"ZenRows refused {url} ({response.status_code}): {response.text[:300]}")
             if response.status_code == 402:
                 PROXY_EXHAUSTED = True
                 logging.error("ZenRows reports the account is out of credits (402); "

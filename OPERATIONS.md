@@ -123,6 +123,9 @@ Refreshing everything daily would need about 11,400 a month. Instead:
 - That comes to about **2,400 credits a month** (255 x 7.6 + 120 x 3.8), around
   half the allowance, which leaves about 2,600 for new proxied venues. A venue
   with one 10-credit page costs about 76 a month, and one 25-credit page about 190.
+- **Marin Civic Center needs `js_render`** (25 credits a request, about 190 a month): with
+  `premium_proxy` alone ZenRows answered 422 in CI. A refused proxy request now logs ZenRows's
+  explanation (the response body), so a 422 or similar says why in the run log.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
   run rather than waiting another 4 days. (The stale-data check flags a venue
   after 7 days.)
