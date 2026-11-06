@@ -191,6 +191,31 @@ never on place names or an artist's origin. A missing tag is invisible and a
 wrong one is a visible error, so prefer a rule that is slightly too narrow. A
 tag a person added by hand is never removed.
 
+### The `free` tag (admission)
+
+`free` follows from the venue, not the text. Two rules in `tagging.py` (`venue_tags`):
+every gallery that isn't a museum is free, and every venue recorded as `free` in
+`docs/data/venue_admission.json` is free. That file has one entry per museum and
+art center, by region and venue name: `admission` (`free`, `paid` or `unverified`),
+the `source` page, the date `checked`, and a `note` (free days, parking, and so on).
+Only `free` is tagged. `free` means free to see the exhibitions: a suggested
+donation counts, but pay-what-you-wish, free-for-residents-only or free-some-days
+venues are `paid` (the free days go in the note). A show without `free` means "not
+known to be free", not "paid".
+
+- **A new museum or art center:** add its entry (a test fails until you do), read the
+  price off the venue's own site, then run `python tagging.py` to tag its events.
+- **Re-checking:** policies change (MOCA, Hammer and MOCA Toronto have all changed
+  theirs in recent years). About once a year, or when a venue announces a change, open
+  each venue's `source`, update the entry and its `checked` date, and re-run
+  `python tagging.py`. Note it only ever adds tags: if a venue stops being free, remove
+  `free` from its events by hand (or with a one-off script), since `tagging.py` never
+  removes tags.
+- **First pass, 2026-11-06:** prices were looked up by web search, and some entries rest
+  on third-party listings rather than the venue's own page (the notes say so for the
+  Asian Art Museum and the Walt Disney Family Museum). `unverified` entries
+  (Marin MOCA, Elgiz, Madrone Art Bar) need a direct check.
+
 ## Event images
 
 Pictures come from two places, and a wrong picture is worse than none:
