@@ -92,6 +92,10 @@ PROXY_DOMAINS = {
     # Southern Exposure (WEBSITE-71): 403s GitHub Actions' IPs, fine from a
     # normal connection; a premium proxy IP alone gets through (live-tested).
     'soex.org': {'premium_proxy': 'true'},
+    # Marin Civic Center (WEBSITE-81): Cloudflare 403s scripted requests from any
+    # connection (a browser is fine). A server-rendered Drupal page, so premium proxy alone should do
+    # - not live-tested; if CI still gets a 403, add js_render (25 credits per request).
+    'www.marincounty.gov': {'premium_proxy': 'true'},
     # Asian Art Museum: began 403ing GitHub Actions' IPs on 2026-10-21 (Cloudflare);
     # still fine from a normal connection. A static WordPress site, so a premium
     # proxy IP without JS rendering should be enough - not live-tested yet, the

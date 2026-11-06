@@ -98,7 +98,8 @@ python3 -m http.server -d docs      # then http://localhost:8000/sf/
 ## Proxied venues and the ZenRows budget
 
 A few sites (BAMPFA, Cantor, de Young / Legion of Honor, Norton Simon,
-Huntington, AGO, Southern Exposure, Asian Art Museum, Art Museum at the University of Toronto) block GitHub's servers, so they are fetched
+Huntington, AGO, Southern Exposure, Asian Art Museum, Art Museum at the University of Toronto,
+Armory Center for the Arts, Marin Civic Center) block GitHub's servers, so they are fetched
 through the [ZenRows](https://www.zenrows.com) proxy. The list of hostnames and
 the ZenRows options each needs is `PROXY_DOMAINS` in `utils.py`; the API key is
 the repository secret `SCRAPER_PROXY_API_KEY`. Without the key those scrapers
