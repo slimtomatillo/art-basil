@@ -7,8 +7,13 @@ wrong, and what to do about it. To add a scraper, see
 
 ## What runs automatically
 
-`.github/workflows/scrape-exhibitions.yml` runs every day at 4am Pacific
-(11:00 UTC):
+`.github/workflows/scrape-exhibitions.yml` is set to start every day at about
+4am Pacific (12:17 UTC in winter, PST; 11:17 UTC in summer, PDT). Cron has no
+time zones, so **change the hour when the clocks change** (mid March and early
+November). GitHub also starts scheduled runs late when it is busy, most of all at
+the start of an hour, so the minute is off the hour; before that change the runs
+were starting 4 to 9 hours after their time, and a run can still be late. A
+manual run is `gh workflow run "Daily Exhibition Scraper" --ref main`.
 
 1. runs `python main.py` (all regions; takes about 10 minutes)
 2. commits the changed `docs/data/*_events.json` files and `db_size.csv` as

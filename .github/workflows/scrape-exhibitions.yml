@@ -2,8 +2,11 @@ name: Daily Exhibition Scraper
 
 on:
   schedule:
-    # Runs at 4am Pacific Time (PST is UTC-8 and PDT is UTC-7)
-    - cron: '0 11 * * *' # 4am Pacific Time = 11am UTC
+    # Meant to start around 4am Pacific. cron is UTC only, so this is the winter time: PST (UTC-8,
+    # early November to mid March) is 12:17 UTC. For PDT (UTC-7, mid March to early November) change
+    # it to '17 11 * * *'. Not on the hour: GitHub holds back scheduled runs most at the start of
+    # each hour (they were starting 4-9 hours late at '0 11'); it can still start them late.
+    - cron: '17 12 * * *'
   workflow_dispatch:
 
 jobs:
