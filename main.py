@@ -23,7 +23,7 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     manna_gallery, helvella_art, thelma_harris_art_gallery, hashimoto_contemporary, jenkins_johnson_gallery, \
     jessica_silverman_gallery, fraenkel_gallery, traywick_contemporary, acci_gallery, abrams_claghorn_gallery, \
     headlands_center_for_the_arts, shooting_gallery, el_cerrito_city_hall_gallery, civic_center_art_gallery, \
-    oakland_photo_workshop, gearbox_gallery
+    oakland_photo_workshop, gearbox_gallery, fm_oakland
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington, \
     skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary, \
     california_african_american_museum, molaa, ica_la, \
@@ -108,6 +108,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Marin Civic Center": civic_center_art_gallery.scrape_civic_center_art_gallery,
             "Oakland Photo Workshop": oakland_photo_workshop.scrape_oakland_photo_workshop,
             "GearBox Gallery": gearbox_gallery.scrape_gearbox_gallery,
+            "FM Oakland": fm_oakland.scrape_fm_oakland,
             "Mercury 20 Gallery": mercury_20_gallery.scrape_mercury_20_gallery,
             "Creative Growth Art Center": creative_growth.scrape_creative_growth,
             "Transmission Gallery": transmission_gallery.scrape_transmission_gallery,
