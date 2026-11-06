@@ -53,7 +53,16 @@ def fetch_exhibition_posts():
     except requests.RequestException as e:
         logging.error(f"Error fetching Madrone Art Bar exhibitions: {e}")
         return []
-    return response.json()
+    # A 200 that is not the post list (a bot-check or maintenance page, or an error object) must not crash the run
+    try:
+        posts = response.json()
+    except ValueError:
+        posts = None
+    if not isinstance(posts, list):
+        logging.error(f"Madrone Art Bar: the feed did not return a list of posts "
+                      f"({response.status_code}): {response.text[:200]!r}")
+        return []
+    return posts
 
 
 def parse_date_range(text, publish_year):
