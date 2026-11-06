@@ -2224,5 +2224,63 @@
             "last_updated": "2026-11-05 23:56:52",
             "hash": "bdc271c493f1a2538e68accc09fb620a"
         }
+    },
+    "Borusan Contemporary": {
+        "Haunted-Borusan Contemporary": {
+            "name": "Haunted",
+            "venue": "Borusan Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2027-08-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.borusancontemporary.com/en/current-exhibitions_12",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.borusancontemporary.com/content/userfiles/images/sergiler/Memo_Akten_1920x1080.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "811202b2fc39e59f10dbd86c93387ebe"
+        },
+        "Time Space Geometry-Borusan Contemporary": {
+            "name": "Time Space Geometry",
+            "venue": "Borusan Contemporary",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-19",
+                "end": "2027-08-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.borusancontemporary.com/en/current-exhibitions_12",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.borusancontemporary.com/content/userfiles/images/sergiler/Olivo_Barbieri_1920x1080-02.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-06 00:05:46",
+            "hash": "53f14e7d7c301e640f144e3cdb9ac953"
+        }
     }
 }

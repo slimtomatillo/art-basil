@@ -164,6 +164,15 @@ def scrape_<venue>(env='prod', region='<region>'):
   After adding a scraper, check it in CI (`gh workflow run scrape-exhibitions.yml`,
   then grep the job log for `Error fetching <your site>`). If it's blocked, route
   it through the ZenRows proxy — see 2f.
+- **A site that fails with `CERTIFICATE_VERIFY_FAILED`** (the log says `Error fetching ...`):
+  find out which kind before giving up on it. *Hostname mismatch* — try the `www.` address
+  (Borusan's bare domain has a certificate for another name; `www.` is fine). *Unable to get
+  local issuer certificate* — the server doesn't send its intermediate certificate (browsers
+  fetch it themselves). Download it from the `CA Issuers` address in the site's certificate,
+  add it to `certs/intermediates.pem` and the host to `EXTRA_CA_HOSTS` in `utils.py`
+  (`verify_for`); verification stays on. *Certificate has expired* or *tlsv1 unrecognized
+  name* — the site's own fault; don't turn verification off, note it on the ticket and retry
+  later (Blum & Poe and Galeri Mana were like this in November 2026).
 - Always guard `if soup is None:` — log a warning and `return`, don't raise.
   An uncaught exception in one scraper aborts the whole daily run.
 

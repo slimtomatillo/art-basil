@@ -93,7 +93,7 @@ def big_enough(url, minimum=MIN_IMAGE_BYTES):
     """True if the image is at least `minimum` bytes. Reads just far enough to know: the size a
     server reports for a HEAD request can't be trusted (Squarespace says 1 byte)."""
     try:
-        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True) as response:
+        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True, verify=utils.verify_for(url)) as response:
             if not response.ok or 'image' not in response.headers.get('Content-Type', ''):
                 return False
             received = 0
@@ -344,7 +344,7 @@ def image_size(url):
     """The size in bytes a server reports for a picture (read from the response headers; the body
     is not downloaded), or None if it can't be told."""
     try:
-        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True) as response:
+        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True, verify=utils.verify_for(url)) as response:
             if not response.ok or 'image' not in response.headers.get('Content-Type', ''):
                 return None
             return int(response.headers.get('Content-Length') or 0) or None
@@ -356,7 +356,7 @@ def proxy_serves(url):
     """True if the image proxy returns a picture for `url` (it can't reach every site: one that
     blocks it would leave a broken thumbnail, so a swap is made only after this check)."""
     try:
-        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True) as response:
+        with requests.get(url, headers=IMAGE_HEADERS, timeout=IMAGE_TIMEOUT, stream=True, verify=utils.verify_for(url)) as response:
             return response.ok and 'image' in response.headers.get('Content-Type', '')
     except requests.RequestException:
         return False
