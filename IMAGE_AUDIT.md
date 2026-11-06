@@ -4,14 +4,14 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-05: **537**. With their own picture: **533** (99%). Showing the venue's logo instead: **3**. No picture at all: **1**.
+Current and upcoming events on 2026-11-06: **558**. With their own picture: **554** (99%). Showing the venue's logo instead: **4**. No picture at all: **0**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
 | Region | Venue | Events | Own picture | Logo | None |
 |---|---|---:|---:|---:|---:|
 | `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
-| `mtl` | Galerie Kub’Art | 1 | 0 | 0 | 1 |
+| `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
 | `sf` | Sanchez Art Center | 3 | 2 | 1 | 0 |
 
 ### Events without a picture of their own
@@ -23,7 +23,7 @@ Venues with events that have no picture of their own, most first. Worth a look n
 
 **Galerie Kub’Art** (`mtl`)
 
-- [Exposition inaugurale](https://www.instagram.com/kubartgallery/): blank; page last checked 2026-11-04
+- [Exposition inaugurale](https://www.instagram.com/kubartgallery/): venue logo; page last checked 2026-11-04
 
 **Sanchez Art Center** (`sf`)
 
