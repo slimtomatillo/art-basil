@@ -147,6 +147,22 @@ class DicteeTest(unittest.TestCase):
         self.assertEqual(show['phase'], 'future')
         self.assertEqual(show['description'], 'A juried group exhibition exploring memory, language and exile.')
 
+    def test_the_sections_background_picture_is_stored_resized(self):
+        info = '{&quot;imageData&quot;:{&quot;uri&quot;:&quot;7acfee_abc~mv2.png&quot;}}'
+        page = (f'<section><wow-image data-image-info="{info}"><img alt="Textured Collage.png"/></wow-image>'
+                + DICTEE.format(run='January 23 – March 6, 2027') + '</section>')
+        show = self.run_dictee(page)[0]
+        self.assertEqual(show['links'][1], {
+            'link': 'https://static.wixstatic.com/media/7acfee_abc~mv2.png/v1/fit/w_640,h_640,q_85/picture.jpg',
+            'description': 'Image'})
+
+    def test_a_logo_or_a_picture_with_no_data_is_not_used(self):
+        logo = '{&quot;imageData&quot;:{&quot;uri&quot;:&quot;logo~mv2.jpg&quot;}}'
+        for tag in (f'<wow-image data-image-info="{logo}"><img alt="DICTEE LOGO"/></wow-image>',
+                    '<wow-image data-image-info="not json"></wow-image>', '<wow-image></wow-image>'):
+            show = self.run_dictee(f'<section>{tag}' + DICTEE.format(run='January 23 – March 6, 2027') + '</section>')[0]
+            self.assertEqual(len(show['links']), 1)
+
     def test_no_dated_announcement_or_unreachable_page_stores_nothing(self):
         self.assertEqual(self.run_dictee('<main><p>CALL FOR ARTISTS</p><p>Coming soon</p></main>'), [])
         self.assertEqual(self.run_dictee(None), [])
