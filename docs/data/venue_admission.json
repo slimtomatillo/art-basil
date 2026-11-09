@@ -115,6 +115,12 @@
             "checked": "2026-11-06",
             "note": "Was $10; the museum closed in August 2026."
         },
+        "di Rosa Napa": {
+            "admission": "paid",
+            "source": "https://www.dirosaart.org/visit/",
+            "checked": "2026-11-09",
+            "note": "$25 general, $20 seniors, students and military, $5 ages 5-17. Free for members and under 5. (di Rosa SF is free to all and is tagged as a gallery.)"
+        },
         "Madrone Art Bar": {
             "admission": "unverified",
             "source": "https://madroneartbar.com/",
