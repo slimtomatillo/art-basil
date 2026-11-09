@@ -126,6 +126,7 @@ class ScraperRunner:
         stored = []
         with mock.patch.object(module, 'fetch_and_parse', return_value=soup(html)), \
                 mock.patch.object(module, 'region_today', return_value=TODAY), \
+                mock.patch.object(_common, 'region_today', return_value=TODAY), \
                 mock.patch.object(_common, 'process_event', side_effect=lambda d, r: stored.append(d)), \
                 mock.patch.object(module, 'process_event', side_effect=lambda d, r: stored.append(d), create=True):
             getattr(module, function)(env='prod', **kwargs)

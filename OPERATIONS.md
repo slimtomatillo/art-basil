@@ -104,7 +104,7 @@ python3 -m http.server -d docs      # then http://localhost:8000/sf/
 
 A few sites (BAMPFA, Cantor, de Young / Legion of Honor, Norton Simon,
 Huntington, AGO, Southern Exposure, Asian Art Museum, Art Museum at the University of Toronto,
-Armory Center for the Arts, Marin Civic Center) block GitHub's servers, so they are fetched
+Armory Center for the Arts, Marin Civic Center, Galerie Simon Blais) block GitHub's servers, so they are fetched
 through the [ZenRows](https://www.zenrows.com) proxy. The list of hostnames and
 the ZenRows options each needs is `PROXY_DOMAINS` in `utils.py`; the API key is
 the repository secret `SCRAPER_PROXY_API_KEY`. Without the key those scrapers
@@ -128,8 +128,10 @@ Refreshing everything daily would need about 11,400 a month. Instead:
 - That comes to about **2,400 credits a month** (255 x 7.6 + 120 x 3.8), around
   half the allowance, which leaves about 2,600 for new proxied venues. A venue
   with one 10-credit page costs about 76 a month, and one 25-credit page about 190.
-- **Marin Civic Center needs `js_render`** (25 credits a request, about 190 a month): with
-  `premium_proxy` alone ZenRows answered 422 in CI. A refused proxy request now logs ZenRows's
+- **Marin Civic Center and Armory Center for the Arts need `js_render`** (25 credits a request,
+  about 190 a month each): with `premium_proxy` alone ZenRows answered 422 in CI (Armory worked
+  once, then began answering 422 on 2026-11-08). **Galerie Simon Blais** starts on `premium_proxy`
+  alone (10 credits, about 76 a month); add `js_render` if its first refresh logs a 422. A refused proxy request now logs ZenRows's
   explanation (the response body), so a 422 or similar says why in the run log.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
   run rather than waiting another 4 days. (The stale-data check flags a venue

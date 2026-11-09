@@ -5,10 +5,12 @@
 import os
 import sys
 import unittest
+from urllib.parse import urlparse
 from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import requests
+import main
 import utils
 from scrapers.sf import kala
 
@@ -49,6 +51,15 @@ class ProxyErrorLoggingTest(unittest.TestCase):
 
     def test_marin_civic_center_is_fetched_with_javascript_rendering(self):
         self.assertEqual(utils.PROXY_DOMAINS['www.marincounty.gov'], {'premium_proxy': 'true', 'js_render': 'true'})
+
+    def test_armory_is_fetched_with_javascript_rendering(self):
+        self.assertEqual(utils.PROXY_DOMAINS['www.armoryarts.org'], {'premium_proxy': 'true', 'js_render': 'true'})
+
+    def test_galerie_simon_blais_is_proxied_and_refreshed_every_four_days(self):
+        from scrapers.mtl import galerie_simon_blais
+        host = urlparse(galerie_simon_blais.EXHIBITIONS_URL).netloc
+        self.assertEqual(utils.PROXY_DOMAINS[host], {'premium_proxy': 'true'})
+        self.assertEqual(main.PROXIED_VENUES['Galerie Simon Blais'], [galerie_simon_blais.VENUE])   # else it would run daily
 
 
 class KalaTest(unittest.TestCase):
