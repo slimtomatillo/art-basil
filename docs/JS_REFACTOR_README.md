@@ -80,6 +80,27 @@ window.searchManager.clearFilters();               // back to the default view
 
 A group with no tags in a region's data gets no dropdown (so "Cost" only appears where events carry `free`, and "Format" stays hidden until some events carry its tags). Anything the visitor typed (the search text can come from a shared URL) is inserted as text, never as HTML.
 
+### 4c. `nearMe.js` and `nearMeControl.js` ("Use my location")
+**Purpose**: Lets a visitor see how far each show is from them and sort nearest first (WEBSITE-104). Works in the event list; the map epic (WEBSITE-76) reuses it for the "you are here" marker.
+
+`nearMe.js` holds the **pure logic**, with no DOM access, so it is unit tested in Node (`node --test tests/`):
+- `distanceKm(a, b)` - great-circle distance between two `{lat, lng}` points. Distances are straight-line, so the page calls them approximate
+- `unitsFor(region)` / `UNITS` - miles for `sf` and `la`, kilometres for `mtl`, `tor` and `ist`. **Every region needs an entry** (a test checks `region_bounds.json` against it), so a new city is a decision, not a silent default
+- `formatDistance(km, units)` - "1.4 mi", "12 mi", "1,234 km", "<0.1 km"
+- `nearestKm(user, points)` / `distancesByVenue(user, coordinates)` - a venue with two addresses is as far as its nearest one; a venue with no coordinates has no distance (`null`)
+- `isFarFromRegion(user, box)` - more than 100 km from the region's bounding box (`docs/data/region_bounds.json`): the page says how far instead of putting "2,500 mi" on every row, and does not reorder
+- `orderByDistance(items, distanceOf)` - nearest first; items with no distance last; ties keep the page's usual order
+
+`nearMeControl.js` (`NearMeControl`) is the DOM part, created by `scroll.js` after the filter panel:
+- Adds a **Use my location** button to the filter bar and a note under it. After a location is shared, the button becomes a **Nearest first** toggle (on by default) with a **Turn off** link, each row's Links cell shows "0.4 mi away" (the `.event-distance` span `tableRenderer.js` leaves in it, empty and hidden), and the rows are reordered. Turning it off restores the usual order. Filters keep working: hidden rows are reordered too
+- **Nothing is requested until the visitor clicks.** Then it loads `venue_coordinates.json` and `region_bounds.json` (static files, once; `dataManager.fetchNearMeData()`), so the default page is no heavier
+- **Privacy**: the position is used once to work out each venue's distance and then dropped. It is not kept in a variable, storage or a cookie, not put in the URL, not sent anywhere, and not in the analytics data. Reloading forgets everything. Keep it that way: no `localStorage`, no `?lat=`, nothing in `gtag`
+- Outcomes it handles, each with a short message and the page still usable: permission denied, position unavailable, timed out (10 s), venue data failed to load (retry works), and far from the region
+- `SearchManager`'s row model carries `index` (the usual order), `venue` (from the row's `data-venue`) and `distanceEl`, which is how the control finds its rows
+- Needs HTTPS (GitHub Pages is; `localhost` is fine) and a browser with `navigator.geolocation`; without it no button is added
+
+**Testing it by hand**: in the browser console, replace what the browser would answer, then click the button: `Geolocation.prototype.getCurrentPosition = (ok) => ok({ coords: { latitude: 37.8044, longitude: -122.2712 } })` (call `err({ code: 1 })` for "denied", `3` for "timed out").
+
 ### 5. `modalManager.js`
 **Purpose**: Handles modal functionality
 **Class**: `ModalManager`
@@ -124,6 +145,8 @@ The modules should be loaded in this order in your HTML:
 <script src="filterState.js"></script>
 <script src="searchManager.js"></script>
 <script src="filterPanel.js"></script>
+<script src="nearMe.js"></script>
+<script src="nearMeControl.js"></script>
 <script src="modalManager.js"></script>
 
 <!-- Load main orchestrator last -->

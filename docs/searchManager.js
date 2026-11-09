@@ -30,7 +30,7 @@ class SearchManager {
     // One pass over the rendered table, so each filter change is just in-memory matching.
     buildRowModel() {
         if (!this.tableBody) return;
-        this.rows = Array.from(this.tableBody.getElementsByTagName('tr')).flatMap(el => {
+        this.rows = Array.from(this.tableBody.getElementsByTagName('tr')).flatMap((el, index) => {
             const cells = el.getElementsByTagName('td');
             if (cells.length < 5) return [];
             // Columns: 0 image, 1 date, 2 "title @ venue", 3 tags, 4 links. The
@@ -38,6 +38,9 @@ class SearchManager {
             const text = filterState.foldText([1, 2, 3].map(i => cells[i]?.textContent || '').join('\n'));
             return [{
                 el,
+                index,                                       // the page's usual order (Near Me can reorder the rows)
+                venue: el.getAttribute('data-venue') || '',  // for the "Use my location" distances
+                distanceEl: el.querySelector('.event-distance'),
                 // current / ongoing / future / past: what the "When" filter works on
                 bucket: filterState.bucketOf(el.getAttribute('data-phase'), el.getAttribute('data-ongoing') === 'true'),
                 tags: (el.getAttribute('data-tags') || '').split('|').filter(Boolean),
