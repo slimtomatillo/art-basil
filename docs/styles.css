@@ -161,7 +161,7 @@ body {
             "logo    title"
             "search  sub"
             "filters actions";
-        column-gap: 2rem;
+        column-gap: 1.5rem;
         row-gap: 0.5rem;
         align-items: center;
         /* The region title's blob reaches ~0.55em above the text; without this
@@ -192,6 +192,7 @@ body {
     .header-region > .d-flex {
         grid-area: actions;
         justify-self: end;
+        align-self: end;
     }
 
     .header-search {
@@ -202,9 +203,20 @@ body {
         max-width: 420px;
     }
 
-    .header-filters .filter-bar {
-        margin-bottom: 0;
+    /* Desktop header: 0.5rem between grid rows, plus this, makes the search box sit 0.75rem above the first
+       row of filters, the same as the rows are from each other */
+    .header-filters {
+        padding-top: 0.25rem;
     }
+
+    .header-filters .filter-bar {
+        row-gap: 0.75rem;
+    }
+}
+
+/* The header's own margin is the space before the results line; nothing extra from the filter bar */
+.header-filters .filter-bar {
+    margin-bottom: 0;
 }
 
 /* Shown in place of the event table when nothing matches (drawn by filterPanel.js) */
@@ -376,6 +388,12 @@ body {
     background-color: #f8f9fa;
     padding: 4px 0;
     margin-bottom: 0;
+}
+
+/* In the header the filters follow directly: the box's own 4px of bottom padding would make the gap to the
+   first row of filters look 4px bigger than the gap between the rows */
+.header-search #searchBarContainer {
+    padding-bottom: 0;
 }
 
 #searchBar {
@@ -873,7 +891,9 @@ body {
     position: relative;   /* anchors the full-width popovers used on phones */
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    /* Rows (When / Medium / ... then "Use my location") are as far apart as the search box is from the first
+       row: 1rem when the header is stacked, 0.75rem in the desktop header (see .header-filters below) */
+    gap: 1rem 0.4rem;
     margin-bottom: 0.75rem;
 }
 
@@ -885,7 +905,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.35rem 0.9rem;
+    padding: 0.35rem 0.8rem;
     border: 1px solid #dee2e6;
     border-radius: 20px;
     background-color: white;
@@ -1081,18 +1101,209 @@ body {
 }
 
 .near-me-note {
-    margin-bottom: 0.75rem;
+    margin: 0.5rem 0 0;
     font-size: 0.85rem;
     color: #495057;
 }
 
+.near-me-note[hidden] {
+    display: none;
+}
+
 .near-me-message {
-    margin-right: 0.5rem;
     font-weight: 600;
 }
 
-.near-me-privacy {
+/* The (i) beside the button, and the bubble it opens */
+.near-me {
+    position: relative;
+}
+
+.near-me-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
     color: #6c757d;
+    cursor: pointer;
+}
+
+.near-me-info:hover,
+.near-me-info[aria-expanded="true"] {
+    color: #212529;
+}
+
+.near-me-bubble {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 30;
+    width: max-content;
+    max-width: min(17rem, calc(100vw - 2rem));
+    padding: 0.55rem 0.8rem;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    font-size: 0.85rem;
+    color: #212529;
+}
+
+.near-me-bubble::before {
+    content: "";
+    position: absolute;
+    left: var(--arrow-x, 1.5rem);
+    top: -7px;
+    width: 12px;
+    height: 12px;
+    border-top: inherit;
+    border-left: inherit;
+    background: #fff;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.near-me-bubble[hidden] {
+    display: none;
+}
+
+.region-page .near-me-bubble {
+    border: 2px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--ink);
+}
+
+/* "List view | Map view" (mapView.js): a two-segment control on the results line, beside "Showing X of Y
+   events". On phones it spans the width above the count, with thumb-sized segments. */
+.results-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    /* The header above ends with its own 1rem margin; a little less here keeps this line close to the action
+       buttons and the filters */
+    margin: -0.25rem 0 0.75rem;
+}
+
+.results-bar .filter-summary {
+    flex: 1 1 12rem;
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+.view-toggle {
+    display: inline-flex;
+    flex: none;
+    border: 1px solid #dee2e6;
+    border-radius: 999px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.view-toggle button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    min-height: 32px;
+    padding: 0.15rem 0.85rem;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: var(--control-font-size, 0.9rem);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-toggle button svg {
+    flex: none;
+    width: 14px;
+    height: 14px;
+}
+
+.view-toggle button[aria-pressed="true"] {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.view-toggle button + button {
+    border-left: 1px solid #dee2e6;
+}
+
+.region-page .view-toggle {
+    border: 2px solid var(--ink);
+    box-shadow: var(--pop-shadow);
+}
+
+.region-page .view-toggle button + button {
+    border-left: 2px solid var(--ink);
+}
+
+.region-page .view-toggle button[aria-pressed="true"] {
+    background-color: var(--region-c);
+}
+
+@media (max-width: 575.98px) {
+    /* Like tabs above the results: full width, equal segments, easy to hit */
+    .view-toggle {
+        order: -1;
+        width: 100%;
+    }
+    .view-toggle button {
+        flex: 1;
+        min-height: 44px;
+        font-size: 1rem;
+    }
+    .view-toggle button svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.map-view {
+    margin-bottom: 1rem;
+}
+
+.map-canvas {
+    height: min(70vh, 640px);
+    min-height: 340px;
+    border: 2px solid var(--ink, #212529);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.map-status,
+.map-message {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.map-status[hidden],
+.map-message[hidden] {
+    display: none;
+}
+
+.map-note {
+    margin: 0.4rem 0 0;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* With the map showing, the table (and its "nothing matches" card) step aside; the summary line stays */
+.map-view-on .table-responsive:has(> #eventTable),
+.map-view-on .empty-state {
+    display: none;
+}
+
+/* The Event Page and Map links in the Links column */
+.event-link {
+    font-size: var(--control-font-size, 0.9rem);
 }
 
 .event-distance {
@@ -1114,7 +1325,7 @@ body {
 @media (max-width: 768px) {
     /* Tighter buttons so all four filters fit on one line of a phone */
     .filter-bar {
-        gap: 0.4rem;
+        gap: 1rem 0.4rem;
     }
     .filter-dropdown-toggle {
         padding: 0.35rem 0.6rem;
@@ -1144,6 +1355,9 @@ body {
    sticker look: dark outline, hard shadow, press down on hover. */
 .region-page {
     --ink: #111;
+    /* One size for the buttons (header actions, filters, "Use my location", List/Map view) and the Event Page
+       and Map links */
+    --control-font-size: 0.9rem;
     --pop-shadow: 3px 3px 0 var(--ink);
     --region-tint: color-mix(in srgb, var(--region-c) 22%, #fff);
 }
@@ -1192,6 +1406,7 @@ body {
 
 /* Action buttons: sticker style */
 .region-page header .btn {
+    font-size: var(--control-font-size);
     padding: 0.4rem 1rem;
     border: 2.5px solid var(--ink);
     border-radius: 14px 18px 13px 17px;
@@ -1245,6 +1460,7 @@ body {
 }
 
 .region-page .filter-dropdown-toggle {
+    font-size: var(--control-font-size);
     border: 2px solid var(--ink);
     box-shadow: var(--pop-shadow);
     font-weight: 600;

@@ -228,6 +228,7 @@ class TableRenderer {
             linkElement.href = eventPageLink.link;
             linkElement.textContent = eventPageLink.description || 'Link';
             linkElement.target = '_blank'; // Open in new tab/window
+            linkElement.className = 'event-link';
             cell.appendChild(linkElement);
         }
        
@@ -246,6 +247,7 @@ class TableRenderer {
                 mapLinkElement.textContent = map.text;
                 if (mapLinks.length > 1) mapLinkElement.title = map.title;
                 mapLinkElement.target = '_blank'; // Open in new tab/window
+                mapLinkElement.className = 'event-link';
                 cell.appendChild(mapLinkElement);
             });
         }

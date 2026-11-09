@@ -148,7 +148,8 @@ A new **region** also needs a bounding box in `docs/data/region_bounds.json`
 accepts a match inside it, and `tests/test_venue_coordinates.py` fails if any coordinate falls
 outside, which catches an address matched in the wrong city.
 The "Use my location" button (`docs/nearMe.js`) also needs the region's **distance units** in its `UNITS`
-map (`'mi'` or `'km'`); a test fails until it has one.
+map (`'mi'` or `'km'`); a test fails until it has one. Map view opens framed on the same box, so make it cover
+every venue without leaving a lot of empty map around them.
 
 ### 1d. `scrapers/<region>/`
 New directory, one module per venue. **No `__init__.py`** — the project uses

@@ -156,6 +156,39 @@ is a paid ZenRows plan.
 
 To add a blocked site, see section 2f of [ADDING_A_REGION.md](ADDING_A_REGION.md).
 
+## The map (Map view)
+
+Map view (`docs/mapView.js`, epic WEBSITE-76) draws a map with **MapLibre GL JS** and **OpenFreeMap**'s
+free vector tiles. Neither needs a key, an account or a bill, and nothing here needs renewing. What it does
+rely on:
+
+- **OpenFreeMap** (https://openfreemap.org) serves the map's style and tiles from `tiles.openfreemap.org`.
+  It is run by one developer, has no SLA, and its terms let it be discontinued without notice. It is free,
+  allows commercial use and publishes weekly full-planet downloads, so it can be replaced. The only
+  provider-specific line in the code is `MAP_STYLE_URL` at the top of `docs/mapView.js`.
+- **MapLibre GL JS** is vendored, not loaded from a CDN: `docs/vendor/maplibre-gl/` (version, hashes and how to
+  update are in its `README.md`). It only changes when someone changes it.
+
+**Knowing it broke.** Visitors see "The map couldn't load ... so here is the list instead" and the list
+works as before, so a dead tile server costs the map, not the site. The daily scrape does not check it. If
+the map never loads for you, open `/sf/?view=map` and look at the console and network tab; a failing
+`tiles.openfreemap.org` request means the provider.
+
+**If OpenFreeMap goes away**, in order of effort:
+1. Change `MAP_STYLE_URL` to another free vector style that works with MapLibre (CARTO's basemaps need a free
+   key requested by email, see their terms; Protomaps' hosted API needs a key and is non-commercial only).
+   Update the attribution/privacy note in `mapView.js` (`MAP_MESSAGES.privacy`) to name the new provider.
+2. Or host the tiles ourselves: a single PMTiles file on any static host plus a style that points to it
+   (OpenFreeMap and Protomaps publish planet files; a regional extract is much smaller). That needs the
+   `pmtiles` protocol added to the map and is the way to remove the dependency for good.
+
+**Privacy.** Loading the map reveals the visitor's IP address to OpenFreeMap (which may use Cloudflare). The
+page says so in one line under the map, and says the location from "Use my location" is never sent there.
+The site already uses Google Analytics. There is no privacy page; if one is added, mention the map in it.
+
+**The comparison behind the choice** (Google Maps, Apple MapKit JS, OpenStreetMap's own tiles, CARTO) is in
+the comment on WEBSITE-76 of 2026-11-09.
+
 ## Forms and feedback (Web3Forms)
 
 The Add Event page (an event form and a "suggest a venue" form) and the "?" feedback

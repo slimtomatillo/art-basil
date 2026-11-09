@@ -17,7 +17,8 @@ const NEAR_ME_MESSAGES = {
     on: nearestFirst => `Showing how far each show is from where you are${nearestFirst ? ', nearest first' : ''}. ` +
         'Distances are straight-line, so approximate.',
     far: distance => `You’re about ${distance} from the venues listed here, so distances aren’t shown.`,
-    privacy: 'Your location stays in this browser: it isn’t saved or sent anywhere.',
+    // Shown in the bubble behind the info icon next to the button
+    privacy: 'Your location stays in this browser. It isn’t saved or sent anywhere.',
 };
 
 class NearMeControl {
@@ -58,31 +59,69 @@ class NearMeControl {
         this.label = this.mainButton.querySelector('.near-me-label');
         this.mainButton.addEventListener('click', () => this.onMainClick());
 
+        // A small (i) next to the button; it opens a bubble that says where the location goes (nowhere)
+        this.infoButton = document.createElement('button');
+        this.infoButton.type = 'button';
+        this.infoButton.className = 'near-me-info';
+        this.infoButton.setAttribute('aria-label', 'About your location');
+        this.infoButton.setAttribute('aria-expanded', 'false');
+        this.infoButton.setAttribute('aria-controls', 'near-me-info-bubble');
+        this.infoButton.title = NEAR_ME_MESSAGES.privacy;       // hover tooltip on a desktop
+        // Constant markup only: an "i" in a circle
+        this.infoButton.innerHTML =
+            '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" ' +
+            'stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v5.5M12 7.6h.01"/></svg>';
+        this.infoButton.addEventListener('click', () => this.setInfoOpen(this.bubble.hidden));
+
+        this.bubble = document.createElement('div');
+        this.bubble.className = 'near-me-bubble';
+        this.bubble.id = 'near-me-info-bubble';
+        this.bubble.hidden = true;
+        this.bubble.textContent = NEAR_ME_MESSAGES.privacy;
+
         this.offButton = document.createElement('button');
         this.offButton.type = 'button';
         this.offButton.className = 'near-me-off';
         this.offButton.textContent = 'Turn off';
         this.offButton.addEventListener('click', () => this.turnOff());
 
-        group.append(this.mainButton, this.offButton);
+        group.append(this.mainButton, this.infoButton, this.offButton, this.bubble);
         this.bar.append(group);
+        this.group = group;
 
-        // Under the bar (FilterPanel redraws only inside the bar and the summary, so this stays)
+        // Escape, or a click anywhere else, closes the bubble
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && !this.bubble.hidden) { this.setInfoOpen(false); this.infoButton.focus(); }
+        });
+        document.addEventListener('click', event => {
+            if (!this.bubble.hidden && !group.contains(event.target)) this.setInfoOpen(false);
+        });
+
+        // What just happened (finding you, an error, the distances' caveat): under the bar, only when there is
+        // something to say, so it takes no room otherwise (FilterPanel redraws only inside the bar and the summary)
         this.note = document.createElement('div');
         this.note.className = 'near-me-note';
+        this.note.hidden = true;
         this.message = document.createElement('span');
         this.message.className = 'near-me-message';
         this.message.setAttribute('role', 'status');
-        this.privacy = document.createElement('span');
-        this.privacy.className = 'near-me-privacy';
-        this.privacy.textContent = NEAR_ME_MESSAGES.privacy;
-        this.note.append(this.message, this.privacy);
+        this.note.append(this.message);
         this.panelEl.append(this.note);
+    }
+
+    setInfoOpen(open) {
+        this.bubble.hidden = !open;
+        this.infoButton.setAttribute('aria-expanded', String(open));
+        // The bubble's arrow points at the middle of the (i), wherever the button sits in its group
+        if (open && this.bubble.style) {
+            this.bubble.style.setProperty('--arrow-x', `${this.infoButton.offsetLeft + this.infoButton.offsetWidth / 2}px`);
+        }
     }
 
     setMessage(text) {
         this.message.textContent = text || '';
         this.message.hidden = !text;
+        this.note.hidden = !text;
     }
 
     // Bring the button, the extra link and the note in line with the phase

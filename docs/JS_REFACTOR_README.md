@@ -92,7 +92,7 @@ A group with no tags in a region's data gets no dropdown (so "Cost" only appears
 - `orderByDistance(items, distanceOf)` - nearest first; items with no distance last; ties keep the page's usual order
 
 `nearMeControl.js` (`NearMeControl`) is the DOM part, created by `scroll.js` after the filter panel:
-- Adds a **Use my location** button to the filter bar and a note under it. After a location is shared, the button becomes a **Nearest first** toggle (on by default) with a **Turn off** link, each row's Links cell shows "0.4 mi away" (the `.event-distance` span `tableRenderer.js` leaves in it, empty and hidden), and the rows are reordered. Turning it off restores the usual order. Filters keep working: hidden rows are reordered too
+- Adds a **Use my location** button to the filter bar with a small **(i)** beside it: the icon opens a bubble saying the location stays in the browser (click, tap or Enter; Escape or a click elsewhere closes it; the button's tooltip says the same). A one-line note under the bar appears only while there is something to say (finding you, an error, the distances' caveat) and takes no room otherwise. After a location is shared, the button becomes a **Nearest first** toggle (on by default) with a **Turn off** link, each row's Links cell shows "0.4 mi away" (the `.event-distance` span `tableRenderer.js` leaves in it, empty and hidden), and the rows are reordered. Turning it off restores the usual order. Filters keep working: hidden rows are reordered too
 - **Nothing is requested until the visitor clicks.** Then it loads `venue_coordinates.json` and `region_bounds.json` (static files, once; `dataManager.fetchNearMeData()`), so the default page is no heavier
 - **Privacy**: the position is used once to work out each venue's distance and then dropped. It is not kept in a variable, storage or a cookie, not put in the URL, not sent anywhere, and not in the analytics data. Reloading forgets everything. Keep it that way: no `localStorage`, no `?lat=`, nothing in `gtag`
 - Outcomes it handles, each with a short message and the page still usable: permission denied, position unavailable, timed out (10 s), venue data failed to load (retry works), and far from the region
@@ -100,6 +100,19 @@ A group with no tags in a region's data gets no dropdown (so "Cost" only appears
 - Needs HTTPS (GitHub Pages is; `localhost` is fine) and a browser with `navigator.geolocation`; without it no button is added
 
 **Testing it by hand**: in the browser console, replace what the browser would answer, then click the button: `Geolocation.prototype.getCurrentPosition = (ok) => ok({ coords: { latitude: 37.8044, longitude: -122.2712 } })` (call `err({ code: 1 })` for "denied", `3` for "timed out").
+
+### 4d. `mapView.js` ("List view | Map view")
+**Purpose**: The "List view | Map view" toggle on the results line (beside "Showing X of Y events"; full width above the count on a phone) and the map behind it (WEBSITE-102; pins, clusters and popups follow in WEBSITE-103). Part of the map epic WEBSITE-76.
+
+- The table is the default view. The choice is part of the URL state: `filterState.parseUrl` / `toQuery` carry `view` (`?view=map`, written only for the map), and `SearchManager.setView('list' | 'map')` changes it, so a Map view can be shared and keeps the other parameters (`?q=...&phase=...&tags=...&view=map`). The view is not a filter: `isDefault` ignores it and "Clear all" keeps it. Existing links (`?search=`, `?tags=`, `?phase=`) have no `view`, so they open on the list
+- `MapView` subscribes to `SearchManager`. Map view hides the table (the `map-view-on` class on `<body>`; the "Showing X of Y" line and the filter pills stay) and shows a `<section class="map-view">`: the map, then a one-line privacy note beside MapLibre's own attribution
+- **Nothing is requested until Map view is opened.** The first open loads the pinned MapLibre GL JS from `docs/vendor/maplibre-gl/` (our own site, see its README for the version, hashes and how to update it) with `import()`, then `region_bounds.json`, then the tiles. The map is built once and reused when the visitor goes back and forth
+- The map opens framed on the region's box (`docs/data/region_bounds.json`), with `cooperativeGestures` (two fingers to pan, so a one-finger swipe still scrolls the page on a phone), zoom buttons and the attribution control (it must stay on)
+- **The tile provider is one constant**, `MAP_STYLE_URL` at the top of `mapView.js` (OpenFreeMap's "positron" style). See `OPERATIONS.md`, "The map", for what to do if it goes away
+- **It never leaves an empty box.** If WebGL is missing, the library or the style can't load (offline, blocked), or nothing has loaded after 15 s of the tab being visible, it removes the map, goes back to the list (which also puts the URL right) and shows a short note beside the filters. The next click on Map view tries again. A tab in the background draws no frames, so the timeout waits until it is visible again. Once the map has loaded, a single failed tile is just a gap
+- `scroll.js` creates it after the filter panel and "Use my location"; `window.mapView` is there for debugging
+
+**Testing it by hand**: serve `docs/` (for example `python3 -m http.server -d docs`) and open `/sf/?view=map`. To see a failure, in the console set `mapView.loadLibrary = async () => { throw new Error('x') }` or `mapView.styleUrl = 'http://localhost:8000/missing.json'` before clicking Map view. (A browser tab that isn't in front may not draw frames, so a map can sit on "Loading" there until you look at it.)
 
 ### 5. `modalManager.js`
 **Purpose**: Handles modal functionality
@@ -147,6 +160,7 @@ The modules should be loaded in this order in your HTML:
 <script src="filterPanel.js"></script>
 <script src="nearMe.js"></script>
 <script src="nearMeControl.js"></script>
+<script src="mapView.js"></script>
 <script src="modalManager.js"></script>
 
 <!-- Load main orchestrator last -->
