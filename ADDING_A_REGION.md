@@ -2,7 +2,7 @@
 
 ## Just adding a venue to an existing region?
 
-You need three things, then you're done (the venue page and map links pick it up
+You need four things, then you're done (the venue page and map links pick it up
 automatically):
 
 1. **A scraper**, `scrapers/<region>/<venue>.py` — write it as described in
@@ -16,6 +16,10 @@ automatically):
    string the scraper writes (section 1c) — missing, the venue gets no map link.
    A venue with more than one space can list several addresses, each with its own
    map link (see "A venue with more than one space" in 1c).
+4. **Coordinates** in `docs/data/venue_coordinates.json` for each address: run
+   `python geocode_venues.py` after adding the address (it only looks up what is
+   missing, section 1c-ii). `tests/test_venue_coordinates.py` fails until every
+   address has coordinates, so you will find out if you forget.
 
 Then write the real data with `python main.py --venues "<Venue Name>" --no-summary`,
 and check it in CI once (section 2a). If the site blocks GitHub's servers, also
@@ -113,6 +117,36 @@ College Circle"); the venues page lists them on separate lines:
   needs to change. `submissions.py` also accepts this shape. Before you list
   several addresses, make sure each really is a place to visit (for example,
   a university's own street address in its footer is not a gallery space).
+
+### 1c-ii. `docs/data/venue_coordinates.json` (map and "Near me")  ← **also easy to forget**
+Every address in `<region>_venues.json` also needs a latitude and longitude, so the map
+and the distances never have to look addresses up in a visitor's browser:
+```json
+{
+    "mtl": {
+        "Montreal Museum of Fine Arts": [{"lat": 45.498512, "lng": -73.579431}]
+    }
+}
+```
+The list is in the **same order as the venue's addresses**: one entry for a plain address,
+one per space for a venue with several. Don't write it by hand; run the geocoder, which
+uses OpenStreetMap's public Nominatim service (one request a second, so about 3 minutes
+for all 170 venues, seconds for one new venue):
+```bash
+python geocode_venues.py                      # every address without coordinates
+python geocode_venues.py --region mtl         # one region
+python geocode_venues.py --redo "Venue Name"  # look a venue up again, e.g. after correcting its address
+python geocode_venues.py --dry-run            # list what it would look up
+```
+It prints what it could not find and what it matched only roughly (an entry marked
+`"approx": true`: the street or the area, not the building). Check those on a map, then fix the
+address in the venues file and `--redo`, or edit the coordinates by hand and add
+`"manual": true` so the script never touches them again.
+
+A new **region** also needs a bounding box in `docs/data/region_bounds.json`
+(`{"lat": [south, north], "lng": [west, east]}`, generous, covering every venue). The geocoder only
+accepts a match inside it, and `tests/test_venue_coordinates.py` fails if any coordinate falls
+outside, which catches an address matched in the wrong city.
 
 ### 1d. `scrapers/<region>/`
 New directory, one module per venue. **No `__init__.py`** — the project uses
@@ -418,6 +452,8 @@ EOF
 Checklist:
 - [ ] every scraper's `venue` string has a matching key in `<region>_venues.json`
       (a venue with several spaces: a list of `label` + `address`, see 1c)
+- [ ] every address has coordinates in `docs/data/venue_coordinates.json` (`python
+      geocode_venues.py`, 1c-ii) and the region has a box in `docs/data/region_bounds.json`
 - [ ] `<region>_events.json` committed (as `{}`)
 - [ ] workflow `git add` line added
 - [ ] `docs/<region>/index.html` created, `docs/index.html` card added,
