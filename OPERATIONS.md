@@ -133,10 +133,11 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   once, then began answering 422 on 2026-11-08). Confirmed in CI on 2026-11-09: Armory fetches with
   `js_render`, and **Galerie Simon Blais** and **Mills College Art Museum** fetch with `premium_proxy` alone
   (10 credits, about 76 a month each). **Creative Growth Art Center** is set up the same way but has not made
-  its first proxy fetch yet. **Marin Civic Center still answered 422 (RESP001, "Could not get content") on
-  2026-11-09 even with `js_render`** (WEBSITE-106); `proxy_country=us` is tried next, since ZenRows's docs
-  suggest a geolocation for that error. If it still fails, the docs' other suggestions are `wait=5000` and a
-  `Referer` header, one at a time. A refused proxy request now logs ZenRows's
+  its first proxy fetch yet. **Marin Civic Center answered 422 (RESP001, "Could not get content") on
+  2026-11-09 even with `js_render`** (WEBSITE-106). Adding `proxy_country=us` fixed it (confirmed in CI the same
+  day, no extra credits): ZenRows's docs suggest a geolocation for that error, and a county site can refuse a
+  non-US exit IP. If another US site answers 422 RESP001, try that first; the docs' other suggestions are
+  `wait=5000` and a `Referer` header. A refused proxy request now logs ZenRows's
   explanation (the response body), so a 422 or similar says why in the run log.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
   run rather than waiting another 4 days. (The stale-data check flags a venue
