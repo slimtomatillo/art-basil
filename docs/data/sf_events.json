@@ -43034,7 +43034,8 @@
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -43062,7 +43063,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "free"
             ],
             "phase": "future",
             "dates": {
@@ -43090,7 +43092,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "free"
             ],
             "phase": "future",
             "dates": {
@@ -43118,7 +43121,8 @@
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "free"
             ],
             "phase": "future",
             "dates": {
