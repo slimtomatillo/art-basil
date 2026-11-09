@@ -73,12 +73,32 @@ class WendeTest(unittest.TestCase):
         self.assertEqual(wende._month_range('Sep 2026–Feb 2028'), (dt.date(2026, 9, 1), dt.date(2028, 2, 29)))
         self.assertEqual(wende._month_range('Some title'), (None, None))
 
-    def test_titles_notices_and_the_free_tag(self):
-        page = blocks('CURRENT', 'Between Two Empires: Argentina in the Cold War', 'Sep 2026-Jan 2027',
-                      'Bumdog Torres', 'THIS STRUCTURE WILL BE REMOVED WITHIN THE NEXT 48 HOURS', 'Nov 2026-Jan 2027')
+    @staticmethod
+    def card(date, title, href, picture='https://wendemuseum.org/wp-content/smush-webp/2026/11/show.png.webp'):
+        # The slider card as the site prints it: image, then a type label, the run and the title
+        return (f'<div class="hero-slider__item swiper-slide"><a href="{href}"><img class="lazyload" data-src="{picture}" '
+                f'src="data:image/svg+xml;base64,PHN2Zz48L3N2Zz4="></a><div class="hero-slider__text">'
+                f'<div class="tp">Exhibition</div><div class="more-date">{date}</div><div class="title">{title}</div>'
+                f'<a class="more-link" href="{href}"><span>See More</span></a></div></div>')
+
+    def test_titles_notices_pictures_pages_and_the_free_tag(self):
+        page = (self.card('Sep 2026-Jan 2027', 'Between Two Empires: Argentina in the Cold War', 'https://wendemuseum.org/exhibition/two/')
+                + self.card('Nov 2026-Jan 2027', 'Bumdog Torres | THIS STRUCTURE WILL BE REMOVED WITHIN THE NEXT 48 HOURS',
+                            '/exhibition/bumdog/'))
         events = run(wende, 'scrape_wende_museum', page)
+        # the "Exhibition" label above each date is not a title
         self.assertEqual(sorted(events), ['Between Two Empires: Argentina in the Cold War', 'Bumdog Torres'])
         self.assertTrue(all('free' in e['tags'] for e in events.values()))
+        bumdog = events['Bumdog Torres']['links']
+        self.assertEqual(bumdog[0], {'link': 'https://wendemuseum.org/exhibition/bumdog/', 'description': 'Event Page'})
+        self.assertEqual(bumdog[1], {'link': 'https://wendemuseum.org/wp-content/smush-webp/2026/11/show.png.webp',
+                                     'description': 'Image'})
+
+    def test_a_placeholder_picture_is_not_used_and_a_duplicate_card_is_stored_once(self):
+        card = self.card('Nov 2026-Oct 2027', 'Competing Cosmologies', '/exhibition/cosmos/', picture='data:image/gif;base64,R0lG')
+        events = run(wende, 'scrape_wende_museum', card + card)
+        self.assertEqual(list(events), ['Competing Cosmologies'])
+        self.assertEqual([l['description'] for l in events['Competing Cosmologies']['links']], ['Event Page'])
 
 
 class SkirballTest(unittest.TestCase):

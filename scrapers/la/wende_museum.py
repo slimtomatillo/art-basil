@@ -1,10 +1,11 @@
 from utils import fetch_and_parse
-from scrapers.tor._common import Listing, page_lines
+from scrapers.tor._common import publish
 from processing import region_today
 import calendar
 import datetime as dt
 import logging
 import re
+from urllib.parse import urljoin
 
 EXHIBITIONS_URL = 'https://wendemuseum.org/exhibitions/'
 VENUE = 'Wende Museum'
@@ -22,6 +23,13 @@ def _month_range(text):
     return dt.date(int(m.group(2)), _MONTHS[m.group(1)], 1), dt.date(y2, m2, calendar.monthrange(y2, m2)[1])
 
 
+def _card_picture(card):
+    """The card's picture: the lazy-loaded image's real address (src holds a placeholder until it loads)."""
+    img = card.select_one('img')
+    url = (img.get('data-src') or img.get('src') or '') if img else ''
+    return url if url.startswith('http') else None
+
+
 def scrape_wende_museum(env='prod', region='la'):
     """Scrape and process the current and upcoming exhibitions at the Wende Museum (a free museum)."""
     region_today(region)
@@ -29,15 +37,22 @@ def scrape_wende_museum(env='prod', region='la'):
     if soup is None:
         logging.warning("Wende Museum: could not fetch the exhibitions page; existing data kept.")
         return
-    lines = page_lines(soup)
-    listing = Listing(env, region, VENUE, soup, EXHIBITIONS_URL)
-    for i, line in enumerate(lines):
-        start_date, end_date = _month_range(line)
-        if not (start_date and i >= 2):
+    # Each exhibition is a slider card: a type label ("Exhibition"), the run ("Nov 2026-Jan 2027"), the title,
+    # a link to its own page and a picture. (The page text alone can't tell the label from the title.)
+    seen = set()
+    stored = 0
+    for card in soup.select('.hero-slider__item'):
+        date_tag, title_tag, link_tag = (card.select_one('.more-date'), card.select_one('.title'),
+                                         card.select_one('a[href]'))
+        if not (date_tag and title_tag):
             continue
-        # A work's name and a long all-caps notice can sit above the date; the title is then the line above that
-        title = lines[i - 2] if lines[i - 1].isupper() else lines[i - 1]
+        start_date, end_date = _month_range(date_tag.get_text(' ', strip=True))
         # One entry puts a notice after the name ("Bumdog Torres | THIS STRUCTURE WILL BE REMOVED...")
-        listing.add(title.split(' | ')[0], start_date, end_date, tag='museum', extra_tags=('free',))
-    if not listing.publish():
+        title = title_tag.get_text(' ', strip=True).split(' | ')[0]
+        if not (title and start_date):
+            continue
+        stored += publish(env, region, VENUE, title, start_date, end_date,
+                          urljoin(EXHIBITIONS_URL, link_tag['href']) if link_tag else EXHIBITIONS_URL,
+                          tag='museum', extra_tags=('free',), seen=seen, image=_card_picture(card))
+    if not stored:
         logging.warning("Wende Museum: no exhibitions found; existing data kept.")
