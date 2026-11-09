@@ -121,6 +121,11 @@ PROXY_DOMAINS = {
     # credits, about 76 a month) - not live-tested (no proxy key locally); if ZenRows answers 422 or CI still
     # gets a 403, add js_render as for Marin Civic Center.
     'mcam.oakland.northeastern.edu': {'premium_proxy': 'true'},
+    # Creative Growth Art Center (WEBSITE-93): fine from a normal connection (the page is about 600 KB and
+    # its titles, dates and image data are in the HTML), 403 from GitHub Actions' IPs in every CI run
+    # since Nov 3. One page, so premium proxy alone is tried first (10 credits, about 76 a month) - not
+    # live-tested (no proxy key locally); if ZenRows answers 422 or CI still gets a 403, add js_render.
+    'creativegrowth.org': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are
