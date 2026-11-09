@@ -168,18 +168,24 @@ async function fetchJson(url) {
     return response.json();
 }
 
+async function fetchRegionBounds() {
+    const bounds = await fetchJson('../data/region_bounds.json');
+    return bounds[getRegion()] || null;
+}
+
 async function fetchNearMeData() {
     const region = getRegion();
     const [coordinates, bounds] = await Promise.all([
         fetchJson('../data/venue_coordinates.json'),
-        fetchJson('../data/region_bounds.json'),
+        fetchRegionBounds(),
     ]);
-    return { coordinates: coordinates[region] || {}, bounds: bounds[region] || null };
+    return { coordinates: coordinates[region] || {}, bounds };
 }
 
 // Export functions for use in other modules
 window.dataManager = {
     getRegion,
+    fetchRegionBounds,
     fetchNearMeData,
     fetchVenues,
     fetchVenueImages,

@@ -27,7 +27,7 @@ test('an ongoing show is its own bucket, but only when it is a current one', () 
 });
 
 test('URL state round-trips', () => {
-    const s = { q: 'Asian Art Museum', phases: ['current', 'past'], tags: ['photography', 'latinx', 'museum'] };
+    const s = { q: 'Asian Art Museum', phases: ['current', 'past'], tags: ['photography', 'latinx', 'museum'], view: 'list' };
     const query = fs_.toQuery(s);
     assert.strictEqual(query, '?q=Asian+Art+Museum&phase=current,past&tags=photography,latinx,museum');
     assert.deepStrictEqual(fs_.parseUrl(query), s);
@@ -41,8 +41,36 @@ test('a single phase and all phases both round-trip', () => {
 });
 
 test('a search keeps its explicit phases through the URL, even the default ones', () => {
-    const s = { q: 'Wattis', phases: ['current', 'ongoing', 'future'], tags: [] };
+    const s = { q: 'Wattis', phases: ['current', 'ongoing', 'future'], tags: [], view: 'list' };
     assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(s)), s);
+});
+
+test('the list is the default view and only the map is written to the URL', () => {
+    assert.strictEqual(fs_.defaultState().view, 'list');
+    assert.strictEqual(fs_.toQuery(state({ view: 'list' })), '');
+    assert.strictEqual(fs_.toQuery(state({ view: 'map' })), '?view=map');
+    assert.strictEqual(fs_.parseUrl('?view=map').view, 'map');
+    assert.strictEqual(fs_.parseUrl('').view, 'list');
+});
+
+test('?view=map keeps every other parameter, in both directions', () => {
+    const s = { q: 'Wattis', phases: ['past'], tags: ['photography'], view: 'map' };
+    const query = fs_.toQuery(s);
+    assert.strictEqual(query, '?q=Wattis&phase=past&tags=photography&view=map');
+    assert.deepStrictEqual(fs_.parseUrl(query), s);
+    assert.deepStrictEqual(fs_.parseUrl('?tags=latinx&view=map').tags, ['latinx']);
+    assert.deepStrictEqual(fs_.parseUrl('?tags=latinx&view=map').phases, ['current', 'ongoing', 'future']);
+});
+
+test('an unknown view, or the existing shared links, open on the list', () => {
+    for (const search of ['?view=bogus', '?view=', '?view=MAP', '?search=SFMOMA', '?q=Wattis&phase=past', '?tags=free', '?phase=future']) {
+        assert.strictEqual(fs_.parseUrl(search).view, 'list', search);
+    }
+});
+
+test('the view is not a filter: isDefault ignores it', () => {
+    assert.strictEqual(fs_.isDefault(state({ view: 'map' })), true);
+    assert.strictEqual(fs_.isDefault(state({ view: 'map', q: 'x' })), false);
 });
 
 test('legacy ?search= (venue directory links) is read as q and ticks every phase', () => {

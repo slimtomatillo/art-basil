@@ -151,9 +151,17 @@ class SearchManager {
         this.applyFilters();
     }
 
-    // Back to the default view: current, ongoing & future, nothing searched or selected.
+    // Show the results as the table ('list') or on the map ('map'); the choice is in the URL (?view=map)
+    setView(view) {
+        if (!filterState.VIEWS.includes(view) || view === this.state.view) return;
+        this.state.view = view;
+        this.applyFilters();
+    }
+
+    // Back to the default filters: current, ongoing & future, nothing searched or selected.
+    // The way the results are shown (list or map) is not a filter, so it stays.
     clearFilters() {
-        this.state = filterState.defaultState();
+        this.state = { ...filterState.defaultState(), view: this.state.view };
         this.applyFilters();
     }
 }

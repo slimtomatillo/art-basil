@@ -21,6 +21,8 @@ function makeElement(tag) {
         removeAttribute(name) { delete el.attributes[name]; },
         getAttribute(name) { return name in el.attributes ? el.attributes[name] : null; },
         append(...nodes) { el.children.push(...nodes); },
+        contains(node) { return node === el || el.children.some(child => child === node || (child.contains && child.contains(node))); },
+        focus() { el.focused = true; },
         addEventListener(name, fn) { el.listeners[name] = fn; },
         focus() { el.focused = true; },
         click() { el.listeners.click(); },
@@ -33,7 +35,8 @@ function setup({ geolocation, loadData, region = 'sf', rows } = {}) {
     const bar = makeElement('div');
     const panel = makeElement('div');
     panel.querySelector = selector => (selector === '.filter-bar' ? bar : null);
-    const document = { getElementById: id => (id === 'filterPanel' ? panel : null), createElement: makeElement };
+    const document = { getElementById: id => (id === 'filterPanel' ? panel : null), createElement: makeElement,
+                       listeners: {}, addEventListener(name, fn) { document.listeners[name] = fn; } };
     const sandbox = { window: {}, document, console, navigator: {} };
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/nearMe.js'), 'utf8') + '\nglobalThis.nearMe = nearMe;', sandbox);
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/nearMeControl.js'), 'utf8')
@@ -48,7 +51,7 @@ function setup({ geolocation, loadData, region = 'sf', rows } = {}) {
     const shown = { order: rows.map(r => r.el.name) };
     const searchManager = { rows, tableBody: { append: (...els) => { shown.order = els.map(e => e.name); } } };
     const control = new sandbox.NearMeControl(searchManager, { region, loadData, geolocation });
-    return { control, bar, panel, rows, shown, searchManager };
+    return { control, bar, panel, rows, shown, searchManager, document };
 }
 
 const SF = { latitude: 37.7749, longitude: -122.4194 };
@@ -79,7 +82,47 @@ test('nothing is asked or loaded until the visitor clicks', () => {
     assert.strictEqual(loaded, 0);
     assert.strictEqual(main(ctx).attributes['aria-label'], 'Use my location to show how far each show is');
     assert.strictEqual(ctx.control.label.textContent, 'Use my location');
-    assert.match(ctx.control.privacy.textContent, /stays in this browser/);
+    // The reassurance is behind an (i) next to the button, not a permanent line under it
+    assert.strictEqual(ctx.control.note.hidden, true);
+    assert.strictEqual(ctx.control.infoButton.attributes['aria-label'], 'About your location');
+    assert.strictEqual(ctx.control.infoButton.attributes['aria-expanded'], 'false');
+    assert.strictEqual(ctx.control.bubble.hidden, true);
+    assert.match(ctx.control.bubble.textContent, /stays in this browser/);
+    assert.match(ctx.control.infoButton.title, /stays in this browser/);
+});
+
+test('the (i) opens and closes the bubble; Escape and a click elsewhere close it', () => {
+    const ctx = setup({ geolocation: fakeGeolocation({ coords: SF }), loadData: loadOk });
+    const { infoButton, bubble } = ctx.control;
+    infoButton.click();
+    assert.strictEqual(bubble.hidden, false);
+    assert.strictEqual(infoButton.attributes['aria-expanded'], 'true');
+    assert.strictEqual(infoButton.attributes['aria-controls'], bubble.id);
+    infoButton.click();
+    assert.strictEqual(bubble.hidden, true);
+    infoButton.click();
+    ctx.document.listeners.keydown({ key: 'Enter' });
+    assert.strictEqual(bubble.hidden, false);                                // other keys do nothing
+    ctx.document.listeners.keydown({ key: 'Escape' });
+    assert.strictEqual(bubble.hidden, true);
+    assert.strictEqual(infoButton.focused, true);                            // focus goes back to the (i)
+    infoButton.click();
+    ctx.document.listeners.click({ target: bubble });                        // a click inside the bubble keeps it open
+    assert.strictEqual(bubble.hidden, false);
+    ctx.document.listeners.click({ target: makeElement('p') });              // a click elsewhere closes it
+    assert.strictEqual(bubble.hidden, true);
+    assert.strictEqual(infoButton.attributes['aria-expanded'], 'false');
+});
+
+test('the note under the bar appears only while there is something to say', async () => {
+    const ctx = setup({ geolocation: fakeGeolocation({ error: 1 }), loadData: loadOk });
+    assert.strictEqual(ctx.control.note.hidden, true);
+    main(ctx).click();
+    await settle();
+    assert.strictEqual(ctx.control.note.hidden, false);                      // the "blocked" message
+    assert.match(text(ctx), /blocked location/);
+    ctx.control.setMessage('');
+    assert.strictEqual(ctx.control.note.hidden, true);
 });
 
 test('a browser with no location support, or a page with no filter bar, gets nothing added', () => {
@@ -140,7 +183,7 @@ test('"Turn off" forgets the distances and restores the usual order', async () =
     const ctx = setup({ geolocation: fakeGeolocation({ coords: SF }), loadData: loadOk });
     main(ctx).click();
     await settle();
-    const off = ctx.bar.children[0].children[1];
+    const off = ctx.control.offButton;
     assert.strictEqual(off.hidden, false);
     off.click();
     assert.deepStrictEqual(ctx.shown.order, ['row0', 'row1', 'row2', 'row3']);

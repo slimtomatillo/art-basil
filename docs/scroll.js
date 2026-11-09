@@ -54,6 +54,12 @@ window.addEventListener('DOMContentLoaded', async () => {
                 loadData: window.dataManager.fetchNearMeData,
             });
         }
+        // The "List view | Map view" toggle. The map (and its library) loads only when Map view is opened.
+        if (window.MapView) {
+            window.mapView = new MapView(window.searchManager, {
+                loadBounds: window.dataManager.fetchRegionBounds,
+            });
+        }
         
     } catch (error) {
         console.error('Error loading events:', error);

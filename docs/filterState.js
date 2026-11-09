@@ -57,8 +57,13 @@
         return a.length === b.length && a.every((phase, i) => phase === b[i]);
     }
 
+    // Which way the results are shown: the table ('list', the default) or the map ('map'). It is part of the
+    // view in the URL (?view=map) but is not a filter: "Clear all" leaves it alone and isDefault ignores it.
+    const VIEWS = ['list', 'map'];
+    const DEFAULT_VIEW = 'list';
+
     function defaultState() {
-        return { q: '', phases: [...DEFAULT_PHASES], tags: [] };
+        return { q: '', phases: [...DEFAULT_PHASES], tags: [], view: DEFAULT_VIEW };
     }
 
     function isDefault(state) {
@@ -74,7 +79,7 @@
 
     // --- URL <-> state -------------------------------------------------------
 
-    // ?q=text&phase=past&tags=photography,latinx, where phase is one or more of
+    // ?q=text&phase=past&tags=photography,latinx&view=map, where phase is one or more of
     // current, ongoing, future, past (e.g. phase=current,past). The older
     // ?search=name (used by the venue directory links) is still read as q.
     // A search with no explicit phase means "show everything for that venue"
@@ -85,17 +90,19 @@
         const requested = normalizePhases((params.get('phase') || '').split(',').map(p => p.trim()));
         const phases = requested.length ? requested : (q ? [...ALL_PHASES] : [...DEFAULT_PHASES]);
         const tags = [...new Set((params.get('tags') || '').split(',').map(t => t.trim()).filter(Boolean))];
-        return { q, phases, tags };
+        const view = VIEWS.includes(params.get('view')) ? params.get('view') : DEFAULT_VIEW;
+        return { q, phases, tags, view };
     }
 
     // Inverse of parseUrl: '' for the default view, else '?...'. The phase is
     // always written when there is a search, because parseUrl treats a search
-    // with no phase as "every phase".
+    // with no phase as "every phase". ?view=map is written only for the map (the table is the default).
     function toQuery(state) {
         const params = new URLSearchParams();
         if (state.q) params.set('q', state.q);
         if (state.q || !samePhases(state.phases, DEFAULT_PHASES)) params.set('phase', state.phases.join(','));
         if (state.tags.length) params.set('tags', state.tags.join(','));
+        if (state.view === 'map') params.set('view', 'map');
         const query = params.toString().replace(/%2C/g, ',');
         return query ? `?${query}` : '';
     }
@@ -172,7 +179,7 @@
     }
 
     return {
-        TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, PHASE_LABELS, PHASE_HINTS,
+        TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, PHASE_LABELS, PHASE_HINTS, VIEWS, DEFAULT_VIEW,
         groupOf, bucketOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
         foldText, phaseMatches, tagsMatch, rowMatches, countTags, countPhases,
     };
