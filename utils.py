@@ -107,9 +107,15 @@ PROXY_DOMAINS = {
     # proxy alone is tried first - not live-tested; if CI still gets a 403, add js_render.
     'artmuseum.utoronto.ca': {'premium_proxy': 'true'},
     # Armory Center for the Arts (WEBSITE-90): fine from a normal connection, 403s
-    # GitHub Actions' IPs (seen 2026-11-04). Premium proxy alone is tried first - not
-    # live-tested (no proxy key locally); if CI still gets a 403, add js_render.
-    'www.armoryarts.org': {'premium_proxy': 'true'},
+    # GitHub Actions' IPs (seen 2026-11-04). Premium proxy alone worked on the first refresh, then
+    # ZenRows answered 422 ("try enabling javascript rendering") in CI on 2026-11-08, so js_render
+    # is added (25 credits a request, about 190 a month). Not live-tested with it yet.
+    'www.armoryarts.org': {'premium_proxy': 'true', 'js_render': 'true'},
+    # Galerie Simon Blais (Montreal): 403s GitHub Actions' IPs on every run since 2026-11-06 (fine from
+    # a normal connection). A server-rendered page, so premium proxy alone is tried first (10 credits,
+    # about 76 a month) - not live-tested (no proxy key locally); if ZenRows answers 422 or CI still
+    # gets a 403, add js_render as for Marin Civic Center.
+    'galeriesimonblais.com': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are
