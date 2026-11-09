@@ -116,6 +116,11 @@ PROXY_DOMAINS = {
     # about 76 a month) - not live-tested (no proxy key locally); if ZenRows answers 422 or CI still
     # gets a 403, add js_render as for Marin Civic Center.
     'galeriesimonblais.com': {'premium_proxy': 'true'},
+    # Mills College Art Museum (WEBSITE-99): Cloudflare answers 403 to scripted requests from any connection
+    # (a browser is fine). One server-rendered WordPress page, so premium proxy alone is tried first (10
+    # credits, about 76 a month) - not live-tested (no proxy key locally); if ZenRows answers 422 or CI still
+    # gets a 403, add js_render as for Marin Civic Center.
+    'mcam.oakland.northeastern.edu': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are
