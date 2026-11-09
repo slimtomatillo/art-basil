@@ -7,6 +7,8 @@ import logging
 import re
 from urllib.parse import urlparse
 
+import requests
+
 LISTING_URL = 'https://belgo.art/'
 # The Belgo Building (372 Sainte-Catherine W) lists every tenant's current show on one page, in French:
 #   "Galerie B-312 | Local : | 403 | Centre d'artistes | Heures d'ouverture : | Mardi... | Exposition : | Title | Artist |
@@ -18,6 +20,11 @@ _SKIP = ('Exposition :', 'Dates :')
 # The page misspells one tenant's name
 _SOCIAL_AND_TRANSIT = ('instagram.com', 'facebook.com', 'stm.info', 'quartierdesspectacles.com')
 _RENAMES = {'Éclats Art contemmporain': 'Éclats Art contemporain'}
+# Tenants whose site is on the ArtCloud platform: its show pages 403 GitHub Actions, but the JSON feed the pages are
+# built from (/api/shows, called with the site's id) does not, and lists each show's id (the last part of the
+# show's page address) with its picture. The id is in the page's source ("subdomain").
+ARTCLOUD_SITES = {'wishboneart.com': '93234dda-ef42-40c2-a34a-f75b1565b3ee'}      # Galerie Wishbone
+_ARTCLOUD_PICTURE = 'https://cdn.artcld.com/img/w_640,h_640,c_fit/{id}.{ext}'
 
 
 def _name(title_lines):
@@ -58,6 +65,21 @@ def _tenant_links(soup):
     return found
 
 
+def _artcloud_pictures(host):
+    """{show id: picture url} from an ArtCloud site's feed, or {} if it can't be read (the shows then have no
+    picture of their own and the venue's logo is shown)."""
+    try:
+        response = requests.get(f'https://{host}/api/shows', params={'limit': 100, 'offset': 0, 'sub': ARTCLOUD_SITES[host]},
+                                headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}, timeout=30)
+        response.raise_for_status()
+        shows = response.json().get('shows') or []
+    except (requests.RequestException, ValueError, AttributeError) as e:
+        logging.warning(f"Belgo galleries: could not read the pictures feed of {host} ({e}).")
+        return {}
+    return {show['showId']: _ARTCLOUD_PICTURE.format(id=show['image']['id'], ext=show['image'].get('extension') or 'jpg')
+            for show in shows if show.get('showId') and (show.get('image') or {}).get('id')}
+
+
 def scrape_belgo_galleries(env='prod', region='mtl'):
     """Scrape and process the exhibitions of the galleries and artist-run centres in the Belgo Building."""
     today = region_today(region)
@@ -70,6 +92,7 @@ def scrape_belgo_galleries(env='prod', region='mtl'):
     locals_at = [i for i, l in enumerate(lines) if l == 'Local :']
     page_end = index_of(lines, 'Le Belgo —', len(lines))
     stored = 0
+    artcloud = {}              # host -> its feed's pictures, fetched once and only for a tenant that has a show to publish
     for n, i in enumerate(locals_at):
         block = lines[i - 1:(locals_at[n + 1] - 1 if n + 1 < len(locals_at) else page_end)]
         if 'Exposition :' in block and 'Dates :' in block:
@@ -89,7 +112,12 @@ def scrape_belgo_galleries(env='prod', region='mtl'):
         venue = block[0].split(' | ')[0]
         start, end = parse_date_text(text, today)
         if title_lines and (start or end):
+            link = tenant_links.get(venue, LISTING_URL)
+            host = _site(link)
+            if host in ARTCLOUD_SITES and host not in artcloud:
+                artcloud[host] = _artcloud_pictures(host)
+            picture = artcloud.get(host, {}).get(urlparse(link).path.rstrip('/').rsplit('/', 1)[-1])
             stored += publish(env, region, _RENAMES.get(venue, venue), _name(title_lines), start, end,
-                              tenant_links.get(venue, LISTING_URL), tag='gallery')
+                              link, tag='gallery', image=picture)
     if not stored:
         logging.warning("Belgo galleries: no exhibitions found; existing data kept.")

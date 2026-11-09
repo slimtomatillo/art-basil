@@ -6884,32 +6884,6 @@
             ],
             "last_updated": "2026-11-07 17:52:09",
             "hash": "b9703ff0d1b653ef24a10da341e1e562"
-        },
-        "Exhibition-Wende Museum": {
-            "name": "Exhibition",
-            "venue": "Wende Museum",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "current",
-                "museum",
-                "free"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": "2026-11-01",
-                "end": "2027-10-31"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://wendemuseum.org/exhibitions/",
-                    "description": "Event Page"
-                }
-            ],
-            "last_updated": "2026-11-08 18:03:29",
-            "hash": "4a885fec0190cbb50b84a26d6ec63c05",
-            "image_checked": "2026-11-08"
         }
     },
     "Craft Contemporary": {

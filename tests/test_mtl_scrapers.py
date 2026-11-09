@@ -5,6 +5,7 @@ import sys
 import unittest
 from unittest import mock
 
+import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
@@ -87,6 +88,42 @@ class BelgoTest(unittest.TestCase):
         show = events[('Éclats Art contemporain', 'Lignes de Rencontres')]
         self.assertEqual([l['link'] for l in show['links'] if l['description'] == 'Event Page'],
                          ['https://www.eclats521.ca/lignes-de-rencontres'])
+
+    WISHBONE = ('<h3 class="t TitleName"><a href="https://wishboneart.com/">Galerie Wishbone</a></h3>'
+                '<a href="https://wishboneart.com/show/wishbone-gallery-los-reinos-invisibles-wishbone-gallery"></a>'
+                + blocks('Local :', '430', 'Galerie d’art', 'Heures d’ouverture :', 'Mercredi au samedi, 12h-17h',
+                         'Exposition :', 'Los Reinos Invisibles', 'Dates :', '12 novembre au 12 décembre', '2026'))
+
+    class Feed:
+        def __init__(self, data=None, error=None):
+            self.data, self.error = data, error
+
+        def raise_for_status(self):
+            if self.error:
+                raise self.error
+
+        def json(self):
+            return self.data
+
+    def run_wishbone(self, feed):
+        with mock.patch.object(belgo_galleries.requests, 'get', return_value=feed) as get:
+            events = run(belgo_galleries, 'scrape_belgo_galleries', self.WISHBONE)
+        return events[('Galerie Wishbone', 'Los Reinos Invisibles')], get
+
+    def test_an_artcloud_tenants_show_takes_its_picture_from_the_sites_feed(self):
+        feed = self.Feed({'shows': [
+            {'showId': 'other-show', 'image': {'id': 'zzz', 'extension': 'jpg'}},
+            {'showId': 'wishbone-gallery-los-reinos-invisibles-wishbone-gallery', 'image': {'id': 'abnjq', 'extension': 'png'}}]})
+        show, get = self.run_wishbone(feed)
+        self.assertEqual(show['links'][1], {'link': 'https://cdn.artcld.com/img/w_640,h_640,c_fit/abnjq.png', 'description': 'Image'})
+        self.assertEqual(get.call_args.args[0], 'https://wishboneart.com/api/shows')
+        self.assertEqual(get.call_args.kwargs['params']['sub'], belgo_galleries.ARTCLOUD_SITES['wishboneart.com'])
+
+    def test_an_unreadable_artcloud_feed_leaves_the_show_without_a_picture(self):
+        for feed in (self.Feed(error=requests.ConnectionError('down')), self.Feed({'unexpected': 1}),
+                     self.Feed({'shows': [{'showId': 'wishbone-gallery-los-reinos-invisibles-wishbone-gallery'}]})):
+            show, _ = self.run_wishbone(feed)
+            self.assertEqual([l['description'] for l in show['links']], ['Event Page'])
 
 
 class OboroTest(unittest.TestCase):
