@@ -1,0 +1,1047 @@
+{
+    "ist": {
+        "Istanbul Modern": [
+            {
+                "lat": 41.026007,
+                "lng": 28.980951
+            }
+        ],
+        "Sakıp Sabancı Museum": [
+            {
+                "lat": 41.106019,
+                "lng": 29.055629
+            }
+        ],
+        "Salt Galata": [
+            {
+                "lat": 41.023872,
+                "lng": 28.973474
+            }
+        ],
+        "Salt Beyoğlu": [
+            {
+                "lat": 41.032074,
+                "lng": 28.976095
+            }
+        ],
+        "Pera Museum": [
+            {
+                "lat": 41.031803,
+                "lng": 28.975204
+            }
+        ],
+        "Arter": [
+            {
+                "lat": 41.040899,
+                "lng": 28.978764
+            }
+        ],
+        "Galerist": [
+            {
+                "lat": 41.014822,
+                "lng": 29.097778,
+                "approx": true
+            }
+        ],
+        "Pi Artworks Istanbul": [
+            {
+                "lat": 41.038833,
+                "lng": 28.967599,
+                "approx": true
+            }
+        ],
+        "Zilberman Istanbul": [
+            {
+                "lat": 41.032826,
+                "lng": 28.976665
+            }
+        ],
+        "DEPO": [
+            {
+                "lat": 41.026794,
+                "lng": 28.978325,
+                "approx": true
+            }
+        ],
+        "Elgiz Museum of Contemporary Art": [
+            {
+                "lat": 41.109999,
+                "lng": 29.020591,
+                "approx": true
+            }
+        ],
+        "Anna Laudel Istanbul": [
+            {
+                "lat": 41.034999,
+                "lng": 28.986214,
+                "approx": true
+            }
+        ],
+        "Rahmi M. Koç Museum": [
+            {
+                "lat": 41.041973,
+                "lng": 28.948568,
+                "manual": true
+            }
+        ],
+        "Borusan Contemporary": [
+            {
+                "lat": 41.089253,
+                "lng": 29.056572
+            }
+        ]
+    },
+    "la": {
+        "LACMA": [
+            {
+                "lat": 34.064472,
+                "lng": -118.359946
+            }
+        ],
+        "The Broad": [
+            {
+                "lat": 34.054458,
+                "lng": -118.250594
+            }
+        ],
+        "Getty": [
+            {
+                "lat": 34.076951,
+                "lng": -118.475712
+            }
+        ],
+        "Norton Simon Museum": [
+            {
+                "lat": 34.146373,
+                "lng": -118.159259
+            }
+        ],
+        "Hammer Museum": [
+            {
+                "lat": 34.059466,
+                "lng": -118.443754
+            }
+        ],
+        "MOCA": [
+            {
+                "lat": 34.053288,
+                "lng": -118.250623
+            }
+        ],
+        "Hauser & Wirth DTLA": [
+            {
+                "lat": 33.770869,
+                "lng": -118.181408
+            }
+        ],
+        "Hauser & Wirth WeHo": [
+            {
+                "lat": 34.083084,
+                "lng": -118.386233
+            }
+        ],
+        "Huntington": [
+            {
+                "lat": 34.128143,
+                "lng": -118.11229
+            }
+        ],
+        "Skirball Cultural Center": [
+            {
+                "lat": 34.12454,
+                "lng": -118.479131
+            }
+        ],
+        "USC Fisher Museum of Art": [
+            {
+                "lat": 34.018443,
+                "lng": -118.286878
+            }
+        ],
+        "Fowler Museum at UCLA": [
+            {
+                "lat": 34.076741,
+                "lng": -118.439559
+            }
+        ],
+        "Vincent Price Art Museum": [
+            {
+                "lat": 34.041317,
+                "lng": -118.150412
+            }
+        ],
+        "Armory Center for the Arts": [
+            {
+                "lat": 34.148369,
+                "lng": -118.149385
+            }
+        ],
+        "Japanese American National Museum": [
+            {
+                "lat": 34.049613,
+                "lng": -118.238612
+            }
+        ],
+        "18th Street Arts Center": [
+            {
+                "lat": 34.023497,
+                "lng": -118.47746
+            }
+        ],
+        "USC Pacific Asia Museum": [
+            {
+                "lat": 34.146747,
+                "lng": -118.141038
+            }
+        ],
+        "Wende Museum": [
+            {
+                "lat": 34.011323,
+                "lng": -118.404132
+            }
+        ],
+        "Craft Contemporary": [
+            {
+                "lat": 34.062264,
+                "lng": -118.355555
+            }
+        ],
+        "California African American Museum": [
+            {
+                "lat": 34.015951,
+                "lng": -118.283513
+            }
+        ],
+        "Museum of Latin American Art": [
+            {
+                "lat": 33.774257,
+                "lng": -118.180396
+            }
+        ],
+        "Institute of Contemporary Art, Los Angeles": [
+            {
+                "lat": 34.035164,
+                "lng": -118.235654
+            }
+        ],
+        "Regen Projects": [
+            {
+                "lat": 34.090629,
+                "lng": -118.338026
+            }
+        ],
+        "David Kordansky Gallery": [
+            {
+                "lat": 34.054464,
+                "lng": -118.343098
+            }
+        ],
+        "Night Gallery": [
+            {
+                "lat": 34.020664,
+                "lng": -118.231309
+            }
+        ],
+        "Roberts Projects": [
+            {
+                "lat": 34.066395,
+                "lng": -118.343919
+            }
+        ],
+        "Nazarian / Curcio": [
+            {
+                "lat": 34.082201,
+                "lng": -118.343947
+            }
+        ],
+        "François Ghebaly": [
+            {
+                "lat": 34.019029,
+                "lng": -118.233267
+            },
+            {
+                "lat": 34.068756,
+                "lng": -118.404542
+            }
+        ],
+        "Charlie James Gallery": [
+            {
+                "lat": 34.066364,
+                "lng": -118.23845
+            },
+            {
+                "lat": 34.065792,
+                "lng": -118.238743
+            }
+        ],
+        "Anat Ebgi Gallery": [
+            {
+                "lat": 34.063428,
+                "lng": -118.368249
+            }
+        ],
+        "Commonwealth and Council": [
+            {
+                "lat": 34.059454,
+                "lng": -118.289482
+            }
+        ],
+        "Gagosian Beverly Hills": [
+            {
+                "lat": 34.069777,
+                "lng": -118.404772
+            }
+        ],
+        "Sprüth Magers Los Angeles": [
+            {
+                "lat": 34.062118,
+                "lng": -118.358619
+            }
+        ],
+        "Kohn Gallery": [
+            {
+                "lat": 34.093112,
+                "lng": -118.338712
+            }
+        ],
+        "Jeffrey Deitch Los Angeles": [
+            {
+                "lat": 34.08759,
+                "lng": -118.3417
+            },
+            {
+                "lat": 34.09062,
+                "lng": -118.341752
+            }
+        ]
+    },
+    "mtl": {
+        "Montreal Museum of Fine Arts": [
+            {
+                "lat": 45.498697,
+                "lng": -73.579384,
+                "manual": true
+            }
+        ],
+        "PHI Foundation": [
+            {
+                "lat": 45.502467,
+                "lng": -73.557056
+            }
+        ],
+        "McCord Stewart Museum": [
+            {
+                "lat": 45.504295,
+                "lng": -73.573394,
+                "manual": true
+            }
+        ],
+        "OBORO": [
+            {
+                "lat": 45.521602,
+                "lng": -73.574161
+            }
+        ],
+        "SKOL": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "CIRCA art actuel": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Blouin Division": [
+            {
+                "lat": 45.485552,
+                "lng": -73.56873
+            }
+        ],
+        "Galerie de l'UQAM": [
+            {
+                "lat": 45.514499,
+                "lng": -73.56071,
+                "manual": true
+            }
+        ],
+        "Arsenal art contemporain": [
+            {
+                "lat": 45.485552,
+                "lng": -73.56873
+            }
+        ],
+        "Leonard & Bina Ellen Art Gallery": [
+            {
+                "lat": 45.496804,
+                "lng": -73.577928
+            }
+        ],
+        "Canadian Centre for Architecture": [
+            {
+                "lat": 45.490974,
+                "lng": -73.579004
+            }
+        ],
+        "Galerie Simon Blais": [
+            {
+                "lat": 45.525135,
+                "lng": -73.597929
+            }
+        ],
+        "Galeries Bellemare Lambert": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "MICA": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Galerie Hugues Charbonneau": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Éclats Art contemporain": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Duran Contemporain": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Atelier 531": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Galerie B-312": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Galerie Wishbone": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Galerie Kub’Art": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Atelier d’art photographique": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "McBride Contemporain": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Chiguer Art contemporain": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Espace DÈS_": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Louis-Bernard St-Jean Art contemporain": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Galerie INGANG": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Galerie POPOP": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Arprim": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Galerie Ayenai": [
+            {
+                "lat": 45.505569,
+                "lng": -73.567163
+            }
+        ],
+        "Fonderie Darling": [
+            {
+                "lat": 45.497732,
+                "lng": -73.55676
+            }
+        ],
+        "Art Mûr": [
+            {
+                "lat": 45.533132,
+                "lng": -73.597186
+            }
+        ],
+        "La Guilde": [
+            {
+                "lat": 45.498978,
+                "lng": -73.579103,
+                "manual": true
+            }
+        ]
+    },
+    "sf": {
+        "ACCI Gallery": [
+            {
+                "lat": 37.877338,
+                "lng": -122.269323
+            }
+        ],
+        "ARTogether": [
+            {
+                "lat": 37.80166,
+                "lng": -122.268221
+            }
+        ],
+        "Abrams Claghorn Gallery": [
+            {
+                "lat": 37.890737,
+                "lng": -122.293832
+            }
+        ],
+        "Anderson Collection": [
+            {
+                "lat": 37.433778,
+                "lng": -122.170791
+            }
+        ],
+        "Art Works Downtown": [
+            {
+                "lat": 37.973368,
+                "lng": -122.531256
+            }
+        ],
+        "Asian Art Museum": [
+            {
+                "lat": 37.780315,
+                "lng": -122.415992
+            }
+        ],
+        "BAMPFA": [
+            {
+                "lat": 37.870947,
+                "lng": -122.266399
+            }
+        ],
+        "Berkeley Art Center": [
+            {
+                "lat": 37.884208,
+                "lng": -122.268551
+            }
+        ],
+        "Bridge Gallery (Mithun)": [
+            {
+                "lat": 37.786908,
+                "lng": -122.397487
+            }
+        ],
+        "Cantor Arts Center": [
+            {
+                "lat": 37.433014,
+                "lng": -122.170875
+            }
+        ],
+        "Contemporary Jewish Museum": [
+            {
+                "lat": 37.786036,
+                "lng": -122.403671
+            }
+        ],
+        "Creative Growth Art Center": [
+            {
+                "lat": 37.812929,
+                "lng": -122.264192
+            }
+        ],
+        "Dictée Art & Exhibition": [
+            {
+                "lat": 37.796375,
+                "lng": -122.242191
+            }
+        ],
+        "El Cerrito City Hall Gallery": [
+            {
+                "lat": 37.915722,
+                "lng": -122.311043
+            }
+        ],
+        "FM Oakland": [
+            {
+                "lat": 37.814313,
+                "lng": -122.267631
+            }
+        ],
+        "Fraenkel Gallery": [
+            {
+                "lat": 37.787741,
+                "lng": -122.404299
+            }
+        ],
+        "GearBox Gallery": [
+            {
+                "lat": 37.813129,
+                "lng": -122.275567
+            }
+        ],
+        "Gray Loft Gallery": [
+            {
+                "lat": 37.772834,
+                "lng": -122.233844
+            }
+        ],
+        "Hashimoto Contemporary": [
+            {
+                "lat": 37.754254,
+                "lng": -122.38939
+            }
+        ],
+        "Headlands Center for the Arts": [
+            {
+                "lat": 37.829692,
+                "lng": -122.52246,
+                "manual": true
+            }
+        ],
+        "Helvella Art": [
+            {
+                "lat": 37.769645,
+                "lng": -122.218898
+            }
+        ],
+        "Institute of Contemporary Art San Jose": [
+            {
+                "lat": 37.327845,
+                "lng": -121.883934
+            }
+        ],
+        "Jenkins Johnson Gallery": [
+            {
+                "lat": 37.754254,
+                "lng": -122.38939
+            }
+        ],
+        "Jessica Silverman Gallery": [
+            {
+                "lat": 37.792787,
+                "lng": -122.406219
+            }
+        ],
+        "Johansson Projects": [
+            {
+                "lat": 37.81267,
+                "lng": -122.268506
+            }
+        ],
+        "Kala Art Institute": [
+            {
+                "lat": 37.85245,
+                "lng": -122.286637
+            }
+        ],
+        "di Rosa Napa": [
+            {
+                "lat": 38.256995,
+                "lng": -122.351717
+            }
+        ],
+        "di Rosa SF": [
+            {
+                "lat": 37.753121,
+                "lng": -122.390355
+            }
+        ],
+        "Legion of Honor": [
+            {
+                "lat": 37.784556,
+                "lng": -122.500962
+            }
+        ],
+        "Madrone Art Bar": [
+            {
+                "lat": 37.774199,
+                "lng": -122.437497
+            }
+        ],
+        "MACLA": [
+            {
+                "lat": 37.328512,
+                "lng": -121.884428
+            }
+        ],
+        "Mills College Art Museum": [
+            {
+                "lat": 37.779911,
+                "lng": -122.183472
+            }
+        ],
+        "Manna Gallery": [
+            {
+                "lat": 37.814424,
+                "lng": -122.267367
+            }
+        ],
+        "Marin Civic Center": [
+            {
+                "lat": 37.998027,
+                "lng": -122.530657
+            }
+        ],
+        "Marin Museum of Contemporary Art": [
+            {
+                "lat": 37.974383,
+                "lng": -122.529556
+            }
+        ],
+        "Marin Society of Artists": [
+            {
+                "lat": 37.97243,
+                "lng": -122.533636
+            }
+        ],
+        "Mercury 20 Gallery": [
+            {
+                "lat": 37.814433,
+                "lng": -122.267425
+            }
+        ],
+        "Minnesota Street Project": [
+            {
+                "lat": 37.754254,
+                "lng": -122.38939
+            }
+        ],
+        "Museum of Craft and Design": [
+            {
+                "lat": 37.757001,
+                "lng": -122.38839
+            }
+        ],
+        "Museum of the African Diaspora": [
+            {
+                "lat": 37.786469,
+                "lng": -122.401473
+            }
+        ],
+        "Oakland Asian Cultural Center": [
+            {
+                "lat": 37.80065,
+                "lng": -122.27087
+            }
+        ],
+        "Oakland Museum of California": [
+            {
+                "lat": 37.798614,
+                "lng": -122.263604
+            }
+        ],
+        "Oakland Photo Workshop": [
+            {
+                "lat": 37.79905,
+                "lng": -122.270319
+            }
+        ],
+        "Palo Alto Art Center": [
+            {
+                "lat": 37.443972,
+                "lng": -122.139002
+            }
+        ],
+        "Richmond Art Center": [
+            {
+                "lat": 37.937968,
+                "lng": -122.344493
+            }
+        ],
+        "SFMOMA": [
+            {
+                "lat": 37.785915,
+                "lng": -122.400736
+            }
+        ],
+        "SLATE Contemporary": [
+            {
+                "lat": 37.842607,
+                "lng": -122.251763
+            }
+        ],
+        "San Francisco Botanical Gardens (Helen Crocker Russell Library)": [
+            {
+                "lat": 37.772607,
+                "lng": -122.460228
+            }
+        ],
+        "San Francisco Women Artists Gallery": [
+            {
+                "lat": 37.763976,
+                "lng": -122.465008
+            }
+        ],
+        "San Jose Museum of Art": [
+            {
+                "lat": 37.33367,
+                "lng": -121.890042
+            }
+        ],
+        "Sanchez Art Center": [
+            {
+                "lat": 37.583156,
+                "lng": -122.486673
+            }
+        ],
+        "Shooting Gallery": [
+            {
+                "lat": 37.786433,
+                "lng": -122.417828
+            }
+        ],
+        "Sonoma Valley Museum of Art": [
+            {
+                "lat": 38.29098,
+                "lng": -122.458461
+            }
+        ],
+        "Southern Exposure": [
+            {
+                "lat": 37.759345,
+                "lng": -122.411444
+            }
+        ],
+        "The Grand Gallery Oakland": [
+            {
+                "lat": 37.797428,
+                "lng": -122.278924
+            }
+        ],
+        "The Walt Disney Family Museum": [
+            {
+                "lat": 37.801363,
+                "lng": -122.458721
+            }
+        ],
+        "Thelma Harris Art Gallery": [
+            {
+                "lat": 37.847894,
+                "lng": -122.251999
+            }
+        ],
+        "Transmission Gallery": [
+            {
+                "lat": 37.813129,
+                "lng": -122.275567
+            }
+        ],
+        "Traywick Contemporary": [
+            {
+                "lat": 37.891873,
+                "lng": -122.279813
+            }
+        ],
+        "Triton Museum of Art": [
+            {
+                "lat": 37.35622,
+                "lng": -121.955078
+            }
+        ],
+        "Wattis Institute": [
+            {
+                "lat": 37.768054,
+                "lng": -122.398504
+            }
+        ],
+        "de Young": [
+            {
+                "lat": 37.771498,
+                "lng": -122.469092
+            }
+        ]
+    },
+    "tor": {
+        "MOCA Toronto": [
+            {
+                "lat": 43.654614,
+                "lng": -79.445203
+            }
+        ],
+        "The Power Plant": [
+            {
+                "lat": 43.638447,
+                "lng": -79.382021
+            }
+        ],
+        "Aga Khan Museum": [
+            {
+                "lat": 43.725302,
+                "lng": -79.331992
+            }
+        ],
+        "AGO": [
+            {
+                "lat": 43.653613,
+                "lng": -79.39278
+            }
+        ],
+        "The Image Centre": [
+            {
+                "lat": 43.657697,
+                "lng": -79.379281
+            }
+        ],
+        "Gardiner Museum": [
+            {
+                "lat": 43.668164,
+                "lng": -79.39306
+            }
+        ],
+        "Textile Museum of Canada": [
+            {
+                "lat": 43.654494,
+                "lng": -79.386691
+            }
+        ],
+        "Bata Shoe Museum": [
+            {
+                "lat": 43.667258,
+                "lng": -79.400143
+            }
+        ],
+        "Koffler Arts": [
+            {
+                "lat": 43.646893,
+                "lng": -79.417472
+            }
+        ],
+        "Mercer Union": [
+            {
+                "lat": 43.658662,
+                "lng": -79.441913
+            }
+        ],
+        "Gallery TPW": [
+            {
+                "lat": 43.653965,
+                "lng": -79.442539
+            }
+        ],
+        "Gallery 44": [
+            {
+                "lat": 43.647818,
+                "lng": -79.395243
+            }
+        ],
+        "InterAccess": [
+            {
+                "lat": 43.641948,
+                "lng": -79.423291
+            }
+        ],
+        "Paul Petro Contemporary Art": [
+            {
+                "lat": 43.644545,
+                "lng": -79.417965
+            }
+        ],
+        "Nicholas Metivier Gallery": [
+            {
+                "lat": 43.65292,
+                "lng": -79.37177
+            }
+        ],
+        "Olga Korper Gallery": [
+            {
+                "lat": 43.65274,
+                "lng": -79.44659
+            }
+        ],
+        "Cooper Cole": [
+            {
+                "lat": 43.668771,
+                "lng": -79.437892
+            }
+        ],
+        "Daniel Faria Gallery": [
+            {
+                "lat": 43.65438,
+                "lng": -79.44285
+            }
+        ],
+        "Doris McCarthy Gallery": [
+            {
+                "lat": 43.783505,
+                "lng": -79.18781
+            }
+        ],
+        "Onsite Gallery": [
+            {
+                "lat": 43.649487,
+                "lng": -79.388131
+            }
+        ],
+        "Stephen Bulger Gallery": [
+            {
+                "lat": 43.64968,
+                "lng": -79.427676
+            }
+        ],
+        "The Joan and Martin Goldfarb Gallery of York University": [
+            {
+                "lat": 43.772941,
+                "lng": -79.500603
+            }
+        ],
+        "Propeller Art Gallery": [
+            {
+                "lat": 43.641976,
+                "lng": -79.424114
+            }
+        ],
+        "Art Museum at the University of Toronto": [
+            {
+                "lat": 43.663917,
+                "lng": -79.393968
+            },
+            {
+                "lat": 43.662834,
+                "lng": -79.395169
+            }
+        ]
+    }
+}
