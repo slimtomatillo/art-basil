@@ -28,7 +28,7 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington, \
     skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary, \
     california_african_american_museum, molaa, ica_la, \
-    regen_projects, david_kordansky_gallery, night_gallery, roberts_projects, nazarian_curcio, francois_ghebaly, charlie_james_gallery, anat_ebgi_gallery, commonwealth_and_council, gagosian_beverly_hills, spruth_magers_los_angeles, kohn_gallery
+    regen_projects, david_kordansky_gallery, night_gallery, roberts_projects, nazarian_curcio, francois_ghebaly, charlie_james_gallery, anat_ebgi_gallery, commonwealth_and_council, gagosian_beverly_hills, spruth_magers_los_angeles, kohn_gallery, jeffrey_deitch
 from scrapers.mtl import mbam, mccord_stewart, phi_foundation, belgo_galleries, oboro, skol, circa, blouin_division, \
     galerie_uqam, arsenal_art_contemporain, ellen_art_gallery, cca, galerie_simon_blais, \
     fonderie_darling, art_mur, la_guilde
@@ -36,7 +36,7 @@ from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_muse
     textile_museum_of_canada, bata_shoe_museum, koffler_arts, mercer_union, gallery_tpw, gallery_44, \
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
     doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery, \
-    art_museum_uoft, image_centre
+    art_museum_uoft, image_centre, daniel_faria_gallery
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -168,6 +168,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Gagosian Beverly Hills": gagosian_beverly_hills.scrape_gagosian_beverly_hills,
             "Sprüth Magers Los Angeles": spruth_magers_los_angeles.scrape_spruth_magers_los_angeles,
             "Kohn Gallery": kohn_gallery.scrape_kohn_gallery,
+            "Jeffrey Deitch Los Angeles": jeffrey_deitch.scrape_jeffrey_deitch,
         },
         'mtl': {
             "Montreal Museum of Fine Arts": mbam.scrape_mbam_exhibitions,
@@ -204,6 +205,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Nicholas Metivier Gallery": nicholas_metivier_gallery.scrape_nicholas_metivier_gallery,
             "Olga Korper Gallery": olga_korper_gallery.scrape_olga_korper_gallery,
             "Cooper Cole": cooper_cole.scrape_cooper_cole,
+            "Daniel Faria Gallery": daniel_faria_gallery.scrape_daniel_faria_gallery,
             "Doris McCarthy Gallery": doris_mccarthy_gallery.scrape_doris_mccarthy_gallery,
             "Onsite Gallery": onsite_gallery.scrape_onsite_gallery,
             "Stephen Bulger Gallery": stephen_bulger_gallery.scrape_stephen_bulger_gallery,

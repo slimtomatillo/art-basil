@@ -200,6 +200,24 @@ def _warn_if_block_page(url, soup):
                         "the site may be blocking this connection.")
 
 
+def fetch_json(url, query=None, headers=None):
+    """GET `url` (or, with `query`, POST it as a GraphQL query) and return the parsed JSON, or None
+    if the request fails or the answer isn't JSON. For sites that load their shows from a public
+    JSON endpoint instead of putting them in the page (these are not routed through the proxy)."""
+    request_headers = {'User-Agent': 'Mozilla/5.0', **(headers or {})}
+    try:
+        if query is not None:
+            response = requests.post(url, json={'query': query}, headers=request_headers,
+                                     timeout=REQUEST_TIMEOUT, verify=verify_for(url))
+        else:
+            response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT, verify=verify_for(url))
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, ValueError) as e:
+        logging.error(f"Error fetching {url}: {e}")
+        return None
+
+
 def fetch_and_parse(url, headers=None):
     global PROXY_EXHAUSTED
     request_headers = {'User-Agent': 'Your Bot 0.1'}

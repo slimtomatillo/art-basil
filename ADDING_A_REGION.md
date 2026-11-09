@@ -164,6 +164,12 @@ def scrape_<venue>(env='prod', region='<region>'):
   After adding a scraper, check it in CI (`gh workflow run scrape-exhibitions.yml`,
   then grep the job log for `Error fetching <your site>`). If it's blocked, route
   it through the ZenRows proxy — see 2f.
+- **A page that is empty or says "Loading..." without JavaScript** usually fills itself in from a
+  JSON address, which is free to read and needs no ZenRows `js_render` (25 credits a request). Open
+  the page in a browser, look at the network requests, and read that address with
+  `fetch_json(url)` from `utils`. Daniel Faria Gallery is a public GraphQL endpoint
+  (`fetch_json(url, query=...)`) and Jeffrey Deitch is `/lazystate/<section>`; see
+  `scrapers/tor/daniel_faria_gallery.py` and `scrapers/la/jeffrey_deitch.py`.
 - **A site that fails with `CERTIFICATE_VERIFY_FAILED`** (the log says `Error fetching ...`):
   find out which kind before giving up on it. *Hostname mismatch* — try the `www.` address
   (Borusan's bare domain has a certificate for another name; `www.` is fine). *Unable to get
