@@ -58,6 +58,7 @@ PROXIED_VENUES = {
     "Marin Civic Center": ["Marin Civic Center"],
     "Galerie Simon Blais": ["Galerie Simon Blais"],
     "Mills College Art Museum": ["Mills College Art Museum"],
+    "Creative Growth Art Center": ["Creative Growth Art Center"],
 }
 # "Every 4 days" with 12 hours of slack, so run-to-run start-time jitter can't push a
 # venue to every 5th day. A venue is due once its newest event is this old; a failed
