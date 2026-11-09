@@ -131,6 +131,8 @@ class TableRenderer {
         row.setAttribute('data-phase', event.phase);
         row.setAttribute('data-ongoing', event.ongoing === true);
         row.setAttribute('data-tags', event.tags.join('|'));
+        // Which venue the row is for, so "Use my location" can look its distance up (nearMeControl.js)
+        row.setAttribute('data-venue', event.venue || '');
 
         // Image column
         const imageCell = row.insertCell();
@@ -247,6 +249,13 @@ class TableRenderer {
                 cell.appendChild(mapLinkElement);
             });
         }
+
+        // "1.4 mi away": empty and hidden until the visitor shares their location (nearMeControl.js).
+        // It sits in this column, not the title or date ones, so the text search never matches it.
+        const distanceElement = document.createElement('span');
+        distanceElement.className = 'event-distance';
+        distanceElement.hidden = true;
+        cell.appendChild(distanceElement);
 
         // Add notify button
         if ((event.dates.start && event.dates.start !== 'null') || (event.dates.end && event.dates.end !== 'null')) {

@@ -47,6 +47,13 @@ window.addEventListener('DOMContentLoaded', async () => {
         // Initialize search manager after events are rendered, then the filter panel that draws its state
         window.searchManager = new SearchManager();
         window.filterPanel = new FilterPanel(window.searchManager);
+        // "Use my location": distances and nearest-first. Loads nothing until the visitor clicks it.
+        if (window.NearMeControl) {
+            window.nearMeControl = new NearMeControl(window.searchManager, {
+                region: window.dataManager.getRegion(),
+                loadData: window.dataManager.fetchNearMeData,
+            });
+        }
         
     } catch (error) {
         console.error('Error loading events:', error);

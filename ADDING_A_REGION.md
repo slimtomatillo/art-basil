@@ -147,6 +147,8 @@ A new **region** also needs a bounding box in `docs/data/region_bounds.json`
 (`{"lat": [south, north], "lng": [west, east]}`, generous, covering every venue). The geocoder only
 accepts a match inside it, and `tests/test_venue_coordinates.py` fails if any coordinate falls
 outside, which catches an address matched in the wrong city.
+The "Use my location" button (`docs/nearMe.js`) also needs the region's **distance units** in its `UNITS`
+map (`'mi'` or `'km'`); a test fails until it has one.
 
 ### 1d. `scrapers/<region>/`
 New directory, one module per venue. **No `__init__.py`** — the project uses
@@ -454,6 +456,7 @@ Checklist:
       (a venue with several spaces: a list of `label` + `address`, see 1c)
 - [ ] every address has coordinates in `docs/data/venue_coordinates.json` (`python
       geocode_venues.py`, 1c-ii) and the region has a box in `docs/data/region_bounds.json`
+      and its distance units (`mi` or `km`) in `UNITS` in `docs/nearMe.js`
 - [ ] `<region>_events.json` committed (as `{}`)
 - [ ] workflow `git add` line added
 - [ ] `docs/<region>/index.html` created, `docs/index.html` card added,

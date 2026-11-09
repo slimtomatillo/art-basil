@@ -157,9 +157,30 @@ async function fetchVenueImages() {
     }
 }
 
+// The region's venue coordinates ({ venue: [{lat, lng}, ...] }) and bounding box ({ lat: [s, n], lng: [w, e] }),
+// for "Use my location" (nearMeControl.js). Fetched only when the visitor asks for distances, so the page
+// is no heavier without it. These throw on failure so the control can say so.
+async function fetchJson(url) {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status} for ${url}`);
+    }
+    return response.json();
+}
+
+async function fetchNearMeData() {
+    const region = getRegion();
+    const [coordinates, bounds] = await Promise.all([
+        fetchJson('../data/venue_coordinates.json'),
+        fetchJson('../data/region_bounds.json'),
+    ]);
+    return { coordinates: coordinates[region] || {}, bounds: bounds[region] || null };
+}
+
 // Export functions for use in other modules
 window.dataManager = {
     getRegion,
+    fetchNearMeData,
     fetchVenues,
     fetchVenueImages,
     fetchEvents,
