@@ -55,7 +55,7 @@ class RecordedAdmissionTest(unittest.TestCase):
         free = tagging.free_venues()
         self.assertIn('Hammer Museum', free)
         self.assertNotIn('LACMA', free)          # recorded as paid
-        self.assertNotIn('Elgiz Museum of Contemporary Art', free)    # unverified
+        self.assertNotIn('Madrone Art Bar', free)    # unverified
 
 
 class AdmissionRecordTest(unittest.TestCase):

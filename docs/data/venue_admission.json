@@ -32,10 +32,10 @@
             "note": "Free, funded by donors and grants."
         },
         "Marin Museum of Contemporary Art": {
-            "admission": "unverified",
+            "admission": "free",
             "source": "https://www.marinmoca.org/",
-            "checked": "2026-11-06",
-            "note": "Sources conflict (mostly free, one 2023 post says $10) and the museum site states no policy. Check by phone, 415-506-0137."
+            "checked": "2026-11-09",
+            "note": "Free to the public; $10 donation suggested (counts as free). Confirmed by Alex from the museum's statement."
         },
         "SFMOMA": {
             "admission": "paid",
@@ -63,9 +63,9 @@
         },
         "Asian Art Museum": {
             "admission": "paid",
-            "source": "https://asianart.org/visit/",
-            "checked": "2026-11-06",
-            "note": "About $10 for adults (third-party listings; official price page not read)."
+            "source": "https://about.asianart.org/ticketing/",
+            "checked": "2026-11-09",
+            "note": "$20 for adults. Free first Sundays, for members and for ages 12 and under."
         },
         "Contemporary Jewish Museum": {
             "admission": "paid",
@@ -105,9 +105,9 @@
         },
         "The Walt Disney Family Museum": {
             "admission": "paid",
-            "source": "https://www.waltdisney.org/",
-            "checked": "2026-11-06",
-            "note": "About $25 for adults (third-party listings)."
+            "source": "https://www.waltdisney.org/visit/admission",
+            "checked": "2026-11-09",
+            "note": "$30 for adults. Free for children 5 and under, members, US military; no dedicated free day."
         },
         "Cartoon Art Museum": {
             "admission": "paid",
@@ -119,7 +119,7 @@
             "admission": "unverified",
             "source": "https://madroneartbar.com/",
             "checked": "2026-11-06",
-            "note": "A bar: some nights have a cover charge, openings have been listed as free. Not a venue-wide answer."
+            "note": "A bar: some nights have a cover charge and a drink is expected. Decided 2026-11-09 not to tag bars free; handle bars case by case."
         }
     },
     "la": {
@@ -346,10 +346,10 @@
             "note": "Paid."
         },
         "Elgiz Museum of Contemporary Art": {
-            "admission": "unverified",
-            "source": "https://elgizmuseum.org/",
-            "checked": "2026-11-06",
-            "note": "Older third-party pages say free; no current policy found on the museum site."
+            "admission": "free",
+            "source": "https://www.elgizmuseum.org/en_US/contact-us",
+            "checked": "2026-11-09",
+            "note": "The museum's contact page says \"Entrance is free\" (confirmed by Alex)."
         }
     }
 }

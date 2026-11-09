@@ -213,10 +213,11 @@ known to be free", not "paid".
   `python tagging.py`. Note it only ever adds tags: if a venue stops being free, remove
   `free` from its events by hand (or with a one-off script), since `tagging.py` never
   removes tags.
-- **First pass, 2026-11-06:** prices were looked up by web search, and some entries rest
-  on third-party listings rather than the venue's own page (the notes say so for the
-  Asian Art Museum and the Walt Disney Family Museum). `unverified` entries
-  (Marin MOCA, Elgiz, Madrone Art Bar) need a direct check.
+- **First pass, 2026-11-06:** prices were looked up by web search. On 2026-11-09 the
+  Asian Art Museum and Walt Disney Family Museum were checked on their own pages, and
+  Marin MOCA and Elgiz were confirmed free (a suggested donation counts as free). The
+  one `unverified` entry is Madrone Art Bar: bars are not tagged `free`, and are
+  handled case by case.
 
 ## Event images
 
