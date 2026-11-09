@@ -38,5 +38,9 @@
     "Commonwealth and Council": "3006 W 7th St Suite 220, Los Angeles, CA 90005",
     "Gagosian Beverly Hills": "456 N Camden Dr, Beverly Hills, CA 90210",
     "Sprüth Magers Los Angeles": "5900 Wilshire Blvd, Los Angeles, CA 90036",
-    "Kohn Gallery": "1227 N Highland Ave, Los Angeles, CA 90038"
+    "Kohn Gallery": "1227 N Highland Ave, Los Angeles, CA 90038",
+    "Jeffrey Deitch Los Angeles": [
+        {"label": "Orange Drive", "address": "925 N Orange Dr, Los Angeles, CA"},
+        {"label": "Santa Monica Boulevard", "address": "7000 Santa Monica Blvd, Los Angeles, CA"}
+    ]
 }
