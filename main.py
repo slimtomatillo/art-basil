@@ -24,7 +24,7 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     jessica_silverman_gallery, fraenkel_gallery, traywick_contemporary, acci_gallery, abrams_claghorn_gallery, \
     headlands_center_for_the_arts, shooting_gallery, el_cerrito_city_hall_gallery, civic_center_art_gallery, \
     oakland_photo_workshop, gearbox_gallery, fm_oakland, johansson_projects, gray_loft_gallery, \
-    dictee_art_exhibition, di_rosa, macla
+    dictee_art_exhibition, di_rosa, macla, mills_college_art_museum
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington, \
     skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary, \
     california_african_american_museum, molaa, ica_la, \
@@ -57,6 +57,7 @@ PROXIED_VENUES = {
     "Armory Center for the Arts": ["Armory Center for the Arts"],
     "Marin Civic Center": ["Marin Civic Center"],
     "Galerie Simon Blais": ["Galerie Simon Blais"],
+    "Mills College Art Museum": ["Mills College Art Museum"],
 }
 # "Every 4 days" with 12 hours of slack, so run-to-run start-time jitter can't push a
 # venue to every 5th day. A venue is due once its newest event is this old; a failed
@@ -109,6 +110,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Marin Society of Artists": marin_society_of_artists.scrape_marin_society_of_artists,
             "di Rosa": di_rosa.scrape_di_rosa,
             "MACLA": macla.scrape_macla,
+            "Mills College Art Museum": mills_college_art_museum.scrape_mills_college_art_museum,
             "Marin Civic Center": civic_center_art_gallery.scrape_civic_center_art_gallery,
             "Oakland Photo Workshop": oakland_photo_workshop.scrape_oakland_photo_workshop,
             "GearBox Gallery": gearbox_gallery.scrape_gearbox_gallery,

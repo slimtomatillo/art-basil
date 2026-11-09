@@ -115,6 +115,12 @@
             "checked": "2026-11-06",
             "note": "Was $10; the museum closed in August 2026."
         },
+        "Mills College Art Museum": {
+            "admission": "free",
+            "source": "https://mcam.oakland.northeastern.edu/visit/",
+            "checked": "2026-11-09",
+            "note": "\"Always FREE and open to the public\"; visitors show a government ID at the campus gate."
+        },
         "di Rosa Napa": {
             "admission": "paid",
             "source": "https://www.dirosaart.org/visit/",
