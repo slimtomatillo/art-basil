@@ -50,7 +50,9 @@ class ProxyErrorLoggingTest(unittest.TestCase):
         utils.PROXY_EXHAUSTED = False
 
     def test_marin_civic_center_is_fetched_with_javascript_rendering(self):
-        self.assertEqual(utils.PROXY_DOMAINS['www.marincounty.gov'], {'premium_proxy': 'true', 'js_render': 'true'})
+        # plus a US exit IP since WEBSITE-106 (see tests/test_proxy_params.py)
+        options = utils.PROXY_DOMAINS['www.marincounty.gov']
+        self.assertEqual({k: options[k] for k in ('premium_proxy', 'js_render')}, {'premium_proxy': 'true', 'js_render': 'true'})
 
     def test_armory_is_fetched_with_javascript_rendering(self):
         self.assertEqual(utils.PROXY_DOMAINS['www.armoryarts.org'], {'premium_proxy': 'true', 'js_render': 'true'})

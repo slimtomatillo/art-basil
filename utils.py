@@ -95,8 +95,12 @@ PROXY_DOMAINS = {
     'soex.org': {'premium_proxy': 'true'},
     # Marin Civic Center (WEBSITE-81): Cloudflare 403s scripted requests from any connection (a browser
     # is fine). premium_proxy alone was tried first and ZenRows answered 422 in CI (2026-11-05), so this
-    # adds js_render (25 credits per request, about 190 a month). Not live-tested with it yet.
-    'www.marincounty.gov': {'premium_proxy': 'true', 'js_render': 'true'},
+    # adds js_render (25 credits per request, about 190 a month). That still got ZenRows 422 RESP001 "Could
+    # not get content" in CI (2026-11-09, WEBSITE-106) while Armory, Simon Blais and Mills fetched fine in the
+    # same run. ZenRows's docs for RESP001 suggest a geolocation, and a county site may refuse a non-US exit
+    # IP, so proxy_country=us is tried next (no extra credits). Not live-tested; if it still answers 422, the
+    # docs' other suggestions are wait=5000 and a Referer header (custom_headers), one at a time.
+    'www.marincounty.gov': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
     # Asian Art Museum: began 403ing GitHub Actions' IPs on 2026-10-21 (Cloudflare);
     # still fine from a normal connection. A static WordPress site, so a premium
     # proxy IP without JS rendering should be enough - not live-tested yet, the
