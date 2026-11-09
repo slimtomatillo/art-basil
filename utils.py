@@ -98,8 +98,7 @@ PROXY_DOMAINS = {
     # adds js_render (25 credits per request, about 190 a month). That still got ZenRows 422 RESP001 "Could
     # not get content" in CI (2026-11-09, WEBSITE-106) while Armory, Simon Blais and Mills fetched fine in the
     # same run. ZenRows's docs for RESP001 suggest a geolocation, and a county site may refuse a non-US exit
-    # IP, so proxy_country=us is tried next (no extra credits). Not live-tested; if it still answers 422, the
-    # docs' other suggestions are wait=5000 and a Referer header (custom_headers), one at a time.
+    # IP, so proxy_country=us was added, which fixed it (confirmed in CI 2026-11-09, no extra credits).
     'www.marincounty.gov': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
     # Asian Art Museum: began 403ing GitHub Actions' IPs on 2026-10-21 (Cloudflare);
     # still fine from a normal connection. A static WordPress site, so a premium
