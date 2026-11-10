@@ -173,13 +173,16 @@ async function fetchRegionBounds() {
     return bounds[getRegion()] || null;
 }
 
-async function fetchNearMeData() {
-    const region = getRegion();
-    const [coordinates, bounds] = await Promise.all([
-        fetchJson('../data/venue_coordinates.json'),
-        fetchRegionBounds(),
-    ]);
-    return { coordinates: coordinates[region] || {}, bounds };
+// Loaded once and shared: "Use my location" and Map view both need it (a failure is not remembered, so a retry works)
+let nearMeDataPromise = null;
+function fetchNearMeData() {
+    if (!nearMeDataPromise) {
+        const region = getRegion();
+        nearMeDataPromise = Promise.all([fetchJson('../data/venue_coordinates.json'), fetchRegionBounds()])
+            .then(([coordinates, bounds]) => ({ coordinates: coordinates[region] || {}, bounds }))
+            .catch(error => { nearMeDataPromise = null; throw error; });
+    }
+    return nearMeDataPromise;
 }
 
 // Export functions for use in other modules

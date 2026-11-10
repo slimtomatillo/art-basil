@@ -94,7 +94,8 @@ A group with no tags in a region's data gets no dropdown (so "Cost" only appears
 `nearMeControl.js` (`NearMeControl`) is the DOM part, created by `scroll.js` after the filter panel:
 - Adds a **Use my location** button to the filter bar with a small **(i)** beside it: the icon opens a bubble saying the location stays in the browser (click, tap or Enter; Escape or a click elsewhere closes it; the button's tooltip says the same). A one-line note under the bar appears only while there is something to say (finding you, an error, the distances' caveat) and takes no room otherwise. After a location is shared, the button becomes a **Nearest first** toggle (on by default) with a **Turn off** link, each row's Links cell shows "0.4 mi away" (the `.event-distance` span `tableRenderer.js` leaves in it, empty and hidden), and the rows are reordered. Turning it off restores the usual order. Filters keep working: hidden rows are reordered too
 - **Nothing is requested until the visitor clicks.** Then it loads `venue_coordinates.json` and `region_bounds.json` (static files, once; `dataManager.fetchNearMeData()`), so the default page is no heavier
-- **Privacy**: the position is used once to work out each venue's distance and then dropped. It is not kept in a variable, storage or a cookie, not put in the URL, not sent anywhere, and not in the analytics data. Reloading forgets everything. Keep it that way: no `localStorage`, no `?lat=`, nothing in `gtag`
+- **Privacy**: the position is used to work out each venue's distance. It is kept in memory only while distances are on (the "you are here" dot on Map view needs it, via the `onLocation` callback) and dropped when the visitor turns them off. It is never put in storage or a cookie or the URL, never sent anywhere, and not in the analytics data. Reloading forgets everything. Keep it that way: no `localStorage`, no `?lat=`, nothing in `gtag`
+- `onLocation(point | null)` is called after a location is shared and with `null` on **Turn off**; `scroll.js` uses it to move the map's dot. `distanceTextFor(venue)` gives a venue's "0.4 mi away" (or `null`) for the map popup
 - Outcomes it handles, each with a short message and the page still usable: permission denied, position unavailable, timed out (10 s), venue data failed to load (retry works), and far from the region
 - `SearchManager`'s row model carries `index` (the usual order), `venue` (from the row's `data-venue`) and `distanceEl`, which is how the control finds its rows
 - Needs HTTPS (GitHub Pages is; `localhost` is fine) and a browser with `navigator.geolocation`; without it no button is added
@@ -102,7 +103,7 @@ A group with no tags in a region's data gets no dropdown (so "Cost" only appears
 **Testing it by hand**: in the browser console, replace what the browser would answer, then click the button: `Geolocation.prototype.getCurrentPosition = (ok) => ok({ coords: { latitude: 37.8044, longitude: -122.2712 } })` (call `err({ code: 1 })` for "denied", `3` for "timed out").
 
 ### 4d. `mapView.js` ("List view | Map view")
-**Purpose**: The "List view | Map view" toggle on the results line (beside "Showing X of Y events"; full width above the count on a phone) and the map behind it (WEBSITE-102; pins, clusters and popups follow in WEBSITE-103). Part of the map epic WEBSITE-76.
+**Purpose**: The "List view | Map view" toggle on the results line (beside "Showing X of Y events"; full width above the count on a phone) and the map behind it (WEBSITE-102) and the pins on it (WEBSITE-103). Part of the map epic WEBSITE-76.
 
 - The table is the default view. The choice is part of the URL state: `filterState.parseUrl` / `toQuery` carry `view` (`?view=map`, written only for the map), and `SearchManager.setView('list' | 'map')` changes it, so a Map view can be shared and keeps the other parameters (`?q=...&phase=...&tags=...&view=map`). The view is not a filter: `isDefault` ignores it and "Clear all" keeps it. Existing links (`?search=`, `?tags=`, `?phase=`) have no `view`, so they open on the list
 - `MapView` subscribes to `SearchManager`. Map view hides the table (the `map-view-on` class on `<body>`; the "Showing X of Y" line and the filter pills stay) and shows a `<section class="map-view">`: the map, then a one-line privacy note beside MapLibre's own attribution
@@ -110,7 +111,11 @@ A group with no tags in a region's data gets no dropdown (so "Cost" only appears
 - The map opens framed on the region's box (`docs/data/region_bounds.json`), with `cooperativeGestures` (two fingers to pan, so a one-finger swipe still scrolls the page on a phone), zoom buttons and the attribution control (it must stay on)
 - **The tile provider is one constant**, `MAP_STYLE_URL` at the top of `mapView.js` (OpenFreeMap's "positron" style). See `OPERATIONS.md`, "The map", for what to do if it goes away
 - **It never leaves an empty box.** If WebGL is missing, the library or the style can't load (offline, blocked), or nothing has loaded after 15 s of the tab being visible, it removes the map, goes back to the list (which also puts the URL right) and shows a short note beside the filters. The next click on Map view tries again. A tab in the background draws no frames, so the timeout waits until it is visible again. Once the map has loaded, a single failed tile is just a gap
-- `scroll.js` creates it after the filter panel and "Use my location"; `window.mapView` is there for debugging
+- **Pins** (`mapPins.js` works out what goes where; `mapView.js` draws it). One pin per **location**: venues that share an address share a pin, and a venue with two addresses gets a labelled pin at each. Every number is a count of **shows**, not venues. A cluster adds up its pins' `weight` (`clusterProperties`), and a two-address venue's shows are weighted only at its first pin so they are counted once. Clusters zoom in when clicked; a pin opens a popup (built with `createElement`/`textContent` only, so nothing from the data is ever HTML) listing its venues, shows with dates and links, and the distance when Near me is on
+- The pins follow the filters: `SearchManager.matchingRows()` gives the rows that match, the map re-draws only when the pin signature changes (and re-frames only then, so a popup is not lost to an unrelated change). The line above the map says "51 places · 213 shows" and matches the results count; shows whose venue has no coordinates are not pinned and are counted in that line with a pointer to the list view. With nothing matching it says so and offers "Clear all"
+- **"Places on the map"** is a `<details>` list of every pin, reachable by keyboard (Enter opens it, Tab to a place, Enter shows it on the map). It is the non-pointer way to use the map
+- **"You are here"**: when Near me is on, the map shows a blue dot and frames the nearest few places plus you. The position is held in memory only while Near me is on (see 4c)
+- `scroll.js` creates it after the filter panel and "Use my location"; `window.mapView` is there for debugging. `dataManager.fetchNearMeData` is memoized so Near me and the map share one load of the coordinates
 
 **Testing it by hand**: serve `docs/` (for example `python3 -m http.server -d docs`) and open `/sf/?view=map`. To see a failure, in the console set `mapView.loadLibrary = async () => { throw new Error('x') }` or `mapView.styleUrl = 'http://localhost:8000/missing.json'` before clicking Map view. (A browser tab that isn't in front may not draw frames, so a map can sit on "Loading" there until you look at it.)
 
@@ -160,6 +165,7 @@ The modules should be loaded in this order in your HTML:
 <script src="filterPanel.js"></script>
 <script src="nearMe.js"></script>
 <script src="nearMeControl.js"></script>
+<script src="mapPins.js"></script>
 <script src="mapView.js"></script>
 <script src="modalManager.js"></script>
 

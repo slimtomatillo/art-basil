@@ -31,7 +31,7 @@ function makeElement(tag) {
     return el;
 }
 
-function setup({ geolocation, loadData, region = 'sf', rows } = {}) {
+function setup({ geolocation, loadData, region = 'sf', rows, onLocation } = {}) {
     const bar = makeElement('div');
     const panel = makeElement('div');
     panel.querySelector = selector => (selector === '.filter-bar' ? bar : null);
@@ -50,7 +50,7 @@ function setup({ geolocation, loadData, region = 'sf', rows } = {}) {
     rows = rows || [makeRow('Far', 0), makeRow('Near', 1), makeRow('Nowhere', 2), makeRow('Near', 3)];
     const shown = { order: rows.map(r => r.el.name) };
     const searchManager = { rows, tableBody: { append: (...els) => { shown.order = els.map(e => e.name); } } };
-    const control = new sandbox.NearMeControl(searchManager, { region, loadData, geolocation });
+    const control = new sandbox.NearMeControl(searchManager, { region, loadData, geolocation, onLocation });
     return { control, bar, panel, rows, shown, searchManager, document };
 }
 
@@ -247,4 +247,36 @@ test('while it looks for you the button is disabled and says so', () => {
     assert.strictEqual(ctx.control.label.textContent, 'Finding you…');
     assert.strictEqual(main(ctx).attributes['aria-busy'], 'true');
     assert.strictEqual(text(ctx), 'Finding your location…');
+});
+
+test('the map is told where the visitor is once distances are on, and when that stops; failures tell it nothing', async () => {
+    const told = [];
+    const ctx = setup({ geolocation: fakeGeolocation({ coords: SF }), loadData: loadOk, onLocation: point => told.push(point && { ...point }) });
+    assert.deepStrictEqual(told, []);                                         // nothing on construction
+    main(ctx).click();
+    await settle();
+    assert.deepStrictEqual(told, [{ lat: SF.latitude, lng: SF.longitude }]);
+    ctx.control.offButton.click();
+    assert.deepStrictEqual(told, [{ lat: SF.latitude, lng: SF.longitude }, null]);
+
+    for (const outcome of [{ error: 1 }, { coords: { latitude: 40.7128, longitude: -74.006 } }]) {   // denied; far from the region
+        const quiet = [];
+        const failing = setup({ geolocation: fakeGeolocation(outcome), loadData: loadOk, onLocation: point => quiet.push(point) });
+        main(failing).click();
+        await settle();
+        assert.deepStrictEqual(quiet, []);
+    }
+});
+
+test('a popup can ask for a venue\u2019s distance, which exists only while distances are on', async () => {
+    const ctx = setup({ geolocation: fakeGeolocation({ coords: SF }), loadData: loadOk });
+    assert.strictEqual(ctx.control.distanceTextFor('Near'), null);            // not on yet
+    main(ctx).click();
+    await settle();
+    assert.match(ctx.control.distanceTextFor('Near'), /^\d(\.\d)? mi away$/);
+    assert.notStrictEqual(ctx.control.distanceTextFor('Far'), ctx.control.distanceTextFor('Near'));
+    assert.strictEqual(ctx.control.distanceTextFor('Nowhere'), null);         // no coordinates
+    assert.strictEqual(ctx.control.distanceTextFor('Unknown venue'), null);
+    ctx.control.offButton.click();
+    assert.strictEqual(ctx.control.distanceTextFor('Near'), null);
 });
