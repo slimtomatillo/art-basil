@@ -25,8 +25,11 @@ class NearMeControl {
     // options.region: 'sf', 'la', ...   (picks miles or kilometres)
     // options.loadData: async () => ({ coordinates: { venue: [{lat, lng}] }, bounds: {lat: [s, n], lng: [w, e]} | null })
     // options.geolocation: navigator.geolocation (a test can pass its own)
-    constructor(searchManager, { region, loadData, geolocation } = {}) {
+    // options.onLocation: called with { lat, lng } once distances are shown, and with null when turned off, so Map view
+    //   can draw a "you are here" dot. The position is not kept here; whoever receives it keeps it only while it is on.
+    constructor(searchManager, { region, loadData, geolocation, onLocation } = {}) {
         this.searchManager = searchManager;
+        this.onLocation = onLocation || (() => {});
         this.units = nearMe.unitsFor(region);
         this.loadData = loadData;
         this.geolocation = geolocation || (typeof navigator !== 'undefined' ? navigator.geolocation : null);
@@ -206,10 +209,18 @@ class NearMeControl {
         this.applyOrder();
         this.setMessage(NEAR_ME_MESSAGES.on(this.nearestFirst));
         this.render();
+        this.onLocation(user);
+    }
+
+    // "0.4 mi away" for a venue, or null when distances are off or the venue has no coordinates (a map popup uses it)
+    distanceTextFor(venue) {
+        const km = this.phase === 'on' ? this.distances[venue] : null;
+        return km === null || km === undefined ? null : `${nearMe.formatDistance(km, this.units)} away`;
     }
 
     turnOff() {
         this.phase = 'off';
+        this.onLocation(null);
         this.distances = {};
         this.showDistances();
         this.applyOrder();

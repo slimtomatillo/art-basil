@@ -127,6 +127,9 @@ class TableRenderer {
         const row = this.tableBody.insertRow();
         row.setAttribute('role', 'row');
 
+        // The event itself, for Map view's popups (a property, not an attribute: it is not text)
+        row.eventData = event;
+
         // Add data attributes to row for filtering
         row.setAttribute('data-phase', event.phase);
         row.setAttribute('data-ongoing', event.ongoing === true);

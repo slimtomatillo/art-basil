@@ -1,7 +1,8 @@
 // Run with: node --test tests/
-// The "List view | Map view" toggle and the map shell (docs/mapView.js), driven through a tiny fake DOM, a
+// The "List view | Map view" toggle, the map and its pins (docs/mapView.js), driven through a tiny fake DOM, a
 // fake search manager and a fake MapLibre: nothing is loaded until Map view is opened, what the map is
-// given (region box, style, two-finger gestures), and every way it can fail going back to the list.
+// given (region box, style, two-finger gestures), every way it can fail going back to the list, and the pins:
+// clustering, popups, the list of places, framing, the empty state and the "you are here" dot.
 // No browser, no network.
 const test = require('node:test');
 const assert = require('node:assert');
@@ -9,6 +10,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const filterState = require('../docs/filterState.js');
+const venueAddresses = require('../docs/venueAddresses.js');
 
 // --- a very small DOM: just what MapView touches -------------------------------------------------
 function makeElement(tag) {
@@ -17,6 +19,7 @@ function makeElement(tag) {
         classList: { add(name) { el.className = `${el.className} ${name}`.trim(); }, remove(name) { el.className = el.className.split(' ').filter(c => c && c !== name).join(' '); } },
         setAttribute(name, value) { el.attributes[name] = String(value); },
         append(...nodes) { el.children.push(...nodes); },
+        replaceChildren(...nodes) { el.children = nodes; },
         before(node) { el.beforeNode = node; },
         after(node) { el.afterNode = node; },
         addEventListener(name, fn) { el.listeners[name] = fn; },
@@ -29,10 +32,13 @@ function makeElement(tag) {
 }
 
 // A search manager with the real filterState rules for the view, and the real URL writing
-function makeSearchManager(search = '') {
+function makeSearchManager(search = '', rows = []) {
     const manager = {
-        state: filterState.parseUrl(search), listeners: [], url: search,
+        state: filterState.parseUrl(search), listeners: [], url: search, rows, cleared: 0,
         subscribe(fn) { manager.listeners.push(fn); },
+        matchingRows() { return manager.rows; },
+        clearFilters() { manager.cleared += 1; },
+        changeRows(rows) { manager.rows = rows; manager.listeners.forEach(fn => fn()); },
         setView(view) {
             if (!filterState.VIEWS.includes(view) || view === manager.state.view) return;
             manager.state.view = view;
@@ -43,26 +49,72 @@ function makeSearchManager(search = '') {
     return manager;
 }
 
-// A fake MapLibre: records how the Map was made and lets a test fire its events
+// A fake MapLibre: records how the Map was made, what is drawn on it, and lets a test fire its events
 function makeLibrary() {
-    const library = { maps: [], controls: [] };
+    const library = { maps: [], popups: [], markers: [] };
     library.Map = class {
         constructor(options) {
-            this.options = options; this.handlers = {}; this.removed = false; this.controls = [];
+            Object.assign(this, { options, handlers: {}, layerHandlers: {}, sources: {}, layers: [], fitted: [], eased: [],
+                                  flown: [], controls: [], removed: false, zoom: 8, canvasStyle: {} });
             library.maps.push(this);
         }
-        on(name, fn) { this.handlers[name] = fn; }
+        on(name, a, b) { if (typeof a === 'function') this.handlers[name] = a; else this.layerHandlers[`${name}:${a}`] = b; }
         addControl(control, where) { this.controls.push({ control, where }); }
+        addSource(id, definition) {
+            this.sources[id] = { definition, data: definition.data, setCalls: 0,
+                setData(data) { this.data = data; this.setCalls += 1; },
+                getClusterExpansionZoom: async clusterId => 9 + clusterId };
+        }
+        addLayer(layer) { this.layers.push(layer); }
+        getSource(id) { return this.sources[id]; }
+        getCanvas() { return { style: this.canvasStyle }; }
+        getZoom() { return this.zoom; }
+        fitBounds(bounds, options) { this.fitted.push({ bounds, options }); }
+        easeTo(options) { this.eased.push(options); }
+        flyTo(options) { this.flown.push(options); }
         remove() { this.removed = true; }
         fire(name) { if (this.handlers[name]) this.handlers[name](); }
+        fireLayer(name, layer, event) { this.layerHandlers[`${name}:${layer}`](event); }
     };
     library.NavigationControl = class { constructor(options) { this.options = options; } };
+    library.Popup = class {
+        constructor(options) { this.options = options; this.removed = false; library.popups.push(this); }
+        setLngLat(lngLat) { this.lngLat = lngLat; return this; }
+        setDOMContent(content) { this.content = content; return this; }
+        addTo(map) { this.map = map; return this; }
+        remove() { this.removed = true; }
+    };
+    library.Marker = class {
+        constructor(options) { this.options = options; this.removed = false; library.markers.push(this); }
+        setLngLat(lngLat) { this.lngLat = lngLat; return this; }
+        addTo(map) { this.map = map; return this; }
+        remove() { this.removed = true; }
+    };
     return library;
 }
 
 const BOUNDS = { lat: [36.9, 38.6], lng: [-123.1, -121.5] };
 
-function setup({ search = '', webgl = true, loadLibrary, loadBounds, timeoutMs = 50, summary = true } = {}) {
+const COORDINATES = {
+    'Gallery A': [{ lat: 37.78, lng: -122.41 }],
+    'Gallery B': [{ lat: 37.78, lng: -122.41 }],
+    'Museum': [{ lat: 37.8, lng: -122.3 }],
+    'Two Spaces': [{ lat: 34.05, lng: -118.25 }, { lat: 34.06, lng: -118.3 }],
+};
+const VENUES = {
+    'Gallery A': '10 Main St, San Francisco, CA',
+    'Gallery B': '10 Main St, San Francisco, CA',
+    'Museum': '1 Museum Way, Oakland, CA',
+    'Two Spaces': [{ label: 'Downtown', address: '1 A St, Los Angeles' }, { label: 'Hollywood', address: '2 B St, Los Angeles' }],
+    'No Coordinates': '5 Nowhere Rd',
+};
+const showRow = (venue, name, dateText = 'Through Dec 1, 2026') => ({
+    venue, dateText, event: { name, phase: 'current', links: [{ link: `https://shows.example/${name.replace(/ /g, '-')}`, description: 'Event Page' }] },
+});
+const DATA = { coordinates: COORDINATES, bounds: BOUNDS_FOR_DATA() };
+function BOUNDS_FOR_DATA() { return { lat: [36.9, 38.6], lng: [-123.1, -121.5] }; }
+
+function setup({ search = '', webgl = true, loadLibrary, loadData, timeoutMs = 50, summary = true, rows = [], distances = {} } = {}) {
     const bar = makeElement('div');
     const table = makeElement('table');
     const wrap = makeElement('div');
@@ -81,20 +133,29 @@ function setup({ search = '', webgl = true, loadLibrary, loadBounds, timeoutMs =
         },
         body: bodyClasses, baseURI: 'http://localhost/sf/', head: makeElement('head'), currentScript: null,
     };
+    document.listeners = {};
+    document.addEventListener = (name, fn) => { document.listeners[name] = fn; };
     const sandbox = { window: {}, document, console, URL, setTimeout, clearTimeout };
+    vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/nearMe.js'), 'utf8'), sandbox);        // mapPins needs nearMe
+    vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/mapPins.js'), 'utf8'), sandbox);
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/mapView.js'), 'utf8')
         .replace('window.MapView = MapView;', 'globalThis.MapView = MapView; globalThis.MAP_STYLE_URL = MAP_STYLE_URL;'), sandbox);
 
     const library = makeLibrary();
-    const calls = { library: 0, bounds: 0 };
-    const manager = makeSearchManager(search);
+    const calls = { library: 0, data: 0 };
+    const manager = makeSearchManager(search, rows);
     const quiet = console.error; console.error = () => {};
     const view = new sandbox.MapView(manager, {
         loadLibrary: loadLibrary || (async () => { calls.library++; return library; }),
-        loadBounds: loadBounds || (async () => { calls.bounds++; return BOUNDS; }),
+        loadData: loadData || (async () => { calls.data++; return DATA; }),
+        venues: VENUES,
+        addressesOf: venue => venueAddresses.normalize(VENUES[venue]),
+        mapLinksFor: venue => venueAddresses.mapLinks(VENUES[venue]),
+        distanceTextFor: venue => distances[venue] || null,
+        accent: '#14806b',
         timeoutMs,
     });
-    return { view, manager, library, calls, bar, wrap, page, summaryEl, body: bodyClasses, sandbox, restore: () => { console.error = quiet; } };
+    return { view, manager, library, calls, bar, wrap, page, summaryEl, body: bodyClasses, sandbox, document, restore: () => { console.error = quiet; } };
 }
 
 const settle = () => new Promise(resolve => setImmediate(resolve));
@@ -103,7 +164,7 @@ const buttons = ctx => ctx.view.buttons;
 test('opens on the list: nothing is loaded or asked for, and the toggle says so', () => {
     const ctx = setup();
     assert.strictEqual(ctx.calls.library, 0);
-    assert.strictEqual(ctx.calls.bounds, 0);
+    assert.strictEqual(ctx.calls.data, 0);
     assert.strictEqual(ctx.library.maps.length, 0);
     assert.strictEqual(ctx.view.section.hidden, true);
     assert.strictEqual(ctx.body.className, '');
@@ -150,7 +211,7 @@ test('opening Map view loads the library, frames the region, and turns on two-fi
     await settle();
     assert.strictEqual(ctx.manager.url, '?view=map');
     assert.strictEqual(ctx.calls.library, 1);
-    assert.strictEqual(ctx.calls.bounds, 1);
+    assert.strictEqual(ctx.calls.data, 1);
     assert.strictEqual(ctx.library.maps.length, 1);
     const options = ctx.library.maps[0].options;
     assert.strictEqual(options.container, ctx.view.canvas);
@@ -299,7 +360,7 @@ test('after a failure the next click on Map view tries again from scratch', asyn
 });
 
 test('a region with no box on file cannot be framed, so it falls back to the list', async () => {
-    const ctx = setup({ loadBounds: async () => null });
+    const ctx = setup({ loadData: async () => ({ coordinates: {}, bounds: null }) });
     buttons(ctx).map.click();
     await settle();
     assert.strictEqual(ctx.manager.state.view, 'list');
@@ -324,6 +385,320 @@ test('a page with no filter bar or table (not a region page) gets nothing added'
     const document = { querySelector: () => null, getElementById: () => null, createElement: makeElement, body: makeElement('body'), baseURI: 'http://x/', currentScript: null };
     const sandbox = { window: {}, document, console, URL, setTimeout, clearTimeout };
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/mapView.js'), 'utf8').replace('window.MapView = MapView;', 'globalThis.MapView = MapView;'), sandbox);
-    const none = new sandbox.MapView(makeSearchManager(), { loadBounds: async () => BOUNDS });
+    const none = new sandbox.MapView(makeSearchManager(), { loadData: async () => DATA });
     assert.strictEqual(none.available, false);
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+// The pins (WEBSITE-103)
+
+const textOf = node => (node === undefined || node === null ? '' : typeof node === 'string' ? node
+    : [node.textContent || '', ...(node.children || []).map(textOf)].join(' ').replace(/\s+/g, ' ').trim());
+function findAll(node, predicate, found = []) {
+    if (node && typeof node === 'object') {
+        if (predicate(node)) found.push(node);
+        (node.children || []).forEach(child => findAll(child, predicate, found));
+    }
+    return found;
+}
+const openMap = async ctx => {
+    buttons(ctx).map.click();
+    await settle();
+    const map = ctx.library.maps[0];
+    map.fire('load');
+    return map;
+};
+const keyOf = (ctx, venue) => ctx.view.locations.find(location => location.venues.some(v => v.name === venue)).key;
+const clickPin = (map, key) => map.fireLayer('click', 'pins', { features: [{ properties: { key } }] });
+
+test('a clustered source and four layers are added, drawn in the region colour, with show counts', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    const { definition } = map.sources.locations;
+    assert.strictEqual(definition.type, 'geojson');
+    assert.strictEqual(definition.cluster, true);
+    assert.strictEqual(definition.clusterRadius, 46);
+    assert.strictEqual(definition.clusterMaxZoom, 14);
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(definition.clusterProperties)), { shows: ['+', ['get', 'weight']] });
+    assert.deepStrictEqual(map.layers.map(layer => layer.id), ['cluster-circles', 'cluster-counts', 'pins', 'pin-counts']);
+    assert.strictEqual(map.layers[0].paint['circle-color'], '#14806b');
+    assert.strictEqual(map.layers[2].paint['circle-color'], '#14806b');
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.layers[1].layout['text-field'])), ['to-string', ['get', 'shows']]);
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.layers[3].layout['text-field'])), ['to-string', ['get', 'count']]);
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.layers[1].layout['text-font'])), ['Noto Sans Bold']);
+    assert.strictEqual(map.sources.locations.data.features.length, 2);
+    assert.strictEqual(ctx.view.pinSummary.textContent, '2 places · 2 shows');
+    ctx.restore();
+});
+
+test('the map is framed on the pins when it opens', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    assert.strictEqual(map.fitted.length, 1);
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.fitted[0].bounds)), [[-122.41, 37.78], [-122.3, 37.8]]);
+    assert.strictEqual(map.fitted[0].options.maxZoom, 15);
+    ctx.restore();
+});
+
+test('changing the filters redraws the pins and re-frames; a change that moves no pin does neither', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    const source = map.sources.locations;
+    assert.strictEqual(source.setCalls, 1);
+    ctx.manager.changeRows([showRow('Museum', 'M1')]);                         // fewer shows: one pin
+    assert.strictEqual(source.setCalls, 2);
+    assert.strictEqual(source.data.features.length, 1);
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show');
+    assert.strictEqual(map.eased.length, 1);                                   // one pin: ease to it rather than fit a box
+    ctx.manager.changeRows([showRow('Museum', 'Another title')]);              // same pin, same count
+    assert.strictEqual(source.setCalls, 2);
+    ctx.manager.changeRows([showRow('Museum', 'M1'), showRow('Museum', 'M2')]);   // the pin says 2 now
+    assert.strictEqual(source.setCalls, 3);
+    assert.strictEqual(source.data.features[0].properties.count, 2);
+    ctx.restore();
+});
+
+test('going to the list and back leaves the pins alone unless the filters changed meanwhile', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    const source = map.sources.locations;
+    buttons(ctx).list.click();
+    buttons(ctx).map.click();
+    assert.strictEqual(source.setCalls, 1);
+    buttons(ctx).list.click();
+    ctx.manager.rows = [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')];          // filters changed while the table was showing
+    buttons(ctx).map.click();
+    assert.strictEqual(source.setCalls, 2);
+    assert.strictEqual(source.data.features.length, 2);
+    ctx.restore();
+});
+
+test('clicking a pin opens a popup with the venue, address, shows with links and dates, and the Map link', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'Big Show', 'Through Jan 3, 2027')], distances: { Museum: '0.4 mi away' } });
+    const map = await openMap(ctx);
+    clickPin(map, keyOf(ctx, 'Museum'));
+    const popup = ctx.library.popups[0];
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(popup.lngLat)), [-122.3, 37.8]);
+    assert.strictEqual(popup.map, map);
+    const text = textOf(popup.content);
+    for (const expected of ['Museum', '1 Museum Way, Oakland, CA', '0.4 mi away', 'Big Show', 'Through Jan 3, 2027', 'Map']) {
+        assert.ok(text.includes(expected), `${expected} is in: ${text}`);
+    }
+    const [showLink] = findAll(popup.content, n => n.tag === 'a' && n.textContent === 'Big Show');
+    assert.strictEqual(showLink.href, 'https://shows.example/Big-Show');
+    assert.strictEqual(showLink.target, '_blank');
+    assert.match(showLink.rel, /noopener/);
+    const [mapLink] = findAll(popup.content, n => n.className === 'map-popup-map');
+    assert.strictEqual(mapLink.textContent, 'Map');
+    assert.strictEqual(mapLink.href, 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('1 Museum Way, Oakland, CA'));
+    ctx.restore();
+});
+
+test('a popup shows no distance when "Use my location" is off, and never treats data as HTML', async () => {
+    const ctx = setup({ rows: [showRow('Museum', '<img src=x onerror=alert(1)>')] });
+    const map = await openMap(ctx);
+    clickPin(map, keyOf(ctx, 'Museum'));
+    const popup = ctx.library.popups[0];
+    assert.strictEqual(findAll(popup.content, n => n.className === 'map-popup-distance').length, 0);
+    const [link] = findAll(popup.content, n => n.tag === 'a' && n.className !== 'map-popup-map');
+    assert.strictEqual(link.textContent, '<img src=x onerror=alert(1)>');           // set as text, so it is just text
+    assert.strictEqual(link.innerHTML, undefined);
+    ctx.restore();
+});
+
+test('two venues at one address share a pin and one popup lists both', async () => {
+    const ctx = setup({ rows: [showRow('Gallery B', 'B1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    assert.strictEqual(map.sources.locations.data.features.length, 1);
+    assert.strictEqual(map.sources.locations.data.features[0].properties.count, 2);
+    clickPin(map, keyOf(ctx, 'Gallery A'));
+    const titles = findAll(ctx.library.popups[0].content, n => n.className === 'map-popup-title').map(n => n.textContent);
+    assert.deepStrictEqual(titles, ['Gallery A', 'Gallery B']);
+    ctx.restore();
+});
+
+test('a venue with two addresses gets two labelled pins, each popup with its own address and Map link, counted once in a cluster', async () => {
+    const ctx = setup({ rows: [showRow('Two Spaces', 'S1')] });
+    const map = await openMap(ctx);
+    const features = map.sources.locations.data.features;
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(features.map(f => [f.properties.count, f.properties.weight]))), [[1, 1], [1, 0]]);
+    clickPin(map, keyOf(ctx, 'Two Spaces'));                                    // the first pin
+    let popup = ctx.library.popups[0];
+    assert.strictEqual(textOf(popup.content.children[0].children[0]), 'Two Spaces (Downtown)');
+    assert.ok(textOf(popup.content).includes('1 A St, Los Angeles'));
+    assert.strictEqual(findAll(popup.content, n => n.className === 'map-popup-map')[0].textContent, 'Map: Downtown');
+    clickPin(map, ctx.view.locations[1].key);                                   // the second
+    popup = ctx.library.popups[1];
+    assert.strictEqual(textOf(popup.content.children[0].children[0]), 'Two Spaces (Hollywood)');
+    assert.ok(findAll(popup.content, n => n.className === 'map-popup-map')[0].href.endsWith(encodeURIComponent('2 B St, Los Angeles')));
+    ctx.restore();
+});
+
+test('a popup closes on Escape, when another opens, when the filters change and when going back to the list', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    ctx.document.listeners.keydown({ key: 'Escape' });                         // nothing open: nothing happens
+    clickPin(map, keyOf(ctx, 'Museum'));
+    ctx.document.listeners.keydown({ key: 'Enter' });
+    assert.strictEqual(ctx.library.popups[0].removed, false);
+    ctx.document.listeners.keydown({ key: 'Escape' });
+    assert.strictEqual(ctx.library.popups[0].removed, true);
+    clickPin(map, keyOf(ctx, 'Museum'));
+    clickPin(map, keyOf(ctx, 'Gallery A'));
+    assert.strictEqual(ctx.library.popups[1].removed, true);
+    ctx.manager.changeRows([showRow('Gallery A', 'A1'), showRow('Gallery A', 'A2')]);
+    assert.strictEqual(ctx.library.popups[2].removed, true);
+    clickPin(map, keyOf(ctx, 'Gallery A'));
+    buttons(ctx).list.click();
+    assert.strictEqual(ctx.library.popups[3].removed, true);
+    ctx.restore();
+});
+
+test('clicking a cluster zooms in to where it breaks up', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    map.fireLayer('click', 'cluster-circles', { features: [{ properties: { cluster_id: 3 }, geometry: { coordinates: [-122.35, 37.79] } }] });
+    await settle();
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.eased[map.eased.length - 1])), { center: [-122.35, 37.79], zoom: 12 });
+    ctx.restore();
+});
+
+test('the pointer shows a hand over pins and clusters', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    map.fireLayer('mouseenter', 'pins', {});
+    assert.strictEqual(map.canvasStyle.cursor, 'pointer');
+    map.fireLayer('mouseleave', 'pins', {});
+    assert.strictEqual(map.canvasStyle.cursor, '');
+    ctx.restore();
+});
+
+test('the places list has a button for every pin, by name, that flies there and opens its popup', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Museum', 'M2'), showRow('Gallery A', 'A1'), showRow('Two Spaces', 'T1')] });
+    const map = await openMap(ctx);
+    assert.strictEqual(ctx.view.places.hidden, false);
+    assert.strictEqual(ctx.view.placesSummary.textContent, 'Places on the map (4)');
+    const labels = ctx.view.placesList.children.map(item => item.children[0].textContent);
+    assert.deepStrictEqual(labels, ['Gallery A: 1 show', 'Museum: 2 shows', 'Two Spaces (Downtown): 1 show', 'Two Spaces (Hollywood): 1 show']);
+    ctx.view.placesList.children[1].children[0].click();                       // Museum
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.flown[0].center)), [-122.3, 37.8]);
+    assert.ok(map.flown[0].zoom >= 14);
+    assert.ok(textOf(ctx.library.popups[0].content).includes('Museum'));
+    ctx.restore();
+});
+
+test('a place with two venues is named for both in the list', async () => {
+    const ctx = setup({ rows: [showRow('Gallery B', 'B1'), showRow('Gallery A', 'A1')] });
+    await openMap(ctx);
+    assert.deepStrictEqual(ctx.view.placesList.children.map(item => item.children[0].textContent), ['Gallery A, Gallery B: 2 shows']);
+    ctx.restore();
+});
+
+test('when nothing matches the map says so, offers to clear the filters, and keeps its list hidden', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    ctx.manager.changeRows([]);
+    assert.strictEqual(ctx.view.pinSummary.textContent, 'No shows match these filters.');
+    assert.strictEqual(ctx.view.clearButton.hidden, false);
+    assert.strictEqual(ctx.view.places.hidden, true);
+    assert.strictEqual(map.sources.locations.data.features.length, 0);
+    ctx.view.clearButton.click();
+    assert.strictEqual(ctx.manager.cleared, 1);
+    ctx.manager.changeRows([showRow('Museum', 'M1')]);
+    assert.strictEqual(ctx.view.clearButton.hidden, true);
+    ctx.restore();
+});
+
+test('shows at a venue with no map location are counted in the summary, not drawn', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('No Coordinates', 'N1'), showRow('Never Heard Of It', 'X1')] });
+    const map = await openMap(ctx);
+    assert.strictEqual(map.sources.locations.data.features.length, 1);
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show (2 shows have no map location; see the list view)');
+    ctx.manager.changeRows([showRow('No Coordinates', 'N1')]);
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 show has no map location; see the list view.');
+    assert.strictEqual(ctx.view.clearButton.hidden, true);                    // there ARE matches: they just can't be placed
+    ctx.restore();
+});
+
+test('the visitor shows as a dot, and the map frames them with the nearest pins', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1'), showRow('Two Spaces', 'T1')] });
+    const map = await openMap(ctx);
+    ctx.view.setYouAreHere({ lat: 37.79, lng: -122.4 });
+    const [dot] = ctx.library.markers;
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(dot.lngLat)), [-122.4, 37.79]);
+    assert.strictEqual(dot.options.element.attributes['aria-label'], 'Your location');
+    assert.strictEqual(dot.options.element.className, 'map-you');
+    const framed = map.fitted[map.fitted.length - 1];
+    // the nearest three of the four pins (the Hollywood pin is nearer to San Francisco than Downtown), so the box is wide
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(framed.bounds)), [[-122.41, 34.06], [-118.3, 37.8]]);
+    ctx.view.setYouAreHere({ lat: 37.79, lng: -122.4 });
+    assert.strictEqual(ctx.library.markers[0].removed, true);                  // never two dots
+    ctx.view.setYouAreHere(null);
+    assert.strictEqual(ctx.library.markers[1].removed, true);
+    assert.strictEqual(ctx.view.you, null);
+    ctx.restore();
+});
+
+test('the framing keeps to the nearest few pins when there are more', async () => {
+    const coordinates = { ...COORDINATES, 'Far One': [{ lat: 40.7, lng: -74 }], 'Far Two': [{ lat: 41.8, lng: -87.6 }] };
+    const ctx = setup({ loadData: async () => ({ coordinates, bounds: BOUNDS_FOR_DATA() }),
+                        rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1'), showRow('Two Spaces', 'T1'), showRow('Far One', 'F1'), showRow('Far Two', 'F2')] });
+    VENUES['Far One'] = '1 Far St'; VENUES['Far Two'] = '2 Far St';
+    const map = await openMap(ctx);
+    ctx.view.setYouAreHere({ lat: 37.79, lng: -122.4 });
+    const framed = JSON.parse(JSON.stringify(map.fitted[map.fitted.length - 1].bounds));
+    assert.deepStrictEqual(framed, [[-122.41, 34.06], [-118.3, 37.8]]);        // not New York or Chicago
+    delete VENUES['Far One']; delete VENUES['Far Two'];
+    ctx.restore();
+});
+
+test('a visitor located before the map was opened is drawn when it loads, and the map frames them', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    ctx.view.setYouAreHere({ lat: 37.79, lng: -122.4 });                       // map not created yet: held for when it is
+    assert.strictEqual(ctx.library.markers.length, 0);
+    assert.strictEqual(ctx.calls.library, 0);
+    const map = await openMap(ctx);
+    assert.strictEqual(ctx.library.markers.length, 1);
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.fitted[0].bounds)), [[-122.41, 37.78], [-122.3, 37.8]]);
+    ctx.restore();
+});
+
+test('a visitor located while the list is showing is drawn, and framed when the map is next shown', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    buttons(ctx).list.click();
+    const before = map.fitted.length;
+    ctx.view.setYouAreHere({ lat: 37.79, lng: -122.4 });
+    assert.strictEqual(ctx.library.markers.length, 1);
+    assert.strictEqual(map.fitted.length, before);                             // a hidden map can't be framed
+    assert.strictEqual(ctx.view.needsFrame, true);
+    buttons(ctx).map.click();
+    assert.strictEqual(map.fitted.length, before + 1);
+    assert.strictEqual(ctx.view.needsFrame, false);
+    ctx.restore();
+});
+
+test('losing the map removes the popup and the dot', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    clickPin(map, keyOf(ctx, 'Museum'));
+    ctx.view.setYouAreHere({ lat: 37.79, lng: -122.4 });
+    ctx.view.fail('gone');
+    assert.strictEqual(ctx.library.popups[0].removed, true);
+    assert.strictEqual(ctx.library.markers[0].removed, true);
+    assert.strictEqual(map.removed, true);
+    assert.strictEqual(ctx.view.pinsReady, false);
+    ctx.restore();
+});
+
+test('the privacy of the visitor: the dot is the only place the map keeps their position, and turning it off forgets it', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    ctx.view.setYouAreHere({ lat: 37.123456, lng: -122.987654 });
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(ctx.view.you)), { lat: 37.123456, lng: -122.987654 });
+    ctx.view.setYouAreHere(null);
+    const kept = JSON.stringify(ctx.view, (key, value) => (['map', 'maplibre', 'searchManager', 'bar', 'tableWrap', 'section', 'resultsBar', 'summary', 'toggle', 'buttons'].includes(key) ? undefined : value));
+    assert.ok(!kept.includes('37.123456') && !kept.includes('122.987654'), 'the position is still held after turning off');
+    assert.ok(map.fitted.length >= 1);
+    ctx.restore();
 });

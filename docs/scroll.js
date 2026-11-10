@@ -52,12 +52,16 @@ window.addEventListener('DOMContentLoaded', async () => {
             window.nearMeControl = new NearMeControl(window.searchManager, {
                 region: window.dataManager.getRegion(),
                 loadData: window.dataManager.fetchNearMeData,
+                // Map view draws a "you are here" dot while distances are on
+                onLocation: point => { if (window.mapView) window.mapView.setYouAreHere(point); },
             });
         }
         // The "List view | Map view" toggle. The map (and its library) loads only when Map view is opened.
         if (window.MapView) {
             window.mapView = new MapView(window.searchManager, {
-                loadBounds: window.dataManager.fetchRegionBounds,
+                loadData: window.dataManager.fetchNearMeData,
+                venues,
+                distanceTextFor: venue => (window.nearMeControl ? window.nearMeControl.distanceTextFor(venue) : null),
             });
         }
         

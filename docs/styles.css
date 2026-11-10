@@ -1295,6 +1295,128 @@ body {
     color: #6c757d;
 }
 
+/* The pins (mapView.js): "61 places · 213 shows", a way out when nothing matches, the list of places, the popup
+   and the visitor's dot */
+.map-pin-summary {
+    margin: 0 0 0.5rem;
+    font-size: var(--control-font-size, 0.9rem);
+    font-weight: 600;
+    color: #495057;
+}
+
+.map-clear {
+    margin: 0 0 0.75rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--region-c, #0d6efd);
+    font: inherit;
+    font-size: var(--control-font-size, 0.9rem);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.map-pin-summary[hidden],
+.map-clear[hidden],
+.map-places[hidden] {
+    display: none;
+}
+
+.map-places {
+    margin-top: 0.75rem;
+    font-size: var(--control-font-size, 0.9rem);
+}
+
+.map-places summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.map-places ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    max-height: 14rem;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    overflow: auto;
+    list-style: none;
+}
+
+.map-places button {
+    padding: 0.15rem 0;
+    border: 0;
+    background: none;
+    color: var(--region-c, #0d6efd);
+    font: inherit;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.maplibregl-popup-content {
+    padding: 0.75rem 0.9rem;
+    border: 2px solid var(--ink, #212529);
+    border-radius: 12px;
+    box-shadow: 3px 3px 0 var(--ink, #212529);
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.map-popup {
+    max-height: 16rem;
+    overflow: auto;
+}
+
+.map-popup-venue + .map-popup-venue {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.map-popup-title {
+    margin: 0 1.25rem 0.15rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.map-popup-address,
+.map-popup-distance {
+    margin: 0 0 0.3rem;
+    font-size: 0.85rem;
+    color: #495057;
+}
+
+.map-popup-shows {
+    margin: 0.35rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.map-popup-shows li {
+    margin-bottom: 0.3rem;
+}
+
+.map-popup-dates {
+    display: block;
+    font-size: 0.82rem;
+    color: #6c757d;
+}
+
+.map-popup-map {
+    font-size: 0.85rem;
+}
+
+/* "You are here": a blue dot with a soft ring */
+.map-you {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #0d6efd;
+    box-shadow: 0 0 0 2px #0d6efd, 0 0 0 7px rgba(13, 110, 253, 0.25);
+}
+
 /* With the map showing, the table (and its "nothing matches" card) step aside; the summary line stays */
 .map-view-on .table-responsive:has(> #eventTable),
 .map-view-on .empty-state {

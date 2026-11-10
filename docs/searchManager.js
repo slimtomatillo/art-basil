@@ -41,6 +41,8 @@ class SearchManager {
                 index,                                       // the page's usual order (Near Me can reorder the rows)
                 venue: el.getAttribute('data-venue') || '',  // for the "Use my location" distances
                 distanceEl: el.querySelector('.event-distance'),
+                event: el.eventData || null,                 // for Map view's popups
+                dateText: cells[1]?.textContent || '',
                 // current / ongoing / future / past: what the "When" filter works on
                 bucket: filterState.bucketOf(el.getAttribute('data-phase'), el.getAttribute('data-ongoing') === 'true'),
                 tags: (el.getAttribute('data-tags') || '').split('|').filter(Boolean),
@@ -96,7 +98,12 @@ class SearchManager {
     }
 
     visibleCount() {
-        return this.rows.filter(row => filterState.rowMatches(row, this.state)).length;
+        return this.matchingRows().length;
+    }
+
+    // The rows that match the current filters (what the table shows, and what Map view puts on the map)
+    matchingRows() {
+        return this.rows.filter(row => filterState.rowMatches(row, this.state));
     }
 
     // Toggle a tag filter (from a table chip or the panel). Several tags can be
