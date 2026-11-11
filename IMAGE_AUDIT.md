@@ -4,13 +4,14 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-10: **564**. With their own picture: **556** (99%). Showing the venue's logo instead: **7**. No picture at all: **1**.
+Current and upcoming events on 2026-11-11: **574**. With their own picture: **565** (98%). Showing the venue's logo instead: **7**. No picture at all: **2**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
 | Region | Venue | Events | Own picture | Logo | None |
 |---|---|---:|---:|---:|---:|
 | `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
+| `la` | François Ghebaly | 2 | 1 | 0 | 1 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
 | `sf` | Jessica Silverman Gallery | 4 | 3 | 1 | 0 |
@@ -24,6 +25,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 
 - [MSA All About Women 2026](https://www.marinsocietyofartists.org/all-about-women-2026): venue logo; page last checked 2026-11-04
 - [MSA Visionary Marin](https://www.marinsocietyofartists.org/visionarymarin): venue logo; page last checked 2026-11-04
+
+**François Ghebaly** (`la`)
+
+- [Tran Truong](https://ghebaly.com/exhibitions/231-tran-truong/): blank; page last checked 2026-11-11
 
 **Espace DÈS_** (`mtl`)
 
