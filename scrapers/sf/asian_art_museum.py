@@ -25,7 +25,12 @@ def scrape_asian_art_museum_current_events(env='prod', region='sf'):
     # Scrape info
     url = 'https://exhibitions.asianart.org/'
     soup = fetch_and_parse(url)
-    
+    if soup is None:
+        # A refused or failed fetch (e.g. a ZenRows 422) gives no page; without this guard the
+        # soup.find below raised AttributeError and the crash marked the whole run failed (seen 2026-11-10)
+        logging.warning("Asian Art Museum: could not fetch the exhibitions page; existing data kept.")
+        return
+
     # Get featured event (formatted differently than other events)
     featured_event = soup.find(class_='hero-card -wrap')
 
