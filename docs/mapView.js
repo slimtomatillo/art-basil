@@ -513,6 +513,7 @@ class MapView {
                 maps.target = '_blank';
                 maps.rel = 'noopener noreferrer';
                 maps.textContent = link.text;
+                if (window.mapChoice) window.mapChoice.attach(maps, link); // Apple devices: Apple or Google Maps
                 section.append(maps);
             }
             root.append(section);

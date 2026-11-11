@@ -55,6 +55,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             mapLink.href = map.href;
             mapLink.textContent = map.text;
             mapLink.target = '_blank';
+            if (window.mapChoice) window.mapChoice.attach(mapLink, map); // Apple devices: Apple or Google Maps
             linksCell.appendChild(mapLink);
         });
     });

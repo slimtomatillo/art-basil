@@ -49,9 +49,13 @@ renderer.renderEventRow(event);
 **Purpose**: The pure logic (no DOM, unit tested in Node) behind a venue's address(es) and map links. A venue's value in `<region>_venues.json` is a street address string, or a list of `{label, address}` for a venue with more than one space.
 **Functions**:
 - `normalize(value)` - any accepted shape -> a list of `{label, address}` (empty if there is no usable address)
-- `mapLinks(value)` - one Google Maps link per address: `{text, href, title}`. One address gives plain "Map"; several give "Map: <label>"
+- `mapLinks(value)` - one map link per address: `{text, href, appleHref, title}` (`href` is Google Maps, `appleHref` the same place in Apple Maps). One address gives plain "Map"; several give "Map: <label>"
+- `isAppleDevice(navigator)` - true on an iPhone, iPad or Mac (read from the user agent only)
 
 `tableRenderer.js` (the "Map" link under each event) and `venuesRenderer.js` (the venue directory) both use it, so load `venueAddresses.js` before them (after `dataManager.js`) on every region page and venues page.
+
+### 3c. `mapChoice.js`
+**Purpose**: On an iPhone, iPad or Mac, clicking a "Map" link opens a small "Apple Maps / Google Maps" choice instead of going straight to Google Maps. Everywhere else it does nothing and the link goes to Google Maps. `mapChoice.attach(anchor, mapLink)` is called by `tableRenderer.js`, `venuesRenderer.js` and the map pin popups in `mapView.js`; load `mapChoice.js` after `venueAddresses.js` on every region page and venues page. The link keeps its Google href, so a middle or Ctrl/Cmd-click and no-JavaScript still work. Escape, a click elsewhere, scrolling or choosing an app closes it. Tested in `tests/mapChoice.test.js`.
 
 ### 4. `filterState.js` and `searchManager.js`
 **Purpose**: The event filters (search text, phase, ongoing, tags) and the table rows they show or hide.
@@ -158,6 +162,7 @@ The modules should be loaded in this order in your HTML:
 <!-- Load modules first -->
 <script src="dataManager.js"></script>
 <script src="venueAddresses.js"></script>
+<script src="mapChoice.js"></script>
 <script src="eventSorter.js"></script>
 <script src="tableRenderer.js"></script>
 <script src="filterState.js"></script>

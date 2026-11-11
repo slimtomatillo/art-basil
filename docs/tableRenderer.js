@@ -251,6 +251,7 @@ class TableRenderer {
                 if (mapLinks.length > 1) mapLinkElement.title = map.title;
                 mapLinkElement.target = '_blank'; // Open in new tab/window
                 mapLinkElement.className = 'event-link';
+                if (window.mapChoice) window.mapChoice.attach(mapLinkElement, map); // Apple devices: Apple or Google Maps
                 cell.appendChild(mapLinkElement);
             });
         }
