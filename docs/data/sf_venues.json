@@ -30,6 +30,12 @@
     "Legion of Honor": "100 34th Ave, San Francisco, CA",
     "Madrone Art Bar": "500 Divisadero St, San Francisco, CA 94117",
     "MACLA": "510 S 1st St, San Jose, CA 95113",
+    "SFAC Galleries": [
+        {"label": "Main Gallery and Cafe Valor", "address": "401 Van Ness Ave, San Francisco, CA 94102"},
+        {"label": "Art at City Hall", "address": "1 Dr Carlton B Goodlett Pl, San Francisco, CA 94102"}
+    ],
+    "Root Division": "1131 Mission St, San Francisco, CA 94103",
+    "Chinese Culture Center of San Francisco": "667 Grant Ave, San Francisco, CA 94108",
     "Mills College Art Museum": "5000 MacArthur Blvd, Oakland, CA 94613",
     "Manna Gallery": "473 25th St, Oakland, CA 94612",
     "Marin Civic Center": "3501 Civic Center Dr, San Rafael, CA 94903",
