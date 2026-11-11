@@ -69,3 +69,23 @@ test('every committed venues file only holds addresses this module can read', ()
         }
     }
 });
+
+test('each map link also has an Apple Maps link for the same address', () => {
+    const [link] = va.mapLinks('1380 Sherbrooke St W, Montreal, QC');
+    assert.strictEqual(link.href, 'https://www.google.com/maps/search/?api=1&query=1380%20Sherbrooke%20St%20W%2C%20Montreal%2C%20QC');
+    assert.strictEqual(link.appleHref, 'https://maps.apple.com/?q=1380%20Sherbrooke%20St%20W%2C%20Montreal%2C%20QC');
+});
+
+test('iPhone, iPad and Mac are Apple devices; Android, Windows and Linux are not', () => {
+    const IPHONE = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1';
+    const MAC = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/17.0 Safari/605.1.15';
+    assert.ok(va.isAppleDevice({ userAgent: IPHONE }));
+    // iPadOS Safari reports itself as a Mac, so the Mac user agent covers it
+    assert.ok(va.isAppleDevice({ userAgent: MAC, platform: 'MacIntel', maxTouchPoints: 5 }));
+    // The platform is not trusted: a phone emulated on a Mac keeps platform 'MacIntel'
+    assert.ok(!va.isAppleDevice({ userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) Chrome/120 Mobile Safari/537.36', platform: 'MacIntel', maxTouchPoints: 5 }));
+    assert.ok(!va.isAppleDevice({ userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) Chrome/120 Mobile Safari/537.36' }));
+    assert.ok(!va.isAppleDevice({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120 Safari/537.36', platform: 'Win32' }));
+    assert.ok(!va.isAppleDevice(undefined));
+    assert.ok(!va.isAppleDevice({}));
+});

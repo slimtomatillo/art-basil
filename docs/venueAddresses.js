@@ -18,6 +18,17 @@
 }(typeof self !== 'undefined' ? self : this, function () {
 
     const MAPS_SEARCH_URL = 'https://www.google.com/maps/search/?api=1&query=';
+    // Opens the Apple Maps app on an iPhone, iPad or Mac (and Apple's web map elsewhere)
+    const APPLE_MAPS_SEARCH_URL = 'https://maps.apple.com/?q=';
+
+    /** True on an iPhone, iPad or Mac, where the Map link offers Apple Maps as well as Google Maps.
+     *  `nav` is the browser's navigator (passed in so it can be tested). iPadOS Safari reports itself
+     *  as a Mac ("Macintosh"), so it is covered too. Only the user agent is read: the platform value
+     *  is not reliable (a phone emulated on a Mac keeps the Mac's). */
+    function isAppleDevice(nav) {
+        if (!nav) return false;
+        return /iPhone|iPad|iPod|Macintosh|Mac OS X/.test(String(nav.userAgent || ''));
+    }
 
     /** A venue's value from the venues file -> a list of { label, address } (empty if it has none).
      *  A plain string, a list of strings and a list of { label, address } objects are all accepted. */
@@ -37,7 +48,8 @@
         return entries;
     }
 
-    /** One Google Maps link per address: [{ text, href, title, label, address }].
+    /** One map link per address: [{ text, href, appleHref, title, label, address }]. `href` is Google Maps
+     *  (what everyone gets by default); `appleHref` is the same place in Apple Maps.
      *  A venue with a single address gets plain "Map"; with several, "Map: <label>"
      *  (or "Map: 2" for an entry that has no label). `title` is the address, for a tooltip. */
     function mapLinks(value) {
@@ -45,11 +57,12 @@
         return entries.map((entry, i) => ({
             text: entries.length === 1 ? 'Map' : `Map: ${entry.label || i + 1}`,
             href: MAPS_SEARCH_URL + encodeURIComponent(entry.address),
+            appleHref: APPLE_MAPS_SEARCH_URL + encodeURIComponent(entry.address),
             title: entry.address,
             label: entry.label,
             address: entry.address,
         }));
     }
 
-    return { MAPS_SEARCH_URL, normalize, mapLinks };
+    return { MAPS_SEARCH_URL, APPLE_MAPS_SEARCH_URL, isAppleDevice, normalize, mapLinks };
 }));

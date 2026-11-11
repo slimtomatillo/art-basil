@@ -1407,6 +1407,35 @@ body {
     font-size: 0.85rem;
 }
 
+/* The "Apple Maps / Google Maps" choice that a Map link opens on an iPhone, iPad or Mac (mapChoice.js) */
+.map-choice {
+    position: fixed;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    min-width: 9.5rem;
+    padding: 0.25rem;
+    border: 2px solid var(--ink, #111);
+    border-radius: 0.6rem;
+    background: #fff;
+    box-shadow: var(--pop-shadow, 3px 3px 0 #111);
+}
+
+.map-choice-item {
+    display: block;
+    padding: 0.6rem 0.8rem; /* big enough to tap */
+    border-radius: 0.4rem;
+    color: var(--ink, #111);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.map-choice-item:hover,
+.map-choice-item:focus-visible {
+    background: var(--region-tint, #e9ecef);
+    outline: none;
+}
+
 /* "You are here": a blue dot with a soft ring */
 .map-you {
     width: 18px;
