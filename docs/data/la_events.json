@@ -3041,14 +3041,14 @@
             "description": "The life and legacy of the art collector and businessman who used his fortune to create an institution dedicated to the arts.",
             "tags": [
                 "exhibition",
-                "current",
                 "museum",
-                "free"
+                "free",
+                "past"
             ],
-            "phase": "current",
+            "phase": "past",
             "dates": {
                 "start": "2016-09-27",
-                "end": "2034-08-31"
+                "end": null
             },
             "ongoing": false,
             "links": [
