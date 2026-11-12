@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-11: **574**. With their own picture: **565** (98%). Showing the venue's logo instead: **7**. No picture at all: **2**.
+Current and upcoming events on 2026-11-12: **572**. With their own picture: **564** (99%). Showing the venue's logo instead: **7**. No picture at all: **1**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -16,7 +16,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
 | `sf` | Jessica Silverman Gallery | 4 | 3 | 1 | 0 |
 | `sf` | Sanchez Art Center | 3 | 2 | 1 | 0 |
-| `tor` | Olga Korper Gallery | 2 | 1 | 0 | 1 |
 | `tor` | Paul Petro Contemporary Art | 2 | 1 | 1 | 0 |
 
 ### Events without a picture of their own
@@ -45,10 +44,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Sanchez Art Center** (`sf`)
 
 - [Arbor Day Tree Art Contest Award Winners Popup](http://sanchezartcenter.org/Calendar.htm): venue logo; page last checked 2026-11-04
-
-**Olga Korper Gallery** (`tor`)
-
-- [Ken Nicol: Terry's Pipe](https://www.olgakorpergallery.com/exhibitions-page/): blank; page last checked 2026-11-10
 
 **Paul Petro Contemporary Art** (`tor`)
 
