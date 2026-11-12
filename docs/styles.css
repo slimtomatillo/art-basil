@@ -1407,6 +1407,48 @@ body {
     font-size: 0.85rem;
 }
 
+/* On a phone or any touch screen: fingertip-sized targets for what the map adds (about 40 px; MapLibre's own
+   zoom buttons are 29 px, the popup's close button 21 px, and a line of text in a list is 22 px) */
+@media (max-width: 768px), (pointer: coarse) {
+    .map-view .maplibregl-ctrl-group button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .map-places summary {
+        padding: 0.6rem 0;
+    }
+
+    .map-places ul {
+        gap: 0;
+    }
+
+    .map-places button {
+        padding: 0.65rem 0;
+    }
+
+    .maplibregl-popup-close-button {
+        width: 36px;
+        height: 36px;
+        font-size: 1.5rem;
+    }
+
+    .map-popup-title {
+        margin-right: 2.25rem;   /* clear of the bigger close button */
+    }
+
+    .map-popup-shows a,
+    .map-popup-map {
+        display: inline-block;
+        padding: 0.3rem 0;
+    }
+
+    .near-me-info {
+        width: 36px;
+        height: 36px;
+    }
+}
+
 /* The "Apple Maps / Google Maps" choice that a Map link opens on an iPhone, iPad or Mac (mapChoice.js) */
 .map-choice {
     position: fixed;

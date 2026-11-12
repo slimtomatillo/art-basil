@@ -21,9 +21,13 @@
 const MAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
 const MAP_LOAD_TIMEOUT_MS = 15000;
 const MAP_CLUSTER_RADIUS = 46;         // pixels: pins closer than this merge into a cluster
-const MAP_CLUSTER_MAX_ZOOM = 14;       // beyond this every pin stands alone
+const MAP_CLUSTER_MAX_ZOOM = 14;       // pins cluster up to and including zoom 14.99; from 15 every pin stands alone
 const MAP_FRAME_MAX_ZOOM = 15;         // framing a few pins doesn't zoom in past street level
 const MAP_NEAREST_PINS = 3;            // how many pins to frame with the visitor's dot
+const MAP_TAP_PADDING = 12;            // pixels: a tap this close to a pin or cluster counts (a pin is 26 px, a fingertip is not)
+const MAP_POPUP_MAX_WIDTH = 340;       // pixels; narrower on a phone, so the popup always fits inside the map
+const MAP_POPUP_MARGIN = 48;           // pixels kept free beside a popup
+const MAP_POPUP_EDGE = 8;              // pixels a popup keeps from the edge of the map when it is panned into view
 const MAP_GLYPH_FONT = ['Noto Sans Bold'];   // a font the style's glyph server has
 
 // Where this script lives, so the library files next to it are found whatever page loads it
@@ -202,7 +206,7 @@ class MapView {
 
         // Escape closes an open popup
         document.addEventListener('keydown', event => {
-            if (event.key === 'Escape' && this.popup) this.closePopup();
+            if (event.key === 'Escape' && this.popup) this.closePopup({ returnFocus: true });
         });
     }
 
@@ -352,17 +356,37 @@ class MapView {
         circle('pins', isPin, 13);
         label('pin-counts', isPin, 'count', 12);
 
-        map.on('click', 'cluster-circles', event => this.zoomIntoCluster(event.features && event.features[0]));
-        map.on('click', 'pins', event => {
-            const key = event.features && event.features[0] && event.features[0].properties.key;
-            const location = this.locations.find(candidate => candidate.key === key);
-            if (location) this.openPopup(location);
+        // One handler for the whole map rather than one per layer, so a tap that lands a little beside a pin
+        // still finds it (see featureNear)
+        map.on('click', event => {
+            const feature = this.featureNear(event.point);
+            if (!feature) return;
+            if (feature.properties.cluster) {
+                this.zoomIntoCluster(feature);
+            } else {
+                const location = this.locations.find(candidate => candidate.key === feature.properties.key);
+                if (location) this.openPopup(location);
+            }
         });
-        for (const layer of ['cluster-circles', 'pins']) {
-            map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
-            map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
-        }
+        map.on('mousemove', event => { map.getCanvas().style.cursor = this.featureNear(event.point) ? 'pointer' : ''; });
         this.pinsReady = true;
+    }
+
+    // The pin or cluster nearest a point on the map, looking MAP_TAP_PADDING pixels around it: a pin is 26 px
+    // across, which is a small thing to hit with a finger
+    featureNear(point) {
+        if (!point) return null;
+        const pad = MAP_TAP_PADDING;
+        const found = this.map.queryRenderedFeatures(
+            [[point.x - pad, point.y - pad], [point.x + pad, point.y + pad]], { layers: ['cluster-circles', 'pins'] });
+        let best = null;
+        let bestDistance = Infinity;
+        for (const feature of found || []) {
+            const at = this.map.project(feature.geometry.coordinates);
+            const distance = Math.hypot(at.x - point.x, at.y - point.y);
+            if (distance < bestDistance) { best = feature; bestDistance = distance; }
+        }
+        return best;
     }
 
     zoomIntoCluster(feature) {
@@ -418,8 +442,8 @@ class MapView {
 
     // Fly to a place and open its popup (from the list)
     goTo(location) {
-        this.map.flyTo({ center: [location.lng, location.lat], zoom: Math.max(this.map.getZoom(), MAP_CLUSTER_MAX_ZOOM + 0.5), duration: 600 });
-        this.openPopup(location);
+        this.map.flyTo({ center: [location.lng, location.lat], zoom: Math.max(this.map.getZoom(), MAP_CLUSTER_MAX_ZOOM + 1), duration: 600 });   // clusters still form at 14.x, so go to 15, where every pin stands alone
+        this.openPopup(location, { afterMove: true });
     }
 
     // Frame what matters: the visitor and the nearest pins if they are on the map, otherwise every pin.
@@ -440,18 +464,65 @@ class MapView {
 
     // ---- popups -----------------------------------------------------------------------------------------------
 
-    closePopup() {
-        if (!this.popup) return;
-        try { this.popup.remove(); } catch (error) { /* already gone */ }
-        this.popup = null;
+    // returnFocus: the visitor closed it (Escape), so put the keyboard back where they were. Without that focus
+    // falls to the top of the page and they would have to tab all the way down again.
+    closePopup({ returnFocus = false } = {}) {
+        const popup = this.popup;
+        if (!popup) return;
+        this.popup = null;                  // before remove(), so the popup's own 'close' event can tell it was not the visitor
+        try { popup.remove(); } catch (error) { /* already gone */ }
+        if (returnFocus) this.restoreFocus();
     }
 
-    openPopup(location) {
+    restoreFocus() {
+        const target = this.popupTrigger;
+        this.popupTrigger = null;
+        if (target && target.isConnected !== false && typeof target.focus === 'function') target.focus();
+    }
+
+    openPopup(location, { afterMove = false } = {}) {
         this.closePopup();
-        this.popup = new this.maplibre.Popup({ offset: 16, maxWidth: '340px' })
+        // Never wider than the map less a margin: on a phone a 340 px popup fills the map and gets cut off at an edge
+        const room = this.map.getContainer && this.map.getContainer() ? this.map.getContainer().clientWidth - MAP_POPUP_MARGIN : MAP_POPUP_MAX_WIDTH;
+        const maxWidth = Math.max(200, Math.min(MAP_POPUP_MAX_WIDTH, room || MAP_POPUP_MAX_WIDTH));
+        const content = this.popupContent(location);
+        // ...nor taller than the map leaves room for (the pin has to stay in view beside it)
+        const mapHeight = this.map.getContainer && this.map.getContainer() ? this.map.getContainer().clientHeight : 0;
+        if (mapHeight && content.style) content.style.maxHeight = `${Math.max(120, Math.min(256, mapHeight - 140))}px`;
+        // Where the keyboard goes back to when it closes: the place in the list it was opened from, else the map
+        const active = typeof document !== 'undefined' ? document.activeElement : null;
+        const fromList = !!active && !!this.placesList.contains && this.placesList.contains(active);
+        const canvas = this.map.getCanvas && this.map.getCanvas();
+        this.popupTrigger = fromList ? active : (canvas && typeof canvas.focus === 'function' ? canvas : null);
+        const popup = new this.maplibre.Popup({ offset: 16, maxWidth: `${maxWidth}px` })
             .setLngLat([location.lng, location.lat])
-            .setDOMContent(this.popupContent(location))
+            .setDOMContent(content)
             .addTo(this.map);
+        this.popup = popup;
+        // Its own close button
+        if (popup.on) popup.on('close', () => { if (this.popup === popup) { this.popup = null; this.restoreFocus(); } });
+        // Opened from the list the map is still flying to the place, so wait for it to arrive
+        if (afterMove && this.map.once) this.map.once('moveend', () => { if (this.popup === popup) this.keepPopupInView(); });
+        else this.keepPopupInView();
+    }
+
+    // MapLibre puts a popup on the side of the pin that has room, judging by the pin's position alone, so on a
+    // small map a tall or wide popup can still run off an edge. Pan the map by just what brings it back inside.
+    keepPopupInView() {
+        const popup = this.popup;
+        const container = this.map && this.map.getContainer && this.map.getContainer();
+        const element = popup && popup.getElement && popup.getElement();
+        if (!container || !element || !container.getBoundingClientRect || !element.getBoundingClientRect) return;
+        const p = element.getBoundingClientRect();
+        const m = container.getBoundingClientRect();
+        const shift = (start, end, from, to) => {
+            if (start < from + MAP_POPUP_EDGE) return from + MAP_POPUP_EDGE - start;
+            if (end > to - MAP_POPUP_EDGE) return to - MAP_POPUP_EDGE - end;
+            return 0;
+        };
+        const dx = shift(p.left, p.right, m.left, m.right);
+        const dy = shift(p.top, p.bottom, m.top, m.bottom);
+        if (dx || dy) this.map.panBy([-dx || 0, -dy || 0], { duration: 250 });     // panBy moves the map, so the popup goes the other way
     }
 
     // Built with createElement and textContent only: nothing from the data is ever treated as HTML
