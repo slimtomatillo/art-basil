@@ -3,9 +3,11 @@
 //
 // Privacy, by design:
 //  - The browser's permission prompt appears only when the visitor clicks the button, never on load.
-//  - The position is used once to work out each venue's distance and then dropped: it is not kept
-//    in a variable, storage or a cookie, not put in the URL, and not sent anywhere. (The only
-//    requests are for the venue coordinates and the region's bounding box, which are static files.)
+//  - The position is used to work out each venue's distance. This control does not keep it: it hands it
+//    to `onLocation` (so Map view can draw its "you are here" dot), which holds it in memory only while
+//    distances are on and gets `null` when they are turned off. It is never put in storage or a cookie
+//    or the URL, and never sent anywhere. (The only requests are for the venue coordinates and the
+//    region's bounding box, which are static files.)
 //  - Reloading the page forgets everything.
 
 const NEAR_ME_MESSAGES = {

@@ -15,7 +15,7 @@ const venueAddresses = require('../docs/venueAddresses.js');
 // --- a very small DOM: just what MapView touches -------------------------------------------------
 function makeElement(tag) {
     const el = {
-        tag, className: '', textContent: '', hidden: false, type: '', attributes: {}, children: [], listeners: {},
+        tag, className: '', textContent: '', hidden: false, type: '', attributes: {}, children: [], listeners: {}, style: {},
         classList: { add(name) { el.className = `${el.className} ${name}`.trim(); }, remove(name) { el.className = el.className.split(' ').filter(c => c && c !== name).join(' '); } },
         setAttribute(name, value) { el.attributes[name] = String(value); },
         append(...nodes) { el.children.push(...nodes); },
@@ -25,6 +25,8 @@ function makeElement(tag) {
         addEventListener(name, fn) { el.listeners[name] = fn; },
         click() { el.listeners.click(); },
         closest() { return el.wrap; },
+        contains(node) { return node === el || el.children.some(child => child.contains && child.contains(node)); },
+        focus() { el.focused = (el.focused || 0) + 1; },
         querySelector(selector) { return selector === 'span' ? (el.spanEl ||= makeElement('span')) : null; },
         insertBefore(node, reference) { el.inserted = { node, reference }; },
     };
@@ -51,14 +53,14 @@ function makeSearchManager(search = '', rows = []) {
 
 // A fake MapLibre: records how the Map was made, what is drawn on it, and lets a test fire its events
 function makeLibrary() {
-    const library = { maps: [], popups: [], markers: [] };
+    const library = { maps: [], popups: [], markers: [], popupRect: { left: 40, top: 100, right: 300, bottom: 300 } };   // a popup that fits
     library.Map = class {
         constructor(options) {
-            Object.assign(this, { options, handlers: {}, layerHandlers: {}, sources: {}, layers: [], fitted: [], eased: [],
-                                  flown: [], controls: [], removed: false, zoom: 8, canvasStyle: {} });
+            Object.assign(this, { options, handlers: {}, sources: {}, layers: [], fitted: [], eased: [],
+                                  flown: [], controls: [], removed: false, zoom: 8, canvasStyle: {}, containerWidth: 800, containerHeight: 600, queries: [], rendered: [], panned: [], onceHandlers: {} });
             library.maps.push(this);
         }
-        on(name, a, b) { if (typeof a === 'function') this.handlers[name] = a; else this.layerHandlers[`${name}:${a}`] = b; }
+        on(name, handler) { this.handlers[name] = handler; }
         addControl(control, where) { this.controls.push({ control, where }); }
         addSource(id, definition) {
             this.sources[id] = { definition, data: definition.data, setCalls: 0,
@@ -67,22 +69,36 @@ function makeLibrary() {
         }
         addLayer(layer) { this.layers.push(layer); }
         getSource(id) { return this.sources[id]; }
-        getCanvas() { return { style: this.canvasStyle }; }
+        getCanvas() { return this.canvas || (this.canvas = { style: this.canvasStyle, focus() { this.focused = (this.focused || 0) + 1; } }); }
+        // The map's box on the page (the popup tests check it against the popup's box)
+        getContainer() {
+            return { clientWidth: this.containerWidth, clientHeight: this.containerHeight,
+                     getBoundingClientRect: () => ({ left: 0, top: 0, right: this.containerWidth, bottom: this.containerHeight }) };
+        }
+        once(name, handler) { this.onceHandlers[name] = handler; }
+        panBy(offset, options) { this.panned.push({ offset, options }); }
+        // What is drawn near a tap: a test sets `rendered`; project() puts [lng, lat] at x = lng, y = lat
+        queryRenderedFeatures(box, options) { this.queries.push({ box, options }); return this.rendered; }
+        project(coordinates) { return { x: coordinates[0], y: coordinates[1] }; }
         getZoom() { return this.zoom; }
         fitBounds(bounds, options) { this.fitted.push({ bounds, options }); }
         easeTo(options) { this.eased.push(options); }
         flyTo(options) { this.flown.push(options); }
         remove() { this.removed = true; }
-        fire(name) { if (this.handlers[name]) this.handlers[name](); }
-        fireLayer(name, layer, event) { this.layerHandlers[`${name}:${layer}`](event); }
+        fire(name, event) {
+            if (this.handlers[name]) this.handlers[name](event);
+            if (this.onceHandlers[name]) { const handler = this.onceHandlers[name]; delete this.onceHandlers[name]; handler(event); }
+        }
     };
     library.NavigationControl = class { constructor(options) { this.options = options; } };
     library.Popup = class {
-        constructor(options) { this.options = options; this.removed = false; library.popups.push(this); }
+        constructor(options) { this.options = options; this.removed = false; this.rect = library.popupRect; this.listeners = {}; library.popups.push(this); }
+        on(name, handler) { this.listeners[name] = handler; return this; }
         setLngLat(lngLat) { this.lngLat = lngLat; return this; }
         setDOMContent(content) { this.content = content; return this; }
+        getElement() { return { getBoundingClientRect: () => this.rect }; }
         addTo(map) { this.map = map; return this; }
-        remove() { this.removed = true; }
+        remove() { this.removed = true; if (this.listeners.close) this.listeners.close(); }   // MapLibre fires 'close' for any removal
     };
     library.Marker = class {
         constructor(options) { this.options = options; this.removed = false; library.markers.push(this); }
@@ -409,7 +425,11 @@ const openMap = async ctx => {
     return map;
 };
 const keyOf = (ctx, venue) => ctx.view.locations.find(location => location.venues.some(v => v.name === venue)).key;
-const clickPin = (map, key) => map.fireLayer('click', 'pins', { features: [{ properties: { key } }] });
+// A tap on a pin: the map reports the pin it drew there (at point (0, 0), where the tap is)
+const pinFeature = (key, at = [0, 0]) => ({ properties: { key }, geometry: { coordinates: at } });
+const clusterFeature = (clusterId, at = [0, 0]) => ({ properties: { cluster: true, cluster_id: clusterId }, geometry: { coordinates: at } });
+const tapAt = (map, features, point = { x: 0, y: 0 }) => { map.rendered = features; map.fire('click', { point }); };
+const clickPin = (map, key) => tapAt(map, [pinFeature(key)]);
 
 test('a clustered source and four layers are added, drawn in the region colour, with show counts', async () => {
     const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
@@ -557,19 +577,160 @@ test('a popup closes on Escape, when another opens, when the filters change and 
 test('clicking a cluster zooms in to where it breaks up', async () => {
     const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
     const map = await openMap(ctx);
-    map.fireLayer('click', 'cluster-circles', { features: [{ properties: { cluster_id: 3 }, geometry: { coordinates: [-122.35, 37.79] } }] });
+    tapAt(map, [clusterFeature(3, [-122.35, 37.79])], { x: -122.35, y: 37.79 });
     await settle();
     assert.deepStrictEqual(JSON.parse(JSON.stringify(map.eased[map.eased.length - 1])), { center: [-122.35, 37.79], zoom: 12 });
     ctx.restore();
 });
 
-test('the pointer shows a hand over pins and clusters', async () => {
+test('the pointer shows a hand over pins and clusters, and only there', async () => {
     const ctx = setup({ rows: [showRow('Museum', 'M1')] });
     const map = await openMap(ctx);
-    map.fireLayer('mouseenter', 'pins', {});
+    map.rendered = [pinFeature(keyOf(ctx, 'Museum'))];
+    map.fire('mousemove', { point: { x: 0, y: 0 } });
     assert.strictEqual(map.canvasStyle.cursor, 'pointer');
-    map.fireLayer('mouseleave', 'pins', {});
+    map.rendered = [];
+    map.fire('mousemove', { point: { x: 300, y: 300 } });
     assert.strictEqual(map.canvasStyle.cursor, '');
+    ctx.restore();
+});
+
+test('a tap a little beside a pin still finds it: the search covers a fingertip, around the tap, on both layers', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    tapAt(map, [pinFeature(keyOf(ctx, 'Museum'), [9, 0])], { x: 0, y: 0 });             // the pin is 9 px from the tap
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.queries[map.queries.length - 1])),
+        { box: [[-12, -12], [12, 12]], options: { layers: ['cluster-circles', 'pins'] } });
+    assert.strictEqual(ctx.library.popups.length, 1);
+    ctx.restore();
+});
+
+test('when a tap is near several pins the nearest one opens', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    tapAt(map, [pinFeature(keyOf(ctx, 'Museum'), [10, 0]), pinFeature(keyOf(ctx, 'Gallery A'), [3, 4])]);   // 10 px and 5 px away
+    assert.strictEqual(ctx.library.popups.length, 1);
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(ctx.library.popups[0].lngLat)), [-122.41, 37.78]);                             // Gallery A's pin
+    ctx.restore();
+});
+
+test('a tap with no pin or cluster near it does nothing, and leaves an open popup alone', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    clickPin(map, keyOf(ctx, 'Museum'));
+    const eased = map.eased.length;
+    tapAt(map, []);
+    assert.strictEqual(ctx.library.popups.length, 1);
+    assert.strictEqual(ctx.library.popups[0].removed, false);
+    assert.strictEqual(map.eased.length, eased);
+    ctx.restore();
+});
+
+const popupOpenedWith = async (rect, { width = 343, height = 568 } = {}) => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    map.containerWidth = width;
+    map.containerHeight = height;
+    ctx.library.popupRect = rect;
+    clickPin(map, keyOf(ctx, 'Museum'));
+    return { ctx, map };
+};
+
+test('a popup that fits in the map leaves the map where it is', async () => {
+    const { ctx, map } = await popupOpenedWith({ left: 40, top: 100, right: 300, bottom: 300 });
+    assert.deepStrictEqual(map.panned, []);
+    ctx.restore();
+});
+
+test('a popup running off the bottom of the map pans it up by just enough, keeping a margin', async () => {
+    const { ctx, map } = await popupOpenedWith({ left: 40, top: 300, right: 300, bottom: 588 });   // 20 px below a 568 px map
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(map.panned)), [{ offset: [0, 28], options: { duration: 250 } }]);
+    ctx.restore();
+});
+
+test('a popup running off the right or the left of the map pans it back in', async () => {
+    const right = await popupOpenedWith({ left: 100, top: 100, right: 373, bottom: 300 });        // 30 px past a 343 px map
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(right.map.panned.map(p => p.offset))), [[38, 0]]);
+    right.ctx.restore();
+    const left = await popupOpenedWith({ left: -20, top: 100, right: 260, bottom: 300 });
+    assert.deepStrictEqual(JSON.parse(JSON.stringify(left.map.panned.map(p => p.offset))), [[-28, 0]]);
+    left.ctx.restore();
+});
+
+test('a popup opened from the places list is brought into view once the map has flown there', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    map.containerHeight = 568;
+    ctx.library.popupRect = { left: 40, top: 300, right: 300, bottom: 588 };
+    ctx.view.placesList.children[0].children[0].click();
+    assert.deepStrictEqual(map.panned, []);                                                  // still flying
+    map.fire('moveend');
+    assert.strictEqual(map.panned.length, 1);
+    ctx.restore();
+});
+
+test('a popup is never taller than the map leaves room for', async () => {
+    for (const [height, expected] of [[568, '256px'], [300, '160px'], [150, '120px']]) {
+        const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+        const map = await openMap(ctx);
+        map.containerHeight = height;
+        clickPin(map, keyOf(ctx, 'Museum'));
+        assert.strictEqual(ctx.library.popups[0].content.style.maxHeight, expected, `map ${height} px tall`);
+        ctx.restore();
+    }
+});
+
+test('closing a popup with Escape puts the keyboard back on the place in the list it was opened from', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    const item = ctx.view.placesList.children[1].children[0];
+    ctx.document.activeElement = item;                                        // the visitor pressed Enter on it
+    item.click();
+    ctx.document.activeElement = null;                                        // focus moves into the popup (the real one does that)
+    ctx.document.listeners.keydown({ key: 'Escape' });
+    assert.strictEqual(item.focused, 1);
+    ctx.restore();
+});
+
+test('closing a popup with its own close button also returns the keyboard, and only the visitor closing it does', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    const item = ctx.view.placesList.children[0].children[0];
+    ctx.document.activeElement = item;
+    item.click();
+    ctx.library.popups[0].remove();                                           // the close button
+    assert.strictEqual(item.focused, 1);
+    // Another popup replacing it, or the filters changing, is not the visitor closing it: focus stays where it is
+    const other = ctx.view.placesList.children[1].children[0];
+    ctx.document.activeElement = item; item.click();
+    ctx.document.activeElement = other; other.click();                        // replaces the first
+    ctx.manager.changeRows([showRow('Museum', 'M1')]);                        // and the filters change
+    assert.strictEqual(item.focused, 1);
+    assert.ok(!other.focused);
+    ctx.restore();
+});
+
+test('a popup opened from a pin returns the keyboard to the map when it closes with Escape', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    clickPin(map, keyOf(ctx, 'Museum'));
+    ctx.document.listeners.keydown({ key: 'Escape' });
+    assert.strictEqual(map.getCanvas().focused, 1);
+    ctx.restore();
+});
+
+test('a popup is never wider than the map less a margin, so on a phone it fits inside it', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    const map = await openMap(ctx);
+    map.containerWidth = 343;                                                              // a phone
+    clickPin(map, keyOf(ctx, 'Museum'));
+    assert.strictEqual(ctx.library.popups[0].options.maxWidth, '295px');
+    map.containerWidth = 1200;                                                             // a desktop: the usual width
+    clickPin(map, keyOf(ctx, 'Museum'));
+    assert.strictEqual(ctx.library.popups[1].options.maxWidth, '340px');
+    map.containerWidth = 150;                                                              // absurdly narrow: still readable
+    clickPin(map, keyOf(ctx, 'Museum'));
+    assert.strictEqual(ctx.library.popups[2].options.maxWidth, '200px');
     ctx.restore();
 });
 
@@ -582,7 +743,7 @@ test('the places list has a button for every pin, by name, that flies there and 
     assert.deepStrictEqual(labels, ['Gallery A: 1 show', 'Museum: 2 shows', 'Two Spaces (Downtown): 1 show', 'Two Spaces (Hollywood): 1 show']);
     ctx.view.placesList.children[1].children[0].click();                       // Museum
     assert.deepStrictEqual(JSON.parse(JSON.stringify(map.flown[0].center)), [-122.3, 37.8]);
-    assert.ok(map.flown[0].zoom >= 14);
+    assert.ok(map.flown[0].zoom >= 15, 'clusters still form below zoom 15, which would hide the place that was chosen');
     assert.ok(textOf(ctx.library.popups[0].content).includes('Museum'));
     ctx.restore();
 });
