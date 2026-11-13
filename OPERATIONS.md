@@ -139,6 +139,23 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   non-US exit IP. If another US site answers 422 RESP001, try that first; the docs' other suggestions are
   `wait=5000` and a `Referer` header. A refused proxy request now logs ZenRows's
   explanation (the response body), so a 422 or similar says why in the run log.
+- **Two JSON feeds are proxied only when they fail: Galerie Wishbone's pictures and SLATE contemporary's
+  shows list** (`ARTCLOUD_PROXY` in `utils.py`, `utils.fetch_json_via_proxy`; used by
+  `scrapers/mtl/belgo_galleries.py` and `scrapers/sf/slate_contemporary.py`). Both sites are on the ArtCloud
+  platform, whose firewall answers GitHub Actions' address with `403 Ip Forbidden` on some runs and not on
+  others (Wishbone's on 2026-11-10 and 2026-11-12, not on 11-09 or 11-11; SLATE's on 11-12). A feed is read
+  directly first, which is free, and through ZenRows only when that fails, so each spends 10 credits on a blocked
+  day (at most about 300 a month each if it were blocked every day, and usually well under that). Not
+  live-tested: if CI still logs a 403, or ZenRows answers 422, the log says why; add `proxy_country` or
+  `js_render` to `ARTCLOUD_PROXY`. Another ArtCloud site that starts failing the same way can use the same
+  two lines.
+- **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` alone** (10 credits, about 76 a month; it was
+  already on the 4-day schedule). On its first CI run (2026-11-12) it found no exhibition and logged no error,
+  although its page reads fine from a normal connection: a block page for GitHub's addresses is the likely
+  cause (Root Division and the Chinese Culture Center, fetched the same way, worked; they are on the 4-day
+  schedule too, but fetched directly). Not live-tested. If the log still says "no current or upcoming exhibition
+  found", it now includes the page's title, section count and size: a "Just a moment" title means a block
+  page, and a title like "SFAC Galleries | SF.gov" with no sections means the layout changed.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
   run rather than waiting another 4 days. (The stale-data check flags a venue
   after 7 days.)

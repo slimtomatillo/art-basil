@@ -105,9 +105,12 @@ class BelgoTest(unittest.TestCase):
         def json(self):
             return self.data
 
-    def run_wishbone(self, feed):
-        with mock.patch.object(belgo_galleries.requests, 'get', return_value=feed) as get:
+    def run_wishbone(self, feed, proxied=None):
+        """proxied: what the proxy answers when the direct request fails (None: it can't help)."""
+        with mock.patch.object(belgo_galleries.requests, 'get', return_value=feed) as get, \
+                mock.patch.object(belgo_galleries, 'fetch_json_via_proxy', return_value=proxied) as proxy:
             events = run(belgo_galleries, 'scrape_belgo_galleries', self.WISHBONE)
+        self.proxy = proxy
         return events[('Galerie Wishbone', 'Los Reinos Invisibles')], get
 
     def test_an_artcloud_tenants_show_takes_its_picture_from_the_sites_feed(self):
@@ -118,6 +121,34 @@ class BelgoTest(unittest.TestCase):
         self.assertEqual(show['links'][1], {'link': 'https://cdn.artcld.com/img/w_640,h_640,c_fit/abnjq.png', 'description': 'Image'})
         self.assertEqual(get.call_args.args[0], 'https://wishboneart.com/api/shows')
         self.assertEqual(get.call_args.kwargs['params']['sub'], belgo_galleries.ARTCLOUD_SITES['wishboneart.com'])
+
+    SHOW_ID = 'wishbone-gallery-los-reinos-invisibles-wishbone-gallery'
+
+    def test_a_feed_that_is_read_directly_never_touches_the_proxy(self):
+        self.run_wishbone(self.Feed({'shows': [{'showId': self.SHOW_ID, 'image': {'id': 'abnjq', 'extension': 'png'}}]}))
+        self.proxy.assert_not_called()
+
+    def test_a_blocked_feed_is_read_through_the_proxy_instead(self):
+        blocked = self.Feed(error=requests.HTTPError('403 Client Error: Ip Forbidden'))
+        proxied = {'shows': [{'showId': self.SHOW_ID, 'image': {'id': 'abnjq', 'extension': 'png'}}]}
+        show, _ = self.run_wishbone(blocked, proxied)
+        self.assertEqual(show['links'][1], {'link': 'https://cdn.artcld.com/img/w_640,h_640,c_fit/abnjq.png', 'description': 'Image'})
+        self.assertEqual(self.proxy.call_args.args[0], 'https://wishboneart.com/api/shows')
+        self.assertEqual(self.proxy.call_args.args[1]['sub'], belgo_galleries.ARTCLOUD_SITES['wishboneart.com'])
+        self.assertEqual(self.proxy.call_args.args[2], belgo_galleries.ARTCLOUD_PROXY)
+
+    def test_a_blocked_feed_the_proxy_cannot_read_either_leaves_the_show_without_a_picture_and_says_so(self):
+        blocked = self.Feed(error=requests.HTTPError('403 Client Error: Ip Forbidden'))
+        with self.assertLogs(level='WARNING') as logs:
+            show, _ = self.run_wishbone(blocked, None)
+        self.assertEqual([l['description'] for l in show['links']], ['Event Page'])
+        self.assertIn('could not read the pictures feed', '\n'.join(logs.output))
+
+    def test_an_answer_that_is_not_what_was_expected_does_not_cost_proxy_credits(self):
+        self.run_wishbone(self.Feed({'unexpected': 1}), {'shows': []})
+        self.proxy.assert_not_called()
+        self.run_wishbone(self.Feed(error=ValueError('not json')), {'shows': []})
+        self.proxy.assert_not_called()
 
     def test_an_unreadable_artcloud_feed_leaves_the_show_without_a_picture(self):
         for feed in (self.Feed(error=requests.ConnectionError('down')), self.Feed({'unexpected': 1}),

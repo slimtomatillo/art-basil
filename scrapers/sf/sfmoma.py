@@ -100,6 +100,10 @@ def scrape_sfmoma(env='prod', region='sf'):
                 # Dates
                 event_date = event.find("div", class_="exhibitionsgrid-wrapper-grid-item-text-date").text.strip().lower()
                 event_date = event_date.split('member previews')[0]
+                # Opening events run on after the range without a space ("...may 30, 2027Community Opening: Dec 10,
+                # 6 p.m. Public Preview Day: Dec 11"), which hid the SECA Art Award's dates; they are not part of it
+                for after_the_dates in ('community opening', 'public preview'):
+                    event_date = event_date.split(after_the_dates)[0].strip()
                 # Multi-run exhibitions list each run separated by ';' - use the first
                 event_date = event_date.split(';')[0].strip()
                 # Replace seasons with estimated dates

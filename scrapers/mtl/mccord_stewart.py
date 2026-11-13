@@ -43,6 +43,18 @@ def parse_date_text(text):
     return parse_one_date(normalized), None, False
 
 
+# A show that is announced for a season ("Spring 2027") has no day to parse. The season's first month is
+# enough to tell that it has not started, not to give it a date.
+_SEASON_RE = re.compile(r'^(spring|summer|fall|autumn|winter)\s+(\d{4})$', re.IGNORECASE)
+_SEASON_STARTS = {'spring': 3, 'summer': 6, 'fall': 9, 'autumn': 9, 'winter': 12}
+
+
+def upcoming_season(text, today):
+    """True if `text` is just a season and year ("Spring 2027") that begins after `today`."""
+    m = _SEASON_RE.match(' '.join((text or '').replace('\xa0', ' ').split()))
+    return bool(m) and dt.date(int(m.group(2)), _SEASON_STARTS[m.group(1).lower()], 1) > today
+
+
 def scrape_mccord_stewart_exhibitions(env='prod', region='mtl'):
     """Scrape and process exhibitions from the McCord Stewart Museum."""
 
@@ -77,12 +89,13 @@ def scrape_mccord_stewart_exhibitions(env='prod', region='mtl'):
         start_date = end_date = None
         ongoing = False
         description = None
+        date_text = None
         detail = fetch_and_parse(event_link)
         time.sleep(1)
         if detail is not None:
             date_tag = detail.select_one('.date')
-            start_date, end_date, ongoing = parse_date_text(
-                date_tag.get_text(' ', strip=True) if date_tag else None)
+            date_text = date_tag.get_text(' ', strip=True) if date_tag else None
+            start_date, end_date, ongoing = parse_date_text(date_text)
             meta_desc = detail.find('meta', attrs={'name': 'description'})
             if meta_desc and meta_desc.get('content'):
                 description = meta_desc['content'].strip()
@@ -100,6 +113,8 @@ def scrape_mccord_stewart_exhibitions(env='prod', region='mtl'):
             phase = 'past'
         elif start_date and start_date > today:
             phase = 'future'
+        elif not start_date and not end_date and upcoming_season(date_text, today):
+            phase = 'future'       # announced for a season ("Spring 2027"): coming, with no date yet (shown as "Dates TBA")
         else:
             phase = 'current'
 

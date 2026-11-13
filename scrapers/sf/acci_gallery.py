@@ -10,6 +10,8 @@ from urllib.parse import urljoin
 BASE_URL = 'https://www.accigallery.com'
 _MONTH_START_RE = re.compile(r'^(?:[A-Z][a-z]+,\s+)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}')
 _MAX_DESCRIPTION = 400
+# Between shows the menu's "Current Exhibition" link goes to the list of upcoming exhibitions, which is not a show
+_LIST_PAGE_RE = re.compile(r'upcoming[- ]exhibitions?(?:[- ]list)?', re.IGNORECASE)
 
 
 def scrape_acci_gallery(env='prod', region='sf'):
@@ -33,6 +35,10 @@ def scrape_acci_gallery(env='prod', region='sf'):
 
     name = link.get_text(' ', strip=True)
     url = urljoin(BASE_URL + '/', link['href'])
+    if _LIST_PAGE_RE.fullmatch(name) or _LIST_PAGE_RE.search(link['href']):
+        logging.warning("ACCI Gallery: the menu's current exhibition is the list of upcoming exhibitions "
+                        "(between shows?); existing data kept.")
+        return
     soup = fetch_and_parse(url)
     if soup is None:
         return

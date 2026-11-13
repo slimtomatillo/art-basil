@@ -2599,32 +2599,6 @@
             "last_updated": "2026-11-12 20:10:57",
             "image_checked": "2026-11-09",
             "hash": "484c7c842ec2c8270d18b6330b5047d8"
-        },
-        "Opening Reception Friday November 13, 7-10pm: 30th annual Christmas Spice - tree by Gary Evans-Paul Petro Contemporary Art": {
-            "name": "Opening Reception Friday November 13, 7-10pm: 30th annual Christmas Spice - tree by Gary Evans",
-            "venue": "Paul Petro Contemporary Art",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "future",
-                "gallery",
-                "free"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2026-11-27",
-                "end": "2026-12-23"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.paulpetro.com/ppca/current",
-                    "description": "Event Page"
-                }
-            ],
-            "last_updated": "2026-11-12 20:10:57",
-            "image_checked": "2026-11-09",
-            "hash": "505d200d7069a6190feb1192a4d23d5e"
         }
     },
     "Nicholas Metivier Gallery": {

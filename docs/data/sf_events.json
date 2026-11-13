@@ -44253,31 +44253,6 @@
             "last_updated": "2026-11-11 19:46:44",
             "image_checked": "2026-11-04",
             "hash": "5e811b3d4a183b2e13204ced69b656b9"
-        },
-        "Upcoming Exhibitions-ACCI Gallery": {
-            "name": "Upcoming Exhibitions",
-            "venue": "ACCI Gallery",
-            "description": "Masquerade: Art to Wear: Saturday, October 3 - Sunday, November 8, 2026",
-            "tags": [
-                "exhibition",
-                "past",
-                "gallery",
-                "free"
-            ],
-            "phase": "past",
-            "dates": {
-                "start": "2026-10-03",
-                "end": "2026-11-08"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.accigallery.com/upcoming-exhibition-list.html",
-                    "description": "Event Page"
-                }
-            ],
-            "last_updated": "2026-11-12 20:07:53",
-            "hash": "bdeeaf2cd27f766430a81753dd33ae9b"
         }
     },
     "Headlands Center for the Arts": {
