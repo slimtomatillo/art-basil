@@ -272,6 +272,9 @@ description can be found only by its title, venue and tags, and the venues where
 - **What to write:** plain text, one to three sentences, up to about 500 characters. **Keep the artists'
   names**, especially for a group show where they are not in the title. Strip HTML and entities, collapse
   whitespace, and cut at a sentence boundary rather than mid-word.
+- **A fallback exists, but don't lean on it.** `descriptions.py` (OPERATIONS.md, "Event descriptions") fills a
+  description for events whose scraper left it blank, from the event's own page. It skips paid-proxy sites and any
+  event whose "Event Page" is a listing page shared by several shows, so for those the scraper must supply it.
 - **Don't invent one** if the page has nothing: leave `description` as `None`, and say so in the
   scraper's comments. A blank is better than a wrong blurb.
 - **Check it:** after a run, count the events with no description. If most are blank for a venue that has

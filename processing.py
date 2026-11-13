@@ -42,6 +42,22 @@ def keep_found_image(event_details, stored):
             and _event_page(stored) == _event_page(event_details)):
         event_details['image_checked'] = stored['image_checked']
 
+def keep_found_description(event_details, stored):
+    """Carry a description found earlier (descriptions.py) over to the event a scraper is rewriting.
+
+    Scrapers replace the whole stored event on every run. One that supplies no description would wipe the one
+    descriptions.py found from the event's page, so it is kept (with the day it was looked for, while the event
+    still points at the same page). A description the scraper does supply always wins."""
+    if not stored:
+        return
+    if not event_details.get('description') and stored.get('description') and stored.get('description_source') == 'page':
+        event_details['description'] = stored['description']
+        event_details['description_source'] = 'page'
+    # The day the page was last looked at only counts while the event still points at that page
+    if (stored.get('description_checked') and 'description_checked' not in event_details
+            and _event_page(stored) == _event_page(event_details)):
+        event_details['description_checked'] = stored['description_checked']
+
 # Events are keyed by "name-venue", so when a source retitles a show ("and" -> "&",
 # a subtitle added, an accent dropped) the scraper writes a second entry and the old
 # one, never refreshed again, lingers as a duplicate. These helpers recognise the same
@@ -129,13 +145,16 @@ def is_reception(name):
 def process_event(event_details, region):
     if is_reception(event_details.get('name')) and 'reception' not in (event_details.get('tags') or []):
         event_details['tags'] = list(event_details.get('tags') or []) + ['reception']
-    # Add subject tags (photography, ceramics, ...) from the title and description;
-    # done first so they are part of the hash and every scraper gets them.
-    add_content_tags(event_details)
     db = load_db(DB_FILES[region])
     venue = event_details['venue']
     site_events = db.get(venue, {})
     event_id = generate_unique_identifier(event_details)
+    # A description found from the event's page (descriptions.py) survives a scraper that supplies none; this
+    # comes before the tagging so the subject tags are read from it too
+    keep_found_description(event_details, site_events.get(event_id))
+    # Add subject tags (photography, ceramics, ...) from the title and description;
+    # done first so they are part of the hash and every scraper gets them.
+    add_content_tags(event_details)
     keep_found_image(event_details, site_events.get(event_id))
     event_hash = generate_event_hash(event_details)
     _processed_this_run.add((region, venue, event_id))
