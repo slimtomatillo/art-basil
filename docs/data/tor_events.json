@@ -25,8 +25,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:40",
-            "hash": "1a0f49399b5fc5ff820592e81ebc8f30"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "754505dfe419449cc7f0aaf27dcfc9ef"
         },
         "Bharti Kher-MOCA Toronto": {
             "name": "Bharti Kher",
@@ -53,8 +53,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:40",
-            "hash": "a8ce83cf7a60db47e33ecc52f1078027"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "e99ed25b66300abc0754505ad281f082"
         },
         "Kimsooja-MOCA Toronto": {
             "name": "Kimsooja",
@@ -81,8 +81,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:40",
-            "hash": "a0f8e4b6a9c90943fba5facab3013d02"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "fdbe33f1ec022517d82effba76bd6048"
         },
         "Sara Cwynar-MOCA Toronto": {
             "name": "Sara Cwynar",
@@ -110,8 +110,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "c6b6ebae6d93f2e75a809a792f2a4c33"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "71ea1b4bf0d3526e97670402321c1037"
         },
         "Jeff Wall-MOCA Toronto": {
             "name": "Jeff Wall",
@@ -139,8 +139,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "165cf0ec7994a2e372ea4a98d49a62a8"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "a8c091388bfada1ca5f2e49b16438ded"
         },
         "Alex Da Corte-MOCA Toronto": {
             "name": "Alex Da Corte",
@@ -195,8 +195,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "7c8d7bdbc8191330f2ac8e53e54dabfd"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "b24150be2f40c42cba398ec7261b6e74"
         },
         "Margaux Williamson-MOCA Toronto": {
             "name": "Margaux Williamson",
@@ -225,8 +225,37 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "93ba269084a0beb7127eb00c54db6c80"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "19664c12447035646262e6113493c7de"
+        },
+        "Justin Ming Yong-MOCA Toronto": {
+            "name": "Justin Ming Yong",
+            "venue": "MOCA Toronto",
+            "description": "MOCA will unveil Blur, an exciting site-specific project by Toronto-based textile artist Justin Ming Yong, whose handmade quilts will be on view in the North End Gallery and will transform the museum\u2019s elevators into immersive art spaces. Yong has developed a textile practice that reinterprets traditional quilt-making\u2014a craft passed down to him by his mother, [\u2026]",
+            "tags": [
+                "exhibition",
+                "past",
+                "museum",
+                "textiles"
+            ],
+            "phase": "past",
+            "dates": {
+                "start": "2025-04-17",
+                "end": "2025-08-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://moca.ca/exhibitions/justin-ming-yong/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://moca.ca/wp-content/uploads/2025/03/IMG_0546-1280x720.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "d7b72e477deb9bd7603f42f19e37b640"
         }
     },
     "The Power Plant": {
@@ -319,8 +348,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "96b5a76bdb704e33886380a233f366d3"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "5012e56c5770346bdf3b791ecc22dc39"
         },
         "Moonlit Confessions Across Deep Sea Echoes: Your Ancestors Are Whales, and Earth Remembers Everything-The Power Plant": {
             "name": "Moonlit Confessions Across Deep Sea Echoes: Your Ancestors Are Whales, and Earth Remembers Everything",
@@ -352,8 +381,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "c7dd949013e92168713137eac10c365f"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "7e2d142e8afcf664a9c177198e437072"
         },
         "Owner of a Lonely Heart-The Power Plant": {
             "name": "Owner of a Lonely Heart",
@@ -382,8 +411,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "466f3a2bebdacd0933ec619d25b5c819"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "3569487e11755069e774c2e574e8e8f3"
         },
         "Smokestack Commission Program: Sami Tsang-The Power Plant": {
             "name": "Smokestack Commission Program: Sami Tsang",
@@ -414,8 +443,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "e3a87e247f2b22b94745e27eb6fade77"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "5a348c25cdd0677881b15e82516b05e6"
         },
         "Fleck Clerestory Commission Program: Ella Gonzales-The Power Plant": {
             "name": "Fleck Clerestory Commission Program: Ella Gonzales",
@@ -445,8 +474,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "ac0072abdb4499218a01d23c914bb653"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "ecbe394cd9d094ffe7b6f5f9adda4c84"
         },
         "South Facade Billboard: Morgan Sears-Williams-The Power Plant": {
             "name": "South Facade Billboard: Morgan Sears-Williams",
@@ -476,8 +505,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:41",
-            "hash": "d804ff2bad076f215ba7745ca1197c5f"
+            "last_updated": "2026-11-13 19:58:40",
+            "hash": "c257faddfb37cbee7c2263cedce24477"
         }
     },
     "Aga Khan Museum": {
@@ -562,8 +591,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "9e756cd2ae9ab13f6cc15e445df491a6"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "1e49d3e643b87e9b6b65b78f11f8cf75"
         },
         "Kamrooz Aram: Lapis Intervention-Aga Khan Museum": {
             "name": "Kamrooz Aram: Lapis Intervention",
@@ -590,8 +619,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "7794d7ae42733d6c4acd43d62cf40ae5"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "90b304330a468a1a6749a215de1de5ed"
         },
         "Toronto Biennial of Art at the Aga Khan Museum-Aga Khan Museum": {
             "name": "Toronto Biennial of Art at the Aga Khan Museum",
@@ -618,8 +647,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "0f30d0479f1e2b8690f1d48f759d136c"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "7d6aa4b4b093397dc818fdb5d2a514e3"
         },
         "Hayv Kahraman: Nabog-Aga Khan Museum": {
             "name": "Hayv Kahraman: Nabog",
@@ -646,8 +675,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "97ff2b469293584c5090a5de2632f86e"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "c5a381c7423f76b57afe0f144f54e24b"
         },
         "Saks Afridi: SpaceMosque-Aga Khan Museum": {
             "name": "Saks Afridi: SpaceMosque",
@@ -674,8 +703,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "fd6afe0eb790961adc0beb1d25f901b3"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "596c959969b7bae5818b71bd1f6b7527"
         },
         "The Garden of Ideas: Contemporary Art from Pakistan-Aga Khan Museum": {
             "name": "The Garden of Ideas: Contemporary Art from Pakistan",
@@ -702,8 +731,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "14bfb933de6c390e8379f800b6b0368e"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "3a357221d42da9fd5c5885ee1f77fc7e"
         },
         "In Search of the Artist: Signed Drawings and Paintings from the Aga Khan Museum Collection-Aga Khan Museum": {
             "name": "In Search of the Artist: Signed Drawings and Paintings from the Aga Khan Museum Collection",
@@ -732,8 +761,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "42bc973c47bd572bbf57e7c1d2b6a06e"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "e35b917de1a8d0c1db9bf85c8fed5018"
         },
         "The Lost Dhow: A Discovery from the Maritime Silk Route-Aga Khan Museum": {
             "name": "The Lost Dhow: A Discovery from the Maritime Silk Route",
@@ -760,8 +789,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "8895ebddfd80646be29a42664c32128d"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "9396851176e230eea592aa91769c8937"
         },
         "Home Ground: Contemporary Art from The Barjeel Art Foundation-Aga Khan Museum": {
             "name": "Home Ground: Contemporary Art from The Barjeel Art Foundation",
@@ -788,8 +817,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "58278a847aa37e559ad69e28a408e9e8"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "0ebeddb02a0ef3a7a0be74341cb179b8"
         },
         "Inspired by India: Paintings by Howard Hodgkin-Aga Khan Museum": {
             "name": "Inspired by India: Paintings by Howard Hodgkin",
@@ -817,8 +846,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "48906a0640a4ed72347e6880f35f5305"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "5bdc73647ab0bccdea2c1f9d18d2b982"
         },
         "Visions Of Mughal India: The Collection of Howard Hodgkin-Aga Khan Museum": {
             "name": "Visions Of Mughal India: The Collection of Howard Hodgkin",
@@ -845,8 +874,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:42",
-            "hash": "ff8291ac5210be4bf0a8c6eae2541850"
+            "last_updated": "2026-11-13 19:58:41",
+            "hash": "7e7ad286969a78cda1df5756b75ee341"
         },
         "materia prima-Aga Khan Museum": {
             "name": "materia prima",
@@ -1861,9 +1890,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:44",
+            "last_updated": "2026-11-13 19:58:43",
             "image_checked": "2026-11-04",
-            "hash": "d9b4871147a3ecb6fde1fc4a9f86a141"
+            "hash": "5db639a1e90b505728df95762034e9f1"
         },
         "In Search of Imperfection: The Macdonald Collection of Japanese and Japanese-Inspired Ceramics-Gardiner Museum": {
             "name": "In Search of Imperfection: The Macdonald Collection of Japanese and Japanese-Inspired Ceramics",
@@ -1891,9 +1920,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:44",
+            "last_updated": "2026-11-13 19:58:43",
             "image_checked": "2026-11-04",
-            "hash": "ab8a8b755368c1db9925a01250c92071"
+            "hash": "1ccc6d398145540821c5f1108bf3b219"
         },
         "After the Island: Caribbean Canadian Ceramics-Gardiner Museum": {
             "name": "After the Island: Caribbean Canadian Ceramics",
@@ -1921,9 +1950,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:44",
+            "last_updated": "2026-11-13 19:58:43",
             "image_checked": "2026-11-04",
-            "hash": "80083bbcc99e9fbb6edbb4afb23a30d1"
+            "hash": "06a1369db932ecf1c3d6cbf75f62caf9"
         },
         "Adaptive Ceramic Histories-Gardiner Museum": {
             "name": "Adaptive Ceramic Histories",
@@ -1951,9 +1980,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:44",
+            "last_updated": "2026-11-13 19:58:43",
             "image_checked": "2026-11-04",
-            "hash": "91dd971ca7bbe8f032b44a6f41586f5e"
+            "hash": "cbc97076edd84b88a956e70c86f0db0f"
         }
     },
     "Textile Museum of Canada": {
@@ -1982,9 +2011,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:46",
+            "last_updated": "2026-11-13 19:58:46",
             "image_checked": "2026-11-04",
-            "hash": "ce72a996c2edde750862a74ad292e8cb"
+            "hash": "73a63cb3f713e8840325577e752737d2"
         },
         "Always In Fashion-Textile Museum of Canada": {
             "name": "Always In Fashion",
@@ -2012,9 +2041,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:46",
+            "last_updated": "2026-11-13 19:58:46",
             "image_checked": "2026-11-04",
-            "hash": "648002956eb7176a0d324fb2c5207fe2"
+            "hash": "77e5cd62c2a815bbceb293159dc6d593"
         },
         "Retracing Tatreez: Palestinian Thobes through the 20th Century-Textile Museum of Canada": {
             "name": "Retracing Tatreez: Palestinian Thobes through the 20th Century",
@@ -2041,9 +2070,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:46",
+            "last_updated": "2026-11-13 19:58:46",
             "image_checked": "2026-11-04",
-            "hash": "15a864852e7bda3d036233d70720cf43"
+            "hash": "996d215bf44658c9fd45346a17f02505"
         },
         "Body & Head: Philippine Indigenous Blankets and Headscarves From the 20th Century and Beyond-Textile Museum of Canada": {
             "name": "Body & Head: Philippine Indigenous Blankets and Headscarves From the 20th Century and Beyond",
@@ -2102,9 +2131,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:50",
+            "last_updated": "2026-11-13 19:58:50",
             "image_checked": "2026-11-04",
-            "hash": "4e94d6ecf2c68292bfbf3dfd2eeca498"
+            "hash": "96f3c146efbab9317e25c15ad565129c"
         },
         "Unearthing Vindolanda-Bata Shoe Museum": {
             "name": "Unearthing Vindolanda",
@@ -2131,9 +2160,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:52",
+            "last_updated": "2026-11-13 19:58:51",
             "image_checked": "2026-11-04",
-            "hash": "3b14773521c52445a9e262f5cf1708db"
+            "hash": "ec38b712f5ddd914de3e0ce15742d9b4"
         },
         "Andr\u00e9 Perugia-Bata Shoe Museum": {
             "name": "Andr\u00e9 Perugia",
@@ -2160,9 +2189,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:54",
+            "last_updated": "2026-11-13 19:58:53",
             "image_checked": "2026-11-04",
-            "hash": "ac607d4740e82badc84b43a83f7c7834"
+            "hash": "ccf85447777440783899d17b6e677274"
         }
     },
     "Koffler Arts": {
@@ -2192,9 +2221,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:54",
+            "last_updated": "2026-11-13 19:58:53",
             "image_checked": "2026-11-04",
-            "hash": "ba2414912cf93d147f4a9b46c78fbf18"
+            "hash": "10e9d5a013bcc2692263cda7474501d2"
         },
         "Lessons in Objectology: Gord Peteran-Koffler Arts": {
             "name": "Lessons in Objectology: Gord Peteran",
@@ -2252,9 +2281,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:54",
+            "last_updated": "2026-11-13 19:58:53",
             "image_checked": "2026-11-04",
-            "hash": "4db5e270667f1d67db77a15b63111bec"
+            "hash": "4386748d5e9d449d4e709a318c85320b"
         }
     },
     "Mercer Union": {
@@ -2284,9 +2313,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:56",
+            "last_updated": "2026-11-13 19:58:55",
             "image_checked": "2026-11-04",
-            "hash": "56b79f2f22f7cce04a5de645b3bf8258"
+            "hash": "0a6403d0e7e8cf7655766b23cd91c87a"
         }
     },
     "Gallery TPW": {
@@ -2316,9 +2345,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:57",
+            "last_updated": "2026-11-13 19:58:56",
             "image_checked": "2026-11-04",
-            "hash": "251ae15c368dbb9045fe3171bfe87426"
+            "hash": "ebfea6f0682185d087be426d2770b43c"
         },
         "The Soil and the Daylight Recognize Me-Gallery TPW": {
             "name": "The Soil and the Daylight Recognize Me",
@@ -2346,9 +2375,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:57",
+            "last_updated": "2026-11-13 19:58:56",
             "image_checked": "2026-11-04",
-            "hash": "412d5ca03939a4d71050a692484ffabc"
+            "hash": "b7fb99d233eb035222607cbfc2213dee"
         }
     },
     "Gallery 44": {
@@ -2468,9 +2497,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:57",
+            "last_updated": "2026-11-13 19:58:56",
             "image_checked": "2026-11-04",
-            "hash": "22eec8dd46b757455e1e7f9b3460dc62"
+            "hash": "7c34a403f656e00608922e3d600faa44"
         }
     },
     "InterAccess": {
@@ -2500,9 +2529,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:57",
+            "last_updated": "2026-11-13 19:58:56",
             "image_checked": "2026-11-04",
-            "hash": "211af01177c1c63726e91b5fb1a9b95b"
+            "hash": "4d619b970e52bc1e0f4f051e6e81434e"
         }
     },
     "Paul Petro Contemporary Art": {
@@ -2575,12 +2604,12 @@
             "description": null,
             "tags": [
                 "exhibition",
-                "future",
+                "current",
                 "gallery",
                 "painting",
                 "free"
             ],
-            "phase": "future",
+            "phase": "current",
             "dates": {
                 "start": "2026-11-13",
                 "end": "2026-12-23"
@@ -2596,9 +2625,35 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:57",
+            "last_updated": "2026-11-13 19:58:56",
             "image_checked": "2026-11-09",
-            "hash": "484c7c842ec2c8270d18b6330b5047d8"
+            "hash": "8a198cd94d6cd861a2d462f813f30713"
+        },
+        "30th annual Christmas Spice - tree by Gary Evans-Paul Petro Contemporary Art": {
+            "name": "30th annual Christmas Spice - tree by Gary Evans",
+            "venue": "Paul Petro Contemporary Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-27",
+                "end": "2026-12-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paulpetro.com/exhibitions/691-30th-annual-christmas-spice",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-13 19:58:56",
+            "hash": "09491de7b94047a18ddb4b06a679ff3a",
+            "image_checked": "2026-11-13"
         }
     },
     "Nicholas Metivier Gallery": {
@@ -2658,9 +2713,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:58",
+            "last_updated": "2026-11-13 19:58:57",
             "image_checked": "2026-11-04",
-            "hash": "f2289f86a71a328b116c5c82e69f5edd"
+            "hash": "501fb28e974d79a3c9aeed36dda0e16a"
         },
         "Ben Reeves: Parklife-Nicholas Metivier Gallery": {
             "name": "Ben Reeves: Parklife",
@@ -2675,7 +2730,7 @@
             "phase": "future",
             "dates": {
                 "start": "2026-11-14",
-                "end": "2026-12-12"
+                "end": "2026-12-18"
             },
             "ongoing": false,
             "links": [
@@ -2688,9 +2743,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:58",
+            "last_updated": "2026-11-13 19:58:57",
             "image_checked": "2026-11-04",
-            "hash": "2bd9c15bf5604d3c56e661fa7141f4d1"
+            "hash": "ee71a538319fb3f19148995d60e2895e"
         }
     },
     "Olga Korper Gallery": {
@@ -2720,9 +2775,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:59",
+            "last_updated": "2026-11-13 19:58:58",
             "image_checked": "2026-11-04",
-            "hash": "fb228463f2ad8bbd8c82eb0fea43d624"
+            "hash": "62b1ff5a7212697d94f8e33d2969da0a"
         },
         "Ken Nicol: Terry's Pipe-Olga Korper Gallery": {
             "name": "Ken Nicol: Terry's Pipe",
@@ -2750,9 +2805,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:10:59",
+            "last_updated": "2026-11-13 19:58:58",
             "image_checked": "2026-11-10",
-            "hash": "2be41ec433fc5e44bfb4673434cf9f71"
+            "hash": "772876759b4daf5ed418e5d0882f13be"
         }
     },
     "Doris McCarthy Gallery": {
@@ -2782,9 +2837,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:00",
+            "last_updated": "2026-11-13 19:58:59",
             "image_checked": "2026-11-04",
-            "hash": "8ec34e47cf6f228b9ee14ba3fc085c9c"
+            "hash": "0ef29664f89c84c1b6c883c9434e1eaf"
         },
         "t\u00f3k\u0161a | I will see you again-Doris McCarthy Gallery": {
             "name": "t\u00f3k\u0161a | I will see you again",
@@ -2812,9 +2867,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:00",
+            "last_updated": "2026-11-13 19:58:59",
             "image_checked": "2026-11-04",
-            "hash": "35469435f091063c020298b3fbc0e210"
+            "hash": "3395f269919023374e4035c795c35401"
         }
     },
     "Onsite Gallery": {
@@ -2844,9 +2899,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:01",
+            "last_updated": "2026-11-13 19:58:59",
             "image_checked": "2026-11-04",
-            "hash": "27cb1b3b6da7a7334c9571f41610d093"
+            "hash": "fe5fdb3be65df0b62c59781e553735e3"
         },
         "Returning to Ourselves: Rebecca Baird and Kenny Alvin Baird\u2014A Retrospective of Art and Design by Cree M\u00e9tis Siblings-Onsite Gallery": {
             "name": "Returning to Ourselves: Rebecca Baird and Kenny Alvin Baird\u2014A Retrospective of Art and Design by Cree M\u00e9tis Siblings",
@@ -2874,9 +2929,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:01",
+            "last_updated": "2026-11-13 19:58:59",
             "image_checked": "2026-11-04",
-            "hash": "f8d6b34547813085d4d080639f854d3e"
+            "hash": "f01f91bbc053c1f70c504ee5f64091b2"
         },
         "Lost in the Right Direction, 2026-Onsite Gallery": {
             "name": "Lost in the Right Direction, 2026",
@@ -2904,9 +2959,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:01",
+            "last_updated": "2026-11-13 19:58:59",
             "image_checked": "2026-11-04",
-            "hash": "68979aa30e2a8170d6a9520513155224"
+            "hash": "41016591af2fa046b62906e721f37f01"
         }
     },
     "Stephen Bulger Gallery": {
@@ -2936,9 +2991,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:02",
+            "last_updated": "2026-11-13 19:59:00",
             "image_checked": "2026-11-04",
-            "hash": "a70301c3c9f11f701dc215bb17ca41d9"
+            "hash": "5e570ca321f0e8d888db61f21789cef2"
         }
     },
     "The Joan and Martin Goldfarb Gallery of York University": {
@@ -2968,9 +3023,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:02",
+            "last_updated": "2026-11-13 19:59:01",
             "image_checked": "2026-11-04",
-            "hash": "a796728daa385b071354d3af35964ba3"
+            "hash": "1af4a097928a144f832670997c989595"
         },
         "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism-The Joan and Martin Goldfarb Gallery of York University": {
             "name": "Jeanne Randolph with John Monteith, Fabulous Neoconstantinopolitanism",
@@ -2998,9 +3053,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:02",
+            "last_updated": "2026-11-13 19:59:01",
             "image_checked": "2026-11-04",
-            "hash": "ab99ba53a6dd15ba08f2e3546846c044"
+            "hash": "05c909dc781d956b4d6a70c17ef0bffa"
         }
     },
     "Propeller Art Gallery": {
@@ -3090,9 +3145,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:03",
+            "last_updated": "2026-11-13 19:59:06",
             "image_checked": "2026-11-04",
-            "hash": "6d1cd836ac9491ed597886d1b1a2474e"
+            "hash": "32721ee1e6f566dd75bade011f38b4e4"
         },
         "Marks and Flow: New Paintings: Susan Freypons-Propeller Art Gallery": {
             "name": "Marks and Flow: New Paintings: Susan Freypons",
@@ -3121,9 +3176,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:03",
+            "last_updated": "2026-11-13 19:59:08",
             "image_checked": "2026-11-04",
-            "hash": "1298ac046c6ef4c9780cd1d3cdc636a3"
+            "hash": "3c9d1fba94724c86d929b93767e57752"
         },
         "Primary 2: Selected Artists-Propeller Art Gallery": {
             "name": "Primary 2: Selected Artists",
@@ -3151,9 +3206,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:04",
+            "last_updated": "2026-11-13 19:59:09",
             "image_checked": "2026-11-04",
-            "hash": "dd0c9c063fee76d43a7b5e6270b04963"
+            "hash": "7b97471c11c175a004ace32432a7de5c"
         }
     },
     "Art Museum at the University of Toronto": {
@@ -3306,8 +3361,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
-            "hash": "b6712fcb31fea914d4b19ec7b4d237f9"
+            "last_updated": "2026-11-13 19:59:21",
+            "hash": "a347e55f82918679abde0b6854f57648"
         },
         "Tanya Marcuse: Portent-The Image Centre": {
             "name": "Tanya Marcuse: Portent",
@@ -3335,9 +3390,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
+            "last_updated": "2026-11-13 19:59:21",
             "image_checked": "2026-11-05",
-            "hash": "f1e34a5e027469be3181e53bd89228a3"
+            "hash": "3d6c2d7ee67068c33ffdf2546724424f"
         },
         "Molly Steels: I Am/Was/Always-The Image Centre": {
             "name": "Molly Steels: I Am/Was/Always",
@@ -3365,9 +3420,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
+            "last_updated": "2026-11-13 19:59:21",
             "image_checked": "2026-11-05",
-            "hash": "983a883abe3a81b92e2bbc6cc3c3c479"
+            "hash": "0b4988229f8444f5981112dcf594a783"
         },
         "Donna Gottschalk: We Others-The Image Centre": {
             "name": "Donna Gottschalk: We Others",
@@ -3395,8 +3450,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
-            "hash": "86fb01241eefa6b6f88d1a1510bb281a"
+            "last_updated": "2026-11-13 19:59:21",
+            "hash": "bb24184f500d1a80d361c597432ada32"
         },
         "Lee Shulman & Omar Victor Diop: Being There-The Image Centre": {
             "name": "Lee Shulman & Omar Victor Diop: Being There",
@@ -3424,8 +3479,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
-            "hash": "947e023a41127bef281365962c9f59a2"
+            "last_updated": "2026-11-13 19:59:21",
+            "hash": "d6c9d82ea3cdcad1678a08c1cb61dca8"
         },
         "Cao Fei: Isle of Instability-The Image Centre": {
             "name": "Cao Fei: Isle of Instability",
@@ -3453,8 +3508,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
-            "hash": "cf3a7e9a167fa76f8bfe63fdfd666d8b"
+            "last_updated": "2026-11-13 19:59:21",
+            "hash": "95fdadd038aff06c04d531ccd30ffa13"
         },
         "Marzieh Miri: Elsewhere, Still-The Image Centre": {
             "name": "Marzieh Miri: Elsewhere, Still",
@@ -3482,8 +3537,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
-            "hash": "789c80c4d78110b54f73c32fd6e8712f"
+            "last_updated": "2026-11-13 19:59:21",
+            "hash": "2fc5329c8b12fbd01179c3a40a47f178"
         },
         "Neal Rockwell: Financialized-The Image Centre": {
             "name": "Neal Rockwell: Financialized",
@@ -3511,8 +3566,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:15",
-            "hash": "8d71b0eabf31be6a64ef805d40d10a52"
+            "last_updated": "2026-11-13 19:59:21",
+            "hash": "be45202a73355c94337ec148699c861a"
         }
     },
     "Daniel Faria Gallery": {
@@ -3542,8 +3597,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-12 20:11:00",
-            "hash": "666ce007e42ff44f232f1a94327b38be"
+            "last_updated": "2026-11-13 19:58:58",
+            "hash": "26a5f94d61c342d88841411f80a81b58"
         }
     }
 }

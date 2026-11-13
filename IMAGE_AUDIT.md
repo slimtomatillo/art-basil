@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-12: **572**. With their own picture: **564** (99%). Showing the venue's logo instead: **7**. No picture at all: **1**.
+Current and upcoming events on 2026-11-13: **570**. With their own picture: **562** (99%). Showing the venue's logo instead: **7**. No picture at all: **1**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -27,7 +27,7 @@ Venues with events that have no picture of their own, most first. Worth a look n
 
 **François Ghebaly** (`la`)
 
-- [Tran Truong](https://ghebaly.com/exhibitions/231-tran-truong/): blank; page last checked 2026-11-11
+- [Tran Truong](https://ghebaly.com/exhibitions/231-tran-truong-windows-mirrors-and-bras/): blank; page last checked 2026-11-13
 
 **Espace DÈS_** (`mtl`)
 
@@ -47,4 +47,4 @@ Venues with events that have no picture of their own, most first. Worth a look n
 
 **Paul Petro Contemporary Art** (`tor`)
 
-- [Opening Reception Friday November 13, 7-10pm: 30th annual Christmas Spice - tree by Gary Evans](https://www.paulpetro.com/ppca/current): venue logo; page last checked 2026-11-09
+- [30th annual Christmas Spice - tree by Gary Evans](https://www.paulpetro.com/exhibitions/691-30th-annual-christmas-spice): venue logo; page last checked 2026-11-13
