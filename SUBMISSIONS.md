@@ -15,7 +15,7 @@ listed on `docs/add_event.html`:
 | Price | `free` tag if free; otherwise not currently tracked |
 | Link to event page | a `links` entry with `"description": "Event Page"` |
 | Any other relevant links | additional `links` entries (RSVP, Instagram, artist site, ...) |
-| Comments/notes | folded into `description`, trimmed to a sentence or two |
+| Comments/notes | folded into `description`, trimmed to a sentence or two; **ask for the artists' names**, since the search box reads the description and a group show is otherwise found only by its title |
 
 `submissions.py` does the mechanical part — writing to the right
 `<region>_events.json` / `<region>_venues.json` with the correct schema, hash,

@@ -9,6 +9,9 @@ automatically):
    [section 2](#2-per-venue-scraper) below, and check it with
    `python main.py --env dev --venues "<Venue Name>" --no-summary` once it is
    registered.
+   **Have it fill `description` for every event** (a sentence or two, with the artists' names; see
+   [2b-ii](#2b-ii-descriptions)): the search box reads descriptions, so a show with none can only be
+   found by its title.
 2. **A registry entry** in `main.py`: import the module and add
    `"<Venue Name>": <module>.<scrape_function>` to that region's block in
    `get_venue_scrapers()` (section 1e).
@@ -255,6 +258,36 @@ if env == 'prod':
     process_event(event_details, region)
 ```
 
+### 2b-ii. Descriptions
+
+Fill `description` for **every** event, from the start. The site reads it in two places: the **search box**
+looks at it (so searching an artist who is in a group show, but not in its title, finds the show:
+WEBSITE-39) and **tagging** reads it to add subject tags (photography, ceramics...). An event with no
+description can be found only by its title, venue and tags, and the venues where this was skipped
+(Toronto, Montreal) are the ones where search finds the least.
+
+- **Where to get it:** the blurb on the listing page, else the event page's own text: its
+  `<meta name="description">` or `og:description`, or the first paragraph or two of the exhibition text.
+  Take the show's description, not the venue's boilerplate (a museum's "about us" is on every page).
+- **What to write:** plain text, one to three sentences, up to about 500 characters. **Keep the artists'
+  names**, especially for a group show where they are not in the title. Strip HTML and entities, collapse
+  whitespace, and cut at a sentence boundary rather than mid-word.
+- **Don't invent one** if the page has nothing: leave `description` as `None`, and say so in the
+  scraper's comments. A blank is better than a wrong blurb.
+- **Check it:** after a run, count the events with no description. If most are blank for a venue that has
+  text on its pages, the selector is wrong:
+
+```bash
+python - <<'EOF'
+import json
+d = json.load(open('docs/data/<region>_events.json'))
+events = [e for v in d.values() for e in v.values() if e.get('venue') == '<Venue Name>']
+print(len(events), 'events,', sum(1 for e in events if e.get('description')), 'with a description')
+EOF
+```
+
+A manual entry (`submissions.py`, `SUBMISSIONS.md`) gets the same: ask for the artists.
+
 ### 2b-i. Pictures
 A show with no `Image` link gets no thumbnail, so capture one in the scraper. Take the
 picture shown with the show on the listing page, not a site-wide header or logo, and
@@ -469,6 +502,8 @@ EOF
 ```
 
 Checklist:
+- [ ] every scraper fills `description` (2b-ii): no venue with mostly blank descriptions unless its pages
+      have none
 - [ ] every scraper's `venue` string has a matching key in `<region>_venues.json`
       (a venue with several spaces: a list of `label` + `address`, see 1c)
 - [ ] every address has coordinates in `docs/data/venue_coordinates.json` (`python

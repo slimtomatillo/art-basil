@@ -428,6 +428,13 @@
         return tagsMatch(state.tags, row.tags, skipGroup);
     }
 
+    // The text the search box looks at for a row, folded: the date, the "title @ venue" line, the tags and the
+    // event's description (WEBSITE-39), so an artist who is in a show but not in its title finds it. Any part
+    // may be missing: not every event has a description.
+    function searchText({ date, title, tags, description } = {}) {
+        return foldText([date, title, tags, description].filter(Boolean).join('\n'));
+    }
+
     // How many rows each tag would show: the rows matching every other filter
     // (including the other groups' selections and the When choice) that carry the tag.
     function countTags(rows, state) {
@@ -475,7 +482,7 @@
         TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, PHASE_LABELS, PHASE_HINTS, VIEWS, DEFAULT_VIEW,
         TIMING_PICKS, TIMING_LABELS, TIMING_HINTS, SOON_DAYS, AREAS,
         groupOf, bucketOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
-        validDay, addDays, timingWindow, timingMatches, describeTiming, cityOf, zipOf, areasOfAddresses, areasOfRegion, areasMatch,
+        validDay, addDays, timingWindow, timingMatches, describeTiming, searchText, cityOf, zipOf, areasOfAddresses, areasOfRegion, areasMatch,
         foldText, venueMatches, suggestVenues, phaseMatches, tagsMatch, rowMatches, countTags, countPhases, countTimings, countAreas,
     };
 }));
