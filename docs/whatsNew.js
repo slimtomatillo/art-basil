@@ -1,6 +1,7 @@
-// What's new - the visitor-facing "What's new" page (whats-new.html): what changed on Art Basil and when, newest first,
-// grouped by month. The entries are hand-written in docs/data/whats_new.json ({ date: 'YYYY-MM-DD', title, text });
-// this file sorts, groups and draws them. The grouping and date wording are pure (no DOM) so they can be tested in Node:
+// What's new - the visitor-facing "What's new" page (whats-new.html): what changed on Art Basil, newest first, grouped
+// by month (the page shows the month, not the day). The entries are hand-written in docs/data/whats_new.json
+// ({ date: 'YYYY-MM-DD', title, text }); the full date is kept so entries sort within their month and so the month
+// is right. This file sorts, groups and draws them. The grouping is pure (no DOM) so it can be tested in Node:
 // `node --test tests/`. To add an entry, see "What's new" in OPERATIONS.md.
 
 (function (root, factory) {
@@ -12,7 +13,6 @@
 }(typeof self !== 'undefined' ? self : this, function () {
 
     const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    const SHORT_MONTHS = MONTHS.map(m => m.slice(0, 3));
 
     // "2026-11-13" -> { year: 2026, month: 11, day: 13 }; anything else (or a day that does not exist) -> null.
     // Read from the text, never through Date's local time zone, so the day cannot shift.
@@ -25,7 +25,6 @@
     }
 
     const monthLabel = key => { const [y, m] = key.split('-').map(Number); return `${MONTHS[m - 1]} ${y}`; };
-    const dayLabel = date => { const d = parseDay(date); return d ? `${SHORT_MONTHS[d.month - 1]} ${d.day}` : ''; };
 
     // The entries that can be shown (a real date, a title and text), newest first; entries on the same day
     // keep the order they have in the file. [{ date, title, text }]
@@ -74,19 +73,13 @@
             for (const entry of group.entries) {
                 const item = doc.createElement('li');
                 item.className = 'whats-new-item';
-                const time = doc.createElement('time');
-                time.className = 'whats-new-date';
-                time.dateTime = entry.date;
-                time.textContent = dayLabel(entry.date);
-                const body = doc.createElement('div');
                 const title = doc.createElement('h3');
                 title.className = 'h6 whats-new-title';
                 title.textContent = entry.title;
                 const text = doc.createElement('p');
                 text.className = 'whats-new-text';
                 text.textContent = entry.text;
-                body.append(title, text);
-                item.append(time, body);
+                item.append(title, text);
                 list.append(item);
             }
             section.append(heading, list);
@@ -111,5 +104,5 @@
         }
     }
 
-    return { parseDay, monthLabel, dayLabel, usableEntries, groupByMonth, render, load };
+    return { parseDay, monthLabel, usableEntries, groupByMonth, render, load };
 }));

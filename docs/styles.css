@@ -2205,7 +2205,7 @@ body {
     transform: translate(-2px, -2px);
 }
 
-/* The "What's new" page (whats-new.html, whatsNew.js): months, then entries with the day beside them */
+/* The "What's new" page (whats-new.html, whatsNew.js): months, then that month's entries */
 .whats-new-month {
     margin-bottom: 2rem;
 }
@@ -2223,22 +2223,12 @@ body {
 }
 
 .whats-new-item {
-    display: grid;
-    grid-template-columns: 4.5rem 1fr;
-    gap: 0.25rem 1rem;
     padding: 0.85rem 0;
     border-bottom: 1px dashed #ced4da;
 }
 
 .whats-new-item:last-child {
     border-bottom: 0;
-}
-
-.whats-new-date {
-    color: #495057;
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
 }
 
 .whats-new-title {
@@ -2248,12 +2238,6 @@ body {
 
 .whats-new-text {
     margin: 0;
-}
-
-@media (max-width: 480px) {
-    .whats-new-item {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Home page: the small "What's new" link under "Add my area" */

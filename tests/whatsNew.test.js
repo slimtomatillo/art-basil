@@ -9,15 +9,13 @@ const wn = require('../docs/whatsNew.js');
 
 const entry = (date, title = 't', text = 'x') => ({ date, title, text });
 
-test('days are read from the text and worded without a time zone', () => {
+test('days are read from the text, not through a time zone, and a month is worded in full', () => {
     assert.deepStrictEqual(wn.parseDay('2026-11-13'), { year: 2026, month: 11, day: 13 });
-    assert.strictEqual(wn.dayLabel('2026-11-03'), 'Nov 3');
-    assert.strictEqual(wn.dayLabel('2026-01-31'), 'Jan 31');
+    assert.deepStrictEqual(wn.parseDay('2026-01-31'), { year: 2026, month: 1, day: 31 });
     assert.strictEqual(wn.monthLabel('2026-10'), 'October 2026');
     for (const bad of [undefined, null, '', '2026-13-01', '2026-02-30', '13 Nov 2026', '2026-11-13T10:00', 20261113]) {
         assert.strictEqual(wn.parseDay(bad), null, String(bad));
     }
-    assert.strictEqual(wn.dayLabel('nonsense'), '');
 });
 
 test('entries are shown newest first, with same-day entries kept in file order', () => {
@@ -47,15 +45,13 @@ function fakeDoc() {
 }
 const findAll = (node, test, out = []) => { if (test(node)) out.push(node); (node.children || []).forEach(c => findAll(c, test, out)); return out; };
 
-test('the page draws a heading per month and an item per entry, as text and with a machine-readable date', () => {
+test('the page draws a heading per month and an item per entry, as text, with no day shown', () => {
     const doc = fakeDoc();
     const container = doc.createElement('div');
     const count = wn.render(container, [entry('2026-11-13', '<b>Bold</b>', 'Fish & chips <img src=x>'), entry('2026-10-26', 'Old')], doc);
     assert.strictEqual(count, 2);
     assert.deepStrictEqual(findAll(container, n => n.tag === 'h2').map(n => n.textContent), ['November 2026', 'October 2026']);
-    const [time] = findAll(container, n => n.tag === 'time');
-    assert.strictEqual(time.dateTime, '2026-11-13');
-    assert.strictEqual(time.textContent, 'Nov 13');
+    assert.strictEqual(findAll(container, n => n.tag === 'time').length, 0, 'only the month is shown, not the day');
     const [title] = findAll(container, n => n.tag === 'h3');
     assert.strictEqual(title.textContent, '<b>Bold</b>');                     // set as text, so it is just text
     assert.strictEqual(title.innerHTML, undefined);
