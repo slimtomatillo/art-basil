@@ -83,7 +83,7 @@ test('the real data file is well formed: real dates, a title and text, newest fi
 
 test('every city page, and the home page, link to the What\'s new page', () => {
     const docs = path.join(__dirname, '..', 'docs');
-    for (const page of ['sf', 'la', 'mtl', 'tor', 'ist']) {
+    for (const page of ['sf', 'la', 'nyc', 'mtl', 'tor', 'ist']) {
         const html = fs.readFileSync(path.join(docs, page, 'index.html'), 'utf8');
         assert.ok(html.includes('href="../whats-new.html"'), `${page}/index.html has no What's new link`);
     }

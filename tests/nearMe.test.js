@@ -29,6 +29,7 @@ test('a point is valid only with finite latitude and longitude in range', () => 
 test('miles for the US regions and kilometres elsewhere', () => {
     assert.strictEqual(nearMe.unitsFor('sf'), 'mi');
     assert.strictEqual(nearMe.unitsFor('la'), 'mi');
+    assert.strictEqual(nearMe.unitsFor('nyc'), 'mi');
     for (const region of ['mtl', 'tor', 'ist']) assert.strictEqual(nearMe.unitsFor(region), 'km');
     assert.strictEqual(nearMe.unitsFor('somewhere-new'), 'km');
 });

@@ -8,7 +8,7 @@ The JavaScript code has been refactored from a single monolithic `scroll.js` fil
 ### 1. `dataManager.js`
 **Purpose**: Handles data fetching and region detection
 **Functions**:
-- `getRegion()` - Detects current region (SF/LA/MTL/TOR/IST) from URL
+- `getRegion()` - Detects current region (SF/LA/NYC/MTL/TOR/IST) from URL
 - `fetchVenues()` - Fetches venue data from JSON files
 - `fetchEvents()` - Fetches event data from JSON files, then brings each event's phase/tags up to date for the visit (`applyRegionPhases`)
 - `regionToday(region)` - Today's date (`YYYY-MM-DD`) in the region's time zone

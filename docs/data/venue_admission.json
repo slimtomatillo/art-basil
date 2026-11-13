@@ -363,5 +363,31 @@
             "checked": "2026-11-09",
             "note": "The museum's contact page says \"Entrance is free\" (confirmed by Alex)."
         }
+    },
+    "nyc": {
+        "Whitney Museum of American Art": {
+            "admission": "paid",
+            "source": "https://whitney.org/visit",
+            "checked": "2026-11-13",
+            "note": "$30 general admission; free for members, 25 and under, on Friday nights and on second Sundays."
+        },
+        "The Studio Museum in Harlem": {
+            "admission": "paid",
+            "source": "https://www.studiomuseum.org/visit",
+            "checked": "2026-11-13",
+            "note": "$16 adults, $9 seniors and students; free on Sundays and for members."
+        },
+        "Guggenheim Museum": {
+            "admission": "unverified",
+            "source": "https://www.guggenheim.org/plan-your-visit",
+            "checked": "2026-11-13",
+            "note": "Believed to charge admission; the page is built by JavaScript and could not be read. Check the price and any free hours."
+        },
+        "The Frick Collection": {
+            "admission": "unverified",
+            "source": "https://www.frick.org/visit",
+            "checked": "2026-11-13",
+            "note": "Believed to charge admission; the visit page refused the request. Check the price and any free hours."
+        }
     }
 }
