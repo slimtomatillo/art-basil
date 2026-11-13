@@ -72,8 +72,33 @@ def find_unseen_events(today=None, stale=None):
     return sorted(unseen, key=lambda u: (-u['days'], u['venue']))
 
 
-def report(failed, stale, unseen=()):
-    """failed: [(region, venue, error_text)] for scrapers that crashed this run."""
+def find_description_gaps(min_events=3):
+    """How many current and upcoming events have a description (WEBSITE-115), and which venues have none.
+
+    Returns ({region: {'live': n, 'described': n}}, [{'region', 'venue', 'live'}]): the venues listed have at
+    least `min_events` live events and not one with a description (a scraper that never fills it, or whose
+    selector broke). Manually-entered and archive events are left out, as in the other checks."""
+    coverage, venues = {}, []
+    for region, path in DB_FILES.items():
+        live = described = 0
+        for venue, events in load_db(path).items():
+            counted = [e for e in events.values()
+                       if e.get('source') not in (MANUAL_SOURCE, ARCHIVE_SOURCE) and e.get('phase') in ('current', 'future')]
+            have = sum(1 for e in counted if e.get('description'))
+            live, described = live + len(counted), described + have
+            if len(counted) >= min_events and have == 0:
+                venues.append({'region': region, 'venue': venue, 'live': len(counted)})
+        coverage[region] = {'live': live, 'described': described}
+    return coverage, sorted(venues, key=lambda v: (-v['live'], v['region'], v['venue']))
+
+
+def _percent(part, whole):
+    return round(100 * part / whole) if whole else 100
+
+
+def report(failed, stale, unseen=(), coverage=None, undescribed=()):
+    """failed: [(region, venue, error_text)] for scrapers that crashed this run.
+    coverage, undescribed: from find_description_gaps()."""
     for region, venue, error in failed:
         logging.error(f"Scraper crashed - [{region}] {venue}: {error}")
     for s in stale:
@@ -82,19 +107,43 @@ def report(failed, stale, unseen=()):
     for u in unseen:
         logging.warning(f"Not seen on the venue's site - [{u['region']}] {u['venue']}: {u['name']!r} "
                         f"({u['phase']}) last seen {u['days']} days ago")
+    for region, c in (coverage or {}).items():
+        logging.info(f"Event descriptions - [{region}] {c['described']} of {c['live']} current and upcoming events "
+                     f"({_percent(c['described'], c['live'])}%)")
+    for v in undescribed:
+        # info, not a warning: about thirty venues are listed until WEBSITE-115 is done, and the job summary has the table
+        logging.info(f"No event descriptions - [{v['region']}] {v['venue']}: none of its {v['live']} current and upcoming events has one")
     logging.info(f"Finished scraper health check: {len(failed)} crashed, {len(stale)} stale venues, "
                  f"{len(unseen)} events no longer seen")
 
     summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
     if summary_path:
         with open(summary_path, 'a') as f:
-            f.write(render_markdown(failed, stale, unseen))
+            f.write(render_markdown(failed, stale, unseen, coverage, undescribed))
 
 
-def render_markdown(failed, stale, unseen=()):
+def render_descriptions(coverage, undescribed):
+    """The "Event descriptions" section: coverage by region, then the venues with none."""
+    lines = ["### Event descriptions", "",
+             "Current and upcoming events with a description (the search reads it; see ADDING_A_REGION.md, 2b-ii).", "",
+             "| Region | With a description | Share |", "| --- | --- | --- |"]
+    live = described = 0
+    for region, c in coverage.items():
+        live, described = live + c['live'], described + c['described']
+        lines.append(f"| `{region}` | {c['described']} of {c['live']} | {_percent(c['described'], c['live'])}% |")
+    lines += [f"| **all** | **{described} of {live}** | **{_percent(described, live)}%** |", ""]
+    if undescribed:
+        lines += [f"Venues with current or upcoming events and **no** descriptions ({len(undescribed)}):", ""]
+        lines += [f"- `{v['region']}` **{v['venue']}**: {v['live']} events" for v in undescribed]
+        lines.append("")
+    return lines
+
+
+def render_markdown(failed, stale, unseen=(), coverage=None, undescribed=()):
     lines = ["## Scraper health", ""]
+    extra = render_descriptions(coverage, undescribed) if coverage else []
     if not failed and not stale and not unseen:
-        return "\n".join(lines + ["All scrapers ran and every venue is refreshing.", ""])
+        return "\n".join(lines + ["All scrapers ran and every venue is refreshing.", ""] + extra)
     if failed:
         lines += [f"### Crashed this run ({len(failed)})", ""]
         lines += [f"- `{region}` **{venue}**: {error}" for region, venue, error in failed]
@@ -112,10 +161,10 @@ def render_markdown(failed, stale, unseen=()):
         lines += [f"- `{u['region']}` **{u['venue']}**: {u['name']} ({u['phase']}, last seen {u['days']} days ago)"
                   for u in unseen]
         lines.append("")
-    return "\n".join(lines)
+    return "\n".join(lines + extra)
 
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
     stale = find_stale_venues()
-    report([], stale, find_unseen_events(stale=stale))
+    report([], stale, find_unseen_events(stale=stale), *find_description_gaps())

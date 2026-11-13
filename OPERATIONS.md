@@ -365,6 +365,43 @@ of a venue's shows (then it is a banner). The fallback also needs a picture of a
 - Paul Petro's listing has no pictures, so its scraper links each show to the show's own
   page and the fallback takes the picture from there.
 
+## Event descriptions
+
+The site's search reads each event's `description` (WEBSITE-39), and tagging reads it for subject tags, so an event
+with none can only be found by its title, venue and tags. New scrapers fill it themselves (`ADDING_A_REGION.md`,
+2b-ii). For events whose scraper supplies none, there is a fallback, **`descriptions.py`** (WEBSITE-115), which
+runs after the scrapers, the way `images.py` does for pictures:
+
+1. For each current or upcoming event with no description and an Event Page link, it opens that page (at most
+   100 pages a run, so a backlog clears over a few days) and takes the best text, in this order: the page's
+   structured data (JSON-LD), `og:description`, `twitter:description`, the meta description, then the first real
+   paragraphs.
+2. **A wrong blurb is worse than none**, so a candidate must be long enough, not boilerplate (cookie notices, a menu
+   bar, "Visit our website to learn more"), not start with dates, a reception or a credit line, not be a run of
+   names or a caption, and use a significant word of the show's title (a site-wide tagline doesn't). Ticketing
+   sentences ("Purchasing Museum admission grants...") are cut, a first sentence that opens several of a venue's
+   descriptions is cut, and the same text for several shows is dropped. The text is plain and at most 500
+   characters, cut at a sentence end.
+3. What it finds is stored with `"description_source": "page"`; `processing.keep_found_description` keeps it when a
+   scraper later rewrites the event without one (a description the scraper supplies always wins). The subject tags
+   are added from it. `description_checked` is the day an event was last looked at, so one with nothing to find is
+   retried only every 14 days, and it only counts while the event points at the same page.
+
+What it **does not** do: sites fetched through the paid proxy are skipped (an extra page would cost credits: see
+"Proxied venues and the ZenRows budget"), and events whose "Event Page" is a listing page shared by several shows
+are skipped (the page's text can't be told apart per show). Those need the venue's scraper to read the blurb off the
+listing. On 2026-11-13 this left about a third of live events without one (the proxied AGO, de Young and Legion of
+Honor, and venues such as 18th Street Arts Center and Skirball whose events share a page).
+
+- **Coverage** is in the scraper health report (the job summary and the log): the share of live events with a
+  description by region, and the venues with at least 3 live events and none described. A venue appearing there is a
+  scraper whose blurb selector broke, or that never had one.
+- **Try it without changing any data:** `python descriptions.py [region ...]` prints each description it would add
+  (and the source it came from), so check a sample by eye after changing the rules.
+- **A bad description** gets fixed in the rules: add the pattern to `descriptions.py` with a test in
+  `tests/test_descriptions.py` using the real text. To replace one by hand, write your own `description` (and delete
+  `description_source`); a description already present is never replaced.
+
 ## Fixing data by hand
 
 - **A missing event:** add it with `submissions.py` (see

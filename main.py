@@ -7,11 +7,12 @@ import pandas as pd
 import numpy as np
 import os
 from config import configure_logging, DB_FILES
+import descriptions
 import image_audit
 import images
 from processing import update_event_phases
 from manual_check import check_manual_events
-from scraper_health import find_stale_venues, find_unseen_events, report as report_scraper_health
+from scraper_health import find_stale_venues, find_unseen_events, find_description_gaps, report as report_scraper_health
 import utils
 from utils import load_db
 from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_art_museum, omca, \
@@ -320,6 +321,15 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
                          f"added {len(added['added'])}, dropped {len(added['dropped'])} pictures shared by several shows")
         except Exception:
             logging.exception("Adding event images failed")
+        # Give description-less current and upcoming events a description from their own page
+        # (descriptions.py, WEBSITE-115). Same rule: never lets a failure here lose the scraped data.
+        try:
+            described = descriptions.enrich_missing_descriptions(selected_regions)
+            logging.info(f"Finished looking for event descriptions: opened {described['checked']} event pages, "
+                         f"added {len(described['added'])}, dropped {len(described['dropped'])} texts shared by several shows, "
+                         f"skipped {described['shared']} events on shared listing pages")
+        except Exception:
+            logging.exception("Adding event descriptions failed")
         # Swap heavy original pictures for small copies so pages load quickly
         try:
             shrunk = images.shrink_heavy_images(selected_regions)
@@ -344,7 +354,8 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
         # the run or lose the scraped data.
         try:
             stale_venues = find_stale_venues()
-            report_scraper_health(failed, stale_venues, find_unseen_events(stale=stale_venues))
+            coverage, undescribed = find_description_gaps()
+            report_scraper_health(failed, stale_venues, find_unseen_events(stale=stale_venues), coverage, undescribed)
         except Exception:
             logging.exception("Scraper health check failed")
         try:

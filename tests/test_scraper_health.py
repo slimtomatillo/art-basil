@@ -69,5 +69,56 @@ class UnseenEventsTest(unittest.TestCase):
         self.assertIn('All scrapers ran', scraper_health.render_markdown([], [], []))
 
 
+class DescriptionGapsTest(unittest.TestCase):
+    """find_description_gaps (WEBSITE-115): how many live events have a description, and the venues with none."""
+
+    def setUp(self):
+        self.dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self.dir.cleanup)
+        path = os.path.join(self.dir.name, 'test_events.json')
+        patcher = mock.patch.dict(DB_FILES, {'test': path}, clear=True)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.path = path
+
+    def write(self, db):
+        with open(self.path, 'w') as f:
+            json.dump(db, f)
+
+    def test_counts_live_events_with_and_without_a_description(self):
+        self.write({
+            'Mixed': {'a': event('A', 0, description='A blurb.'), 'b': event('B', 0, description=''),
+                      'c': event('C', 0, 'future', description=None)},
+            'Past only': {'d': event('D', 0, 'past'), 'e': event('E', 0, 'past', description='Old.')},
+            'By hand': {'f': event('F', 0, source='manual'), 'g': event('G', 0, source='archive')},
+        })
+        coverage, undescribed = scraper_health.find_description_gaps()
+        self.assertEqual(coverage, {'test': {'live': 3, 'described': 1}})     # past, manual and archive events are left out
+        self.assertEqual(undescribed, [])
+
+    def test_a_venue_with_three_or_more_live_events_and_none_described_is_listed_biggest_first(self):
+        self.write({
+            'Blank big': {str(i): event(f'B{i}', 0) for i in range(4)},
+            'Blank small': {str(i): event(f'S{i}', 0) for i in range(2)},          # too few to call
+            'Blank three': {str(i): event(f'T{i}', 0, 'future') for i in range(3)},
+            'Has one': {'a': event('H1', 0, description='Yes.'), 'b': event('H2', 0), 'c': event('H3', 0)},
+        })
+        _, undescribed = scraper_health.find_description_gaps()
+        self.assertEqual([(v['venue'], v['live']) for v in undescribed], [('Blank big', 4), ('Blank three', 3)])
+
+    def test_the_report_shows_coverage_and_the_empty_venues(self):
+        coverage = {'tor': {'live': 89, 'described': 8}, 'la': {'live': 157, 'described': 64}}
+        undescribed = [{'region': 'tor', 'venue': 'AGO', 'live': 30}]
+        text = scraper_health.render_markdown([], [], [], coverage, undescribed)
+        self.assertIn('All scrapers ran', text)                                   # coverage does not make the run look unhealthy
+        self.assertIn('### Event descriptions', text)
+        self.assertIn('| `tor` | 8 of 89 | 9% |', text)
+        self.assertIn('| **all** | **72 of 246** | **29%** |', text)
+        self.assertIn('- `tor` **AGO**: 30 events', text)
+        # with a problem elsewhere the section is still there, and without coverage the report is as it was
+        self.assertIn('### Event descriptions', scraper_health.render_markdown([('la', 'X', 'boom')], [], [], coverage, []))
+        self.assertNotIn('Event descriptions', scraper_health.render_markdown([], [], []))
+
+
 if __name__ == '__main__':
     unittest.main()
