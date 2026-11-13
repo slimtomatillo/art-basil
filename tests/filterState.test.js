@@ -379,3 +379,48 @@ test('every real Bay Area venue address is in an area, so a venue in a new town 
         }
     }
 });
+
+test('Istanbul areas are districts, found from a part of the address, so Kadikoy and Uskudar are their own areas', () => {
+    const areas = a => fs_.areasOfAddresses('ist', a);
+    // real addresses: the district is a comma-separated part, with or without a postcode in front
+    assert.deepStrictEqual(areas(['Kılıç Ali Paşa, Tophane İskele Cd. No:1/1, 34433 Beyoğlu, Istanbul, Türkiye']), ['beyoglu']);
+    assert.deepStrictEqual(areas(['İstiklal Caddesi No:136, Beyoğlu, 34430 Istanbul, Türkiye']), ['beyoglu']);
+    assert.deepStrictEqual(areas(['Dolapdere Caddesi No:1, 34384 Şişli, Istanbul, Türkiye']), ['sisli']);
+    assert.deepStrictEqual(areas(['Baltalimanı Hisar Caddesi, Perili Köşk No:5, 34470 Rumelihisarı, Sarıyer, Istanbul, Türkiye']), ['sariyer']);
+    // places not added yet: the Asian side, each district on its own
+    assert.deepStrictEqual(areas(['Caferağa, Moda Cd. No:1, 34710 Kadıköy, Istanbul, Türkiye']), ['kadikoy']);
+    assert.deepStrictEqual(areas(['Bağlarbaşı, Çamlıca Cd. No:2, 34662 Üsküdar, Istanbul, Türkiye']), ['uskudar']);
+    assert.deepStrictEqual(areas(['Moda Caddesi 1, Kadıköy/İstanbul']), ['kadikoy']);                                // a slash
+    assert.deepStrictEqual(areas(['Moda Caddesi 1, Kadikoy, Istanbul', 'Cami Sk. 2, uskudar, Istanbul']), ['kadikoy', 'uskudar']);   // accents and case ignored, two addresses
+    // only a whole part counts: a street named for another district does not put the venue there
+    assert.deepStrictEqual(areas(['Kadıköy Caddesi No:5, Beyoğlu, Istanbul, Türkiye']), ['beyoglu']);
+    assert.deepStrictEqual(areas(['1 A St, Istanbul, Türkiye']), []);
+    assert.deepStrictEqual(fs_.areasOfRegion('ist', ['kadikoy', 'east-bay', 'uskudar']), ['kadikoy', 'uskudar']);
+    assert.deepStrictEqual(fs_.areasOfRegion('sf', ['kadikoy']), []);
+});
+
+test('every real Istanbul venue address is in a district area, so a venue in a new district fails here until it is added', () => {
+    const venues = JSON.parse(fs.readFileSync(path.join(__dirname, '../docs/data/ist_venues.json'), 'utf8'));
+    const unplaced = [];
+    for (const [name, value] of Object.entries(venues)) {
+        const addresses = venueAddresses.normalize(value).map(entry => entry.address);
+        if (fs_.areasOfAddresses('ist', addresses).length === 0) unplaced.push(`${name}: ${addresses.join(' | ')}`);
+    }
+    assert.deepStrictEqual(unplaced, [], 'add the district to AREAS.ist in docs/filterState.js');
+});
+
+test('no town or district is in two areas of a region, and every area id is unique', () => {
+    const ids = new Set();
+    for (const [region, areas] of Object.entries(fs_.AREAS)) {
+        const seen = new Map();
+        for (const area of areas) {
+            assert.ok(!ids.has(area.id), `${area.id} is used twice`);
+            ids.add(area.id);
+            for (const place of [...(area.cities || []), ...(area.districts || [])]) {
+                const key = fs_.foldText(place);
+                assert.ok(!seen.has(key), `${region}: ${place} is in two areas`);
+                seen.set(key, area.id);
+            }
+        }
+    }
+});

@@ -146,9 +146,11 @@
         return `open ${formatDay(timing.from, !sameYear)} \u2013 ${formatDay(to)}`;
     }
 
-    // Areas of a region (the Bay Area only for now), found from the city in a venue's address. Every venue
-    // address needs a city that is listed here: tests/filterState.test.js checks the real venues, so a new
-    // venue in a new town fails there until the town is added.
+    // Areas of a region, found from a venue's address: the Bay Area by the city ("cities", the town before
+    // ", CA"), Istanbul by the district ("districts": one of the comma-separated parts of the address,
+    // "34433 Beyoğlu" or "Kadıköy", with the accents ignored). Every venue address needs a city or district
+    // that is listed here: tests/filterState.test.js checks the real venues, so a new venue in a new town or
+    // district fails there until it is added. A region with no entry has no Area filter.
     const AREAS = {
         sf: [
             { id: 'san-francisco', label: 'San Francisco', cities: ['San Francisco'] },
@@ -169,6 +171,26 @@
                 'Larkspur', 'Tiburon', 'Fairfax', 'San Anselmo', 'Belvedere', 'Point Reyes Station', 'Bolinas',
                 'Healdsburg', 'Yountville', 'St. Helena', 'Calistoga', 'Sebastopol'] },
         ],
+        // Istanbul, by district. Only those with venues are offered, so Kadıköy and Üsküdar (the Asian side)
+        // appear in the filter, each on its own, as soon as a venue there is added.
+        ist: [
+            { id: 'beyoglu', label: 'Beyoğlu', districts: ['Beyoğlu'] },
+            { id: 'sisli', label: 'Şişli', districts: ['Şişli'] },
+            { id: 'besiktas', label: 'Beşiktaş', districts: ['Beşiktaş'] },
+            { id: 'sariyer', label: 'Sarıyer', districts: ['Sarıyer'] },
+            { id: 'fatih', label: 'Fatih', districts: ['Fatih'] },
+            { id: 'kagithane', label: 'Kâğıthane', districts: ['Kâğıthane'] },
+            { id: 'eyupsultan', label: 'Eyüpsultan', districts: ['Eyüpsultan', 'Eyüp'] },
+            { id: 'zeytinburnu', label: 'Zeytinburnu', districts: ['Zeytinburnu'] },
+            { id: 'bakirkoy', label: 'Bakırköy', districts: ['Bakırköy'] },
+            { id: 'kadikoy', label: 'Kadıköy', districts: ['Kadıköy'] },
+            { id: 'uskudar', label: 'Üsküdar', districts: ['Üsküdar'] },
+            { id: 'atasehir', label: 'Ataşehir', districts: ['Ataşehir'] },
+            { id: 'umraniye', label: 'Ümraniye', districts: ['Ümraniye'] },
+            { id: 'maltepe', label: 'Maltepe', districts: ['Maltepe'] },
+            { id: 'kartal', label: 'Kartal', districts: ['Kartal'] },
+            { id: 'beykoz', label: 'Beykoz', districts: ['Beykoz'] },
+        ],
     };
 
     // The city of an address ("151 3rd St, San Francisco, CA 94103" -> "San Francisco"), or null
@@ -177,13 +199,24 @@
         return matches.length ? matches[matches.length - 1][1].trim() : null;
     }
 
+    // The parts of an address, one by one ("34433 Beyoğlu" -> "beyoglu"), for matching a district. Split on
+    // commas and slashes ("Kadıköy/İstanbul"), the postcode taken off, accents and case ignored.
+    function placeParts(address) {
+        return String(address || '').split(/[,/]/)
+            .map(part => foldText(part.trim().replace(/^\d{5}\s+/, '')))
+            .filter(Boolean);
+    }
+
     // The area ids a venue is in, given its addresses (a venue with two addresses can be in two areas)
     function areasOfAddresses(region, addresses) {
         const areas = AREAS[region] || [];
         const found = [];
         for (const address of addresses || []) {
             const city = cityOf(address);
-            const area = city && areas.find(a => a.cities.some(c => c.toLowerCase() === city.toLowerCase()));
+            const parts = areas.some(a => a.districts) ? placeParts(address) : [];
+            const area = areas.find(a =>
+                (city && (a.cities || []).some(c => c.toLowerCase() === city.toLowerCase())) ||
+                (a.districts || []).some(d => parts.includes(foldText(d))));
             if (area && !found.includes(area.id)) found.push(area.id);
         }
         return found;
