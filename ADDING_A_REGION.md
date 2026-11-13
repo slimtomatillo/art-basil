@@ -266,7 +266,9 @@ WEBSITE-39) and **tagging** reads it to add subject tags (photography, ceramics.
 description can be found only by its title, venue and tags, and the venues where this was skipped
 (Toronto, Montreal) are the ones where search finds the least.
 
-- **Where to get it:** the blurb on the listing page, else the event page's own text: its
+- **Where to get it:** first, **the venue's own feed or API, if the scraper reads one** (CAAM's JSON feed and Daniel Faria's
+  GraphQL API carry each show's whole text: pass it through `descriptions.feed_description`, which makes it plain and
+  short, and the scraper stores it with no extra request). Then the blurb on the listing page, else the event page's own text: its
   `<meta name="description">` or `og:description`, or the first paragraph or two of the exhibition text.
   Take the show's description, not the venue's boilerplate (a museum's "about us" is on every page).
 - **What to write:** plain text, one to three sentences, up to about 500 characters. **Keep the artists'

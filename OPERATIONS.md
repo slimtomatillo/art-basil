@@ -424,9 +424,15 @@ credits before the 25-credit pages begin. **To switch
 it off, set `PROXY_PAGES_PER_RUN = 0`.** `python descriptions.py` (the dry run) never touches the proxy unless you add
 `--proxy`.
 
+**Some venues' own feeds carry the text, and then the scraper stores it and nothing is fetched**: the California African
+American Museum's JSON feed has each show's whole text in `content.text` (markdown-ish, with stray tags), and Daniel Faria's
+GraphQL API has it in `content` (HTML). Both scrapers pass it through `descriptions.feed_description` (first one or two prose
+paragraphs, plain, 500 characters). They also now link to the show's public page: CAAM's `contentUrl` (the museum's internal
+content path) and Daniel Faria's API `uri` (the WordPress path) both answer an error page (403 and 404) to a visitor's browser.
+CAAM needs no proxy: its pages refuse the bot, but its feed is open.
+
 What it **does not** do: Galerie Simon Blais (its pages have nothing readable in the server's HTML; `PROXIED_WITHOUT_TEXT`) and Armory Center for
-the Arts (its events share one listing page) are not looked up, nor is the California African American Museum (it
-refuses the bot and is not on the proxy list; adding it would also cost the CAAM scraper's own credits). A listing whose cards have no recognisable link to the
+the Arts (its events share one listing page) are not looked up. A listing whose cards have no recognisable link to the
 show's own page gets nothing (the venue's scraper would have to read the blurb off the listing; WEBSITE-119 tracks
 them: Commonwealth and Council, David Kordansky, Art Mur, Palo Alto Art Center...). On 2026-11-13 a dry run took live
 coverage from 41% to 73% (LA 81%, Istanbul 83%, SF 80%, Montreal 69%, Toronto 43%, where AGO's 30 proxied events are

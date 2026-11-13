@@ -3,6 +3,7 @@ import datetime as dt
 import os
 import sys
 import unittest
+import urllib.parse
 from unittest import mock
 
 from bs4 import BeautifulSoup
@@ -179,9 +180,58 @@ class MolaaTest(unittest.TestCase):
 
 class CaamTest(unittest.TestCase):
     @staticmethod
-    def item(title, start, end, display=''):
-        return {'title': title, 'contentUrl': 'https://caamuseum.org/x', 'content': {
-            'start_date': start[0], 'start_year': start[1], 'end_date': end[0], 'end_year': end[1], 'display_date': display}}
+    def item(title, start, end, display='', text=None, teaser=None, main_image=None, image=None, slug='x'):
+        content = {'start_date': start[0], 'start_year': start[1], 'end_date': end[0], 'end_year': end[1], 'display_date': display}
+        if text is not None:
+            content['text'] = text
+        if teaser is not None:
+            content['teaser'] = teaser
+        if main_image:
+            content['main_image'] = main_image
+        item = {'title': title, 'contentUrl': f'https://caamuseum.org/content/3-exhibitions/{slug}',
+                'url': f'https://caamuseum.org/exhibitions/2026/{slug}', 'content': content}
+        if image:
+            item['image'] = image
+        return item
+
+    @staticmethod
+    def scrape(feed):
+        stored = []
+        response = mock.Mock(json=lambda: feed, raise_for_status=lambda: None)
+        with mock.patch.object(caam.requests, 'get', return_value=response), \
+                mock.patch.object(caam, 'region_today', lambda region: TODAY), \
+                mock.patch.object(_common, 'region_today', lambda region: TODAY), \
+                mock.patch.object(_common, 'process_event', lambda details, region: stored.append(details)):
+            caam.scrape_california_african_american_museum(env='prod')
+        return {e['name']: e for e in stored}
+
+    def test_the_event_page_is_the_public_address_not_the_internal_content_path_which_is_a_403(self):
+        events = self.scrape({'current': [self.item('Sadie Barnette: How to Fly', ('September 30', 2025), ('October 3', 2027), slug='sadie-barnette-how-to-fly')]})
+        links = [l['link'] for l in events['Sadie Barnette: How to Fly']['links'] if l['description'] == 'Event Page']
+        self.assertEqual(links, ['https://caamuseum.org/exhibitions/2026/sadie-barnette-how-to-fly'])
+
+    def test_the_picture_files_are_still_found_under_the_content_path(self):
+        events = self.scrape({'current': [self.item('Sinners', ('October 20', 2026), ('March 14', 2027), main_image='lead.jpg', slug='sinners')]})
+        pictures = [l['link'] for l in events['Sinners']['links'] if l['description'] == 'Image']
+        self.assertEqual(len(pictures), 1)
+        # (the picture goes through the small-copy service, so the address is URL-encoded inside its link)
+        self.assertIn('caamuseum.org/content/3-exhibitions/sinners/lead.jpg', urllib.parse.unquote(pictures[0]))
+
+    def test_the_description_is_the_shows_own_text_from_the_feed(self):
+        text = ('*How to Fly* is a site-specific photomural by visual artist Sadie Barnette installed in CAAM\u2019s atrium. '
+                'Born and raised in Oakland, California, Barnette incorporates photographs she has taken of places.\n\n'
+                '**Presented at Art + Practice**')
+        events = self.scrape({'current': [
+            self.item('Sadie Barnette: How to Fly', ('September 30', 2025), ('October 3', 2027), text=text),
+            self.item('Teaser Only', ('October 1', 2026), ('March 1', 2027),
+                      teaser='A new installation that explores memory, migration and the archive through film and sound.'),
+            self.item('No Text', ('October 2', 2026), ('March 2', 2027))]})
+        described = events['Sadie Barnette: How to Fly']['description']
+        self.assertTrue(described.startswith('How to Fly is a site-specific photomural by visual artist Sadie Barnette'))
+        self.assertNotIn('*', described)
+        self.assertNotIn('Art + Practice', described)
+        self.assertTrue(events['Teaser Only']['description'].startswith('A new installation that explores memory'))
+        self.assertIsNone(events['No Text']['description'])
 
     def test_ongoing_and_offsite_entries_are_skipped(self):
         feed = {'current': [self.item('Sinners', ('October 20', 2026), ('March 14', 2027)),

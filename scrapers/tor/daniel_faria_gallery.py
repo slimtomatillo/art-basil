@@ -9,6 +9,7 @@ shows and are skipped.
 import datetime as dt
 import logging
 
+from descriptions import feed_description
 from scrapers.tor._common import publish
 from utils import fetch_json
 
@@ -20,7 +21,7 @@ QUERY = '''
 query {
   exhibitions(first: 20) {
     nodes {
-      title uri
+      title slug uri content
       featuredImage { node { url: mediaItemUrl } }
       custom { startDate endDate artists: artist { ... on Artist { name: title } } }
     }
@@ -54,7 +55,10 @@ def scrape_daniel_faria_gallery(env='prod', region='tor'):
         # A solo show is named for its artist; a group show keeps just its title
         name = f'{artists[0]}: {title}' if len(artists) == 1 else title
         image = (((node.get('featuredImage') or {}).get('node')) or {}).get('url')
-        found += publish(env, region, VENUE, name, start_date, end_date, SITE_URL + (node.get('uri') or '/exhibitions'),
-                         tag='gallery', seen=seen, image=image)
+        # A show's page on the site is /exhibitions/<slug>. The API's own `uri` (/exhibition/<slug>/) is the WordPress
+        # address and answers 404 on the site, so it is not used.
+        page = f"{SITE_URL}/exhibitions/{node['slug']}" if node.get('slug') else f'{SITE_URL}/exhibitions'
+        found += publish(env, region, VENUE, name, start_date, end_date, page, tag='gallery', seen=seen, image=image,
+                         description=feed_description(node.get('content')))
     if not found:
         logging.warning("Daniel Faria Gallery: no current or upcoming exhibitions (between shows?); existing data kept.")
