@@ -113,7 +113,22 @@ def is_same_event(a, b):
 _processed_this_run = set()
 
 
+# Receptions are not shows. A venue's page sometimes lists one as an entry of its own ("... - Opening
+# Reception", "Opening Reception Friday ..."). They are kept, tagged 'reception', so they can be listed later;
+# the site hides them for now (SHOW_RECEPTIONS in docs/dataManager.js). Only the usual announcement wording
+# matches, so a show with "reception" in its title ("The Reception Room") is not tagged.
+_RECEPTION_RE = re.compile(
+    r'\b(?:opening|closing|artists?|public|vip|members?|private|launch)\s+reception\b'
+    r'|\breception\s+(?:on\s+|this\s+)?(?:mon|tues|wednes|thurs|fri|satur|sun)day\b', re.IGNORECASE)
+
+
+def is_reception(name):
+    return bool(name) and bool(_RECEPTION_RE.search(name))
+
+
 def process_event(event_details, region):
+    if is_reception(event_details.get('name')) and 'reception' not in (event_details.get('tags') or []):
+        event_details['tags'] = list(event_details.get('tags') or []) + ['reception']
     # Add subject tags (photography, ceramics, ...) from the title and description;
     # done first so they are part of the hash and every scraper gets them.
     add_content_tags(event_details)

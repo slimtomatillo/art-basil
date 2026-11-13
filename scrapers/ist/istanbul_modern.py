@@ -54,6 +54,28 @@ def parse_dates(text):
     return None, None
 
 
+def _is_date_text(line):
+    return bool(RANGE_RE.match(line) or SINGLE_RE.match(line))
+
+
+def find_date_text(soup, title_tag):
+    """The date line of an exhibition page: "September 8, 2026", or a range. Its container's classes have
+    changed before (the old selector, still tried first, stopped matching in November 2026 and every show lost
+    its dates). The page's header block (`.exp_h`) holds the title, the date and the share links just above
+    the <h1>; failing that, the closest date-shaped text before or after the title is used."""
+    old = soup.select_one('ul.breadcrumb ~ div.pl-3')
+    if old and _is_date_text(' '.join(old.get_text(' ', strip=True).split())):
+        return old.get_text(strip=True)
+    header = soup.select_one('.exp_h')
+    candidates = list(header.find_all(string=True)) if header else []
+    candidates += list(title_tag.find_all_previous(string=True, limit=12)) + list(title_tag.find_all_next(string=True, limit=12))
+    for text in candidates:
+        line = ' '.join(text.replace('\xa0', ' ').split())
+        if _is_date_text(line):
+            return line
+    return None
+
+
 def collect_exhibition_links():
     """Return [(href, section_phase)] across the current/upcoming/past listings, deduped."""
     found = {}
@@ -94,8 +116,8 @@ def scrape_istanbul_modern_exhibitions(env='prod', region='ist'):
             continue
         event_title = ' '.join(title_tag.get_text(' ', strip=True).split())
 
-        date_tag = soup.select_one('ul.breadcrumb ~ div.pl-3')
-        start_date, end_date = parse_dates(date_tag.get_text(strip=True)) if date_tag else (None, None)
+        date_text = find_date_text(soup, title_tag)
+        start_date, end_date = parse_dates(date_text) if date_text else (None, None)
 
         if end_date and end_date < today:
             if end_date < cutoff:

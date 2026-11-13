@@ -111,6 +111,9 @@ def scrape_madrone_art_bar(env='prod', region='sf'):
     today = dt.datetime.now().date()
     cutoff = today - dt.timedelta(days=PAST_WINDOW_DAYS)
 
+    # First pass: each post's title and dates. `dated` is False for a post that states no date at all, which
+    # gets the day it was published as its start (below) and, in the second pass, an end.
+    entries = []
     for post in posts:
         title = html.unescape(post.get('title', {}).get('rendered', '')).strip()
         if not title:
@@ -127,7 +130,8 @@ def scrape_madrone_art_bar(env='prod', region='sf'):
         # was published as a single, verifiable anchor date, rather than leaving
         # the event permanently undated - it's a reasonable proxy for "around
         # when this went up" for the kind of announcement these posts are.
-        if not start_date and not end_date and publish_date:
+        dated = bool(start_date or end_date)
+        if not dated and publish_date:
             start_date = publish_date
 
         # Skip old posts we couldn't date and that are outside the window
@@ -135,7 +139,21 @@ def scrape_madrone_art_bar(env='prod', region='sf'):
         still_upcoming = start_date and start_date > today
         if reference_date and reference_date < cutoff and not still_upcoming:
             continue
+        entries.append({'post': post, 'title': title, 'content_text': content_text,
+                        'start': start_date, 'end': end_date, 'dated': dated})
 
+    # An exhibition with no stated range has no end, so it would stay "current" for good. Madrone shows one
+    # exhibition at a time on its wall, so it ran until the next one began.
+    starts = sorted(e['start'] for e in entries if e['start'])
+    for entry in entries:
+        if not entry['dated'] and entry['start'] and not entry['end']:
+            later = next((s for s in starts if s > entry['start']), None)
+            if later:
+                entry['end'] = later - dt.timedelta(days=1)
+
+    for entry in entries:
+        post, title, content_text = entry['post'], entry['title'], entry['content_text']
+        start_date, end_date = entry['start'], entry['end']
         phase = compute_phase(start_date, end_date, today)
 
         excerpt_html = post.get('excerpt', {}).get('rendered', '')
