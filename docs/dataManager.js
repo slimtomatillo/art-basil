@@ -104,6 +104,21 @@ function applyRegionPhases(events, region, now = new Date()) {
     return events;
 }
 
+// Receptions are kept in the data (processing.py tags them 'reception') but not shown for now: the site is
+// about shows. Set this to true to list them again.
+const SHOW_RECEPTIONS = false;
+
+// Take the receptions out of {venue: {id: event}} (in place), unless they are to be shown
+function hideReceptions(events, show = SHOW_RECEPTIONS) {
+    if (show) return events;
+    Object.values(events).forEach(venueEvents => {
+        Object.keys(venueEvents).forEach(id => {
+            if ((venueEvents[id].tags || []).includes('reception')) delete venueEvents[id];
+        });
+    });
+    return events;
+}
+
 // Load venue data
 let venuesCache = null; // Cache for storing the venue data
 async function fetchVenues() {
@@ -135,7 +150,7 @@ async function fetchEvents() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const events = await response.json();
-        return applyRegionPhases(events, region);
+        return hideReceptions(applyRegionPhases(events, region));
     } catch (error) {
         console.error('Failed to fetch events:', error);
         return {};
@@ -196,5 +211,6 @@ window.dataManager = {
     ensureRegionTimezones,
     regionToday,
     derivePhase,
-    applyRegionPhases
+    applyRegionPhases,
+    hideReceptions
 };
