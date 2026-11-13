@@ -165,7 +165,8 @@ class TableRenderer {
 
         // Event Title @ Venue column
         const titleVenueCell = row.insertCell();
-        titleVenueCell.textContent = `${event.name} @ ${event.venue}`;
+        titleVenueCell.append(`${event.name} @ `);
+        titleVenueCell.append(this.venueLink(event.venue));
 
         // Tags column
         const tagsCell = row.insertCell();
@@ -176,6 +177,25 @@ class TableRenderer {
         this.renderLinksCell(linksCell, event);
 
         Array.from(row.cells).forEach(cell => cell.setAttribute('role', 'cell'));
+    }
+
+    // The venue's name in the "title @ venue" cell: a link to that venue's shows. A click filters the page to the
+    // venue (SearchManager.setVenue); the href is the same view as a link, so a middle or Ctrl/Cmd-click opens it
+    // in a new tab. Its text is the plain venue name, so the text search reads the cell as before.
+    venueLink(venue) {
+        const link = document.createElement('a');
+        link.className = 'venue-link';
+        link.textContent = venue || '';
+        if (!venue) return link;
+        link.href = `?venue=${encodeURIComponent(venue)}`;
+        link.title = `Show only ${venue}`;
+        link.addEventListener('click', (e) => {
+            // Leave a new-tab click alone, and fall back to the link if the filters aren't ready
+            if (e.button > 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || !window.searchManager) return;
+            e.preventDefault();
+            window.searchManager.setVenue(venue);
+        });
+        return link;
     }
 
     renderTagsCell(cell, event) {

@@ -267,11 +267,11 @@
     }
 
     function defaultState(today = null) {
-        return { q: '', phases: [...DEFAULT_PHASES], tags: [], timing: null, areas: [], view: DEFAULT_VIEW, today };
+        return { q: '', venue: '', phases: [...DEFAULT_PHASES], tags: [], timing: null, areas: [], view: DEFAULT_VIEW, today };
     }
 
     function isDefault(state) {
-        return state.q === '' && samePhases(state.phases, DEFAULT_PHASES) && state.tags.length === 0
+        return state.q === '' && !state.venue && samePhases(state.phases, DEFAULT_PHASES) && state.tags.length === 0
             && !state.timing && (state.areas || []).length === 0;
     }
 
@@ -284,16 +284,18 @@
 
     // --- URL <-> state -------------------------------------------------------
 
-    // ?q=text&phase=past&tags=photography,latinx&when=weekend&area=east-bay&view=map, where phase is one or more of
-    // current, ongoing, future, past (e.g. phase=current,past). The older
-    // ?search=name (used by the venue directory links) is still read as q.
-    // A search with no explicit phase means "show everything for that venue"
+    // ?q=text&venue=The Broad&phase=past&tags=photography,latinx&when=weekend&area=east-bay&view=map, where phase is
+    // one or more of current, ongoing, future, past (e.g. phase=current,past). The older
+    // ?search=name is still read as q. ?venue=name is one venue's shows, matched on the whole name (not as text
+    // anywhere in a row, like q), and is what the venue directory links and a click on a venue name use.
+    // A search or venue with no explicit phase means "show everything for that venue"
     // (its shows may all be past), so it starts with every phase ticked.
     function parseUrl(search, today = null) {
         const params = new URLSearchParams(search || '');
         const q = (params.get('q') ?? params.get('search') ?? '').trim();
         const requested = normalizePhases((params.get('phase') || '').split(',').map(p => p.trim()));
-        const phases = requested.length ? requested : (q ? [...ALL_PHASES] : [...DEFAULT_PHASES]);
+        const venue = (params.get('venue') || '').trim();
+        const phases = requested.length ? requested : (q || venue ? [...ALL_PHASES] : [...DEFAULT_PHASES]);
         const tags = [...new Set((params.get('tags') || '').split(',').map(t => t.trim()).filter(Boolean))];
         const view = VIEWS.includes(params.get('view')) ? params.get('view') : DEFAULT_VIEW;
         const known = areaIds();
@@ -308,16 +310,17 @@
             const to = validDay((params.get('to') || '').trim()) || from;
             timing = to < from ? { from: to, to: from } : { from, to };
         }
-        return { q, phases, tags, timing, areas, view, today };
+        return { q, venue, phases, tags, timing, areas, view, today };
     }
 
     // Inverse of parseUrl: '' for the default view, else '?...'. The phase is
-    // always written when there is a search, because parseUrl treats a search
+    // always written when there is a search or a venue, because parseUrl treats those
     // with no phase as "every phase". ?view=map is written only for the map (the table is the default).
     function toQuery(state) {
         const params = new URLSearchParams();
         if (state.q) params.set('q', state.q);
-        if (state.q || !samePhases(state.phases, DEFAULT_PHASES)) params.set('phase', state.phases.join(','));
+        if (state.venue) params.set('venue', state.venue);
+        if (state.q || state.venue || !samePhases(state.phases, DEFAULT_PHASES)) params.set('phase', state.phases.join(','));
         if (state.tags.length) params.set('tags', state.tags.join(','));
         if (state.timing && state.timing.pick) {
             params.set('when', state.timing.pick);
@@ -370,12 +373,24 @@
         return true;
     }
 
-    // `row` is { bucket, tags: [...], text: foldText(searchable text) } where bucket
-    // is bucketOf(phase, ongoing).
+    // A row is for a venue when its venue's whole name is the one asked for (accents and case aside), so "The
+    // Broad" is not also every show that merely says "broad". The folded name is remembered for the last venue
+    // asked about: rowMatches runs for every row on every change.
+    let lastVenue = null;
+    let lastVenueFolded = '';
+    function venueMatches(wanted, rowVenue) {
+        if (!wanted) return true;
+        if (wanted !== lastVenue) { lastVenue = wanted; lastVenueFolded = foldText(wanted); }
+        return foldText(rowVenue || '') === lastVenueFolded;
+    }
+
+    // `row` is { bucket, venue, tags: [...], text: foldText(searchable text) } where bucket
+    // is bucketOf(phase, ongoing) and venue is the venue's name as stored.
     // `skipGroup` / `skipPhase` leave one filter out, to count what changing it would show.
     // `skipTiming` / `skipAreas` likewise. A chosen date replaces the When phases (see timingMatches).
     function rowMatches(row, state, { skipGroup = null, skipPhase = false, skipTiming = false, skipAreas = false } = {}) {
         if (state.q && !row.text.includes(foldText(state.q))) return false;
+        if (state.venue && !venueMatches(state.venue, row.venue)) return false;
         const window = skipTiming ? null : timingWindow(state.timing, state.today);
         if (window) {
             if (!timingMatches(row, window, state.today)) return false;
@@ -434,6 +449,6 @@
         TIMING_PICKS, TIMING_LABELS, TIMING_HINTS, SOON_DAYS, AREAS,
         groupOf, bucketOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
         validDay, addDays, timingWindow, timingMatches, describeTiming, cityOf, zipOf, areasOfAddresses, areasOfRegion, areasMatch,
-        foldText, phaseMatches, tagsMatch, rowMatches, countTags, countPhases, countTimings, countAreas,
+        foldText, venueMatches, phaseMatches, tagsMatch, rowMatches, countTags, countPhases, countTimings, countAreas,
     };
 }));

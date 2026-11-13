@@ -24,7 +24,7 @@ function loadRenderer() {
     const window = { modalManager: { openImageModal: (src) => opened.push(src) } };
     const sandbox = { window, document, console };
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/tableRenderer.js'), 'utf8'), sandbox);
-    return { renderer: new window.TableRenderer('x'), created, opened };
+    return { renderer: new window.TableRenderer('x'), created, opened, window };
 }
 
 const cell = () => ({ children: [], textContent: 'unset', appendChild(c) { this.children.push(c); } });
@@ -84,4 +84,33 @@ test('every venue in venue_images.json is a real venue with an https picture or 
             assert.ok(url.startsWith('https://'), `${venue}: picture must be https`);
         }
     }
+});
+
+test("the venue's name in a row is a link to that venue's shows", () => {
+    const { renderer, created } = loadRenderer();
+    const link = renderer.venueLink('Art Mûr');
+    assert.strictEqual(link.tag, 'a');
+    assert.strictEqual(link.textContent, 'Art Mûr');
+    assert.strictEqual(link.href, '?venue=Art%20M%C3%BBr');
+    assert.strictEqual(link.className, 'venue-link');
+    assert.ok(created.includes(link));
+});
+
+test('a plain click filters to the venue; a new-tab click and a missing search manager are left to the link', () => {
+    const { renderer, window } = loadRenderer();
+    const chosen = [];
+    const link = renderer.venueLink('The Broad');
+    const click = (extra = {}) => {
+        const event = { button: 0, prevented: false, preventDefault() { event.prevented = true; }, ...extra };
+        link.listeners.click(event);
+        return event;
+    };
+    assert.ok(!click().prevented, 'before the filters are ready the link just works');
+    window.searchManager = { setVenue: name => chosen.push(name) };
+    assert.ok(click().prevented);
+    assert.deepStrictEqual(chosen, ['The Broad']);
+    for (const extra of [{ metaKey: true }, { ctrlKey: true }, { shiftKey: true }, { button: 1 }]) {
+        assert.ok(!click(extra).prevented, JSON.stringify(extra));
+    }
+    assert.deepStrictEqual(chosen, ['The Broad']);
 });

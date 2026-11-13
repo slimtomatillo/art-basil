@@ -31,11 +31,10 @@ window.addEventListener('DOMContentLoaded', async () => {
         const row = tbody.insertRow();
 
         // Venue name links back to the region's exhibitions, pre-filtered
-        // to that venue via the search bar (see searchManager.js's ?search=
-        // handling).
+        // to that venue (see filterState.js's ?venue= handling).
         const nameCell = row.insertCell();
         const nameLink = document.createElement('a');
-        nameLink.href = `index.html?search=${encodeURIComponent(name)}`;
+        nameLink.href = `index.html?venue=${encodeURIComponent(name)}`;
         nameLink.textContent = name;
         nameLink.className = 'fw-semibold text-decoration-none';
         nameCell.appendChild(nameLink);

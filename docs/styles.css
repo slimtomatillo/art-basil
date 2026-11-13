@@ -1553,6 +1553,19 @@ body {
     display: none;
 }
 
+/* The venue's name in the "title @ venue" cell: reads as text, shows it is a link on hover and focus */
+.venue-link {
+    color: inherit;
+    text-decoration: underline dotted;
+    text-underline-offset: 0.18em;
+}
+
+.venue-link:hover,
+.venue-link:focus-visible {
+    color: var(--region-c, inherit);
+    text-decoration: underline;
+}
+
 /* The Event Page and Map links in the Links column */
 .event-link {
     font-size: var(--control-font-size, 0.9rem);
