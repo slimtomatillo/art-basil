@@ -130,7 +130,14 @@ const showRow = (venue, name, dateText = 'Through Dec 1, 2026') => ({
 const DATA = { coordinates: COORDINATES, bounds: BOUNDS_FOR_DATA() };
 function BOUNDS_FOR_DATA() { return { lat: [36.9, 38.6], lng: [-123.1, -121.5] }; }
 
-function setup({ search = '', webgl = true, loadLibrary, loadData, timeoutMs = 50, summary = true, rows = [], distances = {} } = {}) {
+// The map gives up if it has not loaded within `timeoutMs` of real time. A test that is not about that timeout must not
+// race a clock: with a short default, a pause of 50 ms between the click and the test firing the fake map's "load" (a
+// cold or busy process: the first deepStrictEqual loads Node's comparison code) made the map give up, go back to the
+// list and empty the URL, so "opening Map view" failed about 1 run in 7. So the default is long, and the three tests
+// of the timeout itself pass a short one.
+const NO_TIMEOUT_MS = 30000;
+
+function setup({ search = '', webgl = true, loadLibrary, loadData, timeoutMs = NO_TIMEOUT_MS, summary = true, rows = [], distances = {} } = {}) {
     const bar = makeElement('div');
     const table = makeElement('table');
     const wrap = makeElement('div');
@@ -151,7 +158,10 @@ function setup({ search = '', webgl = true, loadLibrary, loadData, timeoutMs = 5
     };
     document.listeners = {};
     document.addEventListener = (name, fn) => { document.listeners[name] = fn; };
-    const sandbox = { window: {}, document, console, URL, setTimeout, clearTimeout };
+    // Timers the page code starts must not keep Node alive: a long timeout that a test never reaches would otherwise
+    // hold the process for its whole length
+    const unrefTimeout = (fn, ms, ...args) => { const timer = setTimeout(fn, ms, ...args); if (timer.unref) timer.unref(); return timer; };
+    const sandbox = { window: {}, document, console, URL, setTimeout: unrefTimeout, clearTimeout };
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/nearMe.js'), 'utf8'), sandbox);        // mapPins needs nearMe
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/mapPins.js'), 'utf8'), sandbox);
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../docs/mapView.js'), 'utf8')
