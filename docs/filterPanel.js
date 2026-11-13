@@ -50,7 +50,7 @@ class FilterPanel {
             register: (box) => this.phaseBoxes.set(phase, box),
         })), () => this.buildTimingSection()));
 
-        // Area: the Bay Area only (AREAS in filterState.js), and only the areas that have shows
+        // Area: the regions that have AREAS in filterState.js (the Bay Area, Los Angeles, Istanbul), and only the areas that have shows
         this.region = window.dataManager.getRegion();
         const areas = (filterState.AREAS[this.region] || []).filter(area => rows.some(row => row.areas.includes(area.id)));
         if (areas.length > 1) {

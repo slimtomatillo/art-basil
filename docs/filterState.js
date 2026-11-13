@@ -147,10 +147,12 @@
     }
 
     // Areas of a region, found from a venue's address: the Bay Area by the city ("cities", the town before
-    // ", CA"), Istanbul by the district ("districts": one of the comma-separated parts of the address,
-    // "34433 Beyoğlu" or "Kadıköy", with the accents ignored). Every venue address needs a city or district
-    // that is listed here: tests/filterState.test.js checks the real venues, so a new venue in a new town or
-    // district fails there until it is added. A region with no entry has no Area filter.
+    // ", CA"), Los Angeles by the city or, for the city of Los Angeles itself (most of its venues), by the
+    // ZIP code ("zips", the five digits after ", CA"), Istanbul by the district ("districts": one of the
+    // comma-separated parts of the address, "34433 Beyoğlu" or "Kadıköy", with the accents ignored). Every
+    // venue address needs a city, ZIP or district that is listed here: tests/filterState.test.js checks the
+    // real venues, so a new venue in a new place fails there until it is added. A region with no entry has no
+    // Area filter.
     const AREAS = {
         sf: [
             { id: 'san-francisco', label: 'San Francisco', cities: ['San Francisco'] },
@@ -170,6 +172,24 @@
                 'San Rafael', 'Sausalito', 'Napa', 'Sonoma', 'Mill Valley', 'Novato', 'Petaluma', 'Santa Rosa',
                 'Larkspur', 'Tiburon', 'Fairfax', 'San Anselmo', 'Belvedere', 'Point Reyes Station', 'Bolinas',
                 'Healdsburg', 'Yountville', 'St. Helena', 'Calistoga', 'Sebastopol'] },
+        ],
+        // Los Angeles. The city of Los Angeles holds most venues, so it is split by ZIP code; the towns
+        // around it (Pasadena, Santa Monica...) are placed by their name. Long Beach has one venue, so it
+        // goes with Downtown and South LA rather than standing alone.
+        la: [
+            { id: 'hollywood-mid-wilshire', label: 'Hollywood and Mid-Wilshire', zips: [
+                '90004', '90005', '90006', '90010', '90019', '90020', '90027', '90028', '90029', '90036', '90038',
+                '90046', '90048', '90068'] },
+            { id: 'westside', label: 'Westside', cities: [
+                'Santa Monica', 'Culver City', 'Beverly Hills', 'West Hollywood'], zips: [
+                '90024', '90025', '90034', '90035', '90049', '90064', '90066', '90067', '90077', '90272', '90291',
+                '90292'] },
+            { id: 'downtown-south-la', label: 'Downtown and South LA', cities: ['Long Beach'], zips: [
+                '90001', '90003', '90007', '90011', '90012', '90013', '90014', '90015', '90017', '90021', '90033',
+                '90037', '90058', '90089'] },
+            { id: 'pasadena-sgv', label: 'Pasadena and San Gabriel Valley', cities: [
+                'Pasadena', 'South Pasadena', 'San Marino', 'Monterey Park', 'Alhambra', 'Arcadia', 'Altadena',
+                'San Gabriel', 'Temple City'] },
         ],
         // Istanbul, by district. Only those with venues are offered, so Kadıköy and Üsküdar (the Asian side)
         // appear in the filter, each on its own, as soon as a venue there is added.
@@ -199,6 +219,12 @@
         return matches.length ? matches[matches.length - 1][1].trim() : null;
     }
 
+    // The ZIP code of an address ("..., Los Angeles, CA 90036" -> "90036"), or null
+    function zipOf(address) {
+        const m = String(address || '').match(/,\s*CA\s+(\d{5})\b/);
+        return m ? m[1] : null;
+    }
+
     // The parts of an address, one by one ("34433 Beyoğlu" -> "beyoglu"), for matching a district. Split on
     // commas and slashes ("Kadıköy/İstanbul"), the postcode taken off, accents and case ignored.
     function placeParts(address) {
@@ -213,9 +239,11 @@
         const found = [];
         for (const address of addresses || []) {
             const city = cityOf(address);
+            const zip = zipOf(address);
             const parts = areas.some(a => a.districts) ? placeParts(address) : [];
             const area = areas.find(a =>
                 (city && (a.cities || []).some(c => c.toLowerCase() === city.toLowerCase())) ||
+                (zip && (a.zips || []).includes(zip)) ||
                 (a.districts || []).some(d => parts.includes(foldText(d))));
             if (area && !found.includes(area.id)) found.push(area.id);
         }
@@ -405,7 +433,7 @@
         TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, PHASE_LABELS, PHASE_HINTS, VIEWS, DEFAULT_VIEW,
         TIMING_PICKS, TIMING_LABELS, TIMING_HINTS, SOON_DAYS, AREAS,
         groupOf, bucketOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
-        validDay, addDays, timingWindow, timingMatches, describeTiming, cityOf, areasOfAddresses, areasOfRegion, areasMatch,
+        validDay, addDays, timingWindow, timingMatches, describeTiming, cityOf, zipOf, areasOfAddresses, areasOfRegion, areasMatch,
         foldText, phaseMatches, tagsMatch, rowMatches, countTags, countPhases, countTimings, countAreas,
     };
 }));

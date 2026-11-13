@@ -123,7 +123,7 @@ class TableRenderer {
         return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}/.test(value) ? value.slice(0, 10) : '';
     }
 
-    // The area ids of a venue (the Bay Area only; see AREAS in filterState.js), from the cities in its addresses
+    // The area ids of a venue (see AREAS in filterState.js), from the cities, ZIP codes or districts in its addresses
     areasOf(venueName) {
         if (!venueName || !this.venues || !window.filterState || !window.venueAddresses || !window.dataManager) return [];
         const addresses = window.venueAddresses.normalize(this.venues[venueName]).map(entry => entry.address);
