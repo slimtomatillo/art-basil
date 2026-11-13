@@ -25,8 +25,9 @@ def run(module, scrape, answer):
     return {e['name']: e for e in stored}
 
 
-def node(title, start, end, artists=(), uri='/exhibition/x/', image='https://api.danielfariagallery.com/pic.jpg'):
-    return {'title': title, 'uri': uri,
+def node(title, start, end, artists=(), uri='/exhibition/x/', image='https://api.danielfariagallery.com/pic.jpg',
+         slug='x', content=None):
+    return {'title': title, 'uri': uri, 'slug': slug, 'content': content,
             'featuredImage': {'node': {'url': image}} if image else None,
             'custom': {'startDate': start, 'endDate': end, 'artists': [{'name': a} for a in artists]}}
 
@@ -38,7 +39,8 @@ class DanielFariaTest(unittest.TestCase):
 
     def test_current_and_upcoming_shows(self):
         events = self.events(
-            node('I is Another', 'November 12, 2026', 'December 19, 2026', ['Chris Curreri'], '/exhibition/i-is-another/'),
+            node('I is Another', 'November 12, 2026', 'December 19, 2026', ['Chris Curreri'], '/exhibition/i-is-another/',
+                 slug='i-is-another'),
             node('Open Now', 'October 31, 2026', 'November 30, 2026', ['A', 'B']),
             node('Petrichor', 'September 18, 2026', 'October 31, 2026', ['Jennifer Rose Sciarrino']))
         self.assertEqual(set(events), {'Chris Curreri: I is Another', 'Open Now'})
@@ -47,9 +49,34 @@ class DanielFariaTest(unittest.TestCase):
         self.assertEqual(upcoming['dates'], {'start': dt.date(2026, 11, 12), 'end': dt.date(2026, 12, 19)})
         self.assertEqual(upcoming['venue'], 'Daniel Faria Gallery')
         self.assertIn('gallery', upcoming['tags'])
-        self.assertIn({'link': 'https://danielfariagallery.com/exhibition/i-is-another/', 'description': 'Event Page'}, upcoming['links'])
+        # the page is /exhibitions/<slug> on the site; the API's own uri (/exhibition/<slug>/) is a 404 there
+        self.assertIn({'link': 'https://danielfariagallery.com/exhibitions/i-is-another', 'description': 'Event Page'}, upcoming['links'])
         self.assertIn({'link': 'https://api.danielfariagallery.com/pic.jpg', 'description': 'Image'}, upcoming['links'])
         self.assertEqual(events['Open Now']['phase'], 'current')
+
+    def test_the_event_page_is_never_the_apis_own_address_which_is_a_404_on_the_site(self):
+        events = self.events(node('I is Another', 'November 12, 2026', 'December 19, 2026', ['Chris Curreri'],
+                                  uri='/exhibition/i-is-another/', slug='i-is-another'))
+        links = [l['link'] for l in events['Chris Curreri: I is Another']['links'] if l['description'] == 'Event Page']
+        self.assertEqual(links, ['https://danielfariagallery.com/exhibitions/i-is-another'])
+        # without a slug the listing is the honest link
+        events = self.events(node('No Slug', 'November 1, 2026', 'December 1, 2026', slug=None))
+        self.assertEqual([l['link'] for l in events['No Slug']['links'] if l['description'] == 'Event Page'],
+                         ['https://danielfariagallery.com/exhibitions'])
+
+    def test_the_description_is_the_shows_own_text_from_the_api(self):
+        html = ('<div>\n<div>\n<p><span class="font-avenir">Daniel Faria Gallery is pleased to present <em>I is Another</em>, '
+                'Chris Curreri\u2019s sixth solo exhibition with the gallery.</span></p>\n'
+                '<p><span>First presented at the Counterpublic Triennial in St. Louis, the work brings together sculpture and video.</span></p></div></div>')
+        events = self.events(node('I is Another', 'November 12, 2026', 'December 19, 2026', ['Chris Curreri'], content=html),
+                             node('Nothing Written', 'November 1, 2026', 'December 1, 2026', content=None),
+                             node('Just a Date', 'November 2, 2026', 'December 2, 2026', content='<p>Opening reception November 12.</p>'))
+        text = events['Chris Curreri: I is Another']['description']
+        self.assertTrue(text.startswith('Daniel Faria Gallery is pleased to present I is Another, Chris Curreri\u2019s sixth solo exhibition'))
+        self.assertIn('Counterpublic Triennial', text)
+        self.assertNotIn('<', text)
+        self.assertIsNone(events['Nothing Written']['description'])
+        self.assertIsNone(events['Just a Date']['description'])                  # no prose in it
 
     def test_a_group_show_keeps_just_its_title(self):
         self.assertIn('Both Sides Now', self.events(node('Both Sides Now', 'October 1, 2026', 'December 1, 2026', ['A', 'B', 'C'])))

@@ -1,3 +1,4 @@
+from descriptions import feed_description
 from images import resized_image_url
 from scrapers.tor._common import publish
 from processing import region_today
@@ -45,10 +46,15 @@ def scrape_california_african_american_museum(env='prod', region='la'):
             # "October 20, 2026 - February 27, 2027 at Art + Practice": shown at another venue
             if ' at ' in str(content.get('display_date') or ''):
                 continue
-            page = item.get('contentUrl') or item.get('url') or 'https://caamuseum.org/exhibitions'
+            # The show's page is its public `url`. `contentUrl` is the museum's internal content path: it answers 403
+            # Forbidden to everyone, a visitor's browser included, so it is only the folder the picture files are in.
+            files = item.get('contentUrl')
+            page = item.get('url') or files or 'https://caamuseum.org/exhibitions'
             # The feed names each show's lead picture; the originals are huge PNGs, so a small copy is used
-            picture = item.get('image') or (f"{page.rstrip('/')}/{content['main_image']}" if content.get('main_image') else None)
+            picture = item.get('image') or (f"{(files or page).rstrip('/')}/{content['main_image']}" if content.get('main_image') else None)
+            # The feed carries the show's own text, so there is nothing to fetch for a description
+            description = feed_description(content.get('text')) or feed_description(content.get('teaser'))
             stored += publish(env, region, VENUE, item['title'].strip(), start, end, page,
-                              tag='museum', seen=seen, image=resized_image_url(picture))
+                              tag='museum', seen=seen, image=resized_image_url(picture), description=description)
     if not stored:
         logging.warning("CAAM: no exhibitions found; existing data kept.")

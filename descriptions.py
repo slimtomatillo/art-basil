@@ -43,6 +43,8 @@ import re
 import sys
 from urllib.parse import urlparse
 
+from bs4 import BeautifulSoup
+
 import utils
 from config import DB_FILES
 from textmatch import fold, title_words
@@ -313,6 +315,26 @@ def _ago_body(soup):
 
 # Sites whose text is in none of the usual places: host -> function(soup) giving the texts to try, best first
 SITE_EXTRACTORS = {'ago.ca': _ago_body}
+
+
+def feed_description(text):
+    """A description from text that a venue's own feed or API supplies for a show, as HTML or as markdown-ish text
+    (WEBSITE-119: the California African American Museum's feed and Daniel Faria's API carry the whole show text, so
+    the scrapers can store it and nothing needs fetching): its first one or two prose paragraphs, plain, at most
+    MAX_CHARS, or None. The venue wrote it for this show, so the rules for what is not prose apply (dates, credits,
+    captions, boilerplate), but not the ones that guard against a scraped page's site-wide text."""
+    if not isinstance(text, str) or not text.strip():
+        return None
+    if not re.search(r'<p[\s>]', text, re.IGNORECASE):
+        # markdown-ish text. It can still hold a stray tag (CAAM's has a leftover </iframe> and <A HREF> links), so it is
+        # judged by having no paragraph tags, not by having no "<" at all
+        text = re.sub(r'<br\s*/?>', '\n', text, flags=re.IGNORECASE)
+        text = re.sub(r'<[^>]+>', '', text)
+        text = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', text)                      # [label](address) -> label
+        text = re.sub(r'^#+\s*', '', text.replace('*', ''), flags=re.MULTILINE)       # emphasis and heading marks
+        text = ''.join(f'<p>{html.escape(par.strip())}</p>' for par in re.split(r'\n\s*\n', text) if par.strip())
+    found = _prose_paragraphs(BeautifulSoup(text, 'html.parser'), strict=False)
+    return trim(found[0]) if found else None
 
 
 def candidates(soup, page_url=None):

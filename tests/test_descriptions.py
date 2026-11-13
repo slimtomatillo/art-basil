@@ -348,6 +348,48 @@ class FindEventDescriptionTest(unittest.TestCase):
         self.assertLessEqual(len(text), descriptions.MAX_CHARS)
 
 
+class FeedDescriptionTest(unittest.TestCase):
+    """Text a venue's own feed or API supplies (CAAM's markdown, Daniel Faria's HTML): WEBSITE-119."""
+    FIRST = ('*How to Fly* is a site-specific photomural by visual artist Sadie Barnette installed in CAAM\u2019s atrium. Born and '
+             'raised in Oakland, California, Barnette incorporates photographs she has taken of the places around her.')
+
+    def test_markdown_becomes_plain_prose_and_a_bold_header_line_is_left_out(self):
+        text = descriptions.feed_description(self.FIRST + '\n\n**Presented at Art + Practice**')
+        self.assertTrue(text.startswith('How to Fly is a site-specific photomural by visual artist Sadie Barnette'))
+        self.assertNotIn('*', text)
+        self.assertNotIn('Art + Practice', text)
+
+    def test_stray_tags_in_markdown_text_do_not_make_it_html(self):
+        # CAAM's text has a leftover </iframe> (an embedded video) and <A HREF> links, which once made it read as HTML
+        text = descriptions.feed_description(
+            self.FIRST + ' See <A HREF="https://example.org/work">the artist\u2019s site</A> for more.</iframe>\n\nA second paragraph about the work.')
+        self.assertTrue(text.startswith('How to Fly is a site-specific photomural'))
+        self.assertNotIn('<', text)
+        self.assertIn('the artist\u2019s site', text)
+
+    def test_markdown_links_keep_their_label_and_br_makes_a_new_paragraph(self):
+        text = descriptions.feed_description('See [the exhibition guide](https://example.org/guide) for the show Nocturne by the artist, '
+                                             'a series of drawings made in the dark over a year.<br>Opening reception: Friday, October 30')
+        self.assertTrue(text.startswith('See the exhibition guide for the show Nocturne'))
+        self.assertNotIn('Opening reception', text)
+
+    def test_html_text_takes_its_first_paragraphs_and_cuts_to_a_length(self):
+        html = ('<div>\n<div>\n<p><span class="font-avenir">Daniel Faria Gallery is pleased to present <em>I is Another</em>, '
+                'Chris Curreri\u2019s sixth solo exhibition with the gallery.</span></p>\n'
+                '<p><span>First presented at the Counterpublic Triennial in St. Louis, the work brings together sculpture and video.</span></p>'
+                '<p>' + 'A third paragraph that goes on about the work and the ideas behind it, in many words. ' * 12 + '</p></div></div>')
+        text = descriptions.feed_description(html)
+        self.assertTrue(text.startswith('Daniel Faria Gallery is pleased to present I is Another, Chris Curreri'))
+        self.assertIn('Counterpublic Triennial', text)
+        self.assertNotIn('A third paragraph', text)                    # two paragraphs are enough
+        self.assertNotIn('<', text)
+        self.assertLessEqual(len(text), descriptions.MAX_CHARS)
+
+    def test_nothing_usable_gives_none(self):
+        for text in (None, '', '   ', 42, '<p>Opening reception November 12.</p>', 'Short.', '**Presented at Art + Practice**'):
+            self.assertIsNone(descriptions.feed_description(text), text)
+
+
 class SiteExtractorAndCaptionTest(unittest.TestCase):
     """AGO's text is in none of the usual places; the Cantor puts a caption paragraph before the text."""
     AGO_TEXT = ('Spotlighting the power of Black style, Sunday Best traces the histories of migration, activism and joy '
