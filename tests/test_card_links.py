@@ -98,5 +98,45 @@ class CardLinksTest(unittest.TestCase):
         self.assertEqual(images.card_links(soup(html), LISTING, TITLES), {'Carl Cheng': 'https://gallery.example/s/carl/'})
 
 
+class SplitTitleCardTest(unittest.TestCase):
+    """A listing that shows a show's title and its artist in separate elements (Commonwealth and Council), so no
+    card holds the whole "Artist: Title" name that the scraper stored."""
+    CARDS = ('<ul>'
+             '<li><a href="/exhibitions/folding-boy-and-blue"><img src="/a.jpg"><h2>FOLDING BOY AND BLUE</h2><h1>Michelle Lopez</h1></a></li>'
+             '<li><a href="/exhibitions/shimmering-menace"><img src="/b.jpg"><h2>Shimmering Menace</h2><h1>Jemima Wyman</h1></a></li>'
+             '<li><a href="/exhibitions/another-show"><img src="/c.jpg"><h2>Another Show</h2><h1>Michelle Lopez</h1></a></li>'
+             '</ul>')
+    TITLES = ['Michelle Lopez: FOLDING BOY AND BLUE', 'Jemima Wyman: Shimmering Menace', 'Michelle Lopez: Another Show']
+
+    def test_the_card_is_found_by_the_title_part_when_the_whole_name_is_not_on_the_page(self):
+        page = images.PageText(soup(self.CARDS))
+        self.assertEqual(images.link_in_card(page, self.TITLES[0], LISTING, self.TITLES),
+                         'https://gallery.example/exhibitions/folding-boy-and-blue')
+        self.assertEqual(images.link_in_card(page, self.TITLES[1], LISTING, self.TITLES),
+                         'https://gallery.example/exhibitions/shimmering-menace')
+
+    def test_an_artist_with_two_shows_is_never_used_to_find_a_card(self):
+        # "Michelle Lopez" is on two cards, so only the title part can find a card: a show whose title is not
+        # on the page has no link, rather than the first Michelle Lopez card's
+        page = images.PageText(soup(self.CARDS))
+        self.assertIsNone(images.link_in_card(page, 'Michelle Lopez: A Show That Is Not Listed', LISTING, self.TITLES))
+
+    def test_the_card_does_not_climb_into_the_next_shows_card(self):
+        # no link around or in the card itself: the search must stop at the next show's card, not take the page's first link
+        html = ('<div><div><h2>FOLDING BOY AND BLUE</h2><h1>Michelle Lopez</h1></div>'
+                '<div><h2>Shimmering Menace</h2><h1>Jemima Wyman</h1><a href="/exhibitions/shimmering-menace">View</a></div></div>')
+        page = images.PageText(soup(html))
+        titles = self.TITLES[:2]
+        self.assertIsNone(images.link_in_card(page, titles[0], LISTING, titles))
+        self.assertEqual(images.link_in_card(page, titles[1], LISTING, titles),
+                         'https://gallery.example/exhibitions/shimmering-menace')
+
+    def test_card_links_returns_the_split_cards_links(self):
+        found = images.card_links(soup(self.CARDS), LISTING, self.TITLES)
+        self.assertEqual(found[self.TITLES[0]], 'https://gallery.example/exhibitions/folding-boy-and-blue')
+        self.assertEqual(found[self.TITLES[1]], 'https://gallery.example/exhibitions/shimmering-menace')
+        self.assertEqual(found[self.TITLES[2]], 'https://gallery.example/exhibitions/another-show')
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -6,6 +6,11 @@ capitals over several lines ("MEMORY," / "LONGING," / "REMEMBERING"), a subtitle
 ("January 23 – March 6, 2027"). Only that announcement is read. The page is hand-edited, so if its layout
 changes the scraper finds no title or dates and keeps the existing data.
 
+The layout changed once already (2026-11-13): a label line ("UPCOMING") now sits above the title, which made
+the show "Upcoming Measured Tension", and the run is followed by a "Featuring: ..." line instead of a description
+paragraph. Label lines are skipped, and with no description paragraph the subtitle and the "Featuring" line are
+used (WEBSITE-117).
+
 The show's picture is the announcement section's background, a Wix image the page lists in the
 data-image-info of a <wow-image> element rather than in an <img> a generic search would find. Wix resizes
 it on request, so a 640 px JPEG is asked for instead of the 2.8 MB original.
@@ -28,9 +33,14 @@ _PICTURE_SIZE = '/v1/fit/w_640,h_640,q_85/picture.jpg'
 _PICTURE_CLIMB = 14                  # parent levels searched from the dates for the section's picture
 
 
+# Capitalised lines that label the announcement and are not part of the show's title
+_LABEL_LINES = {'CALL FOR ARTISTS', 'UPCOMING', 'UPCOMING EXHIBITION', 'NOW ON VIEW', 'ON VIEW', 'ON VIEW NOW',
+                'CURRENT', 'CURRENT EXHIBITION', 'COMING SOON'}
+
+
 def _is_title_line(line):
     letters = re.sub(r'[^A-Za-z]', '', line)
-    return len(letters) >= 3 and letters.isupper() and line != 'CALL FOR ARTISTS'
+    return len(letters) >= 3 and letters.isupper() and line.strip().upper() not in _LABEL_LINES
 
 
 def _announcement_image(soup, run_text):
@@ -80,6 +90,10 @@ def scrape_dictee_art_exhibition(env='prod', region='sf'):
     subtitle = after[0] if after and len(after[0]) < 80 else None
     name = f'{title}: {subtitle}' if subtitle else title
     description = ' '.join(after[1:] if subtitle else after)
+    if not description and run_at + 1 < len(lines) and re.match(r'featuring\b', lines[run_at + 1], re.IGNORECASE):
+        # No description paragraph: the subtitle and the line naming the artists say what the show is
+        featuring = lines[run_at + 1].rstrip('.')
+        description = f'{subtitle}. {featuring}.' if subtitle else f'{featuring}.'
     description = description[:_MAX_DESCRIPTION].rsplit(' ', 1)[0] if len(description) > _MAX_DESCRIPTION else description
     start_date, end_date = parse_date_text(lines[run_at], today)
     if not publish(env, region, VENUE, name, start_date, end_date, HOME_URL, tag='gallery',

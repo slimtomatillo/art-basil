@@ -147,6 +147,26 @@ class DicteeTest(unittest.TestCase):
         self.assertEqual(show['phase'], 'future')
         self.assertEqual(show['description'], 'A juried group exhibition exploring memory, language and exile.')
 
+    def test_a_label_line_above_the_title_is_not_part_of_it_and_a_featuring_line_makes_the_description(self):
+        # the home page's layout from 2026-11-13: "UPCOMING" over the title, no description paragraph,
+        # and a "Featuring:" line after the dates
+        page = ('<main><p>Rent Dictee</p><p>UPCOMING</p><h1>MEASURED TENSION</h1><p>A Group Exhibition of Prints</p>'
+                '<p>November 14 – December 12, 2026</p>'
+                '<p>Featuring: James Mitchell, Thierry Rosset, Deborah Sibony, Denise Owen, and Carol Brighton</p>'
+                '<p>Opening Reception: Saturday, November 14 | 11 AM – 3 PM</p><p>EXPLORE THE EXHIBITION</p></main>')
+        show = self.run_dictee(page)[0]
+        self.assertEqual(show['name'], 'Measured Tension: A Group Exhibition of Prints')
+        self.assertEqual(show['dates'], {'start': dt.date(2026, 11, 14), 'end': dt.date(2026, 12, 12)})
+        self.assertEqual(show['description'], 'A Group Exhibition of Prints. Featuring: James Mitchell, Thierry Rosset, '
+                                              'Deborah Sibony, Denise Owen, and Carol Brighton.')
+
+    def test_the_renamed_show_replaces_the_one_stored_under_its_old_upcoming_name(self):
+        from processing import is_same_event
+        old = {'name': 'Upcoming Measured Tension: A Group Exhibition of Prints', 'dates': {'start': '2026-11-14', 'end': '2026-12-12'},
+               'links': [{'link': dictee.HOME_URL, 'description': 'Event Page'}]}
+        new = {**old, 'name': 'Measured Tension: A Group Exhibition of Prints'}
+        self.assertTrue(is_same_event(new, old))
+
     def test_the_sections_background_picture_is_stored_resized(self):
         info = '{&quot;imageData&quot;:{&quot;uri&quot;:&quot;7acfee_abc~mv2.png&quot;}}'
         page = (f'<section><wow-image data-image-info="{info}"><img alt="Textured Collage.png"/></wow-image>'

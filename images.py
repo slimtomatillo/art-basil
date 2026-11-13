@@ -292,19 +292,44 @@ def _anchor_mentions(anchor, url, words):
     return bool(words & found)
 
 
+def _title_parts(title):
+    """The parts of an "Artist: Title" name that a listing may show apart (the title in one element, the artist in
+    another, either first): the title first, then the artist. Parts too short to be told apart are left out."""
+    head, separator, tail = title.partition(':')
+    parts = [tail.strip(), head.strip()] if separator else []
+    return [part for part in parts if len(_key(part)) >= 6]
+
+
 def link_in_card(page, title, page_url, other_titles=()):
     """The link to a show's own page, from the card that holds its title on a listing page, or None.
 
     Climbs from the title up through its parents, as image_in_card does, giving up at an element that also holds
     another show's title. A wrong link would be shown to visitors, so it is strict. In order of trust: a link that
     wraps the title; a link in the card whose text or address uses a word of the title; the only link in the card.
-    Only the venue's own site counts, and never the listing itself."""
+    Only the venue's own site counts, and never the listing itself. A page that shows "Artist: Title" as two separate
+    elements (so the whole name is nowhere on it) is searched by the title, then the artist, but only by a part that
+    is on the page exactly once."""
     if not isinstance(page, PageText):
         page = PageText(page)
     key = _key(title)
     others = [k for k in (_key(t) for t in other_titles) if k and k != key and k not in key]
     words = title_words(title)
     element = page.element_for(title)
+    if element is None:
+        # A listing that shows the title and the artist apart ("FOLDING BOY AND BLUE" in one element, "Michelle Lopez" in
+        # the next) has no card with the whole name. Find the card by a part of it, but only a part that is on the page
+        # once: an artist with two shows would otherwise find the wrong card.
+        for part in _title_parts(title):
+            if page.joined.count(_key(part)) == 1:
+                element = page.element_for(part)
+                if element is not None:
+                    break
+        if element is not None:
+            # the other shows' names are shown apart too, so the card is told from the next one by their parts
+            for other in other_titles:
+                if _key(other) != key and page.joined.find(_key(other)) < 0:
+                    others += [_key(part) for part in _title_parts(other)
+                               if page.joined.count(_key(part)) == 1 and _key(part) not in key]
     first = element
     for _ in range(CARD_CLIMB):
         if element is None or element.name in ('body', 'html'):

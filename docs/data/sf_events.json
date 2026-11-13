@@ -42502,36 +42502,6 @@
             "hash": "f7fb72a991c6536ab21fa3bcf37679e3",
             "description_checked": "2026-11-13"
         },
-        "Big Feelings-Palo Alto Art Center": {
-            "name": "Big Feelings",
-            "venue": "Palo Alto Art Center",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "future",
-                "museum",
-                "free"
-            ],
-            "phase": "future",
-            "dates": {
-                "start": "2027-01-23",
-                "end": "2027-04-11"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-Center/See-Art/Exhibitions/Upcoming",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://www.paloalto.gov/files/content/public/v/88/departments/community-services/arts-sciences/palo-alto-art-center/see-art/exhibitions/upcoming/copy-of-oliveira_profile_2010-1.jpg",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-11-05 18:35:57",
-            "hash": "de9630d68c17381f0fbf410e7793c94c",
-            "description_checked": "2026-11-13"
-        },
         "Thrown, Stamped, Stacked, and Poured: Ceramic Installation and Performance-Palo Alto Art Center": {
             "name": "Thrown, Stamped, Stacked, and Poured: Ceramic Installation and Performance",
             "venue": "Palo Alto Art Center",
