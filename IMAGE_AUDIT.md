@@ -4,30 +4,32 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-13: **570**. With their own picture: **562** (99%). Showing the venue's logo instead: **7**. No picture at all: **1**.
+Current and upcoming events on 2026-11-13: **606**. With their own picture: **596** (98%). Showing the venue's logo instead: **7**. No picture at all: **3**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
 | Region | Venue | Events | Own picture | Logo | None |
 |---|---|---:|---:|---:|---:|
+| `la` | François Ghebaly | 3 | 1 | 0 | 2 |
 | `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
-| `la` | François Ghebaly | 2 | 1 | 0 | 1 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
+| `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
 | `sf` | Jessica Silverman Gallery | 4 | 3 | 1 | 0 |
 | `sf` | Sanchez Art Center | 3 | 2 | 1 | 0 |
 | `tor` | Paul Petro Contemporary Art | 2 | 1 | 1 | 0 |
 
 ### Events without a picture of their own
 
+**François Ghebaly** (`la`)
+
+- [Tran Truong](https://ghebaly.com/exhibitions/231-tran-truong-windows-mirrors-and-bras/): blank; page last checked 2026-11-13
+- [CH3–CH2–O–CH2–CH3](https://ghebaly.com/exhibitions/232-ch3ch2och2ch3-group-exhibition/): blank; page last checked 2026-11-13
+
 **Marin Society of Artists** (`sf`)
 
 - [MSA All About Women 2026](https://www.marinsocietyofartists.org/all-about-women-2026): venue logo; page last checked 2026-11-04
 - [MSA Visionary Marin](https://www.marinsocietyofartists.org/visionarymarin): venue logo; page last checked 2026-11-04
-
-**François Ghebaly** (`la`)
-
-- [Tran Truong](https://ghebaly.com/exhibitions/231-tran-truong-windows-mirrors-and-bras/): blank; page last checked 2026-11-13
 
 **Espace DÈS_** (`mtl`)
 
@@ -36,6 +38,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Galerie Kub’Art** (`mtl`)
 
 - [Exposition inaugurale](https://www.instagram.com/kubartgallery/): venue logo; page last checked 2026-11-04
+
+**ACCI Gallery** (`sf`)
+
+- [ACCI's Annual Holiday Show](https://www.accigallery.com/annual-holiday-show.html): blank; page last checked 2026-11-13
 
 **Jessica Silverman Gallery** (`sf`)
 
