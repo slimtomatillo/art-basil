@@ -348,6 +348,86 @@ class FindEventDescriptionTest(unittest.TestCase):
         self.assertLessEqual(len(text), descriptions.MAX_CHARS)
 
 
+class NoTitleWordButStillTheShowsTextTest(unittest.TestCase):
+    """Group A of WEBSITE-119: a real blurb can share no word with a title like "Neighbours" or "Spotlight", while a site-wide
+    tagline almost always opens with the venue's name. Real texts from the audit."""
+    CCA = ('This selection of photographs from the CCA\u2019s photography collection displayed in the Hall cases asks how and for '
+           'whom we design neighbourhoods today by considering how communities use the environments they inhabit.')
+
+    def test_a_long_text_that_does_not_open_by_naming_the_venue_is_accepted_when_it_names_no_title_word(self):
+        self.assertFalse(descriptions.usable(self.CCA, 'Spotlight'))                            # strict, as before: no venue given
+        self.assertTrue(descriptions.usable(self.CCA, 'Spotlight', venue='Canadian Centre for Architecture'))
+        self.assertTrue(descriptions.usable(
+            'These new works occupy a threshold between physical matter and imagined space. The canvas operates as both an architectural '
+            'enclosure and a physical body while the painted image echoes this duality.', 'Patrick Howlett: Recent Painting', venue='Blouin Division'))
+
+    def test_a_tagline_that_opens_by_naming_the_venue_is_still_rejected(self):
+        for text, name, venue in (
+                ('Mercer Union is a non-profit, artist-run centre dedicated to the production and presentation of contemporary art, '
+                 'founded in 1979 and based in Toronto.', 'Rouzbeh Akhbari: Of Wool and Diesel', 'Mercer Union'),
+                ('Jessica Silverman is a contemporary art gallery that represents an international group of artists and presents '
+                 'exhibitions in San Francisco and online.', 'Clare Rojas', 'Jessica Silverman Gallery'),
+                ('Fonderie Darling in Montreal is a space for the exhibition of contemporary art, set in a former foundry in the heart '
+                 'of the Old Port, with studios and a gallery.', 'Shanie Tomassini: Solar Lamentation', 'Fonderie Darling'),
+                ('MICA est un centre d\u2019exposition \u00e0 Montr\u00e9al offrant une plateforme aux artistes de la rel\u00e8ve et propose une '
+                 'programmation d\u2019expositions tout au long de l\u2019ann\u00e9e.', '\u00c9cologies de la conscience', 'MICA'),
+                ('Find out about current, upcoming and past exhibitions at Sprüth Magers in Los Angeles, Berlin, London and New York, '
+                 'and about the artists the gallery represents.', 'John Baldessari: Sculptures', 'Sprüth Magers Los Angeles')):
+            self.assertFalse(descriptions.usable(text, name, venue=venue), text[:50])
+
+    def test_it_must_also_be_long_enough_to_be_a_description(self):
+        self.assertFalse(descriptions.usable('A short note about a show.', 'Spotlight', venue='Anderson Collection'))
+
+    def test_names_the_venue_looks_only_at_the_start(self):
+        self.assertTrue(descriptions.names_the_venue('Mercer Union is a non-profit centre.', 'Mercer Union'))
+        self.assertTrue(descriptions.names_the_venue('Welcome to the Canadian Centre of the arts.', 'Canadian Centre for Architecture'))
+        self.assertFalse(descriptions.names_the_venue('A show. ' + 'x' * 200 + ' Mercer Union', 'Mercer Union'))
+        self.assertFalse(descriptions.names_the_venue('Anything at all.', None))
+
+    def listing(self, title, h1, text):
+        return page(head=f'<title>{title}</title>', body=f'<main><h1>{h1}</h1><p>{text}</p></main>')
+
+    HYUN = ('Painting, for Hyun-Sook Song, is an analogue refuge. Transplanted from an early life in mid-century rural South Korea '
+            'to the workforce in a rapidly modernising West Germany, Song turned to art-making to image fragmentary memories.')
+
+    def test_on_a_listing_of_several_shows_the_first_paragraph_is_not_taken_for_this_one(self):
+        # Sprüth Magers' /exhibitions page gave a paragraph about a different artist for a Baldessari show
+        s = self.listing('Exhibitions | Spr\u00fcth Magers', 'Exhibitions', self.HYUN)
+        self.assertIsNone(descriptions.find_event_description('https://spruethmagers.com/exhibitions/', 'John Baldessari: Sculptures',
+                                                              fetch=lambda url: s, venue='Spr\u00fcth Magers Los Angeles'))
+
+    def test_on_the_shows_own_page_the_same_kind_of_text_is_taken(self):
+        s = self.listing('Spotlight | Anderson Collection', 'Spotlight', 'The powerful work of celebrated artist Susan Rothenberg is brought '
+                         'into focus in a dedicated gallery alongside an accompanying photographic portrait by Leo Holub.')
+        found = descriptions.find_event_description('https://anderson.stanford.edu/exhibitions/spotlights/', 'Spotlight', fetch=lambda url: s,
+                                                    venue='Anderson Collection')
+        self.assertTrue(found[0].startswith('The powerful work of celebrated artist Susan Rothenberg'))
+
+    def test_page_is_about_reads_the_address_the_title_and_the_heading(self):
+        words = 'John Baldessari: Sculptures'
+        self.assertTrue(descriptions.page_is_about(self.listing('x', 'x', 'y'), 'https://a.example/shows/john-baldessari-sculptures', words))
+        self.assertTrue(descriptions.page_is_about(self.listing('Baldessari | A Gallery', 'x', 'y'), 'https://a.example/x', words))
+        self.assertTrue(descriptions.page_is_about(self.listing('x', 'John Baldessari', 'y'), 'https://a.example/x', words))
+        self.assertTrue(descriptions.page_is_about(self.listing('Spotlights', 'x', 'y'), 'https://a.example/x', 'Spotlight'))      # plural
+        self.assertFalse(descriptions.page_is_about(self.listing('Exhibitions', 'Exhibitions', 'y'), 'https://a.example/exhibitions/', words))
+
+    def test_a_text_that_names_the_show_is_still_preferred_to_an_earlier_one_that_does_not(self):
+        # Hammer: the share tag (no title word) comes before the paragraph (which names the artist and the show); the strict
+        # pass runs first over every candidate, so the better text still wins
+        og = 'The first institutional retrospective of the Los Angeles artist, who frequently depicts family, lovers, and friends in the queer Chicanx community.'
+        para = 'Joey Terrill: Homeboy Beautiful is the first institutional retrospective of the Los Angeles artist, documenting fifty years of paintings.'
+        s = page(head=f'<title>Joey Terrill: Homeboy Beautiful</title><meta property="og:description" content="{og}">',
+                 body=f'<main><h1>Joey Terrill: Homeboy Beautiful</h1><p>{para}</p></main>')
+        text, source = descriptions.find_event_description('https://hammer.ucla.edu/exhibitions/joey-terrill', 'Joey Terrill: Homeboy Beautiful',
+                                                           fetch=lambda url: s, venue='Hammer Museum')
+        self.assertEqual(source, 'paragraph')
+        self.assertTrue(text.startswith('Joey Terrill: Homeboy Beautiful is the first'))
+
+    def test_a_carousel_widget_text_is_boilerplate(self):
+        self.assertFalse(descriptions.usable('This is a carousel. This section contains multiple slides with the exhibition Pictures of Belonging.',
+                                             'Pictures of Belonging', venue='Japanese American National Museum'))
+
+
 class FeedDescriptionTest(unittest.TestCase):
     """Text a venue's own feed or API supplies (CAAM's markdown, Daniel Faria's HTML): WEBSITE-119."""
     FIRST = ('*How to Fly* is a site-specific photomural by visual artist Sadie Barnette installed in CAAM\u2019s atrium. Born and '
@@ -470,8 +550,8 @@ class ProxiedPagesTest(unittest.TestCase):
     def test_the_ordinary_finder_never_sees_a_proxied_event(self):
         self.write([event(NAME, self.DEAR + 'a')])
         report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=0,
-                                                          finder=lambda url, name: self.fail('the ordinary finder was used'),
-                                                          proxy_finder=lambda url, name: self.fail('proxy pages are switched off'))
+                                                          finder=lambda url, name, **kw: self.fail('the ordinary finder was used'),
+                                                          proxy_finder=lambda url, name, **kw: self.fail('proxy pages are switched off'))
         self.assertEqual((report['proxied'], report['credits']), (0, 0))
         self.assertNotIn('description_proxy_checked', self.read()[NAME + '-Gallery'])
 
@@ -481,11 +561,11 @@ class ProxiedPagesTest(unittest.TestCase):
         self.write(events)
         order = []
 
-        def proxy_finder(url, name):
+        def proxy_finder(url, name, **kw):
             order.append(url)
             return (f'{name} is a show of paintings and drawings made over many years by one artist, shown in the main gallery.', 'og')
 
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=3, finder=lambda u, n: self.fail('x'),
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=3, finder=lambda u, n, **kw: self.fail('x'),
                                                           proxy_finder=proxy_finder)
         self.assertEqual(order, [self.CHEAP + '3', self.CHEAP + '4', self.DEAR + '0'])                    # cheap first, then dear, by name
         self.assertEqual((report['proxied'], report['credits']), (3, 10 + 10 + 25))
@@ -496,17 +576,17 @@ class ProxiedPagesTest(unittest.TestCase):
 
     def test_nothing_found_is_remembered_so_it_is_not_paid_for_again_for_a_while(self):
         self.write([event(NAME, self.DEAR + 'a')])
-        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: None)
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name, **kw: None)
         self.assertEqual(self.read()[NAME + '-Gallery']['description_proxy_checked'], '2026-11-13')
         calls = []
-        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: calls.append(url))
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name, **kw: calls.append(url))
         self.assertEqual(calls, [])
 
     def test_when_the_account_runs_out_of_credits_it_stops_and_asks_again_next_run(self):
         self.write([event('Show A', self.DEAR + 'a'), event('Show B', self.DEAR + 'b')])
         calls = []
 
-        def proxy_finder(url, name):
+        def proxy_finder(url, name, **kw):
             calls.append(url)
             utils.PROXY_EXHAUSTED = True                     # what utils.fetch_and_parse does on the first 402
             return None
@@ -522,7 +602,7 @@ class ProxiedPagesTest(unittest.TestCase):
         self.write([event(f'Show {i}', self.CHEAP + str(i)) for i in range(4)])
         asked = []
 
-        def proxy_finder(url, name):
+        def proxy_finder(url, name, **kw):
             asked.append(url)
             return descriptions.FETCH_FAILED
 
@@ -534,7 +614,7 @@ class ProxiedPagesTest(unittest.TestCase):
     def test_one_failure_among_successes_does_not_stop_the_pass(self):
         self.write([event(f'Show {i}', self.CHEAP + str(i)) for i in range(3)])
         answers = iter([descriptions.FETCH_FAILED, None, None])
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=4, proxy_finder=lambda u, n: next(answers))
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=4, proxy_finder=lambda u, n, **kw: next(answers))
         self.assertEqual((report['proxied'], report['failed']), (3, 1))
         stamped = sorted(n for n, e in self.read().items() if e.get('description_proxy_checked'))
         self.assertEqual(stamped, ['Show 1-Gallery', 'Show 2-Gallery'])         # the failed one (Show 0) is not stamped
@@ -552,7 +632,7 @@ class ProxiedPagesTest(unittest.TestCase):
         # before WEBSITE-118 the pass stamped proxied events "checked" without fetching anything
         self.write([event(NAME, self.DEAR + 'a', description_checked='2026-11-13')])
         asked = []
-        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: asked.append(url))
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name, **kw: asked.append(url))
         self.assertEqual(asked, [self.DEAR + 'a'])
         # ...while the same stamp on an ordinary page still counts
         self.assertFalse(descriptions.needs_description(event(NAME, 'https://g.example/a', description_checked='2026-11-13'), TODAY))
@@ -562,19 +642,19 @@ class ProxiedPagesTest(unittest.TestCase):
     def test_a_host_with_no_text_in_its_pages_is_never_paid_for(self):
         with unittest.mock.patch.dict(utils.PROXY_DOMAINS, {'galeriesimonblais.com': {'premium_proxy': 'true'}}):
             self.write([event(NAME, 'https://galeriesimonblais.com/en/expos/x')])
-            report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda u, n: self.fail('paid for it'))
+            report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda u, n, **kw: self.fail('paid for it'))
         self.assertEqual((report['proxied'], report['credits']), (0, 0))
 
     def test_proxied_events_on_a_listing_that_several_shows_share_are_not_looked_up(self):
         self.write([event('Show A', self.DEAR + 'list'), event('Show B', self.DEAR + 'list')])
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda u, n: self.fail('x'),
-                                                          card_finder=lambda page, titles: ({}, 0))
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda u, n, **kw: self.fail('x'),
+                                                          card_finder=lambda page, titles, **kw: ({}, 0))
         self.assertEqual(report['proxied'], 0)
 
     def test_what_a_proxied_page_gives_goes_through_the_same_checks_as_any_other(self):
         same = 'The Gallery presents contemporary art and this show is part of the program for the whole year ahead of us.'
         self.write([event('Show A', self.DEAR + 'a'), event('Show B', self.DEAR + 'b')])
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: (same, 'og'))
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name, **kw: (same, 'og'))
         self.assertEqual(len(report['dropped']), 2)                            # one tagline for two shows is dropped
         self.assertEqual([e['description'] for e in self.read().values()], ['', ''])
 
@@ -668,7 +748,7 @@ class EnrichTest(unittest.TestCase):
     def test_adds_a_description_marks_its_source_and_adds_subject_tags(self):
         self.write([event(NAME, 'https://g.example/a')])
         text = 'Josiah McElheny works in glass and photography, and this survey of his photography runs all year, in the main hall.'
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: (text, 'meta'))
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name, **kw: (text, 'meta'))
         stored = self.read()[NAME + '-Gallery']
         self.assertEqual(stored['description'], text)
         self.assertEqual(stored['description_source'], 'page')
@@ -678,13 +758,13 @@ class EnrichTest(unittest.TestCase):
 
     def test_nothing_found_records_the_check_and_no_description(self):
         self.write([event(NAME, 'https://g.example/a')])
-        descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: None)
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name, **kw: None)
         stored = self.read()[NAME + '-Gallery']
         self.assertEqual(stored['description'], '')
         self.assertEqual(stored['description_checked'], '2026-11-13')
         # looked at today, so the next run leaves it alone
         calls = []
-        descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: calls.append(url))
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name, **kw: calls.append(url))
         self.assertEqual(calls, [])
 
     def test_the_same_text_for_several_shows_is_a_tagline_and_is_dropped(self):
@@ -693,7 +773,7 @@ class EnrichTest(unittest.TestCase):
                     event('Show C', 'https://g.example/c')])
         texts = {'https://g.example/a': same, 'https://g.example/b': same.upper(),
                  'https://g.example/c': 'Show C is a new group exhibition of sculpture by five artists from the city.'}
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: (texts[url], 'og'))
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name, **kw: (texts[url], 'og'))
         stored = self.read()
         self.assertEqual(stored['Show A-Gallery']['description'], '')
         self.assertEqual(stored['Show B-Gallery']['description'], '')
@@ -703,7 +783,7 @@ class EnrichTest(unittest.TestCase):
     def test_a_text_already_used_by_another_show_at_the_venue_is_dropped(self):
         used = 'A long standing description that the venue already gives to one of the shows on its program.'
         self.write([event('Old', 'https://g.example/o', description=used), event('New', 'https://g.example/n')])
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: (used, 'meta'))
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name, **kw: (used, 'meta'))
         self.assertEqual(self.read()['New-Gallery']['description'], '')
         self.assertEqual(len(report['dropped']), 1)
 
@@ -712,13 +792,13 @@ class EnrichTest(unittest.TestCase):
         self.write([event('Show A', 'https://g.example/list'), event('Show B', 'https://g.example/list'), past])
         seen = []
 
-        def card_finder(page, titles):
+        def card_finder(page, titles, **kw):
             seen.append((page, sorted(titles)))
             return {'Show A': (BLURB.replace('Josiah', 'Show A'), 'meta')}, 3
 
         calls = []
         report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, card_finder=card_finder,
-                                                          finder=lambda url, name: calls.append(url))
+                                                          finder=lambda url, name, **kw: calls.append(url))
         self.assertEqual(seen, [('https://g.example/list', ['Old Show', 'Show A', 'Show B'])])   # every show on the page, past too
         self.assertEqual(calls, [])                                                              # not looked up one by one
         stored = self.read()
@@ -735,14 +815,14 @@ class EnrichTest(unittest.TestCase):
     def test_a_shared_listing_with_nothing_to_look_up_is_not_opened(self):
         self.write([event('Show A', 'https://g.example/list', description='Has one already.'),
                     event('Show B', 'https://g.example/list', description='So has this one.')])
-        descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: self.fail('opened a page'),
-                                                 card_finder=lambda page, titles: self.fail('opened a listing'))
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name, **kw: self.fail('opened a page'),
+                                                 card_finder=lambda page, titles, **kw: self.fail('opened a listing'))
 
     def test_the_same_text_found_for_two_shows_of_a_listing_is_dropped(self):
         same = 'This gallery presents contemporary art and this Show is part of the program for the year.'
         self.write([event('Show A', 'https://g.example/list'), event('Show B', 'https://g.example/list')])
         report = descriptions.enrich_missing_descriptions(
-            ['la'], today=TODAY, card_finder=lambda page, titles: ({'Show A': (same, 'og'), 'Show B': (same, 'og')}, 3))
+            ['la'], today=TODAY, card_finder=lambda page, titles, **kw: ({'Show A': (same, 'og'), 'Show B': (same, 'og')}, 3))
         self.assertEqual([e['description'] for e in self.read().values()], ['', ''])
         self.assertEqual(len(report['dropped']), 2)
 
@@ -750,14 +830,14 @@ class EnrichTest(unittest.TestCase):
         self.write([event(f'Show {i}', f'https://g.example/{i}') for i in range(5)])
         calls = []
         descriptions.enrich_missing_descriptions(['la'], today=TODAY, max_pages=2,
-                                                 finder=lambda url, name: calls.append(url))
+                                                 finder=lambda url, name, **kw: calls.append(url))
         self.assertEqual(len(calls), 2)
 
     def test_dry_run_writes_nothing(self):
         self.write([event(NAME, 'https://g.example/a')])
         before = open(self.path, encoding='utf-8').read()
         descriptions.enrich_missing_descriptions(['la'], today=TODAY, save=False,
-                                                 finder=lambda url, name: (BLURB, 'meta'))
+                                                 finder=lambda url, name, **kw: (BLURB, 'meta'))
         with open(self.path, encoding="utf-8") as f:
             self.assertEqual(f.read(), before)
 

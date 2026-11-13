@@ -387,7 +387,12 @@ runs after the scrapers, the way `images.py` does for pictures:
 2. **A wrong blurb is worse than none**, so a candidate must be long enough, not boilerplate (cookie notices, a menu
    bar, "Visit our website to learn more"), not start with dates, a reception, an invitation ("Join us...") or a credit
    line, not be a program announcement ("IN PERSON RSVP...", "In conversation...") or a gallery describing itself, not be
-   a run of names or a caption, and use a significant word of the show's title (a site-wide tagline doesn't). Ticketing
+   a run of names or a caption, and use a significant word of the show's title (a site-wide tagline doesn't). **If no
+   candidate on the page names the show** (a blurb often shares no word with a title like "Spotlight"), a second pass
+   accepts a text of at least 150 characters that does **not open by naming the venue** (a tagline almost always does),
+   but only on a page that is itself about the show (a word of its title is in the page's address, `<title>` or first
+   heading), so that a listing of several shows can't lend its first paragraph to the wrong one. The strict pass always
+   runs first over every candidate, so this only fills what would otherwise be blank. Ticketing
    sentences ("Purchasing Museum admission grants...") are cut, a first sentence that opens several of a venue's
    descriptions is cut, and the same text for several shows is dropped. The text is plain and at most 500
    characters, cut at a sentence end.
