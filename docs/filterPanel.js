@@ -1,6 +1,6 @@
 // Filter Panel - the visible filter controls: a row of independent dropdowns
-// (When, Medium, Theme, Cost, ...), each opening a popover of checkboxes with
-// counts, plus a summary line with the result count, the active filters as
+// (When, Area (the Bay Area only), Medium, Theme, Cost, ...), each opening a popover of checkboxes with
+// counts (When also has the "Open on" dates), plus a summary line with the result count, the active filters as
 // removable pills, and "Clear all". All state lives in SearchManager; this only
 // draws it and forwards clicks.
 
@@ -12,6 +12,8 @@ class FilterPanel {
         this.dropdowns = new Map();    // dropdown id -> { toggle, badge, popover }
         this.tagBoxes = new Map();     // tag -> { input, label, count, group }
         this.phaseBoxes = new Map();   // phase -> { input, label, count }
+        this.timingBoxes = new Map();  // 'any' | quick pick -> { input, label, count }
+        this.areaBoxes = new Map();    // area id -> { input, label, count }
         this.openGroup = null;
 
         if (this.panelEl) this.buildBar();
@@ -38,7 +40,7 @@ class FilterPanel {
         const bar = document.createElement('div');
         bar.className = 'filter-bar';
 
-        // When: which phases to show. Always first, since it is the biggest cut of the list.
+        // When: which phases to show, and (below them) which days. Always first, since it is the biggest cut of the list.
         bar.append(this.buildDropdown('when', 'When', filterState.ALL_PHASES.map(phase => ({
             value: phase,
             label: filterState.PHASE_LABELS[phase],
@@ -46,7 +48,19 @@ class FilterPanel {
             color: this.tagColor(phase),
             onChange: () => this.searchManager.togglePhase(phase),
             register: (box) => this.phaseBoxes.set(phase, box),
-        }))));
+        })), () => this.buildTimingSection()));
+
+        // Area: the Bay Area only (AREAS in filterState.js), and only the areas that have shows
+        this.region = window.dataManager.getRegion();
+        const areas = (filterState.AREAS[this.region] || []).filter(area => rows.some(row => row.areas.includes(area.id)));
+        if (areas.length > 1) {
+            bar.append(this.buildDropdown('area', 'Area', areas.map(area => ({
+                value: area.id,
+                label: area.label,
+                onChange: () => this.searchManager.toggleArea(area.id),
+                register: (box) => this.areaBoxes.set(area.id, box),
+            }))));
+        }
 
         for (const group of filterState.TAG_GROUPS) {
             // Only offer tags this region actually has, and no dropdown at all if there are none
@@ -76,8 +90,9 @@ class FilterPanel {
         this.panelEl.replaceChildren(bar);
     }
 
-    // One dropdown: a button that opens a popover of checkbox options
-    buildDropdown(id, labelText, options) {
+    // One dropdown: a button that opens a popover of checkbox options. `extra` (optional) builds more
+    // for the popover to show under them.
+    buildDropdown(id, labelText, options, extra = null) {
         const wrap = document.createElement('div');
         wrap.className = 'filter-dropdown';
         wrap.dataset.group = id;
@@ -116,7 +131,8 @@ class FilterPanel {
 
             const dot = document.createElement('span');
             dot.className = 'filter-dot';
-            dot.style.backgroundColor = option.color;
+            if (option.color) dot.style.backgroundColor = option.color;
+            else dot.hidden = true;                  // an option with no colour (an area) has no dot
 
             const name = document.createElement('span');
             name.className = 'filter-name';
@@ -137,11 +153,89 @@ class FilterPanel {
             option.register({ input, label: optionLabel, count });
         }
         popover.append(list);
+        if (extra) popover.append(extra());
 
         toggle.addEventListener('click', () => this.toggleDropdown(id));
         wrap.append(toggle, popover);
         this.dropdowns.set(id, { toggle, badge, popover });
         return wrap;
+    }
+
+    // "Open on": any date, a quick pick (one choice at a time) or a range of two days. Choosing a date replaces
+    // the phases above it, which the note under the title says and updateBar() makes plain by greying them.
+    buildTimingSection() {
+        const section = document.createElement('div');
+        section.className = 'filter-section';
+
+        const title = document.createElement('div');
+        title.className = 'filter-section-title';
+        title.textContent = 'Open on';
+        this.timingNote = document.createElement('div');
+        this.timingNote.className = 'filter-section-note';
+        this.timingNote.textContent = 'A date replaces Current, Future and Past above.';
+        this.timingNote.hidden = true;
+
+        const list = document.createElement('div');
+        list.className = 'filter-options';
+        list.setAttribute('role', 'radiogroup');
+        list.setAttribute('aria-label', 'Open on');
+        const choices = [{ value: 'any', label: 'Any date' },
+            ...filterState.TIMING_PICKS.map(pick => ({ value: pick, label: filterState.TIMING_LABELS[pick], hint: filterState.TIMING_HINTS[pick] }))];
+        for (const choice of choices) {
+            const label = document.createElement('label');
+            label.className = 'filter-option';
+            const input = document.createElement('input');
+            input.type = 'radio';
+            input.name = 'filter-timing';
+            input.value = choice.value;
+            input.addEventListener('change', () => {
+                this.searchManager.setTiming(choice.value === 'any' ? null : { pick: choice.value });
+            });
+            const name = document.createElement('span');
+            name.className = 'filter-name';
+            name.textContent = choice.label;
+            if (choice.hint) {
+                const hint = document.createElement('span');
+                hint.className = 'filter-hint';
+                hint.textContent = choice.hint;
+                name.append(hint);
+            }
+            const count = document.createElement('span');
+            count.className = 'filter-n';
+            label.append(input, name, count);
+            list.append(label);
+            this.timingBoxes.set(choice.value, { input, label, count });
+        }
+
+        // Or two days of your own. One day is enough; a "to" before the "from" is swapped.
+        const dates = document.createElement('div');
+        dates.className = 'filter-dates';
+        const field = (text, onChange) => {
+            const wrap = document.createElement('label');
+            wrap.className = 'filter-date';
+            const span = document.createElement('span');
+            span.textContent = text;
+            const input = document.createElement('input');
+            input.type = 'date';
+            input.addEventListener('change', onChange);
+            wrap.append(span, input);
+            return { wrap, input };
+        };
+        const apply = () => {
+            if (!this.fromInput.value) {
+                if (this.searchManager.getState().timing?.from) this.searchManager.setTiming(null);
+                return;
+            }
+            this.searchManager.setTiming({ from: this.fromInput.value, to: this.toInput.value || this.fromInput.value });
+        };
+        const from = field('From', apply);
+        const to = field('To', apply);
+        this.fromInput = from.input;
+        this.toInput = to.input;
+        dates.append(from.wrap, to.wrap);
+
+        section.append(title, this.timingNote, list, dates);
+        return section;
     }
 
     // Only one popover is open at a time
@@ -187,16 +281,42 @@ class FilterPanel {
     updateBar(state) {
         const rows = this.searchManager.rows;
 
-        // When: the last ticked phase can't be unticked (there'd be nothing to show)
+        // When: the last ticked phase can't be unticked (there'd be nothing to show), and while a date is
+        // chosen the phases are not used at all, so they are greyed out
+        const dated = !!(state.timing && filterState.timingWindow(state.timing, state.today));
         const phaseCounts = filterState.countPhases(rows, state);
         for (const [phase, box] of this.phaseBoxes) {
             const selected = state.phases.includes(phase);
             box.input.checked = selected;
             box.count.textContent = phaseCounts[phase];
-            this.setAvailability(box, selected, phaseCounts[phase], selected && state.phases.length === 1);
+            this.setAvailability(box, selected, phaseCounts[phase], dated || (selected && state.phases.length === 1));
+            box.label.classList.toggle('is-overridden', dated);
         }
         const phasesChanged = state.phases.join() !== filterState.DEFAULT_PHASES.join();
-        this.setBadge('when', state.phases.length, phasesChanged);
+        this.setBadge('when', dated ? 1 : state.phases.length, dated || phasesChanged);
+
+        // When, "Open on": one choice (or none, for a range) is ticked, with what each would show
+        const timingCounts = filterState.countTimings(rows, state);
+        for (const [value, box] of this.timingBoxes) {
+            const selected = value === 'any' ? !state.timing : !!(state.timing && state.timing.pick === value);
+            box.input.checked = selected;
+            box.count.textContent = timingCounts[value];
+            this.setAvailability(box, selected, timingCounts[value]);
+        }
+        const range = state.timing && state.timing.from ? state.timing : null;
+        this.fromInput.value = range ? range.from : '';
+        this.toInput.value = range ? (range.to || range.from) : '';
+        this.timingNote.hidden = !dated;
+
+        // Area: which areas are ticked, and what each would show
+        const areaCounts = filterState.countAreas(rows, state, this.region);
+        for (const [id, box] of this.areaBoxes) {
+            const selected = state.areas.includes(id);
+            box.input.checked = selected;
+            box.count.textContent = areaCounts[id];
+            this.setAvailability(box, selected, areaCounts[id]);
+        }
+        if (this.areaBoxes.size) this.setBadge('area', state.areas.length, state.areas.length > 0);
 
         const tagCounts = filterState.countTags(rows, state);
         const selectedPerGroup = {};
@@ -208,7 +328,7 @@ class FilterPanel {
             this.setAvailability(box, selected, tagCounts[tag]);
         }
         for (const id of this.dropdowns.keys()) {
-            if (id === 'when') continue;
+            if (id === 'when' || id === 'area') continue;
             const n = selectedPerGroup[id] || 0;
             this.setBadge(id, n, n > 0);
         }
@@ -265,7 +385,7 @@ class FilterPanel {
             this.emptyClear.hidden = true;
         } else {
             this.emptyTitle.textContent = 'Nothing matches that';
-            this.emptyText.textContent = state.phases.includes('past')
+            this.emptyText.textContent = state.timing || state.phases.includes('past')
                 ? 'Try a different search, or take off a filter.'
                 : 'Try a different search, or take off a filter. Past events are hidden unless you include them in the When filter.';
             this.emptyClear.hidden = false;
@@ -280,7 +400,10 @@ class FilterPanel {
         const count = document.createElement('span');
         count.className = 'filter-result-count';
         count.setAttribute('role', 'status');
-        count.textContent = `Showing ${visible.toLocaleString()} of ${total.toLocaleString()} events (${filterState.describePhases(state.phases)})`;
+        // A chosen date replaces the phases, so it is what the count line names
+        const dated = !!(state.timing && filterState.timingWindow(state.timing, state.today));
+        const scope = dated ? filterState.describeTiming(state.timing) : filterState.describePhases(state.phases);
+        count.textContent = `Showing ${visible.toLocaleString()} of ${total.toLocaleString()} events (${scope})`;
 
         this.updateEmptyState(state, visible);
 
@@ -302,6 +425,14 @@ class FilterPanel {
 
         if (state.q) {
             items.push(pill(`“${state.q}”`, () => this.searchManager.setSearchTerm(''), `search "${state.q}"`));
+        }
+        if (dated) {
+            const text = filterState.describeTiming(state.timing);
+            items.push(pill(text, () => this.searchManager.setTiming(null), text));
+        }
+        for (const id of state.areas) {
+            const area = (filterState.AREAS[this.region] || []).find(a => a.id === id);
+            if (area) items.push(pill(area.label, () => this.searchManager.toggleArea(id), area.label));
         }
         for (const tag of state.tags) {
             items.push(pill(this.tagLabel(tag), () => this.searchManager.toggleTagFilter(tag), this.tagLabel(tag)));

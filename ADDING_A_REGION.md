@@ -21,6 +21,11 @@ automatically):
    missing, section 1c-ii). `tests/test_venue_coordinates.py` fails until every
    address has coordinates, so you will find out if you forget.
 
+**A Bay Area venue in a town the site hasn't seen** also needs the town added to `AREAS.sf` in
+`docs/filterState.js`, under San Francisco, East Bay, Peninsula, South Bay or North Bay: the Area
+filter finds a venue's area from the city in its address, and `node --test tests/` fails until
+every address in `sf_venues.json` is in one.
+
 Then write the real data with `python main.py --venues "<Venue Name>" --no-summary`,
 and check it in CI once (section 2a). If the site blocks GitHub's servers, also
 see section 2f. Everything below this point is for a whole new city.

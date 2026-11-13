@@ -27,7 +27,7 @@ test('an ongoing show is its own bucket, but only when it is a current one', () 
 });
 
 test('URL state round-trips', () => {
-    const s = { q: 'Asian Art Museum', phases: ['current', 'past'], tags: ['photography', 'latinx', 'museum'], view: 'list' };
+    const s = state({ q: 'Asian Art Museum', phases: ['current', 'past'], tags: ['photography', 'latinx', 'museum'] });
     const query = fs_.toQuery(s);
     assert.strictEqual(query, '?q=Asian+Art+Museum&phase=current,past&tags=photography,latinx,museum');
     assert.deepStrictEqual(fs_.parseUrl(query), s);
@@ -41,7 +41,7 @@ test('a single phase and all phases both round-trip', () => {
 });
 
 test('a search keeps its explicit phases through the URL, even the default ones', () => {
-    const s = { q: 'Wattis', phases: ['current', 'ongoing', 'future'], tags: [], view: 'list' };
+    const s = state({ q: 'Wattis', phases: ['current', 'ongoing', 'future'], tags: [] });
     assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(s)), s);
 });
 
@@ -54,7 +54,7 @@ test('the list is the default view and only the map is written to the URL', () =
 });
 
 test('?view=map keeps every other parameter, in both directions', () => {
-    const s = { q: 'Wattis', phases: ['past'], tags: ['photography'], view: 'map' };
+    const s = state({ q: 'Wattis', phases: ['past'], tags: ['photography'], view: 'map' });
     const query = fs_.toQuery(s);
     assert.strictEqual(query, '?q=Wattis&phase=past&tags=photography&view=map');
     assert.deepStrictEqual(fs_.parseUrl(query), s);
@@ -196,8 +196,186 @@ test('phase counts show what ticking each When option would add, given the other
 test('every panel tag is documented on tags.html', () => {
     const html = fs.readFileSync(path.join(__dirname, '..', 'docs', 'tags.html'), 'utf8');
     const listed = new Set([...html.matchAll(/list-group-item">([a-z-]+)</g)].map(m => m[1]));
-    // immigrant, refugee and south-asian are real tags in the data that predate tags.html's current sections
-    const undocumentedByDesign = new Set(['immigrant', 'refugee', 'south-asian']);
-    const missing = fs_.TAG_GROUPS.flatMap(g => g.tags).filter(t => !listed.has(t) && !undocumentedByDesign.has(t));
+    const missing = fs_.TAG_GROUPS.flatMap(g => g.tags).filter(t => !listed.has(t));
     assert.deepStrictEqual(missing, []);
+});
+
+
+// --- dates and areas (WEBSITE-94) ------------------------------------------------------------------
+
+const venueAddresses = require('../docs/venueAddresses.js');
+const TODAY = '2026-11-13';                                      // a Friday
+const drow = (bucket, start, end, extra = {}) => ({ bucket, tags: [], text: 'show @ venue', start, end, areas: [], ...extra });
+const when = (timing, overrides = {}) => state({ timing, today: TODAY, ...overrides });
+const shows = (rows, st) => rows.filter(r => fs_.rowMatches(r, st));
+
+test('quick picks work out their days from today, and a weekend picked on a weekend is what is left of it', () => {
+    const win = (pick, today = TODAY) => fs_.timingWindow({ pick }, today);
+    assert.deepStrictEqual(win('today'), { kind: 'open', from: '2026-11-13', to: '2026-11-13' });
+    assert.deepStrictEqual(win('week'), { kind: 'open', from: '2026-11-13', to: '2026-11-19' });
+    assert.deepStrictEqual(win('weekend'), { kind: 'open', from: '2026-11-14', to: '2026-11-15' });     // Friday: Sat+Sun
+    assert.deepStrictEqual(win('weekend', '2026-11-14'), { kind: 'open', from: '2026-11-14', to: '2026-11-15' });   // Saturday
+    assert.deepStrictEqual(win('weekend', '2026-11-15'), { kind: 'open', from: '2026-11-15', to: '2026-11-15' });   // Sunday: just today
+    assert.deepStrictEqual(win('weekend', '2026-11-16'), { kind: 'open', from: '2026-11-21', to: '2026-11-22' });   // Monday: next
+    assert.deepStrictEqual(win('closing'), { kind: 'closing', from: '2026-11-13', to: '2026-11-27' });
+    assert.deepStrictEqual(win('opening'), { kind: 'opening', from: '2026-11-14', to: '2026-11-27' });
+    assert.strictEqual(win('bogus'), null);
+    assert.strictEqual(fs_.timingWindow({ pick: 'today' }, null), null);                  // no today: no window
+    assert.strictEqual(fs_.timingWindow(null, TODAY), null);
+    assert.deepStrictEqual(fs_.timingWindow({ from: '2026-12-15', to: '2026-12-20' }, null), { kind: 'open', from: '2026-12-15', to: '2026-12-20' });
+    assert.strictEqual(fs_.addDays('2026-12-31', 1), '2027-01-01');
+});
+
+test('a show is open on a day if its run covers it; one with no end is open from its start; undated ones are open', () => {
+    const rows = {
+        runs: drow('current', '2026-10-01', '2026-12-31'),
+        ended: drow('past', '2026-01-01', '2026-11-01'),
+        notYet: drow('future', '2026-12-01', '2027-01-31'),
+        openEnded: drow('ongoing', '2025-05-01', null),
+        pastNoEnd: drow('past', '2025-05-01', null),
+        endOnly: drow('current', null, '2026-11-20'),
+        undated: drow('current', null, null),
+        pastUndated: drow('past', null, null),
+        startsToday: drow('current', '2026-11-13', '2026-11-30'),
+    };
+    const open = (day, extra) => Object.entries(rows).filter(([, r]) => fs_.rowMatches(r, when({ from: day, to: day }, extra))).map(([k]) => k);
+    assert.deepStrictEqual(open('2026-11-13'), ['runs', 'openEnded', 'endOnly', 'undated', 'startsToday']);
+    assert.deepStrictEqual(open('2026-12-15'), ['runs', 'notYet', 'openEnded', 'undated']);
+    // a day in the past: what was open then, whatever it is now (a chosen date replaces the When phases)
+    assert.deepStrictEqual(open('2026-06-01'), ['ended', 'openEnded', 'endOnly']);   // 'runs' had not opened; an end-only show is open until its end
+    assert.deepStrictEqual(shows(Object.values(rows), when({ from: '2026-12-31', to: '2027-01-02' })).length, 4);
+});
+
+test('closing soon is a current show whose end falls in the next 14 days; opening soon, an upcoming one that starts then', () => {
+    const rows = [
+        drow('current', '2026-10-01', '2026-11-13'),     // 0 ends today
+        drow('current', '2026-10-01', '2026-11-27'),     // 1 ends in 14 days
+        drow('current', '2026-10-01', '2026-11-28'),     // 2 ends in 15 days
+        drow('current', '2026-10-01', '2026-11-12'),     // 3 ended yesterday
+        drow('ongoing', '2025-01-01', null),             // 4 no end
+        drow('future', '2026-11-14', '2026-12-30'),      // 5 starts tomorrow
+        drow('future', '2026-11-27', null),              // 6 starts in 14 days
+        drow('future', '2026-11-28', null),              // 7 starts in 15 days
+        drow('future', null, null),                      // 8 no date
+    ];
+    const idx = timing => rows.map((r, i) => fs_.rowMatches(r, when({ pick: timing })) ? i : -1).filter(i => i >= 0);
+    assert.deepStrictEqual(idx('closing'), [0, 1]);
+    assert.deepStrictEqual(idx('opening'), [5, 6]);
+});
+
+test('this weekend and the next 7 days', () => {
+    const rows = [drow('current', '2026-10-01', '2026-11-14'), drow('current', '2026-10-01', '2026-11-13'), drow('future', '2026-11-15', '2026-12-01'),
+                  drow('future', '2026-11-16', '2026-12-01'), drow('future', '2026-11-19', '2026-12-01'), drow('future', '2026-11-20', '2026-12-01')];
+    const idx = pick => rows.map((r, i) => fs_.rowMatches(r, when({ pick })) ? i : -1).filter(i => i >= 0);
+    assert.deepStrictEqual(idx('weekend'), [0, 2]);              // ends Saturday; opens Sunday
+    assert.deepStrictEqual(idx('week'), [0, 1, 2, 3, 4]);        // up to Thursday the 19th
+});
+
+test('a chosen date replaces the When phases, and a timing needs a today to mean anything', () => {
+    const past = drow('past', '2026-01-01', '2026-11-20');                  // a bucket that is not past by the dates
+    const pastState = when({ from: '2026-11-15', to: '2026-11-15' }, { phases: ['current'] });
+    assert.strictEqual(fs_.rowMatches(past, pastState), true);                 // phases are not applied
+    assert.strictEqual(fs_.rowMatches(past, { ...pastState, timing: null }), false);
+    assert.strictEqual(fs_.rowMatches(past, state({ timing: { pick: 'today' }, today: null, phases: ['current'] })), false);   // no window: phases apply
+});
+
+test('timings and areas round-trip through the URL; bad values are ignored', () => {
+    for (const timing of [{ pick: 'weekend' }, { pick: 'closing' }, { from: '2026-12-15', to: '2026-12-20' }, { from: '2026-12-15', to: '2026-12-15' }]) {
+        const s = state({ timing, areas: ['east-bay', 'north-bay'] });
+        assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(s)), s, JSON.stringify(timing));
+    }
+    assert.strictEqual(fs_.toQuery(state({ timing: { pick: 'weekend' } })), '?when=weekend');
+    assert.strictEqual(fs_.toQuery(state({ timing: { from: '2026-12-15', to: '2026-12-20' } })), '?from=2026-12-15&to=2026-12-20');
+    assert.strictEqual(fs_.toQuery(state({ timing: { from: '2026-12-15', to: '2026-12-15' } })), '?from=2026-12-15');   // one day: no "to"
+    assert.strictEqual(fs_.toQuery(state({ areas: ['east-bay'] })), '?area=east-bay');
+    assert.deepStrictEqual(fs_.parseUrl('?from=2026-12-15').timing, { from: '2026-12-15', to: '2026-12-15' });
+    assert.deepStrictEqual(fs_.parseUrl('?from=2026-12-20&to=2026-12-15').timing, { from: '2026-12-15', to: '2026-12-20' });     // swapped
+    assert.deepStrictEqual(fs_.parseUrl('?from=2026-12-15&to=nonsense').timing, { from: '2026-12-15', to: '2026-12-15' });
+    assert.deepStrictEqual(fs_.parseUrl('?when=weekend&from=2026-12-15').timing, { pick: 'weekend' });                             // a pick wins
+    for (const bad of ['?when=bogus', '?from=2026-02-30', '?from=tomorrow', '?to=2026-12-15', '?from=2026-1-5', '?when=']) {
+        assert.strictEqual(fs_.parseUrl(bad).timing, null, bad);
+    }
+    assert.deepStrictEqual(fs_.parseUrl('?area=east-bay,bogus,east-bay,north-bay').areas, ['east-bay', 'north-bay']);
+    assert.deepStrictEqual(fs_.parseUrl('').areas, []);
+    assert.strictEqual(fs_.parseUrl('?when=today', TODAY).today, TODAY);
+});
+
+test('a date or an area is a filter: the view is no longer the default, and the map keeps both', () => {
+    assert.strictEqual(fs_.isDefault(state()), true);
+    assert.strictEqual(fs_.isDefault(state({ timing: { pick: 'today' } })), false);
+    assert.strictEqual(fs_.isDefault(state({ areas: ['east-bay'] })), false);
+    assert.strictEqual(fs_.toQuery(state({ timing: { pick: 'week' }, areas: ['east-bay'], view: 'map' })), '?when=week&area=east-bay&view=map');
+    assert.deepStrictEqual(fs_.defaultState('2026-11-13').today, '2026-11-13');
+});
+
+test('a chosen date is described for the pill and the count', () => {
+    assert.strictEqual(fs_.describeTiming({ pick: 'weekend' }), 'open this weekend');
+    assert.strictEqual(fs_.describeTiming({ pick: 'closing' }), 'closing soon');
+    assert.strictEqual(fs_.describeTiming({ from: '2026-12-15', to: '2026-12-15' }), 'open Dec 15, 2026');
+    assert.strictEqual(fs_.describeTiming({ from: '2026-12-15', to: '2026-12-20' }), 'open Dec 15 – Dec 20, 2026');
+    assert.strictEqual(fs_.describeTiming({ from: '2026-12-28', to: '2027-01-03' }), 'open Dec 28, 2026 – Jan 3, 2027');
+    assert.strictEqual(fs_.describeTiming(null), '');
+});
+
+test('areas come from the city in an address', () => {
+    assert.strictEqual(fs_.cityOf('151 3rd St, San Francisco, CA 94103'), 'San Francisco');
+    assert.strictEqual(fs_.cityOf('Building A, Fort Mason Center, San Francisco, CA 94123'), 'San Francisco');
+    assert.strictEqual(fs_.cityOf('1 Somewhere, CA'), null);
+    assert.strictEqual(fs_.cityOf(null), null);
+    const areas = a => fs_.areasOfAddresses('sf', a);
+    assert.deepStrictEqual(areas(['151 3rd St, San Francisco, CA 94103']), ['san-francisco']);
+    assert.deepStrictEqual(areas(['2625 Durant Ave, Berkeley, CA 94720']), ['east-bay']);
+    assert.deepStrictEqual(areas(['1 A St, oakland, CA', '2 B St, San Rafael, CA']), ['east-bay', 'north-bay']);   // two addresses, two areas
+    // the Peninsula and the South Bay are different areas: Stanford and Palo Alto are the Peninsula
+    assert.deepStrictEqual(areas(['328 Lomita Dr, Stanford, CA 94305']), ['peninsula']);
+    assert.deepStrictEqual(areas(['1313 Newell Rd, Palo Alto, CA 94303']), ['peninsula']);
+    assert.deepStrictEqual(areas(['1 Sanchez St, Pacifica, CA 94044']), ['peninsula']);
+    assert.deepStrictEqual(areas(['110 S Market St, San Jose, CA 95113']), ['south-bay']);
+    assert.deepStrictEqual(areas(['1 A St, Mountain View, CA']), ['south-bay']);
+    assert.deepStrictEqual(areas(['1 A St, Stanford, CA', '2 B St, San Jose, CA']), ['peninsula', 'south-bay']);
+    assert.deepStrictEqual(areas(['1 A St, Nowheresville, CA']), []);
+    assert.deepStrictEqual(fs_.areasOfAddresses('la', ['1 A St, Los Angeles, CA']), []);                            // only the Bay Area has areas
+});
+
+test('only the areas of the region count, so a Bay Area link opened elsewhere cannot hide everything', () => {
+    assert.deepStrictEqual(fs_.areasOfRegion('sf', ['east-bay', 'bogus', 'north-bay']), ['east-bay', 'north-bay']);
+    assert.deepStrictEqual(fs_.areasOfRegion('tor', ['east-bay']), []);
+    assert.deepStrictEqual(fs_.areasOfRegion('ist', undefined), []);
+});
+
+test('an area filter shows a row in any chosen area, and counts what each area would show', () => {
+    const rows = [drow('current', null, null, { areas: ['san-francisco'] }), drow('current', null, null, { areas: ['east-bay'] }),
+                  drow('current', null, null, { areas: ['east-bay', 'north-bay'] }), drow('past', null, null, { areas: ['east-bay'] }), drow('current', null, null)];
+    assert.strictEqual(shows(rows, state({ areas: [] })).length, 4);
+    assert.strictEqual(shows(rows, state({ areas: ['east-bay'] })).length, 2);
+    assert.strictEqual(shows(rows, state({ areas: ['east-bay', 'san-francisco'] })).length, 3);
+    assert.strictEqual(shows(rows, state({ areas: ['north-bay'] })).length, 1);
+    assert.deepStrictEqual(fs_.countAreas(rows, state({ areas: ['east-bay'] }), 'sf'),
+        { 'san-francisco': 1, 'east-bay': 2, peninsula: 0, 'south-bay': 0, 'north-bay': 1 });
+    assert.deepStrictEqual(fs_.countAreas(rows, state(), 'la'), {});
+});
+
+test('counts for each Dates option follow the other filters', () => {
+    const rows = [drow('current', '2026-10-01', '2026-11-20', { tags: ['free'] }), drow('current', '2026-10-01', '2026-12-31'), drow('future', '2026-11-20', '2026-12-31', { tags: ['free'] })];
+    const base = state({ today: TODAY });
+    assert.deepStrictEqual(fs_.countTimings(rows, base), { any: 3, today: 2, weekend: 2, week: 2, closing: 1, opening: 1 });
+    assert.deepStrictEqual(fs_.countTimings(rows, { ...base, tags: ['free'] }), { any: 2, today: 1, weekend: 1, week: 1, closing: 1, opening: 1 });
+});
+
+test('every real Bay Area venue address is in an area, so a venue in a new town fails here until the town is added', () => {
+    const venues = JSON.parse(fs.readFileSync(path.join(__dirname, '../docs/data/sf_venues.json'), 'utf8'));
+    const unplaced = [];
+    for (const [name, value] of Object.entries(venues)) {
+        const addresses = venueAddresses.normalize(value).map(entry => entry.address);
+        if (fs_.areasOfAddresses('sf', addresses).length === 0) unplaced.push(`${name}: ${addresses.join(' | ')}`);
+    }
+    assert.deepStrictEqual(unplaced, [], 'add the town to AREAS.sf in docs/filterState.js');
+    // no town sits in two areas
+    const seen = new Map();
+    for (const area of fs_.AREAS.sf) {
+        for (const city of area.cities) {
+            assert.ok(!seen.has(city.toLowerCase()), `${city} is in two areas`);
+            seen.set(city.toLowerCase(), area.id);
+        }
+    }
 });

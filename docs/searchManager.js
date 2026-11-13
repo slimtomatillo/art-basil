@@ -8,11 +8,23 @@ class SearchManager {
     constructor() {
         // Initial state comes from the URL, e.g. ?phase=past&tags=photography,latinx
         // (or ?search=Venue from a venues.html link), so shared links reproduce a view.
-        this.state = filterState.parseUrl(window.location.search);
+        this.state = filterState.parseUrl(window.location.search, SearchManager.regionToday());
+        // Only this region's areas count (a Bay Area ?area= link opened on another region's page is ignored)
+        this.state.areas = filterState.areasOfRegion(window.dataManager.getRegion(), this.state.areas);
         this.rows = [];
         this.tableBody = null;
         this.listeners = [];
         this.init();
+    }
+
+    // Today in the region's time zone ('YYYY-MM-DD'), which the "open this weekend" kind of date works from;
+    // null if the region's time zone is not known yet
+    static regionToday() {
+        try {
+            return window.dataManager.regionToday(window.dataManager.getRegion());
+        } catch (error) {
+            return null;
+        }
     }
 
     init() {
@@ -43,6 +55,10 @@ class SearchManager {
                 distanceEl: el.querySelector('.event-distance'),
                 event: el.eventData || null,                 // for Map view's popups
                 dateText: cells[1]?.textContent || '',
+                // when the show runs and where, for the dates and Area filters
+                start: el.getAttribute('data-start') || null,
+                end: el.getAttribute('data-end') || null,
+                areas: (el.getAttribute('data-areas') || '').split('|').filter(Boolean),
                 // current / ongoing / future / past: what the "When" filter works on
                 bucket: filterState.bucketOf(el.getAttribute('data-phase'), el.getAttribute('data-ongoing') === 'true'),
                 tags: (el.getAttribute('data-tags') || '').split('|').filter(Boolean),
@@ -90,7 +106,8 @@ class SearchManager {
     }
 
     getState() {
-        return { ...this.state, tags: [...this.state.tags] };
+        return { ...this.state, tags: [...this.state.tags], areas: [...this.state.areas],
+                 timing: this.state.timing ? { ...this.state.timing } : null };
     }
 
     totalCount() {
@@ -158,6 +175,33 @@ class SearchManager {
         this.applyFilters();
     }
 
+    // Choose which days to show (replacing the When phases): null for any date, { pick } for a quick pick
+    // (today, weekend, week, closing, opening) or { from, to } ('YYYY-MM-DD') for a range
+    setTiming(timing) {
+        if (timing && timing.pick) {
+            if (!filterState.TIMING_PICKS.includes(timing.pick)) return;
+            this.state.timing = { pick: timing.pick };
+        } else if (timing && timing.from) {
+            const from = filterState.validDay(timing.from);
+            const to = filterState.validDay(timing.to) || from;
+            if (!from) return;
+            this.state.timing = to < from ? { from: to, to: from } : { from, to };
+        } else {
+            this.state.timing = null;
+        }
+        this.applyFilters();
+    }
+
+    // Tick or untick an area (the Bay Area only); several widen the results
+    toggleArea(id) {
+        const region = window.dataManager.getRegion();
+        if (!(filterState.AREAS[region] || []).some(area => area.id === id)) return;
+        const areas = this.state.areas;
+        const index = areas.indexOf(id);
+        if (index === -1) areas.push(id); else areas.splice(index, 1);
+        this.applyFilters();
+    }
+
     // Show the results as the table ('list') or on the map ('map'); the choice is in the URL (?view=map)
     setView(view) {
         if (!filterState.VIEWS.includes(view) || view === this.state.view) return;
@@ -165,10 +209,10 @@ class SearchManager {
         this.applyFilters();
     }
 
-    // Back to the default filters: current, ongoing & future, nothing searched or selected.
+    // Back to the default filters: current, ongoing & future, no date, area or tag chosen, nothing searched.
     // The way the results are shown (list or map) is not a filter, so it stays.
     clearFilters() {
-        this.state = { ...filterState.defaultState(), view: this.state.view };
+        this.state = { ...filterState.defaultState(this.state.today), view: this.state.view };
         this.applyFilters();
     }
 }
