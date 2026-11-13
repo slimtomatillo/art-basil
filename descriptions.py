@@ -25,6 +25,12 @@ processing.keep_found_description keeps it when a scraper rewrites the event wit
 records the day an event was last looked at, so events with nothing to find are retried only every
 RECHECK_AFTER, not daily. Sites fetched through the paid proxy are skipped (an extra page would cost credits).
 
+Shows that are listed together on one page (their "Event Page" is that listing, as at most galleries) are looked
+up through their cards (WEBSITE-117): images.card_links finds each show's own page from the card that holds its
+title, strictly (a link around the title, or one whose text or address uses a word of the title, or the card's
+only link, on the venue's own site), and that page is read like any event page. The event's stored "Event Page"
+link is left as the scraper wrote it; only the description is taken from the show's own page.
+
 Dry run on the real data, writing nothing:  python descriptions.py [region ...]
 """
 
@@ -34,11 +40,11 @@ import json
 import logging
 import re
 import sys
-import unicodedata
 from urllib.parse import urlparse
 
 import utils
 from config import DB_FILES
+from textmatch import fold, title_words
 from manual_check import MANUAL_SOURCE
 from scraper_health import ARCHIVE_SOURCE
 from tagging import add_content_tags
@@ -60,7 +66,12 @@ BOILERPLATE = re.compile(
     r'|page not found|\b404\b|skip to (?:main )?content|subscribe to our|sign up for (?:our|the)|log ?in to'
     r'|lorem ipsum|click here|read more\s*$|^home\b|^menu\b'
     r'|visit our website|^(?:visit|browse|learn more|find out more|more information|see more)\b'
-    r'|create a (?:website )?account|manage notification|^this page (?:highlights|features|describes)', re.IGNORECASE)
+    r'|create a (?:website )?account|manage notification|^this page (?:highlights|features|describes)'
+    r'|^(?:(?:in[- ]person|online|virtual|hybrid)\s+)?rsvp\b'                  # a program announcement, not the show
+    r'|^this\s+(?:[\w-]+\s+){0,3}(?:conversation|talk|panel|lecture|workshop|tour|screening|walk-?through)\b'
+    # a gallery describing itself ("Roberts Projects is Los Angeles-based contemporary art gallery representing artists...")
+    r'|\brepresent(?:ing|s)\s+(?:artists|a\s+(?:roster|group))'
+    r'|\bis\s+(?:an?|the)\b(?:\s+[\w,-]+){0,6}\s+(?:gallery|museum|art cent(?:er|re)|institution|foundation)\b', re.IGNORECASE)
 # Event information set in the text ("Opening Reception: Saturday, October 31", "12 novembre – 19 décembre 2026")
 EVENT_INFO = re.compile(r'\b(?:opening|closing|artists?\W?s?)\s+(?:reception|celebration|night)\s*:', re.IGNORECASE)
 # A line that starts with a date ("October 23 - November 28, 2026", "15 octobre", "12.11.2026", "Through March 3")
@@ -68,7 +79,8 @@ _MONTHS = (r'jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|au
            r'|nov(?:ember)?|dec(?:ember)?|janvier|fevrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre'
            r'|ocak|subat|nisan|mayis|haziran|temmuz|agustos|eylul|ekim|kasim|aralik')
 DATE_RANGE = re.compile(
-    rf'\b\d{{1,2}}(?:er)?\s+(?:{_MONTHS})\b\.?\s*[–—-]\s*\d{{1,2}}(?:er)?\s+(?:{_MONTHS})\b'
+    rf'\b(?:{_MONTHS})\b\.?\s+\d{{1,2}},?\s+\d{{4}}\s*[–—-]\s*(?:(?:{_MONTHS})\b\.?\s+\d{{1,2}},?\s+\d{{4}}|ongoing|present)'   # March 1, 2027 – March 31, 2028
+    rf'|\b\d{{1,2}}(?:er)?\s+(?:{_MONTHS})\b\.?\s*[–—-]\s*\d{{1,2}}(?:er)?\s+(?:{_MONTHS})\b'
     rf'|\b(?:{_MONTHS})\b\.?\s*\d{{1,2}}\s*[–—-]\s*(?:(?:{_MONTHS})\b\.?\s*)?\d{{1,2}}', re.IGNORECASE)
 DATE_START = re.compile(
     rf'^(?:(?:through|until|on view|opens?|opened|from|du|au|jusqu\W?au)\s+)?(?:\d{{1,2}}(?:st|nd|rd|th|er)?\s+)?(?:{_MONTHS})\b'
@@ -87,18 +99,7 @@ CAPTION = re.compile(
     r'\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?(?:\s*[x×]\s*\d+(?:[.,]\d+)?)?\s*(?:inches|inch|in\.|cm|mm)\b'
     r'|\b(?:oil|acrylic|gouache|ink|watercolou?r|graphite|charcoal|pigment print|gelatin silver)\b[^.]{0,40}\b(?:on|/)\s*(?:canvas|paper|linen|panel|wood|board)\b',
     re.IGNORECASE)
-# Words in a title too common to show that a text is about this show
-TITLE_STOPWORDS = {
-    'exhibition', 'exhibitions', 'gallery', 'galleries', 'museum', 'present', 'presents', 'opening', 'closing',
-    'solo', 'group', 'show', 'shows', 'works', 'art', 'arts', 'contemporary', 'new', 'with', 'from', 'this',
-    'that', 'the', 'and', 'for', 'into', 'about', 'untitled',
-}
 _NOT_IN_BODY = ['nav', 'header', 'footer', 'aside', 'form', 'script', 'style', 'noscript', 'figcaption']
-
-
-def fold(text):
-    """Lower case without accents."""
-    return unicodedata.normalize('NFKD', text or '').encode('ascii', 'ignore').decode().lower()
 
 
 def clean(text):
@@ -121,11 +122,6 @@ def trim(text, limit=MAX_CHARS):
     if ends:
         return head[:ends[-1]].strip()
     return head[:head.rfind(' ')].rstrip(' ,;:-–—') + '…'
-
-
-def title_words(name):
-    """The words of a title that would show a text is about it: 4+ letters, not a stop word."""
-    return {w for w in re.findall(r'[a-z0-9]{4,}', fold(name)) if w not in TITLE_STOPWORDS}
 
 
 def mentions_show(text, name):
@@ -154,7 +150,9 @@ def looks_like_a_list(text):
 
 # A sentence of ticketing or visitor information that opens a page's text ("Purchasing Museum admission grants full
 # access to all exhibitions on the selected day.")
-FURNITURE_SENTENCE = re.compile(r'\b(?:purchasing|admission grants|buy tickets|book (?:your )?tickets|free with (?:museum )?admission)\b', re.IGNORECASE)
+FURNITURE_SENTENCE = re.compile(
+    r'\b(?:purchasing|admission grants|buy tickets|book (?:your )?tickets|free with (?:museum )?admission'
+    r'|courtesy of|production still|still from|installation view|photo(?:graph)? (?:by|credit)|image credit)\b', re.IGNORECASE)
 
 
 def first_sentence(text):
@@ -185,7 +183,8 @@ def usable(text, name):
         return False
     if BOILERPLATE.search(text) or looks_like_a_list(text) or DIMENSIONS.search(text):
         return False
-    if EVENT_INFO.search(text) or DATE_RANGE.search(fold(text[:120])):     # event details run into the text
+    # (the raw text too: folding a text drops its en dashes, and French months only match once the accents are gone)
+    if EVENT_INFO.search(text) or DATE_RANGE.search(text[:120]) or DATE_RANGE.search(fold(text[:120])):   # event details run into the text
         return False
     if text.count(' | ') >= 2:                                   # a menu bar: "ABOUT | ARTISTS | VIRTUAL TOUR"
         return False
@@ -279,6 +278,26 @@ def find_event_description(page_url, name, fetch=fetch_and_parse):
     return None
 
 
+def find_card_descriptions(page_url, titles, fetch=fetch_and_parse):
+    """({title: (text, source)}, pages opened) for the shows of a listing page that several events point to.
+
+    Each show's own page is found from its card on the listing, then read like an event page. `titles` are all the
+    shows listed on that page (a card is told apart from the others by their titles)."""
+    import images                                           # images.py is the home of the card-finding; it imports nothing from here
+    if not page_url or urlparse(page_url).netloc in utils.PROXY_DOMAINS:
+        return {}, 0
+    soup = fetch(page_url)
+    if soup is None:
+        return {}, 1
+    links = images.card_links(soup, page_url, titles)
+    found = {}
+    for title, url in links.items():
+        result = find_event_description(url, title, fetch=fetch)
+        if result:
+            found[title] = result
+    return found, 1 + len(links)
+
+
 def event_page(event):
     return next((l['link'] for l in event.get('links', [])
                  if l.get('description') == 'Event Page' and l.get('link')), None)
@@ -322,14 +341,17 @@ def _without_shared_openings(found, stored):
 
 
 def enrich_missing_descriptions(regions=None, today=None, finder=find_event_description,
-                                max_pages=MAX_PAGES_PER_RUN, save=True):
+                                card_finder=find_card_descriptions, max_pages=MAX_PAGES_PER_RUN, save=True):
     """Give description-less current and upcoming events a description from their own page.
 
+    An event with a page of its own is looked up with `finder(page_url, name)`. Several events that share one
+    listing page are looked up together with `card_finder(page_url, titles)`, which returns
+    ({title: (text, source)}, pages opened): each show's own page found from its card on the listing.
+
     Returns {'checked': pages opened, 'added': [(region, venue, event name, source, text)],
-             'dropped': [(region, venue, event name, text)], 'shared': pages several shows point at}.
+             'dropped': [(region, venue, event name, text)], 'shared': events looked up on shared listing pages}.
     `dropped` lists texts rejected because the venue gives the same one to several shows (a tagline).
-    `shared` counts events skipped because their "Event Page" is a listing page that other shows also use:
-    its text can't be told apart per show."""
+    The page limit is checked before each page or listing, so a listing's own show pages can go a little over it."""
     today = today or dt.date.today()
     report = {'checked': 0, 'added': [], 'dropped': [], 'shared': 0}
     for region in (regions or DB_FILES):
@@ -338,24 +360,28 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
         for venue, events in db.items():
             if report['checked'] >= max_pages:
                 break
-            uses = {}
+            groups = {}                                     # event page -> every event of the venue that points at it
             for event in events.values():
-                uses[event_page(event)] = uses.get(event_page(event), 0) + 1
+                groups.setdefault(event_page(event), []).append(event)
             found = []                                      # (event, text, source)
-            for event in events.values():
-                if not needs_description(event, today):
+            for page, group in groups.items():
+                needing = [e for e in group if needs_description(e, today)]
+                if not needing or report['checked'] >= max_pages:
                     continue
-                if uses[event_page(event)] > 1:
-                    report['shared'] += 1
-                    continue
-                if report['checked'] >= max_pages:
-                    break
-                report['checked'] += 1
-                result = finder(event_page(event), event['name'])
-                event['description_checked'] = today.isoformat()
+                if len(group) == 1:
+                    event = needing[0]
+                    report['checked'] += 1
+                    result = finder(page, event['name'])
+                    if result:
+                        found.append((event, *result))
+                else:
+                    by_title, opened = card_finder(page, [e['name'] for e in group])
+                    report['checked'] += max(opened, 1)
+                    report['shared'] += len(needing)
+                    found.extend((e, *by_title[e['name']]) for e in needing if e['name'] in by_title)
+                for event in needing:
+                    event['description_checked'] = today.isoformat()
                 changed = True
-                if result:
-                    found.append((event, *result))
             # A sentence that opens several of a venue's descriptions is the site's, not the show's: drop it
             found = _without_shared_openings(found, [e['description'] for e in events.values() if e.get('description')])
             # The same text for several of a venue's shows is its tagline, not their descriptions
@@ -383,7 +409,7 @@ def main(argv):
     for region, venue, name, text in report['dropped']:
         print(f"[{region}] DROPPED (shared by several shows) {venue}: {name}\n    {text[:120]}\n")
     print(f"opened {report['checked']} pages, found {len(report['added'])}, dropped {len(report['dropped'])}, "
-          f"skipped {report['shared']} events on shared listing pages")
+          f"looked up {report['shared']} events on shared listing pages through their cards")
 
 
 if __name__ == '__main__':

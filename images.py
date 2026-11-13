@@ -36,6 +36,7 @@ from bs4 import Comment
 import utils
 from config import DB_FILES
 from manual_check import MANUAL_SOURCE
+from textmatch import fold, title_words
 from processing import image_link
 from scraper_health import ARCHIVE_SOURCE
 from utils import fetch_and_parse, load_db, save_db
@@ -248,6 +249,92 @@ def card_images(soup, page_url, titles, check_size=True):
     page = PageText(soup)
     for title in titles:
         url = image_in_card(page, title, page_url, titles, check_size)
+        if url:
+            found[title] = url
+    counts = {}
+    for url in found.values():
+        counts[url] = counts.get(url, 0) + 1
+    return {title: url for title, url in found.items() if counts[url] == 1}
+
+
+# --- the show's own page, from its card on a listing page (WEBSITE-117) --------------------------------
+
+_NOT_A_PAGE = re.compile(r'\.(?:jpe?g|png|gif|webp|svg|pdf|zip|mp[34]|docx?)(?:\?|$)', re.I)
+_SITE_PARTS = re.compile(r'^(?:www\.|m\.)')            # a leading www. or m. is not a different site
+
+
+def _site(url):
+    return _SITE_PARTS.sub('', urlparse(url).netloc.lower())
+
+
+def plausible_page_link(url, listing_url):
+    """Whether `url` could be the venue's own page for one show: a web page on the same site as the listing, other
+    than the listing itself, and not a picture, a PDF or a social profile."""
+    parts = urlparse(url)
+    if parts.scheme not in ('http', 'https') or _site(url) != _site(listing_url) or _NOT_A_PAGE.search(parts.path):
+        return False
+    listing = urlparse(listing_url)
+    # not the listing itself (the same path, unless only its query differs, as in ?show=12)
+    return parts.path.rstrip('/') != listing.path.rstrip('/') or (bool(parts.query) and parts.query != listing.query)
+
+
+def _anchor_url(anchor, page_url):
+    href = (anchor.get('href') or '').strip()
+    if not href or href.startswith(('#', 'mailto:', 'tel:', 'javascript:')):
+        return None
+    return urljoin(page_url, href).split('#')[0]
+
+
+def _anchor_mentions(anchor, url, words):
+    """Whether a link's text, label or address uses a significant word of the show's title."""
+    text = ' '.join([anchor.get_text(' '), anchor.get('aria-label') or '', anchor.get('title') or '', urlparse(url).path])
+    found = set(re.findall(r'[a-z0-9]{4,}', fold(text)))
+    return bool(words & found)
+
+
+def link_in_card(page, title, page_url, other_titles=()):
+    """The link to a show's own page, from the card that holds its title on a listing page, or None.
+
+    Climbs from the title up through its parents, as image_in_card does, giving up at an element that also holds
+    another show's title. A wrong link would be shown to visitors, so it is strict. In order of trust: a link that
+    wraps the title; a link in the card whose text or address uses a word of the title; the only link in the card.
+    Only the venue's own site counts, and never the listing itself."""
+    if not isinstance(page, PageText):
+        page = PageText(page)
+    key = _key(title)
+    others = [k for k in (_key(t) for t in other_titles) if k and k != key and k not in key]
+    words = title_words(title)
+    element = page.element_for(title)
+    first = element
+    for _ in range(CARD_CLIMB):
+        if element is None or element.name in ('body', 'html'):
+            return None
+        if any(other in _key(element.get_text(' ')) for other in others):
+            return None
+        if element is first:                                       # a link around the title itself
+            wrapper = element if element.name == 'a' else element.find_parent('a')
+            if wrapper is not None and not any(other in _key(wrapper.get_text(' ')) for other in others):
+                url = _anchor_url(wrapper, page_url)
+                if url and plausible_page_link(url, page_url):
+                    return url
+        anchors = [(a, _anchor_url(a, page_url)) for a in element.find_all('a', href=True)]
+        anchors = [(a, u) for a, u in anchors if u and plausible_page_link(u, page_url)]
+        for a, u in anchors:
+            if _anchor_mentions(a, u, words):
+                return u
+        if len({u for _, u in anchors}) == 1:
+            return anchors[0][1]
+        element = element.parent
+    return None
+
+
+def card_links(soup, page_url, titles):
+    """{title: the show's own page} for the shows of one listing page, each from the card that holds its title.
+    A link that turns up for more than one show is not any one show's page and is dropped."""
+    found = {}
+    page = PageText(soup)
+    for title in titles:
+        url = link_in_card(page, title, page_url, titles)
         if url:
             found[title] = url
     counts = {}

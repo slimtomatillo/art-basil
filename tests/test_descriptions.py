@@ -183,6 +183,54 @@ class EventInfoTest(unittest.TestCase):
             'Tucker Nichols'))
 
 
+class ProgramsCreditsAndTaglinesTest(unittest.TestCase):
+    """Real texts found on listing-card pages (WEBSITE-117) that were not descriptions of the show."""
+
+    def test_a_program_announcement_is_not_the_exhibitions_description(self):
+        self.assertFalse(descriptions.usable(
+            'IN PERSON RSVP Exhibition co-curator Amy Landau and Paul Connor, director of video experience for Mountain Spirits, '
+            'will lead a gallery walk-through of this exhibition and discuss the research.', 'Mountain Spirits: Rice and Indigeneity'))
+        self.assertFalse(descriptions.usable(
+            'ONLINE RSVP Guest curators Tangimoe Clay and Gina Tawhai Matchitt will discuss the historic kaitaka in the Fowler '
+            'collection and Ancestral Gifts.', 'Uhengaparaoa, Taonga Tuku Iho: Ancestral Gifts'))
+
+    def test_a_talk_about_the_show_is_not_the_shows_description(self):
+        self.assertFalse(descriptions.usable(
+            'This behind-the-scenes conversation explores the digital production of Mountain Spirits: Rice and Indigeneity, an exhibition at the Fowler.',
+            'Mountain Spirits: Rice and Indigeneity in the Northern Luzon Highlands'))
+        self.assertTrue(descriptions.usable(
+            'This exhibition explores rice and Indigeneity in the Northern Luzon Highlands through objects, video and landscape, in Mountain Spirits.',
+            'Mountain Spirits: Rice and Indigeneity in the Northern Luzon Highlands'))
+
+    def test_a_title_dates_and_location_run_together_is_not_a_description(self):
+        for text, name in (
+                ('Yellow Marquee July 1, 2026 – July 1, 2029 18th Street Arts Center A small yellow awning appears to have slipped from the wall',
+                 'Hilla Toony Navok: Yellow Marquee'),
+                ('Rhizome’s Solar Server November 15, 2025 – ongoing 18th Street Arts Center is excited to partner with Rhizome on the launch',
+                 'Rhizome’s Solar Server'),
+                ('Ghost Agency: Smooth Criminal March 1, 2027 – March 31, 2028 Hearth Gallery -18th Street Arts Center Smooth Criminal reimagines public sculpture',
+                 'Ghost Agency: Smooth Criminal')):
+            self.assertFalse(descriptions.usable(text, name), text)
+
+    def test_a_photo_credit_sentence_is_cut_from_the_front(self):
+        text = ('Francis and Anthony Almendárez, Production still from Navigating the Archives Within, 2026. Courtesy of the artists. '
+                'In their ongoing film and performance work, the brothers revisit family archives.')
+        self.assertEqual(descriptions.strip_opening_furniture(text),
+                         'In their ongoing film and performance work, the brothers revisit family archives.')
+
+    def test_a_gallery_describing_itself_is_not_a_description_of_the_show(self):
+        tagline = ('Roberts Projects is Los Angeles-based contemporary art gallery representing artists across multiple generations of '
+                   'internationally recognized, established artists as well as emerging artists including Wendy Red Star and Betye Saar')
+        self.assertFalse(descriptions.usable(tagline, 'Wendy Red Star: False Stars'))
+        self.assertFalse(descriptions.usable('The Hammer is a public museum of contemporary art and Michelle Stuart is among the artists shown there.',
+                                             'Michelle Stuart: The Memory of Paper'))
+        # a show that is described, even at a gallery, is fine
+        self.assertTrue(descriptions.usable('Roberts Projects is pleased to present Wherever You Are, Remember Me, an exhibition of new works by Collins Obijiaku.',
+                                            'Collins Obijiaku: Wherever You Are, Remember Me'))
+        self.assertTrue(descriptions.usable('Haunts is an installation of new sculpture by Meaghan Hyckie, shown in the main gallery space.',
+                                            'Meaghan Hyckie: Haunts'))
+
+
 class OpeningsAndSpacingTest(unittest.TestCase):
     def test_a_leading_ticketing_sentence_is_dropped(self):
         text = ('Purchasing Museum admission grants full access to all exhibitions on the selected day. '
@@ -271,6 +319,43 @@ class FindEventDescriptionTest(unittest.TestCase):
         self.assertLessEqual(len(text), descriptions.MAX_CHARS)
 
 
+class FindCardDescriptionsTest(unittest.TestCase):
+    LISTING = 'https://gallery.example/exhibitions/'
+    TITLES = ['Island Universe', 'Mobile Images', 'Other Show']
+
+    def pages(self):
+        listing = page(body=('<div><a href="/exhibitions/island-universe/"><h3>Island Universe</h3></a></div>'
+                             '<div><a href="/exhibitions/mobile-images/"><h3>Mobile Images</h3></a></div>'
+                             '<div><h3>Other Show</h3></div>'))
+        return {
+            self.LISTING: listing,
+            'https://gallery.example/exhibitions/island-universe/':
+                page(head='<meta name="description" content="' + BLURB + '">'),
+            'https://gallery.example/exhibitions/mobile-images/':
+                page(head='<meta name="description" content="Welcome to the Gallery website, the home of art.">'),
+        }
+
+    def test_each_shows_own_page_is_found_from_its_card_and_read(self):
+        pages = self.pages()
+        opened = []
+
+        def fetch(url):
+            opened.append(url)
+            return pages.get(url)
+
+        found, count = descriptions.find_card_descriptions(self.LISTING, self.TITLES, fetch=fetch)
+        self.assertEqual(found, {'Island Universe': (BLURB, 'meta')})        # the other page had only a site tagline
+        self.assertEqual(count, 3)                                           # the listing and the two show pages it linked to
+        self.assertEqual(opened[0], self.LISTING)
+
+    def test_a_listing_that_cannot_be_fetched_or_is_proxied_gives_nothing(self):
+        self.assertEqual(descriptions.find_card_descriptions(self.LISTING, self.TITLES, fetch=lambda url: None), ({}, 1))
+        host = next(iter(utils.PROXY_DOMAINS))
+        self.assertEqual(descriptions.find_card_descriptions(f'https://{host}/x', self.TITLES,
+                                                             fetch=lambda url: self.fail('fetched')), ({}, 0))
+        self.assertEqual(descriptions.find_card_descriptions(None, self.TITLES, fetch=lambda url: self.fail('fetched')), ({}, 0))
+
+
 class NeedsDescriptionTest(unittest.TestCase):
     def test_current_and_future_events_with_a_page_and_no_description(self):
         self.assertTrue(descriptions.needs_description(event(), TODAY))
@@ -350,12 +435,44 @@ class EnrichTest(unittest.TestCase):
         self.assertEqual(self.read()['New-Gallery']['description'], '')
         self.assertEqual(len(report['dropped']), 1)
 
-    def test_shows_that_share_one_listing_page_are_skipped(self):
-        self.write([event('Show A', 'https://g.example/list'), event('Show B', 'https://g.example/list')])
+    def test_shows_on_a_shared_listing_page_are_looked_up_together_through_their_cards(self):
+        past = event('Old Show', 'https://g.example/list', phase='past')
+        self.write([event('Show A', 'https://g.example/list'), event('Show B', 'https://g.example/list'), past])
+        seen = []
+
+        def card_finder(page, titles):
+            seen.append((page, sorted(titles)))
+            return {'Show A': (BLURB.replace('Josiah', 'Show A'), 'meta')}, 3
+
         calls = []
-        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: calls.append(url))
-        self.assertEqual(calls, [])
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, card_finder=card_finder,
+                                                          finder=lambda url, name: calls.append(url))
+        self.assertEqual(seen, [('https://g.example/list', ['Old Show', 'Show A', 'Show B'])])   # every show on the page, past too
+        self.assertEqual(calls, [])                                                              # not looked up one by one
+        stored = self.read()
+        self.assertTrue(stored['Show A-Gallery']['description'].startswith('Show A'))
+        self.assertEqual(stored['Show A-Gallery']['description_source'], 'page')
+        self.assertEqual(stored['Show B-Gallery']['description'], '')                            # its card gave nothing
+        self.assertEqual(stored['Show B-Gallery']['description_checked'], '2026-11-13')          # and is not asked again today
+        self.assertNotIn('description_checked', stored['Old Show-Gallery'])                      # a past show is left alone
         self.assertEqual(report['shared'], 2)
+        self.assertEqual(report['checked'], 3)                                                   # the listing and two show pages
+        # the stored Event Page link is untouched: only the description came from the show's own page
+        self.assertEqual(stored['Show A-Gallery']['links'], [{'link': 'https://g.example/list', 'description': 'Event Page'}])
+
+    def test_a_shared_listing_with_nothing_to_look_up_is_not_opened(self):
+        self.write([event('Show A', 'https://g.example/list', description='Has one already.'),
+                    event('Show B', 'https://g.example/list', description='So has this one.')])
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, finder=lambda url, name: self.fail('opened a page'),
+                                                 card_finder=lambda page, titles: self.fail('opened a listing'))
+
+    def test_the_same_text_found_for_two_shows_of_a_listing_is_dropped(self):
+        same = 'This gallery presents contemporary art and this Show is part of the program for the year.'
+        self.write([event('Show A', 'https://g.example/list'), event('Show B', 'https://g.example/list')])
+        report = descriptions.enrich_missing_descriptions(
+            ['la'], today=TODAY, card_finder=lambda page, titles: ({'Show A': (same, 'og'), 'Show B': (same, 'og')}, 3))
+        self.assertEqual([e['description'] for e in self.read().values()], ['', ''])
+        self.assertEqual(len(report['dropped']), 2)
 
     def test_the_page_limit_is_respected(self):
         self.write([event(f'Show {i}', f'https://g.example/{i}') for i in range(5)])

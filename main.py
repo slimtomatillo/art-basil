@@ -327,7 +327,7 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
             described = descriptions.enrich_missing_descriptions(selected_regions)
             logging.info(f"Finished looking for event descriptions: opened {described['checked']} event pages, "
                          f"added {len(described['added'])}, dropped {len(described['dropped'])} texts shared by several shows, "
-                         f"skipped {described['shared']} events on shared listing pages")
+                         f"looked up {described['shared']} events on shared listing pages through their cards")
         except Exception:
             logging.exception("Adding event descriptions failed")
         # Swap heavy original pictures for small copies so pages load quickly

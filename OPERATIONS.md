@@ -387,11 +387,21 @@ runs after the scrapers, the way `images.py` does for pictures:
    are added from it. `description_checked` is the day an event was last looked at, so one with nothing to find is
    retried only every 14 days, and it only counts while the event points at the same page.
 
+**Shows that share one listing page** (their "Event Page" is the venue's exhibitions page, as at most galleries;
+WEBSITE-117) are looked up through their cards: `images.card_links` finds each show's own page from the card that
+holds its title on the listing (a link around the title; else a link in the card whose text or address uses a word of
+the title; else the card's only link; always on the venue's own site, never the listing itself, and a link that turns
+up for two shows is dropped), and that page is read like any event page. The stored "Event Page" link is **left as the
+scraper wrote it**: only the description is taken from the show's own page, so a wrong guess can cost a description
+but never puts a wrong link on the site. The page limit is checked before each page or listing, so a listing's own
+show pages can go a little over it.
+
 What it **does not** do: sites fetched through the paid proxy are skipped (an extra page would cost credits: see
-"Proxied venues and the ZenRows budget"), and events whose "Event Page" is a listing page shared by several shows
-are skipped (the page's text can't be told apart per show). Those need the venue's scraper to read the blurb off the
-listing. On 2026-11-13 this left about a third of live events without one (the proxied AGO, de Young and Legion of
-Honor, and venues such as 18th Street Arts Center and Skirball whose events share a page).
+"Proxied venues and the ZenRows budget"; WEBSITE-118), and a listing whose cards have no recognisable link to the
+show's own page gets nothing (the venue's scraper would have to read the blurb off the listing; WEBSITE-119 tracks
+them: Commonwealth and Council, David Kordansky, Art Mur, Palo Alto Art Center...). On 2026-11-13 a dry run took live
+coverage from 41% to 73% (LA 81%, Istanbul 83%, SF 80%, Montreal 69%, Toronto 43%, where AGO's 30 proxied events are
+a third of the gap).
 
 - **Coverage** is in the scraper health report (the job summary and the log): the share of live events with a
   description by region, and the venues with at least 3 live events and none described. A venue appearing there is a
