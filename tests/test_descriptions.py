@@ -428,6 +428,96 @@ class NoTitleWordButStillTheShowsTextTest(unittest.TestCase):
                                              'Pictures of Belonging', venue='Japanese American National Museum'))
 
 
+class ListingMenuAndEventLinesTest(unittest.TestCase):
+    """Groups B, C and D of WEBSITE-119: a show whose page is a listing or home page, a Wattis page with no paragraphs, a menu bar joined
+    to the text, and event lines glued in front of it."""
+    REAL = ('A new body of work follows the line as a gesture, a trace and a record of movement through '
+            'the studio over three years of daily drawing, from the first sketches to the final large canvases.')
+
+    def test_a_menu_bar_paragraph_is_skipped_not_joined_to_the_text(self):
+        real = ('Objects: USA brought together ceramics, furniture, glass and textiles by makers working across the country, and '
+                'its influence on American craft is still felt today.')
+        s = page(body=('<main><p>ABOUT US | ARTISTS | EXHIBITIONS | VISIT | CONTACT | SHOP ONLINE | NEWS AND UPDATES</p>'
+                       f'<p>{real}</p></main>'))
+        self.assertEqual(descriptions.candidates(s), [('paragraph', real)])
+
+    def test_dates_and_event_lines_glued_to_the_front_of_a_text_are_dropped(self):
+        for glued in ('November 11 \u2013 29, 2026Opening Reception: Sat. Nov. 14, 12 \u2013 4 pm',
+                      'November 11 \u2013 29, 2026Opening Celebration: Saturday, Nov. 14, 6 pmArtist Talk: Sunday, Nov. 29, 12 pm',
+                      'Vernissage: le 6 novembre, 17h-21hExposition: le 8 novembre au 11 d\u00e9cembre'):
+            got = descriptions.strip_event_info(glued + ' ' + self.REAL)
+            self.assertTrue(got.startswith('A new body of work'), got[:60])
+            self.assertNotIn('Reception', got[:40])
+            self.assertNotIn('Vernissage', got[:40])
+
+    def test_a_text_with_no_event_lines_is_unchanged(self):
+        self.assertEqual(descriptions.strip_event_info(self.REAL), self.REAL)
+        self.assertEqual(descriptions.strip_event_info('Reception rooms were redesigned: the show is about them and the people.'),
+                         'Reception rooms were redesigned: the show is about them and the people.')
+
+    def test_the_event_lines_do_not_stop_a_good_text_being_found(self):
+        s = page(head='<title>Marks and Flow | Propeller</title>',
+                 body=f'<main><h1>Marks and Flow</h1><p>November 11 \u2013 29, 2026Opening Reception: Sat. Nov. 14, 12 \u2013 4 pm {self.REAL}</p></main>')
+        found = descriptions.find_event_description('https://propeller.example/marks-and-flow', 'Marks and Flow', fetch=lambda url: s,
+                                                    venue='Propeller')
+        self.assertTrue(found and found[0].startswith('A new body of work'), found)
+
+    WATTIS = ('The CCA Wattis Institute presents the first solo exhibition in the United States of an artist whose paintings follow the '
+              'ordinary routines of a household across several decades.')
+
+    def wattis_page(self):
+        return page(body=('<div class="main-listContainer">November 12, 2026 <i>Opening</i><br>5\u20138 pm<br><br>'
+                          f'{self.WATTIS}<br><br>Support for this exhibition is provided by friends of the institute.</div>'))
+
+    def test_the_wattis_text_is_read_from_its_block_with_breaks_as_line_ends(self):
+        got = dict(descriptions.candidates(self.wattis_page(), 'https://wattis.org/exhibitions/the-house'))
+        self.assertTrue(got['site'].startswith('The CCA Wattis Institute presents'), got)
+        self.assertEqual([c for c in descriptions.candidates(self.wattis_page(), 'https://gallery.example/x') if c[0] == 'site'], [])
+
+    def test_funding_and_series_credits_are_not_descriptions(self):
+        for credit in ('OBJECTS: USA is supported in part by an award from the National Endowment for the Arts. This exhibition is '
+                       'generously supported by Barbara Waldman, Susan and William Beech, and Jamienne Studley and Gary Smith.',
+                       'This project was made possible in part by the Institute of Museum and Library Services IGSM-260399-OMS-26 and by friends.',
+                       'OBJECTS: USA is part of Handwork: Celebrating American Craft 2026, presented by Craft in America and its many partners.'):
+            self.assertFalse(descriptions.usable(credit, 'Objects: USA'), credit[:40])
+
+    def test_a_title_set_above_the_text_with_no_colon_is_dropped(self):
+        name = '3,345 Postcards: An Untimely Conversation with Rayyane Tabet and Jay DeFeo'
+        text = f'{name} For An Untimely Conversation with Rayyane Tabet and Jay DeFeo, Tabet creates an installation.'
+        self.assertEqual(descriptions.strip_title_heading(text, name), 'For An Untimely Conversation with Rayyane Tabet and Jay DeFeo, Tabet creates an installation.')
+        # a sentence that runs on from the title is left alone
+        self.assertEqual(descriptions.strip_title_heading('Island Universe is a sculpture of glass and light.', 'Island Universe'),
+                         'Island Universe is a sculpture of glass and light.')
+
+    def test_a_show_whose_page_is_a_listing_is_read_through_its_card(self):
+        listing = page(head='<title>Exhibitions | Gallery</title>', body=(
+            '<main><h1>Exhibitions</h1><div class="card"><h2>Fugitive Light</h2><a href="/exhibitions/fugitive-light">Read more</a></div></main>'))
+        own = page(head='<title>Fugitive Light | Gallery</title>', body=(
+            '<main><h1>Fugitive Light</h1><p>The paintings in Fugitive Light record the passing of afternoon light across a single room '
+            'over the course of one winter, and ask what it means to keep looking.</p></main>'))
+        calls = []
+
+        def fetch(url):
+            calls.append(url)
+            return own if url.endswith('fugitive-light') else listing
+
+        found = descriptions.find_event_description('https://gallery.example/exhibitions/', 'Fugitive Light', fetch=fetch, venue='Gallery')
+        self.assertTrue(found and found[0].startswith('The paintings in Fugitive Light'), found)
+        self.assertEqual(calls, ['https://gallery.example/exhibitions/', 'https://gallery.example/exhibitions/fugitive-light'])
+
+    def test_the_card_is_followed_once_only_and_never_through_the_paid_proxy(self):
+        listing = page(head='<title>Exhibitions | Gallery</title>', body=(
+            '<main><h1>Exhibitions</h1><div class="card"><h2>Fugitive Light</h2><a href="/exhibitions/fugitive-light">Read more</a></div></main>'))
+        calls = []
+        fetch = lambda url: calls.append(url) or listing           # the "show page" is the listing again: nothing to find, no loop
+        self.assertIsNone(descriptions.find_event_description('https://gallery.example/exhibitions/', 'Fugitive Light', fetch=fetch, venue='Gallery'))
+        self.assertLessEqual(len(calls), 2)
+        calls.clear()
+        self.assertIsNone(descriptions.find_event_description('https://gallery.example/exhibitions/', 'Fugitive Light', fetch=fetch,
+                                                              allow_proxy=True, venue='Gallery'))
+        self.assertEqual(len(calls), 1)
+
+
 class FeedDescriptionTest(unittest.TestCase):
     """Text a venue's own feed or API supplies (CAAM's markdown, Daniel Faria's HTML): WEBSITE-119."""
     FIRST = ('*How to Fly* is a site-specific photomural by visual artist Sadie Barnette installed in CAAM\u2019s atrium. Born and '

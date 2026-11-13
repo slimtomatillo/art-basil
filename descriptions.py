@@ -84,6 +84,9 @@ SOURCE = 'page'                   # the value of "description_source" for a desc
 BOILERPLATE = re.compile(
     r'cookie|javascript|enable js|all rights reserved|privacy policy|terms (?:of|and) (?:use|service|conditions)'
     r'|page not found|\b404\b|skip to (?:main )?content|subscribe to our|sign up for (?:our|the)|log ?in to'
+    r'|(?:is|are|was|were) (?:generously |kindly |gratefully )?(?:supported|funded|underwritten|sponsored)\b'     # a funding credit
+    r'|(?:made possible(?: in (?:part|whole))?|generously supported|supported in part) by|^support for (?:this|the) '
+    r'|\bis part of\b[^.]{0,80}\bpresented by\b'                                                          # a series credit
     r'|lorem ipsum|click here|read more\s*$|^home\b|^menu\b'
     r'|visit our website|^(?:visit|browse|learn more|find out more|more information|see more)\b'
     r'|create a (?:website )?account|manage notification|^this page (?:highlights|features|describes)'
@@ -160,7 +163,33 @@ def strip_title_heading(text, name):
     match = re.match(r'(.{3,200}?)\s*[:–—|]\s+', text)
     if match and fold(match.group(1)).strip() == fold(name).strip():
         return text[match.end():]
+    # the title set on its own line above the text (Wattis), which joins to it as "Title For the show, the artist..."
+    echo = re.match(re.escape(name.strip()) + r'\s+(?=[A-Z0-9\u201c"])', text)
+    if echo:
+        return text[echo.end():]
     return text
+
+
+# Event details set in front of a text, with nothing between them: "November 11 – 29, 2026Opening Reception: Sat. Nov. 14, 12 – 4 pmArtist
+# Talks: Saturday, Nov. 29, 12 pm The exhibition grew out of...". A label, a colon, and a value that ends at a time or a year.
+_EVENT_LABELS = (r"exposition|(?:opening|closing)\s+(?:reception|celebration|night)|(?:artists?['\u2019]?s?\s+)?talks?|reception|vernissage|finissage")
+_TIME = r'(?:\d{1,2}(?::\d{2})?\s*[ap]\.?m\.?|\d{1,2}h(?:\d{2})?)'
+_FRENCH_MONTHS = r'(?:janvier|f\u00e9vrier|mars|avril|mai|juin|juillet|ao\u00fbt|septembre|octobre|novembre|d\u00e9cembre)'
+_TIME_RANGE = rf'{_TIME}(?:\s*[\u2013\u2014-]\s*{_TIME})?'
+_EVENT_VALUE_END = rf'(?:{_TIME_RANGE}|{_FRENCH_MONTHS}(?:\s+au\s+\d{{1,2}}\s+{_FRENCH_MONTHS})?(?:,?\s*{_TIME_RANGE})?|\d{{4}})'
+_EVENT_LINE = re.compile(rf'^(?:{_EVENT_LABELS})\s*:\s*[^:]{{0,60}}?{_EVENT_VALUE_END}\s*', re.IGNORECASE)
+_LEADING_DATES = re.compile(rf'^(?:{_MONTHS})\.?\s+\d{{1,2}}\s*[\u2013\u2014-]\s*(?:(?:{_MONTHS})\.?\s+)?\d{{1,2}},?\s+\d{{4}}\s*', re.IGNORECASE)
+
+
+def strip_event_info(text):
+    """Drop dates and event lines glued to the front of a text ("November 11 – 29, 2026Opening Reception: Sat. Nov. 14, 12 – 4 pm ...")."""
+    text = text.strip()
+    text = _LEADING_DATES.sub('', text, count=1)
+    while True:
+        stripped = _EVENT_LINE.sub('', text, count=1)
+        if stripped == text:
+            return text
+        text = stripped
 
 
 def looks_like_a_list(text):
@@ -292,10 +321,10 @@ def _prose_paragraphs(root, strict):
         # link is part of its sentence): keep only the prose
         for br in p.find_all('br'):
             br.replace_with('\n')
-        lines = [clean(line) for line in p.get_text(' ').split('\n')]
+        lines = [strip_event_info(clean(line)) for line in p.get_text(' ').split('\n')]
         text = strip_opening_furniture(' '.join(line for line in lines if line and not furniture_line(line)))
-        if len(text) < 60 or len(text.split()) < 9 or BOILERPLATE.search(text):
-            continue
+        if len(text) < 60 or len(text.split()) < 9 or BOILERPLATE.search(text) or text.count(' | ') >= 2:
+            continue                                        # (a menu bar, "ABOUT | ARTISTS | TOUR", is not prose and must not be joined to the next paragraph)
         parts.append(text)
         if len(' '.join(parts)) >= 200 or len(parts) == 2:
             break
@@ -332,8 +361,20 @@ def _ago_body(soup):
     return found[:1]
 
 
+def _wattis_body(soup):
+    """The CCA Wattis Institute's exhibition text: plain text and <i> tags separated by <br>, with no paragraphs, in the
+    `main-listContainer` block. Read like a feed text: its lines are filtered (a date or reception line is dropped)."""
+    box = soup.find('div', class_='main-listContainer')
+    if box is None:
+        return []
+    for br in box.find_all('br'):
+        br.replace_with('\n')
+    text = feed_description(box.get_text(' '))
+    return [text] if text else []
+
+
 # Sites whose text is in none of the usual places: host -> function(soup) giving the texts to try, best first
-SITE_EXTRACTORS = {'ago.ca': _ago_body}
+SITE_EXTRACTORS = {'ago.ca': _ago_body, 'wattis.org': _wattis_body}
 
 
 def feed_description(text):
@@ -369,7 +410,7 @@ def candidates(soup, page_url=None):
     return [(source, clean(text)) for source, text in found if text]
 
 
-def find_event_description(page_url, name, fetch=fetch_and_parse, allow_proxy=False, venue=None):
+def find_event_description(page_url, name, fetch=fetch_and_parse, allow_proxy=False, venue=None, _via_card=False):
     """(text, source) for the best usable description on an event's page, or None.
 
     A page on a paid-proxy site is only fetched with `allow_proxy` (it costs credits: see proxy_credits)."""
@@ -380,17 +421,27 @@ def find_event_description(page_url, name, fetch=fetch_and_parse, allow_proxy=Fa
     soup = fetch(page_url)
     if soup is None:
         return None
-    found = [(source, strip_opening_furniture(strip_title_heading(text, name))) for source, text in candidates(soup, page_url)]
+    found = [(source, strip_opening_furniture(strip_title_heading(strip_event_info(text), name)))
+             for source, text in candidates(soup, page_url)]
     for source, text in found:                              # the strict rule first, over every candidate, as it always was
         if usable(text, name):
             return trim(text), source
     # Nothing named the show. A long text that does not open by naming the venue is accepted instead, but only on a page that
     # is itself about the show: on a listing of several shows the first paragraph can belong to another one (Sprüth Magers'
     # /exhibitions page gave a paragraph about a different artist).
-    if venue and page_is_about(soup, page_url, name):
+    about = page_is_about(soup, page_url, name)
+    if venue and about:
         for source, text in found:
             if usable(text, name, venue):
                 return trim(text), source
+    # Nothing, and the page is not about the show: it is a listing, a home page or a social page standing in for the show's own
+    # page (JANM, Regen, MICA...). Look for the show's card on it and read the page that card links to (one more fetch, only
+    # for a page that gave nothing, and never through the paid proxy).
+    if not about and not _via_card and not allow_proxy:
+        import images
+        link = images.link_in_card(images.PageText(soup), name, page_url, [name])
+        if link and link != page_url:
+            return find_event_description(link, name, fetch=fetch, venue=venue, _via_card=True)
     return None
 
 
