@@ -12,6 +12,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0.5rem 0;
+    /* Narrow enough that six blobs wrap into two rows of three on a wide screen,
+       instead of squeezing into one long strip. */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* The link itself never moves or changes shape: it is a fixed ellipse that catches
