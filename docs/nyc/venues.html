@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Basil - New York Venues</title>
+    <meta name="description" content="The galleries, museums and spaces we list in New York City, with addresses and maps. Art Basil is a free, community-built guide to art near you.">
+    <link rel="canonical" href="https://artbasil.info/nyc/venues.html">
+    <!-- Link previews (Open Graph and Twitter) -->
+    <meta property="og:site_name" content="Art Basil">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Art Basil - New York Venues">
+    <meta property="og:description" content="The galleries, museums and spaces we list in New York City, with addresses and maps. Art Basil is a free, community-built guide to art near you.">
+    <meta property="og:url" content="https://artbasil.info/nyc/venues.html">
+    <meta property="og:image" content="https://artbasil.info/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Art Basil: find art near you">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/favicon.ico" sizes="48x48">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <!-- Cursor and effects settings -->
+    <link rel="stylesheet" href="../cursorFx.css">
+    <script>
+        // Change this to false for production
+        const isDevelopment = window.location.hostname === 'localhost';
+        const basePath = isDevelopment ? '../' : 'https://raw.githubusercontent.com/slimtomatillo/art-basil/main/';
+    </script>
+</head>
+<body class="bg-light region-page" style="--region-c: #b8227a; --region-t: 1deg;">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G06G4L1YGN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G06G4L1YGN');
+    </script>
+
+    <div class="container py-4">
+        <header class="mb-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+                <div class="mb-3 mb-md-0">
+                    <h1 class="h3 mb-0">
+                        <a href="../index.html" style="text-decoration: none; color: inherit;">
+                            <img src="../images/logo.svg" alt="Art Basil" style="height: 44px; margin-bottom: 8px; vertical-align: middle;">
+                        </a>
+                    </h1>
+                    <p class="text-muted fs-4 mt-2 mb-0">Venues</p>
+                </div>
+
+                <div class="text-md-end">
+                    <h1 class="display-5 mb-3 text-md-end region-title">New York</h1>
+                    <a href="index.html" class="btn btn-outline-primary">Back to art shows</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="table-responsive">
+            <table class="table event-table" id="venueTable">
+                <thead class="sticky-top">
+                    <tr>
+                        <th>Venue</th>
+                        <th>Address</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody id="venue-list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dataManager.js"></script>
+    <script src="../venueAddresses.js"></script>
+    <script src="../mapChoice.js"></script>
+    <script src="../venuesRenderer.js"></script>
+    <script src="../cursorFx.js"></script>
+
+    <!-- Feedback Button -->
+    <button class="feedback-button" id="feedbackButton" title="Send Feedback">
+        ?
+    </button>
+
+    <!-- Feedback Modal -->
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="feedback-modal-content">
+            <span class="feedback-close" id="feedbackClose">&times;</span>
+
+            <!-- Feedback Form -->
+            <form class="feedback-form" id="feedbackForm">
+                <h3>Send Feedback</h3>
+                <div class="form-group">
+                    <label for="feedbackType">Feedback Type</label>
+                    <select id="feedbackType" name="feedbackType" required>
+                        <option value="">Select feedback type</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="general">General Feedback</option>
+                        <option value="event">Event Information</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackName">Name (Optional)</label>
+                    <input type="text" id="feedbackName" name="feedbackName" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="feedbackEmail">Email (Optional)</label>
+                    <input type="email" id="feedbackEmail" name="feedbackEmail" placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="feedbackMessage">Message *</label>
+                    <textarea id="feedbackMessage" name="feedbackMessage" placeholder="Please describe your feedback..." required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="feedback-success" id="feedbackSuccess" style="display: none;">
+                <h3>Thank You!</h3>
+                <p>Your feedback has been sent successfully. We appreciate your input!</p>
+                <button onclick="closeFeedbackModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback JavaScript -->
+    <script src="../web3forms.js"></script>
+    <script src="../feedback.js"></script>
+</body>
+</html>

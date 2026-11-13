@@ -71,7 +71,7 @@ test('a missing or empty venue image list is harmless', () => {
 test('every venue in venue_images.json is a real venue with an https picture or one of our own', () => {
     const images = JSON.parse(fs.readFileSync(path.join(__dirname, '../docs/data/venue_images.json'), 'utf8'));
     const known = new Set();
-    for (const region of ['sf', 'la', 'mtl', 'tor', 'ist']) {
+    for (const region of ['sf', 'la', 'nyc', 'mtl', 'tor', 'ist']) {
         const venues = JSON.parse(fs.readFileSync(path.join(__dirname, `../docs/data/${region}_venues.json`), 'utf8'));
         Object.keys(venues).forEach(v => known.add(v));
     }

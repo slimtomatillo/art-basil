@@ -76,7 +76,7 @@ class AdmissionRecordTest(unittest.TestCase):
         """A new museum scraper needs an entry in docs/data/venue_admission.json (see OPERATIONS.md)."""
         data = os.path.join(os.path.dirname(tagging.ADMISSION_FILE))
         missing = set()
-        for region in ('sf', 'la', 'mtl', 'tor', 'ist'):
+        for region in ('sf', 'la', 'nyc', 'mtl', 'tor', 'ist'):
             with open(os.path.join(data, f'{region}_events.json'), encoding='utf-8') as f:
                 events = json.load(f)
             known = self.record.get(region, {})

@@ -1065,5 +1065,65 @@
                 "lng": -79.395169
             }
         ]
+    },
+    "nyc": {
+        "David Zwirner": [
+            {
+                "lat": 40.745807,
+                "lng": -74.007033
+            },
+            {
+                "lat": 40.746638,
+                "lng": -74.007181
+            },
+            {
+                "lat": 40.719078,
+                "lng": -74.003323
+            }
+        ],
+        "Guggenheim Museum": [
+            {
+                "lat": 40.782993,
+                "lng": -73.958925
+            }
+        ],
+        "Night Gallery New York": [
+            {
+                "lat": 40.719529,
+                "lng": -74.00263
+            }
+        ],
+        "Pace Gallery": [
+            {
+                "lat": 40.749576,
+                "lng": -74.004969
+            },
+            {
+                "lat": 40.749121,
+                "lng": -74.003993
+            },
+            {
+                "lat": 40.718581,
+                "lng": -74.002787
+            }
+        ],
+        "The Frick Collection": [
+            {
+                "lat": 40.771259,
+                "lng": -73.967168
+            }
+        ],
+        "The Studio Museum in Harlem": [
+            {
+                "lat": 40.808418,
+                "lng": -73.947616
+            }
+        ],
+        "Whitney Museum of American Art": [
+            {
+                "lat": 40.739645,
+                "lng": -74.008921
+            }
+        ]
     }
 }
