@@ -71,6 +71,8 @@ class SearchManager {
         const searchBar = document.getElementById('searchBar');
         if (!searchBar) return;
         searchBar.value = this.state.q;
+        // Venue names offered as the visitor types (venueSuggest.js); the search itself works the same without it
+        if (window.VenueSuggest) this.venueSuggest = new window.VenueSuggest(searchBar, this);
         // "input" rather than "keyup" so pasting and the clear (x) button count too
         searchBar.addEventListener('input', (e) => {
             this.state.q = e.target.value.trim();
@@ -155,9 +157,22 @@ class SearchManager {
     // Show one venue's shows ('' for every venue). The match is on the venue's whole name (filterState.venueMatches),
     // and the other filters, including the When phases, stay as they are. From a venue name in a row
     // and from the venue directory (?venue=).
-    setVenue(name) {
+    // `clearSearch`: also empty the search box (a venue picked from its suggestions replaces what was typed).
+    setVenue(name, { clearSearch = false } = {}) {
         this.state.venue = String(name || '').trim();
+        if (clearSearch) this.state.q = '';
         this.applyFilters();
+    }
+
+    // { venue: how many shows it has under the current filters, apart from the search text and the venue itself }:
+    // what the venue suggestions offer, so a suggested venue always shows something when picked
+    venueCounts() {
+        const state = { ...this.state, q: '', venue: '' };
+        const counts = {};
+        for (const row of this.rows) {
+            if (row.venue && filterState.rowMatches(row, state)) counts[row.venue] = (counts[row.venue] || 0) + 1;
+        }
+        return counts;
     }
 
     // Tick or untick one phase in the "When" filter. The last ticked phase can't

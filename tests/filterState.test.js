@@ -525,3 +525,38 @@ test('a venue narrows along with the When phase, a tag and a search', () => {
     assert.strictEqual(fs_.rowMatches(r, state({ venue: 'SFMOMA' })), false, 'past is hidden by the default phases');
     assert.strictEqual(fs_.rowMatches(r, state({ venue: 'SFMOMA', phases: ALL, tags: ['painting'] })), false);
 });
+
+// --- venue suggestions in the search box (WEBSITE-112) ---------------------------------------------
+
+const COUNTS = { 'Art Mûr': 4, 'Arter': 5, 'Arter Kadıköy': 2, 'Oakland Museum of California': 9, 'Museum of the African Diaspora': 3,
+                 'Dictée Art & Exhibition': 1, 'Gallery 16': 0, 'The Broad': 12 };
+const names = list => list.map(s => s.name);
+
+test('suggestions need two letters, and ignore case and accents', () => {
+    assert.deepStrictEqual(fs_.suggestVenues(COUNTS, ''), []);
+    assert.deepStrictEqual(fs_.suggestVenues(COUNTS, 'a'), []);
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'ART MUR')), ['Art Mûr']);
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'dictee')), ['Dictée Art & Exhibition']);
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'kadikoy')), ['Arter Kadıköy']);
+});
+
+test('a venue is found by the start of its name or of any word in it, best first', () => {
+    // "mus": a name that starts with it leads, even with fewer shows than one where it starts a later word
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'mus')), ['Museum of the African Diaspora', 'Oakland Museum of California']);
+    // "ar": names that start with it come before ones where it starts a later word
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'ar')), ['Arter', 'Art Mûr', 'Arter Kadıköy', 'Dictée Art & Exhibition']);
+    // the whole name beats a longer name that starts with it, even with fewer shows
+    assert.deepStrictEqual(names(fs_.suggestVenues({ 'Arter': 1, 'Arter Kadıköy': 8 }, 'arter')), ['Arter', 'Arter Kadıköy']);
+    // two words, and a word that is not the start of one
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'museum of c')), ['Oakland Museum of California']);
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'useum')), []);
+});
+
+test('suggestions leave out venues with no shows, and are limited', () => {
+    assert.deepStrictEqual(names(fs_.suggestVenues(COUNTS, 'gallery')), [], 'Gallery 16 has no shows under the current filters');
+    const many = Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`Gallery ${String.fromCharCode(65 + i)}`, i + 1]));
+    assert.strictEqual(fs_.suggestVenues(many, 'gal').length, 6);
+    assert.strictEqual(fs_.suggestVenues(many, 'gal', 3).length, 3);
+    assert.deepStrictEqual(fs_.suggestVenues(undefined, 'gal'), []);
+    assert.deepStrictEqual(fs_.suggestVenues(COUNTS, 'the broad'), [{ name: 'The Broad', count: 12 }]);
+});

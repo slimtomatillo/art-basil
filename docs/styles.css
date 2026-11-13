@@ -404,6 +404,50 @@ body {
     max-width: 400px;
 }
 
+/* The venue names offered under the search box as the visitor types (venueSuggest.js) */
+#searchBarContainer {
+    position: relative;
+}
+
+.venue-suggest {
+    position: absolute;
+    z-index: 1050;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 4px;
+    padding: 0.25rem;
+    border: 2px solid var(--ink, #111);
+    border-radius: 0.8rem;
+    background: #fff;
+    box-shadow: var(--pop-shadow, 3px 3px 0 #111);
+}
+
+.venue-suggest[hidden] {
+    display: none;
+}
+
+.venue-suggest-option {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.55rem 0.75rem; /* big enough to tap */
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.venue-suggest-option[aria-selected="true"],
+.venue-suggest-option:hover {
+    background: var(--region-tint, #e9ecef);
+}
+
+.venue-suggest-count {
+    flex: none;
+    color: #495057;
+    font-size: 0.85rem;
+}
+
 /* Tag chips */
 .tag-chip {
     display: inline-block;

@@ -525,6 +525,22 @@ class MapView {
         if (dx || dy) this.map.panBy([-dx || 0, -dy || 0], { duration: 250 });     // panBy moves the map, so the popup goes the other way
     }
 
+    // The venue's name in a popup: a link to that venue's shows. A plain click filters the page (the view stays the
+    // map); the href is the same view as a link, so a new-tab click opens it too.
+    venueLink(name) {
+        const link = document.createElement('a');
+        link.className = 'map-popup-venue-link';
+        link.textContent = name;
+        link.href = `?venue=${encodeURIComponent(name)}&view=map`;
+        link.title = `Show only ${name}`;
+        link.addEventListener('click', (e) => {
+            if (e.button > 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || typeof this.searchManager.setVenue !== 'function') return;
+            e.preventDefault();
+            this.searchManager.setVenue(name);
+        });
+        return link;
+    }
+
     // Built with createElement and textContent only: nothing from the data is ever treated as HTML
     popupContent(location) {
         const root = document.createElement('div');
@@ -535,7 +551,9 @@ class MapView {
 
             const title = document.createElement('h3');
             title.className = 'map-popup-title';
-            title.textContent = venue.label ? `${venue.name} (${venue.label})` : venue.name;
+            // The name filters the page to this venue (like the venue name in a table row), staying in Map view
+            title.append(this.venueLink(venue.name));
+            if (venue.label) title.append(` (${venue.label})`);
             section.append(title);
 
             if (venue.address) {

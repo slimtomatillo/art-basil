@@ -384,6 +384,33 @@
         return foldText(rowVenue || '') === lastVenueFolded;
     }
 
+    // Venue names to suggest as the visitor types in the search box. `counts` is { venue name: number of shows
+    // it would show now } (a venue with none is never suggested). A name matches when it starts with what was
+    // typed, or when any word in it does ("mus" finds "Oakland Museum of California"); two letters are needed, so
+    // one letter doesn't offer half the list. Accents and case are ignored. Best first: the whole name, then
+    // names that start with it, then a word inside; within each, the most shows, then A to Z. Returns
+    // [{ name, count }], at most `limit`.
+    function wordsOf(text) {
+        return foldText(text).replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+    }
+    function suggestVenues(counts, typed, limit = 6) {
+        const wanted = wordsOf(typed);
+        if (wanted.length < 2) return [];
+        const found = [];
+        for (const [name, count] of Object.entries(counts || {})) {
+            if (!(count > 0)) continue;
+            const words = wordsOf(name);
+            let rank;
+            if (words === wanted) rank = 0;
+            else if (words.startsWith(wanted)) rank = 1;
+            else if ((' ' + words).includes(' ' + wanted)) rank = 2;
+            else continue;
+            found.push({ name, count, rank });
+        }
+        found.sort((a, b) => a.rank - b.rank || b.count - a.count || a.name.localeCompare(b.name));
+        return found.slice(0, limit).map(({ name, count }) => ({ name, count }));
+    }
+
     // `row` is { bucket, venue, tags: [...], text: foldText(searchable text) } where bucket
     // is bucketOf(phase, ongoing) and venue is the venue's name as stored.
     // `skipGroup` / `skipPhase` leave one filter out, to count what changing it would show.
@@ -449,6 +476,6 @@
         TIMING_PICKS, TIMING_LABELS, TIMING_HINTS, SOON_DAYS, AREAS,
         groupOf, bucketOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
         validDay, addDays, timingWindow, timingMatches, describeTiming, cityOf, zipOf, areasOfAddresses, areasOfRegion, areasMatch,
-        foldText, venueMatches, phaseMatches, tagsMatch, rowMatches, countTags, countPhases, countTimings, countAreas,
+        foldText, venueMatches, suggestVenues, phaseMatches, tagsMatch, rowMatches, countTags, countPhases, countTimings, countAreas,
     };
 }));
