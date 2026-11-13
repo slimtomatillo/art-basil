@@ -520,7 +520,7 @@ test('a popup shows no distance when "Use my location" is off, and never treats 
     clickPin(map, keyOf(ctx, 'Museum'));
     const popup = ctx.library.popups[0];
     assert.strictEqual(findAll(popup.content, n => n.className === 'map-popup-distance').length, 0);
-    const [link] = findAll(popup.content, n => n.tag === 'a' && n.className !== 'map-popup-map');
+    const [link] = findAll(popup.content, n => n.tag === 'a' && n.className !== 'map-popup-map' && n.className !== 'map-popup-venue-link');
     assert.strictEqual(link.textContent, '<img src=x onerror=alert(1)>');           // set as text, so it is just text
     assert.strictEqual(link.innerHTML, undefined);
     ctx.restore();
@@ -532,7 +532,7 @@ test('two venues at one address share a pin and one popup lists both', async () 
     assert.strictEqual(map.sources.locations.data.features.length, 1);
     assert.strictEqual(map.sources.locations.data.features[0].properties.count, 2);
     clickPin(map, keyOf(ctx, 'Gallery A'));
-    const titles = findAll(ctx.library.popups[0].content, n => n.className === 'map-popup-title').map(n => n.textContent);
+    const titles = findAll(ctx.library.popups[0].content, n => n.className === 'map-popup-venue-link').map(n => n.textContent);
     assert.deepStrictEqual(titles, ['Gallery A', 'Gallery B']);
     ctx.restore();
 });
@@ -861,5 +861,30 @@ test('the privacy of the visitor: the dot is the only place the map keeps their 
     const kept = JSON.stringify(ctx.view, (key, value) => (['map', 'maplibre', 'searchManager', 'bar', 'tableWrap', 'section', 'resultsBar', 'summary', 'toggle', 'buttons'].includes(key) ? undefined : value));
     assert.ok(!kept.includes('37.123456') && !kept.includes('122.987654'), 'the position is still held after turning off');
     assert.ok(map.fitted.length >= 1);
+    ctx.restore();
+});
+
+
+test("a popup's venue name is a link to that venue's shows, and a plain click filters without leaving the map", async () => {
+    const ctx = setup({ rows: [showRow('Gallery A', 'A1')] });
+    const map = await openMap(ctx);
+    clickPin(map, keyOf(ctx, 'Gallery A'));
+    const [link] = findAll(ctx.library.popups[0].content, n => n.className === 'map-popup-venue-link');
+    assert.strictEqual(link.textContent, 'Gallery A');
+    assert.strictEqual(link.href, '?venue=Gallery%20A&view=map');
+    const chosen = [];
+    ctx.manager.setVenue = name => chosen.push(name);
+    const click = (extra = {}) => {
+        const event = { button: 0, prevented: false, preventDefault() { event.prevented = true; }, ...extra };
+        link.listeners.click(event);
+        return event;
+    };
+    assert.ok(click().prevented);
+    assert.deepStrictEqual(chosen, ['Gallery A']);
+    for (const extra of [{ metaKey: true }, { ctrlKey: true }, { shiftKey: true }, { button: 1 }]) {
+        assert.ok(!click(extra).prevented, JSON.stringify(extra));
+    }
+    assert.deepStrictEqual(chosen, ['Gallery A']);
+    assert.strictEqual(ctx.manager.state.view, 'map');
     ctx.restore();
 });
