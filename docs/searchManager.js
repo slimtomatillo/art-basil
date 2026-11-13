@@ -45,9 +45,12 @@ class SearchManager {
         this.rows = Array.from(this.tableBody.getElementsByTagName('tr')).flatMap((el, index) => {
             const cells = el.getElementsByTagName('td');
             if (cells.length < 5) return [];
-            // Columns: 0 image, 1 date, 2 "title @ venue", 3 tags, 4 links. The
-            // text search covers date, title/venue and tags, as it always has.
-            const text = filterState.foldText([1, 2, 3].map(i => cells[i]?.textContent || '').join('\n'));
+            // Columns: 0 image, 1 date, 2 "title @ venue", 3 tags, 4 links. The text search covers the
+            // date, title/venue and tags, and the event's description (so a name in a group show finds it).
+            const text = filterState.searchText({
+                date: cells[1]?.textContent, title: cells[2]?.textContent, tags: cells[3]?.textContent,
+                description: el.eventData && el.eventData.description,
+            });
             return [{
                 el,
                 index,                                       // the page's usual order (Near Me can reorder the rows)

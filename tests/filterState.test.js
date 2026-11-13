@@ -403,6 +403,39 @@ test('an area filter shows a row in any chosen area, and counts what each area w
     assert.deepStrictEqual(fs_.countAreas(rows, state(), 'tor'), {});
 });
 
+// --- search covers the description (WEBSITE-39) ------------------------------------------------------
+
+test('the search text holds the date, title, tags and description, folded, and copes with missing parts', () => {
+    const text = fs_.searchText({ date: 'Oct 1 - Nov 12, 2026', title: 'Josiah McElheny: Island Universe @ LACMA',
+        tags: 'exhibition current', description: 'Includes works by Yayoi Kusama and Ana Mendieta.' });
+    for (const part of ['oct 1 - nov 12, 2026', 'josiah mcelheny: island universe @ lacma', 'exhibition current', 'yayoi kusama']) {
+        assert.ok(text.includes(part), part);
+    }
+    assert.strictEqual(fs_.searchText({ title: 'A @ B' }), 'a @ b');                           // no description, no tags
+    assert.strictEqual(fs_.searchText({ title: 'A @ B', description: null }), 'a @ b');
+    assert.strictEqual(fs_.searchText({ title: 'A', description: '' }), 'a');
+    assert.strictEqual(fs_.searchText(), '');
+    // accents and case are ignored, in the description too
+    assert.ok(fs_.searchText({ description: 'Œuvres de François Ghebaly, Sakıp Sabancı' }).includes('francois ghebaly, sakip sabanci'));
+});
+
+test('a name that is only in the description finds the show; searches that matched before still do', () => {
+    const rows = [
+        { ...drow('current', null, null), text: fs_.searchText({ title: 'Island Universe @ LACMA', tags: 'exhibition',
+            description: 'Josiah McElheny with works by Yayoi Kusama and Ana Mendieta.' }) },
+        { ...drow('current', null, null), text: fs_.searchText({ title: 'Kusama: Infinity Mirrors @ Broad', tags: 'exhibition' }) },   // no description
+        { ...drow('current', null, null), text: fs_.searchText({ title: 'Other Show @ Hammer', tags: 'exhibition', description: 'Nothing relevant.' }) },
+    ];
+    const found = q => shows(rows, state({ q })).length;
+    assert.strictEqual(found('kusama'), 2);                  // one by title, one only by description
+    assert.strictEqual(found('KUSAMA'), 2);                  // case
+    assert.strictEqual(found('mendieta'), 1);                // description only
+    assert.strictEqual(found('Yayoi Kusama'), 1);            // a full name
+    assert.strictEqual(found('hammer'), 1);                  // venue, as before
+    assert.strictEqual(found('exhibition'), 3);              // tag text, as before
+    assert.strictEqual(found('nobody'), 0);
+});
+
 test('counts for each Dates option follow the other filters', () => {
     const rows = [drow('current', '2026-10-01', '2026-11-20', { tags: ['free'] }), drow('current', '2026-10-01', '2026-12-31'), drow('future', '2026-11-20', '2026-12-31', { tags: ['free'] })];
     const base = state({ today: TODAY });
