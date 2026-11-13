@@ -334,7 +334,55 @@ test('areas come from the city in an address', () => {
     assert.deepStrictEqual(areas(['1 A St, Mountain View, CA']), ['south-bay']);
     assert.deepStrictEqual(areas(['1 A St, Stanford, CA', '2 B St, San Jose, CA']), ['peninsula', 'south-bay']);
     assert.deepStrictEqual(areas(['1 A St, Nowheresville, CA']), []);
-    assert.deepStrictEqual(fs_.areasOfAddresses('la', ['1 A St, Los Angeles, CA']), []);                            // only the Bay Area has areas
+    assert.deepStrictEqual(fs_.areasOfAddresses('tor', ['1 A St, Toronto, ON']), []);                                // Toronto and Montreal have no areas
+});
+
+test('Los Angeles areas come from the town, or for the city of Los Angeles from the ZIP code', () => {
+    const areas = a => fs_.areasOfAddresses('la', a);
+    assert.strictEqual(fs_.zipOf('5905 Wilshire Blvd, Los Angeles, CA 90036'), '90036');
+    assert.strictEqual(fs_.zipOf('5905 Wilshire Blvd, Los Angeles, CA'), null);
+    assert.strictEqual(fs_.zipOf('10899 Wilshire Blvd, Los Angeles, CA'), null);                                     // the street number is not a ZIP
+    // the city of Los Angeles is split by ZIP
+    assert.deepStrictEqual(areas(['5905 Wilshire Blvd, Los Angeles, CA 90036']), ['hollywood-mid-wilshire']);
+    assert.deepStrictEqual(areas(['6750 Santa Monica Blvd, Los Angeles, CA 90038']), ['hollywood-mid-wilshire']);
+    assert.deepStrictEqual(areas(['10899 Wilshire Blvd, Los Angeles, CA 90024']), ['westside']);
+    assert.deepStrictEqual(areas(['1200 Getty Center Dr, Los Angeles, CA 90049']), ['westside']);
+    assert.deepStrictEqual(areas(['250 S Grand Ave, Los Angeles, CA 90012']), ['downtown-south-la']);
+    assert.deepStrictEqual(areas(['600 State Dr, Los Angeles, CA 90037']), ['downtown-south-la']);
+    // the towns around it are placed by name, with or without a ZIP
+    assert.deepStrictEqual(areas(['1639 18th St, Santa Monica, CA 90404']), ['westside']);
+    assert.deepStrictEqual(areas(['10808 Culver Blvd, Culver City, CA']), ['westside']);
+    assert.deepStrictEqual(areas(['456 N Camden Dr, Beverly Hills, CA 90210']), ['westside']);
+    assert.deepStrictEqual(areas(['8980 Santa Monica Blvd, West Hollywood, CA 90069']), ['westside']);
+    assert.deepStrictEqual(areas(['411 W Colorado Blvd, Pasadena, CA']), ['pasadena-sgv']);
+    assert.deepStrictEqual(areas(['1151 Oxford Rd, San Marino, CA 91108']), ['pasadena-sgv']);
+    assert.deepStrictEqual(areas(['1301 Avenida Cesar Chavez, Monterey Park, CA 91754']), ['pasadena-sgv']);
+    assert.deepStrictEqual(areas(['628 Alamitos Ave, Long Beach, CA 90802']), ['downtown-south-la']);               // too small to stand alone
+    // a venue with two addresses can be in two areas (Francois Ghebaly)
+    assert.deepStrictEqual(areas(['2245 E Washington Blvd, Los Angeles, CA 90021', '417 N Camden Dr, Beverly Hills, CA 90210']),
+        ['downtown-south-la', 'westside']);
+    // a Los Angeles address with no ZIP cannot be placed, which is why every address needs one
+    assert.deepStrictEqual(areas(['5905 Wilshire Blvd, Los Angeles, CA']), []);
+    assert.deepStrictEqual(areas(['1 A St, Los Angeles, CA 99999']), []);
+    // other regions' areas do not apply here, and these do not apply elsewhere
+    assert.deepStrictEqual(fs_.areasOfRegion('la', ['westside', 'east-bay', 'kadikoy']), ['westside']);
+    assert.deepStrictEqual(fs_.areasOfRegion('sf', ['westside']), []);
+    assert.deepStrictEqual(fs_.areasOfAddresses('sf', ['5905 Wilshire Blvd, Los Angeles, CA 90036']), []);
+});
+
+test('every real Los Angeles venue address is in an area, so a venue with an address we cannot place fails here', () => {
+    const venues = JSON.parse(fs.readFileSync(path.join(__dirname, '../docs/data/la_venues.json'), 'utf8'));
+    const unplaced = [];
+    const noZip = [];
+    for (const [name, value] of Object.entries(venues)) {
+        for (const { address } of venueAddresses.normalize(value)) {
+            if (fs_.areasOfAddresses('la', [address]).length === 0) unplaced.push(`${name}: ${address}`);
+            if (!fs_.zipOf(address)) noZip.push(`${name}: ${address}`);
+        }
+    }
+    assert.deepStrictEqual(unplaced, [], 'give the address a ZIP code, or add the town or ZIP to AREAS.la in docs/filterState.js');
+    // the geocoder can put an address with no ZIP on another city's street of the same name (WEBSITE-110)
+    assert.deepStrictEqual(noZip, [], 'add the ZIP code to the address in docs/data/la_venues.json');
 });
 
 test('only the areas of the region count, so a Bay Area link opened elsewhere cannot hide everything', () => {
@@ -352,7 +400,7 @@ test('an area filter shows a row in any chosen area, and counts what each area w
     assert.strictEqual(shows(rows, state({ areas: ['north-bay'] })).length, 1);
     assert.deepStrictEqual(fs_.countAreas(rows, state({ areas: ['east-bay'] }), 'sf'),
         { 'san-francisco': 1, 'east-bay': 2, peninsula: 0, 'south-bay': 0, 'north-bay': 1 });
-    assert.deepStrictEqual(fs_.countAreas(rows, state(), 'la'), {});
+    assert.deepStrictEqual(fs_.countAreas(rows, state(), 'tor'), {});
 });
 
 test('counts for each Dates option follow the other filters', () => {
@@ -409,14 +457,14 @@ test('every real Istanbul venue address is in a district area, so a venue in a n
     assert.deepStrictEqual(unplaced, [], 'add the district to AREAS.ist in docs/filterState.js');
 });
 
-test('no town or district is in two areas of a region, and every area id is unique', () => {
+test('no town, ZIP or district is in two areas of a region, and every area id is unique', () => {
     const ids = new Set();
     for (const [region, areas] of Object.entries(fs_.AREAS)) {
         const seen = new Map();
         for (const area of areas) {
             assert.ok(!ids.has(area.id), `${area.id} is used twice`);
             ids.add(area.id);
-            for (const place of [...(area.cities || []), ...(area.districts || [])]) {
+            for (const place of [...(area.cities || []), ...(area.zips || []), ...(area.districts || [])]) {
                 const key = fs_.foldText(place);
                 assert.ok(!seen.has(key), `${region}: ${place} is in two areas`);
                 seen.set(key, area.id);

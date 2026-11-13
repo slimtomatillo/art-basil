@@ -1,10 +1,10 @@
 {
-    "LACMA": "5905 Wilshire Blvd, Los Angeles, CA",
-    "The Broad": "221 S. Grand Avenue, Los Angeles, CA",
-    "Getty": "1200 Getty Center Dr, Los Angeles, CA",
-    "Norton Simon Museum": "411 W Colorado Blvd, Pasadena, CA",
-    "Hammer Museum": "10899 Wilshire Blvd, Los Angeles, CA",
-    "MOCA": "250 S Grand Ave, Los Angeles, CA",
+    "LACMA": "5905 Wilshire Blvd, Los Angeles, CA 90036",
+    "The Broad": "221 S. Grand Avenue, Los Angeles, CA 90012",
+    "Getty": "1200 Getty Center Dr, Los Angeles, CA 90049",
+    "Norton Simon Museum": "411 W Colorado Blvd, Pasadena, CA 91105",
+    "Hammer Museum": "10899 Wilshire Blvd, Los Angeles, CA 90024",
+    "MOCA": "250 S Grand Ave, Los Angeles, CA 90012",
     "Hauser & Wirth DTLA": "901 E 3rd St, Los Angeles, CA 90013",
     "Hauser & Wirth WeHo": "8980 Santa Monica Blvd, West Hollywood, CA 90069",
     "Huntington": "1151 Oxford Rd, San Marino, CA 91108",
@@ -40,7 +40,7 @@
     "Sprüth Magers Los Angeles": "5900 Wilshire Blvd, Los Angeles, CA 90036",
     "Kohn Gallery": "1227 N Highland Ave, Los Angeles, CA 90038",
     "Jeffrey Deitch Los Angeles": [
-        {"label": "Orange Drive", "address": "925 N Orange Dr, Los Angeles, CA"},
-        {"label": "Santa Monica Boulevard", "address": "7000 Santa Monica Blvd, Los Angeles, CA"}
+        {"label": "Orange Drive", "address": "925 N Orange Dr, Los Angeles, CA 90038"},
+        {"label": "Santa Monica Boulevard", "address": "7000 Santa Monica Blvd, Los Angeles, CA 90038"}
     ]
 }
