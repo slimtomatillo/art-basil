@@ -55,8 +55,24 @@ window.openNotifyModal = function(event) {
     // Show modal
     notifyModal.style.display = 'block';
     
-    // Reset form
+    // Reset form (the calendar chosen last time stays chosen)
     document.getElementById('calendarType').value = '';
+    const provider = document.getElementById('calendarProvider');
+    if (provider) provider.value = recalledProvider() || provider.options[0].value;
+}
+
+// The calendar a visitor used last, kept in this browser only (a convenience: the modal works without it)
+const PROVIDER_KEY = 'artbasil.calendar';
+function recalledProvider() {
+    try {
+        const saved = localStorage.getItem(PROVIDER_KEY);
+        return window.calendarLinks.PROVIDERS.includes(saved) ? saved : null;
+    } catch (e) {
+        return null;
+    }
+}
+function rememberProvider(provider) {
+    try { localStorage.setItem(PROVIDER_KEY, provider); } catch (e) { /* private window or blocked storage */ }
 }
 
 // Function to close the notify modal - make it globally accessible
@@ -100,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         
         const calendarType = document.getElementById('calendarType').value;
+        const provider = document.getElementById('calendarProvider').value;
         
         if (!calendarType) {
             alert('Please select a calendar event type');
@@ -111,93 +128,44 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Create Google Calendar event
-        window.createGoogleCalendarEvent(currentEvent, calendarType);
+        rememberProvider(provider);
+        window.addToCalendar(currentEvent, calendarType, provider);
     });
 });
 
-// Function to create Google Calendar event - make it globally accessible
-window.createGoogleCalendarEvent = function(event, calendarType) {
-    let startDate, endDate, eventTitle, eventDescription;
-    
-    // Parse dates
-    const startDateObj = event.dates.start && event.dates.start !== 'null' ? new Date(event.dates.start) : null;
-    const endDateObj = event.dates.end && event.dates.end !== 'null' ? new Date(event.dates.end) : null;
-    
-    // Set event details based on calendar type
-    let eventPageLink; // Declare once outside the switch
-    
-    switch (calendarType) {
-        case 'opening':
-            if (!startDateObj) {
-                alert('Opening date not available for this event');
-                return;
-            }
-            startDate = startDateObj;
-            endDate = startDateObj; // Same day for opening
-            eventTitle = `${event.name} - Opening Day`;
-            eventDescription = `Opening day of ${event.name} at ${event.venue}`;
-            break;
-            
-        case 'closing':
-            if (!endDateObj) {
-                alert('Closing date not available for this event');
-                return;
-            }
-            startDate = endDateObj; // Same day for closing
-            endDate = endDateObj;
-            eventTitle = `${event.name} - Closing Day`;
-            eventDescription = `Last day to see ${event.name} at ${event.venue}`;
-            break;
-            
-        case 'full':
-            if (!startDateObj || !endDateObj) {
-                alert('Full event dates not available for this event');
-                return;
-            }
-            startDate = startDateObj;
-            endDate = endDateObj;
-            eventTitle = event.name;
-            eventDescription = `${event.name} at ${event.venue}`;
-            break;
-            
-        default:
-            alert('Invalid calendar type selected');
+// Add the event to the chosen calendar - make it globally accessible. The dates, texts and links are built in
+// calendarLinks.js (pure, unit tested); this only opens a link or downloads the .ics file.
+window.addToCalendar = function(event, calendarType, provider) {
+    const links = window.calendarLinks;
+    const resolved = links.resolve(event, calendarType);
+    if (!resolved.ok) {
+        alert(resolved.message);
+        return;
+    }
+
+    if (provider === 'ics') {
+        downloadIcs(links.icsText(resolved, calendarType), links.icsFileName(resolved, calendarType));
+    } else {
+        const url = { google: links.googleUrl, outlook: links.outlookUrl, yahoo: links.yahooUrl }[provider];
+        if (!url) {
+            alert('Invalid calendar selected');
             return;
+        }
+        window.open(url(resolved), '_blank');
     }
-    
-    // Add event link if available (after switch statement)
-    eventPageLink = event.links.find(link => link.description === 'Event Page');
-    if (eventPageLink) {
-        eventDescription += `\n\n<a href="${eventPageLink.link}">Event Page</a>`;
-    }
-    
-    // Format dates for Google Calendar all-day events (YYYYMMDD format)
-    const formatDateForGoogleAllDay = (date) => {
-        const year = date.getUTCFullYear();
-        const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-        const day = String(date.getUTCDate()).padStart(2, '0');
-        return `${year}${month}${day}`;
-    };
-    
-    // Google Calendar's all-day end date is exclusive: a one-day event on Nov 12 is
-    // 20261112/20261113, and a run that closes Nov 12 must end on Nov 13 or its last
-    // day is dropped. Dates are UTC midnight, so adding 24h is exactly the next day.
-    const oneDayMs = 24 * 60 * 60 * 1000;
-    const startDateStr = formatDateForGoogleAllDay(startDate);
-    const endDateStr = formatDateForGoogleAllDay(new Date(endDate.getTime() + oneDayMs));
-    
-    // Add reminder note to description
-    const reminderNote = '\n\n💡 Tip: Set a reminder for 1 week before this event!';
-    const artBasilAttribution = '\n\nCreated by <a href="https://artbasil.info">Art Basil</a>';
-    const fullDescription = eventDescription + reminderNote + artBasilAttribution;
-    
-    // Create Google Calendar URL for all-day events
-    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${startDateStr}/${endDateStr}&details=${encodeURIComponent(fullDescription)}&location=${encodeURIComponent(event.venue)}`;
-    
-    // Open Google Calendar in new tab
-    window.open(googleCalendarUrl, '_blank');
-    
-    // Close modal after opening calendar
+
+    // Close modal after opening the calendar or starting the download
     closeNotifyModal();
+}
+
+// Hand the browser a .ics file to save or open (iPhones and Macs offer to add it to Calendar)
+function downloadIcs(text, fileName) {
+    const url = URL.createObjectURL(new Blob([text], { type: 'text/calendar;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
 }

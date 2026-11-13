@@ -129,6 +129,7 @@
     <script src="../scroll.js"></script>
     
     <!-- Other functionality -->
+    <script src="../calendarLinks.js"></script>
     <script src="../notify.js"></script>
     <script src="../cursorFx.js"></script>
     <!-- Add this before </body> -->
@@ -194,7 +195,7 @@
             
             <!-- Notify Form -->
             <form class="notify-form" id="notifyForm">
-                <h3>Add to Google Calendar</h3>
+                <h3>Add to calendar</h3>
                 
                 <div class="event-info" id="eventInfo">
                     <h4 id="eventTitle"></h4>
@@ -212,7 +213,17 @@
                     </select>
                 </div>
 
-                <button type="submit">Create Calendar Event</button>
+                <div class="form-group">
+                    <label for="calendarProvider">Calendar</label>
+                    <select id="calendarProvider" name="calendarProvider">
+                        <option value="google">Google Calendar</option>
+                        <option value="ics">Apple or other (.ics file)</option>
+                        <option value="outlook">Outlook</option>
+                        <option value="yahoo">Yahoo</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add to calendar</button>
                 <button type="button" class="secondary" onclick="closeNotifyModal()">Cancel</button>
             </form>
         </div>
