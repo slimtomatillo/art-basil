@@ -18,11 +18,12 @@ def page_lines(soup):
 
 
 def publish(env, region, venue, name, start_date, end_date, link, tag='gallery', description=None,
-            keep_past=False, seen=None, kind='exhibition', extra_tags=(), image=None, ongoing=False):
+            keep_past=False, seen=None, kind='exhibition', extra_tags=(), image=None, ongoing=False, locations=None):
     """Build and store one exhibition (or, with kind='event', one program). Returns True if it
     was published (past entries are skipped unless keep_past, and a (name, start) pair already
     in `seen` is skipped). `image` is the show's picture URL, stored as an "Image" link. `ongoing` marks
-    an open-ended show (no end date) as the site's "Ongoing"."""
+    an open-ended show (no end date) as the site's "Ongoing". `locations` names the addresses of a venue with several (their
+    labels in the venue's address list) that the show is at; without it the map pins the show at every address (WEBSITE-122)."""
     today = region_today(region)
     # A show that only says "Until <date>" has no start date; one with neither date can't be placed
     if not (name and (start_date or end_date)):
@@ -46,6 +47,8 @@ def publish(env, region, venue, name, start_date, end_date, link, tag='gallery',
         'links': [{'link': link, 'description': 'Event Page'}],
         'last_updated': dt.datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
     }
+    if locations:
+        event_details['locations'] = list(locations)
     if image:
         event_details['links'].append({'link': image, 'description': 'Image'})
     if env == 'dev':

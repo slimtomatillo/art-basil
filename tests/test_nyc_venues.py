@@ -226,6 +226,23 @@ class ZwirnerTest(unittest.TestCase):
         self.assertEqual(nara['links'][0]['link'], 'https://www.davidzwirner.com/exhibitions/2026/yoshitomo-nara')
         self.assertEqual(image_of(shows['Jem Perucchini: Sospiro']), 'https://cdn.example/jem-perucchini.jpg')
 
+    def test_each_show_stores_the_spaces_its_card_names(self):
+        shows = run(david_zwirner, 'scrape_david_zwirner', {david_zwirner.PAGE_URL: self.PAGE})
+        self.assertEqual(shows['Yoshitomo Nara']['locations'], ['19th Street', '20th Street'])
+        self.assertEqual(shows['Jem Perucchini: Sospiro']['locations'], ['Tribeca'])
+
+    def test_spaces_reads_both_ways_of_writing_them(self):
+        self.assertEqual(david_zwirner.spaces('New York: Tribeca'), ['Tribeca'])
+        self.assertEqual(david_zwirner.spaces('New York: 19th Street, 20th Street'), ['19th Street', '20th Street'])
+        self.assertEqual(david_zwirner.spaces('New York'), [])
+
+    def test_the_labels_it_stores_are_the_labels_of_the_venues_addresses(self):
+        import json, os
+        venues = json.load(open(os.path.join(os.path.dirname(__file__), '..', 'docs', 'data', 'nyc_venues.json'), encoding='utf-8'))
+        labels = {a['label'] for a in venues['David Zwirner']}
+        for place in ('New York: Tribeca', 'New York: 19th Street, New York: 20th Street'):
+            self.assertLessEqual(set(david_zwirner.spaces(place)), labels, place)
+
 
 NG_LISTING = ('<main><p>Current</p><p>Upcoming</p><p>Past</p>'
               '<div><a href="/exhibitions/hasani-sahlehe2"><p>HASANI SAHLEHE</p><p>Monoprints</p><p>November 13 – December 18, 2026</p></a></div>'

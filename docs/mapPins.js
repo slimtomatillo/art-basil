@@ -54,9 +54,20 @@
             }
             placed += venueRows.length;
             venuesPlaced += 1;
-            const shows = venueRows.map(showOf);
             const addresses = addressesOf(venue) || [];
-            usable.forEach(({ entry, index }, n) => {
+            const labelOf = ({ entry, index }) => (addresses[index] || {}).label || String(index + 1);
+            // Where each show is shown: the addresses it names (an event's `locations`, address labels), or every address of
+            // its venue when it names none, or none that this venue has (a mistyped label must not make a show vanish)
+            const placesOf = row => {
+                const named = (row.event && Array.isArray(row.event.locations)) ? row.event.locations : [];
+                const hits = usable.filter(pin => named.includes(labelOf(pin)));
+                return hits.length ? hits : usable;
+            };
+            const placements = venueRows.map(row => ({ show: showOf(row), pins: placesOf(row) }));
+            usable.forEach((pin, n) => {
+                const { entry, index } = pin;
+                const shows = placements.filter(p => p.pins.includes(pin)).map(p => p.show);
+                if (shows.length === 0) return;                       // no show of this venue is at this address
                 const key = locationKey(entry.lat, entry.lng);
                 if (!byKey.has(key)) {
                     byKey.set(key, { key, lat: entry.lat, lng: entry.lng, approx: false, count: 0, weight: 0, venues: [] });
@@ -73,7 +84,8 @@
                     shows,
                 });
                 location.count += shows.length;
-                if (n === 0) location.weight += shows.length;   // its shows are added up once, at the venue's first pin
+                // a show counts once in a cluster, at the first address it is at
+                location.weight += placements.filter(p => p.pins[0] === pin).length;
             });
         }
         const locations = [...byKey.values()];

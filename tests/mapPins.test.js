@@ -60,6 +60,34 @@ test('a venue with two addresses gets a pin at each, labelled, and its shows are
     assert.strictEqual(locations.reduce((sum, l) => sum + l.weight, 0), 2);
 });
 
+test('a show that names its addresses is pinned only there; one that names none is pinned at every address (WEBSITE-122)', () => {
+    const at = (name, locations) => { const r = row('Two Spaces', name); if (locations) r.event.locations = locations; return r; };
+    const rows = [at('Both', ['Downtown', 'Hollywood']), at('Hollywood only', ['Hollywood']), at('Names none'), at('Empty', [])];
+    const { locations, placed } = mapPins.groupByLocation(rows, COORDINATES, addressesOf);
+    const names = l => l.venues[0].shows.map(s => s.name);
+    assert.deepStrictEqual(names(locations[0]), ['Both', 'Names none', 'Empty']);                       // Downtown
+    assert.deepStrictEqual(names(locations[1]), ['Both', 'Hollywood only', 'Names none', 'Empty']);     // Hollywood
+    assert.deepStrictEqual(locations.map(l => l.count), [3, 4]);
+    assert.strictEqual(placed, 4);
+    // each show is counted once in a cluster, at the first address it is at: Hollywood-only counts at Hollywood
+    assert.deepStrictEqual(locations.map(l => l.weight), [3, 1]);
+    assert.strictEqual(locations.reduce((sum, l) => sum + l.weight, 0), 4);
+});
+
+test('a label the venue does not have never makes a show disappear', () => {
+    const r = row('Two Spaces', 'Typo'); r.event.locations = ['Hollywod'];
+    const { locations, placed } = mapPins.groupByLocation([r], COORDINATES, addressesOf);
+    assert.strictEqual(locations.length, 2);
+    assert.strictEqual(placed, 1);
+});
+
+test('a pin where none of the venues shows are is not drawn', () => {
+    const r = row('Two Spaces', 'Hollywood only'); r.event.locations = ['Hollywood'];
+    const { locations } = mapPins.groupByLocation([r], COORDINATES, addressesOf);
+    assert.deepStrictEqual(locations.map(l => l.venues[0].label), ['Hollywood']);
+    assert.strictEqual(locations[0].weight, 1);
+});
+
 test('a venue with two addresses and no label is told apart by its position', () => {
     const { locations } = mapPins.groupByLocation([row('Two Spaces', 'S1')], COORDINATES, () => [{ label: '', address: 'a' }, { label: '', address: 'b' }]);
     assert.deepStrictEqual(locations.map(l => l.venues[0].label), ['1', '2']);

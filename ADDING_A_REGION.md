@@ -122,8 +122,13 @@ College Circle"); the venues page lists them on separate lines:
 - Every entry needs a short `label` once there are two or more (a test checks
   this); a list with one entry shows a plain "Map" like a string would.
 - The `venue` key stays one string, identical in the scraper and in this file (2c).
-  An event belongs to one venue, so every event shows **all** the venue's links,
-  including shows held in only one of the spaces. That is the trade-off.
+  An event belongs to one venue, so by default every event shows **all** the venue's
+  links and pins, including shows held in only one of the spaces. **If the venue's
+  own page says which space a show is in, store it** (WEBSITE-122): pass
+  `locations=[...]` to `publish` (the `label`s of the addresses, exactly as written
+  above; David Zwirner's scraper reads them off each card's place line). The map
+  then pins the show only there and the table shows only those "Map: ..." links. A
+  show with no `locations` (or only labels the venue does not have) keeps all of them.
 - **Or split it into two venues** (two keys, two scrapers or one scraper writing
   two `venue` strings) when the spaces are really separate places: they have their
   own sites or listings, and no show spans both. That is how Hauser & Wirth

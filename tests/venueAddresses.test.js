@@ -8,6 +8,14 @@ const va = require('../docs/venueAddresses.js');
 const HART = { label: 'Hart House', address: '7 Hart House Circle, Toronto, ON M5S 3H3' };
 const KINGS = { label: "King's College Circle", address: "15 King's College Circle, Toronto, ON M5S 3H7" };
 
+test('a show that names its spaces gets a map link for those only, and all when it names none or a wrong one (WEBSITE-122)', () => {
+    const three = [{ label: '19th Street', address: '1 A St' }, { label: '20th Street', address: '2 B St' }, { label: 'Tribeca', address: '3 C St' }];
+    assert.deepStrictEqual(va.mapLinks(three, ['Tribeca']).map(l => l.text), ['Map: Tribeca']);
+    assert.deepStrictEqual(va.mapLinks(three, ['19th Street', '20th Street']).map(l => l.text), ['Map: 19th Street', 'Map: 20th Street']);
+    for (const only of [undefined, null, [], ['Chelsea']]) assert.strictEqual(va.mapLinks(three, only).length, 3, String(only));
+    assert.deepStrictEqual(va.mapLinks('1 A St', ['Tribeca']).map(l => l.text), ['Map']);
+});
+
 test('a plain address is one entry with no label', () => {
     assert.deepStrictEqual(va.normalize('  1380 Sherbrooke St W, Montreal, QC '), [{ label: '', address: '1380 Sherbrooke St W, Montreal, QC' }]);
 });
