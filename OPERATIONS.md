@@ -436,6 +436,17 @@ paragraphs, plain, 500 characters). They also now link to the show's public page
 content path) and Daniel Faria's API `uri` (the WordPress path) both answer an error page (403 and 404) to a visitor's browser.
 CAAM needs no proxy: its pages refuse the bot, but its feed is open.
 
+**A show whose Event Page is a listing, a home page or a social page** (nothing usable on it, and it is not about the show: a word
+of the show's title is in neither its address, its `<title>` nor its first heading) gets one more try: the show's card is looked
+for on that page (`images.link_in_card`, the same strict rule as above) and the page the card links to is read (one more fetch, once,
+and never through the paid proxy). That is how a home page that features one show (MICA) or an exhibitions index (Sprüth Magers,
+Mercer Union, InterAccess) gives its show's text. **Some rules read what is glued to a text:** a menu bar ("ABOUT | ARTISTS | TOUR")
+is not joined to the paragraph after it; dates and reception lines set in front of the text with nothing between them ("November 11
+– 29, 2026Opening Reception: Sat. Nov. 14, 12 – 4 pm", or "Vernissage: le 6 novembre, 17h-21hExposition: ...") are dropped
+(`strip_event_info`); a title set on its own line above the text is dropped; a funding credit ("is generously supported by...", "made
+possible in part by...") or a series credit ("is part of ..., presented by...") is not a description. The Wattis Institute's text is in a
+`main-listContainer` block with no paragraphs, so `SITE_EXTRACTORS` has a rule for it, like AGO.
+
 What it **does not** do: Galerie Simon Blais (its pages have nothing readable in the server's HTML; `PROXIED_WITHOUT_TEXT`) and Armory Center for
 the Arts (its events share one listing page) are not looked up. A listing whose cards have no recognisable link to the
 show's own page gets nothing (the venue's scraper would have to read the blurb off the listing; WEBSITE-119 tracks
