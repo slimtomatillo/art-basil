@@ -327,7 +327,11 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
             described = descriptions.enrich_missing_descriptions(selected_regions)
             logging.info(f"Finished looking for event descriptions: opened {described['checked']} event pages, "
                          f"added {len(described['added'])}, dropped {len(described['dropped'])} texts shared by several shows, "
-                         f"looked up {described['shared']} events on shared listing pages through their cards")
+                         f"looked up {described['shared']} events on shared listing pages through their cards, "
+                         f"fetched {described['proxied']} paid-proxy pages (about {described['credits']} ZenRows credits)")
+            if described['failed']:
+                logging.warning(f"{described['failed']} paid-proxy event pages could not be fetched for their descriptions; "
+                                f"they are asked for again on the next run (two in a row stop the proxied pass for the day)")
         except Exception:
             logging.exception("Adding event descriptions failed")
         # Swap heavy original pictures for small copies so pages load quickly

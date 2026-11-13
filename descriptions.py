@@ -31,7 +31,8 @@ title, strictly (a link around the title, or one whose text or address uses a wo
 only link, on the venue's own site), and that page is read like any event page. The event's stored "Event Page"
 link is left as the scraper wrote it; only the description is taken from the show's own page.
 
-Dry run on the real data, writing nothing:  python descriptions.py [region ...]
+Dry run on the real data, writing nothing:  python descriptions.py [--proxy] [region ...]
+(paid-proxy pages, which cost credits, are only fetched with --proxy, and then at most PROXY_PAGES_PER_RUN)
 """
 
 import datetime as dt
@@ -56,6 +57,18 @@ MAX_CHARS = 500
 FIRST_SENTENCE_MIN = 120          # a cut at a sentence end is only taken past this length
 RECHECK_AFTER = dt.timedelta(days=14)
 MAX_PAGES_PER_RUN = 100           # keeps a run short; a backlog is cleared over a few days
+# Paid-proxy sites (utils.PROXY_DOMAINS) cost ZenRows credits, so only this many of their pages are fetched in a run
+# (WEBSITE-118): at most about 100 credits a run, and the cheapest pages first. A backlog of 70 pages clears in about
+# two and a half weeks; after that only newly listed shows are fetched. Set it to 0 to switch proxied pages off.
+PROXY_PAGES_PER_RUN = 4
+# Paid-proxy hosts whose event pages have no description in the HTML the proxy returns (checked 2026-11-13): fetching them
+# would spend credits for nothing. Galerie Simon Blais builds its pages from blocks with no text we can tell apart.
+PROXIED_WITHOUT_TEXT = {'galeriesimonblais.com'}
+# The proxy cannot be tried from outside CI, so a failure is treated as a possible systematic fault (a refused setting, a
+# block): after this many failed fetches in a row the proxied pass stops for the run, and the failed pages are not stamped
+# as looked at, so they are asked for again next run. That caps the loss at a couple of pages a day.
+PROXY_FAILURES_BEFORE_STOP = 2
+FETCH_FAILED = object()                   # what find_proxied_description returns when the page could not be fetched
 WANTED_PHASES = ('current', 'future')
 SKIP_SOURCES = (MANUAL_SOURCE, ARCHIVE_SOURCE)
 SOURCE = 'page'                   # the value of "description_source" for a description found here
@@ -239,6 +252,11 @@ def _in_site_chrome(p, strict):
     in a <header> block."""
     if p.find_parent(['nav', 'footer', 'aside', 'form', 'script', 'style', 'noscript', 'figcaption']):
         return True
+    # a photo caption or credit, by the class of its container or of the paragraph itself (the Cantor's pages
+    # put a caption paragraph before the text)
+    caption = re.compile(r'caption|credit', re.IGNORECASE)
+    if p.find_parent(class_=caption) is not None or any(caption.search(c) for c in (p.get('class') or [])):
+        return True
     header = p.find_parent('header')
     return bool(header is not None and (strict or header.find('nav')))
 
@@ -276,28 +294,77 @@ def _paragraphs(soup):
     return found
 
 
-def candidates(soup):
+def _ago_body(soup):
+    """AGO's exhibition text. Its pages have no description meta tag, structured data or paragraphs: the text is the first
+    long `field--name-body` block inside `.node__content` (the membership promo is in `.postcard-desc`, which is not),
+    often headed "Exhibition Overview" or "About the Exhibition"."""
+    found = []
+    for div in soup.find_all('div'):
+        if not any('field--name-body' in c for c in (div.get('class') or [])):
+            continue
+        if 'node__content' not in ((div.parent.get('class') or []) if div.parent is not None else []):
+            continue
+        text = clean(div.get_text(' '))
+        text = re.sub(r'^(?:exhibition overview|about (?:the|this) exhibition|overview)\s+', '', text, flags=re.IGNORECASE)
+        if len(text) >= 150:
+            found.append(text)
+    return found[:1]
+
+
+# Sites whose text is in none of the usual places: host -> function(soup) giving the texts to try, best first
+SITE_EXTRACTORS = {'ago.ca': _ago_body}
+
+
+def candidates(soup, page_url=None):
     """[(source, text)] in the order they are tried."""
     found = [('jsonld', t) for t in _json_ld_descriptions(soup)]
     found += [('og', _meta(soup, property='og:description')),
               ('twitter', _meta(soup, name='twitter:description')),
               ('meta', _meta(soup, name='description'))]
+    extractor = SITE_EXTRACTORS.get(urlparse(page_url).netloc) if page_url else None
+    if extractor:
+        found += [('site', t) for t in extractor(soup)]
     found += [('paragraph', t) for t in _paragraphs(soup)]
     return [(source, clean(text)) for source, text in found if text]
 
 
-def find_event_description(page_url, name, fetch=fetch_and_parse):
-    """(text, source) for the best usable description on an event's page, or None."""
-    if not page_url or urlparse(page_url).netloc in utils.PROXY_DOMAINS:
+def find_event_description(page_url, name, fetch=fetch_and_parse, allow_proxy=False):
+    """(text, source) for the best usable description on an event's page, or None.
+
+    A page on a paid-proxy site is only fetched with `allow_proxy` (it costs credits: see proxy_credits)."""
+    if not page_url:
+        return None
+    if urlparse(page_url).netloc in utils.PROXY_DOMAINS and not allow_proxy:
         return None
     soup = fetch(page_url)
     if soup is None:
         return None
-    for source, text in candidates(soup):
+    for source, text in candidates(soup, page_url):
         text = strip_opening_furniture(strip_title_heading(text, name))
         if usable(text, name):
             return trim(text), source
     return None
+
+
+def find_proxied_description(page_url, name):
+    """find_event_description for a page on a paid-proxy site, fetched through the proxy. Returns FETCH_FAILED when the
+    page could not be fetched at all (as opposed to None: fetched, but nothing usable on it)."""
+    failed = []
+
+    def fetch(url):
+        soup = fetch_and_parse(url)
+        if soup is None:
+            failed.append(url)
+        return soup
+
+    result = find_event_description(page_url, name, fetch=fetch, allow_proxy=True)
+    return FETCH_FAILED if result is None and failed else result
+
+
+def proxy_credits(page_url):
+    """The ZenRows credits one fetch of this page costs: 25 with JavaScript rendering, 10 without (OPERATIONS.md)."""
+    params = utils.PROXY_DOMAINS.get(urlparse(page_url or '').netloc) or {}
+    return 25 if params.get('js_render') else 10
 
 
 def find_card_descriptions(page_url, titles, fetch=fetch_and_parse):
@@ -325,12 +392,19 @@ def event_page(event):
                  if l.get('description') == 'Event Page' and l.get('link')), None)
 
 
+def stamp_key(page_url):
+    """Which field records the day a page was last looked at. A paid-proxy page has its own, "description_proxy_checked":
+    before WEBSITE-118 the pass stamped proxied events "checked" without fetching anything, and those stamps must not hide
+    them now."""
+    return 'description_proxy_checked' if urlparse(page_url or '').netloc in utils.PROXY_DOMAINS else 'description_checked'
+
+
 def needs_description(event, today):
     if event.get('phase') not in WANTED_PHASES or event.get('source') in SKIP_SOURCES:
         return False
     if event.get('description') or not event_page(event):
         return False
-    checked = event.get('description_checked')
+    checked = event.get(stamp_key(event_page(event)))
     if checked:
         try:
             if today - dt.date.fromisoformat(checked) < RECHECK_AFTER:
@@ -362,33 +436,61 @@ def _without_shared_openings(found, stored):
     return kept
 
 
+def _accept(report, region, venue, events, found):
+    """Store the descriptions found for a venue's events, after the checks that look at the venue as a whole:
+    a first sentence that opens several of its descriptions is the site's, not the show's (cut), and the same text
+    for several shows is its tagline (dropped). found: [(event, text, source)]."""
+    found = _without_shared_openings(found, [e['description'] for e in events.values() if e.get('description')])
+    in_use = [e['description'] for e in events.values() if e.get('description')]
+    for event, text, source in found:
+        shared = sum(1 for _, t, _ in found if _same(t, text)) + sum(1 for t in in_use if _same(t, text))
+        if shared >= 2:
+            report['dropped'].append((region, venue, event['name'], text))
+            continue
+        event['description'] = text
+        event['description_source'] = SOURCE
+        add_content_tags(event)                         # subject tags (photography, ceramics...) from the new text
+        report['added'].append((region, venue, event['name'], source, text))
+
+
 def enrich_missing_descriptions(regions=None, today=None, finder=find_event_description,
-                                card_finder=find_card_descriptions, max_pages=MAX_PAGES_PER_RUN, save=True):
+                                card_finder=find_card_descriptions, proxy_finder=find_proxied_description,
+                                max_pages=MAX_PAGES_PER_RUN, proxy_pages=PROXY_PAGES_PER_RUN, save=True):
     """Give description-less current and upcoming events a description from their own page.
 
     An event with a page of its own is looked up with `finder(page_url, name)`. Several events that share one
     listing page are looked up together with `card_finder(page_url, titles)`, which returns
     ({title: (text, source)}, pages opened): each show's own page found from its card on the listing.
 
+    An event on a paid-proxy site costs credits, so those are left to the end and only `proxy_pages` of them are
+    fetched in a run, the cheapest first (`proxy_finder(page_url, name)`); the regular scrape has had its credits by
+    then, and the pass stops at the first "out of credits" answer (utils.PROXY_EXHAUSTED). Proxied events on a
+    listing that several shows share are not looked up.
+
     Returns {'checked': pages opened, 'added': [(region, venue, event name, source, text)],
-             'dropped': [(region, venue, event name, text)], 'shared': events looked up on shared listing pages}.
-    `dropped` lists texts rejected because the venue gives the same one to several shows (a tagline).
+             'dropped': [(region, venue, event name, text)], 'shared': events looked up on shared listing pages,
+             'proxied': proxied pages fetched, 'credits': the credits those cost (an estimate), 'failed': proxied
+             pages that could not be fetched}.
     The page limit is checked before each page or listing, so a listing's own show pages can go a little over it."""
     today = today or dt.date.today()
-    report = {'checked': 0, 'added': [], 'dropped': [], 'shared': 0}
+    report = {'checked': 0, 'added': [], 'dropped': [], 'shared': 0, 'proxied': 0, 'credits': 0, 'failed': 0}
+    dbs, changed, queue = {}, set(), []
     for region in (regions or DB_FILES):
-        db = load_db(DB_FILES[region])
-        changed = False
-        for venue, events in db.items():
-            if report['checked'] >= max_pages:
-                break
+        dbs[region] = load_db(DB_FILES[region])
+        for venue, events in dbs[region].items():
             groups = {}                                     # event page -> every event of the venue that points at it
             for event in events.values():
                 groups.setdefault(event_page(event), []).append(event)
             found = []                                      # (event, text, source)
             for page, group in groups.items():
                 needing = [e for e in group if needs_description(e, today)]
-                if not needing or report['checked'] >= max_pages:
+                if not needing:
+                    continue
+                if len(group) == 1 and urlparse(page).netloc in utils.PROXY_DOMAINS:
+                    if urlparse(page).netloc not in PROXIED_WITHOUT_TEXT:
+                        queue.append((region, venue, needing[0], page))
+                    continue
+                if report['checked'] >= max_pages:
                     continue
                 if len(group) == 1:
                     event = needing[0]
@@ -403,35 +505,53 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
                     found.extend((e, *by_title[e['name']]) for e in needing if e['name'] in by_title)
                 for event in needing:
                     event['description_checked'] = today.isoformat()
-                changed = True
-            # A sentence that opens several of a venue's descriptions is the site's, not the show's: drop it
-            found = _without_shared_openings(found, [e['description'] for e in events.values() if e.get('description')])
-            # The same text for several of a venue's shows is its tagline, not their descriptions
-            in_use = [e['description'] for e in events.values() if e.get('description')]
-            for event, text, source in found:
-                shared = sum(1 for _, t, _ in found if _same(t, text)) + sum(1 for t in in_use if _same(t, text))
-                if shared >= 2:
-                    report['dropped'].append((region, venue, event['name'], text))
-                    continue
-                event['description'] = text
-                event['description_source'] = SOURCE
-                add_content_tags(event)                     # subject tags (photography, ceramics...) from the new text
-                report['added'].append((region, venue, event['name'], source, text))
-        if changed and save:
-            save_db(db, region)
+                changed.add(region)
+            _accept(report, region, venue, events, found)
+
+    # Paid-proxy pages, last: cheapest first, a few a run, and none once the account is out of credits
+    queue.sort(key=lambda item: (proxy_credits(item[3]), item[0], item[1], item[2]['name']))
+    proxied, failures = {}, 0
+    for region, venue, event, page in queue[:max(proxy_pages, 0)]:
+        if utils.PROXY_EXHAUSTED:
+            break
+        report['proxied'] += 1
+        report['credits'] += proxy_credits(page)
+        result = proxy_finder(page, event['name'])
+        if utils.PROXY_EXHAUSTED and not result:
+            break                                           # out of credits, not "nothing there": ask again next run
+        if result is FETCH_FAILED:                          # not stamped: asked for again next run
+            report['failed'] += 1
+            failures += 1
+            if failures >= PROXY_FAILURES_BEFORE_STOP:
+                break
+            continue
+        failures = 0
+        event['description_proxy_checked'] = today.isoformat()
+        changed.add(region)
+        if result:
+            proxied.setdefault((region, venue), []).append((event, *result))
+    for (region, venue), found in proxied.items():
+        _accept(report, region, venue, dbs[region][venue], found)
+
+    if save:
+        for region in changed:
+            save_db(dbs[region], region)
     return report
 
 
 def main(argv):
     logging.basicConfig(level=logging.WARNING, format='%(levelname)s - %(message)s')
-    regions = argv or None
-    report = enrich_missing_descriptions(regions, save=False, max_pages=10_000)
+    use_proxy = '--proxy' in argv
+    regions = [a for a in argv if a != '--proxy'] or None
+    report = enrich_missing_descriptions(regions, save=False, max_pages=10_000,
+                                         proxy_pages=PROXY_PAGES_PER_RUN if use_proxy else 0)
     for region, venue, name, source, text in report['added']:
         print(f"[{region}] {venue}: {name}\n    ({source}) {text}\n")
     for region, venue, name, text in report['dropped']:
         print(f"[{region}] DROPPED (shared by several shows) {venue}: {name}\n    {text[:120]}\n")
     print(f"opened {report['checked']} pages, found {len(report['added'])}, dropped {len(report['dropped'])}, "
-          f"looked up {report['shared']} events on shared listing pages through their cards")
+          f"looked up {report['shared']} events on shared listing pages through their cards; "
+          f"{report['proxied']} proxied pages (about {report['credits']} credits, {report['failed']} failed)")
 
 
 if __name__ == '__main__':

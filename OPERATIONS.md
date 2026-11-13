@@ -128,6 +128,12 @@ Refreshing everything daily would need about 11,400 a month. Instead:
 - That comes to about **2,400 credits a month** (255 x 7.6 + 120 x 3.8), around
   half the allowance, which leaves about 2,600 for new proxied venues. A venue
   with one 10-credit page costs about 76 a month, and one 25-credit page about 190.
+- **Event descriptions also spend from this pool** (WEBSITE-118, `descriptions.py`): at most 4 proxied event pages a
+  run, about 100 credits a day at most. The 67 events waiting cost about 1,600 credits once (AGO 750, de Young and
+  Legion of Honor 575, Cantor 150, Norton Simon 100, University of Toronto 40), so in the month it runs the total
+  could reach about 4,000 of the 5,000. After that, only newly listed shows (a handful a month). It runs after the
+  regular scrape, so the regular refreshes get their credits first, and it stops at the first `402`. To switch it
+  off, set `PROXY_PAGES_PER_RUN = 0` in `descriptions.py`.
 - **Marin Civic Center and Armory Center for the Arts need `js_render`** (25 credits a request,
   about 190 a month each): with `premium_proxy` alone ZenRows answered 422 in CI (Armory worked
   once, then began answering 422 on 2026-11-08). Confirmed in CI on 2026-11-09: Armory fetches with
@@ -399,8 +405,28 @@ scraper wrote it**: only the description is taken from the show's own page, so a
 but never puts a wrong link on the site. The page limit is checked before each page or listing, so a listing's own
 show pages can go a little over it.
 
-What it **does not** do: sites fetched through the paid proxy are skipped (an extra page would cost credits: see
-"Proxied venues and the ZenRows budget"; WEBSITE-118), and a listing whose cards have no recognisable link to the
+**Paid-proxy sites** (AGO, de Young and Legion of Honor, Cantor, Norton Simon, the Art Museum at the University of
+Toronto) cost ZenRows credits per page, so they are handled last and sparingly (WEBSITE-118): at most
+`PROXY_PAGES_PER_RUN` (4) of their event pages are fetched in a run, the cheapest first, after the regular scrape
+has had its credits, and the pass stops at the first "out of credits" answer (`utils.PROXY_EXHAUSTED`; that is not
+remembered as "nothing there", so it asks again next run). **A failed fetch** (as opposed to a page with nothing on it) is
+not stamped as looked at either, so it is asked for again next run, and **two failures in a row stop the proxied pass for
+the day** (`PROXY_FAILURES_BEFORE_STOP`) and log a warning: the proxy cannot be tried outside CI, so a fault (a refused
+setting, a block) should cost a couple of pages a day, not the whole queue. A paid-proxy page records the day it was
+looked at in `description_proxy_checked` (the ordinary pages use `description_checked`). Each page costs what its domain's settings say (10 credits,
+or 25 with `js_render`: `descriptions.proxy_credits`); the log line "Finished looking for event descriptions" says
+how many proxied pages were fetched and about how many credits that was. About 67 events are waiting, about 1,600
+credits in all, so the backlog clears in about two and a half weeks at about 100 credits a day at most; after that
+only newly listed shows cost anything. AGO's text is in none of the usual places, so `SITE_EXTRACTORS` in
+`descriptions.py` has a small rule for it (its first long `field--name-body` block inside `.node__content`). The first
+run fetches only the University of Toronto's four pages (10 credits each), so the proxied path is tried for about 40
+credits before the 25-credit pages begin. **To switch
+it off, set `PROXY_PAGES_PER_RUN = 0`.** `python descriptions.py` (the dry run) never touches the proxy unless you add
+`--proxy`.
+
+What it **does not** do: Galerie Simon Blais (its pages have nothing readable in the server's HTML; `PROXIED_WITHOUT_TEXT`) and Armory Center for
+the Arts (its events share one listing page) are not looked up, nor is the California African American Museum (it
+refuses the bot and is not on the proxy list; adding it would also cost the CAAM scraper's own credits). A listing whose cards have no recognisable link to the
 show's own page gets nothing (the venue's scraper would have to read the blurb off the listing; WEBSITE-119 tracks
 them: Commonwealth and Council, David Kordansky, Art Mur, Palo Alto Art Center...). On 2026-11-13 a dry run took live
 coverage from 41% to 73% (LA 81%, Istanbul 83%, SF 80%, Montreal 69%, Toronto 43%, where AGO's 30 proxied events are

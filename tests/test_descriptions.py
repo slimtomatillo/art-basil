@@ -9,6 +9,7 @@ import os
 import sys
 import tempfile
 import unittest
+import unittest.mock
 
 from bs4 import BeautifulSoup
 
@@ -347,6 +348,207 @@ class FindEventDescriptionTest(unittest.TestCase):
         self.assertLessEqual(len(text), descriptions.MAX_CHARS)
 
 
+class SiteExtractorAndCaptionTest(unittest.TestCase):
+    """AGO's text is in none of the usual places; the Cantor puts a caption paragraph before the text."""
+    AGO_TEXT = ('Spotlighting the power of Black style, Sunday Best traces the histories of migration, activism and joy '
+                'through fashion, photography and film, from the church pew to the runway, over many decades.')
+
+    def ago_page(self, body_text=None, heading='About the Exhibition'):
+        return page(body=(
+            '<div class="node__content"><div class="field--name-body"></div></div>'
+            '<div class="postcard-desc"><div class="field field--name-body">Enjoy early access to select exhibitions*, special '
+            'events, exclusive perks, and more. Find the Membership level that is right for you and enjoy benefits as a '
+            'valued supporter of the AGO.</div></div>'
+            f'<div class="node__content"><div class="field field--name-body"><h2>{heading}</h2>{body_text or self.AGO_TEXT}</div></div>'
+            '<div class="node__content"><div class="field--name-body">Bloomberg Connects Discover behind-the-scenes stories of the exhibition.</div></div>'))
+
+    def test_the_ago_exhibition_block_is_found_and_the_membership_promo_and_heading_are_left_out(self):
+        got = descriptions.candidates(self.ago_page(), 'https://ago.ca/exhibitions/sunday-best-power-glory-black-style')
+        self.assertEqual(got, [('site', self.AGO_TEXT)])
+
+    def test_only_ago_pages_use_that_rule(self):
+        self.assertEqual([c for c in descriptions.candidates(self.ago_page(), 'https://gallery.example/x') if c[0] == 'site'], [])
+        self.assertEqual([c for c in descriptions.candidates(self.ago_page()) if c[0] == 'site'], [])
+
+    def test_the_ago_text_is_used_when_it_is_about_the_show(self):
+        fetch = lambda url: self.ago_page()
+        found = descriptions.find_event_description('https://ago.ca/exhibitions/sunday-best', 'Sunday Best: The Power & The Glory of Black Style',
+                                                    fetch=fetch, allow_proxy=True)
+        self.assertEqual(found, (self.AGO_TEXT, 'site'))
+
+    def test_a_paragraph_in_a_caption_container_is_skipped(self):
+        caption = ('Ruth Asawa with life masks on the exterior wall of her house. Photography by Terry Schmitt. Untitled, '
+                   'c. 1966 to 2000, collection of the museum and shown here for the first time in the galleries.')
+        real = ('The Cantor Arts Center at Stanford University acquired this work in 2020. These 233 masks, which originally hung '
+                'on the exterior wall of the artist\'s home, are shown together here.')
+        s = page(body=(f'<main><div class="image__field-caption"><p>{caption}</p></div>'
+                       f'<div class="text-section__field-body"><p>{real}</p></div></main>'))
+        self.assertEqual(descriptions.candidates(s), [('paragraph', real)])
+
+
+class ProxiedPagesTest(unittest.TestCase):
+    """Paid-proxy pages (WEBSITE-118): a few a run, cheapest first, last, and never past the credits."""
+    CHEAP, DEAR = 'https://cheap.example/', 'https://dear.example/'
+
+    def setUp(self):
+        self.dir = tempfile.TemporaryDirectory()
+        self.path = os.path.join(self.dir.name, 'la_events.json')
+        self.saved = DB_FILES['la']
+        DB_FILES['la'] = self.path
+        patcher = unittest.mock.patch.dict(utils.PROXY_DOMAINS, {'cheap.example': {'premium_proxy': 'true'},
+                                                                'dear.example': {'premium_proxy': 'true', 'js_render': 'true'}})
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        flag = unittest.mock.patch.object(utils, 'PROXY_EXHAUSTED', False)
+        flag.start()
+        self.addCleanup(flag.stop)
+
+    def tearDown(self):
+        DB_FILES['la'] = self.saved
+        self.dir.cleanup()
+
+    def write(self, events, venue='Gallery'):
+        with open(self.path, 'w', encoding='utf-8') as f:
+            json.dump({venue: {e['name'] + '-' + venue: e for e in events}}, f)
+
+    def read(self, venue='Gallery'):
+        with open(self.path, encoding='utf-8') as f:
+            return json.load(f)[venue]
+
+    def test_credits_follow_the_domains_settings(self):
+        self.assertEqual(descriptions.proxy_credits(self.CHEAP + 'x'), 10)
+        self.assertEqual(descriptions.proxy_credits(self.DEAR + 'x'), 25)
+        self.assertEqual(descriptions.proxy_credits('https://not-proxied.example/x'), 10)
+
+    def test_a_proxied_page_is_not_fetched_unless_asked(self):
+        self.assertIsNone(descriptions.find_event_description(self.DEAR + 'x', NAME, fetch=lambda url: self.fail('fetched')))
+        s = page(head='<meta name="description" content="' + BLURB + '">')
+        self.assertEqual(descriptions.find_event_description(self.DEAR + 'x', NAME, fetch=lambda url: s, allow_proxy=True), (BLURB, 'meta'))
+
+    def test_the_ordinary_finder_never_sees_a_proxied_event(self):
+        self.write([event(NAME, self.DEAR + 'a')])
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=0,
+                                                          finder=lambda url, name: self.fail('the ordinary finder was used'),
+                                                          proxy_finder=lambda url, name: self.fail('proxy pages are switched off'))
+        self.assertEqual((report['proxied'], report['credits']), (0, 0))
+        self.assertNotIn('description_proxy_checked', self.read()[NAME + '-Gallery'])
+
+    def test_only_a_few_pages_a_run_cheapest_first_and_the_rest_wait_for_the_next_run(self):
+        names = [f'Show {i}' for i in range(5)]
+        events = [event(n, (self.DEAR if i < 3 else self.CHEAP) + str(i)) for i, n in enumerate(names)]     # 0-2 dear, 3-4 cheap
+        self.write(events)
+        order = []
+
+        def proxy_finder(url, name):
+            order.append(url)
+            return (f'{name} is a show of paintings and drawings made over many years by one artist, shown in the main gallery.', 'og')
+
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=3, finder=lambda u, n: self.fail('x'),
+                                                          proxy_finder=proxy_finder)
+        self.assertEqual(order, [self.CHEAP + '3', self.CHEAP + '4', self.DEAR + '0'])                    # cheap first, then dear, by name
+        self.assertEqual((report['proxied'], report['credits']), (3, 10 + 10 + 25))
+        stored = self.read()
+        self.assertEqual([stored[n + '-Gallery']['description'] != '' for n in names], [True, False, False, True, True])
+        self.assertNotIn('description_proxy_checked', stored['Show 1-Gallery'])                          # not asked yet: next run
+        self.assertEqual(stored['Show 0-Gallery']['description_proxy_checked'], '2026-11-13')
+
+    def test_nothing_found_is_remembered_so_it_is_not_paid_for_again_for_a_while(self):
+        self.write([event(NAME, self.DEAR + 'a')])
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: None)
+        self.assertEqual(self.read()[NAME + '-Gallery']['description_proxy_checked'], '2026-11-13')
+        calls = []
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: calls.append(url))
+        self.assertEqual(calls, [])
+
+    def test_when_the_account_runs_out_of_credits_it_stops_and_asks_again_next_run(self):
+        self.write([event('Show A', self.DEAR + 'a'), event('Show B', self.DEAR + 'b')])
+        calls = []
+
+        def proxy_finder(url, name):
+            calls.append(url)
+            utils.PROXY_EXHAUSTED = True                     # what utils.fetch_and_parse does on the first 402
+            return None
+
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=4, proxy_finder=proxy_finder)
+        self.assertEqual(len(calls), 1)                      # the second page was never asked for
+        self.assertEqual(report['proxied'], 1)
+        stored = self.read()
+        self.assertNotIn('description_proxy_checked', stored['Show A-Gallery'])      # out of credits is not "nothing there"
+        self.assertNotIn('description_proxy_checked', stored['Show B-Gallery'])
+
+    def test_a_page_that_could_not_be_fetched_is_not_stamped_and_two_in_a_row_stop_the_pass(self):
+        self.write([event(f'Show {i}', self.CHEAP + str(i)) for i in range(4)])
+        asked = []
+
+        def proxy_finder(url, name):
+            asked.append(url)
+            return descriptions.FETCH_FAILED
+
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=4, proxy_finder=proxy_finder)
+        self.assertEqual(len(asked), 2)                                         # stopped after two in a row
+        self.assertEqual((report['proxied'], report['failed'], report['credits']), (2, 2, 20))
+        self.assertTrue(all('description_proxy_checked' not in e for e in self.read().values()))   # all asked for again next run
+
+    def test_one_failure_among_successes_does_not_stop_the_pass(self):
+        self.write([event(f'Show {i}', self.CHEAP + str(i)) for i in range(3)])
+        answers = iter([descriptions.FETCH_FAILED, None, None])
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=4, proxy_finder=lambda u, n: next(answers))
+        self.assertEqual((report['proxied'], report['failed']), (3, 1))
+        stamped = sorted(n for n, e in self.read().items() if e.get('description_proxy_checked'))
+        self.assertEqual(stamped, ['Show 1-Gallery', 'Show 2-Gallery'])         # the failed one (Show 0) is not stamped
+
+    def test_find_proxied_description_tells_a_failed_fetch_from_a_page_with_nothing(self):
+        with unittest.mock.patch.object(descriptions, 'fetch_and_parse', return_value=None):
+            self.assertIs(descriptions.find_proxied_description(self.DEAR + 'a', NAME), descriptions.FETCH_FAILED)
+        with unittest.mock.patch.object(descriptions, 'fetch_and_parse', return_value=page(body='<main><p>Short.</p></main>')):
+            self.assertIsNone(descriptions.find_proxied_description(self.DEAR + 'a', NAME))
+        good = page(head='<meta name="description" content="' + BLURB + '">')
+        with unittest.mock.patch.object(descriptions, 'fetch_and_parse', return_value=good):
+            self.assertEqual(descriptions.find_proxied_description(self.DEAR + 'a', NAME), (BLURB, 'meta'))
+
+    def test_a_stamp_left_by_the_old_pass_does_not_hide_a_proxied_event(self):
+        # before WEBSITE-118 the pass stamped proxied events "checked" without fetching anything
+        self.write([event(NAME, self.DEAR + 'a', description_checked='2026-11-13')])
+        asked = []
+        descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: asked.append(url))
+        self.assertEqual(asked, [self.DEAR + 'a'])
+        # ...while the same stamp on an ordinary page still counts
+        self.assertFalse(descriptions.needs_description(event(NAME, 'https://g.example/a', description_checked='2026-11-13'), TODAY))
+        self.assertEqual((descriptions.stamp_key(self.DEAR + 'a'), descriptions.stamp_key('https://g.example/a')),
+                         ('description_proxy_checked', 'description_checked'))
+
+    def test_a_host_with_no_text_in_its_pages_is_never_paid_for(self):
+        with unittest.mock.patch.dict(utils.PROXY_DOMAINS, {'galeriesimonblais.com': {'premium_proxy': 'true'}}):
+            self.write([event(NAME, 'https://galeriesimonblais.com/en/expos/x')])
+            report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda u, n: self.fail('paid for it'))
+        self.assertEqual((report['proxied'], report['credits']), (0, 0))
+
+    def test_proxied_events_on_a_listing_that_several_shows_share_are_not_looked_up(self):
+        self.write([event('Show A', self.DEAR + 'list'), event('Show B', self.DEAR + 'list')])
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda u, n: self.fail('x'),
+                                                          card_finder=lambda page, titles: ({}, 0))
+        self.assertEqual(report['proxied'], 0)
+
+    def test_what_a_proxied_page_gives_goes_through_the_same_checks_as_any_other(self):
+        same = 'The Gallery presents contemporary art and this show is part of the program for the whole year ahead of us.'
+        self.write([event('Show A', self.DEAR + 'a'), event('Show B', self.DEAR + 'b')])
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_finder=lambda url, name: (same, 'og'))
+        self.assertEqual(len(report['dropped']), 2)                            # one tagline for two shows is dropped
+        self.assertEqual([e['description'] for e in self.read().values()], ['', ''])
+
+    def test_the_command_line_dry_run_does_not_touch_the_proxy_unless_asked(self):
+        # enrich_missing_descriptions is replaced, so this reads no event file and opens no page
+        empty = {'checked': 0, 'added': [], 'dropped': [], 'shared': 0, 'proxied': 0, 'credits': 0, 'failed': 0}
+        with unittest.mock.patch.object(descriptions, 'enrich_missing_descriptions', return_value=empty) as enrich:
+            descriptions.main(['la'])
+            self.assertEqual(enrich.call_args.kwargs['proxy_pages'], 0)
+            self.assertEqual(enrich.call_args.args[0], ['la'])
+            self.assertFalse(enrich.call_args.kwargs['save'])
+            descriptions.main(['--proxy', 'la'])
+            self.assertEqual(enrich.call_args.kwargs['proxy_pages'], descriptions.PROXY_PAGES_PER_RUN)
+            self.assertEqual(enrich.call_args.args[0], ['la'])
+
+
 class FindCardDescriptionsTest(unittest.TestCase):
     LISTING = 'https://gallery.example/exhibitions/'
     TITLES = ['Island Universe', 'Mobile Images', 'Other Show']
@@ -543,6 +745,15 @@ class KeepFoundDescriptionTest(unittest.TestCase):
         incoming = self.incoming()
         processing.keep_found_description(incoming, stored)
         self.assertIsNone(incoming['description'])
+
+    def test_the_proxy_stamp_is_carried_over_like_the_other_one(self):
+        stored = {**self.STORED, 'description': None, 'description_source': None, 'description_proxy_checked': '2026-11-12'}
+        incoming = self.incoming()
+        processing.keep_found_description(incoming, stored)
+        self.assertEqual(incoming['description_proxy_checked'], '2026-11-12')
+        other = self.incoming(links=[{'link': 'https://g.example/other', 'description': 'Event Page'}])
+        processing.keep_found_description(other, stored)
+        self.assertNotIn('description_proxy_checked', other)
 
     def test_the_checked_day_is_dropped_when_the_event_page_changed(self):
         incoming = self.incoming(links=[{'link': 'https://g.example/other', 'description': 'Event Page'}])

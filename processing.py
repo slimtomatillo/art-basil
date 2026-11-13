@@ -53,10 +53,11 @@ def keep_found_description(event_details, stored):
     if not event_details.get('description') and stored.get('description') and stored.get('description_source') == 'page':
         event_details['description'] = stored['description']
         event_details['description_source'] = 'page'
-    # The day the page was last looked at only counts while the event still points at that page
-    if (stored.get('description_checked') and 'description_checked' not in event_details
-            and _event_page(stored) == _event_page(event_details)):
-        event_details['description_checked'] = stored['description_checked']
+    # The day the page was last looked at only counts while the event still points at that page (a paid-proxy page has
+    # its own stamp: see descriptions.stamp_key)
+    for key in ('description_checked', 'description_proxy_checked'):
+        if stored.get(key) and key not in event_details and _event_page(stored) == _event_page(event_details):
+            event_details[key] = stored[key]
 
 # Events are keyed by "name-venue", so when a source retitles a show ("and" -> "&",
 # a subtitle added, an accent dropped) the scraper writes a second entry and the old
