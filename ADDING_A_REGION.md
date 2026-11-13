@@ -19,12 +19,16 @@ automatically):
 4. **Coordinates** in `docs/data/venue_coordinates.json` for each address: run
    `python geocode_venues.py` after adding the address (it only looks up what is
    missing, section 1c-ii). `tests/test_venue_coordinates.py` fails until every
-   address has coordinates, so you will find out if you forget.
+   address has coordinates, so you will find out if you forget. **Give the address its ZIP or
+   postcode**: without one the geocoder can pick a different city's street of the same name (Hauser &
+   Wirth DTLA's "901 E 3rd St, Los Angeles" was placed in Long Beach, 25 miles away, until the ZIP was
+   added). `--redo "Venue Name"` looks it up again once the address is fixed.
 
 **A Bay Area venue in a town the site hasn't seen** also needs the town added to `AREAS.sf` in
 `docs/filterState.js`, under San Francisco, East Bay, Peninsula, South Bay or North Bay: the Area
 filter finds a venue's area from the city in its address, and `node --test tests/` fails until
-every address in `sf_venues.json` is in one.
+every address in `sf_venues.json` is in one. The same goes for an **Istanbul** venue in a district not
+yet in `AREAS.ist` (most districts are already there, including Kadıköy and Üsküdar).
 
 Then write the real data with `python main.py --venues "<Venue Name>" --no-summary`,
 and check it in CI once (section 2a). If the site blocks GitHub's servers, also
