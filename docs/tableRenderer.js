@@ -118,6 +118,18 @@ class TableRenderer {
         this.venues = venues;
     }
 
+    // The day part of a stored date ("2026-11-13" or "2026-11-13 00:00:00"), or '' for none (or 'null')
+    isoDay(value) {
+        return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}/.test(value) ? value.slice(0, 10) : '';
+    }
+
+    // The area ids of a venue (the Bay Area only; see AREAS in filterState.js), from the cities in its addresses
+    areasOf(venueName) {
+        if (!venueName || !this.venues || !window.filterState || !window.venueAddresses || !window.dataManager) return [];
+        const addresses = window.venueAddresses.normalize(this.venues[venueName]).map(entry => entry.address);
+        return window.filterState.areasOfAddresses(window.dataManager.getRegion(), addresses);
+    }
+
     // {venue name: picture URL}: a logo or banner shown for events with no picture of their own
     setVenueImages(venueImages) {
         this.venueImages = venueImages || {};
@@ -136,6 +148,12 @@ class TableRenderer {
         row.setAttribute('data-tags', event.tags.join('|'));
         // Which venue the row is for, so "Use my location" can look its distance up (nearMeControl.js)
         row.setAttribute('data-venue', event.venue || '');
+        // When the show runs ('YYYY-MM-DD', empty if unknown) and which area(s) its venue is in, for the
+        // dates and Area filters (filterState.js)
+        const dates = event.dates || {};
+        row.setAttribute('data-start', this.isoDay(dates.start));
+        row.setAttribute('data-end', this.isoDay(dates.end));
+        row.setAttribute('data-areas', this.areasOf(event.venue).join('|'));
 
         // Image column
         const imageCell = row.insertCell();

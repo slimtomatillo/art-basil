@@ -1025,6 +1025,65 @@ body {
     font-variant-numeric: tabular-nums;
 }
 
+/* The "Open on" dates under the When phases (WEBSITE-94) */
+.filter-section {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.filter-section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+.filter-section-note {
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    color: #6c757d;
+}
+
+/* While a date is chosen the phases above are not used, so they are greyed out */
+.filter-option.is-overridden {
+    opacity: 0.45;
+}
+
+.filter-dates {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.filter-date {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.filter-date input {
+    min-width: 0;
+    padding: 0.25rem 0.4rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font: inherit;
+    font-size: 1rem;      /* 16px or more, or iOS zooms the page in when the field is focused */
+    color: #212529;
+}
+
+/* The When popover is the tallest (phases, dates, a range), so it scrolls inside itself rather than off the screen */
+.filter-dropdown[data-group="when"] .filter-popover {
+    max-height: min(75vh, 34rem);
+    overflow-y: auto;
+}
+
 /* Result count, active filters and "Clear all" */
 .filter-summary {
     display: flex;
