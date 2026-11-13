@@ -121,6 +121,22 @@ test('the file name is a plain slug with the type', () => {
     assert.strictEqual(cl.icsFileName(cl.resolve(show({ name: '!!!' }), 'full'), 'full'), 'event-full.ics');
 });
 
+test('the Outlook link is for work, school and Microsoft 365 accounts (outlook.office.com): the personal host sends them to a login page', () => {
+    const url = new URL(cl.outlookUrl(cl.resolve(show(), 'closing')));
+    assert.strictEqual(url.host, 'outlook.office.com');
+    assert.strictEqual(url.pathname, '/calendar/0/deeplink/compose');
+    assert.strictEqual(url.searchParams.get('startdt'), '2026-11-12');
+    assert.strictEqual(url.searchParams.get('enddt'), '2026-11-13');
+});
+
+test('the Outlook body is HTML: line breaks are <br> and the text is escaped', () => {
+    const body = new URL(cl.outlookUrl(cl.resolve(show({ name: 'Tom & Jerry <live>' }), 'full'))).searchParams.get('body');
+    assert.ok(!body.includes('\n'), 'no plain newlines, Outlook turns them into spaces');
+    assert.ok(body.includes('Tom &amp; Jerry &lt;live&gt; at Hammer Museum<br><br>Event page: https://hammer.ucla.edu/exhibitions/ana<br><br>Added from Art Basil'));
+    // the other targets still take plain text
+    assert.ok(new URL(cl.yahooUrl(cl.resolve(show(), 'full'))).searchParams.get('desc').includes('\n\n'));
+});
+
 test('the providers offered are the four the modal lists', () => {
     assert.deepStrictEqual(cl.PROVIDERS, ['google', 'ics', 'outlook', 'yahoo']);
 });
