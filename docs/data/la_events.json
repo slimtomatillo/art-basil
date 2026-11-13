@@ -7675,36 +7675,6 @@
             ],
             "last_updated": "2026-11-11 19:48:03",
             "hash": "749ea9c0bbd2cfebf03fd800fcab3910"
-        },
-        "Hasani Sahlehe: Monoprints-Night Gallery": {
-            "name": "Hasani Sahlehe: Monoprints",
-            "venue": "Night Gallery",
-            "description": null,
-            "tags": [
-                "exhibition",
-                "current",
-                "gallery",
-                "printmaking",
-                "free"
-            ],
-            "phase": "current",
-            "dates": {
-                "start": "2026-11-13",
-                "end": "2026-12-18"
-            },
-            "ongoing": false,
-            "links": [
-                {
-                    "link": "https://www.nightgallery.ca/exhibitions",
-                    "description": "Event Page"
-                },
-                {
-                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1080%2Ch_840%2Cc_lfill%2Fexhibit-e%2F58efe75202a9377c212b12c6%2Fa829bf418d14b9141ee1bb97ea01803b.jpeg&w=640&we&output=jpg&q=80",
-                    "description": "Image"
-                }
-            ],
-            "last_updated": "2026-11-13 19:57:11",
-            "hash": "5827be8ddc44202c5fb692839f210202"
         }
     },
     "Roberts Projects": {

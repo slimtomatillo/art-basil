@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Basil - New York</title>
+    <meta name="description" content="Current and upcoming art exhibitions in New York City, from big museums to small galleries. Art Basil is a free, community-built guide to art near you.">
+    <link rel="canonical" href="https://artbasil.info/nyc/">
+    <!-- Link previews (Open Graph and Twitter) -->
+    <meta property="og:site_name" content="Art Basil">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Art Basil - New York">
+    <meta property="og:description" content="Current and upcoming art exhibitions in New York City, from big museums to small galleries. Art Basil is a free, community-built guide to art near you.">
+    <meta property="og:url" content="https://artbasil.info/nyc/">
+    <meta property="og:image" content="https://artbasil.info/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Art Basil: find art near you">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/favicon.ico" sizes="48x48">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <!-- Cursor and effects settings -->
+    <link rel="stylesheet" href="../cursorFx.css">
+    <script>
+        // Change this to false for production
+        const isDevelopment = window.location.hostname === 'localhost';
+        const basePath = isDevelopment ? '../' : 'https://raw.githubusercontent.com/slimtomatillo/art-basil/main/';
+    </script>
+</head>
+<body class="bg-light region-page" style="--region-c: #b8227a; --region-t: 1deg;">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G06G4L1YGN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G06G4L1YGN');
+    </script>
+
+    <div class="container py-4">
+        <header class="mb-3">
+            <div class="header-grid">
+                <!-- Logo -->
+                <div class="header-logo">
+                    <h1 class="h3 mb-3 mb-md-0">
+                        <a href="../index.html" style="text-decoration: none; color: inherit;">
+                            <img src="../images/logo.svg" alt="Art Basil" style="height: 44px; vertical-align: middle;">
+                        </a>
+                    </h1>
+                </div>
+
+                <!-- City name and action buttons -->
+                <div class="header-region text-md-end">
+                    <h1 class="display-5 mb-3 mb-md-3 text-md-end region-title">New York</h1>
+                    <p class="lead mb-3 mb-md-0 text-md-end">Current and upcoming art shows <span aria-hidden="true">&middot;</span> <a href="venues.html">List of venues</a> <span aria-hidden="true">&middot;</span> <a href="../whats-new.html">What's new</a></p>
+
+                    <div class="d-flex gap-2 justify-content-md-end">
+                        <a href="../add_event.html" class="btn btn-primary">Add an event</a>
+                        <a href="mailto:info.artbasil@gmail.com" class="btn btn-outline-secondary">Contact Us</a>
+
+                        <!-- PayPal Donate Button -->
+                        <form action="https://www.paypal.com/donate/?business=GPJR7D9YB2Z6W&no_recurring=0&item_name=Thank+you+%3A%29&currency_code=USD" method="post" target="_top" class="d-inline">
+                            <button type="submit" class="btn btn-outline-primary">Support Us</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Search and Filter Section -->
+                <div class="header-search">
+                    <div class="d-flex flex-column gap-3">
+                        <div id="searchBarContainer">
+                            <input type="text" id="searchBar" class="form-control" placeholder="Search artists, shows, venues...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter buttons (drawn by filterPanel.js) -->
+                <div id="filterPanel" class="header-filters"></div>
+            </div>
+        </header>
+
+        <!-- The result count / active filters (drawn by filterPanel.js) -->
+        <div id="filterSummary" class="filter-summary"></div>
+
+        <div class="table-responsive">
+            <table class="table event-table" id="eventTable">
+                <thead class="sticky-top">
+                    <tr>
+                        <th></th>
+                        <th>Date</th>
+                        <th>Show @ Venue</th>
+                        <th>Tags</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody id="event-list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Load new modules first -->
+    <script src="../dataManager.js"></script>
+    <script src="../venueAddresses.js"></script>
+    <script src="../mapChoice.js"></script>
+    <script src="../eventSorter.js"></script>
+    <script src="../tableRenderer.js"></script>
+    <script src="../filterState.js"></script>
+    <script src="../searchManager.js"></script>
+    <script src="../venueSuggest.js"></script>
+    <script src="../filterPanel.js"></script>
+    <script src="../nearMe.js"></script>
+    <script src="../nearMeControl.js"></script>
+    <script src="../mapPins.js"></script>
+    <script src="../mapView.js"></script>
+    <script src="../modalManager.js"></script>
+    
+    <!-- Load main orchestrator last -->
+    <script src="../scroll.js"></script>
+    
+    <!-- Other functionality -->
+    <script src="../calendarLinks.js"></script>
+    <script src="../notify.js"></script>
+    <script src="../cursorFx.js"></script>
+    <!-- Add this before </body> -->
+    <div id="imageModal" class="image-modal">
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Feedback Button -->
+    <button class="feedback-button" id="feedbackButton" title="Send Feedback">
+        ?
+    </button>
+
+    <!-- Feedback Modal -->
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="feedback-modal-content">
+            <span class="feedback-close" id="feedbackClose">&times;</span>
+            
+            <!-- Feedback Form -->
+            <form class="feedback-form" id="feedbackForm">
+                <h3>Send Feedback</h3>
+                <div class="form-group">
+                    <label for="feedbackType">Feedback Type</label>
+                    <select id="feedbackType" name="feedbackType" required>
+                        <option value="">Select feedback type</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="general">General Feedback</option>
+                        <option value="event">Event Information</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackName">Name (Optional)</label>
+                    <input type="text" id="feedbackName" name="feedbackName" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="feedbackEmail">Email (Optional)</label>
+                    <input type="email" id="feedbackEmail" name="feedbackEmail" placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="feedbackMessage">Message *</label>
+                    <textarea id="feedbackMessage" name="feedbackMessage" placeholder="Please describe your feedback..." required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="feedback-success" id="feedbackSuccess" style="display: none;">
+                <h3>Thank You!</h3>
+                <p>Your feedback has been sent successfully. We appreciate your input!</p>
+                <button onclick="closeFeedbackModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback JavaScript -->
+    <script src="../web3forms.js"></script>
+    <script src="../feedback.js"></script>
+
+    <!-- Notify Modal -->
+    <div class="notify-modal" id="notifyModal">
+        <div class="notify-modal-content">
+            <span class="notify-close" id="notifyClose">&times;</span>
+            
+            <!-- Notify Form -->
+            <form class="notify-form" id="notifyForm">
+                <h3>Add to calendar</h3>
+                
+                <div class="event-info" id="eventInfo">
+                    <h4 id="eventTitle"></h4>
+                    <p id="eventVenue"></p>
+                    <p id="eventDates"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="calendarType">Calendar Event Type</label>
+                    <select id="calendarType" name="calendarType" required>
+                        <option value="">Select event type</option>
+                        <option value="opening">Opening Day</option>
+                        <option value="closing">Closing Day</option>
+                        <option value="full">Full Event Duration</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="calendarProvider">Calendar</label>
+                    <select id="calendarProvider" name="calendarProvider">
+                        <option value="google">Google Calendar</option>
+                        <option value="ics">Apple or other (.ics file)</option>
+                        <option value="outlook">Outlook</option>
+                        <option value="yahoo">Yahoo</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add to calendar</button>
+                <button type="button" class="secondary" onclick="closeNotifyModal()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

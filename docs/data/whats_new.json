@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-11-13",
+    "title": "New York",
+    "text": "New York City is our sixth city, starting with the Whitney, the Guggenheim, the Studio Museum in Harlem, the Frick Collection, David Zwirner, Pace and Night Gallery's New York viewing room. More to come."
+  },
+  {
+    "date": "2026-11-13",
     "title": "Fixed two broken show links",
     "text": "The links to shows at the California African American Museum and Daniel Faria Gallery went to error pages. They now open each show's own page."
   },

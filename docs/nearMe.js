@@ -20,7 +20,7 @@
     // Miles where people think in miles (the US regions), kilometres elsewhere. Every region in
     // docs/data/region_bounds.json needs an entry here (a test checks), so a new city is a
     // decision made on purpose rather than a silent default. See ADDING_A_REGION.md.
-    const UNITS = { sf: 'mi', la: 'mi', mtl: 'km', tor: 'km', ist: 'km' };
+    const UNITS = { sf: 'mi', la: 'mi', mtl: 'km', tor: 'km', ist: 'km', nyc: 'mi' };
 
     // A visitor further than this from the box around a region's venues is "far away": showing
     // "2,900 mi" on every row would be noise, so distances are left off and the page says why.

@@ -1,0 +1,981 @@
+{
+    "Whitney Museum of American Art": {
+        "Roy Lichtenstein: Like New-Whitney Museum of American Art": {
+            "name": "Roy Lichtenstein: Like New",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-05-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/lichtenstein",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://i.ytimg.com/vi/GbJYcu_VlD0/maxresdefault.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "525f1cdb41f1583140d456f742adc551"
+        },
+        "Coumba Samba: Stars and Stripes-Whitney Museum of American Art": {
+            "name": "Coumba Samba: Stars and Stripes",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/coumba-samba",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/834023/large_COUMBA%20SAMBA_05A_PS_FULL.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "ad5a5f1c384a13835d8e2e07292c8ff2"
+        },
+        "Roy Lichtenstein: 1997-Whitney Museum of American Art": {
+            "name": "Roy Lichtenstein: 1997",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-06-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/lichtenstein-1997",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/833779/large_WMAA20998_2019_79_cropped_web.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "e3b045a489ec8a1c01e459451e138f25"
+        },
+        "The Lost World: The Art of Minnie Evans-Whitney Museum of American Art": {
+            "name": "The Lost World: The Art of Minnie Evans",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/the-lost-world",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/833778/large_EXME072%20Evans.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "a8b07e222bf4191a796dcdc898451f6e"
+        },
+        "artport: A History of Internet Art-Whitney Museum of American Art": {
+            "name": "artport: A History of Internet Art",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/artport-25",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/833830/large_26_Artport_Collage_0713.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "5e76f3aa867276d5eec731f5d30dc6f1"
+        },
+        "Farah Al Qasimi: TAILSPIN-Whitney Museum of American Art": {
+            "name": "Farah Al Qasimi: TAILSPIN",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-01-30",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/farah-al-qasimi",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/833842/large_WMAA188203_Still2_web.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "2e91057d492217d2276e3a160bdc1a64"
+        },
+        "Sonya Kelliher-Combs: TITIQ/MARK-Whitney Museum of American Art": {
+            "name": "Sonya Kelliher-Combs: TITIQ/MARK",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-06",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/sonya-kelliher-combs",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/833836/large_Nuna_-Tundra-and-Blue.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "d9d48b9961278691b7a9127f3a03ed66"
+        },
+        "Frank WANG Yefeng: The Levitating Perils #2-Whitney Museum of American Art": {
+            "name": "Frank WANG Yefeng: The Levitating Perils #2",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-10-29",
+                "end": null
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/frank-wang-yefeng",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/832959/large_Screenshot_2025-10-20_at_12.44.42_PM.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "2d450d2ef88892578eb1a7f956d53467"
+        },
+        "Alex Da Corte: Hot Dog With Ketchup-Whitney Museum of American Art": {
+            "name": "Alex Da Corte: Hot Dog With Ketchup",
+            "venue": "Whitney Museum of American Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-05-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://whitney.org/exhibitions/da-corte",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://whitneymedia.org/assets/image/833889/large_WMAA188866_Original-SILO.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "cac78762a9dadc693c68af5a9809d1c7"
+        }
+    },
+    "Guggenheim Museum": {
+        "Taryn Simon: Father Country: I Do Love You-Guggenheim Museum": {
+            "name": "Taryn Simon: Father Country: I Do Love You",
+            "venue": "Guggenheim Museum",
+            "description": "Experience an interactive installation by Taryn Simon featuring never-before-seen photographs, text, video, and sculpture.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "photography",
+                "sculpture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-18",
+                "end": "2027-03-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.guggenheim.org/exhibition/taryn-simon",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.guggenheim.org/wp-content/uploads/2025/10/TarynSimon_FatherCountry-exh_ph022-LARGE-JPG-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "acf66f0e1b0f113026cff673ba0606c8"
+        },
+        "Guggenheim Pop: 1960 to Now-Guggenheim Museum": {
+            "name": "Guggenheim Pop: 1960 to Now",
+            "venue": "Guggenheim Museum",
+            "description": "From Andy Warhol to Maurizio Cattelan, this exhibition features Pop art from the collection and its enduring influence on contemporary artists.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-05",
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.guggenheim.org/exhibition/guggenheim-pop",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.guggenheim.org/wp-content/uploads/2026/06/Guggenheim-Pop-1960-to-Now-exh_ph031-LARGE-JPG-1-scaled-e1785763443742.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "b6ac55d4bb6260fbf04122def80cf5fb"
+        },
+        "Collection in Focus: Modern European Currents-Guggenheim Museum": {
+            "name": "Collection in Focus: Modern European Currents",
+            "venue": "Guggenheim Museum",
+            "description": "See how artists like Natalia Goncharova, Vasily Kandinsky, and Franz Marc transformed painting in the early 20th century.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-07-15",
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.guggenheim.org/exhibition/collection-in-focus-modern-european-currents",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.guggenheim.org/wp-content/uploads/2025/04/image001-e1753279408942.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "759c7e774efb63d42b368f23ea73674b"
+        },
+        "I dream in another language: Do Ho Suh-Guggenheim Museum": {
+            "name": "I dream in another language: Do Ho Suh",
+            "venue": "Guggenheim Museum",
+            "description": "I dream in another language | Do Ho Suh will be the first major solo museum exhibition in New York dedicated to Korean artist Do Ho Suh (b. 1962, Seoul).",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-19",
+                "end": "2027-08-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.guggenheim.org/exhibition/i-dream-in-another-language-do-ho-suh",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.guggenheim.org/wp-content/uploads/2026/11/Rubbing_Loving_Photo-Christopher-Payne_6-scaled.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:02",
+            "hash": "f032578e61b742e60bb9ff760f3490bd"
+        }
+    },
+    "The Studio Museum in Harlem": {
+        "Tone-The Studio Museum in Harlem": {
+            "name": "Tone",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/tone",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/20260928_Tone_KrisGraves_1.jpg?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "7f8927f9c1a98c3959da1815754cf155"
+        },
+        "Mark Bradford: Untitled (A\u2013Z), 2010-The Studio Museum in Harlem": {
+            "name": "Mark Bradford: Untitled (A\u2013Z), 2010",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/mark-brad",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/MarkBradford_UntitledA-Z.png?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "18cc4fe60373a85c3d23910f984eb286"
+        },
+        "A sustained becoming: Studio Museum Artists in Residence 2026-The Studio Museum in Harlem": {
+            "name": "A sustained becoming: Studio Museum Artists in Residence 2026",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/a-sustained-becoming-studio-museum-artists-in-residence-2026",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/2026ArtistsinResidence_LailaAnnMariaStevens_2-Web-Large-JPEG-Width-1680px-72DPI.jpg?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "960aa37e934561c1e809ee58668d00af"
+        },
+        "Through Motion and Repose: Expanding the Walls 2026-The Studio Museum in Harlem": {
+            "name": "Through Motion and Repose: Expanding the Walls 2026",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/through-motion-and-repose-expanding-the-walls-2026",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/ETW2026.png?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "f9da56f7c1bea84e7fbce8768d230cb3"
+        },
+        "Geometries-The Studio Museum in Harlem": {
+            "name": "Geometries",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/geometries",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/5_20260910_Geometries_KrisGraves_21-Print-Large-JPEG-Width-3600px-300DPI.jpg?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "be8cbd976dc2b7dbe15d3baa5c92a519"
+        },
+        "Dreams of This Future: The Collection of Peggy Cooper Cafritz-The Studio Museum in Harlem": {
+            "name": "Dreams of This Future: The Collection of Peggy Cooper Cafritz",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/dreams-of-this-future-the-collection-of-peggy-cooper-cafritz",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/DreamsofThisFuture_InstallationView_2.jpg?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "9a7620d1c1c5870a874b211357d02a43"
+        },
+        "Kapwani Kiwanga: BLEED-The Studio Museum in Harlem": {
+            "name": "Kapwani Kiwanga: BLEED",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-04-01"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/kapwani-kiwanga-bleed",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/20260311_KapwaniKiwanga-BLEED_KrisGraves_11-copy.jpg?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "d8d77deb06b78801af0c7bd9e50acadf"
+        },
+        "Woody De Othello: coming forth by day-The Studio Museum in Harlem": {
+            "name": "Woody De Othello: coming forth by day",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-02-11",
+                "end": "2027-05-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/woody-de-othello-coming-forth-by-day",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/WoodyDeOthello_comingforthbyday_InstallationView_5.jpg?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "8bafa03fd3adfcc13641b2934581aa4a"
+        },
+        "Mavis Pusey: Mobile Images-The Studio Museum in Harlem": {
+            "name": "Mavis Pusey: Mobile Images",
+            "venue": "The Studio Museum in Harlem",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-09",
+                "end": "2027-09-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.studiomuseum.org/exhibitions/mavis-pusey-mobile-images",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://studiomuseum.imgix.net/images/MavisPusey_Personante_nd.jpg?auto=format,compress&fit=max&w=4040",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "29c040b8d422ac4a3f2b575b0335e882"
+        }
+    },
+    "The Frick Collection": {
+        "Siena: The Art of Bronze, 1450\u20131500-The Frick Collection": {
+            "name": "Siena: The Art of Bronze, 1450\u20131500",
+            "venue": "The Frick Collection",
+            "description": "Siena: The Art of Bronze, 1450\u20131500 is the first exhibition to focus on Siena as a center of artistic excellence and technical innovation in bronze sculpture during the Italian Renaissance. Bringing together some forty works\u2014many of which have never been exhibited outside of Tuscany\u2014the exhibition invites visitors to appreciate the medium\u2019s beauty and versatility while learning about the complex",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "sculpture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-15",
+                "end": "2027-01-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.frick.org/exhibitions/siena",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.frick.org/sites/default/files/styles/responsive_300w/public/images/2026/04/2026_siena_carmine_detail_woman_vertical_2000_1334_q30.jpg.webp?itok=0agbl3rl",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "6c578c6d03198c3d35b1367c47350024"
+        },
+        "Kent Monkman: Officer and Laughing Girl-The Frick Collection": {
+            "name": "Kent Monkman: Officer and Laughing Girl",
+            "venue": "The Frick Collection",
+            "description": "The Frick Collection will present an installation of new paintings by the contemporary artist Kent Monkman (b. Canada, 1965), whose practice explores historic European art and narratives from an Indigenous perspective. For this project, Monkman takes inspiration from Officer and Laughing Girl (ca. 1657)\u2014one of the Frick\u2019s three paintings by the seventeenth-century Dutch artist Johannes Vermeer\u2014to",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "painting",
+                "indigenous"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2027-02-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.frick.org/exhibitions/monkman",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.frick.org/sites/default/files/styles/responsive_300w/public/images/2026/05/2026_Kent_Monkman_bio_016A0824_2000_1333-web-q30.jpg.webp?itok=CGzvRJal",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "3aa7cecbc4dc55353862f8777882bf36"
+        },
+        "Painting with Fire: Susanne de Court and the Art of Enamel-The Frick Collection": {
+            "name": "Painting with Fire: Susanne de Court and the Art of Enamel",
+            "venue": "The Frick Collection",
+            "description": "The Frick Collection will present the first exhibition dedicated to the French enameler Susanne de Court. Active around 1600, De Court is an enigmatic figure in the creation of painted enamels. With nearly one hundred surviving works, she is widely believed to have been the only woman to lead a workshop in Limoges, France. This exhibition will bring together around fifty of De Court\u2019s signed",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "painting"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-08",
+                "end": "2027-07-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.frick.org/exhibitions/de_court",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.frick.org/sites/default/files/styles/responsive_300w/public/images/2026/05/2026_de_court_20214013_medallion_apollo_muses_crop_2000_1334_web.jpg.webp?itok=CMJPpM8t",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "a2c1e6f8df5bdf3278541e3e39482b3e"
+        },
+        "Vilhelm Hammersh\u00f8i: Pictures from Home-The Frick Collection": {
+            "name": "Vilhelm Hammersh\u00f8i: Pictures from Home",
+            "venue": "The Frick Collection",
+            "description": "The first major North American exhibition devoted to Vilhelm Hammersh\u00f8i\u2019s work in more than a decade, this show will focus on the artist\u2019s most celebrated paintings\u2014his series of enigmatic, evocative, and meticulously observed views of the interior of his apartment at Strandgade 30 in Copenhagen. Central themes of the show include the artist\u2019s manipulation of spatial ambiguity; his handling of",
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "painting"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-11-11",
+                "end": "2028-02-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.frick.org/exhibitions/hammershoi",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.frick.org/sites/default/files/styles/responsive_300w/public/images/2026/08/2027_hammershoi_interior_music_strandgade30_2000_1687_web.jpg.webp?itok=zWDTSXbq",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "a1c768e82925fd34af244c6a3d116799"
+        }
+    },
+    "David Zwirner": {
+        "Yoshitomo Nara-David Zwirner": {
+            "name": "Yoshitomo Nara",
+            "venue": "David Zwirner",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.davidzwirner.com/exhibitions/2026/yoshitomo-nara",
+                    "description": "Event Page"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "e0944b49949ecfc301bcf5c31c769680"
+        },
+        "Jem Perucchini: Sospiro-David Zwirner": {
+            "name": "Jem Perucchini: Sospiro",
+            "venue": "David Zwirner",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.davidzwirner.com/exhibitions/2026/jem-perucchini",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/juzvn5an/release-adp/d3725df8af0bf82f2465795563aefb09abc3c166-3000x1688.jpg?w=3840",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "f6e4e930e3fabe26c6e698846b024bf0"
+        }
+    },
+    "Pace Gallery": {
+        "Li Hei Di: the year of mud-Pace Gallery": {
+            "name": "Li Hei Di: the year of mud",
+            "venue": "Pace Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.pacegallery.com/exhibitions/li-hei-di-the-year-of-mud/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.pacegallery.com/media/images/LHD_010926_002a.width-2000.png",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "de126dd8df723ec099b7762450e73307"
+        },
+        "Lucas Samaras: Boxes and Reconstructions-Pace Gallery": {
+            "name": "Lucas Samaras: Boxes and Reconstructions",
+            "venue": "Pace Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.pacegallery.com/exhibitions/lucas-samaras-boxes-reconstructions/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.pacegallery.com/media/images/588488keyYV8_qZnm0MUgtkuHpCMSRA.width-2000.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "b6c9fa982fd3f517b9bae28e6bbcd975"
+        },
+        "Elmgreen & Dragset: TRANSITION-Pace Gallery": {
+            "name": "Elmgreen & Dragset: TRANSITION",
+            "venue": "Pace Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.pacegallery.com/exhibitions/elmgreen-dragset-transition/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.pacegallery.com/media/images/ELMGREEN__DRAGSET_20261105_v02_scale_4_revis.width-2000_CDiAWov.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "2f35f5e685d3e64e162fd0803ef7e6fe"
+        },
+        "David Byrne-Pace Gallery": {
+            "name": "David Byrne",
+            "venue": "Pace Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-04-10",
+                "end": "2026-12-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.pacegallery.com/exhibitions/david-byrne-stairwell-drawings/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.pacegallery.com/media/images/PXL_20250407_160501404.PORTRAIT.EDIT.width-2000.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "13e733845f2f35e65eb69c4bc5703aa3"
+        },
+        "Gottlieb/Rothko: The Surrealist Years-Pace Gallery": {
+            "name": "Gottlieb/Rothko: The Surrealist Years",
+            "venue": "Pace Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2027-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.pacegallery.com/exhibitions/rothko-gottlieb-surrealist-years/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.pacegallery.com/media/images/858525keydRa_Utuohvb3QXuIQMaEhQ.original.webp",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:03",
+            "hash": "9d55dfa0e62ef7a10e1d2749180e94a3"
+        }
+    },
+    "Night Gallery New York": {
+        "Hasani Sahlehe: Monoprints-Night Gallery New York": {
+            "name": "Hasani Sahlehe: Monoprints",
+            "venue": "Night Gallery New York",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "printmaking",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-13",
+                "end": "2026-12-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.nightgallery.ca/exhibitions/hasani-sahlehe2",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1080,h_840,c_lfill/exhibit-e/58efe75202a9377c212b12c6/a829bf418d14b9141ee1bb97ea01803b.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-13 22:31:05",
+            "hash": "9872e0a9ab6855685c7fe6e3656d1859"
+        }
+    }
+}

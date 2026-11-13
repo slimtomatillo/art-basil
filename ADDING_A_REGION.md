@@ -456,11 +456,11 @@ buttons. Take the next unused one, in this order:
 | Montreal | blue | `#3358d6` |
 | Toronto | purple | `#8f3fc0` |
 | Istanbul | red | `#c93631` |
-| *next 1* | magenta | `#b8227a` |
-| *next 2* | cyan | `#00748f` |
-| *next 3* | olive | `#5f7a0a` |
-| *next 4* | sky | `#1c78c0` |
-| *next 5* | sunshine yellow | `#ffc61a` — **not wired up yet**, see below |
+| New York City | magenta | `#b8227a` |
+| *next 1* | cyan | `#00748f` |
+| *next 2* | olive | `#5f7a0a` |
+| *next 3* | sky | `#1c78c0` |
+| *next 4* | sunshine yellow | `#ffc61a` — **not wired up yet**, see below |
 
 These were chosen to read white text at 4.5:1 or better and to sit at least 25
 (CIE76 distance) away from every colour already in use. **Check any other colour

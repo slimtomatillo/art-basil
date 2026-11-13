@@ -39,6 +39,7 @@ from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_muse
     interaccess, paul_petro_contemporary_art, nicholas_metivier_gallery, olga_korper_gallery, cooper_cole, \
     doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery, \
     art_museum_uoft, image_centre, daniel_faria_gallery
+from scrapers.nyc import whitney, guggenheim, studio_museum_in_harlem, frick_collection, david_zwirner, pace_gallery, night_gallery_new_york
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -224,6 +225,15 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Propeller Art Gallery": propeller_art_gallery.scrape_propeller_art_gallery,
             "Art Museum at the University of Toronto": art_museum_uoft.scrape_art_museum_uoft,
             "The Image Centre": image_centre.scrape_image_centre,
+        },
+        'nyc': {
+            "Whitney Museum of American Art": whitney.scrape_whitney,
+            "Guggenheim Museum": guggenheim.scrape_guggenheim,
+            "The Studio Museum in Harlem": studio_museum_in_harlem.scrape_studio_museum_in_harlem,
+            "The Frick Collection": frick_collection.scrape_frick_collection,
+            "David Zwirner": david_zwirner.scrape_david_zwirner,
+            "Pace Gallery": pace_gallery.scrape_pace_gallery,
+            "Night Gallery New York": night_gallery_new_york.scrape_night_gallery_new_york,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,

@@ -145,7 +145,9 @@ test('every real venue that has coordinates can be placed with the real data', (
         const rows = Object.keys(venues).map(venue => row(venue, 'x'));
         const { locations, unplaced } = mapPins.groupByLocation(rows, coordinates[region], v => venueAddresses.normalize(venues[v]));
         assert.strictEqual(unplaced, 0, `${region}: a venue has no usable coordinates`);
-        assert.ok(locations.length > 0 && locations.length <= rows.length + 3, region);          // shared addresses merge; two-address venues add pins
+        // one pin per address at most (shared addresses merge into one pin; a venue with several addresses has one each)
+        const addresses = Object.values(venues).reduce((n, value) => n + venueAddresses.normalize(value).length, 0);
+        assert.ok(locations.length > 0 && locations.length <= addresses, region);
         for (const location of locations) {
             for (const v of location.venues) assert.ok(v.address, `${region}: ${v.name} has no address text for its pin`);
         }

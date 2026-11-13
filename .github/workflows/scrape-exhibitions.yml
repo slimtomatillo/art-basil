@@ -53,6 +53,7 @@ jobs:
         git add docs/data/mtl_events.json
         git add docs/data/tor_events.json
         git add docs/data/ist_events.json
+        git add docs/data/nyc_events.json
         git add docs/data/db_size.csv
         git add IMAGE_AUDIT.md
         git commit -m "Update exhibition data [skip ci]"  # [skip ci] prevents triggering additional workflows
