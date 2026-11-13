@@ -7,7 +7,7 @@
 class SearchManager {
     constructor() {
         // Initial state comes from the URL, e.g. ?phase=past&tags=photography,latinx
-        // (or ?search=Venue from a venues.html link), so shared links reproduce a view.
+        // (or ?venue=Venue from a venues.html link), so shared links reproduce a view.
         this.state = filterState.parseUrl(window.location.search, SearchManager.regionToday());
         // Only this region's areas count (a Bay Area ?area= link opened on another region's page is ignored)
         this.state.areas = filterState.areasOfRegion(window.dataManager.getRegion(), this.state.areas);
@@ -149,6 +149,14 @@ class SearchManager {
 
     setSearchTerm(term) {
         this.state.q = term.trim();
+        this.applyFilters();
+    }
+
+    // Show one venue's shows ('' for every venue). The match is on the venue's whole name (filterState.venueMatches),
+    // and the other filters, including the When phases, stay as they are. From a venue name in a row
+    // and from the venue directory (?venue=).
+    setVenue(name) {
+        this.state.venue = String(name || '').trim();
         this.applyFilters();
     }
 

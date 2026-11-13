@@ -426,6 +426,9 @@ class FilterPanel {
         if (state.q) {
             items.push(pill(`“${state.q}”`, () => this.searchManager.setSearchTerm(''), `search "${state.q}"`));
         }
+        if (state.venue) {
+            items.push(pill(`@ ${state.venue}`, () => this.searchManager.setVenue(''), `venue ${state.venue}`));
+        }
         if (dated) {
             const text = filterState.describeTiming(state.timing);
             items.push(pill(text, () => this.searchManager.setTiming(null), text));

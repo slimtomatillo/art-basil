@@ -472,3 +472,56 @@ test('no town, ZIP or district is in two areas of a region, and every area id is
         }
     }
 });
+
+// --- one venue's shows (WEBSITE-111) ---------------------------------------------------------------
+
+test('a venue is in the URL, and with no phase it shows every phase, like a search', () => {
+    const s = fs_.parseUrl('?venue=The%20Broad');
+    assert.strictEqual(s.venue, 'The Broad');
+    assert.deepStrictEqual(s.phases, ALL);
+    // the phase is always written beside a venue, so the link reads back the same
+    const written = fs_.toQuery(state({ venue: 'The Broad', phases: ['current', 'ongoing', 'future'] }));
+    assert.strictEqual(written, '?venue=The+Broad&phase=current,ongoing,future');
+    assert.deepStrictEqual(fs_.parseUrl(written), state({ venue: 'The Broad' }));
+});
+
+test('a venue combines with the other filters in the URL, and old ?search= and ?q= links still work', () => {
+    const s = state({ venue: 'Asian Art Museum', phases: ['current'], tags: ['photography'], q: 'ink' });
+    assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(s)), s);
+    assert.strictEqual(fs_.parseUrl('?search=Pera').q, 'Pera');
+    assert.strictEqual(fs_.parseUrl('?search=Pera').venue, '');
+    assert.strictEqual(fs_.parseUrl('?q=Pera&phase=past').venue, '');
+});
+
+test('a venue is a filter: isDefault is false with one, and the default state has none', () => {
+    assert.strictEqual(fs_.defaultState().venue, '');
+    assert.strictEqual(fs_.isDefault(state({ venue: 'The Broad' })), false);
+    assert.strictEqual(fs_.isDefault(state({ venue: '' })), true);
+});
+
+test('a venue matches on its whole name, not as text anywhere in the row', () => {
+    const broad = row('current', [], { venue: 'The Broad', text: 'a broad survey @ the broad' });
+    const other = row('current', [], { venue: 'Wattis Institute', text: 'a broad survey @ wattis institute' });
+    const s = state({ venue: 'The Broad', phases: ALL });
+    assert.strictEqual(fs_.rowMatches(broad, s), true);
+    assert.strictEqual(fs_.rowMatches(other, s), false, 'a show that only says "broad" is not at The Broad');
+    // a search for the same words would have found both
+    assert.strictEqual(fs_.rowMatches(other, state({ q: 'broad', phases: ALL })), true);
+});
+
+test('a venue matches regardless of case and accents, and a short name is not matched inside a longer one', () => {
+    const arter = row('current', [], { venue: 'Arter' });
+    const kadikoy = row('current', [], { venue: 'Arter Kadıköy' });
+    const mur = row('current', [], { venue: 'Art Mûr' });
+    assert.strictEqual(fs_.rowMatches(arter, state({ venue: 'arter' })), true);
+    assert.strictEqual(fs_.rowMatches(kadikoy, state({ venue: 'Arter' })), false);
+    assert.strictEqual(fs_.rowMatches(mur, state({ venue: 'art mur' })), true);
+    assert.strictEqual(fs_.rowMatches(row('current', [], {}), state({ venue: 'Arter' })), false, 'a row with no venue never matches');
+});
+
+test('a venue narrows along with the When phase, a tag and a search', () => {
+    const r = row('past', ['photography'], { venue: 'SFMOMA', text: 'ansel adams @ sfmoma' });
+    assert.strictEqual(fs_.rowMatches(r, state({ venue: 'SFMOMA', phases: ALL, tags: ['photography'], q: 'ansel' })), true);
+    assert.strictEqual(fs_.rowMatches(r, state({ venue: 'SFMOMA' })), false, 'past is hidden by the default phases');
+    assert.strictEqual(fs_.rowMatches(r, state({ venue: 'SFMOMA', phases: ALL, tags: ['painting'] })), false);
+});
