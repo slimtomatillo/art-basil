@@ -2,7 +2,7 @@
 // tested in Node: `node --test tests/`). notify.js shows the modal and opens or downloads what this builds.
 //
 // An event is added as an all-day entry: its opening day, its closing day, or the whole run. Four targets:
-// a Google Calendar link, an Outlook (outlook.live.com) link, a Yahoo link, and an .ics file (Apple
+// a Google Calendar link, an Outlook link (work, school and Microsoft 365 accounts, outlook.office.com), a Yahoo link, and an .ics file (Apple
 // Calendar, Outlook desktop, Thunderbird, most others) that carries its own alerts, so the person's
 // own calendar app does the reminding and the site needs no backend, storage or sender (WEBSITE-114).
 //
@@ -91,12 +91,22 @@
             + `&dates=${dates}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(r.venue)}`;
     }
 
-    // Outlook on the web (personal accounts); an all-day entry ends on the next day
+    // Outlook takes the body as HTML, so line breaks must be <br> (a plain newline becomes a space) and the
+    // text must be escaped
+    function outlookBody(r) {
+        const escape = text => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return plainDescription(r).split('\n').map(escape).join('<br>');
+    }
+
+    // Outlook on the web for work, school and Microsoft 365 accounts (outlook.office.com); an all-day entry
+    // ends on the next day. Personal accounts (Outlook.com, Hotmail) are on outlook.live.com, and its link
+    // sends a work account to a login page. Personal-account users are better served by the .ics file, so
+    // that link is not offered (WEBSITE-114).
     function outlookUrl(r) {
-        return 'https://outlook.live.com/calendar/0/deeplink/compose?' + query([
+        return 'https://outlook.office.com/calendar/0/deeplink/compose?' + query([
             ['path', '/calendar/action/compose'], ['rru', 'addevent'], ['subject', r.title],
             ['startdt', r.startDay], ['enddt', addDays(r.lastDay, 1)], ['allday', 'true'],
-            ['body', plainDescription(r)], ['location', r.venue]]);
+            ['body', outlookBody(r)], ['location', r.venue]]);
     }
 
     function yahooUrl(r) {
