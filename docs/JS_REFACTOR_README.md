@@ -166,7 +166,8 @@ window.modalManager.openImageModal('image-url.jpg');
 ### 7. Legacy Files (Deprecated)
 - `filter.js` - Functionality moved to `searchManager.js` / `filterState.js`
 - Other files remain unchanged:
-  - `notify.js` - Notification functionality
+  - `notify.js` - The Notify Me modal ("Add to calendar"): shows the event, takes the type (opening day, closing day, full run) and the calendar, then opens the link or downloads the `.ics`; the calendar last used is kept in this browser (`localStorage` key `artbasil.calendar`). Needs `calendarLinks.js` loaded first
+  - `calendarLinks.js` - The pure logic behind it (no DOM, unit tested in `tests/calendarLinks.test.js`): `resolve(event, type)` gives the title, days and link; `googleUrl`, `outlookUrl`, `yahooUrl` and `icsText` build the targets. Entries are all-day and end on the exclusive next day; dates are handled as `YYYY-MM-DD` strings and UTC so the day never shifts. The `.ics` carries its own alerts at 9:00 in the person's time zone (opening day: the day before; closing day: a week before and on the day; full run: a week before it closes and on the closing day), so their calendar app does the reminding and the site needs no backend. Email and text reminders are a separate matter (WEBSITE-41, WEBSITE-42, spike WEBSITE-113)
   - `feedback.js` - Feedback dialog; sends through `web3forms.js` (needs it loaded first)
   - `web3forms.js` - Sends form submissions to the site inbox via Web3Forms; holds the access key (see OPERATIONS.md, "Forms and feedback")
   - `siteForms.js` - Validation, sending state and messages for the Add Event page's forms
@@ -198,6 +199,7 @@ The modules should be loaded in this order in your HTML:
 <script src="scroll.js"></script>
 
 <!-- Other functionality -->
+<script src="calendarLinks.js"></script>
 <script src="notify.js"></script>
 <script src="web3forms.js"></script>
 <script src="feedback.js"></script>
