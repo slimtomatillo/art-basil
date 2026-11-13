@@ -375,10 +375,13 @@ runs after the scrapers, the way `images.py` does for pictures:
 1. For each current or upcoming event with no description and an Event Page link, it opens that page (at most
    100 pages a run, so a backlog clears over a few days) and takes the best text, in this order: the page's
    structured data (JSON-LD), `og:description`, `twitter:description`, the meta description, then the first real
-   paragraphs.
+   paragraphs of the page's main content. If the main content has none (a page whose `<article>` is not where the
+   text is, or whose text sits in a `<header>` block, as at the Image Centre), the whole page is tried, still leaving
+   out navigation, footers and site headers (a header that holds a menu).
 2. **A wrong blurb is worse than none**, so a candidate must be long enough, not boilerplate (cookie notices, a menu
-   bar, "Visit our website to learn more"), not start with dates, a reception or a credit line, not be a run of
-   names or a caption, and use a significant word of the show's title (a site-wide tagline doesn't). Ticketing
+   bar, "Visit our website to learn more"), not start with dates, a reception, an invitation ("Join us...") or a credit
+   line, not be a program announcement ("IN PERSON RSVP...", "In conversation...") or a gallery describing itself, not be
+   a run of names or a caption, and use a significant word of the show's title (a site-wide tagline doesn't). Ticketing
    sentences ("Purchasing Museum admission grants...") are cut, a first sentence that opens several of a venue's
    descriptions is cut, and the same text for several shows is dropped. The text is plain and at most 500
    characters, cut at a sentence end.

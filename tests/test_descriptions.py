@@ -202,6 +202,14 @@ class ProgramsCreditsAndTaglinesTest(unittest.TestCase):
             'This exhibition explores rice and Indigeneity in the Northern Luzon Highlands through objects, video and landscape, in Mountain Spirits.',
             'Mountain Spirits: Rice and Indigeneity in the Northern Luzon Highlands'))
 
+    def test_an_invitation_or_a_program_is_not_the_shows_description(self):
+        self.assertFalse(descriptions.usable(
+            'Join us on November 26th to celebrate the opening reception of Terry’s Pipe, solo exhibition of new work by Ken Nicol.', 'Ken Nicol: Terry’s Pipe'))
+        self.assertFalse(descriptions.usable(
+            'IN CONVERSATION: Meaghan Hyckie & Luke Painter Location: Olga Korper Gallery Join us for an engaging conversation between artists', 'Meaghan Hyckie: Haunts'))
+        self.assertTrue(descriptions.usable(
+            'Haunts is an installation of new sculpture by Meaghan Hyckie, made over two years in her studio in Toronto.', 'Meaghan Hyckie: Haunts'))
+
     def test_a_title_dates_and_location_run_together_is_not_a_description(self):
         for text, name in (
                 ('Yellow Marquee July 1, 2026 – July 1, 2029 18th Street Arts Center A small yellow awning appears to have slipped from the wall',
@@ -290,6 +298,26 @@ class CandidatesTest(unittest.TestCase):
         two = 'It is the first survey of this work shown in the city and runs until the end of the year.'
         s = page(body=f'<main><p>{one}</p><p>{two}</p><p>{BLURB}</p></main>')
         self.assertEqual(descriptions.candidates(s), [('paragraph', one + ' ' + two)])
+
+
+class WiderParagraphSearchTest(unittest.TestCase):
+    """The Image Centre's pages: an <article> that is not where the text is, and the exhibition text inside a <header>."""
+    PROSE = ('For nearly half a century, celebrated American photographer Richard Avedon confronted one of portraiture\'s '
+             'enduring taboos: aging. He revealed the marks of time on his subjects\' faces with unsparing clarity.')
+
+    def test_text_in_a_header_block_outside_the_article_is_found_when_the_article_has_none(self):
+        s = page(body=('<header><div><p>September 9–December 5, 2026 South Gallery & North Gallery Curator: Paul Roth</p>'
+                       f'<p>{self.PROSE}</p></div></header><article><p>Short.</p></article>'))
+        self.assertEqual(descriptions.candidates(s), [('paragraph', self.PROSE)])
+
+    def test_a_site_header_with_a_menu_is_still_left_out(self):
+        site = BLURB.replace('Josiah', 'Gallery')
+        s = page(body=f'<header><nav><a href="/">Home</a></nav><p>{site}</p></header><article><p>Short.</p></article>')
+        self.assertEqual(descriptions.candidates(s), [])
+
+    def test_the_strict_pass_still_comes_first(self):
+        s = page(body=f'<header><p>{self.PROSE}</p></header><main><p>{BLURB}</p></main>')
+        self.assertEqual(descriptions.candidates(s), [('paragraph', BLURB)])
 
 
 class FindEventDescriptionTest(unittest.TestCase):

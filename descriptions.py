@@ -69,6 +69,7 @@ BOILERPLATE = re.compile(
     r'|create a (?:website )?account|manage notification|^this page (?:highlights|features|describes)'
     r'|^(?:(?:in[- ]person|online|virtual|hybrid)\s+)?rsvp\b'                  # a program announcement, not the show
     r'|^this\s+(?:[\w-]+\s+){0,3}(?:conversation|talk|panel|lecture|workshop|tour|screening|walk-?through)\b'
+    r'|^(?:join us|in conversation|artist talk|panel discussion)\b'                   # an invitation to an event, not the show
     # a gallery describing itself ("Roberts Projects is Los Angeles-based contemporary art gallery representing artists...")
     r'|\brepresent(?:ing|s)\s+(?:artists|a\s+(?:roster|group))'
     r'|\bis\s+(?:an?|the)\b(?:\s+[\w,-]+){0,6}\s+(?:gallery|museum|art cent(?:er|re)|institution|foundation)\b', re.IGNORECASE)
@@ -99,7 +100,6 @@ CAPTION = re.compile(
     r'\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?(?:\s*[x×]\s*\d+(?:[.,]\d+)?)?\s*(?:inches|inch|in\.|cm|mm)\b'
     r'|\b(?:oil|acrylic|gouache|ink|watercolou?r|graphite|charcoal|pigment print|gelatin silver)\b[^.]{0,40}\b(?:on|/)\s*(?:canvas|paper|linen|panel|wood|board)\b',
     re.IGNORECASE)
-_NOT_IN_BODY = ['nav', 'header', 'footer', 'aside', 'form', 'script', 'style', 'noscript', 'figcaption']
 
 
 def clean(text):
@@ -233,12 +233,21 @@ def _meta(soup, **attrs):
     return tag.get('content') if tag and tag.get('content') else None
 
 
-def _paragraphs(soup):
-    """The page's first substantial paragraphs, from its main content: up to two, until there are 200 characters."""
-    root = soup.find('main') or soup.find('article') or soup.body or soup
+def _in_site_chrome(p, strict):
+    """Whether a paragraph sits in navigation, a footer, a form, a caption... With `strict` any <header> counts too;
+    otherwise only a site header (one that holds a navigation menu), since some pages put the exhibition's own text
+    in a <header> block."""
+    if p.find_parent(['nav', 'footer', 'aside', 'form', 'script', 'style', 'noscript', 'figcaption']):
+        return True
+    header = p.find_parent('header')
+    return bool(header is not None and (strict or header.find('nav')))
+
+
+def _prose_paragraphs(root, strict):
+    """The first substantial paragraphs under `root`: up to two, until there are 200 characters."""
     parts = []
     for p in root.find_all('p'):
-        if p.find_parent(_NOT_IN_BODY):
+        if _in_site_chrome(p, strict):
             continue
         # a paragraph can hold a caption or credit lines set apart by line breaks (<br>, not other tags: a name in a
         # link is part of its sentence): keep only the prose
@@ -252,6 +261,19 @@ def _paragraphs(soup):
         if len(' '.join(parts)) >= 200 or len(parts) == 2:
             break
     return [' '.join(parts)] if parts else []
+
+
+def _paragraphs(soup):
+    """The page's first substantial paragraphs, from its main content. If that has none (a page whose <article> is
+    not where the exhibition text is, or whose text sits in a <header> block, as at the Image Centre), the whole
+    page is tried, still leaving out navigation, footers and site headers."""
+    root = soup.find('main') or soup.find('article') or soup.body or soup
+    found = _prose_paragraphs(root, strict=True)
+    if not found and root is not (soup.body or soup):
+        found = _prose_paragraphs(soup.body or soup, strict=False)
+    elif not found:
+        found = _prose_paragraphs(root, strict=False)
+    return found
 
 
 def candidates(soup):
