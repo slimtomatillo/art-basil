@@ -1067,6 +1067,18 @@
         ]
     },
     "nyc": {
+        "American Folk Art Museum": [
+            {
+                "lat": 40.77323,
+                "lng": -73.981596
+            }
+        ],
+        "Cooper Hewitt": [
+            {
+                "lat": 40.784284,
+                "lng": -73.957699
+            }
+        ],
         "David Zwirner": [
             {
                 "lat": 40.745807,
@@ -1085,6 +1097,30 @@
             {
                 "lat": 40.782993,
                 "lng": -73.958925
+            }
+        ],
+        "International Center of Photography": [
+            {
+                "lat": 40.7182,
+                "lng": -73.989185
+            }
+        ],
+        "Museum of Arts and Design": [
+            {
+                "lat": 40.767332,
+                "lng": -73.981936
+            }
+        ],
+        "Museum of the City of New York": [
+            {
+                "lat": 40.792527,
+                "lng": -73.951802
+            }
+        ],
+        "Neue Galerie New York": [
+            {
+                "lat": 40.781224,
+                "lng": -73.960237
             }
         ],
         "Night Gallery New York": [
@@ -1107,10 +1143,34 @@
                 "lng": -74.002787
             }
         ],
+        "The Bronx Museum of the Arts": [
+            {
+                "lat": 40.831091,
+                "lng": -73.919947
+            }
+        ],
+        "The Drawing Center": [
+            {
+                "lat": 40.722444,
+                "lng": -74.002891
+            }
+        ],
         "The Frick Collection": [
             {
                 "lat": 40.771259,
                 "lng": -73.967168
+            }
+        ],
+        "The Jewish Museum": [
+            {
+                "lat": 40.78541,
+                "lng": -73.957183
+            }
+        ],
+        "The Noguchi Museum": [
+            {
+                "lat": 40.76699,
+                "lng": -73.937607
             }
         ],
         "The Studio Museum in Harlem": [

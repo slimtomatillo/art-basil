@@ -1,0 +1,52 @@
+name: Check scrapers
+
+# Runs a few venues' scrapers on GitHub's servers and lists what they found, writing and committing nothing. This is how to
+# find out whether a site that loads from a laptop is blocked here (ADDING_A_REGION.md, 2a) without a full daily run.
+# The proxy key is deliberately not passed, so a venue that needs the paid proxy cannot spend credits here.
+# Start it from the Actions tab (Run workflow) or:  gh workflow run check-scrapers.yml -f region=nyc -f venues="Cooper Hewitt,The Drawing Center"
+
+on:
+  workflow_dispatch:
+    inputs:
+      region:
+        description: 'Region: sf, la, nyc, mtl, tor or ist'
+        required: true
+        default: 'nyc'
+      venues:
+        description: 'Venue names, separated by commas (exactly as in main.py)'
+        required: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v7
+
+    - name: Set up Python environment
+      uses: actions/setup-python@v7
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run the scrapers (nothing is saved)
+      env:
+        REGION: ${{ inputs.region }}
+        VENUES: ${{ inputs.venues }}
+      run: |
+        python check_venues.py "$REGION" "$VENUES" 2>&1 | tee check.log
+        exit "${PIPESTATUS[0]}"
+
+    - name: Show the result on the run's summary page
+      if: ${{ !cancelled() }}
+      run: |
+        {
+          echo '## Check scrapers'
+          echo '```'
+          grep -vE '^[0-9]{4}-[0-9]{2}-[0-9]{2} .* - (INFO|DEBUG) - ' check.log || true
+          echo '```'
+        } >> "$GITHUB_STEP_SUMMARY"

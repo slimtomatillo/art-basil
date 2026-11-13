@@ -13,7 +13,7 @@ import re
 from urllib.parse import urljoin
 
 from processing import region_today
-from scrapers.nyc._common import clean, strip_tags
+from scrapers.nyc._common import clean, strip_tags, title_case
 from scrapers.tor._common import publish
 from utils import fetch_and_parse
 
@@ -51,7 +51,7 @@ def _title(raw):
     """The title: its lines (separated by <br>) joined with ": ", and a title set in capitals ("TARYN SIMON<br>FATHER
     COUNTRY") in title case."""
     parts = [strip_tags(part) for part in re.split(r'<br\s*/?>', str(raw or ''), flags=re.IGNORECASE)]
-    parts = [part.title() if part.isupper() else part for part in parts if part]
+    parts = [title_case(part) if part.isupper() else part for part in parts if part]
     return ': '.join(parts).replace(' | ', ': ')
 
 
