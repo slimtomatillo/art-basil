@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-11-13",
+    "title": "Search by artist",
+    "text": "Search now reads each show's description as well as its title, so typing an artist's name finds the show they're in, even when the name isn't in the title."
+  },
+  {
+    "date": "2026-11-13",
     "title": "Add a show to any calendar",
     "text": "Notify Me now works with Google Calendar, Apple Calendar and other calendar apps (a file you download, with reminders built in), Outlook and Yahoo."
   },
