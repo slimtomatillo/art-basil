@@ -32,6 +32,22 @@ class VenueAddressesTest(unittest.TestCase):
                     for venue, value in json.load(f).items():
                         self.assertTrue(all(venue_addresses(value)), f'{name}: {venue}')
 
+    def test_every_stored_show_that_names_its_spaces_names_ones_the_venue_has(self):
+        # An event's `locations` (WEBSITE-122) are labels of its venue's addresses; one the venue lacks would be ignored by the map
+        data_dir = os.path.join(os.path.dirname(__file__), '..', 'docs', 'data')
+        for name in os.listdir(data_dir):
+            if not name.endswith('_events.json'):
+                continue
+            with open(os.path.join(data_dir, name), encoding='utf-8') as f:
+                events = json.load(f)
+            with open(os.path.join(data_dir, name.replace('_events', '_venues')), encoding='utf-8') as f:
+                venues = json.load(f)
+            for venue, shows in events.items():
+                labels = {a.get('label') for a in venues.get(venue, []) if isinstance(a, dict)}
+                for show in shows.values():
+                    for label in show.get('locations') or []:
+                        self.assertIn(label, labels, f"{name}: {venue}: {show.get('name')}")
+
 
 if __name__ == '__main__':
     unittest.main()

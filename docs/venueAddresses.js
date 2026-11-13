@@ -51,10 +51,12 @@
     /** One map link per address: [{ text, href, appleHref, title, label, address }]. `href` is Google Maps
      *  (what everyone gets by default); `appleHref` is the same place in Apple Maps.
      *  A venue with a single address gets plain "Map"; with several, "Map: <label>"
-     *  (or "Map: 2" for an entry that has no label). `title` is the address, for a tooltip. */
-    function mapLinks(value) {
+     *  (or "Map: 2" for an entry that has no label). `title` is the address, for a tooltip.
+     *  `only` (optional): the labels of the addresses a show is at (an event's `locations`); only those get a link, and
+     *  one that names none of the venue's addresses leaves them all (a mistyped label must not hide the map). */
+    function mapLinks(value, only) {
         const entries = normalize(value);
-        return entries.map((entry, i) => ({
+        const links = entries.map((entry, i) => ({
             text: entries.length === 1 ? 'Map' : `Map: ${entry.label || i + 1}`,
             href: MAPS_SEARCH_URL + encodeURIComponent(entry.address),
             appleHref: APPLE_MAPS_SEARCH_URL + encodeURIComponent(entry.address),
@@ -62,6 +64,8 @@
             label: entry.label,
             address: entry.address,
         }));
+        const named = Array.isArray(only) ? links.filter(link => only.includes(link.label || link.text.replace('Map: ', ''))) : [];
+        return named.length ? named : links;
     }
 
     return { MAPS_SEARCH_URL, APPLE_MAPS_SEARCH_URL, isAppleDevice, normalize, mapLinks };

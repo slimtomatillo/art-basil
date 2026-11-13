@@ -4,7 +4,8 @@ https://www.davidzwirner.com/exhibitions lists the gallery's shows in every city
 Hong Kong) as cards, under "Currently on View" and "Upcoming". A card holds the artist, a second line with the show's
 title when it has one, the place ("New York: 19th Street, New York: 20th Street", "London") and the run ("Now Open:
 November 5—December 12, 2026", "Coming Soon: ..."); a link over the card goes to the show's page. Only cards whose
-place starts with "New York" are kept. The "Featured" carousel at the top repeats shows, which are stored once.
+place starts with "New York" are kept, and the spaces the place names (19th Street, 20th Street, Tribeca) are stored on the
+show as `locations`, so the map pins it only there (WEBSITE-122). The "Featured" carousel at the top repeats shows, which are stored once.
 """
 import logging
 import re
@@ -30,6 +31,17 @@ def _lines(card):
     return lines
 
 
+def spaces(place):
+    """The gallery's spaces a card names: "New York: 19th Street, New York: 20th Street" -> ['19th Street', '20th Street']; these are
+    the labels of the venue's addresses in nyc_venues.json."""
+    found = []
+    for part in place.split(','):
+        label = re.sub(r'^\s*New York\s*:?\s*', '', part).strip()
+        if label and label not in found:
+            found.append(label)
+    return found
+
+
 def scrape_david_zwirner(env='prod', region='nyc'):
     """Scrape and process David Zwirner's New York exhibitions."""
     today = region_today(region)
@@ -50,6 +62,6 @@ def scrape_david_zwirner(env='prod', region='nyc'):
         if not (start_date or end_date):
             continue
         found += publish(env, region, VENUE, name, start_date, end_date, urljoin(PAGE_URL, link['href']), tag='gallery',
-                         seen=seen, image=card_picture(card, PAGE_URL))
+                         seen=seen, image=card_picture(card, PAGE_URL), locations=spaces(lines[place_at]))
     if not found:
         logging.warning("David Zwirner: no New York exhibition found; existing data kept.")

@@ -276,8 +276,8 @@ class TableRenderer {
         // Add maps link
         const venueName = event.venue;
 
-        // One link per address; a venue with several spaces gets "Map: <space>" for each
-        const mapLinks = venueName ? window.venueAddresses.mapLinks((this.venues || {})[venueName]) : [];
+        // One link per address; a venue with several spaces gets "Map: <space>" for each, or only for the spaces the show names (WEBSITE-122)
+        const mapLinks = venueName ? window.venueAddresses.mapLinks((this.venues || {})[venueName], event.locations) : [];
         if (mapLinks.length) {
             cell.appendChild(document.createElement('br'));
             mapLinks.forEach((map, i) => {
