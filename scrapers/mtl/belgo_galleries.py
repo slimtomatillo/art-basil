@@ -1,4 +1,4 @@
-from utils import fetch_and_parse
+from utils import fetch_and_parse, fetch_json_via_proxy, ARTCLOUD_PROXY
 from scrapers.tor._common import page_lines, publish
 from scrapers.la._gallery import index_of
 from date_parsing import parse_date_text
@@ -24,6 +24,8 @@ _RENAMES = {'Éclats Art contemmporain': 'Éclats Art contemporain'}
 # built from (/api/shows, called with the site's id) does not, and lists each show's id (the last part of the
 # show's page address) with its picture. The id is in the page's source ("subdomain").
 ARTCLOUD_SITES = {'wishboneart.com': '93234dda-ef42-40c2-a34a-f75b1565b3ee'}      # Galerie Wishbone
+# The feed itself is refused on some runs (see _artcloud_pictures), so then it is fetched through ZenRows with a
+# residential IP: utils.ARTCLOUD_PROXY holds the options.
 _ARTCLOUD_PICTURE = 'https://cdn.artcld.com/img/w_640,h_640,c_fit/{id}.{ext}'
 
 
@@ -67,15 +69,27 @@ def _tenant_links(soup):
 
 def _artcloud_pictures(host):
     """{show id: picture url} from an ArtCloud site's feed, or {} if it can't be read (the shows then have no
-    picture of their own and the venue's logo is shown)."""
+    picture of their own and the venue's logo is shown).
+
+    ArtCloud's firewall refuses a GitHub Actions address with a 403 ("Ip Forbidden") on some runs and not on
+    others (seen 2026-11-10 and 2026-11-12, not 11-09 or 11-11), so the feed is tried directly first, which is
+    free, and through the proxy only when that request fails."""
+    url = f'https://{host}/api/shows'
+    query = {'limit': 100, 'offset': 0, 'sub': ARTCLOUD_SITES[host]}
+    shows = None
     try:
-        response = requests.get(f'https://{host}/api/shows', params={'limit': 100, 'offset': 0, 'sub': ARTCLOUD_SITES[host]},
-                                headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}, timeout=30)
+        response = requests.get(url, params=query, headers={'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}, timeout=30)
         response.raise_for_status()
         shows = response.json().get('shows') or []
     except (requests.RequestException, ValueError, AttributeError) as e:
-        logging.warning(f"Belgo galleries: could not read the pictures feed of {host} ({e}).")
-        return {}
+        if isinstance(e, requests.RequestException):       # blocked or unreachable (not "the answer was not what we expected")
+            data = fetch_json_via_proxy(url, query, ARTCLOUD_PROXY)
+            if isinstance(data, dict):
+                shows = data.get('shows') or []
+                logging.info(f"Belgo galleries: read the pictures feed of {host} through the proxy ({e}).")
+        if shows is None:
+            logging.warning(f"Belgo galleries: could not read the pictures feed of {host} ({e}).")
+            return {}
     return {show['showId']: _ARTCLOUD_PICTURE.format(id=show['image']['id'], ext=show['image'].get('extension') or 'jpg')
             for show in shows if show.get('showId') and (show.get('image') or {}).get('id')}
 

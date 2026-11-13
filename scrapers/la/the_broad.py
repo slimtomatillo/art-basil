@@ -18,6 +18,14 @@ def parse_month_day_year(text):
     raise ValueError(f"time data {text!r} does not match a known month-day-year format")
 
 
+def year_earlier(date):
+    """The same day a year earlier (29 February becomes the 28th)."""
+    try:
+        return date.replace(year=date.year - 1)
+    except ValueError:
+        return date.replace(year=date.year - 1, day=28)
+
+
 def convert_date_to_dt(date_string):
     """Converts a date in string form to a dt.date object."""
     date_parts = date_string.lower().split()
@@ -64,6 +72,11 @@ def scrape_exhibition_details(url):
         event_title = og_title['content'].strip() if og_title and og_title.get('content') else None
         if event_title:
             logging.info(f"Found title in og:title meta tag for {url}")
+
+    if not event_title:
+        # Say what the page was, so a skipped page can be told from a block page or a new template
+        page_title = soup.title.get_text(' ', strip=True)[:80] if soup.title else None
+        logging.warning(f"The Broad: no title found on {url} (page title {page_title!r}, {len(str(soup))} bytes)")
 
     # Get dates - try multiple possible classes/locations
     date_text = None
@@ -136,12 +149,14 @@ def scrape_exhibition_details(url):
             
             if date_parts and len(date_parts) == 2:
                 # Parse start date
+                start_year_borrowed = False
                 start_parts = date_parts[0].strip().split()
                 if len(start_parts) >= 2:  # At least month and day
                     # If year is not in start date, use the year from end date if available
                     if len(start_parts) == 2 and ',' not in date_parts[0]:
                         end_year = date_parts[1].strip().split(',')[-1].strip()
                         start_date_str = f"{date_parts[0].strip()}, {end_year}"
+                        start_year_borrowed = True
                     else:
                         start_date_str = date_parts[0].strip()
                     try:
@@ -157,6 +172,12 @@ def scrape_exhibition_details(url):
                         end_date = parse_month_day_year(date_parts[1].strip())
                     except ValueError:
                         logging.warning(f"Could not parse end date '{date_parts[1]}' for {url}")
+
+                # "Nov 18 - Apr 14, 2024" has the year only once, and the end's was borrowed for the start, which
+                # puts the start after the end. A show that opens in the autumn and closes in the spring opened
+                # the year before.
+                if start_year_borrowed and start_date and end_date and start_date > end_date:
+                    start_date = year_earlier(start_date)
     else:
         logging.warning(f"No date text found for {url}")
 

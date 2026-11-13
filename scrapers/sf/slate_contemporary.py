@@ -1,4 +1,5 @@
 from processing import process_event, derive_phase, region_today
+from utils import fetch_json_via_proxy, ARTCLOUD_PROXY
 from date_parsing import parse_date_text
 import datetime as dt
 from datetime import timezone
@@ -26,13 +27,23 @@ def scrape_slate_contemporary(env='prod', region='sf'):
     """Scrape and process the current and upcoming gallery shows of SLATE contemporary."""
 
     today = region_today(region)
+    shows = None
     try:
         response = requests.get(API_URL, params=API_PARAMS, headers={'User-Agent': 'Your Bot 0.1'}, timeout=30)
         response.raise_for_status()
         shows = response.json().get('shows', [])
     except (requests.RequestException, ValueError) as e:
-        logging.warning(f"SLATE contemporary: could not fetch the shows list ({e}); existing data kept.")
-        return
+        # ArtCloud's firewall refuses a GitHub Actions address with a 403 ("Ip Forbidden") on some runs and not on
+        # others (SLATE's feed on 2026-11-12), so when the direct request is blocked or unreachable the feed is
+        # read through the proxy. Free when the direct request works; 10 credits on a blocked day.
+        if isinstance(e, requests.RequestException):
+            data = fetch_json_via_proxy(API_URL, API_PARAMS, ARTCLOUD_PROXY)
+            if isinstance(data, dict):
+                shows = data.get('shows', [])
+                logging.info(f"SLATE contemporary: read the shows list through the proxy ({e}).")
+        if shows is None:
+            logging.warning(f"SLATE contemporary: could not fetch the shows list ({e}); existing data kept.")
+            return
     if not shows:
         logging.warning("SLATE contemporary: the shows list was empty; existing data kept.")
         return

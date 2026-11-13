@@ -9,7 +9,7 @@ from config import DB_FILES
 import os
 import tempfile
 import time
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlencode
 
 import certifi
 
@@ -129,6 +129,13 @@ PROXY_DOMAINS = {
     # since Nov 3. One page, so premium proxy alone is tried first (10 credits, about 76 a month) - not
     # live-tested (no proxy key locally); if ZenRows answers 422 or CI still gets a 403, add js_render.
     'creativegrowth.org': {'premium_proxy': 'true'},
+    # SFAC Galleries (WEBSITE-109): its sf.gov page reads fine from a normal connection, but on its first CI run
+    # (2026-11-12) the scraper found no exhibition and logged no error, which is what a block page for GitHub's
+    # IPs looks like (Root Division and the Chinese Culture Center, fetched the same way, worked). One
+    # server-rendered page, so premium proxy alone is tried first (10 credits, about 76 a month; it is already
+    # on the 4-day schedule in main.py's PROXIED_VENUES) - not live-tested (no proxy key locally). If the log
+    # still says "no exhibition found", its page title and size now say what came back.
+    'www.sf.gov': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are
@@ -228,6 +235,38 @@ def fetch_json(url, query=None, headers=None):
         return response.json()
     except (requests.RequestException, ValueError) as e:
         logging.error(f"Error fetching {url}: {e}")
+        return None
+
+
+# ZenRows options for the JSON feeds of sites on the ArtCloud (artcld.com) platform, whose firewall refuses a
+# GitHub Actions address on some runs. Not live-tested (no proxy key locally): if CI still gets a 403 or ZenRows
+# answers 422, the log says why; try adding 'proxy_country' or 'js_render'.
+ARTCLOUD_PROXY = {'premium_proxy': 'true'}
+
+
+def fetch_json_via_proxy(url, query=None, proxy_params=None):
+    """GET a public JSON endpoint through ZenRows and return the parsed JSON, or None if there is no proxy key,
+    the account is out of credits, or the request or the answer fails. For a JSON feed that answers a GitHub
+    Actions address with a 403 on some runs ("Ip Forbidden") but is fine from a residential one: the caller tries
+    the feed directly first (free) and comes here only when that fails, so the credits (10 for a premium proxy
+    request) are spent only on the days the feed is blocked."""
+    global PROXY_EXHAUSTED
+    if not ZENROWS_API_KEY or PROXY_EXHAUSTED:
+        return None
+    full_url = f"{url}?{urlencode(query)}" if query else url
+    try:
+        response = _proxy_get(full_url, proxy_params or {'premium_proxy': 'true'})
+        if response.status_code == 402:
+            PROXY_EXHAUSTED = True
+            logging.error("ZenRows reports the account is out of credits (402); "
+                          "skipping all remaining proxied fetches this run.")
+            return None
+        if response.status_code >= 400:
+            logging.error(f"ZenRows refused {full_url} ({response.status_code}): {response.text[:300]}")
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, ValueError) as e:
+        logging.error(f"Error fetching {full_url} through the proxy: {e}")
         return None
 
 

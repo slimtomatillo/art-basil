@@ -7,10 +7,12 @@ import os
 import sys
 import unittest
 from unittest import mock
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+import utils
 from scrapers.sf import chinese_culture_center, root_division, sfac_galleries
 from scrapers.tor import _common
 
@@ -71,6 +73,17 @@ class SfacTest(unittest.TestCase):
     def test_failed_fetch_keeps_existing_data(self):
         with self.assertLogs(level='WARNING'):
             self.assertEqual(run(sfac_galleries, sfac_galleries.scrape_sfac_galleries, {}), [])
+
+    def test_a_page_with_no_exhibitions_says_what_it_was(self):
+        page = '<html><head><title>Just a moment...</title></head><body><section><p>hi</p></section></body></html>'
+        with self.assertLogs(level='WARNING') as logs:
+            events = run(sfac_galleries, sfac_galleries.scrape_sfac_galleries, {sfac_galleries.PAGE_URL: page})
+        self.assertEqual(events, [])
+        self.assertIn("page title 'Just a moment...', 1 sections", '\n'.join(logs.output))
+
+    def test_the_page_is_fetched_through_the_proxy(self):
+        # first CI run 2026-11-12: nothing found, no error; see the comment in utils.PROXY_DOMAINS
+        self.assertIn(urlparse(sfac_galleries.PAGE_URL).netloc, utils.PROXY_DOMAINS)
 
 
 def rd_item(title, dates, slug):

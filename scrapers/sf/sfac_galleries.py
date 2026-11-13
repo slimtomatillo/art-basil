@@ -47,4 +47,7 @@ def scrape_sfac_galleries(env='prod', region='sf'):
         found += publish(env, region, VENUE, name, start_date, end_date, urljoin(PAGE_URL, link.get('href', '')),
                          tag='gallery', seen=seen, image=image)
     if not found:
-        logging.warning("SFAC Galleries: no current or upcoming exhibition found; existing data kept.")
+        # Say what came back, so an empty result can be told from a block page or a changed layout
+        title = soup.title.get_text(' ', strip=True)[:80] if soup.title else None
+        logging.warning("SFAC Galleries: no current or upcoming exhibition found; existing data kept "
+                        f"(page title {title!r}, {len(soup.find_all('section'))} sections, {len(str(soup))} bytes).")
