@@ -14,9 +14,34 @@ BASE_URL = SITE + '/Departments/Community-Services/Arts-Sciences/Palo-Alto-Art-C
 MAX_PAST = 12
 
 _DATE_RANGE_RE = re.compile(r'[A-Z][a-z]+\.? \d{1,2}(?:, \d{4})?\s*[-–]\s*(?:[A-Z][a-z]+\.? )?\d{1,2}, \d{4}')
+# The page's paragraphs include picture credits and captions among the text ("Left image: Nathan Oliveira, Profile,
+# 2010, oil on canvas, 66 x 50 in., Courtesy of ..."); they are not the show's description
+_CAPTION_RE = re.compile(r'^(?:(?:left|right|top|bottom)\s+)?image\b|courtesy of|\bphoto(?:graph)? by\b|\b\d+(?:\.\d+)?\s*[x×]\s*\d+|,\s*(?:19|20)\d\d,', re.IGNORECASE)
+_MAX_DESCRIPTION = 500
 
 def absolute(src):
     return SITE + src if src.startswith('/') else src
+
+def description_after(start):
+    """The show's text: the first paragraphs after `start` (its heading or dates), up to the next heading, leaving out
+    the date line and picture captions, in plain text of at most 500 characters cut at a sentence end ("" if none)."""
+    parts = []
+    for tag in start.find_all_next(['p', 'h2']):
+        if tag.name == 'h2':
+            break
+        text = ' '.join(tag.get_text(' ', strip=True).split())
+        if len(text) < 40 or _DATE_RANGE_RE.match(text) or _CAPTION_RE.search(text):
+            continue
+        parts.append(text)
+        if sum(len(part) for part in parts) >= 200:
+            break
+    text = ' '.join(parts)
+    if len(text) > _MAX_DESCRIPTION:
+        cut = text[:_MAX_DESCRIPTION]
+        sentence_end = max(cut.rfind('. '), cut.rfind('! '), cut.rfind('? '))
+        text = cut[:sentence_end + 1] if sentence_end > 200 else cut.rsplit(' ', 1)[0]
+    return text
+
 
 def first_image(main):
     img = main.find('img', src=True)
@@ -62,7 +87,8 @@ def scrape_palo_alto_art_center(env='prod', region='sf'):
         m = _DATE_RANGE_RE.search(main.get_text(' ', strip=True))
         if title and m:
             start_date, end_date = parse_date_text(m.group(0), today)
-            emit(title.get_text(' ', strip=True), start_date, end_date, url, 'current', first_image(main))
+            emit(title.get_text(' ', strip=True), start_date, end_date, url, 'current', first_image(main),
+                 description=description_after(title) or None)
         else:
             logging.warning("Palo Alto Art Center: no current exhibition found")
 
@@ -74,7 +100,8 @@ def scrape_palo_alto_art_center(env='prod', region='sf'):
             start_date, end_date = parse_date_text(date_tag.get_text(' ', strip=True), today) if date_tag else (None, None)
             if not (start_date or end_date):
                 continue
-            emit(h2.get_text(' ', strip=True), start_date, end_date, url, 'future', first_image(main))
+            emit(h2.get_text(' ', strip=True), start_date, end_date, url, 'future', first_image(main),
+                 description=description_after(date_tag) or None)
 
     # Past: accordion of <h2> "Title | dates" (or a bare title with the dates in an <h4>)
     url, main = get_main('Past-Exhibitions')
