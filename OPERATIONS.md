@@ -94,6 +94,25 @@ Unknown region or venue names are rejected with the list of valid ones.
 Without `--env dev` this writes to `docs/data/*_events.json`; CI commits to
 `main` every day, so `git pull --rebase` before you push.
 
+### Checking a few scrapers without a full run
+
+`python check_venues.py <region> "<Venue>" ...` runs just those venues' scrapers (the same code as a daily run) against a
+temporary events file, so **nothing is written to `docs/data`**, and prints what each found: every show with its phase,
+dates and whether it has a description and a picture. It exits non-zero if a scraper crashed or a venue found nothing.
+(`--env dev` logs only the start and end of each scraper; this shows the shows.) A venue that goes through the paid proxy
+is refused unless you add `--allow-proxy`.
+
+```bash
+python check_venues.py nyc "Cooper Hewitt" "The Jewish Museum"
+python check_venues.py nyc "Cooper Hewitt,The Jewish Museum"      # commas work too
+```
+
+To try the same venues **on GitHub's servers** (a site that loads from a laptop can still 403 there) run the
+"Check scrapers" workflow: Actions, Check scrapers, Run workflow, or
+`gh workflow run check-scrapers.yml -f region=nyc -f venues="Cooper Hewitt,The Jewish Museum"`. It saves and commits nothing,
+has no proxy key (so it cannot spend credits), and shows the result on the run's summary page. It takes about a minute, against
+about 15 for the daily run.
+
 To look at the site locally, serve the `docs/` folder and open a region page:
 
 ```bash

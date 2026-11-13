@@ -217,8 +217,10 @@ def scrape_<venue>(env='prod', region='<region>'):
 - It accepts an optional `headers=` dict to override/extend the default
   `User-Agent` (some CDNs — Cloudflare, Fastly — 403 the default bot UA).
 - **A site that loads fine from your laptop can still 403 GitHub's servers.**
-  After adding a scraper, check it in CI (`gh workflow run scrape-exhibitions.yml`,
-  then grep the job log for `Error fetching <your site>`). If it's blocked, route
+  After adding a scraper, check it in CI: run the "Check scrapers" workflow for just
+  that venue (`gh workflow run check-scrapers.yml -f region=<region> -f venues="<Venue Name>"`, OPERATIONS.md,
+  "Checking a few scrapers without a full run"), not the whole daily scrape, and look for `Error fetching <your site>`
+  in its output. If it's blocked, route
   it through the ZenRows proxy — see 2f.
 - **A page that is empty or says "Loading..." without JavaScript** usually fills itself in from a
   JSON address, which is free to read and needs no ZenRows `js_render` (25 credits a request). Open

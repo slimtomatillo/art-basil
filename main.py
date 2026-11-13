@@ -40,6 +40,8 @@ from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_muse
     doris_mccarthy_gallery, onsite_gallery, stephen_bulger_gallery, goldfarb_gallery, propeller_art_gallery, \
     art_museum_uoft, image_centre, daniel_faria_gallery
 from scrapers.nyc import whitney, guggenheim, studio_museum_in_harlem, frick_collection, david_zwirner, pace_gallery, night_gallery_new_york
+from scrapers.nyc import cooper_hewitt, jewish_museum, museum_of_the_city_of_new_york, neue_galerie_new_york, noguchi_museum, drawing_center, \
+    museum_of_arts_and_design, international_center_of_photography, bronx_museum_of_the_arts, american_folk_art_museum
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -234,6 +236,16 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "David Zwirner": david_zwirner.scrape_david_zwirner,
             "Pace Gallery": pace_gallery.scrape_pace_gallery,
             "Night Gallery New York": night_gallery_new_york.scrape_night_gallery_new_york,
+            "Cooper Hewitt": cooper_hewitt.scrape_cooper_hewitt,
+            "The Jewish Museum": jewish_museum.scrape_jewish_museum,
+            "Museum of the City of New York": museum_of_the_city_of_new_york.scrape_museum_of_the_city_of_new_york,
+            "Neue Galerie New York": neue_galerie_new_york.scrape_neue_galerie_new_york,
+            "The Noguchi Museum": noguchi_museum.scrape_noguchi_museum,
+            "The Drawing Center": drawing_center.scrape_drawing_center,
+            "Museum of Arts and Design": museum_of_arts_and_design.scrape_museum_of_arts_and_design,
+            "International Center of Photography": international_center_of_photography.scrape_international_center_of_photography,
+            "The Bronx Museum of the Arts": bronx_museum_of_the_arts.scrape_bronx_museum_of_the_arts,
+            "American Folk Art Museum": american_folk_art_museum.scrape_american_folk_art_museum,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,

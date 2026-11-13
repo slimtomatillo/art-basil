@@ -16,6 +16,16 @@ def strip_tags(html):
     return clean(re.sub(r'<[^>]+>', ' ', str(html or '')))
 
 
+_SMALL_WORDS = {'a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'in', 'nor', 'of', 'on', 'or', 'the', 'to', 'vs'}
+
+
+def title_case(text):
+    """A title set in capitals ("FREDERIC CHURCH IN JAMAICA") in title case, with the small words lower ("Frederic Church
+    in Jamaica") and apostrophes left alone."""
+    words = [w[:1].upper() + w[1:].lower() for w in clean(text).split(' ')]
+    return ' '.join(w.lower() if i and w.lower() in _SMALL_WORDS else w for i, w in enumerate(words))
+
+
 def card_picture(element, page_url):
     """The first plausible exhibition picture inside a listing card (an <img>, a lazy-loaded data-src or a CSS
     background), made absolute and https; None if the card has none."""

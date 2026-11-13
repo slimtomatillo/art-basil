@@ -388,6 +388,66 @@
             "source": "https://www.frick.org/visit",
             "checked": "2026-11-13",
             "note": "Believed to charge admission; the visit page refused the request. Check the price and any free hours."
+        },
+        "Cooper Hewitt": {
+            "admission": "unverified",
+            "source": "https://www.cooperhewitt.org/visit/",
+            "checked": "2026-11-13",
+            "note": "Believed to charge admission; the visit page refused the request. Check the price and any free hours."
+        },
+        "The Jewish Museum": {
+            "admission": "unverified",
+            "source": "https://thejewishmuseum.org/visit",
+            "checked": "2026-11-13",
+            "note": "Believed to charge admission; the visit page refused the request. Check the price and any free hours."
+        },
+        "Museum of the City of New York": {
+            "admission": "paid",
+            "source": "https://www.mcny.org/visit",
+            "checked": "2026-11-13",
+            "note": "$23 adults; New York City residents pay what they can; free for everyone on Wednesdays."
+        },
+        "Neue Galerie New York": {
+            "admission": "paid",
+            "source": "https://www.neuegalerie.org/visit",
+            "checked": "2026-11-13",
+            "note": "Charges admission; free for members and 5 to 8 pm on select Fridays."
+        },
+        "The Noguchi Museum": {
+            "admission": "paid",
+            "source": "https://www.noguchi.org/museum/visit/",
+            "checked": "2026-11-13",
+            "note": "$16 general admission; free on the first Friday of the month and for members and children under 12."
+        },
+        "The Drawing Center": {
+            "admission": "free",
+            "source": "https://drawingcenter.org/visit",
+            "checked": "2026-11-13",
+            "note": "Admission is free."
+        },
+        "Museum of Arts and Design": {
+            "admission": "paid",
+            "source": "https://madmuseum.org/visit",
+            "checked": "2026-11-13",
+            "note": "Charges admission; pay what you wish 5 to 8 pm on the first Wednesday of the month."
+        },
+        "International Center of Photography": {
+            "admission": "paid",
+            "source": "https://www.icp.org/visit",
+            "checked": "2026-11-13",
+            "note": "$18 adults."
+        },
+        "The Bronx Museum of the Arts": {
+            "admission": "free",
+            "source": "https://bronxmuseum.org/visit/",
+            "checked": "2026-11-13",
+            "note": "Admission to the museum and all its exhibitions and events is always free."
+        },
+        "American Folk Art Museum": {
+            "admission": "free",
+            "source": "https://folkartmuseum.org/visit/location",
+            "checked": "2026-11-13",
+            "note": "Admission is always free."
         }
     }
 }

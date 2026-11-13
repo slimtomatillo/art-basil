@@ -1,4 +1,6 @@
 {
+    "American Folk Art Museum": "2 Lincoln Sq, New York, NY 10023",
+    "Cooper Hewitt": "2 E 91st St, New York, NY 10128",
     "David Zwirner": [
         {
             "label": "19th Street",
@@ -14,6 +16,10 @@
         }
     ],
     "Guggenheim Museum": "1071 5th Ave, New York, NY 10128",
+    "International Center of Photography": "84 Ludlow St, New York, NY 10002",
+    "Museum of Arts and Design": "2 Columbus Cir, New York, NY 10019",
+    "Museum of the City of New York": "1220 5th Ave, New York, NY 10029",
+    "Neue Galerie New York": "1048 5th Ave, New York, NY 10028",
     "Night Gallery New York": "61 Lispenard St, New York, NY 10013",
     "Pace Gallery": [
         {
@@ -29,7 +35,11 @@
             "address": "395 Broadway, New York, NY 10013"
         }
     ],
+    "The Bronx Museum of the Arts": "1040 Grand Concourse, Bronx, NY 10456",
+    "The Drawing Center": "35 Wooster St, New York, NY 10013",
     "The Frick Collection": "1 E 70th St, New York, NY 10021",
+    "The Jewish Museum": "1109 5th Ave, New York, NY 10128",
+    "The Noguchi Museum": "9-01 33rd Rd, Long Island City, NY 11106",
     "The Studio Museum in Harlem": "144 W 125th St, New York, NY 10027",
     "Whitney Museum of American Art": "99 Gansevoort St, New York, NY 10014"
 }
