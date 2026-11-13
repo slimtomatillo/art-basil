@@ -11,11 +11,6 @@
   },
   {
     "date": "2026-11-13",
-    "title": "Fixed two broken show links",
-    "text": "The links to shows at the California African American Museum and Daniel Faria Gallery went to error pages. They now open each show's own page."
-  },
-  {
-    "date": "2026-11-13",
     "title": "Search by artist",
     "text": "Search now reads each show's description as well as its title, so typing an artist's name finds the show they're in, even when the name isn't in the title."
   },
