@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cursorFx.css">
+    <link rel="icon" href="images/favicon.ico" sizes="48x48">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <title>What's new - Art Basil</title>
+    <meta name="description" content="New venues, features and fixes on Art Basil, newest first.">
+    <link rel="canonical" href="https://artbasil.info/whats-new.html">
+    <!-- Link previews (Open Graph and Twitter) -->
+    <meta property="og:site_name" content="Art Basil">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="What's new - Art Basil">
+    <meta property="og:description" content="New venues, features and fixes on Art Basil, newest first.">
+    <meta property="og:url" content="https://artbasil.info/whats-new.html">
+    <meta property="og:image" content="https://artbasil.info/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Art Basil: find art near you">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G06G4L1YGN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G06G4L1YGN');
+</script>
+<body class="bg-light region-page" style="--region-c: #111; --region-t: -1deg;">
+    <div class="container">
+        <header class="mb-4">
+            <h1 class="h3 mb-0">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <img src="images/logo.svg" alt="Art Basil" style="height: 44px; margin-bottom: 8px; vertical-align: middle;">
+                </a>
+            </h1>
+        </header>
+
+        <header class="text-center mb-4">
+            <h1 class="display-5 region-title region-title-center">What's new</h1>
+        </header>
+
+        <main>
+            <section class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center mb-4">New venues, features and fixes, newest first.</p>
+                    <div id="whatsNewList">
+                        <noscript><p class="text-center text-muted">This page needs JavaScript to show the list.</p></noscript>
+                    </div>
+                    <p class="text-center text-muted mt-4" id="whatsNewEarlier">Before October 2026: Art Basil started in 2023 as a guide to art in the San Francisco Bay Area, and Los Angeles joined in November 2024.</p>
+                    <p class="text-center mt-4"><a href="index.html">Back to the cities</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cursorFx.js"></script>
+    <script src="whatsNew.js"></script>
+    <script>
+        window.whatsNew.load(document.getElementById('whatsNewList'));
+    </script>
+</body>
+</html>

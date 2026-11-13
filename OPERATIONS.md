@@ -206,6 +206,19 @@ The site already uses Google Analytics. There is no privacy page; if one is adde
 **The comparison behind the choice** (Google Maps, Apple MapKit JS, OpenStreetMap's own tiles, CARTO) is in
 the comment on WEBSITE-76 of 2026-11-09.
 
+## What's new (the visitor page)
+
+`docs/whats-new.html` is a short, hand-written list of what changed on the site, newest first, for visitors. It is **not** a developer changelog (git history and Jira are that). The entries are in `docs/data/whats_new.json`, one per visitor-visible change:
+
+```json
+{ "date": "2026-11-13", "title": "See one venue's shows", "text": "Click a venue's name in the list to see only its shows." }
+```
+
+* **When to add one:** when a story merges that a visitor would notice: a new venue or city, a new feature or filter, or a fix to something they would have seen as broken. Not for scraper or proxy changes, tests, dependency bumps or single-show data fixes. Make it part of closing the story (Jira comment, entry, close).
+* **How to write it:** plain and warm, sentence case, one or two short sentences saying what it does for the visitor ([`BRAND.md`](BRAND.md), "How we sound"). One entry per change, not per pull request. No ticket or pull-request numbers: a test fails if one slips in.
+* **Where:** add it at the top of the file (the page sorts by date anyway, and entries on the same day keep file order). `date` is `YYYY-MM-DD`; a test fails for a bad date, a missing title or text, or entries out of order.
+* New venues: name them when there are a few, or give the count and the city.
+
 ## Forms and feedback (Web3Forms)
 
 The Add Event page (an event form and a "suggest a venue" form) and the "?" feedback

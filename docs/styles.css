@@ -2204,3 +2204,44 @@ body {
 :is(.region-page .filter-dropdown-toggle, .region-page .notify-button, .feedback-button):is(:hover, :focus-visible)::before {
     transform: translate(-2px, -2px);
 }
+
+/* The "What's new" page (whats-new.html, whatsNew.js): months, then that month's entries */
+.whats-new-month {
+    margin-bottom: 2rem;
+}
+
+.whats-new-month-title {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--ink, #111);
+}
+
+.whats-new-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.whats-new-item {
+    padding: 0.85rem 0;
+    border-bottom: 1px dashed #ced4da;
+}
+
+.whats-new-item:last-child {
+    border-bottom: 0;
+}
+
+.whats-new-title {
+    margin: 0 0 0.25rem;
+    font-weight: 700;
+}
+
+.whats-new-text {
+    margin: 0;
+}
+
+/* Home page: the small "What's new" link under "Add my area" */
+.request-area-news {
+    margin: 1.25rem 0 0;
+    text-align: center;
+}
