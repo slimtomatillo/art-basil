@@ -63,6 +63,11 @@ MAX_PAGES_PER_RUN = 100           # keeps a run short; a backlog is cleared over
 # (WEBSITE-118): at most about 100 credits a run, and the cheapest pages first. A backlog of 70 pages clears in about
 # two and a half weeks; after that only newly listed shows are fetched. Set it to 0 to switch proxied pages off.
 PROXY_PAGES_PER_RUN = 4
+# A text that never uses a word of the show's title is only accepted if it is at least this long and does not name the
+# venue near its start (WEBSITE-119): a show's blurb often shares no word with a title like "Spotlight" or "Neighbours",
+# while a site-wide tagline almost always opens with the venue's name.
+NO_TITLE_MIN_CHARS = 150
+VENUE_HEAD_CHARS = 160
 # Paid-proxy hosts whose event pages have no description in the HTML the proxy returns (checked 2026-11-13): fetching them
 # would spend credits for nothing. Galerie Simon Blais builds its pages from blocks with no text we can tell apart.
 PROXIED_WITHOUT_TEXT = {'galeriesimonblais.com'}
@@ -87,7 +92,8 @@ BOILERPLATE = re.compile(
     r'|^(?:join us|in conversation|artist talk|panel discussion)\b'                   # an invitation to an event, not the show
     # a gallery describing itself ("Roberts Projects is Los Angeles-based contemporary art gallery representing artists...")
     r'|\brepresent(?:ing|s)\s+(?:artists|a\s+(?:roster|group))'
-    r'|\bis\s+(?:an?|the)\b(?:\s+[\w,-]+){0,6}\s+(?:gallery|museum|art cent(?:er|re)|institution|foundation)\b', re.IGNORECASE)
+    r'|\bis\s+(?:an?|the)\b(?:\s+[\w,-]+){0,6}\s+(?:gallery|museum|cent(?:er|re)|institution|foundation|space for)\b'
+    r'|\bcarousel\b|^find out about\b', re.IGNORECASE)
 # Event information set in the text ("Opening Reception: Saturday, October 31", "12 novembre – 19 décembre 2026")
 EVENT_INFO = re.compile(r'\b(?:opening|closing|artists?\W?s?)\s+(?:reception|celebration|night)\s*:', re.IGNORECASE)
 # A line that starts with a date ("October 23 - November 28, 2026", "15 octobre", "12.11.2026", "Through March 3")
@@ -192,7 +198,16 @@ def furniture_line(line):
             or (len(line) < 200 and bool(ENDS_WITH_YEAR.search(line))))
 
 
-def usable(text, name):
+def names_the_venue(text, venue):
+    """Whether the start of a text names the venue: the whole name, or one of its significant words ("Mercer Union is a
+    non-profit...", "Fonderie Darling in Montreal is a space..."). A show's blurb rarely opens that way, a tagline always."""
+    if not venue:
+        return False
+    head = fold(text[:VENUE_HEAD_CHARS])
+    return fold(venue).strip() in head or bool(title_words(venue) & set(re.findall(r'[a-z0-9]{4,}', head)))
+
+
+def usable(text, name, venue=None):
     """Whether a candidate is long enough, not boilerplate, and about this show."""
     if len(text) < MIN_CHARS or len(text.split()) < MIN_WORDS:
         return False
@@ -214,7 +229,11 @@ def usable(text, name):
         return False
     if folded.strip(' .') == fold(name).strip(' .'):
         return False
-    return mentions_show(text, name)
+    if mentions_show(text, name):
+        return True
+    # It never uses a word of the title. Without the venue we cannot tell it from a tagline; with it, a long text that
+    # does not open by naming the venue is the show's own.
+    return bool(venue) and len(text) >= NO_TITLE_MIN_CHARS and not names_the_venue(text, venue)
 
 
 def _json_ld_descriptions(soup):
@@ -350,7 +369,7 @@ def candidates(soup, page_url=None):
     return [(source, clean(text)) for source, text in found if text]
 
 
-def find_event_description(page_url, name, fetch=fetch_and_parse, allow_proxy=False):
+def find_event_description(page_url, name, fetch=fetch_and_parse, allow_proxy=False, venue=None):
     """(text, source) for the best usable description on an event's page, or None.
 
     A page on a paid-proxy site is only fetched with `allow_proxy` (it costs credits: see proxy_credits)."""
@@ -361,14 +380,34 @@ def find_event_description(page_url, name, fetch=fetch_and_parse, allow_proxy=Fa
     soup = fetch(page_url)
     if soup is None:
         return None
-    for source, text in candidates(soup, page_url):
-        text = strip_opening_furniture(strip_title_heading(text, name))
+    found = [(source, strip_opening_furniture(strip_title_heading(text, name))) for source, text in candidates(soup, page_url)]
+    for source, text in found:                              # the strict rule first, over every candidate, as it always was
         if usable(text, name):
             return trim(text), source
+    # Nothing named the show. A long text that does not open by naming the venue is accepted instead, but only on a page that
+    # is itself about the show: on a listing of several shows the first paragraph can belong to another one (Sprüth Magers'
+    # /exhibitions page gave a paragraph about a different artist).
+    if venue and page_is_about(soup, page_url, name):
+        for source, text in found:
+            if usable(text, name, venue):
+                return trim(text), source
     return None
 
 
-def find_proxied_description(page_url, name):
+def page_is_about(soup, page_url, name):
+    """Whether the page itself is about the show: a significant word of its title is in the page's address, its <title>,
+    its first heading or its share title (substring, so "spotlight" matches /spotlights/)."""
+    words = title_words(name)
+    if not words:
+        return True
+    heading = soup.find('h1')
+    share = _meta(soup, property='og:title')
+    haystack = fold(' '.join([urlparse(page_url or '').path, soup.title.get_text(' ') if soup.title else '',
+                              heading.get_text(' ') if heading else '', share or '']))
+    return any(word in haystack for word in words)
+
+
+def find_proxied_description(page_url, name, venue=None):
     """find_event_description for a page on a paid-proxy site, fetched through the proxy. Returns FETCH_FAILED when the
     page could not be fetched at all (as opposed to None: fetched, but nothing usable on it)."""
     failed = []
@@ -379,7 +418,7 @@ def find_proxied_description(page_url, name):
             failed.append(url)
         return soup
 
-    result = find_event_description(page_url, name, fetch=fetch, allow_proxy=True)
+    result = find_event_description(page_url, name, fetch=fetch, allow_proxy=True, venue=venue)
     return FETCH_FAILED if result is None and failed else result
 
 
@@ -389,7 +428,7 @@ def proxy_credits(page_url):
     return 25 if params.get('js_render') else 10
 
 
-def find_card_descriptions(page_url, titles, fetch=fetch_and_parse):
+def find_card_descriptions(page_url, titles, fetch=fetch_and_parse, venue=None):
     """({title: (text, source)}, pages opened) for the shows of a listing page that several events point to.
 
     Each show's own page is found from its card on the listing, then read like an event page. `titles` are all the
@@ -403,7 +442,7 @@ def find_card_descriptions(page_url, titles, fetch=fetch_and_parse):
     links = images.card_links(soup, page_url, titles)
     found = {}
     for title, url in links.items():
-        result = find_event_description(url, title, fetch=fetch)
+        result = find_event_description(url, title, fetch=fetch, venue=venue)
         if result:
             found[title] = result
     return found, 1 + len(links)
@@ -480,12 +519,12 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
                                 max_pages=MAX_PAGES_PER_RUN, proxy_pages=PROXY_PAGES_PER_RUN, save=True):
     """Give description-less current and upcoming events a description from their own page.
 
-    An event with a page of its own is looked up with `finder(page_url, name)`. Several events that share one
-    listing page are looked up together with `card_finder(page_url, titles)`, which returns
+    An event with a page of its own is looked up with `finder(page_url, name, venue=venue)`. Several events that share one
+    listing page are looked up together with `card_finder(page_url, titles, venue=venue)`, which returns
     ({title: (text, source)}, pages opened): each show's own page found from its card on the listing.
 
     An event on a paid-proxy site costs credits, so those are left to the end and only `proxy_pages` of them are
-    fetched in a run, the cheapest first (`proxy_finder(page_url, name)`); the regular scrape has had its credits by
+    fetched in a run, the cheapest first (`proxy_finder(page_url, name, venue=venue)`); the regular scrape has had its credits by
     then, and the pass stops at the first "out of credits" answer (utils.PROXY_EXHAUSTED). Proxied events on a
     listing that several shows share are not looked up.
 
@@ -517,11 +556,11 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
                 if len(group) == 1:
                     event = needing[0]
                     report['checked'] += 1
-                    result = finder(page, event['name'])
+                    result = finder(page, event['name'], venue=venue)
                     if result:
                         found.append((event, *result))
                 else:
-                    by_title, opened = card_finder(page, [e['name'] for e in group])
+                    by_title, opened = card_finder(page, [e['name'] for e in group], venue=venue)
                     report['checked'] += max(opened, 1)
                     report['shared'] += len(needing)
                     found.extend((e, *by_title[e['name']]) for e in needing if e['name'] in by_title)
@@ -538,7 +577,7 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
             break
         report['proxied'] += 1
         report['credits'] += proxy_credits(page)
-        result = proxy_finder(page, event['name'])
+        result = proxy_finder(page, event['name'], venue=venue)
         if utils.PROXY_EXHAUSTED and not result:
             break                                           # out of credits, not "nothing there": ask again next run
         if result is FETCH_FAILED:                          # not stamped: asked for again next run
