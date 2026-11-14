@@ -1073,6 +1073,18 @@
                 "lng": -73.981596
             }
         ],
+        "BRIC": [
+            {
+                "lat": 40.686798,
+                "lng": -73.975863
+            }
+        ],
+        "Center for Book Arts": [
+            {
+                "lat": 40.744745,
+                "lng": -73.989927
+            }
+        ],
         "Cooper Hewitt": [
             {
                 "lat": 40.784284,
@@ -1143,6 +1155,18 @@
                 "lng": -74.002787
             }
         ],
+        "Pioneer Works": [
+            {
+                "lat": 40.679378,
+                "lng": -74.011894
+            }
+        ],
+        "Smack Mellon": [
+            {
+                "lat": 40.703929,
+                "lng": -73.989152
+            }
+        ],
         "The Bronx Museum of the Arts": [
             {
                 "lat": 40.831091,
@@ -1167,6 +1191,13 @@
                 "lng": -73.957183
             }
         ],
+        "The Kitchen": [
+            {
+                "lat": 40.736438,
+                "lng": -74.006621,
+                "approx": true
+            }
+        ],
         "The Noguchi Museum": [
             {
                 "lat": 40.76699,
@@ -1177,6 +1208,12 @@
             {
                 "lat": 40.808418,
                 "lng": -73.947616
+            }
+        ],
+        "White Columns": [
+            {
+                "lat": 40.73885,
+                "lng": -74.008313
             }
         ],
         "Whitney Museum of American Art": [

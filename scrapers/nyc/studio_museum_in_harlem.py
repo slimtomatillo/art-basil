@@ -5,31 +5,22 @@ https://www.studiomuseum.org/exhibitions lists activity cards (links with schema
 "02.11.27-05.16.27" (month.day.year to month.day.year) for shows not yet open. "Ongoing" and "On Long-term View" are
 permanent installations and are left out. Each show's own page is linked; descriptions.py reads it.
 """
-import datetime as dt
 import logging
-import re
 from urllib.parse import urljoin
 
 from processing import region_today
-from scrapers.nyc._common import card_picture, clean, parse_dates
+from scrapers.nyc._common import card_picture, clean, numeric_run, parse_dates
 from scrapers.tor._common import publish
 from utils import fetch_and_parse
 
 PAGE_URL = 'https://www.studiomuseum.org/exhibitions'
 VENUE = 'The Studio Museum in Harlem'
-_SHORT_RUN = re.compile(r'^(\d{2})\.(\d{2})\.(\d{2})\s*[-–]\s*(\d{2})\.(\d{2})\.(\d{2})$')
 
 
 def _dates(text, today):
     """(start, end) from "Through January 3, 2027" or "02.11.27-05.16.27"; (None, None) for anything else."""
-    match = _SHORT_RUN.match(text)
-    if match:
-        m1, d1, y1, m2, d2, y2 = (int(g) for g in match.groups())
-        try:
-            return dt.date(2000 + y1, m1, d1), dt.date(2000 + y2, m2, d2)
-        except ValueError:
-            return None, None
-    return parse_dates(text, today)
+    start, end = numeric_run(text)
+    return (start, end) if (start or end) else parse_dates(text, today)
 
 
 def scrape_studio_museum_in_harlem(env='prod', region='nyc'):

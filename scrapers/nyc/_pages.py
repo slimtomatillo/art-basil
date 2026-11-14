@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urlparse
 import images
 from processing import region_today
 from scrapers.la._gallery import date_label
-from scrapers.nyc._common import clean
+from scrapers.nyc._common import clean, numeric_run
 from scrapers.tor._common import publish
 from utils import fetch_and_parse
 
@@ -90,6 +90,9 @@ def read_show(url, today, fetch=fetch_and_parse, suffix=''):
     dates = None
     for line in lines[:_DATE_LINES]:
         dates = date_label(_WEEKDAY.sub('', line), today)
+        if not dates:
+            run = numeric_run(line)                 # "10.08.26 - 12.12.26" (BRIC)
+            dates = run if run[0] or run[1] else None
         if dates:
             break
     if not (name and dates):
