@@ -218,6 +218,9 @@ def scrape_<venue>(env='prod', region='<region>'):
 ```
 
 ### 2a. Fetching
+- **A commercial gallery whose site lists its shows as cards on one page** (most of them) needs no new file:
+  add a `Spec` to `scrapers/nyc/galleries.py` (listing address, how to find the cards, its spaces) and run
+  `check_venues.py`. Its docstring says how a card is read; `tests/test_nyc_galleries.py` has an example of each layout.
 - Use `fetch_and_parse(url)` from `utils` (returns a `BeautifulSoup` or `None`).
 - It accepts an optional `headers=` dict to override/extend the default
   `User-Agent` (some CDNs — Cloudflare, Fastly — 403 the default bot UA).

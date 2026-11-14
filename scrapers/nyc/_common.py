@@ -54,6 +54,45 @@ def numeric_run(text):
         return None, None
 
 
+_MONTHS = ('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec')
+_DAY_FIRST = re.compile(r'^(\d{1,2})\s+([A-Za-z]{3,9})\.?(?:\s+(\d{4}))?\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\.?\s+(\d{4})$')
+_DAY_FIRST_ONE_MONTH = re.compile(r'^(\d{1,2})\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\.?\s+(\d{4})$')
+_DOTTED = re.compile(r'^(\d{1,2})\.(\d{1,2})(?:\.(\d{4}))?\s*[-–—]\s*(\d{1,2})\.(\d{1,2})\.(\d{4})$')
+
+
+def _month(word):
+    word = word.lower()[:3]
+    return _MONTHS.index(word) + 1 if word in _MONTHS else None
+
+
+def alternate_run(text):
+    """(start, end) from the runs `parse_date_text` does not read: day first ("30 Oct - 19 Dec 2026", "11 November 2026 -
+    16 January 2027", "5 NOVEMBER 2026 - 9 JANUARY 2027", "5-30 Nov 2026") and dotted month.day ("11.05-12.19.2026",
+    "11.05.2026-07.04.2027"). (None, None) when the text is none of these or not a real date."""
+    text = clean(text)
+    try:
+        match = _DAY_FIRST.match(text)
+        if match:
+            d1, m1, y1, d2, m2, y2 = match.groups()[0], _month(match.group(2)), match.group(3), match.group(4), _month(match.group(5)), match.group(6)
+            if m1 and m2:
+                end = dt.date(int(y2), m2, int(d2))
+                start_year = int(y1) if y1 else (int(y2) - (1 if m1 > m2 else 0))
+                return dt.date(start_year, m1, int(d1)), end
+        match = _DAY_FIRST_ONE_MONTH.match(text)
+        if match and _month(match.group(3)):
+            month, year = _month(match.group(3)), int(match.group(4))
+            return dt.date(year, month, int(match.group(1))), dt.date(year, month, int(match.group(2)))
+        match = _DOTTED.match(text)
+        if match:
+            m1, d1, y1, m2, d2, y2 = match.groups()
+            end = dt.date(int(y2), int(m2), int(d2))
+            start_year = int(y1) if y1 else (end.year - (1 if int(m1) > int(m2) else 0))
+            return dt.date(start_year, int(m1), int(d1)), end
+    except ValueError:
+        pass
+    return None, None
+
+
 def parse_dates(text, today):
     """(start, end) from a listing's date text, or (None, None). Reads "Through May 10, 2027" (an end only),
     "Opens Nov 21" (a start only), "Nov 6 – Dec 19, 2026", "October 15, 2026 to January 18, 2027" and an
@@ -62,4 +101,7 @@ def parse_dates(text, today):
     text = re.sub(r'^(?:now open|coming soon|on view|opens?)\s*:?\s*', 'Opens ' if text.lower().startswith('opens') else '', text, flags=re.IGNORECASE)
     text = re.sub(r'\s+to\s+', ' - ', text)
     text = text.rstrip(' –—-')
-    return parse_date_text(text, today)
+    start, end = parse_date_text(text, today)
+    if not (start or end):
+        start, end = alternate_run(text)
+    return start, end
