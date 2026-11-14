@@ -42,6 +42,7 @@ from scrapers.tor import moca_toronto, power_plant, aga_khan, ago, gardiner_muse
 from scrapers.nyc import whitney, guggenheim, studio_museum_in_harlem, frick_collection, david_zwirner, pace_gallery, night_gallery_new_york
 from scrapers.nyc import cooper_hewitt, jewish_museum, museum_of_the_city_of_new_york, neue_galerie_new_york, noguchi_museum, drawing_center, \
     museum_of_arts_and_design, international_center_of_photography, bronx_museum_of_the_arts, american_folk_art_museum
+from scrapers.nyc import pioneer_works, bric, white_columns, smack_mellon, the_kitchen, center_for_book_arts
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -246,6 +247,12 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "International Center of Photography": international_center_of_photography.scrape_international_center_of_photography,
             "The Bronx Museum of the Arts": bronx_museum_of_the_arts.scrape_bronx_museum_of_the_arts,
             "American Folk Art Museum": american_folk_art_museum.scrape_american_folk_art_museum,
+            "Pioneer Works": pioneer_works.scrape_pioneer_works,
+            "BRIC": bric.scrape_bric,
+            "White Columns": white_columns.scrape_white_columns,
+            "Smack Mellon": smack_mellon.scrape_smack_mellon,
+            "The Kitchen": the_kitchen.scrape_the_kitchen,
+            "Center for Book Arts": center_for_book_arts.scrape_center_for_book_arts,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,

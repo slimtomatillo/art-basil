@@ -1,4 +1,5 @@
 """Small helpers shared by the New York scrapers (WEBSITE-120)."""
+import datetime as dt
 import re
 from urllib.parse import urljoin
 
@@ -34,6 +35,23 @@ def card_picture(element, page_url):
         if images.plausible_image_url(url):
             return images.secure_image_url(url)
     return None
+
+
+_NUMERIC_RUN = re.compile(r'^(\d{1,2})\.(\d{1,2})\.(\d{2,4})\s*[-–—]\s*(\d{1,2})\.(\d{1,2})\.(\d{2,4})$')
+
+
+def numeric_run(text):
+    """(start, end) from a run written month.day.year to month.day.year ("10.08.26 - 12.12.26", "02.11.27-05.16.27"), or
+    (None, None). A single numeric date ("12.10.26") is an event's day, not a run, and gives (None, None)."""
+    match = _NUMERIC_RUN.match(clean(text))
+    if not match:
+        return None, None
+    m1, d1, y1, m2, d2, y2 = (int(g) for g in match.groups())
+    year = lambda y: y + 2000 if y < 100 else y
+    try:
+        return dt.date(year(y1), m1, d1), dt.date(year(y2), m2, d2)
+    except ValueError:
+        return None, None
 
 
 def parse_dates(text, today):

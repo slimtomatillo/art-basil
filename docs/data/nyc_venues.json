@@ -1,5 +1,7 @@
 {
     "American Folk Art Museum": "2 Lincoln Sq, New York, NY 10023",
+    "BRIC": "647 Fulton St, Brooklyn, NY 11217",
+    "Center for Book Arts": "28 W 27th St, New York, NY 10001",
     "Cooper Hewitt": "2 E 91st St, New York, NY 10128",
     "David Zwirner": [
         {
@@ -35,11 +37,15 @@
             "address": "395 Broadway, New York, NY 10013"
         }
     ],
+    "Pioneer Works": "159 Pioneer St, Brooklyn, NY 11231",
+    "Smack Mellon": "92 Plymouth St, Brooklyn, NY 11201",
     "The Bronx Museum of the Arts": "1040 Grand Concourse, Bronx, NY 10456",
     "The Drawing Center": "35 Wooster St, New York, NY 10013",
     "The Frick Collection": "1 E 70th St, New York, NY 10021",
     "The Jewish Museum": "1109 5th Ave, New York, NY 10128",
+    "The Kitchen": "163B Bank St, New York, NY 10014",
     "The Noguchi Museum": "9-01 33rd Rd, Long Island City, NY 11106",
     "The Studio Museum in Harlem": "144 W 125th St, New York, NY 10027",
+    "White Columns": "91 Horatio St, New York, NY 10014",
     "Whitney Museum of American Art": "99 Gansevoort St, New York, NY 10014"
 }
