@@ -45,6 +45,7 @@ from scrapers.nyc import cooper_hewitt, jewish_museum, museum_of_the_city_of_new
     museum_of_arts_and_design, international_center_of_photography, bronx_museum_of_the_arts, american_folk_art_museum
 from scrapers.nyc import pioneer_works, bric, white_columns, smack_mellon, the_kitchen, center_for_book_arts
 from scrapers.nyc import galleries as nyc_galleries
+from scrapers.pdx import galleries as pdx_galleries, oregon_contemporary, reed_cooley_gallery
 from scrapers.nyc import metropolitan_museum_of_art, museum_of_modern_art, brooklyn_museum, gagosian, hauser_and_wirth
 from scrapers.nyc import asia_society_museum, el_museo_del_barrio, museum_of_the_moving_image, queens_museum
 from scrapers.nyc import new_museum, gladstone_gallery, moma_ps1
@@ -280,6 +281,12 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "MoMA PS1": moma_ps1.scrape_moma_ps1,
             "Queens Museum": queens_museum.scrape_queens_museum,
             **nyc_galleries.scrapers(),
+        },
+        'pdx': {
+            **pdx_galleries.scrapers(),
+            "Oregon Contemporary": oregon_contemporary.scrape_oregon_contemporary,
+            "Carnation Contemporary": oregon_contemporary.scrape_carnation_contemporary,
+            "Cooley Gallery": reed_cooley_gallery.scrape_cooley_gallery,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,

@@ -467,10 +467,10 @@ buttons. Take the next unused one, in this order:
 | Toronto | purple | `#8f3fc0` |
 | Istanbul | red | `#c93631` |
 | New York City | magenta | `#b8227a` |
-| *next 1* | cyan | `#00748f` |
-| *next 2* | olive | `#5f7a0a` |
-| *next 3* | sky | `#1c78c0` |
-| *next 4* | sunshine yellow | `#ffc61a` — **not wired up yet**, see below |
+| Portland | cyan | `#00748f` |
+| *next 1* | olive | `#5f7a0a` |
+| *next 2* | sky | `#1c78c0` |
+| *next 3* | sunshine yellow | `#ffc61a` — **not wired up yet**, see below |
 
 These were chosen to read white text at 4.5:1 or better and to sit at least 25
 (CIE76 distance) away from every colour already in use. **Check any other colour

@@ -9,6 +9,7 @@ DB_FILES = {
     'tor': 'docs/data/tor_events.json',
     'ist': 'docs/data/ist_events.json',
     'nyc': 'docs/data/nyc_events.json',
+    'pdx': 'docs/data/pdx_events.json',
 }
 # Event dates are calendar days at the venue, so "today" for deciding whether a
 # show is current/upcoming/past is the date in the venue's own time zone. Single

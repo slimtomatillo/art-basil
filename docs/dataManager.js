@@ -22,6 +22,9 @@ const getRegion = () => {
     if (path.includes('/nyc/')) {
         return 'nyc';
     }
+    if (path.includes('/pdx/')) {
+        return 'pdx';
+    }
 
     return 'sf'; // default to SF
 };

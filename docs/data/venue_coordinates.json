@@ -1519,5 +1519,77 @@
                 "lng": -74.003584
             }
         ]
+    },
+    "pdx": {
+        "Augen Gallery": [
+            {
+                "lat": 45.524338,
+                "lng": -122.677832
+            }
+        ],
+        "Blue Sky Gallery": [
+            {
+                "lat": 45.523957,
+                "lng": -122.67837
+            }
+        ],
+        "Carnation Contemporary": [
+            {
+                "lat": 45.583335,
+                "lng": -122.685949
+            }
+        ],
+        "Cooley Gallery": [
+            {
+                "lat": 45.481499,
+                "lng": -122.631014
+            }
+        ],
+        "Elizabeth Leach Gallery": [
+            {
+                "lat": 45.526107,
+                "lng": -122.680404
+            }
+        ],
+        "Froelick Gallery": [
+            {
+                "lat": 45.524379,
+                "lng": -122.677758
+            }
+        ],
+        "Oregon Contemporary": [
+            {
+                "lat": 45.583335,
+                "lng": -122.685949
+            }
+        ],
+        "Oregon Jewish Museum and Center for Holocaust Education": [
+            {
+                "lat": 45.524334,
+                "lng": -122.678206
+            }
+        ],
+        "PDX Contemporary Art": [
+            {
+                "lat": 45.537292,
+                "lng": -122.690576
+            }
+        ],
+        "Portland Art Museum": [
+            {
+                "lat": 45.516548,
+                "lng": -122.683411
+            },
+            {
+                "lat": 45.51775,
+                "lng": -122.683076
+            }
+        ],
+        "Russo Lee Gallery": [
+            {
+                "lat": 45.528713,
+                "lng": -122.694831
+            }
+        ]
     }
 }

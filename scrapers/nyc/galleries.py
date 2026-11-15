@@ -95,9 +95,9 @@ def _is_elsewhere(line):
     return low in OTHER_PLACES or last in OTHER_PLACES
 
 
-def find_cards(soup, spec, page_url):
+def find_cards(soup, spec, page_url, region=REGION):
     """[(link, lines, element)] for each card on a listing page."""
-    today = region_today(REGION)
+    today = region_today(region)
     found = []
     if spec.cards == 'entries':
         for entry in soup.select('.entry'):
@@ -147,8 +147,9 @@ def read_card(lines, spec, today):
         parts = [line for line in before if not _NOISE.match(line) and not _ADDRESS.match(line)
                  and not (spec.drop and re.match(spec.drop, line, re.IGNORECASE))]
         parts = [title_case(p) if p.isupper() and len(p) > 3 else p for p in parts]
-        if len(parts) > 1 and (parts[1].count(',') > 1 or len(parts[1]) > 90):
-            parts = parts[:1]                     # a group show's second line is the list of its artists, not a title
+        if len(parts) > 1 and (parts[1].count(',') > 1 or len(parts[1]) > 90
+                               or (parts[1].endswith('.') and len(parts[1].split()) > 5)):
+            parts = parts[:1]       # a group show's second line is the list of its artists, or a sentence about it, not a title
         name = join_name(parts[:2])
     return (name, start, end) if name else None
 
@@ -172,7 +173,7 @@ def scrape(spec, env='prod', region=REGION):
             logging.warning(f"{spec.venue}: could not fetch {url}; existing data kept.")
             continue
         fetched = True
-        for link, lines, element in find_cards(soup, spec, url):
+        for link, lines, element in find_cards(soup, spec, url, region):
             card = read_card(lines, spec, today)
             if card is None:
                 continue
