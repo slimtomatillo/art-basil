@@ -186,13 +186,15 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   answered 422 on the descriptions pass (one page, left without a description). Hauser & Wirth is read from the
   `__NEXT_DATA__` script (the page lists 12 of its 16 shows; the rest load as you scroll, so a New York show could
   be missing until it moves up the list).
-- **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` alone** (10 credits, about 76 a month; it was
-  already on the 4-day schedule). On its first CI run (2026-11-12) it found no exhibition and logged no error,
-  although its page reads fine from a normal connection: a block page for GitHub's addresses is the likely
-  cause (Root Division and the Chinese Culture Center, fetched the same way, worked; they are on the 4-day
-  schedule too, but fetched directly). Not live-tested. If the log still says "no current or upcoming exhibition
-  found", it now includes the page's title, section count and size: a "Just a moment" title means a block
-  page, and a title like "SFAC Galleries | SF.gov" with no sections means the layout changed.
+- **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` and `js_render`** (25 credits a refresh, about 190 a
+  month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers `202` with
+  an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a
+  proxied venue directly and costs nothing). `premium_proxy` alone returned the challenge's own 1,962-byte script page
+  (no title, no sections) in the runs of 11-13 and 11-14, so `js_render` was added, as ZenRows' AWS WAF guide says. Not
+  live-tested (no proxy key locally): after the next refresh, check that the log no longer says "no current or upcoming
+  exhibition found" for SFAC Galleries. If it still does, the warning has the page's title and size, and `wait_for` or
+  `proxy_country` are the next things to try. The Check scrapers workflow's `allow_proxy` option is the free way to see
+  what GitHub gets directly from any proxied site.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
   run rather than waiting another 4 days. (The stale-data check flags a venue
   after 7 days.)

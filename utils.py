@@ -185,13 +185,14 @@ PROXY_DOMAINS = {
     # since Nov 3. One page, so premium proxy alone is tried first (10 credits, about 76 a month) - not
     # live-tested (no proxy key locally); if ZenRows answers 422 or CI still gets a 403, add js_render.
     'creativegrowth.org': {'premium_proxy': 'true'},
-    # SFAC Galleries (WEBSITE-109): its sf.gov page reads fine from a normal connection, but on its first CI run
-    # (2026-11-12) the scraper found no exhibition and logged no error, which is what a block page for GitHub's
-    # IPs looks like (Root Division and the Chinese Culture Center, fetched the same way, worked). One
-    # server-rendered page, so premium proxy alone is tried first (10 credits, about 76 a month; it is already
-    # on the 4-day schedule in main.py's PROXIED_VENUES) - not live-tested (no proxy key locally). If the log
-    # still says "no exhibition found", its page title and size now say what came back.
-    'www.sf.gov': {'premium_proxy': 'true'},
+    # SFAC Galleries (WEBSITE-109, WEBSITE-123): its sf.gov page reads fine from a normal connection, but GitHub's servers get an
+    # AWS WAF challenge instead (CloudFront answers 202 with an empty body, found 2026-11-14 with the Check scrapers workflow's
+    # allow_proxy option). Premium proxy alone was tried first and the daily runs of 11-13 and 11-14 came back as a 1,962-byte
+    # page with no title, which is the challenge's own script page: it needs a real browser to run. js_render (25 credits a
+    # refresh, about 190 a month on the 4-day schedule in main.py's PROXIED_VENUES) is what ZenRows' AWS WAF guide says to add.
+    # Not live-tested (no proxy key locally); if the log still says "no current or upcoming exhibition found", its page title
+    # and size say what came back, and `wait_for` or `proxy_country` are the next things to try.
+    'www.sf.gov': {'premium_proxy': 'true', 'js_render': 'true'},
     # New York, tier 4 (WEBSITE-121). Each answers GitHub's servers (and a plain script) with a Cloudflare 403 or a
     # Vercel 429, and reads fine in a browser; the HTML a browser gets before any script runs already holds the
     # shows (the Met's and Brooklyn Museum's cards, MoMA's cards, Gagosian's cards, Hauser & Wirth's __NEXT_DATA__),
