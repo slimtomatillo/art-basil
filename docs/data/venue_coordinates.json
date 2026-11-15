@@ -1249,6 +1249,16 @@
                 "lng": -73.989185
             }
         ],
+        "Jack Shainman Gallery": [
+            {
+                "lat": 40.746248,
+                "lng": -74.006241
+            },
+            {
+                "lat": 40.748787,
+                "lng": -74.004996
+            }
+        ],
         "Jane Lombard Gallery": [
             {
                 "lat": 40.718526,
@@ -1327,6 +1337,12 @@
             {
                 "lat": 40.767332,
                 "lng": -73.981936
+            }
+        ],
+        "Museum of Chinese in America": [
+            {
+                "lat": 40.719441,
+                "lng": -73.999078
             }
         ],
         "Museum of Modern Art": [
@@ -1433,6 +1449,12 @@
             {
                 "lat": 40.756134,
                 "lng": -73.998242
+            }
+        ],
+        "Sikkema Malloy Jenkins": [
+            {
+                "lat": 40.747485,
+                "lng": -74.006032
             }
         ],
         "Skarstedt": [

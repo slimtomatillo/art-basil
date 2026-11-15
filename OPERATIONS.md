@@ -196,7 +196,14 @@ Refreshing everything daily would need about 11,400 a month. Instead:
 - **New York tier 5 (WEBSITE-121) is read directly, with no proxy** (each page read fine from a normal connection;
   confirm in CI with the Check scrapers workflow, and move a venue to `PROXY_DOMAINS` and `PROXIED_VENUES` if it
   answers 403): the New Museum (the shows are in the page's `__NEXT_DATA__`), Gladstone Gallery (its Gatsby data file
-  `/page-data/exhibitions/page-data.json`), MoMA PS1, 303 Gallery, Artists Space and Matthew Marks Gallery.
+  `/page-data/exhibitions/page-data.json`), MoMA PS1, 303 Gallery, Artists Space and Matthew Marks Gallery, and
+  then Jack Shainman Gallery (the dates and location are on each show's page; The School, in Kinderhook, is left out),
+  the Museum of Chinese in America (its home page links the shows as `/event/<slug>`, picked by "Category
+  Exhibition") and Sikkema Malloy Jenkins (the `h2` links on `/current-exhibitions`). **Not built:** Dia (its
+  Cloudflare check never clears, even in a browser) and the Morgan (the listing is only pictures, about 1,200
+  credits a month for the show pages); Marlborough New York (marlboroughnewyork.com lists only shows up to April
+  2024) and Perrotin (built in the browser, no readable list) have nothing to read; Casey Kaplan ("coming soon"),
+  Greene Naftali (a bad certificate), Team Gallery and Storefront (did not load) could not be reached.
 - **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` and `js_render`** (25 credits a refresh, about 190 a
   month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers `202` with
   an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a

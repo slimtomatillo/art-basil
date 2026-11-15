@@ -106,6 +106,16 @@
         }
     ],
     "International Center of Photography": "84 Ludlow St, New York, NY 10002",
+    "Jack Shainman Gallery": [
+        {
+            "label": "513 West 20th Street",
+            "address": "513 W 20th St, New York, NY 10011"
+        },
+        {
+            "label": "524 West 24th Street",
+            "address": "524 W 24th St, New York, NY 10011"
+        }
+    ],
     "Jane Lombard Gallery": "58 White St, New York, NY 10013",
     "Lehmann Maupin": "501 W 24th St, New York, NY 10011",
     "Lisson Gallery": "504 W 24th St, New York, NY 10011",
@@ -146,6 +156,7 @@
     ],
     "MoMA PS1": "22-25 Jackson Ave, Long Island City, NY 11101",
     "Museum of Arts and Design": "2 Columbus Cir, New York, NY 10019",
+    "Museum of Chinese in America": "215 Centre St, New York, NY 10013",
     "Museum of Modern Art": "11 W 53rd St, New York, NY 10019",
     "Museum of the City of New York": "1220 5th Ave, New York, NY 10029",
     "Museum of the Moving Image": "36-01 35th Ave, Astoria, NY 11106",
@@ -195,6 +206,7 @@
     "Queens Museum": "New York City Building, Flushing Meadows Corona Park, Queens, NY 11368",
     "Salon 94": "3 E 89th St, New York, NY 10128",
     "Sean Kelly": "475 10th Ave, New York, NY 10018",
+    "Sikkema Malloy Jenkins": "530 W 22nd St, New York, NY 10011",
     "Skarstedt": [
         {
             "label": "Upper East Side",
