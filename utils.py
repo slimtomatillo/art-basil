@@ -215,7 +215,9 @@ PROXY_DOMAINS = {
     'movingimage.org': {'premium_proxy': 'true'},
     # Dia (Dia Chelsea): a Cloudflare challenge that only page rendering gets past (found 2026-11-15 with the Probe
     # page workflow: js_render + proxy_country=us returned the page, 25 credits, about 190 a month).
-    'diaart.org': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
+    # The first daily run got only 6 KB (the shell, before its show cards had loaded) where the probe got 67 KB, so
+    # wait=5000 holds the page for 5 seconds (probe: 69 KB, same 25 credits).
+    'diaart.org': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us', 'wait': '5000'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are
