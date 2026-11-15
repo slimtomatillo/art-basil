@@ -3,7 +3,7 @@
         "I hope I still feel this way tomorrow: Charlene Liu-Elizabeth Leach Gallery": {
             "name": "I hope I still feel this way tomorrow: Charlene Liu",
             "venue": "Elizabeth Leach Gallery",
-            "description": null,
+            "description": "Elizabeth Leach Gallery is excited to present I hope I still feel this way tomorrow, an exhibition of new work made by Eugene-based artist Charlene Liu. Liu\u2019s fifth solo show with the gallery traverses painted and printed mediums and utilizes a variety of techniques to materialize the intangible,...",
             "tags": [
                 "exhibition",
                 "current",
@@ -26,18 +26,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:02",
-            "hash": "924caa807880ad2f774750cc93559d1d"
+            "last_updated": "2026-11-15 19:09:38",
+            "hash": "fa006e90288156a89c507e0295eea07d",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "UnEarthed: Nicola L\u00f3pez-Elizabeth Leach Gallery": {
             "name": "UnEarthed: Nicola L\u00f3pez",
             "venue": "Elizabeth Leach Gallery",
-            "description": null,
+            "description": "Santa Fe-based artist Nicola L\u00f3pez channels her transdisciplinary interests in urban planning, architecture, and anthropology into a multimedia practice spanning drawing, printmaking, installation, and hand-drawn animated video. L\u00f3pez interjects and interacts with the photographed natural environment, layering upon these images a geometric, structural landscape of her imagination. The hollow contours...",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "printmaking"
             ],
             "phase": "current",
             "dates": {
@@ -55,20 +58,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:02",
-            "hash": "5f3f760f206945a84bfc8a41d880f8d1"
+            "last_updated": "2026-11-15 19:09:38",
+            "hash": "3be9140ed55658a81359d3b0f8d2848b",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Russo Lee Gallery": {
         "Sean Cain: Mysterious Barricades-Russo Lee Gallery": {
             "name": "Sean Cain: Mysterious Barricades",
             "venue": "Russo Lee Gallery",
-            "description": null,
+            "description": "Russo Lee Gallery is pleased to present Mysterious Barricades, an exhibition by Sean Cain. This body of paintings marks his first solo show in several years. Exploring what he calls \u201ceventful stillness, still eventfulness,\u201d Cain brings together still life and narrative figure painting, allowing each genre to take on the qualities of the other.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -82,17 +88,19 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_1050,h_1050,c_lfill/exhibit-e/5503474307a72ccf78018f28/5b396025ac163fbc5f83b73d58c565a9.jpeg",
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1050%2Ch_1050%2Cc_lfill%2Fexhibit-e%2F5503474307a72ccf78018f28%2F5b396025ac163fbc5f83b73d58c565a9.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:04",
-            "hash": "33514b3e8dbc0881f3c8da053b987267"
+            "last_updated": "2026-11-15 19:09:40",
+            "hash": "eedded66d97e66897d7488055a42b4aa",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Lucinda Parker: D\u00e9j\u00e0 Vu All Over Again-Russo Lee Gallery": {
             "name": "Lucinda Parker: D\u00e9j\u00e0 Vu All Over Again",
             "venue": "Russo Lee Gallery",
-            "description": null,
+            "description": "For the month of November, Russo Lee Gallery presents D\u00e9j\u00e0 Vu All Over Again by Lucinda Parker. Spanning more than six decades, this exhibition celebrates a major retrospective from 1965 to 2026, bringing together a remarkable period of sustained creativity, and an artist whose work has been shaped by observation, experimentation, mentorship, and an enduring curiosity about the world.",
             "tags": [
                 "exhibition",
                 "current",
@@ -111,17 +119,19 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://static-assets.artlogic.net/w_1050,h_1050,c_lfill/exhibit-e/5503474307a72ccf78018f28/4b0dc241ec6dc2923947b431a21a9799.jpeg",
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1050%2Ch_1050%2Cc_lfill%2Fexhibit-e%2F5503474307a72ccf78018f28%2F4b0dc241ec6dc2923947b431a21a9799.jpeg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:04",
-            "hash": "70ac9bb1329adea1f4701b490cd13b65"
+            "last_updated": "2026-11-15 19:09:40",
+            "hash": "d142e6f15393fe5049c721da7de66bb1",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Ren\u00e9 Rickabaugh: Reflections-Russo Lee Gallery": {
             "name": "Ren\u00e9 Rickabaugh: Reflections",
             "venue": "Russo Lee Gallery",
-            "description": null,
+            "description": "Russo Lee Gallery is pleased to present Reflections by Ren\u00e9 Rickabaugh. This exhibition celebrates over five decades of the artist's compelling body of work, bringing together a collection that showcases his exceptional artistic vision and creative practice.",
             "tags": [
                 "exhibition",
                 "future",
@@ -144,13 +154,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:04",
-            "hash": "a4088d010b2df8284a02609858ed57bb"
+            "last_updated": "2026-11-15 19:09:40",
+            "hash": "2b6cab6dcb4276877577aa352073de0d",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Northwest Masters: Works from Estates & Private Collections-Russo Lee Gallery": {
             "name": "Northwest Masters: Works from Estates & Private Collections",
             "venue": "Russo Lee Gallery",
-            "description": null,
+            "description": "For the month of December, Russo Lee Gallery presents Northwest Masters: Works from Estates & Private Collections. This group exhibition features a selection of works by influential Pacific Northwest artists who have helped shape Portland\u2019s art scene and establish the foundation of the region\u2019s artistic legacy.",
             "tags": [
                 "exhibition",
                 "future",
@@ -173,20 +185,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:04",
-            "hash": "e7bac22b185bd0cc594d0a32d08aa2a3"
+            "last_updated": "2026-11-15 19:09:40",
+            "hash": "dbc783d57027151da0b6f7a879629b66",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Froelick Gallery": {
         "Laurie Danial: Beauty and the Long Walk Home-Froelick Gallery": {
             "name": "Laurie Danial: Beauty and the Long Walk Home",
             "venue": "Froelick Gallery",
-            "description": null,
+            "description": "Froelick Gallery is pleased to present Laurie Danial\u2019s latest body of work, Beauty and The Long Walk Home. A solo exhibit of recent paintings on panel and paper. Laurie Danial's abstractions are process-driven; her work is intuitive, experimental, and dictated by her day-to-day concerns, visual experiences, and collected ephemera...",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -204,18 +219,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:05",
-            "hash": "4065496a89d4bb07ae321d6a9b6f4835"
+            "last_updated": "2026-11-15 19:09:41",
+            "hash": "55c17920cf6da9c942eea60c9eb9258c",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Daniel Robinson: Promised Land-Froelick Gallery": {
             "name": "Daniel Robinson: Promised Land",
             "venue": "Froelick Gallery",
-            "description": null,
+            "description": "Froelick Gallery is honored to present Daniel Robinson\u2019s most recent paintings, marking the profound continuation of his decades-long engagement with agrarian landscapes and industrial architecture in the American West. Born in 1963 in Buffalo, New York, Robinson has spent over thirty years creating enduring images of our built, natural and...",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -233,8 +251,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:05",
-            "hash": "486cb15200525e2847977eeef619fd05"
+            "last_updated": "2026-11-15 19:09:41",
+            "hash": "f431f68243c7eff3c9e713f0b6be46c0",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Confidants: Rick Bartow and Seiichi Hiroshima-Froelick Gallery": {
             "name": "Confidants: Rick Bartow and Seiichi Hiroshima",
@@ -262,8 +282,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:05",
-            "hash": "a21d7e7d18e8e30cf37922f4b45d68b4"
+            "last_updated": "2026-11-15 19:09:41",
+            "hash": "206f28e1a683773c7ed97bfdcc41b084",
+            "description_checked": "2026-11-15"
         }
     },
     "Augen Gallery": {
@@ -294,20 +315,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:06",
-            "hash": "c992d1f0152e43926215ff25c0f257b3"
+            "last_updated": "2026-11-15 19:09:42",
+            "hash": "359db3e440114e41756d0b7027769741",
+            "description_checked": "2026-11-15"
         }
     },
     "PDX Contemporary Art": {
         "Photorealism: Joe Rudko-PDX Contemporary Art": {
             "name": "Photorealism: Joe Rudko",
             "venue": "PDX Contemporary Art",
-            "description": null,
+            "description": "A few years ago, I might have wondered when or where a photograph was taken. Now, I ask: is it real? If photographs are no longer understood as reliable records of reality, then the definition of photorealism changes. If photographs are fragmented, altered, and generated, then what does it mean to make a photorealistic painting?",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "photography",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -319,10 +343,17 @@
                 {
                     "link": "https://www.pdxcontemporaryart.com/photorealism",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=www.pdxcontemporaryart.com%2Fsites%2Fdefault%2Ffiles%2FJR-200-Orange%2520Weave-hr.jpg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:06",
-            "hash": "3a2eb98b65670c32c8c3f8d4eaad113c"
+            "last_updated": "2026-11-15 19:09:42",
+            "hash": "2ef2bd6b75a726c1c34c67cb0dd1b05e",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Homing: Nell Warren-PDX Contemporary Art": {
             "name": "Homing: Nell Warren",
@@ -344,17 +375,23 @@
                 {
                     "link": "https://www.pdxcontemporaryart.com/homing",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.pdxcontemporaryart.com/sites/default/files/inline-images/ContactCard.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:06",
-            "hash": "3067f7ab79b627bb56ae1bc09accafa3"
+            "last_updated": "2026-11-15 19:09:42",
+            "hash": "e174116188ce35123ff0ddf6154cc576",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15"
         }
     },
     "Blue Sky Gallery": {
         "Ashley Pe\u00f1a-Blue Sky Gallery": {
             "name": "Ashley Pe\u00f1a",
             "venue": "Blue Sky Gallery",
-            "description": null,
+            "description": "Ebb and Flow moves between worlds, histories, and states of being. Set in Ayiti-Kiskeya (Haiti and Dominican Republic), the exhibition explores the entanglements of memory and erasure, belonging, grief and renewal; considering how colonial histories haunt the present, marcating the landscapes through which we move and the lives we carry. These histories\u2013 neither distant nor finished\u2013 persist and are carried forth by living and the ancestral presences that continue to inhabit our world.",
             "tags": [
                 "exhibition",
                 "current",
@@ -377,18 +414,22 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:06",
-            "hash": "893ca6fa3c68e9ffb404a5ae697a04d8"
+            "last_updated": "2026-11-15 19:09:42",
+            "hash": "68956bfe69882c3715c40b91b5a4ae5a",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Yukai Chen-Blue Sky Gallery": {
             "name": "Yukai Chen",
             "venue": "Blue Sky Gallery",
-            "description": null,
+            "description": "The Factory of Desire explores queer identity, belonging, and cultural inheritance through self-portraits and staged photographs. Drawing on the artist\u2019s upbringing in a rural village within a religious yet rapidly modernizing city in southeastern China, the series transforms personal experiences of displacement into constructed queer spaces.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "photography",
+                "queer"
             ],
             "phase": "current",
             "dates": {
@@ -406,15 +447,17 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:06",
-            "hash": "c9c453d6fd8e925f1f7d590d1c398cf6"
+            "last_updated": "2026-11-15 19:09:43",
+            "hash": "dfe6dd0fe1ffa3be97d92a47fb60ede1",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Oregon Jewish Museum and Center for Holocaust Education": {
         "How We Show Up: Oregon Jews in Civil Society, An America 250 Exhibition-Oregon Jewish Museum and Center for Holocaust Education": {
             "name": "How We Show Up: Oregon Jews in Civil Society, An America 250 Exhibition",
             "venue": "Oregon Jewish Museum and Center for Holocaust Education",
-            "description": null,
+            "description": "What does civic participation look like? How do communities shape the places where they live? How We Show Up explores the many ways Jews in Oregon have participated in public life\u2014from building towns and holding office in the nineteenth century to advocating for civil rights, immigrant communities, and social justice...",
             "tags": [
                 "exhibition",
                 "current",
@@ -430,15 +473,22 @@
                 {
                     "link": "https://www.ojmche.org/events/show-up/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.ojmche.org/wp-content/uploads/2026/03/55380780219_bc7991531f_3k-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
-            "hash": "ce2cc9122cfdb661d09cb033f6aa8332"
+            "last_updated": "2026-11-15 19:09:44",
+            "hash": "2cfb27e0779bb7b60f571ee7997270d5",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "One Nation-Oregon Jewish Museum and Center for Holocaust Education": {
             "name": "One Nation",
             "venue": "Oregon Jewish Museum and Center for Holocaust Education",
-            "description": null,
+            "description": "One Nation brings together contemporary artists who explore the ideals and contradictions embedded in the American promise. Drawing on the national motto E Pluribus Unum \u2014 \u201cOut of Many, One\u201d \u2014 the exhibition reflects on how a diverse society strives toward unity while confronting social, political, and cultural divisions....",
             "tags": [
                 "exhibition",
                 "current",
@@ -454,19 +504,27 @@
                 {
                     "link": "https://www.ojmche.org/events/one-nation/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.ojmche.org/wp-content/uploads/2026/07/55380728383_aa2f1e0726_3k-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
-            "hash": "e2df8b12f40ec53b23cacbb48dd4ced1"
+            "last_updated": "2026-11-15 19:09:44",
+            "hash": "7d2bed2b3eb91f277a37d3d5683f8424",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Frank Stella: Had Gadya-Oregon Jewish Museum and Center for Holocaust Education": {
             "name": "Frank Stella: Had Gadya",
             "venue": "Oregon Jewish Museum and Center for Holocaust Education",
-            "description": null,
+            "description": "In 1981, American artist Frank Stella encountered El Lissitzky\u2019s 1919 illustrations of Had Gadya at the Tel Aviv Museum and found an unexpected source of inspiration. Drawn to the Russian-Jewish artist\u2019s use of abstraction to tell the familiar Passover story, Stella spent the next several years developing his own response. The resulting 12 prints, created...",
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "printmaking"
             ],
             "phase": "future",
             "dates": {
@@ -478,17 +536,24 @@
                 {
                     "link": "https://www.ojmche.org/events/frank-stella-had-gadya/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://www.ojmche.org/wp-content/uploads/2026/10/Stella_50percent.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
-            "hash": "b43da5ce6da2e1af89246a954e32ba05"
+            "last_updated": "2026-11-15 19:09:47",
+            "hash": "c8fca03eb88f0a52aa413cb6bebd837b",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Portland Art Museum": {
         "The Stars We Do Not See: Australian Indigenous Art-Portland Art Museum": {
             "name": "The Stars We Do Not See: Australian Indigenous Art",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "This eye-opening exhibition introduces North American audiences to the diverse and distinct visual iconographies of Indigenous Australia, which is made up of more than 250 distinct Indigenous nations.",
             "tags": [
                 "exhibition",
                 "current",
@@ -505,22 +570,31 @@
                 {
                     "link": "https://portlandartmuseum.org/event/the-stars-we-do-not-see-australian-indigenous-art/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2024/09/Stars-We-Do-Not-See_Main.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "c45afcb72b9de3bb51b17e3e5dadf875"
+            "hash": "6220a6a6906ed0a2ec331b9743e20eac",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Mickalene Thomas: Do I Look Like a Lady? (Comedians and Singers)-Portland Art Museum": {
             "name": "Mickalene Thomas: Do I Look Like a Lady? (Comedians and Singers)",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "The Portland Art Museum is pleased to present the recently acquired two-channel video installation, Do I Look Like a Lady? (Comedians and Singers), by internationally renowned artist Mickalene Thomas. Thomas\u2019s work addresses themes of beauty and identity expressed through the myriad subjectivities of African-American women. Her multidisciplinary practice reconsiders Black womanhood and desire through a queer lens.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "black-art",
+                "queer"
             ],
             "phase": "current",
             "dates": {
@@ -532,22 +606,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/mickalene-thomas-do-i-look-like-a-lady/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2023/09/Do-I-Look-Like-a-Lady.jpeg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "8992b68fb377a5ec49c9bc562148d782"
+            "hash": "237f98077d9356ffcc59e8666ca919c4",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Abstraction Since Mark Rothko-Portland Art Museum": {
             "name": "Abstraction Since Mark Rothko",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "A companion to The Art of Mark Rothko, this exhibition presents the vitality of abstract painting in American art from Rothko\u2019s time to the present.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -559,18 +641,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/abstraction-since-mark-rothko/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=portlandartmuseum.org%2Fwp-content%2Fuploads%2F2025%2F09%2FKikuo-Saito-Kitchen-Opera-scaled.jpg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "22775b65eb2a282b79c8fedafb1a2800"
+            "hash": "50266333b187de3a609f0fe007db743d",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Facing Ourselves-Portland Art Museum": {
             "name": "Facing Ourselves",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Portraiture is about truth and honesty, both in how we choose to have ourselves portrayed and in how artists present their subjects. During the Renaissance, portraiture was tied to humanism, which values the individual.",
             "tags": [
                 "exhibition",
                 "current",
@@ -586,18 +675,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/facing-ourselves/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=portlandartmuseum.org%2Fwp-content%2Fuploads%2F2025%2F07%2FGeorge-Luks-Mike-the-Bite-scaled.jpg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "3189b4942966e5a1270908eb2568f8d4"
+            "hash": "c97667264e78d1dc4a95129fa06f5868",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "For the Enjoyment of All: Celebrating the Kress Gift-Portland Art Museum": {
             "name": "For the Enjoyment of All: Celebrating the Kress Gift",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "In 1952, the Portland Art Museum was given a spectacular selection of European art by the Samuel H. Kress Foundation in New York.",
             "tags": [
                 "exhibition",
                 "current",
@@ -613,18 +709,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/for-the-enjoyment-of-all/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/10/0061_0038_0000-Press-Kit-JPG-2400-Max-PPI.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "8b4d2df3760117f3179d8f40f55306fc"
+            "hash": "f91dd20d7b1c9be895ad6a500b837f58",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Black Arts PDX at the CREATE SPACE-Portland Art Museum": {
             "name": "Black Arts PDX at the CREATE SPACE",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "A display of ephemera and an extended documentary trailer foregrounding the history of the Black visual arts community in Northeast Portland.",
             "tags": [
                 "exhibition",
                 "current",
@@ -640,18 +743,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/black-arts-pdx-at-the-create-space/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/11/BAE-Activation-Mural-Final-R.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "432df62dbc332f2ee199fc2fe5bd0cb0"
+            "hash": "69d2876044783f83f215e6256808b861",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Heaven and Earth: Chinese Art from the Collections-Portland Art Museum": {
             "name": "Heaven and Earth: Chinese Art from the Collections",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Heaven and Earth spotlights powerful works of art in the Museum\u2019s collections, spanning creative practices in China across several millennia.",
             "tags": [
                 "exhibition",
                 "current",
@@ -667,22 +777,31 @@
                 {
                     "link": "https://portlandartmuseum.org/event/heaven-and-earth-chinese-art-from-the-collections/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/11/Zhenmushou-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "1d45e1415194b3edf98379032f54c2a3"
+            "hash": "2e723ade6d9824f1e49bc838d47e2fca",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "American Land-Portland Art Museum": {
             "name": "American Land",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Landscape painting has always had a unique place in the history of American Art. Earlier settlers and colonists especially celebrated the American landscape \u2013 one that has been shaped by the stewardship of Native peoples through the ages.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting",
+                "indigenous"
             ],
             "phase": "current",
             "dates": {
@@ -694,18 +813,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/american-land/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/07/William-Sartain-The-Aqueduct-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "d1c69d665583033fa5b3a71101e3ab1b"
+            "hash": "f680aa491f812e959e44382c5110168f",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Mirror Mirror: Silver in the 20th Century-Portland Art Museum": {
             "name": "Mirror Mirror: Silver in the 20th Century",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Silver has had special status in European and world art for thousands of years. Besides coins and jewelry, silver was used for objects of practical use, and families often held their wealth in a collection of silver spoons, teapots and other items.",
             "tags": [
                 "exhibition",
                 "current",
@@ -721,22 +847,31 @@
                 {
                     "link": "https://portlandartmuseum.org/event/mirror-mirror/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/09/Peer-Smed-Lona-P-Schaeffer-Tea-and-Coffee-set-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "3f4abf021feac5dc2456fa6bb11c64f7"
+            "hash": "0f45286208af60f14a93dcc98857f6a8",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Myth and Memory: Mediterranean Antiquity and its Revivals-Portland Art Museum": {
             "name": "Myth and Memory: Mediterranean Antiquity and its Revivals",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "The ancient Greeks loved wall murals and small portable paintings, but most of these have been lost over time. Instead, their art is best known from objects such as ceramic pots and vessels, excavated from rubbish heaps and graves. These ordinary household wares were produced in vast quantity, and some were even decorated by artists of extraordinary talent.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting",
+                "ceramics"
             ],
             "phase": "current",
             "dates": {
@@ -748,18 +883,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/myth-and-memory/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/07/Exekias-Amphora-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "0464e727e0da60ff8646607534f9d4cb"
+            "hash": "686fd4e16342d168fc5faff75316ca2f",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Mystic Mountain: Mount Hood in Art-Portland Art Museum": {
             "name": "Mystic Mountain: Mount Hood in Art",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Mount Hood\u2019s iconic form, isolated presence on the horizon, and impressive height all serve to mark the natural monument as home for Portlanders.",
             "tags": [
                 "exhibition",
                 "current",
@@ -775,18 +917,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/mystic-mountain/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/07/Albert-Bierstadt-Mount-Hood-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "2045c0397a10f2e5b561dcf1b863e88b"
+            "hash": "86bf36d8f8802595fa513e493551631c",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Harriet Tubman Center Museum-Portland Art Museum": {
             "name": "Harriet Tubman Center Museum",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Drawing from the Museum\u2019s collection, this exhibition is co-curated by Lisa Jarrett, an artist, educator, and curator, and the Harriet Tubman Center for Expanded Curatorial Practice at MLK Elementary",
             "tags": [
                 "exhibition",
                 "current",
@@ -802,22 +951,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/harriet-tubman-center-museum/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/04/KSMoCA-IMG_1102-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "7c15cd4dfc17d6166a2836e1f15f4de5"
+            "hash": "b37f9ffe9738d51bb53c8edaa1cea566",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Lisa Jarrett: Tenderhead-Portland Art Museum": {
             "name": "Lisa Jarrett: Tenderhead",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Lisa Jarrett weaves together her interest in migration and tracing lost familial histories to Beauty Supply stores and salons\u2014critical intersections of Black life.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "black-art"
             ],
             "phase": "current",
             "dates": {
@@ -829,22 +986,31 @@
                 {
                     "link": "https://portlandartmuseum.org/event/lisa-jarrett-tenderhead/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/12/Reinstallation-Tenderhead_CFU_034-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "9eaa7329f1e1e18f4ff39a0b1ae15471"
+            "hash": "37615b472cc2bc3614f69b37e8b0f918",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Forming Nature, Nature Formed-Portland Art Museum": {
             "name": "Forming Nature, Nature Formed",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "The inaugural exhibition in the heart of the Rothko Pavilion speaks to the strong sense of place experienced through our connection to our natural environment. Drawn from the Asian, Native American, Northwest, and Modern and Contemporary Art collections, Forming Nature, Nature Formed features artworks in glass, clay, metal, neon, and wood that speak to the ways artists from many cultural backgrounds interpret encounters with the natural world in sculptural form.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture",
+                "indigenous"
             ],
             "phase": "current",
             "dates": {
@@ -856,22 +1022,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/forming-nature-nature-formed/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/10/20251222_FormingNature_CFU_017-Website-JPG-2600-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "48567e2b3da4e09c9618dda48dfdd124"
+            "hash": "47c331f766e19634a1b3d9b8619e7c17",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Todd McGrain: Debut of York-Portland Art Museum": {
             "name": "Todd McGrain: Debut of York",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Todd McGrain\u2019s original bust of York, the enslaved man who was the only African American member of the Lewis and Clark expedition, was secretly installed on Mount Tabor in 2021. It was placed on the pedestal where a statue of Oregonian editor Harvey Scott (1830-1910), a known racist, once stood.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "black-art"
             ],
             "phase": "current",
             "dates": {
@@ -883,22 +1057,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/todd-mcgrain-debut-of-york/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/03/York.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "56d6e40ea7641bb49ab0db72cc190ddd"
+            "hash": "dc4c84e6939ccb70ccf90433b1b7348f",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Pipilotti Rist: 4th Floor to Mildness-Portland Art Museum": {
             "name": "Pipilotti Rist: 4th Floor to Mildness",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Pipilotti Rist dissolves exhibition spaces through luminous color, moving imagery, and melodic sound. 4th Floor to Mildness immerses us in a soft, aquatically inspired environment, where a film shot underwater plays across two biomorphic-shaped screens hanging from the ceiling.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "film-video"
             ],
             "phase": "current",
             "dates": {
@@ -910,22 +1092,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/pipilotti-rist/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/09/Rist_4th-Floor-to-Mildness-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "92950a73e000775600592fc898a5eecf"
+            "hash": "83a46131e8df4309274748ff5115b93d",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Marco Brambilla: Maximalist Dreamscapes-Portland Art Museum": {
             "name": "Marco Brambilla: Maximalist Dreamscapes",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "High-definition 3D 8K video with sound, color; 5 min., 45 sec., loop A lavish and satirical take on the silver-screen spectacle of Hollywood dreams and excesses, Heaven\u2019s Gate both celebrates collective storytelling and satirizes saturated glamour and stereotypes. The continuously looping video ascends through the seven levels of purgatory, each stage its own unique landscape of visual samples lifted from iconic moments in cinematic history.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "film-video"
             ],
             "phase": "current",
             "dates": {
@@ -937,22 +1127,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/marco-brambilla/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/03/20251222_Brambilla_CFU_01-Press-Kit-JPG-2400-Max-PPI-1308x872.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "ac2017675717bb8dd91293ed6c289cc3"
+            "hash": "4d0d14ae26d435df92586b0c33051c66",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Nine Women Artists-Portland Art Museum": {
             "name": "Nine Women Artists",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Inspired by Katherine Ace\u2019s 9 Portraits as the foundational starting point for the exhibition, Nine Women Artists will feature the work of the artists shown in Ace\u2019s portrait painting.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -964,18 +1162,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/nine-women-artists/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/05/ACE279_9Portraits.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "3f378dce67590788c31181cab0a9dfba"
+            "hash": "b1353d8c1fd8240acb5f44d9e4a5aa76",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "An Honest Day\u2019s Work: Photographs of Labor-Portland Art Museum": {
             "name": "An Honest Day\u2019s Work: Photographs of Labor",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Drawn from the permanent collection, this exhibition explores an expansive concept of work, from manual labor to art creation and childcare\u2013forms of work that often go unrecognized in contemporary society.",
             "tags": [
                 "exhibition",
                 "current",
@@ -992,18 +1197,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/an-honest-days-work-photographs-of-labor/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/05/Labor-photography.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "c231e08bd0de2bd39b9184a5582d2638"
+            "hash": "364be00709f6c141d441b66f32ea3ae8",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "A Brief History of Photography: The Portrait-Portland Art Museum": {
             "name": "A Brief History of Photography: The Portrait",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "This mini-history of photography demonstrates the importance of the photographic portrait, beginning with the medium\u2019s commercial inception in the mid-19th century and through to the present day.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1020,18 +1232,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/a-brief-history-of-photography-the-portrait/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/05/Portrait-photography.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "b89f868999677aad3f7eaf74ba98475c"
+            "hash": "85bd144f4393aafedc84fe0397635a1e",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Imagine Monuments: A Partnership with Arts in Education of the Gorge-Portland Art Museum": {
             "name": "Imagine Monuments: A Partnership with Arts in Education of the Gorge",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "What is the purpose of a public monument? To whom does it belong? How does a monument remind us of what we care about and who we are as a community? If you designed a monument, what would it look or feel or sound like? What story would it tell?",
             "tags": [
                 "exhibition",
                 "current",
@@ -1047,22 +1266,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/imagine-monuments-a-partnership-with-arts-in-education-of-the-gorge/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/09/Imagine-Monuments.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "80c7565c57d03ec9f6206beb3a267658"
+            "hash": "64b24114b25252b388bffc01d2cf5ce3",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "To Gather Your Leaving: Themes of Diasporic Experiences in the Northwest-Portland Art Museum": {
             "name": "To Gather Your Leaving: Themes of Diasporic Experiences in the Northwest",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Covering a span of a hundred years, the Portland Art Museum\u2019s Northwest collection represents a rich tapestry of work created from the experiences of movement, migration, displacement, hope, home, memory, and loss.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "textiles"
             ],
             "phase": "current",
             "dates": {
@@ -1074,18 +1301,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/to-gather-your-leaving/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/09/Sharita-Towne-for-us-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "d6b3b9197ef8e9203bf5ac0338632568"
+            "hash": "a753fca9a6d612d51866c4ca2035e437",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Here we are-Portland Art Museum": {
             "name": "Here we are",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Here we are surveys contemporary art from the Portland Art Museum\u2019s collection. Featuring work across a range of media, the exhibition showcases recent acquisitions alongside signature works and reflects on the constant change and shifting narratives that mark our contemporary world and networked lives.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1101,18 +1335,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/here-we-are/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/10/feature-Leigh-Simone-Sentinel.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "0939164b7c60cf0736cd274504212a3f"
+            "hash": "1d1355c9416f9cd34a22588121f3fba2",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "MAKERS: The Culture of Craft-Portland Art Museum": {
             "name": "MAKERS: The Culture of Craft",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Galleries 106, 107 Makers illuminates the virtuosity of maker and material in Japan. Looking across time periods, this exhibition explores the porous boundaries between art, craft, design, and labor. Works on [\u2026]",
             "tags": [
                 "exhibition",
                 "current",
@@ -1128,18 +1369,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/makers-the-culture-of-craft/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/11/Kogie-Kamejo-Incense-burner-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "960ca17dbec9d2141ddb53539cc24d9a"
+            "hash": "6c833aeb3ec7ba4c3ab94971a24c1e4f",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "The Art of Mark Rothko-Portland Art Museum": {
             "name": "The Art of Mark Rothko",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "This exhibition features a concise, chronological display of works by the renowned American artist Mark Rothko. The Museum\u2019s new entrance pavilion is named in honor of the artist.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1155,22 +1403,31 @@
                 {
                     "link": "https://portlandartmuseum.org/event/the-art-of-mark-rothko/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/07/featured-Rothko-No16-Green-White-Yellow-v2-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "f7bc2d6d7e0af93981d10b8200609d87"
+            "hash": "312f67d32a0a0ac4c2979feffcc50d3d",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Conversations in Clay-Portland Art Museum": {
             "name": "Conversations in Clay",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Gallery 109 Conversations in Clay presents a glimpse of the diverse range of directions in contemporary ceramics in Japan. Emphasizing natural ash glazes, sculptural forms, and meticulous surface treatments, it explores [\u2026]",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture",
+                "ceramics"
             ],
             "phase": "current",
             "dates": {
@@ -1182,18 +1439,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/conversations-in-clay/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/08/Matsui-Kosei-Jar-with-Marbleized-Pattern-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "c28e07e387ff3bd8da65493426bf9b30"
+            "hash": "76d77121a06a434444675a3cf65b5fc1",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Highest Heaven-Portland Art Museum": {
             "name": "Highest Heaven",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Elvin A. Duerst\u2019s gift of works from the Spanish viceregal or colonial period in Central and South America from 1521 until the revolutions led by Simon Bolivar liberated these areas from Spanish control in 1821.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1209,18 +1473,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/highest-heaven/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/07/Archangel-Gabriel-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "a54dd74be67225207e9956a2dd72b1ad"
+            "hash": "0939331e3cfc6feb5ee71f63bc1546e5",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Black Art and Experiences-Portland Art Museum": {
             "name": "Black Art and Experiences",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "The Black Art and Experiences (B.A.E.) Galleries are a gallery floor dedicated to celebrating the breadth, depth, and vitality of Black artistic expression.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1237,22 +1508,32 @@
                 {
                     "link": "https://portlandartmuseum.org/event/black-art-and-experiences/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/11/feature-Black-Art-and-Experiences-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "02e3083738b8153a0ab6e848ed07c5a3"
+            "hash": "77d46106573fe4bdecf772151d096cda",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Word in Flower: Arts of Buddhism-Portland Art Museum": {
             "name": "Word in Flower: Arts of Buddhism",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Featuring sculpture, calligraphy, painting, photography, and more, the exhibition explores diverse expressions of Buddhist visual culture in this region from the 6th to 21st centuries.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -1264,22 +1545,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/word-in-flower-arts-of-buddhism/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/11/feature-Jang-Jin-ik-Fulfillment-of-Emptiness-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "17fc7f1c963c4ad7f40f293ab99b207d"
+            "hash": "9792cf42a767604ee3a9eec42301d269",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Watanabe Sadao-Portland Art Museum": {
             "name": "Watanabe Sadao",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "This exhibition introduces the artistry of Watanabe Sadao (1913\u20131996), who developed a unique stencil printing process based on traditional Japanese textile dyeing techniques.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "textiles"
             ],
             "phase": "current",
             "dates": {
@@ -1291,18 +1580,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/watanabe-sadao/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/07/Watanabe-Sadao-A-Modern-Madonna-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "793f4b5e105dfb65136eb57a64026337"
+            "hash": "8e53ab1564fa1005b57f9a2690f900c7",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Mary Henry: A Long Unbroken Line-Portland Art Museum": {
             "name": "Mary Henry: A Long Unbroken Line",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Mary Henry embraced geometry as relational to the structures and environments around us.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1318,18 +1614,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/mary-henry-a-long-unbroken-line/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/09/Mary-Henry-La-Vida-Breve-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "931ccdae35775eef17ad64924b9d098b"
+            "hash": "a29a32a138a979352595bdb050c9ed93",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Rick Bartow: Storyteller-Portland Art Museum": {
             "name": "Rick Bartow: Storyteller",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Bartow\u2019s gift as a visual storyteller takes us on a narrative journey: his self-portraits tell stories of pain, memory, and self-discovery; others reflect on his Wiyot identity, Native history and culture; and his portrayals of beings who walk on four legs, swim, or fly deftly capture their essence.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1345,22 +1648,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/rick-bartow-storyteller/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/09/Rick-Bartow-Dog-Pack-Series.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "134e8010be40acc6b39aa8dc1bbb0154"
+            "hash": "372940b92a8410f30a700358d21ecdab",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Shifting the Narrative: 21st Century Acquisitions-Portland Art Museum": {
             "name": "Shifting the Narrative: 21st Century Acquisitions",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Shifting the Narrative: 21st Century Acquisitions highlights Native American art gifts and purchases since the year 2000 at the Portland Art Museum.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "indigenous"
             ],
             "phase": "current",
             "dates": {
@@ -1372,22 +1683,30 @@
                 {
                     "link": "https://portlandartmuseum.org/event/shifting-the-narrative/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/10/Glenn-LaFontaine-Duck-Pipe-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "0ce857a6cc2c7faf3c16e022878decd0"
+            "hash": "15b3005256fdb95a92a2bc08692eafc1",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Global Impressionism-Portland Art Museum": {
             "name": "Global Impressionism",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "In 1874, a group of French artists organized the first exhibition of sketch-like avant-garde paintings at a private gallery in Paris. Critics gave them the unflattering label \u201cImpressionist\u201d because of their sketchlike works, but the artists embraced the terms and exhibited under this name for another seven shows. Their use of broken strokes of often pure color, is often seen as typically French but in fact became a global phenomenon.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -1399,18 +1718,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/global-impressionism/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=portlandartmuseum.org%2Fwp-content%2Fuploads%2F2024%2F08%2FMonet-Waterlillies-unframed-scaled.jpg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "e6965f80081550d66787be9952868887"
+            "hash": "76304f38549cee052646372a630462af",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Im/Material-Portland Art Museum": {
             "name": "Im/Material",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "From the 1960s onward, artists engaged in a vibrant expansion of stylistic approaches, idea-driven practices, and material exploration. In some circles, they embraced the value of concepts as the foundation for their art, placing significance on the intellectual over the final appearance of the artwork.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1426,18 +1752,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/im-material/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2025/09/Raymond-Saunders-Assemblage-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "260c9218bd57f8e2481f480ea661ecda"
+            "hash": "0456ed08d43a250d378c2801256f8f49",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Yinka Ilori: Mountains Full of Blessings-Portland Art Museum": {
             "name": "Yinka Ilori: Mountains Full of Blessings",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Internationally acclaimed British-Nigerian artist Yinka Ilori, MBE, known for his colorful, \"joy-led\" design philosophy, has designed a monumental work of asphalt art to fill the street.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1453,18 +1786,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/yinka-ilori-mountains-full-of-blessings/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=portlandartmuseum.org%2Fwp-content%2Fuploads%2F2026%2F05%2FMountains-Full-of-Blessings-v3-scaled.jpg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "bb045bd513415ded80b0dc0684610bde"
+            "hash": "0574843aa3c61835adc5f4e374e80095",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Prints of Darkness: The Modern Mezzotint-Portland Art Museum": {
             "name": "Prints of Darkness: The Modern Mezzotint",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Prized for its ability to create velvety, dark, and subtle surfaces, mezzotint is a printmaking process in which the artist works from dark to light, coaxing the image from the shadows.",
             "tags": [
                 "exhibition",
                 "future",
@@ -1481,23 +1821,33 @@
                 {
                     "link": "https://portlandartmuseum.org/event/prints-of-darkness-the-modern-mezzotint/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/08/Modern-Mezzotint.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "608db4c0c0a686c98f638d74e2d84b15"
+            "hash": "beaa93ff72d1a5e853520aaf12ad05fa",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Data Consciousness: Reframing Blackness in Contemporary Print-Portland Art Museum": {
             "name": "Data Consciousness: Reframing Blackness in Contemporary Print",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Inspired by W.E.B. Du Bois\u2019s legacy, this exhibition brings together leading Black contemporary artists who use printmaking, sculpture, installation, textile, and video to interrogate the intersections of race, technology, and representation in a data-driven society.",
             "tags": [
                 "exhibition",
                 "future",
                 "museum",
-                "black-art"
+                "black-art",
+                "sculpture",
+                "printmaking",
+                "textiles"
             ],
             "phase": "future",
             "dates": {
@@ -1509,18 +1859,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/data-consciousness-reframing-blackness-in-contemporary-print/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/07/William-Villalongo-and-Shraddha-Ramani-Black-Migration-to-the-US-scaled.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "c4e6c3195b243332d288a4870669458e"
+            "hash": "e7deeb1bfe1562c3cf57cb37f79d8e51",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "German Expressionism in Art and Film-Portland Art Museum": {
             "name": "German Expressionism in Art and Film",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "German Expressionism in Art and Film immerses visitors in the dramatic world of German art and film that developed during the turbulent years between the end of World War I and the Nazi Party\u2019s political and cultural domination of Germany in the 1930s.",
             "tags": [
                 "exhibition",
                 "future",
@@ -1537,18 +1894,25 @@
                 {
                     "link": "https://portlandartmuseum.org/event/german-expressionism-in-art-and-film/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/02/S_40_Cabinet.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "f64aef4e6ec3ea3968a6c408dcaf9382"
+            "hash": "066e6a8ed8c0fe8c26b8377a37385efd",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Titus Kaphar: Ascension-Portland Art Museum": {
             "name": "Titus Kaphar: Ascension",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "Ascension marks Kaphar\u2019s most expansive exploration of spirituality to date. Where much of his work has examined the histories we inherit and who has been erased from them, Ascension turns toward what carries us beyond them.",
             "tags": [
                 "exhibition",
                 "future",
@@ -1566,20 +1930,24 @@
                     "description": "Event Page"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "903dd6ca1decab6cdafc0c729ddce3e6"
+            "hash": "dedf7a3902372e1d795b6dd94807f4ff",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "M. C. Escher: Infinite Variations-Portland Art Museum": {
             "name": "M. C. Escher: Infinite Variations",
             "venue": "Portland Art Museum",
-            "description": null,
+            "description": "The exhibition includes early figure drawings, lesser-known book illustrations, detailed Italian landscapes, transformations in which fish morph into birds, and the birds morph into horses, and his signature architectural fantasies in which stairways seem to go both up and down.",
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "drawing"
             ],
             "phase": "future",
             "dates": {
@@ -1591,25 +1959,33 @@
                 {
                     "link": "https://portlandartmuseum.org/event/m-c-escher-infinite-variations/",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://portlandartmuseum.org/wp-content/uploads/2026/06/PAM-Day-and-Night.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
+            "last_updated": "2026-11-15 19:09:47",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "d2e6ee1311ecb604766f03c25b91dacc"
+            "hash": "c80580237073fe9843e10c17bf2ab0a9",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Oregon Contemporary": {
         "Gons: The Pictures, Mechanisms, and Camera Works of Doug Wing-Oregon Contemporary": {
             "name": "Gons: The Pictures, Mechanisms, and Camera Works of Doug Wing",
             "venue": "Oregon Contemporary",
-            "description": null,
+            "description": "Gons: The Pictures, Mechanisms and Camera Works of Doug Wing, curated by Kristan Kennedy, is a retrospective exhibition celebrating Wing's decades-long creative career. Running from November 4 through December 19, 2026, at Oregon Contemporary, the show highlights his multi-medium artistic journey and includes a mini-documentary directed by filmmaker Jonathan Marrs.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "film-video"
             ],
             "phase": "current",
             "dates": {
@@ -1621,15 +1997,22 @@
                 {
                     "link": "https://www.oregoncontemporary.org/on-view-and-upcoming",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/60b7f6774f0ef07e201ff66a/4446fdc2-5c09-4f23-b79e-97f5516c27b5/26_0916_NorthPoleStudio_DougWing_0022+%28Web%29.jpg",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
-            "hash": "a85c5c19fe1a7d414bd4b45365886e89"
+            "last_updated": "2026-11-15 19:09:48",
+            "hash": "604f54c5203fe72baac9814e22d8533e",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Thought Forms: Open Studio-Oregon Contemporary": {
             "name": "Thought Forms: Open Studio",
             "venue": "Oregon Contemporary",
-            "description": null,
+            "description": "Thought Forms draws inspiration from two seemingly disparate sources: an esoteric book by Annie Besant and C. W. Leadbeater, titled Thought-Forms (1901), that illustrates thoughts and emotions as materialized shapes and colors, and the banners hung outside Southside Presbyterian Church in Tucson, AZ, in 1982, declaring sanctuary for Central American refugees. Together, these sources inspire a process in which collective declarations can take form, shape, and action.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1646,10 +2029,17 @@
                 {
                     "link": "https://www.oregoncontemporary.org/on-view-and-upcoming",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.squarespace-cdn.com/content/v1/60b7f6774f0ef07e201ff66a/7777379c-11ad-4c69-8239-4582c6fb2531/web-thoughtforms.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:07",
-            "hash": "4051daa0fc3be314b5dffbcba84dd6c4"
+            "last_updated": "2026-11-15 19:09:48",
+            "hash": "84ae2ac0cd37c3e862c4fdf5757db0cf",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Carnation Contemporary": {
@@ -1673,10 +2063,16 @@
                 {
                     "link": "https://www.carnationcontemporary.com/Exhibitions",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://freight.cargo.site/t/original/i/aa1b09aa4de6d91b92ea79d0b5b4e9f31b745bf300243ce41f42a9b22bd0a594/CC_Drew-Russell_04.png",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:08",
-            "hash": "e167f661a246cc080bc7db93a7485d64"
+            "last_updated": "2026-11-15 19:09:49",
+            "hash": "49def06d938e8d7608d779703f99ec13",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15"
         }
     },
     "Cooley Gallery": {
@@ -1700,10 +2096,15 @@
                 {
                     "link": "https://www.reed.edu/cooley/exhibitions/rose-salane.html",
                     "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=www.reed.edu%2Fcooley%2Fassets%2Fimages%2FDiana_PDX3.jpg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 07:35:09",
-            "hash": "23f840a6c98b9730e0198ca01ad155f6"
+            "last_updated": "2026-11-15 19:09:50",
+            "hash": "1e0ccbd8f2532bdf47229f359d0053f7",
+            "image_checked": "2026-11-15"
         }
     }
 }

@@ -4,22 +4,30 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-15: **760**. With their own picture: **749** (99%). Showing the venue's logo instead: **8**. No picture at all: **3**.
+Current and upcoming events on 2026-11-15: **852**. With their own picture: **837** (98%). Showing the venue's logo instead: **8**. No picture at all: **7**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
 | Region | Venue | Events | Own picture | Logo | None |
 |---|---|---:|---:|---:|---:|
+| `nyc` | Queens Museum | 6 | 3 | 0 | 3 |
 | `la` | François Ghebaly | 3 | 1 | 0 | 2 |
 | `sf` | Jessica Silverman Gallery | 4 | 2 | 2 | 0 |
 | `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
+| `pdx` | Portland Art Museum | 41 | 40 | 0 | 1 |
 | `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
 | `sf` | Sanchez Art Center | 3 | 2 | 1 | 0 |
 | `tor` | Paul Petro Contemporary Art | 2 | 1 | 1 | 0 |
 
 ### Events without a picture of their own
+
+**Queens Museum** (`nyc`)
+
+- [¡Te Amo Porque S.O.S. Pueblo!: Altares Ocultos de Duelo y Memoria (Hidden Altars of Grief and Remembrance)](https://queensmuseum.org/exhibition/te-amo-porque-sos-pueblo-altares-ocultos-de-duelo-y-memoria-hidden-altars-of-grief-and-remembrance/): blank; page last checked 2026-11-15
+- [Community Ofrenda: Where Memory Becomes Home](https://queensmuseum.org/exhibition/community-ofrenda-altar-where-memory-becomes-home-2026/): blank; page last checked 2026-11-15
+- [Collection Spotlight: The Panorama Archives](https://queensmuseum.org/exhibition/collection-spotlight-the-panorama-archives-2026/): blank; page last checked 2026-11-15
 
 **François Ghebaly** (`la`)
 
@@ -43,6 +51,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Galerie Kub’Art** (`mtl`)
 
 - [Exposition inaugurale](https://www.instagram.com/kubartgallery/): venue logo; page last checked 2026-11-04
+
+**Portland Art Museum** (`pdx`)
+
+- [Titus Kaphar: Ascension](https://portlandartmuseum.org/event/titus-kaphar-ascension/): blank; page last checked 2026-11-15
 
 **ACCI Gallery** (`sf`)
 
