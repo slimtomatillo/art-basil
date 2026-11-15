@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-11-15",
+    "title": "Find New York shows by neighbourhood",
+    "text": "New York now has an Area filter: choose Chelsea, SoHo and Tribeca, Midtown, the Upper East Side, Harlem, Brooklyn, Queens or the Bronx to see just the shows there."
+  },
+  {
+    "date": "2026-11-15",
     "title": "The map shows what's on now",
     "text": "Map view now opens on the shows you can see today, so its pins and counts are places worth a visit. To include shows that haven't opened yet, add Upcoming in the When filter."
   },

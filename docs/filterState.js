@@ -195,6 +195,24 @@
                 'Pasadena', 'South Pasadena', 'San Marino', 'Monterey Park', 'Alhambra', 'Arcadia', 'Altadena',
                 'San Gabriel', 'Temple City'] },
         ],
+        // New York. Every address says "New York, NY" for Manhattan, so Manhattan is split by ZIP code into the
+        // neighbourhoods people look for art in; the other boroughs are placed by their name (Queens by its
+        // neighbourhoods too, which is how its addresses are written: Long Island City, Astoria...).
+        nyc: [
+            { id: 'chelsea', label: 'Chelsea', zips: ['10001', '10011'] },
+            { id: 'downtown', label: 'SoHo, Tribeca and Downtown', zips: [
+                '10002', '10003', '10007', '10009', '10012', '10013', '10014'] },
+            { id: 'midtown', label: 'Midtown', zips: [
+                '10016', '10017', '10018', '10019', '10020', '10022', '10036'] },
+            { id: 'upper-east-side', label: 'Upper East Side', zips: ['10021', '10028', '10065', '10075', '10128'] },
+            { id: 'upper-west-side-harlem', label: 'Upper West Side and Harlem', zips: [
+                '10023', '10024', '10025', '10026', '10027', '10029', '10030', '10031', '10032', '10035'] },
+            { id: 'brooklyn', label: 'Brooklyn', cities: ['Brooklyn'] },
+            { id: 'queens', label: 'Queens', cities: [
+                'Queens', 'Long Island City', 'Astoria', 'Flushing', 'Jamaica', 'Sunnyside', 'Woodside', 'Ridgewood',
+                'Corona', 'Forest Hills'] },
+            { id: 'bronx', label: 'The Bronx', cities: ['Bronx', 'The Bronx'] },
+        ],
         // Istanbul, by district. Only those with venues are offered, so Kadıköy and Üsküdar (the Asian side)
         // appear in the filter, each on its own, as soon as a venue there is added.
         ist: [
@@ -217,15 +235,16 @@
         ],
     };
 
-    // The city of an address ("151 3rd St, San Francisco, CA 94103" -> "San Francisco"), or null
+    // The city of an address ("151 3rd St, San Francisco, CA 94103" -> "San Francisco"), or null. The state is any
+    // two capital letters (CA, NY), so a New York address works the same way.
     function cityOf(address) {
-        const matches = [...String(address || '').matchAll(/,\s*([^,]+?),\s*CA\b/g)];
+        const matches = [...String(address || '').matchAll(/,\s*([^,]+?),\s*[A-Z]{2}\b/g)];
         return matches.length ? matches[matches.length - 1][1].trim() : null;
     }
 
     // The ZIP code of an address ("..., Los Angeles, CA 90036" -> "90036"), or null
     function zipOf(address) {
-        const m = String(address || '').match(/,\s*CA\s+(\d{5})\b/);
+        const m = String(address || '').match(/,\s*[A-Z]{2}\s+(\d{5})\b/);
         return m ? m[1] : null;
     }
 
