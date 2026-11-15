@@ -204,6 +204,11 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   credits a month for the show pages); Marlborough New York (marlboroughnewyork.com lists only shows up to April
   2024) and Perrotin (built in the browser, no readable list) have nothing to read; Casey Kaplan ("coming soon"),
   Greene Naftali (a bad certificate), Team Gallery and Storefront (did not load) could not be reached.
+- **Dia Chelsea** (`diaart.org`, WEBSITE-121) needs `js_render` + `proxy_country=us` (25 credits, about 190 a month;
+  found 2026-11-15 with the **Probe page** workflow, which fetches one URL through the proxy and keeps the HTML as a
+  run artifact: `gh workflow run probe-page.yml -f url=... -f options="js_render=true proxy_country=us"`, 10 or 25
+  credits a fetch). The listing is `/exhibition/exhibitions-projects` (`/exhibitions` is a 404, which the Cloudflare
+  challenge had hidden); only shows "at Dia Chelsea" are read, not Beacon, Bridgehampton or touring ones.
 - **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` and `js_render`** (25 credits a refresh, about 190 a
   month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers `202` with
   an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a

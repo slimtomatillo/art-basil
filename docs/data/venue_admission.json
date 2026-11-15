@@ -508,6 +508,12 @@
             "source": "https://www.mocanyc.org/visit/",
             "checked": "2026-11-15",
             "note": "Believed to charge admission; not checked. Check the price and any free hours."
+        },
+        "Dia Chelsea": {
+            "admission": "unverified",
+            "source": "https://diaart.org/visit",
+            "checked": "2026-11-15",
+            "note": "Not checked (the site is behind a bot check). Check the price and any free hours."
         }
     },
     "pdx": {

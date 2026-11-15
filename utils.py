@@ -213,6 +213,9 @@ PROXY_DOMAINS = {
     # js_render (25 credits, about 190 a month) and proxy_country=us.
     'elmuseo.org': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
     'movingimage.org': {'premium_proxy': 'true'},
+    # Dia (Dia Chelsea): a Cloudflare challenge that only page rendering gets past (found 2026-11-15 with the Probe
+    # page workflow: js_render + proxy_country=us returned the page, 25 credits, about 190 a month).
+    'diaart.org': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are
