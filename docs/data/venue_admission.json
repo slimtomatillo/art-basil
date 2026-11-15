@@ -502,6 +502,12 @@
             "source": "https://www.moma.org/visit/",
             "checked": "2026-11-15",
             "note": "Free for everyone (MoMA's visit page lists free admission for all at PS1)."
+        },
+        "Museum of Chinese in America": {
+            "admission": "unverified",
+            "source": "https://www.mocanyc.org/visit/",
+            "checked": "2026-11-15",
+            "note": "Believed to charge admission; not checked. Check the price and any free hours."
         }
     }
 }
