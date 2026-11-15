@@ -209,7 +209,9 @@ PROXY_DOMAINS = {
     # Asia Society Museum (two pages), El Museo del Barrio and the Museum of the Moving Image: Cloudflare
     # challenges, fine in a browser, server-rendered. premium_proxy alone first (10 credits a page) - not live-tested.
     'asiasociety.org': {'premium_proxy': 'true'},
-    'elmuseo.org': {'premium_proxy': 'true'},
+    # El Museo answered 422 RESP001 ("try enabling javascript rendering") on its first run (2026-11-15), so it has
+    # js_render (25 credits, about 190 a month) and proxy_country=us.
+    'elmuseo.org': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
     'movingimage.org': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python

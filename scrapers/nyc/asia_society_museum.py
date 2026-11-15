@@ -17,6 +17,7 @@ from utils import fetch_and_parse
 PAGES = ['https://asiasociety.org/new-york/exhibitions/current', 'https://asiasociety.org/new-york/exhibitions']
 VENUE = 'Asia Society Museum'
 _MAX_DESCRIPTION = 400
+_RUN = re.compile(r'\d{1,2} [A-Za-z]{3,9} \d{4}\s*[-–—]\s*\d{1,2} [A-Za-z]{3,9} \d{4}')
 
 
 def _card(heading):
@@ -47,12 +48,9 @@ def scrape_asia_society_museum(env='prod', region='nyc'):
                 continue
             name = clean(link.get_text(' '))
             lines = [clean(line) for line in card.get_text('\n').split('\n') if clean(line)]
-            start_date = end_date = None
-            for line in lines:
-                if re.search(r'\d{4}', line) and len(line) < 50:
-                    start_date, end_date = parse_dates(line, today)
-                    if start_date or end_date:
-                        break
+            # the run is split over two lines ("18 Mar 2026" / "- 03 Jan 2027"), so it is read from the card's whole text
+            run = _RUN.search(clean(card.get_text(' ')))
+            start_date, end_date = parse_dates(run.group(0), today) if run else (None, None)
             if not (name and (start_date or end_date)):
                 continue
             description = next((line for line in lines if len(line) > 60 and line != name), None)

@@ -188,7 +188,9 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   be missing until it moves up the list).
 - **Asia Society Museum (two pages), El Museo del Barrio and the Museum of the Moving Image** (WEBSITE-121, tier 4)
   are proxied with `premium_proxy` alone (10 credits a page, about 76 a month a page, so about 300 in all) and are on
-  the 4-day schedule. Not live-tested before the first run. **The Morgan and Dia are not built:** Dia's Cloudflare
+  the 4-day schedule. First run (2026-11-15): the Museum of the Moving Image worked; **El Museo answered 422 RESP001**
+  and now has `js_render` and `proxy_country=us` (25 credits, about 190 a month); Asia Society fetched fine but its
+  reader missed the dates (split over two lines), fixed. **The Morgan and Dia are not built:** Dia's Cloudflare
   check never cleared even in a real Chrome, and the Morgan's listing is only pictures (titles and dates are on each
   show's page, about 16 pages, about 1,200 credits a month).
 - **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` and `js_render`** (25 credits a refresh, about 190 a

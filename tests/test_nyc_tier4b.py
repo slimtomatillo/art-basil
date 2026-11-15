@@ -42,7 +42,7 @@ def image_of(event):
 def asia_card(slug, title, dates, description):
     return (f'<div><div><div><a href="/new-york/exhibitions/{slug}"><img src="/sites/default/files/styles/400x286/public/{slug}.jpg" alt="x"></a></div></div>'
             f'<div><div><h4><a href="/new-york/exhibitions/{slug}" rel="bookmark"><div>{title}</div></a></h4></div>'
-            f'<div>{dates} </div><div><div>{description}</div></div></div></div>')
+            f'<div><span>{dates.split(" - ")[0]} </span><span>\n   -  {dates.split(" - ")[1]}</span></div><div><div>{description}</div></div></div></div>')
 
 
 class AsiaSocietyTest(unittest.TestCase):
