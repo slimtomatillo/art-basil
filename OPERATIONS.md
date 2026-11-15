@@ -209,15 +209,16 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   run artifact: `gh workflow run probe-page.yml -f url=... -f options="js_render=true proxy_country=us"`, 10 or 25
   credits a fetch). The listing is `/exhibition/exhibitions-projects` (`/exhibitions` is a 404, which the Cloudflare
   challenge had hidden); only shows "at Dia Chelsea" are read, not Beacon, Bridgehampton or touring ones.
-- **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy`, `js_render`, `proxy_country=us` and `wait=5000`** (25 credits a
+- **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy`, `js_render`, `proxy_country=us` and `wait_for=h3`** (25 credits a
   refresh, about 190 a month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers
   `202` with an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a
   proxied venue directly and costs nothing). `premium_proxy` alone returned the challenge's own 1,962-byte script page (no title,
-  no sections), and adding `js_render` still returned a 1,986-byte one in the daily runs of 11-14 and 11-15 (the "stored no events;
-  fetched ..." line says so), so `proxy_country=us` and `wait=5000` were added, the combination that worked for Dia. Not
-  live-tested (no proxy key locally): after the next refresh, check that the log no longer says "no current or upcoming exhibition
-  found" for SFAC Galleries, or try it first with the Probe page workflow (25 credits). If it still fails, the page title and size
-  are in the log and `wait_for` (an element to wait for) is the next thing to try.
+  no sections); adding `js_render` still returned a 1,986-byte one in the daily runs of 11-14 and 11-15 (the "stored no events;
+  fetched ..." line says so), and `wait=5000` a 2,398-byte "verify you're not a robot" page in a Probe page run. A fixed wait
+  does not help; **`wait_for=h3`** (hold the response until a show title has been drawn) returned the real 117 KB page, and the
+  scraper read all 3 shows from it (Probe page run, 2026-11-15, 25 credits). If it stops working, the log's "no current or
+  upcoming exhibition found" line has the page title and size. The Probe page workflow splits its options on spaces, so a
+  `wait_for` selector there has to be a bare tag or class with no spaces.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
   run rather than waiting another 4 days. (The stale-data check flags a venue
   after 7 days.)
