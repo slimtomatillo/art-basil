@@ -1,0 +1,63 @@
+name: Probe page
+
+# Fetches ONE page through the paid ZenRows proxy and shows what came back (status, title, links) plus the saved HTML, to
+# see whether a blocked site can be read and with which options. It SPENDS credits (10, or 25 with js_render) and writes
+# nothing to the repository. Start it from the Actions tab or:
+#   gh workflow run probe-page.yml -f url=https://diaart.org/exhibitions -f options="js_render=true proxy_country=us"
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'The page to fetch'
+        required: true
+      options:
+        description: 'ZenRows options as name=value, separated by spaces (premium_proxy is always on), e.g. js_render=true proxy_country=us'
+        required: false
+        default: ''
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v7
+
+    - name: Set up Python environment
+      uses: actions/setup-python@v7
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Fetch the page through the proxy
+      env:
+        SCRAPER_PROXY_API_KEY: ${{ secrets.SCRAPER_PROXY_API_KEY }}
+        PROBE_URL: ${{ inputs.url }}
+        PROBE_OPTIONS: ${{ inputs.options }}
+      run: |
+        # shellcheck disable=SC2086
+        python probe_page.py "$PROBE_URL" $PROBE_OPTIONS 2>&1 | tee probe.log
+        exit "${PIPESTATUS[0]}"
+
+    - name: Keep the saved page
+      if: ${{ !cancelled() }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: probe-page
+        path: probe_page.html
+        if-no-files-found: ignore
+        retention-days: 3
+
+    - name: Show the result on the run's summary page
+      if: ${{ !cancelled() }}
+      run: |
+        {
+          echo '## Probe page'
+          echo '```'
+          cat probe.log || true
+          echo '```'
+        } >> "$GITHUB_STEP_SUMMARY"
