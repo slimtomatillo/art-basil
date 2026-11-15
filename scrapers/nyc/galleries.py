@@ -269,6 +269,26 @@ _add(Spec('Galerie Lelong & Co.', ['https://www.galerielelong.com/exhibitions'],
           drop=r'^(?:Galerie Lelong Exhibitions|Museum & Public Exhibitions)$',
           spaces=[_ny('528 West 26th Street', '528 W 26th St, New York, NY 10001')]))
 
+# Tier 5 (WEBSITE-121): galleries whose listing needed a closer look
+_add(Spec('303 Gallery', ['https://www.303gallery.com/gallery-exhibitions', 'https://www.303gallery.com/gallery-exhibitions/upcoming'],
+          links='a[href*="/gallery-exhibitions/"]',
+          spaces=[_ny('555 West 21st Street', '555 W 21st St, New York, NY 10011')]))
+def _artists_space_name(before):
+    """Artists Space's card is the artist, then the title; a group show lists its artists, one a line, and no title."""
+    lines = [line for line in before if line]
+    if len(lines) > 2 and not any(':' in line for line in lines):
+        return ', '.join(lines)
+    return join_name(lines[:2])
+
+
+_add(Spec('Artists Space', ['https://artistsspace.org/exhibitions'], links='a[href*="/exhibitions/"]', name=_artists_space_name,
+          spaces=[_ny('11 Cortlandt Alley', '11 Cortlandt Alley, New York, NY 10013')]))
+_add(Spec('Matthew Marks Gallery', ['https://matthewmarks.com/exhibitions/current', 'https://matthewmarks.com/exhibitions/upcoming'],
+          links='a[href^="/exhibitions/"]',
+          spaces=[_ny('522 West 22nd Street', '522 W 22nd St, New York, NY 10011', r'\b522\b'),
+                  _ny('523 West 24th Street', '523 W 24th St, New York, NY 10011', r'\b523\b'),
+                  _ny('526 West 22nd Street', '526 W 22nd St, New York, NY 10011', r'\b526\b')]))
+
 
 def addresses(venue):
     """The address entry for nyc_venues.json: a string for one space, a list of {label, address} for several."""

@@ -193,6 +193,10 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   reader missed the dates (split over two lines), fixed. **The Morgan and Dia are not built:** Dia's Cloudflare
   check never cleared even in a real Chrome, and the Morgan's listing is only pictures (titles and dates are on each
   show's page, about 16 pages, about 1,200 credits a month).
+- **New York tier 5 (WEBSITE-121) is read directly, with no proxy** (each page read fine from a normal connection;
+  confirm in CI with the Check scrapers workflow, and move a venue to `PROXY_DOMAINS` and `PROXIED_VENUES` if it
+  answers 403): the New Museum (the shows are in the page's `__NEXT_DATA__`), Gladstone Gallery (its Gatsby data file
+  `/page-data/exhibitions/page-data.json`), MoMA PS1, 303 Gallery, Artists Space and Matthew Marks Gallery.
 - **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` and `js_render`** (25 credits a refresh, about 190 a
   month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers `202` with
   an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a
