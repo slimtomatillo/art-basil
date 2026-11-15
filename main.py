@@ -10,6 +10,7 @@ from config import configure_logging, DB_FILES
 import descriptions
 import image_audit
 import images
+import processing
 from processing import update_event_phases
 from manual_check import check_manual_events
 from scraper_health import find_stale_venues, find_unseen_events, find_description_gaps, report as report_scraper_health
@@ -346,12 +347,18 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
                 logging.info(f"[{region}] Skipping {venue}: refreshed recently (proxied venues refresh about every {utils.PROXY_REFRESH_DAYS} days); existing data kept.")
                 continue
         logging.info(f"[{region}] Starting scrape for {venue}")
+        utils.reset_fetch_log()
+        stored_before = len(processing._processed_this_run)
         for s in (scraper if isinstance(scraper, list) else [scraper]):
             try:
                 s(env=env, region=region)
             except Exception as e:
                 logging.exception(f"[{region}] Scraper crashed for {venue}; continuing with the next venue")
                 failed.append((region, venue, f"{type(e).__name__}: {e}"))
+        if env == 'prod' and len(processing._processed_this_run) == stored_before:
+            # nothing stored: say what the pages it fetched really were, so a block or an empty shell can be told from a venue
+            # between shows (WEBSITE-123)
+            logging.warning(f"[{region}] {venue} stored no events; fetched {utils.fetch_summary()}")
         logging.info(f"[{region}] Finished scrape for {venue}")
 
     if env == 'prod' and write_summary:
