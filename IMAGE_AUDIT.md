@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-15: **848**. With their own picture: **833** (98%). Showing the venue's logo instead: **8**. No picture at all: **7**.
+Current and upcoming events on 2026-11-15: **846**. With their own picture: **830** (98%). Showing the venue's logo instead: **8**. No picture at all: **8**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -16,6 +16,7 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
+| `nyc` | Dia Chelsea | 4 | 3 | 0 | 1 |
 | `pdx` | Portland Art Museum | 41 | 40 | 0 | 1 |
 | `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
 | `sf` | Sanchez Art Center | 3 | 2 | 1 | 0 |
@@ -51,6 +52,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Galerie Kub’Art** (`mtl`)
 
 - [Exposition inaugurale](https://www.instagram.com/kubartgallery/): venue logo; page last checked 2026-11-04
+
+**Dia Chelsea** (`nyc`)
+
+- [David Lamelas: The Machine](https://diaart.org/exhibition/exhibitions-projects/david-lamelas-the-machine-exhibition): blank; page last checked 2026-11-15
 
 **Portland Art Museum** (`pdx`)
 
