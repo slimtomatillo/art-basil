@@ -128,14 +128,23 @@
 
     // "61 places · 213 shows", or "No shows match these filters." `unplaced` shows have no map location, so the
     // line says so (they are in the list view)
-    function summaryText({ locations, placed, unplaced }) {
+    // What the pins stand for, from the "When" phases: "on view now" for the map's default, ", including upcoming" once upcoming
+    // shows are added, and nothing for any other choice (a date window, past shows: the filter chips say it) (WEBSITE-125)
+    function scopeText(phases) {
+        const set = new Set(phases || []);
+        if (set.has('past') || (!set.has('current') && !set.has('ongoing'))) return '';
+        return set.has('future') ? 'including upcoming' : 'on view now';
+    }
+
+    function summaryText({ locations, placed, unplaced }, scope = '') {
         const n = value => value.toLocaleString('en-US');
         const noLocation = `${n(unplaced)} ${unplaced === 1 ? 'show has' : 'shows have'} no map location`;
         if (placed === 0 && unplaced === 0) return 'No shows match these filters.';
         if (placed === 0) return `${noLocation}; see the list view.`;
         const places = locations.length === 1 ? '1 place' : `${n(locations.length)} places`;
         const shows = placed === 1 ? '1 show' : `${n(placed)} shows`;
-        return unplaced ? `${places} · ${shows} (${noLocation}; see the list view)` : `${places} · ${shows}`;
+        const counted = scope === 'including upcoming' ? `${shows}, ${scope}` : (scope ? `${shows} ${scope}` : shows);
+        return unplaced ? `${places} · ${counted} (${noLocation}; see the list view)` : `${places} · ${counted}`;
     }
 
     // Changes only when the pins would: used to skip redrawing (and re-framing the map) for a change that doesn't matter
@@ -143,5 +152,5 @@
         return locations.map(location => `${location.key}:${location.count}:${location.weight}`).join('|');
     }
 
-    return { locationKey, showOf, groupByLocation, toFeatureCollection, boundsOf, isSinglePoint, nearestLocations, summaryText, signature };
+    return { locationKey, showOf, groupByLocation, toFeatureCollection, boundsOf, isSinglePoint, nearestLocations, scopeText, summaryText, signature };
 }));

@@ -34,6 +34,10 @@
     // By default a visitor sees what is on and what is coming, not the archive.
     const ALL_PHASES = ['current', 'ongoing', 'future', 'past'];
     const DEFAULT_PHASES = ['current', 'ongoing', 'future'];
+    // Map view opens on what is on now: a map mostly answers "what can I go and see near me", and pins for shows that
+    // open months from now inflate the counts and point at places with nothing to see (WEBSITE-125). The default is a
+    // property of the view; `phasesAuto` in the state says the phases are only that default, not a choice the visitor made.
+    const MAP_DEFAULT_PHASES = ['current', 'ongoing'];
     const PHASE_LABELS = { current: 'Current', ongoing: 'Ongoing', future: 'Future', past: 'Past' };
     const PHASE_HINTS = { current: 'has an end date', ongoing: 'no end date' };
 
@@ -266,12 +270,23 @@
         return selected.length === 0 || selected.some(id => (rowAreas || []).includes(id));
     }
 
-    function defaultState(today = null) {
-        return { q: '', venue: '', phases: [...DEFAULT_PHASES], tags: [], timing: null, areas: [], view: DEFAULT_VIEW, today };
+    // The phases a view starts with: Map view opens on what is on now, the table on everything current and coming
+    function defaultPhasesFor(view) {
+        return view === 'map' ? [...MAP_DEFAULT_PHASES] : [...DEFAULT_PHASES];
+    }
+
+    // The state after switching to `view`: phases the visitor never chose follow the view (the map opens on what is on now,
+    // the table on current and coming), phases they chose are kept (WEBSITE-125)
+    function withView(state, view) {
+        return { ...state, view, phases: state.phasesAuto ? defaultPhasesFor(view) : state.phases };
+    }
+
+    function defaultState(today = null, view = DEFAULT_VIEW) {
+        return { q: '', venue: '', phases: defaultPhasesFor(view), phasesAuto: true, tags: [], timing: null, areas: [], view, today };
     }
 
     function isDefault(state) {
-        return state.q === '' && !state.venue && samePhases(state.phases, DEFAULT_PHASES) && state.tags.length === 0
+        return state.q === '' && !state.venue && samePhases(state.phases, defaultPhasesFor(state.view)) && state.tags.length === 0
             && !state.timing && (state.areas || []).length === 0;
     }
 
@@ -295,9 +310,11 @@
         const q = (params.get('q') ?? params.get('search') ?? '').trim();
         const requested = normalizePhases((params.get('phase') || '').split(',').map(p => p.trim()));
         const venue = (params.get('venue') || '').trim();
-        const phases = requested.length ? requested : (q || venue ? [...ALL_PHASES] : [...DEFAULT_PHASES]);
-        const tags = [...new Set((params.get('tags') || '').split(',').map(t => t.trim()).filter(Boolean))];
         const view = VIEWS.includes(params.get('view')) ? params.get('view') : DEFAULT_VIEW;
+        // No explicit phase means the view's own default (what is on now, for the map); an explicit one is always honoured
+        const phasesAuto = !requested.length && !q && !venue;
+        const phases = requested.length ? requested : (q || venue ? [...ALL_PHASES] : defaultPhasesFor(view));
+        const tags = [...new Set((params.get('tags') || '').split(',').map(t => t.trim()).filter(Boolean))];
         const known = areaIds();
         const areas = [...new Set((params.get('area') || '').split(',').map(a => a.trim()).filter(a => known.includes(a)))];
         // ?when=weekend (a quick pick), or ?from=2026-12-15&to=2026-12-20 (a custom range; no "to" is one day)
@@ -310,7 +327,7 @@
             const to = validDay((params.get('to') || '').trim()) || from;
             timing = to < from ? { from: to, to: from } : { from, to };
         }
-        return { q, venue, phases, tags, timing, areas, view, today };
+        return { q, venue, phases, phasesAuto, tags, timing, areas, view, today };
     }
 
     // Inverse of parseUrl: '' for the default view, else '?...'. The phase is
@@ -320,7 +337,7 @@
         const params = new URLSearchParams();
         if (state.q) params.set('q', state.q);
         if (state.venue) params.set('venue', state.venue);
-        if (state.q || state.venue || !samePhases(state.phases, DEFAULT_PHASES)) params.set('phase', state.phases.join(','));
+        if (state.q || state.venue || !samePhases(state.phases, defaultPhasesFor(state.view))) params.set('phase', state.phases.join(','));
         if (state.tags.length) params.set('tags', state.tags.join(','));
         if (state.timing && state.timing.pick) {
             params.set('when', state.timing.pick);
@@ -479,7 +496,7 @@
     }
 
     return {
-        TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, PHASE_LABELS, PHASE_HINTS, VIEWS, DEFAULT_VIEW,
+        TAG_GROUPS, ALL_PHASES, DEFAULT_PHASES, MAP_DEFAULT_PHASES, defaultPhasesFor, withView, PHASE_LABELS, PHASE_HINTS, VIEWS, DEFAULT_VIEW,
         TIMING_PICKS, TIMING_LABELS, TIMING_HINTS, SOON_DAYS, AREAS,
         groupOf, bucketOf, normalizePhases, defaultState, isDefault, describePhases, parseUrl, toQuery,
         validDay, addDays, timingWindow, timingMatches, describeTiming, searchText, cityOf, zipOf, areasOfAddresses, areasOfRegion, areasMatch,

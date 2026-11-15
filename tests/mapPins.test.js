@@ -181,3 +181,19 @@ test('every real venue that has coordinates can be placed with the real data', (
         }
     }
 });
+
+test('the summary says what the pins stand for: on view now, or including upcoming (WEBSITE-125)', () => {
+    assert.strictEqual(mapPins.scopeText(['current', 'ongoing']), 'on view now');
+    assert.strictEqual(mapPins.scopeText(['current']), 'on view now');
+    assert.strictEqual(mapPins.scopeText(['current', 'ongoing', 'future']), 'including upcoming');
+    assert.strictEqual(mapPins.scopeText(['future']), '');                                  // upcoming only: nothing is "on view"
+    assert.strictEqual(mapPins.scopeText(['current', 'past']), '');                         // past shows: the filter chips say it
+    assert.strictEqual(mapPins.scopeText(['past']), '');
+    assert.strictEqual(mapPins.scopeText(undefined), '');
+    const summary = (scope, unplaced = 0) => mapPins.summaryText({ locations: new Array(12), placed: 31, unplaced }, scope);
+    assert.strictEqual(summary('on view now'), '12 places · 31 shows on view now');
+    assert.strictEqual(summary('including upcoming'), '12 places · 31 shows, including upcoming');
+    assert.strictEqual(summary(''), '12 places · 31 shows');
+    assert.strictEqual(summary('on view now', 2), '12 places · 31 shows on view now (2 shows have no map location; see the list view)');
+    assert.strictEqual(mapPins.summaryText({ locations: [], placed: 0, unplaced: 0 }, 'on view now'), 'No shows match these filters.');
+});

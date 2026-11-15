@@ -43,7 +43,7 @@ function makeSearchManager(search = '', rows = []) {
         changeRows(rows) { manager.rows = rows; manager.listeners.forEach(fn => fn()); },
         setView(view) {
             if (!filterState.VIEWS.includes(view) || view === manager.state.view) return;
-            manager.state.view = view;
+            manager.state = filterState.withView(manager.state, view);
             manager.url = filterState.toQuery(manager.state);
             manager.listeners.forEach(fn => fn());
         },
@@ -457,7 +457,7 @@ test('a clustered source and four layers are added, drawn in the region colour, 
     assert.deepStrictEqual(JSON.parse(JSON.stringify(map.layers[3].layout['text-field'])), ['to-string', ['get', 'count']]);
     assert.deepStrictEqual(JSON.parse(JSON.stringify(map.layers[1].layout['text-font'])), ['Noto Sans Bold']);
     assert.strictEqual(map.sources.locations.data.features.length, 2);
-    assert.strictEqual(ctx.view.pinSummary.textContent, '2 places · 2 shows');
+    assert.strictEqual(ctx.view.pinSummary.textContent, '2 places · 2 shows on view now');           // opening the map put the "When" filter on what is on now
     ctx.restore();
 });
 
@@ -478,13 +478,26 @@ test('changing the filters redraws the pins and re-frames; a change that moves n
     ctx.manager.changeRows([showRow('Museum', 'M1')]);                         // fewer shows: one pin
     assert.strictEqual(source.setCalls, 2);
     assert.strictEqual(source.data.features.length, 1);
-    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show');
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show on view now');
     assert.strictEqual(map.eased.length, 1);                                   // one pin: ease to it rather than fit a box
     ctx.manager.changeRows([showRow('Museum', 'Another title')]);              // same pin, same count
     assert.strictEqual(source.setCalls, 2);
     ctx.manager.changeRows([showRow('Museum', 'M1'), showRow('Museum', 'M2')]);   // the pin says 2 now
     assert.strictEqual(source.setCalls, 3);
     assert.strictEqual(source.data.features[0].properties.count, 2);
+    ctx.restore();
+});
+
+test('the summary follows the "When" filter even when no pin moves: on view now, then including upcoming (WEBSITE-125)', async () => {
+    const ctx = setup({ rows: [showRow('Museum', 'M1')] });
+    await openMap(ctx);
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show on view now');
+    ctx.manager.state.phases = ['current', 'ongoing', 'future'];                // the visitor adds Upcoming
+    ctx.manager.changeRows([showRow('Museum', 'M1')]);                         // the same one pin and show
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show, including upcoming');
+    ctx.manager.state.timing = { pick: 'weekend' };                            // a date window replaces the phases: no claim
+    ctx.manager.changeRows([showRow('Museum', 'M1')]);
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show');
     ctx.restore();
 });
 
@@ -784,7 +797,7 @@ test('shows at a venue with no map location are counted in the summary, not draw
     const ctx = setup({ rows: [showRow('Museum', 'M1'), showRow('No Coordinates', 'N1'), showRow('Never Heard Of It', 'X1')] });
     const map = await openMap(ctx);
     assert.strictEqual(map.sources.locations.data.features.length, 1);
-    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show (2 shows have no map location; see the list view)');
+    assert.strictEqual(ctx.view.pinSummary.textContent, '1 place · 1 show on view now (2 shows have no map location; see the list view)');
     ctx.manager.changeRows([showRow('No Coordinates', 'N1')]);
     assert.strictEqual(ctx.view.pinSummary.textContent, '1 show has no map location; see the list view.');
     assert.strictEqual(ctx.view.clearButton.hidden, true);                    // there ARE matches: they just can't be placed

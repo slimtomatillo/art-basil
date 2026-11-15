@@ -7,7 +7,11 @@ const fs_ = require('../docs/filterState.js');
 
 // A table row as the filters see it. `bucket` is current / ongoing / future / past.
 const row = (bucket, tags = [], extra = {}) => ({ bucket, tags, text: 'show @ venue', ...extra });
-const state = (overrides = {}) => ({ ...fs_.defaultState(), ...overrides });
+// A state as the URL would give it: untouched phases follow the view (WEBSITE-125); phases, a search or a venue are a choice
+const state = (overrides = {}) => {
+    const chosen = 'phases' in overrides || !!overrides.q || !!overrides.venue;
+    return { ...fs_.defaultState(undefined, overrides.view), phasesAuto: !chosen, ...overrides };
+};
 const ALL = ['current', 'ongoing', 'future', 'past'];
 
 test('default state is current + ongoing + future with no filters, and round-trips to an empty query', () => {
@@ -59,7 +63,7 @@ test('?view=map keeps every other parameter, in both directions', () => {
     assert.strictEqual(query, '?q=Wattis&phase=past&tags=photography&view=map');
     assert.deepStrictEqual(fs_.parseUrl(query), s);
     assert.deepStrictEqual(fs_.parseUrl('?tags=latinx&view=map').tags, ['latinx']);
-    assert.deepStrictEqual(fs_.parseUrl('?tags=latinx&view=map').phases, ['current', 'ongoing', 'future']);
+    assert.deepStrictEqual(fs_.parseUrl('?tags=latinx&view=map').phases, ['current', 'ongoing']);       // the map's own default
 });
 
 test('an unknown view, or the existing shared links, open on the list', () => {
@@ -592,4 +596,76 @@ test('suggestions leave out venues with no shows, and are limited', () => {
     assert.strictEqual(fs_.suggestVenues(many, 'gal', 3).length, 3);
     assert.deepStrictEqual(fs_.suggestVenues(undefined, 'gal'), []);
     assert.deepStrictEqual(fs_.suggestVenues(COUNTS, 'the broad'), [{ name: 'The Broad', count: 12 }]);
+});
+
+// --- Map view opens on what is on now (WEBSITE-125) ---------------------------------------------------------------
+
+test('the map starts on current and ongoing, the table on current, ongoing and future', () => {
+    assert.deepStrictEqual(fs_.defaultPhasesFor('list'), ['current', 'ongoing', 'future']);
+    assert.deepStrictEqual(fs_.defaultPhasesFor('map'), ['current', 'ongoing']);
+    assert.deepStrictEqual(fs_.defaultState(null, 'map').phases, ['current', 'ongoing']);
+    assert.deepStrictEqual(fs_.defaultState().phases, ['current', 'ongoing', 'future']);
+    assert.strictEqual(fs_.defaultState(null, 'map').phasesAuto, true);
+});
+
+test('?view=map with no phase opens on what is on now; an explicit phase is honoured exactly, even the old default', () => {
+    const open = fs_.parseUrl('?view=map');
+    assert.deepStrictEqual(open.phases, ['current', 'ongoing']);
+    assert.strictEqual(open.phasesAuto, true);
+    const explicit = fs_.parseUrl('?view=map&phase=current,ongoing,future');
+    assert.deepStrictEqual(explicit.phases, ['current', 'ongoing', 'future']);
+    assert.strictEqual(explicit.phasesAuto, false);
+    assert.deepStrictEqual(fs_.parseUrl('?view=map&phase=past').phases, ['past']);
+    assert.deepStrictEqual(fs_.parseUrl('').phases, ['current', 'ongoing', 'future']);          // the table is unchanged
+});
+
+test('the URL writes the phase whenever it differs from the view\'s default, so a link reads back the same', () => {
+    const map = fs_.defaultState(null, 'map');
+    assert.strictEqual(fs_.toQuery(map), '?view=map');
+    // upcoming added on the map: the old default is now a choice, and it must be written
+    const withUpcoming = { ...map, phases: ['current', 'ongoing', 'future'], phasesAuto: false };
+    assert.strictEqual(fs_.toQuery(withUpcoming), '?phase=current,ongoing,future&view=map');
+    assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(withUpcoming)), withUpcoming);
+    assert.deepStrictEqual(fs_.parseUrl(fs_.toQuery(map)), map);
+    // the table: the old default is still omitted, and the map's default would be written
+    assert.strictEqual(fs_.toQuery(fs_.defaultState()), '');
+    assert.strictEqual(fs_.toQuery({ ...fs_.defaultState(), phases: ['current', 'ongoing'], phasesAuto: false }), '?phase=current,ongoing');
+});
+
+test('isDefault compares with the view\'s own default', () => {
+    assert.strictEqual(fs_.isDefault(fs_.defaultState(null, 'map')), true);
+    assert.strictEqual(fs_.isDefault({ ...fs_.defaultState(null, 'map'), phases: ['current', 'ongoing', 'future'] }), false);
+    assert.strictEqual(fs_.isDefault({ ...fs_.defaultState(), phases: ['current', 'ongoing'] }), false);
+});
+
+test('switching view moves untouched phases with the view, and keeps a choice the visitor made', () => {
+    const list = fs_.defaultState();
+    const onMap = fs_.withView(list, 'map');
+    assert.deepStrictEqual(onMap.phases, ['current', 'ongoing']);
+    assert.strictEqual(onMap.view, 'map');
+    assert.strictEqual(onMap.phasesAuto, true);
+    assert.deepStrictEqual(fs_.withView(onMap, 'list').phases, ['current', 'ongoing', 'future']);      // and back again
+    // the visitor ticked Past on the table: the map keeps it
+    const chosen = { ...list, phases: ['past'], phasesAuto: false };
+    assert.deepStrictEqual(fs_.withView(chosen, 'map').phases, ['past']);
+    // the visitor added upcoming on the map: back on the table it is still theirs
+    const added = { ...onMap, phases: ['current', 'ongoing', 'future'], phasesAuto: false };
+    assert.deepStrictEqual(fs_.withView(added, 'list').phases, ['current', 'ongoing', 'future']);
+    // exactly the map default, chosen on the table, is also kept
+    const same = { ...list, phases: ['current', 'ongoing'], phasesAuto: false };
+    assert.deepStrictEqual(fs_.withView(fs_.withView(same, 'map'), 'list').phases, ['current', 'ongoing']);
+});
+
+test('a search or a venue is a choice of phases, so switching view leaves them alone', () => {
+    const search = fs_.parseUrl('?q=Wattis');
+    assert.strictEqual(search.phasesAuto, false);
+    assert.deepStrictEqual(fs_.withView(search, 'map').phases, ALL);
+    assert.deepStrictEqual(fs_.withView(fs_.parseUrl('?venue=The%20Broad&view=map'), 'list').phases, ALL);
+});
+
+test('clearing the filters on the map goes back to the map\'s default', () => {
+    const cleared = fs_.defaultState('2026-11-15', 'map');
+    assert.deepStrictEqual(cleared.phases, ['current', 'ongoing']);
+    assert.strictEqual(cleared.view, 'map');
+    assert.strictEqual(cleared.today, '2026-11-15');
 });

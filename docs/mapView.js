@@ -402,7 +402,7 @@ class MapView {
     updatePins() {
         if (!this.pinsReady || !this.open) return;
         const result = mapPins.groupByLocation(this.searchManager.matchingRows(), this.coordinates, venue => this.addressesOf(venue));
-        const signature = mapPins.signature(result.locations) + `|unplaced:${result.unplaced}`;
+        const signature = mapPins.signature(result.locations) + `|unplaced:${result.unplaced}|scope:${this.scope()}`;
         if (signature === this.lastSignature) return;
         this.lastSignature = signature;
         this.result = result;
@@ -414,9 +414,15 @@ class MapView {
         if (result.locations.length) this.frame();
     }
 
+    // What the pins stand for ("on view now", "including upcoming"); nothing when a date window replaces the phases
+    scope() {
+        const state = this.searchManager.state;
+        return state.timing ? '' : mapPins.scopeText(state.phases);
+    }
+
     renderSummary() {
         const result = this.result;
-        this.pinSummary.textContent = mapPins.summaryText(result);
+        this.pinSummary.textContent = mapPins.summaryText(result, this.scope());
         this.pinSummary.hidden = false;
         this.clearButton.hidden = !(result.placed === 0 && result.unplaced === 0);
     }

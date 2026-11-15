@@ -292,7 +292,7 @@ class FilterPanel {
             this.setAvailability(box, selected, phaseCounts[phase], dated || (selected && state.phases.length === 1));
             box.label.classList.toggle('is-overridden', dated);
         }
-        const phasesChanged = state.phases.join() !== filterState.DEFAULT_PHASES.join();
+        const phasesChanged = state.phases.join() !== filterState.defaultPhasesFor(state.view).join();
         this.setBadge('when', dated ? 1 : state.phases.length, dated || phasesChanged);
 
         // When, "Open on": one choice (or none, for a range) is ticked, with what each would show
