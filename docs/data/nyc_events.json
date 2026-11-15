@@ -25,10 +25,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "501658dfd1a4bce5c701de7138aafd17",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "137503c34dfdaba941dd39e9323d2aa8"
         },
         "Coumba Samba: Stars and Stripes-Whitney Museum of American Art": {
             "name": "Coumba Samba: Stars and Stripes",
@@ -55,10 +55,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "4ecc1e74fb208a8d6aee365906be0d0f",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "11661f7ee52d08459b9ea971d1b6026c"
         },
         "Roy Lichtenstein: 1997-Whitney Museum of American Art": {
             "name": "Roy Lichtenstein: 1997",
@@ -88,10 +88,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "61ca2e42c51600b4fe13b8e8aaf8480b",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "a425678042dc49498f61ad35d098d1f3"
         },
         "The Lost World: The Art of Minnie Evans-Whitney Museum of American Art": {
             "name": "The Lost World: The Art of Minnie Evans",
@@ -120,10 +120,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "b1273ffeba75e046d3aa02ccea70c250",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "f447ad6556f755121029ea358aa46bec"
         },
         "artport: A History of Internet Art-Whitney Museum of American Art": {
             "name": "artport: A History of Internet Art",
@@ -150,10 +150,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "2c65299b69222d4f3c575bd9f103f043",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "c69804e845fed1bd66a6a2e3ba4f80c0"
         },
         "Farah Al Qasimi: TAILSPIN-Whitney Museum of American Art": {
             "name": "Farah Al Qasimi: TAILSPIN",
@@ -181,10 +181,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "591964397861079c0f8bb51ae4ccb22c",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "e1766f436db54cbfeb679d5863bd95a2"
         },
         "Sonya Kelliher-Combs: TITIQ/MARK-Whitney Museum of American Art": {
             "name": "Sonya Kelliher-Combs: TITIQ/MARK",
@@ -213,10 +213,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "8ecb00b47789a722a6070da60826a478",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "781d101fe4ee47b117a0d170e53a7dab"
         },
         "Frank WANG Yefeng: The Levitating Perils #2-Whitney Museum of American Art": {
             "name": "Frank WANG Yefeng: The Levitating Perils #2",
@@ -243,10 +243,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "8a89c6a85312e6a9a3a615077717d42b",
+            "last_updated": "2026-11-15 00:40:33",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "9bf709a87a819116478d8796151954ba"
         },
         "Alex Da Corte: Hot Dog With Ketchup-Whitney Museum of American Art": {
             "name": "Alex Da Corte: Hot Dog With Ketchup",
@@ -273,9 +273,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "1cd6140c55b5e71dd09032872b5d96bb",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:40:33",
+            "description_checked": "2026-11-15",
+            "hash": "a3c6389f7460be52d4d4ecb28e8f297a"
         }
     },
     "Guggenheim Museum": {
@@ -306,8 +306,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "c69ca347ecf964c3304efd2e1f8e2d5d"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "d0afd2ab70898d576c0923266226df09"
         },
         "Guggenheim Pop: 1960 to Now-Guggenheim Museum": {
             "name": "Guggenheim Pop: 1960 to Now",
@@ -334,8 +334,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "da77728565c25a35fa194a23f9a4ef5d"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "96c8085e95a15ecdbb95fe79babc3b35"
         },
         "Collection in Focus: Modern European Currents-Guggenheim Museum": {
             "name": "Collection in Focus: Modern European Currents",
@@ -363,8 +363,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "04a8065fc878f90b93e911943b04d8a7"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "a54210812745fce753d9e07728f84ff5"
         },
         "I dream in another language: Do Ho Suh-Guggenheim Museum": {
             "name": "I dream in another language: Do Ho Suh",
@@ -391,8 +391,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "8e9ec91096f22054850ea9a6a7df2290"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "da1cd19e51ae96f62add6a37a7f0170c"
         }
     },
     "The Studio Museum in Harlem": {
@@ -425,10 +425,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "58a6c37f6acb4f4353130da5c9f373e7",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "bf7a8e0e2bce28c940b8e1bb5b8cdddd"
         },
         "Mark Bradford: Untitled (A\u2013Z), 2010-The Studio Museum in Harlem": {
             "name": "Mark Bradford: Untitled (A\u2013Z), 2010",
@@ -455,10 +455,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "3e1cdab58d1f0f489a27d0f2a6628ef7",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "4a6a6a7a24193e698dad67db0dee7afd"
         },
         "A sustained becoming: Studio Museum Artists in Residence 2026-The Studio Museum in Harlem": {
             "name": "A sustained becoming: Studio Museum Artists in Residence 2026",
@@ -485,10 +485,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "218dc899d768a435d18df6a0e18bbaff",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "5845cc064f9d687b57f7a80641959739"
         },
         "Through Motion and Repose: Expanding the Walls 2026-The Studio Museum in Harlem": {
             "name": "Through Motion and Repose: Expanding the Walls 2026",
@@ -516,10 +516,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "5c070d2b437bf4e5e2ba02508b04e322",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "ca3fbb11542c0b816aae6eb7719d417c"
         },
         "Geometries-The Studio Museum in Harlem": {
             "name": "Geometries",
@@ -546,10 +546,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "47be6e13c14ed0b4ae8360ad87feec7c",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "8a9e8631b84d1900ef7a3a49daaed7fd"
         },
         "Dreams of This Future: The Collection of Peggy Cooper Cafritz-The Studio Museum in Harlem": {
             "name": "Dreams of This Future: The Collection of Peggy Cooper Cafritz",
@@ -576,10 +576,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "7be7354f3152197b7af06b3068772dfa",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "eb1a82c249421b183dfec68ff38a418a"
         },
         "Kapwani Kiwanga: BLEED-The Studio Museum in Harlem": {
             "name": "Kapwani Kiwanga: BLEED",
@@ -607,10 +607,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "80704a99bf71ae199eb707c02431c368",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "9395ec4ce94374c4321b3e4fa765d689"
         },
         "Woody De Othello: coming forth by day-The Studio Museum in Harlem": {
             "name": "Woody De Othello: coming forth by day",
@@ -639,10 +639,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "520d0a99e5bee20bbef11815e53773e8",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "0f6ed277a3587f48eb8767298b70ce8f"
         },
         "Mavis Pusey: Mobile Images-The Studio Museum in Harlem": {
             "name": "Mavis Pusey: Mobile Images",
@@ -669,10 +669,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "68d6645237b9759069b40a4281a63c82",
+            "last_updated": "2026-11-15 00:40:34",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "db04484c3bdcf238fb903fd061744d66"
         }
     },
     "The Frick Collection": {
@@ -702,8 +702,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "7e1ef3217faeae0cf267efffa0a4fbe8"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "9993aeacccc8d3bfe4cacdb1702a1097"
         },
         "Kent Monkman: Officer and Laughing Girl-The Frick Collection": {
             "name": "Kent Monkman: Officer and Laughing Girl",
@@ -732,8 +732,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "dfebd70b179f54e9aa7b6d433a8ca0d1"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "4d873e3e8da7c70da5859b74dbf15d66"
         },
         "Painting with Fire: Susanne de Court and the Art of Enamel-The Frick Collection": {
             "name": "Painting with Fire: Susanne de Court and the Art of Enamel",
@@ -761,8 +761,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "d15c63890aa6286430c96e348eca79b9"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "ce28f54984b0a35c17c1f12201c1866d"
         },
         "Vilhelm Hammersh\u00f8i: Pictures from Home-The Frick Collection": {
             "name": "Vilhelm Hammersh\u00f8i: Pictures from Home",
@@ -790,8 +790,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:20",
-            "hash": "a67838678ccbe1911258ed7f94afa664"
+            "last_updated": "2026-11-15 00:40:34",
+            "hash": "9961fe44f2afdbba0609db908f7fb2cc"
         }
     },
     "David Zwirner": {
@@ -803,10 +803,10 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
                 "painting",
                 "sculpture",
-                "drawing"
+                "drawing",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -824,15 +824,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:21",
+            "last_updated": "2026-11-15 00:40:35",
             "locations": [
                 "19th Street",
                 "20th Street"
             ],
-            "image_checked": "2026-11-13",
-            "hash": "1e3ad677ae85b3c2d5e140c5fadbde50",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-13",
+            "hash": "aa17afdfb2c20d55fc7bfb7fc4ff937e"
         },
         "Jem Perucchini: Sospiro-David Zwirner": {
             "name": "Jem Perucchini: Sospiro",
@@ -842,8 +842,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -861,13 +861,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:21",
+            "last_updated": "2026-11-15 00:40:35",
             "locations": [
                 "Tribeca"
             ],
-            "hash": "7a6d3df324d1f4837d1f025127c54c52",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "29de336a81f3c95212897fe4fd227e91"
         }
     },
     "Pace Gallery": {
@@ -879,8 +879,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -898,10 +898,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:21",
-            "hash": "87be297fec4041e039b245cdc1769189",
+            "last_updated": "2026-11-15 00:40:35",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "9b5e0eb262b0fdd367ec46506acdf2b4"
         },
         "Lucas Samaras: Boxes and Reconstructions-Pace Gallery": {
             "name": "Lucas Samaras: Boxes and Reconstructions",
@@ -929,10 +929,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:21",
-            "hash": "465c5ba9f65cb11a4e58dcf5ecdaa9f8",
+            "last_updated": "2026-11-15 00:40:35",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "5d4ea56fe01a5b4f19f4824712663a64"
         },
         "Elmgreen & Dragset: TRANSITION-Pace Gallery": {
             "name": "Elmgreen & Dragset: TRANSITION",
@@ -942,8 +942,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "sculpture"
+                "sculpture",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -961,10 +961,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:21",
-            "hash": "e8b97dfba9506b5933375a966fc7fb87",
+            "last_updated": "2026-11-15 00:40:35",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "593643a326c27870cc53b49161f2d1ac"
         },
         "David Byrne-Pace Gallery": {
             "name": "David Byrne",
@@ -974,9 +974,9 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
                 "drawing",
-                "installation"
+                "installation",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -994,10 +994,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:21",
-            "hash": "bd321176099bbe30ab146c0c352ccbee",
+            "last_updated": "2026-11-15 00:40:35",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "b0aaafa9402b5bdd639133f59e73e7eb"
         },
         "Gottlieb/Rothko: The Surrealist Years-Pace Gallery": {
             "name": "Gottlieb/Rothko: The Surrealist Years",
@@ -1007,8 +1007,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -1026,10 +1026,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:21",
-            "hash": "5d21b3a76f6a1bc1af4b0b481c8c8ae7",
+            "last_updated": "2026-11-15 00:40:35",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "da15d49c4e8be3e5e0e12982bac035b6"
         }
     },
     "Night Gallery New York": {
@@ -1060,9 +1060,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:23",
-            "hash": "570bd0a6ebf285106bafad7e75539978",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:40:39",
+            "description_checked": "2026-11-15",
+            "hash": "e049648ef6619bbd2ad248e114e6ce80"
         }
     },
     "Cooper Hewitt": {
@@ -1092,8 +1092,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "7cc2739c74174ae29183339a5ac7d338"
+            "last_updated": "2026-11-15 00:40:39",
+            "hash": "93a164bbe35edd686f10ec696a8c625a"
         },
         "The Substitute-Cooper Hewitt": {
             "name": "The Substitute",
@@ -1120,8 +1120,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "2b83d20c5d820991efe494d20a3ae46e"
+            "last_updated": "2026-11-15 00:40:39",
+            "hash": "5828ff10c10442edffff4e40a586bd1f"
         }
     },
     "The Jewish Museum": {
@@ -1150,10 +1150,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "85c0c1f10ff31a57d16c1c24c016585d",
+            "last_updated": "2026-11-15 00:40:40",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "ac8ff15e2e632992282890827717d53d"
         },
         "Modernity and Opulence: Women of the Wiener Werkst\u00e4tte-The Jewish Museum": {
             "name": "Modernity and Opulence: Women of the Wiener Werkst\u00e4tte",
@@ -1211,10 +1211,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "d2652731d7022a32159ea689378e04e0",
+            "last_updated": "2026-11-15 00:40:40",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "da1da708c906bc6a5f2a21465346ea55"
         },
         "Art in Focus: Hannah Altman: Not a Circle but a Spiral-The Jewish Museum": {
             "name": "Art in Focus: Hannah Altman: Not a Circle but a Spiral",
@@ -1242,10 +1242,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "458d1f9dfe74b96b1b4473568821de63",
+            "last_updated": "2026-11-15 00:40:40",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "c521d3e244ebbb297b100346708c8754"
         },
         "Art in Focus: Afruz Amighi: Sounding Shell-The Jewish Museum": {
             "name": "Art in Focus: Afruz Amighi: Sounding Shell",
@@ -1273,10 +1273,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "1e09deed09f0b694a777430c3c2ba7d4",
+            "last_updated": "2026-11-15 00:40:40",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "4a767efa192d4b24d03bff7dbc9b69a8"
         },
         "Art in Focus: Mordecai Ardon-The Jewish Museum": {
             "name": "Art in Focus: Mordecai Ardon",
@@ -1303,10 +1303,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "3b81f35f978de98af4a3148a280b7888",
+            "last_updated": "2026-11-15 00:40:40",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "07e715b52643de6811614a4660e3a94a"
         },
         "Ruth Patir: (M)otherland-The Jewish Museum": {
             "name": "Ruth Patir: (M)otherland",
@@ -1333,10 +1333,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "d86a194077856785f84ba9b714177254",
+            "last_updated": "2026-11-15 00:40:40",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "64a823a939f0253012d203cf5d5ce329"
         },
         "Ma\u0142gorzata Mirga-Tas-The Jewish Museum": {
             "name": "Ma\u0142gorzata Mirga-Tas",
@@ -1363,10 +1363,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:25",
-            "hash": "5336accbc35067507f4ee9a296f7508f",
+            "last_updated": "2026-11-15 00:40:40",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "02724a21f3ae038d587f53a76c93d0a1"
         }
     },
     "Museum of the City of New York": {
@@ -1395,8 +1395,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:26",
-            "hash": "ad6f7174efca188b3efc22447eea7d00"
+            "last_updated": "2026-11-15 00:40:41",
+            "hash": "ee9e99bbb8987adbed261ca59d4bbab5"
         },
         "Halumii Ktapihna-Museum of the City of New York": {
             "name": "Halumii Ktapihna",
@@ -1423,8 +1423,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:26",
-            "hash": "c385523e0ee8c1950847cfce0389f92c"
+            "last_updated": "2026-11-15 00:40:41",
+            "hash": "c9a7cce443aa4ad09c64f5f965104f71"
         },
         "Gingerbread NYC-Museum of the City of New York": {
             "name": "Gingerbread NYC",
@@ -1451,8 +1451,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:26",
-            "hash": "24183302cf4f2d38c5d83b0bc52ba01e"
+            "last_updated": "2026-11-15 00:40:41",
+            "hash": "c7ff44d64dc8342760e4e193808e5d4c"
         }
     },
     "Neue Galerie New York": {
@@ -1481,8 +1481,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:28",
-            "hash": "4832cff98381cc0fd4229b455fc9e068"
+            "last_updated": "2026-11-15 00:40:44",
+            "hash": "502555bd1c80697d3fa506a3b924590f"
         },
         "Austrian Masterworks from the Neue Galerie-Neue Galerie New York": {
             "name": "Austrian Masterworks from the Neue Galerie",
@@ -1509,8 +1509,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:28",
-            "hash": "5b42b71f09259fd0cd541f7501e3f199"
+            "last_updated": "2026-11-15 00:40:44",
+            "hash": "73b7e792a767b78d03523f482e27edff"
         },
         "1910: Portrait of a Year-Neue Galerie New York": {
             "name": "1910: Portrait of a Year",
@@ -1537,8 +1537,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:29",
-            "hash": "d35d1232991ec38a1ce999864a2fc416"
+            "last_updated": "2026-11-15 00:40:44",
+            "hash": "a79191424a25f4b7d5b35343c4f20257"
         }
     },
     "The Noguchi Museum": {
@@ -1568,8 +1568,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:30",
-            "hash": "e2411affec721e7ed4d43f826797c3ba"
+            "last_updated": "2026-11-15 00:40:45",
+            "hash": "8c858dfed023683fde389166a83c6ddf"
         },
         "Isamu Noguchi at Lever House-The Noguchi Museum": {
             "name": "Isamu Noguchi at Lever House",
@@ -1597,8 +1597,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:30",
-            "hash": "ba4b8e6f7469b2875575aba4f556362b"
+            "last_updated": "2026-11-15 00:40:46",
+            "hash": "8f2bcf6966a88a3e245312e5bd588411"
         },
         "Light and Stone: Revisiting Noguchi\u2019s 1986 Venice Biennale-The Noguchi Museum": {
             "name": "Light and Stone: Revisiting Noguchi\u2019s 1986 Venice Biennale",
@@ -1626,8 +1626,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:31",
-            "hash": "ba86cff4df6c0d32c2a49c51270bea6e"
+            "last_updated": "2026-11-15 00:40:47",
+            "hash": "2ba51015cb724f62e448c533c4272dc0"
         },
         "Noguchi to Asawa: Designing Postwar America-The Noguchi Museum": {
             "name": "Noguchi to Asawa: Designing Postwar America",
@@ -1656,8 +1656,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:31",
-            "hash": "bc45d3bcc7cc290dd8c9eb0233ec6758"
+            "last_updated": "2026-11-15 00:40:47",
+            "hash": "90c6a852b907b38aef884fdb844ffeef"
         },
         "Isamu Noguchi: \u201cI am not a designer\u201d-The Noguchi Museum": {
             "name": "Isamu Noguchi: \u201cI am not a designer\u201d",
@@ -1685,8 +1685,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:32",
-            "hash": "12f40dfab63066fd2f715f8a345b09c1"
+            "last_updated": "2026-11-15 00:40:47",
+            "hash": "038d9ab7f3d689579fd109bc871bec88"
         }
     },
     "The Drawing Center": {
@@ -1716,8 +1716,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:32",
-            "hash": "79b227456745188c207a2842c5ea98e5"
+            "last_updated": "2026-11-15 00:40:48",
+            "hash": "c884d9b4ffc715d722fc9b9c80849a66"
         }
     },
     "Museum of Arts and Design": {
@@ -1746,8 +1746,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:35",
-            "hash": "bc1d7392d960566de348e288267d1fe2"
+            "last_updated": "2026-11-15 00:40:50",
+            "hash": "8b989e76a9f71d9f00ff510e951f5701"
         },
         "John Procario: Freeforms-Museum of Arts and Design": {
             "name": "John Procario: Freeforms",
@@ -1775,8 +1775,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:36",
-            "hash": "b55a9ae917c9d14f97e86d7224589aad"
+            "last_updated": "2026-11-15 00:40:51",
+            "hash": "f366b550f534719476039f4591e6b65e"
         },
         "Jessica Lichtenstein: Rewilding-Museum of Arts and Design": {
             "name": "Jessica Lichtenstein: Rewilding",
@@ -1805,8 +1805,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:36",
-            "hash": "5e84df83ff1407555305335e8a3f0c49"
+            "last_updated": "2026-11-15 00:40:51",
+            "hash": "81c1faed10a963140c68358f1a3fcc37"
         },
         "Alice Riehl\u2019s Porcelain Florilegium-Museum of Arts and Design": {
             "name": "Alice Riehl\u2019s Porcelain Florilegium",
@@ -1834,8 +1834,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:36",
-            "hash": "fef107971af4f15c4e24995eb3730a09"
+            "last_updated": "2026-11-15 00:40:52",
+            "hash": "d5791771811eded9880cc79f9d09845f"
         }
     },
     "International Center of Photography": {
@@ -1865,9 +1865,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:39",
+            "last_updated": "2026-11-15 00:40:54",
             "image_checked": "2026-11-14",
-            "hash": "fee54153204383737ef89f5b81105212"
+            "hash": "e20581be3023f6f2a1c47a5803c83552"
         },
         "Laia Abril: On Rape and Institutional Failure-International Center of Photography": {
             "name": "Laia Abril: On Rape and Institutional Failure",
@@ -1895,9 +1895,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:39",
+            "last_updated": "2026-11-15 00:40:54",
             "image_checked": "2026-11-14",
-            "hash": "66e36f91caadc672961358c8494a32de"
+            "hash": "63a7687443862935efc1ce397024c783"
         }
     },
     "The Bronx Museum of the Arts": {
@@ -1927,9 +1927,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:44",
+            "last_updated": "2026-11-15 00:40:58",
             "image_checked": "2026-11-14",
-            "hash": "f803e09dc3fec8ddf734f2cbc2b60be4"
+            "hash": "9148c5af0b068bfea3fd4eb52ae2364a"
         },
         "Alex Strada: Public Address-The Bronx Museum of the Arts": {
             "name": "Alex Strada: Public Address",
@@ -1957,9 +1957,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:45",
-            "hash": "06f022285ef6b72ac8a4e47f430e6014",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:41:00",
+            "description_checked": "2026-11-15",
+            "hash": "d98e967c8a530099b66bc403c86c71f8"
         },
         "Beyond the Margins: Bronx Museum Teens Activate the Permanent Collection-The Bronx Museum of the Arts": {
             "name": "Beyond the Margins: Bronx Museum Teens Activate the Permanent Collection",
@@ -1987,9 +1987,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:46",
-            "hash": "9ea4fb17dca559063e7e137469f8d51a",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:41:01",
+            "description_checked": "2026-11-15",
+            "hash": "77e399fb963983439331d89f0c288ce2"
         },
         "Lifelong Studio Exhibition: Transcending the Form\u2014Abstract Figurative Painting-The Bronx Museum of the Arts": {
             "name": "Lifelong Studio Exhibition: Transcending the Form\u2014Abstract Figurative Painting",
@@ -2018,9 +2018,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:47",
-            "hash": "78a02b06ba4ddc043e480567b8e493b4",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:41:02",
+            "description_checked": "2026-11-15",
+            "hash": "e8249d0063e985d0c8099ca3a69ba396"
         }
     },
     "American Folk Art Museum": {
@@ -2050,9 +2050,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:49",
+            "last_updated": "2026-11-15 00:41:03",
             "image_checked": "2026-11-14",
-            "hash": "fb717e06c8593c05b0e13d154f86daee"
+            "hash": "32345c04ccec2fd65c44eaf0d03bef69"
         },
         "Folk Nation: Crafting Patriotism in the United States-American Folk Art Museum": {
             "name": "Folk Nation: Crafting Patriotism in the United States",
@@ -2080,9 +2080,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:50",
+            "last_updated": "2026-11-15 00:41:04",
             "image_checked": "2026-11-14",
-            "hash": "009ce3bbc7620d21bb36d13913fff53f"
+            "hash": "535462001308516b496585291111da45"
         }
     },
     "Pioneer Works": {
@@ -2112,10 +2112,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:50",
-            "hash": "b1b0e7fbfe0afdb74e7de9481e6b9f83",
+            "last_updated": "2026-11-15 00:41:05",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "ea9dd1ac1317232a68f98bd08f642934"
         },
         "Tuomas A. Laitinen: Siphon-Pioneer Works": {
             "name": "Tuomas A. Laitinen: Siphon",
@@ -2143,10 +2143,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:50",
-            "hash": "3cd7abdbe5df96056011f4c39a6485c8",
+            "last_updated": "2026-11-15 00:41:05",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "86b9478c4637ac9c21ca4d1fd2d6e99c"
         },
         "LaJun\u00e9 McMillian: Child/ren of the Bloom-Pioneer Works": {
             "name": "LaJun\u00e9 McMillian: Child/ren of the Bloom",
@@ -2174,10 +2174,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:50",
-            "hash": "b22190474518684f2efdb0430f5afb27",
+            "last_updated": "2026-11-15 00:41:05",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "127a46589e9a1744a8947338ee5632b1"
         }
     },
     "BRIC": {
@@ -2208,8 +2208,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:51",
-            "hash": "b07b3af400857c07c42790b93d2f44c5"
+            "last_updated": "2026-11-15 00:41:06",
+            "hash": "9070ffe93b3af9f232f3076a92a79ab9"
         },
         "From the BRIClab: Works from the 2025-26 Artist Residencies-BRIC": {
             "name": "From the BRIClab: Works from the 2025-26 Artist Residencies",
@@ -2241,8 +2241,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:52",
-            "hash": "b0a6fe9a8665f47af79b9e5efa6792c2"
+            "last_updated": "2026-11-15 00:41:06",
+            "hash": "1a2d72d2737ef7bbdcdcdee77f35b255"
         }
     },
     "White Columns": {
@@ -2272,10 +2272,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:53",
-            "hash": "deb9eeabea1b80e521d18f1a4645d6be",
+            "last_updated": "2026-11-15 00:41:07",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "6cc9bf19fa39abcf34e58255ba18bc38"
         },
         "Claire Watson: Re-Assembled-White Columns": {
             "name": "Claire Watson: Re-Assembled",
@@ -2303,9 +2303,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:53",
-            "hash": "3398a6c09545fa3c46fa68e6b7013272",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:41:07",
+            "description_checked": "2026-11-15",
+            "hash": "d935f488bfad27d051982c12a2524890"
         },
         "SHOP: Artists Who Do Shirts-White Columns": {
             "name": "SHOP: Artists Who Do Shirts",
@@ -2333,10 +2333,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:53",
-            "hash": "4078eb0023584e81a7e1c5ee26b52eae",
+            "last_updated": "2026-11-15 00:41:07",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "2744e5c2356a5cdce3df86f7b514511d"
         },
         "White Columns Online #38: Clothes, not Fashion-White Columns": {
             "name": "White Columns Online #38: Clothes, not Fashion",
@@ -2365,10 +2365,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:53",
-            "hash": "54c6b4950ef8d6a4296219986b99bd7e",
+            "last_updated": "2026-11-15 00:41:07",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "645cf1ba5c1079bddd2f758fbea85c88"
         }
     },
     "Smack Mellon": {
@@ -2398,11 +2398,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:53",
-            "image_checked": "2026-11-14",
-            "hash": "f5ed4c98bb64517175c2785b1bcb6dc8",
+            "last_updated": "2026-11-15 00:41:07",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-14",
+            "hash": "4aa7b44aa989c10ccf026fe7fcbc13c7"
         }
     },
     "The Kitchen": {
@@ -2432,11 +2432,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:53",
-            "image_checked": "2026-11-14",
-            "hash": "38cf67f7c40d434b428185c44580ecaf",
+            "last_updated": "2026-11-15 00:41:08",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-14",
+            "hash": "2f61148c555408324f538aec139d8487"
         }
     },
     "Center for Book Arts": {
@@ -2466,10 +2466,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:24:54",
-            "hash": "bea55daf585514b3069b1a6575706114",
+            "last_updated": "2026-11-15 00:41:08",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "e4da51a49d15952bb81315c2b7470812"
         }
     },
     "The Metropolitan Museum of Art": {
@@ -3891,11 +3891,12 @@
         "Iris van Herpen: Sculpting the Senses-Brooklyn Museum": {
             "name": "Iris van Herpen: Sculpting the Senses",
             "venue": "Brooklyn Museum",
-            "description": null,
+            "description": "Iris van Herpen: Sculpting the Senses celebrates one of the most forward-thinking fashion designers of her generation.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "fashion"
             ],
             "phase": "current",
             "dates": {
@@ -3914,7 +3915,9 @@
                 }
             ],
             "last_updated": "2026-11-15 00:25:09",
-            "hash": "bfc764d2f2152c366ca9877c772c083e"
+            "hash": "bfc764d2f2152c366ca9877c772c083e",
+            "description_proxy_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Breaking the Mold: Brooklyn Museum at 200-Brooklyn Museum": {
             "name": "Breaking the Mold: Brooklyn Museum at 200",
@@ -3979,7 +3982,7 @@
         "C\u00e9zanne to Modigliani: Gifts of Modern Art from the Pearlman Collection-Brooklyn Museum": {
             "name": "C\u00e9zanne to Modigliani: Gifts of Modern Art from the Pearlman Collection",
             "venue": "Brooklyn Museum",
-            "description": null,
+            "description": "Discover more than 50 modern European masterpieces\u2014representing one of the most important gifts of European art in the Brooklyn Museum\u2019s history\u2014and meet the remarkable collectors who brought them together.",
             "tags": [
                 "exhibition",
                 "current",
@@ -4002,16 +4005,19 @@
                 }
             ],
             "last_updated": "2026-11-15 00:25:09",
-            "hash": "8bec10eb57310840a7af82f25c3b43d1"
+            "hash": "8bec10eb57310840a7af82f25c3b43d1",
+            "description_proxy_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Mika Ninagawa: Feel the Flow(ers)-Brooklyn Museum": {
             "name": "Mika Ninagawa: Feel the Flow(ers)",
             "venue": "Brooklyn Museum",
-            "description": null,
+            "description": "Wander into a dreamlike, color-filled universe where you can touch, see, and feel the flow(ers). One of Japan\u2019s most celebrated contemporary photographers, Mika Ninagawa (born 1972) creates portals to otherworldly realms.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "current",
             "dates": {
@@ -4030,12 +4036,14 @@
                 }
             ],
             "last_updated": "2026-11-15 00:25:09",
-            "hash": "b9251cbb54569fe853e6d20444edd6c4"
+            "hash": "b9251cbb54569fe853e6d20444edd6c4",
+            "description_proxy_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Hopi Kachina Dolls: Blessings for a Balanced World-Brooklyn Museum": {
             "name": "Hopi Kachina Dolls: Blessings for a Balanced World",
             "venue": "Brooklyn Museum",
-            "description": null,
+            "description": "Kachina dolls (tithu) represent the Katsina spirits who bring much-needed rain and balance to the Hopi people of northeastern Arizona. Carved from cottonwood and distinctively designed, the dolls are treasured gifts from the spirits, given primarily to Hopi girls and women. This exhibition is the first to examine the Hopi kachina dolls tradition from their recipients\u2019 perspective.",
             "tags": [
                 "exhibition",
                 "current",
@@ -4058,7 +4066,9 @@
                 }
             ],
             "last_updated": "2026-11-15 00:25:09",
-            "hash": "480e287c42a8979f673f154c2e39414b"
+            "hash": "480e287c42a8979f673f154c2e39414b",
+            "description_proxy_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Rubin Museum Tibetan Buddhist Shrine Room-Brooklyn Museum": {
             "name": "Rubin Museum Tibetan Buddhist Shrine Room",
@@ -4260,8 +4270,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4279,10 +4289,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:20",
-            "hash": "88d10c868a51fd647095a74fc4351f5d",
+            "last_updated": "2026-11-15 00:41:18",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "27c1cf87bd21e910355a0afc0a44fb95"
         },
         "Leonora Carrington & Cecilia Vicu\u00f1a-Lehmann Maupin": {
             "name": "Leonora Carrington & Cecilia Vicu\u00f1a",
@@ -4310,10 +4320,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:20",
-            "hash": "1cbf4fe1f6afff29ad5bbbe15b264aaa",
+            "last_updated": "2026-11-15 00:41:18",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "23c481a1df13b19be28ff61f0b6bf41b"
         }
     },
     "Lisson Gallery": {
@@ -4343,9 +4353,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:21",
-            "hash": "87f33c776dc47cd45f0161631909b82e",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:41:19",
+            "description_checked": "2026-11-15",
+            "hash": "05991c3c11c128c534b49ed3ea0f6670"
         },
         "Yu Hong: Field of Asura-Lisson Gallery": {
             "name": "Yu Hong: Field of Asura",
@@ -4373,9 +4383,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:21",
-            "hash": "0491370e37afa9705c7374092df29c52",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:41:20",
+            "description_checked": "2026-11-15",
+            "hash": "e6bd117f65a0a26f539135afec9fda03"
         }
     },
     "Marian Goodman Gallery": {
@@ -4405,11 +4415,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:22",
-            "hash": "10d266626aed271024dba25692fe5dac",
-            "image_checked": "2026-11-15",
+            "last_updated": "2026-11-15 00:41:21",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "f6cbae1ce9be99a421deaadb80bdbd1e"
         }
     },
     "Paula Cooper Gallery": {
@@ -4421,10 +4431,10 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
                 "sculpture",
                 "drawing",
-                "printmaking"
+                "printmaking",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4442,13 +4452,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:25",
+            "last_updated": "2026-11-15 00:41:23",
             "locations": [
                 "534 West 21st Street"
             ],
-            "hash": "c4dd5dcf1a7c840a86ed4ecb64cd1447",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "1352c99cd3f98d6f232556df518c5f06"
         },
         "Art is for the Spirit: Records of the Self-Paula Cooper Gallery": {
             "name": "Art is for the Spirit: Records of the Self",
@@ -4476,13 +4486,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:25",
+            "last_updated": "2026-11-15 00:41:23",
             "locations": [
                 "521 West 21st Street"
             ],
-            "hash": "6d2c1410a3df6f9618159808f6d858ca",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "a22a463caf6fe54fc552f8521a1a01cb"
         }
     },
     "Sean Kelly": {
@@ -4512,10 +4522,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:27",
-            "hash": "0f84b5aeee796ec894d84f45af208a10",
+            "last_updated": "2026-11-15 00:41:25",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "a37614ea00053c1372663c80e2a02c2c"
         }
     },
     "Petzel Gallery": {
@@ -4527,9 +4537,9 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
                 "painting",
-                "sculpture"
+                "sculpture",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4547,10 +4557,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:29",
-            "hash": "f973b990452022efde284a5750246ac5",
+            "last_updated": "2026-11-15 00:41:27",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "a5ff39ffd00d8cc487f68b04dbf714b9"
         },
         "James Little: Homage El Shabazz-Petzel Gallery": {
             "name": "James Little: Homage El Shabazz",
@@ -4560,8 +4570,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4579,10 +4589,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:29",
-            "hash": "06330c9906475808408c618c984895ca",
+            "last_updated": "2026-11-15 00:41:27",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "462614c57c2aec121d2b13319885991f"
         }
     },
     "Andrew Kreps Gallery": {
@@ -4612,13 +4622,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:31",
+            "last_updated": "2026-11-15 00:41:28",
             "locations": [
                 "394 Broadway",
                 "22 Cortlandt Alley"
             ],
-            "hash": "4300d42238e34976dee1ee633abcf9bb",
-            "description_checked": "2026-11-15"
+            "description_checked": "2026-11-15",
+            "hash": "5a55fdf256b5fa67b9f4ff764ee03bff"
         }
     },
     "Luhring Augustine": {
@@ -4630,8 +4640,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "sculpture"
+                "sculpture",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4649,10 +4659,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:33",
-            "hash": "e2c7b41efde70fef8e3de777ee4f06c3",
+            "last_updated": "2026-11-15 00:41:30",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "ec00a29059db5f1519e4d1a8382ad82e"
         }
     },
     "Miles McEnery Gallery": {
@@ -4664,8 +4674,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4683,13 +4693,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:35",
+            "last_updated": "2026-11-15 00:41:32",
             "locations": [
                 "515 West 22nd Street"
             ],
-            "hash": "b857023775c516a165e853908db3e91d",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "7f2f4f496ef608528f7c75109665404c"
         },
         "Karel Funk-Miles McEnery Gallery": {
             "name": "Karel Funk",
@@ -4699,8 +4709,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "fashion"
+                "fashion",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4718,13 +4728,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:35",
+            "last_updated": "2026-11-15 00:41:32",
             "locations": [
                 "525 West 22nd Street"
             ],
-            "hash": "3c548d72a42016b3c74b6cf11752a6c0",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "ac804f94d6f88d3e2470897c974cc070"
         },
         "Natural Order-Miles McEnery Gallery": {
             "name": "Natural Order",
@@ -4752,13 +4762,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:35",
+            "last_updated": "2026-11-15 00:41:32",
             "locations": [
                 "520 West 21st Street"
             ],
-            "hash": "86552fd4dffbed45eeaa0c1b5fbc2499",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "2be2a3d512c70eb31dccd9aa2a7472e0"
         },
         "Daniel Rich-Miles McEnery Gallery": {
             "name": "Daniel Rich",
@@ -4768,8 +4778,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4787,13 +4797,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:35",
+            "last_updated": "2026-11-15 00:41:32",
             "locations": [
                 "511 West 22nd Street"
             ],
-            "hash": "f357f32ada4bb9e64eeee0f4556774b5",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "85900b8ca6af4ff11536e23dc220b020"
         }
     },
     "Skarstedt": {
@@ -4823,12 +4833,12 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:38",
+            "last_updated": "2026-11-15 00:41:35",
             "locations": [
                 "Upper East Side"
             ],
-            "hash": "d68f37c0536eb0b34b0d48996e027c47",
-            "description_checked": "2026-11-15"
+            "description_checked": "2026-11-15",
+            "hash": "85a533a80ca703d11e774e9bf23fff00"
         },
         "Eric Fischl: In Pursuit of Pleasure-Skarstedt": {
             "name": "Eric Fischl: In Pursuit of Pleasure",
@@ -4856,12 +4866,12 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:38",
+            "last_updated": "2026-11-15 00:41:35",
             "locations": [
                 "Chelsea"
             ],
-            "hash": "c847723baf96d9547519e47f7b63c3ab",
-            "description_checked": "2026-11-15"
+            "description_checked": "2026-11-15",
+            "hash": "41d8a2ccdb11a177af96264037e5bc87"
         }
     },
     "Alexander Gray Associates": {
@@ -4873,9 +4883,9 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
                 "painting",
-                "sculpture"
+                "sculpture",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4893,10 +4903,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:39",
-            "hash": "4c921cc1dab707594e2227a9879be52f",
+            "last_updated": "2026-11-15 00:41:35",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "3632369cb0f5ba87cad6c57b1dcae281"
         }
     },
     "Anton Kern Gallery": {
@@ -4908,8 +4918,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -4927,13 +4937,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:40",
+            "last_updated": "2026-11-15 00:41:36",
             "locations": [
                 "16 East 55th Street"
             ],
-            "hash": "01c2f40b087107bafd1f8ca43cb25ba1",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "5bf0ba2a89ffc05bc747cde83a40c4e7"
         },
         "Pawe\u0142 Althamer: Artist/Studio-Anton Kern Gallery": {
             "name": "Pawe\u0142 Althamer: Artist/Studio",
@@ -4961,13 +4971,13 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:40",
+            "last_updated": "2026-11-15 00:41:36",
             "locations": [
                 "16 East 55th Street"
             ],
-            "hash": "58c9e0f82e8f812965201905a6be1a1f",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "53b6f3c9bc54e0dbe30d1a5f48578511"
         }
     },
     "Yossi Milo Gallery": {
@@ -4997,9 +5007,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:41",
-            "hash": "9b369a215adc9bcd364a8fec0e4d0384",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 00:41:37",
+            "description_checked": "2026-11-15",
+            "hash": "add34d39a60745f7e1cb8d160cc5a84d"
         }
     },
     "Jane Lombard Gallery": {
@@ -5011,8 +5021,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "textiles"
+                "textiles",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -5030,10 +5040,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:43",
-            "hash": "63248242f6c15643d892b5915e50bdef",
+            "last_updated": "2026-11-15 00:41:38",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "dc9d341b3c863d3d69fcaa01bdb43829"
         },
         "Rachael Catharine Anderson: Hidden Peril-Jane Lombard Gallery": {
             "name": "Rachael Catharine Anderson: Hidden Peril",
@@ -5043,8 +5053,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -5062,22 +5072,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:43",
-            "hash": "19e899d373b13385b8cb99accb0dbfb2",
+            "last_updated": "2026-11-15 00:41:38",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "528c0b3b93a47251322e92704609ec5e"
         }
     },
     "ACA Galleries": {
         "John Baeder: America-ACA Galleries": {
             "name": "John Baeder: America",
             "venue": "ACA Galleries",
-            "description": null,
+            "description": "New York, NY \u2014 ACA Galleries is pleased to announce John Baeder's second solo exhibition at the gallery in collaboration with MB Abram. The show includes paintings from Baeder's personal collection, including his final series of matchbook covers completed in 2018.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -5095,20 +5106,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:44",
-            "hash": "adef77fac4a8fb1b31466f56792c3531"
+            "last_updated": "2026-11-15 00:41:39",
+            "hash": "6cf3fcf54105ffdbdd61b572d446d176",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Miguel Abreu Gallery": {
         "Scott Lyall: Reds-Miguel Abreu Gallery": {
             "name": "Scott Lyall: Reds",
             "venue": "Miguel Abreu Gallery",
-            "description": null,
+            "description": "There may be light of different wavelengths independent of observers (such as infrared), but there is no color without observers. Miguel Abreu Gallery is pleased to announce the opening, on Friday, November 6, of Scott Lyall\u2019s REDS, his seventh one-person exhibition at the gallery. The show is comprised of what appear as six monochrome inkjet paintings along with four small glass works.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -5126,13 +5140,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:45",
-            "hash": "0bdb2c067fdf6f67cb9b82101cb494ce"
+            "last_updated": "2026-11-15 00:41:41",
+            "hash": "4daa228a27353e60eb9272a25cf58511",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Jimmy Raskin\u2019s Curio Shop-Miguel Abreu Gallery": {
             "name": "Jimmy Raskin\u2019s Curio Shop",
             "venue": "Miguel Abreu Gallery",
-            "description": null,
+            "description": "Miguel Abreu Gallery is pleased to announce the opening, on Friday, November 6, of Jimmy Raskin\u2019s Curio Shop, his sixth one-person exhibition at the gallery. Jimmy Raskin was a poet. At the age of nineteen, however, Raskin stopped writing poetry to devote himself to exploring and manifesting the conditions under which what he calls \u2018the Poem\u2019 might remain an achievable aim in our current cultural conditions.",
             "tags": [
                 "exhibition",
                 "current",
@@ -5155,20 +5171,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:45",
-            "hash": "817452a0aabb3f7f5cb8554d28de4e14"
+            "last_updated": "2026-11-15 00:41:41",
+            "hash": "3323c27a481532cb72f6224cc16fd07e",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Bortolami": {
         "Rebecca Morris: #35-Bortolami": {
             "name": "Rebecca Morris: #35",
             "venue": "Bortolami",
-            "description": null,
+            "description": "Bortolami is pleased to announce Rebecca Morris\u2019 third exhibition with the gallery and her thirty-fifth solo exhibition to date. Morris continues to probe the vast range of oil paint\u2019s material possibilities, drawing on decades of experimentation with thin, aqueous color to push the boundaries of contemporary painting.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -5186,18 +5205,22 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:48",
-            "hash": "09476509bf1471e51cfdab3915dc6100"
+            "last_updated": "2026-11-15 00:41:43",
+            "hash": "437190f8dd1b3f143f6d196caf008cc9",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "As a moment and as an accumulation: Maki Katayama, Hikari Ono-Bortolami": {
             "name": "As a moment and as an accumulation: Maki Katayama, Hikari Ono",
             "venue": "Bortolami",
-            "description": null,
+            "description": "Bortolami is pleased to present a two-person exhibition of works by Maki Katayama and Hikari Ono in The Upstairs, organized by Richard Aldrich. While working in distinct mediums\u2014from Katayama\u2019s systematic exploration of color classification on canvas to Ono\u2019s wall sculptures, characterized by their meticulously treated surfaces\u2014both artists approach painting as a conceptual framework rather than a set of techniques.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -5215,20 +5238,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:48",
-            "hash": "46d967340495d8bb8b3a88a4f9d5c44a"
+            "last_updated": "2026-11-15 00:41:43",
+            "hash": "25a96f744c291c68f9a6c36b663d9de4",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Salon 94": {
         "Karon Davis: Wishful Thinking-Salon 94": {
             "name": "Karon Davis: Wishful Thinking",
             "venue": "Salon 94",
-            "description": null,
+            "description": "Wishful Thinking is Karon Davis\u2019 meditation on the complicated, all too often absent role of the Black figure within the canon of art history. The exhibition presents new life-size, nude sculptures created from body casting friends, muses, and models. Incorporating and expanding upon the classical tradition of sculpture, Davis reconsiders the nude through a contemporary lens.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -5246,13 +5272,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:49",
-            "hash": "33a2a14ecf29bc6ffc4763da4ca140ac"
+            "last_updated": "2026-11-15 00:41:44",
+            "hash": "eea588ca16bef881417c05179e313f8e",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Ludovic Nkoth: Between Lines-Salon 94": {
             "name": "Ludovic Nkoth: Between Lines",
             "venue": "Salon 94",
-            "description": null,
+            "description": "Meaning is invisible, but the invisible is not the contradictory of the visible: the visible itself has an invisible inner framework. \u2013 Maurice Merleau-Ponty in The Visible and the Invisible For Ludovic Nkoth, the body is never simply what appears on its surface. A gesture, a posture, a face, or a painted line can reveal something while leaving something else just beyond view.",
             "tags": [
                 "exhibition",
                 "current",
@@ -5275,20 +5303,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:49",
-            "hash": "1084d67cf03fa889064c0ed45c7e1efd"
+            "last_updated": "2026-11-15 00:41:44",
+            "hash": "db26cdd8bb43344e99bc58dab5fff629",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Norr Cohan": {
         "Tuan Andrew Nguyen: Sacred Forest / R\u00f9'ng Thi\u00eang-Norr Cohan": {
             "name": "Tuan Andrew Nguyen: Sacred Forest / R\u00f9'ng Thi\u00eang",
             "venue": "Norr Cohan",
-            "description": null,
+            "description": "Norr Cohan is pleased to present an exhibition of new work by Tuan Andrew Nguyen, on view from October 30 through December 19, 2026, at the gallery\u2019s 48 and 52 Walker Street locations. For the artist\u2019s fourth solo exhibition at the gallery, Nguyen brings together his expansive film oeuvre with his long-standing sculptural practice of transforming material remnants of war into objects of healing.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -5306,24 +5337,27 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:51",
+            "last_updated": "2026-11-15 00:41:45",
             "locations": [
                 "48 Walker Street",
                 "52 Walker Street"
             ],
-            "hash": "d80130cde0b56435a3fdb629331ec419"
+            "hash": "2a502692f515c6d4f1e30b815701b518",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Galerie Lelong & Co.": {
         "Mildred Thompson: Cosmos Calling-Galerie Lelong & Co.": {
             "name": "Mildred Thompson: Cosmos Calling",
             "venue": "Galerie Lelong & Co.",
-            "description": null,
+            "description": "Galerie Lelong, New York, is pleased to announce an upcoming exhibition of work by Mildred Thompson (b. 1936-d. 2003), the gallery's third exhibition dedicated to the groundbreaking American artist. Entitled Cosmos Calling, the exhibition presents her masterwork Music of the Spheres paintings alongside a selection from her Heliocentric Series.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -5341,8 +5375,172 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 00:25:52",
-            "hash": "1fc6027c8de32317d717bb7471e15154"
+            "last_updated": "2026-11-15 00:41:46",
+            "hash": "bc11b743b5c45b049f7ec136b26438a0",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Gagosian": {
+        "Friends and Legends: The Collection of Michael Chow-Gagosian": {
+            "name": "Friends and Legends: The Collection of Michael Chow",
+            "venue": "Gagosian",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-14",
+                "end": "2026-12-22"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://gagosian.com/exhibitions/2026/friends-and-legends-the-collection-of-michael-chow-new-york/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://gagosian.com/media/images/exhibitions/2026/friends-and-legends-the-collection-of-michael-chow-new-york/CyE0Apb5BMxT_300x300.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:41:14",
+            "locations": [
+                "980 Madison"
+            ],
+            "hash": "0c3416aac058f09e3caf5dbcc490a441"
+        },
+        "Bea Scaccia: Groomed-Gagosian": {
+            "name": "Bea Scaccia: Groomed",
+            "venue": "Gagosian",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-22",
+                "end": "2026-12-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://gagosian.com/exhibitions/2026/bea-scaccia-groomed/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://gagosian.com/media/images/exhibitions/2026/bea-scaccia-groomed/u_NyDi70b98H_300x300.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:41:14",
+            "locations": [
+                "Park & 75"
+            ],
+            "hash": "7479794d35749f822a1e427016f16954"
+        },
+        "Georg Baselitz: Meine Schule-Gagosian": {
+            "name": "Georg Baselitz: Meine Schule",
+            "venue": "Gagosian",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://gagosian.com/exhibitions/2026/georg-baselitz-meine-schule/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://gagosian.com/media/images/exhibitions/2026/georg-baselitz-meine-schule/1gZVX-arUK-f_300x300.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:41:14",
+            "locations": [
+                "555 West 24th"
+            ],
+            "hash": "609aaeb478fe2e5b1371f2b547b920f8"
+        },
+        "Julie Curtiss: UNREAL-Gagosian": {
+            "name": "Julie Curtiss: UNREAL",
+            "venue": "Gagosian",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-10",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://gagosian.com/exhibitions/2026/julie-curtiss-unreal/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://gagosian.com/media/images/exhibitions/2026/julie-curtiss-un-real/KE07oeYi7ofv_300x300.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:41:14",
+            "locations": [
+                "541 West 24th"
+            ],
+            "hash": "9fd1a5f282fdc0efe9f77e2bd6052463"
+        },
+        "Brice Marden: I Am Plane Image-Gagosian": {
+            "name": "Brice Marden: I Am Plane Image",
+            "venue": "Gagosian",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-09-15",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://gagosian.com/exhibitions/2026/brice-marden-i-am-plane-image/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://gagosian.com/media/images/exhibitions/2026/brice-marden-i-am-plane-image/M1qEe-RD9T88_300x300.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:41:14",
+            "locations": [
+                "West 21st Street"
+            ],
+            "hash": "a082b6e5796a90567622a33b6c54862e"
         }
     }
 }
