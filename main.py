@@ -50,6 +50,7 @@ from scrapers.nyc import metropolitan_museum_of_art, museum_of_modern_art, brook
 from scrapers.nyc import asia_society_museum, el_museo_del_barrio, museum_of_the_moving_image, queens_museum
 from scrapers.nyc import new_museum, gladstone_gallery, moma_ps1
 from scrapers.nyc import jack_shainman_gallery, museum_of_chinese_in_america, sikkema_malloy_jenkins
+from scrapers.nyc import dia_art_foundation
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -84,6 +85,7 @@ PROXIED_VENUES = {
     "Asia Society Museum": ["Asia Society Museum"],
     "El Museo del Barrio": ["El Museo del Barrio"],
     "Museum of the Moving Image": ["Museum of the Moving Image"],
+    "Dia Chelsea": ["Dia Chelsea"],
 }
 # "Every 4 days" with 12 hours of slack, so run-to-run start-time jitter can't push a
 # venue to every 5th day. A venue is due once its newest event is this old; a failed
@@ -283,6 +285,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Jack Shainman Gallery": jack_shainman_gallery.scrape_jack_shainman_gallery,
             "Museum of Chinese in America": museum_of_chinese_in_america.scrape_museum_of_chinese_in_america,
             "Sikkema Malloy Jenkins": sikkema_malloy_jenkins.scrape_sikkema_malloy_jenkins,
+            "Dia Chelsea": dia_art_foundation.scrape_dia_art_foundation,
             "Queens Museum": queens_museum.scrape_queens_museum,
             **nyc_galleries.scrapers(),
         },
