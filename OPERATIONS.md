@@ -179,13 +179,11 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   live-tested: if CI still logs a 403, or ZenRows answers 422, the log says why; add `proxy_country` or
   `js_render` to `ARTCLOUD_PROXY`. Another ArtCloud site that starts failing the same way can use the same
   two lines.
-- **New York tier 4 (WEBSITE-121): the Met, MoMA, Brooklyn Museum, Gagosian and Hauser & Wirth** are proxied with
-  `premium_proxy` alone (10 credits a page; one page each, two for Gagosian, so about 76 a month each and 152 for
-  Gagosian, about 450 in all) and are on the 4-day schedule. Their pages read fine from a browser, and the HTML a
-  browser gets before any script runs already holds the shows, so the cheapest tier was chosen without a live test
-  (no proxy key locally; `check_venues.py` and the Check scrapers workflow refuse paid venues). If the first daily
-  run logs "no ... exhibition found" or a ZenRows 422, the log says why: add `js_render` (25 credits) to the venue's
-  entry in `PROXY_DOMAINS`, and `proxy_country=us` for a 422 RESP001. Hauser & Wirth is read from the
+- **New York tier 4 (WEBSITE-121): the Met, MoMA, Brooklyn Museum, Gagosian and Hauser & Wirth** are on the 4-day
+  schedule. The Met, MoMA, Brooklyn Museum and Hauser & Wirth fetch with `premium_proxy` alone (confirmed on the first
+  run, 2026-11-15; 10 credits a page, about 76 a month each). **Gagosian answered 422 RESP001** and has `js_render`
+  and `proxy_country=us` (25 credits a page, two pages, about 380 a month). A Brooklyn Museum show page also
+  answered 422 on the descriptions pass (one page, left without a description). Hauser & Wirth is read from the
   `__NEXT_DATA__` script (the page lists 12 of its 16 shows; the rest load as you scroll, so a New York show could
   be missing until it moves up the list).
 - **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` alone** (10 credits, about 76 a month; it was
