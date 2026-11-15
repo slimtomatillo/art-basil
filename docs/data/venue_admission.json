@@ -509,5 +509,19 @@
             "checked": "2026-11-15",
             "note": "Believed to charge admission; not checked. Check the price and any free hours."
         }
+    },
+    "pdx": {
+        "Oregon Jewish Museum and Center for Holocaust Education": {
+            "admission": "paid",
+            "source": "https://www.ojmche.org/visit-ojmche/",
+            "checked": "2026-11-15",
+            "note": "Adults $10, seniors $6, students $5; free for members and children under 12. The Oregon Holocaust Memorial in Washington Park is free."
+        },
+        "Portland Art Museum": {
+            "admission": "unverified",
+            "source": "https://portlandartmuseum.org/visit/",
+            "checked": "2026-11-15",
+            "note": "Believed to charge admission; the visit page could not be read. Check the price and any free hours (the museum has free days for some visitors)."
+        }
     }
 }

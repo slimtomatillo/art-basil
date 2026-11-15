@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       region:
-        description: 'Region: sf, la, nyc, mtl, tor or ist'
+        description: 'Region: sf, la, nyc, pdx, mtl, tor or ist'
         required: true
         default: 'nyc'
       venues:

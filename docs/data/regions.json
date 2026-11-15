@@ -4,5 +4,6 @@
     "mtl": "America/Toronto",
     "tor": "America/Toronto",
     "ist": "Europe/Istanbul",
-    "nyc": "America/New_York"
+    "nyc": "America/New_York",
+    "pdx": "America/Los_Angeles"
 }
