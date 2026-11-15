@@ -448,6 +448,24 @@
             "source": "https://folkartmuseum.org/visit/location",
             "checked": "2026-11-13",
             "note": "Admission is always free."
+        },
+        "The Metropolitan Museum of Art": {
+            "admission": "paid",
+            "source": "https://www.metmuseum.org/plan-your-visit",
+            "checked": "2026-11-14",
+            "note": "$30 adults, $22 seniors, $17 students; pay what you wish for New York State residents and New York, New Jersey and Connecticut students; free for children 12 and under and members."
+        },
+        "Museum of Modern Art": {
+            "admission": "paid",
+            "source": "https://www.moma.org/visit/",
+            "checked": "2026-11-14",
+            "note": "$30 adults, $22 seniors; free for children 16 and under and members; free for New York State residents on Friday evenings, 5:30 to 8:30 pm, with tickets reserved in advance."
+        },
+        "Brooklyn Museum": {
+            "admission": "unverified",
+            "source": "https://www.brooklynmuseum.org/visit",
+            "checked": "2026-11-14",
+            "note": "Believed to charge admission (free for visitors 19 and under); the visit page did not show the adult price. Check the price and any free hours."
         }
     }
 }
