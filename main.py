@@ -47,6 +47,7 @@ from scrapers.nyc import pioneer_works, bric, white_columns, smack_mellon, the_k
 from scrapers.nyc import galleries as nyc_galleries
 from scrapers.nyc import metropolitan_museum_of_art, museum_of_modern_art, brooklyn_museum, gagosian, hauser_and_wirth
 from scrapers.nyc import asia_society_museum, el_museo_del_barrio, museum_of_the_moving_image, queens_museum
+from scrapers.nyc import new_museum, gladstone_gallery, moma_ps1
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -274,6 +275,9 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Asia Society Museum": asia_society_museum.scrape_asia_society_museum,
             "El Museo del Barrio": el_museo_del_barrio.scrape_el_museo_del_barrio,
             "Museum of the Moving Image": museum_of_the_moving_image.scrape_museum_of_the_moving_image,
+            "New Museum": new_museum.scrape_new_museum,
+            "Gladstone Gallery": gladstone_gallery.scrape_gladstone_gallery,
+            "MoMA PS1": moma_ps1.scrape_moma_ps1,
             "Queens Museum": queens_museum.scrape_queens_museum,
             **nyc_galleries.scrapers(),
         },

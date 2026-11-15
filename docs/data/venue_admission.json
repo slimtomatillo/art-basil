@@ -490,6 +490,18 @@
             "source": "https://queensmuseum.org/visit/",
             "checked": "2026-11-15",
             "note": "Pay what you wish, with a suggested $8 for adults and $6 for seniors and students (not free in general). Free for children 12 and under, members, IDNYC holders and others."
+        },
+        "New Museum": {
+            "admission": "unverified",
+            "source": "https://www.newmuseum.org/visit/",
+            "checked": "2026-11-15",
+            "note": "Believed to charge admission; not checked. Check the price and any free hours."
+        },
+        "MoMA PS1": {
+            "admission": "free",
+            "source": "https://www.moma.org/visit/",
+            "checked": "2026-11-15",
+            "note": "Free for everyone (MoMA's visit page lists free admission for all at PS1)."
         }
     }
 }
