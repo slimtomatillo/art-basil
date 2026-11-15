@@ -201,7 +201,9 @@ PROXY_DOMAINS = {
     'www.metmuseum.org': {'premium_proxy': 'true'},
     'www.moma.org': {'premium_proxy': 'true'},
     'www.brooklynmuseum.org': {'premium_proxy': 'true'},
-    'gagosian.com': {'premium_proxy': 'true'},
+    # Gagosian answered 422 RESP001 ("try enabling javascript rendering") on its first run (2026-11-15), so it
+    # has js_render (25 credits a page, two pages, about 380 a month) and proxy_country=us.
+    'gagosian.com': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
     'www.hauserwirth.com': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
