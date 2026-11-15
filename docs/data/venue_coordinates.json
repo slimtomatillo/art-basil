@@ -1105,6 +1105,12 @@
                 "lng": -74.001289
             }
         ],
+        "Asia Society Museum": [
+            {
+                "lat": 40.769839,
+                "lng": -73.964291
+            }
+        ],
         "BRIC": [
             {
                 "lat": 40.686798,
@@ -1147,6 +1153,12 @@
             {
                 "lat": 40.719078,
                 "lng": -74.003323
+            }
+        ],
+        "El Museo del Barrio": [
+            {
+                "lat": 40.793121,
+                "lng": -73.951335
             }
         ],
         "Gagosian": [
@@ -1277,6 +1289,13 @@
             {
                 "lat": 40.792527,
                 "lng": -73.951802
+            }
+        ],
+        "Museum of the Moving Image": [
+            {
+                "lat": 40.756195,
+                "lng": -73.924007,
+                "manual": true
             }
         ],
         "Neue Galerie New York": [
