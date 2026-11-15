@@ -206,6 +206,11 @@ PROXY_DOMAINS = {
     # has js_render (25 credits a page, two pages, about 380 a month) and proxy_country=us.
     'gagosian.com': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
     'www.hauserwirth.com': {'premium_proxy': 'true'},
+    # Asia Society Museum (two pages), El Museo del Barrio and the Museum of the Moving Image: Cloudflare
+    # challenges, fine in a browser, server-rendered. premium_proxy alone first (10 credits a page) - not live-tested.
+    'asiasociety.org': {'premium_proxy': 'true'},
+    'elmuseo.org': {'premium_proxy': 'true'},
+    'movingimage.org': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are

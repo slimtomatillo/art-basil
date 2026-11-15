@@ -466,6 +466,24 @@
             "source": "https://www.brooklynmuseum.org/visit",
             "checked": "2026-11-14",
             "note": "Believed to charge admission (free for visitors 19 and under); the visit page did not show the adult price. Check the price and any free hours."
+        },
+        "Asia Society Museum": {
+            "admission": "unverified",
+            "source": "https://asiasociety.org/new-york/plan-your-visit",
+            "checked": "2026-11-15",
+            "note": "Believed to charge admission; not checked. Check the price and any free hours."
+        },
+        "El Museo del Barrio": {
+            "admission": "unverified",
+            "source": "https://elmuseo.org/visit/",
+            "checked": "2026-11-15",
+            "note": "Believed to charge admission; not checked. Check the price and any free hours."
+        },
+        "Museum of the Moving Image": {
+            "admission": "unverified",
+            "source": "https://movingimage.org/visit/",
+            "checked": "2026-11-15",
+            "note": "Believed to charge admission; not checked. Check the price and any free hours."
         }
     }
 }

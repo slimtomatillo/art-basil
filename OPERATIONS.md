@@ -186,6 +186,11 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   answered 422 on the descriptions pass (one page, left without a description). Hauser & Wirth is read from the
   `__NEXT_DATA__` script (the page lists 12 of its 16 shows; the rest load as you scroll, so a New York show could
   be missing until it moves up the list).
+- **Asia Society Museum (two pages), El Museo del Barrio and the Museum of the Moving Image** (WEBSITE-121, tier 4)
+  are proxied with `premium_proxy` alone (10 credits a page, about 76 a month a page, so about 300 in all) and are on
+  the 4-day schedule. Not live-tested before the first run. **The Morgan and Dia are not built:** Dia's Cloudflare
+  check never cleared even in a real Chrome, and the Morgan's listing is only pictures (titles and dates are on each
+  show's page, about 16 pages, about 1,200 credits a month).
 - **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` and `js_render`** (25 credits a refresh, about 190 a
   month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers `202` with
   an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a
