@@ -44,6 +44,7 @@ from scrapers.nyc import cooper_hewitt, jewish_museum, museum_of_the_city_of_new
     museum_of_arts_and_design, international_center_of_photography, bronx_museum_of_the_arts, american_folk_art_museum
 from scrapers.nyc import pioneer_works, bric, white_columns, smack_mellon, the_kitchen, center_for_book_arts
 from scrapers.nyc import galleries as nyc_galleries
+from scrapers.nyc import metropolitan_museum_of_art, museum_of_modern_art, brooklyn_museum, gagosian, hauser_and_wirth
 from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arter, galerist, pi_artworks, zilberman_gallery, depo_istanbul, elgiz_museum, anna_laudel, rahmi_koc_museum, borusan_contemporary
 
 # Scrapers whose sites are fetched through the paid ZenRows proxy (see
@@ -69,6 +70,12 @@ PROXIED_VENUES = {
     "SFAC Galleries": ["SFAC Galleries"],
     "Root Division": ["Root Division"],
     "Chinese Culture Center of San Francisco": ["Chinese Culture Center of San Francisco"],
+    # New York, tier 4 (WEBSITE-121): about 76 credits a month each, 152 for Gagosian (two pages)
+    "The Metropolitan Museum of Art": ["The Metropolitan Museum of Art"],
+    "Museum of Modern Art": ["Museum of Modern Art"],
+    "Brooklyn Museum": ["Brooklyn Museum"],
+    "Gagosian": ["Gagosian"],
+    "Hauser & Wirth": ["Hauser & Wirth"],
 }
 # "Every 4 days" with 12 hours of slack, so run-to-run start-time jitter can't push a
 # venue to every 5th day. A venue is due once its newest event is this old; a failed
@@ -254,6 +261,11 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Smack Mellon": smack_mellon.scrape_smack_mellon,
             "The Kitchen": the_kitchen.scrape_the_kitchen,
             "Center for Book Arts": center_for_book_arts.scrape_center_for_book_arts,
+            "The Metropolitan Museum of Art": metropolitan_museum_of_art.scrape_metropolitan_museum_of_art,
+            "Museum of Modern Art": museum_of_modern_art.scrape_museum_of_modern_art,
+            "Brooklyn Museum": brooklyn_museum.scrape_brooklyn_museum,
+            "Gagosian": gagosian.scrape_gagosian,
+            "Hauser & Wirth": hauser_and_wirth.scrape_hauser_and_wirth,
             **nyc_galleries.scrapers(),
         },
         'ist': {

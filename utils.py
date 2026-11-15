@@ -136,6 +136,17 @@ PROXY_DOMAINS = {
     # on the 4-day schedule in main.py's PROXIED_VENUES) - not live-tested (no proxy key locally). If the log
     # still says "no exhibition found", its page title and size now say what came back.
     'www.sf.gov': {'premium_proxy': 'true'},
+    # New York, tier 4 (WEBSITE-121). Each answers GitHub's servers (and a plain script) with a Cloudflare 403 or a
+    # Vercel 429, and reads fine in a browser; the HTML a browser gets before any script runs already holds the
+    # shows (the Met's and Brooklyn Museum's cards, MoMA's cards, Gagosian's cards, Hauser & Wirth's __NEXT_DATA__),
+    # so premium proxy alone is tried first (10 credits a page, about 76 a month; Gagosian reads two pages) - not
+    # live-tested (no proxy key locally). If ZenRows answers 422 or the log says "no ... exhibition found", add
+    # js_render (25 credits) and, for a 422 RESP001, proxy_country=us.
+    'www.metmuseum.org': {'premium_proxy': 'true'},
+    'www.moma.org': {'premium_proxy': 'true'},
+    'www.brooklynmuseum.org': {'premium_proxy': 'true'},
+    'gagosian.com': {'premium_proxy': 'true'},
+    'www.hauserwirth.com': {'premium_proxy': 'true'},
 }
 # Sites whose server doesn't send its intermediate certificate: browsers fetch it themselves, Python
 # fails with "unable to get local issuer certificate". The intermediates (public CA certificates) are

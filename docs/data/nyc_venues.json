@@ -22,8 +22,9 @@
             "address": "91 Walker St, New York, NY 10013"
         }
     ],
-    "Bortolami": "39 Walker St, New York, NY 10013",
     "BRIC": "647 Fulton St, Brooklyn, NY 11217",
+    "Bortolami": "39 Walker St, New York, NY 10013",
+    "Brooklyn Museum": "200 Eastern Pkwy, Brooklyn, NY 11238",
     "Center for Book Arts": "28 W 27th St, New York, NY 10001",
     "Cooper Hewitt": "2 E 91st St, New York, NY 10128",
     "David Zwirner": [
@@ -40,8 +41,48 @@
             "address": "52 Walker St, New York, NY 10013"
         }
     ],
+    "Gagosian": [
+        {
+            "label": "980 Madison",
+            "address": "980 Madison Ave, New York, NY 10075"
+        },
+        {
+            "label": "Park & 75",
+            "address": "821 Park Ave, New York, NY 10021"
+        },
+        {
+            "label": "555 West 24th",
+            "address": "555 W 24th St, New York, NY 10011"
+        },
+        {
+            "label": "541 West 24th",
+            "address": "541 W 24th St, New York, NY 10011"
+        },
+        {
+            "label": "West 21st Street",
+            "address": "522 W 21st St, New York, NY 10011"
+        },
+        {
+            "label": "West 18th Street",
+            "address": "456 W 18th St, New York, NY 10011"
+        }
+    ],
     "Galerie Lelong & Co.": "528 W 26th St, New York, NY 10001",
     "Guggenheim Museum": "1071 5th Ave, New York, NY 10128",
+    "Hauser & Wirth": [
+        {
+            "label": "18th Street",
+            "address": "443 W 18th St, New York, NY 10011"
+        },
+        {
+            "label": "22nd Street",
+            "address": "548 W 22nd St, New York, NY 10011"
+        },
+        {
+            "label": "Wooster Street",
+            "address": "32 Wooster St, New York, NY 10013"
+        }
+    ],
     "International Center of Photography": "84 Ludlow St, New York, NY 10002",
     "Jane Lombard Gallery": "58 White St, New York, NY 10013",
     "Lehmann Maupin": "501 W 24th St, New York, NY 10011",
@@ -68,6 +109,7 @@
         }
     ],
     "Museum of Arts and Design": "2 Columbus Cir, New York, NY 10019",
+    "Museum of Modern Art": "11 W 53rd St, New York, NY 10019",
     "Museum of the City of New York": "1220 5th Ave, New York, NY 10029",
     "Neue Galerie New York": "1048 5th Ave, New York, NY 10028",
     "Night Gallery New York": "61 Lispenard St, New York, NY 10013",
@@ -129,6 +171,7 @@
     "The Frick Collection": "1 E 70th St, New York, NY 10021",
     "The Jewish Museum": "1109 5th Ave, New York, NY 10128",
     "The Kitchen": "163B Bank St, New York, NY 10014",
+    "The Metropolitan Museum of Art": "1000 Fifth Ave, New York, NY 10028",
     "The Noguchi Museum": "9-01 33rd Rd, Long Island City, NY 11106",
     "The Studio Museum in Harlem": "144 W 125th St, New York, NY 10027",
     "White Columns": "91 Horatio St, New York, NY 10014",

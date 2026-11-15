@@ -123,7 +123,7 @@ python3 -m http.server -d docs      # then http://localhost:8000/sf/
 
 A few sites (BAMPFA, Cantor, de Young / Legion of Honor, Norton Simon,
 Huntington, AGO, Southern Exposure, Asian Art Museum, Art Museum at the University of Toronto,
-Armory Center for the Arts, Marin Civic Center, Galerie Simon Blais, Mills College Art Museum, Creative Growth Art Center) block GitHub's servers, so they are fetched
+Armory Center for the Arts, Marin Civic Center, Galerie Simon Blais, Mills College Art Museum, Creative Growth Art Center, and in New York the Met, MoMA, Brooklyn Museum, Gagosian and Hauser & Wirth) block GitHub's servers, so they are fetched
 through the [ZenRows](https://www.zenrows.com) proxy. The list of hostnames and
 the ZenRows options each needs is `PROXY_DOMAINS` in `utils.py`; the API key is
 the repository secret `SCRAPER_PROXY_API_KEY`. Without the key those scrapers
@@ -174,6 +174,15 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   live-tested: if CI still logs a 403, or ZenRows answers 422, the log says why; add `proxy_country` or
   `js_render` to `ARTCLOUD_PROXY`. Another ArtCloud site that starts failing the same way can use the same
   two lines.
+- **New York tier 4 (WEBSITE-121): the Met, MoMA, Brooklyn Museum, Gagosian and Hauser & Wirth** are proxied with
+  `premium_proxy` alone (10 credits a page; one page each, two for Gagosian, so about 76 a month each and 152 for
+  Gagosian, about 450 in all) and are on the 4-day schedule. Their pages read fine from a browser, and the HTML a
+  browser gets before any script runs already holds the shows, so the cheapest tier was chosen without a live test
+  (no proxy key locally; `check_venues.py` and the Check scrapers workflow refuse paid venues). If the first daily
+  run logs "no ... exhibition found" or a ZenRows 422, the log says why: add `js_render` (25 credits) to the venue's
+  entry in `PROXY_DOMAINS`, and `proxy_country=us` for a 422 RESP001. Hauser & Wirth is read from the
+  `__NEXT_DATA__` script (the page lists 12 of its 16 shows; the rest load as you scroll, so a New York show could
+  be missing until it moves up the list).
 - **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` alone** (10 credits, about 76 a month; it was
   already on the 4-day schedule). On its first CI run (2026-11-12) it found no exhibition and logged no error,
   although its page reads fine from a normal connection: a block page for GitHub's addresses is the likely
