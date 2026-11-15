@@ -188,6 +188,7 @@ class SearchManager {
         } else {
             this.state.phases = filterState.normalizePhases([...phases, phase]);
         }
+        this.state.phasesAuto = false;                   // the visitor chose these
         this.applyFilters();
     }
 
@@ -198,6 +199,7 @@ class SearchManager {
         const phases = filterState.normalizePhases([].concat(aliases[phase] || phase));
         if (phases.length === 0) return;
         this.state.phases = phases;
+        this.state.phasesAuto = false;
         this.applyFilters();
     }
 
@@ -231,14 +233,16 @@ class SearchManager {
     // Show the results as the table ('list') or on the map ('map'); the choice is in the URL (?view=map)
     setView(view) {
         if (!filterState.VIEWS.includes(view) || view === this.state.view) return;
-        this.state.view = view;
+        // Untouched "When" follows the view (the map opens on what is on now); a choice the visitor made is kept (WEBSITE-125)
+        this.state = filterState.withView(this.state, view);
         this.applyFilters();
     }
 
-    // Back to the default filters: current, ongoing & future, no date, area or tag chosen, nothing searched.
+    // Back to the default filters: the view's default phases (current, ongoing & future in the table; current & ongoing on the map),
+    // no date, area or tag chosen, nothing searched.
     // The way the results are shown (list or map) is not a filter, so it stays.
     clearFilters() {
-        this.state = { ...filterState.defaultState(this.state.today), view: this.state.view };
+        this.state = filterState.defaultState(this.state.today, this.state.view);
         this.applyFilters();
     }
 }

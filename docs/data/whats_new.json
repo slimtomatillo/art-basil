@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-11-15",
+    "title": "The map shows what's on now",
+    "text": "Map view now opens on the shows you can see today, so its pins and counts are places worth a visit. To include shows that haven't opened yet, add Upcoming in the When filter."
+  },
+  {
+    "date": "2026-11-15",
     "title": "Three more New York places",
     "text": "Jack Shainman Gallery, Sikkema Malloy Jenkins and the Museum of Chinese in America are now on the site."
   },
