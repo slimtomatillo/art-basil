@@ -465,6 +465,39 @@ test('every real Bay Area venue address is in an area, so a venue in a new town 
     }
 });
 
+test('New York areas: Manhattan by ZIP code, the other boroughs by name, any state letters in the address', () => {
+    const areas = a => fs_.areasOfAddresses('nyc', a);
+    assert.deepStrictEqual(areas(['525 W 19th St, New York, NY 10011']), ['chelsea']);
+    assert.deepStrictEqual(areas(['235 Bowery, New York, NY 10002']), ['downtown']);
+    assert.deepStrictEqual(areas(['11 W 53rd St, New York, NY 10019']), ['midtown']);
+    assert.deepStrictEqual(areas(['1000 Fifth Ave, New York, NY 10028']), ['upper-east-side']);
+    assert.deepStrictEqual(areas(['144 W 125th St, New York, NY 10027']), ['upper-west-side-harlem']);
+    assert.deepStrictEqual(areas(['200 Eastern Pkwy, Brooklyn, NY 11238']), ['brooklyn']);
+    assert.deepStrictEqual(areas(['22-25 Jackson Ave, Long Island City, NY 11101']), ['queens']);
+    assert.deepStrictEqual(areas(['1040 Grand Concourse, Bronx, NY 10456']), ['bronx']);
+    // a venue with two spaces can be in two areas
+    assert.deepStrictEqual(areas(['525 W 19th St, New York, NY 10011', '980 Madison Ave, New York, NY 10075']), ['chelsea', 'upper-east-side']);
+    assert.deepStrictEqual(fs_.cityOf('151 3rd St, San Francisco, CA 94103'), 'San Francisco');            // California is unchanged
+    assert.deepStrictEqual(fs_.zipOf('1 Main St, Los Angeles, CA 90036'), '90036');
+    assert.deepStrictEqual(fs_.areasOfRegion('nyc', ['chelsea', 'east-bay']), ['chelsea']);
+});
+
+test('every real New York venue address is in an area, so a venue in a new ZIP code or borough fails here until it is added', () => {
+    const venues = JSON.parse(fs.readFileSync(path.join(__dirname, '../docs/data/nyc_venues.json'), 'utf8'));
+    const unplaced = [];
+    const used = new Set();
+    for (const [name, value] of Object.entries(venues)) {
+        for (const { address } of venueAddresses.normalize(value)) {
+            const found = fs_.areasOfAddresses('nyc', [address]);
+            if (found.length === 0) unplaced.push(`${name}: ${address}`);
+            found.forEach(id => used.add(id));
+        }
+    }
+    assert.deepStrictEqual(unplaced, [], 'add the ZIP code or borough to AREAS.nyc in docs/filterState.js');
+    // an area nobody is in would never be offered, so each one listed has a venue today
+    assert.deepStrictEqual(fs_.AREAS.nyc.map(a => a.id).filter(id => !used.has(id)), []);
+});
+
 test('Istanbul areas are districts, found from a part of the address, so Kadikoy and Uskudar are their own areas', () => {
     const areas = a => fs_.areasOfAddresses('ist', a);
     // real addresses: the district is a comma-separated part, with or without a postcode in front
