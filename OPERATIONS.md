@@ -209,15 +209,15 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   run artifact: `gh workflow run probe-page.yml -f url=... -f options="js_render=true proxy_country=us"`, 10 or 25
   credits a fetch). The listing is `/exhibition/exhibitions-projects` (`/exhibitions` is a 404, which the Cloudflare
   challenge had hidden); only shows "at Dia Chelsea" are read, not Beacon, Bridgehampton or touring ones.
-- **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy` and `js_render`** (25 credits a refresh, about 190 a
-  month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers `202` with
-  an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a
-  proxied venue directly and costs nothing). `premium_proxy` alone returned the challenge's own 1,962-byte script page
-  (no title, no sections) in the runs of 11-13 and 11-14, so `js_render` was added, as ZenRows' AWS WAF guide says. Not
-  live-tested (no proxy key locally): after the next refresh, check that the log no longer says "no current or upcoming
-  exhibition found" for SFAC Galleries. If it still does, the warning has the page's title and size, and `wait_for` or
-  `proxy_country` are the next things to try. The Check scrapers workflow's `allow_proxy` option is the free way to see
-  what GitHub gets directly from any proxied site.
+- **SFAC Galleries (`www.sf.gov`) is proxied with `premium_proxy`, `js_render`, `proxy_country=us` and `wait=5000`** (25 credits a
+  refresh, about 190 a month on the 4-day schedule). GitHub's servers get an **AWS WAF challenge** from sf.gov (CloudFront answers
+  `202` with an empty body; found 2026-11-14 by running the Check scrapers workflow with its `allow_proxy` option, which fetches a
+  proxied venue directly and costs nothing). `premium_proxy` alone returned the challenge's own 1,962-byte script page (no title,
+  no sections), and adding `js_render` still returned a 1,986-byte one in the daily runs of 11-14 and 11-15 (the "stored no events;
+  fetched ..." line says so), so `proxy_country=us` and `wait=5000` were added, the combination that worked for Dia. Not
+  live-tested (no proxy key locally): after the next refresh, check that the log no longer says "no current or upcoming exhibition
+  found" for SFAC Galleries, or try it first with the Probe page workflow (25 credits). If it still fails, the page title and size
+  are in the log and `wait_for` (an element to wait for) is the next thing to try.
 - A failed fetch leaves a venue's data old, so it is retried on the next daily
   run rather than waiting another 4 days. (The stale-data check flags a venue
   after 7 days.)
