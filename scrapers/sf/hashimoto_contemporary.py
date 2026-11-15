@@ -10,6 +10,24 @@ BASE_URL = 'https://www.hashimotocontemporary.com'
 PAGES = (BASE_URL + '/exhibitions/current/', BASE_URL + '/exhibitions/forthcoming/')
 
 
+def single_exhibition(soup):
+    """The one show a "current" or "upcoming" page now holds, as artlogic_items would give it, or None. These pages used to be lists;
+    since the site changed (WEBSITE-123) each is a single exhibition's page, titled "Name | 5 December 2026 - 2 January 2027" with the
+    gallery ("Hashimoto Contemporary SF" or "NYC") in span.location, and the show's own address in the canonical link."""
+    heading = soup.select_one('h1 .h1_heading') or soup.find('h1')
+    og = soup.find('meta', property='og:title')
+    canonical = soup.find('link', rel='canonical')
+    if not (heading and og and og.get('content') and canonical and canonical.get('href')):
+        return None
+    name = heading.get_text(' ', strip=True)
+    _, _, date_text = og['content'].partition(' | ')
+    location = soup.select_one('span.location')
+    if not (name and date_text.strip()):
+        return None
+    return {'name': name, 'date_text': date_text.strip(), 'location': location.get_text(' ', strip=True) if location else '',
+            'description': None, 'link': canonical['href']}
+
+
 def scrape_hashimoto_contemporary(env='prod', region='sf'):
     """Scrape and process the San Francisco shows of Hashimoto Contemporary."""
 
@@ -21,7 +39,10 @@ def scrape_hashimoto_contemporary(env='prod', region='sf'):
         if soup is None:
             logging.warning(f"Hashimoto Contemporary: could not fetch {url}; existing data kept.")
             continue
-        for item in artlogic_items(soup, BASE_URL):
+        items = list(artlogic_items(soup, BASE_URL))
+        if not items and single_exhibition(soup):
+            items = [single_exhibition(soup)]
+        for item in items:
             if item['location'].strip().upper().endswith('NYC') or 'SF' not in item['location'].upper().split():
                 continue
             if item['link'] in seen:

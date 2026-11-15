@@ -65,6 +65,62 @@ PROXY_TIMEOUT = (10, 90)
 PROXY_ATTEMPTS = 2
 PROXY_RETRY_DELAY = 5
 
+# A direct request that times out, can't connect or gets a 429 or 5xx is tried once more, and so is a page that comes back
+# empty (no title and almost no text: a block or error shell served with 200). The daily run showed venues that read fine
+# from a laptop coming back empty from CI in one run and fine the next (WEBSITE-123).
+DIRECT_ATTEMPTS = 2
+DIRECT_RETRY_DELAY = 3
+EMPTY_PAGE_TEXT_CHARS = 100
+
+# What each fetch since the last reset got (url, status, bytes, title, server, seconds), so the log can say what a page
+# really was when a scraper then finds nothing (main.py reads it after each scraper).
+FETCH_LOG = []
+FETCH_LOG_MAX = 20
+
+
+def reset_fetch_log():
+    del FETCH_LOG[:]
+
+
+def _note_fetch(url, status, size, title, server, seconds):
+    if len(FETCH_LOG) < FETCH_LOG_MAX:
+        FETCH_LOG.append({'url': url, 'status': status, 'bytes': size, 'title': title, 'server': server, 'seconds': seconds})
+
+
+def fetch_summary():
+    """One line saying what the pages fetched since the last reset were ("https://x/ (200, 1962 bytes, title '', 0.4 s)")."""
+    if not FETCH_LOG:
+        return 'no page was fetched'
+    parts = []
+    for f in FETCH_LOG[:4]:
+        server = f" {f['server']}" if f['server'] else ''
+        parts.append(f"{f['url']} ({f['status']}, {f['bytes']} bytes, title {f['title'][:50]!r}{server}, {f['seconds']:.1f} s)")
+    more = len(FETCH_LOG) - 4
+    return '; '.join(parts) + (f'; and {more} more' if more > 0 else '')
+
+
+def _looks_empty(soup):
+    title = soup.title.get_text(' ', strip=True) if soup.title else ''
+    body = soup.body.get_text(' ', strip=True) if soup.body else ''
+    return not title and len(body) < EMPTY_PAGE_TEXT_CHARS
+
+
+def _direct_get(url, request_headers):
+    """GET `url` itself, retrying once on a timeout, a connection error, a 429 or a 5xx."""
+    for attempt in range(1, DIRECT_ATTEMPTS + 1):
+        try:
+            response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT, verify=verify_for(url))
+        except (requests.Timeout, requests.ConnectionError) as e:
+            if attempt == DIRECT_ATTEMPTS:
+                raise
+            logging.warning(f"Request for {url} failed ({type(e).__name__}); retrying.")
+        else:
+            if response.status_code != 429 and response.status_code < 500 or attempt == DIRECT_ATTEMPTS:
+                return response
+            logging.warning(f"Request for {url} returned {response.status_code}; retrying.")
+        time.sleep(DIRECT_RETRY_DELAY)
+
+
 # Domains whose own protection blocks GitHub Actions' datacenter IPs outright
 # (confirmed by direct testing - see WEBSITE-53), routed through the ZenRows
 # proxy instead of a direct request. Each domain maps to only the ZenRows
@@ -288,6 +344,7 @@ def fetch_and_parse(url, headers=None):
         request_headers.update(headers)
 
     proxy_params = PROXY_DOMAINS.get(urlparse(url).netloc)
+    started = time.monotonic()
 
     try:
         if proxy_params and ZENROWS_API_KEY:
@@ -313,11 +370,23 @@ def fetch_and_parse(url, headers=None):
                     f"{urlparse(url).netloc} needs the proxy to work from CI but "
                     f"SCRAPER_PROXY_API_KEY isn't set; fetching directly (likely to fail)."
                 )
-            response = requests.get(url, headers=request_headers, timeout=REQUEST_TIMEOUT, verify=verify_for(url))
+            response = _direct_get(url, request_headers)
+        _note_fetch(url, response.status_code, len(getattr(response, 'content', b'') or b''),
+                    '', (getattr(response, 'headers', None) or {}).get('Server', ''), time.monotonic() - started)
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
+        if not (proxy_params and ZENROWS_API_KEY) and _looks_empty(soup):
+            logging.warning(f"{url} came back nearly empty ({len(response.content)} bytes); trying once more.")
+            time.sleep(DIRECT_RETRY_DELAY)
+            response = _direct_get(url, request_headers)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+        title = soup.title.get_text(' ', strip=True) if soup.title else ''
+        if FETCH_LOG and FETCH_LOG[-1]['url'] == url:
+            FETCH_LOG[-1]['title'], FETCH_LOG[-1]['bytes'] = title, len(response.content)
         _warn_if_block_page(url, soup)
         return soup
     except requests.RequestException as e:
         logging.error(f"Error fetching {url}: {e}")
+        _note_fetch(url, 'failed', 0, type(e).__name__, '', time.monotonic() - started)
         return None

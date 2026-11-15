@@ -32,7 +32,7 @@ def run(module, scrape, pages, region='nyc', extra=()):
         html = pages.get(url)
         return soup(html) if html is not None else None
 
-    patches = [mock.patch.object(module, 'fetch_and_parse', side_effect=fetch),
+    patches = [mock.patch.object(module, 'fetch_and_parse', side_effect=fetch, create=True),
                mock.patch.object(module, 'region_today', return_value=TODAY, create=True),
                mock.patch.object(_common, 'region_today', return_value=TODAY),
                mock.patch.object(_common, 'process_event', side_effect=lambda d, r: stored.append(d))]
@@ -245,11 +245,14 @@ class ZwirnerTest(unittest.TestCase):
 
 
 NG_LISTING = ('<main><p>Current</p><p>Upcoming</p><p>Past</p>'
-              '<div><a href="/exhibitions/hasani-sahlehe2"><p>HASANI SAHLEHE</p><p>Monoprints</p><p>November 13 – December 18, 2026</p></a></div>'
-              '<div><a href="/exhibitions/tidawhitney-lek"><p>TIDAWHITNEY LEK</p><p>Something Familiar</p><p>November 21 – January 30, 2027</p></a></div></main>')
+              '<div><a href="/exhibitions/hasani-sahlehe2"><p>HASANI SAHLEHE</p><p>Monoprints</p><p>November 13 – December 18, 2026</p></a></div></main>')
+# the site lists the current show on /exhibitions and the upcoming ones on /exhibitions/upcoming (WEBSITE-123)
+NG_UPCOMING = ('<main><p>Current</p><p>Upcoming</p><p>Past</p>'
+               '<div><a href="/exhibitions/tidawhitney-lek"><p>TIDAWHITNEY LEK</p><p>Something Familiar</p><p>November 21 – January 30, 2026</p></a></div></main>')
 NG_NY = '<head><meta property="og:description" content="HASANI SAHLEHE Monoprints November 13-December 18, 2026 61 Lispenard St, 2nd Floor New York, NY Night gallery is pleased to present new monoprints in our Tribeca, New York viewing room."></head>'
 NG_LA = '<head><meta property="og:description" content="TIDAWHITNEY LEK Something Familiar November 21-January 30, 2027 2050 Imperial St Los Angeles, CA 90021 Night gallery is pleased to present new work."></head>'
 NG_PAGES = {night_gallery.EXHIBITIONS_URL: NG_LISTING,
+            night_gallery.UPCOMING_URL: NG_UPCOMING,
             'https://www.nightgallery.ca/exhibitions/hasani-sahlehe2': NG_NY,
             'https://www.nightgallery.ca/exhibitions/tidawhitney-lek': NG_LA}
 
@@ -272,6 +275,16 @@ class NightGalleryTest(unittest.TestCase):
         self.assertEqual(shows['Tidawhitney Lek: Something Familiar']['venue'], 'Night Gallery')
         self.assertEqual(shows['Tidawhitney Lek: Something Familiar']['links'][0]['link'],
                          'https://www.nightgallery.ca/exhibitions/tidawhitney-lek')
+
+    def test_the_upcoming_page_is_read_too_and_a_show_on_both_pages_is_kept_once(self):
+        both = {**NG_PAGES, night_gallery.EXHIBITIONS_URL: NG_LISTING.replace('</main>', NG_UPCOMING.split('<main>')[1])}
+        shows = run(night_gallery, 'scrape_night_gallery', both, region='la')
+        self.assertEqual(sorted(shows), ['Tidawhitney Lek: Something Familiar'])
+
+    def test_when_the_upcoming_page_cannot_be_read_the_current_shows_are_still_published(self):
+        pages = {k: v for k, v in NG_PAGES.items() if k != night_gallery.UPCOMING_URL}
+        shows = run(night_gallery_new_york, 'scrape_night_gallery_new_york', pages, extra=[(night_gallery, 'fetch_and_parse')])
+        self.assertEqual(sorted(shows), ['Hasani Sahlehe: Monoprints'])
 
     def test_new_york_takes_the_new_york_show(self):
         shows = run(night_gallery_new_york, 'scrape_night_gallery_new_york', NG_PAGES,

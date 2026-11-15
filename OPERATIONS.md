@@ -65,6 +65,11 @@ Find the venue in the log, then work out which of these it is:
 | `Read timed out` from `api.zenrows.com` | A slow proxy render | Retried once automatically; if it persists, check the site manually |
 | An `AttributeError` / `NoneType` crash or warning inside the scraper, or "found 0 events" | The site's page layout changed | Fix the scraper's selectors; look at the live page first |
 | Nothing wrong in the log, but no events | The venue may genuinely have none (a closed museum, a gap between seasons) | Check the venue's site |
+| `<venue> stored no events; fetched <url> (200, 1962 bytes, title '', ...)` | The scraper stored nothing. The line says what each page it fetched was: a tiny page with no title is a block or error shell; a normal-sized page with a real title is a layout change or a gap between shows | Compare with the live page, as above |
+
+A direct fetch is already tried twice (a timeout, a connection error, a 429 or 5xx, or a page that comes back empty); a 403 is not.
+So a venue that finds nothing on one day and its shows the next is usually a block, not a bug; the "stored no events" line is how to
+tell (WEBSITE-123). A venue that has read fine from a laptop but empty from CI on two runs in a row is worth a closer look.
 
 Reproduce a problem locally without writing any data:
 
