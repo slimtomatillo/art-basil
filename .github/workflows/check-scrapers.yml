@@ -15,6 +15,10 @@ on:
       venues:
         description: 'Venue names, separated by commas (exactly as in main.py)'
         required: true
+      allow_proxy:
+        description: 'Also run venues that normally use the paid proxy, fetching them DIRECTLY from here (free: no proxy key is passed). Shows whether GitHub is blocked.'
+        type: boolean
+        default: false
 
 jobs:
   check:
@@ -37,8 +41,11 @@ jobs:
       env:
         REGION: ${{ inputs.region }}
         VENUES: ${{ inputs.venues }}
+        ALLOW_PROXY: ${{ inputs.allow_proxy }}
       run: |
-        python check_venues.py "$REGION" "$VENUES" 2>&1 | tee check.log
+        EXTRA=""
+        if [ "$ALLOW_PROXY" = "true" ]; then EXTRA="--allow-proxy"; fi
+        python check_venues.py "$REGION" "$VENUES" $EXTRA 2>&1 | tee check.log
         exit "${PIPESTATUS[0]}"
 
     - name: Show the result on the run's summary page
