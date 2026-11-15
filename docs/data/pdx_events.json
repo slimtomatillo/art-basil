@@ -26,10 +26,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:38",
-            "hash": "fa006e90288156a89c507e0295eea07d",
+            "last_updated": "2026-11-15 21:03:02",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "4ad5178df28397d11a6e5170b53d85dc"
         },
         "UnEarthed: Nicola L\u00f3pez-Elizabeth Leach Gallery": {
             "name": "UnEarthed: Nicola L\u00f3pez",
@@ -39,8 +39,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "printmaking"
+                "printmaking",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -58,10 +58,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:38",
-            "hash": "3be9140ed55658a81359d3b0f8d2848b",
+            "last_updated": "2026-11-15 21:03:02",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "5be0b98d454b8db733fe49ba12dc5783"
         }
     },
     "Russo Lee Gallery": {
@@ -73,8 +73,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -92,10 +92,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:40",
-            "hash": "eedded66d97e66897d7488055a42b4aa",
+            "last_updated": "2026-11-15 21:03:04",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "a335ca05458884f73c30167dadbbd559"
         },
         "Lucinda Parker: D\u00e9j\u00e0 Vu All Over Again-Russo Lee Gallery": {
             "name": "Lucinda Parker: D\u00e9j\u00e0 Vu All Over Again",
@@ -123,10 +123,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:40",
-            "hash": "d142e6f15393fe5049c721da7de66bb1",
+            "last_updated": "2026-11-15 21:03:04",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "0a4c325025c45b9b5a8a4520bbb77aa2"
         },
         "Ren\u00e9 Rickabaugh: Reflections-Russo Lee Gallery": {
             "name": "Ren\u00e9 Rickabaugh: Reflections",
@@ -154,10 +154,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:40",
-            "hash": "2b6cab6dcb4276877577aa352073de0d",
+            "last_updated": "2026-11-15 21:03:04",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "d8c2a41ad69d7b7406c0c5203b499642"
         },
         "Northwest Masters: Works from Estates & Private Collections-Russo Lee Gallery": {
             "name": "Northwest Masters: Works from Estates & Private Collections",
@@ -185,10 +185,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:40",
-            "hash": "dbc783d57027151da0b6f7a879629b66",
+            "last_updated": "2026-11-15 21:03:04",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "399233e7dd309aa3c7e65f448dd49884"
         }
     },
     "Froelick Gallery": {
@@ -200,8 +200,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -219,10 +219,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:41",
-            "hash": "55c17920cf6da9c942eea60c9eb9258c",
+            "last_updated": "2026-11-15 21:03:05",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "0511e52e8abd07fe18218fcfd21ef3ea"
         },
         "Daniel Robinson: Promised Land-Froelick Gallery": {
             "name": "Daniel Robinson: Promised Land",
@@ -232,8 +232,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -251,10 +251,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:41",
-            "hash": "f431f68243c7eff3c9e713f0b6be46c0",
+            "last_updated": "2026-11-15 21:03:05",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "d10a6e802d1190c8978415e71c1f3076"
         },
         "Confidants: Rick Bartow and Seiichi Hiroshima-Froelick Gallery": {
             "name": "Confidants: Rick Bartow and Seiichi Hiroshima",
@@ -282,9 +282,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:41",
-            "hash": "206f28e1a683773c7ed97bfdcc41b084",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 21:03:05",
+            "description_checked": "2026-11-15",
+            "hash": "37bda0f33ecefcc3e9be0dc5bb8b4582"
         }
     },
     "Augen Gallery": {
@@ -315,9 +315,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:42",
-            "hash": "359db3e440114e41756d0b7027769741",
-            "description_checked": "2026-11-15"
+            "last_updated": "2026-11-15 21:03:06",
+            "description_checked": "2026-11-15",
+            "hash": "ea929293810797b7a83681e8ae167980"
         }
     },
     "PDX Contemporary Art": {
@@ -329,9 +329,9 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
                 "photography",
-                "painting"
+                "painting",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -349,11 +349,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:42",
-            "hash": "2ef2bd6b75a726c1c34c67cb0dd1b05e",
-            "image_checked": "2026-11-15",
+            "last_updated": "2026-11-15 21:03:07",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "82a844cca99a85e459ebfbafaf91af7c"
         },
         "Homing: Nell Warren-PDX Contemporary Art": {
             "name": "Homing: Nell Warren",
@@ -381,10 +381,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:42",
-            "hash": "e174116188ce35123ff0ddf6154cc576",
+            "last_updated": "2026-11-15 21:03:07",
+            "description_checked": "2026-11-15",
             "image_checked": "2026-11-15",
-            "description_checked": "2026-11-15"
+            "hash": "ad12f85a40f933c5fdb65d74a80b0050"
         }
     },
     "Blue Sky Gallery": {
@@ -414,10 +414,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:42",
-            "hash": "68956bfe69882c3715c40b91b5a4ae5a",
+            "last_updated": "2026-11-15 21:03:07",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "dfef7a626dffe778374da66945ca2a0e"
         },
         "Yukai Chen-Blue Sky Gallery": {
             "name": "Yukai Chen",
@@ -427,9 +427,9 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
                 "photography",
-                "queer"
+                "queer",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -447,10 +447,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:43",
-            "hash": "dfe6dd0fe1ffa3be97d92a47fb60ede1",
+            "last_updated": "2026-11-15 21:03:07",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "hash": "3e77308057fd9bbff9c61fc00bbb5e5e"
         }
     },
     "Oregon Jewish Museum and Center for Holocaust Education": {
@@ -479,11 +479,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:44",
-            "hash": "2cfb27e0779bb7b60f571ee7997270d5",
-            "image_checked": "2026-11-15",
+            "last_updated": "2026-11-15 21:03:09",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "1ad3241bb115f5f645ccd1025b4ba7ac"
         },
         "One Nation-Oregon Jewish Museum and Center for Holocaust Education": {
             "name": "One Nation",
@@ -510,11 +510,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:44",
-            "hash": "7d2bed2b3eb91f277a37d3d5683f8424",
-            "image_checked": "2026-11-15",
+            "last_updated": "2026-11-15 21:03:09",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "65998dd83c738d365c940163d3e8cacf"
         },
         "Frank Stella: Had Gadya-Oregon Jewish Museum and Center for Holocaust Education": {
             "name": "Frank Stella: Had Gadya",
@@ -542,11 +542,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
-            "hash": "c8fca03eb88f0a52aa413cb6bebd837b",
-            "image_checked": "2026-11-15",
+            "last_updated": "2026-11-15 21:03:10",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "919e9c8668a44bfeb45ea6480b2f2e1e"
         }
     },
     "Portland Art Museum": {
@@ -576,14 +576,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "6220a6a6906ed0a2ec331b9743e20eac",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "9993c16a654f59d370d2e77438ef9053"
         },
         "Mickalene Thomas: Do I Look Like a Lady? (Comedians and Singers)-Portland Art Museum": {
             "name": "Mickalene Thomas: Do I Look Like a Lady? (Comedians and Singers)",
@@ -612,14 +612,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "237f98077d9356ffcc59e8666ca919c4",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "7e5fbae82b0e2da9f4c61bd26ef60f57"
         },
         "Abstraction Since Mark Rothko-Portland Art Museum": {
             "name": "Abstraction Since Mark Rothko",
@@ -647,14 +647,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "50266333b187de3a609f0fe007db743d",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "51e2ce12829718dfaf23b870ed8e49ba"
         },
         "Facing Ourselves-Portland Art Museum": {
             "name": "Facing Ourselves",
@@ -681,14 +681,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "c97667264e78d1dc4a95129fa06f5868",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "ab97205bb80560208312eec0ac20aa81"
         },
         "For the Enjoyment of All: Celebrating the Kress Gift-Portland Art Museum": {
             "name": "For the Enjoyment of All: Celebrating the Kress Gift",
@@ -715,14 +715,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "f91dd20d7b1c9be895ad6a500b837f58",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "38ea50278799864b5c0306da305da9b4"
         },
         "Black Arts PDX at the CREATE SPACE-Portland Art Museum": {
             "name": "Black Arts PDX at the CREATE SPACE",
@@ -749,14 +749,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "69d2876044783f83f215e6256808b861",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "d560e8d5f89303e5edfcb7834c1359d4"
         },
         "Heaven and Earth: Chinese Art from the Collections-Portland Art Museum": {
             "name": "Heaven and Earth: Chinese Art from the Collections",
@@ -783,14 +783,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "2e723ade6d9824f1e49bc838d47e2fca",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "87c5be4f3a241cede7e954c2ac769d63"
         },
         "American Land-Portland Art Museum": {
             "name": "American Land",
@@ -819,14 +819,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "f680aa491f812e959e44382c5110168f",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "b81c458aa0d9994d84ba9e4a16868030"
         },
         "Mirror Mirror: Silver in the 20th Century-Portland Art Museum": {
             "name": "Mirror Mirror: Silver in the 20th Century",
@@ -853,14 +853,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "0f45286208af60f14a93dcc98857f6a8",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "98252f975f14aaf93419ed95c32dedb4"
         },
         "Myth and Memory: Mediterranean Antiquity and its Revivals-Portland Art Museum": {
             "name": "Myth and Memory: Mediterranean Antiquity and its Revivals",
@@ -889,14 +889,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "686fd4e16342d168fc5faff75316ca2f",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "e5c0ca2d651d14ace0470c4436d7e70f"
         },
         "Mystic Mountain: Mount Hood in Art-Portland Art Museum": {
             "name": "Mystic Mountain: Mount Hood in Art",
@@ -923,14 +923,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "86bf36d8f8802595fa513e493551631c",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "7e825541a9168500d6bac3d41e0eff27"
         },
         "Harriet Tubman Center Museum-Portland Art Museum": {
             "name": "Harriet Tubman Center Museum",
@@ -957,14 +957,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "b37f9ffe9738d51bb53c8edaa1cea566",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "969a23b1100c41cee3c5362d369ab011"
         },
         "Lisa Jarrett: Tenderhead-Portland Art Museum": {
             "name": "Lisa Jarrett: Tenderhead",
@@ -992,14 +992,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "37615b472cc2bc3614f69b37e8b0f918",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "652803914181402cf3abcbe433bc2b2b"
         },
         "Forming Nature, Nature Formed-Portland Art Museum": {
             "name": "Forming Nature, Nature Formed",
@@ -1028,14 +1028,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "47c331f766e19634a1b3d9b8619e7c17",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "8dfe12e958f2ab51e95717a73c93df17"
         },
         "Todd McGrain: Debut of York-Portland Art Museum": {
             "name": "Todd McGrain: Debut of York",
@@ -1063,14 +1063,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "dc4c84e6939ccb70ccf90433b1b7348f",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "a931ab68b292962338f37839bb84ce85"
         },
         "Pipilotti Rist: 4th Floor to Mildness-Portland Art Museum": {
             "name": "Pipilotti Rist: 4th Floor to Mildness",
@@ -1098,14 +1098,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "83a46131e8df4309274748ff5115b93d",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "68bcc6f75c99b8c814c432c3fb6619fd"
         },
         "Marco Brambilla: Maximalist Dreamscapes-Portland Art Museum": {
             "name": "Marco Brambilla: Maximalist Dreamscapes",
@@ -1133,14 +1133,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "4d0d14ae26d435df92586b0c33051c66",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "ed4572f4d5ad6419d0d723d6a5ed5d9b"
         },
         "Nine Women Artists-Portland Art Museum": {
             "name": "Nine Women Artists",
@@ -1168,14 +1168,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "b1353d8c1fd8240acb5f44d9e4a5aa76",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "866ab47b6a03e7373cac60b1c061e920"
         },
         "An Honest Day\u2019s Work: Photographs of Labor-Portland Art Museum": {
             "name": "An Honest Day\u2019s Work: Photographs of Labor",
@@ -1203,14 +1203,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "364be00709f6c141d441b66f32ea3ae8",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "2fd8c8a6540d4bb0b05ea478c66b9b43"
         },
         "A Brief History of Photography: The Portrait-Portland Art Museum": {
             "name": "A Brief History of Photography: The Portrait",
@@ -1238,14 +1238,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "85bd144f4393aafedc84fe0397635a1e",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "7cce34e2dfa88ca41baac720ad51f8b5"
         },
         "Imagine Monuments: A Partnership with Arts in Education of the Gorge-Portland Art Museum": {
             "name": "Imagine Monuments: A Partnership with Arts in Education of the Gorge",
@@ -1272,14 +1272,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "64b24114b25252b388bffc01d2cf5ce3",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "a4c5ad09c7a09ade8a2f733bf44de0a3"
         },
         "To Gather Your Leaving: Themes of Diasporic Experiences in the Northwest-Portland Art Museum": {
             "name": "To Gather Your Leaving: Themes of Diasporic Experiences in the Northwest",
@@ -1307,14 +1307,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "a753fca9a6d612d51866c4ca2035e437",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "94e6a0a8efcc5dd4095642bcf484c4c7"
         },
         "Here we are-Portland Art Museum": {
             "name": "Here we are",
@@ -1341,14 +1341,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "1d1355c9416f9cd34a22588121f3fba2",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "f84e40e50457201b75ed880914176487"
         },
         "MAKERS: The Culture of Craft-Portland Art Museum": {
             "name": "MAKERS: The Culture of Craft",
@@ -1375,14 +1375,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "6c833aeb3ec7ba4c3ab94971a24c1e4f",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "ee2e528ba673779c8240ad33a477abb2"
         },
         "The Art of Mark Rothko-Portland Art Museum": {
             "name": "The Art of Mark Rothko",
@@ -1409,14 +1409,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "312f67d32a0a0ac4c2979feffcc50d3d",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "2c27d1f8c2fb8d9d34e2371adf721592"
         },
         "Conversations in Clay-Portland Art Museum": {
             "name": "Conversations in Clay",
@@ -1445,14 +1445,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "76d77121a06a434444675a3cf65b5fc1",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "a984e05f5ccc294d17c500a0af53e501"
         },
         "Highest Heaven-Portland Art Museum": {
             "name": "Highest Heaven",
@@ -1479,14 +1479,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "0939331e3cfc6feb5ee71f63bc1546e5",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "77d224c2a9a5bfae6cf34e4ce7d5e4f0"
         },
         "Black Art and Experiences-Portland Art Museum": {
             "name": "Black Art and Experiences",
@@ -1514,14 +1514,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "77d46106573fe4bdecf772151d096cda",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "2ceb15ea835a24fa407bd3481fb69552"
         },
         "Word in Flower: Arts of Buddhism-Portland Art Museum": {
             "name": "Word in Flower: Arts of Buddhism",
@@ -1551,14 +1551,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "9792cf42a767604ee3a9eec42301d269",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "1711d2029932cf26558da68e76a7cf98"
         },
         "Watanabe Sadao-Portland Art Museum": {
             "name": "Watanabe Sadao",
@@ -1586,14 +1586,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "8e53ab1564fa1005b57f9a2690f900c7",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "f63881a79a6ff1e20b580a4566882760"
         },
         "Mary Henry: A Long Unbroken Line-Portland Art Museum": {
             "name": "Mary Henry: A Long Unbroken Line",
@@ -1620,14 +1620,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "a29a32a138a979352595bdb050c9ed93",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "16b36f7be7f97f33fc72a27bd92a54d7"
         },
         "Rick Bartow: Storyteller-Portland Art Museum": {
             "name": "Rick Bartow: Storyteller",
@@ -1654,14 +1654,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "372940b92a8410f30a700358d21ecdab",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "68fafefc6b370cffe0c9f6ac26212f9c"
         },
         "Shifting the Narrative: 21st Century Acquisitions-Portland Art Museum": {
             "name": "Shifting the Narrative: 21st Century Acquisitions",
@@ -1689,14 +1689,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "15b3005256fdb95a92a2bc08692eafc1",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "b50fe235c985254414884ac7a9ee5968"
         },
         "Global Impressionism-Portland Art Museum": {
             "name": "Global Impressionism",
@@ -1724,14 +1724,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "76304f38549cee052646372a630462af",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "09c500615a3f2e1b2decbb094476aba2"
         },
         "Im/Material-Portland Art Museum": {
             "name": "Im/Material",
@@ -1758,14 +1758,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "0456ed08d43a250d378c2801256f8f49",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "78649806ecaa8cc6b0382f3185f64f7f"
         },
         "Yinka Ilori: Mountains Full of Blessings-Portland Art Museum": {
             "name": "Yinka Ilori: Mountains Full of Blessings",
@@ -1792,14 +1792,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "0574843aa3c61835adc5f4e374e80095",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "ced783df85b0e7b93623818209c669c7"
         },
         "Prints of Darkness: The Modern Mezzotint-Portland Art Museum": {
             "name": "Prints of Darkness: The Modern Mezzotint",
@@ -1827,14 +1827,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "beaa93ff72d1a5e853520aaf12ad05fa",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "2a57107d708959dd226d26cc790bcb25"
         },
         "Data Consciousness: Reframing Blackness in Contemporary Print-Portland Art Museum": {
             "name": "Data Consciousness: Reframing Blackness in Contemporary Print",
@@ -1844,10 +1844,10 @@
                 "exhibition",
                 "future",
                 "museum",
-                "black-art",
                 "sculpture",
                 "printmaking",
-                "textiles"
+                "textiles",
+                "black-art"
             ],
             "phase": "future",
             "dates": {
@@ -1865,14 +1865,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "e7deeb1bfe1562c3cf57cb37f79d8e51",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "70b17117668ecde7e97663e27b470c33"
         },
         "German Expressionism in Art and Film-Portland Art Museum": {
             "name": "German Expressionism in Art and Film",
@@ -1900,14 +1900,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "066e6a8ed8c0fe8c26b8377a37385efd",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "9d96cbe44813a606addf0b6b2b0ec74a"
         },
         "Titus Kaphar: Ascension-Portland Art Museum": {
             "name": "Titus Kaphar: Ascension",
@@ -1930,14 +1930,14 @@
                     "description": "Event Page"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "dedf7a3902372e1d795b6dd94807f4ff",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "f3e3d348522a100f50080cc4521f974c"
         },
         "M. C. Escher: Infinite Variations-Portland Art Museum": {
             "name": "M. C. Escher: Infinite Variations",
@@ -1965,14 +1965,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:47",
+            "last_updated": "2026-11-15 21:03:11",
             "locations": [
                 "Park Avenue"
             ],
-            "hash": "c80580237073fe9843e10c17bf2ab0a9",
-            "image_checked": "2026-11-15",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "30814529d66b9fd25b4ef2d3189fe917"
         }
     },
     "Oregon Contemporary": {
@@ -1984,8 +1984,8 @@
                 "exhibition",
                 "current",
                 "gallery",
-                "free",
-                "film-video"
+                "film-video",
+                "free"
             ],
             "phase": "current",
             "dates": {
@@ -2003,11 +2003,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:48",
-            "hash": "604f54c5203fe72baac9814e22d8533e",
-            "image_checked": "2026-11-15",
+            "last_updated": "2026-11-15 21:03:11",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "f61aae87ef812cf2cff6f693b439f3c0"
         },
         "Thought Forms: Open Studio-Oregon Contemporary": {
             "name": "Thought Forms: Open Studio",
@@ -2035,11 +2035,11 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:48",
-            "hash": "84ae2ac0cd37c3e862c4fdf5757db0cf",
-            "image_checked": "2026-11-15",
+            "last_updated": "2026-11-15 21:03:11",
+            "description_source": "page",
             "description_checked": "2026-11-15",
-            "description_source": "page"
+            "image_checked": "2026-11-15",
+            "hash": "41bf6c311aa82ac2a439085c251b4062"
         }
     },
     "Carnation Contemporary": {
@@ -2069,10 +2069,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:49",
-            "hash": "49def06d938e8d7608d779703f99ec13",
+            "last_updated": "2026-11-15 21:03:12",
+            "description_checked": "2026-11-15",
             "image_checked": "2026-11-15",
-            "description_checked": "2026-11-15"
+            "hash": "f2cb956096d2ab1ee36226b33b4a44d5"
         }
     },
     "Cooley Gallery": {
@@ -2102,9 +2102,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-15 19:09:50",
-            "hash": "1e0ccbd8f2532bdf47229f359d0053f7",
-            "image_checked": "2026-11-15"
+            "last_updated": "2026-11-15 21:03:13",
+            "image_checked": "2026-11-15",
+            "hash": "4f67cc22ddbb126fda91bf30555fae50"
         }
     }
 }
