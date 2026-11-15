@@ -3,7 +3,7 @@
         "Roy Lichtenstein: Like New-Whitney Museum of American Art": {
             "name": "Roy Lichtenstein: Like New",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Roy Lichtenstein\u2019s breakthrough Pop work stunned both the art world and the country when it was first shown in the early 1960s. An appropriation artist long before the term was used by art historians, Lichtenstein took his imagery from comic books and newspapers, reconfiguring and refining his compositions before enlarging and transferring them to canvas.",
             "tags": [
                 "exhibition",
                 "current",
@@ -25,13 +25,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "7a32d5ced1c3348ffdfc1331c2f7480d"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "501658dfd1a4bce5c701de7138aafd17",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Coumba Samba: Stars and Stripes-Whitney Museum of American Art": {
             "name": "Coumba Samba: Stars and Stripes",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Coumba Samba\u2019s installations draw on forms from the global built environment to expose the social, political, and economic structures they represent. In Stars and Stripes, Samba (b. 2000) uses the geometric shapes and bold colors of modernist abstraction to explore the entanglement of resource extraction with systems of power.",
             "tags": [
                 "exhibition",
                 "current",
@@ -53,17 +55,22 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "d3dff2a3fe4e30105474a75a2ec4806d"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "4ecc1e74fb208a8d6aee365906be0d0f",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Roy Lichtenstein: 1997-Whitney Museum of American Art": {
             "name": "Roy Lichtenstein: 1997",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Roy Lichtenstein: 1997 is presented on the Museum\u2019s 3rd floor. This exhibition runs in conjunction with the major exhibition Roy Lichtenstein: Like New, opening October 11 on the Museum\u2019s 5th floor. In 1997, at the age of seventy-three, Roy Lichtenstein (1923\u20131997) was as innovative and productive as ever. In addition to his studio painting practice, he was working on a variety of adventurous projects, among them two mural commissions, several large-scale sculptures, and a new series of prints.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture",
+                "printmaking"
             ],
             "phase": "current",
             "dates": {
@@ -81,17 +88,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "a5b735f5838aa6e4ed7eb65ce56dffc6"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "61ca2e42c51600b4fe13b8e8aaf8480b",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "The Lost World: The Art of Minnie Evans-Whitney Museum of American Art": {
             "name": "The Lost World: The Art of Minnie Evans",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Inspired by vivid dreams and visions, Minnie Evans (1892\u20131987) made her first drawing in 1935 after the death of her beloved grandmother. During the subsequent decades, the artist created hundreds of radiant pencil and crayon drawings, oil paintings, and collages that combined imagery from her Afro-Caribbean heritage, mythology, religion, popular culture, decorative arts, and the natural environment of her native Wilmington, North Carolina.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "painting",
+                "drawing"
             ],
             "phase": "current",
             "dates": {
@@ -109,13 +120,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "6450a0911f1df5f63d6b6fa1110460be"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "b1273ffeba75e046d3aa02ccea70c250",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "artport: A History of Internet Art-Whitney Museum of American Art": {
             "name": "artport: A History of Internet Art",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Screenshots from select projects commissioned by the Whitney Museum of American Art for its artport website. Image courtesy New Information artport: A History of Internet Art marks the twenty-fifth anniversary of artport, the Whitney\u2019s online gallery space for commissions of net art, which launched in 2001. Since its inception, artport has presented a snapshot of the varied practices artists use to engage with an ever-evolving online environment.",
             "tags": [
                 "exhibition",
                 "future",
@@ -137,17 +150,20 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "588b31f9d49682060bf4a15a51202a48"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "2c65299b69222d4f3c575bd9f103f043",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Farah Al Qasimi: TAILSPIN-Whitney Museum of American Art": {
             "name": "Farah Al Qasimi: TAILSPIN",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Farah Al Qasimi: TAILSPIN takes its title from the featured video work, TAILSPIN. Filmed in between Michigan, West Texas, and the East Coast, the work traces the long-standing relationship between American industry, oil, car culture, and Arab immigration. Told from the perspective of a jinn, or spirit, the work combines fictionalized storytelling, documentary-style footage, and real testimony to explore the complexities of identity-building in post-9/11 America.",
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "film-video"
             ],
             "phase": "future",
             "dates": {
@@ -165,17 +181,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "6e30a651f514ee18e10e23721c8e82d3"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "591964397861079c0f8bb51ae4ccb22c",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Sonya Kelliher-Combs: TITIQ/MARK-Whitney Museum of American Art": {
             "name": "Sonya Kelliher-Combs: TITIQ/MARK",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Sonya Kelliher-Combs: TITIQ/MARK highlights nearly two decades of the artist\u2019s explorations of history, cultural continuity, self-determination, and land use through her inventive approaches to artmaking. An I\u00f1upiaq and Koyukon artist based in Anchorage, Alaska, Kelliher-Combs (b. 1969) makes paintings, sculptures, and installations that are deeply informed by generational knowledge.",
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "painting",
+                "sculpture"
             ],
             "phase": "future",
             "dates": {
@@ -193,13 +213,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "1db28eab2eebc81e09b2fbfd73becb7d"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "8ecb00b47789a722a6070da60826a478",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Frank WANG Yefeng: The Levitating Perils #2-Whitney Museum of American Art": {
             "name": "Frank WANG Yefeng: The Levitating Perils #2",
             "venue": "Whitney Museum of American Art",
-            "description": null,
+            "description": "Frank WANG Yefeng\u2019s The Levitating Perils #2 is a series of five animations that continues the artist\u2019s explorations of identity and cultural displacement. The work features an uncanny, yet playful floating red dragon based on historical illustrations of the \u201cYellow Peril,\u201d a label given to anti-Asian bias that dates back to the birth of European colonialism. The illustrations appeared in newspapers and political cartoons and featured monstrous depictions of Asian figures invading the West.",
             "tags": [
                 "exhibition",
                 "current",
@@ -221,8 +243,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "54d60bf7b75b7e668dae39537d47dad6"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "8a89c6a85312e6a9a3a615077717d42b",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Alex Da Corte: Hot Dog With Ketchup-Whitney Museum of American Art": {
             "name": "Alex Da Corte: Hot Dog With Ketchup",
@@ -249,8 +273,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:34",
-            "hash": "ad67ee37cdcb3ee1a83f1e3349046f83"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "1cd6140c55b5e71dd09032872b5d96bb",
+            "description_checked": "2026-11-15"
         }
     },
     "Guggenheim Museum": {
@@ -281,8 +306,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "ff70c3e56a583db1d57289fa5e763ec0"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "c69ca347ecf964c3304efd2e1f8e2d5d"
         },
         "Guggenheim Pop: 1960 to Now-Guggenheim Museum": {
             "name": "Guggenheim Pop: 1960 to Now",
@@ -309,8 +334,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "45f3450d12e68e77386af9d495df4751"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "da77728565c25a35fa194a23f9a4ef5d"
         },
         "Collection in Focus: Modern European Currents-Guggenheim Museum": {
             "name": "Collection in Focus: Modern European Currents",
@@ -338,8 +363,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "401a818e46e3322ad7d418acb9fcc3d5"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "04a8065fc878f90b93e911943b04d8a7"
         },
         "I dream in another language: Do Ho Suh-Guggenheim Museum": {
             "name": "I dream in another language: Do Ho Suh",
@@ -366,19 +391,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "644328251d6624255bf614b4f0fe3daa"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "8e9ec91096f22054850ea9a6a7df2290"
         }
     },
     "The Studio Museum in Harlem": {
         "Tone-The Studio Museum in Harlem": {
             "name": "Tone",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "In drawings, paintings, photographs, and sculptures, the artists in Tone harness the expressive force of black, white, and every value between to demonstrate that tone functions beyond a technical condition as a unique material language.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography",
+                "painting",
+                "sculpture",
+                "drawing"
             ],
             "phase": "current",
             "dates": {
@@ -396,13 +425,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "c7d9842110f363df6a774e9f840666f6"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "58a6c37f6acb4f4353130da5c9f373e7",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Mark Bradford: Untitled (A\u2013Z), 2010-The Studio Museum in Harlem": {
             "name": "Mark Bradford: Untitled (A\u2013Z), 2010",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "Mark Bradford\u2019s alphabet builds on an ongoing body of work called \u201cmerchant posters,\u201d wherein the artist collects local business advertisements in his South Los Angeles neighborhood. Bradford layers and sands down these once-posted signs\u2014featuring phrases such as \u201cStop Evictions\u201d and \u201cAffordable Daycare\"\u2014abstracting their original messaging so that only fragments remain. The result is twenty-six individual works on paper, each depicting a single letter from the English alphabet.",
             "tags": [
                 "exhibition",
                 "current",
@@ -424,13 +455,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "0935289fb46ef28b87043c79d08252f8"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "3e1cdab58d1f0f489a27d0f2a6628ef7",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "A sustained becoming: Studio Museum Artists in Residence 2026-The Studio Museum in Harlem": {
             "name": "A sustained becoming: Studio Museum Artists in Residence 2026",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "A sustained becoming: Studio Museum Artists in Residence 2026 showcases the work of the Studio Museum in Harlem\u2019s 2026 artists in residence, Derriann Pharr, Simonette Quamina, and Taylor Simmons, the first Artist-in-Residence cohort in the Museum\u2019s new building.",
             "tags": [
                 "exhibition",
                 "current",
@@ -452,17 +485,20 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "cbb15e59f51a6a910bdc703dbb69e70d"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "218dc899d768a435d18df6a0e18bbaff",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Through Motion and Repose: Expanding the Walls 2026-The Studio Museum in Harlem": {
             "name": "Through Motion and Repose: Expanding the Walls 2026",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "Through Motion and Repose: Expanding the Walls 2026 features photography by the seventeen artists in this year\u2019s cohort of the Studio Museum in Harlem\u2019s signature teen program, Expanding the Walls: Making Connections Between Photography, History, and Community.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "current",
             "dates": {
@@ -480,13 +516,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "2eda0957bca8affa79ed6f3a979b7f18"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "5c070d2b437bf4e5e2ba02508b04e322",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Geometries-The Studio Museum in Harlem": {
             "name": "Geometries",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "Geometries centers the ancient mathematical study as a point of artistic inquiry, exploring how artists have used lines, shapes, and the spaces between to convey emotion, express identity, or work through formal concerns. Geometry helps us make sense of the world around us and the universe beyond. It works in tandem with our perception as we consider depth, volume, dimensionality, surface, measurement, distance, and structure.",
             "tags": [
                 "exhibition",
                 "current",
@@ -508,13 +546,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "437c2e9105b6bc7b165a8932b860caee"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "47be6e13c14ed0b4ae8360ad87feec7c",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Dreams of This Future: The Collection of Peggy Cooper Cafritz-The Studio Museum in Harlem": {
             "name": "Dreams of This Future: The Collection of Peggy Cooper Cafritz",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "This exhibition brings together a selection of works from a historic gift to the Studio Museum in Harlem by Peggy Cooper Cafritz (1947\u20132018) to celebrate her legacy as an advocate for the arts and her lifelong commitment to artists and their practices. An arts patron, educator, and civil rights activist, Cafritz bequeathed the majority of her art collection to the Studio Museum and the Duke Ellington School of the Arts, a public school in Washington, DC, which she cofounded in 1974.",
             "tags": [
                 "exhibition",
                 "current",
@@ -536,17 +576,20 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "5790109bb5ef01b0b9e67862adb1b6dc"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "7be7354f3152197b7af06b3068772dfa",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Kapwani Kiwanga: BLEED-The Studio Museum in Harlem": {
             "name": "Kapwani Kiwanga: BLEED",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "BLEED is a new site-specific commission by French and Canadian multimedia artist Kapwani Kiwanga. Installed in the Museum\u2019s second-floor project gallery and on view from March 13, 2026, until April 1, 2027, BLEED draws inspiration from quilting traditions and the symbolism embedded in their intricate designs.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "textiles"
             ],
             "phase": "current",
             "dates": {
@@ -564,17 +607,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "27ee6de6dae61517c65d4eb1aa5b3085"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "80704a99bf71ae199eb707c02431c368",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Woody De Othello: coming forth by day-The Studio Museum in Harlem": {
             "name": "Woody De Othello: coming forth by day",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "Miami-born artist Woody De Othello\u2019s solo presentation, coming forth by day, a new series of ceramic and wood sculptures, tiled wall works, and a large-scale bronze, travels to the Studio Museum in Harlem from the Jan Shrem and Maria Manetti Shrem Museum of Art, having originally been presented at the P\u00e9rez Art Museum Miami (PAMM). This will be the artist\u2019s first institutional solo show in New York City.",
             "tags": [
                 "exhibition",
                 "future",
-                "museum"
+                "museum",
+                "sculpture",
+                "ceramics"
             ],
             "phase": "future",
             "dates": {
@@ -592,13 +639,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "a3b01b39d73164d5513793fcbada6ba7"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "520d0a99e5bee20bbef11815e53773e8",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Mavis Pusey: Mobile Images-The Studio Museum in Harlem": {
             "name": "Mavis Pusey: Mobile Images",
             "venue": "The Studio Museum in Harlem",
-            "description": null,
+            "description": "Mavis Pusey: Mobile Images, coorganized by the Studio Museum in Harlem and the Institute of Contemporary Art at the University of Pennsylvania (ICA Philadelphia), marks the first major survey dedicated to the work and life of Jamaican-born artist Mavis Pusey (1928\u20132019), and features an array of artworks from Pusey's prolific fifty-year career.",
             "tags": [
                 "exhibition",
                 "future",
@@ -620,8 +669,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:35",
-            "hash": "398c87f3309c0f76c27f6037efc0eeab"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "68d6645237b9759069b40a4281a63c82",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "The Frick Collection": {
@@ -651,8 +702,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "66eadaf8aad3446a90a4bf281a3047ef"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "7e1ef3217faeae0cf267efffa0a4fbe8"
         },
         "Kent Monkman: Officer and Laughing Girl-The Frick Collection": {
             "name": "Kent Monkman: Officer and Laughing Girl",
@@ -681,8 +732,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "e5405e7bba1efd5930fea37c935f5d3f"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "dfebd70b179f54e9aa7b6d433a8ca0d1"
         },
         "Painting with Fire: Susanne de Court and the Art of Enamel-The Frick Collection": {
             "name": "Painting with Fire: Susanne de Court and the Art of Enamel",
@@ -710,8 +761,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "76f9c66d83d6e7d73623b82bc7cb35fe"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "d15c63890aa6286430c96e348eca79b9"
         },
         "Vilhelm Hammersh\u00f8i: Pictures from Home-The Frick Collection": {
             "name": "Vilhelm Hammersh\u00f8i: Pictures from Home",
@@ -739,20 +790,23 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "17cc54f4f13a5fa0eef9816676753cd9"
+            "last_updated": "2026-11-15 00:24:20",
+            "hash": "a67838678ccbe1911258ed7f94afa664"
         }
     },
     "David Zwirner": {
         "Yoshitomo Nara-David Zwirner": {
             "name": "Yoshitomo Nara",
             "venue": "David Zwirner",
-            "description": null,
+            "description": "David Zwirner is pleased to present an exhibition by Japanese artist Yoshitomo Nara featuring new paintings and drawings, recent sculptures, and early works selected by the artist. Spanning the gallery's 537 West 20th Street and 533 West 19th Street locations in New York, this exhibition will be the artist's first solo presentation with David Zwirner and his first major solo exhibition in New York in nearly a decade.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting",
+                "sculpture",
+                "drawing"
             ],
             "phase": "current",
             "dates": {
@@ -770,23 +824,26 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
+            "last_updated": "2026-11-15 00:24:21",
             "locations": [
                 "19th Street",
                 "20th Street"
             ],
             "image_checked": "2026-11-13",
-            "hash": "dea423731c283b6a115573e3a744e8fa"
+            "hash": "1e3ad677ae85b3c2d5e140c5fadbde50",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Jem Perucchini: Sospiro-David Zwirner": {
             "name": "Jem Perucchini: Sospiro",
             "venue": "David Zwirner",
-            "description": null,
+            "description": "Explore Jem Perucchini: Sospiro at David Zwirner\u2019s Tribeca location in New York, featuring new figurative paintings in the artist\u2019s first US exhibition.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -804,23 +861,26 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
+            "last_updated": "2026-11-15 00:24:21",
             "locations": [
                 "Tribeca"
             ],
-            "hash": "bbb89dfdee5b7c8c6afc6387ec94d577"
+            "hash": "7a6d3df324d1f4837d1f025127c54c52",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Pace Gallery": {
         "Li Hei Di: the year of mud-Pace Gallery": {
             "name": "Li Hei Di: the year of mud",
             "venue": "Pace Gallery",
-            "description": null,
+            "description": "Pace will present \u201cthe year of mud,\u201d an exhibition of new paintings by London-based artist Li Hei Di, at its 540 West 25th Street gallery from November 6 through December 19.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -838,13 +898,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "d66342afca090a6e0db3ecf9a858de52"
+            "last_updated": "2026-11-15 00:24:21",
+            "hash": "87be297fec4041e039b245cdc1769189",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Lucas Samaras: Boxes and Reconstructions-Pace Gallery": {
             "name": "Lucas Samaras: Boxes and Reconstructions",
             "venue": "Pace Gallery",
-            "description": null,
+            "description": "\u201cLucas Samaras: Boxes and Reconstructions\u201d will bring together two seminal bodies of work by the influential Greek-born American artist Lucas Samaras at Pace\u2019s 540 West 25th Street gallery from November 6, 2026 through January 23, 2027",
             "tags": [
                 "exhibition",
                 "current",
@@ -867,18 +929,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "189f51e0902432087c7b43d867e1e2b3"
+            "last_updated": "2026-11-15 00:24:21",
+            "hash": "465c5ba9f65cb11a4e58dcf5ecdaa9f8",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Elmgreen & Dragset: TRANSITION-Pace Gallery": {
             "name": "Elmgreen & Dragset: TRANSITION",
             "venue": "Pace Gallery",
-            "description": null,
+            "description": "Known for large-scale institutional transformations that fuse the typology of one space with another, Elmgreen & Dragset have explored how spatial design can communicate values and exercise control. In Transition, they direct their lens toward a site of political governance with their sculptural interpretation of the Oval Office.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -896,18 +961,22 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "68d60b9aeac100ee55636944a7054f79"
+            "last_updated": "2026-11-15 00:24:21",
+            "hash": "e8b97dfba9506b5933375a966fc7fb87",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "David Byrne-Pace Gallery": {
             "name": "David Byrne",
             "venue": "Pace Gallery",
-            "description": null,
+            "description": "Pace is pleased to present a special installation of drawings by artist David Byrne at its New York flagship. Drawn on the walls of the gallery\u2019s stairwell landings between its first and seventh floors, these nine drawings reflect Byrne\u2019s surreal and playful sensibility.Please note, this installation is currently closed while we install our upcoming exhibitions.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "drawing",
+                "installation"
             ],
             "phase": "current",
             "dates": {
@@ -925,18 +994,21 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "8d592d59ae911b0377909f92882903ac"
+            "last_updated": "2026-11-15 00:24:21",
+            "hash": "bd321176099bbe30ab146c0c352ccbee",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Gottlieb/Rothko: The Surrealist Years-Pace Gallery": {
             "name": "Gottlieb/Rothko: The Surrealist Years",
             "venue": "Pace Gallery",
-            "description": null,
+            "description": "125 Newbury will present \u201cGottlieb/Rothko: The Surrealist Years,\u201d an exhibition of paintings and works on paper by two of the central protagonists of Abstract Expressionism: Mark Rothko and Adolph Gottlieb.",
             "tags": [
                 "exhibition",
                 "current",
                 "gallery",
-                "free"
+                "free",
+                "painting"
             ],
             "phase": "current",
             "dates": {
@@ -954,8 +1026,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:36",
-            "hash": "5652ee186ff4bf490eec4614ad47485d"
+            "last_updated": "2026-11-15 00:24:21",
+            "hash": "5d21b3a76f6a1bc1af4b0b481c8c8ae7",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Night Gallery New York": {
@@ -986,8 +1060,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:38",
-            "hash": "88046d273b914bdefee00efebff4d71b"
+            "last_updated": "2026-11-15 00:24:23",
+            "hash": "570bd0a6ebf285106bafad7e75539978",
+            "description_checked": "2026-11-15"
         }
     },
     "Cooper Hewitt": {
@@ -1017,8 +1092,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "e5b6a963d7931dd33c6abf3b7918107f"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "7cc2739c74174ae29183339a5ac7d338"
         },
         "The Substitute-Cooper Hewitt": {
             "name": "The Substitute",
@@ -1045,15 +1120,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "fe3439d89c32d747de59e211a05170c1"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "2b83d20c5d820991efe494d20a3ae46e"
         }
     },
     "The Jewish Museum": {
         "Sacred Splendor: Jewish Ritual Art and Christian Treasures from St. Vitus Cathedral in Prague-The Jewish Museum": {
             "name": "Sacred Splendor: Jewish Ritual Art and Christian Treasures from St. Vitus Cathedral in Prague",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Sacred Splendor: Jewish Ritual Art and Christian Treasures from St. Vitus Cathedral in Prague brings Jewish and Christian sacred art from medieval to early modern Europe into dialogue, illuminating complex, interconnected histories across more than six centuries. The exhibition features Christian reliquaries on loan from St. Vitus Cathedral\u2014the most extensive presentation of this treasury ever exhibited outside Europe\u2014together with Jewish treasures never before shown in the United States.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1075,13 +1150,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "d054aee7c44a489af90c01551f5ea23a"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "85c0c1f10ff31a57d16c1c24c016585d",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Modernity and Opulence: Women of the Wiener Werkst\u00e4tte-The Jewish Museum": {
             "name": "Modernity and Opulence: Women of the Wiener Werkst\u00e4tte",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Modernity and Opulence: Women of the Wiener Werkst\u00e4tte sheds new light on the role that Jewish women played as artists, designers, patrons, and tastemakers shaping modernist aesthetics in early 20 th -century Vienna and beyond.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1104,16 +1181,19 @@
                 }
             ],
             "last_updated": "2026-11-14 18:25:39",
-            "hash": "ca0f1dbc41197b3baf0c85330239d809"
+            "hash": "ca0f1dbc41197b3baf0c85330239d809",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Art in Focus: Oded Halahmy: Models in Wood-The Jewish Museum": {
             "name": "Art in Focus: Oded Halahmy: Models in Wood",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Oded Halahmy: Models in Wood presents sculptures made primarily in the 1970s, following Halahmy\u2019s move to New York from London after studying at Saint Martin\u2019s School of Art. Their titles evoke family, ritual, and spatial orientation, while their forms often suggest ladders and windows. Mostly made in advance of the artist\u2019s monumental sculptures, each work is an intimate and hand-wrought expression of a singular artistic language rooted in memory and movement.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -1131,17 +1211,20 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "8fbda18ea2ec7a89005e8bcf85562c7f"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "d2652731d7022a32159ea689378e04e0",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Art in Focus: Hannah Altman: Not a Circle but a Spiral-The Jewish Museum": {
             "name": "Art in Focus: Hannah Altman: Not a Circle but a Spiral",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Vitus Cathedral in Prague Engaging with myth, performance, and memory\u2014often through the lens of Jewish ritual and folklore\u2014Hannah Altman\u2019s photographs use everyday objects and scenery to conjure unexpectedly charged atmospheres.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "photography"
             ],
             "phase": "current",
             "dates": {
@@ -1159,17 +1242,20 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "8282ce05a687b5841a858607409728d6"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "458d1f9dfe74b96b1b4473568821de63",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Art in Focus: Afruz Amighi: Sounding Shell-The Jewish Museum": {
             "name": "Art in Focus: Afruz Amighi: Sounding Shell",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Vitus Cathedral in Prague In the sculptural installation Sounding Shell, Afruz Amighi assembles a cast of mythological characters drawn from religions and cultures around the world. The Mexica goddess Coyolx\u0101uhqui is a key figure: decapitated by her brother, according to myth, her severed head became the moon.",
             "tags": [
                 "exhibition",
                 "current",
-                "museum"
+                "museum",
+                "sculpture"
             ],
             "phase": "current",
             "dates": {
@@ -1187,13 +1273,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "b45d2a825c8a78b705c9fc4feea8e514"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "1e09deed09f0b694a777430c3c2ba7d4",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Art in Focus: Mordecai Ardon-The Jewish Museum": {
             "name": "Art in Focus: Mordecai Ardon",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Mordecai Ardon (1896\u20131992), born Mordecai Eliezer Bronstein, lived through multiple wars and harrowing events, including fleeing Nazi Germany in 1933. His triptych, Hiroshima \u2013 And there was Evening, and there was Morning ( Hiroshima\u2014Il fut soir, il fut matin; 1988), grapples with the devastating magnitude of the nuclear bomb the United States unleashed on Hiroshima in 1945, during World War II. Created by the artist during the last years of his life, the work embodies his reflections on trauma.",
             "tags": [
                 "exhibition",
                 "current",
@@ -1215,13 +1303,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "74f1bbabaaac92e571da7bcc116c9c04"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "3b81f35f978de98af4a3148a280b7888",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Ruth Patir: (M)otherland-The Jewish Museum": {
             "name": "Ruth Patir: (M)otherland",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Originally created for the Israel Pavilion at the 2024 Venice Biennale, Ruth Patir\u2019s multi-channel video work brings together ancient archaeology and contemporary digital technology to examine the intersection of gender, motherhood, and the fraught politics of fertility and reproductive rights.",
             "tags": [
                 "exhibition",
                 "future",
@@ -1243,13 +1333,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "839d39b28c90af9d7c43b8a7848e7562"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "d86a194077856785f84ba9b714177254",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Ma\u0142gorzata Mirga-Tas-The Jewish Museum": {
             "name": "Ma\u0142gorzata Mirga-Tas",
             "venue": "The Jewish Museum",
-            "description": null,
+            "description": "Ma\u0142gorzata Mirga-Tas features artworks that memorialize and dignify victims and survivors of the Romani Holocaust, including such celebrated figures as the artist Ceija Stojka and the heroic Alfreda Noncia Markowska. It also debuts new work inspired by the history and experience of American Roma. A final chapter expands on the German Jewish art historian Aby Warburg\u2019s pioneering study of iconology.",
             "tags": [
                 "exhibition",
                 "future",
@@ -1271,8 +1363,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:39",
-            "hash": "9f9c1b202979e1d14b547bf206bbed0a"
+            "last_updated": "2026-11-15 00:24:25",
+            "hash": "5336accbc35067507f4ee9a296f7508f",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Museum of the City of New York": {
@@ -1301,8 +1395,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:40",
-            "hash": "670d0812b65f9e13ec4c57b20118a850"
+            "last_updated": "2026-11-15 00:24:26",
+            "hash": "ad6f7174efca188b3efc22447eea7d00"
         },
         "Halumii Ktapihna-Museum of the City of New York": {
             "name": "Halumii Ktapihna",
@@ -1329,8 +1423,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:40",
-            "hash": "5498cf95b5092d00594f5e9449cdd906"
+            "last_updated": "2026-11-15 00:24:26",
+            "hash": "c385523e0ee8c1950847cfce0389f92c"
         },
         "Gingerbread NYC-Museum of the City of New York": {
             "name": "Gingerbread NYC",
@@ -1357,8 +1451,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:40",
-            "hash": "0e06f9daf5cb535787a05b32137556ef"
+            "last_updated": "2026-11-15 00:24:26",
+            "hash": "24183302cf4f2d38c5d83b0bc52ba01e"
         }
     },
     "Neue Galerie New York": {
@@ -1387,8 +1481,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:44",
-            "hash": "38d9080498fa708c406ae085c5d6406e"
+            "last_updated": "2026-11-15 00:24:28",
+            "hash": "4832cff98381cc0fd4229b455fc9e068"
         },
         "Austrian Masterworks from the Neue Galerie-Neue Galerie New York": {
             "name": "Austrian Masterworks from the Neue Galerie",
@@ -1415,8 +1509,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:44",
-            "hash": "5ade14ff2dbc45ce321f7bd86cce32a4"
+            "last_updated": "2026-11-15 00:24:28",
+            "hash": "5b42b71f09259fd0cd541f7501e3f199"
         },
         "1910: Portrait of a Year-Neue Galerie New York": {
             "name": "1910: Portrait of a Year",
@@ -1443,8 +1537,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:45",
-            "hash": "13717833eecf2c6a1e49ddee7e5df6fe"
+            "last_updated": "2026-11-15 00:24:29",
+            "hash": "d35d1232991ec38a1ce999864a2fc416"
         }
     },
     "The Noguchi Museum": {
@@ -1474,8 +1568,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:46",
-            "hash": "d711bb031d6358ec302d2d540075ceac"
+            "last_updated": "2026-11-15 00:24:30",
+            "hash": "e2411affec721e7ed4d43f826797c3ba"
         },
         "Isamu Noguchi at Lever House-The Noguchi Museum": {
             "name": "Isamu Noguchi at Lever House",
@@ -1503,8 +1597,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:47",
-            "hash": "6e1bad0d6a8e5964dfef2c4739111bc9"
+            "last_updated": "2026-11-15 00:24:30",
+            "hash": "ba4b8e6f7469b2875575aba4f556362b"
         },
         "Light and Stone: Revisiting Noguchi\u2019s 1986 Venice Biennale-The Noguchi Museum": {
             "name": "Light and Stone: Revisiting Noguchi\u2019s 1986 Venice Biennale",
@@ -1532,8 +1626,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:47",
-            "hash": "cd8eceecd7d774e9ee9c056225977217"
+            "last_updated": "2026-11-15 00:24:31",
+            "hash": "ba86cff4df6c0d32c2a49c51270bea6e"
         },
         "Noguchi to Asawa: Designing Postwar America-The Noguchi Museum": {
             "name": "Noguchi to Asawa: Designing Postwar America",
@@ -1562,8 +1656,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:47",
-            "hash": "5e3b007898a5c0acdb58dd42f54c272e"
+            "last_updated": "2026-11-15 00:24:31",
+            "hash": "bc45d3bcc7cc290dd8c9eb0233ec6758"
         },
         "Isamu Noguchi: \u201cI am not a designer\u201d-The Noguchi Museum": {
             "name": "Isamu Noguchi: \u201cI am not a designer\u201d",
@@ -1591,8 +1685,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:48",
-            "hash": "a40a21a8956c18a893316a5681c9b503"
+            "last_updated": "2026-11-15 00:24:32",
+            "hash": "12f40dfab63066fd2f715f8a345b09c1"
         }
     },
     "The Drawing Center": {
@@ -1622,8 +1716,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:49",
-            "hash": "b87ca51f0f0dd3916e74551c83320aa4"
+            "last_updated": "2026-11-15 00:24:32",
+            "hash": "79b227456745188c207a2842c5ea98e5"
         }
     },
     "Museum of Arts and Design": {
@@ -1652,8 +1746,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:51",
-            "hash": "5bb6c97b5c2d10b22a9d14b8f2ec96ba"
+            "last_updated": "2026-11-15 00:24:35",
+            "hash": "bc1d7392d960566de348e288267d1fe2"
         },
         "John Procario: Freeforms-Museum of Arts and Design": {
             "name": "John Procario: Freeforms",
@@ -1681,8 +1775,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:52",
-            "hash": "526590cc09e18baaf7f07d6e851efee5"
+            "last_updated": "2026-11-15 00:24:36",
+            "hash": "b55a9ae917c9d14f97e86d7224589aad"
         },
         "Jessica Lichtenstein: Rewilding-Museum of Arts and Design": {
             "name": "Jessica Lichtenstein: Rewilding",
@@ -1711,8 +1805,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:52",
-            "hash": "5dc3aad26046527e9d0cd5122373dc19"
+            "last_updated": "2026-11-15 00:24:36",
+            "hash": "5e84df83ff1407555305335e8a3f0c49"
         },
         "Alice Riehl\u2019s Porcelain Florilegium-Museum of Arts and Design": {
             "name": "Alice Riehl\u2019s Porcelain Florilegium",
@@ -1740,8 +1834,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:52",
-            "hash": "7aae674ac6789a6811be99aca6394eba"
+            "last_updated": "2026-11-15 00:24:36",
+            "hash": "fef107971af4f15c4e24995eb3730a09"
         }
     },
     "International Center of Photography": {
@@ -1771,9 +1865,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:55",
-            "hash": "2e18840d6f4ee82dbdb1dd2ade656471",
-            "image_checked": "2026-11-14"
+            "last_updated": "2026-11-15 00:24:39",
+            "image_checked": "2026-11-14",
+            "hash": "fee54153204383737ef89f5b81105212"
         },
         "Laia Abril: On Rape and Institutional Failure-International Center of Photography": {
             "name": "Laia Abril: On Rape and Institutional Failure",
@@ -1801,9 +1895,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:55",
-            "hash": "cfd647d09b9933df95ea7e908a5c8bfc",
-            "image_checked": "2026-11-14"
+            "last_updated": "2026-11-15 00:24:39",
+            "image_checked": "2026-11-14",
+            "hash": "66e36f91caadc672961358c8494a32de"
         }
     },
     "The Bronx Museum of the Arts": {
@@ -1833,9 +1927,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:59",
-            "hash": "20e926c27f80963c56818a1445032ee3",
-            "image_checked": "2026-11-14"
+            "last_updated": "2026-11-15 00:24:44",
+            "image_checked": "2026-11-14",
+            "hash": "f803e09dc3fec8ddf734f2cbc2b60be4"
         },
         "Alex Strada: Public Address-The Bronx Museum of the Arts": {
             "name": "Alex Strada: Public Address",
@@ -1863,8 +1957,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:25:59",
-            "hash": "94a57b6fc02f4324f3c8a3d22bce648c"
+            "last_updated": "2026-11-15 00:24:45",
+            "hash": "06f022285ef6b72ac8a4e47f430e6014",
+            "description_checked": "2026-11-15"
         },
         "Beyond the Margins: Bronx Museum Teens Activate the Permanent Collection-The Bronx Museum of the Arts": {
             "name": "Beyond the Margins: Bronx Museum Teens Activate the Permanent Collection",
@@ -1892,8 +1987,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:00",
-            "hash": "330fe7a94c0bced5f9f81459b0085b22"
+            "last_updated": "2026-11-15 00:24:46",
+            "hash": "9ea4fb17dca559063e7e137469f8d51a",
+            "description_checked": "2026-11-15"
         },
         "Lifelong Studio Exhibition: Transcending the Form\u2014Abstract Figurative Painting-The Bronx Museum of the Arts": {
             "name": "Lifelong Studio Exhibition: Transcending the Form\u2014Abstract Figurative Painting",
@@ -1922,8 +2018,9 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:01",
-            "hash": "9d972072f0d8f8a449a1fb7c81ad7a21"
+            "last_updated": "2026-11-15 00:24:47",
+            "hash": "78a02b06ba4ddc043e480567b8e493b4",
+            "description_checked": "2026-11-15"
         }
     },
     "American Folk Art Museum": {
@@ -1949,13 +2046,13 @@
                     "description": "Event Page"
                 },
                 {
-                    "link": "https://folkartmuseum.org/content/uploads/2026/09/Faith-Trumbull_Connecticut-Museum.jpg",
+                    "link": "https://images.weserv.nl/?url=folkartmuseum.org%2Fcontent%2Fuploads%2F2026%2F09%2FFaith-Trumbull_Connecticut-Museum.jpg&w=640&we&output=jpg&q=80",
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:03",
-            "hash": "fcf82ecba768fbd676c36210481deb0b",
-            "image_checked": "2026-11-14"
+            "last_updated": "2026-11-15 00:24:49",
+            "image_checked": "2026-11-14",
+            "hash": "fb717e06c8593c05b0e13d154f86daee"
         },
         "Folk Nation: Crafting Patriotism in the United States-American Folk Art Museum": {
             "name": "Folk Nation: Crafting Patriotism in the United States",
@@ -1983,16 +2080,16 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:03",
-            "hash": "bc42e82bbe2994fbea9822c10ec8b082",
-            "image_checked": "2026-11-14"
+            "last_updated": "2026-11-15 00:24:50",
+            "image_checked": "2026-11-14",
+            "hash": "009ce3bbc7620d21bb36d13913fff53f"
         }
     },
     "Pioneer Works": {
         "There's no me without you-Pioneer Works": {
             "name": "There's no me without you",
             "venue": "Pioneer Works",
-            "description": null,
+            "description": "There's no me without you is an installation grounded in artist Finnegan Shannon\u2019s longtime fantasy of an exhibition space that would meet their access...",
             "tags": [
                 "exhibition",
                 "current",
@@ -2015,13 +2112,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:04",
-            "hash": "7ff52bd88332b112860d4c8289f08485"
+            "last_updated": "2026-11-15 00:24:50",
+            "hash": "b1b0e7fbfe0afdb74e7de9481e6b9f83",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Tuomas A. Laitinen: Siphon-Pioneer Works": {
             "name": "Tuomas A. Laitinen: Siphon",
             "venue": "Pioneer Works",
-            "description": null,
+            "description": "Siphon, a multimedia installation created by Helsinki-based artist Tuomas A. Laitinen, draws on more than a decade of research in octopus intelligence,...",
             "tags": [
                 "exhibition",
                 "current",
@@ -2044,13 +2143,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:04",
-            "hash": "4b64dcacf61cb25ce91bb95f2133a04c"
+            "last_updated": "2026-11-15 00:24:50",
+            "hash": "3cd7abdbe5df96056011f4c39a6485c8",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "LaJun\u00e9 McMillian: Child/ren of the Bloom-Pioneer Works": {
             "name": "LaJun\u00e9 McMillian: Child/ren of the Bloom",
             "venue": "Pioneer Works",
-            "description": null,
+            "description": "Child/ren of the Bloom by LaJun\u00e9 McMillian is an interactive, multidisciplinary installation that explores the threshold between land and sea, and the b...",
             "tags": [
                 "exhibition",
                 "current",
@@ -2073,8 +2174,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:04",
-            "hash": "4dd194f78d874fc278ee0732ebf70863"
+            "last_updated": "2026-11-15 00:24:50",
+            "hash": "b22190474518684f2efdb0430f5afb27",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "BRIC": {
@@ -2105,8 +2208,8 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:05",
-            "hash": "0a01cf26a65d43f964a02aedd32ce4a3"
+            "last_updated": "2026-11-15 00:24:51",
+            "hash": "b07b3af400857c07c42790b93d2f44c5"
         },
         "From the BRIClab: Works from the 2025-26 Artist Residencies-BRIC": {
             "name": "From the BRIClab: Works from the 2025-26 Artist Residencies",
@@ -2138,15 +2241,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:06",
-            "hash": "94578ccd5f7a82da8aae04f82678402c"
+            "last_updated": "2026-11-15 00:24:52",
+            "hash": "b0a6fe9a8665f47af79b9e5efa6792c2"
         }
     },
     "White Columns": {
         "Marc Hundley: SATELLITES ARE OUT TONIGHT-White Columns": {
             "name": "Marc Hundley: SATELLITES ARE OUT TONIGHT",
             "venue": "White Columns",
-            "description": null,
+            "description": "\u201cAs far as expressing myself a T-shirt works the best. A person wearing it is saying it. The shape of a T-shirt is the form of a person. It\u2019s very simple and such a common object. It\u2019s not original to put words on a T-shirt. It\u2019s just a T-shirt, so it\u2019s not criticized like art with a capital A. Anyone can make one themselves. The shirts give me a place I can get things off my chest. To then put them back on my chest.\u201d \u2013 Marc Hundley",
             "tags": [
                 "exhibition",
                 "current",
@@ -2169,8 +2272,10 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:06",
-            "hash": "dfd8887857d02c3e42cc681fdea310f2"
+            "last_updated": "2026-11-15 00:24:53",
+            "hash": "deb9eeabea1b80e521d18f1a4645d6be",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "Claire Watson: Re-Assembled-White Columns": {
             "name": "Claire Watson: Re-Assembled",
@@ -2198,13 +2303,14 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:06",
-            "hash": "f4614dbb3995476dc66028dd0cb0600d"
+            "last_updated": "2026-11-15 00:24:53",
+            "hash": "3398a6c09545fa3c46fa68e6b7013272",
+            "description_checked": "2026-11-15"
         },
         "SHOP: Artists Who Do Shirts-White Columns": {
             "name": "SHOP: Artists Who Do Shirts",
             "venue": "White Columns",
-            "description": null,
+            "description": "On the occasion of Marc Hundley\u2019s solo exhibition, White Columns is pleased to present Shop: Artists Who Do Shirts, a collection of artist-made t-shirts for purchase. Thank you for supporting White Columns. Click checkout below to complete your purchase via Shopify.",
             "tags": [
                 "exhibition",
                 "current",
@@ -2227,13 +2333,15 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:06",
-            "hash": "0a90f80fbf76d331084ee153078bb659"
+            "last_updated": "2026-11-15 00:24:53",
+            "hash": "4078eb0023584e81a7e1c5ee26b52eae",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         },
         "White Columns Online #38: Clothes, not Fashion-White Columns": {
             "name": "White Columns Online #38: Clothes, not Fashion",
             "venue": "White Columns",
-            "description": null,
+            "description": "White Columns is New York City\u2019s oldest alternative non-profit space.",
             "tags": [
                 "exhibition",
                 "current",
@@ -2257,15 +2365,17 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:06",
-            "hash": "62b7d1b79275d82dc3034645c9c0d484"
+            "last_updated": "2026-11-15 00:24:53",
+            "hash": "54c6b4950ef8d6a4296219986b99bd7e",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Smack Mellon": {
         "How We Work: Smack Mellon at 30-Smack Mellon": {
             "name": "How We Work: Smack Mellon at 30",
             "venue": "Smack Mellon",
-            "description": null,
+            "description": "On the occasion of the organization\u2019s 30th Anniversary, Smack Mellon presents a group exhibition reflecting on our work over the past three decades.",
             "tags": [
                 "exhibition",
                 "current",
@@ -2288,16 +2398,18 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:07",
-            "hash": "504d700aad0e649098128664c6b6f5d5",
-            "image_checked": "2026-11-14"
+            "last_updated": "2026-11-15 00:24:53",
+            "image_checked": "2026-11-14",
+            "hash": "f5ed4c98bb64517175c2785b1bcb6dc8",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "The Kitchen": {
         "Steffani Jemison: Cant-The Kitchen": {
             "name": "Steffani Jemison: Cant",
             "venue": "The Kitchen",
-            "description": null,
+            "description": "Gallery hours: Wednesday\u2013Saturday, 12\u20136pm (Free) | Performances: January 21, 28, and February 4, 2027, 7pm Tickets: Sliding scale; $10-30 The Kitchen presents Steffani Jemison: Cant (December 4, 2026\u2013February 6, 2027). This solo presentation marks the artist\u2019s debut at The Kitchen and her first institutional solo exhibition in New York City in nearly ten years.",
             "tags": [
                 "exhibition",
                 "future",
@@ -2320,16 +2432,18 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:07",
-            "hash": "26647f4f34a26cdcd159817e55a92f73",
-            "image_checked": "2026-11-14"
+            "last_updated": "2026-11-15 00:24:53",
+            "image_checked": "2026-11-14",
+            "hash": "38cf67f7c40d434b428185c44580ecaf",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
         }
     },
     "Center for Book Arts": {
         "Paper Cuts: Independent Publishing in the United States, 2000-2025-Center for Book Arts": {
             "name": "Paper Cuts: Independent Publishing in the United States, 2000-2025",
             "venue": "Center for Book Arts",
-            "description": null,
+            "description": "Paper Cuts: Independent Publishing in the United States, 2000\u20132025 examines twenty-five years of independent publishing in the United States through a collection of more than 600 zines and small-press\u2026",
             "tags": [
                 "exhibition",
                 "current",
@@ -2352,8 +2466,2883 @@
                     "description": "Image"
                 }
             ],
-            "last_updated": "2026-11-14 18:26:08",
-            "hash": "226b5ab622622bc4fa4e10389f38eacd"
+            "last_updated": "2026-11-15 00:24:54",
+            "hash": "bea55daf585514b3069b1a6575706114",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "The Metropolitan Museum of Art": {
+        "Krasner and Pollock: Past Continuous-The Metropolitan Museum of Art": {
+            "name": "Krasner and Pollock: Past Continuous",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/krasner-and-pollock-past-continuous",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/8cc67ac247e9b8feec057c9398c48e546f2aa1bd-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "42ee3360840e61413fd25dba2a93ce19"
+        },
+        "Costume Art-The Metropolitan Museum of Art": {
+            "name": "Costume Art",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "fashion"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/costume-art",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/d25918d32e91614f036dc86e1e6624c790860b0b-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "2ad6ed56cd88442ddf3c9a8dd9e329e5"
+        },
+        "Designing the Gilded Age: Drawings from the Studios of Louis C. Tiffany-The Metropolitan Museum of Art": {
+            "name": "Designing the Gilded Age: Drawings from the Studios of Louis C. Tiffany",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "drawing"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/designing-the-gilded-age-drawings-from-the-studios-of-louis-c-tiffany",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/b1629c32c70cea8ecef77443672460e8b0846d22-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "127518dacde3d448bdf0383fa7fafbcd"
+        },
+        "Orientalism: Between Fact and Fantasy-The Metropolitan Museum of Art": {
+            "name": "Orientalism: Between Fact and Fantasy",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/orientalism-between-fact-and-fantasy",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/1421654e887b123f803467dc6f4f82ff77a915dd-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "d116997c28682974afb62c11fc9eb739"
+        },
+        "The Genesis Facade Commission: Liu Wei, Speculation-The Metropolitan Museum of Art": {
+            "name": "The Genesis Facade Commission: Liu Wei, Speculation",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-06-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/the-genesis-facade-commission-liu-wei",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/e4305e41bf4ce6b1eb4b19d800637efb9dae65de-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "8859f475f79d52d103c97d16fd72e352"
+        },
+        "A Long Shadow: Postwar Japan Through the Lens-The Metropolitan Museum of Art": {
+            "name": "A Long Shadow: Postwar Japan Through the Lens",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-05-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/a-long-shadow-postwar-japan-through-the-lens",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/ba92b0f81c0891038dcd649e7b826df6c280e1a7-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "f1d3dcc12fd1aa99911ce05d51d1d5ed"
+        },
+        "Tapa: Art of the Gift in Polynesia-The Metropolitan Museum of Art": {
+            "name": "Tapa: Art of the Gift in Polynesia",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/tapa-art-of-the-gift-in-polynesia",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/11ef90b9aade98f11d35091a0403bb6fb3025c39-5120x2880.jpg?rect=5,0,5115,2880&w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "3c2b0358a2cd34127afb6cd7adc94fe0"
+        },
+        "Marketing the Gilded Age: Advertising Publications from the Studios of Louis C. Tiffany-The Metropolitan Museum of Art": {
+            "name": "Marketing the Gilded Age: Advertising Publications from the Studios of Louis C. Tiffany",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/marketing-the-gilded-age-advertising-publications-from-the-studios-of-louis-c-tiffany",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/98473f0820a45b8d566aeedd8ec099e4f4484d83-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "6a33c34c2825713babbb9588f74f7e2c"
+        },
+        "There Are No Words: Si Lewen's Parade-The Metropolitan Museum of Art": {
+            "name": "There Are No Words: Si Lewen's Parade",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/there-are-no-words-si-lewens-parade",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/abf4e5ddf505febcc7fb7ab2a93127ce62d64adb-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "e913c6cd1ac79522e182b0e63d094266"
+        },
+        "David Hartt: Peripheries-The Metropolitan Museum of Art": {
+            "name": "David Hartt: Peripheries",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/david-hartt-peripheries",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/189a906ffcb101e9eb6612798833bd64602eb4d1-10667x6000.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "21d8ebb00d0ea1884677a54ee08e1faf"
+        },
+        "Chasing Clouds-The Metropolitan Museum of Art": {
+            "name": "Chasing Clouds",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-28"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/chasing-clouds",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/18f96c20ef2c369072c289525228d05c18208b6c-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "a648dcc1ddcbec0dd1f8ea03ff0d9691"
+        },
+        "A King\u2019s Carpet: Louis XIV and the Savonnerie-The Metropolitan Museum of Art": {
+            "name": "A King\u2019s Carpet: Louis XIV and the Savonnerie",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2028-03-05"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/a-kings-carpet-louis-xiv-and-the-savonnerie",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/00ff74dd3c79a62d191955baca90484ab020fac8-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "97f74461e7dd588fee273b510edb5fb7"
+        },
+        "Rediscovering Della Robbia at The Met-The Metropolitan Museum of Art": {
+            "name": "Rediscovering Della Robbia at The Met",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2028-01-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/rediscovering-della-robbia-at-the-met",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/3c4f843c9c57d5c75bfa4671d0b60620ae77fea0-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "043650aec725139e662c92dbba3d0528"
+        },
+        "Cottage Industry: The Val-Kill Furniture Shop-The Metropolitan Museum of Art": {
+            "name": "Cottage Industry: The Val-Kill Furniture Shop",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-05-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/cottage-industry-the-val-kill-furniture-shop",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/a043266ee25f66cf3ddac9a5bb7ac8e4a3b2b09f-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "7a4ee1c2b4c8116291edf53eb720119b"
+        },
+        "City of Memory: Nanjing in the Seventeenth Century-The Metropolitan Museum of Art": {
+            "name": "City of Memory: Nanjing in the Seventeenth Century",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/city-of-memory-nanjing-in-the-17th-century",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/2e36695160eb59ab9d42ac48c056a604f7414a86-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "97df2e4b84356d70f5a80105aa89b002"
+        },
+        "Flip Sides: Seeing Korean Art Anew-The Metropolitan Museum of Art": {
+            "name": "Flip Sides: Seeing Korean Art Anew",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-05-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/flip-sides-seeing-korean-art-anew",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/00c6c30771901a6238b8c2a990405a51ce84158c-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "21e6dff4b72862a8d31a76bc500d9f81"
+        },
+        "Celebrating the Year of the Horse-The Metropolitan Museum of Art": {
+            "name": "Celebrating the Year of the Horse",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-26"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/celebrating-the-year-of-the-horse",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/279f7fd3af413e3f03737dedfea527fe55810af7-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "724e6ee50ea42bc34677e67b0f5f2df1"
+        },
+        "Household Gods: Hindu Devotional Prints, 1860\u20131930-The Metropolitan Museum of Art": {
+            "name": "Household Gods: Hindu Devotional Prints, 1860\u20131930",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "printmaking"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-06-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/household-gods-hindu-devotional-prints-1860-1930",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/d28b5b803c217bbe685e150c4da150452e4c99cb-1200x674.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "3d13a38b63cbae10e3fb1f7d3b134dda"
+        },
+        "The Infinite Artistry of Japanese Ceramics-The Metropolitan Museum of Art": {
+            "name": "The Infinite Artistry of Japanese Ceramics",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "ceramics"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-08-08"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/the-infinite-artistry-of-japanese-ceramics",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/861d263b0db12828f9094b10fd6d89972f3b8c50-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "5fe2cf385a09e6ca0c0d25ea899672c4"
+        },
+        "Ecologies of Painting-The Metropolitan Museum of Art": {
+            "name": "Ecologies of Painting",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-17"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/ecologies-of-painting",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/07815c64b8f371db3a81f7fce7c38c534a82ff59-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "ec42e25b962f3d81e0cba141cd6f5241"
+        },
+        "Afterlives: Contemporary Art in the Byzantine Crypt-The Metropolitan Museum of Art": {
+            "name": "Afterlives: Contemporary Art in the Byzantine Crypt",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-10"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/afterlives-contemporary-art-in-the-byzantine-crypt",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/f262eccdf5ecff8a0cf82f3318e6748c97cc0d1f-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "88acc3d9b4e34911306d98c4324b60db"
+        },
+        "Christmas Tree and Neapolitan Baroque Cr\u00e8che-The Metropolitan Museum of Art": {
+            "name": "Christmas Tree and Neapolitan Baroque Cr\u00e8che",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-24",
+                "end": "2027-01-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/christmas-tree-and-neapolitan-baroque-creche-2026",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/9e3f762bdb43d80d05933634edaefcae87aaa9af-3840x1966.jpg?rect=351,0,3489,1966&w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "d1094984d4407634d798b5417b9cd3df"
+        },
+        "Across Wine-Dark Seas: Art and Identity beyond Ancient Greece-The Metropolitan Museum of Art": {
+            "name": "Across Wine-Dark Seas: Art and Identity beyond Ancient Greece",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-12-20",
+                "end": "2027-04-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/across-wine-dark-seas-art-and-identity-beyond-ancient-greece",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/457e21ecef5f90155d38fd48e9318d766da35c1c-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "42b20ed9944ab6d34e313dd42550b6f8"
+        },
+        "Radiant World: Jahangir and Mughal India-The Metropolitan Museum of Art": {
+            "name": "Radiant World: Jahangir and Mughal India",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-04-25",
+                "end": "2027-08-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/radiant-world-jahangir-and-mughal-india",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/5545d70faf222ae7471945cf25330ffe65fc83e1-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "48a24a21fa6baf7c7d41688353a967d4"
+        },
+        "extraORDINARY: Fashion and the Poetics of the Everyday-The Metropolitan Museum of Art": {
+            "name": "extraORDINARY: Fashion and the Poetics of the Everyday",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum",
+                "fashion"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-05-09",
+                "end": "2028-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/extraordinary-fashion-and-the-poetics-of-the-everyday",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/ec4cb450b46334605bf6ceefdd609bb7b2b0b6ac-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "b95ecbb04ac1624c549dcf89878b7635"
+        },
+        "Felix Gonzalez-Torres: The Spaces Between-The Metropolitan Museum of Art": {
+            "name": "Felix Gonzalez-Torres: The Spaces Between",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-06-10",
+                "end": "2027-10-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/felix-gonzalez-torres-the-spaces-between",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/c5e84bec82629ce088f04dfe41862d65ddada37a-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "cf1320fd2f4756432707fb1e8560faee"
+        },
+        "The Genesis Facade Commission: Danh Vo-The Metropolitan Museum of Art": {
+            "name": "The Genesis Facade Commission: Danh Vo",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-09-16",
+                "end": "2028-06-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/the-genesis-facade-commission-danh-vo",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/a0e9cf6eb6804a2acf04b58035e61054f48162d9-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "9db5d10f91c2306acd7a5b5d9acdee9d"
+        },
+        "The Great Hall Commission: Sandra Mujinga-The Metropolitan Museum of Art": {
+            "name": "The Great Hall Commission: Sandra Mujinga",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-11-04",
+                "end": "2028-04-04"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/the-great-hall-commission-sandra-mujinga",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/b3f49b75512aae13c82d439e39cd7720ebf79a7c-10667x6000.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "ec161117cedff108341847135458583e"
+        },
+        "Rembrandt and the Ancients-The Metropolitan Museum of Art": {
+            "name": "Rembrandt and the Ancients",
+            "venue": "The Metropolitan Museum of Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-11-07",
+                "end": "2028-02-06"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.metmuseum.org/exhibitions/rembrandt-and-the-ancients",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cctd4ker/production/325b2fd6d92ebf49fb6c4eb235e9826fec2a199f-5120x2880.jpg?w=1200&q=75&fit=clip&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:00",
+            "hash": "dea3158209c80b255dfca063b04118f6"
+        }
+    },
+    "Museum of Modern Art": {
+        "Pierre Huyghe: UUmwelt-Museum of Modern Art": {
+            "name": "Pierre Huyghe: UUmwelt",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-11-29"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5912",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDkvMTQvNXQzb2MxZnJlb18yLl9QaWVycmVfSHV5Z2hlX19VVW13ZWx0X18yMDE4X29uZ29pbmdfRGVlcF9pbWFnZV9yZWNvbnN0cnVjdGlvbnNfc2NyZWVuc19zZW5zb3JzX3NvdW5kX0V4aGliaXRpb25fdmlld3NfTW9NQV9TY3VscHR1cmVfZ2FyZGVuX05ld19Zb3JrXzIwMjZfQ291cnRlc3lfdGhlX2FydGlzdF9QaG90b19BbGV4X1l1ZHpvbi5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSAxMzAweDQwMF4gLWdyYXZpdHkgU291dGggLWNyb3AgMTMwMHg0MDArMCs0OCJdXQ/2.-Pierre-Huyghe--_UUmwelt_--2018%E2%80%93ongoing_Deep-image-reconstructions--screens--sensors--sound_Exhibition-views--MoMA-Sculpture-garden--New-York--2026_Courtesy-the-artist_Photo-Alex-Yudzon.jpg?sha=229baf6facef918d",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "dfdb70e58cd519f674bd955d81cb332f"
+        },
+        "Architects of Liberation: Modernism in Western Africa-Museum of Modern Art": {
+            "name": "Architects of Liberation: Modernism in Western Africa",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "architecture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5906",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDMvMzEvMTAzd2g4aTNvdF9NaWNoZWxfRmVneXZlcmVzX0NJQ0VTXzEuanBnIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgMTMwMHg0MDBeIC1ncmF2aXR5IENlbnRlciAtY3JvcCAxMzAweDQwMCswKzAiXV0/Michel-Fegyveres_CICES-1.jpg?sha=56dc1b8ec581d02c",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "71a6290e4e05dde01a3b9da44e210359"
+        },
+        "The Surrealist Book: Tomorrow Lives in Mirrors-Museum of Modern Art": {
+            "name": "The Surrealist Book: Tomorrow Lives in Mirrors",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5918",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDUvMjEvOHBkOHZmcjdrM19adXJuX09yYWNsZV9hbmRfU3BlY3RhY2xlX0hfU0laRUQuanBnIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgMTMwMHg0MDBeIC1ncmF2aXR5IFNvdXRoIC1jcm9wIDEzMDB4NDAwKzArNDgiXV0/Zurn_Oracle-and-Spectacle_H_SIZED.jpg?sha=335f8316fc7b1a38",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "9e66b52aeb6fda8e06117b0346f308be"
+        },
+        "Na Mira: NO SMOKING-Museum of Modern Art": {
+            "name": "Na Mira: NO SMOKING",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5869",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMTAvMjIvMXkzY2diZTJhZF9OT19TTU9LSU5HX3dvcmtfaW5fcHJvZ3Jlc3Nfdmlldy5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBTb3V0aCAtY3JvcCA0NTB4MzAwKzArMCJdXQ/NO-SMOKING-work-in-progress-view.jpg?sha=3a6eba97bcfc0e1c",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "11c729cb0cb4d13b8f1f3ff3db61bb09"
+        },
+        "Odili Donald Odita: Songs from Life-Museum of Modern Art": {
+            "name": "Odili Donald Odita: Songs from Life",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-21"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5794",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjUvMDMvMTAvMTdxcTZtc2hhcF9Tb25nc19mcm9tX0xpZmVfQlRTXzIuanBnIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgNDUweDMwMF4gLWdyYXZpdHkgTm9ydGggLWNyb3AgNDUweDMwMCswKzAiXV0/Songs-from-Life_BTS-2.jpg?sha=f426fea837ef5ea9",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "14321c181bd9ec899c5144498676fb33"
+        },
+        "Brancusi: The Artist and His Studio-Museum of Modern Art": {
+            "name": "Brancusi: The Artist and His Studio",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-02-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5910",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDYvMjkvN2p2OHVscnRnaV9CcmFuY3VzaV9QSF84NTRfbGVhZF9oaWdoX3Jlcy5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBDZW50ZXIgLWNyb3AgNDUweDMwMCswKzAiXV0/Brancusi_PH-854_lead_high-res.jpg?sha=eca78fe6755fd32e",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "d876a237ba454691ea7f360e36047ee4"
+        },
+        "Jakob Kudsk Steensen: Wetland-Museum of Modern Art": {
+            "name": "Jakob Kudsk Steensen: Wetland",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-03-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5936",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDgvMjAvNmh6emFzdTJ4N19IaWdocmVzU2NyZWVuc2hvdDAwMTExX1dlYnBhZ2VfSW1hZ2UuanBnIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgNDUweDMwMF4gLWdyYXZpdHkgQ2VudGVyIC1jcm9wIDQ1MHgzMDArMCswIl1d/HighresScreenshot00111_Webpage-Image.jpg?sha=9b73d3a3d14f372a",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "6c26cba0dd3b9cd40ef7a4dd453c1fb9"
+        },
+        "Taking Back Our Space: Photographic Perspectives-Museum of Modern Art": {
+            "name": "Taking Back Our Space: Photographic Perspectives",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "photography"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-05-02"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5678",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjQvMDEvMzEvM3BtM3F6d2gxdF8xMTE2XzIwMThfMTc5X0NDQ1JfRnVsbF9zaXplX0pQRUcuanBnIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgNDUweDMwMF4gLWdyYXZpdHkgU291dGggLWNyb3AgNDUweDMwMCswKzAiXV0/1116_2018_179_CCCR-Full-size-JPEG.jpg?sha=c84692f8ae5dda9d",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "5dab8f4741799da477e9b13a98245b02"
+        },
+        "Nilima Sheikh: Fractured Skies-Museum of Modern Art": {
+            "name": "Nilima Sheikh: Fractured Skies",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-06-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5932",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDgvMTgvOTN0NmtwM2g2aF9Ib21lX0xhbmRfNC5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBTb3V0aCAtY3JvcCA0NTB4MzAwKzArMCJdXQ/Home,-Land-4.jpg?sha=5b747f3c89490534",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "f4cdfd6aa0594b11caf3a4b3d71c87d2"
+        },
+        "Full Disclosure: The Edge of Information Design-Museum of Modern Art": {
+            "name": "Full Disclosure: The Edge of Information Design",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-06-13"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5926",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDcvMjQvM3dpY2UyMG55N19DRV9Dcm9wX01PTUFfQklHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDQ1MHgzMDBeIC1ncmF2aXR5IE5vcnRoIC1jcm9wIDQ1MHgzMDArMCszNiJdXQ/CE-Crop-MOMA-BIG.jpg?sha=8b9b636912cc5560",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "2a87e33e51c5d0af217c7d8d86c88fd0"
+        },
+        "Philip Guston: In the Studio-Museum of Modern Art": {
+            "name": "Philip Guston: In the Studio",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-21",
+                "end": "2027-02-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5962",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMTEvMTAvM3ZpbDF1bGdfNzIyXzIwMDVfQ0NDUl9GdWxsX3NpemVfSlBFRy5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBOb3J0aCAtY3JvcCA0NTB4MzAwKzArMCJdXQ/722_2005_CCCR-Full-size-JPEG.jpg?sha=274ee489b0b66600",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "66d4be4a9ca661ea6aa14f114cd67044"
+        },
+        "Mondrian Boogie Woogie-Museum of Modern Art": {
+            "name": "Mondrian Boogie Woogie",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-03-21",
+                "end": "2027-07-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5916",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDUvMjYvN2g4aDVqbTl0ZF9Cb29naWVfV29vZ2llX2hlcm9fMy5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBDZW50ZXIgLWNyb3AgNDUweDMwMCswKzAiXV0/Boogie-Woogie-hero-3.jpg?sha=45267f336950b0f5",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "d9f7e701ff1ba78d702404d9161ff4fa"
+        },
+        "Freedom and Futures: Emancipatory Art in Africa, 1956\u20131982-Museum of Modern Art": {
+            "name": "Freedom and Futures: Emancipatory Art in Africa, 1956\u20131982",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-05-03",
+                "end": "2027-08-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5958",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMTEvMDMvMmdvems2NGJzX01vTUFfTWFsYW5nYXRhbmFfVmFsZW50ZV9OZ3dlbnlhX0NyeV9mb3JfRnJlZWRvbV8xOTczXzIwMDBweC5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBOb3J0aCAtY3JvcCA0NTB4MzAwKzArMCJdXQ/MoMA_Malangatana-Valente-Ngwenya_Cry-for-Freedom_1973_2000px.jpg?sha=dd34a7a95668da32",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "995db5b55d8f42628c1c1d81f26abb79"
+        },
+        "Eva Hesse: Wild Space, 1957\u20131970-Museum of Modern Art": {
+            "name": "Eva Hesse: Wild Space, 1957\u20131970",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "future",
+                "museum"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2027-05-30",
+                "end": "2027-09-25"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5951",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMTAvMDIvNjFybWJjNzFlb19EXzU2NF9IRVNTRTQ1Njk0X05vX3RpdGxlLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDQ1MHgzMDBeIC1ncmF2aXR5IENlbnRlciAtY3JvcCA0NTB4MzAwKzArMCJdXQ/D-564-HESSE45694-No-title.jpg?sha=fa877096271923f6",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "3c96b94f5a0642bf1ca6c1d6dbd1aaec"
+        },
+        "Ecologies of Care at Socrates Sculpture Park-Museum of Modern Art": {
+            "name": "Ecologies of Care at Socrates Sculpture Park",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum",
+                "sculpture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-11-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5940",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMTAvMTkvOTNwOG8wY2Vual9MaXphbmlhQ3J1el9FY29sb2dpZXNvZkNhcmVfU29jcmF0ZXNfU2N1bHB0dXJlX1BhcmtfMjAyNl8xX01DLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDQ1MHgzMDBeIC1ncmF2aXR5IENlbnRlciAtY3JvcCA0NTB4MzAwKzArMCJdXQ/LizaniaCruz-EcologiesofCare-Socrates-Sculpture-Park-2026-1_MC.jpg?sha=f3c71ff571b3daa2",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "f6ceca4413a8deac626dbb91cbab71ce"
+        },
+        "In the Making 2026-Museum of Modern Art": {
+            "name": "In the Making 2026",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-11-15"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5933",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDgvMTAvNHE1bnhvaWV4NV9Nb01BX1RlZW5zX0F1Z18yMDI1XzEyM18xX19NQy5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBDZW50ZXIgLWNyb3AgNDUweDMwMCswKzAiXV0/MoMA_Teens_Aug_2025_123-%281%29_MC.jpg?sha=c153a17ce6a654b7",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "22a7302c5c35920ce996628d2005aed1"
+        },
+        "Hyundai Card First Look: Sheree Hovsepian-Museum of Modern Art": {
+            "name": "Hyundai Card First Look: Sheree Hovsepian",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2026-11-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5908",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDQvMTAvNnNwZ2pzOXZmZ18yOTFfMjAyNV9DQ0NSX0Z1bGxfc2l6ZV9KUEVHLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDQ1MHgzMDBeIC1ncmF2aXR5IENlbnRlciAtY3JvcCA0NTB4MzAwKzArMCJdXQ/291_2025_CCCR-Full-size-JPEG.jpg?sha=923eb4f9169f2a9a",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "96927672309fd464efba4255412cfabb"
+        },
+        "Creativity Lab: Art of the Book-Museum of Modern Art": {
+            "name": "Creativity Lab: Art of the Book",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": null,
+                "end": "2027-03-14"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5943",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMDkvMTUvN2dtNWcwYzV3bF95dWNoZW5fZm9yX01vTUFfaW5fYV9kcmVhbV9jb3B5X01DLmpwZyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDQ1MHgzMDBeIC1ncmF2aXR5IENlbnRlciAtY3JvcCA0NTB4MzAwKzArMCJdXQ/yuchen-for-MoMA_in-a-dream-copy_MC.jpg?sha=5bb46f47c3c13b51",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "f5f2a921ae48f74893032acb04802c5c"
+        },
+        "Hyundai Card First Look: R. Buckminster Fuller-Museum of Modern Art": {
+            "name": "Hyundai Card First Look: R. Buckminster Fuller",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2026-11-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5956",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMTAvMTQvODlwMHZycDN0OF8zXzIwMjVfMTFhX2NfUklDUl9GdWxsX3NpemVfSlBFR19NQy5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSA0NTB4MzAwXiAtZ3Jhdml0eSBDZW50ZXIgLWNyb3AgNDUweDMwMCswKzAiXV0/3_2025_11a-c_RICR-Full-size-JPEG_MC.jpg?sha=a5ee9922ef00a031",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "765fadab124777c754e8b94ce800b6f9"
+        },
+        "The Modern Window: Sof\u00eda Sinibaldi-Museum of Modern Art": {
+            "name": "The Modern Window: Sof\u00eda Sinibaldi",
+            "venue": "Museum of Modern Art",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2027-10-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.moma.org/calendar/exhibitions/5954",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://www.moma.org/d/assets/W1siZiIsIjIwMjYvMTAvMjEvNWc5cm5reGRseF9tb21hcHJldmlldzJfTUMuanBnIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgNDUweDMwMF4gLWdyYXZpdHkgQ2VudGVyIC1jcm9wIDQ1MHgzMDArMCswIl1d/momapreview2_MC.jpg?sha=5de783252fb2c39b",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:07",
+            "hash": "9ef1071805bb0b431218bd3d44e5dbb7"
+        }
+    },
+    "Brooklyn Museum": {
+        "Art of Manga-Brooklyn Museum": {
+            "name": "Art of Manga",
+            "venue": "Brooklyn Museum",
+            "description": "Art of Manga is the first major exhibition in the Americas to explore manga\u2014Japanese comics and graphic novels\u2014as an art form.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-03",
+                "end": "2027-01-31"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/manga",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms-images.brooklynmuseum.org/dc458a456d40f3499a867f5431728431bb872c05-4267x2400.jpg?w=3840&q=75&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "02b69e7d41f1a3ab405977df0374b671",
+            "description_proxy_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Iris van Herpen: Sculpting the Senses-Brooklyn Museum": {
+            "name": "Iris van Herpen: Sculpting the Senses",
+            "venue": "Brooklyn Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-05-16",
+                "end": "2027-01-03"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/iris-van-herpen",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms-images.brooklynmuseum.org/ae2f18de163422a4dc9c8be883a0425021e899c1-3687x3602.jpg?rect=230%2C58%2C3457%2C2118&w=3840&q=75&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "bfc764d2f2152c366ca9877c772c083e"
+        },
+        "Breaking the Mold: Brooklyn Museum at 200-Brooklyn Museum": {
+            "name": "Breaking the Mold: Brooklyn Museum at 200",
+            "venue": "Brooklyn Museum",
+            "description": "From groundbreaking early acquisitions to striking new additions, the Brooklyn Museum\u2019s collection has always championed artists and artworks that catalyze imaginative storytelling and brave conversations. As we ring in our 200th anniversary, Breaking the Mold: Brooklyn Museum at 200 celebrates this unique legacy.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-02-28",
+                "end": "2027-02-07"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/breaking-the-mold",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms-images.brooklynmuseum.org/54fdfe1f04519dbeed4b353a4232e8303c7aa3eb-1500x1250.jpg?w=3840&q=75&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "6f0024d16217c645965bac75cbc1e264",
+            "description_proxy_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Donald Moffett: IMPEACH-Brooklyn Museum": {
+            "name": "Donald Moffett: IMPEACH",
+            "venue": "Brooklyn Museum",
+            "description": "Step onto the floor of the US House of Representatives in December 1998. As the chamber debates whether to impeach President Bill Clinton, Representative John Lewis delivers a deeply personal speech about surviving a devastating storm\u2014and about holding a divided nation together. In IMPEACH, artist Donald Moffett (American, born 1955) turns that moment into an immersive sound installation, inviting listeners to hear Lewis\u2019s words and their echoes anew.",
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-06-05",
+                "end": "2027-04-11"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/donald-moffett",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cms-images.brooklynmuseum.org/eedb206470f178c2c59621aad40a1e5f0512922b-2000x1333.jpg?w=3840&q=75&auto=format",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "1befed160e70e49022d75446a7fbc719",
+            "description_proxy_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "C\u00e9zanne to Modigliani: Gifts of Modern Art from the Pearlman Collection-Brooklyn Museum": {
+            "name": "C\u00e9zanne to Modigliani: Gifts of Modern Art from the Pearlman Collection",
+            "venue": "Brooklyn Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-02",
+                "end": "2027-04-18"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/pearlman-collection",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=cms-images.brooklynmuseum.org%2F9f660f1a3c0748ff0c273251957cbf1c7e03e28d-2952x3636.tif%3Fw%3D3840%26q%3D75%26auto%3Dformat&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "8bec10eb57310840a7af82f25c3b43d1"
+        },
+        "Mika Ninagawa: Feel the Flow(ers)-Brooklyn Museum": {
+            "name": "Mika Ninagawa: Feel the Flow(ers)",
+            "venue": "Brooklyn Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-02",
+                "end": "2027-04-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/mika-ninagawa",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=cms-images.brooklynmuseum.org%2F61eff00f4a85c8287e3669d8f6bd8a49c0c5cd2a-2036x950.png%3Fw%3D3840%26q%3D75%26auto%3Dformat&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "b9251cbb54569fe853e6d20444edd6c4"
+        },
+        "Hopi Kachina Dolls: Blessings for a Balanced World-Brooklyn Museum": {
+            "name": "Hopi Kachina Dolls: Blessings for a Balanced World",
+            "venue": "Brooklyn Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-02",
+                "end": "2027-06-27"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/hopi-kachina-dolls",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=cms-images.brooklynmuseum.org%2Fad7cbdf744522f9538b9bfbc3a12d643a3ce4b98-5504x8256.png%3Fw%3D3840%26q%3D75%26auto%3Dformat&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "480e287c42a8979f673f154c2e39414b"
+        },
+        "Rubin Museum Tibetan Buddhist Shrine Room-Brooklyn Museum": {
+            "name": "Rubin Museum Tibetan Buddhist Shrine Room",
+            "venue": "Brooklyn Museum",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "museum"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2025-06-11",
+                "end": "2031-04-20"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.brooklynmuseum.org/exhibitions/rubin-museum-tibetan-buddhist-shrine-room",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=cms-images.brooklynmuseum.org%2Fa0162149f80682d5e92569d91aad5608cbb8a3a1-2000x1457.jpg%3Fw%3D3840%26q%3D75%26auto%3Dformat&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:09",
+            "hash": "2f72ea8651846ac07ba91f41724fcf79"
+        }
+    },
+    "Hauser & Wirth": {
+        "Mike Kelley: Jerry Meandering-Hauser & Wirth": {
+            "name": "Mike Kelley: Jerry Meandering",
+            "venue": "Hauser & Wirth",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/mike-kelley-jerry-meandering/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/ad2c2589-b0ad-4530-b3d6-caa7ff99c7f1/thumbnail/webimage-KELLE88088-RED_2026_10_08-tif",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:20",
+            "locations": [
+                "18th Street"
+            ],
+            "hash": "3a31b18da59786f68905abfc003bdd9b"
+        },
+        "Harmony Korine: UX LAM-Hauser & Wirth": {
+            "name": "Harmony Korine: UX LAM",
+            "venue": "Hauser & Wirth",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/harmony-korine-ux-lam/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/1a2ab0da-2f00-4a04-b9ca-1cdb57c60ed3/thumbnail/webimage-KORIH149183-SM-261026-tif",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:20",
+            "locations": [
+                "18th Street"
+            ],
+            "hash": "3d2a3b6141c6d0c9a246bcf8f113c41e"
+        },
+        "Zeng Fanzhi-Hauser & Wirth": {
+            "name": "Zeng Fanzhi",
+            "venue": "Hauser & Wirth",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/zeng-fanzhi-new-york/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/99567e70-c64a-4baa-ba20-bc59d69a345f/thumbnail/webimage-ZENG-145726_ZFZNY-1",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:20",
+            "locations": [
+                "22nd Street"
+            ],
+            "hash": "9fc9021f9df85edf0e668785f648d056"
+        },
+        "Cristina Iglesias: Possible Matter-Hauser & Wirth": {
+            "name": "Cristina Iglesias: Possible Matter",
+            "venue": "Hauser & Wirth",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/cristina-iglesias-possible-matter/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/e9d29fa2-6e9e-48df-a3bd-aaa078462c88/thumbnail/webimage-IGLASIAS-inst-00B-tif",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:20",
+            "locations": [
+                "22nd Street"
+            ],
+            "hash": "c8aaf1d7083db6d7c1483b7580d55b5b"
+        },
+        "Rashid Johnson: Birthday Boys-Hauser & Wirth": {
+            "name": "Rashid Johnson: Birthday Boys",
+            "venue": "Hauser & Wirth",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-03",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.hauserwirth.com/hauser-wirth-exhibitions/rashid-johnson-birthday-boys/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://media.hauserwirth.com/asset/026b4095-ce59-4c74-b05b-9bc68d2007dd/thumbnail/webimage-BB_0300",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:20",
+            "locations": [
+                "Wooster Street"
+            ],
+            "hash": "aca939c7b67f851fe3cbf821f32bd58e"
+        }
+    },
+    "Lehmann Maupin": {
+        "Lari Pittman: The Remedy of Analog Space and Time-Lehmann Maupin": {
+            "name": "Lari Pittman: The Remedy of Analog Space and Time",
+            "venue": "Lehmann Maupin",
+            "description": "Lehmann Maupin is pleased to present Lari Pittman\u2019s solo exhibition The Remedy of Analog Space and Time, unveiling a new body of work by the Los Angeles-based painter featuring ten new paintings. Few living artists have shaped the language of contemporary painting as profoundly as Pittman.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-29",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.lehmannmaupin.com/exhibitions/lari-pittman-the-remedy-of-analog-space-and-time",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=cdn.sanity.io%2Fimages%2Fa9d9nfpg%2Fproduction%2Fa5d364eedb05c95b8e2d1679884f3d95504c73d1-3500x2625.jpg%3Fauto%3Dformat%26fit%3Dcrop%26fp-x%3D0.358%26fp-y%3D0.484%26h%3D2134%26q%3D90%26rect%3D0%2C0%2C3500%2C2625%26w%3D3200&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:20",
+            "hash": "88d10c868a51fd647095a74fc4351f5d",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Leonora Carrington & Cecilia Vicu\u00f1a-Lehmann Maupin": {
+            "name": "Leonora Carrington & Cecilia Vicu\u00f1a",
+            "venue": "Lehmann Maupin",
+            "description": "Lehmann Maupin and Gallery Wendi Norris are pleased to announce Leonora Carrington & Cecilia Vicu\u00f1a, an exhibition placing the work of these two pioneering artists into dialogue for the first time. This two-part exhibition will open at Lehmann Maupin in New York on November 19, before traveling to Gallery Wendi Norris in San Francisco in January 2027.",
+            "tags": [
+                "exhibition",
+                "future",
+                "gallery",
+                "free"
+            ],
+            "phase": "future",
+            "dates": {
+                "start": "2026-11-19",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.lehmannmaupin.com/exhibitions/cecilia-vicuna-leonora-carrington",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/a9d9nfpg/production/1a95f5ae1cb4b7ac6140cd73e206d3e9ab38dcbe-1500x1200.jpg?auto=format&fit=crop&fp-x=0.496&fp-y=0.411&h=1000&q=90&rect=0,0,1500,1200&w=1500",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:20",
+            "hash": "1cbf4fe1f6afff29ad5bbbe15b264aaa",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Lisson Gallery": {
+        "Myth Migration-Lisson Gallery": {
+            "name": "Myth Migration",
+            "venue": "Lisson Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.lissongallery.com/exhibitions/myth-migration",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=d7ra36y65tyn0.cloudfront.net%2Fimage%2F553853451406%2Fimage_caek7b42vl6pr9o9s1gse56c72%2F-S3840x-FWEBP&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:21",
+            "hash": "87f33c776dc47cd45f0161631909b82e",
+            "description_checked": "2026-11-15"
+        },
+        "Yu Hong: Field of Asura-Lisson Gallery": {
+            "name": "Yu Hong: Field of Asura",
+            "venue": "Lisson Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-04",
+                "end": "2027-01-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.lissongallery.com/exhibitions/yu-hong-lisson-new-york",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=d7ra36y65tyn0.cloudfront.net%2Fimage%2F553853451406%2Fimage_osu6m9j2hl5o7e7bg3g6m8hr7u%2F-S3840x-FWEBP&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:21",
+            "hash": "0491370e37afa9705c7374092df29c52",
+            "description_checked": "2026-11-15"
+        }
+    },
+    "Marian Goodman Gallery": {
+        "Nairy Baghramian: nameless-Marian Goodman Gallery": {
+            "name": "Nairy Baghramian: nameless",
+            "venue": "Marian Goodman Gallery",
+            "description": "Marian Goodman Gallery is pleased to present a solo exhibition by Nairy Baghramian. On view are recent works, which were first presented in an exhibition at WIELS, Belgium in late 2025 and that will be shown in the United States for the first time.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.mariangoodman.com/exhibitions/639-nairy-baghramian-nameless/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1200,h_630,c_fill,f_auto,fl_lossy,q_auto/ws-mariangoodman/usr/images/exhibitions/main_image_override/items/2b/2b1b04237e8f47e597b060c045ccc584/31141-image-1-.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:22",
+            "hash": "10d266626aed271024dba25692fe5dac",
+            "image_checked": "2026-11-15",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Paula Cooper Gallery": {
+        "Claes Oldenburg: Six Themes-Paula Cooper Gallery": {
+            "name": "Claes Oldenburg: Six Themes",
+            "venue": "Paula Cooper Gallery",
+            "description": "The Estate of Claes Oldenburg & Coosje van Bruggen and Paula Cooper Gallery, New York, will present a major exhibition of sculpture, drawings and prints by Claes Oldenburg in the Fall of 2026.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "sculpture",
+                "drawing",
+                "printmaking"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paulacoopergallery.com/exhibitions/claes-oldenburg",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1470%2Ch_1002%2Cc_lfill%2Fexhibit-e%2F5f5a43b313a837455d8b4567%2Fd4ec59aae8f7a3acf912e18e0182ada0.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:25",
+            "locations": [
+                "534 West 21st Street"
+            ],
+            "hash": "c4dd5dcf1a7c840a86ed4ecb64cd1447",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Art is for the Spirit: Records of the Self-Paula Cooper Gallery": {
+            "name": "Art is for the Spirit: Records of the Self",
+            "venue": "Paula Cooper Gallery",
+            "description": "Art is the only way to run away without leaving home \u2013 Twyla Tharp[1] Paula Cooper Gallery is pleased to present Art is for the Spirit: Records of the Self, a group exhibition organized by Ivy Shapiro with work by Jennifer Bartlett, Jonathan Borofsky, Robert Gober, David Hammons, Kazuko Miyamoto, Ree Morton, Elizabeth Murray, and Joel Shapiro. The exhibition gathers work that explores the home and autobiography as tools for grounding the self.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-29",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.paulacoopergallery.com/exhibitions/art-is-for-the-spirit",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1470%2Ch_1002%2Cc_lfill%2Fexhibit-e%2F5f5a43b313a837455d8b4567%2F718786d3392fc39ac787f070be029611.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:25",
+            "locations": [
+                "521 West 21st Street"
+            ],
+            "hash": "6d2c1410a3df6f9618159808f6d858ca",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Sean Kelly": {
+        "Kehinde Wiley: What the Light Becomes-Sean Kelly": {
+            "name": "Kehinde Wiley: What the Light Becomes",
+            "venue": "Sean Kelly",
+            "description": "Sean Kelly Gallery is delighted to announce, What the Light Becomes, Kehinde Wiley\u2019s fourth exhibition at the gallery. The exhibition focuses specifically on contemporary New Yorkers and, more broadly, on how New York represents a portrait of America at this moment, not as a single cohesive identity, but as something diverse, shifting and continually being remade.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skny.com/exhibitions/kehinde-wiley3",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_3200%2Ch_1408%2Cc_lfill%2Fexhibit-e%2F62f52bf90af321abff00fe82%2Fba9cc69dfd143833de6f88cf989d466b.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:27",
+            "hash": "0f84b5aeee796ec894d84f45af208a10",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Petzel Gallery": {
+        "Tschabalala Self: Tools of Worship-Petzel Gallery": {
+            "name": "Tschabalala Self: Tools of Worship",
+            "venue": "Petzel Gallery",
+            "description": "Petzel is pleased to present Tools of Worship, Tschabalala Self \u2019s \ufb01rst solo exhibition with the gallery and her \ufb01rst gallery exhibition in New York since 2020. The show brings together new paintings and the artist\u2019s \ufb01rst sculptural works in concrete.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting",
+                "sculpture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-30"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.petzel.com/exhibitions/tschabalala-self2",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1568%2Ch_1176%2Cc_lfill%2Fexhibit-e%2F63692af4d0d707561d062132%2F040f91a3bfb51136683de4991eb5e876.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:29",
+            "hash": "f973b990452022efde284a5750246ac5",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "James Little: Homage El Shabazz-Petzel Gallery": {
+            "name": "James Little: Homage El Shabazz",
+            "venue": "Petzel Gallery",
+            "description": "Petzel is pleased to present Homage El Shabazz, James Little\u2019s third exhibition with the gallery, which brings together a rarely seen body of work from a pivotal moment in Little\u2019s practice. The exhibition comprises six intimately scaled paintings from Little\u2019s Homage El Shabazz series made between 1985 and 1989. This show marks the largest presentation of the series since 1992, when six of these works were included in the Walker Art Center\u2019s Malcom X: Man, Ideal, Icon exhibition curated by Dr.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.petzel.com/exhibitions/james-little3",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1568%2Ch_1176%2Cc_lfill%2Fexhibit-e%2F63692af4d0d707561d062132%2Fbfc1f5a346d07b18b9e2dbc074f5f794.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:29",
+            "hash": "06330c9906475808408c618c984895ca",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Andrew Kreps Gallery": {
+        "Heitor Dos Prazeres: Abundant Existence-Andrew Kreps Gallery": {
+            "name": "Heitor Dos Prazeres: Abundant Existence",
+            "venue": "Andrew Kreps Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.andrewkreps.com/exhibitions/heitor-dos-prazeres",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_680,h_500,c_lfill/exhibit-e/59bff84cdca83743488b4567/bb0cc73065fcd4fe9054085b9ba39810.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:31",
+            "locations": [
+                "394 Broadway",
+                "22 Cortlandt Alley"
+            ],
+            "hash": "4300d42238e34976dee1ee633abcf9bb",
+            "description_checked": "2026-11-15"
+        }
+    },
+    "Luhring Augustine": {
+        "Jason Moran: Stacks-Luhring Augustine": {
+            "name": "Jason Moran: Stacks",
+            "venue": "Luhring Augustine",
+            "description": "Luhring Augustine is pleased to announce STACKS, an exhibition of new and recent work by Jason Moran, will open on November 6 and remain on view through December 19. Marking the artist's third solo show with the gallery, the presentation continues Moran's inquiry into the histories, objects, gestures, and ideas that shape jazz and its cultural landscape, explored through a range of materials including works on paper, sculpture, and video.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "sculpture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.luhringaugustine.com/exhibitions/jason-moran3",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_2160%2Ch_950%2Cc_lfill%2Fexhibit-e%2F556d89b2cfaf3421548b4568%2F7e1abfb100ffadd961dd1a6938d0abd2.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:33",
+            "hash": "e2c7b41efde70fef8e3de777ee4f06c3",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Miles McEnery Gallery": {
+        "Inka Essenhigh-Miles McEnery Gallery": {
+            "name": "Inka Essenhigh",
+            "venue": "Miles McEnery Gallery",
+            "description": "Miles McEnery Gallery presents its fourth Inka Essenhigh exhibition exploring landscapes, organic forms, and the shifting boundaries between the natural and imagined worlds. Her distinctive visual language transforms everyday environments into otherworldly scenes filled with mystery, movement, and wonder. Through her exploration of floral motifs, fauna, and still lifes, Essenhigh\u2019s paintings teeter on the edge of reality before breaking through into vibrant, dreamlike landscapes.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.milesmcenery.com/exhibitions/inka-essenhigh5",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_3000%2Ch_1400%2Cc_lfill%2Fexhibit-e%2F5a3bb3fed9edde023b8b4568%2F8c5507d5a2b62de5e61133ec176d7192.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:35",
+            "locations": [
+                "515 West 22nd Street"
+            ],
+            "hash": "b857023775c516a165e853908db3e91d",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Karel Funk-Miles McEnery Gallery": {
+            "name": "Karel Funk",
+            "venue": "Miles McEnery Gallery",
+            "description": "Karel Funk\u2019s inaugural solo exhibition at Miles McEnery Gallery continues his exploration of the hood as a contemporary form of portraiture, shifting focus away from the individual beneath the garment and toward an investigation of the materiality of the garment itself. Through intricate detail and iridescent color, the works explore the interplay of figuration, abstraction, geometry, and perception. Funk\u2019s figures dwell in the ambiguous space between the seen and unseen.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "fashion"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.milesmcenery.com/exhibitions/karel-funk",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_3000%2Ch_1400%2Cc_lfill%2Fexhibit-e%2F5a3bb3fed9edde023b8b4568%2F2be0bf8dd54142eb64dc25c338155715.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:35",
+            "locations": [
+                "525 West 22nd Street"
+            ],
+            "hash": "3c548d72a42016b3c74b6cf11752a6c0",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Natural Order-Miles McEnery Gallery": {
+            "name": "Natural Order",
+            "venue": "Miles McEnery Gallery",
+            "description": "Miles McEnery Gallery is pleased to announce a curated group exhibition titled Natural Order, featuring a selection of works by artists Karin Davie, Lisa Corinne Davis, Douglas Melini, Alexander Ross, and James Siena. This exhibition explores the system of rules, patterns, and relationships that dictate the physical universe independently of human design.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.milesmcenery.com/exhibitions/natural-order",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_3000%2Ch_1400%2Cc_lfill%2Fexhibit-e%2F5a3bb3fed9edde023b8b4568%2Fe7930ab98911200ae1af24cf59543379.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:35",
+            "locations": [
+                "520 West 21st Street"
+            ],
+            "hash": "86552fd4dffbed45eeaa0c1b5fbc2499",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Daniel Rich-Miles McEnery Gallery": {
+            "name": "Daniel Rich",
+            "venue": "Miles McEnery Gallery",
+            "description": "Daniel Rich presents a new body of paintings in his exhibition Magic Mountain, examining themes of political power, memory, and history through nocturnal scenes of New York City. Towering buildings in rich colors of sapphire blue, amethyst purple, and tangerine fill Rich\u2019s cityscapes with anticipation, silence, and a subtle tension suggested by an unseen activity or emptiness within.",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2027-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.milesmcenery.com/exhibitions/daniel-rich4",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_3000%2Ch_1400%2Cc_lfill%2Fexhibit-e%2F5a3bb3fed9edde023b8b4568%2F827be59c78757b391932bb64099a1da3.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:35",
+            "locations": [
+                "511 West 22nd Street"
+            ],
+            "hash": "f357f32ada4bb9e64eeee0f4556774b5",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Skarstedt": {
+        "Dark Comedy-Skarstedt": {
+            "name": "Dark Comedy",
+            "venue": "Skarstedt",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skarstedt.com/exhibitions",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_1050,h_1050,c_lfill/exhibit-e/5a7db4e0a09a721a338b4568/10974237547ab5394922e6e3493bcb4f.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:38",
+            "locations": [
+                "Upper East Side"
+            ],
+            "hash": "d68f37c0536eb0b34b0d48996e027c47",
+            "description_checked": "2026-11-15"
+        },
+        "Eric Fischl: In Pursuit of Pleasure-Skarstedt": {
+            "name": "Eric Fischl: In Pursuit of Pleasure",
+            "venue": "Skarstedt",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-12",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.skarstedt.com/exhibitions/eric-fischl-in-pursuit-of-pleasure",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=static-assets.artlogic.net%2Fw_1050%2Ch_1050%2Cc_lfill%2Fexhibit-e%2F5a7db4e0a09a721a338b4568%2Fbde15d67646f22ef719fd9efe7554145.jpeg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:38",
+            "locations": [
+                "Chelsea"
+            ],
+            "hash": "c847723baf96d9547519e47f7b63c3ab",
+            "description_checked": "2026-11-15"
+        }
+    },
+    "Alexander Gray Associates": {
+        "Steve Locke: I said what I said-Alexander Gray Associates": {
+            "name": "Steve Locke: I said what I said",
+            "venue": "Alexander Gray Associates",
+            "description": "Alexander Gray Associates presents Steve Locke: I said what I said, an exhibition of recent paintings, sculptures, and neon. Returning to questions of sexuality and desire, racial violence, the politics of looking, and the conventions of portraiture and modernism, the exhibition brings together lines of inquiry Locke has sustained...",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting",
+                "sculpture"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-30",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.alexandergray.com/exhibitions/912-steve-locke-i-said-what-i-said/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-alexandergray/usr/images/exhibitions/main_image_override/912/261029_aga_install_008_rush.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:39",
+            "hash": "4c921cc1dab707594e2227a9879be52f",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Anton Kern Gallery": {
+        "Ellen Gronemeyer: D\u00c9J\u00c0 VU-Anton Kern Gallery": {
+            "name": "Ellen Gronemeyer: D\u00c9J\u00c0 VU",
+            "venue": "Anton Kern Gallery",
+            "description": "Anton Kern Gallery is pleased to announce Ellen Gronemeyer\u2019s third solo exhibition in New York. For D\u00c9J\u00c0 VU, the Berlin-based artist presents twelve new oil paintings and, for the first time, five small tables. Positioning the imaginary space of a painting alongside functional objects, the exhibition considers the act...",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.antonkerngallery.com/exhibitions/534-ellen-gronemeyer-deja-vu/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-antonkerngallery/usr/images/exhibitions/main_image_override/534/ak-27769_gro_2026.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:40",
+            "locations": [
+                "16 East 55th Street"
+            ],
+            "hash": "01c2f40b087107bafd1f8ca43cb25ba1",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Pawe\u0142 Althamer: Artist/Studio-Anton Kern Gallery": {
+            "name": "Pawe\u0142 Althamer: Artist/Studio",
+            "venue": "Anton Kern Gallery",
+            "description": "Anton Kern Gallery is pleased to announce Artist/Studio, an exhibition of new work by Pawe\u0142 Althamer. This is his second exhibition at the gallery and his third in New York, following The Neighbors at the New Museum in 2014. For Artist/Studio, Althamer will move his studio from Warsaw...",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-11",
+                "end": "2027-01-16"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.antonkerngallery.com/exhibitions/535-pawe-althamer-artist-studio/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-antonkerngallery/usr/images/exhibitions/main_image_override/535/pawel-4.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:40",
+            "locations": [
+                "16 East 55th Street"
+            ],
+            "hash": "58c9e0f82e8f812965201905a6be1a1f",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "Yossi Milo Gallery": {
+        "Ibrahim Said: Shaping Time-Yossi Milo Gallery": {
+            "name": "Ibrahim Said: Shaping Time",
+            "venue": "Yossi Milo Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-22",
+                "end": "2027-01-09"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.yossimilo.com/exhibitions/201-ibrahim-said-shaping-time-artist-s-reception-october-22-6-8-pm/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite0091/usr/images/exhibitions/main_image_override/201/ibrahim-5-piece-arrangement-new-edits-.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:41",
+            "hash": "9b369a215adc9bcd364a8fec0e4d0384",
+            "description_checked": "2026-11-15"
+        }
+    },
+    "Jane Lombard Gallery": {
+        "Elodie Blanchard: In Fragments-Jane Lombard Gallery": {
+            "name": "Elodie Blanchard: In Fragments",
+            "venue": "Jane Lombard Gallery",
+            "description": "Jane Lombard Gallery is pleased to present In Fragments, a solo exhibition of work by Elodie Blanchard. Bringing together three ongoing series, Trees, Mending Joy, and Vessels, the exhibition explores Blanchard\u2019s longstanding engagement with textiles as a medium for transformation. Drawing from collected fabrics, clothing, Mylar balloons, and...",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "textiles"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-30",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.janelombardgallery.com/exhibitions/95-elodie-blanchard-in-fragments/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite1485/usr/images/exhibitions/main_image_override/95/install-5_in-fragments_2026.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:43",
+            "hash": "63248242f6c15643d892b5915e50bdef",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        },
+        "Rachael Catharine Anderson: Hidden Peril-Jane Lombard Gallery": {
+            "name": "Rachael Catharine Anderson: Hidden Peril",
+            "venue": "Jane Lombard Gallery",
+            "description": "Jane Lombard Gallery is pleased to present Hidden Peril, a new body of paintings by Rachael Catharine Anderson centered on poisonous plants and mushrooms. Continuing her longstanding practice of painting botanical subjects from direct observation, Anderson turns her attention to the shadow side of the natural world, where beauty...",
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free",
+                "painting"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-30",
+                "end": "2026-12-12"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.janelombardgallery.com/exhibitions/96-jlg-projects-rachael-catharine-anderson-hidden-peril/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite1485/usr/images/exhibitions/main_image_override/96/install-1_hidden-peril_2026.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:43",
+            "hash": "19e899d373b13385b8cb99accb0dbfb2",
+            "description_checked": "2026-11-15",
+            "description_source": "page"
+        }
+    },
+    "ACA Galleries": {
+        "John Baeder: America-ACA Galleries": {
+            "name": "John Baeder: America",
+            "venue": "ACA Galleries",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-31",
+                "end": "2026-12-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.acagalleries.com/exhibitions/90-john-baeder-america/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-artlogicwebsite1389/usr/images/exhibitions/main_image_override/90/copy-of-edited-l1010876.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:44",
+            "hash": "adef77fac4a8fb1b31466f56792c3531"
+        }
+    },
+    "Miguel Abreu Gallery": {
+        "Scott Lyall: Reds-Miguel Abreu Gallery": {
+            "name": "Scott Lyall: Reds",
+            "venue": "Miguel Abreu Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://miguelabreugallery.com/exhibitions/reds/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://miguelabreugallery.com/wp-content/uploads/2026/10/SLyall_MAG_2026_InvitationCard_Homepage.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:45",
+            "hash": "0bdb2c067fdf6f67cb9b82101cb494ce"
+        },
+        "Jimmy Raskin\u2019s Curio Shop-Miguel Abreu Gallery": {
+            "name": "Jimmy Raskin\u2019s Curio Shop",
+            "venue": "Miguel Abreu Gallery",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-06",
+                "end": "2026-12-23"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://miguelabreugallery.com/exhibitions/jimmy-raskins-curio-shop/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://miguelabreugallery.com/wp-content/uploads/2026/11/DSC05137_2.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:45",
+            "hash": "817452a0aabb3f7f5cb8554d28de4e14"
+        }
+    },
+    "Bortolami": {
+        "Rebecca Morris: #35-Bortolami": {
+            "name": "Rebecca Morris: #35",
+            "venue": "Bortolami",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-30",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.bortolamigallery.com/exhibitions/35",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/mnub8q5m/production/ea4516bade8cb9bf945a80b72c88ae8943de5ec8-3750x2500.jpg?w=900&h=600",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:48",
+            "hash": "09476509bf1471e51cfdab3915dc6100"
+        },
+        "As a moment and as an accumulation: Maki Katayama, Hikari Ono-Bortolami": {
+            "name": "As a moment and as an accumulation: Maki Katayama, Hikari Ono",
+            "venue": "Bortolami",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-30",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.bortolamigallery.com/exhibitions/as-a-moment-and-as-an-accumulation",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/mnub8q5m/production/b2bb3f19eae294663dc3d734b861d988e42c2ece-3750x2500.jpg?w=900&h=600",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:48",
+            "hash": "46d967340495d8bb8b3a88a4f9d5c44a"
+        }
+    },
+    "Salon 94": {
+        "Karon Davis: Wishful Thinking-Salon 94": {
+            "name": "Karon Davis: Wishful Thinking",
+            "venue": "Salon 94",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.salon94.com/exhibitions/karon-davis-wishful-thinking",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://images.weserv.nl/?url=cdn.sanity.io%2Fimages%2Fcpu8yypf%2Fproduction-v4%2F0ec76588b08119d42e31ab9d48a55dd47e4b58dd-3500x2625.jpg&w=640&we&output=jpg&q=80",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:49",
+            "hash": "33a2a14ecf29bc6ffc4763da4ca140ac"
+        },
+        "Ludovic Nkoth: Between Lines-Salon 94": {
+            "name": "Ludovic Nkoth: Between Lines",
+            "venue": "Salon 94",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-11-05",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.salon94.com/exhibitions/ludovic-nkoth-between-lines",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://cdn.sanity.io/images/cpu8yypf/production-v4/b4bc07fed41c60d8e6686650fa71c550531e0287-3500x2625.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:49",
+            "hash": "1084d67cf03fa889064c0ed45c7e1efd"
+        }
+    },
+    "Norr Cohan": {
+        "Tuan Andrew Nguyen: Sacred Forest / R\u00f9'ng Thi\u00eang-Norr Cohan": {
+            "name": "Tuan Andrew Nguyen: Sacred Forest / R\u00f9'ng Thi\u00eang",
+            "venue": "Norr Cohan",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-30",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.norrcohan.com/gallery-exhibitions/tuan-andrew-nguyen4",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_754,h_660,c_lfill/exhibit-e/599f12405a4091c6048b4568/03fc77a91a8a7f71b69c6e0d387a7c81.jpeg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:51",
+            "locations": [
+                "48 Walker Street",
+                "52 Walker Street"
+            ],
+            "hash": "d80130cde0b56435a3fdb629331ec419"
+        }
+    },
+    "Galerie Lelong & Co.": {
+        "Mildred Thompson: Cosmos Calling-Galerie Lelong & Co.": {
+            "name": "Mildred Thompson: Cosmos Calling",
+            "venue": "Galerie Lelong & Co.",
+            "description": null,
+            "tags": [
+                "exhibition",
+                "current",
+                "gallery",
+                "free"
+            ],
+            "phase": "current",
+            "dates": {
+                "start": "2026-10-29",
+                "end": "2026-12-19"
+            },
+            "ongoing": false,
+            "links": [
+                {
+                    "link": "https://www.galerielelong.com/exhibitions/280-mildred-thompson-cosmos-calling/",
+                    "description": "Event Page"
+                },
+                {
+                    "link": "https://static-assets.artlogic.net/w_750,c_limit,f_auto,fl_lossy,q_auto/ws-galerielelong/usr/images/exhibitions/main_image_override/280/mt-glny2026-01.jpg",
+                    "description": "Image"
+                }
+            ],
+            "last_updated": "2026-11-15 00:25:52",
+            "hash": "1fc6027c8de32317d717bb7471e15154"
         }
     }
 }
