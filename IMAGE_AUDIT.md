@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-15: **749**. With their own picture: **738** (99%). Showing the venue's logo instead: **8**. No picture at all: **3**.
+Current and upcoming events on 2026-11-15: **756**. With their own picture: **745** (99%). Showing the venue's logo instead: **8**. No picture at all: **3**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
