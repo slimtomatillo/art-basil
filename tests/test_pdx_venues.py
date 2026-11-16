@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from scrapers.nyc import galleries as base
-from scrapers.pdx import (adams_and_ollman, galleries, lewis_clark_hoffman_gallery, oregon_contemporary, psu_littman_white,
-                          reed_cooley_gallery)
+from scrapers.pdx import (adams_and_ollman, chefas_projects, galleries, lewis_clark_hoffman_gallery, nationale, oregon_contemporary,
+                          psu_littman_white, reed_cooley_gallery)
 from scrapers.tor import _common
 
 TODAY = dt.date(2026, 11, 15)
@@ -200,6 +200,64 @@ class HoffmanGalleryTest(unittest.TestCase):
         show = shows['Converge 45: Phool and Pony Express']
         self.assertEqual(show['dates'], {'start': dt.date(2026, 8, 30), 'end': dt.date(2026, 12, 10)})
         self.assertEqual(show['venue'], 'Hoffman Gallery')
+
+
+class NationaleTest(unittest.TestCase):
+    MENU = '<a href="/two-shows">CURRENT</a><a href="/upcoming">UPCOMING</a><a href="/project-room">PROJECT ROOM</a><a href="/past">PAST</a>'
+
+    def page(self, *lines):
+        return '<html><body>' + self.MENU + ''.join(f'<p>{line}</p>' for line in lines) + '</body></html>'
+
+    def test_the_menu_gives_the_current_upcoming_and_project_room_pages(self):
+        self.assertEqual(nationale.menu_links(soup(self.page()), nationale.HOME_URL),
+                         ['https://www.nationale.us/two-shows', 'https://www.nationale.us/upcoming', 'https://www.nationale.us/project-room'])
+
+    def test_artist_title_and_run_are_read_from_the_on_view_line(self):
+        page = self.page('F R O N T G A L L E R Y', 'GABI VILLASEÑOR //', '“We found a freshwater spring while you were sleeping”',
+                         'On view in the Front Space October 17–November 21, 2026', 'Opening reception Saturday, October 17 (2–4pm)')
+        self.assertEqual(nationale.read_shows(soup(page), TODAY),
+                         [('Gabi Villaseñor: We found a freshwater spring while you were sleeping', dt.date(2026, 10, 17), dt.date(2026, 11, 21))])
+
+    def test_a_show_that_only_gives_its_opening_reception_is_held_back(self):
+        page = self.page('UPCOMING //', 'WILLIAM MATHESON / Painting', 'Opening reception November 28, 2026 (2-4pm)')
+        self.assertEqual(nationale.read_shows(soup(page), TODAY), [])
+
+    def test_the_scraper_reads_every_menu_page_under_one_venue(self):
+        pages = {nationale.HOME_URL: self.page(),
+                 'https://www.nationale.us/two-shows': self.page('GABI VILLASEÑOR //', 'Spring', 'On view in the Front Space October 17–November 21, 2026'),
+                 'https://www.nationale.us/upcoming': self.page('WILLIAM MATHESON / Painting', 'Opening reception November 28, 2026 (2-4pm)'),
+                 'https://www.nationale.us/project-room': self.page('PURL SAMOHEYL //', 'It Feels like a Tuesday',
+                                                                    'On view in the Project Room November 14–December 12, 2026')}
+        shows = run(nationale, nationale.scrape_nationale, pages)
+        self.assertEqual(sorted(shows), ['Gabi Villaseñor: Spring', 'Purl Samoheyl: It Feels like a Tuesday'])
+        self.assertEqual({s['venue'] for s in shows.values()}, {'Nationale'})
+
+
+class ChefasProjectsTest(unittest.TestCase):
+    CURRENT = ('<html><head><meta property="og:title" content="KRISTEN DIEDERICH | OUTSIDE NATURE - CHEFAS PROJECTS"></head><body>'
+               '<p>EXHIBITS</p><h1>KRISTEN DIEDERICH</h1><p>OUTSIDE NATURE</p><p>OCTOBER 23 - NOVEMBER 21, 2026</p><p>OPENING RECEPTION</p>'
+               '<p>FRIDAY, OCTOBER 23, 2026</p></body></html>')
+
+    def upcoming(self, *lines):
+        return '<html><body><p>UPCOMING EXHIBITS</p>' + ''.join(f'<p>{line}</p>' for line in lines) + \
+            '<p>134 SE TAYLOR STREET, SUITE 203, PORTLAND, OR 97214</p></body></html>'
+
+    def test_the_current_show_is_named_from_its_title_and_dated_from_its_run(self):
+        page = soup(self.CURRENT)
+        self.assertEqual(chefas_projects.current_name(page), 'Kristen Diederich: Outside Nature')
+        self.assertEqual(chefas_projects.current_run(page, TODAY), (dt.date(2026, 10, 23), dt.date(2026, 11, 21)))
+
+    def test_upcoming_shows_that_only_say_when_they_open_are_held_back(self):
+        page = soup(self.upcoming('HOLLY OSBORNE', 'OPENS DECEMBER 4, 2026', 'REQUEST COLLECTOR PREVIEW', 'NATE ORTON', 'OPENS DECEMBER 4, 2026'))
+        self.assertEqual(chefas_projects.upcoming_shows(page, TODAY), [])
+
+    def test_an_upcoming_show_with_a_full_run_is_published(self):
+        page = soup(self.upcoming('HOLLY OSBORNE', 'DECEMBER 4 - JANUARY 9, 2027', 'NATE ORTON', 'OPENS JANUARY 15, 2027'))
+        self.assertEqual(chefas_projects.upcoming_shows(page, TODAY), [('Holly Osborne', dt.date(2026, 12, 4), dt.date(2027, 1, 9))])
+        shows = run(chefas_projects, chefas_projects.scrape_chefas_projects,
+                    {chefas_projects.CURRENT_URL: self.CURRENT, chefas_projects.UPCOMING_URL: self.upcoming('HOLLY OSBORNE', 'DECEMBER 4 - JANUARY 9, 2027')})
+        self.assertEqual(sorted(shows), ['Holly Osborne', 'Kristen Diederich: Outside Nature'])
+        self.assertEqual(shows['Holly Osborne']['phase'], 'future')
 
 
 class RegionWiringTest(unittest.TestCase):

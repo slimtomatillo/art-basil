@@ -45,8 +45,8 @@ from scrapers.nyc import cooper_hewitt, jewish_museum, museum_of_the_city_of_new
     museum_of_arts_and_design, international_center_of_photography, bronx_museum_of_the_arts, american_folk_art_museum
 from scrapers.nyc import pioneer_works, bric, white_columns, smack_mellon, the_kitchen, center_for_book_arts
 from scrapers.nyc import galleries as nyc_galleries
-from scrapers.pdx import (adams_and_ollman, galleries as pdx_galleries, lewis_clark_hoffman_gallery, oregon_contemporary,
-                          psu_littman_white, reed_cooley_gallery)
+from scrapers.pdx import (adams_and_ollman, chefas_projects, galleries as pdx_galleries, lewis_clark_hoffman_gallery, nationale,
+                          oregon_contemporary, psu_littman_white, reed_cooley_gallery)
 from scrapers.nyc import metropolitan_museum_of_art, museum_of_modern_art, brooklyn_museum, gagosian, hauser_and_wirth
 from scrapers.nyc import asia_society_museum, el_museo_del_barrio, museum_of_the_moving_image, queens_museum
 from scrapers.nyc import new_museum, gladstone_gallery, moma_ps1
@@ -303,6 +303,8 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Adams and Ollman": adams_and_ollman.scrape_adams_and_ollman,
             "Littman and White Galleries": psu_littman_white.scrape_psu_littman_white,
             "Hoffman Gallery": lewis_clark_hoffman_gallery.scrape_hoffman_gallery,
+            "Nationale": nationale.scrape_nationale,
+            "Chefas Projects": chefas_projects.scrape_chefas_projects,
         },
         'ist': {
             "Istanbul Modern": istanbul_modern.scrape_istanbul_modern_exhibitions,
