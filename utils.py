@@ -258,6 +258,20 @@ PROXY_EXHAUSTED = False
 # apart, so they alternate between even and odd 4-day blocks.
 PROXY_REFRESH_DAYS = 4
 
+# Proxied venues whose shows run for weeks or months and that cost the most per refresh (25 credits a
+# page with page rendering, or two pages) refresh about every 8 days instead, which saves around 700
+# credits a month. Names are the scraper's name in main.py's PROXIED_VENUES, which is also the venue
+# name the data is stored under. None of them reads past-exhibition pages (those follow the 4-day blocks).
+PROXY_SLOW_REFRESH_DAYS = 8
+PROXY_SLOW_VENUES = frozenset({
+    "Gagosian", "Dia Chelsea", "El Museo del Barrio", "Asia Society Museum",
+    "SFAC Galleries", "Marin Civic Center", "Armory Center for the Arts",
+})
+
+def proxy_refresh_days(venue):
+    """How many days between refreshes of a proxied venue."""
+    return PROXY_SLOW_REFRESH_DAYS if venue in PROXY_SLOW_VENUES else PROXY_REFRESH_DAYS
+
 # main.py sets this while it runs a venue that was named on the command line
 # (--venues), which always fetches everything.
 FORCE_PAST_PAGES = False
