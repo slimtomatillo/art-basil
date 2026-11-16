@@ -145,6 +145,11 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   hours old, which is **every 4 days** (about 7.6 refreshes a month). The other
   daily runs skip it. The registry is `PROXIED_VENUES` in `main.py`; a new
   proxied scraper must be added there or it will run daily.
+- **Seven costly venues with slowly changing shows refresh every 8 days instead** (Gagosian, Dia Chelsea, El Museo del
+  Barrio, Asia Society Museum, SFAC Galleries, Marin Civic Center, Armory Center for the Arts): `utils.PROXY_SLOW_VENUES`,
+  worth about 700 credits a month (found 2026-11-15 from the ZenRows Activity log, which is the place to see real
+  per-site use). The stale-data check allows them 11 days, not 7 (`scraper_health.stale_after_days`). Add a venue to
+  the set only if it reads no past-exhibition pages, which follow the 4-day blocks.
 - **Past-exhibition pages are pulled only on every second refresh** (about every
   8 days), because they change rarely. The choice comes from the calendar
   (`utils.past_pages_due`: `date.toordinal() // 4` is even), so there is no stored

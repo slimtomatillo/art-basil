@@ -57,7 +57,8 @@ from scrapers.ist import istanbul_modern, sakip_sabanci, salt, pera_museum, arte
 # utils.PROXY_DOMAINS), mapped to the venue names they write data under (some
 # write several). A refresh of these costs about 375 credits (255 for the current and
 # upcoming pages, 120 for the past-exhibition pages) and the free allowance is 5,000 a
-# month, so they are refreshed every 4 days, and their past pages every other time.
+# month, so they are refreshed every 4 days, and their past pages every other time. The costliest venues
+# whose shows change slowly (utils.PROXY_SLOW_VENUES) are refreshed every 8 days.
 PROXIED_VENUES = {
     "BAMPFA": ["BAMPFA"],
     "Cantor Arts Center": ["Cantor Arts Center"],
@@ -92,6 +93,10 @@ PROXIED_VENUES = {
 # fetch leaves it that old, so it is retried on the next daily run.
 PROXY_REFRESH_MIN_AGE = dt.timedelta(days=utils.PROXY_REFRESH_DAYS) - dt.timedelta(hours=12)
 
+def proxy_min_age(venue):
+    """The age at which a proxied venue is due: its refresh interval (utils.proxy_refresh_days) less 12 hours."""
+    return dt.timedelta(days=utils.proxy_refresh_days(venue)) - dt.timedelta(hours=12)
+
 def proxy_refresh_due(region, venue, now=None):
     """True if a proxied scraper's data is old enough (or absent) to refresh."""
     now = now or dt.datetime.now(dt.timezone.utc).replace(tzinfo=None)
@@ -99,7 +104,7 @@ def proxy_refresh_due(region, venue, now=None):
     stamps = [dt.datetime.strptime(e['last_updated'][:19], "%Y-%m-%d %H:%M:%S")
               for data_venue in PROXIED_VENUES[venue]
               for e in db.get(data_venue, {}).values() if e.get('last_updated')]
-    return not stamps or now - max(stamps) >= PROXY_REFRESH_MIN_AGE
+    return not stamps or now - max(stamps) >= proxy_min_age(venue)
 
 def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=None):
     """Return dictionary of venue:scraper pairs and venue-to-region mapping"""
@@ -370,7 +375,7 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
                 logging.warning(f"[{region}] Skipping {venue}: the ZenRows account is out of credits; existing data kept.")
                 continue
             if not proxy_refresh_due(region, venue):
-                logging.info(f"[{region}] Skipping {venue}: refreshed recently (proxied venues refresh about every {utils.PROXY_REFRESH_DAYS} days); existing data kept.")
+                logging.info(f"[{region}] Skipping {venue}: refreshed recently (this venue refreshes about every {utils.proxy_refresh_days(venue)} days); existing data kept.")
                 continue
         logging.info(f"[{region}] Starting scrape for {venue}")
         utils.reset_fetch_log()

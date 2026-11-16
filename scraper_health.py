@@ -13,9 +13,15 @@ import os
 
 from config import DB_FILES
 from manual_check import MANUAL_SOURCE
-from utils import load_db
+from utils import load_db, proxy_refresh_days, PROXY_REFRESH_DAYS
 
 STALE_AFTER_DAYS = 7
+
+
+def stale_after_days(venue):
+    """A slowly refreshed proxied venue (8-day schedule) is stale 4 days later than the usual 7, not before."""
+    return STALE_AFTER_DAYS + proxy_refresh_days(venue) - PROXY_REFRESH_DAYS
+
 # A current or upcoming event the scraper hasn't seen for this long, at a venue that is otherwise refreshing
 UNSEEN_AFTER_DAYS = 21
 # One-time imports of a closed venue's history (e.g. the Cartoon Art Museum,
@@ -40,7 +46,7 @@ def find_stale_venues(today=None):
             if not stamps:
                 continue
             days = (today - max(stamps)).days
-            if days > STALE_AFTER_DAYS:
+            if days > stale_after_days(venue):
                 stale.append({'region': region, 'venue': venue, 'days': days})
     return sorted(stale, key=lambda s: -s['days'])
 

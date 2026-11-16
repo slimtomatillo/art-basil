@@ -170,3 +170,32 @@ class NamedVenueRunTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class SlowVenueTest(unittest.TestCase):
+    NOW = dt.datetime(2026, 11, 15, 11, 0, 0)
+
+    def due(self, venue, age_hours):
+        stamp = (self.NOW - dt.timedelta(hours=age_hours)).strftime('%Y-%m-%d %H:%M:%S')
+        db = {venue: {'a': {'last_updated': stamp}}}
+        with mock.patch.object(main, 'load_db', return_value=db):
+            return main.proxy_refresh_due('nyc', venue, now=self.NOW)
+
+    def test_slow_venues_refresh_every_eight_days(self):
+        self.assertFalse(self.due('Gagosian', 96))      # 4 days: the usual venues are due, this one is not
+        self.assertFalse(self.due('Gagosian', 179))
+        self.assertTrue(self.due('Gagosian', 181))      # 7.5 days (8 less 12 hours of slack)
+        self.assertTrue(self.due('Gagosian', 192))
+
+    def test_other_venues_stay_on_four_days(self):
+        self.assertTrue(self.due('Brooklyn Museum', 96))
+
+    def test_every_slow_venue_is_a_proxied_scraper_that_reads_no_past_pages(self):
+        self.assertEqual([v for v in utils.PROXY_SLOW_VENUES if v not in main.PROXIED_VENUES], [])
+        for venue in utils.PROXY_SLOW_VENUES:
+            self.assertEqual(main.PROXIED_VENUES[venue], [venue])    # the stale check goes by the data's venue name
+
+    def test_the_stale_check_waits_for_a_slow_venue(self):
+        import scraper_health
+        self.assertEqual(scraper_health.stale_after_days('Brooklyn Museum'), 7)
+        self.assertEqual(scraper_health.stale_after_days('Gagosian'), 11)
