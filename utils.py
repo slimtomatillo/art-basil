@@ -190,9 +190,13 @@ PROXY_DOMAINS = {
     # allow_proxy option). Premium proxy alone was tried first and the daily runs of 11-13 and 11-14 came back as a 1,962-byte
     # page with no title, which is the challenge's own script page: it needs a real browser to run. js_render (25 credits a
     # refresh, about 190 a month on the 4-day schedule in main.py's PROXIED_VENUES) is what ZenRows' AWS WAF guide says to add.
-    # Not live-tested (no proxy key locally); if the log still says "no current or upcoming exhibition found", its page title
-    # and size say what came back, and `wait_for` or `proxy_country` are the next things to try.
-    'www.sf.gov': {'premium_proxy': 'true', 'js_render': 'true'},
+    # js_render alone did not help: the daily runs of 11-14 and 11-15 still got the 1,986-byte page with no title (the log line
+    # "SFAC Galleries stored no events; fetched ..." says so), and neither did adding wait=5000 (a Probe page run on 11-15 got
+    # a 2,398-byte "verify you're not a robot" page). What worked in that Probe run is wait_for=h3, which holds the response
+    # until the real page has drawn an <h3> (a show title), so the challenge has finished: 117 KB, the real title, and the
+    # scraper read all 3 shows from it. proxy_country=us as for Dia and El Museo. Same 25 credits. A selector with a space
+    # cannot go through the Probe workflow's options, so it is the bare tag.
+    'www.sf.gov': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us', 'wait_for': 'h3'},
     # New York, tier 4 (WEBSITE-121). Each answers GitHub's servers (and a plain script) with a Cloudflare 403 or a
     # Vercel 429, and reads fine in a browser; the HTML a browser gets before any script runs already holds the
     # shows (the Met's and Brooklyn Museum's cards, MoMA's cards, Gagosian's cards, Hauser & Wirth's __NEXT_DATA__),
