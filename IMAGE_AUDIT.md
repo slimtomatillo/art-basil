@@ -4,19 +4,21 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-15: **846**. With their own picture: **830** (98%). Showing the venue's logo instead: **8**. No picture at all: **8**.
+Current and upcoming events on 2026-11-16: **858**. With their own picture: **838** (98%). Showing the venue's logo instead: **8**. No picture at all: **12**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
 | Region | Venue | Events | Own picture | Logo | None |
 |---|---|---:|---:|---:|---:|
 | `nyc` | Queens Museum | 6 | 3 | 0 | 3 |
+| `pdx` | Adams and Ollman | 3 | 0 | 0 | 3 |
 | `la` | François Ghebaly | 3 | 1 | 0 | 2 |
 | `sf` | Jessica Silverman Gallery | 4 | 2 | 2 | 0 |
 | `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
 | `nyc` | Dia Chelsea | 4 | 3 | 0 | 1 |
+| `pdx` | Nationale | 2 | 1 | 0 | 1 |
 | `pdx` | Portland Art Museum | 41 | 40 | 0 | 1 |
 | `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
 | `sf` | Sanchez Art Center | 3 | 2 | 1 | 0 |
@@ -29,6 +31,12 @@ Venues with events that have no picture of their own, most first. Worth a look n
 - [¡Te Amo Porque S.O.S. Pueblo!: Altares Ocultos de Duelo y Memoria (Hidden Altars of Grief and Remembrance)](https://queensmuseum.org/exhibition/te-amo-porque-sos-pueblo-altares-ocultos-de-duelo-y-memoria-hidden-altars-of-grief-and-remembrance/): blank; page last checked 2026-11-15
 - [Community Ofrenda: Where Memory Becomes Home](https://queensmuseum.org/exhibition/community-ofrenda-altar-where-memory-becomes-home-2026/): blank; page last checked 2026-11-15
 - [Collection Spotlight: The Panorama Archives](https://queensmuseum.org/exhibition/collection-spotlight-the-panorama-archives-2026/): blank; page last checked 2026-11-15
+
+**Adams and Ollman** (`pdx`)
+
+- [Peter Gallo](https://adamsandollman.com/Upcoming-Exhibitions): blank; page last checked 2026-11-16
+- [Bethann Parker](https://adamsandollman.com/Upcoming-Exhibitions): blank; page last checked 2026-11-16
+- [Conny Purtill: The Ground](https://adamsandollman.com/Upcoming-Exhibitions): blank; page last checked 2026-11-16
 
 **François Ghebaly** (`la`)
 
@@ -56,6 +64,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Dia Chelsea** (`nyc`)
 
 - [David Lamelas: The Machine](https://diaart.org/exhibition/exhibitions-projects/david-lamelas-the-machine-exhibition): blank; page last checked 2026-11-15
+
+**Nationale** (`pdx`)
+
+- [Gabi Villaseñor: We found a freshwater spring while you were sleeping](https://www.nationale.us/two-shows): blank; page last checked 2026-11-16
 
 **Portland Art Museum** (`pdx`)
 
