@@ -12,7 +12,8 @@ from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from scrapers.nyc import galleries as base
-from scrapers.pdx import galleries, oregon_contemporary, reed_cooley_gallery
+from scrapers.pdx import (adams_and_ollman, galleries, lewis_clark_hoffman_gallery, oregon_contemporary, psu_littman_white,
+                          reed_cooley_gallery)
 from scrapers.tor import _common
 
 TODAY = dt.date(2026, 11, 15)
@@ -127,6 +128,78 @@ class CooleyTest(unittest.TestCase):
                  'https://www.reed.edu/cooley/exhibitions/if.html': show('IF', 'February 21 – May 17, 2026')}
         shows = run(reed_cooley_gallery, reed_cooley_gallery.scrape_cooley_gallery, pages, patch_on=None)
         self.assertEqual(sorted(shows), ['Rose Salane: Afterlife in Public'])
+
+
+class AdamsAndOllmanTest(unittest.TestCase):
+    MENU = '<projectcontent><h2><a href="Current-Exhibitions">Exhibitions</a></h2></projectcontent>'
+
+    def page(self, *lines):
+        return '<html><body>' + self.MENU + '<projectcontent><h2>Current</h2><h2>Upcoming</h2><h2>Past</h2>' + ''.join(f'<i>{l}</i><br/>' for l in lines) + '</projectcontent></body></html>'
+
+    def test_a_title_may_be_on_two_lines_and_ends_at_its_run(self):
+        shows = adams_and_ollman.read_shows(soup(self.page('Peter Gallo', 'February 13–March 27, 2027', 'Conny Purtill:', 'The Ground',
+                                                           'May 8–June 5, 2027')), TODAY)
+        self.assertEqual(shows, [('Peter Gallo', dt.date(2027, 2, 13), dt.date(2027, 3, 27)),
+                                 ('Conny Purtill: The Ground', dt.date(2027, 5, 8), dt.date(2027, 6, 5))])
+
+    def test_a_page_with_no_show_gives_nothing_and_the_scraper_publishes_each_listed_show(self):
+        self.assertEqual(adams_and_ollman.read_shows(soup(self.page()), TODAY), [])
+        pages = {adams_and_ollman.PAGES[0]: self.page(), adams_and_ollman.PAGES[1]: self.page('Bethann Parker', 'April 3–May 1, 2027')}
+        shows = run(adams_and_ollman, adams_and_ollman.scrape_adams_and_ollman, pages)
+        self.assertEqual(sorted(shows), ['Bethann Parker'])
+        self.assertEqual(shows['Bethann Parker']['phase'], 'future')
+
+
+class LittmanAndWhiteTest(unittest.TestCase):
+    PAGE = ('<main><p>Ongoing</p><p>10.26.26 - 01.22.27</p><p>Littman Gallery</p><h3>Always Almost • Mae Al-Jiboori</h3>'
+            '<p>The experience of living in perpetual nearness.</p><a href="/littman">Learn More</a>'
+            '<p>11.03.26 - 01.xx.27</p><p>White Gallery</p><h3>Ofrenda</h3><p>A collaborative exhibition.</p><a href="/white">Learn More</a>'
+            '<p>10.27.26 - 12.08.27</p><p>Microgalleries</p><h3>Micro-Manifesto</h3><p>A manifesto is a declaration.</p>'
+            '<a href="/microgalleries">Learn More</a><p>mailing list sign up</p></main>')
+
+    def test_runs_are_read_with_a_month_only_end_and_a_mistyped_year(self):
+        self.assertEqual(psu_littman_white.parse_run('10.26.26 - 01.22.27'), (dt.date(2026, 10, 26), dt.date(2027, 1, 22)))
+        self.assertEqual(psu_littman_white.parse_run('11.03.26 - 01.xx.27'), (dt.date(2026, 11, 3), dt.date(2027, 1, 31)))
+        self.assertEqual(psu_littman_white.parse_run('10.27.26 - 12.08.27'), (dt.date(2026, 10, 27), dt.date(2026, 12, 8)))
+        self.assertEqual(psu_littman_white.parse_run('Ongoing'), (None, None))
+
+    def test_each_show_has_its_title_artist_description_and_link(self):
+        shows = {s['name']: s for s in psu_littman_white.read_shows(soup(self.PAGE), psu_littman_white.PAGE_URL)}
+        self.assertEqual(sorted(shows), ['Always Almost', 'Micro-Manifesto', 'Ofrenda'])
+        self.assertEqual(shows['Always Almost']['artist'], 'Mae Al-Jiboori')
+        self.assertEqual(shows['Ofrenda']['link'], 'https://www.littmanandwhite.com/white')
+        self.assertEqual(shows['Ofrenda']['description'], 'A collaborative exhibition.')
+
+    def test_the_scraper_publishes_them_under_one_venue(self):
+        shows = run(psu_littman_white, psu_littman_white.scrape_psu_littman_white, {psu_littman_white.PAGE_URL: self.PAGE})
+        self.assertEqual(sorted(shows), ['Always Almost • Mae Al-Jiboori', 'Micro-Manifesto', 'Ofrenda'])
+        self.assertEqual({s['venue'] for s in shows.values()}, {'Littman and White Galleries'})
+
+
+class HoffmanGalleryTest(unittest.TestCase):
+    HOME = ('<html><body><div><h3>Current Exhibition</h3><section><a href="/live/news/58521-converge-45">'
+            '<img src="/x.jpg"></a><h4><a href="/live/news/58521-converge-45">Converge 45</a></h4></section></div></body></html>')
+    SHOW = ('<html><head><title>Converge 45: Phool • Hoffman</title><meta property="og:title" content="Converge 45: Phool and Pony Express">'
+            '</head><body><h1>Converge 45</h1><p>This fall, the Hoffman Gallery hosts a featured exhibition for the 2026 Converge 45 triennial '
+            'with an immersive tarot-themed installation alongside a cinematic inquiry into historical reconstruction.</p>'
+            '<p>The exhibition opens on Sunday, August 30, 2026 and continues through to December 10th. Gallery hours are 11am-4pm daily.</p>'
+            '</body></html>')
+
+    def test_the_run_is_read_from_the_sentence_that_gives_it(self):
+        today = dt.date(2026, 11, 16)
+        text = 'The exhibition opens on Sunday, August 30, 2026 and continues through to December 10th. Gallery hours are 11am-4pm daily.'
+        self.assertEqual(lewis_clark_hoffman_gallery.parse_sentence(text, today), (dt.date(2026, 8, 30), dt.date(2026, 12, 10)))
+        self.assertEqual(lewis_clark_hoffman_gallery.parse_sentence('Open daily 11am-4pm.', today), (None, None))
+
+    def test_the_current_exhibition_is_found_on_the_home_page_and_published(self):
+        url = 'https://www.lclark.edu/live/news/58521-converge-45'
+        self.assertEqual(lewis_clark_hoffman_gallery.read_current(soup(self.HOME), lewis_clark_hoffman_gallery.PAGE_URL), url)
+        shows = run(lewis_clark_hoffman_gallery, lewis_clark_hoffman_gallery.scrape_hoffman_gallery,
+                    {lewis_clark_hoffman_gallery.PAGE_URL: self.HOME, url: self.SHOW})
+        self.assertEqual(sorted(shows), ['Converge 45: Phool and Pony Express'])
+        show = shows['Converge 45: Phool and Pony Express']
+        self.assertEqual(show['dates'], {'start': dt.date(2026, 8, 30), 'end': dt.date(2026, 12, 10)})
+        self.assertEqual(show['venue'], 'Hoffman Gallery')
 
 
 class RegionWiringTest(unittest.TestCase):

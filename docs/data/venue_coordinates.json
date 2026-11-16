@@ -1549,6 +1549,12 @@
         ]
     },
     "pdx": {
+        "Adams and Ollman": [
+            {
+                "lat": 45.526159,
+                "lng": -122.678398
+            }
+        ],
         "Augen Gallery": [
             {
                 "lat": 45.524338,
@@ -1583,6 +1589,18 @@
             {
                 "lat": 45.524379,
                 "lng": -122.677758
+            }
+        ],
+        "Hoffman Gallery": [
+            {
+                "lat": 45.45232,
+                "lng": -122.670103
+            }
+        ],
+        "Littman and White Galleries": [
+            {
+                "lat": 45.511818,
+                "lng": -122.684297
             }
         ],
         "Oregon Contemporary": [
