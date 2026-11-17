@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-16: **858**. With their own picture: **838** (98%). Showing the venue's logo instead: **8**. No picture at all: **12**.
+Current and upcoming events on 2026-11-17: **847**. With their own picture: **827** (98%). Showing the venue's logo instead: **7**. No picture at all: **13**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -15,13 +15,13 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `la` | François Ghebaly | 3 | 1 | 0 | 2 |
 | `sf` | Jessica Silverman Gallery | 4 | 2 | 2 | 0 |
 | `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
+| `ist` | Galerist | 1 | 0 | 0 | 1 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `mtl` | Galerie Kub’Art | 1 | 0 | 1 | 0 |
 | `nyc` | Dia Chelsea | 4 | 3 | 0 | 1 |
 | `pdx` | Nationale | 2 | 1 | 0 | 1 |
-| `pdx` | Portland Art Museum | 41 | 40 | 0 | 1 |
+| `pdx` | Portland Art Museum | 38 | 37 | 0 | 1 |
 | `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
-| `sf` | Sanchez Art Center | 3 | 2 | 1 | 0 |
 | `tor` | Paul Petro Contemporary Art | 2 | 1 | 1 | 0 |
 
 ### Events without a picture of their own
@@ -53,6 +53,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 - [MSA All About Women 2026](https://www.marinsocietyofartists.org/all-about-women-2026): venue logo; page last checked 2026-11-04
 - [MSA Visionary Marin](https://www.marinsocietyofartists.org/visionarymarin): venue logo; page last checked 2026-11-04
 
+**Galerist** (`ist`)
+
+- [LOOK AT IT, FORGET ME NOT](https://www.galerist.com.tr/exhibitions/163-look-at-it-forget-me-not-nil-yalter-ece-bal-gizem-karakas-melis-tezkan/): blank; page last checked 2026-11-17
+
 **Espace DÈS_** (`mtl`)
 
 - [Aurélie Painnecé: Ses souffles qui effleurent, ses clartés qui affleurent](https://espacedes.art): venue logo; page last checked 2026-11-08
@@ -76,10 +80,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **ACCI Gallery** (`sf`)
 
 - [ACCI's Annual Holiday Show](https://www.accigallery.com/annual-holiday-show.html): blank; page last checked 2026-11-13
-
-**Sanchez Art Center** (`sf`)
-
-- [Arbor Day Tree Art Contest Award Winners Popup](http://sanchezartcenter.org/Calendar.htm): venue logo; page last checked 2026-11-04
 
 **Paul Petro Contemporary Art** (`tor`)
 
