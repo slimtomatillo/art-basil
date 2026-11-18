@@ -498,6 +498,40 @@ test('every real New York venue address is in an area, so a venue in a new ZIP c
     assert.deepStrictEqual(fs_.AREAS.nyc.map(a => a.id).filter(id => !used.has(id)), []);
 });
 
+test('Portland areas come from the ZIP code, so the Pearl District, Downtown and the east side are separate areas', () => {
+    const areas = a => fs_.areasOfAddresses('pdx', a);
+    assert.deepStrictEqual(areas(['418 NW 8th Ave, Portland, OR 97209']), ['pearl-northwest']);
+    assert.deepStrictEqual(areas(['1219 SW Park Ave, Portland, OR 97205']), ['downtown-southwest']);
+    assert.deepStrictEqual(areas(['615 SW Palatine Hill Rd, Portland, OR 97219']), ['downtown-southwest']);
+    assert.deepStrictEqual(areas(['3203 SE Woodstock Blvd, Portland, OR 97202']), ['southeast']);
+    assert.deepStrictEqual(areas(['15 SE 22nd Ave, Portland, OR 97214']), ['southeast']);
+    assert.deepStrictEqual(areas(['8371 N Interstate Ave, Portland, OR 97217']), ['north-northeast']);
+    // a venue with two addresses in different areas is in both (the Art Museum's two buildings are both downtown: one)
+    assert.deepStrictEqual(areas(['1219 SW Park Ave, Portland, OR 97205', '934 SW Salmon St, Portland, OR 97205']), ['downtown-southwest']);
+    assert.deepStrictEqual(areas(['418 NW 8th Ave, Portland, OR 97209', '15 SE 22nd Ave, Portland, OR 97214']), ['pearl-northwest', 'southeast']);
+    // an address with no ZIP, or a ZIP not listed, is in no area
+    assert.deepStrictEqual(areas(['418 NW 8th Ave, Portland, OR']), []);
+    assert.deepStrictEqual(areas(['1 A St, Portland, OR 99999']), []);
+    assert.deepStrictEqual(fs_.areasOfRegion('pdx', ['southeast', 'east-bay', 'chelsea']), ['southeast']);
+    assert.deepStrictEqual(fs_.areasOfRegion('la', ['southeast']), []);
+});
+
+test('every real Portland venue address is in an area, so a venue in a new ZIP code fails here until it is added', () => {
+    const venues = JSON.parse(fs.readFileSync(path.join(__dirname, '../docs/data/pdx_venues.json'), 'utf8'));
+    const unplaced = [];
+    const used = new Set();
+    for (const [name, value] of Object.entries(venues)) {
+        for (const { address } of venueAddresses.normalize(value)) {
+            const found = fs_.areasOfAddresses('pdx', [address]);
+            if (found.length === 0) unplaced.push(`${name}: ${address}`);
+            found.forEach(id => used.add(id));
+        }
+    }
+    assert.deepStrictEqual(unplaced, [], 'add the ZIP code to AREAS.pdx in docs/filterState.js');
+    // an area nobody is in would never be offered, so each one listed has a venue today
+    assert.deepStrictEqual(fs_.AREAS.pdx.map(a => a.id).filter(id => !used.has(id)), []);
+});
+
 test('Istanbul areas are districts, found from a part of the address, so Kadikoy and Uskudar are their own areas', () => {
     const areas = a => fs_.areasOfAddresses('ist', a);
     // real addresses: the district is a comma-separated part, with or without a postcode in front
