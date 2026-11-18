@@ -2249,3 +2249,15 @@ body {
     margin: 1.25rem 0 0;
     text-align: center;
 }
+
+/* The footer on every page (siteFooter.js): one quiet line, centred, below everything else */
+.site-footer {
+    max-width: 38rem;
+    margin: 1.5rem auto 0;
+    padding: 0 16px 4.5rem;   /* room to scroll the text clear of the round buttons fixed in the bottom corners */
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: #6c757d;
+}
+.site-footer p { margin: 0; }
