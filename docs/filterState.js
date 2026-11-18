@@ -213,6 +213,18 @@
                 'Corona', 'Forest Hills'] },
             { id: 'bronx', label: 'The Bronx', cities: ['Bronx', 'The Bronx'] },
         ],
+        // Portland. Every address says "Portland, OR" with a ZIP code, so the city is split by ZIP into the
+        // neighbourhoods people look for art in: the Pearl District and Northwest (where most galleries are),
+        // Downtown and Southwest (the museum, Portland State, Lewis & Clark), the east side's Southeast, and
+        // North and Northeast Portland.
+        pdx: [
+            { id: 'pearl-northwest', label: 'Pearl District and Northwest', zips: ['97209', '97210'] },
+            { id: 'downtown-southwest', label: 'Downtown and Southwest', zips: [
+                '97201', '97204', '97205', '97219', '97221', '97239'] },
+            { id: 'southeast', label: 'Southeast', zips: ['97202', '97206', '97214', '97215', '97232'] },
+            { id: 'north-northeast', label: 'North and Northeast', zips: [
+                '97203', '97211', '97212', '97213', '97217', '97227'] },
+        ],
         // Istanbul, by district. Only those with venues are offered, so Kadıköy and Üsküdar (the Asian side)
         // appear in the filter, each on its own, as soon as a venue there is added.
         ist: [

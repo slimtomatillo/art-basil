@@ -40,6 +40,11 @@ the geocoder putting the street in another city. A venue in a nearby town (Santa
 placed by the town. `node --test tests/` fails until every address in `la_venues.json` has a ZIP and is
 in an area; if it names a ZIP or town not yet listed, add it to the right area in `AREAS.la`.
 
+**A Portland venue** needs a **ZIP code in its address** too: the Area filter places Portland venues by
+ZIP (Pearl District and Northwest, Downtown and Southwest, Southeast, North and Northeast), and
+`node --test tests/` fails until every address in `pdx_venues.json` is in one. A ZIP not yet listed goes
+into the right area in `AREAS.pdx`.
+
 Then write the real data with `python main.py --venues "<Venue Name>" --no-summary`,
 and check it in CI once (section 2a). If the site blocks GitHub's servers, also
 see section 2f. Everything below this point is for a whole new city.
