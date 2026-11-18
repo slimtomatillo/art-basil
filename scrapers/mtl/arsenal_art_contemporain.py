@@ -4,10 +4,20 @@ from scrapers.la._gallery import date_label
 from processing import region_today
 from urllib.parse import urljoin
 import logging
+import unicodedata
 
 LIST_URL = 'https://www.arsenalcontemporary.com/montreal/expositions'
 VENUE = 'Arsenal art contemporain'
 DETAIL_PATH = '/montreal/expositions/details/'
+# The state line on a show's page, as written without accents or capitals: the site writes "À venir" on some
+# pages and "A venir" on others (the Kim Dorland retrospective, WEBSITE-129)
+_STATES = ('en cours', 'a venir', 'passee')
+
+
+def _state(line):
+    """'en cours', 'a venir' or 'passee' for a state line ("En cours", "À venir", "A venir", "Passée"), else None."""
+    folded = ''.join(c for c in unicodedata.normalize('NFD', line or '') if not unicodedata.combining(c)).strip().lower()
+    return folded if folded in _STATES else None
 
 
 def scrape_arsenal_art_contemporain(env='prod', region='mtl'):
@@ -30,8 +40,8 @@ def scrape_arsenal_art_contemporain(env='prod', region='mtl'):
         if page is None:
             continue
         detail = page_lines(page)
-        state_at = next((i for i, l in enumerate(detail) if l in ('En cours', 'À venir', 'Passée')), None)
-        if state_at is None or detail[state_at] == 'Passée' or state_at < 1:
+        state_at = next((i for i, l in enumerate(detail) if _state(l)), None)
+        if state_at is None or _state(detail[state_at]) == 'passee' or state_at < 1:
             continue
         # "Biennale ELEKTRA | En cours | 14 oct. | Écrit par | ... | BILLETTERIE | F(R)ICTION - Art et Jeux | ... | 15 octobre - 15 novembre 2026"
         # (the "4 août" on a page is the date it was posted; only a full range is taken as the show's dates)

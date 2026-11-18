@@ -10,8 +10,21 @@ WHATS_ON_URL = 'https://www.headlands.org/whats-on/'
 
 # Public shows are the installations and exhibitions (the page also lists monthly
 # dinners and permanent installations). Dates read like "Sept 20–Nov 16, Thursday–Sunday, 12–5PM".
+# A show that is "ongoing" (data-is-ongoing) has its place in the date line instead ("Headlands, The Commons"),
+# so its dates are read from its own page, where a "When" line gives them in full ("August 16, 2026 –
+# December 31, 2026"; WEBSITE-129).
 _SHOW_TYPES = {'installation', 'exhibition'}
 _RANGE_RE = re.compile(r'^([A-Za-z]+\.?\s+\d{1,2}\s*[–-]\s*(?:[A-Za-z]+\.?\s+)?\d{1,2}(?:,\s*\d{4})?)')
+
+
+def page_when(soup):
+    """The text of the "When" line on an event page ("August 16, 2026 – December 31, 2026"), or None."""
+    for info in soup.select('.meta-info'):
+        label = info.select_one('.label')
+        value = info.select_one('.value')
+        if label and value and label.get_text(strip=True).lower() == 'when':
+            return ' '.join(value.get_text().split()) or None
+    return None
 
 
 def scrape_headlands_center_for_the_arts(env='prod', region='sf'):
@@ -34,10 +47,15 @@ def scrape_headlands_center_for_the_arts(env='prod', region='sf'):
         if not (title_tag and date_tag and link_tag):
             continue
         name = ' '.join(title_tag.get_text().split())
-        m = _RANGE_RE.match(' '.join(date_tag.get_text().split()))
-        if not m or name in seen:
+        if name in seen:
             continue
-        start_date, end_date = parse_date_text(m.group(1), today)
+        m = _RANGE_RE.match(' '.join(date_tag.get_text().split()))
+        start_date, end_date = parse_date_text(m.group(1), today) if m else (None, None)
+        if not (start_date and end_date):
+            # no dates in the listing: read them from the show's own page
+            page = fetch_and_parse(link_tag['href'])
+            when = page_when(page) if page is not None else None
+            start_date, end_date = parse_date_text(when, today) if when else (None, None)
         if not (start_date and end_date):
             continue
         seen.add(name)
