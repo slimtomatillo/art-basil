@@ -27,7 +27,7 @@ from scrapers.sf import de_young, sfmoma, cjm, bampfa, sf_women_artists, asian_a
     headlands_center_for_the_arts, shooting_gallery, el_cerrito_city_hall_gallery, civic_center_art_gallery, \
     oakland_photo_workshop, gearbox_gallery, fm_oakland, johansson_projects, gray_loft_gallery, \
     dictee_art_exhibition, di_rosa, macla, mills_college_art_museum, sfac_galleries, root_division, \
-    chinese_culture_center
+    chinese_culture_center, chandler_gallery
 from scrapers.la import lacma, the_broad, getty, norton_simon, hammer, moca, huntington, \
     skirball_cultural_center, usc_fisher_museum_of_art, fowler_museum_at_ucla, vincent_price_art_museum, armory_center_for_the_arts, japanese_american_national_museum, eighteenth_street_arts_center, usc_pacific_asia_museum, wende_museum, craft_contemporary, \
     california_african_american_museum, molaa, ica_la, \
@@ -164,6 +164,7 @@ def get_venue_scrapers(selected_regions=None, selected_venues=None, skip_venues=
             "Helvella Art": helvella_art.scrape_helvella_art,
             "Thelma Harris Art Gallery": thelma_harris_art_gallery.scrape_thelma_harris_art_gallery,
             "Hashimoto Contemporary": hashimoto_contemporary.scrape_hashimoto_contemporary,
+            "Chandler Gallery": chandler_gallery.scrape_chandler_gallery,
             "Jenkins Johnson Gallery": jenkins_johnson_gallery.scrape_jenkins_johnson_gallery,
             "Jessica Silverman Gallery": jessica_silverman_gallery.scrape_jessica_silverman_gallery,
             "Fraenkel Gallery": fraenkel_gallery.scrape_fraenkel_gallery,
