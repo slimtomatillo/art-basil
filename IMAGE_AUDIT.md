@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-18: **853**. With their own picture: **835** (98%). Showing the venue's logo instead: **6**. No picture at all: **12**.
+Current and upcoming events on 2026-11-19: **870**. With their own picture: **853** (98%). Showing the venue's logo instead: **5**. No picture at all: **12**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -20,7 +20,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `pdx` | Nationale | 2 | 1 | 0 | 1 |
 | `pdx` | Portland Art Museum | 38 | 37 | 0 | 1 |
 | `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
-| `tor` | Paul Petro Contemporary Art | 2 | 1 | 1 | 0 |
 
 ### Events without a picture of their own
 
@@ -70,7 +69,3 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **ACCI Gallery** (`sf`)
 
 - [ACCI's Annual Holiday Show](https://www.accigallery.com/annual-holiday-show.html): blank; page last checked 2026-11-13
-
-**Paul Petro Contemporary Art** (`tor`)
-
-- [30th annual Christmas Spice - tree by Gary Evans](https://www.paulpetro.com/exhibitions/691-30th-annual-christmas-spice): venue logo; page last checked 2026-11-13
