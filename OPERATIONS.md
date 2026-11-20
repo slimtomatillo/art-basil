@@ -279,6 +279,8 @@ the map never loads for you, open `/sf/?view=map` and look at the console and ne
 page says so in one line under the map, and says the location from "Use my location" is never sent there.
 The site already uses Google Analytics. There is no privacy page; if one is added, mention the map in it.
 
+Google Analytics is loaded by `docs/analytics.js`, which every page includes. It only loads on artbasil.info, so visits to `localhost` or a preview do not count. A new page needs `<script src="analytics.js"></script>` (or `../analytics.js` one folder down); a test fails if a page is missing it or loads Google's tag directly.
+
 **The comparison behind the choice** (Google Maps, Apple MapKit JS, OpenStreetMap's own tiles, CARTO) is in
 the comment on WEBSITE-76 of 2026-11-09.
 
