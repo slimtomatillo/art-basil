@@ -427,16 +427,23 @@ if (path.includes('/<region>/')) {
 added in step 1a-2.)
 
 ### 3b. `docs/<region>/index.html`
-Copy `docs/sf/index.html` verbatim, then change exactly three things:
-- `<title>Art Basil - <City></title>`
+Copy `docs/sf/index.html` verbatim, then change exactly these things:
+- `<title>Art Basil - <City>, <State or country></title>` and the matching `og:title` (for example
+  `Art Basil - Portland, Oregon`; use the country, as in `Istanbul, Türkiye`, when there is no state)
 - `<h1 class="display-5 mb-3 text-md-end region-title"><City></h1>`
+- the place line under it: `<p class="region-place-line text-md-end" data-region-place="<region>"></p>`
+  (`regionPlace.js` fills it, for example "Oregon, USA", from `docs/data/region_info.json`, step 3c)
 - the region colour on `<body>`: `style="--region-c: <hex>; --region-t: <tilt>deg;"` (pick the colour in 3c-2)
+`tests/regionPicker.test.js` fails if a region page is missing its place line, its two scripts
+(`regionInfo.js`, `regionPlace.js`) or its place in the title, and `tests/regionInfo.test.js` fails if the
+page's colour differs from the one in `region_info.json`.
 (The lead paragraph and everything else is region-agnostic, including the filter panel - `#filterPanel`, `#filterSummary` and the `filterState.js` / `filterPanel.js` scripts - which offers only the tags that region's data has.)
 
 ### 3b-2. `docs/<region>/venues.html`  ← **easy to forget**
 Copy `docs/sf/venues.html` verbatim, then change exactly three things:
-- `<title>Art Basil - <City> Venues</title>`
-- `<h1 class="display-5 mb-3 text-md-end region-title"><City></h1>`
+- `<title>Art Basil - <City>, <State or country> Venues</title>` and the matching `og:title`
+- `<h1 class="display-5 mb-3 text-md-end region-title"><City></h1>`, then the same place line under it as
+  in `index.html`
 - the same `--region-c` / `--region-t` style on `<body>` as the region's `index.html`
 Nothing else is region-specific - `venuesRenderer.js` detects the region from
 the URL path the same way `dataManager.js` does (3a) and fetches
@@ -446,21 +453,37 @@ own `index.html`, in the `header-region` block, below the button row:
 <p class="mt-3 mb-0 text-md-end"><a href="venues.html">List of venues</a></p>
 ```
 
-### 3c. `docs/index.html`
-Add a blob inside `<nav class="region-blobs">`, next to the existing ones:
-```html
-<a href="<region>/index.html" class="region-blob shape-a" aria-label="<Full city name>"
-   style="--c: <hex>; --t: 1.8deg; --w: 220px; --dur: 6s">
-    <span class="region-name"><City></span>
-    <span class="region-meta" data-region="<region>"></span>
-</a>
+### 3c. `docs/data/region_info.json` (the home page, the 404 page and every region page's place line)
+Add one entry, keyed by the region code, to `docs/data/region_info.json`. The home page's Blobs / Map /
+List picker and search, the 404 page's blobs and each region page's place line are all drawn from it, so
+**nothing else on those pages needs editing**:
+```jsonc
+"<region>": {
+    "name": "<City>",                      // on the blob and in the list
+    "label": "<Full city name>",           // also searchable (for example "San Francisco Bay Area")
+    "place": "<State or province>",        // "" for a region with no state or province
+    "country": "<Country>",                // "USA", "Canada", "Türkiye": the list groups by this
+    "colour": "<hex>",                     // the region's colour (3c-2); must match the region pages' body style
+    "lat": 0.0, "lng": 0.0,                // the dot on the home page's map (the city centre)
+    "aliases": ["<nickname>", "<suburb>"], // other words search should find it by (optional)
+    "blob": { "shape": "a", "tilt": 1.8, "width": 215, "dur": 6.2 }   // optional; see below
+}
 ```
-- `--c` is the region colour (3c-2). `--t` is the tilt (alternate the sign down the
-  row), `--w` the width (the biggest region gets the biggest blob), `--dur` the
-  bobbing speed (5.5s to 7.5s, different for each). `shape-a`, `shape-b` or
-  `shape-c` picks the blob outline; vary it between neighbours.
-- The "N venues" line fills itself in from `<region>_venues.json` (1c), so there is
-  nothing else to change.
+- The file's order is the order of the blobs; the List groups them by `country` in the order each country
+  first appears. A new country gets its own group automatically. Search already knows "usa", "united states",
+  "turkey" and "turkiye" as country words (`COUNTRY_WORDS` in `docs/regionInfo.js`); add another there if a
+  new country has a common second name.
+- `blob` is optional: leave it out and the blob gets a steady default look. To tune it, `tilt` is the
+  rotation in degrees (alternate the sign down the list), `width` the size in px (the biggest region gets the
+  biggest blob), `dur` the bobbing speed in seconds (5.5 to 7.5), `shape` is `a`, `b` or `c` (vary it
+  between neighbours).
+- The venue count in the List fills itself in from `<region>_venues.json` (1c).
+- **Spelling**: use the same spelling everywhere (the data, the region page's heading, the title).
+- `tests/regionInfo.test.js` fails until the entry is complete (place, country, colour, map point), until
+  `regions.json` (1a-2) lists the same regions, and until the region's pages exist in the same colour.
+- Optional: add the region's plain link to the `<nav class="region-blobs">` in `docs/index.html` and
+  `docs/404.html` (copy a neighbour). Those links are only what shows if the data file cannot load; a test
+  fails if one points at a region that does not exist, but a missing one does no harm.
 
 ### 3c-2. Pick the region's colour
 One colour per region, used for the home blob, the page title, filters, links and
@@ -536,7 +559,8 @@ Checklist:
       and its distance units (`mi` or `km`) in `UNITS` in `docs/nearMe.js`
 - [ ] `<region>_events.json` committed (as `{}`)
 - [ ] workflow `git add` line added
-- [ ] `docs/<region>/index.html` created, `docs/index.html` card added,
+- [ ] `docs/<region>/index.html` created (title with its place, place line, `regionInfo.js` and
+      `regionPlace.js`), entry added to `docs/data/region_info.json` (the home page picks it up),
       `getRegion()` branch added
 - [ ] `docs/<region>/venues.html` created, linked from `index.html`
 - [ ] time zone added to `docs/data/regions.json`
