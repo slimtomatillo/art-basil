@@ -1,0 +1,79 @@
+{
+    "sf": {
+        "name": "Bay Area",
+        "label": "San Francisco Bay Area",
+        "place": "California",
+        "country": "USA",
+        "colour": "#14806b",
+        "lat": 37.77,
+        "lng": -122.42,
+        "aliases": ["san francisco", "sf", "oakland", "berkeley", "san jose"],
+        "blob": {"shape": "a", "tilt": -2.5, "width": 290, "dur": 6.5}
+    },
+    "la": {
+        "name": "Los Angeles",
+        "label": "Los Angeles",
+        "place": "California",
+        "country": "USA",
+        "colour": "#c4520f",
+        "lat": 34.05,
+        "lng": -118.24,
+        "aliases": ["la", "hollywood", "pasadena"],
+        "blob": {"shape": "b", "tilt": 1.8, "width": 235, "dur": 5.6}
+    },
+    "mtl": {
+        "name": "Montreal",
+        "label": "Montreal",
+        "place": "Québec",
+        "country": "Canada",
+        "colour": "#3358d6",
+        "lat": 45.5,
+        "lng": -73.57,
+        "aliases": ["montréal", "mtl"],
+        "blob": {"shape": "c", "tilt": -1.4, "width": 200, "dur": 7.2}
+    },
+    "tor": {
+        "name": "Toronto",
+        "label": "Toronto",
+        "place": "Ontario",
+        "country": "Canada",
+        "colour": "#8f3fc0",
+        "lat": 43.65,
+        "lng": -79.38,
+        "aliases": ["gta"],
+        "blob": {"shape": "a", "tilt": 2.2, "width": 215, "dur": 6.1}
+    },
+    "ist": {
+        "name": "Istanbul",
+        "label": "Istanbul",
+        "place": "",
+        "country": "Türkiye",
+        "colour": "#c93631",
+        "lat": 41.01,
+        "lng": 28.98,
+        "aliases": ["turkey", "constantinople"],
+        "blob": {"shape": "b", "tilt": -1.9, "width": 225, "dur": 5.9}
+    },
+    "nyc": {
+        "name": "New York",
+        "label": "New York City",
+        "place": "New York",
+        "country": "USA",
+        "colour": "#b8227a",
+        "lat": 40.71,
+        "lng": -74.0,
+        "aliases": ["nyc", "new york city", "manhattan", "brooklyn", "queens"],
+        "blob": {"shape": "c", "tilt": 1.8, "width": 215, "dur": 6.6}
+    },
+    "pdx": {
+        "name": "Portland",
+        "label": "Portland, Oregon",
+        "place": "Oregon",
+        "country": "USA",
+        "colour": "#00748f",
+        "lat": 45.52,
+        "lng": -122.68,
+        "aliases": ["pdx"],
+        "blob": {"shape": "a", "tilt": -2.0, "width": 210, "dur": 6.9}
+    }
+}

@@ -43,53 +43,69 @@
 
         <main>
             <p class="text-center text-muted mb-4">Or pick a city and find something to look at:</p>
-        <nav class="region-blobs" aria-label="Choose a region">
-            <a href="/sf/index.html" class="region-blob shape-a" aria-label="San Francisco Bay Area"
+        <nav class="region-blobs" id="regionBlobs" aria-label="Choose a region">
+            <a href="/sf/index.html" class="region-blob shape-a" aria-label="Bay Area, California, USA" data-region="sf"
                style="--c:#14806b; --t:-2.5deg; --w:290px; --dur:6.5s">
                 <span class="blob-body">
                     <span class="region-name">Bay Area</span>
+                    <span class="region-place">California, USA</span>
                 </span>
             </a>
-            <a href="/la/index.html" class="region-blob shape-b" aria-label="Los Angeles"
+            <a href="/la/index.html" class="region-blob shape-b" aria-label="Los Angeles, California, USA" data-region="la"
                style="--c:#c4520f; --t:1.8deg; --w:235px; --dur:5.6s">
                 <span class="blob-body">
                     <span class="region-name">Los Angeles</span>
+                    <span class="region-place">California, USA</span>
                 </span>
             </a>
-            <a href="/mtl/index.html" class="region-blob shape-c" aria-label="Montreal"
+            <a href="/mtl/index.html" class="region-blob shape-c" aria-label="Montreal, Québec, Canada" data-region="mtl"
                style="--c:#3358d6; --t:-1.4deg; --w:200px; --dur:7.2s">
                 <span class="blob-body">
                     <span class="region-name">Montreal</span>
+                    <span class="region-place">Québec, Canada</span>
                 </span>
             </a>
-            <a href="/tor/index.html" class="region-blob shape-a" aria-label="Toronto"
+            <a href="/tor/index.html" class="region-blob shape-a" aria-label="Toronto, Ontario, Canada" data-region="tor"
                style="--c:#8f3fc0; --t:2.2deg; --w:215px; --dur:6.1s">
                 <span class="blob-body">
                     <span class="region-name">Toronto</span>
+                    <span class="region-place">Ontario, Canada</span>
                 </span>
             </a>
-            <a href="/ist/index.html" class="region-blob shape-b" aria-label="Istanbul"
+            <a href="/ist/index.html" class="region-blob shape-b" aria-label="Istanbul, Türkiye" data-region="ist"
                style="--c:#c93631; --t:-1.9deg; --w:225px; --dur:5.9s">
                 <span class="blob-body">
                     <span class="region-name">Istanbul</span>
+                    <span class="region-place">Türkiye</span>
                 </span>
             </a>
-            <a href="/nyc/index.html" class="region-blob shape-c" aria-label="New York City"
+            <a href="/nyc/index.html" class="region-blob shape-c" aria-label="New York, New York, USA" data-region="nyc"
                style="--c:#b8227a; --t:1.8deg; --w:215px; --dur:6.6s">
                 <span class="blob-body">
                     <span class="region-name">New York</span>
+                    <span class="region-place">New York, USA</span>
                 </span>
             </a>
-            <a href="/pdx/index.html" class="region-blob shape-a" aria-label="Portland, Oregon"
-               style="--c:#00748f; --t:-2deg; --w:210px; --dur:6.9s">
+            <a href="/pdx/index.html" class="region-blob shape-a" aria-label="Portland, Oregon, USA" data-region="pdx"
+               style="--c:#00748f; --t:-2.0deg; --w:210px; --dur:6.9s">
                 <span class="blob-body">
                     <span class="region-name">Portland</span>
+                    <span class="region-place">Oregon, USA</span>
                 </span>
             </a>
         </nav>
         </main>
     </div>
 
+    <!-- Redraw the region links from data/region_info.json, so a new region shows up here too.
+         The plain links above stay if the file cannot load. -->
+    <script src="/regionInfo.js"></script>
+    <script src="/regionPicker.js"></script>
+    <script>
+        RegionInfo.load('/data/region_info.json')
+            .then(function (info) { RegionPicker.renderBlobs(document.getElementById('regionBlobs'), info, { base: '/' }); })
+            .catch(function () { /* keep the plain links */ });
+    </script>
     <script src="/cursorFx.js"></script>
     <script src="/siteFooter.js"></script>
 </body>
