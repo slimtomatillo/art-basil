@@ -1,4 +1,4 @@
-// The home page's region picker: the paint blobs, a Blobs / Map / List toggle and a search box,
+// The home page's region picker: the paint blobs, a Blobs / List / Map toggle and a search box,
 // all drawn from docs/data/region_info.json (see regionInfo.js), so a new region is one entry there.
 //
 // - Blobs is the default. Each blob shows the region name and its place ("Oregon, USA").
@@ -14,7 +14,7 @@
     if (typeof module === 'object' && module.exports) module.exports = factory(require('./regionInfo.js'));
     else root.RegionPicker = factory(root.RegionInfo);
 }(typeof self !== 'undefined' ? self : this, function (RegionInfo) {
-    const VIEWS = ['blobs', 'map', 'list'];
+    const VIEWS = ['blobs', 'list', 'map'];
     const VIEW_LABELS = { blobs: 'Blobs', map: 'Map', list: 'List' };
     const STORAGE_KEY = 'artbasil.homeView';
     const MAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
@@ -103,7 +103,7 @@
         const codes = Object.keys(info);
         const state = { view: 'blobs', query: '', map: null, mapFailed: false, countsLoaded: false };
 
-        // The Blobs / Map / List toggle and the search box
+        // The Blobs / List / Map toggle and the search box
         const toggle = make(doc, 'div', { class: 'picker-toggle', role: 'group', 'aria-label': 'How to show the places' });
         const toggleButtons = {};
         VIEWS.forEach(view => {
@@ -302,7 +302,7 @@
         setView(startingView(saved));
         applyFilter();
 
-        return { state, setView, applyFilter, input, blobs, rows, keyItems, pins, toggleButtons, nav, listView, mapView, status, counts };
+        return { state, setView, applyFilter, input, toggle, blobs, rows, keyItems, pins, toggleButtons, nav, listView, mapView, status, counts };
     }
 
     // ---- the real browser's pieces ----
