@@ -514,12 +514,17 @@ example `--region-on`, the text colour on blobs and filled buttons, and
 `--region-c`, and set them to near-black for that region. Nothing uses them yet.
 
 ### 3d. `docs/add_event.html`
-Add the new city in three places: a chip in the "We cover" line, in the region's
-colour (3c-2), and an `<option>` in each of the two Region menus (the event form
-and the venue-suggestion form):
+Nothing to add by hand: the "We cover" chips and both Region menus (the event form and the
+venue-suggestion form) are drawn from `docs/data/region_info.json` (3c) by `docs/regionChoices.js`. A menu
+option reads "Portland, Oregon, USA" (name, place, country), and that text is what the submission email
+carries.
+
+The page also holds plain copies of the chips and options, which show only if the data file cannot load.
+Adding the new region to them is optional (`tests/regionChoices.test.js` fails only if one of them is out of
+date or names a region that is not in the data):
 ```html
 <span class="region-chip" style="--c: <hex>"><City></span>
-<option><City></option>
+<option><City>, <State or province>, <Country></option>   <!-- in both menus; no state: <City>, <Country> -->
 ```
 
 ---

@@ -24,6 +24,12 @@
         return [region.place, region.country].filter(Boolean).join(', ');
     }
 
+    // "Portland, Oregon, USA" (or "Istanbul, Türkiye"): the name with its place, for menus where the
+    // name alone could be any Portland
+    function menuLabel(region) {
+        return [region.name, region.place, region.country].filter(Boolean).join(', ');
+    }
+
     // The words search looks at for a region
     function searchWords(region) {
         const text = [
@@ -105,5 +111,5 @@
         return loading;
     }
 
-    return { normalize, placeLine, searchWords, matches, matchingCodes, groupByCountry, blobLook, problems, load };
+    return { normalize, placeLine, menuLabel, searchWords, matches, matchingCodes, groupByCountry, blobLook, problems, load };
 }));
