@@ -49,6 +49,9 @@ function fakePage() {
         createElement: tag => new FakeElement(doc, tag),
         createTextNode: text => new FakeText(text),
     };
+    doc.listeners = {};
+    doc.addEventListener = (type, fn) => { (doc.listeners[type] = doc.listeners[type] || []).push(fn); };
+    doc.fire = type => (doc.listeners[type] || []).forEach(fn => fn({ target: doc }));
     doc.body = new FakeElement(doc, 'body');
     doc.querySelectorAll = selector => doc.body.querySelectorAll(selector);
     return { doc, root: new FakeElement(doc, 'div') };
