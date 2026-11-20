@@ -8,43 +8,7 @@ const RegionPicker = require('../docs/regionPicker.js');
 const DOCS = path.join(__dirname, '../docs');
 const info = JSON.parse(fs.readFileSync(path.join(DOCS, 'data/region_info.json'), 'utf8'));
 
-// ---- a tiny page, just enough for the picker to draw into ----
-
-class FakeElement {
-    constructor(doc, tag) {
-        this.ownerDocument = doc;
-        this.tagName = tag.toUpperCase();
-        this.children = [];
-        this.attributes = {};
-        this.listeners = {};
-        this.style = { props: {}, setProperty(name, value) { this.props[name] = value; } };
-        this.classes = new Set();
-        this.hidden = false;
-        this.textContent = '';
-        this.value = '';
-    }
-    get firstChild() { return this.children[0] || null; }
-    set className(value) { this.classes = new Set(String(value).split(/\s+/).filter(Boolean)); }
-    get className() { return [...this.classes].join(' '); }
-    get classList() {
-        const classes = this.classes;
-        return { toggle(name, on) { (on === undefined ? !classes.has(name) : on) ? classes.add(name) : classes.delete(name); }, contains: name => classes.has(name) };
-    }
-    setAttribute(name, value) { this.attributes[name] = String(value); }
-    getAttribute(name) { return name in this.attributes ? this.attributes[name] : null; }
-    appendChild(child) { this.children.push(child); return child; }
-    replaceChildren(...kids) { this.children = [...kids]; }
-    addEventListener(type, fn) { (this.listeners[type] = this.listeners[type] || []).push(fn); }
-    fire(type) { (this.listeners[type] || []).forEach(fn => fn({ target: this })); }
-    // every element below this one, this one first
-    all() { return [this, ...this.children.flatMap(child => child.all())]; }
-    find(predicate) { return this.all().filter(predicate); }
-}
-
-function fakePage() {
-    const doc = { createElement: tag => new FakeElement(doc, tag) };
-    return { doc, root: new FakeElement(doc, 'div') };
-}
+const { FakeElement, fakePage } = require('./fakeDom.js');
 
 function memoryStorage(initial) {
     const data = initial ? { [RegionPicker.STORAGE_KEY]: initial } : {};

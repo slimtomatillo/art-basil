@@ -61,13 +61,15 @@
                     <p class="text-center mb-4">
                         Know about a show we are missing? Tell us and we will check it before adding it to the calendar.
                         We cover
-                        <span class="region-chip" style="--c: #14806b">SF Bay Area</span>
-                        <span class="region-chip" style="--c: #c4520f">LA</span>
-                        <span class="region-chip" style="--c: #3358d6">Montreal</span>
-                        <span class="region-chip" style="--c: #8f3fc0">Toronto</span>
-                        <span class="region-chip" style="--c: #c93631">Istanbul</span>
-                        <span class="region-chip" style="--c: #b8227a">New York</span>
-                        <span class="region-chip" style="--c: #00748f">Portland</span>
+                        <span data-region-chips>
+                            <span class="region-chip" style="--c: #14806b">Bay Area</span>
+                            <span class="region-chip" style="--c: #c4520f">Los Angeles</span>
+                            <span class="region-chip" style="--c: #3358d6">Montreal</span>
+                            <span class="region-chip" style="--c: #8f3fc0">Toronto</span>
+                            <span class="region-chip" style="--c: #c93631">Istanbul</span>
+                            <span class="region-chip" style="--c: #b8227a">New York</span>
+                            <span class="region-chip" style="--c: #00748f">Portland</span>
+                        </span>
                     </p>
 
                     <div class="card mb-4">
@@ -81,15 +83,15 @@
                                 <div class="form-grid">
                                     <div class="form-group">
                                         <label for="ev-region">Region <span class="req">*</span></label>
-                                        <select id="ev-region" name="region" data-label="Region" required>
+                                        <select id="ev-region" name="region" data-label="Region" required data-region-menu>
                                         <option value="">Choose a region</option>
-                                        <option>SF Bay Area</option>
-                                        <option>Los Angeles</option>
-                                        <option>Montreal</option>
-                                        <option>Toronto</option>
-                                        <option>Istanbul</option>
-                                        <option>New York</option>
-                                        <option>Portland</option>
+                                        <option>Bay Area, California, USA</option>
+                                        <option>Los Angeles, California, USA</option>
+                                        <option>Montreal, Québec, Canada</option>
+                                        <option>Toronto, Ontario, Canada</option>
+                                        <option>Istanbul, Türkiye</option>
+                                        <option>New York, New York, USA</option>
+                                        <option>Portland, Oregon, USA</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -181,15 +183,15 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="vn-region">Region <span class="req">*</span></label>
-                                        <select id="vn-region" name="region" data-label="Region" required>
+                                        <select id="vn-region" name="region" data-label="Region" required data-region-menu>
                                         <option value="">Choose a region</option>
-                                        <option>SF Bay Area</option>
-                                        <option>Los Angeles</option>
-                                        <option>Montreal</option>
-                                        <option>Toronto</option>
-                                        <option>Istanbul</option>
-                                        <option>New York</option>
-                                        <option>Portland</option>
+                                        <option>Bay Area, California, USA</option>
+                                        <option>Los Angeles, California, USA</option>
+                                        <option>Montreal, Québec, Canada</option>
+                                        <option>Toronto, Ontario, Canada</option>
+                                        <option>Istanbul, Türkiye</option>
+                                        <option>New York, New York, USA</option>
+                                        <option>Portland, Oregon, USA</option>
                                         </select>
                                     </div>
                                 </div>
@@ -216,6 +218,9 @@
     <script src="cursorFx.js"></script>
     <script src="web3forms.js"></script>
     <script src="siteForms.js"></script>
+    <script src="regionInfo.js"></script>
+    <script src="regionChoices.js"></script>
+    <script>RegionChoices.boot();</script>
     <script src="siteFooter.js"></script>
 </body>
 </html>
