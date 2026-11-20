@@ -131,7 +131,9 @@ College Circle"); the venues page lists them on separate lines:
   links and pins, including shows held in only one of the spaces. **If the venue's
   own page says which space a show is in, store it** (WEBSITE-122): pass
   `locations=[...]` to `publish` (the `label`s of the addresses, exactly as written
-  above; David Zwirner's scraper reads them off each card's place line). The map
+  above). Where the source says it varies: David Zwirner's cards have a place line, François
+  Ghebaly's listing items an address, Jeffrey Deitch's feed a `location`, SFAC's sections a space name, and for
+  Pace and Charlie James only each show's own page does (it is fetched). The map
   then pins the show only there and the table shows only those "Map: ..." links. A
   show with no `locations` (or only labels the venue does not have) keeps all of them.
 - **Or split it into two venues** (two keys, two scrapers or one scraper writing

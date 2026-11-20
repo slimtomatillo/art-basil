@@ -7,6 +7,7 @@ read directly: no browser rendering and no proxy needed. The answer is large (ab
 """
 import datetime as dt
 import logging
+import re
 
 from bs4 import BeautifulSoup
 
@@ -17,6 +18,15 @@ BASE_URL = 'https://www.deitch.com'
 STATE_URL = BASE_URL + '/lazystate/los-angeles'
 VENUE = 'Jeffrey Deitch Los Angeles'
 _MAX_DESCRIPTION = 400
+# Each show says where it is ("925 N. Orange Drive, Los Angeles", "7000 Santa Monica Blvd., Los Angeles", or both with "and" or
+# "&"); the labels are those of the venue's addresses in la_venues.json (WEBSITE-122). A place that is neither (an older show
+# at 1114 Horn Avenue) gives None, which stores the show for the venue as a whole.
+SPACES = (('Orange Drive', r'Orange Dr'), ('Santa Monica Boulevard', r'Santa Monica'))
+
+
+def spaces(location):
+    """The labels of the gallery's spaces a show's location names, or None."""
+    return [label for label, pattern in SPACES if re.search(pattern, location or '', re.IGNORECASE)] or None
 
 
 def _date(text):
@@ -58,6 +68,7 @@ def scrape_jeffrey_deitch(env='prod', region='la'):
         title = ' '.join((show.get('title') or '').split())
         start_date, end_date = _date(show.get('openingdate')), _date(show.get('closingdate'))
         found += publish(env, region, VENUE, title, start_date, end_date, BASE_URL + path, tag='gallery',
-                         description=_description(show.get('text')), seen=seen, image=_image(show))
+                         description=_description(show.get('text')), seen=seen, image=_image(show),
+                         locations=spaces(show.get('location')))
     if not found:
         logging.warning("Jeffrey Deitch: no current or upcoming exhibitions on the Los Angeles listing; existing data kept.")
