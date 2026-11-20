@@ -115,6 +115,12 @@ test('the picker opens on Blobs, and the toggle changes which view shows', () =>
     assert.strictEqual(picker.toggleButtons.blobs.getAttribute('aria-pressed'), 'false');
 });
 
+test('the toggle lists Blobs, then List, then Map', () => {
+    const { picker } = makePicker();
+    assert.deepStrictEqual(RegionPicker.VIEWS, ['blobs', 'list', 'map']);
+    assert.deepStrictEqual(picker.toggle.children.map(button => button.textContent), ['Blobs', 'List', 'Map']);
+});
+
 test('an unknown view is ignored', () => {
     const { picker } = makePicker();
     picker.setView('carousel');
