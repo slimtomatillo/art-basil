@@ -19,6 +19,8 @@ from utils import fetch_and_parse
 PAGE_URL = 'https://www.sf.gov/sfac-galleries/'
 VENUE = 'SFAC Galleries'
 SPACES = ('Main Gallery', 'City Hall', 'Cafe Valor')
+# The venue's two addresses in sf_venues.json, by label (WEBSITE-122): the Main Gallery and Cafe Valor share one
+LABELS = {'Main Gallery': 'Main Gallery and Cafe Valor', 'Cafe Valor': 'Main Gallery and Cafe Valor', 'City Hall': 'Art at City Hall'}
 
 
 def scrape_sfac_galleries(env='prod', region='sf'):
@@ -45,7 +47,7 @@ def scrape_sfac_galleries(env='prod', region='sf'):
         picture = section.parent.find('img') if section.parent else None
         image = picture.get('src') if picture else None
         found += publish(env, region, VENUE, name, start_date, end_date, urljoin(PAGE_URL, link.get('href', '')),
-                         tag='gallery', seen=seen, image=image)
+                         tag='gallery', seen=seen, image=image, locations=[LABELS[space.get_text(' ', strip=True)]])
     if not found:
         # Say what came back, so an empty result can be told from a block page or a changed layout
         title = soup.title.get_text(' ', strip=True)[:80] if soup.title else None

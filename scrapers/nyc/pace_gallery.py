@@ -15,6 +15,20 @@ from utils import fetch_and_parse
 
 PAGE_URL = 'https://www.pacegallery.com/exhibitions/'
 VENUE = 'Pace Gallery'
+# The labels of the venue's addresses in nyc_venues.json (WEBSITE-122). The listing gives only the city, but a show's own page prints
+# its space under a "GALLERY" line ("540 West 25th Street", "508 & 510 West 25th Street", "125 Newbury" and "395 Broadway").
+SPACES = ('540 West 25th Street', '508 & 510 West 25th Street', '125 Newbury (395 Broadway)')
+
+
+def show_space(soup):
+    """The label of the space a show's page names after its "GALLERY" line, or None."""
+    lines = [clean(text) for text in soup.stripped_strings]
+    for line, following in zip(lines, lines[1:]):
+        if line.upper() == 'GALLERY':
+            for label in SPACES:
+                if label.lower().startswith(following.lower()) and following:
+                    return label
+    return None
 
 
 def _text(card, selector):
@@ -39,7 +53,10 @@ def scrape_pace_gallery(env='prod', region='nyc'):
         start_date, end_date = parse_dates(_text(card, '.index-grid__text-date'), today)
         if not (name and (start_date or end_date)):
             continue
-        found += publish(env, region, VENUE, name, start_date, end_date, urljoin(PAGE_URL, card['href']), tag='gallery',
-                         seen=seen, image=card_picture(card, PAGE_URL))
+        url = urljoin(PAGE_URL, card['href'])
+        page = None if end_date and end_date < today else fetch_and_parse(url)        # a past show is dropped, so its page is not fetched
+        space = show_space(page) if page is not None else None
+        found += publish(env, region, VENUE, name, start_date, end_date, url, tag='gallery',
+                         seen=seen, image=card_picture(card, PAGE_URL), locations=[space] if space else None)
     if not found:
         logging.warning("Pace Gallery: no New York exhibition found; existing data kept.")
