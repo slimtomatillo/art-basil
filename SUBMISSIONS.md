@@ -5,7 +5,7 @@ listed on `docs/add_event.html`:
 
 | Form field | Maps to |
 |---|---|
-| Region | `region` (`sf`, `la`, `mtl`, `tor`, `ist`) |
+| Region, Region code | `region` (`sf`, `la`, `mtl`, `tor`, `ist`, `nyc`, `pdx`). The email carries both the menu text ("Portland, Oregon, USA") and the code ("Region code: pdx"); see the first judgment call below |
 | Event Title | `name` |
 | Venue | `venue` |
 | Event Type | folded into `tags` (e.g. `exhibition`, `workshop`, `talk`) |
@@ -25,6 +25,12 @@ page yourself first.
 
 ## Judgment calls the script can't make
 
+- **Check the region on every submission.** The "Region code" in the email is a convenience, not a
+  verified fact: the visitor chose the region themselves, and a hidden field can be wrong or changed. Before
+  adding anything, check that the code matches the **Region** text in the email *and* the venue's actual
+  city (from the linked event page or the venue's address). If they disagree, or the code is empty (the
+  page could not load its region list, or an older email), work out the right region yourself and use that
+  rather than trusting either. `submissions.py` writes to the region you give it and does not check it against the venue.
 - **Verify against the source.** Don't trust the submission text alone —
   open the linked event page and confirm dates, venue name/address, and
   pull an image if one's available (add it as a `links` entry with
