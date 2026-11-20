@@ -8,6 +8,7 @@ import os
 import sys
 import unittest
 from unittest import mock
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 
@@ -235,6 +236,15 @@ class ZwirnerTest(unittest.TestCase):
         self.assertEqual(david_zwirner.spaces('New York: Tribeca'), ['Tribeca'])
         self.assertEqual(david_zwirner.spaces('New York: 19th Street, 20th Street'), ['19th Street', '20th Street'])
         self.assertEqual(david_zwirner.spaces('New York'), [])
+
+    def test_it_is_fetched_through_the_paid_proxy_and_refreshed_every_eight_days(self):
+        # WEBSITE-131: a direct fetch got a CloudFront 403; the Probe page run (2026-11-19) got the page with premium_proxy alone
+        import main
+        import utils
+        self.assertEqual(utils.PROXY_DOMAINS[urlparse(david_zwirner.PAGE_URL).netloc], {'premium_proxy': 'true'})
+        self.assertEqual(main.PROXIED_VENUES['David Zwirner'], ['David Zwirner'])        # else it would run daily
+        self.assertIn('David Zwirner', utils.PROXY_SLOW_VENUES)
+        self.assertEqual(utils.proxy_refresh_days('David Zwirner'), 8)
 
     def test_the_labels_it_stores_are_the_labels_of_the_venues_addresses(self):
         import json, os
