@@ -88,6 +88,8 @@ PROXIED_VENUES = {
     "El Museo del Barrio": ["El Museo del Barrio"],
     "Museum of the Moving Image": ["Museum of the Moving Image"],
     "Dia Chelsea": ["Dia Chelsea"],
+    # David Zwirner (WEBSITE-131): one page, 10 credits, every 8 days (utils.PROXY_SLOW_VENUES)
+    "David Zwirner": ["David Zwirner"],
 }
 # "Every 4 days" with 12 hours of slack, so run-to-run start-time jitter can't push a
 # venue to every 5th day. A venue is due once its newest event is this old; a failed

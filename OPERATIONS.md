@@ -128,7 +128,7 @@ python3 -m http.server -d docs      # then http://localhost:8000/sf/
 
 A few sites (BAMPFA, Cantor, de Young / Legion of Honor, Norton Simon,
 Huntington, AGO, Southern Exposure, Asian Art Museum, Art Museum at the University of Toronto,
-Armory Center for the Arts, Marin Civic Center, Galerie Simon Blais, Mills College Art Museum, Creative Growth Art Center, and in New York the Met, MoMA, Brooklyn Museum, Gagosian and Hauser & Wirth) block GitHub's servers, so they are fetched
+Armory Center for the Arts, Marin Civic Center, Galerie Simon Blais, Mills College Art Museum, Creative Growth Art Center, and in New York the Met, MoMA, Brooklyn Museum, Gagosian, Hauser & Wirth and David Zwirner) block GitHub's servers, so they are fetched
 through the [ZenRows](https://www.zenrows.com) proxy. The list of hostnames and
 the ZenRows options each needs is `PROXY_DOMAINS` in `utils.py`; the API key is
 the repository secret `SCRAPER_PROXY_API_KEY`. Without the key those scrapers
@@ -145,8 +145,9 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   hours old, which is **every 4 days** (about 7.6 refreshes a month). The other
   daily runs skip it. The registry is `PROXIED_VENUES` in `main.py`; a new
   proxied scraper must be added there or it will run daily.
-- **Seven costly venues with slowly changing shows refresh every 8 days instead** (Gagosian, Dia Chelsea, El Museo del
-  Barrio, Asia Society Museum, SFAC Galleries, Marin Civic Center, Armory Center for the Arts): `utils.PROXY_SLOW_VENUES`,
+- **Eight venues with slowly changing shows refresh every 8 days instead** (Gagosian, Dia Chelsea, El Museo del
+  Barrio, Asia Society Museum, SFAC Galleries, Marin Civic Center, Armory Center for the Arts, and David Zwirner, which
+  is only 10 credits a page but whose shows run for weeks): `utils.PROXY_SLOW_VENUES`,
   worth about 700 credits a month (found 2026-11-15 from the ZenRows Activity log, which is the place to see real
   per-site use). The stale-data check allows them 11 days, not 7 (`scraper_health.stale_after_days`). Add a venue to
   the set only if it reads no past-exhibition pages, which follow the 4-day blocks.
@@ -191,6 +192,13 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   answered 422 on the descriptions pass (one page, left without a description). Hauser & Wirth is read from the
   `__NEXT_DATA__` script (the page lists 12 of its 16 shows; the rest load as you scroll, so a New York show could
   be missing until it moves up the list).
+- **David Zwirner** (`www.davidzwirner.com`, WEBSITE-131): the exhibitions page worked on a direct fetch until
+  2026-11-17, then answered a 403 from CloudFront (919 bytes, no title) in the daily runs of 11-18 and 11-19 and from a
+  laptop too. A Probe page run (2026-11-19) with `premium_proxy` alone returned 200, 205 KB, with the 12 cards the
+  scraper reads, so there is no `js_render` (10 credits a refresh, about 40 a month on the 8-day list). The card for
+  one show (Yoshitomo Nara) came back without a picture in the proxied HTML; a picture already stored is kept.
+  Its show pages are on the proxy now too, so the descriptions pass can spend 10 credits on each (at most 4 pages a
+  run, WEBSITE-118).
 - **Asia Society Museum (two pages), El Museo del Barrio and the Museum of the Moving Image** (WEBSITE-121, tier 4)
   are proxied with `premium_proxy` alone (10 credits a page, about 76 a month a page, so about 300 in all) and are on
   the 4-day schedule. First run (2026-11-15): the Museum of the Moving Image worked; **El Museo answered 422 RESP001**

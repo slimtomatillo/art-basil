@@ -210,6 +210,11 @@ PROXY_DOMAINS = {
     # has js_render (25 credits a page, two pages, about 380 a month) and proxy_country=us.
     'gagosian.com': {'premium_proxy': 'true', 'js_render': 'true', 'proxy_country': 'us'},
     'www.hauserwirth.com': {'premium_proxy': 'true'},
+    # David Zwirner (WEBSITE-131): its exhibitions page answered a direct fetch with a 403 from CloudFront (919 bytes, no
+    # title) in the daily runs of 2026-11-18 and 11-19 and from a laptop, after working on 11-17. Probe page run
+    # 2026-11-19: premium_proxy alone returned 200, 205 KB, with the 12 cards the scraper reads, so it needs no js_render
+    # (10 credits a refresh; it is on the 8-day list below, about 40 a month).
+    'www.davidzwirner.com': {'premium_proxy': 'true'},
     # Asia Society Museum (two pages), El Museo del Barrio and the Museum of the Moving Image: Cloudflare
     # challenges, fine in a browser, server-rendered. premium_proxy alone first (10 credits a page) - not live-tested.
     'asiasociety.org': {'premium_proxy': 'true'},
@@ -264,12 +269,13 @@ PROXY_REFRESH_DAYS = 4
 
 # Proxied venues whose shows run for weeks or months and that cost the most per refresh (25 credits a
 # page with page rendering, or two pages) refresh about every 8 days instead, which saves around 700
-# credits a month. Names are the scraper's name in main.py's PROXIED_VENUES, which is also the venue
-# name the data is stored under. None of them reads past-exhibition pages (those follow the 4-day blocks).
+# credits a month. David Zwirner is here for its shows' length, not its cost (10 credits a page). Names are
+# the scraper's name in main.py's PROXIED_VENUES, which is also the venue name the data is stored under.
+# None of them reads past-exhibition pages (those follow the 4-day blocks).
 PROXY_SLOW_REFRESH_DAYS = 8
 PROXY_SLOW_VENUES = frozenset({
     "Gagosian", "Dia Chelsea", "El Museo del Barrio", "Asia Society Museum",
-    "SFAC Galleries", "Marin Civic Center", "Armory Center for the Arts",
+    "SFAC Galleries", "Marin Civic Center", "Armory Center for the Arts", "David Zwirner",
 })
 
 def proxy_refresh_days(venue):
