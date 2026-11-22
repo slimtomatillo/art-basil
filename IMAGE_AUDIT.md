@@ -4,17 +4,17 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-21: **868**. With their own picture: **850** (98%). Showing the venue's logo instead: **5**. No picture at all: **13**.
+Current and upcoming events on 2026-11-22: **869**. With their own picture: **849** (98%). Showing the venue's logo instead: **7**. No picture at all: **13**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
 | Region | Venue | Events | Own picture | Logo | None |
 |---|---|---:|---:|---:|---:|
+| `sf` | Jessica Silverman Gallery | 6 | 2 | 4 | 0 |
 | `nyc` | Queens Museum | 6 | 3 | 0 | 3 |
 | `pdx` | Adams and Ollman | 3 | 0 | 0 | 3 |
 | `la` | François Ghebaly | 3 | 1 | 0 | 2 |
-| `sf` | Jessica Silverman Gallery | 4 | 2 | 2 | 0 |
-| `sf` | Marin Society of Artists | 2 | 0 | 2 | 0 |
+| `sf` | Marin Society of Artists | 3 | 1 | 2 | 0 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `nyc` | Dia Chelsea | 4 | 3 | 0 | 1 |
 | `pdx` | Nationale | 2 | 1 | 0 | 1 |
@@ -23,6 +23,13 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `tor` | Cooper Cole | 2 | 1 | 0 | 1 |
 
 ### Events without a picture of their own
+
+**Jessica Silverman Gallery** (`sf`)
+
+- [Tia Keobounpheng: Look Both Ways](https://jessicasilvermangallery.com/online-shows/tia-keobounpheng/): venue logo; page last checked 2026-11-22
+- [Clare Rojas: Have a Seat](https://jessicasilvermangallery.com/online-shows/clare-rojas/): venue logo; page last checked 2026-11-14
+- [Koak](https://jessicasilvermangallery.com/online-shows/koak/): venue logo; page last checked 2026-11-22
+- [Atsushi Kaga](https://jessicasilvermangallery.com/online-shows/atsushi-kaga/): venue logo; page last checked 2026-11-22
 
 **Queens Museum** (`nyc`)
 
@@ -41,11 +48,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 - [Tran Truong](https://ghebaly.com/exhibitions/tran-truong-windows-mirrors-and-bras/): blank; page last checked 2026-11-14
 - [CH3–CH2–O–CH2–CH3](https://ghebaly.com/exhibitions/ch3ch2och2ch3/): blank; page last checked 2026-11-14
 
-**Jessica Silverman Gallery** (`sf`)
-
-- [Tia Keobounpheng: Look Both Ways](https://jessicasilvermangallery.com/online-shows/tia-keobounpheng/): venue logo; page last checked 2026-11-08
-- [Clare Rojas: Have a Seat](https://jessicasilvermangallery.com/online-shows/clare-rojas/): venue logo; page last checked 2026-11-14
-
 **Marin Society of Artists** (`sf`)
 
 - [MSA All About Women 2026](https://www.marinsocietyofartists.org/all-about-women-2026): venue logo; page last checked 2026-11-18
@@ -53,7 +55,7 @@ Venues with events that have no picture of their own, most first. Worth a look n
 
 **Espace DÈS_** (`mtl`)
 
-- [Aurélie Painnecé: Ses souffles qui effleurent, ses clartés qui affleurent](https://espacedes.art): venue logo; page last checked 2026-11-08
+- [Aurélie Painnecé: Ses souffles qui effleurent, ses clartés qui affleurent](https://espacedes.art): venue logo; page last checked 2026-11-22
 
 **Dia Chelsea** (`nyc`)
 
