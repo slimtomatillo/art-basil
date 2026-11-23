@@ -64,9 +64,19 @@ class Spec:
     read: Optional[Callable] = None                  # read(lines, today) -> (name, start, end) | None, for a card of another shape
 
 
+# A note a gallery adds to the end of a date line after a double hyphen ("November 6 – December 19, 2026-- Thanksgiving Closure:
+# 3pm, Wed, Nov 25 - Thurs, Nov 26", Luhring Augustine, WEBSITE-137). A "--" that is followed by a date ("Nov 6, 2026 -- Dec 19, 2026")
+# is a range, not a note.
+_NOTE_AFTER_DATES = re.compile(r'^(.*\d{4})\s*--\s*(?!(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d)[A-Za-z].*$',
+                               re.IGNORECASE)
+
+
 def date_line(line, today):
-    """(start, end) if the line is just a run of dates, else None."""
+    """(start, end) if the line is just a run of dates (with a note after it, perhaps), else None."""
     line = clean(line)
+    note = _NOTE_AFTER_DATES.match(line)
+    if note:
+        line = note.group(1)
     if len(line) > 70 or not _DATE_START.match(line):
         return None
     try:

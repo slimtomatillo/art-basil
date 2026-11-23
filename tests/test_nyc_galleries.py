@@ -97,6 +97,28 @@ class EntrySitesTest(unittest.TestCase):
                   'Maison Leleu Showroom, 15 rue des Saints Pères, Paris', 'October 21, 2026 – February 26, 2027')])))
         self.assertEqual(list(shows), ['Jason Moran: Stacks'])
 
+    def test_a_note_on_the_end_of_a_date_line_does_not_hide_the_show(self):
+        # WEBSITE-137: from 2026-11-19 Luhring's date line read "... 2026-- Thanksigving Closure: ...", over the 70 characters a date line may have
+        closure = 'November 6 – December 19, 2026-- Thanksigving Closure: 3pm, Wed, Nov 25 - Thurs, Nov 26'
+        shows = run('Luhring Augustine', page_of('Luhring Augustine', ''.join([
+            entry('/exhibitions/jason-moran3', 'Jason Moran', 'STACKS', closure),
+            entry('/exhibitions/maison-leleu-x-luhring-augustine', 'Maison Leleu x Luhring Augustine',
+                  'Maison Leleu Showroom, 15 rue des Saints Pères, Paris', 'October 21, 2026 – February 26, 2027')])))
+        self.assertEqual(list(shows), ['Jason Moran: Stacks'])                         # the Paris show is still left out
+        moran = shows['Jason Moran: Stacks']
+        self.assertEqual(moran['dates'], {'start': dt.date(2026, 11, 6), 'end': dt.date(2026, 12, 19)})
+        self.assertNotIn('locations', moran)                                             # one space, so nothing to tell apart
+
+    def test_date_line_cuts_a_note_after_a_double_hyphen_but_not_a_range_written_with_one(self):
+        line = lambda text: galleries.date_line(text, TODAY)
+        self.assertEqual(line('November 6 – December 19, 2026-- Thanksigving Closure: 3pm, Wed, Nov 25 - Thurs, Nov 26'),
+                         (dt.date(2026, 11, 6), dt.date(2026, 12, 19)))
+        self.assertEqual(line('November 6 – December 19, 2026 -- By appointment only'), (dt.date(2026, 11, 6), dt.date(2026, 12, 19)))
+        self.assertEqual(line('November 6 – December 19, 2026'), (dt.date(2026, 11, 6), dt.date(2026, 12, 19)))
+        self.assertEqual(line('Nov 6, 2026 -- Dec 19, 2026'), (dt.date(2026, 11, 6), dt.date(2026, 12, 19)))   # a range, not a note
+        self.assertIsNone(line('A long sentence about the show that is not a run of dates and goes on well past seventy characters, 2026'))
+        self.assertIsNone(line('Thanksigving Closure: 3pm, Wed, Nov 25 - Thurs, Nov 26'))
+
     def test_a_group_show_is_named_by_its_title_not_its_list_of_artists(self):
         shows = run('Skarstedt', page_of('Skarstedt', ''.join([
             '<div class="entry half not-clickable"><div class="thumb"></div><div class="list-detail-title"> New York - Upper East Side </div>'
