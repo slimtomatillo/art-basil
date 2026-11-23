@@ -260,6 +260,14 @@ ZENROWS_API_KEY = os.environ.get('SCRAPER_PROXY_API_KEY')
 # them and main.py skips the remaining proxied scrapers.
 PROXY_EXHAUSTED = False
 
+# Hosts whose pages ZenRows sometimes refuses with a 422 RESP001 ("try enabling javascript rendering") on a plain fetch and
+# serves with js_render (WEBSITE-138). A page that gets that answer is fetched once more with js_render, 25 credits instead of
+# 10, so the dearer fetch is paid only for the pages that need it. MoMA: 5964 (Ana Mendieta) was refused in four daily runs in
+# a row, and probes on 2026-11-18 got 200 with js_render on both pages that a plain fetch had refused.
+PROXY_JS_RETRY_HOSTS = frozenset({'www.moma.org'})
+# How many pages were fetched a second time with js_render in this run (descriptions.py adds their credits to its report)
+PROXY_JS_RETRIES = 0
+
 # Proxied venues are refreshed about every PROXY_REFRESH_DAYS days (main.py). Their
 # "past exhibitions" pages change rarely but cost as much as any other page, so they
 # are pulled on every second refresh only, about every 8 days. Which refreshes those
@@ -377,7 +385,7 @@ def fetch_json_via_proxy(url, query=None, proxy_params=None):
 
 
 def fetch_and_parse(url, headers=None):
-    global PROXY_EXHAUSTED
+    global PROXY_EXHAUSTED, PROXY_JS_RETRIES
     request_headers = {'User-Agent': 'Your Bot 0.1'}
     if headers:
         request_headers.update(headers)
@@ -395,6 +403,11 @@ def fetch_and_parse(url, headers=None):
             # headers (e.g. a scraper's custom browser UA) don't apply here -
             # only our own URL and the domain's minimum required params go.
             response = _proxy_get(url, proxy_params)
+            if (response.status_code == 422 and 'RESP001' in (response.text or '') and not proxy_params.get('js_render')
+                    and urlparse(url).netloc in PROXY_JS_RETRY_HOSTS):
+                logging.warning(f"ZenRows refused {url} (422 RESP001); fetching it once more with js_render (25 credits).")
+                PROXY_JS_RETRIES += 1
+                response = _proxy_get(url, {**proxy_params, 'js_render': 'true'})
             if response.status_code >= 400 and response.status_code != 402:
                 # ZenRows explains a refusal in the body (e.g. a 422 for a site its basic options can't
                 # get past); without it the log only says "Unprocessable Entity"
