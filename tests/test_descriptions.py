@@ -632,6 +632,25 @@ class ProxiedPagesTest(unittest.TestCase):
         self.assertEqual(descriptions.proxy_credits(self.DEAR + 'x'), 25)
         self.assertEqual(descriptions.proxy_credits('https://not-proxied.example/x'), 10)
 
+    def test_a_page_fetched_again_with_js_render_adds_its_credits_to_the_report(self):
+        # WEBSITE-138: utils.PROXY_JS_RETRIES counts the pages fetch_and_parse fetched a second time (25 credits each)
+        self.write([event(NAME, self.CHEAP + 'a')])
+
+        def proxy_finder(url, name, **kw):
+            utils.PROXY_JS_RETRIES += 1
+            return (f'{name} is a show of paintings and drawings made over many years by one artist, shown in the main gallery.', 'og')
+
+        with unittest.mock.patch.object(utils, 'PROXY_JS_RETRIES', 0):
+            report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=3, finder=lambda u, n, **kw: self.fail('x'),
+                                                              proxy_finder=proxy_finder)
+        self.assertEqual((report['proxied'], report['js_retries'], report['credits']), (1, 1, 10 + 25))
+
+    def test_a_run_with_no_retries_reports_none(self):
+        self.write([event(NAME, self.CHEAP + 'a')])
+        report = descriptions.enrich_missing_descriptions(['la'], today=TODAY, proxy_pages=3, finder=lambda u, n, **kw: self.fail('x'),
+                                                          proxy_finder=lambda url, name, **kw: None)
+        self.assertEqual((report['js_retries'], report['credits']), (0, 10))
+
     def test_a_proxied_page_is_not_fetched_unless_asked(self):
         self.assertIsNone(descriptions.find_event_description(self.DEAR + 'x', NAME, fetch=lambda url: self.fail('fetched')))
         s = page(head='<meta name="description" content="' + BLURB + '">')

@@ -192,6 +192,15 @@ Refreshing everything daily would need about 11,400 a month. Instead:
   answered 422 on the descriptions pass (one page, left without a description). Hauser & Wirth is read from the
   `__NEXT_DATA__` script (the page lists 12 of its 16 shows; the rest load as you scroll, so a New York show could
   be missing until it moves up the list).
+- **MoMA pages ZenRows refuses are fetched again with `js_render`** (WEBSITE-138). A plain `premium_proxy` fetch of a MoMA
+  page sometimes answers 422 RESP001 ("try enabling javascript rendering"), moving from page to page; one event page
+  (Ana Mendieta) was refused in four daily runs in a row, and probes with `js_render` got through every time. So a
+  host in `utils.PROXY_JS_RETRY_HOSTS` (MoMA only) that gets that answer is fetched once more with `js_render`, only
+  for that page: 25 credits on top of the 10, on the pages that need it, so the normal fetch stays at 10. The count
+  is `utils.PROXY_JS_RETRIES`; the descriptions pass adds 25 credits for each to the credits it logs ("N of them fetched
+  again with js_render"), and it still opens at most 4 proxied pages a run. A second refusal is not retried again, and
+  neither is any other answer (a 403, or a 402 out of credits). To use it for another host, add it to the set (it must
+  be on `PROXY_DOMAINS` without `js_render` already).
 - **David Zwirner** (`www.davidzwirner.com`, WEBSITE-131): the exhibitions page worked on a direct fetch until
   2026-11-17, then answered a 403 from CloudFront (919 bytes, no title) in the daily runs of 11-18 and 11-19 and from a
   laptop too. A Probe page run (2026-11-19) with `premium_proxy` alone returned 200, 205 KB, with the 12 cards the

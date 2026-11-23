@@ -418,7 +418,8 @@ def main(env='prod', selected_regions=None, selected_venues=None, skip_venues=No
             logging.info(f"Finished looking for event descriptions: opened {described['checked']} event pages, "
                          f"added {len(described['added'])}, dropped {len(described['dropped'])} texts shared by several shows, "
                          f"looked up {described['shared']} events on shared listing pages through their cards, "
-                         f"fetched {described['proxied']} paid-proxy pages (about {described['credits']} ZenRows credits)")
+                         f"fetched {described['proxied']} paid-proxy pages (about {described['credits']} ZenRows credits"
+                         + (f", {described['js_retries']} of them fetched again with js_render" if described['js_retries'] else "") + ")")
             if described['failed']:
                 logging.warning(f"{described['failed']} paid-proxy event pages could not be fetched for their descriptions; "
                                 f"they are asked for again on the next run (two in a row stop the proxied pass for the day)")

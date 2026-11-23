@@ -581,11 +581,12 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
 
     Returns {'checked': pages opened, 'added': [(region, venue, event name, source, text)],
              'dropped': [(region, venue, event name, text)], 'shared': events looked up on shared listing pages,
-             'proxied': proxied pages fetched, 'credits': the credits those cost (an estimate), 'failed': proxied
+             'proxied': proxied pages fetched, 'credits': the credits those cost (an estimate), 'js_retries': pages
+             fetched a second time with js_render after a 422 (25 credits each, in 'credits'), 'failed': proxied
              pages that could not be fetched}.
     The page limit is checked before each page or listing, so a listing's own show pages can go a little over it."""
     today = today or dt.date.today()
-    report = {'checked': 0, 'added': [], 'dropped': [], 'shared': 0, 'proxied': 0, 'credits': 0, 'failed': 0}
+    report = {'checked': 0, 'added': [], 'dropped': [], 'shared': 0, 'proxied': 0, 'credits': 0, 'js_retries': 0, 'failed': 0}
     dbs, changed, queue = {}, set(), []
     for region in (regions or DB_FILES):
         dbs[region] = load_db(DB_FILES[region])
@@ -623,6 +624,7 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
     # Paid-proxy pages, last: cheapest first, a few a run, and none once the account is out of credits
     queue.sort(key=lambda item: (proxy_credits(item[3]), item[0], item[1], item[2]['name']))
     proxied, failures = {}, 0
+    retries_before = utils.PROXY_JS_RETRIES
     for region, venue, event, page in queue[:max(proxy_pages, 0)]:
         if utils.PROXY_EXHAUSTED:
             break
@@ -642,6 +644,8 @@ def enrich_missing_descriptions(regions=None, today=None, finder=find_event_desc
         changed.add(region)
         if result:
             proxied.setdefault((region, venue), []).append((event, *result))
+    report['js_retries'] = utils.PROXY_JS_RETRIES - retries_before
+    report['credits'] += 25 * report['js_retries']        # each retry is a js_render fetch on top of the 10 estimated above
     for (region, venue), found in proxied.items():
         _accept(report, region, venue, dbs[region][venue], found)
 
