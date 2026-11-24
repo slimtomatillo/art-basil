@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-22: **869**. With their own picture: **849** (98%). Showing the venue's logo instead: **7**. No picture at all: **13**.
+Current and upcoming events on 2026-11-24: **861**. With their own picture: **842** (98%). Showing the venue's logo instead: **7**. No picture at all: **12**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -17,7 +17,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `sf` | Marin Society of Artists | 3 | 1 | 2 | 0 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `nyc` | Dia Chelsea | 4 | 3 | 0 | 1 |
-| `pdx` | Nationale | 2 | 1 | 0 | 1 |
 | `pdx` | Portland Art Museum | 40 | 39 | 0 | 1 |
 | `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
 | `tor` | Cooper Cole | 2 | 1 | 0 | 1 |
@@ -60,10 +59,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Dia Chelsea** (`nyc`)
 
 - [David Lamelas: The Machine](https://diaart.org/exhibition/exhibitions-projects/david-lamelas-the-machine-exhibition): blank; page last checked 2026-11-15
-
-**Nationale** (`pdx`)
-
-- [Gabi Villaseñor: We found a freshwater spring while you were sleeping](https://www.nationale.us/two-shows): blank; page last checked 2026-11-16
 
 **Portland Art Museum** (`pdx`)
 
