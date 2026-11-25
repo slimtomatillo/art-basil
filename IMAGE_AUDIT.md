@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-24: **853**. With their own picture: **834** (98%). Showing the venue's logo instead: **7**. No picture at all: **12**.
+Current and upcoming events on 2026-11-25: **859**. With their own picture: **841** (98%). Showing the venue's logo instead: **7**. No picture at all: **11**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -13,10 +13,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `sf` | Jessica Silverman Gallery | 6 | 2 | 4 | 0 |
 | `nyc` | Queens Museum | 6 | 3 | 0 | 3 |
 | `pdx` | Adams and Ollman | 3 | 0 | 0 | 3 |
-| `la` | François Ghebaly | 3 | 1 | 0 | 2 |
 | `sf` | Marin Society of Artists | 3 | 1 | 2 | 0 |
 | `mtl` | Espace DÈS_ | 1 | 0 | 1 | 0 |
 | `nyc` | Dia Chelsea | 4 | 3 | 0 | 1 |
+| `pdx` | Nationale | 2 | 1 | 0 | 1 |
 | `pdx` | Portland Art Museum | 40 | 39 | 0 | 1 |
 | `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
 | `tor` | Cooper Cole | 2 | 1 | 0 | 1 |
@@ -42,11 +42,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 - [Bethann Parker](https://adamsandollman.com/Upcoming-Exhibitions): blank; page last checked 2026-11-16
 - [Conny Purtill: The Ground](https://adamsandollman.com/Upcoming-Exhibitions): blank; page last checked 2026-11-16
 
-**François Ghebaly** (`la`)
-
-- [Tran Truong](https://ghebaly.com/exhibitions/tran-truong-windows-mirrors-and-bras/): blank; page last checked 2026-11-14
-- [CH3–CH2–O–CH2–CH3](https://ghebaly.com/exhibitions/ch3ch2och2ch3/): blank; page last checked 2026-11-14
-
 **Marin Society of Artists** (`sf`)
 
 - [MSA All About Women 2026](https://www.marinsocietyofartists.org/all-about-women-2026): venue logo; page last checked 2026-11-18
@@ -59,6 +54,10 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Dia Chelsea** (`nyc`)
 
 - [David Lamelas: The Machine](https://diaart.org/exhibition/exhibitions-projects/david-lamelas-the-machine-exhibition): blank; page last checked 2026-11-15
+
+**Nationale** (`pdx`)
+
+- [William Matheson: Under the Firmament](https://www.nationale.us/two-shows): blank; page last checked 2026-11-25
 
 **Portland Art Museum** (`pdx`)
 
