@@ -774,3 +774,4 @@ timestamp,num_venues,num_events,scrape_time_s,regions
 2026-11-24 00:25:40.901800,251,2577,1573.0,"sf,la,mtl,tor,ist,nyc,pdx"
 2026-11-24 22:51:18.571530,251,2578,1111.5,"sf,la,mtl,tor,ist,nyc,pdx"
 2026-11-25 22:01:53.939999,251,2583,894.9,"sf,la,mtl,tor,ist,nyc,pdx"
+2026-11-26 21:59:54.368374,251,2585,1173.1,"sf,la,mtl,tor,ist,nyc,pdx"
