@@ -4,7 +4,7 @@ Written by `image_audit.py` on every daily run; do not edit by hand.
 
 ## Event pictures
 
-Current and upcoming events on 2026-11-26: **861**. With their own picture: **843** (98%). Showing the venue's logo instead: **7**. No picture at all: **11**.
+Current and upcoming events on 2026-11-27: **862**. With their own picture: **845** (98%). Showing the venue's logo instead: **7**. No picture at all: **10**.
 
 Venues with events that have no picture of their own, most first. Worth a look now and then: the venue may have a better picture on its site, or its scraper may need to read one (see OPERATIONS.md, "Event images").
 
@@ -18,7 +18,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 | `nyc` | Dia Chelsea | 4 | 3 | 0 | 1 |
 | `pdx` | Nationale | 2 | 1 | 0 | 1 |
 | `pdx` | Portland Art Museum | 40 | 39 | 0 | 1 |
-| `sf` | ACCI Gallery | 1 | 0 | 0 | 1 |
 | `tor` | Cooper Cole | 2 | 1 | 0 | 1 |
 
 ### Events without a picture of their own
@@ -62,10 +61,6 @@ Venues with events that have no picture of their own, most first. Worth a look n
 **Portland Art Museum** (`pdx`)
 
 - [Titus Kaphar: Ascension](https://portlandartmuseum.org/event/titus-kaphar-ascension/): blank; page last checked 2026-11-15
-
-**ACCI Gallery** (`sf`)
-
-- [ACCI's Annual Holiday Show](https://www.accigallery.com/annual-holiday-show.html): blank; page last checked 2026-11-13
 
 **Cooper Cole** (`tor`)
 
